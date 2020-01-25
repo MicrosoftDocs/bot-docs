@@ -1,0 +1,77 @@
+<Type Name="NullDialogDebugger" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.NullDialogDebugger">
+  <TypeSignature Language="C#" Value="public class NullDialogDebugger : Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NullDialogDebugger extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.NullDialogDebugger" />
+  <TypeSignature Language="VB.NET" Value="Public Class NullDialogDebugger&#xA;Implements IDialogDebugger" />
+  <TypeSignature Language="F#" Value="type NullDialogDebugger = class&#xA;    interface IDialogDebugger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Default Dialog Debugger which simply ignores step calls for the IDialogDebuggerinterface.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger Instance;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger Instance" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.NullDialogDebugger.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As IDialogDebugger " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.NullDialogDebugger.Instance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger.StepAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IDialogDebugger.StepAsync (Microsoft.Bot.Builder.Dialogs.DialogContext context, object item, string more, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger.StepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext context, object item, string more, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.NullDialogDebugger.Microsoft#Bot#Builder#Dialogs#Debugging#IDialogDebugger#StepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger.StepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="more" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="more">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

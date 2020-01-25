@@ -1,0 +1,87 @@
+<Type Name="DisconnectedEventArgs" FullName="Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs">
+  <TypeSignature Language="C#" Value="public class DisconnectedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DisconnectedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DisconnectedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DisconnectedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Arguments to be included when disconnection events are fired.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DisconnectedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs Empty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs Empty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Empty As DisconnectedEventArgs" />
+      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs with get, set" Usage="Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an empty set of arguments.
+            </summary>
+        <value>
+            A new, empty, set of <see cref="T:Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public string Reason { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Reason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reason As String" />
+      <MemberSignature Language="F#" Value="member this.Reason : string with get, set" Usage="Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the reason field of the arguments.
+            </summary>
+        <value>
+            The reason the disconnection event fired, in plain text.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

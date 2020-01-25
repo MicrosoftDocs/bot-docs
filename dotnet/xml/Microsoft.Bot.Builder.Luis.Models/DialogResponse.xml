@@ -1,4 +1,4 @@
-﻿<Type Name="DialogResponse" FullName="Microsoft.Bot.Builder.Luis.Models.DialogResponse">
+<Type Name="DialogResponse" FullName="Microsoft.Bot.Builder.Luis.Models.DialogResponse">
   <TypeSignature Language="C#" Value="public class DialogResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.DialogResponse" />

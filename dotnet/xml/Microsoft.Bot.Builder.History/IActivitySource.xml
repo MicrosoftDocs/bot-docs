@@ -1,4 +1,4 @@
-﻿<Type Name="IActivitySource" FullName="Microsoft.Bot.Builder.History.IActivitySource">
+<Type Name="IActivitySource" FullName="Microsoft.Bot.Builder.History.IActivitySource">
   <TypeSignature Language="C#" Value="public interface IActivitySource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivitySource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.IActivitySource" />

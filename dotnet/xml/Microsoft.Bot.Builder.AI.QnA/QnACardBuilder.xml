@@ -1,0 +1,81 @@
+<Type Name="QnACardBuilder" FullName="Microsoft.Bot.Builder.AI.QnA.QnACardBuilder">
+  <TypeSignature Language="C#" Value="public static class QnACardBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit QnACardBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnACardBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnACardBuilder" />
+  <TypeSignature Language="F#" Value="type QnACardBuilder = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Message activity card builder for QnAMaker dialogs.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetQnAPromptsCard">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity GetQnAPromptsCard (Microsoft.Bot.Builder.AI.QnA.QueryResult result, string cardNoMatchText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity GetQnAPromptsCard(class Microsoft.Bot.Builder.AI.QnA.QueryResult result, string cardNoMatchText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnACardBuilder.GetQnAPromptsCard(Microsoft.Bot.Builder.AI.QnA.QueryResult,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetQnAPromptsCard (result As QueryResult, cardNoMatchText As String) As IMessageActivity" />
+      <MemberSignature Language="F#" Value="static member GetQnAPromptsCard : Microsoft.Bot.Builder.AI.QnA.QueryResult * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.AI.QnA.QnACardBuilder.GetQnAPromptsCard (result, cardNoMatchText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="Microsoft.Bot.Builder.AI.QnA.QueryResult" />
+        <Parameter Name="cardNoMatchText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="result">Result to be dispalyed as prompts.</param>
+        <param name="cardNoMatchText">No match text.</param>
+        <summary>
+            Get active learning suggestions card.
+            </summary>
+        <returns>IMessageActivity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSuggestionsCard">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity GetSuggestionsCard (System.Collections.Generic.List&lt;string&gt; suggestionsList, string cardTitle, string cardNoMatchText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity GetSuggestionsCard(class System.Collections.Generic.List`1&lt;string&gt; suggestionsList, string cardTitle, string cardNoMatchText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnACardBuilder.GetSuggestionsCard(System.Collections.Generic.List{System.String},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSuggestionsCard (suggestionsList As List(Of String), cardTitle As String, cardNoMatchText As String) As IMessageActivity" />
+      <MemberSignature Language="F#" Value="static member GetSuggestionsCard : System.Collections.Generic.List&lt;string&gt; * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.AI.QnA.QnACardBuilder.GetSuggestionsCard (suggestionsList, cardTitle, cardNoMatchText)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="suggestionsList" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+        <Parameter Name="cardTitle" Type="System.String" />
+        <Parameter Name="cardNoMatchText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="suggestionsList">List of suggested questions.</param>
+        <param name="cardTitle">Title of the cards.</param>
+        <param name="cardNoMatchText">No match text.</param>
+        <summary>
+            Get active learning suggestions card.
+            </summary>
+        <returns>IMessageActivity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="TermsAttribute" FullName="Microsoft.Bot.Builder.FormFlow.TermsAttribute">
+<Type Name="TermsAttribute" FullName="Microsoft.Bot.Builder.FormFlow.TermsAttribute">
   <TypeSignature Language="C#" Value="public class TermsAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TermsAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.TermsAttribute" />
@@ -16,10 +16,10 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

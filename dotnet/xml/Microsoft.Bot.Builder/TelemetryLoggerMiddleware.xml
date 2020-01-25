@@ -1,4 +1,4 @@
-﻿<Type Name="TelemetryLoggerMiddleware" FullName="Microsoft.Bot.Builder.TelemetryLoggerMiddleware">
+<Type Name="TelemetryLoggerMiddleware" FullName="Microsoft.Bot.Builder.TelemetryLoggerMiddleware">
   <TypeSignature Language="C#" Value="public class TelemetryLoggerMiddleware : Microsoft.Bot.Builder.IMiddleware" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryLoggerMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TelemetryLoggerMiddleware" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="telemetryClient" Type="Microsoft.Bot.Builder.IBotTelemetryClient" />
@@ -61,6 +63,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -90,6 +93,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -119,6 +123,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -148,6 +153,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -180,13 +186,14 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets a value indicating whether determines whether to log personal information that came from the user.
+            Gets a value indicating whether to log personal information that came from the user.
             </summary>
         <value>If true, will log personal information into the IBotTelemetryClient.TrackEvent method; otherwise the properties will be filtered.</value>
         <remarks>To be added.</remarks>
@@ -202,6 +209,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -212,7 +220,7 @@
       </Parameters>
       <Docs>
         <param name="activity">Current activity sent from user.</param>
-        <param name="cancellation"> cancellation token that can be used by other objects
+        <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
             Invoked when the bot deletes a message.
@@ -233,6 +241,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -243,7 +252,7 @@
       </Parameters>
       <Docs>
         <param name="activity">Current activity sent from user.</param>
-        <param name="cancellation"> cancellation token that can be used by other objects
+        <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
             Invoked when a message is received from the user.
@@ -264,6 +273,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -274,7 +284,7 @@
       </Parameters>
       <Docs>
         <param name="activity">Current activity sent from user.</param>
-        <param name="cancellation"> cancellation token that can be used by other objects
+        <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
             Invoked when the bot sends a message to the user.
@@ -298,6 +308,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -331,6 +342,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -341,7 +353,7 @@
       </Parameters>
       <Docs>
         <param name="activity">Current activity sent from user.</param>
-        <param name="cancellation"> cancellation token that can be used by other objects
+        <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
             Invoked when the bot updates a message.
@@ -363,13 +375,23 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the currently configured <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> that logs the QnaMessage event.
+            </summary>
+        <value>
+            The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> being used to log events.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

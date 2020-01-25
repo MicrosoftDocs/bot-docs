@@ -1,0 +1,268 @@
+<Type Name="FacebookClientWrapper" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper">
+  <TypeSignature Language="C#" Value="public class FacebookClientWrapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FacebookClientWrapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class FacebookClientWrapper" />
+  <TypeSignature Language="F#" Value="type FacebookClientWrapper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FacebookClientWrapper (Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As FacebookAdapterOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper : Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions -&gt; Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper" Usage="new Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper options" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">An object containing API credentials, a webhook verification token and other options.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppSecretProof">
+      <MemberSignature Language="C#" Value="public virtual string GetAppSecretProof ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAppSecretProof() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.GetAppSecretProof" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAppSecretProof () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetAppSecretProof : unit -&gt; string&#xA;override this.GetAppSecretProof : unit -&gt; string" Usage="facebookClientWrapper.GetAppSecretProof " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generate the app secret proof used to increase security on calls to the graph API.
+            </summary>
+        <returns>The app secret proof.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PassThreadControlAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; PassThreadControlAsync (string targetAppId, string userId, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; PassThreadControlAsync(string targetAppId, string userId, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PassThreadControlAsync(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PassThreadControlAsync (targetAppId As String, userId As String, message As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PassThreadControlAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.PassThreadControlAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookClientWrapper.PassThreadControlAsync (targetAppId, userId, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetAppId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetAppId">The Id of the target app to pass control to.</param>
+        <param name="userId">The sender user Id.</param>
+        <param name="message">An optional message for the metadata paremter.</param>
+        <summary>
+            Sends the pass_thread_control webhook event to Facebook.
+            </summary>
+        <returns>A bool value indicating the success of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostToFacebookApiAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; PostToFacebookApiAsync (string postType, string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; PostToFacebookApiAsync(string postType, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PostToFacebookApiAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostToFacebookApiAsync (postType As String, content As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PostToFacebookApiAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.PostToFacebookApiAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookClientWrapper.PostToFacebookApiAsync (postType, content)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postType" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="postType">The REST post type (GET, PUT, POST, etc).</param>
+        <param name="content">The string content to be posted to Facebook.</param>
+        <summary>
+            Posts webhook control events to Facebook.
+            </summary>
+        <returns>A bool indicating the success of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestThreadControlAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; RequestThreadControlAsync (string userId, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; RequestThreadControlAsync(string userId, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.RequestThreadControlAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RequestThreadControlAsync (userId As String, message As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member RequestThreadControlAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.RequestThreadControlAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookClientWrapper.RequestThreadControlAsync (userId, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The sender user Id.</param>
+        <param name="message">An optional message for the metadata paremter.</param>
+        <summary>
+            Sends the request_thread_control webhook event to Facebook.
+            </summary>
+        <returns>A bool value indicating the success of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; SendMessageAsync (string path, Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage payload, System.Net.Http.HttpMethod method = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; SendMessageAsync(string path, class Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage payload, class System.Net.Http.HttpMethod method, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.SendMessageAsync(System.String,Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage,System.Net.Http.HttpMethod,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendMessageAsync : string * Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage * System.Net.Http.HttpMethod * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.SendMessageAsync : string * Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage * System.Net.Http.HttpMethod * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="facebookClientWrapper.SendMessageAsync (path, payload, method, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="payload" Type="Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage" />
+        <Parameter Name="method" Type="System.Net.Http.HttpMethod" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">Path to the API endpoint, for example `/me/messages`.</param>
+        <param name="payload">An object to be sent as parameters to the API call..</param>
+        <param name="method">HTTP method, for example POST, GET, DELETE or PUT.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Send a REST message to Facebook.
+            </summary>
+        <returns>A task representing the async operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeThreadControlAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; TakeThreadControlAsync (string userId, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TakeThreadControlAsync(string userId, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.TakeThreadControlAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TakeThreadControlAsync (userId As String, message As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TakeThreadControlAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.TakeThreadControlAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookClientWrapper.TakeThreadControlAsync (userId, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The sender user Id.</param>
+        <param name="message">An optional message for the metadata paremter.</param>
+        <summary>
+            Sends the take_thread_control webhook event to Facebook.
+            </summary>
+        <returns>A bool value indicating the success of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifySignature">
+      <MemberSignature Language="C#" Value="public virtual bool VerifySignature (Microsoft.AspNetCore.Http.HttpRequest request, string payload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifySignature(class Microsoft.AspNetCore.Http.HttpRequest request, string payload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifySignature (request As HttpRequest, payload As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifySignature : Microsoft.AspNetCore.Http.HttpRequest * string -&gt; bool&#xA;override this.VerifySignature : Microsoft.AspNetCore.Http.HttpRequest * string -&gt; bool" Usage="facebookClientWrapper.VerifySignature (request, payload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
+        <Parameter Name="payload" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="request">An Http request object.</param>
+        <param name="payload">The request body.</param>
+        <summary>
+            Verifies the SHA1 signature of the raw request payload before bodyParser parses it will abort parsing if signature is invalid, and pass a generic error to response.
+            </summary>
+        <returns>The result of the comparison between the signature in the request and hashed body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task VerifyWebhookAsync (Microsoft.AspNetCore.Http.HttpRequest request, Microsoft.AspNetCore.Http.HttpResponse response, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task VerifyWebhookAsync(class Microsoft.AspNetCore.Http.HttpRequest request, class Microsoft.AspNetCore.Http.HttpResponse response, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifyWebhookAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyWebhookAsync : Microsoft.AspNetCore.Http.HttpRequest * Microsoft.AspNetCore.Http.HttpResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.VerifyWebhookAsync : Microsoft.AspNetCore.Http.HttpRequest * Microsoft.AspNetCore.Http.HttpResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="facebookClientWrapper.VerifyWebhookAsync (request, response, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
+        <Parameter Name="response" Type="Microsoft.AspNetCore.Http.HttpResponse" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">An Http request object.</param>
+        <param name="response">An Http response object.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Verifies the VerifyToken from the message and if it matches the one configured, it sends back the challenge.
+            </summary>
+        <returns>A task representing the async operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="ActivityResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver">
+<Type Name="ActivityResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver">
   <TypeSignature Language="C#" Value="public sealed class ActivityResolver : Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityResolver extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver" />
@@ -47,7 +47,7 @@
       <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ActivityResolver.TryResolve(System.Type,System.Object,System.Object@)" />
-      <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj *  -&gt; bool" Usage="activityResolver.TryResolve (type, tag, value)" />
+      <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj * obj -&gt; bool" Usage="activityResolver.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

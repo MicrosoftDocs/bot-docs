@@ -1,4 +1,4 @@
-﻿<Type Name="ThrottleException" FullName="Microsoft.Bot.Connector.Shared.Authentication.ThrottleException">
+<Type Name="ThrottleException" FullName="Microsoft.Bot.Connector.Shared.Authentication.ThrottleException">
   <TypeSignature Language="C#" Value="public class ThrottleException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThrottleException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Shared.Authentication.ThrottleException" />

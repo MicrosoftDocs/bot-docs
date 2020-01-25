@@ -1,4 +1,4 @@
-﻿<Type Name="LocalizedScope" FullName="Microsoft.Bot.Builder.Base.LocalizedScope">
+<Type Name="LocalizedScope" FullName="Microsoft.Bot.Builder.Base.LocalizedScope">
   <TypeSignature Language="C#" Value="public struct LocalizedScope : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LocalizedScope extends System.ValueType implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.LocalizedScope" />

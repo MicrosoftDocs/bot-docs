@@ -1,0 +1,169 @@
+<Type Name="FileInfoCard" FullName="Microsoft.Bot.Schema.Teams.FileInfoCard">
+  <TypeSignature Language="C#" Value="public class FileInfoCard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileInfoCard extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.FileInfoCard" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileInfoCard" />
+  <TypeSignature Language="F#" Value="type FileInfoCard = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Content type for <see cref="T:Microsoft.Bot.Schema.Teams.FileConsentCard" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileInfoCard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileInfoCard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the FileInfoCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileInfoCard (string uniqueId = null, string fileType = null, object etag = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uniqueId, string fileType, object etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileInfoCard.#ctor(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional uniqueId As String = null, Optional fileType As String = null, Optional etag As Object = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.FileInfoCard : string * string * obj -&gt; Microsoft.Bot.Schema.Teams.FileInfoCard" Usage="new Microsoft.Bot.Schema.Teams.FileInfoCard (uniqueId, fileType, etag)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uniqueId" Type="System.String" />
+        <Parameter Name="fileType" Type="System.String" />
+        <Parameter Name="etag" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="uniqueId">Unique Id for the file.</param>
+        <param name="fileType">Type of file.</param>
+        <param name="etag">ETag for the file.</param>
+        <summary>
+            Initializes a new instance of the FileInfoCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public const string ContentType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.Teams.FileInfoCard.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Schema.Teams.FileInfoCard.ContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content type to be used in the type property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Etag">
+      <MemberSignature Language="C#" Value="public object Etag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Etag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileInfoCard.Etag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Etag As Object" />
+      <MemberSignature Language="F#" Value="member this.Etag : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.FileInfoCard.Etag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="etag")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets eTag for the file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileType">
+      <MemberSignature Language="C#" Value="public string FileType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileInfoCard.FileType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileType As String" />
+      <MemberSignature Language="F#" Value="member this.FileType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileInfoCard.FileType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fileType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueId">
+      <MemberSignature Language="C#" Value="public string UniqueId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileInfoCard.UniqueId" />
+      <MemberSignature Language="VB.NET" Value="Public Property UniqueId As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileInfoCard.UniqueId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="uniqueId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets unique Id for the file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

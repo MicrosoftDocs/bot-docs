@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationParameters" FullName="Microsoft.Bot.Connector.ConversationParameters">
+<Type Name="ConversationParameters" FullName="Microsoft.Bot.Connector.ConversationParameters">
   <TypeSignature Language="C#" Value="public class ConversationParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationParameters" />

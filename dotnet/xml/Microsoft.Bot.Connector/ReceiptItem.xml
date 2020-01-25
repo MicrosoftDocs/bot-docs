@@ -1,4 +1,4 @@
-﻿<Type Name="ReceiptItem" FullName="Microsoft.Bot.Connector.ReceiptItem">
+<Type Name="ReceiptItem" FullName="Microsoft.Bot.Connector.ReceiptItem">
   <TypeSignature Language="C#" Value="public class ReceiptItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReceiptItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ReceiptItem" />

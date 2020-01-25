@@ -1,4 +1,4 @@
-﻿<Type Name="Localizer" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Localizer">
+<Type Name="Localizer" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Localizer">
   <TypeSignature Language="C#" Value="public class Localizer : Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Localizer extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer" />
@@ -342,7 +342,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer Load(class System.Collections.IDictionaryEnumerator reader, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; missing, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; extra) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Load (reader As IDictionaryEnumerator, ByRef missing As IEnumerable(Of String), ByRef extra As IEnumerable(Of String)) As ILocalizer" />
-      <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionaryEnumerator *  *  -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer&#xA;override this.Load : System.Collections.IDictionaryEnumerator *  *  -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" Usage="localizer.Load (reader, missing, extra)" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionaryEnumerator * seq * seq -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer&#xA;override this.Load : System.Collections.IDictionaryEnumerator * seq * seq -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer" Usage="localizer.Load (reader, missing, extra)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Load(System.Collections.IDictionaryEnumerator,System.Collections.Generic.IEnumerable{System.String}@,System.Collections.Generic.IEnumerable{System.String}@)</InterfaceMember>
@@ -375,7 +375,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Lookup(string key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.Lookup(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Lookup (key As String, ByRef value As String) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member Lookup : string *  -&gt; bool&#xA;override this.Lookup : string *  -&gt; bool" Usage="localizer.Lookup (key, value)" />
+      <MemberSignature Language="F#" Value="abstract member Lookup : string * string -&gt; bool&#xA;override this.Lookup : string * string -&gt; bool" Usage="localizer.Lookup (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.Lookup(System.String,System.String@)</InterfaceMember>
@@ -496,7 +496,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LookupValues(string key, [out] string[]&amp; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Localizer.LookupValues(System.String,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupValues (key As String, ByRef values As String()) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member LookupValues : string *  -&gt; bool&#xA;override this.LookupValues : string *  -&gt; bool" Usage="localizer.LookupValues (key, values)" />
+      <MemberSignature Language="F#" Value="abstract member LookupValues : string * String[] -&gt; bool&#xA;override this.LookupValues : string * String[] -&gt; bool" Usage="localizer.LookupValues (key, values)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.FormFlow.Advanced.ILocalizer.LookupValues(System.String,System.String[]@)</InterfaceMember>

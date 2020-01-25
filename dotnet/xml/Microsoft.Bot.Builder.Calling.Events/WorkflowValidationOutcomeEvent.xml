@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowValidationOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent">
+<Type Name="WorkflowValidationOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent">
   <TypeSignature Language="C#" Value="public class WorkflowValidationOutcomeEvent : Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowValidationOutcomeEvent extends Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.WorkflowValidationOutcomeEvent" />

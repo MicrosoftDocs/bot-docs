@@ -1,4 +1,4 @@
-﻿<Type Name="ValidateReply" FullName="Microsoft.Bot.Builder.Adapters.ValidateReply">
+<Type Name="ValidateReply" FullName="Microsoft.Bot.Builder.Adapters.ValidateReply">
   <TypeSignature Language="C#" Value="public delegate void ValidateReply(IActivity expected, IActivity actual);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidateReply extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.ValidateReply" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

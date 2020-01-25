@@ -1,4 +1,4 @@
-﻿<Type Name="Place" FullName="Microsoft.Bot.Connector.Place">
+<Type Name="Place" FullName="Microsoft.Bot.Connector.Place">
   <TypeSignature Language="C#" Value="public class Place" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Place extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Place" />

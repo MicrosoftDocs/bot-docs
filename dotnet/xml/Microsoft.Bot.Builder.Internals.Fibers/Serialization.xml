@@ -1,4 +1,4 @@
-﻿<Type Name="Serialization" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization">
+<Type Name="Serialization" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization">
   <TypeSignature Language="C#" Value="public static class Serialization" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Serialization extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization" />

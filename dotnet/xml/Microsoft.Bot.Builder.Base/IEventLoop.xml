@@ -1,4 +1,4 @@
-﻿<Type Name="IEventLoop" FullName="Microsoft.Bot.Builder.Base.IEventLoop">
+<Type Name="IEventLoop" FullName="Microsoft.Bot.Builder.Base.IEventLoop">
   <TypeSignature Language="C#" Value="public interface IEventLoop" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventLoop" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.IEventLoop" />

@@ -1,4 +1,4 @@
-﻿<Type Name="CallingContext" FullName="Microsoft.Bot.Builder.Calling.CallingContext">
+<Type Name="CallingContext" FullName="Microsoft.Bot.Builder.Calling.CallingContext">
   <TypeSignature Language="C#" Value="public class CallingContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallingContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingContext" />
@@ -59,7 +59,8 @@
         <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
       </Parameters>
       <Docs>
-        <param name="request"></param>
+        <param name="request">
+        </param>
         <summary>
             Extracts the X-Microsoft-Skype-Chain-Id header from the request that is used for correlating logs across different services for a call
             </summary>

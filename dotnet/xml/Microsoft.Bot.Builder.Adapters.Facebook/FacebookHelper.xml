@@ -1,0 +1,130 @@
+<Type Name="FacebookHelper" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper">
+  <TypeSignature Language="C#" Value="public static class FacebookHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FacebookHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class FacebookHelper" />
+  <TypeSignature Language="F#" Value="type FacebookHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivityToFacebook">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage ActivityToFacebook (Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage ActivityToFacebook(class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ActivityToFacebook(Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="static member ActivityToFacebook : Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ActivityToFacebook activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity to be converted to Facebook message.</param>
+        <summary>
+            Converts an Activity object to a Facebook messenger outbound message ready for the API.
+            </summary>
+        <returns>The resulting message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleMessageAttachments">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Attachment&gt; HandleMessageAttachments (Microsoft.Bot.Builder.Adapters.Facebook.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Schema.Attachment&gt; HandleMessageAttachments(class Microsoft.Bot.Builder.Adapters.Facebook.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.HandleMessageAttachments(Microsoft.Bot.Builder.Adapters.Facebook.Message)" />
+      <MemberSignature Language="F#" Value="static member HandleMessageAttachments : Microsoft.Bot.Builder.Adapters.Facebook.Message -&gt; System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Attachment&gt;" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.HandleMessageAttachments message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Attachment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Builder.Adapters.Facebook.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:Microsoft.Bot.Builder.Adapters.Facebook.Message" />used for input.</param>
+        <summary>
+            Extracts attachments from the facebook message.
+            </summary>
+        <returns>A List of <see cref="T:Microsoft.Bot.Schema.Attachment" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessSingleMessage">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity ProcessSingleMessage (Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity ProcessSingleMessage(class Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ProcessSingleMessage(Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ProcessSingleMessage (message As FacebookMessage) As Activity" />
+      <MemberSignature Language="F#" Value="static member ProcessSingleMessage : Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage -&gt; Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ProcessSingleMessage message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to be processed.</param>
+        <summary>
+            Handles each individual message inside a webhook payload (webhook may deliver more than one message at a time).
+            </summary>
+        <returns>An Activity with the result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAsync (Microsoft.AspNetCore.Http.HttpResponse response, System.Net.HttpStatusCode code, string text, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAsync(class Microsoft.AspNetCore.Http.HttpResponse response, valuetype System.Net.HttpStatusCode code, string text, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.WriteAsync(Microsoft.AspNetCore.Http.HttpResponse,System.Net.HttpStatusCode,System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member WriteAsync : Microsoft.AspNetCore.Http.HttpResponse * System.Net.HttpStatusCode * string * System.Text.Encoding * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.WriteAsync (response, code, text, encoding, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="Microsoft.AspNetCore.Http.HttpResponse" />
+        <Parameter Name="code" Type="System.Net.HttpStatusCode" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="response">The httpResponse.</param>
+        <param name="code">The status code to be written.</param>
+        <param name="text">The text to be written.</param>
+        <param name="encoding">The encoding for the text.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Writes the HttpResponse.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorCodes" FullName="Microsoft.Bot.Connector.ErrorCodes">
+<Type Name="ErrorCodes" FullName="Microsoft.Bot.Connector.ErrorCodes">
   <TypeSignature Language="C#" Value="public class ErrorCodes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorCodes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ErrorCodes" />

@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidWaitException" FullName="Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException">
+<Type Name="InvalidWaitException" FullName="Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException">
   <TypeSignature Language="C#" Value="public abstract class InvalidWaitException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit InvalidWaitException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException" />

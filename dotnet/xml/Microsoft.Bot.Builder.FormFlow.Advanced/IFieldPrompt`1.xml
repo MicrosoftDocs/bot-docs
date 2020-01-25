@@ -1,4 +1,4 @@
-﻿<Type Name="IFieldPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;T&gt;">
+<Type Name="IFieldPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IFieldPrompt&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldPrompt`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldPrompt`1" />

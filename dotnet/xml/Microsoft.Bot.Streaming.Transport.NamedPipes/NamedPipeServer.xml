@@ -1,0 +1,183 @@
+<Type Name="NamedPipeServer" FullName="Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer">
+  <TypeSignature Language="C#" Value="public class NamedPipeServer : Microsoft.Bot.Streaming.Transport.IStreamingTransportServer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamedPipeServer extends System.Object implements class Microsoft.Bot.Streaming.Transport.IStreamingTransportServer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer" />
+  <TypeSignature Language="VB.NET" Value="Public Class NamedPipeServer&#xA;Implements IStreamingTransportServer" />
+  <TypeSignature Language="F#" Value="type NamedPipeServer = class&#xA;    interface IStreamingTransportServer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Streaming.Transport.IStreamingTransportServer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A server for use with the Bot Framework Protocol V3 with Streaming Extensions and an underlying Named Pipe transport.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeServer (string baseName, Microsoft.Bot.Streaming.RequestHandler requestHandler, bool autoReconnect = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string baseName, class Microsoft.Bot.Streaming.RequestHandler requestHandler, bool autoReconnect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.#ctor(System.String,Microsoft.Bot.Streaming.RequestHandler,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer : string * Microsoft.Bot.Streaming.RequestHandler * bool -&gt; Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer" Usage="new Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer (baseName, requestHandler, autoReconnect)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseName" Type="System.String" />
+        <Parameter Name="requestHandler" Type="Microsoft.Bot.Streaming.RequestHandler" />
+        <Parameter Name="autoReconnect" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseName">The named pipe to connect to.</param>
+        <param name="requestHandler">A <see cref="T:Microsoft.Bot.Streaming.RequestHandler" /> to process incoming messages received by this server.</param>
+        <param name="autoReconnect">Optional setting to determine if the server sould attempt to reconnect
+            automatically on disconnection events. Defaults to true.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer" /> class.
+            Throws <see cref="T:System.ArgumentNullException" /> on null arguments.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disconnect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="F#" Value="member this.Disconnect : unit -&gt; unit" Usage="namedPipeServer.Disconnect " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disconnects the NamedPipeServer.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnected">
+      <MemberSignature Language="C#" Value="public event Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler Disconnected;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler Disconnected" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.Disconnected" />
+      <MemberSignature Language="VB.NET" Value="Public Event Disconnected As DisconnectedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Disconnected : Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler " Usage="member this.Disconnected : Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer.Disconnected</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An event to be fired when the underlying transport is disconnected. Any application communicating with this server should subscribe to this event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool" Usage="Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.IsConnected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not this server is currently connected.
+            </summary>
+        <value>
+            True if this server is connected and ready to send and receive messages, otherwise false.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync (Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync(class Microsoft.Bot.Streaming.StreamingRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.SendAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&#xA;override this.SendAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="namedPipeServer.SendAsync (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer.SendAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.StreamingRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to send.</param>
+        <param name="cancellationToken">Optional <see cref="T:System.Threading.CancellationToken" /> used to signal this operation should be cancelled.</param>
+        <summary>
+            Task used to send data over this server connection.
+            Throws <see cref="T:System.InvalidOperationException" /> if called when server is not connected.
+            Throws <see cref="T:System.ArgumentNullException" /> if request is null.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> of type <see cref="T:Microsoft.Bot.Streaming.ReceiveResponse" /> handling the send operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.StartAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.StartAsync : unit -&gt; System.Threading.Tasks.Task" Usage="namedPipeServer.StartAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer.StartAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Used to establish the connection used by this server and begin listening for incoming messages.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> to handle the server listen operation. This task will not resolve as long as the server is running.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
