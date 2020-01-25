@@ -1,4 +1,4 @@
-﻿<Type Name="Pair&lt;T1,T2&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Pair&lt;T1,T2&gt;">
+<Type Name="Pair&lt;T1,T2&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Pair&lt;T1,T2&gt;">
   <TypeSignature Language="C#" Value="public struct Pair&lt;T1,T2&gt; : IComparable&lt;Microsoft.Bot.Builder.Internals.Fibers.Pair&lt;T1,T2&gt;&gt;, IEquatable&lt;Microsoft.Bot.Builder.Internals.Fibers.Pair&lt;T1,T2&gt;&gt; where T1 : IEquatable&lt;T1&gt;, IComparable&lt;T1&gt; where T2 : IEquatable&lt;T2&gt;, IComparable&lt;T2&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Pair`2&lt;(class System.IEquatable`1&lt;!T1&gt;, class System.IComparable`1&lt;!T1&gt;) T1, (class System.IEquatable`1&lt;!T2&gt;, class System.IComparable`1&lt;!T2&gt;) T2&gt; extends System.ValueType implements class System.IComparable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Pair`2&lt;!T1, !T2&gt;&gt;, class System.IEquatable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Pair`2&lt;!T1, !T2&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Pair`2" />

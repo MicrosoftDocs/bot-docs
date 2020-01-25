@@ -1,4 +1,4 @@
-﻿<Type Name="DialogTaskManager" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager">
+<Type Name="DialogTaskManager" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager">
   <TypeSignature Language="C#" Value="public sealed class DialogTaskManager : Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogTaskManager extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManager" />

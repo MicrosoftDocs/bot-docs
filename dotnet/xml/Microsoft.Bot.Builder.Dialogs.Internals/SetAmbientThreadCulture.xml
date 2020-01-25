@@ -1,4 +1,4 @@
-﻿<Type Name="SetAmbientThreadCulture" FullName="Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture">
+<Type Name="SetAmbientThreadCulture" FullName="Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture">
   <TypeSignature Language="C#" Value="public sealed class SetAmbientThreadCulture : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SetAmbientThreadCulture extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.SetAmbientThreadCulture" />

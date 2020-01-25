@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizeString&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString&lt;T&gt;">
+<Type Name="RecognizeString&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class RecognizeString&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RecognizeString`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeString`1" />

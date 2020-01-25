@@ -1,4 +1,4 @@
-﻿<Type Name="BotAuthenticationOptions" FullName="Microsoft.Bot.Connector.BotAuthenticationOptions">
+<Type Name="BotAuthenticationOptions" FullName="Microsoft.Bot.Connector.BotAuthenticationOptions">
   <TypeSignature Language="C#" Value="public sealed class BotAuthenticationOptions : Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotAuthenticationOptions extends Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticationOptions" />

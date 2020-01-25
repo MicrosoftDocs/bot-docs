@@ -1,0 +1,251 @@
+<Type Name="Element" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element">
+  <TypeSignature Language="C#" Value="public class Element" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Element extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element" />
+  <TypeSignature Language="VB.NET" Value="Public Class Element" />
+  <TypeSignature Language="F#" Value="type Element = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents an element of a Template Message.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Element ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buttons">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button&gt; Buttons { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button&gt; Buttons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Buttons" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buttons As List(Of Button)" />
+      <MemberSignature Language="F#" Value="member this.Buttons : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button&gt;" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Buttons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a list of buttons for the element.
+            </summary>
+        <value>The list of buttons for the element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultAction">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction DefaultAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction DefaultAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.DefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultAction As DefaultAction" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.DefaultAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="default_action")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the default action for the element.
+            </summary>
+        <value>The default action for the element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageUrl">
+      <MemberSignature Language="C#" Value="public Uri ImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ImageUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As Uri" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : Uri with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="image_url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the url of the image.
+            </summary>
+        <value>The url of the image.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaType">
+      <MemberSignature Language="C#" Value="public string MediaType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MediaType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.MediaType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaType As String" />
+      <MemberSignature Language="F#" Value="member this.MediaType : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.MediaType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="media_type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of the media element.
+            </summary>
+        <value>The type of the media element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeButtons">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeButtons ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeButtons() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ShouldSerializeButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeButtons () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeButtons : unit -&gt; bool" Usage="element.ShouldSerializeButtons " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Newtonsoft Json method for conditionally serializing Buttons property.
+            </summary>
+        <returns>A boolean with the value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtitle">
+      <MemberSignature Language="C#" Value="public string Subtitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Subtitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subtitle As String" />
+      <MemberSignature Language="F#" Value="member this.Subtitle : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Subtitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subtitle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the subtitle text of the element.
+            </summary>
+        <value>The subtitle of the element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the title of the element.
+            </summary>
+        <value>The title of the element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public Uri Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the url of the media element.
+            </summary>
+        <value>Url of the media element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

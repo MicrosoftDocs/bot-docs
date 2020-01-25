@@ -1,0 +1,121 @@
+<Type Name="MessageActionsPayloadBody" FullName="Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody">
+  <TypeSignature Language="C#" Value="public class MessageActionsPayloadBody" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageActionsPayloadBody extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageActionsPayloadBody" />
+  <TypeSignature Language="F#" Value="type MessageActionsPayloadBody = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Plaintext/HTML representation of the content of the message.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadBody class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadBody (string contentType = null, string content = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = null, Optional content As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody : string * string -&gt; Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody" Usage="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody (contentType, content)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contentType">Type of the content. Possible values
+            include: 'html', 'text'</param>
+        <param name="content">The content of the body.</param>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadBody class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public string Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As String" />
+      <MemberSignature Language="F#" Value="member this.Content : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="content")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content of the body.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contentType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of the content. Possible values include: 'html',
+            'text'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

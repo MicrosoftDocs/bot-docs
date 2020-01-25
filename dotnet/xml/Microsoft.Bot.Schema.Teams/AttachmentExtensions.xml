@@ -1,0 +1,50 @@
+<Type Name="AttachmentExtensions" FullName="Microsoft.Bot.Schema.Teams.AttachmentExtensions">
+  <TypeSignature Language="C#" Value="public static class AttachmentExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AttachmentExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.AttachmentExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module AttachmentExtensions" />
+  <TypeSignature Language="F#" Value="type AttachmentExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Attachment extensions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToMessagingExtensionAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment ToMessagingExtensionAttachment (this Microsoft.Bot.Schema.Attachment attachment, Microsoft.Bot.Schema.Attachment previewAttachment = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment ToMessagingExtensionAttachment(class Microsoft.Bot.Schema.Attachment attachment, class Microsoft.Bot.Schema.Attachment previewAttachment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.AttachmentExtensions.ToMessagingExtensionAttachment(Microsoft.Bot.Schema.Attachment,Microsoft.Bot.Schema.Attachment)" />
+      <MemberSignature Language="F#" Value="static member ToMessagingExtensionAttachment : Microsoft.Bot.Schema.Attachment * Microsoft.Bot.Schema.Attachment -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment" Usage="Microsoft.Bot.Schema.Teams.AttachmentExtensions.ToMessagingExtensionAttachment (attachment, previewAttachment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachment" Type="Microsoft.Bot.Schema.Attachment" RefType="this" />
+        <Parameter Name="previewAttachment" Type="Microsoft.Bot.Schema.Attachment" />
+      </Parameters>
+      <Docs>
+        <param name="attachment">The attachment.</param>
+        <param name="previewAttachment">The preview attachment.</param>
+        <summary>
+            Converts normal attachment into the messaging extension attachment.
+            </summary>
+        <returns>Messaging extension attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

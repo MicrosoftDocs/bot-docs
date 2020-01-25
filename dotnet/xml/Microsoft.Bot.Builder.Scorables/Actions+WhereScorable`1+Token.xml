@@ -1,4 +1,4 @@
-﻿<Type Name="Actions+WhereScorable&lt;Score&gt;+Token" FullName="Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;+Token">
+<Type Name="Actions+WhereScorable&lt;Score&gt;+Token" FullName="Microsoft.Bot.Builder.Scorables.Actions+WhereScorable&lt;Score&gt;+Token">
   <TypeSignature Language="C#" Value="public sealed class Actions.WhereScorable&lt;Score&gt;.Token : Microsoft.Bot.Builder.Scorables.Internals.Token&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Actions/WhereScorable`1/Token&lt;Score&gt; extends Microsoft.Bot.Builder.Scorables.Internals.Token`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions.WhereScorable`1.Token" />

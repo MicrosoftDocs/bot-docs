@@ -1,4 +1,4 @@
-﻿<Type Name="BotToUserQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue">
+<Type Name="BotToUserQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue">
   <TypeSignature Language="C#" Value="public sealed class BotToUserQueue : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotToUserQueue extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.BotToUserQueue" />

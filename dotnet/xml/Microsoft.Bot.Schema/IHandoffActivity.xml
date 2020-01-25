@@ -1,4 +1,4 @@
-﻿<Type Name="IHandoffActivity" FullName="Microsoft.Bot.Schema.IHandoffActivity">
+<Type Name="IHandoffActivity" FullName="Microsoft.Bot.Schema.IHandoffActivity">
   <TypeSignature Language="C#" Value="public interface IHandoffActivity : Microsoft.Bot.Schema.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHandoffActivity implements class Microsoft.Bot.Schema.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IHandoffActivity" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>

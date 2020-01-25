@@ -1,4 +1,4 @@
-﻿<Type Name="EntityRecommendation" FullName="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation">
+<Type Name="EntityRecommendation" FullName="Microsoft.Bot.Builder.Luis.Models.EntityRecommendation">
   <TypeSignature Language="C#" Value="public class EntityRecommendation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EntityRecommendation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" />

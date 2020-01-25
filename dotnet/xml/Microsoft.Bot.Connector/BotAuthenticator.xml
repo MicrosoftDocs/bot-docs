@@ -1,4 +1,4 @@
-﻿<Type Name="BotAuthenticator" FullName="Microsoft.Bot.Connector.BotAuthenticator">
+<Type Name="BotAuthenticator" FullName="Microsoft.Bot.Connector.BotAuthenticator">
   <TypeSignature Language="C#" Value="public sealed class BotAuthenticator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BotAuthenticator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator" />

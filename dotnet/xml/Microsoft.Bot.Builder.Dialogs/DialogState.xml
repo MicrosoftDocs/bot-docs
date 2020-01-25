@@ -1,4 +1,4 @@
-﻿<Type Name="DialogState" FullName="Microsoft.Bot.Builder.Dialogs.DialogState">
+<Type Name="DialogState" FullName="Microsoft.Bot.Builder.Dialogs.DialogState">
   <TypeSignature Language="C#" Value="public class DialogState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogState extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogState" />
@@ -11,13 +11,16 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Contains state information for the dialog stack.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,11 +37,16 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogState" /> class.
+            </summary>
+        <remarks>The new instance is created with an empty dialog stack.</remarks>
+        <altmember cref="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Stack" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogSet.#ctor(Microsoft.Bot.Builder.IStatePropertyAccessor{Microsoft.Bot.Builder.Dialogs.DialogState})" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,22 +63,26 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="stack" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;" />
       </Parameters>
       <Docs>
-        <param name="stack">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stack">The state information to initialize the stack with.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogState" /> class.
+            </summary>
+        <remarks>The new instance has a dialog stack that is populated using the information
+            in <paramref name="stack" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DialogStack">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; DialogStack { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; DialogStack { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; DialogStack" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogState.DialogStack" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DialogStack As List(Of DialogInstance)" />
-      <MemberSignature Language="F#" Value="member this.DialogStack : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;" Usage="Microsoft.Bot.Builder.Dialogs.DialogState.DialogStack" />
+      <MemberSignature Language="VB.NET" Value="Public Property DialogStack As List(Of DialogInstance)" />
+      <MemberSignature Language="F#" Value="member this.DialogStack : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogState.DialogStack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
@@ -79,13 +91,21 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("dialogStack")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the state information for a dialog stack.
+            </summary>
+        <value>State information for a dialog stack.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

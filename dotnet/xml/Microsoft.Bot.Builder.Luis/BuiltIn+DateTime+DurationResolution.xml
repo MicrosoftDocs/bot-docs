@@ -1,4 +1,4 @@
-﻿<Type Name="BuiltIn+DateTime+DurationResolution" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DurationResolution">
+<Type Name="BuiltIn+DateTime+DurationResolution" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DurationResolution">
   <TypeSignature Language="C#" Value="public sealed class BuiltIn.DateTime.DurationResolution" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit BuiltIn/DateTime/DurationResolution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DurationResolution" />

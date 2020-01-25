@@ -1,0 +1,117 @@
+<Type Name="TransportConstants" FullName="Microsoft.Bot.Streaming.Transport.TransportConstants">
+  <TypeSignature Language="C#" Value="public class TransportConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransportConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Transport.TransportConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransportConstants" />
+  <TypeSignature Language="F#" Value="type TransportConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransportConstants ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.TransportConstants.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxHeaderLength">
+      <MemberSignature Language="C#" Value="public const int MaxHeaderLength = 48;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxHeaderLength = (48)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Transport.TransportConstants.MaxHeaderLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const MaxHeaderLength As Integer  = 48" />
+      <MemberSignature Language="F#" Value="val mutable MaxHeaderLength : int" Usage="Microsoft.Bot.Streaming.Transport.TransportConstants.MaxHeaderLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>48</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLength">
+      <MemberSignature Language="C#" Value="public const int MaxLength = 999999;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxLength = (999999)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Transport.TransportConstants.MaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const MaxLength As Integer  = 999999" />
+      <MemberSignature Language="F#" Value="val mutable MaxLength : int" Usage="Microsoft.Bot.Streaming.Transport.TransportConstants.MaxLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>999999</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPayloadLength">
+      <MemberSignature Language="C#" Value="public const int MaxPayloadLength = 4096;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxPayloadLength = (4096)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Transport.TransportConstants.MaxPayloadLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const MaxPayloadLength As Integer  = 4096" />
+      <MemberSignature Language="F#" Value="val mutable MaxPayloadLength : int" Usage="Microsoft.Bot.Streaming.Transport.TransportConstants.MaxPayloadLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4096</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinLength">
+      <MemberSignature Language="C#" Value="public const int MinLength = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MinLength = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Transport.TransportConstants.MinLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const MinLength As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable MinLength : int" Usage="Microsoft.Bot.Streaming.Transport.TransportConstants.MinLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

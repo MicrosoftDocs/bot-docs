@@ -1,4 +1,4 @@
-﻿<Type Name="IMessageDeleteActivity" FullName="Microsoft.Bot.Schema.IMessageDeleteActivity">
+<Type Name="IMessageDeleteActivity" FullName="Microsoft.Bot.Schema.IMessageDeleteActivity">
   <TypeSignature Language="C#" Value="public interface IMessageDeleteActivity : Microsoft.Bot.Schema.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageDeleteActivity implements class Microsoft.Bot.Schema.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IMessageDeleteActivity" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
