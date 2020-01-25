@@ -596,11 +596,6 @@
       "redirect_document_id": true 
     },
     {
-      "source_path": "articles/python/bot-builder-python-quickstart.md",
-      "redirect_url": "https://github.com/Microsoft/botbuilder-python/wiki",
-      "redirect_document_id": true 
-    },
-    {
       "source_path": "articles/rest-api/bot-framework-rest-direct-line-concepts.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts",
       "redirect_document_id": true 

@@ -1,4 +1,4 @@
-﻿<Type Name="IFieldDescription" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription">
+<Type Name="IFieldDescription" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription">
   <TypeSignature Language="C#" Value="public interface IFieldDescription" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldDescription" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldDescription" />

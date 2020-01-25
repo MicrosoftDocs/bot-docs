@@ -1,0 +1,39 @@
+<Type Name="IItemIdentity" FullName="Microsoft.Bot.Builder.Dialogs.IItemIdentity">
+  <TypeSignature Language="C#" Value="public interface IItemIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IItemIdentity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IItemIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IItemIdentity" />
+  <TypeSignature Language="F#" Value="type IItemIdentity = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetIdentity">
+      <MemberSignature Language="C#" Value="public string GetIdentity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetIdentity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IItemIdentity.GetIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIdentity () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetIdentity : unit -&gt; string" Usage="iItemIdentity.GetIdentity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

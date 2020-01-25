@@ -1,4 +1,4 @@
-﻿<Type Name="MicrosoftPayMethodData" FullName="Microsoft.Bot.Connector.MicrosoftPayMethodData">
+<Type Name="MicrosoftPayMethodData" FullName="Microsoft.Bot.Connector.MicrosoftPayMethodData">
   <TypeSignature Language="C#" Value="public class MicrosoftPayMethodData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MicrosoftPayMethodData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.MicrosoftPayMethodData" />

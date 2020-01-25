@@ -1,4 +1,4 @@
-﻿<Type Name="ShowTypingMiddleware" FullName="Microsoft.Bot.Builder.ShowTypingMiddleware">
+<Type Name="ShowTypingMiddleware" FullName="Microsoft.Bot.Builder.ShowTypingMiddleware">
   <TypeSignature Language="C#" Value="public class ShowTypingMiddleware : Microsoft.Bot.Builder.IMiddleware" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ShowTypingMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ShowTypingMiddleware" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,7 +24,7 @@
   <Docs>
     <summary>
             When added, this middleware will send typing activities back to the user when a Message activity
-            is receieved to let them know that the bot has receieved the message and is working on the response.
+            is received to let them know that the bot has received the message and is working on the response.
             You can specify a delay in milliseconds before the first typing activity is sent and then a frequency,
             also in milliseconds which determines how often another typing activity is sent. Typing activities
             will continue to be sent until your bot sends another message back to the user.
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="delay" Type="System.Int32" />
@@ -75,6 +77,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -90,7 +93,7 @@
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Processess an incoming activity.
+            Processes an incoming activity.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>Spawns a thread that sends the periodic typing activities until the turn ends.

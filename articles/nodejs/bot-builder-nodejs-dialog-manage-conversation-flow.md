@@ -1,5 +1,5 @@
 ---
-title: Manage a conversation flow with dialogs | Microsoft Docs
+title: Manage a conversation flow with dialogs - Bot Service
 description: Learn how to manage a conversation between a bot and a user with dialogs in the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani

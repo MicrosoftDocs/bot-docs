@@ -1,4 +1,4 @@
-﻿<Type Name="WaterfallStep" FullName="Microsoft.Bot.Builder.Dialogs.WaterfallStep">
+<Type Name="WaterfallStep" FullName="Microsoft.Bot.Builder.Dialogs.WaterfallStep">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; WaterfallStep(WaterfallStepContext stepContext, CancellationToken cancellationToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WaterfallStep extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.WaterfallStep" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

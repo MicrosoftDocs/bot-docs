@@ -1,4 +1,4 @@
-﻿<Type Name="NextDelegate&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate&lt;T&gt;">
+<Type Name="NextDelegate&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate&lt;T&gt;">
   <TypeSignature Language="C#" Value="public delegate Microsoft.Bot.Builder.FormFlow.Advanced.NextStep NextDelegate&lt;T&gt;(object value, T state) where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NextDelegate`1&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.NextDelegate`1" />

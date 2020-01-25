@@ -1,4 +1,4 @@
-﻿<Type Name="ChannelCapability" FullName="Microsoft.Bot.Builder.Dialogs.ChannelCapability">
+<Type Name="ChannelCapability" FullName="Microsoft.Bot.Builder.Dialogs.ChannelCapability">
   <TypeSignature Language="C#" Value="public sealed class ChannelCapability : Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelCapability extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IChannelCapability" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChannelCapability" />

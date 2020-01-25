@@ -1,5 +1,5 @@
 ---
-title: Guide to IDs in the Bot Framework | Microsoft Docs
+title: Guide to IDs in the Bot Framework - Bot Service
 description: This guide describes the characteristics of ID fields present in the Bot Framework v3 protocol.
 keywords: id, bots, protocol
 author: RobStand

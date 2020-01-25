@@ -1,4 +1,4 @@
-﻿<Type Name="LuisResult" FullName="Microsoft.Bot.Builder.Luis.Models.LuisResult">
+<Type Name="LuisResult" FullName="Microsoft.Bot.Builder.Luis.Models.LuisResult">
   <TypeSignature Language="C#" Value="public class LuisResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.LuisResult" />

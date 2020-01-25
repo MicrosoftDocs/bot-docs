@@ -1,5 +1,5 @@
 ---
-title: Send and receive text message | Microsoft Docs
+title: Send and receive text message - Bot Service
 description: Learn about how to send and receive text messages within the Bot Framework SDK.
 keywords: sending message, message activities, simple text message, message, text message, receive message  
 author: ivorb
@@ -40,6 +40,15 @@ In the bot's activity handlers, use the turn context object's `sendActivity` met
 ```javascript
 await context.sendActivity("Welcome!");
 ```
+
+# [Python](#tab/python)
+
+In the bot's activity handlers, use the turn context object's `send_activity` method to send a single message response.
+
+```python
+await turn_context.send_activity("Welcome!")
+```
+
 ---
 ## Receive a text message
 
@@ -59,6 +68,14 @@ In the bot's activity handlers, use the following code to receive a message.
 
 ```javascript
 let text = turnContext.activity.text;
+```
+
+# [Python](#tab/python)
+
+In the bot's activity handlers, use the following code to receive a message.
+
+```python
+response = context.activity.text
 ```
 
 ---

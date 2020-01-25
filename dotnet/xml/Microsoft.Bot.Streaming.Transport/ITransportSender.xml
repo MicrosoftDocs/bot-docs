@@ -1,0 +1,53 @@
+<Type Name="ITransportSender" FullName="Microsoft.Bot.Streaming.Transport.ITransportSender">
+  <TypeSignature Language="C#" Value="public interface ITransportSender : IDisposable, Microsoft.Bot.Streaming.Transport.ITransport" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransportSender implements class Microsoft.Bot.Streaming.Transport.ITransport, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Transport.ITransportSender" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITransportSender&#xA;Implements IDisposable, ITransport" />
+  <TypeSignature Language="F#" Value="type ITransportSender = interface&#xA;    interface ITransport&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Streaming.Transport.ITransport</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; SendAsync (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; SendAsync(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.ITransportSender.SendAsync(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (buffer As Byte(), offset As Integer, count As Integer) As Task(Of Integer)" />
+      <MemberSignature Language="F#" Value="abstract member SendAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="iTransportSender.SendAsync (buffer, offset, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="IEndOfConversationActivity" FullName="Microsoft.Bot.Connector.IEndOfConversationActivity">
+<Type Name="IEndOfConversationActivity" FullName="Microsoft.Bot.Connector.IEndOfConversationActivity">
   <TypeSignature Language="C#" Value="public interface IEndOfConversationActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEndOfConversationActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IEndOfConversationActivity" />

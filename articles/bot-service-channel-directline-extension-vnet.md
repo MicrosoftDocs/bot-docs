@@ -17,8 +17,8 @@ This article describes how to use the Direct Line App Service Extension with an 
 ## Create an App Service Environment and other Azure resources
 
 1. Direct line app service extension is available on all **Azure App Services**, including those hosted within an **Azure App Service Environment**. An Azure App Service Environment provides isolation and is ideal for working within a VNET.
-    - Instructions for creating an external App Service Environment can be found in [Create an External App Service environment](https://docs.microsoft.com/en-us/azure/app-service/environment/create-external-ase) article.
-    - Instructions for creating an internal App Service Environment can be found in [Create and use an Internal Load Balancer App Service Environment](https://docs.microsoft.com/en-us/azure/app-service/environment/create-ilb-ase) article.
+    - Instructions for creating an external App Service Environment can be found in [Create an External App Service environment](https://docs.microsoft.com/azure/app-service/environment/create-external-ase) article.
+    - Instructions for creating an internal App Service Environment can be found in [Create and use an Internal Load Balancer App Service Environment](https://docs.microsoft.com/azure/app-service/environment/create-ilb-ase) article.
 1. Once you have created your App Service Environment, you need to add an App Service Plan inside of it where you can deploy your bots (and thus run Direct Line App Service Extension). To do this:
     - Go to https://portal.azure.com/
     - Create a new “App Service Plan” resource.

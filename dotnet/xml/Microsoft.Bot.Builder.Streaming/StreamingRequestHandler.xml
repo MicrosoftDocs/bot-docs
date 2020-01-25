@@ -1,0 +1,291 @@
+<Type Name="StreamingRequestHandler" FullName="Microsoft.Bot.Builder.Streaming.StreamingRequestHandler">
+  <TypeSignature Language="C#" Value="public class StreamingRequestHandler : Microsoft.Bot.Streaming.RequestHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamingRequestHandler extends Microsoft.Bot.Streaming.RequestHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamingRequestHandler&#xA;Inherits RequestHandler" />
+  <TypeSignature Language="F#" Value="type StreamingRequestHandler = class&#xA;    inherit RequestHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Streaming.RequestHandler</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StreamingRequestHandler (Microsoft.Bot.Builder.IBot bot, Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, System.Net.WebSockets.WebSocket socket, Microsoft.Extensions.Logging.ILogger logger = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.IBot bot, class Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, class System.Net.WebSockets.WebSocket socket, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.#ctor(Microsoft.Bot.Builder.IBot,Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor,System.Net.WebSockets.WebSocket,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bot As IBot, activityProcessor As IStreamingActivityProcessor, socket As WebSocket, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler : Microsoft.Bot.Builder.IBot * Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor * System.Net.WebSockets.WebSocket * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" Usage="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler (bot, activityProcessor, socket, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
+        <Parameter Name="activityProcessor" Type="Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor" />
+        <Parameter Name="socket" Type="System.Net.WebSockets.WebSocket" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="bot">The bot for which we handle requests.</param>
+        <param name="activityProcessor">The procesor for incoming requests.</param>
+        <param name="socket">The base socket to use when connecting to the channel.</param>
+        <param name="logger">Logger implementation for tracing and debugging information.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" /> class and
+            establishes a connection over a WebSocket to a streaming channel.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StreamingRequestHandler (Microsoft.Bot.Builder.IBot bot, Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, string pipeName, Microsoft.Extensions.Logging.ILogger logger = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.IBot bot, class Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, string pipeName, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.#ctor(Microsoft.Bot.Builder.IBot,Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor,System.String,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bot As IBot, activityProcessor As IStreamingActivityProcessor, pipeName As String, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler : Microsoft.Bot.Builder.IBot * Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor * string * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" Usage="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler (bot, activityProcessor, pipeName, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
+        <Parameter Name="activityProcessor" Type="Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor" />
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="bot">The bot for which we handle requests.</param>
+        <param name="activityProcessor">The processor for incoming requests.</param>
+        <param name="pipeName">The name of the Named Pipe to use when connecting to the channel.</param>
+        <param name="logger">Logger implementation for tracing and debugging information.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" /> class and
+            establishes a connection over a Named Pipe to a streaming channel.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationAddedTime">
+      <MemberSignature Language="C#" Value="public DateTime ConversationAddedTime (string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime ConversationAddedTime(string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ConversationAddedTime(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConversationAddedTime (conversationId As String) As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ConversationAddedTime : string -&gt; DateTime" Usage="streamingRequestHandler.ConversationAddedTime conversationId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">The id of the conversation.</param>
+        <summary>
+            Gets the <see cref="T:System.DateTime" /> when the conversation was added to this request handler.
+            </summary>
+        <returns>
+          <see cref="F:System.DateTime.MinValue" /> if conversation is not found, otherwise the <see cref="T:System.DateTime" />
+            the conversation was added to this <see cref="T:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForgetConversation">
+      <MemberSignature Language="C#" Value="public void ForgetConversation (string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForgetConversation(string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ForgetConversation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForgetConversation (conversationId As String)" />
+      <MemberSignature Language="F#" Value="member this.ForgetConversation : string -&gt; unit" Usage="streamingRequestHandler.ForgetConversation conversationId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">The ID of the conversation to remove.</param>
+        <summary>
+            Removes the given conversation from this instance of the StreamingRequestHandler's collection
+            of tracked conversations.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasConversation">
+      <MemberSignature Language="C#" Value="public bool HasConversation (string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasConversation(string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.HasConversation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasConversation (conversationId As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasConversation : string -&gt; bool" Usage="streamingRequestHandler.HasConversation conversationId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">The ID of the conversation to check for.</param>
+        <summary>
+            Checks to see if the set of conversations this StreamingRequestHandler has
+            received requests for contains the passed in conversation ID.
+            </summary>
+        <returns>True if the conversation ID was found in this StreamingRequestHandler's conversation set.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ListenAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ListenAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ListenAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListenAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.ListenAsync : unit -&gt; System.Threading.Tasks.Task" Usage="streamingRequestHandler.ListenAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Begins listening for incoming requests over this StreamingRequestHandler's server.
+            </summary>
+        <returns>A task that completes once the server is no longer listening.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequestAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync (Microsoft.Bot.Streaming.ReceiveRequest request, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; logger = null, object context = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync(class Microsoft.Bot.Streaming.ReceiveRequest request, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Streaming.RequestHandler&gt; logger, object context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ProcessRequestAsync(Microsoft.Bot.Streaming.ReceiveRequest,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Streaming.RequestHandler},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ProcessRequestAsync : Microsoft.Bot.Streaming.ReceiveRequest * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;" Usage="streamingRequestHandler.ProcessRequestAsync (request, logger, context, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.ReceiveRequest" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt;" />
+        <Parameter Name="context" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <param name="logger">To be added.</param>
+        <param name="context">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.SendActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SendActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="streamingRequestHandler.SendActivityAsync (activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity to send.</param>
+        <param name="cancellationToken">A cancellation token.</param>
+        <summary>
+            Converts an <see cref="T:Microsoft.Bot.Schema.Activity" /> into a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> and sends it to the
+            channel this StreamingRequestHandler is connected to.
+            </summary>
+        <returns>A task that resolves to a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendStreamingRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; SendStreamingRequestAsync (Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; SendStreamingRequestAsync(class Microsoft.Bot.Streaming.StreamingRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.SendStreamingRequestAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SendStreamingRequestAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="streamingRequestHandler.SendStreamingRequestAsync (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.StreamingRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">The request to send.</param>
+        <param name="cancellationToken">A cancellation token.</param>
+        <summary>
+            Sends a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to the connected streaming channel.
+            </summary>
+        <returns>A task that resolves to a <see cref="T:Microsoft.Bot.Streaming.ReceiveResponse" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceUrl">
+      <MemberSignature Language="C#" Value="public string ServiceUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ServiceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceUrl : string" Usage="Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ServiceUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the URL of the channel endpoint this StreamingRequestHandler receives requests from.
+            </summary>
+        <value>
+            The URL of the channel endpoint this StreamingRequestHandler receives requests from.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

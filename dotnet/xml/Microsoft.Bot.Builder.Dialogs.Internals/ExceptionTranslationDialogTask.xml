@@ -1,4 +1,4 @@
-﻿<Type Name="ExceptionTranslationDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask">
+<Type Name="ExceptionTranslationDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask">
   <TypeSignature Language="C#" Value="public sealed class ExceptionTranslationDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionTranslationDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ExceptionTranslationDialogTask" />

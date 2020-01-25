@@ -1,4 +1,4 @@
-﻿<Type Name="TelemetryBotIdInitializer" FullName="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryBotIdInitializer">
+<Type Name="TelemetryBotIdInitializer" FullName="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryBotIdInitializer">
   <TypeSignature Language="C#" Value="public class TelemetryBotIdInitializer : Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryBotIdInitializer extends System.Object implements class Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryBotIdInitializer" />
@@ -9,6 +9,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,6 +57,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -79,6 +82,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

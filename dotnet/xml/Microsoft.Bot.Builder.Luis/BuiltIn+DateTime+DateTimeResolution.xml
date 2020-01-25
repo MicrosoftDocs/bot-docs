@@ -1,4 +1,4 @@
-﻿<Type Name="BuiltIn+DateTime+DateTimeResolution" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DateTimeResolution">
+<Type Name="BuiltIn+DateTime+DateTimeResolution" FullName="Microsoft.Bot.Builder.Luis.BuiltIn+DateTime+DateTimeResolution">
   <TypeSignature Language="C#" Value="public sealed class BuiltIn.DateTime.DateTimeResolution : Microsoft.Bot.Builder.Luis.Resolution, IEquatable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit BuiltIn/DateTime/DateTimeResolution extends Microsoft.Bot.Builder.Luis.Resolution implements class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution" />
@@ -454,7 +454,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string text, [out] class Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DateTimeResolution&amp; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse(System.String,Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (text As String, ByRef resolution As BuiltIn.DateTime.DateTimeResolution) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse (text, resolution)" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * DateTimeResolution -&gt; bool" Usage="Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.TryParse (text, resolution)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

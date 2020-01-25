@@ -1,4 +1,4 @@
-﻿<Type Name="NumberPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;T&gt;">
+<Type Name="NumberPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.NumberPrompt&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class NumberPrompt&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Prompt&lt;T&gt; where T : struct" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberPrompt`1&lt;struct .ctor (class System.ValueType) T&gt; extends Microsoft.Bot.Builder.Dialogs.Prompt`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.NumberPrompt`1" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -46,6 +47,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -74,6 +76,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -99,6 +102,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -139,6 +143,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;&gt;</ReturnType>

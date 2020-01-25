@@ -1,4 +1,4 @@
-﻿<Type Name="IStatePropertyAccessor&lt;T&gt;" FullName="Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt;">
+<Type Name="IStatePropertyAccessor&lt;T&gt;" FullName="Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IStatePropertyAccessor&lt;T&gt; : Microsoft.Bot.Builder.IStatePropertyInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStatePropertyAccessor`1&lt;T&gt; implements class Microsoft.Bot.Builder.IStatePropertyInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.IStatePropertyAccessor`1" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -41,6 +42,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -72,6 +74,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -106,6 +109,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

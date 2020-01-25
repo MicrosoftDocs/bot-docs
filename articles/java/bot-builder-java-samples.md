@@ -1,5 +1,5 @@
 ---
-title: Sample bots for Bot Framework SDK for Java | Microsoft Docs
+title: Sample bots for Bot Framework SDK for Java - Bot Service
 description: Explore sample bots that can help kickstart your bot development with the Bot Framework SDK for Java.
 author: jonathanfingold
 ms.author: kamrani

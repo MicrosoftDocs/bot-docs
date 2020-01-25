@@ -1,4 +1,4 @@
-﻿<Type Name="Dimension" FullName="Microsoft.Bot.Builder.AI.Luis.Dimension">
+<Type Name="Dimension" FullName="Microsoft.Bot.Builder.AI.Luis.Dimension">
   <TypeSignature Language="C#" Value="public class Dimension : Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Dimension extends Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.Dimension" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.AI.Luis.NumberWithUnits</BaseTypeName>
@@ -37,6 +38,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="number" Type="System.Double" />
@@ -65,6 +67,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

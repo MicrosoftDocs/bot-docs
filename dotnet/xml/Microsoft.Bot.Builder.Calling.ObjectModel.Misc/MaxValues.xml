@@ -1,4 +1,4 @@
-﻿<Type Name="MaxValues" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues">
+<Type Name="MaxValues" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues">
   <TypeSignature Language="C#" Value="public static class MaxValues" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MaxValues extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MaxValues" />

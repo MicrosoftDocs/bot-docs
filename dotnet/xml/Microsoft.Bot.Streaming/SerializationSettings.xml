@@ -1,0 +1,108 @@
+<Type Name="SerializationSettings" FullName="Microsoft.Bot.Streaming.SerializationSettings">
+  <TypeSignature Language="C#" Value="public static class SerializationSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SerializationSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.SerializationSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class SerializationSettings" />
+  <TypeSignature Language="F#" Value="type SerializationSettings = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This class defines the settings used when serializing data contained by objects
+            included as part of the Bot Framework Protocol v3 with Streaming Extensions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationJson">
+      <MemberSignature Language="C#" Value="public const string ApplicationJson;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ApplicationJson" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.SerializationSettings.ApplicationJson" />
+      <MemberSignature Language="VB.NET" Value="Public Const ApplicationJson As String " />
+      <MemberSignature Language="F#" Value="val mutable ApplicationJson : string" Usage="Microsoft.Bot.Streaming.SerializationSettings.ApplicationJson" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The value that should be used as the content-type header for application json.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotSchemaSerializationSettings">
+      <MemberSignature Language="C#" Value="public static readonly Newtonsoft.Json.JsonSerializerSettings BotSchemaSerializationSettings;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Newtonsoft.Json.JsonSerializerSettings BotSchemaSerializationSettings" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.SerializationSettings.BotSchemaSerializationSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotSchemaSerializationSettings As JsonSerializerSettings " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotSchemaSerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Streaming.SerializationSettings.BotSchemaSerializationSettings" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The serialization settings for use when operating on objects defined within the bot schema.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDeserializationSettings">
+      <MemberSignature Language="C#" Value="public static readonly Newtonsoft.Json.JsonSerializerSettings DefaultDeserializationSettings;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Newtonsoft.Json.JsonSerializerSettings DefaultDeserializationSettings" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.SerializationSettings.DefaultDeserializationSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultDeserializationSettings As JsonSerializerSettings " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultDeserializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Streaming.SerializationSettings.DefaultDeserializationSettings" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default deserialization settings for use in most cases.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSerializationSettings">
+      <MemberSignature Language="C#" Value="public static readonly Newtonsoft.Json.JsonSerializerSettings DefaultSerializationSettings;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Newtonsoft.Json.JsonSerializerSettings DefaultSerializationSettings" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.SerializationSettings.DefaultSerializationSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultSerializationSettings As JsonSerializerSettings " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultSerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Streaming.SerializationSettings.DefaultSerializationSettings" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The default serialization settings for use in most cases.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

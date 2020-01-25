@@ -1,4 +1,4 @@
-﻿<Type Name="FormConfiguration" FullName="Microsoft.Bot.Builder.FormFlow.FormConfiguration">
+<Type Name="FormConfiguration" FullName="Microsoft.Bot.Builder.FormFlow.FormConfiguration">
   <TypeSignature Language="C#" Value="public class FormConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormConfiguration" />

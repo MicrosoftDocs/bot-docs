@@ -1,4 +1,4 @@
-﻿<Type Name="FieldReflector&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;T&gt;">
+<Type Name="FieldReflector&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class FieldReflector&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldReflector`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1" />

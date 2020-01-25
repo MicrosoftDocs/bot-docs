@@ -1,4 +1,4 @@
-﻿<Type Name="MinValues" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues">
+<Type Name="MinValues" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues">
   <TypeSignature Language="C#" Value="public static class MinValues" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MinValues extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MinValues" />

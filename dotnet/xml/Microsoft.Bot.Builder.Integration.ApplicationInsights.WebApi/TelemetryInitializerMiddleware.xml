@@ -1,0 +1,85 @@
+<Type Name="TelemetryInitializerMiddleware" FullName="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware">
+  <TypeSignature Language="C#" Value="public class TelemetryInitializerMiddleware : Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryInitializerMiddleware extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware" />
+  <TypeSignature Language="VB.NET" Value="Public Class TelemetryInitializerMiddleware&#xA;Implements IMiddleware" />
+  <TypeSignature Language="F#" Value="type TelemetryInitializerMiddleware = class&#xA;    interface IMiddleware" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IMiddleware</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Middleware for storing incoming activity on the HttpContext to make it available to the <see cref="T:Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryBotIdInitializer" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TelemetryInitializerMiddleware (Microsoft.Bot.Builder.TelemetryLoggerMiddleware telemetryLoggerMiddleware, bool logActivityTelemetry = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.TelemetryLoggerMiddleware telemetryLoggerMiddleware, bool logActivityTelemetry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware.#ctor(Microsoft.Bot.Builder.TelemetryLoggerMiddleware,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware : Microsoft.Bot.Builder.TelemetryLoggerMiddleware * bool -&gt; Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware" Usage="new Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware (telemetryLoggerMiddleware, logActivityTelemetry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="telemetryLoggerMiddleware" Type="Microsoft.Bot.Builder.TelemetryLoggerMiddleware" />
+        <Parameter Name="logActivityTelemetry" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="telemetryLoggerMiddleware">The TelemetryLoggerMiddleware to allow for logging of activity events.</param>
+        <param name="logActivityTelemetry">Indicates if the TelemetryLoggerMiddleware should be executed to log activity events.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurnAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.NextDelegate nextTurn, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Builder.NextDelegate nextTurn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi.TelemetryInitializerMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryInitializerMiddleware.OnTurnAsync (context, nextTurn, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="nextTurn" Type="Microsoft.Bot.Builder.NextDelegate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context object for this turn.</param>
+        <param name="nextTurn">The delegate to call to continue the bot middleware pipeline.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Stores the incoming activity as JSON in the items collection on the HttpContext.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
+        <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

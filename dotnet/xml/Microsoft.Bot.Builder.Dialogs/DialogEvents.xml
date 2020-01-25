@@ -1,0 +1,132 @@
+<Type Name="DialogEvents" FullName="Microsoft.Bot.Builder.Dialogs.DialogEvents">
+  <TypeSignature Language="C#" Value="public class DialogEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogEvents extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogEvents" />
+  <TypeSignature Language="F#" Value="type DialogEvents = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogEvents.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityReceived">
+      <MemberSignature Language="C#" Value="public const string ActivityReceived;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ActivityReceived" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogEvents.ActivityReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Const ActivityReceived As String " />
+      <MemberSignature Language="F#" Value="val mutable ActivityReceived : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogEvents.ActivityReceived" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDialog">
+      <MemberSignature Language="C#" Value="public const string BeginDialog;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BeginDialog" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogEvents.BeginDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Const BeginDialog As String " />
+      <MemberSignature Language="F#" Value="val mutable BeginDialog : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogEvents.BeginDialog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelDialog">
+      <MemberSignature Language="C#" Value="public const string CancelDialog;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CancelDialog" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogEvents.CancelDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Const CancelDialog As String " />
+      <MemberSignature Language="F#" Value="val mutable CancelDialog : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogEvents.CancelDialog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public const string Error;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Error" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogEvents.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Const Error As String " />
+      <MemberSignature Language="F#" Value="val mutable Error : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogEvents.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RepromptDialog">
+      <MemberSignature Language="C#" Value="public const string RepromptDialog;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RepromptDialog" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogEvents.RepromptDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Const RepromptDialog As String " />
+      <MemberSignature Language="F#" Value="val mutable RepromptDialog : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogEvents.RepromptDialog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

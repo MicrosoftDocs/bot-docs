@@ -1,4 +1,4 @@
-﻿<Type Name="IPromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer">
+<Type Name="IPromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizer">
   <TypeSignature Language="C#" Value="public interface IPromptRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />

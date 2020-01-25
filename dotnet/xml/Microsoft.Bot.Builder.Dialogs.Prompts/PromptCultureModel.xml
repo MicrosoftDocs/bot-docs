@@ -1,0 +1,183 @@
+<Type Name="PromptCultureModel" FullName="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel">
+  <TypeSignature Language="C#" Value="public class PromptCultureModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptCultureModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" />
+  <TypeSignature Language="VB.NET" Value="Public Class PromptCultureModel" />
+  <TypeSignature Language="F#" Value="type PromptCultureModel = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Culture model used in Choice and Confirm Prompts.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PromptCultureModel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineOr">
+      <MemberSignature Language="C#" Value="public string InlineOr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InlineOr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.InlineOr" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineOr As String" />
+      <MemberSignature Language="F#" Value="member this.InlineOr : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.InlineOr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets Culture Model's InlineOr.
+            </summary>
+        <value>
+            Ex: Locale. Example: " or ".
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineOrMore">
+      <MemberSignature Language="C#" Value="public string InlineOrMore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InlineOrMore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.InlineOrMore" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineOrMore As String" />
+      <MemberSignature Language="F#" Value="member this.InlineOrMore : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.InlineOrMore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets Culture Model's InlineOrMore.
+            </summary>
+        <value>
+            Ex: Locale. Example: ", or ".
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets Culture Model's Locale.
+            </summary>
+        <value>
+            Ex: Locale. Example: "en-US".
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoInLanguage">
+      <MemberSignature Language="C#" Value="public string NoInLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NoInLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.NoInLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoInLanguage As String" />
+      <MemberSignature Language="F#" Value="member this.NoInLanguage : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.NoInLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets Equivalent of "No" in Culture Model's Language.
+            </summary>
+        <value>
+            Ex: Locale. Example: "No".
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.Separator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
+      <MemberSignature Language="F#" Value="member this.Separator : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.Separator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets Culture Model's InlineSeparator.
+            </summary>
+        <value>
+            Ex: Locale. Example: ", ".
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YesInLanguage">
+      <MemberSignature Language="C#" Value="public string YesInLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string YesInLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.YesInLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property YesInLanguage As String" />
+      <MemberSignature Language="F#" Value="member this.YesInLanguage : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel.YesInLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets Equivalent of "Yes" in Culture Model's Language.
+            </summary>
+        <value>
+            Ex: Locale. Example: "Yes".
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

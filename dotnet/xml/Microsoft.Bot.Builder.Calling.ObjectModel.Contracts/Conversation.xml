@@ -1,4 +1,4 @@
-﻿<Type Name="Conversation" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation">
+<Type Name="Conversation" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation">
   <TypeSignature Language="C#" Value="public class Conversation : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Conversation extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ConversationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation" />

@@ -1,4 +1,4 @@
-﻿<Type Name="IEventActivity" FullName="Microsoft.Bot.Connector.IEventActivity">
+<Type Name="IEventActivity" FullName="Microsoft.Bot.Connector.IEventActivity">
   <TypeSignature Language="C#" Value="public interface IEventActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IEventActivity" />

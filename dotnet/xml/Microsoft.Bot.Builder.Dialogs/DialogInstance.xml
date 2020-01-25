@@ -1,4 +1,4 @@
-﻿<Type Name="DialogInstance" FullName="Microsoft.Bot.Builder.Dialogs.DialogInstance">
+<Type Name="DialogInstance" FullName="Microsoft.Bot.Builder.Dialogs.DialogInstance">
   <TypeSignature Language="C#" Value="public class DialogInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogInstance" />
@@ -11,14 +11,20 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{Id}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
-            Tracking information for a dialog on the stack.
+            Contains state information associated with a <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> on a dialog stack.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,6 +42,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,16 +64,48 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("id")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the dialog this instance is for.
+            Gets or sets the ID of the dialog.
             </summary>
         <value>
-            ID of the dialog this instance is for.
+            The ID of the dialog.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StackIndex">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; StackIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; StackIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogInstance.StackIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property StackIndex As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.StackIndex : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogInstance.StackIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a stack index. Positive values are indexes within the current DC and negative values are 
+            indexes in the parent DC.
+            </summary>
+        <value>
+            Positive values are indexes within the current DC and negative values are indexes in
+            the parent DC.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +124,13 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("state")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>

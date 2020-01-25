@@ -1,5 +1,5 @@
 ---
-title: Bot analytics | Microsoft Docs
+title: Bot analytics - Bot Service
 description: Learn how to use data collection and analysis to improve your bot with analytics in the Bot Framework.
 keywords: bot analytics, application insights, traffic, latency, integrations, AppInsights
 author: JonathanFingold

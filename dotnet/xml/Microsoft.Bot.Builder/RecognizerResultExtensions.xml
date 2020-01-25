@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizerResultExtensions" FullName="Microsoft.Bot.Builder.RecognizerResultExtensions">
+<Type Name="RecognizerResultExtensions" FullName="Microsoft.Bot.Builder.RecognizerResultExtensions">
   <TypeSignature Language="C#" Value="public static class RecognizerResultExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RecognizerResultExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RecognizerResultExtensions" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +38,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.String,System.Double&gt;</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="IEventProducer&lt;Event&gt;" FullName="Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;">
+<Type Name="IEventProducer&lt;Event&gt;" FullName="Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;">
   <TypeSignature Language="C#" Value="public interface IEventProducer&lt;in Event&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventProducer`1&lt;- Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.IEventProducer`1" />
