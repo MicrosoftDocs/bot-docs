@@ -1,4 +1,4 @@
-﻿<Type Name="ValidateResult" FullName="Microsoft.Bot.Builder.FormFlow.ValidateResult">
+<Type Name="ValidateResult" FullName="Microsoft.Bot.Builder.FormFlow.ValidateResult">
   <TypeSignature Language="C#" Value="public class ValidateResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidateResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.ValidateResult" />

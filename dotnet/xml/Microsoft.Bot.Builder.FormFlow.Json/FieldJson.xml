@@ -1,4 +1,4 @@
-﻿<Type Name="FieldJson" FullName="Microsoft.Bot.Builder.FormFlow.Json.FieldJson">
+<Type Name="FieldJson" FullName="Microsoft.Bot.Builder.FormFlow.Json.FieldJson">
   <TypeSignature Language="C#" Value="public class FieldJson : Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldJson extends Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;class Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Json.FieldJson" />
@@ -96,7 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Newtonsoft.Json.Linq.JObject FieldSchema(string path, [out] bool&amp; optional) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Json.FieldJson.FieldSchema(System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Function FieldSchema (path As String, ByRef optional As Boolean) As JObject" />
-      <MemberSignature Language="F#" Value="member this.FieldSchema : string *  -&gt; Newtonsoft.Json.Linq.JObject" Usage="fieldJson.FieldSchema (path, optional)" />
+      <MemberSignature Language="F#" Value="member this.FieldSchema : string * bool -&gt; Newtonsoft.Json.Linq.JObject" Usage="fieldJson.FieldSchema (path, optional)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>

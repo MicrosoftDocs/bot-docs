@@ -1,4 +1,4 @@
-﻿<Type Name="BotStateExtensions" FullName="Microsoft.Bot.Connector.BotStateExtensions">
+<Type Name="BotStateExtensions" FullName="Microsoft.Bot.Connector.BotStateExtensions">
   <TypeSignature Language="C#" Value="public static class BotStateExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BotStateExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotStateExtensions" />

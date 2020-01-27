@@ -1,4 +1,4 @@
-﻿<Type Name="MethodScorableFactory" FullName="Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory">
+<Type Name="MethodScorableFactory" FullName="Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory">
   <TypeSignature Language="C#" Value="public sealed class MethodScorableFactory : Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MethodScorableFactory extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableFactory" />

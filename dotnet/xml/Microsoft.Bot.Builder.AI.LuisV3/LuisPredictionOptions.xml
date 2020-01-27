@@ -1,0 +1,264 @@
+<Type Name="LuisPredictionOptions" FullName="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions">
+  <TypeSignature Language="C#" Value="public class LuisPredictionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisPredictionOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisPredictionOptions" />
+  <TypeSignature Language="F#" Value="type LuisPredictionOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Optional parameters for a LUIS prediction request.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisPredictionOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynamicLists">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.DynamicList&gt; DynamicLists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.AI.LuisV3.DynamicList&gt; DynamicLists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.DynamicLists" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicLists As IList(Of DynamicList)" />
+      <MemberSignature Language="F#" Value="member this.DynamicLists : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.DynamicList&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.DynamicLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.DynamicList&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets dynamic lists used to recognize entities for a particular query.
+            </summary>
+        <value>
+            Dynamic lists of things like contact names to recognize at query time.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalEntities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ExternalEntity&gt; ExternalEntities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.AI.LuisV3.ExternalEntity&gt; ExternalEntities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.ExternalEntities" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalEntities As IList(Of ExternalEntity)" />
+      <MemberSignature Language="F#" Value="member this.ExternalEntities : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ExternalEntity&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.ExternalEntities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ExternalEntity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets external entities recognized in the query.
+            </summary>
+        <value>
+            External entities recognized in query.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeAllIntents">
+      <MemberSignature Language="C#" Value="public bool IncludeAllIntents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeAllIntents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeAllIntents" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeAllIntents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeAllIntents : bool with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeAllIntents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether all intents come back or only the top one.
+            </summary>
+        <value>
+            True for returning all intents.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeAPIResults">
+      <MemberSignature Language="C#" Value="public bool IncludeAPIResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeAPIResults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeAPIResults" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeAPIResults As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeAPIResults : bool with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeAPIResults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Member is deprecated, please use LuisRecognizerOptionsV3 to set this value).")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether API results should be included.
+            </summary>
+        <value>True to include API results.</value>
+        <remarks>This is mainly useful for testing or getting access to LUIS features not yet in the SDK.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeInstanceData">
+      <MemberSignature Language="C#" Value="public bool IncludeInstanceData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInstanceData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeInstanceData" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeInstanceData As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeInstanceData : bool with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeInstanceData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether or not instance data should be included in response.
+            </summary>
+        <value>
+            A value indicating whether or not instance data should be included in response.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Log" />
+      <MemberSignature Language="VB.NET" Value="Public Property Log As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Log : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Log" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether queries should be logged in LUIS.
+            </summary>
+        <value>
+            If queries should be logged in LUIS in order to help build better models through active learning.
+            </value>
+        <remarks>The default is to log queries to LUIS in order to support active learning.  To default to the Luis setting set to null.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferExternalEntities">
+      <MemberSignature Language="C#" Value="public bool PreferExternalEntities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreferExternalEntities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.PreferExternalEntities" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferExternalEntities As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreferExternalEntities : bool with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.PreferExternalEntities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether external entities should override other means of recognizing entities.
+            </summary>
+        <value>
+            Boolean for if external entities should be preferred to the results from LUIS models.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slot">
+      <MemberSignature Language="C#" Value="public string Slot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Slot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Slot" />
+      <MemberSignature Language="VB.NET" Value="Public Property Slot As String" />
+      <MemberSignature Language="F#" Value="member this.Slot : string with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Slot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the LUIS slot to use for the application.
+            </summary>
+        <value>
+            The LUIS slot to use for the application.
+            </value>
+        <remarks>
+            By default this uses the production slot.  You can find other standard slots in <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.LuisSlot" />.
+            If you specify a Version, then a private version of the application is used instead of a slot.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the specific version of the application to access.
+            </summary>
+        <value>
+            Version to access.
+            </value>
+        <remarks>
+            LUIS supports versions and this is the version to use instead of a slot.
+            If this is specified, then the <see cref="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Slot" /> is ignored.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="PostUnhandledExceptionToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser">
+<Type Name="PostUnhandledExceptionToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser">
   <TypeSignature Language="C#" Value="public sealed class PostUnhandledExceptionToUser : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PostUnhandledExceptionToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.PostUnhandledExceptionToUser" />

@@ -1,4 +1,4 @@
-﻿<Type Name="PaymentAddress" FullName="Microsoft.Bot.Connector.PaymentAddress">
+<Type Name="PaymentAddress" FullName="Microsoft.Bot.Connector.PaymentAddress">
   <TypeSignature Language="C#" Value="public class PaymentAddress" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentAddress extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentAddress" />

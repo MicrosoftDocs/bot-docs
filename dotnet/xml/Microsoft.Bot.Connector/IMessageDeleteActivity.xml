@@ -1,4 +1,4 @@
-﻿<Type Name="IMessageDeleteActivity" FullName="Microsoft.Bot.Connector.IMessageDeleteActivity">
+<Type Name="IMessageDeleteActivity" FullName="Microsoft.Bot.Connector.IMessageDeleteActivity">
   <TypeSignature Language="C#" Value="public interface IMessageDeleteActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageDeleteActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IMessageDeleteActivity" />

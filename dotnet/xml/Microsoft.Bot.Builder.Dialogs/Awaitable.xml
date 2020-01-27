@@ -1,4 +1,4 @@
-﻿<Type Name="Awaitable" FullName="Microsoft.Bot.Builder.Dialogs.Awaitable">
+<Type Name="Awaitable" FullName="Microsoft.Bot.Builder.Dialogs.Awaitable">
   <TypeSignature Language="C#" Value="public class Awaitable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Awaitable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Awaitable" />

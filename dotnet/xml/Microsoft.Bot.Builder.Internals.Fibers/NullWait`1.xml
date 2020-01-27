@@ -1,4 +1,4 @@
-﻿<Type Name="NullWait&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;C&gt;">
+<Type Name="NullWait&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.NullWait&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class NullWait&lt;C&gt; : ICloneable, Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullWait`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IWait, class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.NullWait`1" />

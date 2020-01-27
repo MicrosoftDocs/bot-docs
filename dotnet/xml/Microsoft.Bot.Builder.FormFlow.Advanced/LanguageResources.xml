@@ -1,4 +1,4 @@
-﻿<Type Name="LanguageResources" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources">
+<Type Name="LanguageResources" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources">
   <TypeSignature Language="C#" Value="public class LanguageResources" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LanguageResources extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.LanguageResources" />

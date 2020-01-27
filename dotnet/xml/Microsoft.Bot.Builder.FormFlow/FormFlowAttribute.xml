@@ -1,4 +1,4 @@
-﻿<Type Name="FormFlowAttribute" FullName="Microsoft.Bot.Builder.FormFlow.FormFlowAttribute">
+<Type Name="FormFlowAttribute" FullName="Microsoft.Bot.Builder.FormFlow.FormFlowAttribute">
   <TypeSignature Language="C#" Value="public abstract class FormFlowAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit FormFlowAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />

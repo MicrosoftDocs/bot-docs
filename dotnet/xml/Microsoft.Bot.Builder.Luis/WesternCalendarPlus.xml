@@ -1,4 +1,4 @@
-﻿<Type Name="WesternCalendarPlus" FullName="Microsoft.Bot.Builder.Luis.WesternCalendarPlus">
+<Type Name="WesternCalendarPlus" FullName="Microsoft.Bot.Builder.Luis.WesternCalendarPlus">
   <TypeSignature Language="C#" Value="public sealed class WesternCalendarPlus : Microsoft.Bot.Builder.Luis.ICalendarPlus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WesternCalendarPlus extends System.Object implements class Microsoft.Bot.Builder.Luis.ICalendarPlus" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.WesternCalendarPlus" />

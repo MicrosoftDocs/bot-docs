@@ -1,4 +1,4 @@
-﻿<Type Name="IFieldState&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;T&gt;">
+<Type Name="IFieldState&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IFieldState&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldState`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1" />
@@ -135,7 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Limits([out] float64&amp; min, [out] float64&amp; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldState`1.Limits(System.Double@,System.Double@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Limits (ByRef min As Double, ByRef max As Double) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member Limits :  *  -&gt; bool" Usage="iFieldState.Limits (min, max)" />
+      <MemberSignature Language="F#" Value="abstract member Limits : double * double -&gt; bool" Usage="iFieldState.Limits (min, max)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

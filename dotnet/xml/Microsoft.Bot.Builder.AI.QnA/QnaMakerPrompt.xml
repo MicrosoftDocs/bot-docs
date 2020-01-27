@@ -1,0 +1,149 @@
+<Type Name="QnaMakerPrompt" FullName="Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt">
+  <TypeSignature Language="C#" Value="public class QnaMakerPrompt" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnaMakerPrompt extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnaMakerPrompt" />
+  <TypeSignature Language="F#" Value="type QnaMakerPrompt = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Prompt Object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnaMakerPrompt ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayOrder">
+      <MemberSignature Language="C#" Value="public int DisplayOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.DisplayOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayOrder As Integer" />
+      <MemberSignature Language="F#" Value="member this.DisplayOrder : int with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.DisplayOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("displayOrder")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets displayOrder - index of the prompt - used in ordering of the prompts.
+            </summary>
+        <value>Display order.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayText">
+      <MemberSignature Language="C#" Value="public string DisplayText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.DisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayText As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayText : string with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.DisplayText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("displayText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets displayText - Text displayed to represent a follow up question prompt.
+            </summary>
+        <value>Display test.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Qna">
+      <MemberSignature Language="C#" Value="public object Qna { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Qna" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.Qna" />
+      <MemberSignature Language="VB.NET" Value="Public Property Qna As Object" />
+      <MemberSignature Language="F#" Value="member this.Qna : obj with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.Qna" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("qna")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the QnADTO returned from the API.
+            </summary>
+        <value>
+            The QnA DTO.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnaId">
+      <MemberSignature Language="C#" Value="public int QnaId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 QnaId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.QnaId" />
+      <MemberSignature Language="VB.NET" Value="Public Property QnaId As Integer" />
+      <MemberSignature Language="F#" Value="member this.QnaId : int with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QnaMakerPrompt.QnaId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("qnaId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets qna id corresponding to the prompt - if QnaId is present, QnADTO object is ignored.
+            </summary>
+        <value>QnA Id.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

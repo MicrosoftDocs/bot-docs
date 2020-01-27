@@ -1,0 +1,166 @@
+<Type Name="PayloadReceiver" FullName="Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver">
+  <TypeSignature Language="C#" Value="public class PayloadReceiver : Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PayloadReceiver extends System.Object implements class Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver" />
+  <TypeSignature Language="VB.NET" Value="Public Class PayloadReceiver&#xA;Implements IPayloadReceiver" />
+  <TypeSignature Language="F#" Value="type PayloadReceiver = class&#xA;    interface IPayloadReceiver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PayloadReceiver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect (Microsoft.Bot.Streaming.Transport.ITransportReceiver receiver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect(class Microsoft.Bot.Streaming.Transport.ITransportReceiver receiver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Connect(Microsoft.Bot.Streaming.Transport.ITransportReceiver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Connect (receiver As ITransportReceiver)" />
+      <MemberSignature Language="F#" Value="abstract member Connect : Microsoft.Bot.Streaming.Transport.ITransportReceiver -&gt; unit&#xA;override this.Connect : Microsoft.Bot.Streaming.Transport.ITransportReceiver -&gt; unit" Usage="payloadReceiver.Connect receiver" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver.Connect(Microsoft.Bot.Streaming.Transport.ITransportReceiver)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="receiver" Type="Microsoft.Bot.Streaming.Transport.ITransportReceiver" />
+      </Parameters>
+      <Docs>
+        <param name="receiver">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect (Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs e = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect(class Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Disconnect(Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect (Optional e As DisconnectedEventArgs = null)" />
+      <MemberSignature Language="F#" Value="abstract member Disconnect : Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs -&gt; unit&#xA;override this.Disconnect : Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs -&gt; unit" Usage="payloadReceiver.Disconnect e" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver.Disconnect(Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnected">
+      <MemberSignature Language="C#" Value="public event Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler Disconnected;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler Disconnected" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Disconnected" />
+      <MemberSignature Language="VB.NET" Value="Public Event Disconnected As DisconnectedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Disconnected : Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler " Usage="member this.Disconnected : Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver.Disconnected</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool" Usage="Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.IsConnected" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver.IsConnected</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public void Subscribe (Func&lt;Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream&gt; getStream, Action&lt;Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,int&gt; receiveAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe(class System.Func`2&lt;class Microsoft.Bot.Streaming.Payloads.Header, class System.IO.Stream&gt; getStream, class System.Action`3&lt;class Microsoft.Bot.Streaming.Payloads.Header, class System.IO.Stream, int32&gt; receiveAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Subscribe(System.Func{Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream},System.Action{Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Subscribe (getStream As Func(Of Header, Stream), receiveAction As Action(Of Header, Stream, Integer))" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : Func&lt;Microsoft.Bot.Streaming.Payloads.Header, System.IO.Stream&gt; * Action&lt;Microsoft.Bot.Streaming.Payloads.Header, System.IO.Stream, int&gt; -&gt; unit&#xA;override this.Subscribe : Func&lt;Microsoft.Bot.Streaming.Payloads.Header, System.IO.Stream&gt; * Action&lt;Microsoft.Bot.Streaming.Payloads.Header, System.IO.Stream, int&gt; -&gt; unit" Usage="payloadReceiver.Subscribe (getStream, receiveAction)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver.Subscribe(System.Func{Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream},System.Action{Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="getStream" Type="System.Func&lt;Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream&gt;" />
+        <Parameter Name="receiveAction" Type="System.Action&lt;Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="getStream">To be added.</param>
+        <param name="receiveAction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

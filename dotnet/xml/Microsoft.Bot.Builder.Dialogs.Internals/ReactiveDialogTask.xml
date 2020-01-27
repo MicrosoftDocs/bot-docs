@@ -1,4 +1,4 @@
-﻿<Type Name="ReactiveDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask">
+<Type Name="ReactiveDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask">
   <TypeSignature Language="C#" Value="public sealed class ReactiveDialogTask : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReactiveDialogTask extends System.Object implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ReactiveDialogTask" />

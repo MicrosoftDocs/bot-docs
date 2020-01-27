@@ -1,4 +1,4 @@
-﻿<Type Name="DateTimeSpec" FullName="Microsoft.Bot.Builder.AI.Luis.DateTimeSpec">
+<Type Name="DateTimeSpec" FullName="Microsoft.Bot.Builder.AI.Luis.DateTimeSpec">
   <TypeSignature Language="C#" Value="public class DateTimeSpec" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateTimeSpec extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.DateTimeSpec" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -41,6 +42,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -72,6 +74,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -105,6 +108,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -131,6 +135,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -148,7 +153,7 @@
             The type of expression.
             </value>
         <remarks>Example types include:
-            <list type="*"><item>time -- simple time expression like "3pm".</item><item>date -- simple date like "july 3rd".</item><item>datetime -- combination of date and time like "march 23 2pm".</item><item>timerange -- a range of time like "2pm to 4pm".</item><item>daterange -- a range of dates like "march 23rd to 24th".</item><item>datetimerang -- a range of dates and times like "july 3rd 2pm to 5th 4pm".</item><item>set -- a recurrence like "every monday".</item></list></remarks>
+            <list type="*"><item>time -- simple time expression like "3pm".</item><item>date -- simple date like "july 3rd".</item><item>datetime -- combination of date and time like "march 23 2pm".</item><item>timerange -- a range of time like "2pm to 4pm".</item><item>daterange -- a range of dates like "march 23rd to 24th".</item><item>datetimerange -- a range of dates and times like "july 3rd 2pm to 5th 4pm".</item><item>set -- a recurrence like "every monday".</item></list></remarks>
       </Docs>
     </Member>
   </Members>

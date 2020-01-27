@@ -1,4 +1,4 @@
-﻿<Type Name="ITurnContextExtensions" FullName="Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions">
+<Type Name="ITurnContextExtensions" FullName="Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions">
   <TypeSignature Language="C#" Value="public static class ITurnContextExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ITurnContextExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +19,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Contains methods for woring with <see cref="T:Microsoft.Bot.Builder.ITurnContext" /> objects.
+            Contains methods for working with <see cref="T:Microsoft.Bot.Builder.ITurnContext" /> objects.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -68,7 +70,7 @@
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>If the adapter is being hosted in the Emulator, the task result contains
             a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object with the original trace activity's ID; otherwise,
-            it containsa <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
+            it contains a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
             channel assigned to the activity.</remarks>
       </Docs>
     </Member>

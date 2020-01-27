@@ -1,4 +1,4 @@
-﻿<Type Name="ISuggestionActivity" FullName="Microsoft.Bot.Schema.ISuggestionActivity">
+<Type Name="ISuggestionActivity" FullName="Microsoft.Bot.Schema.ISuggestionActivity">
   <TypeSignature Language="C#" Value="public interface ISuggestionActivity : Microsoft.Bot.Schema.IMessageActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISuggestionActivity implements class Microsoft.Bot.Schema.IActivity, class Microsoft.Bot.Schema.IMessageActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ISuggestionActivity" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -44,6 +45,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TextHighlight&gt;</ReturnType>

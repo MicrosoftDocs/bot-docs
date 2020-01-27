@@ -1,4 +1,4 @@
-﻿<Type Name="PaymentRequestCompleteResult" FullName="Microsoft.Bot.Connector.PaymentRequestCompleteResult">
+<Type Name="PaymentRequestCompleteResult" FullName="Microsoft.Bot.Connector.PaymentRequestCompleteResult">
   <TypeSignature Language="C#" Value="public class PaymentRequestCompleteResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestCompleteResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentRequestCompleteResult" />

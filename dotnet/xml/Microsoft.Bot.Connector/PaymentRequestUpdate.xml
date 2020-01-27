@@ -1,4 +1,4 @@
-﻿<Type Name="PaymentRequestUpdate" FullName="Microsoft.Bot.Connector.PaymentRequestUpdate">
+<Type Name="PaymentRequestUpdate" FullName="Microsoft.Bot.Connector.PaymentRequestUpdate">
   <TypeSignature Language="C#" Value="public class PaymentRequestUpdate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestUpdate extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentRequestUpdate" />
