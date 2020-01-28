@@ -27,7 +27,7 @@ This section describes how to enable the direct line app service extension using
 ## Update .NET Bot to use Direct Line App Service Extension
 
 > [!NOTE]
-> `Microsoft.Bot.Builder.StreamingExtensions` are preview packages and will not be updated. The SDK v4.7 contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming) and you do not need to install the Streaming Packages separately. If you have upgraded to SDK v4.7, refer to [additional information](bot-service-channel-directline-extension-net-bot.md#additional-information) for steps that should be modified in this section to enable the feature.
+> `Microsoft.Bot.Builder.StreamingExtensions` are preview packages and will not be updated. The SDK v4.7 contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming) and you do not need to install the Streaming Packages separately.
 
 1. In Visual Studio, open your bot project.
 2. Add the **Streaming Extension NuGet** package to your project:
