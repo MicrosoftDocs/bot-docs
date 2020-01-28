@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 01/28/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -46,6 +46,11 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 [!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
 
 ### Prepare for deployment
+
+> [!TIP]
+> This procedure uses a ZIP file to deploy your bot. In C#, This may fail if the solution configuration at build is set to **Debug**.
+> In Visual Studio, make sure that the solution configuration is set to **Release** and perform a clean rebuild of the solution before continuing.
+
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
 #### 1. Login to Azure
