@@ -84,9 +84,9 @@ In the last step, we check the `stepContext.Result` returned by the dialog calle
 
 # [JavaScript](#tab/javascript)
 
-To use dialogs, your project needs to install **botbuilder-dialogs** npm package.
+To use dialogs, your project needs to install the **botbuilder-dialogs** npm package.
 
-The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot`, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run` helper method to access the dialog.
+The bot interacts with the user via a `UserProfileDialog`. When we create the bot's `DialogBot`, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run` helper method to access the dialog.
 
 ![user profile dialog](media/user-profile-dialog-js.png)
 
@@ -192,11 +192,15 @@ The `OnMessageActivityAsync` handler uses the `RunAsync` method to start or cont
 
 # [JavaScript](#tab/javascript)
 
-The `onMessage` handler uses the helper method to start or continue the dialog. In `onDialog`, we use the bot's state management objects to persist any state changes to storage. The `onDialog` method gets called last after other defined handlers are run, such as `onMessage`. In this way, we are saving state after the message handler completes but before the turn itself completes.
+The `onMessage` method registers a listener that calls the dialog's `run` method to start or continue the dialog.
+
+Separately, the bot overrides the `ActivityHandler.run` method to save conversation and user state to storage. In this way, we are saving state after the message handler completes but before the turn itself completes.
 
 **bots/dialogBot.js**
 
-[!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-38&highlight=11-13)]
+[!code-javascript[message listener](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-31&highlight=5)]
+
+[!code-javascript[override](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=34-43&highlight=7-9)]
 
 # [Python](#tab/python)
 
