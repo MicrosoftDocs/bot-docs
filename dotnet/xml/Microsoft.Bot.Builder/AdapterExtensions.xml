@@ -1,0 +1,79 @@
+<Type Name="AdapterExtensions" FullName="Microsoft.Bot.Builder.AdapterExtensions">
+  <TypeSignature Language="C#" Value="public static class AdapterExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AdapterExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AdapterExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module AdapterExtensions" />
+  <TypeSignature Language="F#" Value="type AdapterExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseState">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.BotAdapter UseState (this Microsoft.Bot.Builder.BotAdapter botAdapter, Microsoft.Bot.Builder.UserState userState, Microsoft.Bot.Builder.ConversationState conversationState, bool auto = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.BotAdapter UseState(class Microsoft.Bot.Builder.BotAdapter botAdapter, class Microsoft.Bot.Builder.UserState userState, class Microsoft.Bot.Builder.ConversationState conversationState, bool auto) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AdapterExtensions.UseState(Microsoft.Bot.Builder.BotAdapter,Microsoft.Bot.Builder.UserState,Microsoft.Bot.Builder.ConversationState,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member UseState : Microsoft.Bot.Builder.BotAdapter * Microsoft.Bot.Builder.UserState * Microsoft.Bot.Builder.ConversationState * bool -&gt; Microsoft.Bot.Builder.BotAdapter" Usage="Microsoft.Bot.Builder.AdapterExtensions.UseState (botAdapter, userState, conversationState, auto)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botAdapter" Type="Microsoft.Bot.Builder.BotAdapter" RefType="this" />
+        <Parameter Name="userState" Type="Microsoft.Bot.Builder.UserState" />
+        <Parameter Name="conversationState" Type="Microsoft.Bot.Builder.ConversationState" />
+        <Parameter Name="auto" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="botAdapter">bot adapater to add save state to.</param>
+        <param name="userState">UserState to use (default is new UserState(registered storage)).</param>
+        <param name="conversationState">ConversationState to use (default is new ConversationState (registered storage)).</param>
+        <param name="auto">automatically manage state (default is true), if set to false, it is your responsibility to load and save state.</param>
+        <summary>
+            Register UserState and ConversationState objects so they are accessible via TurnContext.Get&lt;UserState&gt;() and add auto save middleware.
+            </summary>
+        <returns>Botadapter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseStorage">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.BotAdapter UseStorage (this Microsoft.Bot.Builder.BotAdapter botAdapter, Microsoft.Bot.Builder.IStorage storage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.BotAdapter UseStorage(class Microsoft.Bot.Builder.BotAdapter botAdapter, class Microsoft.Bot.Builder.IStorage storage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AdapterExtensions.UseStorage(Microsoft.Bot.Builder.BotAdapter,Microsoft.Bot.Builder.IStorage)" />
+      <MemberSignature Language="F#" Value="static member UseStorage : Microsoft.Bot.Builder.BotAdapter * Microsoft.Bot.Builder.IStorage -&gt; Microsoft.Bot.Builder.BotAdapter" Usage="Microsoft.Bot.Builder.AdapterExtensions.UseStorage (botAdapter, storage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botAdapter" Type="Microsoft.Bot.Builder.BotAdapter" RefType="this" />
+        <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
+      </Parameters>
+      <Docs>
+        <param name="botAdapter">bot adapter to register storage with.</param>
+        <param name="storage">IStorage implementation to register.</param>
+        <summary>
+            Register storage with the adapter so that is available via TurnContext.Get&lt;IStorage&gt;().
+            </summary>
+        <returns>bot adapter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

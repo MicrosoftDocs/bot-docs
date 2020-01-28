@@ -1,0 +1,65 @@
+<Type Name="LuisSlot" FullName="Microsoft.Bot.Builder.AI.LuisV3.LuisSlot">
+  <TypeSignature Language="C#" Value="public static class LuisSlot" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LuisSlot extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.LuisV3.LuisSlot" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisSlot" />
+  <TypeSignature Language="F#" Value="type LuisSlot = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Default LUIS slot names.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Production">
+      <MemberSignature Language="C#" Value="public static readonly string Production;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Production" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.LuisV3.LuisSlot.Production" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Production As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Production : string" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisSlot.Production" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Production slot on LUIS.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Staging">
+      <MemberSignature Language="C#" Value="public static readonly string Staging;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Staging" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.LuisV3.LuisSlot.Staging" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Staging As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Staging : string" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisSlot.Staging" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Staging slot on LUIS.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

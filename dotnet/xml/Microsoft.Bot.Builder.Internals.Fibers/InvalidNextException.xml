@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidNextException" FullName="Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException">
+<Type Name="InvalidNextException" FullName="Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException">
   <TypeSignature Language="C#" Value="public sealed class InvalidNextException : Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit InvalidNextException extends Microsoft.Bot.Builder.Internals.Fibers.InvalidWaitException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.InvalidNextException" />

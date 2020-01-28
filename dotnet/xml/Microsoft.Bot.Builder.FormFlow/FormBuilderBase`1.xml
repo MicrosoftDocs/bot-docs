@@ -1,4 +1,4 @@
-﻿<Type Name="FormBuilderBase&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;T&gt;">
+<Type Name="FormBuilderBase&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class FormBuilderBase&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FormBuilderBase`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1" />

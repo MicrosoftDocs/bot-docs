@@ -1,4 +1,4 @@
-﻿<Type Name="Address" FullName="Microsoft.Bot.Builder.Dialogs.Address">
+<Type Name="Address" FullName="Microsoft.Bot.Builder.Dialogs.Address">
   <TypeSignature Language="C#" Value="public sealed class Address : IEquatable&lt;Microsoft.Bot.Builder.Dialogs.IAddress&gt;, Microsoft.Bot.Builder.Dialogs.IAddress" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Address extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IAddress, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Address" />

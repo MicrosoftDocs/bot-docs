@@ -1,0 +1,120 @@
+<Type Name="O365ConnectorCardHttpPOST" FullName="Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST">
+  <TypeSignature Language="C#" Value="public class O365ConnectorCardHttpPOST : Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit O365ConnectorCardHttpPOST extends Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST" />
+  <TypeSignature Language="VB.NET" Value="Public Class O365ConnectorCardHttpPOST&#xA;Inherits O365ConnectorCardActionBase" />
+  <TypeSignature Language="F#" Value="type O365ConnectorCardHttpPOST = class&#xA;    inherit O365ConnectorCardActionBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Content type for <see cref="T:Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public O365ConnectorCardHttpPOST ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the O365ConnectorCardHttpPOST class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public O365ConnectorCardHttpPOST (string type = null, string name = null, string id = null, string body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, string id, string body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional name As String = null, Optional id As String = null, Optional body As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST : string * string * string * string -&gt; Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST" Usage="new Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST (type, name, id, body)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="body" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type of the action. Possible values include:
+            'ViewAction', 'OpenUri', 'HttpPOST', 'ActionCard'</param>
+        <param name="name">Name of the action that will be used as button
+            title</param>
+        <param name="id">Action Id</param>
+        <param name="body">Content to be posted back to bots via
+            invoke</param>
+        <summary>
+            Initializes a new instance of the O365ConnectorCardHttpPOST class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public string Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Body" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST.Body" />
+      <MemberSignature Language="VB.NET" Value="Public Property Body As String" />
+      <MemberSignature Language="F#" Value="member this.Body : string with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="body")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets content to be posted back to bots via invoke
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public const string Type;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Type" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Const Type As String " />
+      <MemberSignature Language="F#" Value="val mutable Type : string" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCardHttpPOST.Type" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content type to be used in the @type property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

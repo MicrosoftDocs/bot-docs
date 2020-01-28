@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationsResult" FullName="Microsoft.Bot.Connector.ConversationsResult">
+<Type Name="ConversationsResult" FullName="Microsoft.Bot.Connector.ConversationsResult">
   <TypeSignature Language="C#" Value="public class ConversationsResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationsResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationsResult" />

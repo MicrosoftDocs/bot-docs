@@ -1,4 +1,4 @@
-﻿<Type Name="IConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory">
+<Type Name="IConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory">
   <TypeSignature Language="C#" Value="public interface IConnectorClientFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConnectorClientFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />

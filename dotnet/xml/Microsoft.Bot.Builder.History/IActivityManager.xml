@@ -1,4 +1,4 @@
-﻿<Type Name="IActivityManager" FullName="Microsoft.Bot.Builder.History.IActivityManager">
+<Type Name="IActivityManager" FullName="Microsoft.Bot.Builder.History.IActivityManager">
   <TypeSignature Language="C#" Value="public interface IActivityManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityManager" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.IActivityManager" />

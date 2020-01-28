@@ -1,4 +1,4 @@
-﻿<Type Name="StoreFromStack&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack&lt;C&gt;">
+<Type Name="StoreFromStack&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class StoreFromStack&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StoreFromStack`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IStackStoreFactory`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.StoreFromStack`1" />

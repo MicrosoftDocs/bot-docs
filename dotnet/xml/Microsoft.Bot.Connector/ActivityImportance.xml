@@ -1,4 +1,4 @@
-﻿<Type Name="ActivityImportance" FullName="Microsoft.Bot.Connector.ActivityImportance">
+<Type Name="ActivityImportance" FullName="Microsoft.Bot.Connector.ActivityImportance">
   <TypeSignature Language="C#" Value="public static class ActivityImportance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityImportance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityImportance" />

@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationAddressComparer" FullName="Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer">
+<Type Name="ConversationAddressComparer" FullName="Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer">
   <TypeSignature Language="C#" Value="public sealed class ConversationAddressComparer : System.Collections.Generic.IEqualityComparer&lt;Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConversationAddressComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.Bot.Builder.Dialogs.IAddress&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ConversationAddressComparer" />

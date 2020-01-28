@@ -1,4 +1,4 @@
-﻿<Type Name="PagedMembersResult" FullName="Microsoft.Bot.Connector.PagedMembersResult">
+<Type Name="PagedMembersResult" FullName="Microsoft.Bot.Connector.PagedMembersResult">
   <TypeSignature Language="C#" Value="public class PagedMembersResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PagedMembersResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PagedMembersResult" />

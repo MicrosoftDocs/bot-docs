@@ -1,4 +1,4 @@
-﻿<Type Name="Pair" FullName="Microsoft.Bot.Builder.Internals.Fibers.Pair">
+<Type Name="Pair" FullName="Microsoft.Bot.Builder.Internals.Fibers.Pair">
   <TypeSignature Language="C#" Value="public static class Pair" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Pair extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Pair" />

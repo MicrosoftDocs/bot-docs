@@ -1,4 +1,4 @@
-﻿<Type Name="Resolution" FullName="Microsoft.Bot.Builder.Luis.Resolution">
+<Type Name="Resolution" FullName="Microsoft.Bot.Builder.Luis.Resolution">
   <TypeSignature Language="C#" Value="public abstract class Resolution" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Resolution extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Resolution" />

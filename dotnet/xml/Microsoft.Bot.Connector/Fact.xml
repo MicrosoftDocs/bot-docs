@@ -1,4 +1,4 @@
-﻿<Type Name="Fact" FullName="Microsoft.Bot.Connector.Fact">
+<Type Name="Fact" FullName="Microsoft.Bot.Connector.Fact">
   <TypeSignature Language="C#" Value="public class Fact" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Fact extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Fact" />

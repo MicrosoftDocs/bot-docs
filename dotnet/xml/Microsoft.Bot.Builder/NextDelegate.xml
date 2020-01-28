@@ -1,4 +1,4 @@
-﻿<Type Name="NextDelegate" FullName="Microsoft.Bot.Builder.NextDelegate">
+<Type Name="NextDelegate" FullName="Microsoft.Bot.Builder.NextDelegate">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task NextDelegate(CancellationToken cancellationToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NextDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.NextDelegate" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

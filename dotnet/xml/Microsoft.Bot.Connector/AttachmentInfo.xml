@@ -1,4 +1,4 @@
-﻿<Type Name="AttachmentInfo" FullName="Microsoft.Bot.Connector.AttachmentInfo">
+<Type Name="AttachmentInfo" FullName="Microsoft.Bot.Connector.AttachmentInfo">
   <TypeSignature Language="C#" Value="public class AttachmentInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentInfo" />

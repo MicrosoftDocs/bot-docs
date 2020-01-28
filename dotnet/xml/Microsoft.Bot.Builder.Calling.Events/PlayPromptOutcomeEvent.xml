@@ -1,4 +1,4 @@
-﻿<Type Name="PlayPromptOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent">
+<Type Name="PlayPromptOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent">
   <TypeSignature Language="C#" Value="public class PlayPromptOutcomeEvent : Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlayPromptOutcomeEvent extends Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.PlayPromptOutcomeEvent" />

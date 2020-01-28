@@ -1,4 +1,4 @@
-﻿<Type Name="Serialization+SurrogateSelector" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+SurrogateSelector">
+<Type Name="Serialization+SurrogateSelector" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+SurrogateSelector">
   <TypeSignature Language="C#" Value="public sealed class Serialization.SurrogateSelector : System.Runtime.Serialization.ISurrogateSelector" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Serialization/SurrogateSelector extends System.Object implements class System.Runtime.Serialization.ISurrogateSelector" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector" />

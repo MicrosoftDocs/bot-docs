@@ -1,4 +1,4 @@
-﻿<Type Name="ScorableBase&lt;Item,State,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Item,State,Score&gt;">
+<Type Name="ScorableBase&lt;Item,State,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Item,State,Score&gt;">
   <TypeSignature Language="C#" Value="public abstract class ScorableBase&lt;Item,State,Score&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ScorableBase`3&lt;Item, State, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3" />
