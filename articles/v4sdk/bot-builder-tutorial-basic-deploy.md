@@ -48,7 +48,7 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 ### Prepare for deployment
 
 > [!TIP]
-> This procedure uses a ZIP file to deploy your bot. In C#, This may fail if the solution configuration at build is set to **Debug**.
+> This procedure uses a ZIP file to deploy your bot. In C#, this may fail if the solution configuration at build is set to **Debug**.
 > In Visual Studio, make sure that the solution configuration is set to **Release** and perform a clean rebuild of the solution before continuing.
 
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
