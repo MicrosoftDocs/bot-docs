@@ -247,7 +247,7 @@ For detailed information on the schema, see the [Bot Framework card schema](http
 ### Code sample for processing Adaptive Card input
 
 This sample code shows one way to use Adaptive Card inputs within a bot dialog class.
-It extends the current sample 06.using-cards by validating the input recieved in the text field from the responding client.
+It extends the current sample 06.using-cards by validating the input received in the text field from the responding client.
 We first added text input and button functionality to the existing adaptive card by adding the following code just before the final bracket of adaptiveCard.json, found in the resources folder:
 
 ```json
