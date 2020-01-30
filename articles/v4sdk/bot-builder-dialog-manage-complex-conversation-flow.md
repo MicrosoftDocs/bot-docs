@@ -28,40 +28,31 @@ This article covers how to manage complex conversations that branch and loop and
 This sample represents a bot that can sign users up to review up to two companies from a list.
 It uses conversation state to manage its dialogs and uses user state to save information about the user and which companies they want to review.
 
-The bot welcomes the user when they first join the conversation and starts or continues the main dialog whenever it receives a message from the user. It overrides the activity handler's _run_ method to save both user and conversation state before the turn ends.
+The bot derives from the activity handler.
 
-The bot defines _main dialog_, _top-level dialog_, and _review-selection dialog_ component dialogs, which together do the following:
+- It welcomes the user when they first join the conversation.
+- It starts or continues the main dialog whenever it receives a message from the user.
+- It saves both user and conversation state before the turn ends.
 
-- The main dialog initiates the top-level dialog.
-  - The top-level dialog initializes the user profile, asks for the user's name and age, and then _branches_ based on the user's age.
-    - If the user is too young, the user is not asked to review any companies.
-    - If the user is old enough, it starts the review-selection dialog to collect the user's review preferences.
-      - The review-selection dialog allows the user to select a company to review.
-      - If the user chooses a company, it _loops_ to allow the user to select a second company.
-      - When it ends, it passes the companies the user selected to its parent dialog.
-  - The top-level dialog thanks the user for participating and passes the completed user profile to its parent when it ends.
-- The main dialog summarizes information in the profile and saves the profile in user state.
-- It then starts the process over again, allowing you to test the flow multiple times without needing to restart the bot.
+The bot uses 3 component dialogs to manage the conversation flow. Each component dialog includes a waterfall dialog and any prompts needed to gather user input. These dialogs are described in more detail in the following sections.
 
-The bot uses waterfall dialogs and a few prompts to manage this conversation flow.
-
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 ![Complex bot flow](./media/complex-conversation-flow.png)
 
-To use dialogs, your project needs to install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
+To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 **Startup.cs**
 
-We register services for the bot in `Startup`. These services are available to other parts of the code through dependency injection.
+Register services for the bot in `Startup`. These services are available to other parts of the code through dependency injection.
 
-- Basic services for a bot: a credential provider, an adapter, and the bot implementation.
+- Basic services for a bot: an adapter and the bot implementation.
 - Services for managing state: storage, user state, and conversation state.
-- The dialog the bot will use.
+- The root dialog the bot will use.
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=22-36)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=18-37)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 ![Complex bot flow](./media/complex-conversation-flow-js.png)
 
@@ -77,7 +68,7 @@ We create the following services for the bot that are required:
 
 [!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=26-65)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 ![Complex bot flow](./media/complex-conversation-flow-python.png)
 
@@ -101,19 +92,19 @@ We create services for the bot that other parts of the code require.
 
 ## Define a class in which to store the collected information
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 **UserProfile.cs**
 
 [!code-csharp[UserProfile class](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/UserProfile.cs?range=8-16)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 **userProfile.js**
 
 [!code-javascript[UserProfile class](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/userProfile.js?range=4-12)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 **data_models/user_profile.py**
 
@@ -123,90 +114,94 @@ We create services for the bot that other parts of the code require.
 
 ## Create the dialogs to use
 
-# [C#](#tab/csharp)
+### The main dialog
+
+The main dialog has 2 steps:
+
+1. Start the top-level dialog.
+1. Retrieve and summarize the result from the top-level dialog, assign the result to the user profile state property, and then signal the end of the main dialog.
+
+#### [C#](#tab/csharp)
 
 **Dialogs\MainDialog.cs**
 
-We've defined a component dialog, `MainDialog`, which contains a couple main steps and directs the dialogs and prompts. The initial step calls `TopLevelDialog` which is explained below.
+[!code-csharp[step implementations](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Dialogs/MainDialog.cs?range=31-50)]
 
-[!code-csharp[step implementations](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Dialogs/MainDialog.cs?range=31-50&highlight=3)]
-
-**Dialogs\TopLevelDialog.cs**
-
-The initial, top-level dialog has four steps:
-
-1. Ask for the user's name.
-1. Ask for the user's age.
-1. Branch based on the user's age.
-1. Finally, thank the user for participating and return the collected information.
-
-In the first step we're clearing the user's profile, so that the dialog will start with an empty profile each time. Since the last step will return information when it ends, the `AcknowledgementStepAsync` concludes with saving it to the user state, then returning that info to the main dialog for use in the final step.
-
-[!code-csharp[step implementations](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Dialogs/TopLevelDialog.cs?range=39-96&highlight=3-4,47-49,56-57)]
-
-**Dialogs\ReviewSelectionDialog.cs**
-
-The review-selection dialog is started from the top-level dialog's `StartSelectionStepAsync`, and has two steps:
-
-1. Ask the user to choose a company to review or choose `done` to finish.
-1. Repeat this dialog or exit, as appropriate.
-
-In this design, the top-level dialog will always precede the review-selection dialog on the stack, and the review-selection dialog can be thought of as a child of the top-level dialog.
-
-[!code-csharp[step implementations](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Dialogs/ReviewSelectionDialog.cs?range=42-106)]
-
-# [JavaScript](#tab/javascript)
+#### [JavaScript](#tab/javascript)
 
 **dialogs/mainDialog.js**
 
-We've defined a component dialog, `MainDialog`, which contains a couple main steps and directs the dialogs and prompts. The initial step calls `TopLevelDialog` which is explained below.
-
 [!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/mainDialog.js?range=43-55&highlight=2)]
 
-**dialogs/topLevelDialog.js**
-
-The initial, top-level dialog has four steps:
-
-1. Ask for the user's name.
-1. Ask for the user's age.
-1. Branch based on the user's age.
-1. Finally, thank the user for participating and return the collected information.
-
-In the first step we're clearing the user's profile, so that the dialog will start with an empty profile each time. Since the last step will return information when it ends, the `acknowledgementStep` concludes with saving it to the user state, then returning that info to the main dialog for use in the final step.
-
-[!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/topLevelDialog.js?range=32-76&highlight=2-3,37-39,43-44)]
-
-**dialogs/reviewSelectionDialog.js**
-
-The review-selection dialog is started from the top-level dialog's `startSelectionStep`, and has two steps:
-
-1. Ask the user to choose a company to review or choose `done` to finish.
-1. Repeat this dialog or exit, as appropriate.
-
-In this design, the top-level dialog will always precede the review-selection dialog on the stack, and the review-selection dialog can be thought of as a child of the top-level dialog.
-
-[!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/reviewSelectionDialog.js?range=33-78)]
-
-# [Python](#tab/python)
+#### [Python](#tab/python)
 
 **dialogs\main_dialog.py**
 
-We've defined a component dialog, `MainDialog`, that contains a couple of main steps and directs the dialogs and prompts. The initial step calls `TopLevelDialog` which is explained below.
-
 [!code-python[step implementations](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/main_dialog.py?range=29-50&highlight=4)]
 
-**dialogs\top_level_dialog.py**
+---
 
-The initial, top-level dialog has four steps:
+### The top-level dialog
+
+The top-level dialog has 4 steps:
 
 1. Ask for the user's name.
 1. Ask for the user's age.
-1. Branch based on the user's age.
+1. If the user's old enough, start the review-selection dialog; otherwise, progress to the next step, returning an empty array.
 1. Finally, thank the user for participating and return the collected information.
 
-In the first step we're clearing the user's profile, so that the dialog will start with an empty profile each time. Because the last step will return information when it ends, the `acknowledgementStep` concludes with saving it to the user state, then returning that info to the main dialog for use in the final step.
+The first step creates an empty user profile as part of the dialog state. The dialog starts with an empty profile and adds information to the profile as it progresses. When it ends, the last step returns the collected information.
+
+In the third (start selection) step, the conversation flow branches, based on the user's age.
+
+#### [C#](#tab/csharp)
+
+**Dialogs\TopLevelDialog.cs**
+
+[!code-csharp[step implementations](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Dialogs/TopLevelDialog.cs?range=39-96&highlight=30-42)]
+
+#### [JavaScript](#tab/javascript)
+
+**dialogs/topLevelDialog.js**
+
+[!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/topLevelDialog.js?range=32-76&highlight=2-3,37-39,43-44)]
+
+#### [Python](#tab/python)
+
+**dialogs\top_level_dialog.py**
 
 [!code-python[step implementations](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/top_level_dialog.py?range=43-95&highlight=2-3,43-44,52)]
+
+---
+
+### The review-selection dialog
+
+The review-selection dialog has 2 steps:
+
+1. Ask the user to choose a company to review or choose `done` to finish.
+    - If the dialog was started with any initial information, the information is available through the _options_ property of the waterfall step context. The review-selection dialog can restart itself, and it uses this to allow the user to choose more than one company to review.
+    - If the user has already selected a company to review, that company is removed from the available choices.
+    - A "done" choice is added to allow the user to exit the loop if they don't want to select 2 companies.
+1. Repeat this dialog or exit, as appropriate.
+    - If the user chose a company to review, add it to their list.
+    - If the user has chosen 2 companies or they chose to exit, end the dialog and return the collected list.
+    - Otherwise, restart the dialog, initializing it with the contents of their list.
+
+In this design, the top-level dialog always precedes the review-selection dialog on the stack, and the review-selection dialog can be thought of as a child of the top-level dialog.
+
+#### [C#](#tab/csharp)
+
+**Dialogs\ReviewSelectionDialog.cs**
+
+[!code-csharp[step implementations](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Dialogs/ReviewSelectionDialog.cs?range=42-106&highlight=55-64)]
+
+#### [JavaScript](#tab/javascript)
+
+**dialogs/reviewSelectionDialog.js**
+
+[!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/reviewSelectionDialog.js?range=33-78)]
+
+#### [Python](#tab/python)
 
 **dialogs/review_selection_dialog.py**
 
@@ -233,18 +228,6 @@ When we receive a message from the user:
 1. Save the conversation state, so that any updates to the dialog state are persisted.
 
 # [C#](#tab/csharp)
-
-<!-- **DialogExtensions.cs**
-
-In this sample, we've defined a `Run` helper method that we will use to create and access the dialog context.
-Since component dialog defines an inner dialog set, we have to create an outer dialog set that's visible to the message handler code, and use that to create a dialog context.
-
-- `dialog` is the main component dialog for the bot.
-- `turnContext` is the current turn context for the bot.
-
-[!code-csharp[Run method](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/DialogExtensions.cs?range=13-24)]
-
--->
 
 **Bots\DialogBot.cs**
 
