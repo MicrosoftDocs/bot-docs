@@ -63,11 +63,11 @@ This example code is from the **Core Bot** sample. See the complete sample in [*
 
 # [C#](#tab/csharp)
 
-The **SendTraceActivityAsync** helper method defined in this sample sends exception information to the Emulator as a trace activity.
+The adapter's **OnTurnError** handler creates the trace activity to include the exception information and sends it to the Emulator.
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[SendTraceActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-51&highlight=33-34)]
+[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-51&highlight=33-34)]
 
 # [JavaScript](#tab/javascript)
 
@@ -75,32 +75,16 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 **index.js**
 
-[!code-javascript[onTurnError ](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-57&highlight=8-14)]
+[!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-57&highlight=8-14)]
 
 # [Python](#tab/python)
 
 The adapter's **on_error** handler creates the trace activity to include the exception information and sends it to the Emulator.
-```python
-async def on_error(context: TurnContext, error: Exception):
-...
 
-if context.activity.channel_id == "emulator":
+**adapter_with_error_handler.py**
 
-# Create a trace activity that contains the error object
-trace_activity = Activity(
-    label="TurnError",
-    name="on_turn_error Trace",
-    timestamp=datetime.utcnow(),
-    type=ActivityTypes.trace,
-    value=f"{error}",
-    value_type="https://www.botframework.com/schemas/error",
-)
+[!code-python[on_error](~/../BotBuilder-Samples/samples/python/13.core-bot/adapter_with_error_handler.py?range=26-50&highlight=24-25)]
 
-# Send a trace activity, which will be displayed in Bot Framework Emulator
-await context.send_activity(trace_activity)
-
-...
-```
 ---
 
 ## Additional resources
