@@ -248,7 +248,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 Fenced code blocks default to JavaScript syntax highlighting, but it doesn't hurt to be explicit.
 
-Add short code examples as desireable to the @remarks section.
+Add short code examples as desirable to the @remarks section.
 
 - Introduce each example, even if it is just with the phrase, "For example:".
 - At the type-level (class, interface, object, enum, and so on), include a code example that will apply to the most common use cases.
