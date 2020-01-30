@@ -112,7 +112,7 @@ Open a command-prompt, and navigate to the project folder. Run the following com
 
 **JS Bot:**
 1. Download web.config from [here](https://github.com/projectkudu/kudu/wiki/Using-a-custom-web.config-for-Node-apps) and save it into your project folder. 
-1. Edit the file and replace all occurances of "server.js" with "index.js". 
+1. Edit the file and replace all occurrences of "server.js" with "index.js". 
 1. Save the file.
 
 Open a command-prompt, and navigate to the project folder. Run the following commands from the command line.
