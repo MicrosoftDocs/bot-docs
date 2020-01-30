@@ -45,7 +45,7 @@ The preview NuGet packages needed to create a C# Direct line client can be found
 
 ## Create a C# Direct Line Client
 
-Interactions with the direct line app service extension happen differently than traditional Direct Line becuase most communication happens over a *WebSocket*. The updated direct line client includes helper classes for opening and closing a *WebSocket*, sending commands through the WebSocket, and receiving Activities back from the bot. This section describes how to create a simple C# client to interact with a bot.
+Interactions with the direct line app service extension happen differently than traditional Direct Line because most communication happens over a *WebSocket*. The updated direct line client includes helper classes for opening and closing a *WebSocket*, sending commands through the WebSocket, and receiving Activities back from the bot. This section describes how to create a simple C# client to interact with a bot.
 
 1. Create a new .NET Core 2.2 console application project in Visual Studio.
 1. Add the **DirectLine client NuGet** to your project
