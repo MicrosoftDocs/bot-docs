@@ -232,7 +232,7 @@ All dialogs, and their fields, were auto-serialized in V3.
 stepContext.values.destination = destination;
 ```
 
-## To write changes in state to the persistance layer
+## To write changes in state to the persistence layer
 
 ### v3
 
@@ -300,7 +300,7 @@ public class DialogBot : ActivityHandler
     {
         await base.OnTurnAsync(turnContext, cancellationToken);
 
-        // Save any state changes that might have ocurred during the turn.
+        // Save any state changes that might have occurred during the turn.
         await ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
         await UserState.SaveChangesAsync(turnContext, false, cancellationToken);
     }
