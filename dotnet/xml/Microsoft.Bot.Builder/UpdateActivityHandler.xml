@@ -1,4 +1,4 @@
-﻿<Type Name="UpdateActivityHandler" FullName="Microsoft.Bot.Builder.UpdateActivityHandler">
+<Type Name="UpdateActivityHandler" FullName="Microsoft.Bot.Builder.UpdateActivityHandler">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityHandler(ITurnContext turnContext, Activity activity, Func&lt;Task&lt;ResourceResponse&gt;&gt; next);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateActivityHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.UpdateActivityHandler" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -36,7 +37,7 @@
             the adapter does not call any of the subsequent handlers and does not update the
             activity.
             <para>The activity's <see cref="P:Microsoft.Bot.Schema.IActivity.Id" /> indicates the activity in the
-            conversation to replace.</para><para>If the activity is successfully sent, the <paramref name="next" /> delegater returns
+            conversation to replace.</para><para>If the activity is successfully sent, the <paramref name="next" /> delegate returns
             a <see cref="T:Microsoft.Bot.Schema.ResourceResponse" /> object containing the ID that the receiving
             channel assigned to the activity. Use this response object as the return value of this handler.</para></remarks>
     <altmember cref="T:Microsoft.Bot.Builder.BotAdapter" />

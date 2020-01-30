@@ -1,4 +1,4 @@
-﻿<Type Name="FormPrompt" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt">
+<Type Name="FormPrompt" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt">
   <TypeSignature Language="C#" Value="public sealed class FormPrompt : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FormPrompt extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.FormPrompt" />

@@ -1,4 +1,4 @@
-﻿<Type Name="RecordOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent">
+<Type Name="RecordOutcomeEvent" FullName="Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent">
   <TypeSignature Language="C#" Value="public class RecordOutcomeEvent : Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecordOutcomeEvent extends Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.RecordOutcomeEvent" />

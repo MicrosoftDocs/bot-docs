@@ -1,4 +1,4 @@
-﻿<Type Name="DialogContext" FullName="Microsoft.Bot.Builder.Dialogs.DialogContext">
+<Type Name="DialogContext" FullName="Microsoft.Bot.Builder.Dialogs.DialogContext">
   <TypeSignature Language="C#" Value="public class DialogContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogContext" />
@@ -11,16 +11,51 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{GetType().Name}[{ActiveDialog?.Id}]")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Provides context for the current state of the dialog stack.
+            </summary>
+    <remarks>The <see cref="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Context" /> property contains the <see cref="T:Microsoft.Bot.Builder.ITurnContext" />
+            for the current turn.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogContext (Microsoft.Bot.Builder.Dialogs.DialogSet dialogs, Microsoft.Bot.Builder.Dialogs.DialogContext parentDialogContext, Microsoft.Bot.Builder.Dialogs.DialogState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.DialogSet dialogs, class Microsoft.Bot.Builder.Dialogs.DialogContext parentDialogContext, class Microsoft.Bot.Builder.Dialogs.DialogState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.#ctor(Microsoft.Bot.Builder.Dialogs.DialogSet,Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogs As DialogSet, parentDialogContext As DialogContext, state As DialogState)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.DialogContext : Microsoft.Bot.Builder.Dialogs.DialogSet * Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.DialogState -&gt; Microsoft.Bot.Builder.Dialogs.DialogContext" Usage="new Microsoft.Bot.Builder.Dialogs.DialogContext (dialogs, parentDialogContext, state)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogs" Type="Microsoft.Bot.Builder.Dialogs.DialogSet" />
+        <Parameter Name="parentDialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="state" Type="Microsoft.Bot.Builder.Dialogs.DialogState" />
+      </Parameters>
+      <Docs>
+        <param name="dialogs">Parent dialog set.</param>
+        <param name="parentDialogContext">Parent dialog state.</param>
+        <param name="state">Current dialog state.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DialogContext (Microsoft.Bot.Builder.Dialogs.DialogSet dialogs, Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.Dialogs.DialogState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.DialogSet dialogs, class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.Dialogs.DialogState state) cil managed" />
@@ -31,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogs" Type="Microsoft.Bot.Builder.Dialogs.DialogSet" />
@@ -38,11 +74,11 @@
         <Parameter Name="state" Type="Microsoft.Bot.Builder.Dialogs.DialogState" />
       </Parameters>
       <Docs>
-        <param name="dialogs">Parent dialog set.</param>
-        <param name="turnContext">Context for the current turn of conversation with the user.</param>
-        <param name="state">Current dialog state.</param>
+        <param name="dialogs">dialogset.</param>
+        <param name="turnContext">turn context.</param>
+        <param name="state">dialogState.</param>
         <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> class.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> class from Turn context.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +97,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogInstance</ReturnType>
@@ -88,6 +125,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -99,13 +137,18 @@
       </Parameters>
       <Docs>
         <param name="dialogId">ID of the dialog to start.</param>
-        <param name="options">(Optional) additional argument(s) to pass to the dialog being started.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="options">Optional, information to pass to the dialog being started.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Pushes a new dialog onto the dialog stack.
+            Starts a new dialog and pushes it onto the dialog stack.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="CancelAllDialogsAsync">
@@ -121,6 +164,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -129,11 +173,86 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+             or threads to receive notice of cancellation.</param>
         <summary>
-            Deletes any existing dialog stack thus cancelling all dialogs on the stack.
+             Deletes any existing dialog stack thus cancelling all dialogs on the stack.
+             </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates that dialogs were canceled after the
+             turn was processed by the dialog or that the stack was already empty.
+            
+             In general, the parent context is the dialog or bot turn handler that started the dialog.
+             If the parent is a dialog, the stack calls the parent's
+             <see cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
+             method to return a result to the parent dialog. If the parent dialog does not implement
+             `ResumeDialogAsync`, then the parent will end, too, and the result is passed to the next
+             parent context.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAllDialogsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; CancelAllDialogsAsync (bool cancelParents, string eventName = null, object eventValue = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; CancelAllDialogsAsync(bool cancelParents, string eventName, object eventValue, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.CancelAllDialogsAsync(System.Boolean,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.CancelAllDialogsAsync : bool * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="dialogContext.CancelAllDialogsAsync (cancelParents, eventName, eventValue, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancelParents" Type="System.Boolean" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="eventValue" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancelParents">If true the cancelation will bubble up through any parent dialogs as well.</param>
+        <param name="eventName">The event.</param>
+        <param name="eventValue">The event value.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+             or threads to receive notice of cancellation.</param>
+        <summary>
+             Deletes any existing dialog stack thus cancelling all dialogs on the stack.
+             </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates that dialogs were canceled after the
+             turn was processed by the dialog or that the stack was already empty.
+            
+             In general, the parent context is the dialog or bot turn handler that started the dialog.
+             If the parent is a dialog, the stack calls the parent's
+             <see cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
+             method to return a result to the parent dialog. If the parent dialog does not implement
+             `ResumeDialogAsync`, then the parent will end, too, and the result is passed to the next
+             parent context.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogContext Child { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.DialogContext Child" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Child" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As DialogContext" />
+      <MemberSignature Language="F#" Value="member this.Child : Microsoft.Bot.Builder.Dialogs.DialogContext" Usage="Microsoft.Bot.Builder.Dialogs.DialogContext.Child" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets dialog context for child if there is an active child.
             </summary>
-        <returns>The dialog context.</returns>
+        <value>
+            Dialog context for child if there is an active child.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,6 +270,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -178,6 +298,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -186,14 +307,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+             or threads to receive notice of cancellation.</param>
         <summary>
-            Continues execution of the active dialog, if there is one, by passing the context object to
-            its `Dialog.ContinueDialogAsync()` method. You can check `turnContext.Responded` after the call completes
-            to determine if a dialog was run and a reply was sent to the user.
-            </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+             Continues execution of the active dialog, if there is one, by passing the current
+             <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> to the active dialog's
+             <see cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" /> method.
+             </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+             active after the turn has been processed by the dialog.
+            
+             Check the <see cref="P:Microsoft.Bot.Builder.TurnContext.Responded" /> property after the call completes
+             to determine if the active dialog sent a reply message to the user.
+             </remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="Dialogs">
@@ -210,17 +338,52 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogSet</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the set of dialogs that can be called from this context.
+            Gets the set of dialogs which are active for the current dialog container.
             </summary>
         <value>
-            The set of dialogs that can be called from this context.
+            The set of dialogs which are active for the current dialog container.
             </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitEventAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; EmitEventAsync (string name, object value = null, bool bubble = true, bool fromLeaf = false, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; EmitEventAsync(string name, object value, bool bubble, bool fromLeaf, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EmitEventAsync(System.String,System.Object,System.Boolean,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.EmitEventAsync : string * obj * bool * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dialogContext.EmitEventAsync (name, value, bubble, fromLeaf, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="bubble" Type="System.Boolean" />
+        <Parameter Name="fromLeaf" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the event to raise.</param>
+        <param name="value">Value to send along with the event.</param>
+        <param name="bubble">Flag to control whether the event should be bubbled to its parent if not handled locally. Defaults to a value of `true`.</param>
+        <param name="fromLeaf">Whether the event is emitted from a leaf node.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+            Searches for a dialog with a given ID.
+            Emits a named event for the current dialog, or someone who started it, to handle.
+            </summary>
+        <returns>True if the event was handled.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,6 +400,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -246,20 +410,34 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="result">(Optional) result to pass to the parent dialogs.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="result">Optional, result to pass to the parent context.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+             or threads to receive notice of cancellation.</param>
         <summary>
-            Ends a dialog by popping it off the stack and returns an optional result to the dialog's
-            parent. The parent dialog is the dialog that started the dialog being ended via a call to
-            either <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
-            or <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />.
-            The parent dialog will have its `Dialog.ResumeDialogAsync()` method invoked with any returned
-            result. If the parent dialog hasn't implemented a `ResumeDialogAsync()` method then it will be
-            automatically ended as well and the result passed to its parent. If there are no more
-            parent dialogs on the stack then processing of the turn will end.
-            </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+             Ends a dialog by popping it off the stack and returns an optional result to the dialogs
+             parent.The parent dialog is the dialog the started the on being ended via a call to
+             either[begin()](#begin) or [prompt()](#prompt).
+             The parent dialog will have its `Dialog.resume()` method invoked with any returned
+             result. If the parent dialog hasn't implemented a `resume()` method then it will be
+             automatically ended as well and the result passed to its parent. If there are no more
+             parent dialogs on the stack then processing of the turn will end.
+             </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates that the dialog ended after the
+             turn was processed by the dialog.
+            
+             In general, the parent context is the dialog or bot turn handler that started the dialog.
+             If the parent is a dialog, the stack calls the parent's
+             <see cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" /> method to
+             return a result to the parent dialog. If the parent dialog does not implement `ResumeDialogAsyn`,
+             then the parent will end, too, and the result passed to the next parent context.
+            
+             The returned <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" /> contains the return value in its
+             <see cref="P:Microsoft.Bot.Builder.Dialogs.DialogTurnResult.Result" /> property.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.ReplaceDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.EndDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="FindDialog">
@@ -274,6 +452,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Dialog</ReturnType>
@@ -282,12 +461,11 @@
         <Parameter Name="dialogId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dialogId">ID of the dialog to search for.</param>
+        <param name="dialogId">dialog id to find.</param>
         <summary>
-            If the dialog cannot be found within the current `DialogSet`, the parent `DialogContext`
-            will be searched if there is one.
+            Find the dialog id for the given context.
             </summary>
-        <returns>The first Dialog found that matches the dialogId.</returns>
+        <returns>dialog with that id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,16 +481,17 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the parent DialogContext if any. Used when searching for dialogs to start.
+            Gets or sets the parent <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" />, if any. Used when searching for the ID of a dialog to start.
             </summary>
         <value>
-            The parent DialogContext if any. Used when searching for dialogs to start.
+            The parent <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" />, if any. Used when searching for the ID of a dialog to start.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -330,6 +509,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -340,16 +520,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dialogId">ID of the prompt to start.</param>
-        <param name="options">Contains a Prompt, potentially a RetryPrompt and if using ChoicePrompt, Choices.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="dialogId">ID of the prompt dialog to start.</param>
+        <param name="options">Information to pass to the prompt dialog being started.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
             Helper function to simplify formatting the options for calling a prompt dialog. This helper will
-            take a `PromptOptions` argument and then call
-            <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />.
+            take a `PromptOptions` argument and then call[begin(context, dialogId, options)](#begin).
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.Prompt`1.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="ReplaceDialogAsync">
@@ -365,6 +548,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -376,14 +560,18 @@
       </Parameters>
       <Docs>
         <param name="dialogId">ID of the new dialog to start.</param>
-        <param name="options">(Optional) additional argument(s) to pass to the new dialog.</param>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="options">Optional, information to pass to the dialog being started.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Ends the active dialog and starts a new dialog in its place. This is particularly useful
-            for creating loops or redirecting to another dialog.
+            Starts a new dialog and replaces on the stack the currently active dialog with the new one.
+            This is particularly useful for creating loops or redirecting to another dialog.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="RepromptDialogAsync">
@@ -399,6 +587,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -407,12 +596,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">The cancellation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Calls reprompt on the currently active dialog, if there is one. Used with Prompts that have a reprompt behavior.
+            Calls the currently active dialog's
+            <see cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.RepromptDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,System.Threading.CancellationToken)" />
+            method. Used with dialogs that implement a re-prompt behavior.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.Dialog.RepromptDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="Stack">
@@ -429,6 +622,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.DialogInstance&gt;</ReturnType>

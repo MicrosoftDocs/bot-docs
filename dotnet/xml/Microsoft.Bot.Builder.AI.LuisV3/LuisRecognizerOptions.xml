@@ -1,0 +1,143 @@
+<Type Name="LuisRecognizerOptions" FullName="Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions">
+  <TypeSignature Language="C#" Value="public class LuisRecognizerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisRecognizerOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisRecognizerOptions" />
+  <TypeSignature Language="F#" Value="type LuisRecognizerOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Optional parameters for a LUIS recognizer.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisRecognizerOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpClient">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpClientHandler HttpClient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpClientHandler HttpClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.HttpClient" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpClient As HttpClientHandler" />
+      <MemberSignature Language="F#" Value="member this.HttpClient : System.Net.Http.HttpClientHandler with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.HttpClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpClientHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the handler for sending http calls.
+            </summary>
+        <value>
+            Handler for intercepting http calls for logging or testing.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPersonalInformation">
+      <MemberSignature Language="C#" Value="public bool LogPersonalInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogPersonalInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.LogPersonalInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogPersonalInformation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LogPersonalInformation : bool with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.LogPersonalInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether to log personal information that came from the user to telemetry.
+            </summary>
+        <value>If true, personal information is logged to Telemetry; otherwise the properties will be filtered.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TelemetryClient">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.IBotTelemetryClient TelemetryClient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.IBotTelemetryClient TelemetryClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.TelemetryClient" />
+      <MemberSignature Language="VB.NET" Value="Public Property TelemetryClient As IBotTelemetryClient" />
+      <MemberSignature Language="F#" Value="member this.TelemetryClient : Microsoft.Bot.Builder.IBotTelemetryClient with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.TelemetryClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the IBotTelemetryClient used to log the LuisResult event.
+            </summary>
+        <value>
+            The client used to log telemetry events.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public TimeSpan Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisRecognizerOptions.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the time span to wait before the request times out.
+            </summary>
+        <value>
+            The time span to wait before the request times out. Default is 2 seconds.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

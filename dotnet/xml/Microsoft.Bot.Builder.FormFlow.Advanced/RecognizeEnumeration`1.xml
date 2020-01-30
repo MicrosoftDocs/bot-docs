@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizeEnumeration&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;T&gt;">
+<Type Name="RecognizeEnumeration&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class RecognizeEnumeration&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RecognizeEnumeration`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1" />

@@ -1,0 +1,114 @@
+<Type Name="DialogContainer" FullName="Microsoft.Bot.Builder.Dialogs.DialogContainer">
+  <TypeSignature Language="C#" Value="public abstract class DialogContainer : Microsoft.Bot.Builder.Dialogs.Dialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DialogContainer extends Microsoft.Bot.Builder.Dialogs.Dialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogContainer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DialogContainer&#xA;Inherits Dialog" />
+  <TypeSignature Language="F#" Value="type DialogContainer = class&#xA;    inherit Dialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DialogContainer (string dialogId = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string dialogId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContainer.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (Optional dialogId As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.DialogContainer : string -&gt; Microsoft.Bot.Builder.Dialogs.DialogContainer" Usage="new Microsoft.Bot.Builder.Dialogs.DialogContainer dialogId" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildContext">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Bot.Builder.Dialogs.DialogContext CreateChildContext (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Dialogs.DialogContext CreateChildContext(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContainer.CreateChildContext(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateChildContext (dc As DialogContext) As DialogContext" />
+      <MemberSignature Language="F#" Value="abstract member CreateChildContext : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; Microsoft.Bot.Builder.Dialogs.DialogContext" Usage="dialogContainer.CreateChildContext dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dialogs">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.DialogSet Dialogs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogContainer.Dialogs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Dialogs As DialogSet" />
+      <MemberSignature Language="F#" Value="member this.Dialogs : Microsoft.Bot.Builder.Dialogs.DialogSet with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogContainer.Dialogs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDialog">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Builder.Dialogs.Dialog FindDialog (string dialogId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.Dialogs.Dialog FindDialog(string dialogId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContainer.FindDialog(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FindDialog (dialogId As String) As Dialog" />
+      <MemberSignature Language="F#" Value="abstract member FindDialog : string -&gt; Microsoft.Bot.Builder.Dialogs.Dialog&#xA;override this.FindDialog : string -&gt; Microsoft.Bot.Builder.Dialogs.Dialog" Usage="dialogContainer.FindDialog dialogId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Dialog</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

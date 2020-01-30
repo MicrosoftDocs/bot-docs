@@ -1,4 +1,4 @@
-﻿<Type Name="ILocaleFinder" FullName="Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder">
+<Type Name="ILocaleFinder" FullName="Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder">
   <TypeSignature Language="C#" Value="public interface ILocaleFinder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILocaleFinder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" />

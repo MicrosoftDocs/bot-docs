@@ -1,4 +1,4 @@
-﻿<Type Name="CosmosDbKeyEscape" FullName="Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape">
+<Type Name="CosmosDbKeyEscape" FullName="Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape">
   <TypeSignature Language="C#" Value="public static class CosmosDbKeyEscape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CosmosDbKeyEscape extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape" />
@@ -10,6 +10,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -42,6 +44,38 @@
       </Parameters>
       <Docs>
         <param name="key">The key to escape.</param>
+        <summary>
+            Converts the key into a DocumentID that can be used safely with Cosmos DB.
+            The following characters are restricted and cannot be used in the Id property: '/', '\', '?', and '#'.
+            More information at <see cref="P:Microsoft.Azure.Documents.Resource.Id" />.
+            </summary>
+        <returns>An escaped key that can be used safely with CosmosDB.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EscapeKey">
+      <MemberSignature Language="C#" Value="public static string EscapeKey (string key, string suffix, bool compatibilityMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EscapeKey(string key, string suffix, bool compatibilityMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape.EscapeKey(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EscapeKey (key As String, suffix As String, compatibilityMode As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member EscapeKey : string * string * bool -&gt; string" Usage="Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape.EscapeKey (key, suffix, compatibilityMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="suffix" Type="System.String" />
+        <Parameter Name="compatibilityMode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to escape.</param>
+        <param name="suffix">The string to add at the end of all row keys.</param>
+        <param name="compatibilityMode">To be added.</param>
         <summary>
             Converts the key into a DocumentID that can be used safely with Cosmos DB.
             The following characters are restricted and cannot be used in the Id property: '/', '\', '?', and '#'.
@@ -63,6 +97,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

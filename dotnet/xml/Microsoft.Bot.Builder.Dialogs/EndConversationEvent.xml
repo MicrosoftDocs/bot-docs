@@ -1,4 +1,4 @@
-﻿<Type Name="EndConversationEvent" FullName="Microsoft.Bot.Builder.Dialogs.EndConversationEvent">
+<Type Name="EndConversationEvent" FullName="Microsoft.Bot.Builder.Dialogs.EndConversationEvent">
   <TypeSignature Language="C#" Value="public sealed class EndConversationEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndConversationEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.EndConversationEvent" />

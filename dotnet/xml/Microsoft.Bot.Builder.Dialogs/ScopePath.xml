@@ -1,0 +1,170 @@
+<Type Name="ScopePath" FullName="Microsoft.Bot.Builder.Dialogs.ScopePath">
+  <TypeSignature Language="C#" Value="public class ScopePath" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScopePath extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ScopePath" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScopePath" />
+  <TypeSignature Language="F#" Value="type ScopePath = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScopePath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ScopePath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLASS">
+      <MemberSignature Language="C#" Value="public const string CLASS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CLASS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.CLASS" />
+      <MemberSignature Language="VB.NET" Value="Public Const CLASS As String " />
+      <MemberSignature Language="F#" Value="val mutable CLASS : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.CLASS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CONVERSATION">
+      <MemberSignature Language="C#" Value="public const string CONVERSATION;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CONVERSATION" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.CONVERSATION" />
+      <MemberSignature Language="VB.NET" Value="Public Const CONVERSATION As String " />
+      <MemberSignature Language="F#" Value="val mutable CONVERSATION : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.CONVERSATION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIALOG">
+      <MemberSignature Language="C#" Value="public const string DIALOG;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DIALOG" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.DIALOG" />
+      <MemberSignature Language="VB.NET" Value="Public Const DIALOG As String " />
+      <MemberSignature Language="F#" Value="val mutable DIALOG : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.DIALOG" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SETTINGS">
+      <MemberSignature Language="C#" Value="public const string SETTINGS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SETTINGS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.SETTINGS" />
+      <MemberSignature Language="VB.NET" Value="Public Const SETTINGS As String " />
+      <MemberSignature Language="F#" Value="val mutable SETTINGS : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.SETTINGS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="THIS">
+      <MemberSignature Language="C#" Value="public const string THIS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string THIS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.THIS" />
+      <MemberSignature Language="VB.NET" Value="Public Const THIS As String " />
+      <MemberSignature Language="F#" Value="val mutable THIS : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.THIS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TURN">
+      <MemberSignature Language="C#" Value="public const string TURN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TURN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.TURN" />
+      <MemberSignature Language="VB.NET" Value="Public Const TURN As String " />
+      <MemberSignature Language="F#" Value="val mutable TURN : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.TURN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USER">
+      <MemberSignature Language="C#" Value="public const string USER;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string USER" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ScopePath.USER" />
+      <MemberSignature Language="VB.NET" Value="Public Const USER As String " />
+      <MemberSignature Language="F#" Value="val mutable USER : string" Usage="Microsoft.Bot.Builder.Dialogs.ScopePath.USER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

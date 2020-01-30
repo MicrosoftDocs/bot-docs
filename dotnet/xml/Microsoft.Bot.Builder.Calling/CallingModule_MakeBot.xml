@@ -1,4 +1,4 @@
-﻿<Type Name="CallingModule_MakeBot" FullName="Microsoft.Bot.Builder.Calling.CallingModule_MakeBot">
+<Type Name="CallingModule_MakeBot" FullName="Microsoft.Bot.Builder.Calling.CallingModule_MakeBot">
   <TypeSignature Language="C#" Value="public sealed class CallingModule_MakeBot : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallingModule_MakeBot extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingModule_MakeBot" />

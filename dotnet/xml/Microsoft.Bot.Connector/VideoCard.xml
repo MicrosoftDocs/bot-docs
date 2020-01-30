@@ -1,4 +1,4 @@
-﻿<Type Name="VideoCard" FullName="Microsoft.Bot.Connector.VideoCard">
+<Type Name="VideoCard" FullName="Microsoft.Bot.Connector.VideoCard">
   <TypeSignature Language="C#" Value="public class VideoCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VideoCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.VideoCard" />

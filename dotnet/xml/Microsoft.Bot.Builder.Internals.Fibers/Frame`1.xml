@@ -1,4 +1,4 @@
-﻿<Type Name="Frame&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Frame&lt;C&gt;">
+<Type Name="Frame&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Frame&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class Frame&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFrame&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Frame`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IFrame`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Frame`1" />

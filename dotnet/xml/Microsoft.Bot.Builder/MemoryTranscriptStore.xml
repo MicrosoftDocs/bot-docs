@@ -1,4 +1,4 @@
-﻿<Type Name="MemoryTranscriptStore" FullName="Microsoft.Bot.Builder.MemoryTranscriptStore">
+<Type Name="MemoryTranscriptStore" FullName="Microsoft.Bot.Builder.MemoryTranscriptStore">
   <TypeSignature Language="C#" Value="public class MemoryTranscriptStore : Microsoft.Bot.Builder.ITranscriptStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MemoryTranscriptStore extends System.Object implements class Microsoft.Bot.Builder.ITranscriptLogger, class Microsoft.Bot.Builder.ITranscriptStore" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.MemoryTranscriptStore" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,7 +29,7 @@
             The memory transcript store stores transcripts in volatile memory in a Dictionary.
             </summary>
     <remarks>
-            Because this uses an unbounded volitile dictionary this should only be used for unit tests or non-production environments.
+            Because this uses an unbounded volatile dictionary this should only be used for unit tests or non-production environments.
             </remarks>
   </Docs>
   <Members>
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -69,6 +71,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -104,6 +107,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;</ReturnType>
@@ -143,6 +147,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;</ReturnType>
@@ -178,6 +183,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="PaymentCurrencyAmount" FullName="Microsoft.Bot.Connector.PaymentCurrencyAmount">
+<Type Name="PaymentCurrencyAmount" FullName="Microsoft.Bot.Connector.PaymentCurrencyAmount">
   <TypeSignature Language="C#" Value="public class PaymentCurrencyAmount" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentCurrencyAmount extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentCurrencyAmount" />

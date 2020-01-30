@@ -1,4 +1,4 @@
-﻿<Type Name="GetTokenDialog" FullName="Microsoft.Bot.Builder.Dialogs.GetTokenDialog">
+<Type Name="GetTokenDialog" FullName="Microsoft.Bot.Builder.Dialogs.GetTokenDialog">
   <TypeSignature Language="C#" Value="public class GetTokenDialog : Microsoft.Bot.Builder.Dialogs.IDialog&lt;Microsoft.Bot.Builder.Dialogs.GetTokenResponse&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GetTokenDialog extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;class Microsoft.Bot.Builder.Dialogs.GetTokenResponse&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.GetTokenDialog" />

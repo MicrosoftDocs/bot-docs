@@ -1,4 +1,4 @@
-﻿<Type Name="JSONConstants" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JSONConstants">
+<Type Name="JSONConstants" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JSONConstants">
   <TypeSignature Language="C#" Value="public static class JSONConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit JSONConstants extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JSONConstants" />

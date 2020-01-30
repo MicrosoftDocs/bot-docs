@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizeEnumeration&lt;T&gt;+DescriptionDelegate" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;T&gt;+DescriptionDelegate">
+<Type Name="RecognizeEnumeration&lt;T&gt;+DescriptionDelegate" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;T&gt;+DescriptionDelegate">
   <TypeSignature Language="C#" Value="public delegate Microsoft.Bot.Builder.FormFlow.DescribeAttribute RecognizeEnumeration&lt;T&gt;.DescriptionDelegate(object value) where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed RecognizeEnumeration`1/DescriptionDelegate&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.DescriptionDelegate" />

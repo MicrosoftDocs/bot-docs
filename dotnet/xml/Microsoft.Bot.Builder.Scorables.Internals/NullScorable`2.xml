@@ -1,4 +1,4 @@
-﻿<Type Name="NullScorable&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.NullScorable&lt;Item,Score&gt;">
+<Type Name="NullScorable&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.NullScorable&lt;Item,Score&gt;">
   <TypeSignature Language="C#" Value="public sealed class NullScorable&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NullScorable`2&lt;Item, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullScorable`2" />

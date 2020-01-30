@@ -1,4 +1,4 @@
-﻿<Type Name="HttpClientEx" FullName="Microsoft.Bot.Connector.HttpClientEx">
+<Type Name="HttpClientEx" FullName="Microsoft.Bot.Connector.HttpClientEx">
   <TypeSignature Language="C#" Value="public static class HttpClientEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HttpClientEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.HttpClientEx" />

@@ -1,5 +1,5 @@
 ---
-title: Add speech to messages | Microsoft Docs
+title: Add speech to messages - Bot Service
 description: Learn how to add speech to messages using the Bot Connector service.
 author: RobStand
 ms.author: kamrani

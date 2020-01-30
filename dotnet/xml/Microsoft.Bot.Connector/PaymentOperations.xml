@@ -1,4 +1,4 @@
-﻿<Type Name="PaymentOperations" FullName="Microsoft.Bot.Connector.PaymentOperations">
+<Type Name="PaymentOperations" FullName="Microsoft.Bot.Connector.PaymentOperations">
   <TypeSignature Language="C#" Value="public static class PaymentOperations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PaymentOperations extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.PaymentOperations" />

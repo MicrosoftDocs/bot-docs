@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationState" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState">
+<Type Name="ApplicationState" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState">
   <TypeSignature Language="C#" Value="public static class ApplicationState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ApplicationState extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.ApplicationState" />
@@ -35,7 +35,8 @@
         <Parameter Name="appState" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appState"></param>
+        <param name="appState">
+        </param>
         <summary>
             helper method to validate appState
             </summary>

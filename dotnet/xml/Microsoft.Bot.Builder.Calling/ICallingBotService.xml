@@ -1,4 +1,4 @@
-﻿<Type Name="ICallingBotService" FullName="Microsoft.Bot.Builder.Calling.ICallingBotService">
+<Type Name="ICallingBotService" FullName="Microsoft.Bot.Builder.Calling.ICallingBotService">
   <TypeSignature Language="C#" Value="public interface ICallingBotService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICallingBotService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ICallingBotService" />

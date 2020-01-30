@@ -1,4 +1,4 @@
-﻿<Type Name="IDialogContext" FullName="Microsoft.Bot.Builder.Dialogs.IDialogContext">
+<Type Name="IDialogContext" FullName="Microsoft.Bot.Builder.Dialogs.IDialogContext">
   <TypeSignature Language="C#" Value="public interface IDialogContext : Microsoft.Bot.Builder.Dialogs.IBotContext, Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogContext implements class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialogContext" />

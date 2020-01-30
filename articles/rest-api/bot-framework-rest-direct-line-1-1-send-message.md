@@ -1,5 +1,5 @@
 ---
-title: Send a message the bot | Microsoft Docs
+title: Send a message the bot - Bot Service
 description: Learn how to send a message to the bot using Direct Line API v1.1. 
 author: RobStand
 ms.author: kamrani

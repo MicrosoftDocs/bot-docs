@@ -1,4 +1,4 @@
-﻿<Type Name="OperationOutcomeConverter" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter">
+<Type Name="OperationOutcomeConverter" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter">
   <TypeSignature Language="C#" Value="public class OperationOutcomeConverter : Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationOutcomeConverter extends Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeConverter" />

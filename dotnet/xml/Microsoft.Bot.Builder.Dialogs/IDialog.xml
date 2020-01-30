@@ -1,4 +1,4 @@
-﻿<Type Name="IDialog" FullName="Microsoft.Bot.Builder.Dialogs.IDialog">
+<Type Name="IDialog" FullName="Microsoft.Bot.Builder.Dialogs.IDialog">
   <TypeSignature Language="C#" Value="public interface IDialog : Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialog implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialog" />
