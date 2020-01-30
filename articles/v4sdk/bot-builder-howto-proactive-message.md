@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 01/24/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -83,7 +83,7 @@ The second controller, the _notify_ controller, is responsible for sending the p
 Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
 The controller then uses the `ContinueConversationAsync` and `BotCallback` methods to send the proactive message.
 
-[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-60&highlight=28,40-43)]
+[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-62&highlight=28,40-44)]
 
 To send a proactive message, the adapter requires an app ID for the bot. In a production environment, you can use the bot's app ID. In a local test environment, you can use any GUID. If the bot is not currently assigned an app ID, the notify controller self-generates a placeholder ID to use for the call.
 
@@ -95,16 +95,14 @@ Each time the server's `/api/notify` page is requested, the server retrieves the
 The server then uses the `continueConversation` method to send the proactive message.
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
-[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=68-80&highlight=4-6)]
-
+[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=68-82&highlight=4-8)]
 
 # [Python](#tab/python)
 
 Each time the bot's notify page is requested, the server retrieves the conversation references from the dictionary.
 The server then uses the `_send_proactive_message` to send the proactive message.
 
-**app.py**
-[!code-python[Notify logic](~/../botbuilder-python/samples/python/16.proactive-messages/app.py?range=104-110&highlight=3-7)]
+[!code-python[Notify logic](~/../botbuilder-python/samples/python/16.proactive-messages/app.py?range=97-105&highlight=5-9)]
 
 ---
 
@@ -119,19 +117,19 @@ The server then uses the `_send_proactive_message` to send the proactive message
 
 Besides the sample used in this article, additional samples are available in C# and JS on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
 
-### Avoiding 401 "Unauthorized" Errors 
+### Avoiding 401 "Unauthorized" Errors
 
 By default, the BotBuilder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
 
-To avoid this, you must manually add the `serviceUrl` to the list of trusted host names by using: 
+To avoid this, you must manually add the `serviceUrl` to the list of trusted host names by using:
 
 # [C#](#tab/csharp)
 
-```csharp 
-MicrosoftAppCredentials.TrustServiceUrl(serviceUrl); 
-``` 
+```csharp
+MicrosoftAppCredentials.TrustServiceUrl(serviceUrl);
+```
 
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`. 
+For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`.
 
 You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
 
