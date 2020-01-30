@@ -49,7 +49,7 @@ Use the following guidelines when creating and including art files:
   
     ![This is an example of a red square used as a callout.](./media/create-images-markdown/gs13noauth.png)
 * When it makes sense, feel free to crop images so the UI elements will be displayed in full size. Make sure that the context is clear to users, though.
-* Avoid whitespace on edges of screenshots. If you crop a screenshot in a way that leaves white background at the edges, add a single pixel gray border around the image.  If using Paint, use the lighter gray in the default color pallete (0xC3C3C3). If using some other graphic app, the RGB color is R195, G195, 195. You can easily add a gray border around an image in Visio--to do this, select the image, select Line, and ensure the correct color is set, and then change the line weight to 1 1/2 pt.  Screenshots should have a 1-pixel-wide gray border so that white areas of the screenshot do not blur into the web page.
+* Avoid whitespace on edges of screenshots. If you crop a screenshot in a way that leaves white background at the edges, add a single pixel gray border around the image.  If using Paint, use the lighter gray in the default color palette (0xC3C3C3). If using some other graphic app, the RGB color is R195, G195, 195. You can easily add a gray border around an image in Visio--to do this, select the image, select Line, and ensure the correct color is set, and then change the line weight to 1 1/2 pt.  Screenshots should have a 1-pixel-wide gray border so that white areas of the screenshot do not blur into the web page.
   
     Example:
   
@@ -70,7 +70,7 @@ Use the following guidelines when creating and including art files:
     ![This is an example of a browser window screenshot.](./media/create-images-markdown/helloworldlocal.png)
 * Use caution with what information is revealed in screenshots.  Do not reveal internal company information or personal information.
 * In conceptual art or diagrams, use the official icons in the Cloud and Enterprise symbol and icon set. A public set is available at https://aka.ms/CnESymbols.
-* Replace personal or private information in screenshots with placeholder text enclosed in angle brackets. This includes user names, subscription IDs, and other related info. Personal names can be replaced with an [approved fictious name](https://aka.ms/ficticiousnames)(Employee-only link). Do not use the crayon or marker tip in Paint to obscure or blur personal or private information.
+* Replace personal or private information in screenshots with placeholder text enclosed in angle brackets. This includes user names, subscription IDs, and other related info. Personal names can be replaced with an [approved fictitious name](https://aka.ms/ficticiousnames)(Employee-only link). Do not use the crayon or marker tip in Paint to obscure or blur personal or private information.
   
   The following image has been correctly updated to replace the actual **subscription ID** with placeholder information:
   
