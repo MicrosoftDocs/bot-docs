@@ -131,7 +131,7 @@ Sending and receiving messages through the dialog context ensures that the `Inte
 ### Internals.IDialogStack
 
 `Internals.IDialogStack` provides methods to manage the [dialog stack](../bot-service-design-conversation-flow.md#dialog-stack). Most of the time, the dialog stack will 
-automatically be managed for you. However, there may be cases where you want to explictly manage the stack. 
+automatically be managed for you. However, there may be cases where you want to explicitly manage the stack. 
 For example, you might want to call a child dialog and add it to the 
 top of the dialog stack, mark the current dialog as complete (thereby removing it from the dialog stack and returning the result to the prior dialog in the stack), 
 suspend the current dialog until a message from the user arrives, or even reset the dialog stack altogether.
