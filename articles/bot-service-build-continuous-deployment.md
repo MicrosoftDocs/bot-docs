@@ -15,11 +15,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to](./includes/applies-to.md)]
 
-This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continous deployment with other source control systems, see the additional resource section at the bottom of this page.
+This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see the additional resource section at the bottom of this page.
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free account](http://portal.azure.com) before you begin.
-- You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continous deployment.
+- You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continuous deployment.
 
 ## Prepare your repository
 Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the Azure App Service Kudu build server. 
@@ -64,6 +64,6 @@ To disable continuous deployment, do the following:
 1. Click **Disconnect** to disable continuous deployment. To re-enable continuous deployment, repeat the steps from the appropriate sections above.
 
 ## Additional resources
-- To enable continuous deployment from BitBucket and Azure DevOps Services, see  [continous deployment using Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment).
+- To enable continuous deployment from BitBucket and Azure DevOps Services, see  [continuous deployment using Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment).
 
 
