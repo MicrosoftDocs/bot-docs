@@ -1,4 +1,4 @@
-﻿<Type Name="DialogSystem" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem">
+<Type Name="DialogSystem" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem">
   <TypeSignature Language="C#" Value="public sealed class DialogSystem : Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;, Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogSystem extends System.Object implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogSystem, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogSystem" />

@@ -1,4 +1,4 @@
-﻿<Type Name="ILuisService" FullName="Microsoft.Bot.Builder.Luis.ILuisService">
+<Type Name="ILuisService" FullName="Microsoft.Bot.Builder.Luis.ILuisService">
   <TypeSignature Language="C#" Value="public interface ILuisService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILuisService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ILuisService" />

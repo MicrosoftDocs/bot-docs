@@ -1,4 +1,4 @@
-﻿<Type Name="IBotDataBag" FullName="Microsoft.Bot.Builder.Dialogs.IBotDataBag">
+<Type Name="IBotDataBag" FullName="Microsoft.Bot.Builder.Dialogs.IBotDataBag">
   <TypeSignature Language="C#" Value="public interface IBotDataBag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotDataBag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IBotDataBag" />
@@ -160,7 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue&lt;T&gt;(string key, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IBotDataBag.TryGetValue``1(System.String,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T) (key As String, ByRef value As T) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool" Usage="iBotDataBag.TryGetValue (key, value)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string * 'T -&gt; bool" Usage="iBotDataBag.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

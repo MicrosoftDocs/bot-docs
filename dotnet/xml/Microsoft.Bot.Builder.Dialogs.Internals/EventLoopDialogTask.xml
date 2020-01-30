@@ -1,4 +1,4 @@
-﻿<Type Name="EventLoopDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask">
+<Type Name="EventLoopDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask">
   <TypeSignature Language="C#" Value="public sealed class EventLoopDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLoopDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.EventLoopDialogTask" />

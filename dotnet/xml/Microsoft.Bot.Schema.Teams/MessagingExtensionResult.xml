@@ -1,0 +1,240 @@
+<Type Name="MessagingExtensionResult" FullName="Microsoft.Bot.Schema.Teams.MessagingExtensionResult">
+  <TypeSignature Language="C#" Value="public class MessagingExtensionResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagingExtensionResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessagingExtensionResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagingExtensionResult" />
+  <TypeSignature Language="F#" Value="type MessagingExtensionResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Messaging extension result
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessagingExtensionResult class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionResult (string attachmentLayout = null, string type = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments = null, Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions = null, string text = null, Microsoft.Bot.Schema.Activity activityPreview = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachmentLayout, string type, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments, class Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions, string text, class Microsoft.Bot.Schema.Activity activityPreview) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment},Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction,System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional attachmentLayout As String = null, Optional type As String = null, Optional attachments As IList(Of MessagingExtensionAttachment) = null, Optional suggestedActions As MessagingExtensionSuggestedAction = null, Optional text As String = null, Optional activityPreview As Activity = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionResult : string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction * string * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionResult" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionResult (attachmentLayout, type, attachments, suggestedActions, text, activityPreview)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attachmentLayout" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="attachments" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt;" />
+        <Parameter Name="suggestedActions" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="activityPreview" Type="Microsoft.Bot.Schema.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="attachmentLayout">Hint for how to deal with multiple
+            attachments. Possible values include: 'list', 'grid'</param>
+        <param name="type">The type of the result. Possible values include:
+            'result', 'auth', 'config', 'message', 'botMessagePreview'</param>
+        <param name="attachments">(Only when type is result)
+            Attachments</param>
+        <param name="suggestedActions">To be added.</param>
+        <param name="text">(Only when type is message) Text</param>
+        <param name="activityPreview">(Only when type is botMessagePreview)
+            Message activity to preview</param>
+        <summary>
+            Initializes a new instance of the MessagingExtensionResult class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityPreview">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity ActivityPreview { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity ActivityPreview" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.ActivityPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivityPreview As Activity" />
+      <MemberSignature Language="F#" Value="member this.ActivityPreview : Microsoft.Bot.Schema.Activity with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionResult.ActivityPreview" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activityPreview")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Only when type is botMessagePreview) Message activity
+            to preview
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentLayout">
+      <MemberSignature Language="C#" Value="public string AttachmentLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.AttachmentLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentLayout : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionResult.AttachmentLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets hint for how to deal with multiple attachments.
+            Possible values include: 'list', 'grid'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; Attachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; Attachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of MessagingExtensionAttachment)" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionResult.Attachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Only when type is result) Attachments
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction SuggestedActions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction SuggestedActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.SuggestedActions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedActions As MessagingExtensionSuggestedAction" />
+      <MemberSignature Language="F#" Value="member this.SuggestedActions : Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionResult.SuggestedActions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionResult.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets (Only when type is message) Text
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionResult.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of the result. Possible values include:
+            'result', 'auth', 'config', 'message', 'botMessagePreview'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

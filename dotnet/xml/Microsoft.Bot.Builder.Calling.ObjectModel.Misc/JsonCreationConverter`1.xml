@@ -1,4 +1,4 @@
-﻿<Type Name="JsonCreationConverter&lt;T&gt;" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;T&gt;">
+<Type Name="JsonCreationConverter&lt;T&gt;" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class JsonCreationConverter&lt;T&gt; : Newtonsoft.Json.JsonConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JsonCreationConverter`1&lt;T&gt; extends Newtonsoft.Json.JsonConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1" />
@@ -16,7 +16,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T"></typeparam>
+    <typeparam name="T">
+    </typeparam>
     <summary>
             Helper class to use for deserializing where the concrete classes are determined by checking 
             properties in the JSON data.

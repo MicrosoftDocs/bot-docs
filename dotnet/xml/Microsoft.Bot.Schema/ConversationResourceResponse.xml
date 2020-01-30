@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationResourceResponse" FullName="Microsoft.Bot.Schema.ConversationResourceResponse">
+<Type Name="ConversationResourceResponse" FullName="Microsoft.Bot.Schema.ConversationResourceResponse">
   <TypeSignature Language="C#" Value="public class ConversationResourceResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationResourceResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ConversationResourceResponse" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -60,6 +62,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="activityId" Type="System.String" />
@@ -92,6 +95,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,6 +127,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,6 +159,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

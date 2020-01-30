@@ -1,4 +1,4 @@
-﻿<Type Name="Recognize" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize">
+<Type Name="Recognize" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize">
   <TypeSignature Language="C#" Value="public class Recognize : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Recognize extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize" />

@@ -1,0 +1,243 @@
+<Type Name="CosmosDbPartitionedStorageOptions" FullName="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions">
+  <TypeSignature Language="C#" Value="public class CosmosDbPartitionedStorageOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbPartitionedStorageOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbPartitionedStorageOptions" />
+  <TypeSignature Language="F#" Value="type CosmosDbPartitionedStorageOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Cosmos DB Partitioned Storage Options.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbPartitionedStorageOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthKey">
+      <MemberSignature Language="C#" Value="public string AuthKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.AuthKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthKey As String" />
+      <MemberSignature Language="F#" Value="member this.AuthKey : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.AuthKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the authentication key for Cosmos DB.
+            </summary>
+        <value>
+            The authentication key for Cosmos DB.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompatibilityMode">
+      <MemberSignature Language="C#" Value="public bool CompatibilityMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CompatibilityMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CompatibilityMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompatibilityMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CompatibilityMode : bool with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CompatibilityMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether or not to run in Compatibility Mode.
+            Early versions of CosmosDb had a key length limit of 255.  Keys longer than this were
+            truncated in <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape" />.  This remains the default behavior, but
+            can be overridden by setting CompatibilityMode to false.  This setting will also allow
+            for using older collections where no PartitionKey was specified.
+            
+            Note: CompatibilityMode cannot be 'true' if KeySuffix is used.
+            </summary>
+        <value>
+            Currently, max key length for cosmosdb is 1023:
+            https://docs.microsoft.com/en-us/azure/cosmos-db/concepts-limits#per-item-limits
+            The default for backwards compatibility is 255 <see cref="F:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape.MaxKeyLength" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerId">
+      <MemberSignature Language="C#" Value="public string ContainerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContainerId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.ContainerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainerId As String" />
+      <MemberSignature Language="F#" Value="member this.ContainerId : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.ContainerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the container identifier.
+            </summary>
+        <value>
+            The container identifier.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerThroughput">
+      <MemberSignature Language="C#" Value="public int ContainerThroughput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ContainerThroughput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.ContainerThroughput" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainerThroughput As Integer" />
+      <MemberSignature Language="F#" Value="member this.ContainerThroughput : int with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.ContainerThroughput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the throughput set when creating the Container. Defaults to 400.
+            </summary>
+        <value>
+            Container throughput. Defaults to 400.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosmosClientOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Cosmos.CosmosClientOptions CosmosClientOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Cosmos.CosmosClientOptions CosmosClientOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CosmosClientOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property CosmosClientOptions As CosmosClientOptions" />
+      <MemberSignature Language="F#" Value="member this.CosmosClientOptions : Microsoft.Azure.Cosmos.CosmosClientOptions with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CosmosClientOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Cosmos.CosmosClientOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the options for the CosmosClient.
+            </summary>
+        <value>
+            The options for use with the CosmosClient.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosmosDbEndpoint">
+      <MemberSignature Language="C#" Value="public string CosmosDbEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CosmosDbEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CosmosDbEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property CosmosDbEndpoint As String" />
+      <MemberSignature Language="F#" Value="member this.CosmosDbEndpoint : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CosmosDbEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the CosmosDB endpoint.
+            </summary>
+        <value>
+            The CosmosDB endpoint.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseId">
+      <MemberSignature Language="C#" Value="public string DatabaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.DatabaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DatabaseId As String" />
+      <MemberSignature Language="F#" Value="member this.DatabaseId : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.DatabaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the database identifier for Cosmos DB instance.
+            </summary>
+        <value>
+            The database identifier for Cosmos DB instance.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySuffix">
+      <MemberSignature Language="C#" Value="public string KeySuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeySuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.KeySuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeySuffix As String" />
+      <MemberSignature Language="F#" Value="member this.KeySuffix : string with get, set" Usage="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.KeySuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the suffix to be added to every key. <see cref="M:Microsoft.Bot.Builder.Azure.CosmosDbKeyEscape.EscapeKey(System.String)" />.
+            
+            Note: <see cref="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CompatibilityMode" /> must be set to 'false' to use a KeySuffix.
+            When KeySuffix is used, keys will NOT be truncated but an exception will be thrown if
+            the key length is longer than allowed by CosmosDb.
+            </summary>
+        <value>
+            String containing only valid CosmosDb key characters. (e.g. not: '\\', '?', '/', '#', '*').
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

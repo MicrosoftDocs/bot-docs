@@ -1,4 +1,4 @@
-﻿<Type Name="BotFrameworkConfigurationBuilder" FullName="Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder">
+<Type Name="BotFrameworkConfigurationBuilder" FullName="Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder">
   <TypeSignature Language="C#" Value="public class BotFrameworkConfigurationBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotFrameworkConfigurationBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="botFrameworkOptions" Type="Microsoft.Bot.Builder.Integration.BotFrameworkOptions" />
@@ -58,6 +60,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.BotFrameworkOptions</ReturnType>
@@ -82,6 +85,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>
@@ -112,6 +116,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>
@@ -143,6 +148,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>
@@ -174,6 +180,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>
@@ -205,6 +212,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>
@@ -235,6 +243,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder</ReturnType>

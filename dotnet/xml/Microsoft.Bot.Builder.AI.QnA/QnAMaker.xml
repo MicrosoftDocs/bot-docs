@@ -1,9 +1,9 @@
-﻿<Type Name="QnAMaker" FullName="Microsoft.Bot.Builder.AI.QnA.QnAMaker">
-  <TypeSignature Language="C#" Value="public class QnAMaker : Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMaker extends System.Object implements class Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker" />
+<Type Name="QnAMaker" FullName="Microsoft.Bot.Builder.AI.QnA.QnAMaker">
+  <TypeSignature Language="C#" Value="public class QnAMaker : Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient, Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMaker extends System.Object implements class Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient, class Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QnAMaker" />
-  <TypeSignature Language="VB.NET" Value="Public Class QnAMaker&#xA;Implements ITelemetryQnAMaker" />
-  <TypeSignature Language="F#" Value="type QnAMaker = class&#xA;    interface ITelemetryQnAMaker" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMaker&#xA;Implements IQnAMakerClient, ITelemetryQnAMaker" />
+  <TypeSignature Language="F#" Value="type QnAMaker = class&#xA;    interface IQnAMakerClient&#xA;    interface ITelemetryQnAMaker" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
@@ -11,11 +11,15 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker</InterfaceName>
     </Interface>
@@ -40,6 +44,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -69,6 +74,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
@@ -96,6 +102,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -127,6 +134,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
@@ -150,13 +158,17 @@
     </Member>
     <Member MemberName="CallTrainAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CallTrainAsync (Microsoft.Bot.Builder.AI.QnA.FeedbackRecords feedbackRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CallTrainAsync(class Microsoft.Bot.Builder.AI.QnA.FeedbackRecords feedbackRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CallTrainAsync(class Microsoft.Bot.Builder.AI.QnA.FeedbackRecords feedbackRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.CallTrainAsync(Microsoft.Bot.Builder.AI.QnA.FeedbackRecords)" />
-      <MemberSignature Language="F#" Value="member this.CallTrainAsync : Microsoft.Bot.Builder.AI.QnA.FeedbackRecords -&gt; System.Threading.Tasks.Task" Usage="qnAMaker.CallTrainAsync feedbackRecords" />
+      <MemberSignature Language="F#" Value="abstract member CallTrainAsync : Microsoft.Bot.Builder.AI.QnA.FeedbackRecords -&gt; System.Threading.Tasks.Task&#xA;override this.CallTrainAsync : Microsoft.Bot.Builder.AI.QnA.FeedbackRecords -&gt; System.Threading.Tasks.Task" Usage="qnAMaker.CallTrainAsync feedbackRecords" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient.CallTrainAsync(Microsoft.Bot.Builder.AI.QnA.FeedbackRecords)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -184,6 +196,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
@@ -204,6 +217,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ValueTuple&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;,System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;&gt;&gt;</ReturnType>
@@ -246,6 +260,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -272,12 +287,14 @@
       <MemberSignature Language="F#" Value="abstract member GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;&#xA;override this.GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswersAsync (turnContext, options, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})</InterfaceMember>
         <InterfaceMember>M:Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -300,16 +317,55 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetAnswersRawAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt; GetAnswersRawAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = null, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResults&gt; GetAnswersRawAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersRawAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersRawAsync (turnContext As ITurnContext, options As QnAMakerOptions, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of QueryResults)" />
+      <MemberSignature Language="F#" Value="abstract member GetAnswersRawAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt;&#xA;override this.GetAnswersRawAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt;" Usage="qnAMaker.GetAnswersRawAsync (turnContext, options, telemetryProperties, telemetryMetrics)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient.GetAnswersRawAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The Turn Context that contains the user question to be queried against your knowledge base.</param>
+        <param name="options">The options for the QnA Maker knowledge base. If null, constructor option is used for this instance.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the QnaMessage event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the QnaMessage event.</param>
+        <summary>
+            Generates an answer from the knowledge base.
+            </summary>
+        <returns>A list of answers for the user query, sorted in decreasing order of ranking score.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetLowScoreVariation">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.QnA.QueryResult[] GetLowScoreVariation (Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.AI.QnA.QueryResult[] GetLowScoreVariation(class Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.AI.QnA.QueryResult[] GetLowScoreVariation(class Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetLowScoreVariation(Microsoft.Bot.Builder.AI.QnA.QueryResult[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLowScoreVariation (queryResult As QueryResult()) As QueryResult()" />
-      <MemberSignature Language="F#" Value="member this.GetLowScoreVariation : Microsoft.Bot.Builder.AI.QnA.QueryResult[] -&gt; Microsoft.Bot.Builder.AI.QnA.QueryResult[]" Usage="qnAMaker.GetLowScoreVariation queryResult" />
+      <MemberSignature Language="F#" Value="abstract member GetLowScoreVariation : Microsoft.Bot.Builder.AI.QnA.QueryResult[] -&gt; Microsoft.Bot.Builder.AI.QnA.QueryResult[]&#xA;override this.GetLowScoreVariation : Microsoft.Bot.Builder.AI.QnA.QueryResult[] -&gt; Microsoft.Bot.Builder.AI.QnA.QueryResult[]" Usage="qnAMaker.GetLowScoreVariation queryResult" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient.GetLowScoreVariation(Microsoft.Bot.Builder.AI.QnA.QueryResult[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AI.QnA.QueryResult[]</ReturnType>
@@ -340,6 +396,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -362,6 +419,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -396,6 +454,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -419,6 +478,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -442,6 +502,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -465,7 +526,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
       </ReturnValue>

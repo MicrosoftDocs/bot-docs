@@ -1,4 +1,4 @@
-﻿<Type Name="Conversation" FullName="Microsoft.Bot.Builder.Dialogs.Conversation">
+<Type Name="Conversation" FullName="Microsoft.Bot.Builder.Dialogs.Conversation">
   <TypeSignature Language="C#" Value="public static class Conversation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Conversation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Conversation" />

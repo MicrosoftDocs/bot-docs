@@ -1,4 +1,4 @@
-﻿<Type Name="SerializeByConversation" FullName="Microsoft.Bot.Builder.Dialogs.Internals.SerializeByConversation">
+<Type Name="SerializeByConversation" FullName="Microsoft.Bot.Builder.Dialogs.Internals.SerializeByConversation">
   <TypeSignature Language="C#" Value="public sealed class SerializeByConversation : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SerializeByConversation extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.SerializeByConversation" />

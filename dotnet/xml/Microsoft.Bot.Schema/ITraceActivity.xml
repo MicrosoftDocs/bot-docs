@@ -1,4 +1,4 @@
-﻿<Type Name="ITraceActivity" FullName="Microsoft.Bot.Schema.ITraceActivity">
+<Type Name="ITraceActivity" FullName="Microsoft.Bot.Schema.ITraceActivity">
   <TypeSignature Language="C#" Value="public interface ITraceActivity : Microsoft.Bot.Schema.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITraceActivity implements class Microsoft.Bot.Schema.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ITraceActivity" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -19,9 +20,18 @@
   </Interfaces>
   <Docs>
     <summary>
-            An activity by which a bot can log internal information into a logged conversation transcript.
-            </summary>
-    <remarks>To be added.</remarks>
+             Represents a point in a bot's logic, to help with bot debugging.
+             </summary>
+    <remarks>
+             The trace activity typically is logged by transcript history components to become part of a
+             transcript history. In remote debugging scenarios the trace activity can be sent to the client
+             so that the activity can be inspected as part of the debug flow.
+            
+             Trace activities are normally not shown to the user, and are internal to transcript logging
+             and developer debugging.
+            
+             See also InspectionMiddleware.
+             </remarks>
   </Docs>
   <Members>
     <Member MemberName="Label">
@@ -38,16 +48,17 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or Sets Descriptive label for the trace.
+            Gets or sets an optional label which can provide contextual information about the trace.
             </summary>
         <value>
-            Descriptive label for the trace.
+            A descriptive label for the trace.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,16 +77,17 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or Sets Name of the trace activity.
+            Gets or sets the name of the trace operation.
             </summary>
         <value>
-            Name of the trace activity.
+            The name of the trace operation.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,16 +106,18 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets of Sets Open-ended value.
+            Gets or sets the <see cref="T:Microsoft.Bot.Schema.ConversationReference" />, and optionally a specific activity
+            within that conversation, that this trace is related to.
             </summary>
         <value>
-            Open-ended value.
+            The conversation reference to which this trace activity relates.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,16 +136,18 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or Sets Open-ended value.
+            Gets or sets the content for this trace, as defined by the <see cref="P:Microsoft.Bot.Schema.ITraceActivity.ValueType" /> or
+            <see cref="P:Microsoft.Bot.Schema.ITraceActivity.Name" /> property.
             </summary>
         <value>
-            Open-ended value.
+            The content for this trace.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,18 +166,20 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or Sets Unique string which identifies the format of the value object.
+            Gets or sets an optional identifier for the format of the <see cref="P:Microsoft.Bot.Schema.ITraceActivity.Value" /> property.
             </summary>
         <value>
-            Unique string which identifies the format of the value object.
+            An optional identifier for the format of the value object.
             </value>
-        <remarks>To be added.</remarks>
+        <remarks>This property is optional, if the <see cref="P:Microsoft.Bot.Schema.ITraceActivity.Name" /> property adequately identifies
+            the format of the <see cref="P:Microsoft.Bot.Schema.ITraceActivity.Value" /> property.</remarks>
       </Docs>
     </Member>
   </Members>

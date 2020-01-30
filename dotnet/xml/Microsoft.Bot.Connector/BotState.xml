@@ -1,4 +1,4 @@
-﻿<Type Name="BotState" FullName="Microsoft.Bot.Connector.BotState">
+<Type Name="BotState" FullName="Microsoft.Bot.Connector.BotState">
   <TypeSignature Language="C#" Value="public class BotState : Microsoft.Bot.Connector.IBotState, Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.StateClient&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotState extends System.Object implements class Microsoft.Bot.Connector.IBotState, class Microsoft.Rest.IServiceOperations`1&lt;class Microsoft.Bot.Connector.StateClient&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotState" />

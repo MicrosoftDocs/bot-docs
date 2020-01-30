@@ -1,5 +1,5 @@
 ---
-title: Define conversation steps with waterfalls | Microsoft Docs
+title: Define conversation steps with waterfalls - Bot Service
 description: Learn how to use waterfalls to define the steps of a conversation with the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani

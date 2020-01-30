@@ -1,4 +1,4 @@
-﻿<Type Name="ITelemetryQnAMaker" FullName="Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker">
+<Type Name="ITelemetryQnAMaker" FullName="Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker">
   <TypeSignature Language="C#" Value="public interface ITelemetryQnAMaker" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITelemetryQnAMaker" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.ITelemetryQnAMaker" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -26,6 +27,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -59,6 +61,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -82,13 +85,16 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the currently configured <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> that logs the QnaMessage event.
+            </summary>
+        <value>The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> being used to log events.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

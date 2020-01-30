@@ -1,5 +1,5 @@
 ---
-title: Add input hints to messages | Microsoft Docs
+title: Add input hints to messages - Bot Service
 description: Learn how to add input hints to messages using the Bot Connector service.
 author: RobStand
 ms.author: kamrani

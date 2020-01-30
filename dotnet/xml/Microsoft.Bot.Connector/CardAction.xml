@@ -1,4 +1,4 @@
-﻿<Type Name="CardAction" FullName="Microsoft.Bot.Connector.CardAction">
+<Type Name="CardAction" FullName="Microsoft.Bot.Connector.CardAction">
   <TypeSignature Language="C#" Value="public class CardAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardAction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CardAction" />

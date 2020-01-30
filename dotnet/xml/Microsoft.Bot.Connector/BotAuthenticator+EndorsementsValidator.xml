@@ -1,4 +1,4 @@
-﻿<Type Name="BotAuthenticator+EndorsementsValidator" FullName="Microsoft.Bot.Connector.BotAuthenticator+EndorsementsValidator">
+<Type Name="BotAuthenticator+EndorsementsValidator" FullName="Microsoft.Bot.Connector.BotAuthenticator+EndorsementsValidator">
   <TypeSignature Language="C#" Value="public delegate bool BotAuthenticator.EndorsementsValidator(IEnumerable&lt;IActivity&gt; activities, string[] endorsements);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed BotAuthenticator/EndorsementsValidator extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator" />

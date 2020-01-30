@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationsExtensions" FullName="Microsoft.Bot.Connector.ConversationsExtensions">
+<Type Name="ConversationsExtensions" FullName="Microsoft.Bot.Connector.ConversationsExtensions">
   <TypeSignature Language="C#" Value="public static class ConversationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConversationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationsExtensions" />
@@ -14,6 +14,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -96,6 +97,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
@@ -189,6 +191,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
@@ -255,6 +258,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationResourceResponse</ReturnType>
@@ -323,6 +327,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
@@ -393,6 +398,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
@@ -462,6 +468,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -542,6 +549,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -610,10 +618,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetActivityMembersAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetActivityMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetActivityMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetActivityMembersAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync (operations, conversationId, activityId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetActivityMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetActivityMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="static member GetActivityMembersAsync : Microsoft.Bot.Connector.IConversations * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync (operations, conversationId, activityId, cancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -622,6 +630,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -687,10 +696,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationMembersAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetConversationMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetConversationMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetConversationMembersAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync (operations, conversationId, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetConversationMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, System.Threading.CancellationToken cancellationToken = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; GetConversationMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="static member GetConversationMembersAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync (operations, conversationId, cancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -699,6 +708,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -763,10 +773,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationPagedMembersAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt; GetConversationPagedMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Nullable&lt;int&gt; pageSize = null, string continuationToken = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.PagedMembersResult&gt; GetConversationPagedMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationPagedMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetConversationPagedMembersAsync : Microsoft.Bot.Connector.IConversations * string * Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationPagedMembersAsync (operations, conversationId, pageSize, continuationToken, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt; GetConversationPagedMembersAsync (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Nullable&lt;int&gt; pageSize = null, string continuationToken = null, System.Threading.CancellationToken cancellationToken = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.PagedMembersResult&gt; GetConversationPagedMembersAsync(class Microsoft.Bot.Connector.IConversations operations, string conversationId, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationPagedMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="static member GetConversationPagedMembersAsync : Microsoft.Bot.Connector.IConversations * string * Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationPagedMembersAsync (operations, conversationId, pageSize, continuationToken, cancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -775,6 +785,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;</ReturnType>
@@ -856,10 +867,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt; GetConversationsAsync (this Microsoft.Bot.Connector.IConversations operations, string continuationToken = null, System.Threading.CancellationToken cancellationToken = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationsResult&gt; GetConversationsAsync(class Microsoft.Bot.Connector.IConversations operations, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="F#" Value="static member GetConversationsAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync (operations, continuationToken, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt; GetConversationsAsync (this Microsoft.Bot.Connector.IConversations operations, string continuationToken = null, System.Threading.CancellationToken cancellationToken = null);" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationsResult&gt; GetConversationsAsync(class Microsoft.Bot.Connector.IConversations operations, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="static member GetConversationsAsync : Microsoft.Bot.Connector.IConversations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;" Usage="Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync (operations, continuationToken, cancellationToken)" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -868,6 +879,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
@@ -946,6 +958,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
@@ -1041,6 +1054,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1113,6 +1127,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1165,8 +1180,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ResourceResponse SendConversationHistory (this Microsoft.Bot.Connector.IConversations operations, string conversationId, Microsoft.Bot.Connector.Transcript history);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ResourceResponse SendConversationHistory(class Microsoft.Bot.Connector.IConversations operations, string conversationId, class Microsoft.Bot.Connector.Transcript history) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory(Microsoft.Bot.Connector.IConversations,System.String,Microsoft.Bot.Connector.Transcript)" />
-      <MemberSignature Language="F#" Value="static member SendConversationHistory : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.Transcript -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory (operations, conversationId, history)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SendConversationHistory (operations As IConversations, conversationId As String, history As Transcript) As ResourceResponse" />
+      <MemberSignature Language="F#" Value="static member SendConversationHistory : Microsoft.Bot.Connector.IConversations * string * Microsoft.Bot.Connector.Transcript -&gt; Microsoft.Bot.Connector.ResourceResponse" Usage="Microsoft.Bot.Connector.ConversationsExtensions.SendConversationHistory (operations, conversationId, history)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -1235,6 +1250,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1313,6 +1329,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
@@ -1406,6 +1423,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1476,6 +1494,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1560,6 +1579,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ResourceResponse</ReturnType>
@@ -1655,6 +1675,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1727,6 +1748,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1843,6 +1865,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>

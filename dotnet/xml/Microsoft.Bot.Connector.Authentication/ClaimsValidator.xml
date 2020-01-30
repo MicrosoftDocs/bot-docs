@@ -1,0 +1,66 @@
+<Type Name="ClaimsValidator" FullName="Microsoft.Bot.Connector.Authentication.ClaimsValidator">
+  <TypeSignature Language="C#" Value="public abstract class ClaimsValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ClaimsValidator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.ClaimsValidator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ClaimsValidator" />
+  <TypeSignature Language="F#" Value="type ClaimsValidator = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An interface used to validate identity <see cref="T:System.Security.Claims.Claim" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ClaimsValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.ClaimsValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateClaimsAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task ValidateClaimsAsync (System.Collections.Generic.IList&lt;System.Security.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ValidateClaimsAsync(class System.Collections.Generic.IList`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.ClaimsValidator.ValidateClaimsAsync(System.Collections.Generic.IList{System.Security.Claims.Claim})" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ValidateClaimsAsync (claims As IList(Of Claim)) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ValidateClaimsAsync : System.Collections.Generic.IList&lt;System.Security.Claims.Claim&gt; -&gt; System.Threading.Tasks.Task" Usage="claimsValidator.ValidateClaimsAsync claims" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.Security.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="claims">The list of claims to validate.</param>
+        <summary>
+            Validates a list of <see cref="T:System.Security.Claims.Claim" /> and should throw an exception if the validation fails.
+            </summary>
+        <returns>true if the validation is successful, false if not.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.UnauthorizedAccessException">Throw this exception if the validation fails.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,5 +1,5 @@
 ---
-title: Create task automation bots | Microsoft Docs
+title: Create task automation bots - Bot Service
 description: Learn how to design bots that perform tasks without further human intervention.
 author: matvelloso
 ms.author: mateusv

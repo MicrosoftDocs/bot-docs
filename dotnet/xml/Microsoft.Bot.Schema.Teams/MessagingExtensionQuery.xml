@@ -1,0 +1,177 @@
+<Type Name="MessagingExtensionQuery" FullName="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery">
+  <TypeSignature Language="C#" Value="public class MessagingExtensionQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagingExtensionQuery extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagingExtensionQuery" />
+  <TypeSignature Language="F#" Value="type MessagingExtensionQuery = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Messaging extension query
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessagingExtensionQuery class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionQuery (string commandId = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; parameters = null, Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions queryOptions = null, string state = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandId, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; parameters, class Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions queryOptions, string state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessagingExtensionParameter},Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional commandId As String = null, Optional parameters As IList(Of MessagingExtensionParameter) = null, Optional queryOptions As MessagingExtensionQueryOptions = null, Optional state As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionQuery : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions * string -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionQuery" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionQuery (commandId, parameters, queryOptions, state)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commandId" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt;" />
+        <Parameter Name="queryOptions" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions" />
+        <Parameter Name="state" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="commandId">Id of the command assigned by Bot</param>
+        <param name="parameters">Parameters for the query</param>
+        <param name="queryOptions">To be added.</param>
+        <param name="state">State parameter passed back to the bot after
+            authentication/configuration flow</param>
+        <summary>
+            Initializes a new instance of the MessagingExtensionQuery class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandId">
+      <MemberSignature Language="C#" Value="public string CommandId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommandId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.CommandId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandId As String" />
+      <MemberSignature Language="F#" Value="member this.CommandId : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.CommandId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="commandId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets id of the command assigned by Bot
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; Parameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As IList(Of MessagingExtensionParameter)" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameters")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets parameters for the query
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions QueryOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions QueryOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.QueryOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryOptions As MessagingExtensionQueryOptions" />
+      <MemberSignature Language="F#" Value="member this.QueryOptions : Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.QueryOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="queryOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public string State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As String" />
+      <MemberSignature Language="F#" Value="member this.State : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="state")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets state parameter passed back to the bot after
+            authentication/configuration flow
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

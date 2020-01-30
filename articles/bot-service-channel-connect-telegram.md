@@ -1,5 +1,5 @@
 ---
-title: Create a bot for Telegram | Microsoft Docs
+title: Create a bot for Telegram - Bot Service
 description: Learn how to configure a bot's connection to Telegram.
 keywords: configure bot, Telegram, bot channel, Telegram bot, access token
 author: RobStand

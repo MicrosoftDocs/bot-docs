@@ -1,4 +1,4 @@
-﻿<Type Name="BotAuthenticationHandler" FullName="Microsoft.Bot.Connector.BotAuthenticationHandler">
+<Type Name="BotAuthenticationHandler" FullName="Microsoft.Bot.Connector.BotAuthenticationHandler">
   <TypeSignature Language="C#" Value="public class BotAuthenticationHandler : Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;Microsoft.Bot.Connector.BotAuthenticationOptions&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotAuthenticationHandler extends Microsoft.AspNetCore.Authentication.AuthenticationHandler`1&lt;class Microsoft.Bot.Connector.BotAuthenticationOptions&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotAuthenticationHandler" />
