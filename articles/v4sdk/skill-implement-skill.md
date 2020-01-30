@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/22/2020
+ms.date: 01/27/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -185,7 +185,6 @@ Define a claims validation method that throws an error to reject an incoming req
 
 [!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=6-27&highlight=18-20)]
 
-<!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
 Define a claims validation method that throws an error to reject an incoming request.
@@ -257,19 +256,19 @@ The manifest contains the information you need to access the skill from another 
 
 **EchoSkillBot\wwwroot\manifest\echoskillbot-manifest-1.0.json**
 
-[!code-csharp[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/wwwroot/manifest/echoskillbot-manifest-1.0.json)]
+[!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/wwwroot/manifest/echoskillbot-manifest-1.0.json)]
 
 ### [JavaScript](#tab/javascript)
 
 **echo-skill-bot/manifest/echoskillbot-manifest-1.0.json**
 
-[!code-javascript[Manifest](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/manifest/echoskillbot-manifest-1.0.json)]
+[!code-json[Manifest](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/manifest/echoskillbot-manifest-1.0.json)]
 
 ### [Python](#tab/python)
 
 **echo_skill_bot/wwwroot/manifest/echoskillbot-manifest-1.0.json**
 
-[!code-javascript[Manifest](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/wwwroot/manifest/echoskillbot-manifest-1.0.json)]
+[!code-json[Manifest](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/wwwroot/manifest/echoskillbot-manifest-1.0.json)]
 
 ---
 
