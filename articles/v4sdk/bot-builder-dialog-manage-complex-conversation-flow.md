@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/06/2019
+ms.date: 01/30/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,34 +15,35 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-You can manage simple and complex conversation flows using the dialogs library.
-In this article, we will show you how to manage complex conversations that branch and loop.
-We'll also show you how to pass arguments between different parts of the dialog.
+You can create complex conversation flows using the dialogs library.
+This article covers how to manage complex conversations that branch and loop and how to pass arguments between different parts of the dialog.
 
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [implement sequential conversation flow][simple-dialog].
-- A copy of the complex dialog sample in [**C#**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
+- A copy of the complex dialog sample in [**C#**][cs-sample], [**JavaScript**][js-sample], or [**Python**][python-sample].
 
 ## About this sample
 
 This sample represents a bot that can sign users up to review up to two companies from a list.
+It uses conversation state to manage its dialogs and uses user state to save information about the user and which companies they want to review.
 
-`DialogAndWelcomeBot` extends `DialogBot`, which defines the handlers for different activities and the bot's turn handler. `DialogBot` runs the dialogs:
+The bot welcomes the user when they first join the conversation and starts or continues the main dialog whenever it receives a message from the user. It overrides the activity handler's _run_ method to save both user and conversation state before the turn ends.
 
-- The _run_ method is used by `DialogBot` to kick off the dialog.
-- `MainDialog` is the parent of the other two dialogs, which are called at certain times in the dialogs. Details on those dialogs are provided throughout this article.
+The bot defines _main dialog_, _top-level dialog_, and _review-selection dialog_ component dialogs, which together do the following:
 
-The dialogs are split into `MainDialog`, `TopLevelDialog`, and `ReviewSelectionDialog` component dialogs, which together do the following:
+- The main dialog initiates the top-level dialog.
+  - The top-level dialog initializes the user profile, asks for the user's name and age, and then _branches_ based on the user's age.
+    - If the user is too young, the user is not asked to review any companies.
+    - If the user is old enough, it starts the review-selection dialog to collect the user's review preferences.
+      - The review-selection dialog allows the user to select a company to review.
+      - If the user chooses a company, it _loops_ to allow the user to select a second company.
+      - When it ends, it passes the companies the user selected to its parent dialog.
+  - The top-level dialog thanks the user for participating and passes the completed user profile to its parent when it ends.
+- The main dialog summarizes information in the profile and saves the profile in user state.
+- It then starts the process over again, allowing you to test the flow multiple times without needing to restart the bot.
 
-- They ask for the user's name and age, and then _branch_ based on the user's age.
-  - If the user is too young, they do not ask the user to review any companies.
-  - If the user is old enough, they start to collect the user's review preferences.
-    - They allow the user to select a company to review.
-    - If the user chooses a company, they _loop_ to allow a second company to be selected.
-- Finally, they thank the user for participating.
-
-They use waterfall dialogs and a few prompts to manage a complex conversation.
+The bot uses waterfall dialogs and a few prompts to manage this conversation flow.
 
 # [C#](#tab/csharp)
 
@@ -117,7 +118,6 @@ We create services for the bot that other parts of the code require.
 **data_models/user_profile.py**
 
 [!code-python[UserProfile class](~/../botbuilder-python/samples/python/43.complex-dialog/data_models/user_profile.py?range=7-13)]
-
 
 ---
 
