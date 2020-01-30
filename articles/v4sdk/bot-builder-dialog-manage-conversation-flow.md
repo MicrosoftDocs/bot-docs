@@ -144,7 +144,7 @@ We begin by creating the `UserProfileDialog` that derives from the `ComponentDia
 
 In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
 
-[!code-python[Constructor snippet](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=25-57)]
+[!code-python[Constructor snippet](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=26-57)]
 
 Next, we implement the steps that the dialog uses. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step using `step_context.result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or starts over from the beginning with a reprompt until it receives a valid input.
 
@@ -235,12 +235,11 @@ We register services for the bot in `index.js`.
 
 [!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-59)]
 
-
 # [Python](#tab/python)
 
 We register services for the bot in `app.py`.
 
-[!code-python[configure services](~/../botbuilder-python/samples/python/05.multi-turn-prompt/app.py?range=27-75)]
+[!code-python[configure services](~/../botbuilder-python/samples/python/05.multi-turn-prompt/app.py?range=27-76)]
 
 ---
 
@@ -276,7 +275,7 @@ There are various options for keeping dialog steps and bot state separate. For e
 
 ### Definition of a prompt validator method
 
-# [C#](#tab/csharp) 
+# [C#](#tab/csharp)
 
 **UserProfileDialog.cs**
 
@@ -296,7 +295,7 @@ Below is an example validator code for the `agePromptValidator` method definitio
 
 **dialogs/user_profile_dialog.py**
 
-Below is an example validator code for the `age_prompt_validator` method definition. `prompt_context.recognized.value` contains the parsed value, which is an integer here for the number prompt. `prompt_context.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario. 
+Below is an example validator code for the `age_prompt_validator` method definition. `prompt_context.recognized.value` contains the parsed value, which is an integer here for the number prompt. `prompt_context.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
 
 [!code-python[prompt validator method](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=207-212)]
 
@@ -319,4 +318,3 @@ Below is an example validator code for the `age_prompt_validator` method definit
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample
-
