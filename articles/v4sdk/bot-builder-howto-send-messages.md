@@ -81,7 +81,9 @@ response = context.activity.text
 ---
 
 ## Send a typing indicator
-Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken. Web Chat and Direct Line channel bots can support the sending of a typing indication to show the user that the message was received and is being processed.
+Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken.
+
+Web Chat and Direct Line channel bots can support the sending of a typing indication to show the user that the message was received and is being processed. Be aware that your bot needs to let the turn end within 15 seconds or the Connector service will timeout. For longer processes read more about sending [proactive messages](bot-builder-howto-proactive-message.md). 
 
 The following example demonstrates how to send a typing indication.
 
