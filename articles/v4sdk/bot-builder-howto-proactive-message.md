@@ -102,7 +102,6 @@ The parameter to `continueConversation` is a function that serves as the bot's t
 Each time the bot's notify page is requested, the server retrieves the conversation references from the dictionary.
 The server then uses the `_send_proactive_message` to send the proactive message.
 
-**app.py**
 [!code-python[Notify logic](~/../botbuilder-python/samples/python/16.proactive-messages/app.py?range=97-105&highlight=5-9)]
 
 ---
