@@ -1,4 +1,4 @@
-﻿<Type Name="AudioCard" FullName="Microsoft.Bot.Connector.AudioCard">
+<Type Name="AudioCard" FullName="Microsoft.Bot.Connector.AudioCard">
   <TypeSignature Language="C#" Value="public class AudioCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AudioCard" />

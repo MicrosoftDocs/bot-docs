@@ -1,5 +1,5 @@
 ---
-title:  Connect a bot to Office 365 email | Microsoft Docs
+title:  Connect a bot to Office 365 email - Bot Service
 description: Learn how to configure a bot to send and receive email with Office 365.
 keywords: Office 365, bot channels, email, email credentials, azure portal, custom email
 author: kamrani
@@ -81,10 +81,11 @@ If your bot does not return a 200 OK HTTP status code within 15 seconds in respo
 ::: moniker range="azure-bot-service-3.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
 * [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Framework SDK for .NET
-* Use the [Channel Inspector](bot-service-channel-inspector.md) to see how a channel renders a particular feature of your bot application
+* Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
 ::: moniker-end
 ::: moniker range="azure-bot-service-4.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
 * [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
-* Use the [Channel Inspector](bot-service-channel-inspector.md) to see how a channel renders a particular feature of your bot application
+* Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
 ::: moniker-end
+

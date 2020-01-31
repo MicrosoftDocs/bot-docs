@@ -1,5 +1,5 @@
 ---
-title: Send welcome message to users | Microsoft Docs
+title: Send welcome message to users - Bot Service
 description: Learn how to develop your bot to provide a welcoming user experience.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting 
 author: DanDev33
@@ -104,10 +104,10 @@ At startup, both user state and welcome message are defined in `welcome-user-bot
 
 ### [C#](#tab/csharp)
 
-We now create a property accessor that provides us a handle to WelcomeUserState inside the OnMessageActivityAsync method.
-Then call the GetAsync method to get the properly scoped key. We then save user state data after each user input iteration using the `SaveChangesAsync` method.
+We now create a property accessor that provides us a handle to `WelcomeUserState` inside the `OnMessageActivityAsync` method.
+Then call the `GetAsync` method to get the properly scoped key. We then save user state data after each user input iteration using the `SaveChangesAsync` method.
 
-**WelcomeUserBot.cs**  
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[Get state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=68-71)]
 [!code-csharp[Save state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range= 103-105)]
 

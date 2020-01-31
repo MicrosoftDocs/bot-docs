@@ -1,4 +1,4 @@
-﻿<Type Name="DialogRouter" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter">
+<Type Name="DialogRouter" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter">
   <TypeSignature Language="C#" Value="public sealed class DialogRouter : Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable&lt;Microsoft.Bot.Connector.IActivity,double&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogRouter extends Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2&lt;class Microsoft.Bot.Connector.IActivity, float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogRouter" />

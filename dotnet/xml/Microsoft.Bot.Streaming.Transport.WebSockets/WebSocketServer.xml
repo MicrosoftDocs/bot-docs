@@ -1,0 +1,179 @@
+<Type Name="WebSocketServer" FullName="Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer">
+  <TypeSignature Language="C#" Value="public class WebSocketServer : Microsoft.Bot.Streaming.Transport.IStreamingTransportServer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebSocketServer extends System.Object implements class Microsoft.Bot.Streaming.Transport.IStreamingTransportServer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebSocketServer&#xA;Implements IStreamingTransportServer" />
+  <TypeSignature Language="F#" Value="type WebSocketServer = class&#xA;    interface IStreamingTransportServer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Streaming.Transport.IStreamingTransportServer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A server for use with the Bot Framework Protocol V3 with Streaming Extensions and an underlying WebSocket transport.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebSocketServer (System.Net.WebSockets.WebSocket socket, Microsoft.Bot.Streaming.RequestHandler requestHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.WebSockets.WebSocket socket, class Microsoft.Bot.Streaming.RequestHandler requestHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.#ctor(System.Net.WebSockets.WebSocket,Microsoft.Bot.Streaming.RequestHandler)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer : System.Net.WebSockets.WebSocket * Microsoft.Bot.Streaming.RequestHandler -&gt; Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer" Usage="new Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer (socket, requestHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.WebSockets.WebSocket" />
+        <Parameter Name="requestHandler" Type="Microsoft.Bot.Streaming.RequestHandler" />
+      </Parameters>
+      <Docs>
+        <param name="socket">The <see cref="T:System.Net.WebSockets.WebSocket" /> of the underlying connection for this server to be built on top of.</param>
+        <param name="requestHandler">A <see cref="T:Microsoft.Bot.Streaming.RequestHandler" /> to process incoming messages received by this server.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer" /> class.
+            Throws <see cref="T:System.ArgumentNullException" /> on null arguments.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disconnect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="F#" Value="member this.Disconnect : unit -&gt; unit" Usage="webSocketServer.Disconnect " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disconnects the WebSocketServer.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnected">
+      <MemberSignature Language="C#" Value="public event Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler Disconnected;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler Disconnected" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.Disconnected" />
+      <MemberSignature Language="VB.NET" Value="Public Event Disconnected As DisconnectedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Disconnected : Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler " Usage="member this.Disconnected : Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer.Disconnected</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            An event to be fired when the underlying transport is disconnected. Any application communicating with this server should subscribe to this event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool" Usage="Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.IsConnected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not this server is currently connected.
+            </summary>
+        <value>
+            True if this server is connected and ready to send and receive messages, otherwise false.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync (Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync(class Microsoft.Bot.Streaming.StreamingRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.SendAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&#xA;override this.SendAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="webSocketServer.SendAsync (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer.SendAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.StreamingRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to send.</param>
+        <param name="cancellationToken">Optional <see cref="T:System.Threading.CancellationToken" /> used to signal this operation should be cancelled.</param>
+        <summary>
+            Task used to send data over this server connection.
+            Throws <see cref="T:System.InvalidOperationException" /> if called when server is not connected.
+            Throws <see cref="T:System.ArgumentNullException" /> if request is null.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> of type <see cref="T:Microsoft.Bot.Streaming.ReceiveResponse" /> handling the send operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task StartAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketServer.StartAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : unit -&gt; System.Threading.Tasks.Task&#xA;override this.StartAsync : unit -&gt; System.Threading.Tasks.Task" Usage="webSocketServer.StartAsync " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer.StartAsync</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Used to establish the connection used by this server and begin listening for incoming messages.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> to handle the server listen operation. This task will not resolve as long as the server is running.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

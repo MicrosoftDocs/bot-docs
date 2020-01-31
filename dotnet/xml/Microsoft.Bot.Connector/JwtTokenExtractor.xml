@@ -1,4 +1,4 @@
-﻿<Type Name="JwtTokenExtractor" FullName="Microsoft.Bot.Connector.JwtTokenExtractor">
+<Type Name="JwtTokenExtractor" FullName="Microsoft.Bot.Connector.JwtTokenExtractor">
   <TypeSignature Language="C#" Value="public class JwtTokenExtractor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JwtTokenExtractor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtTokenExtractor" />

@@ -1,5 +1,5 @@
 ---
-title: Save user and conversation data | Microsoft Docs
+title: Save user and conversation data - Bot Service
 description: Learn how to save and retrieve state data with the Bot Framework SDK.
 keywords: conversation state, user state, conversation, saving state, managing bot state
 author: ivorb
@@ -99,7 +99,7 @@ Next, we register `MemoryStorage` that is then used to create `UserState` and `C
 Next, we register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. The user and conversation state objects are created at start up in `app.py` and dependency injected into the bot constructor.
 
 **app.py**
-[!code-python[state](~/../botbuilder-python/samples/python/45.state-management/app.py?range=63-69)]
+[!code-python[state](~/../botbuilder-python/samples/python/45.state-management/app.py?range=67-70)]
 
 **bots/state_management_bot.py**
 [!code-python[state](~/../botbuilder-python/samples/python/45.state-management/bots/state_management_bot.py?range=14-30)]

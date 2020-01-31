@@ -1,0 +1,118 @@
+<Type Name="FacebookPostBack" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack">
+  <TypeSignature Language="C#" Value="public class FacebookPostBack" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FacebookPostBack extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack" />
+  <TypeSignature Language="VB.NET" Value="Public Class FacebookPostBack" />
+  <TypeSignature Language="F#" Value="type FacebookPostBack = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FacebookPostBack ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Payload">
+      <MemberSignature Language="C#" Value="public string Payload { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Payload" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Payload" />
+      <MemberSignature Language="VB.NET" Value="Public Property Payload As String" />
+      <MemberSignature Language="F#" Value="member this.Payload : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Payload" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="payload")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets the string to send back to the webhook.
+            </summary>
+        <value>The string to post back to the webhook.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Referral">
+      <MemberSignature Language="C#" Value="public string Referral { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Referral" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Referral" />
+      <MemberSignature Language="VB.NET" Value="Public Property Referral As String" />
+      <MemberSignature Language="F#" Value="member this.Referral : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Referral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="referral")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets the referral of the post back message.
+            </summary>
+        <value>The referral of the post back message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets the title of the post back message.
+            </summary>
+        <value>The title of the post back message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,5 +1,5 @@
 ---
-title: Azure Bot Service Introduction | Microsoft Docs
+title: Azure Bot Service Introduction - Bot Service
 description: Learn about Bot Service, a service for building, connecting, testing, deploying, monitoring, and managing bots.
 keywords: overview, introduction, SDK, outline
 author: Kaiqb

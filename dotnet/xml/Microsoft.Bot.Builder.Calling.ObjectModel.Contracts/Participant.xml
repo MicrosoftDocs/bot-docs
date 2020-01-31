@@ -1,4 +1,4 @@
-﻿<Type Name="Participant" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant">
+<Type Name="Participant" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant">
   <TypeSignature Language="C#" Value="public class Participant : IEquatable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Participant extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Participant" />

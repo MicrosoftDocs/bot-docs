@@ -1,4 +1,4 @@
-﻿<Type Name="ActionParameter" FullName="Microsoft.Bot.Builder.Luis.Models.ActionParameter">
+<Type Name="ActionParameter" FullName="Microsoft.Bot.Builder.Luis.Models.ActionParameter">
   <TypeSignature Language="C#" Value="public class ActionParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.ActionParameter" />

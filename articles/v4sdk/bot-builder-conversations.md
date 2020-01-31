@@ -1,5 +1,5 @@
 ---
-title: Conversations within the Bot Framework SDK | Microsoft Docs
+title: Conversations within the Bot Framework SDK - Bot Service
 description: Describes what a conversation is within the Bot Framework SDK.
 keywords: conversation flow, recognize intent, single turn, multiple turn, bot conversation
 author: jonathanfingold

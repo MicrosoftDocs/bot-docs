@@ -1,5 +1,5 @@
 ---
-title: Custom Assistant Overview | Microsoft Docs
+title: Custom Assistant Overview - Bot Service
 description: Learn about creating your own Custom Assistant
 author: darrenj
 ms.author: darrenj

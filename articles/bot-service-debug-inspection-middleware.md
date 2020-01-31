@@ -1,5 +1,5 @@
 ---
-title: Debug a bot with inspection middleware | Microsoft Docs
+title: Debug a bot with inspection middleware - Bot Service
 description: Learn how to debug a bot with inspection middleware
 author: zxyanliu
 ms.author: v-liyan
@@ -71,7 +71,7 @@ Set up the inspection state in the **app.py** file by adding a middleware to the
 
 **app.py**
 
-[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=74-86)]
+[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=75-84)]
 
 Update the bot class in the **echo_bot.py** file.
 

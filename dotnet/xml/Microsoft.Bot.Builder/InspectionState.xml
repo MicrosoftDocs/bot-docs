@@ -1,4 +1,4 @@
-﻿<Type Name="InspectionState" FullName="Microsoft.Bot.Builder.InspectionState">
+<Type Name="InspectionState" FullName="Microsoft.Bot.Builder.InspectionState">
   <TypeSignature Language="C#" Value="public class InspectionState : Microsoft.Bot.Builder.BotState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InspectionState extends Microsoft.Bot.Builder.BotState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.InspectionState" />
@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotState</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

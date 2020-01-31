@@ -1,4 +1,4 @@
-﻿<Type Name="OperationOutcomeBase" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase">
+<Type Name="OperationOutcomeBase" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase">
   <TypeSignature Language="C#" Value="public abstract class OperationOutcomeBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OperationOutcomeBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />

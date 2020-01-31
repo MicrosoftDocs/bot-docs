@@ -1,0 +1,210 @@
+<Type Name="FacebookEntry" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry">
+  <TypeSignature Language="C#" Value="public class FacebookEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FacebookEntry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class FacebookEntry" />
+  <TypeSignature Language="F#" Value="type FacebookEntry = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FacebookEntry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt; Changes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt; Changes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Changes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Changes As List(Of FacebookMessage)" />
+      <MemberSignature Language="F#" Value="member this.Changes : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt;" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Changes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the changes list.
+            </summary>
+        <value>List containing the list of changes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Id.
+            </summary>
+        <value>The page ID of the page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messaging">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt; Messaging { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt; Messaging" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Messaging" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messaging As List(Of FacebookMessage)" />
+      <MemberSignature Language="F#" Value="member this.Messaging : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt;" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Messaging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the messaging list.
+            </summary>
+        <value>List containing one messaging object. Note that even though this is an enumerable, it will only contain one object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeChanges">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeChanges () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeChanges : unit -&gt; bool" Usage="facebookEntry.ShouldSerializeChanges " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeMessaging">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeMessaging ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessaging() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeMessaging" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessaging () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessaging : unit -&gt; bool" Usage="facebookEntry.ShouldSerializeMessaging " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeStandby">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeStandby ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeStandby() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeStandby" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeStandby () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeStandby : unit -&gt; bool" Usage="facebookEntry.ShouldSerializeStandby " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Standby">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt; Standby { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt; Standby" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Standby" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Standby As List(Of FacebookMessage)" />
+      <MemberSignature Language="F#" Value="member this.Standby : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt;" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Standby" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the standby messages list.
+            </summary>
+        <value>List containing the messages sent while in standby mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="public long Time { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Time" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Time" />
+      <MemberSignature Language="VB.NET" Value="Public Property Time As Long" />
+      <MemberSignature Language="F#" Value="member this.Time : int64 with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Time" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the time of the update.
+            </summary>
+        <value>Time of update (epoch time in milliseconds).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="ResumptionCookie" FullName="Microsoft.Bot.Builder.Dialogs.ResumptionCookie">
+<Type Name="ResumptionCookie" FullName="Microsoft.Bot.Builder.Dialogs.ResumptionCookie">
   <TypeSignature Language="C#" Value="public sealed class ResumptionCookie : IEquatable&lt;Microsoft.Bot.Builder.Dialogs.ResumptionCookie&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ResumptionCookie extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Dialogs.ResumptionCookie&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ResumptionCookie" />

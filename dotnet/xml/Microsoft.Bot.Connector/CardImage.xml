@@ -1,4 +1,4 @@
-﻿<Type Name="CardImage" FullName="Microsoft.Bot.Connector.CardImage">
+<Type Name="CardImage" FullName="Microsoft.Bot.Connector.CardImage">
   <TypeSignature Language="C#" Value="public class CardImage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardImage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CardImage" />

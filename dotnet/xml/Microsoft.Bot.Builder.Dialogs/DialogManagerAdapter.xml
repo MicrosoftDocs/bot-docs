@@ -1,0 +1,138 @@
+<Type Name="DialogManagerAdapter" FullName="Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter">
+  <TypeSignature Language="C#" Value="public class DialogManagerAdapter : Microsoft.Bot.Builder.BotAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogManagerAdapter extends Microsoft.Bot.Builder.BotAdapter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogManagerAdapter&#xA;Inherits BotAdapter" />
+  <TypeSignature Language="F#" Value="type DialogManagerAdapter = class&#xA;    inherit BotAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.BotAdapter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogManagerAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt; Activities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Schema.Activity&gt; Activities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter.Activities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activities As List(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.Activities : System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;" Usage="Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter.Activities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteActivityAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteActivityAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.ConversationReference reference, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.ConversationReference reference, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.DeleteActivityAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.ConversationReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogManagerAdapter.DeleteActivityAsync (turnContext, reference, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="reference">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivitiesAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity[] activities, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity[] activities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.SendActivitiesAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;" Usage="dialogManagerAdapter.SendActivitiesAsync (turnContext, activities, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activities" Type="Microsoft.Bot.Schema.Activity[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="activities">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateActivityAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogManagerAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.UpdateActivityAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="dialogManagerAdapter.UpdateActivityAsync (turnContext, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

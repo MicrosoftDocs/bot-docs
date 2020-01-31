@@ -1,5 +1,5 @@
 --- 
-title: Use multiple LUIS and QnA models | Microsoft Docs
+title: Use multiple LUIS and QnA models - Bot Service
 description: Learn how to use LUIS and QnA maker in your bot.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
 author: diberry
@@ -7,7 +7,7 @@ ms.author: diberry
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/22/2019
+ms.date: 01/27/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -279,7 +279,7 @@ npm install --save dotenv
 
 ### Manually update your .env file
 
-Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file. 
+Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
 **.env**  
 [!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/.env?range=1-10)]
@@ -316,13 +316,14 @@ pip install botbuilder-ai
 ```
 
 ### Manually update your config.py file
-Once all of your service apps are created, the information for each needs to be added into your 'config.py' file. The initial [Python Sample][python-sample] code contains an empty config.py file. 
+Once all of your service apps are created, the information for each needs to be added into your 'config.py' file. The initial [Python Sample][python-sample] code contains an empty config.py file.
 
 **config.py**
 
 [!code-python[config.py](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/config.py?range=10-24)]
 
 For each of the entities shown below, add the values you recorded earlier in these instructions:
+
 ```python
 APP_ID = os.environ.get("MicrosoftAppId", "")
 APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
@@ -336,13 +337,14 @@ LUIS_API_KEY = os.environ.get("LuisAPIKey", "<your-luis-endpoint-key>")
 # LUIS endpoint host name, ie "westus.api.cognitive.microsoft.com"
 LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "<your-dispatch-app-region>")
 ```
+
 When all changes are complete, save this file.
 
 ---
 
 ### Connect to the services from your bot
 
-To connect to the Dispatch, LUIS, and QnA Maker services, your bot pulls information from the settings file (either the `appsettings.json` or the `.env` file).
+To connect to the Dispatch, LUIS, and QnA Maker services, your bot pulls information from the settings file.
 
 ## [C#](#tab/cs)
 
@@ -350,7 +352,7 @@ In **BotServices.cs**, the information contained within configuration file _apps
 
 **BotServices.cs**
 
-[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/BotServices.cs?range=16-31)]
+[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/BotServices.cs?range=14-45)]
 
 ## [JavaScript](#tab/js)
 
@@ -361,11 +363,12 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 [!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=11-26)]
 
 ## [Python](#tab/python)
+
 In **dispatch_bot.py**, the information contained within configuration file _config.py_ is used to connect your dispatch bot to the _QnAMaker_ and _LuisRecognizer_ services. The constructors use the values you provided to connect to these services.
 
 **bots/dispatch_bot.py**
 
-[!code-python[ReadConfigurationInfo](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=14-30)]
+[!code-python[ReadConfigurationInfo](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=14-34)]
 
 ---
 

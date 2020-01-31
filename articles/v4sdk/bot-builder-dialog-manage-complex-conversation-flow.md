@@ -1,5 +1,5 @@
 ---
-title: Create advanced conversation flow using branches and loops | Microsoft Docs
+title: Create advanced conversation flow using branches and loops - Bot Service
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
@@ -90,7 +90,7 @@ We create services for the bot that other parts of the code require.
 - Services for managing state: storage, user state, and conversation state.
 - The dialog the bot will use.
 
-[!code-python[ConfigureServices](~/../botbuilder-python/samples/python/43.complex-dialog/app.py?range=28-75)]
+[!code-python[ConfigureServices](~/../botbuilder-python/samples/python/43.complex-dialog/app.py?range=29-94)]
 
 ---
 

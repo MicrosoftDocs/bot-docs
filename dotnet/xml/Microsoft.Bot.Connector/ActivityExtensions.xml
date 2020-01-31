@@ -1,4 +1,4 @@
-﻿<Type Name="ActivityExtensions" FullName="Microsoft.Bot.Connector.ActivityExtensions">
+<Type Name="ActivityExtensions" FullName="Microsoft.Bot.Connector.ActivityExtensions">
   <TypeSignature Language="C#" Value="public static class ActivityExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ActivityExtensions" />
@@ -461,7 +461,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetChannelData&lt;TypeT&gt;(class Microsoft.Bot.Connector.IActivity activity, [out] !!TypeT&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData``1(Microsoft.Bot.Connector.IActivity,``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryGetChannelData(Of TypeT) (activity As IActivity, ByRef instance As TypeT) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryGetChannelData : Microsoft.Bot.Connector.IActivity *  -&gt; bool" Usage="Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData (activity, instance)" />
+      <MemberSignature Language="F#" Value="static member TryGetChannelData : Microsoft.Bot.Connector.IActivity * 'ypeT -&gt; bool" Usage="Microsoft.Bot.Connector.ActivityExtensions.TryGetChannelData (activity, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

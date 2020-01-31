@@ -21,6 +21,7 @@
 ## [User authentication](v4sdk/bot-builder-concept-authentication.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
+## [About skills](v4sdk/skills-conceptual.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
@@ -52,8 +53,16 @@
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
+### Skills
+#### [Implement a skill](v4sdk/skill-implement-skill.md)
+#### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
+<!--
+#### [Add claims validation](v4sdk/skill-add-claims-validation.md)
+#### [Manage multiple skills](#)
+-->
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Add telemetry to your QnA bot](v4sdk/bot-builder-telemetry-QnAMaker.md)
+### [Analyze your bot's telemetry data](v4sdk/bot-builder-telemetry-analytics-queries.md)
 ### [Use Direct Line Speech in your bot](directline-speech-bot.md)
 ### [.NET](dotnet/TOC.md)
 ### [Node.js](nodejs/TOC.md)

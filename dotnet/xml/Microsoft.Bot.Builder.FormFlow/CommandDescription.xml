@@ -1,4 +1,4 @@
-﻿<Type Name="CommandDescription" FullName="Microsoft.Bot.Builder.FormFlow.CommandDescription">
+<Type Name="CommandDescription" FullName="Microsoft.Bot.Builder.FormFlow.CommandDescription">
   <TypeSignature Language="C#" Value="public class CommandDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.CommandDescription" />

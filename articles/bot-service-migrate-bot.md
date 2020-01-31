@@ -1,5 +1,5 @@
 ---
-title: Migrate your bot to Azure | Microsoft Docs
+title: Migrate your bot to Azure - Bot Service
 description: Learn how to migrate your bot from the legacy Bot Framework Portal to a bot service in the Azure portal.
 author: v-ducvo
 ms.author: kamrani

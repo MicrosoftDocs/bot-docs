@@ -1,5 +1,5 @@
 ---
-title: Handle user interruptions | Microsoft Docs
+title: Handle user interruptions - Bot Service
 description: Learn how to handle user interrupt and direct conversation flow.
 keywords: interrupt, interruptions, switching topic, break
 author: ivorb
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/05/2019
+ms.date: 01/24/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -26,7 +26,7 @@ Handling interruptions is an important aspect of a robust bot. Users will not al
 
 The sample used in this article models a flight booking bot that uses dialogs to get flight information from the user. At any time during the conversation with the bot, the user can issue _help_ or _cancel_ commands to cause an interruption. There are two types of interruptions we handle here:
 
-- **Turn level**: Bypass processing at the turn level but leave the dialog on the stack with the information that was provided. In the next turn, continue from where we left off. 
+- **Turn level**: Bypass processing at the turn level but leave the dialog on the stack with the information that was provided. In the next turn, continue from where we left off.
 - **Dialog level**: Cancel the processing completely, so the bot can start all over again.
 
 ## Define and implement the interruption logic
@@ -71,12 +71,11 @@ If the user types "help", the `interrupt` method sends a message and then return
 
 If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog context, which clears its dialog stack and causes it to exit with a cancelled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
-[!code-javascript[Interrupt](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js??range=20-39)]
-
+[!code-javascript[Interrupt](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=20-39)]
 
 ## [Python](#tab/python)
 
-To use dialogs, install the `botbuilder-dialogs` package and make sure that the sample `requirements.txt` file contains the proper reference such as `botbuilder-dialogs>=4.5.0`. 
+To use dialogs, install the `botbuilder-dialogs` package and make sure that the sample `requirements.txt` file contains the proper reference such as `botbuilder-dialogs>=4.5.0`.
 For more information, about installing the packages, see the samples repository [README](https://github.com/microsoft/botbuilder-python) file.
 > [!NOTE]
 > Doing `pip install botbuilder-dialogs` will also install `botbuilder-core`, `botbulder-connector`, and `botbuilder-schema`.
@@ -172,7 +171,7 @@ In our sample, the adapter's `onTurnError` handler receives any exceptions throw
 
 In our sample, the adapter's `on_error` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
 
-[!code-python[adapter_with_error_handler](~/../botbuilder-python/samples/python/13.core-bot/adapter_with_error_handler.py?range=15-54)]
+[!code-python[adapter_with_error_handler](~/../botbuilder-python/samples/python/13.core-bot/adapter_with_error_handler.py?range=16-56)]
 
 ---
 
@@ -198,7 +197,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 Finally, in `index.js`, the bot is created.
 
-[!code-javascript[Create bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=75-78)]
+[!code-javascript[Create bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=78-81)]
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
@@ -211,7 +210,7 @@ For reference, here are the class definitions that are used in the call to creat
 **app.py**
 Finally, in `app.py`, the bot is created.
 
-[!code-python[create bot](~/../botbuilder-python/samples/python/13.core-bot/app.py?range=44-48)]
+[!code-python[create bot](~/../botbuilder-python/samples/python/13.core-bot/app.py?range=45-49)]
 
 For reference, here are the class definitions that are used in the call to create the bot.
 

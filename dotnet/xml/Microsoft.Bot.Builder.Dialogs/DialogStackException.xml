@@ -1,4 +1,4 @@
-﻿<Type Name="DialogStackException" FullName="Microsoft.Bot.Builder.Dialogs.DialogStackException">
+<Type Name="DialogStackException" FullName="Microsoft.Bot.Builder.Dialogs.DialogStackException">
   <TypeSignature Language="C#" Value="public abstract class DialogStackException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DialogStackException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogStackException" />

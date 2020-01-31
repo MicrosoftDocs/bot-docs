@@ -1,5 +1,5 @@
 ---
-title: Handle user actions | Microsoft Docs
+title: Handle user actions - Bot Service
 description:  Learn how to handle user actions by enabling your bot to listen for and handle user input containing certain keywords using the Bot Framework SDK for Node.js.
 author: DucVo
 ms.author: kamrani

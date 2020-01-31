@@ -1,4 +1,4 @@
-﻿<Type Name="AdalAuthenticator" FullName="Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator">
+<Type Name="AdalAuthenticator" FullName="Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator">
   <TypeSignature Language="C#" Value="public class AdalAuthenticator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdalAuthenticator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator" />

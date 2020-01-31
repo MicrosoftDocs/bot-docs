@@ -1,5 +1,5 @@
 ---
-title: Azure Bot Service tutorial to have a bot answer questions | Microsoft Docs
+title: Azure Bot Service tutorial to have a bot answer questions - Bot Service
 description: Tutorial to use QnA Maker in your bot to answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
@@ -70,6 +70,7 @@ These values will be used within your `appsettings.json` or `.env` file in the n
 The knowledge base is now ready for your bot to use.
 
 ## Add knowledge base information to your bot
+
 Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp, JavaScript or Python bot to your knowledge base.
 
 # [C#](#tab/csharp)
@@ -123,7 +124,6 @@ class DefaultConfig:
 
 | Field | Value |
 |:----|:----|
-
 | QnAKnowledgebaseId | The knowledge base ID that the QnA Maker portal generated for you. |
 | QnAAuthKey (QnAEndpointKey in Python)  | The endpoint key that the QnA Maker portal generated for you. |
 | QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "look like "https://< >.azure.net/qnamaker". |

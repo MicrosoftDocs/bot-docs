@@ -1,4 +1,4 @@
-﻿<Type Name="AzureBlobStorage" FullName="Microsoft.Bot.Builder.Azure.AzureBlobStorage">
+<Type Name="AzureBlobStorage" FullName="Microsoft.Bot.Builder.Azure.AzureBlobStorage">
   <TypeSignature Language="C#" Value="public class AzureBlobStorage : Microsoft.Bot.Builder.IStorage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureBlobStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.AzureBlobStorage" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -48,6 +49,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
@@ -76,6 +78,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dataConnectionstring" Type="System.String" />
@@ -84,6 +87,32 @@
       <Docs>
         <param name="dataConnectionstring">Azure Storage connection string.</param>
         <param name="containerName">Name of the Blob container where entities will be stored.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.AzureBlobStorage" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AzureBlobStorage (Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount, string containerName, Newtonsoft.Json.JsonSerializer jsonSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.WindowsAzure.Storage.CloudStorageAccount storageAccount, string containerName, class Newtonsoft.Json.JsonSerializer jsonSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.AzureBlobStorage.#ctor(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.AzureBlobStorage : Microsoft.WindowsAzure.Storage.CloudStorageAccount * string * Newtonsoft.Json.JsonSerializer -&gt; Microsoft.Bot.Builder.Azure.AzureBlobStorage" Usage="new Microsoft.Bot.Builder.Azure.AzureBlobStorage (storageAccount, containerName, jsonSerializer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storageAccount" Type="Microsoft.WindowsAzure.Storage.CloudStorageAccount" />
+        <Parameter Name="containerName" Type="System.String" />
+        <Parameter Name="jsonSerializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="storageAccount">Azure CloudStorageAccount instance.</param>
+        <param name="containerName">Name of the Blob container where entities will be stored.</param>
+        <param name="jsonSerializer">If passing in a custom JsonSerializer, we recommend the following settings:
+            <para>jsonSerializer.TypeNameHandling = TypeNameHandling.All.</para><para>jsonSerializer.NullValueHandling = NullValueHandling.Include.</para><para>jsonSerializer.ContractResolver = new DefaultContractResolver().</para></param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.AzureBlobStorage" /> class.
             </summary>
@@ -106,6 +135,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -141,6 +171,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -176,6 +207,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

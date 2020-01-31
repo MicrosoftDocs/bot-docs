@@ -1,5 +1,5 @@
 ---
-title: Send and receive text message | Microsoft Docs
+title: Send and receive text message - Bot Service
 description: Learn about how to send and receive text messages within the Bot Framework SDK.
 keywords: sending message, message activities, simple text message, message, text message, receive message  
 author: ivorb

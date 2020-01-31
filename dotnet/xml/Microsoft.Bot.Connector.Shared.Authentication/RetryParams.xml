@@ -1,4 +1,4 @@
-﻿<Type Name="RetryParams" FullName="Microsoft.Bot.Connector.Shared.Authentication.RetryParams">
+<Type Name="RetryParams" FullName="Microsoft.Bot.Connector.Shared.Authentication.RetryParams">
   <TypeSignature Language="C#" Value="public class RetryParams" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RetryParams extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Shared.Authentication.RetryParams" />

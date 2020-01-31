@@ -1,4 +1,4 @@
-﻿<Type Name="WaterfallDialog" FullName="Microsoft.Bot.Builder.Dialogs.WaterfallDialog">
+<Type Name="WaterfallDialog" FullName="Microsoft.Bot.Builder.Dialogs.WaterfallDialog">
   <TypeSignature Language="C#" Value="public class WaterfallDialog : Microsoft.Bot.Builder.Dialogs.Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WaterfallDialog extends Microsoft.Bot.Builder.Dialogs.Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.WaterfallDialog" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
@@ -26,11 +27,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WaterfallDialog (string dialogId, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt; steps = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt; steps) cil managed" />
+      <MemberSignature Language="C#" Value="public WaterfallDialog (string dialogId, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt; actions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.WaterfallDialog.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.WaterfallStep})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, Optional steps As IEnumerable(Of WaterfallStep) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.WaterfallDialog : string * seq&lt;Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt; -&gt; Microsoft.Bot.Builder.Dialogs.WaterfallDialog" Usage="new Microsoft.Bot.Builder.Dialogs.WaterfallDialog (dialogId, steps)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, Optional actions As IEnumerable(Of WaterfallStep) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.WaterfallDialog : string * seq&lt;Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt; -&gt; Microsoft.Bot.Builder.Dialogs.WaterfallDialog" Usage="new Microsoft.Bot.Builder.Dialogs.WaterfallDialog (dialogId, actions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
@@ -39,14 +40,15 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
-        <Parameter Name="steps" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt;" />
+        <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.WaterfallStep&gt;" />
       </Parameters>
       <Docs>
         <param name="dialogId">The dialog ID.</param>
-        <param name="steps">Optional steps to be defined by the caller.</param>
+        <param name="actions">Optional actions to be defined by the caller.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.WaterfallDialog" /> class.
             </summary>
@@ -67,6 +69,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.WaterfallDialog</ReturnType>
@@ -96,6 +99,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -127,6 +131,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -154,6 +159,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -190,6 +196,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -219,6 +226,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -231,6 +239,37 @@
       </Parameters>
       <Docs>
         <param name="dc">To be added.</param>
+        <param name="reason">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunStepAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; RunStepAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, int index, Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; RunStepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, int32 index, valuetype Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.WaterfallDialog.RunStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Int32,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.RunStepAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * int * Microsoft.Bot.Builder.Dialogs.DialogReason * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="waterfallDialog.RunStepAsync (dc, index, reason, result, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="reason" Type="Microsoft.Bot.Builder.Dialogs.DialogReason" />
+        <Parameter Name="result" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="index">To be added.</param>
         <param name="reason">To be added.</param>
         <param name="result">To be added.</param>
         <param name="cancellationToken">To be added.</param>

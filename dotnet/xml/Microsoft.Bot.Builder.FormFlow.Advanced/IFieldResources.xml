@@ -1,4 +1,4 @@
-﻿<Type Name="IFieldResources" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources">
+<Type Name="IFieldResources" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources">
   <TypeSignature Language="C#" Value="public interface IFieldResources" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldResources" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IFieldResources" />

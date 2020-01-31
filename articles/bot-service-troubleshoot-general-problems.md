@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting bots | Microsoft Docs
+title: Troubleshooting bots - Bot Service
 description: Troubleshoot general problems in bot development using technical frequently asked questions.
 author: DeniseMak
 ms.author: kamrani

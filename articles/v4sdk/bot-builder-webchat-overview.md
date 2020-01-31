@@ -1,5 +1,5 @@
 ---
-title:  Web Chat overview | Microsoft Docs
+title:  Web Chat overview - Bot Service
 description: Learn how to configure Bot Framework Web Chat.
 keywords: bot framework, webchat, chat, samples, react, reference
 author: ivorb
