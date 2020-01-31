@@ -1,4 +1,4 @@
-﻿<Type Name="GetTokenResponse" FullName="Microsoft.Bot.Builder.Dialogs.GetTokenResponse">
+<Type Name="GetTokenResponse" FullName="Microsoft.Bot.Builder.Dialogs.GetTokenResponse">
   <TypeSignature Language="C#" Value="public class GetTokenResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetTokenResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.GetTokenResponse" />

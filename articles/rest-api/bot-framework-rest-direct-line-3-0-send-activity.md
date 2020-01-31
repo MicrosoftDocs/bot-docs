@@ -1,5 +1,5 @@
 ---
-title: Send an activity the bot | Microsoft Docs
+title: Send an activity the bot - Bot Service
 description: Learn how to send an activity to the bot using Direct Line API v3.0. 
 author: RobStand
 ms.author: kamrani

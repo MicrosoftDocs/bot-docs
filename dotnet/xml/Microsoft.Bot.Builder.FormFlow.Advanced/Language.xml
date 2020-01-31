@@ -1,4 +1,4 @@
-﻿<Type Name="Language" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Language">
+<Type Name="Language" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.Language">
   <TypeSignature Language="C#" Value="public class Language" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Language extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.Language" />
@@ -267,7 +267,8 @@
         <Parameter Name="words" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="words"></param>
+        <param name="words">
+        </param>
         <summary>
             Test words to see if they are all ignorable in a response.
             </summary>

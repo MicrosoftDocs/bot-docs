@@ -1,4 +1,4 @@
-﻿<Type Name="IActivity" FullName="Microsoft.Bot.Connector.IActivity">
+<Type Name="IActivity" FullName="Microsoft.Bot.Connector.IActivity">
   <TypeSignature Language="C#" Value="public interface IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IActivity" />
@@ -589,7 +589,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetChannelData&lt;TypeT&gt;([out] !!TypeT&amp; instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.IActivity.TryGetChannelData``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetChannelData(Of TypeT) (ByRef instance As TypeT) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member TryGetChannelData :  -&gt; bool" Usage="iActivity.TryGetChannelData instance" />
+      <MemberSignature Language="F#" Value="abstract member TryGetChannelData : 'ypeT -&gt; bool" Usage="iActivity.TryGetChannelData instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>

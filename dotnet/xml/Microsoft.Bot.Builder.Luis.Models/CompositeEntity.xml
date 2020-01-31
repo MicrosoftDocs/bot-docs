@@ -1,4 +1,4 @@
-﻿<Type Name="CompositeEntity" FullName="Microsoft.Bot.Builder.Luis.Models.CompositeEntity">
+<Type Name="CompositeEntity" FullName="Microsoft.Bot.Builder.Luis.Models.CompositeEntity">
   <TypeSignature Language="C#" Value="public class CompositeEntity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeEntity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.CompositeEntity" />

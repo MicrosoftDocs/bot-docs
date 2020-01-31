@@ -1,4 +1,4 @@
-﻿<Type Name="IntentRecommendation" FullName="Microsoft.Bot.Builder.Luis.Models.IntentRecommendation">
+<Type Name="IntentRecommendation" FullName="Microsoft.Bot.Builder.Luis.Models.IntentRecommendation">
   <TypeSignature Language="C#" Value="public class IntentRecommendation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IntentRecommendation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation" />

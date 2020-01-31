@@ -1,4 +1,4 @@
-﻿<Type Name="IMessageActivity" FullName="Microsoft.Bot.Connector.IMessageActivity">
+<Type Name="IMessageActivity" FullName="Microsoft.Bot.Connector.IMessageActivity">
   <TypeSignature Language="C#" Value="public interface IMessageActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IMessageActivity" />

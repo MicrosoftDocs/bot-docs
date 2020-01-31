@@ -1,5 +1,5 @@
 ---
-title: Deploy your bot | Microsoft Docs
+title: Deploy your bot - Bot Service
 description: Deploy your bot to the Azure cloud
 keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb
@@ -77,7 +77,11 @@ The above command outputs JSON with the key `appId`, save the value of this key 
 > ``` -->
 
 ### 4. Deploy via ARM template
-You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you. 
+You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
+
+> [!NOTE]
+> Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
+>
 
 #### **Deploy via ARM template (with **new** Resource Group)**
 <!-- ##### Create Azure resources -->

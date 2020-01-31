@@ -1,4 +1,4 @@
-﻿<Type Name="PromptAttribute" FullName="Microsoft.Bot.Builder.FormFlow.PromptAttribute">
+<Type Name="PromptAttribute" FullName="Microsoft.Bot.Builder.FormFlow.PromptAttribute">
   <TypeSignature Language="C#" Value="public class PromptAttribute : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptAttribute extends Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.PromptAttribute" />
@@ -16,10 +16,10 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

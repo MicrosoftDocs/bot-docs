@@ -1,0 +1,226 @@
+<Type Name="TurnPath" FullName="Microsoft.Bot.Builder.Dialogs.TurnPath">
+  <TypeSignature Language="C#" Value="public class TurnPath" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TurnPath extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.TurnPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class TurnPath" />
+  <TypeSignature Language="F#" Value="type TurnPath = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TurnPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.TurnPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ACTIVITY">
+      <MemberSignature Language="C#" Value="public const string ACTIVITY;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ACTIVITY" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.ACTIVITY" />
+      <MemberSignature Language="VB.NET" Value="Public Const ACTIVITY As String " />
+      <MemberSignature Language="F#" Value="val mutable ACTIVITY : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.ACTIVITY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current activity for the turn.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ACTIVITYPROCESSED">
+      <MemberSignature Language="C#" Value="public const string ACTIVITYPROCESSED;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ACTIVITYPROCESSED" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.ACTIVITYPROCESSED" />
+      <MemberSignature Language="VB.NET" Value="Public Const ACTIVITYPROCESSED As String " />
+      <MemberSignature Language="F#" Value="val mutable ACTIVITYPROCESSED : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.ACTIVITYPROCESSED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            This is a bool which if set means that the turncontext.activity has been consumed by some component in the system.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIALOGEVENT">
+      <MemberSignature Language="C#" Value="public const string DIALOGEVENT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DIALOGEVENT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.DIALOGEVENT" />
+      <MemberSignature Language="VB.NET" Value="Public Const DIALOGEVENT As String " />
+      <MemberSignature Language="F#" Value="val mutable DIALOGEVENT : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.DIALOGEVENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The current dialog event (set during event processings).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INTERRUPTED">
+      <MemberSignature Language="C#" Value="public const string INTERRUPTED;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string INTERRUPTED" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.INTERRUPTED" />
+      <MemberSignature Language="VB.NET" Value="Public Const INTERRUPTED As String " />
+      <MemberSignature Language="F#" Value="val mutable INTERRUPTED : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.INTERRUPTED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If true an interruption has occured.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LASTRESULT">
+      <MemberSignature Language="C#" Value="public const string LASTRESULT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LASTRESULT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.LASTRESULT" />
+      <MemberSignature Language="VB.NET" Value="Public Const LASTRESULT As String " />
+      <MemberSignature Language="F#" Value="val mutable LASTRESULT : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.LASTRESULT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The result from the last dialog that was called.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RECOGNIZED">
+      <MemberSignature Language="C#" Value="public const string RECOGNIZED;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RECOGNIZED" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.RECOGNIZED" />
+      <MemberSignature Language="VB.NET" Value="Public Const RECOGNIZED As String " />
+      <MemberSignature Language="F#" Value="val mutable RECOGNIZED : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.RECOGNIZED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The recognized result for the current turn.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="REPEATEDIDS">
+      <MemberSignature Language="C#" Value="public const string REPEATEDIDS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string REPEATEDIDS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.REPEATEDIDS" />
+      <MemberSignature Language="VB.NET" Value="Public Const REPEATEDIDS As String " />
+      <MemberSignature Language="F#" Value="val mutable REPEATEDIDS : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.REPEATEDIDS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Used to track that we don't end up in infinite loop of RepeatDialogs().
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TOPINTENT">
+      <MemberSignature Language="C#" Value="public const string TOPINTENT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TOPINTENT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.TOPINTENT" />
+      <MemberSignature Language="VB.NET" Value="Public Const TOPINTENT As String " />
+      <MemberSignature Language="F#" Value="val mutable TOPINTENT : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.TOPINTENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Path to the top intent.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TOPSCORE">
+      <MemberSignature Language="C#" Value="public const string TOPSCORE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TOPSCORE" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.TOPSCORE" />
+      <MemberSignature Language="VB.NET" Value="Public Const TOPSCORE As String " />
+      <MemberSignature Language="F#" Value="val mutable TOPSCORE : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.TOPSCORE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Path to the top score.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

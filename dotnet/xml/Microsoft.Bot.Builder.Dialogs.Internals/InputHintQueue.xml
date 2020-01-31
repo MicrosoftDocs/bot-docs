@@ -1,4 +1,4 @@
-﻿<Type Name="InputHintQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue">
+<Type Name="InputHintQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue">
   <TypeSignature Language="C#" Value="public sealed class InputHintQueue : Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InputHintQueue extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.InputHintQueue" />

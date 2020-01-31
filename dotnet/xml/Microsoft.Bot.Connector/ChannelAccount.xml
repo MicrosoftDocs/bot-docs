@@ -1,4 +1,4 @@
-﻿<Type Name="ChannelAccount" FullName="Microsoft.Bot.Connector.ChannelAccount">
+<Type Name="ChannelAccount" FullName="Microsoft.Bot.Connector.ChannelAccount">
   <TypeSignature Language="C#" Value="public class ChannelAccount : IEquatable&lt;Microsoft.Bot.Connector.ChannelAccount&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelAccount extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ChannelAccount" />

@@ -1,4 +1,4 @@
-﻿<Type Name="UrlToken" FullName="Microsoft.Bot.Builder.Dialogs.UrlToken">
+<Type Name="UrlToken" FullName="Microsoft.Bot.Builder.Dialogs.UrlToken">
   <TypeSignature Language="C#" Value="public static class UrlToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UrlToken extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.UrlToken" />

@@ -1,4 +1,4 @@
-﻿<Type Name="Utils" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils">
+<Type Name="Utils" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils">
   <TypeSignature Language="C#" Value="public class Utils" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Utils extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Utils" />
@@ -61,9 +61,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="condition"></param>
-        <param name="format"></param>
-        <param name="args"></param>
+        <param name="condition">
+        </param>
+        <param name="format">
+        </param>
+        <param name="args">
+        </param>
         <summary>
             Argument checker
             </summary>

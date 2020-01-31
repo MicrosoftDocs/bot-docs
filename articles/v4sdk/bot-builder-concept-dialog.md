@@ -1,5 +1,5 @@
 ---
-title: Dialogs within the Bot Framework SDK | Microsoft Docs
+title: Dialogs within the Bot Framework SDK - Bot Service
 description: Describes what a dialog is and how it work within the Bot Framework SDK.
 keywords: conversation flow, prompt, dialog state, recognize intent, single turn, multiple turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor

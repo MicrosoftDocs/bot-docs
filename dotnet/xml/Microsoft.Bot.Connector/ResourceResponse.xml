@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceResponse" FullName="Microsoft.Bot.Connector.ResourceResponse">
+<Type Name="ResourceResponse" FullName="Microsoft.Bot.Connector.ResourceResponse">
   <TypeSignature Language="C#" Value="public class ResourceResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ResourceResponse" />

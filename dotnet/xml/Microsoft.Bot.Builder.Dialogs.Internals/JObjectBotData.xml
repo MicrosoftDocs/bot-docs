@@ -1,4 +1,4 @@
-﻿<Type Name="JObjectBotData" FullName="Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData">
+<Type Name="JObjectBotData" FullName="Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData">
   <TypeSignature Language="C#" Value="public sealed class JObjectBotData : Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JObjectBotData extends Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1&lt;class Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.JObjectBotData" />

@@ -1,5 +1,5 @@
 ---
-title: Implement custom storage for your bot | Microsoft Docs
+title: Implement custom storage for your bot - Bot Service
 description: How to build custom storage in Bot Framework SDK v4.0
 keywords: custom, storage, state, dialog
 author: johnataylor
@@ -23,7 +23,7 @@ to get its job done.
 
 
 ## Prerequisites
-- The full sample code used in this article can be found here: [C# sample](http://aka.ms/scale-out).
+- The full sample code used in this article can be found here: [C# sample](https://aka.ms/scale-out).
 
 In this article, we will be exploring the semantics around the bot’s interactions with the Azure Bot Service and the Store.
 
@@ -193,5 +193,5 @@ And finally, the custom Accessor, we only need to implement Get because the stat
 [!code-csharp[RefAccessor](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/RefAccessor.cs?range=22-60)]
 
 ## Additional information
-The [C# sample](http://aka.ms/scale-out) code used in this article is available on GitHub.
+The [C# sample](https://aka.ms/scale-out) code used in this article is available on GitHub.
 

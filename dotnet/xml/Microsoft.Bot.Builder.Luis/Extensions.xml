@@ -1,4 +1,4 @@
-﻿<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Luis.Extensions">
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Luis.Extensions">
   <TypeSignature Language="C#" Value="public static class Extensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.Extensions" />
@@ -210,7 +210,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryFindEntity(class Microsoft.Bot.Builder.Luis.Models.LuisResult result, string type, [out] class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&amp; entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity(Microsoft.Bot.Builder.Luis.Models.LuisResult,System.String,Microsoft.Bot.Builder.Luis.Models.EntityRecommendation@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryFindEntity (result As LuisResult, type As String, ByRef entity As EntityRecommendation) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryFindEntity : Microsoft.Bot.Builder.Luis.Models.LuisResult * string *  -&gt; bool" Usage="Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity (result, type, entity)" />
+      <MemberSignature Language="F#" Value="static member TryFindEntity : Microsoft.Bot.Builder.Luis.Models.LuisResult * string * EntityRecommendation -&gt; bool" Usage="Microsoft.Bot.Builder.Luis.Extensions.TryFindEntity (result, type, entity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

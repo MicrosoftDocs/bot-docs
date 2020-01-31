@@ -1,4 +1,4 @@
-﻿<Type Name="Actions" FullName="Microsoft.Bot.Builder.Scorables.Actions">
+<Type Name="Actions" FullName="Microsoft.Bot.Builder.Scorables.Actions">
   <TypeSignature Language="C#" Value="public static class Actions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Actions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Actions" />

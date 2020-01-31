@@ -1,4 +1,4 @@
-﻿<Type Name="InvalidIntentHandlerException" FullName="Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException">
+<Type Name="InvalidIntentHandlerException" FullName="Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException">
   <TypeSignature Language="C#" Value="public sealed class InvalidIntentHandlerException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit InvalidIntentHandlerException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.InvalidIntentHandlerException" />

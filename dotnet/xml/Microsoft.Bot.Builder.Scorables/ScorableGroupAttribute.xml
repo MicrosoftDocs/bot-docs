@@ -1,4 +1,4 @@
-﻿<Type Name="ScorableGroupAttribute" FullName="Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute">
+<Type Name="ScorableGroupAttribute" FullName="Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute">
   <TypeSignature Language="C#" Value="public class ScorableGroupAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScorableGroupAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.ScorableGroupAttribute" />

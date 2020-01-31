@@ -1,0 +1,156 @@
+<Type Name="MessageActionsPayloadReaction" FullName="Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction">
+  <TypeSignature Language="C#" Value="public class MessageActionsPayloadReaction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageActionsPayloadReaction extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageActionsPayloadReaction" />
+  <TypeSignature Language="F#" Value="type MessageActionsPayloadReaction = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents the reaction of a user to a message.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadReaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadReaction
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadReaction (string reactionType = null, string createdDateTime = null, Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom user = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reactionType, string createdDateTime, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.#ctor(System.String,System.String,Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional reactionType As String = null, Optional createdDateTime As String = null, Optional user As MessageActionsPayloadFrom = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction : string * string * Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom -&gt; Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction" Usage="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction (reactionType, createdDateTime, user)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reactionType" Type="System.String" />
+        <Parameter Name="createdDateTime" Type="System.String" />
+        <Parameter Name="user" Type="Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom" />
+      </Parameters>
+      <Docs>
+        <param name="reactionType">The type of reaction given to the
+            message. Possible values include: 'like', 'heart', 'laugh',
+            'surprised', 'sad', 'angry'</param>
+        <param name="createdDateTime">Timestamp of when the user reacted to
+            the message.</param>
+        <param name="user">The user with which the reaction is
+            associated.</param>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadReaction
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDateTime">
+      <MemberSignature Language="C#" Value="public string CreatedDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedDateTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.CreatedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedDateTime As String" />
+      <MemberSignature Language="F#" Value="member this.CreatedDateTime : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.CreatedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="createdDateTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets timestamp of when the user reacted to the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReactionType">
+      <MemberSignature Language="C#" Value="public string ReactionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReactionType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.ReactionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReactionType As String" />
+      <MemberSignature Language="F#" Value="member this.ReactionType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.ReactionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of reaction given to the message. Possible
+            values include: 'like', 'heart', 'laugh', 'surprised', 'sad',
+            'angry'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom User" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As MessageActionsPayloadFrom" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="user")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the user with which the reaction is associated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

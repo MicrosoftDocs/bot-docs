@@ -1,5 +1,5 @@
 ---
-title: Create messages with the Bot Connector API  | Microsoft Docs
+title: Create messages with the Bot Connector API  - Bot Service
 description: Learn about commonly-used message properties within the Bot Connector API. 
 author: RobStand
 ms.author: kamrani
@@ -15,7 +15,9 @@ Your bot will send [Activity][] objects of type **message** to communicate infor
 
 ## Message text and formatting
 
-Message text can be formatted using **plain**, **markdown**, or **xml**. The default format for the `textFormat` property is **markdown** and interprets text using Markdown formatting standards. The level of text format support varies across channels. To see if a feature you want to use is supported on the channel you target, preview the feature using [Channel Inspector][ChannelInspector]. 
+Message text can be formatted using **plain**, **markdown**, or **xml**. The default format for the `textFormat` property is **markdown** and interprets text using Markdown formatting standards. The level of text format support varies across channels. 
+
+[!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
 The `textFormat` property of the [Activity][] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the `Activity` object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender. 
 
@@ -52,7 +54,7 @@ The `suggestedActions` property of the [Activity][] object can be used to presen
 
 ## Additional resources
 
-- [Preview features with the Channel Inspector][ChannelInspector]
+- [Channels reference][ChannelInspector]
 - [Activities overview](https://aka.ms/botSpecs-activitySchema)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
@@ -62,7 +64,7 @@ The `suggestedActions` property of the [Activity][] object can be used to presen
 - [Add suggested actions to messages](bot-framework-rest-connector-add-suggested-actions.md)
 - [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md)
 
-[ChannelInspector]: ../bot-service-channel-inspector.md
+[ChannelInspector]: ../bot-service-channels-reference.md
 [textFormating]: ../bot-service-channel-inspector.md#text-formatting
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
