@@ -179,13 +179,13 @@ In the third (start selection) step, the conversation flow branches, based on th
 The review-selection dialog has 2 steps:
 
 1. Ask the user to choose a company to review or choose `done` to finish.
-    - If the dialog was started with any initial information, the information is available through the _options_ property of the waterfall step context. The review-selection dialog can restart itself, and it uses this to allow the user to choose more than one company to review.
-    - If the user has already selected a company to review, that company is removed from the available choices.
-    - A "done" choice is added to allow the user to exit the loop if they don't want to select 2 companies.
+   - If the dialog was started with any initial information, the information is available through the _options_ property of the waterfall step context. The review-selection dialog can restart itself, and it uses this to allow the user to choose more than one company to review.
+   - If the user has already selected a company to review, that company is removed from the available choices.
+   - A "done" choice is added to allow the user to exit the loop if they don't want to select 2 companies.
 1. Repeat this dialog or exit, as appropriate.
-    - If the user chose a company to review, add it to their list.
-    - If the user has chosen 2 companies or they chose to exit, end the dialog and return the collected list.
-    - Otherwise, restart the dialog, initializing it with the contents of their list.
+   - If the user chose a company to review, add it to their list.
+   - If the user has chosen 2 companies or they chose to exit, end the dialog and return the collected list.
+   - Otherwise, restart the dialog, initializing it with the contents of their list.
 
 In this design, the top-level dialog always precedes the review-selection dialog on the stack, and the review-selection dialog can be thought of as a child of the top-level dialog.
 
@@ -204,13 +204,6 @@ In this design, the top-level dialog always precedes the review-selection dialog
 #### [Python](#tab/python)
 
 **dialogs/review_selection_dialog.py**
-
-The review-selection dialog is started from the top-level dialog's `startSelectionStep`, and has two steps:
-
-1. Ask the user to choose a company to review or choose `done` to finish.
-1. Repeat this dialog or exit, as appropriate.
-
-In this design, the top-level dialog will always precede the review-selection dialog on the stack, and the review-selection dialog can be thought of as a child of the top-level dialog.
 
 [!code-python[step implementations](~/../botbuilder-python/samples/python/43.complex-dialog/dialogs/review_selection_dialog.py?range=42-99)]
 
