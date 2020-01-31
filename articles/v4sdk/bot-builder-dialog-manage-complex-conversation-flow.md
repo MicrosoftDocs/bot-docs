@@ -26,21 +26,16 @@ This article covers how to manage complex conversations that branch and loop and
 ## About this sample
 
 This sample represents a bot that can sign users up to review up to two companies from a list.
+The bot uses 3 component dialogs to manage the conversation flow. Each component dialog includes a waterfall dialog and any prompts needed to gather user input. These dialogs are described in more detail in the following sections.
 It uses conversation state to manage its dialogs and uses user state to save information about the user and which companies they want to review.
 
-The bot derives from the activity handler.
-
-- It welcomes the user when they first join the conversation.
-- It starts or continues the main dialog whenever it receives a message from the user.
-- It saves both user and conversation state before the turn ends.
-
-The bot uses 3 component dialogs to manage the conversation flow. Each component dialog includes a waterfall dialog and any prompts needed to gather user input. These dialogs are described in more detail in the following sections.
+The bot derives from the activity handler. Like many of the sample bots, it welcomes the user, uses dialogs to handle messages from the user, and saves user and conversation state before the turn ends.
 
 ### [C#](#tab/csharp)
 
-![Complex bot flow](./media/complex-conversation-flow.png)
-
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
+
+![Complex bot flow](./media/complex-conversation-flow.png)
 
 **Startup.cs**
 
@@ -54,9 +49,9 @@ Register services for the bot in `Startup`. These services are available to othe
 
 ### [JavaScript](#tab/javascript)
 
-![Complex bot flow](./media/complex-conversation-flow-js.png)
-
 To use dialogs, your project needs to install the **botbuilder-dialogs** npm package.
+
+![Complex bot flow](./media/complex-conversation-flow-js.png)
 
 **index.js**
 
@@ -70,9 +65,9 @@ We create the following services for the bot that are required:
 
 ### [Python](#tab/python)
 
-![Complex bot flow](./media/complex-conversation-flow-python.png)
-
 To use dialogs, your project needs to install the **botbuilder-dialogs** pypi package by running `pip install botbuilder-dialogs`.
+
+![Complex bot flow](./media/complex-conversation-flow-python.png)
 
 **app.py**
 
