@@ -160,7 +160,7 @@ When you use *Azure Bot Service authentication* with [Web Chat](../bot-service-c
     If you enable **enhanced authentication** options, Azure Bot Service can further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat with. Note that this feature requires the user ID starts with `dl_`.
 
     > [!NOTE]
-    > When a *User.Id* is provided while exchanging a secret for a token, that *User.Id* is embedded in the token. DirectLine males sure the messages sent to the bot have that id as the activity's *From.Id*. If a client sends a message to DirectLine having a different *From.Id*, it will be changed to the **Id in the token** before forwarding the message to the bot.
+    > When a *User.Id* is provided while exchanging a secret for a token, that *User.Id* is embedded in the token. DirectLine males sure the messages sent to the bot have that id as the activity's *From.Id*. If a client sends a message to DirectLine having a different *From.Id*, it will be changed to the **Id in the token** before forwarding the message to the bot. So you cannot use another user id after a channel secret is initialized with a user id
 
 1. **User identities**. You must be aware that your are dealing with two user identities:
 
