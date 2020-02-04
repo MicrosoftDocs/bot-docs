@@ -165,7 +165,7 @@ The logic to extract From, To and TravelDate is implemented as helper methods in
 
 # [Python](#tab/python)
 
-Be sure that the **botbuilder-ai** pypi package is installed for your project.
+Be sure that the **botbuilder-ai** PyPI package is installed for your project.
 
 To connect to the LUIS service, the bot uses the information you added above from the `config.py` file. The `FlightBookingRecognizer` class contains the code that imports your settings from the `config.py` file and queries the LUIS service by calling `recognize()` method.
 
