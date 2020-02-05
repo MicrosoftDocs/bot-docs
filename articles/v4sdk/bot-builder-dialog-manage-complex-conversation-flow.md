@@ -80,7 +80,7 @@ We create the following services for the bot that are required:
 
 ![Complex bot flow](./media/complex-conversation-flow-python.png)
 
-To use dialogs, your project needs to install the **botbuilder-dialogs** pypi package by running `pip install botbuilder-dialogs`.
+To use dialogs, your project needs to install the **botbuilder-dialogs** PyPI package by running `pip install botbuilder-dialogs`.
 
 **app.py**
 
