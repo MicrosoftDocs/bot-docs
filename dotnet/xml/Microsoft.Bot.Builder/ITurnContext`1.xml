@@ -1,4 +1,4 @@
-﻿<Type Name="ITurnContext&lt;T&gt;" FullName="Microsoft.Bot.Builder.ITurnContext&lt;T&gt;">
+<Type Name="ITurnContext&lt;T&gt;" FullName="Microsoft.Bot.Builder.ITurnContext&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface ITurnContext&lt;T&gt; : Microsoft.Bot.Builder.ITurnContext where T : IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITurnContext`1&lt;(class Microsoft.Bot.Schema.IActivity) T&gt; implements class Microsoft.Bot.Builder.ITurnContext" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ITurnContext`1" />
@@ -9,6 +9,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -23,11 +24,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">An IActivity derived type, that is one of IMessageActivity, IConversationUpdateActivity etc.</typeparam>
+    <typeparam name="T">The activity type for this turn of the bot.</typeparam>
     <summary>
-            A ITurnContext where the inbound Activity property is strongly typed.
+            Provides context for a turn of a bot, where the context's <see cref="P:Microsoft.Bot.Builder.ITurnContext`1.Activity" /> property is strongly typed.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>The <see cref="T:Microsoft.Bot.Schema.IActivity" /> interface defines properties shared by every type of activity.
+            The interfaces that derive from <see cref="T:Microsoft.Bot.Schema.IActivity" /> include properties specific to a specific
+            type of activity. For example, <see cref="T:Microsoft.Bot.Schema.IMessageActivity" /> includes properties associated with
+            message activities, and <see cref="T:Microsoft.Bot.Schema.IEventActivity" /> includes properties associated with event activities.</remarks>
+    <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
+    <altmember cref="T:Microsoft.Bot.Builder.ActivityHandler" />
+    <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
   </Docs>
   <Members>
     <Member MemberName="Activity">
@@ -42,13 +49,16 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the activity for this turn of the bot.
+            </summary>
+        <value>The activity for this turn of the bot.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="NumericAttribute" FullName="Microsoft.Bot.Builder.FormFlow.NumericAttribute">
+<Type Name="NumericAttribute" FullName="Microsoft.Bot.Builder.FormFlow.NumericAttribute">
   <TypeSignature Language="C#" Value="public class NumericAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NumericAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.NumericAttribute" />
@@ -16,10 +16,10 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

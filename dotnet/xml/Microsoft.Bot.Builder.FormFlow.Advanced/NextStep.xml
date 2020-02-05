@@ -1,4 +1,4 @@
-﻿<Type Name="NextStep" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.NextStep">
+<Type Name="NextStep" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.NextStep">
   <TypeSignature Language="C#" Value="public class NextStep" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NextStep extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.NextStep" />

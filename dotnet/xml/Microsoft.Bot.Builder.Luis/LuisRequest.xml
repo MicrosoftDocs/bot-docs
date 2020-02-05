@@ -1,4 +1,4 @@
-﻿<Type Name="LuisRequest" FullName="Microsoft.Bot.Builder.Luis.LuisRequest">
+<Type Name="LuisRequest" FullName="Microsoft.Bot.Builder.Luis.LuisRequest">
   <TypeSignature Language="C#" Value="public sealed class LuisRequest : Microsoft.Bot.Builder.Luis.ILuisOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LuisRequest extends System.Object implements class Microsoft.Bot.Builder.Luis.ILuisOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisRequest" />

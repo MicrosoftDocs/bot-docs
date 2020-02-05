@@ -1,5 +1,5 @@
 ---
-title: API reference - Direct Line API 3.0 | Microsoft Docs
+title: API reference - Direct Line API 3.0 - Bot Service
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 3.0. 
 author: RobStand
 ms.author: kamrani

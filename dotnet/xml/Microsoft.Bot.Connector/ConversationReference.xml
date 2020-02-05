@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationReference" FullName="Microsoft.Bot.Connector.ConversationReference">
+<Type Name="ConversationReference" FullName="Microsoft.Bot.Connector.ConversationReference">
   <TypeSignature Language="C#" Value="public class ConversationReference : IEquatable&lt;Microsoft.Bot.Connector.ConversationReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationReference extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Connector.ConversationReference&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationReference" />

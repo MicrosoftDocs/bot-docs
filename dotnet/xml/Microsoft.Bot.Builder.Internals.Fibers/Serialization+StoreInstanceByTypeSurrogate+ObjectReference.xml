@@ -1,4 +1,4 @@
-﻿<Type Name="Serialization+StoreInstanceByTypeSurrogate+ObjectReference" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+StoreInstanceByTypeSurrogate+ObjectReference">
+<Type Name="Serialization+StoreInstanceByTypeSurrogate+ObjectReference" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+StoreInstanceByTypeSurrogate+ObjectReference">
   <TypeSignature Language="C#" Value="public sealed class Serialization.StoreInstanceByTypeSurrogate.ObjectReference : System.Runtime.Serialization.IObjectReference" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit Serialization/StoreInstanceByTypeSurrogate/ObjectReference extends System.Object implements class System.Runtime.Serialization.IObjectReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference" />

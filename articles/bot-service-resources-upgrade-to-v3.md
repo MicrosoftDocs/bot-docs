@@ -1,5 +1,5 @@
 ---
-title: Upgrade your bot to Bot Framework API v3 | Microsoft Docs
+title: Upgrade your bot to Bot Framework API v3 - Bot Service
 description: Learn how to upgrade your bot to Bot Framework API v3.
 author: RobStand
 ms.author: kamrani

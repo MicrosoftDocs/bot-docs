@@ -1,4 +1,4 @@
-﻿<Type Name="TemplateBaseAttribute" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute">
+<Type Name="TemplateBaseAttribute" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute">
   <TypeSignature Language="C#" Value="public abstract class TemplateBaseAttribute : Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TemplateBaseAttribute extends Microsoft.Bot.Builder.FormFlow.FormFlowAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />

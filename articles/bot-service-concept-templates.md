@@ -1,5 +1,5 @@
 ---
-title: Bot Service templates | Microsoft Docs
+title: Bot Service templates - Bot Service
 description: Learn about the different templates you can use when you create a bot with Bot Service.
 author: robstand
 ms.author: kamrani

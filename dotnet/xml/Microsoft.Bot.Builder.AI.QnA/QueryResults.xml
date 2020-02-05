@@ -1,4 +1,4 @@
-﻿<Type Name="QueryResults" FullName="Microsoft.Bot.Builder.AI.QnA.QueryResults">
+<Type Name="QueryResults" FullName="Microsoft.Bot.Builder.AI.QnA.QueryResults">
   <TypeSignature Language="C#" Value="public class QueryResults" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryResults extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.QueryResults" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,10 +37,40 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveLearningEnabled">
+      <MemberSignature Language="C#" Value="public bool ActiveLearningEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ActiveLearningEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.QueryResults.ActiveLearningEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveLearningEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ActiveLearningEnabled : bool with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.QueryResults.ActiveLearningEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("activeLearningEnabled")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether gets or set for the active learning enable flag.
+            </summary>
+        <value>
+            The active learning enable flag.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +88,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

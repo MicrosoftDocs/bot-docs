@@ -1,4 +1,4 @@
-﻿<Type Name="TermMatch" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch">
+<Type Name="TermMatch" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch">
   <TypeSignature Language="C#" Value="public class TermMatch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TermMatch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch" />

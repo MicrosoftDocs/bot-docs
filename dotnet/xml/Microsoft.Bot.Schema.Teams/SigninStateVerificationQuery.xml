@@ -1,0 +1,97 @@
+<Type Name="SigninStateVerificationQuery" FullName="Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery">
+  <TypeSignature Language="C#" Value="public class SigninStateVerificationQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SigninStateVerificationQuery extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class SigninStateVerificationQuery" />
+  <TypeSignature Language="F#" Value="type SigninStateVerificationQuery = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Signin state (part of signin action auth flow) verification invoke
+            query
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SigninStateVerificationQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the SigninStateVerificationQuery
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SigninStateVerificationQuery (string state = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional state As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery : string -&gt; Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery" Usage="new Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery state" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="state"> The state string originally received when the
+            signin web flow is finished with a state posted back to client via
+            tab SDK microsoftTeams.authentication.notifySuccess(state)</param>
+        <summary>
+            Initializes a new instance of the SigninStateVerificationQuery
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public string State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As String" />
+      <MemberSignature Language="F#" Value="member this.State : string with get, set" Usage="Microsoft.Bot.Schema.Teams.SigninStateVerificationQuery.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="state")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets  The state string originally received when the signin
+            web flow is finished with a state posted back to client via tab SDK
+            microsoftTeams.authentication.notifySuccess(state)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

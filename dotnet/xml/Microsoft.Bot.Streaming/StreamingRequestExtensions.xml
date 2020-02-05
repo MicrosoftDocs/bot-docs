@@ -1,0 +1,79 @@
+<Type Name="StreamingRequestExtensions" FullName="Microsoft.Bot.Streaming.StreamingRequestExtensions">
+  <TypeSignature Language="C#" Value="public static class StreamingRequestExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StreamingRequestExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.StreamingRequestExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StreamingRequestExtensions" />
+  <TypeSignature Language="F#" Value="type StreamingRequestExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper methods for use with instances of the <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> class.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetBody">
+      <MemberSignature Language="C#" Value="public static void SetBody (this Microsoft.Bot.Streaming.StreamingRequest request, object body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBody(class Microsoft.Bot.Streaming.StreamingRequest request, object body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequestExtensions.SetBody(Microsoft.Bot.Streaming.StreamingRequest,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetBody (request As StreamingRequest, body As Object)" />
+      <MemberSignature Language="F#" Value="static member SetBody : Microsoft.Bot.Streaming.StreamingRequest * obj -&gt; unit" Usage="Microsoft.Bot.Streaming.StreamingRequestExtensions.SetBody (request, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.StreamingRequest" RefType="this" />
+        <Parameter Name="body" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> instance to attach this body to.</param>
+        <param name="body">An object containing the data to insert into the stream.</param>
+        <summary>
+            Adds a new stream to this <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> containing the passed in body.
+            Noop on null body or null request.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBody">
+      <MemberSignature Language="C#" Value="public static void SetBody (this Microsoft.Bot.Streaming.StreamingRequest request, string body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBody(class Microsoft.Bot.Streaming.StreamingRequest request, string body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequestExtensions.SetBody(Microsoft.Bot.Streaming.StreamingRequest,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetBody (request As StreamingRequest, body As String)" />
+      <MemberSignature Language="F#" Value="static member SetBody : Microsoft.Bot.Streaming.StreamingRequest * string -&gt; unit" Usage="Microsoft.Bot.Streaming.StreamingRequestExtensions.SetBody (request, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.StreamingRequest" RefType="this" />
+        <Parameter Name="body" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> instance to attach this body to.</param>
+        <param name="body">A string containing the data to insert into the stream.</param>
+        <summary>
+            Adds a new stream to this <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> containing the passed in body.
+            Noop on null body or null request.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

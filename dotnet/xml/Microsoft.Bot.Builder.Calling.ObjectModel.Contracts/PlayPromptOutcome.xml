@@ -1,4 +1,4 @@
-﻿<Type Name="PlayPromptOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome">
+<Type Name="PlayPromptOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome">
   <TypeSignature Language="C#" Value="public class PlayPromptOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PlayPromptOutcome extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.PlayPromptOutcome" />

@@ -1,0 +1,92 @@
+<Type Name="TaskModuleResponse" FullName="Microsoft.Bot.Schema.Teams.TaskModuleResponse">
+  <TypeSignature Language="C#" Value="public class TaskModuleResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskModuleResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.TaskModuleResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskModuleResponse" />
+  <TypeSignature Language="F#" Value="type TaskModuleResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Envelope for Task Module Response.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskModuleResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the TaskModuleResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskModuleResponse (Microsoft.Bot.Schema.Teams.TaskModuleResponseBase task = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.TaskModuleResponseBase task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleResponse.#ctor(Microsoft.Bot.Schema.Teams.TaskModuleResponseBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional task As TaskModuleResponseBase = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TaskModuleResponse : Microsoft.Bot.Schema.Teams.TaskModuleResponseBase -&gt; Microsoft.Bot.Schema.Teams.TaskModuleResponse" Usage="new Microsoft.Bot.Schema.Teams.TaskModuleResponse task" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="task" Type="Microsoft.Bot.Schema.Teams.TaskModuleResponseBase" />
+      </Parameters>
+      <Docs>
+        <param name="task">The JSON for the Adaptive card to appear in the
+            task module.</param>
+        <summary>
+            Initializes a new instance of the TaskModuleResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.TaskModuleResponseBase Task { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.TaskModuleResponseBase Task" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleResponse.Task" />
+      <MemberSignature Language="VB.NET" Value="Public Property Task As TaskModuleResponseBase" />
+      <MemberSignature Language="F#" Value="member this.Task : Microsoft.Bot.Schema.Teams.TaskModuleResponseBase with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleResponse.Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="task")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.TaskModuleResponseBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the JSON for the Adaptive card to appear in the task
+            module.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

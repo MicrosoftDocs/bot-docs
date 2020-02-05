@@ -1,4 +1,4 @@
-﻿<Type Name="RegexMatchScorableFactory" FullName="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory">
+<Type Name="RegexMatchScorableFactory" FullName="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory">
   <TypeSignature Language="C#" Value="public sealed class RegexMatchScorableFactory : Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegexMatchScorableFactory extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class System.Text.RegularExpressions.Match&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorableFactory" />

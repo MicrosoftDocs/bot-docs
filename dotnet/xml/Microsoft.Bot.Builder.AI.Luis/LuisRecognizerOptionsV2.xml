@@ -1,0 +1,107 @@
+<Type Name="LuisRecognizerOptionsV2" FullName="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2">
+  <TypeSignature Language="C#" Value="public class LuisRecognizerOptionsV2 : Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisRecognizerOptionsV2 extends Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisRecognizerOptionsV2&#xA;Inherits LuisRecognizerOptions" />
+  <TypeSignature Language="F#" Value="type LuisRecognizerOptionsV2 = class&#xA;    inherit LuisRecognizerOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisRecognizerOptionsV2 (Microsoft.Bot.Builder.AI.Luis.LuisApplication application);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.AI.Luis.LuisApplication application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.#ctor(Microsoft.Bot.Builder.AI.Luis.LuisApplication)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (application As LuisApplication)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2 : Microsoft.Bot.Builder.AI.Luis.LuisApplication -&gt; Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2" Usage="new Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2 application" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="application" Type="Microsoft.Bot.Builder.AI.Luis.LuisApplication" />
+      </Parameters>
+      <Docs>
+        <param name="application">The LUIS application to use to recognize text.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceLabel">
+      <MemberSignature Language="C#" Value="public const string LuisTraceLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceLabel" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.LuisTraceLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceLabel As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceLabel : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.LuisTraceLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The context label for a LUIS trace activity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LuisTraceType">
+      <MemberSignature Language="C#" Value="public const string LuisTraceType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LuisTraceType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.LuisTraceType" />
+      <MemberSignature Language="VB.NET" Value="Public Const LuisTraceType As String " />
+      <MemberSignature Language="F#" Value="val mutable LuisTraceType : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.LuisTraceType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The value type for a LUIS trace activity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PredictionOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions PredictionOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions PredictionOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.PredictionOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property PredictionOptions As LuisPredictionOptions" />
+      <MemberSignature Language="F#" Value="member this.PredictionOptions : Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV2.PredictionOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Luis Prediction Options for the V2 endpoint.
+            </summary>
+        <value> This settings will be used to call Luis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

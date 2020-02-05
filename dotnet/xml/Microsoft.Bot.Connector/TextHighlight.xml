@@ -1,4 +1,4 @@
-﻿<Type Name="TextHighlight" FullName="Microsoft.Bot.Connector.TextHighlight">
+<Type Name="TextHighlight" FullName="Microsoft.Bot.Connector.TextHighlight">
   <TypeSignature Language="C#" Value="public class TextHighlight" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextHighlight extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.TextHighlight" />

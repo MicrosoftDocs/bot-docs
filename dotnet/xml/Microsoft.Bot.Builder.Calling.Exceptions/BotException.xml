@@ -1,4 +1,4 @@
-﻿<Type Name="BotException" FullName="Microsoft.Bot.Builder.Calling.Exceptions.BotException">
+<Type Name="BotException" FullName="Microsoft.Bot.Builder.Calling.Exceptions.BotException">
   <TypeSignature Language="C#" Value="public class BotException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Exceptions.BotException" />

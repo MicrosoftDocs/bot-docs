@@ -1,5 +1,5 @@
 ---
-title: Bot Framework User-Agent requests | Microsoft Docs
+title: Bot Framework User-Agent requests - Bot Service
 description: Understanding requests from bot framework to your web server.
 author: JohnD-ms
 ms.author: kamrani

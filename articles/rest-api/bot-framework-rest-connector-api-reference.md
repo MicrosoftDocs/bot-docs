@@ -1,5 +1,5 @@
 ---
-title: API reference | Microsoft Docs
+title: API reference - Bot Service
 description: Learn about headers, operations, objects, and errors in the Bot Connector service and Bot State service. 
 author: ivorb
 ms.author: kamrani

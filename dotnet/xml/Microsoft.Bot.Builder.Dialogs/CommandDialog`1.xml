@@ -1,4 +1,4 @@
-﻿<Type Name="CommandDialog&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;T&gt;">
+<Type Name="CommandDialog&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.CommandDialog&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class CommandDialog&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CommandDialog`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.CommandDialog`1" />

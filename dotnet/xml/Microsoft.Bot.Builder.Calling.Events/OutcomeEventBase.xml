@@ -1,4 +1,4 @@
-﻿<Type Name="OutcomeEventBase" FullName="Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase">
+<Type Name="OutcomeEventBase" FullName="Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase">
   <TypeSignature Language="C#" Value="public abstract class OutcomeEventBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OutcomeEventBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.OutcomeEventBase" />

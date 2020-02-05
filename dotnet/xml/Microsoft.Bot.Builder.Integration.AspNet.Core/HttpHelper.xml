@@ -1,0 +1,112 @@
+<Type Name="HttpHelper" FullName="Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper">
+  <TypeSignature Language="C#" Value="public static class HttpHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HttpHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpHelper" />
+  <TypeSignature Language="F#" Value="type HttpHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BotMessageSerializer">
+      <MemberSignature Language="C#" Value="public static readonly Newtonsoft.Json.JsonSerializer BotMessageSerializer;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Newtonsoft.Json.JsonSerializer BotMessageSerializer" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.BotMessageSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotMessageSerializer As JsonSerializer " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotMessageSerializer : Newtonsoft.Json.JsonSerializer" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.BotMessageSerializer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotMessageSerializerSettings">
+      <MemberSignature Language="C#" Value="public static readonly Newtonsoft.Json.JsonSerializerSettings BotMessageSerializerSettings;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Newtonsoft.Json.JsonSerializerSettings BotMessageSerializerSettings" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.BotMessageSerializerSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BotMessageSerializerSettings As JsonSerializerSettings " />
+      <MemberSignature Language="F#" Value=" staticval mutable BotMessageSerializerSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.BotMessageSerializerSettings" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadRequestAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; ReadRequestAsync&lt;T&gt; (Microsoft.AspNetCore.Http.HttpRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; ReadRequestAsync&lt;T&gt;(class Microsoft.AspNetCore.Http.HttpRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.ReadRequestAsync``1(Microsoft.AspNetCore.Http.HttpRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadRequestAsync(Of T) (request As HttpRequest) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member ReadRequestAsync : Microsoft.AspNetCore.Http.HttpRequest -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.ReadRequestAsync request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteResponseAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteResponseAsync (Microsoft.AspNetCore.Http.HttpResponse response, Microsoft.Bot.Builder.InvokeResponse invokeResponse);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteResponseAsync(class Microsoft.AspNetCore.Http.HttpResponse response, class Microsoft.Bot.Builder.InvokeResponse invokeResponse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.WriteResponseAsync(Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.InvokeResponse)" />
+      <MemberSignature Language="F#" Value="static member WriteResponseAsync : Microsoft.AspNetCore.Http.HttpResponse * Microsoft.Bot.Builder.InvokeResponse -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.WriteResponseAsync (response, invokeResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="Microsoft.AspNetCore.Http.HttpResponse" />
+        <Parameter Name="invokeResponse" Type="Microsoft.Bot.Builder.InvokeResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <param name="invokeResponse">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

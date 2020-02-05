@@ -1,4 +1,4 @@
-﻿<Type Name="Attachment" FullName="Microsoft.Bot.Connector.Attachment">
+<Type Name="Attachment" FullName="Microsoft.Bot.Connector.Attachment">
   <TypeSignature Language="C#" Value="public class Attachment : IEquatable&lt;Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Attachment extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Attachment" />

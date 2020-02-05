@@ -1,5 +1,5 @@
 ---
-title: Sample bots for Bot Framework SDK for JavaScript | Microsoft Docs
+title: Sample bots for Bot Framework SDK for JavaScript - Bot Service
 description: Explore a large selection of sample bots that can help kickstart your bot development with the Bot Framework SDK for JavaScript.
 author: jonathanfingold
 ms.author: kamrani

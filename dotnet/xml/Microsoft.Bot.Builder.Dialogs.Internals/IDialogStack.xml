@@ -1,4 +1,4 @@
-﻿<Type Name="IDialogStack" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack">
+<Type Name="IDialogStack" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack">
   <TypeSignature Language="C#" Value="public interface IDialogStack" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />

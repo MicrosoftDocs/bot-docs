@@ -1,0 +1,75 @@
+<Type Name="ISourceMap" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap">
+  <TypeSignature Language="C#" Value="public interface ISourceMap" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISourceMap" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISourceMap" />
+  <TypeSignature Language="F#" Value="type ISourceMap = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A source map is a dictionary object -&gt; sourceCode.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (object item, Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(object item, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap.Add(System.Object,Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As Object, range As SourceRange)" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange -&gt; unit" Usage="iSourceMap.Add (item, range)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="range" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" />
+      </Parameters>
+      <Docs>
+        <param name="item">item to record.</param>
+        <param name="range">sourceBlock range for the object.</param>
+        <summary>
+            Add an object and SourceRange information describing where the object was defined.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (object item, out Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(object item, [out] class Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange&amp; range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap.TryGetValue(System.Object,Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (item As Object, ByRef range As SourceRange) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : obj * SourceRange -&gt; bool" Usage="iSourceMap.TryGetValue (item, range)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="range" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="item">object to look up.</param>
+        <param name="range">place to return the SourceRange for the object.</param>
+        <summary>
+            Look up the SourceRange information for an object.
+            </summary>
+        <returns>true if found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

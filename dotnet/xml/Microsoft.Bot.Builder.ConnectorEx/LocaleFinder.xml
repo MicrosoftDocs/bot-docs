@@ -1,4 +1,4 @@
-﻿<Type Name="LocaleFinder" FullName="Microsoft.Bot.Builder.ConnectorEx.LocaleFinder">
+<Type Name="LocaleFinder" FullName="Microsoft.Bot.Builder.ConnectorEx.LocaleFinder">
   <TypeSignature Language="C#" Value="public sealed class LocaleFinder : Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocaleFinder extends System.Object implements class Microsoft.Bot.Builder.ConnectorEx.ILocaleFinder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder" />
