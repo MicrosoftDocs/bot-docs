@@ -307,7 +307,7 @@ When all changes are in place, save this file.
 
 ### Installing packages
 
-Prior to running this app for the first time you will need to install several pypi packages.
+Prior to running this app for the first time you will need to install several PyPI packages.
 
 ```powershell
 pip install azure

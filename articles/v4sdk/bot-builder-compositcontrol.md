@@ -84,7 +84,7 @@ For more information on implementing waterfall dialogs, see how to [implement se
 
 # [Python](#tab/python)
 
-To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** pypi packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
+To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
 
 **dialogs/user_profile_dialog.py**
 
