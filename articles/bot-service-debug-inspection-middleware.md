@@ -62,7 +62,7 @@ Update the bot class in the **bot.js** file.
 [!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-50)]
 
 # [Python](#tab/python)
-Before updating your bot's code run install the necessary pypi packages by running the following commands in a terminal:
+Before updating your bot's code run install the necessary PyPI packages by running the following commands in a terminal:
 ```cmd
 pip install aiohttp
 pip install botbuilder-core>=4.7.0
