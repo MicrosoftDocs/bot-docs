@@ -1,17 +1,17 @@
 ---
 title: Authentication - Bot Service
-description: Learn how to authenticate API requests in Direct Line API v3.0. 
+description: Learn how to authenticate API requests in Direct Line API v3.0.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/22/2019    
+ms.date: 08/22/2019
 ---
 
 # Authentication
 
-A client can authenticate requests to Direct Line API 3.0 either by using a **secret** that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a **token** that you obtain at runtime. The secret or token should be specified in the `Authorization` header of each request, using this format: 
+A client can authenticate requests to Direct Line API 3.0 either by using a **secret** that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a **token** that you obtain at runtime. The secret or token should be specified in the `Authorization` header of each request, using this format:
 
 ```http
 Authorization: Bearer SECRET_OR_TOKEN
@@ -19,7 +19,7 @@ Authorization: Bearer SECRET_OR_TOKEN
 
 ## Secrets and tokens
 
-A Direct Line **secret** is a master key that can be used to access any conversation that belongs to the associated bot. A **secret** can also be used to obtain a **token**. Secrets do not expire. 
+A Direct Line **secret** is a master key that can be used to access any conversation that belongs to the associated bot. A **secret** can also be used to obtain a **token**. Secrets do not expire.
 
 A Direct Line **token** is a key that can be used to access a single conversation. A token expires but can be refreshed.
 
@@ -31,7 +31,7 @@ For more information, see section [Security considerations](#security-considerat
 If you're creating a service-to-service application, specifying the **secret** in the `Authorization` header of Direct Line API requests may be simplest approach. If you're writing an application where the client runs in a web browser or mobile app, you may want to exchange your secret for a token (which only works for a single conversation and will expire unless refreshed) and specify the **token** in the `Authorization` header of Direct Line API requests. Choose the security model that works best for you.
 
 > [!NOTE]
-> Your Direct Line client credentials are different from your bot's credentials. This enables you to revise your keys independently and lets you share client tokens without disclosing your bot's password. 
+> Your Direct Line client credentials are different from your bot's credentials. This enables you to revise your keys independently and lets you share client tokens without disclosing your bot's password.
 
 ## Get a Direct Line secret
 
@@ -98,13 +98,13 @@ HTTP/1.1 200 OK
 
 ### Generate Token versus Start Conversation
 
-The Generate Token operation (`POST /v3/directline/tokens/generate`) is similar to the [Start Conversation](bot-framework-rest-direct-line-3-0-start-conversation.md) operation (`POST /v3/directline/conversations`) in that both operations return a `token` that can be used to access a single conversation. However, unlike the Start Conversation operation, the Generate Token operation does not start the conversation, does not contact the bot, and does not create a streaming WebSocket URL. 
+The Generate Token operation (`POST /v3/directline/tokens/generate`) is similar to the [Start Conversation](bot-framework-rest-direct-line-3-0-start-conversation.md) operation (`POST /v3/directline/conversations`) in that both operations return a `token` that can be used to access a single conversation. However, unlike the Start Conversation operation, the Generate Token operation does not start the conversation, does not contact the bot, and does not create a streaming WebSocket URL.
 
 If you plan to distribute the token to clients and want them to initiate the conversation, use the Generate Token operation. If you intend to start the conversation immediately, use the [Start Conversation](bot-framework-rest-direct-line-3-0-start-conversation.md) operation instead.
 
 ## <a id="refresh-token"></a> Refresh a Direct Line token
 
-A Direct Line token can be refreshed an unlimited amount of times, as long as it has not expired. An expired token cannot be refreshed. To refresh a Direct Line token, issue this request: 
+A Direct Line token can be refreshed an unlimited amount of times, as long as it has not expired. An expired token cannot be refreshed. To refresh a Direct Line token, issue this request:
 
 ```http
 POST https://directline.botframework.com/v3/directline/tokens/refresh
@@ -155,19 +155,24 @@ The information presented in this section is based on the [Add authentication to
 
 When you use *Azure Bot Service authentication* with [Web Chat](../bot-service-channel-connect-webchat.md) there are some important security considerations you must keep in mind.
 
-1. **Impersonation**. Impersonation here means an attacker makes the bot thinks he is someone else. In Web Chat, an attacker can impersonate someone else by **changing the user ID** of his Web Chat instance. To prevent this, it is recommend to bot developers to make the **user ID unguessable**. 
-If you enable **enhanced authentication** options, Azure Bot Service can further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat with. Note that this feature requires the user ID starts with `dl_`
+1. **Impersonation**. Impersonation here means an attacker makes the bot thinks he is someone else. In Web Chat, an attacker can impersonate someone else by **changing the user ID** of his Web Chat instance. To prevent this, it is recommend to bot developers to make the **user ID unguessable**.
+
+    If you enable **enhanced authentication** options, Azure Bot Service can further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat with. Note that this feature requires the user ID starts with `dl_`.
+
+    > [!NOTE]
+    > When a *User.Id* is provided while exchanging a secret for a token, that *User.Id* is embedded in the token. DirectLine males sure the messages sent to the bot have that id as the activity's *From.Id*. If a client sends a message to DirectLine having a different *From.Id*, it will be changed to the **Id in the token** before forwarding the message to the bot. So you cannot use another user id after a channel secret is initialized with a user id
+
 1. **User identities**. You must be aware that your are dealing with two user identities:
 
     1. The user’s identity in a channel.
     1. The user’s identity in an identity provider that the bot is interested in.
-  
+
     When a bot asks user A in a channel to sign-in to an identity provider P, the sign-in process must assure that user A is the one that signs into P.
     If another user B is allowed to sign-in, then user A would have access to user B’s resource through the bot. In Web Chat we have 2 mechanisms for ensuring the right user signed in as described next.
 
     1. At the end of sign-in, in the past, the user was presented with a randomly generated 6-digit code (aka magic code). The user must type this code in the conversation that initiated the sign-in to complete the sign-in process. This mechanism tends to result in a bad user experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
 
-    2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself. 
+    2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
     To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
 
     See also [Add authentication to your bot via Azure Bot Service](../v4sdk/bot-builder-authentication.md).
@@ -211,7 +216,7 @@ public class HomeController : Controller
         var config = new ChatConfig()
         {
             Token = token,
-            UserId = userId  
+            UserId = userId
         };
 
         return View(config);
@@ -254,14 +259,14 @@ router.get('/config', function(req, res) {
 
     request.post(options, (error, response, body) => {
         if (!error && response.statusCode < 300) {
-            res.json({ 
+            res.json({
                     token: body.token,
                     userId: userId
                 });
         }
         else {
             res.status(500).send('Call to retrieve token from Direct Line failed');
-        } 
+        }
     });
 });
 
