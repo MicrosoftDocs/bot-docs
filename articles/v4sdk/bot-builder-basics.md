@@ -7,7 +7,7 @@ ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/27/2020
+ms.date: 01/31/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -75,9 +75,9 @@ The JavaScript `ActivityHandler` uses an event emitter and listener pattern.
 For example, use the `onMessage` method to register an event listener for message activities. You can register more than one listener. When the bot receives a message activity, the activity handler would see that incoming activity and send it each of the `onMessage` activity listeners, in the order in which they were registered.
 
 When building your bot, your bot logic for handling and responding to messages will go in the `onMessage` listeners. Likewise, your logic for handling members being added to the conversation will go in your `onMembersAdded` listeners, which are called whenever a member is added to the conversation.
-
 To add these listeners, you will register them in your bot as seen in the [Bot logic](#bot-logic) section below. For each listener, include your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next listener is run.
-In any listener that updates state, make sure to [save state](bot-builder-concept-state.md) before the listener exits.
+
+Make sure to [save state](bot-builder-concept-state.md) before the turn ends. You can do so by overriding the activity handler `run` method and saving state after the parent's `run` method completes.
 
 There aren't any common situations where you will want to override the base turn handler, so be careful if you try to do so.
 There is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and is not tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
