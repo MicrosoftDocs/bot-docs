@@ -15,7 +15,7 @@ You can use the Bot Connector service to communicate with users across multiple 
 
 ## Bot Connector service
 
-The Bot Connector service enables your bot to exchange messages with channels configured in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>. It uses industry-standard REST and JSON over HTTPS and enables authentication with JWT Bearer tokens. For detailed information about how to use the Bot Connector service, see [Authentication](bot-framework-rest-connector-authentication.md) and the remaining articles in this section.
+The Bot Connector service enables your bot to exchange messages with channels configured in the [Azure Portal](https://portal.azure.com). It uses industry-standard REST and JSON over HTTPS and enables authentication with JWT Bearer tokens. For detailed information about how to use the Bot Connector service, see [Authentication](bot-framework-rest-connector-authentication.md) and the remaining articles in this section.
 
 ### Activity
 
