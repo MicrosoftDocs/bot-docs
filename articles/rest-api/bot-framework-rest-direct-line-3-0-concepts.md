@@ -15,7 +15,7 @@ You can enable communication between your bot and your own client application by
 
 ## Authentication
 
-Direct Line API 3.0 requests can be authenticated either by using a **secret** that you obtain from the Direct Line channel configuration page in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a> or by using a **token** that you obtain at runtime. For more information, see [Authentication](bot-framework-rest-direct-line-3-0-authentication.md).
+Direct Line API 3.0 requests can be authenticated either by using a **secret** that you obtain from the Direct Line channel configuration page in the [Azure Portal](https://portal.azure.com) or by using a **token** that you obtain at runtime. For more information, see [Authentication](bot-framework-rest-direct-line-3-0-authentication.md).
 
 ## Starting a conversation
 
