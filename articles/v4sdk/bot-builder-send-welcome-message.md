@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/05/2019
+ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 # Send welcome message to users
@@ -66,7 +66,7 @@ The two main events encountered by the bot are:
 Whenever a new user is connected, they are provided with a *welcome message*, *information message*, and a *pattern message* by the bot.
 When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked to see if it is set to *true*. If it is not set to *true*, an initial welcome user message is returned to the user. If it is set to *true*, based on the content of the user's input this bot will do one of the following:
 
-- Echo back a greeting received from the user. 
+- Echo back a greeting received from the user.
 - Display a hero card providing addition information about bots.
 
 ---
@@ -96,7 +96,7 @@ At startup, both memory storage and user state are defined in `index.js`.
 At startup, both user state and welcome message are defined in `welcome-user-bot.py`.
 
 **welcome-user-bot.py**
-[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=23-37)]
+[!code-python[user state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=23-37)]
 
 ---
 
@@ -124,7 +124,8 @@ We now create a property accessor that provides us a handle to welcomedUserPrope
 Create a property accessor `user_state_accessor` to provide a handle to `WelcomeUserState` inside `on_message_activity`.
 
 **welcome-user-bot.py**
-[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=31)]
+[!code-python[user state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=31)]
+
 ---
 
 ## Detect and greet newly connected users
@@ -149,7 +150,7 @@ This JavaScript code sends initial welcome messages when a user is added. This i
 The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a *welcome message*, an *information message* and a *pattern message*.
 
 **welcome-user-bot.py**
-[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=55-74)]
+[!code-python[user state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=55-74)]
 
 ---
 
@@ -174,7 +175,7 @@ It is also important to consider when your user’s input might actually contain
 It is also important to consider when the user’s input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and does not process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
 
 **welcome-user-bot.py**
-[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=85-95)]
+[!code-python[user state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=85-95)]
 
 ---
 
@@ -201,7 +202,7 @@ An input of 'intro' or 'help' uses CardFactory to present the user with an Intro
 An user's input of *intro* or *help* causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
 
 **welcome-user-bot.py**
-[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=101-106&highlight=103-104)]
+[!code-python[user state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=101-106&highlight=103-104)]
 
 ---
 
@@ -222,7 +223,7 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 ### [Python](#tab/python)
 
 **welcome-user-bot.py**
-[!code-python[user state](~/../botbuilder-python/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=108-143)]
+[!code-python[user state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=108-143)]
 
 ---
 
