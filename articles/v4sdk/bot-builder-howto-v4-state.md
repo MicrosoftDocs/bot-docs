@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/06/2019
+ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -23,6 +23,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 - The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [CSharp](https://aka.ms/statebot-sample-cs), [JavaScript](https://aka.ms/statebot-sample-js) or [Python](https://aka.ms/bot-state-python-sample-code).
 
 ## About this sample
+
 Upon receiving user input, this sample checks the stored conversation state to see if this user has previously been prompted to provide their name. If not, the user's name is requested and that input is stored within user state. If so, the name stored within user state is used to converse with the user and their input data, along with the time received and input channel Id, is returned back to the user. The time and channel Id values are retrieved from the user conversation data and then saved to conversation state. The following diagram shows the relationship between the bot, user profile, and conversation data classes.
 
 ## [C#](#tab/csharp)
@@ -69,7 +70,7 @@ The first step in setting up state management is to define the classes containin
 
 The following code example shows the `ConversationData` class definition. 
 
-[!code-python[conversation_data](~/../botbuilder-python/samples/python/45.state-management/data_models/conversation_data.py?range=5-14)]
+[!code-python[conversation_data](~/../botbuilder-samples/samples/python/45.state-management/data_models/conversation_data.py?range=5-14)]
 
 ---
 
@@ -99,10 +100,10 @@ Next, we register `MemoryStorage` that is then used to create `UserState` and `C
 Next, we register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. The user and conversation state objects are created at start up in `app.py` and dependency injected into the bot constructor.
 
 **app.py**
-[!code-python[state](~/../botbuilder-python/samples/python/45.state-management/app.py?range=67-70)]
+[!code-python[state](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=67-70)]
 
 **bots/state_management_bot.py**
-[!code-python[state](~/../botbuilder-python/samples/python/45.state-management/bots/state_management_bot.py?range=14-30)]
+[!code-python[state](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=14-30)]
 
 ---
 
@@ -113,30 +114,27 @@ Next, we register `MemoryStorage` that is used to create `UserState` and `Conver
 Now we create property accessors using the `CreateProperty` method that provides a handle to the `BotState` object. Each state property accessor allows you to get or set the value of the associated state property. Before we use our state properties, we use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, we call the `GetAsync` method.
 
 **Bots/StateManagementBot.cs**
-
-[!code-csharp[StateAccessors](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Bots/StateManagementBot.cs?range=38-46)]
+[!code-csharp[Create accessors](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Bots/StateManagementBot.cs?range=42,45)]
 
 ## [JavaScript](#tab/javascript)
 
 Now we create property accessors for `UserState` and `ConversationState`. Each state property accessor allows you to get or set the value of the associated state property. We use each accessor to load the associated property from storage and retrieve its current state from cache.
 
 **bots/stateManagementBot.js**
-
-[!code-javascript[BotService](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=6-19)]
+[!code-javascript[Create accessors](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=13-15)]
 
 ## [Python](#tab/python)
 
 Now we create property accessors for `UserProfile` and `ConversationData`. Each state property accessor allows you to get or set the value of the associated state property. We use each accessor to load the associated property from storage and retrieve its current state from cache.
 
 **bots/state_management_bot.py**
-[!code-python[state_accessors](~/../botbuilder-python/samples/python/45.state-management/bots/state_management_bot.py?range=24-30)]
+[!code-python[Create accessors](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=27-30)]
 
 ---
 
 ## Access state from your bot
 
 The preceding section covers the initialization-time steps to add state property accessors to our bot. Now, we can use those accessors at run-time to read and write state information. The sample code below uses the following logic flow:
-
 
 ## [C#](#tab/csharp)
 
@@ -145,13 +143,11 @@ The preceding section covers the initialization-time steps to add state property
 - If userProfile.Name was previously stored, we retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **Bots/StateManagementBot.cs**
-
 [!code-csharp[OnMessageActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=38-85)]
 
 Before we exit the turn handler, we use the state management objects' _SaveChangesAsync()_ method to write all state changes back to storage.
 
 **Bots/StateManagementBot.cs**
-
 [!code-csharp[OnTurnAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=24-31)]
 
 ## [JavaScript](#tab/javascript)
@@ -161,14 +157,12 @@ Before we exit the turn handler, we use the state management objects' _SaveChang
 - If userProfile.Name was previously stored, we retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **bots/stateManagementBot.js**
-
 [!code-javascript[OnMessage](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=21-58)]
 
 Before we exit each dialog turn, we use the state management objects' _saveChanges()_ method to persist all changes by writing state back out to storage.
 
 **bots/stateManagementBot.js**
-
-[!code-javascript[OnDialog](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=60-67)]
+[!code-javascript[OnDialog](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=72-81)]
 
 ## [Python](#tab/python)
 
@@ -177,12 +171,12 @@ Before we exit each dialog turn, we use the state management objects' _saveChang
 - If `user_profile.name` was previously stored, the bot retrieves **message time** and **channel Id** from the user input, echoes the data back to the user, and stores the retrieved data in the conversation state.
 
 **bots/state_management_bot.py**
-[!code-python[state_message_activity](~/../botbuilder-python/samples/python/45.state-management/bots/state_management_bot.py?range=47-89)]
+[!code-python[state_message_activity](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=47-89)]
 
 Before exiting each dialog turn, the bot uses the state management objects' `save_changes` method to persist all changes by writing state information in the storage.
 
 **bots/state_management_bot.py**
-[!code-python[state_storage](~/../botbuilder-python/samples/python/45.state-management/bots/state_management_bot.py?range=32-36)]
+[!code-python[state_storage](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=32-36)]
 
 ---
 
