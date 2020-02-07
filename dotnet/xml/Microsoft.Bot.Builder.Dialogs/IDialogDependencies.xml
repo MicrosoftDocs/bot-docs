@@ -1,0 +1,41 @@
+<Type Name="IDialogDependencies" FullName="Microsoft.Bot.Builder.Dialogs.IDialogDependencies">
+  <TypeSignature Language="C#" Value="public interface IDialogDependencies" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogDependencies" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IDialogDependencies" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDialogDependencies" />
+  <TypeSignature Language="F#" Value="type IDialogDependencies = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDependencies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; GetDependencies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Dialog&gt; GetDependencies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.IDialogDependencies.GetDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDependencies () As IEnumerable(Of Dialog)" />
+      <MemberSignature Language="F#" Value="abstract member GetDependencies : unit -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;" Usage="iDialogDependencies.GetDependencies " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Enumerate child dialog dependencies so they can be added to the containers dialogset.
+            </summary>
+        <returns>dialog enumeration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

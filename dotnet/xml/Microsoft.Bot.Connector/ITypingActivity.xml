@@ -1,4 +1,4 @@
-﻿<Type Name="ITypingActivity" FullName="Microsoft.Bot.Connector.ITypingActivity">
+<Type Name="ITypingActivity" FullName="Microsoft.Bot.Connector.ITypingActivity">
   <TypeSignature Language="C#" Value="public interface ITypingActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypingActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ITypingActivity" />

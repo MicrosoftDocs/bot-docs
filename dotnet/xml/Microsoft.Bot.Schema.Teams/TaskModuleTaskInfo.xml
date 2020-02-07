@@ -1,0 +1,280 @@
+<Type Name="TaskModuleTaskInfo" FullName="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo">
+  <TypeSignature Language="C#" Value="public class TaskModuleTaskInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskModuleTaskInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskModuleTaskInfo" />
+  <TypeSignature Language="F#" Value="type TaskModuleTaskInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Metadata for a Task Module.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskModuleTaskInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the TaskModuleTaskInfo class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskModuleTaskInfo (string title = null, object height = null, object width = null, string url = null, Microsoft.Bot.Schema.Attachment card = null, string fallbackUrl = null, string completionBotId = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, object height, object width, string url, class Microsoft.Bot.Schema.Attachment card, string fallbackUrl, string completionBotId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.#ctor(System.String,System.Object,System.Object,System.String,Microsoft.Bot.Schema.Attachment,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional height As Object = null, Optional width As Object = null, Optional url As String = null, Optional card As Attachment = null, Optional fallbackUrl As String = null, Optional completionBotId As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo : string * obj * obj * string * Microsoft.Bot.Schema.Attachment * string * string -&gt; Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo" Usage="new Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo (title, height, width, url, card, fallbackUrl, completionBotId)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="height" Type="System.Object" />
+        <Parameter Name="width" Type="System.Object" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.Attachment" />
+        <Parameter Name="fallbackUrl" Type="System.String" />
+        <Parameter Name="completionBotId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">Appears below the app name and to the right of
+            the app icon.</param>
+        <param name="height">This can be a number, representing the task
+            module's height in pixels, or a string, one of: small, medium,
+            large.</param>
+        <param name="width">This can be a number, representing the task
+            module's width in pixels, or a string, one of: small, medium,
+            large.</param>
+        <param name="url">The URL of what is loaded as an iframe inside the
+            task module. One of url or card is required.</param>
+        <param name="card">The JSON for the Adaptive card to appear in the
+            task module.</param>
+        <param name="fallbackUrl">If a client does not support the task
+            module feature, this URL is opened in a browser tab.</param>
+        <param name="completionBotId">If a client does not support the task
+            module feature, this URL is opened in a browser tab.</param>
+        <summary>
+            Initializes a new instance of the TaskModuleTaskInfo class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Card">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Attachment Card { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Attachment Card" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Card" />
+      <MemberSignature Language="VB.NET" Value="Public Property Card As Attachment" />
+      <MemberSignature Language="F#" Value="member this.Card : Microsoft.Bot.Schema.Attachment with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Card" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="card")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the JSON for the Adaptive card to appear in the task
+            module.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletionBotId">
+      <MemberSignature Language="C#" Value="public string CompletionBotId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompletionBotId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.CompletionBotId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompletionBotId As String" />
+      <MemberSignature Language="F#" Value="member this.CompletionBotId : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.CompletionBotId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="completionBotId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets if a client does not support the task module feature,
+            this URL is opened in a browser tab.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackUrl">
+      <MemberSignature Language="C#" Value="public string FallbackUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FallbackUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.FallbackUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property FallbackUrl As String" />
+      <MemberSignature Language="F#" Value="member this.FallbackUrl : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.FallbackUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fallbackUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets if a client does not support the task module feature,
+            this URL is opened in a browser tab.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public object Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Object" />
+      <MemberSignature Language="F#" Value="member this.Height : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="height")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this can be a number, representing the task module's
+            height in pixels, or a string, one of: small, medium, large.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets appears below the app name and to the right of the app
+            icon.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the URL of what is loaded as an iframe inside the task
+            module. One of url or card is required.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public object Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Object" />
+      <MemberSignature Language="F#" Value="member this.Width : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="width")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets this can be a number, representing the task module's
+            width in pixels, or a string, one of: small, medium, large.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="IStateClient" FullName="Microsoft.Bot.Connector.IStateClient">
+<Type Name="IStateClient" FullName="Microsoft.Bot.Connector.IStateClient">
   <TypeSignature Language="C#" Value="public interface IStateClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStateClient implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IStateClient" />

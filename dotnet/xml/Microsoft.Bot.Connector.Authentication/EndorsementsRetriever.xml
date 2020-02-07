@@ -1,4 +1,4 @@
-﻿<Type Name="EndorsementsRetriever" FullName="Microsoft.Bot.Connector.Authentication.EndorsementsRetriever">
+<Type Name="EndorsementsRetriever" FullName="Microsoft.Bot.Connector.Authentication.EndorsementsRetriever">
   <TypeSignature Language="C#" Value="public sealed class EndorsementsRetriever : Microsoft.IdentityModel.Protocols.IConfigurationRetriever&lt;System.Collections.Generic.IDictionary&lt;string,System.Collections.Generic.HashSet&lt;string&gt;&gt;&gt;, Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndorsementsRetriever extends System.Object implements class Microsoft.IdentityModel.Protocols.IConfigurationRetriever`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, class System.Collections.Generic.HashSet`1&lt;string&gt;&gt;&gt;, class Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.EndorsementsRetriever" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -47,6 +48,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -78,6 +80,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Collections.Generic.HashSet&lt;System.String&gt;&gt;&gt;</ReturnType>
@@ -116,6 +119,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -150,6 +154,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

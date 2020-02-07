@@ -1,4 +1,4 @@
-﻿<Type Name="ThumbnailCard" FullName="Microsoft.Bot.Connector.ThumbnailCard">
+<Type Name="ThumbnailCard" FullName="Microsoft.Bot.Connector.ThumbnailCard">
   <TypeSignature Language="C#" Value="public class ThumbnailCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThumbnailCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ThumbnailCard" />

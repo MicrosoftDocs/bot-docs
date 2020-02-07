@@ -1,5 +1,5 @@
 ---
-title: Configure speech priming | Microsoft Docs
+title: Configure speech priming - Bot Service
 description: Learn how to configure speech priming for your bot service using the Azure Portal.
 keywords: speech priming, speech recognition, LUIS
 author: v-royhar

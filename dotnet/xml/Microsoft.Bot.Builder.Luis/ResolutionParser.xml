@@ -1,4 +1,4 @@
-﻿<Type Name="ResolutionParser" FullName="Microsoft.Bot.Builder.Luis.ResolutionParser">
+<Type Name="ResolutionParser" FullName="Microsoft.Bot.Builder.Luis.ResolutionParser">
   <TypeSignature Language="C#" Value="public sealed class ResolutionParser : Microsoft.Bot.Builder.Luis.IResolutionParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResolutionParser extends System.Object implements class Microsoft.Bot.Builder.Luis.IResolutionParser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ResolutionParser" />

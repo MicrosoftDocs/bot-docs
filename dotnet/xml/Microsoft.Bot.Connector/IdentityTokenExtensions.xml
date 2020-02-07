@@ -1,4 +1,4 @@
-﻿<Type Name="IdentityTokenExtensions" FullName="Microsoft.Bot.Connector.IdentityTokenExtensions">
+<Type Name="IdentityTokenExtensions" FullName="Microsoft.Bot.Connector.IdentityTokenExtensions">
   <TypeSignature Language="C#" Value="public static class IdentityTokenExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IdentityTokenExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IdentityTokenExtensions" />

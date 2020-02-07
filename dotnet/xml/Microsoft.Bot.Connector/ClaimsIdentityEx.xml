@@ -1,4 +1,4 @@
-﻿<Type Name="ClaimsIdentityEx" FullName="Microsoft.Bot.Connector.ClaimsIdentityEx">
+<Type Name="ClaimsIdentityEx" FullName="Microsoft.Bot.Connector.ClaimsIdentityEx">
   <TypeSignature Language="C#" Value="public static class ClaimsIdentityEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimsIdentityEx extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ClaimsIdentityEx" />

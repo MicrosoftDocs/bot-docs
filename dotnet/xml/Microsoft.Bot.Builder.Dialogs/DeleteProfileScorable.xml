@@ -1,4 +1,4 @@
-﻿<Type Name="DeleteProfileScorable" FullName="Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable">
+<Type Name="DeleteProfileScorable" FullName="Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable">
   <TypeSignature Language="C#" Value="public sealed class DeleteProfileScorable : Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Microsoft.Bot.Connector.IActivity,string,double&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeleteProfileScorable extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;class Microsoft.Bot.Connector.IActivity, string, float64&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DeleteProfileScorable" />

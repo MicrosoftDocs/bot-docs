@@ -1,4 +1,4 @@
-﻿<Type Name="RecordingFormat" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat">
+<Type Name="RecordingFormat" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat">
   <TypeSignature Language="C#" Value="public enum RecordingFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecordingFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat" />

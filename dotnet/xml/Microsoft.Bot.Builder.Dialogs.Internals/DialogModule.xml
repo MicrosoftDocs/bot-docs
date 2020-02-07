@@ -1,4 +1,4 @@
-﻿<Type Name="DialogModule" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule">
+<Type Name="DialogModule" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule">
   <TypeSignature Language="C#" Value="public sealed class DialogModule : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule" />

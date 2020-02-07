@@ -1,4 +1,4 @@
-﻿<Type Name="SuggestedActions" FullName="Microsoft.Bot.Connector.SuggestedActions">
+<Type Name="SuggestedActions" FullName="Microsoft.Bot.Connector.SuggestedActions">
   <TypeSignature Language="C#" Value="public class SuggestedActions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SuggestedActions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.SuggestedActions" />

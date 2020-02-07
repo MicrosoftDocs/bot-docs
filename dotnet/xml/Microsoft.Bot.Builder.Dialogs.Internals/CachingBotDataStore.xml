@@ -1,4 +1,4 @@
-﻿<Type Name="CachingBotDataStore" FullName="Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore">
+<Type Name="CachingBotDataStore" FullName="Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore">
   <TypeSignature Language="C#" Value="public class CachingBotDataStore : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CachingBotDataStore extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.CachingBotDataStore" />

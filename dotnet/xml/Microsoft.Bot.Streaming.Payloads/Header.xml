@@ -1,0 +1,117 @@
+<Type Name="Header" FullName="Microsoft.Bot.Streaming.Payloads.Header">
+  <TypeSignature Language="C#" Value="public class Header" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Header extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Payloads.Header" />
+  <TypeSignature Language="VB.NET" Value="Public Class Header" />
+  <TypeSignature Language="F#" Value="type Header = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Header ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.Header.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public bool End { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool End" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.Header.End" />
+      <MemberSignature Language="VB.NET" Value="Public Property End As Boolean" />
+      <MemberSignature Language="F#" Value="member this.End : bool with get, set" Usage="Microsoft.Bot.Streaming.Payloads.Header.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.Header.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid with get, set" Usage="Microsoft.Bot.Streaming.Payloads.Header.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PayloadLength">
+      <MemberSignature Language="C#" Value="public int PayloadLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PayloadLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.Header.PayloadLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property PayloadLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.PayloadLength : int with get, set" Usage="Microsoft.Bot.Streaming.Payloads.Header.PayloadLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public char Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.Header.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Char" />
+      <MemberSignature Language="F#" Value="member this.Type : char with get, set" Usage="Microsoft.Bot.Streaming.Payloads.Header.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

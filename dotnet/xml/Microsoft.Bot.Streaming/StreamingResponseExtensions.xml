@@ -1,0 +1,79 @@
+<Type Name="StreamingResponseExtensions" FullName="Microsoft.Bot.Streaming.StreamingResponseExtensions">
+  <TypeSignature Language="C#" Value="public static class StreamingResponseExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StreamingResponseExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.StreamingResponseExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StreamingResponseExtensions" />
+  <TypeSignature Language="F#" Value="type StreamingResponseExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extends the <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> class with additional methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetBody">
+      <MemberSignature Language="C#" Value="public static void SetBody (this Microsoft.Bot.Streaming.StreamingResponse response, object body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBody(class Microsoft.Bot.Streaming.StreamingResponse response, object body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponseExtensions.SetBody(Microsoft.Bot.Streaming.StreamingResponse,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetBody (response As StreamingResponse, body As Object)" />
+      <MemberSignature Language="F#" Value="static member SetBody : Microsoft.Bot.Streaming.StreamingResponse * obj -&gt; unit" Usage="Microsoft.Bot.Streaming.StreamingResponseExtensions.SetBody (response, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="Microsoft.Bot.Streaming.StreamingResponse" RefType="this" />
+        <Parameter Name="body" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="response">The <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> instance to attach this body to.</param>
+        <param name="body">An object containing the data to insert into the stream.</param>
+        <summary>
+            Adds a new stream to this <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> containing the passed in body.
+            Noop on null body or null response.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBody">
+      <MemberSignature Language="C#" Value="public static void SetBody (this Microsoft.Bot.Streaming.StreamingResponse response, string body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBody(class Microsoft.Bot.Streaming.StreamingResponse response, string body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponseExtensions.SetBody(Microsoft.Bot.Streaming.StreamingResponse,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetBody (response As StreamingResponse, body As String)" />
+      <MemberSignature Language="F#" Value="static member SetBody : Microsoft.Bot.Streaming.StreamingResponse * string -&gt; unit" Usage="Microsoft.Bot.Streaming.StreamingResponseExtensions.SetBody (response, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="Microsoft.Bot.Streaming.StreamingResponse" RefType="this" />
+        <Parameter Name="body" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="response">The <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> instance to attach this body to.</param>
+        <param name="body">A string containing the data to insert into the stream.</param>
+        <summary>
+            Adds a new stream to this <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> containing the passed in body.
+            Noop on empty body or null response.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

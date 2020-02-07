@@ -1,4 +1,4 @@
-﻿<Type Name="BotState" FullName="Microsoft.Bot.Builder.BotState">
+<Type Name="BotState" FullName="Microsoft.Bot.Builder.BotState">
   <TypeSignature Language="C#" Value="public abstract class BotState : Microsoft.Bot.Builder.IPropertyManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BotState extends System.Object implements class Microsoft.Bot.Builder.IPropertyManager" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.BotState" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,9 +23,20 @@
   </Interfaces>
   <Docs>
     <summary>
-            Reads and writes state for your bot to storage.
-            </summary>
-    <remarks>To be added.</remarks>
+             Defines a state management object and automates the reading and writing of associated state
+             properties to a storage layer.
+             </summary>
+    <remarks>
+             Each state management object defines a scope for a storage layer.
+            
+             State properties are created within a state management scope, and the Bot Framework
+             defines these scopes:
+             <see cref="T:Microsoft.Bot.Builder.ConversationState" />, <see cref="T:Microsoft.Bot.Builder.UserState" />, and <see cref="T:Microsoft.Bot.Builder.PrivateConversationState" />.
+            
+             You can define additional scopes for your bot.
+             </remarks>
+    <altmember cref="T:Microsoft.Bot.Builder.IStorage" />
+    <altmember cref="T:Microsoft.Bot.Builder.IStatePropertyAccessor`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,18 +53,27 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
         <Parameter Name="contextServiceKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storage">The storage provider to use.</param>
-        <param name="contextServiceKey">the key for caching on the context services dictionary.</param>
+        <param name="storage">The storage layer this state management object will use to store
+            and retrieve state.</param>
+        <param name="contextServiceKey">The key for the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.BotState" /> class.
             </summary>
-        <remarks>To be added.</remarks>
+        <remarks>This constructor creates a state management object and associated scope.
+            The object uses <paramref name="storage" /> to persist state property values.
+            The object uses the <paramref name="contextServiceKey" /> to cache state within the context for each turn.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="storage" /> or <paramref name="contextServiceKey" />
+            is <c>null</c>.</exception>
+        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
       </Docs>
     </Member>
     <Member MemberName="ClearStateAsync">
@@ -68,6 +89,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -78,12 +100,18 @@
       </Parameters>
       <Docs>
         <param name="turnContext">The context object for this turn.</param>
-        <param name="cancellationToken">cancellation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Clears any state currently stored in this state scope.
+            Clears the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>NOTE: that SaveChangesAsync must be called in order for the cleared state to be persisted to the underlying store.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>This method clears the state cache in the turn context. Call
+            <see cref="M:Microsoft.Bot.Builder.BotState.SaveChangesAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" /> to persist this
+            change in the storage layer.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateProperty&lt;T&gt;">
@@ -103,6 +131,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt;</ReturnType>
@@ -114,13 +143,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">type of property.</typeparam>
-        <param name="name">name of the property.</param>
+        <typeparam name="T">The value type of the property.</typeparam>
+        <param name="name">The name of the property.</param>
         <summary>
-            Create a property definition and register it with this BotState.
+            Creates a named state property within the scope of a <see cref="T:Microsoft.Bot.Builder.BotState" /> and returns
+            an accessor for the property.
             </summary>
-        <returns>The created state property accessor.</returns>
+        <returns>An accessor for the property.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
@@ -134,6 +166,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -144,12 +177,15 @@
       </Parameters>
       <Docs>
         <param name="turnContext">The context object for this turn.</param>
-        <param name="cancellationToken">cancellation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Delete any state currently stored in this state scope.
+            Deletes any state in storage and the cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeletePropertyValueAsync">
@@ -165,6 +201,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -176,14 +213,17 @@
       </Parameters>
       <Docs>
         <param name="turnContext">The context object for this turn.</param>
-        <param name="propertyName">The name of the property to delete.</param>
+        <param name="propertyName">The name of the property.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Deletes a property from the state cache in the turn context.
+            Deletes a property from the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> or
+            <paramref name="propertyName" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -196,6 +236,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
@@ -206,10 +247,12 @@
       <Docs>
         <param name="turnContext">The context object for this turn.</param>
         <summary>
-            Returns a copy of the raw cached data from the TurnContext, this can be used for tracing scenarios.
+            Gets a copy of the raw cached data for this <see cref="T:Microsoft.Bot.Builder.BotState" /> from the turn context.
             </summary>
         <returns>A JSON representation of the cached state.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValueAsync&lt;T&gt;">
@@ -225,6 +268,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -238,16 +282,19 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The property type.</typeparam>
+        <typeparam name="T">The value type of the property.</typeparam>
         <param name="turnContext">The context object for this turn.</param>
-        <param name="propertyName">The name of the property to get.</param>
+        <param name="propertyName">The name of the property.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Gets a property from the state cache in the turn context.
+            Gets the value of a property from the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>If the task is successful, the result contains the property value.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> or
+            <paramref name="propertyName" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetStorageKey">
@@ -264,6 +311,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -293,6 +341,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -304,14 +353,17 @@
       </Parameters>
       <Docs>
         <param name="turnContext">The context object for this turn.</param>
-        <param name="force">Optional. True to bypass the cache.</param>
+        <param name="force">Optional, <c>true</c> to overwrite any existing state cache;
+            or <c>false</c> to load state from storage only if the cache doesn't already exist.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Reads in  the current state object and caches it in the context object for this turm.
+            Populates the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" /> from the storage layer.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveChangesAsync">
@@ -327,6 +379,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -338,14 +391,17 @@
       </Parameters>
       <Docs>
         <param name="turnContext">The context object for this turn.</param>
-        <param name="force">Optional. True to save state to storage whether or not there are changes.</param>
+        <param name="force">Optional, <c>true</c> to save the state cache to storage;
+            or <c>false</c> to save state to storage only if a property in the cache has changed.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            If it has changed, writes to storage the state object that is cached in the current context object for this turn.
+            Writes the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" /> to the storage layer.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValueAsync">
@@ -361,6 +417,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -378,10 +435,13 @@
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Set the value of a property in the state cache in the turn context.
+            Sets the value of a property in the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="turnContext" /> or
+            <paramref name="propertyName" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
   </Members>

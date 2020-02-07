@@ -1,0 +1,851 @@
+<Type Name="TeamsActivityHandler" FullName="Microsoft.Bot.Builder.Teams.TeamsActivityHandler">
+  <TypeSignature Language="C#" Value="public class TeamsActivityHandler : Microsoft.Bot.Builder.ActivityHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TeamsActivityHandler extends Microsoft.Bot.Builder.ActivityHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Teams.TeamsActivityHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class TeamsActivityHandler&#xA;Inherits ActivityHandler" />
+  <TypeSignature Language="F#" Value="type TeamsActivityHandler = class&#xA;    inherit ActivityHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.ActivityHandler</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamsActivityHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnConversationUpdateActivityAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnConversationUpdateActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OnConversationUpdateActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnConversationUpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnConversationUpdateActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnConversationUpdateActivityAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInvokeActivityAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; OnInvokeActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; OnInvokeActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnInvokeActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;&#xA;override this.OnInvokeActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="teamsActivityHandler.OnInvokeActivityAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsAppBasedLinkQueryAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsAppBasedLinkQueryAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.AppBasedLinkQuery query, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsAppBasedLinkQueryAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.AppBasedLinkQuery query, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsAppBasedLinkQueryAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.AppBasedLinkQuery,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsAppBasedLinkQueryAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.AppBasedLinkQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;&#xA;override this.OnTeamsAppBasedLinkQueryAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.AppBasedLinkQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;" Usage="teamsActivityHandler.OnTeamsAppBasedLinkQueryAsync (turnContext, query, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="query" Type="Microsoft.Bot.Schema.Teams.AppBasedLinkQuery" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="query">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsCardActionInvokeAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; OnTeamsCardActionInvokeAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; OnTeamsCardActionInvokeAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsCardActionInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsCardActionInvokeAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;&#xA;override this.OnTeamsCardActionInvokeAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="teamsActivityHandler.OnTeamsCardActionInvokeAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsChannelCreatedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsChannelCreatedAsync (Microsoft.Bot.Schema.Teams.ChannelInfo channelInfo, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsChannelCreatedAsync(class Microsoft.Bot.Schema.Teams.ChannelInfo channelInfo, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsChannelCreatedAsync(Microsoft.Bot.Schema.Teams.ChannelInfo,Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsChannelCreatedAsync : Microsoft.Bot.Schema.Teams.ChannelInfo * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsChannelCreatedAsync : Microsoft.Bot.Schema.Teams.ChannelInfo * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsChannelCreatedAsync (channelInfo, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelInfo" Type="Microsoft.Bot.Schema.Teams.ChannelInfo" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelInfo">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsChannelDeletedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsChannelDeletedAsync (Microsoft.Bot.Schema.Teams.ChannelInfo channelInfo, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsChannelDeletedAsync(class Microsoft.Bot.Schema.Teams.ChannelInfo channelInfo, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsChannelDeletedAsync(Microsoft.Bot.Schema.Teams.ChannelInfo,Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsChannelDeletedAsync : Microsoft.Bot.Schema.Teams.ChannelInfo * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsChannelDeletedAsync : Microsoft.Bot.Schema.Teams.ChannelInfo * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsChannelDeletedAsync (channelInfo, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelInfo" Type="Microsoft.Bot.Schema.Teams.ChannelInfo" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelInfo">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsChannelRenamedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsChannelRenamedAsync (Microsoft.Bot.Schema.Teams.ChannelInfo channelInfo, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsChannelRenamedAsync(class Microsoft.Bot.Schema.Teams.ChannelInfo channelInfo, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsChannelRenamedAsync(Microsoft.Bot.Schema.Teams.ChannelInfo,Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsChannelRenamedAsync : Microsoft.Bot.Schema.Teams.ChannelInfo * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsChannelRenamedAsync : Microsoft.Bot.Schema.Teams.ChannelInfo * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsChannelRenamedAsync (channelInfo, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelInfo" Type="Microsoft.Bot.Schema.Teams.ChannelInfo" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelInfo">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsFileConsentAcceptAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsFileConsentAcceptAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.FileConsentCardResponse fileConsentCardResponse, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsFileConsentAcceptAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.FileConsentCardResponse fileConsentCardResponse, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsFileConsentAcceptAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.FileConsentCardResponse,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsFileConsentAcceptAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.FileConsentCardResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsFileConsentAcceptAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.FileConsentCardResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsFileConsentAcceptAsync (turnContext, fileConsentCardResponse, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="fileConsentCardResponse" Type="Microsoft.Bot.Schema.Teams.FileConsentCardResponse" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="fileConsentCardResponse">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsFileConsentAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; OnTeamsFileConsentAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.FileConsentCardResponse fileConsentCardResponse, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; OnTeamsFileConsentAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.FileConsentCardResponse fileConsentCardResponse, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsFileConsentAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.FileConsentCardResponse,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsFileConsentAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.FileConsentCardResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;&#xA;override this.OnTeamsFileConsentAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.FileConsentCardResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="teamsActivityHandler.OnTeamsFileConsentAsync (turnContext, fileConsentCardResponse, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="fileConsentCardResponse" Type="Microsoft.Bot.Schema.Teams.FileConsentCardResponse" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="fileConsentCardResponse">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsFileConsentDeclineAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsFileConsentDeclineAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.FileConsentCardResponse fileConsentCardResponse, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsFileConsentDeclineAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.FileConsentCardResponse fileConsentCardResponse, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsFileConsentDeclineAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.FileConsentCardResponse,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsFileConsentDeclineAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.FileConsentCardResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsFileConsentDeclineAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.FileConsentCardResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsFileConsentDeclineAsync (turnContext, fileConsentCardResponse, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="fileConsentCardResponse" Type="Microsoft.Bot.Schema.Teams.FileConsentCardResponse" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="fileConsentCardResponse">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMembersAddedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsMembersAddedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; teamsMembersAdded, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsMembersAddedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; teamsMembersAdded, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMembersAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.TeamsChannelAccount},Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMembersAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsMembersAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsMembersAddedAsync (teamsMembersAdded, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamsMembersAdded" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamsMembersAdded">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMembersAddedDispatchAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsMembersAddedDispatchAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsMembersAddedDispatchAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMembersAddedDispatchAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMembersAddedDispatchAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsMembersAddedDispatchAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsMembersAddedDispatchAsync (membersAdded, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membersAdded" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membersAdded">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMembersRemovedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsMembersRemovedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; teamsMembersRemoved, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsMembersRemovedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; teamsMembersRemoved, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMembersRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.TeamsChannelAccount},Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMembersRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsMembersRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsMembersRemovedAsync (teamsMembersRemoved, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamsMembersRemoved" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamsMembersRemoved">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMembersRemovedDispatchAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsMembersRemovedDispatchAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsMembersRemovedDispatchAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMembersRemovedDispatchAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMembersRemovedDispatchAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsMembersRemovedDispatchAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsMembersRemovedDispatchAsync (membersRemoved, teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membersRemoved" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;" />
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membersRemoved">To be added.</param>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionBotMessagePreviewEditAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionBotMessagePreviewEditAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionBotMessagePreviewEditAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionBotMessagePreviewEditAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionAction,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionBotMessagePreviewEditAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionBotMessagePreviewEditAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionBotMessagePreviewEditAsync (turnContext, action, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="action" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionAction" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionBotMessagePreviewSendAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionBotMessagePreviewSendAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionBotMessagePreviewSendAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionBotMessagePreviewSendAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionAction,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionBotMessagePreviewSendAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionBotMessagePreviewSendAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionBotMessagePreviewSendAsync (turnContext, action, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="action" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionAction" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionCardButtonClickedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsMessagingExtensionCardButtonClickedAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Newtonsoft.Json.Linq.JObject cardData, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsMessagingExtensionCardButtonClickedAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Newtonsoft.Json.Linq.JObject cardData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionCardButtonClickedAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Newtonsoft.Json.Linq.JObject,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionCardButtonClickedAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Newtonsoft.Json.Linq.JObject * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsMessagingExtensionCardButtonClickedAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Newtonsoft.Json.Linq.JObject * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsMessagingExtensionCardButtonClickedAsync (turnContext, cardData, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="cardData" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cardData">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionQuery query, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionQuery query, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionQuery,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionConfigurationQuerySettingUrlAsync (turnContext, query, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="query" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="query">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionConfigurationSettingAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsMessagingExtensionConfigurationSettingAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Newtonsoft.Json.Linq.JObject settings, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsMessagingExtensionConfigurationSettingAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Newtonsoft.Json.Linq.JObject settings, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionConfigurationSettingAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Newtonsoft.Json.Linq.JObject,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionConfigurationSettingAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Newtonsoft.Json.Linq.JObject * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsMessagingExtensionConfigurationSettingAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Newtonsoft.Json.Linq.JObject * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsMessagingExtensionConfigurationSettingAsync (turnContext, settings, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="settings" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="settings">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionFetchTaskAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionFetchTaskAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionFetchTaskAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionFetchTaskAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionAction,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionFetchTaskAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionFetchTaskAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionFetchTaskAsync (turnContext, action, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="action" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionAction" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionQueryAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsMessagingExtensionQueryAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionQuery query, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsMessagingExtensionQueryAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionQuery query, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionQueryAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionQuery,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionQueryAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionQueryAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionQueryAsync (turnContext, query, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="query" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionQuery" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="query">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionSelectItemAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsMessagingExtensionSelectItemAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Newtonsoft.Json.Linq.JObject query, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt; OnTeamsMessagingExtensionSelectItemAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Newtonsoft.Json.Linq.JObject query, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionSelectItemAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Newtonsoft.Json.Linq.JObject,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionSelectItemAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Newtonsoft.Json.Linq.JObject * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionSelectItemAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Newtonsoft.Json.Linq.JObject * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionSelectItemAsync (turnContext, query, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="query" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="query">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionSubmitActionAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionSubmitActionAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionSubmitActionAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionSubmitActionAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionAction,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionSubmitActionAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionSubmitActionAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionSubmitActionAsync (turnContext, action, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="action" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionAction" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsMessagingExtensionSubmitActionDispatchAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionSubmitActionDispatchAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt; OnTeamsMessagingExtensionSubmitActionDispatchAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.MessagingExtensionAction action, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsMessagingExtensionSubmitActionDispatchAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.MessagingExtensionAction,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsMessagingExtensionSubmitActionDispatchAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;&#xA;override this.OnTeamsMessagingExtensionSubmitActionDispatchAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionAction * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;" Usage="teamsActivityHandler.OnTeamsMessagingExtensionSubmitActionDispatchAsync (turnContext, action, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="action" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionAction" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="action">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsO365ConnectorCardActionAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsO365ConnectorCardActionAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery query, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsO365ConnectorCardActionAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery query, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsO365ConnectorCardActionAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsO365ConnectorCardActionAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsO365ConnectorCardActionAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsO365ConnectorCardActionAsync (turnContext, query, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="query" Type="Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="query">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsSigninVerifyStateAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsSigninVerifyStateAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsSigninVerifyStateAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsSigninVerifyStateAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsSigninVerifyStateAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsSigninVerifyStateAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsSigninVerifyStateAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsTaskModuleFetchAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt; OnTeamsTaskModuleFetchAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.TaskModuleRequest taskModuleRequest, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt; OnTeamsTaskModuleFetchAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.TaskModuleRequest taskModuleRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsTaskModuleFetchAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.TaskModuleRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsTaskModuleFetchAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.TaskModuleRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt;&#xA;override this.OnTeamsTaskModuleFetchAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.TaskModuleRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt;" Usage="teamsActivityHandler.OnTeamsTaskModuleFetchAsync (turnContext, taskModuleRequest, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="taskModuleRequest" Type="Microsoft.Bot.Schema.Teams.TaskModuleRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="taskModuleRequest">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsTaskModuleSubmitAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt; OnTeamsTaskModuleSubmitAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, Microsoft.Bot.Schema.Teams.TaskModuleRequest taskModuleRequest, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt; OnTeamsTaskModuleSubmitAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, class Microsoft.Bot.Schema.Teams.TaskModuleRequest taskModuleRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsTaskModuleSubmitAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.TaskModuleRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsTaskModuleSubmitAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.TaskModuleRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt;&#xA;override this.OnTeamsTaskModuleSubmitAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * Microsoft.Bot.Schema.Teams.TaskModuleRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt;" Usage="teamsActivityHandler.OnTeamsTaskModuleSubmitAsync (turnContext, taskModuleRequest, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TaskModuleResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="taskModuleRequest" Type="Microsoft.Bot.Schema.Teams.TaskModuleRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="taskModuleRequest">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTeamsTeamRenamedAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTeamsTeamRenamedAsync (Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTeamsTeamRenamedAsync(class Microsoft.Bot.Schema.Teams.TeamInfo teamInfo, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsTeamRenamedAsync(Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTeamsTeamRenamedAsync : Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTeamsTeamRenamedAsync : Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTeamsTeamRenamedAsync (teamInfo, turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamInfo" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamInfo">To be added.</param>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurnAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="teamsActivityHandler.OnTurnAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,168 @@
+<Type Name="HandoverConstants" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants">
+  <TypeSignature Language="C#" Value="public static class HandoverConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HandoverConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class HandoverConstants" />
+  <TypeSignature Language="F#" Value="type HandoverConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MetadataPassThreadControl">
+      <MemberSignature Language="C#" Value="public const string MetadataPassThreadControl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MetadataPassThreadControl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataPassThreadControl" />
+      <MemberSignature Language="VB.NET" Value="Public Const MetadataPassThreadControl As String " />
+      <MemberSignature Language="F#" Value="val mutable MetadataPassThreadControl : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataPassThreadControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant for passing thread control to be shared between all bots using the handover protocol.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataRequestThreadControl">
+      <MemberSignature Language="C#" Value="public const string MetadataRequestThreadControl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MetadataRequestThreadControl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataRequestThreadControl" />
+      <MemberSignature Language="VB.NET" Value="Public Const MetadataRequestThreadControl As String " />
+      <MemberSignature Language="F#" Value="val mutable MetadataRequestThreadControl : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataRequestThreadControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant for requesting thread control to be shared between all bots using the handover protocol.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataTakeThreadControl">
+      <MemberSignature Language="C#" Value="public const string MetadataTakeThreadControl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MetadataTakeThreadControl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataTakeThreadControl" />
+      <MemberSignature Language="VB.NET" Value="Public Const MetadataTakeThreadControl As String " />
+      <MemberSignature Language="F#" Value="val mutable MetadataTakeThreadControl : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataTakeThreadControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant for taking thread control to be shared between all bots using the handover protocol.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageInboxId">
+      <MemberSignature Language="C#" Value="public const string PageInboxId;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PageInboxId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PageInboxId" />
+      <MemberSignature Language="VB.NET" Value="Public Const PageInboxId As String " />
+      <MemberSignature Language="F#" Value="val mutable PageInboxId : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PageInboxId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant value for the Inbox Id of any page in Facebook.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PassThreadControl">
+      <MemberSignature Language="C#" Value="public const string PassThreadControl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PassThreadControl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PassThreadControl" />
+      <MemberSignature Language="VB.NET" Value="Public Const PassThreadControl As String " />
+      <MemberSignature Language="F#" Value="val mutable PassThreadControl : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PassThreadControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant for the pass_thread_control webhook event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestThreadControl">
+      <MemberSignature Language="C#" Value="public const string RequestThreadControl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RequestThreadControl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.RequestThreadControl" />
+      <MemberSignature Language="VB.NET" Value="Public Const RequestThreadControl As String " />
+      <MemberSignature Language="F#" Value="val mutable RequestThreadControl : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.RequestThreadControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant for the request_thread_control webhook event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeThreadControl">
+      <MemberSignature Language="C#" Value="public const string TakeThreadControl;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TakeThreadControl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.TakeThreadControl" />
+      <MemberSignature Language="VB.NET" Value="Public Const TakeThreadControl As String " />
+      <MemberSignature Language="F#" Value="val mutable TakeThreadControl : string" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.TakeThreadControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Constant for the take_thread_control webhook event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

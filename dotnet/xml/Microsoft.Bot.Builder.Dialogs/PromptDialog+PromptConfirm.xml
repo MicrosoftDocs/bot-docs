@@ -1,4 +1,4 @@
-﻿<Type Name="PromptDialog+PromptConfirm" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptConfirm">
+<Type Name="PromptDialog+PromptConfirm" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptConfirm">
   <TypeSignature Language="C#" Value="public class PromptDialog.PromptConfirm : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;bool,string&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptConfirm extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;bool, string&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" />
@@ -47,7 +47,8 @@
       </Parameters>
       <Docs>
         <param name="promptOptions"> THe prompt options.</param>
-        <param name="patterns"></param>
+        <param name="patterns">
+        </param>
         <summary>
             Constructor for a prompt confirmation dialog.
             </summary>
@@ -184,7 +185,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] bool&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As Boolean) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptConfirm.TryParse (message, result)" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity * bool -&gt; bool" Usage="promptConfirm.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

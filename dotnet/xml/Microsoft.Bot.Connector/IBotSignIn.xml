@@ -1,4 +1,4 @@
-﻿<Type Name="IBotSignIn" FullName="Microsoft.Bot.Connector.IBotSignIn">
+<Type Name="IBotSignIn" FullName="Microsoft.Bot.Connector.IBotSignIn">
   <TypeSignature Language="C#" Value="public interface IBotSignIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotSignIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IBotSignIn" />
@@ -9,6 +9,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -29,6 +30,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.String&gt;&gt;</ReturnType>
@@ -42,10 +44,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="state"></param>
-        <param name="codeChallenge"></param>
-        <param name="emulatorUrl"></param>
-        <param name="finalRedirect"></param>
+        <param name="state">
+        </param>
+        <param name="codeChallenge">
+        </param>
+        <param name="emulatorUrl">
+        </param>
+        <param name="finalRedirect">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>

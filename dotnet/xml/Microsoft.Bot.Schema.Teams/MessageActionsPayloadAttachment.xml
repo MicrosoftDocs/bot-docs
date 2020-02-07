@@ -1,0 +1,243 @@
+<Type Name="MessageActionsPayloadAttachment" FullName="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment">
+  <TypeSignature Language="C#" Value="public class MessageActionsPayloadAttachment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageActionsPayloadAttachment extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageActionsPayloadAttachment" />
+  <TypeSignature Language="F#" Value="type MessageActionsPayloadAttachment = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents the attachment in a message.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadAttachment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadAttachment
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadAttachment (string id = null, string contentType = null, string contentUrl = null, object content = null, string name = null, string thumbnailUrl = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string contentType, string contentUrl, object content, string name, string thumbnailUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.#ctor(System.String,System.String,System.String,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional contentType As String = null, Optional contentUrl As String = null, Optional content As Object = null, Optional name As String = null, Optional thumbnailUrl As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment : string * string * string * obj * string * string -&gt; Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment" Usage="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment (id, contentType, contentUrl, content, name, thumbnailUrl)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="contentUrl" Type="System.String" />
+        <Parameter Name="content" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="thumbnailUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The id of the attachment.</param>
+        <param name="contentType">The type of the attachment.</param>
+        <param name="contentUrl">The url of the attachment, in case of a
+            external link.</param>
+        <param name="content">The content of the attachment, in case of a
+            code snippet, email, or file.</param>
+        <param name="name">The plaintext display name of the
+            attachment.</param>
+        <param name="thumbnailUrl">The url of a thumbnail image that might
+            be embedded in the attachment, in case of a card.</param>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadAttachment
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public object Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As Object" />
+      <MemberSignature Language="F#" Value="member this.Content : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="content")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content of the attachment, in case of a code
+            snippet, email, or file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contentType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of the attachment.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentUrl">
+      <MemberSignature Language="C#" Value="public string ContentUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.ContentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ContentUrl : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.ContentUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contentUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the url of the attachment, in case of a external link.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the id of the attachment.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the plaintext display name of the attachment.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbnailUrl">
+      <MemberSignature Language="C#" Value="public string ThumbnailUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ThumbnailUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.ThumbnailUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThumbnailUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ThumbnailUrl : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment.ThumbnailUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="thumbnailUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the url of a thumbnail image that might be embedded in
+            the attachment, in case of a card.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

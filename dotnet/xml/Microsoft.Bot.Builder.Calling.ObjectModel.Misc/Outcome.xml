@@ -1,4 +1,4 @@
-﻿<Type Name="Outcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome">
+<Type Name="Outcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome">
   <TypeSignature Language="C#" Value="public enum Outcome" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Outcome extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Outcome" />

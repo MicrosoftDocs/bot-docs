@@ -1,4 +1,4 @@
-﻿<Type Name="PaymentRequestCompleteResult" FullName="Microsoft.Bot.Schema.PaymentRequestCompleteResult">
+<Type Name="PaymentRequestCompleteResult" FullName="Microsoft.Bot.Schema.PaymentRequestCompleteResult">
   <TypeSignature Language="C#" Value="public class PaymentRequestCompleteResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PaymentRequestCompleteResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.PaymentRequestCompleteResult" />
@@ -11,11 +11,17 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Bot Framework no longer supports payments.")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Result from a completed payment request
@@ -36,6 +42,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -60,6 +67,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="result" Type="System.String" />
@@ -88,6 +96,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

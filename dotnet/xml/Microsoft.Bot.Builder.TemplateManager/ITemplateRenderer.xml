@@ -1,4 +1,4 @@
-﻿<Type Name="ITemplateRenderer" FullName="Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer">
+<Type Name="ITemplateRenderer" FullName="Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer">
   <TypeSignature Language="C#" Value="public interface ITemplateRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplateRenderer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>

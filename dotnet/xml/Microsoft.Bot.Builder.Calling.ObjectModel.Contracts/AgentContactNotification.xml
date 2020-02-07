@@ -1,4 +1,4 @@
-﻿<Type Name="AgentContactNotification" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification">
+<Type Name="AgentContactNotification" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification">
   <TypeSignature Language="C#" Value="public class AgentContactNotification : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AgentContactNotification extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.AgentContactNotification" />

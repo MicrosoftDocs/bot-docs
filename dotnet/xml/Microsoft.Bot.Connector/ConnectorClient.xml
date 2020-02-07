@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectorClient" FullName="Microsoft.Bot.Connector.ConnectorClient">
+<Type Name="ConnectorClient" FullName="Microsoft.Bot.Connector.ConnectorClient">
   <TypeSignature Language="C#" Value="public class ConnectorClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.ConnectorClient&gt;, IDisposable, Microsoft.Bot.Connector.IConnectorClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectorClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Bot.Connector.ConnectorClient&gt; implements class Microsoft.Bot.Connector.IConnectorClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConnectorClient" />
@@ -14,6 +14,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.ConnectorClient&gt;</BaseTypeName>
@@ -78,6 +79,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
@@ -115,6 +117,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -157,6 +160,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -191,6 +195,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
@@ -232,6 +237,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -274,6 +280,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -315,6 +322,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -363,6 +371,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -411,6 +420,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -456,6 +466,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -470,10 +481,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="baseUri">Base URI for the Connector service.</param>
-        <param name="credentials">Credentials for the Connector service.</param>
-        <param name="addJwtTokenRefresher">(DEPRECATED).</param>
-        <param name="handlers">Optional. The delegating handlers to add to the http client pipeline.</param>
+        <param name="baseUri">Base URI for the Bot Connector service.</param>
+        <param name="credentials">Credentials for the Bot Connector service.</param>
+        <param name="addJwtTokenRefresher">Deprecated, do not use.</param>
+        <param name="handlers">Optional, an array of <see cref="T:System.Net.Http.DelegatingHandler" /> objects to
+            add to the HTTP client pipeline.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.ConnectorClient" /> class.
             </summary>
@@ -531,6 +543,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -583,6 +596,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -597,10 +611,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="baseUri">Base URI for the Connector service.</param>
-        <param name="microsoftAppId">Optional. Your Microsoft app id. If null, this setting is read from settings["MicrosoftAppId"].</param>
-        <param name="microsoftAppPassword">Optional. Your Microsoft app password. If null, this setting is read from settings["MicrosoftAppPassword"].</param>
-        <param name="handlers">Optional. The delegating handlers to add to the http client pipeline.</param>
+        <param name="baseUri">Base URI for the Bot Connector service.</param>
+        <param name="microsoftAppId">Optional, the Microsoft app ID for the bot resource.
+            If null, this setting is read from the `MicrosoftAppId` setting for the bot's application resource.</param>
+        <param name="microsoftAppPassword">Optional, the Microsoft app password for the bot.
+            If null, this setting is read from the `MicrosoftAppPassword` setting for the bot's application resource.</param>
+        <param name="handlers">Optional, an array of <see cref="T:System.Net.Http.DelegatingHandler" /> objects to
+            add to the HTTP client pipeline.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.ConnectorClient" /> class.
             </summary>
@@ -619,6 +636,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -634,11 +652,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="baseUri">Base URI for the Connector service.</param>
-        <param name="credentials">Credentials for the Connector service.</param>
-        <param name="customHttpClient">The HTTP client to be used by the connector client.</param>
-        <param name="addJwtTokenRefresher">(DEPRECATED).</param>
-        <param name="handlers">Optional. The delegating handlers to add to the http client pipeline.</param>
+        <param name="baseUri">Base URI for the Bot Connector service.</param>
+        <param name="credentials">Credentials for the Bot Connector service.</param>
+        <param name="customHttpClient">The HTTP client to use for this connector client.</param>
+        <param name="addJwtTokenRefresher">Deprecated, do not use.</param>
+        <param name="handlers">Optional, an array of <see cref="T:System.Net.Http.DelegatingHandler" /> objects to
+            add to the HTTP client pipeline.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.ConnectorClient" /> class.
             </summary>
@@ -681,6 +700,43 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectorClient (Uri baseUri, Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient customHttpClient, bool addJwtTokenRefresher = true, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUri, class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClient customHttpClient, bool addJwtTokenRefresher, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean,System.Net.Http.DelegatingHandler[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, customHttpClient As HttpClient, Optional addJwtTokenRefresher As Boolean = true, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConnectorClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClient * bool * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Bot.Connector.ConnectorClient" Usage="new Microsoft.Bot.Connector.ConnectorClient (baseUri, credentials, customHttpClient, addJwtTokenRefresher, handlers)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="4" FrameworkAlternate="botbuilder-dotnet-stable">
+          <Attributes>
+            <Attribute FrameworkAlternate="botbuilder-dotnet-stable">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="baseUri">Base URI for the Bot Connector service.</param>
+        <param name="credentials">Credentials for the Bot Connector service.</param>
+        <param name="customHttpClient">The HTTP client to use for this connector client.</param>
+        <param name="addJwtTokenRefresher">Deprecated, do not use.</param>
+        <param name="handlers">Optional, an array of <see cref="T:System.Net.Http.DelegatingHandler" /> objects to
+            add to the HTTP client pipeline.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.ConnectorClient" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConnectorClient (Uri baseUri, Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials, System.Net.Http.HttpClientHandler httpClientHandler, bool addJwtTokenRefresher = true, System.Net.Http.HttpClient customHttpClient = null, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUri, class Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials, class System.Net.Http.HttpClientHandler httpClientHandler, bool addJwtTokenRefresher, class System.Net.Http.HttpClient customHttpClient, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConnectorClient.#ctor(System.Uri,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,System.Net.Http.HttpClientHandler,System.Boolean,System.Net.Http.HttpClient,System.Net.Http.DelegatingHandler[])" />
@@ -691,6 +747,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -707,12 +764,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="baseUri">Base URI for the Connector service.</param>
-        <param name="credentials">Credentials for the Connector service.</param>
-        <param name="httpClientHandler">The HTTP client message handler to be used by the connector client.</param>
-        <param name="addJwtTokenRefresher">(DEPRECATED).</param>
-        <param name="customHttpClient">The HTTP client.</param>
-        <param name="handlers">Optional. The delegating handlers to add to the http client pipeline.</param>
+        <param name="baseUri">Base URI for the Bot Connector service.</param>
+        <param name="credentials">Credentials for the Bot Connector service.</param>
+        <param name="httpClientHandler">The HTTP client message handler to use for this connector client.</param>
+        <param name="addJwtTokenRefresher">Deprecated, do not use.</param>
+        <param name="customHttpClient">The HTTP client to use for this connector client.</param>
+        <param name="handlers">Optional, an array of <see cref="T:System.Net.Http.DelegatingHandler" /> objects to
+            add to the HTTP client pipeline.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.ConnectorClient" /> class.
             </summary>
@@ -729,6 +787,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -737,8 +796,10 @@
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
-        <param name="httpClient">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpClient">The HTTP client to configure.</param>
+        <summary>
+            Configures an HTTP client to include default headers for the Bot Framework.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,6 +820,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IAttachments</ReturnType>
@@ -791,6 +853,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -820,6 +883,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversations</ReturnType>
@@ -849,6 +913,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -878,6 +943,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -904,6 +970,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -929,6 +996,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -941,11 +1009,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetClientVersion&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static string GetClientVersion&lt;T&gt; (T client) where T : Microsoft.Rest.ServiceClient&lt;T&gt;;" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClientVersion&lt;(class Microsoft.Rest.ServiceClient`1&lt;!!T&gt;) T&gt;(!!T client) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConnectorClient.GetClientVersion``1(``0)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetClientVersion(Of T As ServiceClient(Of T)) (client As T) As String" />
-      <MemberSignature Language="F#" Value="static member GetClientVersion : 'T -&gt; string (requires 'T :&gt; Microsoft.Rest.ServiceClient&lt;'T&gt;)" Usage="Microsoft.Bot.Connector.ConnectorClient.GetClientVersion client" />
+      <MemberSignature Language="C#" Value="public static string GetClientVersion&lt;T&gt; (T client) where T : Microsoft.Rest.ServiceClient&lt;T&gt;;" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetClientVersion&lt;(class Microsoft.Rest.ServiceClient`1&lt;!!T&gt;) T&gt;(!!T client) cil managed" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConnectorClient.GetClientVersion``1(``0)" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetClientVersion(Of T As ServiceClient(Of T)) (client As T) As String" FrameworkAlternate="botbuilder-dotnet-stable" />
+      <MemberSignature Language="F#" Value="static member GetClientVersion : 'T -&gt; string (requires 'T :&gt; Microsoft.Rest.ServiceClient&lt;'T&gt;)" Usage="Microsoft.Bot.Connector.ConnectorClient.GetClientVersion client" FrameworkAlternate="botbuilder-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
@@ -954,6 +1022,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -969,8 +1038,8 @@
         <Parameter Name="client" Type="T" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A type that implement ServiceClient.</typeparam>
-        <param name="client">Client.</param>
+        <typeparam name="T">The type of REST service client to get the version of.</typeparam>
+        <param name="client">The REST service client instance to get the version of.</param>
         <summary>Gets the assembly version for the Azure Bot Service.</summary>
         <returns>The assembly version for the Azure Bot Service.</returns>
         <remarks>To be added.</remarks>
@@ -990,6 +1059,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1018,6 +1088,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>

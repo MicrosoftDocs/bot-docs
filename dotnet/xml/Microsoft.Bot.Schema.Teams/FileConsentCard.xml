@@ -1,0 +1,206 @@
+<Type Name="FileConsentCard" FullName="Microsoft.Bot.Schema.Teams.FileConsentCard">
+  <TypeSignature Language="C#" Value="public class FileConsentCard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileConsentCard extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.FileConsentCard" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileConsentCard" />
+  <TypeSignature Language="F#" Value="type FileConsentCard = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Content type for <see cref="T:Microsoft.Bot.Schema.Teams.FileConsentCard" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConsentCard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileConsentCard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the FileConsentCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConsentCard (string description = null, Nullable&lt;long&gt; sizeInBytes = null, object acceptContext = null, object declineContext = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, valuetype System.Nullable`1&lt;int64&gt; sizeInBytes, object acceptContext, object declineContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileConsentCard.#ctor(System.String,System.Nullable{System.Int64},System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = null, Optional sizeInBytes As Nullable(Of Long) = null, Optional acceptContext As Object = null, Optional declineContext As Object = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.FileConsentCard : string * Nullable&lt;int64&gt; * obj * obj -&gt; Microsoft.Bot.Schema.Teams.FileConsentCard" Usage="new Microsoft.Bot.Schema.Teams.FileConsentCard (description, sizeInBytes, acceptContext, declineContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="sizeInBytes" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="acceptContext" Type="System.Object" />
+        <Parameter Name="declineContext" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="description">File description.</param>
+        <param name="sizeInBytes">Size of the file to be uploaded in
+            Bytes.</param>
+        <param name="acceptContext">Context sent back to the Bot if user
+            consented to upload. This is free flow schema and is sent back in
+            Value field of Activity.</param>
+        <param name="declineContext">Context sent back to the Bot if user
+            declined. This is free flow schema and is sent back in Value field
+            of Activity.</param>
+        <summary>
+            Initializes a new instance of the FileConsentCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptContext">
+      <MemberSignature Language="C#" Value="public object AcceptContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AcceptContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCard.AcceptContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptContext As Object" />
+      <MemberSignature Language="F#" Value="member this.AcceptContext : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCard.AcceptContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="acceptContext")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets context sent back to the Bot if user consented to
+            upload. This is free flow schema and is sent back in Value field of
+            Activity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public const string ContentType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.Teams.FileConsentCard.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Schema.Teams.FileConsentCard.ContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content type to be used in the type property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclineContext">
+      <MemberSignature Language="C#" Value="public object DeclineContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DeclineContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCard.DeclineContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeclineContext As Object" />
+      <MemberSignature Language="F#" Value="member this.DeclineContext : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCard.DeclineContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="declineContext")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets context sent back to the Bot if user declined. This is
+            free flow schema and is sent back in Value field of Activity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCard.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCard.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="description")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets file description.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeInBytes">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; SizeInBytes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; SizeInBytes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCard.SizeInBytes" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeInBytes As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.SizeInBytes : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCard.SizeInBytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sizeInBytes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets size of the file to be uploaded in Bytes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

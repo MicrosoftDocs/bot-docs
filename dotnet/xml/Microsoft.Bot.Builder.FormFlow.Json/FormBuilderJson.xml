@@ -1,4 +1,4 @@
-﻿<Type Name="FormBuilderJson" FullName="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson">
+<Type Name="FormBuilderJson" FullName="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson">
   <TypeSignature Language="C#" Value="public sealed class FormBuilderJson : Microsoft.Bot.Builder.FormFlow.FormBuilderBase&lt;Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormBuilderJson extends Microsoft.Bot.Builder.FormFlow.FormBuilderBase`1&lt;class Newtonsoft.Json.Linq.JObject&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" />

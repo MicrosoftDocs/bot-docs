@@ -1,4 +1,4 @@
-﻿<Type Name="PromptRecognizeNumbersOptions" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions">
+<Type Name="PromptRecognizeNumbersOptions" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions">
   <TypeSignature Language="C#" Value="public class PromptRecognizeNumbersOptions : Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptRecognizeNumbersOptions extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions" />

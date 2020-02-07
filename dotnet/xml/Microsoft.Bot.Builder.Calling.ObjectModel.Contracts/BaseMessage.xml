@@ -1,4 +1,4 @@
-﻿<Type Name="BaseMessage" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage">
+<Type Name="BaseMessage" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage">
   <TypeSignature Language="C#" Value="public abstract class BaseMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseMessage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.BaseMessage" />

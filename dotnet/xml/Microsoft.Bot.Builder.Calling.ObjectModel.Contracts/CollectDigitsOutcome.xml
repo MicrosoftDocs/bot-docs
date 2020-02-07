@@ -1,4 +1,4 @@
-﻿<Type Name="CollectDigitsOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome">
+<Type Name="CollectDigitsOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome">
   <TypeSignature Language="C#" Value="public class CollectDigitsOutcome" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectDigitsOutcome extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigitsOutcome" />

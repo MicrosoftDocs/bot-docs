@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationResourceResponse" FullName="Microsoft.Bot.Connector.ConversationResourceResponse">
+<Type Name="ConversationResourceResponse" FullName="Microsoft.Bot.Connector.ConversationResourceResponse">
   <TypeSignature Language="C#" Value="public class ConversationResourceResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationResourceResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ConversationResourceResponse" />

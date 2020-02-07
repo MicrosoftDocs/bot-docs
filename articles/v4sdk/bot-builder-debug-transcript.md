@@ -1,5 +1,5 @@
 ---
-title: Debug your bot using transcript files | Microsoft Docs
+title: Debug your bot using transcript files - Bot Service
 description: Understand how use a transcript file to help debug your bot.
 keywords: debugging, faq, transcript file, emulator
 author: DanDev33

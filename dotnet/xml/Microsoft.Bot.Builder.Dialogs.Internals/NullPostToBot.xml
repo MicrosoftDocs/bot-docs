@@ -1,4 +1,4 @@
-﻿<Type Name="NullPostToBot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.NullPostToBot">
+<Type Name="NullPostToBot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.NullPostToBot">
   <TypeSignature Language="C#" Value="public sealed class NullPostToBot : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullPostToBot extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.NullPostToBot" />
