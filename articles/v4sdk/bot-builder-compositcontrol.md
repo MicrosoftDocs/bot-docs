@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/05/2019
+ms.date: 01/30/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -146,12 +146,12 @@ The `run` method is called from the bot's `onMessage` method.
 
 In the sample, we've added a `run_dialog` method to the user profile dialog.
 
-[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/helpers/dialog_helper.py?range=8-19)]
+[!code-python[DialogHelper.run_dialog](~/../botbuilder-python/samples/python/05.multi-turn-prompt/helpers/dialog_helper.py?range=8-19)]
 
 The `run_dialog` method that is called from the bot's `on_message_activity` method.
 
 **bots/dialog_bot.py**
-[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=46-51)]
+[!code-python[om_message_activity](~/../botbuilder-python/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=46-51&highlight=2-6)]
 
 ---
 
