@@ -46,30 +46,34 @@ Upon receiving user input, this sample checks the stored conversation state to s
 
 The first step in setting up state management is to define the classes containing the information to manage in the user and conversation state. The example used in this article, defines the following classes:
 
-- In **UserProfile.cs**, we define a `UserProfile` class for the user information that the bot will collect. 
+- In **UserProfile.cs**, we define a `UserProfile` class for the user information that the bot will collect.
 - In **ConversationData.cs**, we define a `ConversationData` class to control our conversation state while gathering user information.
 
-The following code example shows the definition for the `UserProfile` class.
+The following code examples show the definitions for the `UserProfile` and `ConversationData` classes.
 
 **UserProfile.cs**  
 [!code-csharp[UserProfile](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/UserProfile.cs?range=7-11)]
 
+**ConversationData.cs**  
+[!code-csharp[ConversationData](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/ConversationData.cs?range=6-17)]
+
 ## [JavaScript](#tab/javascript)
 
-The first step is requiring the botbuilder service that includes definitions for `UserState` and `ConversationState`.
-
-**index.js**  
-[!code-javascript[BotService](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=7-9)]
+This step is not necessary in JavaScript.
 
 ## [Python](#tab/python)
 
 The first step in setting up state management is to define the classes containing the information to manage in the user and conversation state. The example used in this article, defines the following classes:
 
-- The **user-profile.py** contains the `UserProfile` class which stores the user information collected by the bot.
+- The **user_profile.py** contains the `UserProfile` class which stores the user information collected by the bot.
 - The **conversation_data.py** contains the `ConversationData` class which controls the conversation state while gathering user information.
 
-The following code example shows the `ConversationData` class definition. 
+The following code examples show the definitions for the `UserProfile` and `ConversationData` classes.
 
+**user_profile.py**
+[!code-python[user_profile](~/../botbuilder-samples/samples/python/45.state-management/data_models/user_profile.py?range=5-7)]
+
+**conversation_data.py**
 [!code-python[conversation_data](~/../botbuilder-samples/samples/python/45.state-management/data_models/conversation_data.py?range=5-14)]
 
 ---
@@ -85,25 +89,28 @@ Next, we register `MemoryStorage` that is used to create `UserState` and `Conver
 [!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=51-57)]
 
 **Bots/StateManagementBot.cs**
-
-[!code-csharp[StateManagement](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Bots/StateManagementBot.cs?range=15-22)]
+[!code-csharp[Bot constructor](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Bots/StateManagementBot.cs?range=15-22)]
 
 ## [JavaScript](#tab/javascript)
 
-Next, we register `MemoryStorage` that is then used to create `UserState` and `ConversationState` objects.
+Next, we register `MemoryStorage` that is then used to create `UserState` and `ConversationState` objects. These are created in **index.js** and consumed when the bot is created.
 
 **index.js**  
-[!code-javascript[DefineMemoryStore](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=33-39)]
+[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=33-39)]
+
+**bots/stateManagementBot.js**  
+[!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=10-12)]
+[!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=17-19)]
 
 ## [Python](#tab/python)
 
-Next, we register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. The user and conversation state objects are created at start up in `app.py` and dependency injected into the bot constructor.
+Next, we register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. These are created in **app.py** and consumed when the bot is created.
 
 **app.py**
-[!code-python[state](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=67-70)]
+[!code-python[app.py](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=67-70)]
 
 **bots/state_management_bot.py**
-[!code-python[state](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=14-30)]
+[!code-python[bot constructor](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=13-25)]
 
 ---
 
