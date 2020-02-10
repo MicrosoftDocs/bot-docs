@@ -1,5 +1,5 @@
 ---
-title: Create messages | Microsoft Docs
+title: Create messages - Bot Service
 description: Learn how create messages with the Bot Framework SDK for Node.js.
 author: v-ducvo
 ms.author: kamrani

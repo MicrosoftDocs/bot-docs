@@ -1,4 +1,4 @@
-﻿<Type Name="ValidOutcomes" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes">
+<Type Name="ValidOutcomes" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes">
   <TypeSignature Language="C#" Value="public static class ValidOutcomes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValidOutcomes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ValidOutcomes" />

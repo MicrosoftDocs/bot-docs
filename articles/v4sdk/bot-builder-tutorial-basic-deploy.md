@@ -1,5 +1,5 @@
 ---
-title: Tutorial to create and deploy a basic bot | Microsoft Docs
+title: Tutorial to create and deploy a basic bot - Bot Service
 description: Learn how to create a basic bot and then deploy it to Azure.
 keywords: echo bot, deploy, azure, tutorial
 author: Ivorb
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 01/28/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -34,6 +34,10 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 [!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
 
+# [Python](#tab/python)
+
+[!INCLUDE [python quickstart](~/includes/quickstart-python.md)]
+
 ---
 
 ## Deploy your bot
@@ -42,6 +46,11 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 [!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
 
 ### Prepare for deployment
+
+> [!TIP]
+> This procedure uses a ZIP file to deploy your bot. In C#, this may fail if the solution configuration at build is set to **Debug**.
+> In Visual Studio, make sure that the solution configuration is set to **Release** and perform a clean rebuild of the solution before continuing.
+
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
 #### 1. Login to Azure
@@ -54,7 +63,12 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 [!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
 
 #### 4. Deploy via ARM template
-You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you. 
+You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
+
+> [!NOTE]
+> Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
+>
+
 ##### **Deploy via ARM template with new Resource Group**
 [!INCLUDE [ARM with new resourece group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
 

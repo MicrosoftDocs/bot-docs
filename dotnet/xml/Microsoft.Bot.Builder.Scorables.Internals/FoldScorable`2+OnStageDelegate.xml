@@ -1,4 +1,4 @@
-﻿<Type Name="FoldScorable&lt;Item,Score&gt;+OnStageDelegate" FullName="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate">
+<Type Name="FoldScorable&lt;Item,Score&gt;+OnStageDelegate" FullName="Microsoft.Bot.Builder.Scorables.Internals.FoldScorable&lt;Item,Score&gt;+OnStageDelegate">
   <TypeSignature Language="C#" Value="public delegate bool FoldScorable&lt;Item,Score&gt;.OnStageDelegate(FoldStage stage, IScorable&lt;Item,Score&gt; scorable, Item item, object state, Score score);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed FoldScorable`2/OnStageDelegate&lt;Item, Score&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.FoldScorable`2.OnStageDelegate" />

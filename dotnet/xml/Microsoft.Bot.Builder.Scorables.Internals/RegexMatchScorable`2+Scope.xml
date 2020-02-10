@@ -1,4 +1,4 @@
-﻿<Type Name="RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope" FullName="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope">
+<Type Name="RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope" FullName="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;InnerState,InnerScore&gt;+Scope">
   <TypeSignature Language="C#" Value="public sealed class RegexMatchScorable&lt;InnerState,InnerScore&gt;.Scope : Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit RegexMatchScorable`2/Scope&lt;InnerState, InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1&lt;!InnerScore&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope" />
@@ -97,7 +97,7 @@
       <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
-      <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj *  -&gt; bool" Usage="scope.TryResolve (type, tag, value)" />
+      <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj * obj -&gt; bool" Usage="scope.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

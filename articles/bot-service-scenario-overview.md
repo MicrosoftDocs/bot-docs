@@ -1,5 +1,5 @@
 ---
-title: Bot Service scenarios overview | Microsoft Docs
+title: Bot Service scenarios overview - Bot Service
 description: Explore key scenarios for powerful and successful bots built with Bot Service.
 author: BrianRandell
 ms.author: kamrani

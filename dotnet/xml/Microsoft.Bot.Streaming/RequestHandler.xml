@@ -1,0 +1,70 @@
+<Type Name="RequestHandler" FullName="Microsoft.Bot.Streaming.RequestHandler">
+  <TypeSignature Language="C#" Value="public abstract class RequestHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RequestHandler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.RequestHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RequestHandler" />
+  <TypeSignature Language="F#" Value="type RequestHandler = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Implemented by classes used to process incoming requests sent over an IStreamingTransport and adhering to the Bot Framework Protocol v3 with Streaming Extensions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RequestHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.RequestHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequestAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync (Microsoft.Bot.Streaming.ReceiveRequest request, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; logger, object context = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync(class Microsoft.Bot.Streaming.ReceiveRequest request, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Streaming.RequestHandler&gt; logger, object context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.RequestHandler.ProcessRequestAsync(Microsoft.Bot.Streaming.ReceiveRequest,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Streaming.RequestHandler},System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequestAsync : Microsoft.Bot.Streaming.ReceiveRequest * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;" Usage="requestHandler.ProcessRequestAsync (request, logger, context, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.ReceiveRequest" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt;" />
+        <Parameter Name="context" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> for this handler to process.</param>
+        <param name="logger">Logger.</param>
+        <param name="context">Optional context to process the request within.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            The method that must be implemented in order to handle incoming requests.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that will produce a <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> on successful completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="ChannelIds" FullName="Microsoft.Bot.Builder.Dialogs.ChannelIds">
+<Type Name="ChannelIds" FullName="Microsoft.Bot.Builder.Dialogs.ChannelIds">
   <TypeSignature Language="C#" Value="public sealed class ChannelIds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelIds extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChannelIds" />

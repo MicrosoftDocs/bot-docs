@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptGlobals" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals">
+<Type Name="ScriptGlobals" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals">
   <TypeSignature Language="C#" Value="public class ScriptGlobals" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptGlobals extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.ScriptGlobals" />

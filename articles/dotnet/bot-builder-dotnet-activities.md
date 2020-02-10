@@ -1,5 +1,5 @@
 ---
-title: Activities overview | Microsoft Docs
+title: Activities overview - Bot Service
 description: Learn about the different activity types available within the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

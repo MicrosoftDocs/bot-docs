@@ -1,5 +1,5 @@
 ---
-title: Create messages with the Bot Framework SDK for .NET | Microsoft Docs
+title: Create messages with the Bot Framework SDK for .NET - Bot Service
 description: Learn about commonly-used message properties within the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

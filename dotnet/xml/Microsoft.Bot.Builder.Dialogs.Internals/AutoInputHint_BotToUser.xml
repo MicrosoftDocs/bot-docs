@@ -1,4 +1,4 @@
-﻿<Type Name="AutoInputHint_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser">
+<Type Name="AutoInputHint_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser">
   <TypeSignature Language="C#" Value="public sealed class AutoInputHint_BotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AutoInputHint_BotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.AutoInputHint_BotToUser" />

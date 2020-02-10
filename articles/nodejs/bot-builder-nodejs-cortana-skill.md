@@ -1,5 +1,5 @@
 ---
-title: Build a speech-enabled bot with Cortana skills | Microsoft Docs
+title: Build a speech-enabled bot with Cortana skills - Bot Service
 description: Learn how to build a speech-enabled bot with Cortana skills and the Bot Framework SDK for Node.js.
 author: DeniseMak
 manager: kamrani

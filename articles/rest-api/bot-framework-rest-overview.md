@@ -1,5 +1,5 @@
 ---
-title: Bot Framework REST APIs  | Microsoft Docs
+title: Bot Framework REST APIs  - Bot Service
 description: Get started with the Bot Framework REST APIs that can be used to build bots and clients that connect to bots.
 author: RobStand
 ms.author: kamrani
@@ -15,7 +15,7 @@ ms.date: 12/13/2017
 > - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
 > - [REST](../rest-api/bot-framework-rest-overview.md)
 
-The Bot Framework REST APIs enable you to build bots that exchange messages with channels configured in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>, store and retrieve state data, and connect your own client applications to your bots. All Bot Framework services use industry-standard REST and JSON over HTTPS.
+The Bot Framework REST APIs enable you to build bots that exchange messages with channels configured in the [Azure Portal](https://portal.azure.com), store and retrieve state data, and connect your own client applications to your bots. All Bot Framework services use industry-standard REST and JSON over HTTPS.
 
 ## Build a bot
 

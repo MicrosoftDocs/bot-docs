@@ -1,4 +1,4 @@
-﻿<Type Name="IUserToken" FullName="Microsoft.Bot.Connector.IUserToken">
+<Type Name="IUserToken" FullName="Microsoft.Bot.Connector.IUserToken">
   <TypeSignature Language="C#" Value="public interface IUserToken" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUserToken" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IUserToken" />
@@ -9,6 +9,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -29,6 +30,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;&gt;</ReturnType>
@@ -42,10 +44,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userId"></param>
-        <param name="connectionName"></param>
-        <param name="aadResourceUrls"></param>
-        <param name="channelId"></param>
+        <param name="userId">
+        </param>
+        <param name="connectionName">
+        </param>
+        <param name="aadResourceUrls">
+        </param>
+        <param name="channelId">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>
@@ -77,6 +83,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;&gt;</ReturnType>
@@ -89,9 +96,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userId"></param>
-        <param name="channelId"></param>
-        <param name="include"></param>
+        <param name="userId">
+        </param>
+        <param name="channelId">
+        </param>
+        <param name="include">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>
@@ -123,6 +133,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -136,10 +147,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userId"></param>
-        <param name="connectionName"></param>
-        <param name="channelId"></param>
-        <param name="code"></param>
+        <param name="userId">
+        </param>
+        <param name="connectionName">
+        </param>
+        <param name="channelId">
+        </param>
+        <param name="code">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>
@@ -171,6 +186,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;&gt;</ReturnType>
@@ -183,9 +199,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="userId"></param>
-        <param name="connectionName"></param>
-        <param name="channelId"></param>
+        <param name="userId">
+        </param>
+        <param name="connectionName">
+        </param>
+        <param name="channelId">
+        </param>
         <param name="customHeaders">
             The headers that will be added to request.
             </param>

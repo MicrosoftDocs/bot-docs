@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory">
+<Type Name="ConnectorClientFactory" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory">
   <TypeSignature Language="C#" Value="public sealed class ConnectorClientFactory : Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectorClientFactory extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory" />

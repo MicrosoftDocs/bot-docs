@@ -1,4 +1,4 @@
-﻿<Type Name="Chain" FullName="Microsoft.Bot.Builder.Dialogs.Chain">
+<Type Name="Chain" FullName="Microsoft.Bot.Builder.Dialogs.Chain">
   <TypeSignature Language="C#" Value="public static class Chain" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Chain extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Chain" />

@@ -1,4 +1,4 @@
-﻿<Type Name="LogBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.LogBotToUser">
+<Type Name="LogBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.LogBotToUser">
   <TypeSignature Language="C#" Value="public sealed class LogBotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogBotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.LogBotToUser" />

@@ -1,0 +1,325 @@
+<Type Name="BotFrameworkHttpAdapterBase" FullName="Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase">
+  <TypeSignature Language="C#" Value="public class BotFrameworkHttpAdapterBase : Microsoft.Bot.Builder.BotFrameworkAdapter, Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotFrameworkHttpAdapterBase extends Microsoft.Bot.Builder.BotFrameworkAdapter implements class Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotFrameworkHttpAdapterBase&#xA;Inherits BotFrameworkAdapter&#xA;Implements IStreamingActivityProcessor" />
+  <TypeSignature Language="F#" Value="type BotFrameworkHttpAdapterBase = class&#xA;    inherit BotFrameworkAdapter&#xA;    interface IStreamingActivityProcessor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.BotFrameworkAdapter</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapterBase (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider = null, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = null, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt; logger = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt; logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional credentialProvider As ICredentialProvider = null, Optional channelProvider As IChannelProvider = null, Optional logger As ILogger(Of BotFrameworkHttpAdapterBase) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt; -&gt; Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase" Usage="new Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase (credentialProvider, channelProvider, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">To be added.</param>
+        <param name="channelProvider">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapterBase (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, System.Net.Http.HttpClient httpClient, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt; logger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class System.Net.Http.HttpClient httpClient, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt; logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * System.Net.Http.HttpClient * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt; -&gt; Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase" Usage="new Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase (credentialProvider, channelProvider, httpClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">To be added.</param>
+        <param name="channelProvider">To be added.</param>
+        <param name="httpClient">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapterBase (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = null, Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy = null, System.Net.Http.HttpClient customHttpClient = null, Microsoft.Bot.Builder.IMiddleware middleware = null, Microsoft.Extensions.Logging.ILogger logger = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Bot.Builder.IMiddleware middleware, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.HttpClient,Microsoft.Bot.Builder.IMiddleware,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = null, Optional connectorClientRetryPolicy As RetryPolicy = null, Optional customHttpClient As HttpClient = null, Optional middleware As IMiddleware = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Rest.TransientFaultHandling.RetryPolicy * System.Net.Http.HttpClient * Microsoft.Bot.Builder.IMiddleware * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase" Usage="new Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase (credentialProvider, authConfig, channelProvider, connectorClientRetryPolicy, customHttpClient, middleware, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="authConfig" Type="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="connectorClientRetryPolicy" Type="Microsoft.Rest.TransientFaultHandling.RetryPolicy" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="middleware" Type="Microsoft.Bot.Builder.IMiddleware" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="credentialProvider">To be added.</param>
+        <param name="authConfig">To be added.</param>
+        <param name="channelProvider">To be added.</param>
+        <param name="connectorClientRetryPolicy">To be added.</param>
+        <param name="customHttpClient">To be added.</param>
+        <param name="middleware">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanProcessOutgoingActivity">
+      <MemberSignature Language="C#" Value="protected override bool CanProcessOutgoingActivity (Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanProcessOutgoingActivity(class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.CanProcessOutgoingActivity(Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="override this.CanProcessOutgoingActivity : Microsoft.Bot.Schema.Activity -&gt; bool" Usage="botFrameworkHttpAdapterBase.CanProcessOutgoingActivity activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClaimsIdentity">
+      <MemberSignature Language="C#" Value="protected System.Security.Claims.ClaimsIdentity ClaimsIdentity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsIdentity ClaimsIdentity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ClaimsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ClaimsIdentity As ClaimsIdentity" />
+      <MemberSignature Language="F#" Value="member this.ClaimsIdentity : System.Security.Claims.ClaimsIdentity with get, set" Usage="Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ClaimsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Claims.ClaimsIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the claims identity for this adapter.
+            </summary>
+        <value>
+            The claims identity for this adapter.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectedBot">
+      <MemberSignature Language="C#" Value="protected Microsoft.Bot.Builder.IBot ConnectedBot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.IBot ConnectedBot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ConnectedBot" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ConnectedBot As IBot" />
+      <MemberSignature Language="F#" Value="member this.ConnectedBot : Microsoft.Bot.Builder.IBot with get, set" Usage="Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ConnectedBot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.IBot</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the bot connected to this adapter.
+            </summary>
+        <value>
+            The bot connected to this adapter.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectNamedPipeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectNamedPipeAsync (string pipeName, Microsoft.Bot.Builder.IBot bot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectNamedPipeAsync(string pipeName, class Microsoft.Bot.Builder.IBot bot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ConnectNamedPipeAsync(System.String,Microsoft.Bot.Builder.IBot)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectNamedPipeAsync (pipeName As String, bot As IBot) As Task" />
+      <MemberSignature Language="F#" Value="member this.ConnectNamedPipeAsync : string * Microsoft.Bot.Builder.IBot -&gt; System.Threading.Tasks.Task" Usage="botFrameworkHttpAdapterBase.ConnectNamedPipeAsync (pipeName, bot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
+      </Parameters>
+      <Docs>
+        <param name="pipeName">The name of the Named Pipe to connect to.</param>
+        <param name="bot">The bot to use when processing activities received over the Named Pipe.</param>
+        <summary>
+            Creates a new StreamingRequestHandler to listen to the specififed Named Pipe
+            and pass requests to this adapter.
+            </summary>
+        <returns>A task that completes only once the StreamingRequestHandler has stopped listening
+            for incoming requests on the Named Pipe.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessOutgoingActivityAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; ProcessOutgoingActivityAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; ProcessOutgoingActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ProcessOutgoingActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ProcessOutgoingActivityAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="botFrameworkHttpAdapterBase.ProcessOutgoingActivityAsync (turnContext, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessStreamingActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; ProcessStreamingActivityAsync (Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.BotCallbackHandler callbackHandler, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; ProcessStreamingActivityAsync(class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.BotCallbackHandler callbackHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ProcessStreamingActivityAsync(Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessStreamingActivityAsync : Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;&#xA;override this.ProcessStreamingActivityAsync : Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="botFrameworkHttpAdapterBase.ProcessStreamingActivityAsync (activity, callbackHandler, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor.ProcessStreamingActivityAsync(Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="callbackHandler" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:Microsoft.Bot.Schema.Activity" /> to process.</param>
+        <param name="callbackHandler">The <see cref="T:Microsoft.Bot.Builder.BotCallbackHandler" /> that will handle the activity.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Primary adapter method for processing activities sent from streaming channel.
+            Creates a turn context and runs the middleware pipeline for an incoming activity.
+            Throws <see cref="T:System.ArgumentNullException" /> on null arguments.
+            </summary>
+        <returns>A task that represents the work queued to execute. If the activity type
+            was 'Invoke' and the corresponding key (channelId + activityId) was found
+            then an InvokeResponse is returned, otherwise null is returned.</returns>
+        <remarks>Call this method to reactively send a message to a conversation.
+            If the task completes successfully, then if the activity's <see cref="P:Microsoft.Bot.Schema.Activity.Type" />
+            is <see cref="F:Microsoft.Bot.Schema.ActivityTypes.Invoke" /> and the corresponding key
+            (<see cref="P:Microsoft.Bot.Schema.Activity.ChannelId" /> + <see cref="P:Microsoft.Bot.Schema.Activity.Id" />) is found
+            then an <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> is returned, otherwise null is returned.
+            <para>This method registers the following services for the turn.<list type="bullet" /></para></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestHandlers">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Streaming.StreamingRequestHandler&gt; RequestHandlers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Streaming.StreamingRequestHandler&gt; RequestHandlers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.RequestHandlers" />
+      <MemberSignature Language="VB.NET" Value="Protected Property RequestHandlers As IList(Of StreamingRequestHandler)" />
+      <MemberSignature Language="F#" Value="member this.RequestHandlers : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Streaming.StreamingRequestHandler&gt; with get, set" Usage="Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.RequestHandlers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Streaming.StreamingRequestHandler&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the request handlers for this adapter.
+            </summary>
+        <value>
+            The request handlers for this adapter.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendStreamingActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendStreamingActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendStreamingActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.SendStreamingActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SendStreamingActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="botFrameworkHttpAdapterBase.SendStreamingActivityAsync (activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,121 @@
+<Type Name="MessagingExtensionActionResponse" FullName="Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse">
+  <TypeSignature Language="C#" Value="public class MessagingExtensionActionResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagingExtensionActionResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagingExtensionActionResponse" />
+  <TypeSignature Language="F#" Value="type MessagingExtensionActionResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Response of messaging extension action
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionActionResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessagingExtensionActionResponse
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionActionResponse (Microsoft.Bot.Schema.Teams.TaskModuleResponseBase task = null, Microsoft.Bot.Schema.Teams.MessagingExtensionResult composeExtension = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.TaskModuleResponseBase task, class Microsoft.Bot.Schema.Teams.MessagingExtensionResult composeExtension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.#ctor(Microsoft.Bot.Schema.Teams.TaskModuleResponseBase,Microsoft.Bot.Schema.Teams.MessagingExtensionResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional task As TaskModuleResponseBase = null, Optional composeExtension As MessagingExtensionResult = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse : Microsoft.Bot.Schema.Teams.TaskModuleResponseBase * Microsoft.Bot.Schema.Teams.MessagingExtensionResult -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse (task, composeExtension)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="task" Type="Microsoft.Bot.Schema.Teams.TaskModuleResponseBase" />
+        <Parameter Name="composeExtension" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionResult" />
+      </Parameters>
+      <Docs>
+        <param name="task">The JSON for the Adaptive card to appear in the
+            task module.</param>
+        <param name="composeExtension">To be added.</param>
+        <summary>
+            Initializes a new instance of the MessagingExtensionActionResponse
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComposeExtension">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.MessagingExtensionResult ComposeExtension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.MessagingExtensionResult ComposeExtension" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.ComposeExtension" />
+      <MemberSignature Language="VB.NET" Value="Public Property ComposeExtension As MessagingExtensionResult" />
+      <MemberSignature Language="F#" Value="member this.ComposeExtension : Microsoft.Bot.Schema.Teams.MessagingExtensionResult with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.ComposeExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="composeExtension")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessagingExtensionResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.TaskModuleResponseBase Task { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.TaskModuleResponseBase Task" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.Task" />
+      <MemberSignature Language="VB.NET" Value="Public Property Task As TaskModuleResponseBase" />
+      <MemberSignature Language="F#" Value="member this.Task : Microsoft.Bot.Schema.Teams.TaskModuleResponseBase with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="task")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.TaskModuleResponseBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the JSON for the Adaptive card to appear in the task
+            module.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="DialogReason" FullName="Microsoft.Bot.Builder.Dialogs.DialogReason">
+<Type Name="DialogReason" FullName="Microsoft.Bot.Builder.Dialogs.DialogReason">
   <TypeSignature Language="C#" Value="public enum DialogReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogReason" />
@@ -11,12 +11,15 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Indicates in which a dialog-related method is being called.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,6 +37,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -41,8 +45,10 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>
-            A dialog is being started through a call to `DialogContext.BeginAsync()`.
+            A dialog was started.
             </summary>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="CancelCalled">
@@ -59,6 +65,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -66,8 +73,9 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>
-            A dialog was cancelled as part of a call to `DialogContext.CancelAllDialogsAsync()`.
+            A dialog was canceled.
             </summary>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.CancelAllDialogsAsync(System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="ContinueCalled">
@@ -84,6 +92,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -91,8 +100,9 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>
-            A dialog is being continued through a call to `DialogContext.ContinueDialogAsync()`.
+            A dialog was continued.
             </summary>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.ContinueDialogAsync(System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="EndCalled">
@@ -109,6 +119,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -116,8 +127,9 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>
-            A dialog ended normally through a call to `DialogContext.EndDialogAsync()`.
+            A dialog was ended normally.
             </summary>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="NextCalled">
@@ -134,6 +146,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -141,8 +154,9 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>
-            A step was advanced through a call to `WaterfallStepContext.NextAsync()`.
+            A preceding step of the dialog was skipped.
             </summary>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext.NextAsync(System.Object,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="ReplaceCalled">
@@ -159,6 +173,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogReason</ReturnType>
@@ -166,8 +181,9 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>
-            A dialog is ending because it's being replaced through a call to `DialogContext.ReplaceDialogAsync()`.
+            A dialog was ending because it was replaced.
             </summary>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.ReplaceDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
   </Members>

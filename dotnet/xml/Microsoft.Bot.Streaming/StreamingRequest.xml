@@ -1,0 +1,391 @@
+<Type Name="StreamingRequest" FullName="Microsoft.Bot.Streaming.StreamingRequest">
+  <TypeSignature Language="C#" Value="public class StreamingRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamingRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.StreamingRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamingRequest" />
+  <TypeSignature Language="F#" Value="type StreamingRequest = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Implementation split between Request and RequestEx.
+            The basic request type sent over Bot Framework Protocol 3 with Streaming Extensions transports,
+            equivalent to HTTP request messages.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StreamingRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStream">
+      <MemberSignature Language="C#" Value="public void AddStream (System.Net.Http.HttpContent content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddStream(class System.Net.Http.HttpContent content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.AddStream(System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddStream (content As HttpContent)" />
+      <MemberSignature Language="F#" Value="member this.AddStream : System.Net.Http.HttpContent -&gt; unit" Usage="streamingRequest.AddStream content" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="content">The <see cref="T:System.Net.Http.HttpContent" /> to include in the new stream attachment.</param>
+        <summary>
+            Adds a new stream attachment to this <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStream">
+      <MemberSignature Language="C#" Value="public void AddStream (System.Net.Http.HttpContent content, Guid streamId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddStream(class System.Net.Http.HttpContent content, valuetype System.Guid streamId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.AddStream(System.Net.Http.HttpContent,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddStream (content As HttpContent, streamId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.AddStream : System.Net.Http.HttpContent * Guid -&gt; unit" Usage="streamingRequest.AddStream (content, streamId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+        <Parameter Name="streamId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="content">The <see cref="T:System.Net.Http.HttpContent" /> to include in the new stream attachment.</param>
+        <param name="streamId">The id to assign to this stream attachment.</param>
+        <summary>
+            Adds a new stream attachment to this <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDelete">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingRequest CreateDelete (string path = null, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingRequest CreateDelete(string path, class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.CreateDelete(System.String,System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDelete (Optional path As String = null, Optional body As HttpContent = null) As StreamingRequest" />
+      <MemberSignature Language="F#" Value="static member CreateDelete : string * System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingRequest" Usage="Microsoft.Bot.Streaming.StreamingRequest.CreateDelete (path, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="path">Optional path where the resource can be found on the remote server.</param>
+        <param name="body">Optional body to send to the remote server.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to delete data hosted on a remote server.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> with appropriate status code and body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGet">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingRequest CreateGet (string path = null, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingRequest CreateGet(string path, class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.CreateGet(System.String,System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateGet (Optional path As String = null, Optional body As HttpContent = null) As StreamingRequest" />
+      <MemberSignature Language="F#" Value="static member CreateGet : string * System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingRequest" Usage="Microsoft.Bot.Streaming.StreamingRequest.CreateGet (path, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="path">Optional path where the resource can be found on the remote server.</param>
+        <param name="body">Optional body to send to the remote server.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to get resources hosted on a remote server.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> with appropriate status code and body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePost">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingRequest CreatePost (string path = null, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingRequest CreatePost(string path, class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.CreatePost(System.String,System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePost (Optional path As String = null, Optional body As HttpContent = null) As StreamingRequest" />
+      <MemberSignature Language="F#" Value="static member CreatePost : string * System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingRequest" Usage="Microsoft.Bot.Streaming.StreamingRequest.CreatePost (path, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="path">Optional path where the resource can be found on the remote server.</param>
+        <param name="body">Optional body to send to the remote server.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to post data to a remote server.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> with appropriate status code and body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePut">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingRequest CreatePut (string path = null, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingRequest CreatePut(string path, class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.CreatePut(System.String,System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePut (Optional path As String = null, Optional body As HttpContent = null) As StreamingRequest" />
+      <MemberSignature Language="F#" Value="static member CreatePut : string * System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingRequest" Usage="Microsoft.Bot.Streaming.StreamingRequest.CreatePut (path, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="path">Optional path where the resource can be found on the remote server.</param>
+        <param name="body">Optional body to send to the remote server.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> to put updated data on a remote server.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> with appropriate status code and body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRequest">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingRequest CreateRequest (string method, string path = null, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingRequest CreateRequest(string method, string path, class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingRequest.CreateRequest(System.String,System.String,System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRequest (method As String, Optional path As String = null, Optional body As HttpContent = null) As StreamingRequest" />
+      <MemberSignature Language="F#" Value="static member CreateRequest : string * string * System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingRequest" Usage="Microsoft.Bot.Streaming.StreamingRequest.CreateRequest (method, path, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="method">The HTTP verb to use for this request.</param>
+        <param name="path">Optional path where the resource can be found on the remote server.</param>
+        <param name="body">Optional body to send to the remote server.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> with the passed in method, path, and body.
+            </summary>
+        <returns>On success returns a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" /> with appropriate status code and body, otherwise returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DELETE">
+      <MemberSignature Language="C#" Value="public const string DELETE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DELETE" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.StreamingRequest.DELETE" />
+      <MemberSignature Language="VB.NET" Value="Public Const DELETE As String " />
+      <MemberSignature Language="F#" Value="val mutable DELETE : string" Usage="Microsoft.Bot.Streaming.StreamingRequest.DELETE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verb used by requests to delete data hosted on a remote server.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GET">
+      <MemberSignature Language="C#" Value="public const string GET;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GET" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.StreamingRequest.GET" />
+      <MemberSignature Language="VB.NET" Value="Public Const GET As String " />
+      <MemberSignature Language="F#" Value="val mutable GET : string" Usage="Microsoft.Bot.Streaming.StreamingRequest.GET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verb used by requests to get resources hosted on a remote server.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.StreamingRequest.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.Bot.Streaming.StreamingRequest.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the path this request will route to on the remote server.
+            </summary>
+        <value>
+            The string representation of the URL style path to request at the remote server.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="POST">
+      <MemberSignature Language="C#" Value="public const string POST;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string POST" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.StreamingRequest.POST" />
+      <MemberSignature Language="VB.NET" Value="Public Const POST As String " />
+      <MemberSignature Language="F#" Value="val mutable POST : string" Usage="Microsoft.Bot.Streaming.StreamingRequest.POST" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verb used by requests posting data to a remote server.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PUT">
+      <MemberSignature Language="C#" Value="public const string PUT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PUT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.StreamingRequest.PUT" />
+      <MemberSignature Language="VB.NET" Value="Public Const PUT As String " />
+      <MemberSignature Language="F#" Value="val mutable PUT : string" Usage="Microsoft.Bot.Streaming.StreamingRequest.PUT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verb used by requests putting updated data on a remote server.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Streams">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt; Streams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt; Streams" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.StreamingRequest.Streams" />
+      <MemberSignature Language="VB.NET" Value="Public Property Streams As List(Of ResponseMessageStream)" />
+      <MemberSignature Language="F#" Value="member this.Streams : System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt; with get, set" Usage="Microsoft.Bot.Streaming.StreamingRequest.Streams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the collection of stream attachments included in this request.
+            </summary>
+        <value>
+            A <see cref="T:System.Collections.Generic.List`1" /> of <see cref="T:Microsoft.Bot.Streaming.Payloads.ResponseMessageStream" /> items associated with this request.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verb">
+      <MemberSignature Language="C#" Value="public string Verb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Verb" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.StreamingRequest.Verb" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verb As String" />
+      <MemberSignature Language="F#" Value="member this.Verb : string with get, set" Usage="Microsoft.Bot.Streaming.StreamingRequest.Verb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the verb action this request will perform.
+            </summary>
+        <value>
+            The string representation of an HTTP verb.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

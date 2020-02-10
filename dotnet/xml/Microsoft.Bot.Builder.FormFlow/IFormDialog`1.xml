@@ -1,4 +1,4 @@
-﻿<Type Name="IFormDialog&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt;">
+<Type Name="IFormDialog&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.IFormDialog&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IFormDialog&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormDialog`1&lt;class T&gt; implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IFormDialog`1" />

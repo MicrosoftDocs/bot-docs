@@ -1,4 +1,4 @@
-﻿<Type Name="PersistentDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PersistentDialogTask">
+<Type Name="PersistentDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PersistentDialogTask">
   <TypeSignature Language="C#" Value="public sealed class PersistentDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersistentDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.PersistentDialogTask" />

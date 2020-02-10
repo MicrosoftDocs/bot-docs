@@ -1,4 +1,4 @@
-﻿<Type Name="DialogTestClient" FullName="Microsoft.Bot.Builder.Testing.DialogTestClient">
+<Type Name="DialogTestClient" FullName="Microsoft.Bot.Builder.Testing.DialogTestClient">
   <TypeSignature Language="C#" Value="public class DialogTestClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogTestClient extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Testing.DialogTestClient" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="testAdapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="channelId" Type="System.String" />
@@ -92,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ConversationState</ReturnType>
@@ -114,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnResult</ReturnType>
@@ -136,6 +141,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -166,6 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -201,6 +208,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Testing</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>

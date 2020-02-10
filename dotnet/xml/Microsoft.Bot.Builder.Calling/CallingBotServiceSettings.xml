@@ -1,4 +1,4 @@
-﻿<Type Name="CallingBotServiceSettings" FullName="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings">
+<Type Name="CallingBotServiceSettings" FullName="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings">
   <TypeSignature Language="C#" Value="public class CallingBotServiceSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallingBotServiceSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingBotServiceSettings" />

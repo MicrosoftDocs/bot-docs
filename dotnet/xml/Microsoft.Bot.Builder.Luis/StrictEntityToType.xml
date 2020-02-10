@@ -1,4 +1,4 @@
-﻿<Type Name="StrictEntityToType" FullName="Microsoft.Bot.Builder.Luis.StrictEntityToType">
+<Type Name="StrictEntityToType" FullName="Microsoft.Bot.Builder.Luis.StrictEntityToType">
   <TypeSignature Language="C#" Value="public sealed class StrictEntityToType : Microsoft.Bot.Builder.Luis.IEntityToType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StrictEntityToType extends System.Object implements class Microsoft.Bot.Builder.Luis.IEntityToType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.StrictEntityToType" />

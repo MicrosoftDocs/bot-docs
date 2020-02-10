@@ -1,4 +1,4 @@
-﻿<Type Name="Serialization+ClosureCaptureErrorSurrogate" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+ClosureCaptureErrorSurrogate">
+<Type Name="Serialization+ClosureCaptureErrorSurrogate" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+ClosureCaptureErrorSurrogate">
   <TypeSignature Language="C#" Value="public sealed class Serialization.ClosureCaptureErrorSurrogate : Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider, System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Serialization/ClosureCaptureErrorSurrogate extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider, class System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.ClosureCaptureErrorSurrogate" />

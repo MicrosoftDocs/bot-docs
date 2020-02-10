@@ -1,4 +1,4 @@
-﻿<Type Name="ISuggestionActivity" FullName="Microsoft.Bot.Connector.ISuggestionActivity">
+<Type Name="ISuggestionActivity" FullName="Microsoft.Bot.Connector.ISuggestionActivity">
   <TypeSignature Language="C#" Value="public interface ISuggestionActivity : Microsoft.Bot.Connector.IMessageActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISuggestionActivity implements class Microsoft.Bot.Connector.IActivity, class Microsoft.Bot.Connector.IMessageActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ISuggestionActivity" />

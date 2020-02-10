@@ -1,5 +1,5 @@
 ---
-title: Send proactive messages | Microsoft Docs
+title: Send proactive messages (v3 C#) - Bot Service
 description: Learn how to send proactive messages using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

@@ -1,4 +1,4 @@
-﻿<Type Name="Fiber&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Fiber&lt;C&gt;">
+<Type Name="Fiber&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Fiber&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class Fiber&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop&lt;C&gt;, Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Fiber`1&lt;C&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IFiberLoop`1&lt;!C&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1&lt;!C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Fiber`1" />

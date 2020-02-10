@@ -1,4 +1,4 @@
-﻿<Type Name="StateClient" FullName="Microsoft.Bot.Connector.StateClient">
+<Type Name="StateClient" FullName="Microsoft.Bot.Connector.StateClient">
   <TypeSignature Language="C#" Value="public class StateClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.StateClient&gt;, IDisposable, Microsoft.Bot.Connector.IStateClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StateClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Bot.Connector.StateClient&gt; implements class Microsoft.Bot.Connector.IStateClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.StateClient" />
