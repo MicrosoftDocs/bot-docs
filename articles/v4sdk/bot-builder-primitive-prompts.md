@@ -1,5 +1,5 @@
 ---
-title: Create your own prompts to gather user input | Microsoft Docs
+title: Create your own prompts to gather user input - Bot Service
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
@@ -81,9 +81,7 @@ In **index.js**, create the state properties and the bot, then call the `run` bo
 
 In **app.py**, create the state properties and the bot.
 
-[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/app.py?range=66-72)]
-
-[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/app.py?range=75-76)]
+[!code-python[custom prompt bot](~/../botbuilder-python/samples/python/44.prompt-for-user-input/app.py?range=67-73)]
 
 ---
 

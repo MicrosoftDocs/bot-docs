@@ -1,4 +1,4 @@
-﻿<Type Name="LuisDialog&lt;TResult&gt;" FullName="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;TResult&gt;">
+<Type Name="LuisDialog&lt;TResult&gt;" FullName="Microsoft.Bot.Builder.Dialogs.LuisDialog&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class LuisDialog&lt;TResult&gt; : Microsoft.Bot.Builder.Dialogs.IDialog&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisDialog`1&lt;TResult&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!TResult&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisDialog`1" />

@@ -64,7 +64,7 @@ sections:
     - image:
         src: v4sdk/media/logo_python.svg
       text: Python
-      href: https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-python-quickstart
+      href: https://docs.microsoft.com/azure/bot-service/python/bot-builder-python-quickstart
     - image: 
         src: media/index/azure_portal.png
       text: Azure Portal

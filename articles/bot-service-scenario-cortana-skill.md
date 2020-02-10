@@ -1,5 +1,5 @@
 ---
-title: Cortana Skills bot scenario | Microsoft Docs
+title: Cortana Skills bot scenario - Bot Service
 description: Explore the Cortana Skills bot scenario with the Bot Framework.
 author: BrianRandell
 ms.author: kamrani

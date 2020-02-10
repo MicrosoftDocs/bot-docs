@@ -1,2 +1,2 @@
 > [!TIP]
-> To see how various Bot Framework features look and work on this channel, [use the Channel Inspector](~/bot-service-channel-inspector.md).
+> For tables describing which features are supported on each channel, see the [channels reference](../bot-service-channels-reference.md) article. 

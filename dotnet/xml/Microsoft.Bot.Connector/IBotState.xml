@@ -1,4 +1,4 @@
-﻿<Type Name="IBotState" FullName="Microsoft.Bot.Connector.IBotState">
+<Type Name="IBotState" FullName="Microsoft.Bot.Connector.IBotState">
   <TypeSignature Language="C#" Value="public interface IBotState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IBotState" />

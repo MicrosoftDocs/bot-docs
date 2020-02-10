@@ -1,5 +1,5 @@
 ---
-title: Use button for input | Microsoft Docs
+title: Use button for input - Bot Service
 description: Learn how to send suggested actions within messages using the Bot Framework SDK for JavaScript.
 keywords: suggested actions, buttons, extra input
 author: Kaiqb

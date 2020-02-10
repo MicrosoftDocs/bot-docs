@@ -1,0 +1,182 @@
+<Type Name="TeamsChannelAccount" FullName="Microsoft.Bot.Schema.Teams.TeamsChannelAccount">
+  <TypeSignature Language="C#" Value="public class TeamsChannelAccount : Microsoft.Bot.Schema.ChannelAccount" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TeamsChannelAccount extends Microsoft.Bot.Schema.ChannelAccount" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.TeamsChannelAccount" />
+  <TypeSignature Language="VB.NET" Value="Public Class TeamsChannelAccount&#xA;Inherits ChannelAccount" />
+  <TypeSignature Language="F#" Value="type TeamsChannelAccount = class&#xA;    inherit ChannelAccount" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Schema.ChannelAccount</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Teams channel account detailing user Azure Active Directory details.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamsChannelAccount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the TeamsChannelAccount class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamsChannelAccount (string id = null, string name = null, string givenName = null, string surname = null, string email = null, string userPrincipalName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string givenName, string surname, string email, string userPrincipalName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional givenName As String = null, Optional surname As String = null, Optional email As String = null, Optional userPrincipalName As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TeamsChannelAccount : string * string * string * string * string * string -&gt; Microsoft.Bot.Schema.Teams.TeamsChannelAccount" Usage="new Microsoft.Bot.Schema.Teams.TeamsChannelAccount (id, name, givenName, surname, email, userPrincipalName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="givenName" Type="System.String" />
+        <Parameter Name="surname" Type="System.String" />
+        <Parameter Name="email" Type="System.String" />
+        <Parameter Name="userPrincipalName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">Channel id for the user or bot on this channel
+            (Example: joe@smith.com, or @joesmith or 123456)</param>
+        <param name="name">Display friendly name</param>
+        <param name="givenName">Given name part of the user name.</param>
+        <param name="surname">Surname part of the user name.</param>
+        <param name="email">Email Id of the user.</param>
+        <param name="userPrincipalName">Unique user principal name</param>
+        <summary>
+            Initializes a new instance of the TeamsChannelAccount class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="public string Email { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Email" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.Email" />
+      <MemberSignature Language="VB.NET" Value="Public Property Email As String" />
+      <MemberSignature Language="F#" Value="member this.Email : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelAccount.Email" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="email")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets email Id of the user.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GivenName">
+      <MemberSignature Language="C#" Value="public string GivenName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GivenName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.GivenName" />
+      <MemberSignature Language="VB.NET" Value="Public Property GivenName As String" />
+      <MemberSignature Language="F#" Value="member this.GivenName : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelAccount.GivenName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="givenName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets given name part of the user name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Surname">
+      <MemberSignature Language="C#" Value="public string Surname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Surname" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.Surname" />
+      <MemberSignature Language="VB.NET" Value="Public Property Surname As String" />
+      <MemberSignature Language="F#" Value="member this.Surname : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelAccount.Surname" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="surname")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets surname part of the user name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPrincipalName">
+      <MemberSignature Language="C#" Value="public string UserPrincipalName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserPrincipalName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.UserPrincipalName" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserPrincipalName As String" />
+      <MemberSignature Language="F#" Value="member this.UserPrincipalName : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelAccount.UserPrincipalName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="userPrincipalName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets unique user principal name
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

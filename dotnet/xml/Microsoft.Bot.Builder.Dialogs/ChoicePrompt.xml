@@ -1,4 +1,4 @@
-﻿<Type Name="ChoicePrompt" FullName="Microsoft.Bot.Builder.Dialogs.ChoicePrompt">
+<Type Name="ChoicePrompt" FullName="Microsoft.Bot.Builder.Dialogs.ChoicePrompt">
   <TypeSignature Language="C#" Value="public class ChoicePrompt : Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChoicePrompt extends Microsoft.Bot.Builder.Dialogs.Prompt`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChoicePrompt" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -48,6 +50,43 @@
       </Parameters>
       <Docs>
         <param name="dialogId">The ID to assign to this prompt.</param>
+        <param name="validator">Optional, a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" /> that contains additional,
+            custom validation for this prompt.</param>
+        <param name="defaultLocale">Optional, the default locale used to determine language-specific behavior of the prompt.
+            The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.ChoicePrompt" /> class.
+            </summary>
+        <remarks>The value of <paramref name="dialogId" /> must be unique within the
+            <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogSet" /> or <see cref="T:Microsoft.Bot.Builder.Dialogs.ComponentDialog" /> to which the prompt is added.
+            <para>If the <see cref="P:Microsoft.Bot.Schema.Activity.Locale" />
+            of the <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" />.<see cref="P:Microsoft.Bot.Builder.Dialogs.DialogContext.Context" />.<see cref="P:Microsoft.Bot.Builder.ITurnContext.Activity" />
+            is specified, then that local is used to determine language specific behavior; otherwise
+            the <paramref name="defaultLocale" /> is used. US-English is the used if no language or
+            default locale is available, or if the language or locale is not otherwise supported.</para></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChoicePrompt (string dialogId, System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt; choiceDefaults, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt; validator = null, string defaultLocale = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt; choiceDefaults, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt; validator, string defaultLocale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions},Microsoft.Bot.Builder.Dialogs.PromptValidator{Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, choiceDefaults As Dictionary(Of String, ChoiceFactoryOptions), Optional validator As PromptValidator(Of FoundChoice) = null, Optional defaultLocale As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.ChoicePrompt : string * System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt; * Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt; * string -&gt; Microsoft.Bot.Builder.Dialogs.ChoicePrompt" Usage="new Microsoft.Bot.Builder.Dialogs.ChoicePrompt (dialogId, choiceDefaults, validator, defaultLocale)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+        <Parameter Name="choiceDefaults" Type="System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt;" />
+        <Parameter Name="validator" Type="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;" />
+        <Parameter Name="defaultLocale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogId">The ID to assign to this prompt.</param>
+        <param name="choiceDefaults">Overrides the dictionary of Bot Framework SDK-supported _choiceDefaults (for prompt localization).
+            Must be passed in to each ConfirmPrompt that needs the custom choice defaults.</param>
         <param name="validator">Optional, a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" /> that contains additional,
             custom validation for this prompt.</param>
         <param name="defaultLocale">Optional, the default locale used to determine language-specific behavior of the prompt.
@@ -78,6 +117,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions</ReturnType>
@@ -105,6 +145,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -130,6 +171,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -170,6 +212,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt;</ReturnType>
@@ -208,6 +251,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions</ReturnType>
@@ -235,6 +279,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.ListStyle</ReturnType>

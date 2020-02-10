@@ -1,0 +1,119 @@
+<Type Name="O365ConnectorCardOpenUri" FullName="Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri">
+  <TypeSignature Language="C#" Value="public class O365ConnectorCardOpenUri : Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit O365ConnectorCardOpenUri extends Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri" />
+  <TypeSignature Language="VB.NET" Value="Public Class O365ConnectorCardOpenUri&#xA;Inherits O365ConnectorCardActionBase" />
+  <TypeSignature Language="F#" Value="type O365ConnectorCardOpenUri = class&#xA;    inherit O365ConnectorCardActionBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Content type for <see cref="T:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public O365ConnectorCardOpenUri ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the O365ConnectorCardOpenUri class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public O365ConnectorCardOpenUri (string type = null, string name = null, string id = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; targets = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; targets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional name As String = null, Optional id As String = null, Optional targets As IList(Of O365ConnectorCardOpenUriTarget) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri : string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; -&gt; Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri" Usage="new Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri (type, name, id, targets)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="targets" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">Type of the action. Possible values include:
+            'ViewAction', 'OpenUri', 'HttpPOST', 'ActionCard'</param>
+        <param name="name">Name of the action that will be used as button
+            title</param>
+        <param name="id">Action Id</param>
+        <param name="targets">Target os / urls</param>
+        <summary>
+            Initializes a new instance of the O365ConnectorCardOpenUri class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Targets">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; Targets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; Targets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.Targets" />
+      <MemberSignature Language="VB.NET" Value="Public Property Targets As IList(Of O365ConnectorCardOpenUriTarget)" />
+      <MemberSignature Language="F#" Value="member this.Targets : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.Targets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="targets")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets target os / urls
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public const string Type;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Type" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Const Type As String " />
+      <MemberSignature Language="F#" Value="val mutable Type : string" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.Type" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content type to be used in the @type property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

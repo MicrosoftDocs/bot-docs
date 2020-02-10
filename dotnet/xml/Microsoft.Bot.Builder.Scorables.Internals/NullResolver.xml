@@ -1,4 +1,4 @@
-﻿<Type Name="NullResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.NullResolver">
+<Type Name="NullResolver" FullName="Microsoft.Bot.Builder.Scorables.Internals.NullResolver">
   <TypeSignature Language="C#" Value="public sealed class NullResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NullResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.NullResolver" />

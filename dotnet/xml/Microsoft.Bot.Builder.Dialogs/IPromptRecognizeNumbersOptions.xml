@@ -1,4 +1,4 @@
-﻿<Type Name="IPromptRecognizeNumbersOptions" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions">
+<Type Name="IPromptRecognizeNumbersOptions" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions">
   <TypeSignature Language="C#" Value="public interface IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeNumbersOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeNumbersOptions" />

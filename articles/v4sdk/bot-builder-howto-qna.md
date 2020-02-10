@@ -1,5 +1,5 @@
 ---
-title: Use QnA Maker to answer questions | Microsoft Docs
+title: Use QnA Maker to answer questions - Bot Service
 description: Learn how to use QnA maker in your bot.
 keywords: question and answer, QnA, FAQs, qna maker 
 author: ivorb

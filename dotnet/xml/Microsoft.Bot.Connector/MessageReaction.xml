@@ -1,4 +1,4 @@
-﻿<Type Name="MessageReaction" FullName="Microsoft.Bot.Connector.MessageReaction">
+<Type Name="MessageReaction" FullName="Microsoft.Bot.Connector.MessageReaction">
   <TypeSignature Language="C#" Value="public class MessageReaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageReaction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.MessageReaction" />

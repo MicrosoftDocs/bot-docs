@@ -1,4 +1,4 @@
-﻿<Type Name="AlwaysSendDirect_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser">
+<Type Name="AlwaysSendDirect_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser">
   <TypeSignature Language="C#" Value="public sealed class AlwaysSendDirect_BotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AlwaysSendDirect_BotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.AlwaysSendDirect_BotToUser" />

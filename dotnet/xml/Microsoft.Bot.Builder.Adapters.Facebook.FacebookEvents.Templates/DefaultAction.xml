@@ -1,0 +1,145 @@
+<Type Name="DefaultAction" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction">
+  <TypeSignature Language="C#" Value="public class DefaultAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultAction extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction" />
+  <TypeSignature Language="VB.NET" Value="Public Class DefaultAction" />
+  <TypeSignature Language="F#" Value="type DefaultAction = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionType">
+      <MemberSignature Language="C#" Value="public string ActionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActionType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActionType As String" />
+      <MemberSignature Language="F#" Value="member this.ActionType : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of action.
+            </summary>
+        <value>The type of action.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionUrl">
+      <MemberSignature Language="C#" Value="public Uri ActionUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ActionUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActionUrl As Uri" />
+      <MemberSignature Language="F#" Value="member this.ActionUrl : Uri with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="url")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the default url to open.
+            </summary>
+        <value>Url of the action.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessengerExtensions">
+      <MemberSignature Language="C#" Value="public bool MessengerExtensions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MessengerExtensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.MessengerExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessengerExtensions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MessengerExtensions : bool with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.MessengerExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="messenger_extensions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the action has extensions or not.
+            </summary>
+        <value>Indicates whether the action has extensions or not.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebviewHeightRatio">
+      <MemberSignature Language="C#" Value="public string WebviewHeightRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebviewHeightRatio" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.WebviewHeightRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebviewHeightRatio As String" />
+      <MemberSignature Language="F#" Value="member this.WebviewHeightRatio : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.WebviewHeightRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="webview_height_ratio")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the height ratio for the webview. It can be COMPACT, TALL or FULL.
+            </summary>
+        <value>the height ratio for the webview.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="CallingModule" FullName="Microsoft.Bot.Builder.Calling.CallingModule">
+<Type Name="CallingModule" FullName="Microsoft.Bot.Builder.Calling.CallingModule">
   <TypeSignature Language="C#" Value="public sealed class CallingModule : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallingModule extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingModule" />

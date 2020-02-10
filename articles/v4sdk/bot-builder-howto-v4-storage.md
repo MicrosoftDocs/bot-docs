@@ -1,5 +1,5 @@
 ---
-title: Write directly to storage | Microsoft Docs
+title: Write directly to storage - Bot Service
 description: Learn how to write directly to storage with the Bot Framework SDK for .NET.
 keywords: storage, read and write, memory storage, eTag
 author: DeniseMak
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data  your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read it directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **Memory Storage**, **Cosmos DB**, **Blob Storage**, and **Azure Blob Transcript Store**. 
+You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read in directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **Memory Storage**, **Cosmos DB**, **Blob Storage**, **Azure Table storage** and **Azure Blob Transcript Store**. 
 
 ## Prerequisites
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
@@ -27,7 +27,7 @@ The sample code in this article begins with the structure of a basic echo bot, t
 
 ## Memory storage
 
-The Bot Framework SDK allows you to store user inputs using in-memory storage. Memory storage is used for testing purposes only and is not intended for production use. Persistent storage types, such as database storage, are best for production bots. Be sure to set storage to Cosmos DB or Blob Storage before publishing your bot.
+The Bot Framework SDK allows you to store user inputs using in-memory storage. Memory storage is used for testing purposes only and is not intended for production use. In-memory storage is volatile and temporary since the data is cleared each time the bot is restarted. Persistent storage types, such as database storage, are best for production bots. Be sure to set storage to **Cosmos DB**, **Blob Storage**, or [**Azure Table storage**](~/nodejs/bot-builder-nodejs-state-azure-table-storage.md) before publishing your bot.
 
 #### Build a basic bot
 
@@ -1023,4 +1023,3 @@ Now that you know how to read read and write directly from storage, lets take a 
 
 > [!div class="nextstepaction"]
 > [Save state using conversation and user properties](bot-builder-howto-v4-state.md)
-

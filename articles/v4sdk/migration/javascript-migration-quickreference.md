@@ -1,5 +1,5 @@
 ---
-title: JavaScript v3 to v4 migration quick reference | Microsoft Docs
+title: JavaScript v3 to v4 migration quick reference - Bot Service
 description: An outline of the major differences in the v3 and v4 JavaScript Bot Framework SDK.
 keywords: JavaScript, bot migration, dialogs, v3 bot
 author: JonathanFingold

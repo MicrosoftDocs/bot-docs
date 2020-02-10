@@ -1,4 +1,4 @@
-﻿<Type Name="Entity" FullName="Microsoft.Bot.Connector.Entity">
+<Type Name="Entity" FullName="Microsoft.Bot.Connector.Entity">
   <TypeSignature Language="C#" Value="public class Entity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Entity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Entity" />

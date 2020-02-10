@@ -1,0 +1,159 @@
+<Type Name="LuisApplication" FullName="Microsoft.Bot.Builder.AI.LuisV3.LuisApplication">
+  <TypeSignature Language="C#" Value="public class LuisApplication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisApplication extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisApplication" />
+  <TypeSignature Language="F#" Value="type LuisApplication = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Data describing a LUIS application.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisApplication ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisApplication (string applicationEndpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string applicationEndpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (applicationEndpoint As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.LuisV3.LuisApplication : string -&gt; Microsoft.Bot.Builder.AI.LuisV3.LuisApplication" Usage="new Microsoft.Bot.Builder.AI.LuisV3.LuisApplication applicationEndpoint" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="applicationEndpoint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="applicationEndpoint">LUIS application endpoint.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisApplication (string applicationId, string endpointKey, string endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string applicationId, string endpointKey, string endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (applicationId As String, endpointKey As String, endpoint As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.LuisV3.LuisApplication : string * string * string -&gt; Microsoft.Bot.Builder.AI.LuisV3.LuisApplication" Usage="new Microsoft.Bot.Builder.AI.LuisV3.LuisApplication (applicationId, endpointKey, endpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="applicationId" Type="System.String" />
+        <Parameter Name="endpointKey" Type="System.String" />
+        <Parameter Name="endpoint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="applicationId">LUIS application ID.</param>
+        <param name="endpointKey">LUIS subscription or endpoint key.</param>
+        <param name="endpoint">LUIS endpoint to use like https://westus.api.cognitive.microsoft.com.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationId">
+      <MemberSignature Language="C#" Value="public string ApplicationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.ApplicationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationId As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationId : string with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.ApplicationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets lUIS application ID.
+            </summary>
+        <value>
+            LUIS application ID.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public string Endpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Endpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property Endpoint As String" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : string with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.Endpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets lUIS endpoint like https://westus.api.cognitive.microsoft.com.
+            </summary>
+        <value>
+            LUIS endpoint where application is hosted.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointKey">
+      <MemberSignature Language="C#" Value="public string EndpointKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndpointKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.EndpointKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointKey As String" />
+      <MemberSignature Language="F#" Value="member this.EndpointKey : string with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.LuisApplication.EndpointKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets lUIS subscription or endpoint key.
+            </summary>
+        <value>
+            LUIS subscription or endpoint key.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

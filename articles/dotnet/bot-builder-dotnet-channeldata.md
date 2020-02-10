@@ -1,5 +1,5 @@
 ---
-title: Implement channel-specific functionality | Microsoft Docs
+title: Implement channel-specific functionality (v3 C#) - Bot Service
 description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

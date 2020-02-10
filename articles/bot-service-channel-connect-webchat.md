@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to the Web Chat channel | Microsoft Docs
+title: Connect a bot to the Web Chat channel - Bot Service
 description: Learn how to use the web chat control in your web page for a bot connected to the Web Chat channel.
 keywords: web chat, bot channel, web page, secret key, iframe, HTML
 author: RobStand

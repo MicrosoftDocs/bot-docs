@@ -1,5 +1,5 @@
 ---
-title: How bots work | Microsoft Docs
+title: How bots work - Bot Service
 description: Describes how activity and http work within the Bot Framework SDK.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
@@ -7,7 +7,7 @@ ms.author: johtaylo
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 01/31/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,13 +15,13 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot generates an *activity*. The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook, Skype, Slack, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot. 
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot generates an *activity*. The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook, Skype, Slack, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
 
 ![activity diagram](media/bot-builder-activity.png)
 
 Two activity types illustrated here are: *conversation update* and *message*.
 
-The Bot Framework Service may send a conversation update when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two conversation update activities (one for the user joining the conversation and one for the bot joining). To distinguish these conversation update activities, check whether the *members added* property includes a member other than the bot. 
+The Bot Framework Service may send a conversation update when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two conversation update activities (one for the user joining the conversation and one for the bot joining). To distinguish these conversation update activities, check whether the *members added* property includes a member other than the bot.
 
 The message activity carries conversation information between the parties. In an echo bot example, the message activities are carrying simple text and the channel will render this text. Alternatively, the message activity might carry text to be spoken, suggested actions or cards to be displayed.
 
@@ -49,9 +49,9 @@ Let's drill into the previous diagram with a focus on the arrival of a message a
 
 In the example above, the bot replied to the message activity with another message activity containing the same text message. Processing starts with the HTTP POST request, with the activity information carried as a JSON payload, arriving at the web server. In C# this will typically be an ASP.NET project, in a JavaScript Node.js project this is likely to be one of the popular frameworks such as Express or Restify.
 
-The *adapter*, an integrated component of the SDK, is the core of the SDK runtime. The activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the Activity object that is then handed to the adapter with a call to *process activity* method. On receiving the activity, the adapter creates a *turn context* and calls the middleware. 
+The *adapter*, an integrated component of the SDK, is the core of the SDK runtime. The activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the Activity object that is then handed to the adapter with a call to *process activity* method. On receiving the activity, the adapter creates a *turn context* and calls the middleware.
 
-As mentioned above, the turn context provides the mechanism for the bot to send outbound activities, most often in response to an inbound activity. To achieve this, the turn context provides _send, update, and delete activity_ response methods. Each response method runs in an asynchronous process. 
+As mentioned above, the turn context provides the mechanism for the bot to send outbound activities, most often in response to an inbound activity. To achieve this, the turn context provides _send, update, and delete activity_ response methods. Each response method runs in an asynchronous process.
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
@@ -61,7 +61,7 @@ When the bot receives an activity, it passes it on to its *activity handlers*. U
 
 # [C#](#tab/csharp)
 
-For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `OnMessageActivityAsync` activity handler. 
+For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `OnMessageActivityAsync` activity handler.
 
 When building your bot, your bot logic for handling and responding to messages will go in this `OnMessageActivityAsync` handler. Likewise, your logic for handling members being added to the conversation will go in your `OnMembersAddedAsync` handler, which is called whenever a member is added to the conversation.
 
@@ -71,17 +71,20 @@ There are certain situations where you will want to override the base turn handl
 
 # [JavaScript](#tab/javascript)
 
-For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `onMessage` activity handler.
+The JavaScript `ActivityHandler` uses an event emitter and listener pattern.
+For example, use the `onMessage` method to register an event listener for message activities. You can register more than one listener. When the bot receives a message activity, the activity handler would see that incoming activity and send it each of the `onMessage` activity listeners, in the order in which they were registered.
 
-When building your bot, your bot logic for handling and responding to messages will go in this `onMessage` handler. Likewise, your logic for handling members being added to the conversation will go in your `onMembersAdded` handler, which is called whenever a member is added to the conversation.
+When building your bot, your bot logic for handling and responding to messages will go in the `onMessage` listeners. Likewise, your logic for handling members being added to the conversation will go in your `onMembersAdded` listeners, which are called whenever a member is added to the conversation.
+To add these listeners, you will register them in your bot as seen in the [Bot logic](#bot-logic) section below. For each listener, include your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next listener is run.
 
-To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](#bot-logic) section below. For each of these handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next handler is run.
+Make sure to [save state](bot-builder-concept-state.md) before the turn ends. You can do so by overriding the activity handler `run` method and saving state after the parent's `run` method completes.
 
-There aren't any common situations where you will want to override the base turn handler, so be careful if you try to do so. For things such as [saving state](bot-builder-concept-state.md) that you want to do at the end of a turn, there is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and is not tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
+There aren't any common situations where you will want to override the base turn handler, so be careful if you try to do so.
+There is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and is not tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
 
 # [Python](#tab/python)
 
-For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler. 
+For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler.
 
 When building your bot, your bot logic for handling and responding to messages will go in this `on_message_activity` handler. Likewise, your logic for handling members being added to the conversation will go in your `on_members_added` handler, which is called whenever a member is added to the conversation.
 
@@ -199,28 +202,28 @@ public class MyBot : ActivityHandler
 
 # [JavaScript](#tab/javascript)
 
-The main bot logic is defined in the bot code, here called `bots\echoBot.js`. `EchoBot` derives from `ActivityHandler`. `ActivityHandler` defines various handlers for different types of activities, and you can modify your bot's behavior by providing additional logic, such as with `onMessage` and `onConversationUpdate` here.
+The main bot logic is defined in the bot code, here called `bots\echoBot.js`. `EchoBot` derives from `ActivityHandler`. `ActivityHandler` defines various events for different types of activities, and you can modify your bot's behavior by registering event listeners, such as with `onMessage` and `onConversationUpdate` here.
 
-The handlers defined in `ActivityHandler` are:
+Use these methods to register listeners for each type of event:
 
-| Event | Handler | Description |
+| Event | Registration method | Description |
 | :-- | :-- | :-- |
-| Any activity type received | `onTurn` | Called when any activity is received. |
-| Message activity received | `onMessage` | Called when a `message` activity is received. |
-| Conversation update activity received | `onConversationUpdate` | Called when any `conversationUpdate` activity is received. |
-| Members joined the conversation | `onMembersAdded` | Called when any members joined the conversation, including the bot. |
-| Members left the conversation | `onMembersRemoved` | Called when any members left the conversation, including the bot. |
-| Message reaction activity received | `onMessageReaction` | Called when any `messageReaction` activity is received. |
-| Message reactions added to a message | `onReactionsAdded` | Called when reactions are added to a message. |
-| Message reactions removed from a message | `onReactionsRemoved` | Called when reactions are removed from a message. |
-| Event activity received | `onEvent` | Called when any `event` activity is received. |
-| Token-response event activity received | `onTokenResponseEvent` | Called when a `tokens/response` event is received. |
-| Other activity type received | `onUnrecognizedActivityType` | Called when a handler for the specific type of activity is not defined. |
+| Any activity type received | `onTurn` | Registers a listener for when any activity is received. |
+| Message activity received | `onMessage` | Registers a listener for when a `message` activity is received. |
+| Conversation update activity received | `onConversationUpdate` | Registers a listener for when any `conversationUpdate` activity is received. |
+| Members joined the conversation | `onMembersAdded` | Registers a listener for when members joined the conversation, including the bot. |
+| Members left the conversation | `onMembersRemoved` | Registers a listener for when members left the conversation, including the bot. |
+| Message reaction activity received | `onMessageReaction` | Registers a listener for when any `messageReaction` activity is received. |
+| Message reactions added to a message | `onReactionsAdded` | Registers a listener for when reactions are added to a message. |
+| Message reactions removed from a message | `onReactionsRemoved` | Registers a listener for when reactions are removed from a message. |
+| Event activity received | `onEvent` | Registers a listener for when any `event` activity is received. |
+| Token-response event activity received | `onTokenResponseEvent` | Registers a listener for when a `tokens/response` event is received. |
+| Other activity type received | `onUnrecognizedActivityType` | Registers a listener for when a handler for the specific type of activity is not defined. |
 | Activity handlers have completed | `onDialog` | Called after any applicable handlers have completed. |
 
-Call the `next` function parameter from each handler to allow processing to continue. If `next` is not called, processing of the activity ends.
+Call the `next` continuation function from each handler to allow processing to continue. If `next` is not called, processing of the activity ends.
 
-On each turn, we first check to see if the bot has received a message. When we receive a message from the user, we echo back  the message they sent.
+For example, this bot registers listeners for messages and conversation updates. When it receives a message from the user, it echoes back the message they sent.
 
 ```javascript
 const { ActivityHandler } = require('botbuilder');

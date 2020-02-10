@@ -1,4 +1,4 @@
-﻿<Type Name="InnerHttpError" FullName="Microsoft.Bot.Connector.InnerHttpError">
+<Type Name="InnerHttpError" FullName="Microsoft.Bot.Connector.InnerHttpError">
   <TypeSignature Language="C#" Value="public class InnerHttpError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InnerHttpError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.InnerHttpError" />

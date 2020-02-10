@@ -1,5 +1,5 @@
 ---
-title: Design knowledge bots | Microsoft Docs
+title: Design knowledge bots - Bot Service
 description: Learn about different ways to design a knowledge bot that finds and returns information in response to the user's input or query.
 author: matvelloso
 ms.author: mateusv

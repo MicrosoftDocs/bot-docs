@@ -1,4 +1,4 @@
-﻿<Type Name="DialogTurnResult" FullName="Microsoft.Bot.Builder.Dialogs.DialogTurnResult">
+<Type Name="DialogTurnResult" FullName="Microsoft.Bot.Builder.Dialogs.DialogTurnResult">
   <TypeSignature Language="C#" Value="public class DialogTurnResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogTurnResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" />
@@ -11,17 +11,25 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("[DialogTurnStatus.{Status}]{Result ?? string.Empty}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
-            Result returned to the caller of one of the various stack manipulation methods,
-            and used to return the result from a final call to `DialogContext.EndDialogAsync()` to the bot's logic.
+            Result returned to the caller of one of the various stack manipulation methods.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+            Use <see cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.EndDialogAsync(System.Object,System.Threading.CancellationToken)" />
+            to end a <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> and return a result to the calling context.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +46,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="status" Type="Microsoft.Bot.Builder.Dialogs.DialogTurnStatus" />
@@ -47,6 +56,30 @@
         <param name="status">To be added.</param>
         <param name="result">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentEnded">
+      <MemberSignature Language="C#" Value="public bool ParentEnded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ParentEnded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogTurnResult.ParentEnded" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentEnded As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ParentEnded : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogTurnResult.ParentEnded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether a DialogCommand has ended its parent container and the parent should not perform any further processing.
+            </summary>
+        <value>
+            Whether a DialogCommand has ended its parent container and the parent should not perform any further processing.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,6 +97,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -98,6 +132,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnStatus</ReturnType>

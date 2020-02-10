@@ -1,4 +1,4 @@
-﻿<Type Name="DialogTaskManagerBotDataLoader" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader">
+<Type Name="DialogTaskManagerBotDataLoader" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader">
   <TypeSignature Language="C#" Value="public sealed class DialogTaskManagerBotDataLoader : Microsoft.Bot.Builder.Dialogs.Internals.IBotData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogTaskManagerBotDataLoader extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTaskManagerBotDataLoader" />

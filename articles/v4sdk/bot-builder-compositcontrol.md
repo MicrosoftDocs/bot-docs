@@ -1,5 +1,5 @@
 ---
-title: Reuse dialogs | Microsoft Docs
+title: Reuse dialogs - Bot Service
 description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/05/2019
+ms.date: 01/30/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -70,21 +70,21 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 Here the `UserProfileDialog` class extends `ComponentDialog`.
 
-[!code-javascript[Class](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=24)]
+[!code-javascript[Class](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=28)]
 
 Within the constructor, the `AddDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `InitialDialogId` property. When you start a component dialog, it will start its _initial dialog_.
 
-[!code-javascript[Constructor](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=25-45)]
+[!code-javascript[Constructor](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=29-51)]
 
 This is the implementation of the first step of the waterfall dialog.
 
-[!code-javascript[First step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=64-71)]
+[!code-javascript[First step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=70-77)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
 # [Python](#tab/python)
 
-To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** pypi packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
+To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
 
 **dialogs/user_profile_dialog.py**
 
@@ -124,7 +124,7 @@ To use a component dialog, add an instance of it to the bot's dialog set - this 
 
 In the sample, this is done using the `RunAsync` method that is called from the bot's `OnMessageActivityAsync` method.
 
-[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48)]
+[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48&highlight=6)]
 
 # [JavaScript](#tab/javascript)
 
@@ -132,7 +132,7 @@ In the sample, this is done using the `RunAsync` method that is called from the 
 
 In the sample, we've added a `run` method to the user profile dialog.
 
-[!code-javascript[run method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=53-62)]
+[!code-javascript[run method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=59-68)]
 
 **bots/dialogBot.js**
 
@@ -146,12 +146,12 @@ The `run` method is called from the bot's `onMessage` method.
 
 In the sample, we've added a `run_dialog` method to the user profile dialog.
 
-[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/helpers/dialog_helper.py?range=8-19)]
+[!code-python[DialogHelper.run_dialog](~/../botbuilder-python/samples/python/05.multi-turn-prompt/helpers/dialog_helper.py?range=8-19)]
 
 The `run_dialog` method that is called from the bot's `on_message_activity` method.
 
 **bots/dialog_bot.py**
-[!code-python[First step](~/../botbuilder-python/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=46-51)]
+[!code-python[om_message_activity](~/../botbuilder-python/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=46-51&highlight=2-6)]
 
 ---
 

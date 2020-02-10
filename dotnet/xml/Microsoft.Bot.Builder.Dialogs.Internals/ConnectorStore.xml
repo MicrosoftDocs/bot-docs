@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectorStore" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore">
+<Type Name="ConnectorStore" FullName="Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore">
   <TypeSignature Language="C#" Value="public class ConnectorStore : Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectorStore extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1&lt;class Microsoft.Bot.Connector.BotData&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorStore" />

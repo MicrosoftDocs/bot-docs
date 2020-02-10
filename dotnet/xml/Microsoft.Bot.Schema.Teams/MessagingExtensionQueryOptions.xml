@@ -1,0 +1,121 @@
+<Type Name="MessagingExtensionQueryOptions" FullName="Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions">
+  <TypeSignature Language="C#" Value="public class MessagingExtensionQueryOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagingExtensionQueryOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagingExtensionQueryOptions" />
+  <TypeSignature Language="F#" Value="type MessagingExtensionQueryOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Messaging extension query options
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionQueryOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessagingExtensionQueryOptions
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagingExtensionQueryOptions (Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; count = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional skip As Nullable(Of Integer) = null, Optional count As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions : Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions (skip, count)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="skip" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="skip">Number of entities to skip</param>
+        <param name="count">Number of entities to fetch</param>
+        <summary>
+            Initializes a new instance of the MessagingExtensionQueryOptions
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Count { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Property Count As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Count : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="count")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets number of entities to fetch
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Skip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Skip" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions.Skip" />
+      <MemberSignature Language="VB.NET" Value="Public Property Skip As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Skip : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions.Skip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="skip")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets number of entities to skip
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

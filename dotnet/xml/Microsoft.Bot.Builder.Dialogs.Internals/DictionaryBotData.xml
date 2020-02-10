@@ -1,4 +1,4 @@
-﻿<Type Name="DictionaryBotData" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData">
+<Type Name="DictionaryBotData" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData">
   <TypeSignature Language="C#" Value="public sealed class DictionaryBotData : Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;System.Collections.Generic.Dictionary&lt;string,object&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DictionaryBotData extends Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, object&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DictionaryBotData" />

@@ -1,5 +1,5 @@
 ---
-title: Implement sequential conversation flow | Microsoft Docs
+title: Implement sequential conversation flow - Bot Service
 description: Learn how to manage a simple conversation flow with dialogs in the Bot Framework SDK.
 keywords: simple conversation flow, sequential conversation flow, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/05/2019
+ms.date: 01/28/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -37,7 +37,7 @@ In the multi-turn prompt sample, we use a waterfall dialog, a few prompts, and a
 | Ask the user for their name | Text prompt |
 | Ask the user if they want to provide their age | Confirm prompt |
 | If they answered yes, asks for their age | Number prompt with validation to only accept ages greater than 0 and less than 150 |
-| If they're not using Microsoft Teams, them for a profile picture | Attachment prompt with validation to allow a missing attachment |
+| If they're not using Microsoft Teams, ask them for a profile picture | Attachment prompt with validation to allow a missing attachment |
 | Asks if the collected information is "ok" | Reuse Confirm prompt |
 
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
@@ -78,15 +78,15 @@ The user's mode of transportation, name, and age are saved in an instance of the
 
 **Dialogs\UserProfileDialog.cs**
 
-In the last step, we check the `stepContext.Result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `GetAsync` method, and then set the values of the `userProfile.Transport`, `userProfile.Name`, and `userProfile.Age` properties. Finally, we summarize the information for the user before calling `EndDialogAsync` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
+In the last step, we check the `stepContext.Result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `GetAsync` method, and then set the values of the `userProfile.Transport`, `userProfile.Name`, `userProfile.Age` and `userProfile.Picture` properties. Finally, we summarize the information for the user before calling `EndDialogAsync` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
 
 [!code-csharp[SummaryStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=137-179&highlight=5-11,41-42)]
 
 # [JavaScript](#tab/javascript)
 
-To use dialogs, your project needs to install **botbuilder-dialogs** npm package.
+To use dialogs, your project needs to install the **botbuilder-dialogs** npm package.
 
-The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot`, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run` helper method to access the dialog.
+The bot interacts with the user via a `UserProfileDialog`. When we create the bot's `DialogBot`, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run` helper method to access the dialog.
 
 ![user profile dialog](media/user-profile-dialog-js.png)
 
@@ -116,7 +116,7 @@ The user's mode of transportation, name, and age are saved in an instance of the
 
 **dialogs/userProfileDialog.js**
 
-In the last step, we check the `step.result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `get` method, and then set the values of the `userProfile.transport`, `userProfile.name`, and `userProfile.age` properties. Finally, we summarize the information for the user before calling `endDialog` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
+In the last step, we check the `step.result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `get` method, and then set the values of the `userProfile.transport`, `userProfile.name`, `userProfile.age` and `userProfile.picture` properties. Finally, we summarize the information for the user before calling `endDialog` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
 
 [!code-javascript[summary step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=137-167&highlight=3-9,29-30)]
 
@@ -132,7 +132,7 @@ The dialog context allows you to start a dialog with the string ID, or continue 
 
 # [Python](#tab/python)
 
-To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** pypi packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
+To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
 
 The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot` class, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run_dialog` helper method to access the dialog.
 
@@ -144,7 +144,7 @@ We begin by creating the `UserProfileDialog` that derives from the `ComponentDia
 
 In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
 
-[!code-python[Constructor snippet](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=25-57)]
+[!code-python[Constructor snippet](~/../botbuilder-python/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=26-57)]
 
 Next, we implement the steps that the dialog uses. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step using `step_context.result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or starts over from the beginning with a reprompt until it receives a valid input.
 
@@ -192,11 +192,15 @@ The `OnMessageActivityAsync` handler uses the `RunAsync` method to start or cont
 
 # [JavaScript](#tab/javascript)
 
-The `onMessage` handler uses the helper method to start or continue the dialog. In `onDialog`, we use the bot's state management objects to persist any state changes to storage. The `onDialog` method gets called last after other defined handlers are run, such as `onMessage`. In this way, we are saving state after the message handler completes but before the turn itself completes.
+The `onMessage` method registers a listener that calls the dialog's `run` method to start or continue the dialog.
+
+Separately, the bot overrides the `ActivityHandler.run` method to save conversation and user state to storage. In this way, we are saving state after the message handler completes but before the turn itself completes.
 
 **bots/dialogBot.js**
 
-[!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-38&highlight=11-13)]
+[!code-javascript[message listener](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-31&highlight=5)]
+
+[!code-javascript[override](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=34-43&highlight=7-9)]
 
 # [Python](#tab/python)
 
@@ -231,12 +235,11 @@ We register services for the bot in `index.js`.
 
 [!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-59)]
 
-
 # [Python](#tab/python)
 
 We register services for the bot in `app.py`.
 
-[!code-python[configure services](~/../botbuilder-python/samples/python/05.multi-turn-prompt/app.py?range=27-75)]
+[!code-python[configure services](~/../botbuilder-python/samples/python/05.multi-turn-prompt/app.py?range=27-76)]
 
 ---
 
@@ -269,6 +272,34 @@ There are various options for keeping dialog steps and bot state separate. For e
 
 - Use the end dialog method to provide the collected data as return value back to the parent context. This can be the bot's turn handler or an earlier active dialog on the dialog stack. This is how the prompt classes are designed.
 - Generate a request to an appropriate service. This might work well if your bot acts as a front end to a larger service.
+
+### Definition of a prompt validator method
+
+# [C#](#tab/csharp)
+
+**UserProfileDialog.cs**
+
+Below is an example validator code for the `AgePromptValidatorAsync` method definition. `promptContext.Recognized.Value` contains the parsed value, which is an integer here for the number prompt. `promptContext.Recognized.Succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario. 
+
+[!code-csharp[prompt validator method](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=181-185)]
+
+# [JavaScript](#tab/javascript)
+
+**dialogs\userProfileDialog.js**
+
+Below is an example validator code for the `agePromptValidator` method definition. `promptContext.recognized.value` contains the parsed value, which is an integer here for the number prompt. `promptContext.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario. 
+
+[!code-javascript[prompt validator method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=169-172)]
+
+# [Python](#tab/python)
+
+**dialogs/user_profile_dialog.py**
+
+Below is an example validator code for the `age_prompt_validator` method definition. `prompt_context.recognized.value` contains the parsed value, which is an integer here for the number prompt. `prompt_context.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
+
+[!code-python[prompt validator method](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=207-212)]
+
+---
 
 ## Next steps
 

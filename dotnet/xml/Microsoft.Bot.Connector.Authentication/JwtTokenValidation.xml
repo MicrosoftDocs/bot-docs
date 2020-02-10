@@ -1,4 +1,4 @@
-﻿<Type Name="JwtTokenValidation" FullName="Microsoft.Bot.Connector.Authentication.JwtTokenValidation">
+<Type Name="JwtTokenValidation" FullName="Microsoft.Bot.Connector.Authentication.JwtTokenValidation">
   <TypeSignature Language="C#" Value="public static class JwtTokenValidation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit JwtTokenValidation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.JwtTokenValidation" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -54,7 +56,7 @@
         <param name="provider">The bot's channel service provider.</param>
         <param name="httpClient">The HTTP client.</param>
         <summary>
-            Authenticates the request and add's the activity's <see cref="P:Microsoft.Bot.Schema.Activity.ServiceUrl" />
+            Authenticates the request and adds the activity's <see cref="P:Microsoft.Bot.Schema.Activity.ServiceUrl" />
             to the set of trusted URLs.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
@@ -71,6 +73,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -91,12 +94,43 @@
         <param name="authConfig">The optional authentication configuration.</param>
         <param name="httpClient">The HTTP client.</param>
         <summary>
-            Authenticates the request and add's the activity's <see cref="P:Microsoft.Bot.Schema.Activity.ServiceUrl" />
+            Authenticates the request and adds the activity's <see cref="P:Microsoft.Bot.Schema.Activity.ServiceUrl" />
             to the set of trusted URLs.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>If the task completes successfully, the result contains the claims-based
             identity for the request.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppIdFromClaims">
+      <MemberSignature Language="C#" Value="public static string GetAppIdFromClaims (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAppIdFromClaims(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.JwtTokenValidation.GetAppIdFromClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAppIdFromClaims (claims As IEnumerable(Of Claim)) As String" />
+      <MemberSignature Language="F#" Value="static member GetAppIdFromClaims : seq&lt;System.Security.Claims.Claim&gt; -&gt; string" Usage="Microsoft.Bot.Connector.Authentication.JwtTokenValidation.GetAppIdFromClaims claims" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claims" Type="System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="claims">A list of <see cref="T:System.Security.Claims.Claim" /> instances.</param>
+        <summary>
+            Gets the AppId from a claims list.
+            </summary>
+        <returns>The value of the appId claim if found (null if it can't find a suitable claim).</returns>
+        <remarks>
+            In v1 tokens the AppId is in the the <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AppIdClaim" /> claim.
+            In v2 tokens the AppId is in the azp <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AuthorizedParty" /> claim.
+            If the <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.VersionClaim" /> is not present, this method will attempt to
+            obtain the attribute from the <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AppIdClaim" /> or if present.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateAuthHeader">
@@ -112,6 +146,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -148,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>

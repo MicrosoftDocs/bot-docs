@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationState" FullName="Microsoft.Bot.Builder.ConversationState">
+<Type Name="ConversationState" FullName="Microsoft.Bot.Builder.ConversationState">
   <TypeSignature Language="C#" Value="public class ConversationState : Microsoft.Bot.Builder.BotState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationState extends Microsoft.Bot.Builder.BotState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConversationState" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotState</BaseTypeName>
@@ -18,9 +19,12 @@
   <Interfaces />
   <Docs>
     <summary>
-            Handles persistence of a conversation state object using the conversation ID as part of the key.
+            Defines a state management object for conversation state.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+            Conversation state is available in any turn in a specific conversation, regardless of user,
+            such as in a group conversation.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +41,13 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
       </Parameters>
       <Docs>
-        <param name="storage">The storage provider to use.</param>
+        <param name="storage">The storage layer to use.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.ConversationState" /> class.
             </summary>
@@ -63,6 +68,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,7 +82,13 @@
             Gets the key to use when reading and writing state to and from storage.
             </summary>
         <returns>The storage key.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Conversation state includes the channel ID and conversation ID as part of its storage key.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:Microsoft.Bot.Builder.ITurnContext.Activity" /> for the
+            current turn is missing <see cref="P:Microsoft.Bot.Schema.Activity.ChannelId" /> or
+            <see cref="P:Microsoft.Bot.Schema.Activity.Conversation" /> information, or the conversation's
+            <see cref="P:Microsoft.Bot.Schema.ConversationAccount.Id" /> is missing.</exception>
       </Docs>
     </Member>
   </Members>
