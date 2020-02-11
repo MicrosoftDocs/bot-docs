@@ -219,6 +219,6 @@ Deploying your bot to Azure will involve paying for the services you use. The [b
 > [!div class="nextstepaction"]
 > [Set up continuous deployment](bot-service-build-continuous-deployment.md)
 
-## Appendix
+<!-- ## Appendix
 
-[!INCLUDE [deploy csharp bot to Azure](~/includes/deploy/snippet-deploy-simple-csharp-echo-bot.md)]
+[!INCLUDE [deploy csharp bot to Azure](~/includes/deploy/snippet-deploy-simple-csharp-echo-bot.md)] -->
