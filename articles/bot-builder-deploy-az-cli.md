@@ -54,7 +54,7 @@ az account set --subscription "<azure-subscription>"
 
 If you are not sure which subscription to use for deploying the bot, you can view the list of subscriptions for your account by using `az account list` command. Navigate to the bot folder. -->
 
-### 3. Create an App registration
+### 3. Create the bot channel registration
 [!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
 <!-- Registering the application means that you can use Azure AD to authenticate users and request access to user resources. Your bot requires a Registered app in Azure that provides the bot access to the Bot Framework Service for sending and receiving authenticated messages. To create register an app via the Azure CLI, perform the following command:
 
@@ -76,8 +76,12 @@ The above command outputs JSON with the key `appId`, save the value of this key 
 > az bot create --kind webapp --resource-group "<name-of-resource-group>" --name "<name-of-web-app>" --appid "<existing-app-id>" --password "<existing-app-password>" --lang <Javascript|Csharp>
 > ``` -->
 
-### 4. Deploy via ARM template
-You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
+### 4. Create the bot application service
+
+When creating the bot application service, you can define if to deploy your bot in a new or in an existing resource group. Choose the option that works best for you.
+
+Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to `template-file`.
+
 
 > [!NOTE]
 > Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
