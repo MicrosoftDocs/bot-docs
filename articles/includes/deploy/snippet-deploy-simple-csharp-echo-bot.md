@@ -1,4 +1,4 @@
-## Deploy Csharp bot steps
+### Deploy Csharp bot steps
 
 In a terminal window, you can execute following steps to deploy a bot to Azure. You must substitute the place holders, in angle brackets,  with your actual values.
 
