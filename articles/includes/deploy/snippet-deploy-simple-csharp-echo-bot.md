@@ -1,4 +1,4 @@
-# Deploy Csharp bot steps
+## Deploy Csharp bot steps
 
 In a terminal window, you can execute following steps to deploy a bot to Azure. You must substitute the place holders, in angle brackets,  with your actual values.
 
@@ -34,13 +34,13 @@ In a terminal window, you can execute following steps to deploy a bot to Azure. 
 
 1. Optionally, check app Id and password
 
-    Use the app id and the secret values in the project `appsettings.json` file.
+    Use the app id and the password values in the project `appsettings.json` file.
 
     ```bash
     az webapp config appsettings list -g <your bot resource group> -n <bot channels registration name> --subscription <subscription Id form previous step>
     ```
 
-1. Before creating a .deployment file add the the bot channel registration app id, and the password to the project `appsettings.json` file.
+1. Before creating a `.deployment` file add the the bot channel registration app id, and the password to the project `appsettings.json` file.
 
 1. Create a `.deployment` file within the bot project folder.
 
@@ -51,7 +51,7 @@ In a terminal window, you can execute following steps to deploy a bot to Azure. 
 
 1. Deploy the bot
 
-    This final step actually deploy the bot  to Azure.
+    This final step actually deploys the bot  to Azure.
 
     ```bash
     az webapp deployment source config-zip --resource-group "mm-bot-resource-group" --name "<bot channels registration name>" --src "<bot project dir>\<projec name>.zip"
