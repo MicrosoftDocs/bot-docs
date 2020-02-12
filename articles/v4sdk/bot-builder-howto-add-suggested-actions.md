@@ -38,7 +38,7 @@ The source code shown here is based on the [suggested actions sample](https://ak
 
 The source code shown here is based on the [suggested actions sample](https://aka.ms/SuggestActionsPython).
 
-[!code-python[suggested actions](~/../botbuilder-python/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-81)]
+[!code-python[suggested actions](~/../botbuilder-samples/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-81)]
 
 
 ---
