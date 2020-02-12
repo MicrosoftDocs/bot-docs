@@ -2,7 +2,8 @@ In this step, you create a bot application service which sets the deployment sta
 
 From the resulting JSON output, copy the numeric value of the **id** field to use as the value for the **registration subscription id** in the next step.
 
-> [!NOTE] This step can take a few minutes to complete.
+> [!NOTE]
+> This step can take a few minutes to complete.
 
 **Option 1: Existing App Service Plan**
 

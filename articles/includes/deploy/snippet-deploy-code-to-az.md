@@ -10,4 +10,6 @@ az webapp deployment source config-zip --resource-group "<resource-group-name>" 
 | name | Name of the Web App you used earlier. |
 | src  | The path to the zipped project file you created. |
 
-> [!NOTE] This step can take a few minutes to complete. Also it can take a few more minutes for the deployment to finish and your bot available to test.
+> [!NOTE]
+> This step can take a few minutes to complete.
+> Also it can take a few more minutes for the deployment to finish and your bot available to test.

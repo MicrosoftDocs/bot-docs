@@ -3,7 +3,8 @@ In this step you create a **Bot Channels Registration** application that allows 
 - User's interaction with the bot via a set of channels such as *Web Chat*.
 - The definition of *OAuth Connection Settings* to authenticate a user and to create a *token* used by the bot to access protected resources on behalf of the user.
 
-> [!NOTE] Because you are deploying a locally developed bot, you need a **Bot Channels Registration** resource.
+> [!NOTE]
+> Because you are deploying a locally developed bot, you need a **Bot Channels Registration** resource.
 > This creates the *container* to which you can deploy your bot code, as opposed to a *Web App Bot* which would create an app on Azure as well.
 
 To create a bot channels registration, execute the following command:

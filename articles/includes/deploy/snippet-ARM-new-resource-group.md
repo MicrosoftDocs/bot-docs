@@ -2,7 +2,8 @@ In this step, you create a bot application service which sets the deployment sta
 
 From the resulting JSON output, copy the numeric value of the **id** field to use as the value for the **registration subscription id** in the next step.
 
-> [!NOTE] This step can take a few minutes to complete.
+> [!NOTE]
+> This step can take a few minutes to complete.
 
 ```cmd
 az deployment create --template-file "template-with-new-rg.json" --location "region-location-name" --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" botSku=F0 newAppServicePlanName="<new-service-plan-name>" newWebAppName="<bot-app-service-name>" groupName="<new-group-name>" groupLocation="<region-location-name>" newAppServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
