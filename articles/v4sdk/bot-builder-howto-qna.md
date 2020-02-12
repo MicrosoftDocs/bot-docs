@@ -95,7 +95,7 @@ If you aren't deploying this for production, the app ID and password fields can 
 
 ### Update your config.py file
 
-[!code-python[config.py](~/../botbuilder-python/samples/python/11.qnamaker/config.py?range=10-18)]
+[!code-python[config.py](~/../botbuilder-samples/samples/python/11.qnamaker/config.py?range=10-18)]
 
 ---
 
@@ -130,7 +130,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 In the **qna_bot.py** file, we use the connection information provided by the `config.py` file to establish a connection to the QnA Maker service: `self.qna_maker`.
 
 **bots/qna_bot.py**
-[!code-python[QnAMaker](~/../botbuilder-python/samples/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
+[!code-python[QnAMaker](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
 
 ---
 
@@ -157,7 +157,7 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message *No QnA Maker answers were found.*
 
 **bots/qna_bot.py**
-[!code-python[get_answers](~/../botbuilder-python/samples/python/11.qnamaker/bots/qna_bot.py?range=33-37)]
+[!code-python[get_answers](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=33-37)]
 
 ---
 
