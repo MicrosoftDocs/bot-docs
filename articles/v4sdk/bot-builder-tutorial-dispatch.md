@@ -320,7 +320,7 @@ Once all of your service apps are created, the information for each needs to be 
 
 **config.py**
 
-[!code-python[config.py](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/config.py?range=10-24)]
+[!code-python[config.py](~/../botbuilder-samples/samples/python/14.nlp-with-dispatch/config.py?range=10-24)]
 
 For each of the entities shown below, add the values you recorded earlier in these instructions:
 
@@ -368,7 +368,7 @@ In **dispatch_bot.py**, the information contained within configuration file _con
 
 **bots/dispatch_bot.py**
 
-[!code-python[ReadConfigurationInfo](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=14-34)]
+[!code-python[ReadConfigurationInfo](~/../botbuilder-samples/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=14-34)]
 
 ---
 
@@ -399,7 +399,7 @@ In the **dispatch_bot.py** file whenever the `on_message_activity` method is cal
 
 **bots/dispatch_bot.py**
 
-[!code-python[on_message](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=46-54)]
+[!code-python[on_message](~/../botbuilder-samples/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=46-54)]
 
 ---
 
@@ -434,7 +434,7 @@ When the model produces a result, it indicates which service can most appropriat
 
 **bots\dispatch_bot.py**
 
-[!code-python[dispatch top intent](~/../botbuilder-python/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=56-70)]
+[!code-python[dispatch top intent](~/../botbuilder-samples/samples/python/14.nlp-with-dispatch/bots/dispatch_bot.py?range=56-70)]
 
 If method `_process_home_automation` or `_process_weather` are invoked, they are passed the results from the dispatch model within _recognizer_result.properties["luisResult"]_. The specified method then provides user feedback showing the dispatch model top intent, plus a ranked listing of all intents and entities that were detected.
 

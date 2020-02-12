@@ -117,6 +117,6 @@ Alternatively, you can choose to keep these messages. In this case, it may be a 
 ## Troubleshooting
 
 * In case your bot is not responding to any of your messages at all, navigate to your bot in Azure portal, and choose Test in Web Chat.  
-    * If the bot works there, but does not respond in LINE, reload your LINE Developer Console page and repeat the webhook instructinos above. Be sure you set the **Webhook URL** before enabling webhooks.
+    * If the bot works there, but does not respond in LINE, reload your LINE Developer Console page and repeat the webhook instructions above. Be sure you set the **Webhook URL** before enabling webhooks.
     * If the bot doesn't work in Web Chat, debug the issue for your bot then come back and finish configuring your LINE channel.
 
