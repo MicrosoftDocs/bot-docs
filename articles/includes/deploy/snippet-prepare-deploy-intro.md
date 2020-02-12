@@ -7,6 +7,6 @@ When you create a bot using the [Visual Studio template](https://docs.microsoft.
 
 This article assumes that you have a bot ready to be deployed and the **path** to the related project. You need the path to access the deployment templates and also to create a *zip* file to deploy.
 
-For information on how to create a bot, see [.NET bot](~/bot-builder-dotnet-sdk-quickstart.md).
+For information on how to create a simple echo bot, see the quick start [CSharp sample](~/dotnet/bot-builder-dotnet-sdk-quickstart.md) or [JavaScript sample](~/javascript/bot-builder-javascript-quickstart.md) or [Python sample](~/python/bot-builder-python-quickstart.md).
 
-You can also use one of the examples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
+You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
