@@ -21,7 +21,7 @@ This quickstart walks you through building a bot by using the Python Echo Bot te
 - Python [3.6](https://www.python.org/downloads/release/python-369/) or [3.7](https://www.python.org/downloads/release/python-375/)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - [git](https://git-scm.com/)
-- knowledge of ansynchronous programming in Python
+- knowledge of asynchronous programming in Python
 
 ## Create a bot
 1. Open a terminal and navigate to the folder where you're saving your bot locally. Install the necessary packages by running the following commands:

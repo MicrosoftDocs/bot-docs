@@ -27,7 +27,7 @@ Here is the logic flow of an Enterprise Productivity bot:
 3. The Enterprise Productivity bot is able to query the employee's Office 365 calendar via the Azure Graph.
 4. Using data gathered from the calendar, the bot accesses case information in Dynamics CRM.
 5. The information is returned to the employee who can filter down the data without leaving the bot.
-6. Application insights gathers runtime telemetery to help development with bot performance and usage.
+6. Application insights gathers runtime telemetry to help development with bot performance and usage.
 
 You can download or clone the source code for this sample bot from [Samples for Common Bot Framework Scenarios](https://aka.ms/abs-scenarios).
 
