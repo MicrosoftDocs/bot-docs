@@ -1,4 +1,4 @@
-﻿<Type Name="CallbackLink" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink">
+<Type Name="CallbackLink" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink">
   <TypeSignature Language="C#" Value="public class CallbackLink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallbackLink extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CallbackLink" />

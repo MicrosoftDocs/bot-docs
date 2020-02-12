@@ -1,0 +1,29 @@
+<Type Name="DisconnectedEventHandler" FullName="Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DisconnectedEventHandler(object sender, DisconnectedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DisconnectedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DisconnectedEventHandler(sender As Object, e As DisconnectedEventArgs)" />
+  <TypeSignature Language="F#" Value="type DisconnectedEventHandler = delegate of obj * DisconnectedEventArgs -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the disconnection event.</param>
+    <param name="e">The arguments specified by the disconnection event.</param>
+    <summary>
+            Delegate used to setup actions to be taken when disconnection events are triggered.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

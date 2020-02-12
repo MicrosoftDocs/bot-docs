@@ -1,4 +1,4 @@
-﻿<Type Name="Choice" FullName="Microsoft.Bot.Builder.FormFlow.Choice">
+<Type Name="Choice" FullName="Microsoft.Bot.Builder.FormFlow.Choice">
   <TypeSignature Language="C#" Value="public class Choice" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Choice extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Choice" />

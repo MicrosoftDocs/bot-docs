@@ -1,4 +1,4 @@
-﻿<Type Name="IncomingCallEvent" FullName="Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent">
+<Type Name="IncomingCallEvent" FullName="Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent">
   <TypeSignature Language="C#" Value="public class IncomingCallEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncomingCallEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" />

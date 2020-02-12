@@ -1,5 +1,5 @@
 ---
-title: Authentication | Microsoft Docs
+title: Direct Line API 1.1 Authentication - Bot Service
 description: Learn how to authenticate API requests in Direct Line API v1.1. 
 author: RobStand
 ms.author: kamrani
@@ -41,13 +41,13 @@ If you're creating a service-to-service application, specifying the **secret** i
 
 ## Get a Direct Line secret
 
-You can [obtain a Direct Line secret](../bot-service-channel-connect-directline.md) via the Direct Line channel configuration page for your bot in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>:
+You can [obtain a Direct Line secret](../bot-service-channel-connect-directline.md) via the Direct Line channel configuration page for your bot in the [Azure Portal](https://portal.azure.com):
 
 ![Direct Line configuration](../media/direct-line-configure.png)
 
 ## <a id="generate-token"></a> Generate a Direct Line token
 
-To generate a Direct Line token that can be used to access a single conversation, first obtain the Direct Line secret from the Direct Line channel configuration page in the <a href="https://dev.botframework.com/" target="_blank">Bot Framework Portal</a>. Then issue this request to exchange your Direct Line secret for a Direct Line token:
+To generate a Direct Line token that can be used to access a single conversation, first obtain the Direct Line secret from the Direct Line channel configuration page in the [Azure Portal](https://portal.azure.com). Then issue this request to exchange your Direct Line secret for a Direct Line token:
 
 ```http
 POST https://directline.botframework.com/api/tokens/conversation

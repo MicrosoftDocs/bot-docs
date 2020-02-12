@@ -1,4 +1,4 @@
-﻿<Type Name="DialogContext" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext">
+<Type Name="DialogContext" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogContext">
   <TypeSignature Language="C#" Value="public sealed class DialogContext : Microsoft.Bot.Builder.Dialogs.IDialogContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogContext extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IBotContext, class Microsoft.Bot.Builder.Dialogs.IDialogContext, class Microsoft.Bot.Builder.Dialogs.Internals.IBotData, class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext" />

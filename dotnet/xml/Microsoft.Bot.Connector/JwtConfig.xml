@@ -1,4 +1,4 @@
-﻿<Type Name="JwtConfig" FullName="Microsoft.Bot.Connector.JwtConfig">
+<Type Name="JwtConfig" FullName="Microsoft.Bot.Connector.JwtConfig">
   <TypeSignature Language="C#" Value="public static class JwtConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit JwtConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.JwtConfig" />

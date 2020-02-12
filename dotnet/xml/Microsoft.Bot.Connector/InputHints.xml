@@ -1,4 +1,4 @@
-﻿<Type Name="InputHints" FullName="Microsoft.Bot.Connector.InputHints">
+<Type Name="InputHints" FullName="Microsoft.Bot.Connector.InputHints">
   <TypeSignature Language="C#" Value="public static class InputHints" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InputHints extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.InputHints" />

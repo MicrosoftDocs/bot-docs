@@ -1,4 +1,4 @@
-﻿<Type Name="OrderScorableFactory&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;Item,Score&gt;">
+<Type Name="OrderScorableFactory&lt;Item,Score&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory&lt;Item,Score&gt;">
   <TypeSignature Language="C#" Value="public sealed class OrderScorableFactory&lt;Item,Score&gt; : Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory&lt;Item,Score&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OrderScorableFactory`2&lt;Item, Score&gt; extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IScorableFactory`2&lt;!Item, !Score&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.OrderScorableFactory`2" />

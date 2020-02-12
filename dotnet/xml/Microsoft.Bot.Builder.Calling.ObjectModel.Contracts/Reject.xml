@@ -1,4 +1,4 @@
-﻿<Type Name="Reject" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject">
+<Type Name="Reject" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject">
   <TypeSignature Language="C#" Value="public class Reject : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Reject extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Reject" />

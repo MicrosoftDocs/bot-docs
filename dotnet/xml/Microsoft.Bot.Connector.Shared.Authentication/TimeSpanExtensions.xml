@@ -1,4 +1,4 @@
-﻿<Type Name="TimeSpanExtensions" FullName="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions">
+<Type Name="TimeSpanExtensions" FullName="Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions">
   <TypeSignature Language="C#" Value="public static class TimeSpanExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TimeSpanExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Shared.Authentication.TimeSpanExtensions" />

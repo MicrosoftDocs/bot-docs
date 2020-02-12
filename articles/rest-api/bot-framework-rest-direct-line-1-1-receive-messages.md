@@ -1,5 +1,5 @@
 ---
-title: Receive messages from the bot | Microsoft Docs
+title: Receive messages from the bot - Bot Service
 description: Learn how to receive messages from the bot using Direct Line API v1.1. 
 author: RobStand
 ms.author: kamrani

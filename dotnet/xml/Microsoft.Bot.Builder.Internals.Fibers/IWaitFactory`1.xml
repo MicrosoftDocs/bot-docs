@@ -1,4 +1,4 @@
-﻿<Type Name="IWaitFactory&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;">
+<Type Name="IWaitFactory&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;">
   <TypeSignature Language="C#" Value="public interface IWaitFactory&lt;C&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWaitFactory`1&lt;C&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1" />

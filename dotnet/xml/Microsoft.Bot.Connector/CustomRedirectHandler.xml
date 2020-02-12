@@ -1,4 +1,4 @@
-﻿<Type Name="CustomRedirectHandler" FullName="Microsoft.Bot.Connector.CustomRedirectHandler">
+<Type Name="CustomRedirectHandler" FullName="Microsoft.Bot.Connector.CustomRedirectHandler">
   <TypeSignature Language="C#" Value="public sealed class CustomRedirectHandler : System.Net.Http.DelegatingHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CustomRedirectHandler extends System.Net.Http.DelegatingHandler" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.CustomRedirectHandler" />

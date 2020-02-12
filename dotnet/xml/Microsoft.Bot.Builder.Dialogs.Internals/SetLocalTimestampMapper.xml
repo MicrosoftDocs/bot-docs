@@ -1,4 +1,4 @@
-﻿<Type Name="SetLocalTimestampMapper" FullName="Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper">
+<Type Name="SetLocalTimestampMapper" FullName="Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper">
   <TypeSignature Language="C#" Value="public sealed class SetLocalTimestampMapper : Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SetLocalTimestampMapper extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IMessageActivityMapper" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.SetLocalTimestampMapper" />

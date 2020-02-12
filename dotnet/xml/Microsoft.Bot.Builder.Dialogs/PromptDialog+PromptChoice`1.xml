@@ -1,4 +1,4 @@
-﻿<Type Name="PromptDialog+PromptChoice&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptChoice&lt;T&gt;">
+<Type Name="PromptDialog+PromptChoice&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptChoice&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class PromptDialog.PromptChoice&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;T,T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptChoice`1&lt;T&gt; extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;!T, !T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1" />
@@ -147,7 +147,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptChoice`1.TryParse(Microsoft.Bot.Connector.IMessageActivity,`0@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As T) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptChoice.TryParse (message, result)" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity * 'T -&gt; bool" Usage="promptChoice.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

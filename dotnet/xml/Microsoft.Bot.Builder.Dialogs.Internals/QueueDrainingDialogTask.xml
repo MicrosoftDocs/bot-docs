@@ -1,4 +1,4 @@
-﻿<Type Name="QueueDrainingDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask">
+<Type Name="QueueDrainingDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask">
   <TypeSignature Language="C#" Value="public sealed class QueueDrainingDialogTask : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit QueueDrainingDialogTask extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.QueueDrainingDialogTask" />

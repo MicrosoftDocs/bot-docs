@@ -1,4 +1,4 @@
-﻿<Type Name="BuiltIn" FullName="Microsoft.Bot.Builder.Luis.BuiltIn">
+<Type Name="BuiltIn" FullName="Microsoft.Bot.Builder.Luis.BuiltIn">
   <TypeSignature Language="C#" Value="public static class BuiltIn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BuiltIn extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.BuiltIn" />

@@ -1,0 +1,58 @@
+<Type Name="ThisPath" FullName="Microsoft.Bot.Builder.Dialogs.ThisPath">
+  <TypeSignature Language="C#" Value="public class ThisPath" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThisPath extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ThisPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThisPath" />
+  <TypeSignature Language="F#" Value="type ThisPath = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThisPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ThisPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPTIONS">
+      <MemberSignature Language="C#" Value="public const string OPTIONS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OPTIONS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.ThisPath.OPTIONS" />
+      <MemberSignature Language="VB.NET" Value="Public Const OPTIONS As String " />
+      <MemberSignature Language="F#" Value="val mutable OPTIONS : string" Usage="Microsoft.Bot.Builder.Dialogs.ThisPath.OPTIONS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The options that were passed to the active dialog via options argument of BeginDialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

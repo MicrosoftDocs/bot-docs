@@ -1,5 +1,5 @@
 ---
-title: Manage custom state data with Azure Table storage | Microsoft Docs
+title: Manage custom state data with Azure Table storage (v3 JS) - Bot Service
 description: Learn how to save and retrieve state data using Azure Table storage with the Bot Framework SDK for Node.js.
 author: DucVo
 ms.author: kamrani

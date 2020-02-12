@@ -1,5 +1,5 @@
 ---
-title: Create .NET client to connect to direct line app service extension
+title: Create .NET client for direct line app service extension
 titleSuffix: Bot Service
 description: .NET client C# to connect to direct line app service extension
 services: bot-service

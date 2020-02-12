@@ -1,4 +1,4 @@
-﻿<Type Name="CallingConversation" FullName="Microsoft.Bot.Builder.Calling.CallingConversation">
+<Type Name="CallingConversation" FullName="Microsoft.Bot.Builder.Calling.CallingConversation">
   <TypeSignature Language="C#" Value="public static class CallingConversation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CallingConversation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingConversation" />

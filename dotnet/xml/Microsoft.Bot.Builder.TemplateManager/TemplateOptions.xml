@@ -1,0 +1,89 @@
+<Type Name="TemplateOptions" FullName="Microsoft.Bot.Builder.TemplateManager.TemplateOptions">
+  <TypeSignature Language="C#" Value="public class TemplateOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TemplateManager.TemplateOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateOptions" />
+  <TypeSignature Language="F#" Value="type TemplateOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ChannelData for Activity template of type Template.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public object Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Data" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TemplateManager.TemplateOptions.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Object" />
+      <MemberSignature Language="F#" Value="member this.Data : obj with get, set" Usage="Microsoft.Bot.Builder.TemplateManager.TemplateOptions.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="data")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateId">
+      <MemberSignature Language="C#" Value="public string TemplateId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemplateId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TemplateManager.TemplateOptions.TemplateId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TemplateId As String" />
+      <MemberSignature Language="F#" Value="member this.TemplateId : string with get, set" Usage="Microsoft.Bot.Builder.TemplateManager.TemplateOptions.TemplateId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="template")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

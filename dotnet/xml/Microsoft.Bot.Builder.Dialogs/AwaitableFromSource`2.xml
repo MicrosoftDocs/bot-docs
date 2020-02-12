@@ -1,4 +1,4 @@
-﻿<Type Name="AwaitableFromSource&lt;TSource,TItem&gt;" FullName="Microsoft.Bot.Builder.Dialogs.AwaitableFromSource&lt;TSource,TItem&gt;">
+<Type Name="AwaitableFromSource&lt;TSource,TItem&gt;" FullName="Microsoft.Bot.Builder.Dialogs.AwaitableFromSource&lt;TSource,TItem&gt;">
   <TypeSignature Language="C#" Value="public sealed class AwaitableFromSource&lt;TSource,TItem&gt; : Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;TItem&gt;, Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;TItem&gt;, System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AwaitableFromSource`2&lt;TSource, TItem&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IAwaitable`1&lt;!TItem&gt;, class Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1&lt;!TItem&gt;, class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.AwaitableFromSource`2" />

@@ -1,0 +1,209 @@
+<Type Name="FileUploadInfo" FullName="Microsoft.Bot.Schema.Teams.FileUploadInfo">
+  <TypeSignature Language="C#" Value="public class FileUploadInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileUploadInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.FileUploadInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileUploadInfo" />
+  <TypeSignature Language="F#" Value="type FileUploadInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Information about the file to be uploaded.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileUploadInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileUploadInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the FileUploadInfo class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileUploadInfo (string name = null, string uploadUrl = null, string contentUrl = null, string uniqueId = null, string fileType = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string uploadUrl, string contentUrl, string uniqueId, string fileType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileUploadInfo.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional uploadUrl As String = null, Optional contentUrl As String = null, Optional uniqueId As String = null, Optional fileType As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.FileUploadInfo : string * string * string * string * string -&gt; Microsoft.Bot.Schema.Teams.FileUploadInfo" Usage="new Microsoft.Bot.Schema.Teams.FileUploadInfo (name, uploadUrl, contentUrl, uniqueId, fileType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="uploadUrl" Type="System.String" />
+        <Parameter Name="contentUrl" Type="System.String" />
+        <Parameter Name="uniqueId" Type="System.String" />
+        <Parameter Name="fileType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the file.</param>
+        <param name="uploadUrl">URL to an upload session that the bot can
+            use to set the file contents.</param>
+        <param name="contentUrl">URL to file.</param>
+        <param name="uniqueId">ID that uniquely identifies the
+            file.</param>
+        <param name="fileType">Type of the file.</param>
+        <summary>
+            Initializes a new instance of the FileUploadInfo class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentUrl">
+      <MemberSignature Language="C#" Value="public string ContentUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileUploadInfo.ContentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ContentUrl : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileUploadInfo.ContentUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contentUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets URL to file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileType">
+      <MemberSignature Language="C#" Value="public string FileType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileUploadInfo.FileType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileType As String" />
+      <MemberSignature Language="F#" Value="member this.FileType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileUploadInfo.FileType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fileType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of the file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileUploadInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileUploadInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets name of the file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueId">
+      <MemberSignature Language="C#" Value="public string UniqueId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileUploadInfo.UniqueId" />
+      <MemberSignature Language="VB.NET" Value="Public Property UniqueId As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileUploadInfo.UniqueId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="uniqueId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets ID that uniquely identifies the file.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadUrl">
+      <MemberSignature Language="C#" Value="public string UploadUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UploadUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileUploadInfo.UploadUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property UploadUrl As String" />
+      <MemberSignature Language="F#" Value="member this.UploadUrl : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileUploadInfo.UploadUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="uploadUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets URL to an upload session that the bot can use to set
+            the file contents.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

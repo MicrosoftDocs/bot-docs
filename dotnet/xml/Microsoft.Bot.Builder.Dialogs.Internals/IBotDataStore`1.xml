@@ -1,4 +1,4 @@
-﻿<Type Name="IBotDataStore&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;T&gt;">
+<Type Name="IBotDataStore&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IBotDataStore&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotDataStore`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1" />

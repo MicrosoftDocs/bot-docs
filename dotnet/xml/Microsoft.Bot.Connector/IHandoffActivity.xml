@@ -1,4 +1,4 @@
-﻿<Type Name="IHandoffActivity" FullName="Microsoft.Bot.Connector.IHandoffActivity">
+<Type Name="IHandoffActivity" FullName="Microsoft.Bot.Connector.IHandoffActivity">
   <TypeSignature Language="C#" Value="public interface IHandoffActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHandoffActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IHandoffActivity" />

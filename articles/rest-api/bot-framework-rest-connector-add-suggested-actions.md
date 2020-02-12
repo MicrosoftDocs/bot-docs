@@ -1,5 +1,5 @@
 ---
-title: Add suggested actions to messages | Microsoft Docs
+title: Add suggested actions to messages - Bot Service
 description: Learn how to add suggested actions to messages using the Bot Connector service.
 author: RobStand
 ms.author: kamrani
