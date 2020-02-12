@@ -27,7 +27,7 @@ Here is the logic flow of an Information bot:
 4. Cognitive Services returns a FAQ bot built with the QnA Maker.
 5. The employee defines a valid query.
 6. The bot submits the query to Azure Search which returns information about the application data.
-7. Application insights gathers runtime telemetery to help development with bot performance and usage.
+7. Application insights gathers runtime telemetry to help development with bot performance and usage.
 
 ## Sample bot
 The sample Bot, written in C#, runs in Microsoft Azure working with data indexed by Azure Search from a SQL Database instance. The Bot exposes a list of questions that can be asked with information on how to phrase the question (the answer) using Cognitive Services: QnA Maker. The user of the Bot can then type a query that looks up data via Azure Search in a broad or specific area of the database that is indexed. The sample provides a simple database with customers and order information. Application Insights tracks Bot usage and helps you monitor the Bot for exceptions. The Bot is published under as an Azure AD app so that you can restrict who has access to the information.
