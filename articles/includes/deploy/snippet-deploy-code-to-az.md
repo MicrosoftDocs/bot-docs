@@ -12,4 +12,4 @@ az webapp deployment source config-zip --resource-group "<resource-group-name>" 
 
 > [!NOTE]
 > This step can take a few minutes to complete.
-> Also it can take a few more minutes for the deployment to finish and your bot available to test.
+> Also it can take a few more minutes between when the deployment finishes and when your bot is available to test.

@@ -28,7 +28,7 @@ az group deployment create --resource-group "<name-of-resource-group>" --templat
 |:---------|:------------|
 | name | The display name to use for your bot channels registration. Default is the value of the `botId` parameter.|
 | resource-group | Name of the azure resource group. |
-| template-file | The path to the ARM template. Usually, the  `template-with-preexisting-rg.json` file is provided in the `deploymentTemplates` folder of the project. |
+| template-file | The path to the ARM template. Usually, the  `template-with-preexisting-rg.json` file is provided in the `deploymentTemplates` folder of the project. This is a path to an existing template file. It can be an absolute path, or relative to the current directory. All bot templates generate ARM template files.|
 | location |Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`. |
 | parameters | Deployment parameters, provided as a list of key=value pairs. Enter the following parameter values:
 
@@ -36,5 +36,5 @@ az group deployment create --resource-group "<name-of-resource-group>" --templat
 - `appSecret` - The password you provided in the previous step.
 - `botId` - A name for the  Bot Channels Registration resource to create. It must be globally unique. It is used as the immutable bot ID. It is also used as the default display name, which is mutable.
 - `newWebAppName` - A name for the bot application service.
-- `newAppServicePlanName` - The name of the application service plan.
+- `newAppServicePlanName` - A name for the application service plan resource to create.
 - `newAppServicePlanLocation` - The location of the application service plan.
