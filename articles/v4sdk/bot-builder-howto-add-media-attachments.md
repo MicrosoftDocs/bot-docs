@@ -98,22 +98,22 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 The code below is setting up the reply for an inline attachment:
 
 **bots/attachments_bot.py**  
-[!code-python[attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=112-113)]
+[!code-python[attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=112-113)]
 
 To send the user a single piece of content like an image or a video, you can send media in a few different ways. First, as an inline attachment:
 
 **bots/attachments_bot.py**
-[!code-python[inline attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=153-170)]
+[!code-python[inline attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=153-170)]
 
 Then, an uploaded attachment:
 
 **bots/attachments_bot.py**
-[!code-python[upload attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=172-207)]
+[!code-python[upload attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=172-207)]
 
 Lastly, an internet attachment contained in a URL:
 
 **bots/attachments_bot.py**
-[!code-python[internet attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=209-218)]
+[!code-python[internet attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=209-218)]
 
 ---
 
@@ -148,7 +148,7 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-media-attachments-python-sample-code) sample.
 
 **bots/attachments_bot.py**
-[!code-python[hero card](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=125-148)]
+[!code-python[hero card](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=125-148)]
 
 ---
 
@@ -251,7 +251,7 @@ The card is created as follows:
 The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
 
 **dialogs/resources/adaptive_card_example.py**
-[!code-python[adaptive cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/resources/adaptive_card_example.py)]
+[!code-python[adaptive cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/resources/adaptive_card_example.py)]
 
 The card is created as follows:
 
