@@ -55,7 +55,8 @@ az account set --subscription "<azure-subscription>"
 
 If you are not sure which subscription to use for deploying the bot, you can view the list of subscriptions for your account by using `az account list` command. Navigate to the bot folder. -->
 
-### 3. Create the bot channels registration
+### 3. Create the application registration
+
 [!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
 <!-- Registering the application means that you can use Azure AD to authenticate users and request access to user resources. Your bot requires a Registered app in Azure that provides the bot access to the Bot Framework Service for sending and receiving authenticated messages. To create register an app via the Azure CLI, perform the following command:
 
