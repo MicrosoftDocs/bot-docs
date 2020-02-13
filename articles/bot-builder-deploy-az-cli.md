@@ -31,6 +31,7 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 > [!NOTE]
 > With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of .bot file in favor of appsettings.json or .env file for managing resources. For information on migrating settings from the .bot file to appsettings.json or .env file, see [managing bot resources](v4sdk/bot-file-basics.md). -->
 
+
 ### 1. Login to Azure
 [!INCLUDE [deploy az login](~/includes/deploy/snippet-az-login.md)]
 <!-- You've already created and tested a bot locally, and now you want to deploy it to Azure. Open a command prompt to log in to the Azure portal.
@@ -78,7 +79,7 @@ The above command outputs JSON with the key `appId`, save the value of this key 
 
 ### 4. Create the bot application service
 
-When creating the bot application service, you can define if to deploy your bot in a new or in an existing resource group. Choose the option that works best for you.
+When creating the bot application service, you can deploy your bot in a new or in an existing resource group. Choose the option that works best for you.
 
 Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to `template-file`.
 
@@ -138,7 +139,9 @@ az group deployment create --name "<name-of-deployment>" --resource-group "<name
 ---
 
 ### 5. Prepare your code for deployment
+
 #### 5.1 Retrieve or create necessary IIS/Kudu files
+
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
 
 <!-- ##### [C#](#tab/csharp) -->
@@ -171,6 +174,7 @@ This command works similarly to JavaScript above, but for a Typescript bot.
 > After executing the above-mentioned command, you should be able to see a `.deployment` file in your bot project folder. -->
 
 #### 5.2 Zip up the code directory manually
+
 [!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 <!-- When using the non-configured [zip deploy API](https://github.com/projectkudu/kudu/wiki/Deploying-from-a-zip-file-or-url) to deploy your bot's code, Web App/Kudu's behavior is as follows:
 
@@ -188,6 +192,7 @@ As such, it is important to include your built code and with all necessary depen
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**. -->
 
 ## Deploy code to Azure
+
 [!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
 <!-- At this point we are ready to deploy the code to the Azure Web App. Run the following command from the command line to perform deployment using the kudu zip push deployment for a web app. -->
 <!--
