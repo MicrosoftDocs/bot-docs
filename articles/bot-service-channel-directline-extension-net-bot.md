@@ -6,7 +6,7 @@ services: bot-service
 manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
-ms.author: kamrani 
+ms.author: kamrani
 ms.date: 01/16/2020
 ---
 
@@ -14,7 +14,7 @@ ms.date: 01/16/2020
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
-This article describes how to update a bot to work with **named pipes**, and how to enable the direct line app service extension in the **Azure App Service** resource where the bot is hosted.  
+This article describes how to update a bot to work with **named pipes**, and how to enable the direct line app service extension in the **Azure App Service** resource where the bot is hosted.
 
 ## Prerequisites
 
@@ -41,8 +41,6 @@ This section describes how to enable the direct line app service extension using
 
     ```csharp
 
-    using Microsoft.Bot.Builder.StreamingExtensions;
-
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     {
         if (env.IsDevelopment())
@@ -57,8 +55,8 @@ This section describes how to enable the direct line app service extension using
         app.UseDefaultFiles();
         app.UseStaticFiles();
 
-        // Allow bot to use named pipes.
-        app.UseBotFrameworkNamedPipe();
+        // Allow the bot to use named pipes.
+        app.UseNamedPipes();
 
         app.UseMvc();
     }
@@ -101,10 +99,10 @@ This section describes how to enable the direct line app service extension using
 
 ## Confirm Direct Line App Extension and the Bot are Initialized
 
-In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
+In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot.
 If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
-- **k** determines whether Direct Line App Service Extension (ASE) can read an App Service Extension Key from its configuration. 
+- **k** determines whether Direct Line App Service Extension (ASE) can read an App Service Extension Key from its configuration.
 - **initialized** determines whether Direct Line ASE can use the App Service Extension Key to download the bot metadata from Azure Bot Service
 - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
 - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot.

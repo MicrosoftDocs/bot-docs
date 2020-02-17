@@ -37,7 +37,7 @@ Next you will add a new Redirect URL.
 
 1. Select the **OAuth & Permissions** tab.
 2. Click **Add a new Redirect URL**.
-3. Enter https://slack.botframework.com.
+3. Enter [https://slack.botframework.com](https://slack.botframework.com).
 4. Click **Add**.
 5. Click **Save URLs**.
 

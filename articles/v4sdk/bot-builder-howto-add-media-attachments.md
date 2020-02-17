@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 02/03/2020
 monikerRange: 'azure-bot-service-4.0' 
 ---
 
@@ -15,23 +15,10 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-<!-- To be done when samples repo location is final:
-
-1) Assure to fix the .openpublishing.publish.config.json following entry:
-	{
-	         "path_to_root":"botbuilder-python",
-	         "url":"https://github.com/microsoft/botbuilder-python",
-	         "branch":"master",
-	         "branch_mapping":{}
-	}
-2) Assure that the references to Python code snippets reflect the samples repo location is correct. 
-3) Create aka links to GitHub samples.
-
--->
-
 Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Skype, Slack, etc.) supports, consult the channel's documentation for information about limitations.
 
 ## Prerequisites
+
 - Knowledge of [bot basics](bot-builder-basics.md).
 - The code in this article is based on the following samples:
 
@@ -104,29 +91,29 @@ Lastly, an internet attachment contained in a URL:
 
 ### [Python](#tab/python)
 
-To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets. 
+To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets.
 
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-media-attachments-python-sample-code) sample.
 
 The code below is setting up the reply for an inline attachment:
 
 **bots/attachments_bot.py**  
-[!code-python[attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=112-113)]
+[!code-python[attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=112-113)]
 
 To send the user a single piece of content like an image or a video, you can send media in a few different ways. First, as an inline attachment:
 
-**bots/attachments_bot.py** 
-[!code-python[inline attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=153-170)]
+**bots/attachments_bot.py**
+[!code-python[inline attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=153-170)]
 
 Then, an uploaded attachment:
 
-**bots/attachments_bot.py** 
-[!code-python[upload attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=172-207)]
+**bots/attachments_bot.py**
+[!code-python[upload attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=172-207)]
 
 Lastly, an internet attachment contained in a URL:
 
-**bots/attachments_bot.py** 
-[!code-python[internet attachments](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=209-218)]
+**bots/attachments_bot.py**
+[!code-python[internet attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=209-218)]
 
 ---
 
@@ -138,7 +125,7 @@ Besides simple image or video attachments, you can attach a **hero card**, which
 
 ### [C#](#tab/csharp)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message. 
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message.
 
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample.
 
@@ -147,7 +134,7 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 
 ### [JavaScript](#tab/javascript)
 
-To compose a message with a hero card and button, you can attach a `HeroCard` to a message. 
+To compose a message with a hero card and button, you can attach a `HeroCard` to a message.
 
 The source code shown here is based on the [JS Handling Attachments](https://aka.ms/bot-attachments-sample-code-js) sample.
 
@@ -160,8 +147,8 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-media-attachments-python-sample-code) sample.
 
-**bots/attachments_bot.py** 
-[!code-python[hero card](~/../botbuilder-python/samples/python/15.handling-attachments/bots/attachments_bot.py?range=125-148)]
+**bots/attachments_bot.py**
+[!code-python[hero card](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=125-148)]
 
 ---
 
@@ -212,63 +199,23 @@ For examples of all the available cards, see the [JS cards sample](https://aka.m
 For examples of all the available cards, see the [Python cards sample](https://aka.ms/bot-cards-python-sample-code).
 
 **dialogs/main_dialog.py**
-
-<!-- replaced with this when it works: 
-[!code-python[hero cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/main_dialog.py?range=163-179)] -->
-
-```python
-def create_hero_card(self) -> Attachment:
-  card = HeroCard(
-      title="",
-      images=[
-          CardImage(
-              url="https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg"
-          )
-      ],
-      buttons=[
-          CardAction(
-              type=ActionTypes.open_url,
-              title="Get Started",
-              value="https://docs.microsoft.com/en-us/azure/bot-service/",
-          )
-      ],
-  )
-  return CardFactory.hero_card(card)
-```
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=163-179)]
 
 **dialogs/main_dialog.py**
-
-<!-- replaced with this when it works: 
-  [!code-python[sign in cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/main_dialog.py?range=245-256)] -->
-
-```python
-def create_signin_card(self) -> Attachment:
-  card = SigninCard(
-      text="BotFramework Sign-in Card",
-      buttons=[
-          CardAction(
-              type=ActionTypes.signin,
-              title="Sign-in",
-              value="https://login.microsoftonline.com",
-          )
-      ],
-  )
-  return CardFactory.signin_card(card)
-```
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=245-256)]
 
 ---
 
 ## Send an Adaptive Card
-Adaptive Card and MessageFactory are used to send rich messages including texts, images, video, audio and files to communicate with users. However, there are some differences between them. 
+Adaptive Card and MessageFactory are used to send rich messages including texts, images, video, audio and files to communicate with users. However, there are some differences between them.
 
-First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Framework SDK to automate creation steps for you, and supported by most channels. 
+First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Framework SDK to automate creation steps for you, and supported by most channels.
 
-Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment. 
+Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment.
 
 To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/designer/">Adaptive Cards Designer</a>.
 
-To use adaptive cards, be sure to add the `AdaptiveCards` NuGet package. 
-
+To use adaptive cards, be sure to add the `AdaptiveCards` NuGet package.
 
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
@@ -295,10 +242,8 @@ Here, the Adaptive card is stored in it's own file and included in our bot:
 
 The card is created as follows:
 
-**dialogs/mainDialog.js**  
-
+**dialogs/mainDialog.js**
 [!code-javascript[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=6)]
-
 [!code-javascript[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=170-172)]
 
 ### [Python](#tab/python)
@@ -306,19 +251,12 @@ The card is created as follows:
 The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
 
 **dialogs/resources/adaptive_card_example.py**
-[!code-python[adaptive cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/resources/adaptive_card_example.py)]
+[!code-python[adaptive cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/resources/adaptive_card_example.py)]
 
 The card is created as follows:
 
 **bots/main_dialog.py**
-
-<!-- replaced with this when it works:  
-[!code-python[adaptive cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/main_dialog.py?range=127-128)] -->
-
-```python
-def create_adaptive_card(self) -> Attachment:
-  return CardFactory.adaptive_card(ADAPTIVE_CARD_CONTENT)
-```
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=127-128)]
 
 ---
 
@@ -360,36 +298,15 @@ To send a carousel of cards, send a reply with the attachments as an array and t
 
 The source code shown here is based on [Python cards sample](https://aka.ms/bot-cards-python-sample-code).
 
-First, create the attachments.
+To send a carousel of cards, send a reply with the attachments as an array and the layout type defined as `Carousel`:
 
 **dialogs/main_dialog.py**
-
-<!-- replaced with this when it works:  
-[!code-python[hero cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/main_dialog.py?range=104-112)] -->
-
-```python
-reply.attachment_layout = AttachmentLayoutTypes.carousel
-reply.attachments.append(self.create_adaptive_card())
-reply.attachments.append(self.create_animation_card())
-reply.attachments.append(self.create_audio_card())
-reply.attachments.append(self.create_hero_card())
-reply.attachments.append(self.create_receipt_card())
-reply.attachments.append(self.create_signin_card())
-reply.attachments.append(self.create_thumbnail_card())
-reply.attachments.append(self.create_video_card())
-```
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=104-112)]
 
 Once the attachments are added, you can send the reply.
 
 **dialogs/main_dialog.py**
-
-<!-- replaced with this when it works:  
-[!code-python[hero cards](~/../botbuilder-python/samples/python/06.using-cards/dialogs/main_dialog.py?range=114-115)] -->
-
-```python
-# Send the card(s) to the user as an attachment to the activity
-  await step_context.context.send_activity(reply)
-```
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=114-115)]
 
 ---
 
@@ -438,74 +355,86 @@ We first added text input and button functionality to the existing adaptive card
 Note that the input field is labeled "text" so our adaptive card will attach comment text data as Value.[text.]
 
 ### [C#](#tab/csharp)
-Our validator uses Newtonsoft.json to first convert this to a JObject, 
+
+Our validator uses Newtonsoft.json to first convert this to a JObject,
 and then create a trimmed text string for comparison. So add:
-  ```csharp
-  using Newtonsoft.Json.Linq;
-  ```
+
+```csharp
+using System;
+using System.Linq;
+using Newtonsoft.Json.Linq;
+```
+
 to MainDialog.cs and install the latest stable nuget package of Newtonsoft.Json.
-In the validator code we added the logic flow into the code comments. 
+In the validator code we added the logic flow into the code comments.
 This ChoiceValidator() code is placed into the 06.using-cards sample just after the closed brace public for declaration of MainDialog:
 
 ```csharp
 private async Task ChoiceValidator(
-  PromptValidatorContext promptContext,
-  CancellationToken cancellationToken)
-  {
+    PromptValidatorContext promptContext,
+    CancellationToken cancellationToken)
+{
     // Retrieves Adaptive Card comment text as JObject.
     // looks for JObject field "text" and converts that input into a trimmed text string.
     var jobject = promptContext.Context.Activity.Value as JObject;
     var jtoken = jobject?["text"];
     var text = jtoken?.Value().Trim();
+
     // Logic: 1. if succeeded = true, just return promptContext
     //        2. if false, see if JObject contained Adaptive Card input.
     //               No = (bad input) return promptContext
     //               Yes = update Value field with JObject text string, return "true".
     if (!promptContext.Recognized.Succeeded && text != null)
     {
-       var choice = promptContext.Options.Choices.FirstOrDefault(
-       c => c.Value.Equals(text, StringComparison.InvariantCultureIgnoreCase));
-       if (choice != null)
-       {
-           promptContext.Recognized.Value = new FoundChoice
+        var choice = promptContext.Options.Choices.FirstOrDefault(
+        c => c.Value.Equals(text, StringComparison.InvariantCultureIgnoreCase));
+        if (choice != null)
+        {
+            promptContext.Recognized.Value = new FoundChoice
             {
-               Value = choice.Value,
-             };
+                Value = choice.Value,
+            };
             return true;
-       }
+        }
     }
     return promptContext.Recognized.Succeeded;
-  }
+}
 ```
 
 Now above in the MainDialog declaration change:
-  ```csharp
-  // Define the main dialog and its related components.
-  AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
-  ```
+
+```csharp
+// Define the main dialog and its related components.
+AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
+```
+
 to:
-  ```csharp
-  // Define the main dialog and its related components.
-  AddDialog(new ChoicePrompt(nameof(ChoicePrompt), ChoiceValidator));
-  ```
+
+```csharp
+// Define the main dialog and its related components.
+AddDialog(new ChoicePrompt(nameof(ChoicePrompt), ChoiceValidator));
+```
+
 This will invoke your validator to look for Adaptive Card input each time a new ChoicePrompt is created.
 
 ### [JavaScript](#tab/javascript)
+
 Open mainDialog.js and find the run method _async run(turnContext, accessor)_
 This method handles incoming activity.
 Just after the call _dialogSet.add(this);_ add the following:
+
 ```JavaScript
-  // The following check looks for a non-existant text input
-  // plus Adaptive Card input in _activity.value.text
-  // If both conditions exist, the Activity Card text 
-  // is copied into the text input field.
-  if(turnContext._activity.text == null
-      && turnContext._activity.value.text != null)
-   {
-      this.logger.log('replacing null text with Activity Card text input');
-      turnContext._activity.text = turnContext._activity.value.text;
-   }
+// The following check looks for a non-existant text input
+// plus Adaptive Card input in _activity.value.text
+// If both conditions exist, the Activity Card text
+// is copied into the text input field.
+if(turnContext._activity.text == null
+    && turnContext._activity.value.text != null) {
+    this.logger.log('replacing null text with Activity Card text input');
+    turnContext._activity.text = turnContext._activity.value.text;
+  }
 ```
+
 If this check finds a non-existent text input from the client, it looks to see if there is input from an Adaptive Card.
 If an Adaptive Card input exists at \_activity.value.text, it copies this into the normal text input field.
 

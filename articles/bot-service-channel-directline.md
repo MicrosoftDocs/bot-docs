@@ -33,6 +33,6 @@ Over time these offerings will be simplified.
 | VNET | No | Preview | No |
 
 
-## Addtional resources
+## Additional resources
 - [Connect a bot to Direct Line](bot-service-channel-connect-directline.md)
 - [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md)

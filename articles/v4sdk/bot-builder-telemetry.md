@@ -187,7 +187,7 @@ When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.B
         this.TelemetryClient = telemetryClient;
         ...
     }
-        ```
+    ```
 
 > [!TIP] 
 > If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) if you run into any problems.
