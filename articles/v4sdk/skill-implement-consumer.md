@@ -240,7 +240,7 @@ This sample has a helper method for forwarding activities to a skill. It saves c
 
 [!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=119-131)]
 
-Of note, the root bot includes logic for handling messages from the user and `endOfConversation` activities from the skill.
+Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
 [!code-javascript[message/end-of-conversation handlers](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=32-94)]
 
@@ -257,7 +257,7 @@ This sample has a helper method for forwarding activities to a skill. It saves c
 
 [!code-python[Send to skill](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=111-124)]
 
-Of note, the root bot includes logic for handling messages from the user and `endOfConversation` activities from the skill.
+Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
 [!code-python[Handled activities](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=39-100)]
 
