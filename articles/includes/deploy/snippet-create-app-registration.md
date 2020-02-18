@@ -1,4 +1,9 @@
-Registering the application means that you can use Azure AD to authenticate users and request access to user resources. Your bot requires a Registered app in Azure that provides the bot access to the Bot Framework Service for sending and receiving authenticated messages. To create register an app via the Azure CLI, perform the following command:
+In this step you create an Azure Active Directory application, which will allow:
+
+- The user to interact with the bot via a set of channels such as *Web Chat*.
+- The definition of *OAuth Connection Settings* to authenticate a user and to create a *token* used by the bot to access protected resources on behalf of the user.
+
+To create an Azure Active Directory application, execute the following command:
 
 ```cmd
 az ad app create --display-name "displayName" --password "AtLeastSixteenCharacters_0" --available-to-other-tenants
@@ -6,14 +11,9 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 
 | Option   | Description |
 |:---------|:------------|
-| display-name | The display name of the application. |
-| password | App password, aka 'client secret'. The password must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, and contain at least 1 special character.|
-| available-to-other-tenants| Indicates whether the application can be used from any Azure AD tenant. Set to `true` to enable your bot to work with the Azure Bot Service channels.|
+| display-name | The display name of the application. It is listed in the Azure portal in the general resources list and in the resource group it belongs.|
+| password | The password, also known as **client secret**, for the application. This is a password you create for this resource. It must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, and contain at least 1 special character.|
+| available-to-other-tenants| Indicates that the application can be used from any Azure AD tenant. Set this to enable your bot to work with the Azure Bot Service channels.|
 
-The above command outputs JSON with the key `appId`, save the value of this key for the ARM deployment, where it will be used for the `appId` parameter. The password provided will be used for the `appSecret` parameter.
-
-> [!NOTE] 
-> If you would like to use an existing App registration you can use the command:
-> ``` cmd
-> az bot create --kind webapp --resource-group "<name-of-resource-group>" --name "<name-of-web-app>" --appid "<existing-app-id>" --password "<existing-app-password>" --lang <Javascript|Csharp>
-> ```
+The above command outputs JSON with the key `appId`, copy and save it.
+You are going to use this `appId` and the password you entered in the ARM deployment step, to assign values to the `appId` and the `appSecret` parameters, respectively.
