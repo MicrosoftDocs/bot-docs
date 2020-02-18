@@ -55,7 +55,7 @@ All new features and capabilities are developed exclusively on [Bot Framework SD
 We highly recommend that you start migrating your V3 bots to V4. In order to support this migration we have produced migration documentation and will provide extended support for migration initiatives (via standard channels such as Stack Overflow and Microsoft Customer Support).
 
 For more information please refer to the following references:
-* [Essential Migration Guidance](https://aka.ms/bfv3v4migration)
+* [Essential Migration Guidance](https://aka.ms/bf-migration-overview)
 * Primary V4 Repositories to develop Bot Framework bots
   * [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
   * [Botbuilder for JS](https://github.com/microsoft/botbuilder-js) 
