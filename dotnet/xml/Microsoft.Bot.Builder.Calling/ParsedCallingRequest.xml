@@ -1,4 +1,4 @@
-﻿<Type Name="ParsedCallingRequest" FullName="Microsoft.Bot.Builder.Calling.ParsedCallingRequest">
+<Type Name="ParsedCallingRequest" FullName="Microsoft.Bot.Builder.Calling.ParsedCallingRequest">
   <TypeSignature Language="C#" Value="public class ParsedCallingRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParsedCallingRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ParsedCallingRequest" />

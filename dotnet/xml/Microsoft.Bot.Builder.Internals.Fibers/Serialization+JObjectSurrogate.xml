@@ -1,4 +1,4 @@
-﻿<Type Name="Serialization+JObjectSurrogate" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+JObjectSurrogate">
+<Type Name="Serialization+JObjectSurrogate" FullName="Microsoft.Bot.Builder.Internals.Fibers.Serialization+JObjectSurrogate">
   <TypeSignature Language="C#" Value="public sealed class Serialization.JObjectSurrogate : Microsoft.Bot.Builder.Internals.Fibers.Serialization.ISurrogateProvider, System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Serialization/JObjectSurrogate extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.Serialization/ISurrogateProvider, class System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Serialization.JObjectSurrogate" />

@@ -1,0 +1,155 @@
+<Type Name="MessageActionsPayloadConversation" FullName="Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation">
+  <TypeSignature Language="C#" Value="public class MessageActionsPayloadConversation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageActionsPayloadConversation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageActionsPayloadConversation" />
+  <TypeSignature Language="F#" Value="type MessageActionsPayloadConversation = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a team or channel entity.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadConversation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadConversation
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayloadConversation (string conversationIdentityType = null, string id = null, string displayName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conversationIdentityType, string id, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional conversationIdentityType As String = null, Optional id As String = null, Optional displayName As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation : string * string * string -&gt; Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation" Usage="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation (conversationIdentityType, id, displayName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conversationIdentityType" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationIdentityType">The type of conversation,
+            whether a team or channel. Possible values include: 'team',
+            'channel'</param>
+        <param name="id">The id of the team or channel.</param>
+        <param name="displayName">The plaintext display name of the team or
+            channel entity.</param>
+        <summary>
+            Initializes a new instance of the MessageActionsPayloadConversation
+            class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationIdentityType">
+      <MemberSignature Language="C#" Value="public string ConversationIdentityType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConversationIdentityType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.ConversationIdentityType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationIdentityType As String" />
+      <MemberSignature Language="F#" Value="member this.ConversationIdentityType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.ConversationIdentityType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversationIdentityType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of conversation, whether a team or channel.
+            Possible values include: 'team', 'channel'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="displayName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the plaintext display name of the team or channel
+            entity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the id of the team or channel.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to Teams | Microsoft Docs
+title: Connect a bot to Teams - Bot Service
 description: Learn how to configure a bot for access through the Team.
 keywords: Teams, bot channel, configure Teams
 author: kamrani
@@ -33,4 +33,4 @@ After adding the Teams channel, go to the **Channels** page and click on **Get b
 
 
 ## Additional information
-For Microsoft Teams specific information, see Teams [documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/overview). 
+For Microsoft Teams specific information, see Teams [documentation](https://docs.microsoft.com/microsoftteams/platform/overview). 

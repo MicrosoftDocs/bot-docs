@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizeAttachment&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeAttachment&lt;T&gt;">
+<Type Name="RecognizeAttachment&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeAttachment&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class RecognizeAttachment&lt;T&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RecognizeAttachment`1&lt;class T&gt; extends Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeAttachment`1" />

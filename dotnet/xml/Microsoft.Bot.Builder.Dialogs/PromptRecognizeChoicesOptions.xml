@@ -1,4 +1,4 @@
-﻿<Type Name="PromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions">
+<Type Name="PromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions">
   <TypeSignature Language="C#" Value="public class PromptRecognizeChoicesOptions : Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptRecognizeChoicesOptions extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions, class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizeChoicesOptions" />

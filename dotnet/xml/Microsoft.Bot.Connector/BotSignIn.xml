@@ -1,4 +1,4 @@
-﻿<Type Name="BotSignIn" FullName="Microsoft.Bot.Connector.BotSignIn">
+<Type Name="BotSignIn" FullName="Microsoft.Bot.Connector.BotSignIn">
   <TypeSignature Language="C#" Value="public class BotSignIn : Microsoft.Bot.Connector.IBotSignIn, Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.OAuthClient&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotSignIn extends System.Object implements class Microsoft.Bot.Connector.IBotSignIn, class Microsoft.Rest.IServiceOperations`1&lt;class Microsoft.Bot.Connector.OAuthClient&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BotSignIn" />
@@ -9,6 +9,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.OAuthClient" />
@@ -69,6 +71,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.OAuthClient</ReturnType>
@@ -95,6 +98,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.String&gt;&gt;</ReturnType>

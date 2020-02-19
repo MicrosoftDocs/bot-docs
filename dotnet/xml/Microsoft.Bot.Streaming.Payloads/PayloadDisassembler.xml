@@ -1,0 +1,182 @@
+<Type Name="PayloadDisassembler" FullName="Microsoft.Bot.Streaming.Payloads.PayloadDisassembler">
+  <TypeSignature Language="C#" Value="public abstract class PayloadDisassembler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PayloadDisassembler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PayloadDisassembler" />
+  <TypeSignature Language="F#" Value="type PayloadDisassembler = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PayloadDisassembler (Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender sender, Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender sender, valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.#ctor(Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sender As IPayloadSender, id As Guid)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Payloads.PayloadDisassembler : Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender * Guid -&gt; Microsoft.Bot.Streaming.Payloads.PayloadDisassembler" Usage="new Microsoft.Bot.Streaming.Payloads.PayloadDisassembler (sender, id)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sender" Type="Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender" />
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisassembleAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DisassembleAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DisassembleAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.DisassembleAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.DisassembleAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="payloadDisassembler.DisassembleAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStreamAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.Payloads.StreamWrapper&gt; GetStreamAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.Payloads.StreamWrapper&gt; GetStreamAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.GetStreamAsync" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetStreamAsync () As Task(Of StreamWrapper)" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.Payloads.StreamWrapper&gt;" Usage="payloadDisassembler.GetStreamAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.Payloads.StreamWrapper&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStreamDescription">
+      <MemberSignature Language="C#" Value="protected static Microsoft.Bot.Streaming.Payloads.StreamDescription GetStreamDescription (Microsoft.Bot.Streaming.Payloads.ResponseMessageStream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class Microsoft.Bot.Streaming.Payloads.StreamDescription GetStreamDescription(class Microsoft.Bot.Streaming.Payloads.ResponseMessageStream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.GetStreamDescription(Microsoft.Bot.Streaming.Payloads.ResponseMessageStream)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetStreamDescription (stream As ResponseMessageStream) As StreamDescription" />
+      <MemberSignature Language="F#" Value="static member GetStreamDescription : Microsoft.Bot.Streaming.Payloads.ResponseMessageStream -&gt; Microsoft.Bot.Streaming.Payloads.StreamDescription" Usage="Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.GetStreamDescription stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.Payloads.StreamDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="Microsoft.Bot.Streaming.Payloads.ResponseMessageStream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected static void Serialize&lt;T&gt; (T item, out System.IO.MemoryStream stream, out int length);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void Serialize&lt;T&gt;(!!T item, [out] class System.IO.MemoryStream&amp; stream, [out] int32&amp; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.Serialize``1(``0,System.IO.MemoryStream@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub Serialize(Of T) (item As T, ByRef stream As MemoryStream, ByRef length As Integer)" />
+      <MemberSignature Language="F#" Value="static member Serialize : 'T * MemoryStream * int -&gt; unit" Usage="Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.Serialize (item, stream, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="stream" Type="System.IO.MemoryStream" RefType="out" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="item">To be added.</param>
+        <param name="stream">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serializer">
+      <MemberSignature Language="C#" Value="protected static Newtonsoft.Json.JsonSerializer Serializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Newtonsoft.Json.JsonSerializer Serializer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.Serializer" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Property Serializer As JsonSerializer" />
+      <MemberSignature Language="F#" Value="member this.Serializer : Newtonsoft.Json.JsonSerializer with get, set" Usage="Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.Serializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.JsonSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public abstract char Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.Type" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Type As Char" />
+      <MemberSignature Language="F#" Value="member this.Type : char" Usage="Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

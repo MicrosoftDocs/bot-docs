@@ -1,4 +1,4 @@
-﻿<Type Name="MultiPartConstants" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants">
+<Type Name="MultiPartConstants" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants">
   <TypeSignature Language="C#" Value="public static class MultiPartConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MultiPartConstants extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.MultiPartConstants" />

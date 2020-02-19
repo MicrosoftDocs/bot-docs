@@ -1,4 +1,4 @@
-﻿<Type Name="AttachmentView" FullName="Microsoft.Bot.Connector.AttachmentView">
+<Type Name="AttachmentView" FullName="Microsoft.Bot.Connector.AttachmentView">
   <TypeSignature Language="C#" Value="public class AttachmentView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentView extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentView" />

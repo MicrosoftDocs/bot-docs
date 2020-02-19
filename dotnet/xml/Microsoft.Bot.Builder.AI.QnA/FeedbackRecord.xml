@@ -1,4 +1,4 @@
-﻿<Type Name="FeedbackRecord" FullName="Microsoft.Bot.Builder.AI.QnA.FeedbackRecord">
+<Type Name="FeedbackRecord" FullName="Microsoft.Bot.Builder.AI.QnA.FeedbackRecord">
   <TypeSignature Language="C#" Value="public class FeedbackRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FeedbackRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.FeedbackRecord" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Active learning feedback record
+            Active learning feedback record.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -56,9 +59,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            QnA Id
+            Gets or sets the QnA Id.
             </summary>
-        <value>To be added.</value>
+        <value>the qnaMaker id.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -83,9 +87,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            User id
+            Gets or sets the user id.
             </summary>
-        <value>To be added.</value>
+        <value>the user id.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -110,9 +115,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            User question
+            Gets or sets the user question.
             </summary>
-        <value>To be added.</value>
+        <value>the user question.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

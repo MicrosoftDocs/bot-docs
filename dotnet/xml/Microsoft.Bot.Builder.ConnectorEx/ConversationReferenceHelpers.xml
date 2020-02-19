@@ -1,4 +1,4 @@
-﻿<Type Name="ConversationReferenceHelpers" FullName="Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers">
+<Type Name="ConversationReferenceHelpers" FullName="Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers">
   <TypeSignature Language="C#" Value="public sealed class ConversationReferenceHelpers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConversationReferenceHelpers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ConversationReferenceHelpers" />

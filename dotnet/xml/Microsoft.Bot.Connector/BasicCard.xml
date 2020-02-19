@@ -1,4 +1,4 @@
-﻿<Type Name="BasicCard" FullName="Microsoft.Bot.Connector.BasicCard">
+<Type Name="BasicCard" FullName="Microsoft.Bot.Connector.BasicCard">
   <TypeSignature Language="C#" Value="public class BasicCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.BasicCard" />

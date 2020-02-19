@@ -1,4 +1,4 @@
-﻿<Type Name="Channel+Channels" FullName="Microsoft.Bot.Builder.Dialogs.Choices.Channel+Channels">
+<Type Name="Channel+Channels" FullName="Microsoft.Bot.Builder.Dialogs.Choices.Channel+Channels">
   <TypeSignature Language="C#" Value="public class Channel.Channels : Microsoft.Bot.Connector.Channels" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Channel/Channels extends Microsoft.Bot.Connector.Channels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.Channel.Channels" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

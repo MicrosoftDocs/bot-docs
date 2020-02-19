@@ -1,4 +1,4 @@
-﻿<Type Name="IDialogTaskManager" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager">
+<Type Name="IDialogTaskManager" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager">
   <TypeSignature Language="C#" Value="public interface IDialogTaskManager : Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogTaskManager implements class Microsoft.Bot.Builder.Dialogs.Internals.IDialogTasks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTaskManager" />

@@ -1,4 +1,4 @@
-﻿<Type Name="ReplayTranscript" FullName="Microsoft.Bot.Builder.History.ReplayTranscript">
+<Type Name="ReplayTranscript" FullName="Microsoft.Bot.Builder.History.ReplayTranscript">
   <TypeSignature Language="C#" Value="public sealed class ReplayTranscript" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReplayTranscript extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.ReplayTranscript" />

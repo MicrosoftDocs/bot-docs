@@ -1,0 +1,92 @@
+<Type Name="TaskModuleContinueResponse" FullName="Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse">
+  <TypeSignature Language="C#" Value="public class TaskModuleContinueResponse : Microsoft.Bot.Schema.Teams.TaskModuleResponseBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskModuleContinueResponse extends Microsoft.Bot.Schema.Teams.TaskModuleResponseBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskModuleContinueResponse&#xA;Inherits TaskModuleResponseBase" />
+  <TypeSignature Language="F#" Value="type TaskModuleContinueResponse = class&#xA;    inherit TaskModuleResponseBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Schema.Teams.TaskModuleResponseBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Task Module Response with continue action.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskModuleContinueResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the TaskModuleContinueResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskModuleContinueResponse (Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo value = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse.#ctor(Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional value As TaskModuleTaskInfo = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse : Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo -&gt; Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse" Usage="new Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">The JSON for the Adaptive card to appear in the
+            task module.</param>
+        <summary>
+            Initializes a new instance of the TaskModuleContinueResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As TaskModuleTaskInfo" />
+      <MemberSignature Language="F#" Value="member this.Value : Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo with get, set" Usage="Microsoft.Bot.Schema.Teams.TaskModuleContinueResponse.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the JSON for the Adaptive card to appear in the task
+            module.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

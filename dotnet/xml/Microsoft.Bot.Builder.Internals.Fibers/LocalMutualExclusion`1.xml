@@ -1,4 +1,4 @@
-﻿<Type Name="LocalMutualExclusion&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion&lt;T&gt;">
+<Type Name="LocalMutualExclusion&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class LocalMutualExclusion&lt;T&gt; : Microsoft.Bot.Builder.Internals.Fibers.IScope&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalMutualExclusion`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IScope`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion`1" />
@@ -88,7 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetReferenceCount(!T item, [out] int32&amp; referenceCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion`1.TryGetReferenceCount(`0,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetReferenceCount (item As T, ByRef referenceCount As Integer) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryGetReferenceCount : 'T *  -&gt; bool" Usage="localMutualExclusion.TryGetReferenceCount (item, referenceCount)" />
+      <MemberSignature Language="F#" Value="member this.TryGetReferenceCount : 'T * int -&gt; bool" Usage="localMutualExclusion.TryGetReferenceCount (item, referenceCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

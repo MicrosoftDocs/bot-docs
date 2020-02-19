@@ -1,4 +1,4 @@
-﻿<Type Name="MessageOptions" FullName="Microsoft.Bot.Builder.Dialogs.MessageOptions">
+<Type Name="MessageOptions" FullName="Microsoft.Bot.Builder.Dialogs.MessageOptions">
   <TypeSignature Language="C#" Value="public class MessageOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.MessageOptions" />

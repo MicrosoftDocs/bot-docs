@@ -1,4 +1,4 @@
-﻿<Type Name="FindChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions">
+<Type Name="FindChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions">
   <TypeSignature Language="C#" Value="public class FindChoicesOptions : Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FindChoicesOptions extends Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,7 +59,13 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("noAction")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -86,7 +94,13 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("noValue")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

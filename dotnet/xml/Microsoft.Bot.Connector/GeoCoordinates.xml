@@ -1,4 +1,4 @@
-﻿<Type Name="GeoCoordinates" FullName="Microsoft.Bot.Connector.GeoCoordinates">
+<Type Name="GeoCoordinates" FullName="Microsoft.Bot.Connector.GeoCoordinates">
   <TypeSignature Language="C#" Value="public class GeoCoordinates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoCoordinates extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.GeoCoordinates" />

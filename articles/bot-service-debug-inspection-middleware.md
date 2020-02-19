@@ -1,5 +1,5 @@
 ---
-title: Debug a bot with inspection middleware | Microsoft Docs
+title: Debug a bot with inspection middleware - Bot Service
 description: Learn how to debug a bot with inspection middleware
 author: zxyanliu
 ms.author: v-liyan
@@ -13,7 +13,7 @@ ms.date: 11/01/2019
 # Debug a bot with inspection middleware
 This article describes how to debug your bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot in addition to looking at the current state of the bot. You can use a trace message to send data to the emulator and then inspect the state of your bot in any given turn of the conversation. 
 
-We use an EchoBot built locally using the Bot Framework v4 ([C#](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0) | [JavaScript](https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0)) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection) and [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection). 
+We use an EchoBot built locally using the Bot Framework v4 ([C#](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0) | [JavaScript](https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0) | [Python](https://docs.microsoft.com/azure/bot-service/python/bot-builder-python-quickstart?view=azure-bot-service-4.0)) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection). 
 
 ## Prerequisites
 - Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
@@ -61,6 +61,24 @@ Update the bot class in the **bot.js** file.
 
 [!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-50)]
 
+# [Python](#tab/python)
+Before updating your bot's code run install the necessary PyPI packages by running the following commands in a terminal:
+```cmd
+pip install aiohttp
+pip install botbuilder-core>=4.7.0
+```
+Set up the inspection state in the **app.py** file by adding a middleware to the adapter.
+
+**app.py**
+
+[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=75-84)]
+
+Update the bot class in the **echo_bot.py** file.
+
+**bots/echo_bot.py** 
+
+[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/bots/echo_bot.py?range=16-64)]
+
 ---
 
 ## Test your bot locally 
@@ -78,6 +96,11 @@ dotnet run
 
 ```cmd
 npm start 
+```
+
+# [Python](#tab/python)
+```cmd
+python app.py
 ```
 
 ---

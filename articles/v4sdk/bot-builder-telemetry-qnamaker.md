@@ -1,5 +1,5 @@
 ---
-title: Add telemetry to your QnA bot | Microsoft Docs
+title: Add telemetry to your QnA bot - Bot Service
 description: Learn how to integrate the new telemetry features into your QnA Maker enabled bot.
 keywords: telemetry, appinsights, Application Insights, monitor bot, QnA Maker
 author: WashingtonKayaker

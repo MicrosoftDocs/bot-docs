@@ -1,4 +1,4 @@
-﻿<Type Name="ICalendarPlus" FullName="Microsoft.Bot.Builder.Luis.ICalendarPlus">
+<Type Name="ICalendarPlus" FullName="Microsoft.Bot.Builder.Luis.ICalendarPlus">
   <TypeSignature Language="C#" Value="public interface ICalendarPlus" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICalendarPlus" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.ICalendarPlus" />

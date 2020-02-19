@@ -1,0 +1,142 @@
+<Type Name="SendOperations" FullName="Microsoft.Bot.Streaming.Payloads.SendOperations">
+  <TypeSignature Language="C#" Value="public class SendOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SendOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Payloads.SendOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class SendOperations" />
+  <TypeSignature Language="F#" Value="type SendOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendOperations (Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender payloadSender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender payloadSender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.SendOperations.#ctor(Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (payloadSender As IPayloadSender)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Payloads.SendOperations : Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender -&gt; Microsoft.Bot.Streaming.Payloads.SendOperations" Usage="new Microsoft.Bot.Streaming.Payloads.SendOperations payloadSender" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="payloadSender" Type="Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender" />
+      </Parameters>
+      <Docs>
+        <param name="payloadSender">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCancelAllAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendCancelAllAsync (Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendCancelAllAsync(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.SendOperations.SendCancelAllAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendCancelAllAsync (id As Guid) As Task" />
+      <MemberSignature Language="F#" Value="member this.SendCancelAllAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="sendOperations.SendCancelAllAsync id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCancelStreamAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendCancelStreamAsync (Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendCancelStreamAsync(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.SendOperations.SendCancelStreamAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendCancelStreamAsync (id As Guid) As Task" />
+      <MemberSignature Language="F#" Value="member this.SendCancelStreamAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="sendOperations.SendCancelStreamAsync id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendRequestAsync (Guid id, Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendRequestAsync(valuetype System.Guid id, class Microsoft.Bot.Streaming.StreamingRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.SendOperations.SendRequestAsync(System.Guid,Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SendRequestAsync : Guid * Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sendOperations.SendRequestAsync (id, request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.StreamingRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="request">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendResponseAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendResponseAsync (Guid id, Microsoft.Bot.Streaming.StreamingResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendResponseAsync(valuetype System.Guid id, class Microsoft.Bot.Streaming.StreamingResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.SendOperations.SendResponseAsync(System.Guid,Microsoft.Bot.Streaming.StreamingResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendResponseAsync (id As Guid, response As StreamingResponse) As Task" />
+      <MemberSignature Language="F#" Value="member this.SendResponseAsync : Guid * Microsoft.Bot.Streaming.StreamingResponse -&gt; System.Threading.Tasks.Task" Usage="sendOperations.SendResponseAsync (id, response)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+        <Parameter Name="response" Type="Microsoft.Bot.Streaming.StreamingResponse" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

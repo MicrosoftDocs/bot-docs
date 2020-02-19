@@ -1,0 +1,148 @@
+<Type Name="ListElement" FullName="Microsoft.Bot.Builder.AI.LuisV3.ListElement">
+  <TypeSignature Language="C#" Value="public class ListElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.LuisV3.ListElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListElement" />
+  <TypeSignature Language="F#" Value="type ListElement = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines a sub-list to append to an existing list entity.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.ListElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.ListElement" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListElement (string canonicalForm, System.Collections.Generic.IList&lt;string&gt; synonyms = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string canonicalForm, class System.Collections.Generic.IList`1&lt;string&gt; synonyms) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.ListElement.#ctor(System.String,System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (canonicalForm As String, Optional synonyms As IList(Of String) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.LuisV3.ListElement : string * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Bot.Builder.AI.LuisV3.ListElement" Usage="new Microsoft.Bot.Builder.AI.LuisV3.ListElement (canonicalForm, synonyms)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="canonicalForm" Type="System.String" />
+        <Parameter Name="synonyms" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="canonicalForm">The canonical form of the sub-list.</param>
+        <param name="synonyms">The synonyms of the canonical form.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.ListElement" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanonicalForm">
+      <MemberSignature Language="C#" Value="public string CanonicalForm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CanonicalForm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.ListElement.CanonicalForm" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanonicalForm As String" />
+      <MemberSignature Language="F#" Value="member this.CanonicalForm : string with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.ListElement.CanonicalForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="canonicalForm")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the canonical form of the sub-list.
+            </summary>
+        <value>
+            The canonical form of the sub-list.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synonyms">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; Synonyms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; Synonyms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.ListElement.Synonyms" />
+      <MemberSignature Language="VB.NET" Value="Public Property Synonyms As IList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Synonyms : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.LuisV3.ListElement.Synonyms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="synonyms")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the synonyms of the canonical form.
+            </summary>
+        <value>
+            The synonyms of the canonical form.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.ListElement.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="listElement.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Validate the object.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if parameters are invalid.
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

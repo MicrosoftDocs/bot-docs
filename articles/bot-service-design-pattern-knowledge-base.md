@@ -1,5 +1,5 @@
 ---
-title: Design knowledge bots | Microsoft Docs
+title: Design knowledge bots - Bot Service
 description: Learn about different ways to design a knowledge bot that finds and returns information in response to the user's input or query.
 author: matvelloso
 ms.author: mateusv
@@ -90,7 +90,7 @@ For example, you could filter the result set above to contain only items where *
 > Microsoft Bot Framework.
 > 
 > For the sake of simplicity, the example above shows a search index that is created using the Azure portal. 
-> Indices can also be created programatically.
+> Indices can also be created programmatically.
 
 ## QnA Maker
 

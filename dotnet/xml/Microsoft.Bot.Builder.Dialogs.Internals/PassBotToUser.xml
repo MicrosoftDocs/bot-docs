@@ -1,4 +1,4 @@
-﻿<Type Name="PassBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PassBotToUser">
+<Type Name="PassBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PassBotToUser">
   <TypeSignature Language="C#" Value="public sealed class PassBotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassBotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.PassBotToUser" />

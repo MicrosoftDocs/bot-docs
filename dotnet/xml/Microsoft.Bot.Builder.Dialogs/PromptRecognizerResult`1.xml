@@ -1,4 +1,4 @@
-﻿<Type Name="PromptRecognizerResult&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;">
+<Type Name="PromptRecognizerResult&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class PromptRecognizerResult&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PromptRecognizerResult`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -40,12 +41,37 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1" /> class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowInterruption">
+      <MemberSignature Language="C#" Value="public bool AllowInterruption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowInterruption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1.AllowInterruption" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowInterruption As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowInterruption : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;'T&gt;.AllowInterruption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether flag indicating whether or not parent dialogs should be allowed to interrupt the prompt.
+            </summary>
+        <value>
+            The default value is `false`.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +89,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -89,6 +116,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

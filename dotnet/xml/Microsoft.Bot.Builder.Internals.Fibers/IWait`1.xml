@@ -1,4 +1,4 @@
-﻿<Type Name="IWait&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;">
+<Type Name="IWait&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;C&gt;">
   <TypeSignature Language="C#" Value="public interface IWait&lt;C&gt; : ICloneable, Microsoft.Bot.Builder.Internals.Fibers.IWait" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWait`1&lt;C&gt; implements class Microsoft.Bot.Builder.Internals.Fibers.IWait, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWait`1" />

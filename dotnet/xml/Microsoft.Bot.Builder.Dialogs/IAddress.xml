@@ -1,4 +1,4 @@
-﻿<Type Name="IAddress" FullName="Microsoft.Bot.Builder.Dialogs.IAddress">
+<Type Name="IAddress" FullName="Microsoft.Bot.Builder.Dialogs.IAddress">
   <TypeSignature Language="C#" Value="public interface IAddress" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAddress" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IAddress" />

@@ -1,4 +1,4 @@
-﻿<Type Name="InstallationUpdateActionTypes" FullName="Microsoft.Bot.Connector.InstallationUpdateActionTypes">
+<Type Name="InstallationUpdateActionTypes" FullName="Microsoft.Bot.Connector.InstallationUpdateActionTypes">
   <TypeSignature Language="C#" Value="public static class InstallationUpdateActionTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InstallationUpdateActionTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.InstallationUpdateActionTypes" />

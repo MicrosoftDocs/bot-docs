@@ -1,4 +1,4 @@
-﻿<Type Name="IEventConsumer&lt;Event&gt;" FullName="Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;">
+<Type Name="IEventConsumer&lt;Event&gt;" FullName="Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;">
   <TypeSignature Language="C#" Value="public interface IEventConsumer&lt;Event&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventConsumer`1&lt;Event&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Base.IEventConsumer`1" />
@@ -25,7 +25,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryPull([out] !Event&amp; event) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.IEventConsumer`1.TryPull(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryPull (ByRef event As Event) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member TryPull :  -&gt; bool" Usage="iEventConsumer.TryPull event" />
+      <MemberSignature Language="F#" Value="abstract member TryPull : 'Event -&gt; bool" Usage="iEventConsumer.TryPull event" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

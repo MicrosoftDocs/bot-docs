@@ -1,5 +1,5 @@
 ---
-title: Create data-driven experiences with Azure Search  | Microsoft Docs
+title: Create data-driven experiences with Azure Search (v3 C#) - Bot Service
 description: Learn how to create data-driven experiences with Azure Search and help users navigate large amounts of content in a bot with the Bot Framework SDK for .NET and Azure Search.
 author: matthewshim-ms
 ms.author: kamrani

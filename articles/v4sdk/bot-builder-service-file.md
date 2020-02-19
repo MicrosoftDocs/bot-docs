@@ -1,5 +1,5 @@
 ---
-title: Create a bot using Bot Framework SDK for JavaScript | Microsoft Docs
+title: Create a bot using Bot Framework SDK for JavaScript - File - Bot Service
 description: Quickly create a bot using the Bot Framework SDK for JavaScript.
 keywords: quickstart, bot framework sdk, getting started
 author: jonathanfingold
@@ -10,6 +10,7 @@ ms.service: bot-service
 ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
+# Sample .bot file
 
 ```
 {

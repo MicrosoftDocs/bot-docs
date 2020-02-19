@@ -1,4 +1,4 @@
-﻿<Type Name="PromptException" FullName="Microsoft.Bot.Builder.Dialogs.PromptException">
+<Type Name="PromptException" FullName="Microsoft.Bot.Builder.Dialogs.PromptException">
   <TypeSignature Language="C#" Value="public abstract class PromptException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit PromptException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptException" />

@@ -1,4 +1,4 @@
-﻿<Type Name="Answer" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer">
+<Type Name="Answer" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer">
   <TypeSignature Language="C#" Value="public class Answer : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Answer extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Answer" />
