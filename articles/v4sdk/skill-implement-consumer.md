@@ -221,11 +221,11 @@ The root bot also defines a conversation state property accessor to track which 
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-csharp[Send to skill](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=125-139)]
+[!code-csharp[Send to skill](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=134-148)]
 
-Of note, the root bot includes logic for handling messages from the user and `endOfConversation` activities from the skill.
+Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-csharp[message/end-of-conversation handlers](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=57-112)]
+[!code-csharp[message/end-of-conversation handlers](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=57-121)]
 
 ### [JavaScript](#tab/js)
 
@@ -238,11 +238,11 @@ The root bot also defines a conversation state property accessor to track which 
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=108-120)]
+[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=119-131)]
 
-Of note, the root bot includes logic for handling messages from the user and `endOfConversation` activities from the skill.
+Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-javascript[message/end-of-conversation handlers](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=33-85)]
+[!code-javascript[message/end-of-conversation handlers](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=32-94)]
 
 ### [Python](#tab/python)
 
@@ -255,14 +255,13 @@ The root bot also defines a conversation state property accessor to track which 
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-python[Send to skill](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=104-117)]
+[!code-python[Send to skill](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=111-124)]
 
-Of note, the root bot includes logic for handling messages from the user and `endOfConversation` activities from the skill.
+Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-python[Handled activities](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=39-93)]
+[!code-python[Handled activities](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=39-100)]
 
 ---
-
 
 ## On turn error handler
 
