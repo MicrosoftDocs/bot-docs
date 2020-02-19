@@ -1,5 +1,5 @@
 ---
-title: Configure adaptive cards | Microsoft Docs
+title: Configure adaptive cards - Bot Service
 description: Learn how to configure adaptive cards.
 author: vkannan
 ms.author: kamrani

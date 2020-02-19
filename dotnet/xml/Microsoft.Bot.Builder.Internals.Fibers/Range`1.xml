@@ -1,4 +1,4 @@
-﻿<Type Name="Range&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;">
+<Type Name="Range&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;">
   <TypeSignature Language="C#" Value="public struct Range&lt;T&gt; : IComparable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt;, IEquatable&lt;Microsoft.Bot.Builder.Internals.Fibers.Range&lt;T&gt;&gt; where T : IEquatable&lt;T&gt;, IComparable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Range`1&lt;(class System.IEquatable`1&lt;!T&gt;, class System.IComparable`1&lt;!T&gt;) T&gt; extends System.ValueType implements class System.IComparable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!T&gt;&gt;, class System.IEquatable`1&lt;valuetype Microsoft.Bot.Builder.Internals.Fibers.Range`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.Range`1" />

@@ -1,4 +1,4 @@
-﻿<Type Name="IBinding" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinding">
+<Type Name="IBinding" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinding">
   <TypeSignature Language="C#" Value="public interface IBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IBinding" />

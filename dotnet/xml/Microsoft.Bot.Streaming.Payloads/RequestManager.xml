@@ -1,0 +1,114 @@
+<Type Name="RequestManager" FullName="Microsoft.Bot.Streaming.Payloads.RequestManager">
+  <TypeSignature Language="C#" Value="public class RequestManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Payloads.RequestManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestManager" />
+  <TypeSignature Language="F#" Value="type RequestManager = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.RequestManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestManager (System.Collections.Concurrent.ConcurrentDictionary&lt;Guid,System.Threading.Tasks.TaskCompletionSource&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&gt; responseTasks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Concurrent.ConcurrentDictionary`2&lt;valuetype System.Guid, class System.Threading.Tasks.TaskCompletionSource`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt;&gt; responseTasks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.RequestManager.#ctor(System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.Threading.Tasks.TaskCompletionSource{Microsoft.Bot.Streaming.ReceiveResponse}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (responseTasks As ConcurrentDictionary(Of Guid, TaskCompletionSource(Of ReceiveResponse)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Payloads.RequestManager : System.Collections.Concurrent.ConcurrentDictionary&lt;Guid, System.Threading.Tasks.TaskCompletionSource&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&gt; -&gt; Microsoft.Bot.Streaming.Payloads.RequestManager" Usage="new Microsoft.Bot.Streaming.Payloads.RequestManager responseTasks" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="responseTasks" Type="System.Collections.Concurrent.ConcurrentDictionary&lt;System.Guid,System.Threading.Tasks.TaskCompletionSource&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="responseTasks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponseAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; GetResponseAsync (Guid requestId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; GetResponseAsync(valuetype System.Guid requestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.RequestManager.GetResponseAsync(System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetResponseAsync : Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&#xA;override this.GetResponseAsync : Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="requestManager.GetResponseAsync (requestId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IRequestManager.GetResponseAsync(System.Guid,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestId" Type="System.Guid" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="requestId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignalResponseAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignalResponseAsync (Guid requestId, Microsoft.Bot.Streaming.ReceiveResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignalResponseAsync(valuetype System.Guid requestId, class Microsoft.Bot.Streaming.ReceiveResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.RequestManager.SignalResponseAsync(System.Guid,Microsoft.Bot.Streaming.ReceiveResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignalResponseAsync (requestId As Guid, response As ReceiveResponse) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SignalResponseAsync : Guid * Microsoft.Bot.Streaming.ReceiveResponse -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.SignalResponseAsync : Guid * Microsoft.Bot.Streaming.ReceiveResponse -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="requestManager.SignalResponseAsync (requestId, response)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IRequestManager.SignalResponseAsync(System.Guid,Microsoft.Bot.Streaming.ReceiveResponse)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestId" Type="System.Guid" />
+        <Parameter Name="response" Type="Microsoft.Bot.Streaming.ReceiveResponse" />
+      </Parameters>
+      <Docs>
+        <param name="requestId">To be added.</param>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

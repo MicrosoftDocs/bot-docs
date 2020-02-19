@@ -1,4 +1,4 @@
-﻿<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Scorables.Internals.Extensions">
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.Scorables.Internals.Extensions">
   <TypeSignature Language="C#" Value="public static class Extensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.Extensions" />
@@ -134,7 +134,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolve&lt;T&gt;(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, object tag, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve``1(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Object,``0@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryResolve(Of T) (resolver As IResolver, tag As Object, ByRef value As T) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryResolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * obj *  -&gt; bool" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve (resolver, tag, value)" />
+      <MemberSignature Language="F#" Value="static member TryResolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * obj * 'T -&gt; bool" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.TryResolve (resolver, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

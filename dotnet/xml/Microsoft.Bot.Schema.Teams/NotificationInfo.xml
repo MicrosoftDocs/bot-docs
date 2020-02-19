@@ -1,0 +1,92 @@
+<Type Name="NotificationInfo" FullName="Microsoft.Bot.Schema.Teams.NotificationInfo">
+  <TypeSignature Language="C#" Value="public class NotificationInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotificationInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.NotificationInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class NotificationInfo" />
+  <TypeSignature Language="F#" Value="type NotificationInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Specifies if a notification is to be sent for the mentions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.NotificationInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the NotificationInfo class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotificationInfo (Nullable&lt;bool&gt; alert = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; alert) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.NotificationInfo.#ctor(System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional alert As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.NotificationInfo : Nullable&lt;bool&gt; -&gt; Microsoft.Bot.Schema.Teams.NotificationInfo" Usage="new Microsoft.Bot.Schema.Teams.NotificationInfo alert" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="alert" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="alert">true if notification is to be sent to the user,
+            false otherwise.</param>
+        <summary>
+            Initializes a new instance of the NotificationInfo class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alert">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Alert { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Alert" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.NotificationInfo.Alert" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alert As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Alert : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.NotificationInfo.Alert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="alert")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets true if notification is to be sent to the user, false
+            otherwise.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

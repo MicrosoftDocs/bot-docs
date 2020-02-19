@@ -1,4 +1,4 @@
-﻿<Type Name="ChoiceOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome">
+<Type Name="ChoiceOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome">
   <TypeSignature Language="C#" Value="public class ChoiceOutcome" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChoiceOutcome extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ChoiceOutcome" />

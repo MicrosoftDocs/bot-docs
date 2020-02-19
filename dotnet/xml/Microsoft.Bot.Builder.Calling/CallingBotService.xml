@@ -1,4 +1,4 @@
-﻿<Type Name="CallingBotService" FullName="Microsoft.Bot.Builder.Calling.CallingBotService">
+<Type Name="CallingBotService" FullName="Microsoft.Bot.Builder.Calling.CallingBotService">
   <TypeSignature Language="C#" Value="public class CallingBotService : Microsoft.Bot.Builder.Calling.ICallingBotService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CallingBotService extends System.Object implements class Microsoft.Bot.Builder.Calling.ICallingBotService" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.CallingBotService" />
@@ -36,7 +36,8 @@
         <Parameter Name="settings" Type="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings" />
       </Parameters>
       <Docs>
-        <param name="settings"></param>
+        <param name="settings">
+        </param>
         <summary>
                 Instantiates CallingBotService using provided settings
             </summary>

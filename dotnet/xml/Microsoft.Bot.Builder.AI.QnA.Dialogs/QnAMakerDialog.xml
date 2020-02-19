@@ -1,0 +1,333 @@
+<Type Name="QnAMakerDialog" FullName="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog">
+  <TypeSignature Language="C#" Value="public class QnAMakerDialog : Microsoft.Bot.Builder.Dialogs.WaterfallDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QnAMakerDialog extends Microsoft.Bot.Builder.Dialogs.WaterfallDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class QnAMakerDialog&#xA;Inherits WaterfallDialog" />
+  <TypeSignature Language="F#" Value="type QnAMakerDialog = class&#xA;    inherit WaterfallDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.WaterfallDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            QnAMaker dialog which uses QnAMaker to get an answer.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerDialog (string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceFilePath, int32 sourceLineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional sourceFilePath As String = &quot;&quot;, Optional sourceLineNumber As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog : string * int -&gt; Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" Usage="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog (sourceFilePath, sourceLineNumber)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="sourceFilePath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="sourceLineNumber" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="sourceFilePath">To be added.</param>
+        <param name="sourceLineNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerDialog (string knowledgeBaseId, string endpointKey, string hostName, Microsoft.Bot.Schema.Activity noAnswer = null, float threshold = 0.3, string activeLearningCardTitle = &quot;Did you mean:&quot;, string cardNoMatchText = &quot;None of the above.&quot;, int top = 3, Microsoft.Bot.Schema.Activity cardNoMatchResponse = null, Microsoft.Bot.Builder.AI.QnA.Metadata[] strictFilters = null, System.Net.Http.HttpClient httpClient = null, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string knowledgeBaseId, string endpointKey, string hostName, class Microsoft.Bot.Schema.Activity noAnswer, float32 threshold, string activeLearningCardTitle, string cardNoMatchText, int32 top, class Microsoft.Bot.Schema.Activity cardNoMatchResponse, class Microsoft.Bot.Builder.AI.QnA.Metadata[] strictFilters, class System.Net.Http.HttpClient httpClient, string sourceFilePath, int32 sourceLineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.#ctor(System.String,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Single,System.String,System.String,System.Int32,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.QnA.Metadata[],System.Net.Http.HttpClient,System.String,System.Int32)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog : string * string * string * Microsoft.Bot.Schema.Activity * single * string * string * int * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.QnA.Metadata[] * System.Net.Http.HttpClient * string * int -&gt; Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" Usage="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog (knowledgeBaseId, endpointKey, hostName, noAnswer, threshold, activeLearningCardTitle, cardNoMatchText, top, cardNoMatchResponse, strictFilters, httpClient, sourceFilePath, sourceLineNumber)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="knowledgeBaseId" Type="System.String" />
+        <Parameter Name="endpointKey" Type="System.String" />
+        <Parameter Name="hostName" Type="System.String" />
+        <Parameter Name="noAnswer" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="threshold" Type="System.Single" />
+        <Parameter Name="activeLearningCardTitle" Type="System.String" />
+        <Parameter Name="cardNoMatchText" Type="System.String" />
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="cardNoMatchResponse" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="strictFilters" Type="Microsoft.Bot.Builder.AI.QnA.Metadata[]" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="sourceFilePath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="sourceLineNumber" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="knowledgeBaseId">To be added.</param>
+        <param name="endpointKey">To be added.</param>
+        <param name="hostName">To be added.</param>
+        <param name="noAnswer">To be added.</param>
+        <param name="threshold">To be added.</param>
+        <param name="activeLearningCardTitle">To be added.</param>
+        <param name="cardNoMatchText">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="cardNoMatchResponse">To be added.</param>
+        <param name="strictFilters">To be added.</param>
+        <param name="httpClient">To be added.</param>
+        <param name="sourceFilePath">To be added.</param>
+        <param name="sourceLineNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="qnAMakerDialog.BeginDialogAsync (dc, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultThreshold">
+      <MemberSignature Language="C#" Value="protected const float DefaultThreshold = 0.3;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal float32 DefaultThreshold = (0.3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.DefaultThreshold" />
+      <MemberSignature Language="VB.NET" Value="Protected Const DefaultThreshold As Single  = 0.3" />
+      <MemberSignature Language="F#" Value="val mutable DefaultThreshold : single" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.DefaultThreshold" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <MemberValue>0.3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTopN">
+      <MemberSignature Language="C#" Value="protected const int DefaultTopN = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal int32 DefaultTopN = (3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.DefaultTopN" />
+      <MemberSignature Language="VB.NET" Value="Protected Const DefaultTopN As Integer  = 3" />
+      <MemberSignature Language="F#" Value="val mutable DefaultTopN : int" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.DefaultTopN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQnAMakerClientAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt; GetQnAMakerClientAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt; GetQnAMakerClientAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.GetQnAMakerClientAsync(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetQnAMakerClientAsync (dc As DialogContext) As Task(Of IQnAMakerClient)" />
+      <MemberSignature Language="F#" Value="abstract member GetQnAMakerClientAsync : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt;&#xA;override this.GetQnAMakerClientAsync : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt;" Usage="qnAMakerDialog.GetQnAMakerClientAsync dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQnAMakerOptionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt; GetQnAMakerOptionsAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt; GetQnAMakerOptionsAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.GetQnAMakerOptionsAsync(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetQnAMakerOptionsAsync (dc As DialogContext) As Task(Of QnAMakerOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GetQnAMakerOptionsAsync : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt;&#xA;override this.GetQnAMakerOptionsAsync : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt;" Usage="qnAMakerDialog.GetQnAMakerOptionsAsync dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQnAResponseOptionsAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt; GetQnAResponseOptionsAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt; GetQnAResponseOptionsAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.GetQnAResponseOptionsAsync(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetQnAResponseOptionsAsync (dc As DialogContext) As Task(Of QnADialogResponseOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GetQnAResponseOptionsAsync : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt;&#xA;override this.GetQnAResponseOptionsAsync : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt;" Usage="qnAMakerDialog.GetQnAResponseOptionsAsync dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpClient">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpClient HttpClient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpClient HttpClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.HttpClient" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpClient As HttpClient" />
+      <MemberSignature Language="F#" Value="member this.HttpClient : System.Net.Http.HttpClient with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.HttpClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="protected const string Options;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal string Options" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Options" />
+      <MemberSignature Language="VB.NET" Value="Protected Const Options As String " />
+      <MemberSignature Language="F#" Value="val mutable Options : string" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Options" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousQnAId">
+      <MemberSignature Language="C#" Value="protected const string PreviousQnAId;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal string PreviousQnAId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.PreviousQnAId" />
+      <MemberSignature Language="VB.NET" Value="Protected Const PreviousQnAId As String " />
+      <MemberSignature Language="F#" Value="val mutable PreviousQnAId : string" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.PreviousQnAId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QnAContextData">
+      <MemberSignature Language="C#" Value="protected const string QnAContextData;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal string QnAContextData" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.QnAContextData" />
+      <MemberSignature Language="VB.NET" Value="Protected Const QnAContextData As String " />
+      <MemberSignature Language="F#" Value="val mutable QnAContextData : string" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.QnAContextData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

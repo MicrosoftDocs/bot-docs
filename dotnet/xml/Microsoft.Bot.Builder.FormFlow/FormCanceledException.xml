@@ -1,4 +1,4 @@
-﻿<Type Name="FormCanceledException" FullName="Microsoft.Bot.Builder.FormFlow.FormCanceledException">
+<Type Name="FormCanceledException" FullName="Microsoft.Bot.Builder.FormFlow.FormCanceledException">
   <TypeSignature Language="C#" Value="public class FormCanceledException : OperationCanceledException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormCanceledException extends System.OperationCanceledException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.FormCanceledException" />

@@ -1,5 +1,5 @@
 ---
-title: Develop DirectLine Speech Bot | Microsoft Docs
+title: Develop DirectLine Speech Bot - Bot Service
 description: Develop DirectLine Speech Bot
 keywords: develop Direct Line speech bot, speech bot
 author: ivorb

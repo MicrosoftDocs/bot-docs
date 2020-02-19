@@ -1,4 +1,4 @@
-﻿<Type Name="IInstallationUpdateActivity" FullName="Microsoft.Bot.Connector.IInstallationUpdateActivity">
+<Type Name="IInstallationUpdateActivity" FullName="Microsoft.Bot.Connector.IInstallationUpdateActivity">
   <TypeSignature Language="C#" Value="public interface IInstallationUpdateActivity : Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstallationUpdateActivity implements class Microsoft.Bot.Connector.IActivity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IInstallationUpdateActivity" />

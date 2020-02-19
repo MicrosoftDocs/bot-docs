@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to Skype | Microsoft Docs
+title: Connect a bot to Skype - Bot Service
 description: Learn how to configure a bot for access through the Skype interface.
 keywords: skype, bot channels, configure skype, publish, connect to channels
 author: v-ducvo
@@ -13,6 +13,9 @@ ms.date: 10/11/2018
 # Connect a bot to Skype
 
 Skype keeps you connected with users through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype interface.
+
+>[!NOTE]
+> As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).  
 
 To add the Skype channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Skype**.
 

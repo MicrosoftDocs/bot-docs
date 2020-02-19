@@ -1,0 +1,83 @@
+<Type Name="ReceiveRequestExtensions" FullName="Microsoft.Bot.Streaming.ReceiveRequestExtensions">
+  <TypeSignature Language="C#" Value="public static class ReceiveRequestExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ReceiveRequestExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.ReceiveRequestExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ReceiveRequestExtensions" />
+  <TypeSignature Language="F#" Value="type ReceiveRequestExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper methods added to the <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> class.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReadBodyAsJson&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ReadBodyAsJson&lt;T&gt; (this Microsoft.Bot.Streaming.ReceiveRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadBodyAsJson&lt;T&gt;(class Microsoft.Bot.Streaming.ReceiveRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.ReceiveRequestExtensions.ReadBodyAsJson``1(Microsoft.Bot.Streaming.ReceiveRequest)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReadBodyAsJson(Of T) (request As ReceiveRequest) As T" />
+      <MemberSignature Language="F#" Value="static member ReadBodyAsJson : Microsoft.Bot.Streaming.ReceiveRequest -&gt; 'T" Usage="Microsoft.Bot.Streaming.ReceiveRequestExtensions.ReadBodyAsJson request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.ReceiveRequest" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type to attempt to deserialize the contents of this <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" />'s body into.</typeparam>
+        <param name="request">The current instance of <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" />.</param>
+        <summary>
+            Serializes the body of this <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> as JSON.
+            </summary>
+        <returns>On success, an object of type T populated with data serialized from the <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> body.
+            Otherwise a default instance of type T.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBodyAsString">
+      <MemberSignature Language="C#" Value="public static string ReadBodyAsString (this Microsoft.Bot.Streaming.ReceiveRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ReadBodyAsString(class Microsoft.Bot.Streaming.ReceiveRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.ReceiveRequestExtensions.ReadBodyAsString(Microsoft.Bot.Streaming.ReceiveRequest)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReadBodyAsString (request As ReceiveRequest) As String" />
+      <MemberSignature Language="F#" Value="static member ReadBodyAsString : Microsoft.Bot.Streaming.ReceiveRequest -&gt; string" Usage="Microsoft.Bot.Streaming.ReceiveRequestExtensions.ReadBodyAsString request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Bot.Streaming.ReceiveRequest" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="request">The current instance of <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" />.</param>
+        <summary>
+            Reads the body of this <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> as a string.
+            </summary>
+        <returns>On success, a string populated with data read from the <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> body.
+            Otherwise null.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

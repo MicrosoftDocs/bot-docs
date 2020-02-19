@@ -1,4 +1,4 @@
-﻿<Type Name="IgnoreFieldAttribute" FullName="Microsoft.Bot.Builder.FormFlow.IgnoreFieldAttribute">
+<Type Name="IgnoreFieldAttribute" FullName="Microsoft.Bot.Builder.FormFlow.IgnoreFieldAttribute">
   <TypeSignature Language="C#" Value="public class IgnoreFieldAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IgnoreFieldAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.IgnoreFieldAttribute" />
@@ -16,10 +16,10 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field)</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

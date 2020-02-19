@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting bots | Microsoft Docs
+title: Troubleshooting bots - Bot Service
 description: Troubleshoot general problems in bot development using technical frequently asked questions.
 author: DeniseMak
 ms.author: kamrani
@@ -265,11 +265,11 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
 
-Permission to create Azure Bot Service bots are managed through the Azure Active Directory (AAD) portal. If permissions are not properly configured in the [AAD portal](http://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
+Permission to create Azure Bot Service bots are managed through the Azure Active Directory (AAD) portal. If permissions are not properly configured in the [AAD portal](https://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
 
 First check whether you are a "Guest" of the directory:
 
-1. Sign-in to [Azure portal](http://portal.azure.com).
+1. Sign-in to [Azure portal](https://portal.azure.com).
 2. Click **All services** and search for *active*.
 3. Select **Azure Active Directory**.
 4. Click **Users**.
@@ -279,7 +279,7 @@ First check whether you are a "Guest" of the directory:
 
 Once you verified that you are not a **Guest**, then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
 
-1. Sign-in to [AAD portal](http://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
+1. Sign-in to [AAD portal](https://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
 2. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
 3. Under the **External users** section, set **Guest users permissions are limited** to **No**. This allows guest users in your directory to create bot service.
 

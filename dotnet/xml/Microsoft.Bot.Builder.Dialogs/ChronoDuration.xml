@@ -1,4 +1,4 @@
-﻿<Type Name="ChronoDuration" FullName="Microsoft.Bot.Builder.Dialogs.ChronoDuration">
+<Type Name="ChronoDuration" FullName="Microsoft.Bot.Builder.Dialogs.ChronoDuration">
   <TypeSignature Language="C#" Value="public class ChronoDuration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChronoDuration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ChronoDuration" />

@@ -1,4 +1,4 @@
-﻿<Type Name="KeyboardCard" FullName="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard">
+<Type Name="KeyboardCard" FullName="Microsoft.Bot.Builder.ConnectorEx.KeyboardCard">
   <TypeSignature Language="C#" Value="public class KeyboardCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyboardCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.KeyboardCard" />

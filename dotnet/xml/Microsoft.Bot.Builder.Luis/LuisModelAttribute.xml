@@ -1,4 +1,4 @@
-﻿<Type Name="LuisModelAttribute" FullName="Microsoft.Bot.Builder.Luis.LuisModelAttribute">
+<Type Name="LuisModelAttribute" FullName="Microsoft.Bot.Builder.Luis.LuisModelAttribute">
   <TypeSignature Language="C#" Value="public class LuisModelAttribute : Attribute, IEquatable&lt;Microsoft.Bot.Builder.Luis.ILuisModel&gt;, Microsoft.Bot.Builder.Luis.ILuisModel, Microsoft.Bot.Builder.Luis.ILuisOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LuisModelAttribute extends System.Attribute implements class Microsoft.Bot.Builder.Luis.ILuisModel, class Microsoft.Bot.Builder.Luis.ILuisOptions, class System.IEquatable`1&lt;class Microsoft.Bot.Builder.Luis.ILuisModel&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Luis.LuisModelAttribute" />
@@ -26,10 +26,10 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true)</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

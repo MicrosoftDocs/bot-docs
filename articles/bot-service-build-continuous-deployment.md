@@ -1,5 +1,5 @@
 ---
-title: Configure continuous deployment for Bot Service | Microsoft Docs
+title: Configure continuous deployment for Bot Service - Bot Service
 description: Learn how to setup continuous deployment from source control for a Bot Service. 
 keywords: continuous deployment, publish, deploy, azure portal
 author: ivorb
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,11 +15,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to](./includes/applies-to.md)]
 
-This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continous deployment with other source control systems, see the additional resource section at the bottom of this page.
+This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see the additional resource section at the bottom of this page.
 
 ## Prerequisites
-- If you don't have an Azure subscription, create a [free account](http://portal.azure.com) before you begin.
-- You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continous deployment.
+- If you don't have an Azure subscription, create a [free account](https://portal.azure.com) before you begin.
+- You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continuous deployment.
 
 ## Prepare your repository
 Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the Azure App Service Kudu build server. 
@@ -28,6 +28,7 @@ Make sure that your repository root has the correct files in your project. This 
 |:-------|:---------------------|
 | ASP.NET Core | .sln or .csproj |
 | Node.js | server.js, app.js, or package.json with a start script |
+| Python | app.py |
 
 
 ## Continuous deployment using GitHub

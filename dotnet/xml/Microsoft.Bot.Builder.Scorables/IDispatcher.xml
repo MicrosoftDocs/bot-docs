@@ -1,4 +1,4 @@
-﻿<Type Name="IDispatcher" FullName="Microsoft.Bot.Builder.Scorables.IDispatcher">
+<Type Name="IDispatcher" FullName="Microsoft.Bot.Builder.Scorables.IDispatcher">
   <TypeSignature Language="C#" Value="public interface IDispatcher" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDispatcher" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.IDispatcher" />

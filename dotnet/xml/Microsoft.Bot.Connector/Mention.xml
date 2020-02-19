@@ -1,4 +1,4 @@
-﻿<Type Name="Mention" FullName="Microsoft.Bot.Connector.Mention">
+<Type Name="Mention" FullName="Microsoft.Bot.Connector.Mention">
   <TypeSignature Language="C#" Value="public class Mention : Microsoft.Bot.Connector.Entity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Mention extends Microsoft.Bot.Connector.Entity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Mention" />

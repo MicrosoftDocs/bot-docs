@@ -1,4 +1,4 @@
-﻿<Type Name="IMessageQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue">
+<Type Name="IMessageQueue" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue">
   <TypeSignature Language="C#" Value="public interface IMessageQueue" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMessageQueue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IMessageQueue" />

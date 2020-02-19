@@ -1,5 +1,5 @@
 ---
-title: Reconnect to a conversation | Microsoft Docs
+title: Reconnect to a conversation - Bot Service
 description: Learn how to reconnect to a conversation using Direct Line API v3.0. 
 author: RobStand
 ms.author: kamrani

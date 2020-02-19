@@ -1,4 +1,4 @@
-﻿<Type Name="TemplateManager" FullName="Microsoft.Bot.Builder.TemplateManager.TemplateManager">
+<Type Name="TemplateManager" FullName="Microsoft.Bot.Builder.TemplateManager.TemplateManager">
   <TypeSignature Language="C#" Value="public class TemplateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TemplateManager.TemplateManager" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,10 +39,37 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTemplateActivity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity CreateTemplateActivity (string templateId, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity CreateTemplateActivity(string templateId, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.CreateTemplateActivity(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTemplateActivity (templateId As String, data As Object) As Activity" />
+      <MemberSignature Language="F#" Value="static member CreateTemplateActivity : string * obj -&gt; Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.TemplateManager.TemplateManager.CreateTemplateActivity (templateId, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateId" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="templateId">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,6 +87,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -67,6 +96,30 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageFallback">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; LanguageFallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; LanguageFallback" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TemplateManager.TemplateManager.LanguageFallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageFallback As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.LanguageFallback : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.TemplateManager.TemplateManager.LanguageFallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets language fallback policy.
+            </summary>
+        <value>
+            Language fallback policy.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,6 +137,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
@@ -111,6 +165,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TemplateManager.TemplateManager</ReturnType>
@@ -124,6 +179,30 @@
             Add a template engine for binding templates.
             </summary>
         <returns>Reurns a template manager.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Renderers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt; Renderers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt; Renderers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TemplateManager.TemplateManager.Renderers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Renderers As List(Of ITemplateRenderer)" />
+      <MemberSignature Language="F#" Value="member this.Renderers : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt; with get, set" Usage="Microsoft.Bot.Builder.TemplateManager.TemplateManager.Renderers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets template Renderers.
+            </summary>
+        <value>
+            Template Renderers.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,6 +220,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
@@ -152,7 +232,7 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="turnContext">Context turn.</param>
+        <param name="turnContext">Context for the current turn of conversation.</param>
         <param name="language">Template language.</param>
         <param name="templateId">The id of the template.</param>
         <param name="data">Data to render the tempplate with.</param>
@@ -177,6 +257,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -187,7 +268,7 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="turnContext">The context of the turn.</param>
+        <param name="turnContext">Context for the current turn of conversation.</param>
         <param name="templateId">Id of the template.</param>
         <param name="data">Data to render the template.</param>
         <summary>
@@ -211,6 +292,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

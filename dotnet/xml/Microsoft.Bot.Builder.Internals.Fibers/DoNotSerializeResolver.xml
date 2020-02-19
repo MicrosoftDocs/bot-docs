@@ -1,4 +1,4 @@
-﻿<Type Name="DoNotSerializeResolver" FullName="Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver">
+<Type Name="DoNotSerializeResolver" FullName="Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver">
   <TypeSignature Language="C#" Value="public sealed class DoNotSerializeResolver : Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DoNotSerializeResolver extends System.Object implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver" />

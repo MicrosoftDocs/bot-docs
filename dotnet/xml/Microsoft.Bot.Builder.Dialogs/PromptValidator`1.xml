@@ -1,4 +1,4 @@
-﻿<Type Name="PromptValidator&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;T&gt;">
+<Type Name="PromptValidator&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;T&gt;">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task&lt;bool&gt; PromptValidator&lt;T&gt;(PromptValidatorContext&lt;T&gt; promptContext, CancellationToken cancellationToken);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PromptValidator`1&lt;T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />

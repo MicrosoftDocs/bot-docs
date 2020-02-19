@@ -26,9 +26,9 @@ https://github.com/Jeffders/DirectLineAppServiceExtensionPreview/tree/master/lib
 
 Generally speaking, the approach is the same as before. With the exception that a new version of **WebChat** has been created that supports two-way **WebSocket** traffic, which instead of connecting to https://directline.botframework.com/ connects directly to your hosted bot.
 The direct line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, where the `/.bot/` extension is the Direct Line **endpoint** on your App Service.
-If you can configure your own domain name you still must append the `/.bot/` path to acces the direct line REST APIs.
+If you can configure your own domain name you still must append the `/.bot/` path to access the direct line REST APIs.
 
-1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) article. But, instead of obtaining a token at this location: `https://directline.botframework.com/v3/directline/tokens/generate`, you generate the token directly from your Direct Line App Service Extension at this location: `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.  
+1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) article. But, instead of obtaining a token at this location: `https://directline.botframework.com/v3/directline/tokens/generate`, you generate the token directly from your Direct Line App Service Extension at this location: `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.  
 
 1. Once you have a token, you can update the webpage that uses WebChat with these changes:
 

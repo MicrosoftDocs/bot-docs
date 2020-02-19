@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowValidationOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome">
+<Type Name="WorkflowValidationOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome">
   <TypeSignature Language="C#" Value="public class WorkflowValidationOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowValidationOutcome extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.WorkflowValidationOutcome" />

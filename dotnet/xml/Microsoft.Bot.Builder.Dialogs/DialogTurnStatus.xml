@@ -1,4 +1,4 @@
-﻿<Type Name="DialogTurnStatus" FullName="Microsoft.Bot.Builder.Dialogs.DialogTurnStatus">
+<Type Name="DialogTurnStatus" FullName="Microsoft.Bot.Builder.Dialogs.DialogTurnStatus">
   <TypeSignature Language="C#" Value="public enum DialogTurnStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogTurnStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnStatus</ReturnType>
@@ -41,7 +43,8 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>
-            Indicates that the dialog was cancelled and the stack is empty.
+            Indicates that the dialog was canceled, and no child
+            dialogs to the current context are on the dialog stack.
             </summary>
       </Docs>
     </Member>
@@ -59,6 +62,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnStatus</ReturnType>
@@ -66,7 +70,8 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>
-            Indicates that the dialog completed successfully, the result is available, and the stack is empty.
+            Indicates that a dialog completed successfully, the result is available, and no child
+            dialogs to the current context are on the dialog stack.
             </summary>
       </Docs>
     </Member>
@@ -84,6 +89,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnStatus</ReturnType>
@@ -109,6 +115,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnStatus</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="LuisTraceInfo" FullName="Microsoft.Bot.Builder.Dialogs.LuisTraceInfo">
+<Type Name="LuisTraceInfo" FullName="Microsoft.Bot.Builder.Dialogs.LuisTraceInfo">
   <TypeSignature Language="C#" Value="public class LuisTraceInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisTraceInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.LuisTraceInfo" />

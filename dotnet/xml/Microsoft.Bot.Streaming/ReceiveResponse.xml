@@ -1,0 +1,87 @@
+<Type Name="ReceiveResponse" FullName="Microsoft.Bot.Streaming.ReceiveResponse">
+  <TypeSignature Language="C#" Value="public class ReceiveResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReceiveResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.ReceiveResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReceiveResponse" />
+  <TypeSignature Language="F#" Value="type ReceiveResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A response received by a <see cref="T:Microsoft.Bot.Streaming.Transport.IStreamingTransportServer" /> or <see cref="T:Microsoft.Bot.Streaming.Transport.IStreamingTransportClient" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiveResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.ReceiveResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusCode">
+      <MemberSignature Language="C#" Value="public int StatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StatusCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.ReceiveResponse.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : int with get, set" Usage="Microsoft.Bot.Streaming.ReceiveResponse.StatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the status code of this response.
+            </summary>
+        <value>
+            The numeric portion of a status code.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Streams">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.IContentStream&gt; Streams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Streaming.Payloads.IContentStream&gt; Streams" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.ReceiveResponse.Streams" />
+      <MemberSignature Language="VB.NET" Value="Public Property Streams As List(Of IContentStream)" />
+      <MemberSignature Language="F#" Value="member this.Streams : System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.IContentStream&gt; with get, set" Usage="Microsoft.Bot.Streaming.ReceiveResponse.Streams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.IContentStream&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the collection of <see cref="T:Microsoft.Bot.Streaming.Payloads.IContentStream" />s contained within this response.
+            </summary>
+        <value>
+            A <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:Microsoft.Bot.Streaming.Payloads.IContentStream" /> containing information on streams attached to this response.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

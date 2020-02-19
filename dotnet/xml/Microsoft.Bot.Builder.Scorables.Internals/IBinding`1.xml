@@ -1,4 +1,4 @@
-﻿<Type Name="IBinding&lt;R&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;">
+<Type Name="IBinding&lt;R&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.IBinding&lt;R&gt;">
   <TypeSignature Language="C#" Value="public interface IBinding&lt;R&gt; : Microsoft.Bot.Builder.Scorables.Internals.IBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinding`1&lt;R&gt; implements class Microsoft.Bot.Builder.Scorables.Internals.IBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.IBinding`1" />

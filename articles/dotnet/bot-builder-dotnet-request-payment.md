@@ -1,5 +1,5 @@
 ---
-title: Request payment | Microsoft Docs
+title: Request payment (v3 C#) - Bot Service
 description: Learn how to send a payment request using the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani
