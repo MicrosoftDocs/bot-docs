@@ -1,5 +1,5 @@
 ---
-title: Add input hints to messages | Microsoft Docs
+title: Add input hints to messages (v3 JS) - Bot Service
 description: Learn how to add input hints to messages using the Bot Framework SDK for .NET.
 author: v-ducvo
 ms.author: kamrani

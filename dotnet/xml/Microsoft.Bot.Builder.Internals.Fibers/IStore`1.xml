@@ -1,4 +1,4 @@
-﻿<Type Name="IStore&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;">
+<Type Name="IStore&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.IStore&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IStore&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStore`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IStore`1" />
@@ -94,7 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLoad([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.IStore`1.TryLoad(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLoad (ByRef item As T) As Boolean" />
-      <MemberSignature Language="F#" Value="abstract member TryLoad :  -&gt; bool" Usage="iStore.TryLoad item" />
+      <MemberSignature Language="F#" Value="abstract member TryLoad : 'T -&gt; bool" Usage="iStore.TryLoad item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

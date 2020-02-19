@@ -1,4 +1,4 @@
-﻿<Type Name="IPromptOptions&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt;">
+<Type Name="IPromptOptions&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IPromptOptions&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptOptions`1&lt;T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptOptions`1" />

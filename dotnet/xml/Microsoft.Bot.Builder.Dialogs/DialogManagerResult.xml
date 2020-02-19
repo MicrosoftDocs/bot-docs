@@ -1,0 +1,97 @@
+<Type Name="DialogManagerResult" FullName="Microsoft.Bot.Builder.Dialogs.DialogManagerResult">
+  <TypeSignature Language="C#" Value="public class DialogManagerResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogManagerResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogManagerResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogManagerResult" />
+  <TypeSignature Language="F#" Value="type DialogManagerResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogManagerResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogManagerResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activities">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity[] Activities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity[] Activities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogManagerResult.Activities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Activities As Activity()" />
+      <MemberSignature Language="F#" Value="member this.Activities : Microsoft.Bot.Schema.Activity[] with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogManagerResult.Activities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewState">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.PersistedState NewState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.PersistedState NewState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogManagerResult.NewState" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewState As PersistedState" />
+      <MemberSignature Language="F#" Value="member this.NewState : Microsoft.Bot.Builder.Dialogs.PersistedState with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogManagerResult.NewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.PersistedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TurnResult">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.DialogTurnResult TurnResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.DialogTurnResult TurnResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.DialogManagerResult.TurnResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property TurnResult As DialogTurnResult" />
+      <MemberSignature Language="F#" Value="member this.TurnResult : Microsoft.Bot.Builder.Dialogs.DialogTurnResult with get, set" Usage="Microsoft.Bot.Builder.Dialogs.DialogManagerResult.TurnResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

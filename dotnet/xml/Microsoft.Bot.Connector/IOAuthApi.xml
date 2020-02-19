@@ -1,4 +1,4 @@
-﻿<Type Name="IOAuthApi" FullName="Microsoft.Bot.Connector.IOAuthApi">
+<Type Name="IOAuthApi" FullName="Microsoft.Bot.Connector.IOAuthApi">
   <TypeSignature Language="C#" Value="public interface IOAuthApi" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOAuthApi" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.IOAuthApi" />

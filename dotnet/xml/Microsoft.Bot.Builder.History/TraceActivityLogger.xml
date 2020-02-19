@@ -1,4 +1,4 @@
-﻿<Type Name="TraceActivityLogger" FullName="Microsoft.Bot.Builder.History.TraceActivityLogger">
+<Type Name="TraceActivityLogger" FullName="Microsoft.Bot.Builder.History.TraceActivityLogger">
   <TypeSignature Language="C#" Value="public sealed class TraceActivityLogger : Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceActivityLogger extends System.Object implements class Microsoft.Bot.Builder.History.IActivityLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.History.TraceActivityLogger" />

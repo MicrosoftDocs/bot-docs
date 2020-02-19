@@ -1,4 +1,4 @@
-﻿<Type Name="IWait" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWait">
+<Type Name="IWait" FullName="Microsoft.Bot.Builder.Internals.Fibers.IWait">
   <TypeSignature Language="C#" Value="public interface IWait" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWait" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.IWait" />

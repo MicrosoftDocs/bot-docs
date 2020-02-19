@@ -1,4 +1,4 @@
-﻿<Type Name="AttachmentValidatorAttribute" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.AttachmentValidatorAttribute">
+<Type Name="AttachmentValidatorAttribute" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.AttachmentValidatorAttribute">
   <TypeSignature Language="C#" Value="public abstract class AttachmentValidatorAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AttachmentValidatorAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.AttachmentValidatorAttribute" />
@@ -92,7 +92,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;bool&gt; IsValidAsync (Microsoft.Bot.Connector.Attachment attachment, out string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsValidAsync(class Microsoft.Bot.Connector.Attachment attachment, [out] string&amp; errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.AttachmentValidatorAttribute.IsValidAsync(Microsoft.Bot.Connector.Attachment,System.String@)" />
-      <MemberSignature Language="F#" Value="abstract member IsValidAsync : Microsoft.Bot.Connector.Attachment *  -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="attachmentValidatorAttribute.IsValidAsync (attachment, errorMessage)" />
+      <MemberSignature Language="F#" Value="abstract member IsValidAsync : Microsoft.Bot.Connector.Attachment * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="attachmentValidatorAttribute.IsValidAsync (attachment, errorMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

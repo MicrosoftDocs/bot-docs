@@ -1,5 +1,5 @@
 ---
-title: Send and receive activities | Microsoft Docs
+title: Send and receive activities - Bot Service
 description: Learn how to exchange information with a user across various channels by using the Connector service via the Bot Framework SDK for .NET.
 author: RobStand
 ms.author: kamrani

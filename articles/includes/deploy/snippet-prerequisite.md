@@ -1,5 +1,5 @@
 - A subscription to [Microsoft Azure](https://azure.microsoft.com/free/)
-- A C#, JavaScript, or TypeScript bot that you have developed on your local machine
+- A C#, JavaScript, TypeScript, or Python bot that you have developed on your local machine
 - Latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
 - Familiarity with [Azure CLI and ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
 

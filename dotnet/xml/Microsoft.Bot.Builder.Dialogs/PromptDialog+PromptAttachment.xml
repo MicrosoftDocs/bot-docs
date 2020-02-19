@@ -1,4 +1,4 @@
-﻿<Type Name="PromptDialog+PromptAttachment" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptAttachment">
+<Type Name="PromptDialog+PromptAttachment" FullName="Microsoft.Bot.Builder.Dialogs.PromptDialog+PromptAttachment">
   <TypeSignature Language="C#" Value="public class PromptDialog.PromptAttachment : Microsoft.Bot.Builder.Dialogs.Internals.Prompt&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.Attachment&gt;,Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit PromptDialog/PromptAttachment extends Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;, class Microsoft.Bot.Connector.Attachment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment" />
@@ -83,7 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryParse(class Microsoft.Bot.Connector.IMessageActivity message, [out] class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.Attachment&gt;&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.TryParse(Microsoft.Bot.Connector.IMessageActivity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Connector.Attachment}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryParse (message As IMessageActivity, ByRef result As IEnumerable(Of Attachment)) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity *  -&gt; bool" Usage="promptAttachment.TryParse (message, result)" />
+      <MemberSignature Language="F#" Value="override this.TryParse : Microsoft.Bot.Connector.IMessageActivity * seq -&gt; bool" Usage="promptAttachment.TryParse (message, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>

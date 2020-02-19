@@ -1,5 +1,5 @@
 ---
-title:  Additional channels | Microsoft Docs
+title:  Additional channels - Bot Service
 description: Learn how to configure additional channels for your bot.
 keywords: bot channels, hangouts, Twilio, facebook, azure portal
 author: ivorb

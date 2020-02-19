@@ -1,4 +1,4 @@
-﻿<Type Name="IPromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions">
+<Type Name="IPromptRecognizeChoicesOptions" FullName="Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions">
   <TypeSignature Language="C#" Value="public interface IPromptRecognizeChoicesOptions : Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPromptRecognizeChoicesOptions implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions" />

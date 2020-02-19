@@ -1,4 +1,4 @@
-﻿<Type Name="SpecialValues" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues">
+<Type Name="SpecialValues" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues">
   <TypeSignature Language="C#" Value="public enum SpecialValues" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpecialValues extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.SpecialValues" />

@@ -1,0 +1,257 @@
+<Type Name="O365ConnectorCard" FullName="Microsoft.Bot.Schema.Teams.O365ConnectorCard">
+  <TypeSignature Language="C#" Value="public class O365ConnectorCard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit O365ConnectorCard extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.O365ConnectorCard" />
+  <TypeSignature Language="VB.NET" Value="Public Class O365ConnectorCard" />
+  <TypeSignature Language="F#" Value="type O365ConnectorCard = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Content type for <see cref="T:Microsoft.Bot.Schema.Teams.O365ConnectorCard" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public O365ConnectorCard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the O365ConnectorCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public O365ConnectorCard (string title = null, string text = null, string summary = null, string themeColor = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt; sections = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; potentialAction = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string text, string summary, string themeColor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt; sections, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; potentialAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCard.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardSection},System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional text As String = null, Optional summary As String = null, Optional themeColor As String = null, Optional sections As IList(Of O365ConnectorCardSection) = null, Optional potentialAction As IList(Of O365ConnectorCardActionBase) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.O365ConnectorCard : string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; -&gt; Microsoft.Bot.Schema.Teams.O365ConnectorCard" Usage="new Microsoft.Bot.Schema.Teams.O365ConnectorCard (title, text, summary, themeColor, sections, potentialAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="summary" Type="System.String" />
+        <Parameter Name="themeColor" Type="System.String" />
+        <Parameter Name="sections" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt;" />
+        <Parameter Name="potentialAction" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="title">Title of the item</param>
+        <param name="text">Text for the card</param>
+        <param name="summary">Summary for the card</param>
+        <param name="themeColor">Theme color for the card</param>
+        <param name="sections">Set of sections for the current card</param>
+        <param name="potentialAction">Set of actions for the current
+            card</param>
+        <summary>
+            Initializes a new instance of the O365ConnectorCard class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public const string ContentType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContentType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.Teams.O365ConnectorCard.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContentType As String " />
+      <MemberSignature Language="F#" Value="val mutable ContentType : string" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.ContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Content type to be used in the type property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PotentialAction">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; PotentialAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; PotentialAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCard.PotentialAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property PotentialAction As IList(Of O365ConnectorCardActionBase)" />
+      <MemberSignature Language="F#" Value="member this.PotentialAction : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.PotentialAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="potentialAction")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets set of actions for the current card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sections">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt; Sections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt; Sections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCard.Sections" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sections As IList(Of O365ConnectorCardSection)" />
+      <MemberSignature Language="F#" Value="member this.Sections : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.Sections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sections")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardSection&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets set of sections for the current card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Summary">
+      <MemberSignature Language="C#" Value="public string Summary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Summary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCard.Summary" />
+      <MemberSignature Language="VB.NET" Value="Public Property Summary As String" />
+      <MemberSignature Language="F#" Value="member this.Summary : string with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.Summary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="summary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets summary for the card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCard.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets text for the card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemeColor">
+      <MemberSignature Language="C#" Value="public string ThemeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ThemeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCard.ThemeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThemeColor As String" />
+      <MemberSignature Language="F#" Value="member this.ThemeColor : string with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.ThemeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="themeColor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets theme color for the card
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCard.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Bot.Schema.Teams.O365ConnectorCard.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets title of the item
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

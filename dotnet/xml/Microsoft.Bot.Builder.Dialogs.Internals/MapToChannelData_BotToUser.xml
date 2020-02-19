@@ -1,4 +1,4 @@
-﻿<Type Name="MapToChannelData_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.MapToChannelData_BotToUser">
+<Type Name="MapToChannelData_BotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.MapToChannelData_BotToUser">
   <TypeSignature Language="C#" Value="public sealed class MapToChannelData_BotToUser : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MapToChannelData_BotToUser extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.MapToChannelData_BotToUser" />

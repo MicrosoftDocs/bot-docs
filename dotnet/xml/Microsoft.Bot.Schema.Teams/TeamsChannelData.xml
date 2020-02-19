@@ -1,0 +1,213 @@
+<Type Name="TeamsChannelData" FullName="Microsoft.Bot.Schema.Teams.TeamsChannelData">
+  <TypeSignature Language="C#" Value="public class TeamsChannelData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TeamsChannelData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.TeamsChannelData" />
+  <TypeSignature Language="VB.NET" Value="Public Class TeamsChannelData" />
+  <TypeSignature Language="F#" Value="type TeamsChannelData = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Channel data specific to messages received in Microsoft Teams
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamsChannelData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamsChannelData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the TeamsChannelData class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamsChannelData (Microsoft.Bot.Schema.Teams.ChannelInfo channel = null, string eventType = null, Microsoft.Bot.Schema.Teams.TeamInfo team = null, Microsoft.Bot.Schema.Teams.NotificationInfo notification = null, Microsoft.Bot.Schema.Teams.TenantInfo tenant = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.ChannelInfo channel, string eventType, class Microsoft.Bot.Schema.Teams.TeamInfo team, class Microsoft.Bot.Schema.Teams.NotificationInfo notification, class Microsoft.Bot.Schema.Teams.TenantInfo tenant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamsChannelData.#ctor(Microsoft.Bot.Schema.Teams.ChannelInfo,System.String,Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Schema.Teams.NotificationInfo,Microsoft.Bot.Schema.Teams.TenantInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional channel As ChannelInfo = null, Optional eventType As String = null, Optional team As TeamInfo = null, Optional notification As NotificationInfo = null, Optional tenant As TenantInfo = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TeamsChannelData : Microsoft.Bot.Schema.Teams.ChannelInfo * string * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Schema.Teams.NotificationInfo * Microsoft.Bot.Schema.Teams.TenantInfo -&gt; Microsoft.Bot.Schema.Teams.TeamsChannelData" Usage="new Microsoft.Bot.Schema.Teams.TeamsChannelData (channel, eventType, team, notification, tenant)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="channel" Type="Microsoft.Bot.Schema.Teams.ChannelInfo" />
+        <Parameter Name="eventType" Type="System.String" />
+        <Parameter Name="team" Type="Microsoft.Bot.Schema.Teams.TeamInfo" />
+        <Parameter Name="notification" Type="Microsoft.Bot.Schema.Teams.NotificationInfo" />
+        <Parameter Name="tenant" Type="Microsoft.Bot.Schema.Teams.TenantInfo" />
+      </Parameters>
+      <Docs>
+        <param name="channel">Information about the channel in which the
+            message was sent</param>
+        <param name="eventType">Type of event.</param>
+        <param name="team">Information about the team in which the message
+            was sent</param>
+        <param name="notification">Notification settings for the
+            message</param>
+        <param name="tenant">Information about the tenant in which the
+            message was sent</param>
+        <summary>
+            Initializes a new instance of the TeamsChannelData class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Channel">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.ChannelInfo Channel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.ChannelInfo Channel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Channel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Channel As ChannelInfo" />
+      <MemberSignature Language="F#" Value="member this.Channel : Microsoft.Bot.Schema.Teams.ChannelInfo with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelData.Channel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.ChannelInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets information about the channel in which the message was
+            sent
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventType">
+      <MemberSignature Language="C#" Value="public string EventType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EventType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.EventType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventType As String" />
+      <MemberSignature Language="F#" Value="member this.EventType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelData.EventType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="eventType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of event.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notification">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.NotificationInfo Notification { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.NotificationInfo Notification" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Notification" />
+      <MemberSignature Language="VB.NET" Value="Public Property Notification As NotificationInfo" />
+      <MemberSignature Language="F#" Value="member this.Notification : Microsoft.Bot.Schema.Teams.NotificationInfo with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelData.Notification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="notification")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.NotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets notification settings for the message
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Team">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.TeamInfo Team { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.TeamInfo Team" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Team" />
+      <MemberSignature Language="VB.NET" Value="Public Property Team As TeamInfo" />
+      <MemberSignature Language="F#" Value="member this.Team : Microsoft.Bot.Schema.Teams.TeamInfo with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelData.Team" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="team")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.TeamInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets information about the team in which the message was
+            sent
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tenant">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.TenantInfo Tenant { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.TenantInfo Tenant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Tenant" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tenant As TenantInfo" />
+      <MemberSignature Language="F#" Value="member this.Tenant : Microsoft.Bot.Schema.Teams.TenantInfo with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelData.Tenant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tenant")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.TenantInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets information about the tenant in which the message was
+            sent
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

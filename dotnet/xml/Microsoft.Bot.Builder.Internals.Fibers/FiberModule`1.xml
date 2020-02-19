@@ -1,4 +1,4 @@
-﻿<Type Name="FiberModule&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.FiberModule&lt;C&gt;">
+<Type Name="FiberModule&lt;C&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.FiberModule&lt;C&gt;">
   <TypeSignature Language="C#" Value="public sealed class FiberModule&lt;C&gt; : Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FiberModule`1&lt;C&gt; extends Microsoft.Bot.Builder.Internals.Fibers.FiberModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.FiberModule`1" />

@@ -1,4 +1,4 @@
-﻿<Type Name="DialogModule_MakeRoot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot">
+<Type Name="DialogModule_MakeRoot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot">
   <TypeSignature Language="C#" Value="public sealed class DialogModule_MakeRoot : Autofac.Module" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DialogModule_MakeRoot extends Autofac.Module" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogModule_MakeRoot" />

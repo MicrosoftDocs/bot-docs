@@ -1,4 +1,4 @@
-﻿<Type Name="RecognitionOption" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption">
+<Type Name="RecognitionOption" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption">
   <TypeSignature Language="C#" Value="public class RecognitionOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecognitionOption extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption" />

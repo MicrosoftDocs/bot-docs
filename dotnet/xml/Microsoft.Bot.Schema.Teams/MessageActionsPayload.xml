@@ -1,0 +1,542 @@
+<Type Name="MessageActionsPayload" FullName="Microsoft.Bot.Schema.Teams.MessageActionsPayload">
+  <TypeSignature Language="C#" Value="public class MessageActionsPayload" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageActionsPayload extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MessageActionsPayload" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageActionsPayload" />
+  <TypeSignature Language="F#" Value="type MessageActionsPayload = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents the individual message within a chat or channel where a
+            message actions is taken.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayload.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the MessageActionsPayload class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageActionsPayload (string id = null, string replyToId = null, string messageType = null, string createdDateTime = null, string lastModifiedDateTime = null, Nullable&lt;bool&gt; deleted = null, string subject = null, string summary = null, string importance = null, string locale = null, Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom from = null, Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody body = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; mentions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; reactions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string replyToId, string messageType, string createdDateTime, string lastModifiedDateTime, valuetype System.Nullable`1&lt;bool&gt; deleted, string subject, string summary, string importance, string locale, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom from, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody body, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; mentions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; reactions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayload.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom,Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment},System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention},System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional replyToId As String = null, Optional messageType As String = null, Optional createdDateTime As String = null, Optional lastModifiedDateTime As String = null, Optional deleted As Nullable(Of Boolean) = null, Optional subject As String = null, Optional summary As String = null, Optional importance As String = null, Optional locale As String = null, Optional from As MessageActionsPayloadFrom = null, Optional body As MessageActionsPayloadBody = null, Optional attachmentLayout As String = null, Optional attachments As IList(Of MessageActionsPayloadAttachment) = null, Optional mentions As IList(Of MessageActionsPayloadMention) = null, Optional reactions As IList(Of MessageActionsPayloadReaction) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessageActionsPayload : string * string * string * string * string * Nullable&lt;bool&gt; * string * string * string * string * Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom * Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; -&gt; Microsoft.Bot.Schema.Teams.MessageActionsPayload" Usage="new Microsoft.Bot.Schema.Teams.MessageActionsPayload (id, replyToId, messageType, createdDateTime, lastModifiedDateTime, deleted, subject, summary, importance, locale, from, body, attachmentLayout, attachments, mentions, reactions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="replyToId" Type="System.String" />
+        <Parameter Name="messageType" Type="System.String" />
+        <Parameter Name="createdDateTime" Type="System.String" />
+        <Parameter Name="lastModifiedDateTime" Type="System.String" />
+        <Parameter Name="deleted" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="summary" Type="System.String" />
+        <Parameter Name="importance" Type="System.String" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="from" Type="Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom" />
+        <Parameter Name="body" Type="Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody" />
+        <Parameter Name="attachmentLayout" Type="System.String" />
+        <Parameter Name="attachments" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt;" />
+        <Parameter Name="mentions" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt;" />
+        <Parameter Name="reactions" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id">Unique id of the message.</param>
+        <param name="replyToId">Id of the parent/root message of the
+            thread.</param>
+        <param name="messageType">Type of message - automatically set to
+            message. Possible values include: 'message'</param>
+        <param name="createdDateTime">Timestamp of when the message was
+            created.</param>
+        <param name="lastModifiedDateTime">Timestamp of when the message
+            was edited or updated.</param>
+        <param name="deleted">Indicates whether a message has been soft
+            deleted.</param>
+        <param name="subject">Subject line of the message.</param>
+        <param name="summary">Summary text of the message that could be
+            used for notifications.</param>
+        <param name="importance">The importance of the message. Possible
+            values include: 'normal', 'high', 'urgent'</param>
+        <param name="locale">Locale of the message set by the
+            client.</param>
+        <param name="from">Sender of the message.</param>
+        <param name="body">Plaintext/HTML representation of the content of
+            the message.</param>
+        <param name="attachmentLayout">How the attachment(s) are displayed
+            in the message.</param>
+        <param name="attachments">Attachments in the message - card, image,
+            file, etc.</param>
+        <param name="mentions">List of entities mentioned in the
+            message.</param>
+        <param name="reactions">Reactions for the message.</param>
+        <summary>
+            Initializes a new instance of the MessageActionsPayload class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentLayout">
+      <MemberSignature Language="C#" Value="public string AttachmentLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttachmentLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.AttachmentLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttachmentLayout As String" />
+      <MemberSignature Language="F#" Value="member this.AttachmentLayout : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.AttachmentLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets how the attachment(s) are displayed in the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; Attachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; Attachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As IList(Of MessageActionsPayloadAttachment)" />
+      <MemberSignature Language="F#" Value="member this.Attachments : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Attachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets attachments in the message - card, image, file, etc.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody Body" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Body" />
+      <MemberSignature Language="VB.NET" Value="Public Property Body As MessageActionsPayloadBody" />
+      <MemberSignature Language="F#" Value="member this.Body : Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="body")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets plaintext/HTML representation of the content of the
+            message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDateTime">
+      <MemberSignature Language="C#" Value="public string CreatedDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedDateTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.CreatedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedDateTime As String" />
+      <MemberSignature Language="F#" Value="member this.CreatedDateTime : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.CreatedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="createdDateTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets timestamp of when the message was created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Deleted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Deleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Deleted As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Deleted : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Deleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="deleted")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets indicates whether a message has been soft deleted.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom From" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As MessageActionsPayloadFrom" />
+      <MemberSignature Language="F#" Value="member this.From : Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.From" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="from")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets sender of the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets unique id of the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Importance">
+      <MemberSignature Language="C#" Value="public string Importance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Importance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Importance As String" />
+      <MemberSignature Language="F#" Value="member this.Importance : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Importance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="importance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the importance of the message. Possible values
+            include: 'normal', 'high', 'urgent'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedDateTime">
+      <MemberSignature Language="C#" Value="public string LastModifiedDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastModifiedDateTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.LastModifiedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedDateTime As String" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedDateTime : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.LastModifiedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastModifiedDateTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets timestamp of when the message was edited or updated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="locale")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets locale of the message set by the client.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mentions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; Mentions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; Mentions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Mentions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mentions As IList(Of MessageActionsPayloadMention)" />
+      <MemberSignature Language="F#" Value="member this.Mentions : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Mentions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="mentions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets list of entities mentioned in the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageType">
+      <MemberSignature Language="C#" Value="public string MessageType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.MessageType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageType As String" />
+      <MemberSignature Language="F#" Value="member this.MessageType : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.MessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="messageType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of message - automatically set to message.
+            Possible values include: 'message'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reactions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; Reactions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; Reactions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Reactions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reactions As IList(Of MessageActionsPayloadReaction)" />
+      <MemberSignature Language="F#" Value="member this.Reactions : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Reactions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets reactions for the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyToId">
+      <MemberSignature Language="C#" Value="public string ReplyToId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReplyToId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.ReplyToId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplyToId As String" />
+      <MemberSignature Language="F#" Value="member this.ReplyToId : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.ReplyToId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="replyToId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets id of the parent/root message of the thread.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Subject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subject")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets subject line of the message.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Summary">
+      <MemberSignature Language="C#" Value="public string Summary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Summary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Summary" />
+      <MemberSignature Language="VB.NET" Value="Public Property Summary As String" />
+      <MemberSignature Language="F#" Value="member this.Summary : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MessageActionsPayload.Summary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="summary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets summary text of the message that could be used for
+            notifications.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

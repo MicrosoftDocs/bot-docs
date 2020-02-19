@@ -1,5 +1,5 @@
 ---
-title: Create a bot with the Bot Framework SDK for .NET | Microsoft Docs
+title: Create a bot with the Bot Framework SDK for .NET - Bot Service
 description: Create a bot with the Bot Framework SDK for .NET, a powerful bot construction framework.
 keywords: Bot Framework SDK, create a bot, quickstart, .NET, getting started, C# bot
 author: kamrani

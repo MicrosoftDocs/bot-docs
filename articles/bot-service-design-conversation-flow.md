@@ -1,5 +1,5 @@
 ---
-title: Design and control conversation flow | Microsoft Docs
+title: Design and control conversation flow - Bot Service
 description: Learn how to design and control conversation flow in your bot to provide a good user experience.
 keywords: design, control, conversation flow, handle interruptions, overview
 author: v-ducvo
@@ -7,12 +7,13 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/19/2018
+ms.date: 11/19/2019
 ---
 
-::: moniker range="azure-bot-service-3.0"
 
 # Design and control conversation flow
+
+::: moniker range="azure-bot-service-3.0"
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label-v3.md)]
 
@@ -80,8 +81,6 @@ The [next article](./bot-service-design-navigation.md) reviews some common pitfa
 ::: moniker-end
 
 ::: moniker range="azure-bot-service-4.0"
-
-# Design and control conversation flow
 
 In a traditional application, the user interface (UI) consists of a series of screens, and a single app or website can use one or more screens as needed to exchange information with the user.
 Most applications start with a main screen where users initially land, and that screen provides navigation that leads to other screens for various functions like starting a new order, browsing products, or looking for help.

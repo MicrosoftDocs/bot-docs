@@ -1,4 +1,4 @@
-﻿<Type Name="RecordOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome">
+<Type Name="RecordOutcome" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome">
   <TypeSignature Language="C#" Value="public class RecordOutcome : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecordOutcome extends Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.OperationOutcomeBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecordOutcome" />

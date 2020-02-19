@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationBuilderExtensions" FullName="Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions">
+<Type Name="ApplicationBuilderExtensions" FullName="Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions">
   <TypeSignature Language="C#" Value="public static class ApplicationBuilderExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ApplicationBuilderExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.AspNetCore.Builder.IApplicationBuilder</ReturnType>
@@ -51,6 +53,34 @@
         <param name="applicationBuilder">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" />.</param>
         <summary>
             Maps various endpoint handlers for the <see cref="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions.AddBot``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Bot.Builder.Integration.BotFrameworkOptions})">registered bot</see> into the request execution pipeline.
+            </summary>
+        <returns>A reference to this instance after the operation has completed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseNamedPipes">
+      <MemberSignature Language="C#" Value="public static Microsoft.AspNetCore.Builder.IApplicationBuilder UseNamedPipes (this Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder, string pipeName = &quot;bfv4.pipes&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.AspNetCore.Builder.IApplicationBuilder UseNamedPipes(class Microsoft.AspNetCore.Builder.IApplicationBuilder applicationBuilder, string pipeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions.UseNamedPipes(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseNamedPipes (applicationBuilder As IApplicationBuilder, Optional pipeName As String = &quot;bfv4.pipes&quot;) As IApplicationBuilder" />
+      <MemberSignature Language="F#" Value="static member UseNamedPipes : Microsoft.AspNetCore.Builder.IApplicationBuilder * string -&gt; Microsoft.AspNetCore.Builder.IApplicationBuilder" Usage="Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions.UseNamedPipes (applicationBuilder, pipeName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AspNetCore.Builder.IApplicationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="applicationBuilder" Type="Microsoft.AspNetCore.Builder.IApplicationBuilder" RefType="this" />
+        <Parameter Name="pipeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="applicationBuilder">The application builder that defines the bot's pipeline.<see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" />.</param>
+        <param name="pipeName">The name of the named pipe to use when creating the server.</param>
+        <summary>
+            Enables named pipes for this application.
             </summary>
         <returns>A reference to this instance after the operation has completed.</returns>
         <remarks>To be added.</remarks>

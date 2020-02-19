@@ -1,0 +1,89 @@
+<Type Name="TurnStateConstants" FullName="Microsoft.Bot.Builder.TurnStateConstants">
+  <TypeSignature Language="C#" Value="public static class TurnStateConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TurnStateConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.TurnStateConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class TurnStateConstants" />
+  <TypeSignature Language="F#" Value="type TurnStateConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Constants used in TurnState.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OAuthLoginTimeoutKey">
+      <MemberSignature Language="C#" Value="public const string OAuthLoginTimeoutKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string OAuthLoginTimeoutKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TurnStateConstants.OAuthLoginTimeoutKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OAuthLoginTimeoutKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OAuthLoginTimeoutKey : string" Usage="Microsoft.Bot.Builder.TurnStateConstants.OAuthLoginTimeoutKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TurnState key for the OAuth login timeout.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OAuthLoginTimeoutValue">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan OAuthLoginTimeoutValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan OAuthLoginTimeoutValue" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TurnStateConstants.OAuthLoginTimeoutValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OAuthLoginTimeoutValue As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable OAuthLoginTimeoutValue : TimeSpan" Usage="Microsoft.Bot.Builder.TurnStateConstants.OAuthLoginTimeoutValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Default amount of time an OAuthCard will remain active (clickable and actively waiting for a token).
+            After this time:
+            (1) the OAuthCard will not allow the user to click on it.
+            (2) any polling triggered by the OAuthCard will stop.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenPollingSettingsKey">
+      <MemberSignature Language="C#" Value="public const string TokenPollingSettingsKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TokenPollingSettingsKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.TurnStateConstants.TokenPollingSettingsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const TokenPollingSettingsKey As String " />
+      <MemberSignature Language="F#" Value="val mutable TokenPollingSettingsKey : string" Usage="Microsoft.Bot.Builder.TurnStateConstants.TokenPollingSettingsKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name of the token polling settings key.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

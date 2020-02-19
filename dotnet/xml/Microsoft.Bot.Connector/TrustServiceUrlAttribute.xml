@@ -1,4 +1,4 @@
-﻿<Type Name="TrustServiceUrlAttribute" FullName="Microsoft.Bot.Connector.TrustServiceUrlAttribute">
+<Type Name="TrustServiceUrlAttribute" FullName="Microsoft.Bot.Connector.TrustServiceUrlAttribute">
   <TypeSignature Language="C#" Value="public class TrustServiceUrlAttribute : Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TrustServiceUrlAttribute extends Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.TrustServiceUrlAttribute" />

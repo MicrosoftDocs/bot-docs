@@ -1,0 +1,476 @@
+<Type Name="ChannelServiceController" FullName="Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController">
+  <TypeSignature Language="C#" Value="public class ChannelServiceController : Microsoft.AspNetCore.Mvc.ControllerBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelServiceController extends Microsoft.AspNetCore.Mvc.ControllerBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChannelServiceController&#xA;Inherits ControllerBase" />
+  <TypeSignature Language="F#" Value="type ChannelServiceController = class&#xA;    inherit ControllerBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.AspNetCore.Mvc.ControllerBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A base class for a skill controller.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelServiceController (Microsoft.Bot.Builder.ChannelServiceHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.ChannelServiceHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.#ctor(Microsoft.Bot.Builder.ChannelServiceHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (handler As ChannelServiceHandler)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController : Microsoft.Bot.Builder.ChannelServiceHandler -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController handler" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Bot.Builder.ChannelServiceHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">A <see cref="T:Microsoft.Bot.Builder.ChannelServiceHandler" /> that will handle the incoming request.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConversationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; CreateConversationAsync (Microsoft.Bot.Schema.ConversationParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; CreateConversationAsync(class Microsoft.Bot.Schema.ConversationParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.CreateConversationAsync(Microsoft.Bot.Schema.ConversationParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConversationAsync (parameters As ConversationParameters) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member CreateConversationAsync : Microsoft.Bot.Schema.ConversationParameters -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.CreateConversationAsync : Microsoft.Bot.Schema.ConversationParameters -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.CreateConversationAsync parameters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="parameters">Parameters to create the conversation from.</param>
+        <summary>
+            CreateConversation.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteActivityAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteActivityAsync (string conversationId, string activityId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(string conversationId, string activityId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.DeleteActivityAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteActivityAsync (conversationId As String, activityId As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteActivityAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteActivityAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="channelServiceController.DeleteActivityAsync (conversationId, activityId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/activities/{activityId}")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="activityId">activityId to delete.</param>
+        <summary>
+            DeleteActivity.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteConversationMemberAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteConversationMemberAsync (string conversationId, string memberId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteConversationMemberAsync(string conversationId, string memberId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.DeleteConversationMemberAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteConversationMemberAsync (conversationId As String, memberId As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteConversationMemberAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteConversationMemberAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="channelServiceController.DeleteConversationMemberAsync (conversationId, memberId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/members/{memberId}")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="memberId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="memberId">ID of the member to delete from this conversation.</param>
+        <summary>
+            DeleteConversationMember.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivityMembersAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetActivityMembersAsync (string conversationId, string activityId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetActivityMembersAsync(string conversationId, string activityId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetActivityMembersAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetActivityMembersAsync (conversationId As String, activityId As String) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetActivityMembersAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.GetActivityMembersAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.GetActivityMembersAsync (conversationId, activityId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/activities/{activityId}/members")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="activityId">Activity ID.</param>
+        <summary>
+            GetActivityMembers.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>
+            Markdown=Content\Methods\GetActivityMembers.md.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConversationMembersAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationMembersAsync (string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationMembersAsync(string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationMembersAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationMembersAsync (conversationId As String) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationMembersAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.GetConversationMembersAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.GetConversationMembersAsync conversationId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/members")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <summary>
+            GetConversationMembers.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConversationPagedMembersAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync (string conversationId, int pageSize = -1, string continuationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync(string conversationId, int32 pageSize, string continuationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationPagedMembersAsync(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationPagedMembersAsync (conversationId As String, Optional pageSize As Integer = -1, Optional continuationToken As String = null) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationPagedMembersAsync : string * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.GetConversationPagedMembersAsync : string * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.GetConversationPagedMembersAsync (conversationId, pageSize, continuationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/pagedmembers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="continuationToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="pageSize">Suggested page size.</param>
+        <param name="continuationToken">Continuation Token.</param>
+        <summary>
+            GetConversationPagedMembers.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConversationsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync (string continuationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync(string continuationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationsAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationsAsync (Optional continuationToken As String = null) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetConversationsAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.GetConversationsAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.GetConversationsAsync continuationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="continuationToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="continuationToken">skip or continuation token.</param>
+        <summary>
+            GetConversations.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyToActivityAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; ReplyToActivityAsync (string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; ReplyToActivityAsync(string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.ReplyToActivityAsync(System.String,System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="abstract member ReplyToActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.ReplyToActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.ReplyToActivityAsync (conversationId, activityId, activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/{activityId}")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="activityId">activityId the reply is to (OPTIONAL).</param>
+        <param name="activity">Activity to send.</param>
+        <summary>
+            ReplyToActivity.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendConversationHistoryAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; SendConversationHistoryAsync (string conversationId, Microsoft.Bot.Schema.Transcript history);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; SendConversationHistoryAsync(string conversationId, class Microsoft.Bot.Schema.Transcript history) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.SendConversationHistoryAsync(System.String,Microsoft.Bot.Schema.Transcript)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SendConversationHistoryAsync (conversationId As String, history As Transcript) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member SendConversationHistoryAsync : string * Microsoft.Bot.Schema.Transcript -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.SendConversationHistoryAsync : string * Microsoft.Bot.Schema.Transcript -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.SendConversationHistoryAsync (conversationId, history)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/history")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="history" Type="Microsoft.Bot.Schema.Transcript">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="history">Historic activities.</param>
+        <summary>
+            SendConversationHistory.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToConversationAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; SendToConversationAsync (string conversationId, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; SendToConversationAsync(string conversationId, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.SendToConversationAsync(System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="abstract member SendToConversationAsync : string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.SendToConversationAsync : string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.SendToConversationAsync (conversationId, activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="activity">Activity to send.</param>
+        <summary>
+            SendToConversation.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateActivityAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; UpdateActivityAsync (string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; UpdateActivityAsync(string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.UpdateActivityAsync(System.String,System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.UpdateActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.UpdateActivityAsync (conversationId, activityId, activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPut("v3/conversations/{conversationId}/activities/{activityId}")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="activityId">activityId to update.</param>
+        <param name="activity">replacement Activity.</param>
+        <summary>
+            UpdateActivity.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadAttachmentAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; UploadAttachmentAsync (string conversationId, Microsoft.Bot.Schema.AttachmentData attachmentUpload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; UploadAttachmentAsync(string conversationId, class Microsoft.Bot.Schema.AttachmentData attachmentUpload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.UploadAttachmentAsync(System.String,Microsoft.Bot.Schema.AttachmentData)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UploadAttachmentAsync (conversationId As String, attachmentUpload As AttachmentData) As Task(Of IActionResult)" />
+      <MemberSignature Language="F#" Value="abstract member UploadAttachmentAsync : string * Microsoft.Bot.Schema.AttachmentData -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.UploadAttachmentAsync : string * Microsoft.Bot.Schema.AttachmentData -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.UploadAttachmentAsync (conversationId, attachmentUpload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/attachments")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="attachmentUpload">Attachment data.</param>
+        <summary>
+            UploadAttachment.
+            </summary>
+        <returns>TODO Document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

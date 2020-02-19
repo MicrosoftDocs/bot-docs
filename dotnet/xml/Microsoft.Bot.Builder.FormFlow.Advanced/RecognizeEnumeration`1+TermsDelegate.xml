@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizeEnumeration&lt;T&gt;+TermsDelegate" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;T&gt;+TermsDelegate">
+<Type Name="RecognizeEnumeration&lt;T&gt;+TermsDelegate" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration&lt;T&gt;+TermsDelegate">
   <TypeSignature Language="C#" Value="public delegate System.Collections.Generic.IEnumerable&lt;string&gt; RecognizeEnumeration&lt;T&gt;.TermsDelegate(object value) where T : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed RecognizeEnumeration`1/TermsDelegate&lt;class T&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeEnumeration`1.TermsDelegate" />

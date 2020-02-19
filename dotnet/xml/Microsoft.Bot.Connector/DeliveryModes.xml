@@ -1,4 +1,4 @@
-﻿<Type Name="DeliveryModes" FullName="Microsoft.Bot.Connector.DeliveryModes">
+<Type Name="DeliveryModes" FullName="Microsoft.Bot.Connector.DeliveryModes">
   <TypeSignature Language="C#" Value="public static class DeliveryModes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DeliveryModes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.DeliveryModes" />

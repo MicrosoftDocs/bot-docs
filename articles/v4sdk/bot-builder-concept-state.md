@@ -1,5 +1,5 @@
 ---
-title: Managing State | Microsoft Docs
+title: Managing State - Bot Service
 description: Describes how state works within the Bot Framework SDK.
 keywords: state, bot state, conversation state, user state
 author: ivorb

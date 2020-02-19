@@ -1,0 +1,142 @@
+<Type Name="SkillValidation" FullName="Microsoft.Bot.Connector.Authentication.SkillValidation">
+  <TypeSignature Language="C#" Value="public class SkillValidation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SkillValidation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.SkillValidation" />
+  <TypeSignature Language="VB.NET" Value="Public Class SkillValidation" />
+  <TypeSignature Language="F#" Value="type SkillValidation = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Validates JWT tokens sent to and from a Skill.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkillValidation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.SkillValidation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticateChannelToken">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, System.Net.Http.HttpClient httpClient, string channelId, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateChannelToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class System.Net.Http.HttpClient httpClient, string channelId, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.SkillValidation.AuthenticateChannelToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.Net.Http.HttpClient,System.String,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration)" />
+      <MemberSignature Language="F#" Value="static member AuthenticateChannelToken : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * System.Net.Http.HttpClient * string * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.SkillValidation.AuthenticateChannelToken (authHeader, credentials, channelProvider, httpClient, channelId, authConfig)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authHeader" Type="System.String" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="authConfig" Type="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="authHeader">The raw HTTP header in the format: "Bearer [longString]".</param>
+        <param name="credentials">The user defined set of valid credentials, such as the AppId.</param>
+        <param name="channelProvider">The channelService value that distinguishes public Azure from US Government Azure.</param>
+        <param name="httpClient">
+            Authentication of tokens requires calling out to validate Endorsements and related documents. The
+            HttpClient is used for making those calls. Those calls generally require TLS connections, which are expensive to
+            setup and teardown, so a shared HttpClient is recommended.
+            </param>
+        <param name="channelId">The ID of the channel to validate.</param>
+        <param name="authConfig">The authentication configuration.</param>
+        <summary>
+            Validates that the incoming Auth Header is a token sent from a bot to a skill or from a skill to a bot.
+            </summary>
+        <returns>A <see cref="T:System.Security.Claims.ClaimsIdentity" /> instance if the validation is successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSkillClaim">
+      <MemberSignature Language="C#" Value="public static bool IsSkillClaim (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSkillClaim(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.SkillValidation.IsSkillClaim(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSkillClaim (claims As IEnumerable(Of Claim)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsSkillClaim : seq&lt;System.Security.Claims.Claim&gt; -&gt; bool" Usage="Microsoft.Bot.Connector.Authentication.SkillValidation.IsSkillClaim claims" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claims" Type="System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="claims">A list of claims.</param>
+        <summary>
+            Checks if the given list of claims represents a skill.
+            </summary>
+        <returns>True if the list of claims is a skill claim, false if is not.</returns>
+        <remarks>
+            A skill claim should contain:
+                An <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.VersionClaim" /> claim.
+                An <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AudienceClaim" /> claim.
+                An <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AppIdClaim" /> claim (v1) or an a <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AuthorizedParty" /> claim (v2).
+            And the appId claim should be different than the audience claim.
+            When a channel (webchat, teams, etc.) invokes a bot, the <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AudienceClaim" />
+            is set to <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.ToBotFromChannelTokenIssuer" /> but when a bot calls another bot,
+            the audience claim is set to the appId of the bot being invoked.
+            The protocol supports v1 and v2 tokens:
+            For v1 tokens, the  <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AppIdClaim" /> is present and set to the app Id of the calling bot.
+            For v2 tokens, the  <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AuthorizedParty" /> is present and set to the app Id of the calling bot.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSkillToken">
+      <MemberSignature Language="C#" Value="public static bool IsSkillToken (string authHeader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSkillToken(string authHeader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.SkillValidation.IsSkillToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSkillToken (authHeader As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsSkillToken : string -&gt; bool" Usage="Microsoft.Bot.Connector.Authentication.SkillValidation.IsSkillToken authHeader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authHeader" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="authHeader">Bearer Token, in the "Bearer [Long String]" Format.</param>
+        <summary>
+            Determines if a given Auth header is from from a skill to bot or bot to skill request.
+            </summary>
+        <returns>True, if the token was issued for a skill to bot communication. Otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

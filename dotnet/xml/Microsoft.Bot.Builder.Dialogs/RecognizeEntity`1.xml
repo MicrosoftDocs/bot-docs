@@ -1,4 +1,4 @@
-﻿<Type Name="RecognizeEntity&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;">
+<Type Name="RecognizeEntity&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.RecognizeEntity&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class RecognizeEntity&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecognizeEntity`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.RecognizeEntity`1" />
