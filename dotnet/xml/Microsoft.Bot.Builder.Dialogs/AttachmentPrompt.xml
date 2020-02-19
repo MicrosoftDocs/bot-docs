@@ -21,7 +21,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Prompts a user to upload attachments, like images.
+            Prompts user to upload attachments, like images.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
