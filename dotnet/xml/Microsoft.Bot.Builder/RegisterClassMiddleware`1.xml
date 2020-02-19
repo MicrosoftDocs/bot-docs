@@ -1,0 +1,116 @@
+<Type Name="RegisterClassMiddleware&lt;T&gt;" FullName="Microsoft.Bot.Builder.RegisterClassMiddleware&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class RegisterClassMiddleware&lt;T&gt; : Microsoft.Bot.Builder.IMiddleware where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegisterClassMiddleware`1&lt;class T&gt; extends System.Object implements class Microsoft.Bot.Builder.IMiddleware" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.RegisterClassMiddleware`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class RegisterClassMiddleware(Of T)&#xA;Implements IMiddleware" />
+  <TypeSignature Language="F#" Value="type RegisterClassMiddleware&lt;'T (requires 'T : null)&gt; = class&#xA;    interface IMiddleware" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IMiddleware</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type to register.</typeparam>
+    <summary>
+            Middleware for injecting a class into the turn context.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegisterClassMiddleware (T service);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T service) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RegisterClassMiddleware`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (service As T)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt; : 'T -&gt; Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt; service" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="service" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="service">The service instance to register.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.RegisterClassMiddleware`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTurnAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.NextDelegate nextTurn, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.NextDelegate nextTurn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RegisterClassMiddleware`1.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="registerClassMiddleware.OnTurnAsync (turnContext, nextTurn, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="nextTurn" Type="Microsoft.Bot.Builder.NextDelegate" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="nextTurn">The delegate to call to continue the bot middleware pipeline.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            registers into the turncontext.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
+        <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="public T Service { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Service" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.RegisterClassMiddleware`1.Service" />
+      <MemberSignature Language="VB.NET" Value="Public Property Service As T" />
+      <MemberSignature Language="F#" Value="member this.Service : 'T with get, set" Usage="Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt;.Service" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Service to be registered into turn context.
+            </summary>
+        <value>
+            The Service to be registered into turn context.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

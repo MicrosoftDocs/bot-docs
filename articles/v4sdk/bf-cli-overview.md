@@ -1,5 +1,5 @@
 ---
-title: Azure Bot Framework Command-Line Interface (CLI) overview | Microsoft Docs
+title: Azure Bot Framework Command-Line Interface (CLI) overview - Bot Service
 description: Learn about the Bot Framework Command-Line Interface (CLI).
 keywords: Bot Framework Command-Line Interface, Bot Framework CLI
 author: JonathanFingold

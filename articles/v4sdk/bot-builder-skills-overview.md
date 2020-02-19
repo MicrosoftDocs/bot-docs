@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Skills Overview | Microsoft Docs
+title: Bot Framework Skills Overview - Bot Service
 description: Learn more about the Bot Framework Skills
 author: darrenj
 ms.author: darrenj

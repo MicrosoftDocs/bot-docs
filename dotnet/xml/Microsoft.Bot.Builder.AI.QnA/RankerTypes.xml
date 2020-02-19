@@ -1,0 +1,102 @@
+<Type Name="RankerTypes" FullName="Microsoft.Bot.Builder.AI.QnA.RankerTypes">
+  <TypeSignature Language="C#" Value="public class RankerTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RankerTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.QnA.RankerTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Class RankerTypes" />
+  <TypeSignature Language="F#" Value="type RankerTypes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enumeration of types of ranking.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RankerTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.RankerTypes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSuggestQuestion">
+      <MemberSignature Language="C#" Value="public const string AutoSuggestQuestion;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AutoSuggestQuestion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.RankerTypes.AutoSuggestQuestion" />
+      <MemberSignature Language="VB.NET" Value="Public Const AutoSuggestQuestion As String " />
+      <MemberSignature Language="F#" Value="val mutable AutoSuggestQuestion : string" Usage="Microsoft.Bot.Builder.AI.QnA.RankerTypes.AutoSuggestQuestion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ranker based on Autosuggest for question field Only.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRankerType">
+      <MemberSignature Language="C#" Value="public const string DefaultRankerType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultRankerType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.RankerTypes.DefaultRankerType" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultRankerType As String " />
+      <MemberSignature Language="F#" Value="val mutable DefaultRankerType : string" Usage="Microsoft.Bot.Builder.AI.QnA.RankerTypes.DefaultRankerType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Default Ranker Behaviour. i.e. Ranking based on Questions and Answer.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuestionOnly">
+      <MemberSignature Language="C#" Value="public const string QuestionOnly;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string QuestionOnly" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.RankerTypes.QuestionOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Const QuestionOnly As String " />
+      <MemberSignature Language="F#" Value="val mutable QuestionOnly : string" Usage="Microsoft.Bot.Builder.AI.QnA.RankerTypes.QuestionOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ranker based on question Only.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

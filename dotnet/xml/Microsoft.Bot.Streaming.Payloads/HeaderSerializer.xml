@@ -1,0 +1,356 @@
+<Type Name="HeaderSerializer" FullName="Microsoft.Bot.Streaming.Payloads.HeaderSerializer">
+  <TypeSignature Language="C#" Value="public static class HeaderSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HeaderSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Payloads.HeaderSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class HeaderSerializer" />
+  <TypeSignature Language="F#" Value="type HeaderSerializer = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delimiter">
+      <MemberSignature Language="C#" Value="public const byte Delimiter = 46;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 Delimiter = (46)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Delimiter" />
+      <MemberSignature Language="VB.NET" Value="Public Const Delimiter As Byte  = 46" />
+      <MemberSignature Language="F#" Value="val mutable Delimiter : byte" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Delimiter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>46</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.Payloads.Header Deserialize (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.Payloads.Header Deserialize(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Deserialize(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Deserialize (buffer As Byte(), offset As Integer, count As Integer) As Header" />
+      <MemberSignature Language="F#" Value="static member Deserialize : byte[] * int * int -&gt; Microsoft.Bot.Streaming.Payloads.Header" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Deserialize (buffer, offset, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.Payloads.Header</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public const byte End = 49;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 End = (49)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.End" />
+      <MemberSignature Language="VB.NET" Value="Public Const End As Byte  = 49" />
+      <MemberSignature Language="F#" Value="val mutable End : byte" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>49</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOffset">
+      <MemberSignature Language="C#" Value="public const int EndOffset = 46;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EndOffset = (46)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.EndOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const EndOffset As Integer  = 46" />
+      <MemberSignature Language="F#" Value="val mutable EndOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.EndOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>46</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdDelimeterOffset">
+      <MemberSignature Language="C#" Value="public const int IdDelimeterOffset = 45;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IdDelimeterOffset = (45)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.IdDelimeterOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const IdDelimeterOffset As Integer  = 45" />
+      <MemberSignature Language="F#" Value="val mutable IdDelimeterOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.IdDelimeterOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>45</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdLength">
+      <MemberSignature Language="C#" Value="public const int IdLength = 36;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IdLength = (36)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.IdLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const IdLength As Integer  = 36" />
+      <MemberSignature Language="F#" Value="val mutable IdLength : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.IdLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>36</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdOffset">
+      <MemberSignature Language="C#" Value="public const int IdOffset = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IdOffset = (9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.IdOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const IdOffset As Integer  = 9" />
+      <MemberSignature Language="F#" Value="val mutable IdOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.IdOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthDelimeterOffset">
+      <MemberSignature Language="C#" Value="public const int LengthDelimeterOffset = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LengthDelimeterOffset = (8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.LengthDelimeterOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const LengthDelimeterOffset As Integer  = 8" />
+      <MemberSignature Language="F#" Value="val mutable LengthDelimeterOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.LengthDelimeterOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthLength">
+      <MemberSignature Language="C#" Value="public const int LengthLength = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LengthLength = (6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.LengthLength" />
+      <MemberSignature Language="VB.NET" Value="Public Const LengthLength As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable LengthLength : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.LengthLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthOffset">
+      <MemberSignature Language="C#" Value="public const int LengthOffset = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LengthOffset = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.LengthOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const LengthOffset As Integer  = 2" />
+      <MemberSignature Language="F#" Value="val mutable LengthOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.LengthOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEnd">
+      <MemberSignature Language="C#" Value="public const byte NotEnd = 48;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 NotEnd = (48)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.NotEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Const NotEnd As Byte  = 48" />
+      <MemberSignature Language="F#" Value="val mutable NotEnd : byte" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.NotEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>48</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public static int Serialize (Microsoft.Bot.Streaming.Payloads.Header header, byte[] buffer, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Serialize(class Microsoft.Bot.Streaming.Payloads.Header header, unsigned int8[] buffer, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Serialize(Microsoft.Bot.Streaming.Payloads.Header,System.Byte[],System.Int32)" />
+      <MemberSignature Language="F#" Value="static member Serialize : Microsoft.Bot.Streaming.Payloads.Header * byte[] * int -&gt; int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Serialize (header, buffer, offset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="header" Type="Microsoft.Bot.Streaming.Payloads.Header" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="header">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminator">
+      <MemberSignature Language="C#" Value="public const byte Terminator = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 Terminator = (10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Terminator" />
+      <MemberSignature Language="VB.NET" Value="Public Const Terminator As Byte  = 10" />
+      <MemberSignature Language="F#" Value="val mutable Terminator : byte" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.Terminator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminatorOffset">
+      <MemberSignature Language="C#" Value="public const int TerminatorOffset = 47;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TerminatorOffset = (47)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.TerminatorOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const TerminatorOffset As Integer  = 47" />
+      <MemberSignature Language="F#" Value="val mutable TerminatorOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.TerminatorOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>47</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeDelimiterOffset">
+      <MemberSignature Language="C#" Value="public const int TypeDelimiterOffset = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TypeDelimiterOffset = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.TypeDelimiterOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const TypeDelimiterOffset As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable TypeDelimiterOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.TypeDelimiterOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeOffset">
+      <MemberSignature Language="C#" Value="public const int TypeOffset = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TypeOffset = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Streaming.Payloads.HeaderSerializer.TypeOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Const TypeOffset As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable TypeOffset : int" Usage="Microsoft.Bot.Streaming.Payloads.HeaderSerializer.TypeOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

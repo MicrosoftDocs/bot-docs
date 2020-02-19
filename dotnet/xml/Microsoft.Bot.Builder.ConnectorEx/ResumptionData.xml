@@ -1,4 +1,4 @@
-﻿<Type Name="ResumptionData" FullName="Microsoft.Bot.Builder.ConnectorEx.ResumptionData">
+<Type Name="ResumptionData" FullName="Microsoft.Bot.Builder.ConnectorEx.ResumptionData">
   <TypeSignature Language="C#" Value="public sealed class ResumptionData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResumptionData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ConnectorEx.ResumptionData" />

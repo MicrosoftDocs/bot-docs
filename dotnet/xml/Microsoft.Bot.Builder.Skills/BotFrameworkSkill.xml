@@ -1,0 +1,111 @@
+<Type Name="BotFrameworkSkill" FullName="Microsoft.Bot.Builder.Skills.BotFrameworkSkill">
+  <TypeSignature Language="C#" Value="public class BotFrameworkSkill" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotFrameworkSkill extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Skills.BotFrameworkSkill" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotFrameworkSkill" />
+  <TypeSignature Language="F#" Value="type BotFrameworkSkill = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Registration for a BotFrameworkHttpProtocol based Skill endpoint.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotFrameworkSkill ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.BotFrameworkSkill.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppId">
+      <MemberSignature Language="C#" Value="public string AppId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.BotFrameworkSkill.AppId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppId As String" />
+      <MemberSignature Language="F#" Value="member this.AppId : string with get, set" Usage="Microsoft.Bot.Builder.Skills.BotFrameworkSkill.AppId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets appId of the skill.
+            </summary>
+        <value>
+            AppId of the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.BotFrameworkSkill.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Builder.Skills.BotFrameworkSkill.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets Id of the skill.
+            </summary>
+        <value>
+            Id of the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkillEndpoint">
+      <MemberSignature Language="C#" Value="public Uri SkillEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SkillEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.BotFrameworkSkill.SkillEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkillEndpoint As Uri" />
+      <MemberSignature Language="F#" Value="member this.SkillEndpoint : Uri with get, set" Usage="Microsoft.Bot.Builder.Skills.BotFrameworkSkill.SkillEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets /api/messages endpoint for the skill.
+            </summary>
+        <value>
+            /api/messages endpoint for the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

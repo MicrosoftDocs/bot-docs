@@ -1,4 +1,4 @@
-﻿<Type Name="MethodScorableBase" FullName="Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase">
+<Type Name="MethodScorableBase" FullName="Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase">
   <TypeSignature Language="C#" Value="public abstract class MethodScorableBase : Microsoft.Bot.Builder.Scorables.Internals.ScorableBase&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,Microsoft.Bot.Builder.Scorables.Internals.IBinding,Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodScorableBase extends Microsoft.Bot.Builder.Scorables.Internals.ScorableBase`3&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, class Microsoft.Bot.Builder.Scorables.Internals.IBinding, class Microsoft.Bot.Builder.Scorables.Internals.IBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase" />

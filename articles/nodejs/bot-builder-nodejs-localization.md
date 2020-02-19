@@ -1,5 +1,5 @@
 ---
-title: Support localization | Microsoft Docs
+title: Support localization - Bot Service
 description: Learn how to determine where the user is and enable localization functionality using the Bot Framework SDK for Node.js.
 author: DeniseMak
 ms.author: kamrani

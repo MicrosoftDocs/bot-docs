@@ -1,5 +1,5 @@
 ---
-title: Cortana Skills bot scenario | Microsoft Docs
+title: Cortana Skills bot scenario - Bot Service
 description: Explore the Cortana Skills bot scenario with the Bot Framework.
 author: BrianRandell
 ms.author: kamrani
@@ -26,7 +26,7 @@ Here is the logic flow of a Cortana Skills bot for an auto shop:
 3. Because the bot is integrated with Cortana, it has access to the user's calendar and applies logic to the request.
 4. With that information, the bot can query the auto service for valid appointments.
 5. Presented with contextual options, the user can book the appointment.
-6. Application insights gathers runtime telemetery to help development with bot performance and usage.
+6. Application insights gathers runtime telemetry to help development with bot performance and usage.
 
 ## Sample bot
 With a Cortana Skills Bot, it's all about personal context. Using Cortana you could use your voice to ask for "Bob's Mobile Maintenance" to come work on your car based on your location. Using personal information exposed via Cortana your bot can confirm the location based on where the user is at when they're talking to the bot.

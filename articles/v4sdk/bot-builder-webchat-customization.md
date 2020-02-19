@@ -1,5 +1,5 @@
 ---
-title:  Web Chat customization | Microsoft Docs
+title:  Web Chat customization - Bot Service
 description: Learn how to customize the Bot Framework Web Chat.
 keywords: bot framework, webchat, chat, samples, react, reference
 author: ivorb

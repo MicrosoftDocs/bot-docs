@@ -1,4 +1,4 @@
-﻿<Type Name="AuthenticationConfiguration" FullName="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration">
+<Type Name="AuthenticationConfiguration" FullName="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration">
   <TypeSignature Language="C#" Value="public class AuthenticationConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,10 +32,35 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClaimsValidator">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Bot.Connector.Authentication.ClaimsValidator ClaimsValidator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Authentication.ClaimsValidator ClaimsValidator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.ClaimsValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ClaimsValidator As ClaimsValidator" />
+      <MemberSignature Language="F#" Value="member this.ClaimsValidator : Microsoft.Bot.Connector.Authentication.ClaimsValidator with get, set" Usage="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.ClaimsValidator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Authentication.ClaimsValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an <see cref="P:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.ClaimsValidator" /> instance used to validate the identity claims.
+            </summary>
+        <value>
+            An <see cref="P:Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration.ClaimsValidator" /> instance used to validate the identity claims.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>

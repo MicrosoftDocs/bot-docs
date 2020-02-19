@@ -1,5 +1,5 @@
 ---
-title: Connect a bot to Direct Line | Microsoft Docs
+title: Connect a bot to Direct Line - Bot Service
 description: Learn how to configure a bot's connection to Direct Line.
 keywords: direct line, bot channels, custom client, connect to channels, configure
 author: RobStand
@@ -12,7 +12,7 @@ ms.date: 08/7/2019
 
 # Connect a bot to Direct Line
 
-You can enable your own client application to communicate with your bot by using the Direct Line channel. 
+You can enable your own client application to communicate with your bot by using the Direct Line channel.
 
 ## Add the Direct Line channel
 
@@ -47,3 +47,8 @@ Finally, configure settings for the site.
 > If you are creating a new connection between your client application and bot, use Direct Line API 3.0.
 
 When finished, click **Done** to save the site configuration. You can repeat this process, beginning with [Add new site](#add-new-site), for each client application that you want to connect to your bot.
+
+When you have the **enhanced authentication enabled**, you will see the following behavior for which trusted origins are used:
+
+- If you configure trusted origins as part of the configuration UI page, then these will **always** be used as the only set. Sending no or additional trusted origins when generating a token or starting a conversation will be ignored (i.e. they are **not appended** to the list or cross validated).
+- If you have not configured trusted origins as part of the configuration UI, then any value you send as part of the API calls will be used.

@@ -1,4 +1,4 @@
-﻿<Type Name="HeroCard" FullName="Microsoft.Bot.Connector.HeroCard">
+<Type Name="HeroCard" FullName="Microsoft.Bot.Connector.HeroCard">
   <TypeSignature Language="C#" Value="public class HeroCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HeroCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.HeroCard" />

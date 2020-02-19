@@ -1,0 +1,154 @@
+<Type Name="FileConsentCardResponse" FullName="Microsoft.Bot.Schema.Teams.FileConsentCardResponse">
+  <TypeSignature Language="C#" Value="public class FileConsentCardResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileConsentCardResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.FileConsentCardResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileConsentCardResponse" />
+  <TypeSignature Language="F#" Value="type FileConsentCardResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents the value of the invoke activity sent when the user acts on
+            a file consent card
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConsentCardResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileConsentCardResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the FileConsentCardResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConsentCardResponse (string action = null, object context = null, Microsoft.Bot.Schema.Teams.FileUploadInfo uploadInfo = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string action, object context, class Microsoft.Bot.Schema.Teams.FileUploadInfo uploadInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileConsentCardResponse.#ctor(System.String,System.Object,Microsoft.Bot.Schema.Teams.FileUploadInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional action As String = null, Optional context As Object = null, Optional uploadInfo As FileUploadInfo = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.FileConsentCardResponse : string * obj * Microsoft.Bot.Schema.Teams.FileUploadInfo -&gt; Microsoft.Bot.Schema.Teams.FileConsentCardResponse" Usage="new Microsoft.Bot.Schema.Teams.FileConsentCardResponse (action, context, uploadInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="context" Type="System.Object" />
+        <Parameter Name="uploadInfo" Type="Microsoft.Bot.Schema.Teams.FileUploadInfo" />
+      </Parameters>
+      <Docs>
+        <param name="action">The action the user took. Possible values
+            include: 'accept', 'decline'</param>
+        <param name="context">The context associated with the
+            action.</param>
+        <param name="uploadInfo">If the user accepted the file, contains
+            information about the file to be uploaded.</param>
+        <summary>
+            Initializes a new instance of the FileConsentCardResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCardResponse.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCardResponse.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="action")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the action the user took. Possible values include:
+            'accept', 'decline'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCardResponse.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As Object" />
+      <MemberSignature Language="F#" Value="member this.Context : obj with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCardResponse.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="context")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the context associated with the action.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Teams.FileUploadInfo UploadInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Teams.FileUploadInfo UploadInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.FileConsentCardResponse.UploadInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property UploadInfo As FileUploadInfo" />
+      <MemberSignature Language="F#" Value="member this.UploadInfo : Microsoft.Bot.Schema.Teams.FileUploadInfo with get, set" Usage="Microsoft.Bot.Schema.Teams.FileConsentCardResponse.UploadInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="uploadInfo")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.FileUploadInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets if the user accepted the file, contains information
+            about the file to be uploaded.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

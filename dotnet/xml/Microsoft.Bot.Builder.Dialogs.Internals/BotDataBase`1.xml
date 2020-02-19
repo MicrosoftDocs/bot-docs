@@ -1,4 +1,4 @@
-﻿<Type Name="BotDataBase&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;T&gt;">
+<Type Name="BotDataBase&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class BotDataBase&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Internals.IBotData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BotDataBase`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IBotData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.BotDataBase`1" />

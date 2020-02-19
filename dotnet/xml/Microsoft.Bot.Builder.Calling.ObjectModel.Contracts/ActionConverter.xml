@@ -1,4 +1,4 @@
-﻿<Type Name="ActionConverter" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter">
+<Type Name="ActionConverter" FullName="Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter">
   <TypeSignature Language="C#" Value="public class ActionConverter : Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionConverter extends Microsoft.Bot.Builder.Calling.ObjectModel.Misc.JsonCreationConverter`1&lt;class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionBase&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.ActionConverter" />

@@ -1,4 +1,4 @@
-﻿<Type Name="PassPostToBot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PassPostToBot">
+<Type Name="PassPostToBot" FullName="Microsoft.Bot.Builder.Dialogs.Internals.PassPostToBot">
   <TypeSignature Language="C#" Value="public sealed class PassPostToBot : Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassPostToBot extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Internals.IPostToBot" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.PassPostToBot" />

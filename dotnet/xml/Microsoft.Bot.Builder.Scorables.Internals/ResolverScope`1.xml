@@ -1,4 +1,4 @@
-﻿<Type Name="ResolverScope&lt;InnerScore&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;">
+<Type Name="ResolverScope&lt;InnerScore&gt;" FullName="Microsoft.Bot.Builder.Scorables.Internals.ResolverScope&lt;InnerScore&gt;">
   <TypeSignature Language="C#" Value="public abstract class ResolverScope&lt;InnerScore&gt; : Microsoft.Bot.Builder.Scorables.Internals.Token&lt;Microsoft.Bot.Builder.Scorables.Internals.IResolver,InnerScore&gt;, Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResolverScope`1&lt;InnerScore&gt; extends Microsoft.Bot.Builder.Scorables.Internals.Token`2&lt;class Microsoft.Bot.Builder.Scorables.Internals.IResolver, !InnerScore&gt; implements class Microsoft.Bot.Builder.Scorables.Internals.IResolver" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1" />
@@ -78,7 +78,7 @@
       <MemberSignature Language="C#" Value="public virtual bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1.TryResolve(System.Type,System.Object,System.Object@)" />
-      <MemberSignature Language="F#" Value="abstract member TryResolve : Type * obj *  -&gt; bool&#xA;override this.TryResolve : Type * obj *  -&gt; bool" Usage="resolverScope.TryResolve (type, tag, value)" />
+      <MemberSignature Language="F#" Value="abstract member TryResolve : Type * obj * obj -&gt; bool&#xA;override this.TryResolve : Type * obj * obj -&gt; bool" Usage="resolverScope.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>

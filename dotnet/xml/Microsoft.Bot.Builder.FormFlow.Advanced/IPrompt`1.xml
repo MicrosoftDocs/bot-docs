@@ -1,4 +1,4 @@
-﻿<Type Name="IPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;">
+<Type Name="IPrompt&lt;T&gt;" FullName="Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IPrompt&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPrompt`1&lt;class T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.FormFlow.Advanced.IPrompt`1" />

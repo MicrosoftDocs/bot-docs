@@ -1,4 +1,4 @@
-﻿<Type Name="DelegateScorable" FullName="Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable">
+<Type Name="DelegateScorable" FullName="Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable">
   <TypeSignature Language="C#" Value="public sealed class DelegateScorable : Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DelegateScorable extends Microsoft.Bot.Builder.Scorables.Internals.MethodScorableBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Internals.DelegateScorable" />

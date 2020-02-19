@@ -1,4 +1,4 @@
-﻿<Type Name="NumberWithUnits" FullName="Microsoft.Bot.Builder.AI.Luis.NumberWithUnits">
+<Type Name="NumberWithUnits" FullName="Microsoft.Bot.Builder.AI.Luis.NumberWithUnits">
   <TypeSignature Language="C#" Value="public class NumberWithUnits" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberWithUnits extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits" />
@@ -11,6 +11,7 @@
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -39,6 +40,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="number" Type="System.Nullable&lt;System.Double&gt;" />
@@ -67,6 +69,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -100,6 +103,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -1,4 +1,4 @@
-﻿<Type Name="EndOfConversationCodes" FullName="Microsoft.Bot.Connector.EndOfConversationCodes">
+<Type Name="EndOfConversationCodes" FullName="Microsoft.Bot.Connector.EndOfConversationCodes">
   <TypeSignature Language="C#" Value="public static class EndOfConversationCodes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EndOfConversationCodes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.EndOfConversationCodes" />
