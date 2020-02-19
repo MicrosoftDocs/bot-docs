@@ -1,5 +1,5 @@
 ---
-title: Send and receive text message | Microsoft Docs
+title: Send and receive text message - Bot Service
 description: Learn about how to send and receive text messages within the Bot Framework SDK.
 keywords: sending message, message activities, simple text message, message, text message, receive message  
 author: ivorb
@@ -40,6 +40,15 @@ In the bot's activity handlers, use the turn context object's `sendActivity` met
 ```javascript
 await context.sendActivity("Welcome!");
 ```
+
+# [Python](#tab/python)
+
+In the bot's activity handlers, use the turn context object's `send_activity` method to send a single message response.
+
+```python
+await turn_context.send_activity("Welcome!")
+```
+
 ---
 ## Receive a text message
 
@@ -59,6 +68,87 @@ In the bot's activity handlers, use the following code to receive a message.
 
 ```javascript
 let text = turnContext.activity.text;
+```
+
+# [Python](#tab/python)
+
+In the bot's activity handlers, use the following code to receive a message.
+
+```python
+response = context.activity.text
+```
+
+---
+
+## Send a typing indicator
+Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken.
+
+Web Chat and Direct Line channel bots can support the sending of a typing indication to show the user that the message was received and is being processed. Be aware that your bot needs to let the turn end within 15 seconds or the Connector service will timeout. For longer processes read more about sending [proactive messages](bot-builder-howto-proactive-message.md). 
+
+The following example demonstrates how to send a typing indication.
+
+# [C#](#tab/csharp)
+
+```csharp
+protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+    if (string.Equals(turnContext.Activity.Text, "wait", System.StringComparison.InvariantCultureIgnoreCase))
+    {
+        await turnContext.SendActivitiesAsync(
+            new Activity[] {
+                new Activity { Type = ActivityTypes.Typing },
+                new Activity { Type = "delay", Value= 3000 },
+                MessageFactory.Text("Finished typing", "Finished typing"),
+            },
+            cancellationToken);
+    }
+    else
+    {
+        var replyText = $"Echo: {turnContext.Activity.Text}. Say 'wait' to watch me type.";
+        await turnContext.SendActivityAsync(MessageFactory.Text(replyText, replyText), cancellationToken);
+    }
+}
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+this.onMessage(async (context, next) => {
+	if (context.activity.text === 'wait') {
+		await context.sendActivities([
+			{ type: ActivityTypes.Typing },
+			{ type: 'delay', value: 3000 },
+			{ type: ActivityTypes.Message, text: 'Finished typing' }
+		]);
+	} else {
+		await context.sendActivity(`You said '${ context.activity.text }'. Say "wait" to watch me type.`);
+	}
+	await next();
+});
+```
+
+# [Python](#tab/python)
+
+```python
+async def on_message_activity(self, turn_context: TurnContext):
+    if turn_context.activity.text == "wait":
+        return await turn_context.send_activities([
+            Activity(
+                type=ActivityTypes.typing
+            ),
+            Activity(
+                type="delay",
+                value=3000
+            ),
+            Activity(
+                type=ActivityTypes.message,
+                text="Finished Typing"
+            )
+        ])
+    else:
+        return await turn_context.send_activity(
+            f"You said {turn_context.activity.text}.  Say 'wait' to watch me type."
+        )
 ```
 
 ---

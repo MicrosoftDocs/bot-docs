@@ -1,4 +1,4 @@
-﻿<Type Name="Dispatcher" FullName="Microsoft.Bot.Builder.Scorables.Dispatcher">
+<Type Name="Dispatcher" FullName="Microsoft.Bot.Builder.Scorables.Dispatcher">
   <TypeSignature Language="C#" Value="public class Dispatcher : Microsoft.Bot.Builder.Scorables.IDispatcher" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Dispatcher extends System.Object implements class Microsoft.Bot.Builder.Scorables.IDispatcher" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Scorables.Dispatcher" />

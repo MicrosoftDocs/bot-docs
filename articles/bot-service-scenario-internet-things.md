@@ -1,5 +1,5 @@
 ---
-title: Internet of Things bot scenario | Microsoft Docs
+title: Internet of Things bot scenario - Bot Service
 description: Explore the Internet of Things bot scenario with the Bot Framework.
 author: BrianRandell
 ms.author: kamrani
@@ -25,7 +25,7 @@ Here is the logic flow of an IoT bot:
 2. Using voice, the user asks the bot to turn on the lights via the IoT device.
 3. The request is relayed to a 3rd party service that has access to the IoT device network.
 4. The results of the command are returned to the user.
-5. Application insights gathers runtime telemetery to help development with bot performance and usage.
+5. Application insights gathers runtime telemetry to help development with bot performance and usage.
 
 ## Sample bot
 The IoT bot will allow you to quickly use chat commands from channels like Skype or Slack to control your Hue. To facilitate remote access, you'll call IFTTT applets predefined to work with Hue.

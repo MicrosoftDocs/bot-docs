@@ -1,4 +1,4 @@
-﻿<Type Name="IntentHandler" FullName="Microsoft.Bot.Builder.Dialogs.IntentHandler">
+<Type Name="IntentHandler" FullName="Microsoft.Bot.Builder.Dialogs.IntentHandler">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task IntentHandler(IDialogContext context, LuisResult luisResult);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IntentHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.IntentHandler" />

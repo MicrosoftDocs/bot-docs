@@ -1,4 +1,4 @@
-﻿<Type Name="PostStruct&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.PostStruct&lt;T&gt;">
+<Type Name="PostStruct&lt;T&gt;" FullName="Microsoft.Bot.Builder.Internals.Fibers.PostStruct&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class PostStruct&lt;T&gt; : Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PostStruct`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Internals.Fibers.IPost`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1" />

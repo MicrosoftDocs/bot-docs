@@ -1,4 +1,4 @@
-﻿<Type Name="TokenResponse" FullName="Microsoft.Bot.Connector.TokenResponse">
+<Type Name="TokenResponse" FullName="Microsoft.Bot.Connector.TokenResponse">
   <TypeSignature Language="C#" Value="public class TokenResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TokenResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.TokenResponse" />

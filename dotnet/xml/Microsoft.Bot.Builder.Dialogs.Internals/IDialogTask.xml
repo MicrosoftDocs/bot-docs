@@ -1,4 +1,4 @@
-﻿<Type Name="IDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask">
+<Type Name="IDialogTask" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask">
   <TypeSignature Language="C#" Value="public interface IDialogTask : Microsoft.Bot.Builder.Base.IEventLoop, Microsoft.Bot.Builder.Base.IEventProducer&lt;Microsoft.Bot.Connector.IActivity&gt;, Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDialogTask implements class Microsoft.Bot.Builder.Base.IEventLoop, class Microsoft.Bot.Builder.Base.IEventProducer`1&lt;class Microsoft.Bot.Connector.IActivity&gt;, class Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IDialogTask" />

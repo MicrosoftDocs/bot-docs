@@ -1,4 +1,4 @@
-﻿<Type Name="PromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizer">
+<Type Name="PromptRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.PromptRecognizer">
   <TypeSignature Language="C#" Value="public class PromptRecognizer : Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PromptRecognizer extends System.Object implements class Microsoft.Bot.Builder.Dialogs.IPromptRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.PromptRecognizer" />

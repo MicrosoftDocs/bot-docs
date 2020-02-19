@@ -1,5 +1,5 @@
 ---
-title: Design bot navigation | Microsoft Docs
+title: Design bot navigation - Bot Service
 description: Learn how to design a good navigation structure for your bot and how to avoid the most common navigation design errors.
 keywords: navigation, overview, stubborn bot, clueless bot, mysterious bot, captain obvious bot, bot that can't forget
 author: matvelloso
@@ -25,7 +25,7 @@ Consider the following dilemmas:
 The specifics of your bot's navigation design will depend largely upon the features and functionality that your bot supports. Regardless of the type of bot you're developing, you'll want to avoid the common pitfalls of poorly designed conversational interfaces. This article describes these pitfalls in terms of five personalities: the "stubborn bot", the "clueless bot", the "mysterious bot", the "captain obvious bot", and the "bot that can't forget." 
 
 > [!TIP]
-> Mitgating each type of these personalities for your bot can often be done by correctly [handling user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md).
+> Mitigating each type of these personalities for your bot can often be done by correctly [handling user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md).
 
 ## The "stubborn bot"
 

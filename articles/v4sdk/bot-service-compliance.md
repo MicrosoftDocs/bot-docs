@@ -1,5 +1,5 @@
 ---
-title: Bot Service Compliance | Microsoft Docs
+title: Bot Service Compliance - Bot Service
 description: Bot Service Complinace
 author: v-ducvo
 ms.author: kamrani

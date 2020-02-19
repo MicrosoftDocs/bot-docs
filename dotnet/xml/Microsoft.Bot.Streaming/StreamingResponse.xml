@@ -1,0 +1,247 @@
+<Type Name="StreamingResponse" FullName="Microsoft.Bot.Streaming.StreamingResponse">
+  <TypeSignature Language="C#" Value="public class StreamingResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamingResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.StreamingResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamingResponse" />
+  <TypeSignature Language="F#" Value="type StreamingResponse = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Implementation split between Response and ResponseEx.
+            The basic response type sent over Bot Framework Protocol 3 with Streaming Extensions transports,
+            equivalent to HTTP response messages.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StreamingResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStream">
+      <MemberSignature Language="C#" Value="public void AddStream (System.Net.Http.HttpContent content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddStream(class System.Net.Http.HttpContent content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.AddStream(System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddStream (content As HttpContent)" />
+      <MemberSignature Language="F#" Value="member this.AddStream : System.Net.Http.HttpContent -&gt; unit" Usage="streamingResponse.AddStream content" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="content">An <see cref="T:System.Net.Http.HttpContent" /> instance containing the data to insert into the stream.</param>
+        <summary>
+            Adds a new stream to the passed in <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> containing the passed in content.
+            Throws <see cref="T:System.ArgumentNullException" /> if content is null.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResponse">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse CreateResponse (System.Net.HttpStatusCode statusCode, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse CreateResponse(valuetype System.Net.HttpStatusCode statusCode, class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.CreateResponse(System.Net.HttpStatusCode,System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResponse (statusCode As HttpStatusCode, Optional body As HttpContent = null) As StreamingResponse" />
+      <MemberSignature Language="F#" Value="static member CreateResponse : System.Net.HttpStatusCode * System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingResponse" Usage="Microsoft.Bot.Streaming.StreamingResponse.CreateResponse (statusCode, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statusCode" Type="System.Net.HttpStatusCode" />
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="statusCode">The <see cref="T:System.Net.HttpStatusCode" /> to set on the <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" />.</param>
+        <param name="body">An optional body containing additional information.</param>
+        <summary>
+            Creates a response using the passed in statusCode and optional body.
+            </summary>
+        <returns>A response with the appropriate statuscode and passed in body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forbidden">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse Forbidden (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse Forbidden(class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.Forbidden(System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Forbidden (Optional body As HttpContent = null) As StreamingResponse" />
+      <MemberSignature Language="F#" Value="static member Forbidden : System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingResponse" Usage="Microsoft.Bot.Streaming.StreamingResponse.Forbidden body" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="body">An optional body containing additional information.</param>
+        <summary>
+            Creates a response indicating the requested resource is forbidden.
+            </summary>
+        <returns>A response with the appropriate statuscode and passed in body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalServerError">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse InternalServerError (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse InternalServerError(class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.InternalServerError(System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InternalServerError (Optional body As HttpContent = null) As StreamingResponse" />
+      <MemberSignature Language="F#" Value="static member InternalServerError : System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingResponse" Usage="Microsoft.Bot.Streaming.StreamingResponse.InternalServerError body" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="body">An optional body containing additional information.</param>
+        <summary>
+            Creates a response indicating the server encountered an error while processing the request.
+            </summary>
+        <returns>A response with the appropriate statuscode and passed in body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotFound">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse NotFound (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse NotFound(class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.NotFound(System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NotFound (Optional body As HttpContent = null) As StreamingResponse" />
+      <MemberSignature Language="F#" Value="static member NotFound : System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingResponse" Usage="Microsoft.Bot.Streaming.StreamingResponse.NotFound body" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="body">An optional body containing additional information.</param>
+        <summary>
+            Creates a response indicating the requested resource was not found.
+            </summary>
+        <returns>A response with the appropriate statuscode and passed in body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OK">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse OK (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse OK(class System.Net.Http.HttpContent body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.OK(System.Net.Http.HttpContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OK (Optional body As HttpContent = null) As StreamingResponse" />
+      <MemberSignature Language="F#" Value="static member OK : System.Net.Http.HttpContent -&gt; Microsoft.Bot.Streaming.StreamingResponse" Usage="Microsoft.Bot.Streaming.StreamingResponse.OK body" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Net.Http.HttpContent" />
+      </Parameters>
+      <Docs>
+        <param name="body">An optional body containing additional information.</param>
+        <summary>
+            Creates a response indicating the request was successful.
+            </summary>
+        <returns>A response with the appropriate statuscode and passed in body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusCode">
+      <MemberSignature Language="C#" Value="public int StatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StatusCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.StreamingResponse.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : int with get, set" Usage="Microsoft.Bot.Streaming.StreamingResponse.StatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the numeric status code for the response.
+            </summary>
+        <value>
+            The numeric status code for the response.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Streams">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt; Streams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt; Streams" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.StreamingResponse.Streams" />
+      <MemberSignature Language="VB.NET" Value="Public Property Streams As List(Of ResponseMessageStream)" />
+      <MemberSignature Language="F#" Value="member this.Streams : System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt; with get, set" Usage="Microsoft.Bot.Streaming.StreamingResponse.Streams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the collection of streams attached to this response.
+            </summary>
+        <value>
+            A <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:Microsoft.Bot.Streaming.Payloads.ResponseMessageStream" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

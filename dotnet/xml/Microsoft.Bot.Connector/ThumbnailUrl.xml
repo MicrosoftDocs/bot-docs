@@ -1,4 +1,4 @@
-﻿<Type Name="ThumbnailUrl" FullName="Microsoft.Bot.Connector.ThumbnailUrl">
+<Type Name="ThumbnailUrl" FullName="Microsoft.Bot.Connector.ThumbnailUrl">
   <TypeSignature Language="C#" Value="public class ThumbnailUrl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThumbnailUrl extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.ThumbnailUrl" />

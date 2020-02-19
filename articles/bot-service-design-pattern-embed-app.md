@@ -1,5 +1,5 @@
 ---
-title: Embed a bot in an app | Microsoft Docs
+title: Embed a bot in an app - Bot Service
 description: Learn how to design a bot that will be embedded within another app.
 author: matvelloso
 ms.author: mateusv

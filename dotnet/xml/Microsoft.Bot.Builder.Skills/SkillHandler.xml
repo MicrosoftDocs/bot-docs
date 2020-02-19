@@ -1,0 +1,173 @@
+<Type Name="SkillHandler" FullName="Microsoft.Bot.Builder.Skills.SkillHandler">
+  <TypeSignature Language="C#" Value="public class SkillHandler : Microsoft.Bot.Builder.ChannelServiceHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SkillHandler extends Microsoft.Bot.Builder.ChannelServiceHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Skills.SkillHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class SkillHandler&#xA;Inherits ChannelServiceHandler" />
+  <TypeSignature Language="F#" Value="type SkillHandler = class&#xA;    inherit ChannelServiceHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.ChannelServiceHandler</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A Bot Framework Handler for skills.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkillHandler (Microsoft.Bot.Builder.BotAdapter adapter, Microsoft.Bot.Builder.IBot bot, Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase conversationIdFactory, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = null, Microsoft.Extensions.Logging.ILogger logger = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.BotAdapter adapter, class Microsoft.Bot.Builder.IBot bot, class Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase conversationIdFactory, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.#ctor(Microsoft.Bot.Builder.BotAdapter,Microsoft.Bot.Builder.IBot,Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (adapter As BotAdapter, bot As IBot, conversationIdFactory As SkillConversationIdFactoryBase, credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Skills.SkillHandler : Microsoft.Bot.Builder.BotAdapter * Microsoft.Bot.Builder.IBot * Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Skills.SkillHandler" Usage="new Microsoft.Bot.Builder.Skills.SkillHandler (adapter, bot, conversationIdFactory, credentialProvider, authConfig, channelProvider, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="adapter" Type="Microsoft.Bot.Builder.BotAdapter" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
+        <Parameter Name="conversationIdFactory" Type="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase" />
+        <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
+        <Parameter Name="authConfig" Type="Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration" />
+        <Parameter Name="channelProvider" Type="Microsoft.Bot.Connector.Authentication.IChannelProvider" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="adapter">An instance of the <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> that will handle the request.</param>
+        <param name="bot">The <see cref="T:Microsoft.Bot.Builder.IBot" /> instance.</param>
+        <param name="conversationIdFactory">A <see cref="T:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase" /> to unpack the conversation ID and map it to the calling bot.</param>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="authConfig">The authentication configuration.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Skills.SkillHandler" /> class,
+            using a credential provider.
+            </summary>
+        <remarks>Use a <see cref="T:Microsoft.Bot.Builder.MiddlewareSet" /> object to add multiple middleware
+            components in the constructor. Use the Use(<see cref="T:Microsoft.Bot.Builder.IMiddleware" />) method to
+            add additional middleware to the adapter after construction.
+            </remarks>
+        <exception cref="T:System.ArgumentNullException">throw ArgumentNullException.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnReplyToActivityAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.OnReplyToActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnReplyToActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="skillHandler.OnReplyToActivityAsync (claimsIdentity, conversationId, activityId, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">claimsIdentity for the bot, should have AudienceClaim, AppIdClaim and ServiceUrlClaim.</param>
+        <param name="conversationId">Conversation ID.</param>
+        <param name="activityId">activityId the reply is to (OPTIONAL).</param>
+        <param name="activity">Activity to send.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+             ReplyToActivity() API for Skill.
+             </summary>
+        <returns>task for a resource response.</returns>
+        <remarks>
+             This method allows you to reply to an activity.
+            
+             This is slightly different from SendToConversation().
+             * SendToConversation(conversationId) - will append the activity to the end
+             of the conversation according to the timestamp or semantics of the channel.
+             * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+             to another activity, if the channel supports it. If the channel does not
+             support nested replies, ReplyToActivity falls back to SendToConversation.
+            
+             Use ReplyToActivity when replying to a specific activity in the
+             conversation.
+            
+             Use SendToConversation in all other cases.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSendToConversationAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnSendToConversationAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnSendToConversationAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.OnSendToConversationAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.OnSendToConversationAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="skillHandler.OnSendToConversationAsync (claimsIdentity, conversationId, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">claimsIdentity for the bot, should have AudienceClaim, AppIdClaim and ServiceUrlClaim.</param>
+        <param name="conversationId">conversationId.</param>
+        <param name="activity">Activity to send.</param>
+        <param name="cancellationToken">The cancellation token.</param>
+        <summary>
+             SendToConversation() API for Skill.
+             </summary>
+        <returns>task for a resource response.</returns>
+        <remarks>
+             This method allows you to send an activity to the end of a conversation.
+            
+             This is slightly different from ReplyToActivity().
+             * SendToConversation(conversationId) - will append the activity to the end
+             of the conversation according to the timestamp or semantics of the channel.
+             * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+             to another activity, if the channel supports it. If the channel does not
+             support nested replies, ReplyToActivity falls back to SendToConversation.
+            
+             Use ReplyToActivity when replying to a specific activity in the
+             conversation.
+            
+             Use SendToConversation in all other cases.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkillConversationReferenceKey">
+      <MemberSignature Language="C#" Value="public static readonly string SkillConversationReferenceKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SkillConversationReferenceKey" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Skills.SkillHandler.SkillConversationReferenceKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SkillConversationReferenceKey As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SkillConversationReferenceKey : string" Usage="Microsoft.Bot.Builder.Skills.SkillHandler.SkillConversationReferenceKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

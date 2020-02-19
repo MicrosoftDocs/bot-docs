@@ -1,0 +1,196 @@
+<Type Name="SourcePoint" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint">
+  <TypeSignature Language="C#" Value="public class SourcePoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SourcePoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class SourcePoint" />
+  <TypeSignature Language="F#" Value="type SourcePoint = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SourcePoint represents the line and character index into the source code or declarative object backing an object in memory.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SourcePoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SourcePoint (int lineIndex, int charIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 lineIndex, int32 charIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (lineIndex As Integer, charIndex As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint : int * int -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" Usage="new Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint (lineIndex, charIndex)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="lineIndex" Type="System.Int32" />
+        <Parameter Name="charIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineIndex">line index.</param>
+        <param name="charIndex">char index.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharIndex">
+      <MemberSignature Language="C#" Value="public int CharIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CharIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.CharIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.CharIndex : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.CharIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets char index on the line from lineindex.
+            </summary>
+        <value>
+            Char index on the line from lineindex.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint From (Newtonsoft.Json.JsonReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint From(class Newtonsoft.Json.JsonReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.From(Newtonsoft.Json.JsonReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function From (reader As JsonReader) As SourcePoint" />
+      <MemberSignature Language="F#" Value="static member From : Newtonsoft.Json.JsonReader -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.From reader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="Newtonsoft.Json.JsonReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">json reader.</param>
+        <summary>
+            Get point from JsonReader.
+            </summary>
+        <returns>Point for start of current json reader.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineIndex">
+      <MemberSignature Language="C#" Value="public int LineIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.LineIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.LineIndex : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.LineIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets line number into the source file.
+            </summary>
+        <value>
+            Line number into the source file.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObjectWithSourcePoints&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ReadObjectWithSourcePoints&lt;T&gt; (Newtonsoft.Json.JsonReader reader, Func&lt;Newtonsoft.Json.JsonReader,T&gt; read, out Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint start, out Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint end);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadObjectWithSourcePoints&lt;T&gt;(class Newtonsoft.Json.JsonReader reader, class System.Func`2&lt;class Newtonsoft.Json.JsonReader, !!T&gt; read, [out] class Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint&amp; start, [out] class Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint&amp; end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.ReadObjectWithSourcePoints``1(Newtonsoft.Json.JsonReader,System.Func{Newtonsoft.Json.JsonReader,``0},Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint@,Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadObjectWithSourcePoints(Of T) (reader As JsonReader, read As Func(Of JsonReader, T), ByRef start As SourcePoint, ByRef end As SourcePoint) As T" />
+      <MemberSignature Language="F#" Value="static member ReadObjectWithSourcePoints : Newtonsoft.Json.JsonReader * Func&lt;Newtonsoft.Json.JsonReader, 'T&gt; * SourcePoint * SourcePoint -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.ReadObjectWithSourcePoints (reader, read, start, end)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="Newtonsoft.Json.JsonReader" />
+        <Parameter Name="read" Type="System.Func&lt;Newtonsoft.Json.JsonReader,T&gt;" />
+        <Parameter Name="start" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" RefType="out" />
+        <Parameter Name="end" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of object to deserialize.</typeparam>
+        <param name="reader">reader to read from.</param>
+        <param name="read">function to process during reading.</param>
+        <param name="start">result start point for object.</param>
+        <param name="end">result end point for object.</param>
+        <summary>
+            Read object as T and return the start/end points for the object that was read.
+            </summary>
+        <returns>deserialized object as type(T).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.SourcePoint.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sourcePoint.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

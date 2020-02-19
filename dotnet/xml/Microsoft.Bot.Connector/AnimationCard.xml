@@ -1,4 +1,4 @@
-﻿<Type Name="AnimationCard" FullName="Microsoft.Bot.Connector.AnimationCard">
+<Type Name="AnimationCard" FullName="Microsoft.Bot.Connector.AnimationCard">
   <TypeSignature Language="C#" Value="public class AnimationCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnimationCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AnimationCard" />

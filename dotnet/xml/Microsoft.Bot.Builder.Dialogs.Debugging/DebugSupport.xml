@@ -1,0 +1,157 @@
+<Type Name="DebugSupport" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport">
+  <TypeSignature Language="C#" Value="public static class DebugSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DebugSupport extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport" />
+  <TypeSignature Language="VB.NET" Value="Public Module DebugSupport" />
+  <TypeSignature Language="F#" Value="type DebugSupport = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Debugger support for <see cref="T:Microsoft.Bot.Builder.ITurnContext" />, <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" />. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DebuggerStepAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DebuggerStepAsync (this Microsoft.Bot.Builder.Dialogs.DialogContext context, Microsoft.Bot.Builder.Dialogs.Dialog dialog, string more, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DebuggerStepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext context, class Microsoft.Bot.Builder.Dialogs.Dialog dialog, string more, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.Dialog,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member DebuggerStepAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.Dialog * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync (context, dialog, more, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" RefType="this" />
+        <Parameter Name="dialog" Type="Microsoft.Bot.Builder.Dialogs.Dialog" />
+        <Parameter Name="more" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="context">dialogContext.</param>
+        <param name="dialog">dialog.</param>
+        <param name="more">label.</param>
+        <param name="cancellationToken">cancellation token for async operations.</param>
+        <summary>
+            Call into active IDialogDebugger and let it know that we are at given point in the dialog.
+            </summary>
+        <returns>async task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebuggerStepAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DebuggerStepAsync (this Microsoft.Bot.Builder.Dialogs.DialogContext context, Microsoft.Bot.Builder.IRecognizer recognizer, string more, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DebuggerStepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext context, class Microsoft.Bot.Builder.IRecognizer recognizer, string more, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.IRecognizer,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member DebuggerStepAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.IRecognizer * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync (context, recognizer, more, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" RefType="this" />
+        <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.IRecognizer" />
+        <Parameter Name="more" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="context">dialogContext.</param>
+        <param name="recognizer">recognizer.</param>
+        <param name="more">label.</param>
+        <param name="cancellationToken">cancellation token for async operations.</param>
+        <summary>
+            Call into active IDialogDebugger and let it know that we are at given point in the Recognizer.
+            </summary>
+        <returns>async task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDebugger">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger GetDebugger (this Microsoft.Bot.Builder.Dialogs.DialogContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger GetDebugger(class Microsoft.Bot.Builder.Dialogs.DialogContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.GetDebugger(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDebugger (context As DialogContext) As IDialogDebugger" />
+      <MemberSignature Language="F#" Value="static member GetDebugger : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.GetDebugger context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="context">dialogContext.</param>
+        <summary>
+            Extension method to get IDialogDebugger from DialogContext.
+            </summary>
+        <returns>IDialogDebugger.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDebugger">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger GetDebugger (this Microsoft.Bot.Builder.ITurnContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger GetDebugger(class Microsoft.Bot.Builder.ITurnContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.GetDebugger(Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDebugger (context As ITurnContext) As IDialogDebugger" />
+      <MemberSignature Language="F#" Value="static member GetDebugger : Microsoft.Bot.Builder.ITurnContext -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.GetDebugger context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="context">turnContext.</param>
+        <summary>
+            Extension method to get IDialogDebugger from TurnContext.
+            </summary>
+        <returns>IDialogDebugger.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceMap">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap SourceMap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap SourceMap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.SourceMap" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceMap As ISourceMap" />
+      <MemberSignature Language="F#" Value="member this.SourceMap : Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.SourceMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

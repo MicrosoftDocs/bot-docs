@@ -1,4 +1,4 @@
-﻿<Type Name="EndorsementsRetriever" FullName="Microsoft.Bot.Connector.EndorsementsRetriever">
+<Type Name="EndorsementsRetriever" FullName="Microsoft.Bot.Connector.EndorsementsRetriever">
   <TypeSignature Language="C#" Value="public sealed class EndorsementsRetriever : Microsoft.IdentityModel.Protocols.IConfigurationRetriever&lt;System.Collections.Generic.IDictionary&lt;string,string[]&gt;&gt;, Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndorsementsRetriever extends System.Object implements class Microsoft.IdentityModel.Protocols.IConfigurationRetriever`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, string[]&gt;&gt;, class Microsoft.IdentityModel.Protocols.IDocumentRetriever" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.EndorsementsRetriever" />

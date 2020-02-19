@@ -1,0 +1,233 @@
+<Type Name="PromptCultureModels" FullName="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels">
+  <TypeSignature Language="C#" Value="public static class PromptCultureModels" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PromptCultureModels extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels" />
+  <TypeSignature Language="VB.NET" Value="Public Class PromptCultureModels" />
+  <TypeSignature Language="F#" Value="type PromptCultureModels = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class container for currently-supported Culture Models in Confirm and Choice Prompt.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Chinese">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Chinese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Chinese" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Chinese" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Chinese As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.Chinese : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Chinese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dutch">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Dutch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Dutch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Dutch" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Dutch As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.Dutch : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Dutch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="English">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel English { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel English" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.English" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property English As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.English : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.English" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="French">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel French { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel French" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.French" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property French As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.French : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.French" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="German">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel German { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel German" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.German" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property German As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.German : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.German" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedCultures">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel[] GetSupportedCultures ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel[] GetSupportedCultures() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.GetSupportedCultures" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSupportedCultures () As PromptCultureModel()" />
+      <MemberSignature Language="F#" Value="static member GetSupportedCultures : unit -&gt; Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel[]" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.GetSupportedCultures " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Japanese">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Japanese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Japanese" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Japanese" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Japanese As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.Japanese : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Japanese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapToNearestLanguage">
+      <MemberSignature Language="C#" Value="public static string MapToNearestLanguage (string cultureCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MapToNearestLanguage(string cultureCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.MapToNearestLanguage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapToNearestLanguage (cultureCode As String) As String" />
+      <MemberSignature Language="F#" Value="static member MapToNearestLanguage : string -&gt; string" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.MapToNearestLanguage cultureCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cultureCode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="cultureCode">Represents locale. Examples: "en-US, en-us, EN".</param>
+        <summary>
+            Use Recognizers-Text to normalize various potential Locale strings to a standard.
+            </summary>
+        <returns>Normalized locale.</returns>
+        <remarks>
+            This is mostly a copy/paste from https://github.com/microsoft/Recognizers-Text/blob/master/.NET/Microsoft.Recognizers.Text/Culture.cs#L66
+            This doesn't directly use Recognizers-Text's MapToNearestLanguage because if they add language support before we do, it will break our prompts.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Portuguese">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Portuguese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Portuguese" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Portuguese" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Portuguese As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.Portuguese : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Portuguese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spanish">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Spanish { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel Spanish" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Spanish" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Spanish As PromptCultureModel" />
+      <MemberSignature Language="F#" Value="member this.Spanish : Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel" Usage="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Spanish" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

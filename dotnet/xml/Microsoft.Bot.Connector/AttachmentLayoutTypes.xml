@@ -1,4 +1,4 @@
-﻿<Type Name="AttachmentLayoutTypes" FullName="Microsoft.Bot.Connector.AttachmentLayoutTypes">
+<Type Name="AttachmentLayoutTypes" FullName="Microsoft.Bot.Connector.AttachmentLayoutTypes">
   <TypeSignature Language="C#" Value="public static class AttachmentLayoutTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AttachmentLayoutTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.AttachmentLayoutTypes" />

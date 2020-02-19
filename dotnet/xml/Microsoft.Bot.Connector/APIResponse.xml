@@ -1,4 +1,4 @@
-﻿<Type Name="APIResponse" FullName="Microsoft.Bot.Connector.APIResponse">
+<Type Name="APIResponse" FullName="Microsoft.Bot.Connector.APIResponse">
   <TypeSignature Language="C#" Value="public class APIResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit APIResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.APIResponse" />

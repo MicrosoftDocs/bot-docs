@@ -1,4 +1,4 @@
-﻿<Type Name="TextFormatTypes" FullName="Microsoft.Bot.Connector.TextFormatTypes">
+<Type Name="TextFormatTypes" FullName="Microsoft.Bot.Connector.TextFormatTypes">
   <TypeSignature Language="C#" Value="public static class TextFormatTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextFormatTypes extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.TextFormatTypes" />

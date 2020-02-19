@@ -1,11 +1,11 @@
 ---
-title: Add authentication to your bot via Azure Bot Service | Microsoft Docs
+title: Add authentication to your bot via Azure Bot Service - Bot Service
 description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/04/2019
+ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -91,8 +91,8 @@ Once you finish, you will have a bot running locally that can respond to a few s
 
 | Sample | BotBuilder version | Demonstrates |
 |:---|:---:|:---|
-| **Bot authentication** in [**CSharp**][cs-auth-sample] or [**JavaScript**][js-auth-sample] | v4 | OAuthCard support |
-| **Bot authentication MSGraph** in [**CSharp**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] | v4 |  Microsoft Graph API support with OAuth 2 |
+| **Bot authentication** in [**CSharp**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
+| **Bot authentication MSGraph** in [**CSharp**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
 
 ## Create your bot resource on Azure
 
@@ -253,7 +253,7 @@ You will need your bot's app ID and password to complete this process.
 
 # [JavaScript](#tab/javascript)
 
-1. Clone from the github repository the you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication MSGraph**][js-msgraph-sample].
+1. Clone from the github repository you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication MSGraph**][js-msgraph-sample].
 1. Update **.env**:
 
     - Set `connectionName` to the name of the OAuth connection setting you added to your bot.
@@ -262,6 +262,18 @@ You will need your bot's app ID and password to complete this process.
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
     [!code-txt[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
+
+# [Python](#tab/python)
+
+1. Clone the sample [**Bot authentication**][python-auth-sample] from the github repository.
+1. Update **config.py**:
+
+    - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
+    - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
+
+      Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
+
+    [!code-python[config](~/../botbuilder-samples/samples/python/18.bot-authentication/config.py)]
 
 ---
 
@@ -275,7 +287,7 @@ If you do not know how to get your **Microsoft app ID** and **Microsoft app pass
 If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the emulator](../bot-service-debug-emulator.md).
 
 <!-- auth config steps -->
-In order for the bot sample login to work you must configure the emulator 
+In order for the bot sample login to work you must configure the emulator
 as shown in [Configure the emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
 
 ### Testing
@@ -365,6 +377,27 @@ Within the following dialog step, check for the presence of a token in the resul
 
 [!code-javascript[Get OAuthPrompt result](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=62-63)]
 
+# [Python](#tab/python)
+
+![Bot architecture](media/how-to-auth/architecture-python.png)
+
+**dialogs/main_dialog.py**
+
+Add an OAuth prompt to **MainDialog** in its constructor. Here, the value for the connection name was retrieved from the **config.py** file.
+
+[!code-python[Add OAuthPrompt](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/main_dialog.py?range=34-44)]
+
+Within a dialog step, use `begin_dialog` to start the OAuth prompt, which asks the user to sign in.
+
+- If the user is already signed in, this will generate a token response event, without prompting the user.
+- Otherwise, this will prompt the user to sign in. The Azure Bot Service sends the token response event after the user attempts to sign in.
+
+[!code-python[Add OAuthPrompt](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/main_dialog.py?range=49)]
+
+Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
+
+[!code-python[Add OAuthPrompt](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/main_dialog.py?range=54-65)]
+
 ---
 
 ### Wait for a TokenResponseEvent
@@ -387,6 +420,14 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 [!code-javascript[onTokenResponseEvent](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/bots/authBot.js?range=29-31)]
 
+# [Python](#tab/python)
+
+**bots/auth_bot.py**
+
+**AuthBot** explicitly handles token response event activities. Here, we continue the active dialog, which allows the OAuth prompt to process the event and retrieve the token.
+
+[!code-python[on_token_response_event](~/../botbuilder-samples/samples/python/18.bot-authentication/bots/auth_bot.py?range=38-44)]
+
 ---
 
 ### Log the user out
@@ -396,44 +437,60 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 # [C#](#tab/csharp)
 
 **Dialogs\LogoutDialog.cs**
-
 [!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
 
 # [JavaScript](#tab/javascript)
 
 **dialogs/logoutDialog.js**
-
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
+
+# [Python](#tab/python)
+
+**dialogs/logout_dialog.py**
+[!code-python[allow logout](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/logout_dialog.py?range=27-34&highlight=6)]
 
 ---
 
 ### Adding Teams Authentication
 
 Teams behaves somewhat differently than other channels in regards to OAuth and requires a few changes to properly implement authentication. We will add code from the Teams Authentication Bot sample ([C#][cs-teams-auth-sample]/[JavaScript][js-teams-auth-sample]).
- 
-One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity. 
 
-# [C#](#tab/csharp)  
+One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity.
+
+# [C#](#tab/csharp)
+
 **Bots/TeamsBot.cs**  
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
-# [JavaScript](#tab/javascript)  
+# [JavaScript](#tab/javascript)
+
 **bots/teamsBot.js**  
-[!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=27-32&highlight=3)]
+[!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
+
+# [Python](#tab/python)
+
+Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](https://aka.ms/teams-docs) on authentication.
 
 ---
 
-If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file. 
+If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file.
 
-# [C#](#tab/csharp)  
+# [C#](#tab/csharp)
+
 **Bots/DialogBot.cs**  
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
-# [JavaScript](#tab/javascript)  
+# [JavaScript](#tab/javascript)
+
 **Bots/dialogBot.js**  
-[!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=4-6)]
+[!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
+
+# [Python](#tab/python)
+
+Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](https://aka.ms/teams-docs) on authentication.
 
 ---
+
 Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActivityHandler.cs` for C# bots and `teamsActivityHandler.js` for Javascript bots) at the topmost level in your bot's folder.
 
 The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
@@ -462,6 +519,8 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 
 [cs-auth-sample]: https://aka.ms/v4cs-bot-auth-sample
 [js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
+[python-auth-sample]: https://aka.ms/bot-auth-python-sample-code
+
 [cs-msgraph-sample]: https://aka.ms/v4cs-auth-msgraph-sample
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
 [cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample

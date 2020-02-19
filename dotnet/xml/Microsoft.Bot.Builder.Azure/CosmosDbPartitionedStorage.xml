@@ -1,0 +1,159 @@
+<Type Name="CosmosDbPartitionedStorage" FullName="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage">
+  <TypeSignature Language="C#" Value="public class CosmosDbPartitionedStorage : Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbPartitionedStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbPartitionedStorage&#xA;Implements IStorage" />
+  <TypeSignature Language="F#" Value="type CosmosDbPartitionedStorage = class&#xA;    interface IStorage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IStorage</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Implements an CosmosDB based storage provider using partitioning for a bot.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbPartitionedStorage (Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions cosmosDbStorageOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions cosmosDbStorageOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.#ctor(Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cosmosDbStorageOptions As CosmosDbPartitionedStorageOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage : Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions -&gt; Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage cosmosDbStorageOptions" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions" />
+      </Parameters>
+      <Docs>
+        <param name="cosmosDbStorageOptions">Cosmos DB partitioned storage configuration options.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage" /> class.
+            using the provided CosmosDB credentials, database ID, and container ID.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CosmosDbPartitionedStorage (Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions cosmosDbStorageOptions, Newtonsoft.Json.JsonSerializer jsonSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions cosmosDbStorageOptions, class Newtonsoft.Json.JsonSerializer jsonSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.#ctor(Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage : Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions * Newtonsoft.Json.JsonSerializer -&gt; Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage (cosmosDbStorageOptions, jsonSerializer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions" />
+        <Parameter Name="jsonSerializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="cosmosDbStorageOptions">Cosmos DB partitioned storage configuration options.</param>
+        <param name="jsonSerializer">If passing in a custom JsonSerializer, we recommend the following settings:
+            <para>jsonSerializer.TypeNameHandling = TypeNameHandling.All.</para><para>jsonSerializer.NullValueHandling = NullValueHandling.Include.</para><para>jsonSerializer.ContractResolver = new DefaultContractResolver().</para></param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage" /> class.
+            using the provided CosmosDB credentials, database ID, and collection ID.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAsync (string[] keys, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.DeleteAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cosmosDbPartitionedStorage.DeleteAsync (keys, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IStorage.DeleteAsync(System.String[],System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="keys">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; ReadAsync (string[] keys, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; ReadAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.ReadAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;&#xA;override this.ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;" Usage="cosmosDbPartitionedStorage.ReadAsync (keys, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IStorage.ReadAsync(System.String[],System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="keys">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (System.Collections.Generic.IDictionary&lt;string,object&gt; changes, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; changes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cosmosDbPartitionedStorage.WriteAsync (changes, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="changes" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="changes">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,4 +1,4 @@
-﻿<Type Name="IBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser">
+<Type Name="IBotToUser" FullName="Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser">
   <TypeSignature Language="C#" Value="public interface IBotToUser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBotToUser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser" />

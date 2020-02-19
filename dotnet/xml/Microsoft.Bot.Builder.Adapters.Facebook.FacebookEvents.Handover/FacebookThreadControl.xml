@@ -1,0 +1,68 @@
+<Type Name="FacebookThreadControl" FullName="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl">
+  <TypeSignature Language="C#" Value="public class FacebookThreadControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FacebookThreadControl extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class FacebookThreadControl" />
+  <TypeSignature Language="F#" Value="type FacebookThreadControl = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FacebookThreadControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Metadata">
+      <MemberSignature Language="C#" Value="public string Metadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Metadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property Metadata As String" />
+      <MemberSignature Language="F#" Value="member this.Metadata : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.Metadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("metadata")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or Sets the message sent from the requester.
+            </summary>
+        <value>
+            Message sent from the requester.
+            </value>
+        <remarks>
+            Example: "All yours!".
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

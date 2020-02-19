@@ -1,5 +1,5 @@
 ---
-title: Recognize intent from message content | Microsoft Docs
+title: Recognize intent from message content - Bot Service
 description: Learn how to recognize the user's intent by using regular expressions or checking the message content.
 author: DeniseMak
 ms.author: kamrani

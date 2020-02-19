@@ -1,5 +1,5 @@
 ---
-title: Exchange information using the web control | Microsoft Docs
+title: Exchange information using the web control - Bot Service
 description: Learn how to exchange information between the bot and a web page using the Bot Framework SDK for Node.js.
 author: RobStand
 ms.author: kamrani

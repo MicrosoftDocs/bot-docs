@@ -1,0 +1,253 @@
+<Type Name="PayloadStreamAssembler" FullName="Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler">
+  <TypeSignature Language="C#" Value="public class PayloadStreamAssembler : Microsoft.Bot.Streaming.Payloads.IAssembler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PayloadStreamAssembler extends System.Object implements class Microsoft.Bot.Streaming.Payloads.IAssembler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler" />
+  <TypeSignature Language="VB.NET" Value="Public Class PayloadStreamAssembler&#xA;Implements IAssembler" />
+  <TypeSignature Language="F#" Value="type PayloadStreamAssembler = class&#xA;    interface IAssembler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Streaming.Payloads.IAssembler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PayloadStreamAssembler (Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.#ctor(Microsoft.Bot.Streaming.Payloads.IStreamManager,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (streamManager As IStreamManager, id As Guid)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler : Microsoft.Bot.Streaming.Payloads.IStreamManager * Guid -&gt; Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler" Usage="new Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler (streamManager, id)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="streamManager" Type="Microsoft.Bot.Streaming.Payloads.IStreamManager" />
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="streamManager">To be added.</param>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PayloadStreamAssembler (Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, Guid id, string type, Nullable&lt;int&gt; length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, valuetype System.Guid id, string type, valuetype System.Nullable`1&lt;int32&gt; length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.#ctor(Microsoft.Bot.Streaming.Payloads.IStreamManager,System.Guid,System.String,System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (streamManager As IStreamManager, id As Guid, type As String, length As Nullable(Of Integer))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler : Microsoft.Bot.Streaming.Payloads.IStreamManager * Guid * string * Nullable&lt;int&gt; -&gt; Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler" Usage="new Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler (streamManager, id, type, length)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="streamManager" Type="Microsoft.Bot.Streaming.Payloads.IStreamManager" />
+        <Parameter Name="id" Type="System.Guid" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="length" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="streamManager">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="payloadStreamAssembler.Close " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IAssembler.Close</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ContentLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ContentLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.ContentLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentLength As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStreamFromPayload">
+      <MemberSignature Language="C#" Value="public System.IO.Stream CreateStreamFromPayload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream CreateStreamFromPayload() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.CreateStreamFromPayload" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateStreamFromPayload () As Stream" />
+      <MemberSignature Language="F#" Value="abstract member CreateStreamFromPayload : unit -&gt; System.IO.Stream&#xA;override this.CreateStreamFromPayload : unit -&gt; System.IO.Stream" Usage="payloadStreamAssembler.CreateStreamFromPayload " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IAssembler.CreateStreamFromPayload</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public bool End { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool End" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.End" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As Boolean" />
+      <MemberSignature Language="F#" Value="member this.End : bool" Usage="Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPayloadAsStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetPayloadAsStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetPayloadAsStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.GetPayloadAsStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPayloadAsStream () As Stream" />
+      <MemberSignature Language="F#" Value="abstract member GetPayloadAsStream : unit -&gt; System.IO.Stream&#xA;override this.GetPayloadAsStream : unit -&gt; System.IO.Stream" Usage="payloadStreamAssembler.GetPayloadAsStream " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IAssembler.GetPayloadAsStream</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnReceive">
+      <MemberSignature Language="C#" Value="public void OnReceive (Microsoft.Bot.Streaming.Payloads.Header header, System.IO.Stream stream, int contentLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnReceive(class Microsoft.Bot.Streaming.Payloads.Header header, class System.IO.Stream stream, int32 contentLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.OnReceive(Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member OnReceive : Microsoft.Bot.Streaming.Payloads.Header * System.IO.Stream * int -&gt; unit&#xA;override this.OnReceive : Microsoft.Bot.Streaming.Payloads.Header * System.IO.Stream * int -&gt; unit" Usage="payloadStreamAssembler.OnReceive (header, stream, contentLength)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IAssembler.OnReceive(Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="header" Type="Microsoft.Bot.Streaming.Payloads.Header" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="contentLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="header">To be added.</param>
+        <param name="stream">To be added.</param>
+        <param name="contentLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

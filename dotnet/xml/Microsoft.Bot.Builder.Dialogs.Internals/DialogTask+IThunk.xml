@@ -1,4 +1,4 @@
-﻿<Type Name="DialogTask+IThunk" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask+IThunk">
+<Type Name="DialogTask+IThunk" FullName="Microsoft.Bot.Builder.Dialogs.Internals.DialogTask+IThunk">
   <TypeSignature Language="C#" Value="public interface DialogTask.IThunk" />
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract DialogTask/IThunk" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Internals.DialogTask.IThunk" />

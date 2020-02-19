@@ -1,12 +1,12 @@
 ---
-title: Bot Service Frequently Asked Questions | Microsoft Docs
+title: Bot Service Frequently Asked Questions - Bot Service
 description: A list of Frequently Asked Questions about elements of the Bot Framework and when new features will become available.
 author: scheyal
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/21/2019
+ms.date: 02/19/2020
 ---
 
 # Bot Framework Frequently Asked Questions
@@ -56,7 +56,7 @@ We highly recommend that you start migrating your V3 bots to V4. In order to sup
 
 
 For more information please refer to the following references:
-* [Essential Migration Guidance](https://aka.ms/bfv3v4migration)
+* [Essential Migration Guidance](https://aka.ms/bf-migration-overview)
 * Primary V4 Repositories to develop Bot Framework bots
   * [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
   * [Botbuilder for JS](https://github.com/microsoft/botbuilder-js) 
@@ -75,10 +75,10 @@ For more information please refer to the following references:
 3.	Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
 
 #### SDK and Tools
-
 1.	We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
 2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
 3.	We do not prevent anyone from running old tools to manage their V3 bots. 
+
 
 ## How can I migrate Azure Bot Service from one region to another?
 
@@ -149,6 +149,9 @@ If you have an outbound firewall blocking traffic from your bot to the Internet,
 - cortanabfchanneleastus.azurewebsites.net (Cortana channel)
 - cortanabfchannelwestus.azurewebsites.net (Cortana Channel)
 - *.botframework.com (channels)
+
+> [!NOTE] 
+> You may use `<channel>.botframework.com` if you’d prefer not to whitelist a URL with an asterisk. `<channel>` is equal to every channel your bot uses such as `directline.botframework.com`, `webchat.botframework.com`, and `slack.botframework.com`. It is also worthwhile to watch traffic over your firewall while testing the bot to make sure nothing else is getting blocked.
 
 ### Can I block all traffic to my bot except traffic from the Bot Connector Service?
 No. This sort of IP Address or DNS whitelisting is impractical. The Bot Framework Connector Service is hosted in Azure datacenters world-wide and the list of Azure IPs is constantly changing. Whitelisting certain IP addresses may work one day and break the next as the Azure IP Addresses change.
@@ -228,7 +231,7 @@ To create your own App ID, follow the steps below.
 3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
     > [!IMPORTANT]
-    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **bot creation will fail**.
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
     ![registration details](media/app-registration/registration-details.png)
 
@@ -258,3 +261,21 @@ If you’re making your bot in the Azure portal, you need to generate a secret f
 [DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
+
+## Resources
+### Which RBAC role is required to create and deploy a bot?
+
+Creating a bot in the Azure portal requires Contributor access either in the subscription or in a specific resource group. A user with the *Contributor* role in a resource group can create a new bot in that specific resource group. A user in the *Contributor* role for a subscription can create a bot in a new or existing resource group.
+
+Using the Azure CLI, a role-based access control approach can support custom roles. If you want to make a custom role with more constrained permissions, the following set will allow the user to create and deploy a bot that also supports LUIS, QnA Maker, and Application Insights.
+
+  "Microsoft.Web/*",
+  "Microsoft.BotService/*",
+  "Microsoft.Storage/*",
+  "Microsoft.Resources/deployments/*",
+  "Microsoft.CognitiveServices/*",
+  "Microsoft.Search/searchServices/*",
+   "Microsoft.Insights/*",
+  "Microsoft.Insights/components/*"
+
+LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requires Search permissions. When creating a custom role, remember that any inherited *deny* permissions will supercede these *allow* permissions.

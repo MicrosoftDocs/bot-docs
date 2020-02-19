@@ -1,0 +1,88 @@
+<Type Name="ConversationList" FullName="Microsoft.Bot.Schema.Teams.ConversationList">
+  <TypeSignature Language="C#" Value="public class ConversationList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationList extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.ConversationList" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConversationList" />
+  <TypeSignature Language="F#" Value="type ConversationList = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            List of channels under a team
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.ConversationList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the ConversationList class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationList (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt; conversations = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.ChannelInfo&gt; conversations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.ConversationList.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.ChannelInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional conversations As IList(Of ChannelInfo) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.ConversationList : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt; -&gt; Microsoft.Bot.Schema.Teams.ConversationList" Usage="new Microsoft.Bot.Schema.Teams.ConversationList conversations" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conversations" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="conversations">To be added.</param>
+        <summary>
+            Initializes a new instance of the ConversationList class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conversations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt; Conversations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.ChannelInfo&gt; Conversations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.ConversationList.Conversations" />
+      <MemberSignature Language="VB.NET" Value="Public Property Conversations As IList(Of ChannelInfo)" />
+      <MemberSignature Language="F#" Value="member this.Conversations : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.ConversationList.Conversations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversations")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

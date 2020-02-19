@@ -1,4 +1,4 @@
-﻿<Type Name="MediaCard" FullName="Microsoft.Bot.Connector.MediaCard">
+<Type Name="MediaCard" FullName="Microsoft.Bot.Connector.MediaCard">
   <TypeSignature Language="C#" Value="public class MediaCard" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaCard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.MediaCard" />
