@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/21/2019
+ms.date: 02/19/2020
 ---
 
 # Bot Framework Frequently Asked Questions
@@ -54,8 +54,9 @@ All new features and capabilities are developed exclusively on [Bot Framework SD
 
 We highly recommend that you start migrating your V3 bots to V4. In order to support this migration we have produced migration documentation and will provide extended support for migration initiatives (via standard channels such as Stack Overflow and Microsoft Customer Support).
 
+
 For more information please refer to the following references:
-* [Essential Migration Guidance](https://aka.ms/bfv3v4migration)
+* [Essential Migration Guidance](https://aka.ms/bf-migration-overview)
 * Primary V4 Repositories to develop Bot Framework bots
   * [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
   * [Botbuilder for JS](https://github.com/microsoft/botbuilder-js) 
@@ -260,3 +261,21 @@ If you’re making your bot in the Azure portal, you need to generate a secret f
 [DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
+
+## Resources
+### Which RBAC role is required to create and deploy a bot?
+
+Creating a bot in the Azure portal requires Contributor access either in the subscription or in a specific resource group. A user with the *Contributor* role in a resource group can create a new bot in that specific resource group. A user in the *Contributor* role for a subscription can create a bot in a new or existing resource group.
+
+Using the Azure CLI, a role-based access control approach can support custom roles. If you want to make a custom role with more constrained permissions, the following set will allow the user to create and deploy a bot that also supports LUIS, QnA Maker, and Application Insights.
+
+  "Microsoft.Web/*",
+  "Microsoft.BotService/*",
+  "Microsoft.Storage/*",
+  "Microsoft.Resources/deployments/*",
+  "Microsoft.CognitiveServices/*",
+  "Microsoft.Search/searchServices/*",
+   "Microsoft.Insights/*",
+  "Microsoft.Insights/components/*"
+
+LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requires Search permissions. When creating a custom role, remember that any inherited *deny* permissions will supercede these *allow* permissions.
