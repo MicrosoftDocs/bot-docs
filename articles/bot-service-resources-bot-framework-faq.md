@@ -27,7 +27,7 @@ Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Fra
 <!-- WIP -->
 Before talking about the use of a bot offline, meaning a bot not deployed on Azure or on some other host services but on premises, let's clarify a few points.
 
-- A bot is a web service that does not have a UI, so the user must interact with it via other means, in the form of channels, which use the [Azure Connector Service](rest-api/bot-framework-rest-connector-concepts.md#bot-connector-service). The connector functions as a *proxy* to relay messages between a client and the bot.
+- A bot is a web service that does not have a UI, so the user must interact with it via other means, in the form of channels, which use the [Bot Framework Service](rest-api/bot-framework-rest-connector-concepts.md). The connector functions as a *proxy* to relay messages between a client and the bot.
 - The **connector** is a global application hosted on Azure nodes and spread geographically for availability and scalability. 
 - You use the [Bot Channel Registration](bot-service-quickstart-registration.md) to register the bot with the connector.
     >[!NOTE]
