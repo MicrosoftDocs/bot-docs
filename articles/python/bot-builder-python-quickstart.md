@@ -45,7 +45,7 @@ This command creates an Echo Bot based on the Python [echo template](https://git
 
 Copy the last four digits in the address on the last line (usually 3978) since you will be using them in the next step. You are now ready to start your bot.
 
-## Start you bot
+## Start your bot
 1. From a terminal navigate to the `echo-bot` folder where you saved your bot. Run `pip install -r requirements.txt` to install any required packages to run your bot.
 
 2. Once the packages are installed run `python app.py` to start your bot. You will know your bot is ready to test when you see  the last line shown in the screenshot below:
