@@ -50,31 +50,104 @@ Bot-to-bot authentication requires that each participating bot has a valid app I
 
 ## Convert each v3 bot to a skill
 
-For each bot, you will:
+For each v3 bot, you will:
 
+- Update the bot's configuration file to set the bot's app ID and password and to add an _allowed callers_ property.
 - Add claims validation. This will restrict access to the skill so that only users or your root bot can access the skill.
 - Modify the bot's messages controller to handle `endOfConversation` activities from the root bot.
 - Modify the bot code to return an `endOfConversation` activity when the skill completes.
+- Add a manifest file that describes the expected inputs and outputs of the skill.
+  The current manifest schema is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
-### To convert echo bot
+### Convert the echo bot
+
+In this project the root dialog was moved from the **V3EchoBot\\Controllers\\MessagesController.cs** file to a new **V3EchoBot\\Dialogs\\RootDialog.cs** file.
 
 1. Open your copy of the EchoBot project.
+
+1. To the configuration file, add the echo bot's app ID and password. Also in app settings, add an `EchoBotallowedCallers` property and add the simple root bot's app ID to its value.
+
+   **V3EchoBot\\Web.config**
+
+   [!code-csharp[app settings](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Web.config?range=11-16)]
+
+1. Add a claims validator and a supporting allowed callers class.
+
+   **V3EchoBot\\Authentication\\CustomAllowedCallersClaimsValidator.cs**
+
+   This performs the claims validation and throws an `UnauthorizedAccessException` if validation fails.
+
+   [!code-csharp[claims validator](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Authentication/CustomAllowedCallersClaimsValidator.cs?range=4-72&highlight=48-66)]
+
+   **V3EchoBot\\Authentication\\CustomSkillAuthenticationConfiguration.cs**
+
+   This loads the allowed callers information from the configuration file.
+
+   [!code-csharp[allowed callers](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Authentication/CustomSkillAuthenticationConfiguration.cs?range=4-20)]
+
+1. Update the `MessagesController` class.
+
+   **V3EchoBot\\Controllers\\MessagesController.cs**
+
+   Update the using statements.
+
+   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=4-15)]
+
+   In the `HandleSystemMessage` method, add a condition to handle an `endOfConversation` message. This allows the skill to clear state and release resources when the conversation is ended from the skill consumer.
+
+   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=49-64)]
+
+1. Modify the bot code to allow the skill to flag that the conversation is complete when it receives an "end" or "stop" message from the user. The skill should also clear state and release resources when it ends the conversation.
+
+   **V3EchoBot\\Dialogs\\RootDialog.cs**
+   [!code-csharp[message received](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Dialogs/RootDialog.cs?range=21-41)]
+
+1. Create a manifest.
+
+   **V3EchoBot\\wwwroot\\echo-bot-manifest.json**
+   [!code-csharp[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json)]
+
+### Convert the pizza bot
+
+1. Open your copy of the PizzaBot project.
 1. Add a claims validator.
 
-   **Authentication\CustomAllowedCallersClaimsValidator.cs**
+   **V3PizzaBot\\Authentication\\CustomAllowedCallersClaimsValidator.cs**
    <!--TODO Insert code link-->
 
-   **Authentication\CustomSkillAuthenticationConfiguration.cs**
+   **V3PizzaBot\\Authentication\\CustomSkillAuthenticationConfiguration.cs**
+   <!--TODO Insert code link-->
+
+1. Add a `SkillsHelper` class that can send
+
+   **V3PizzaBot\\SkillsHelper.cs**
    <!--TODO Insert code link-->
 
 1. Replace the implementation of the `MessagesController` class.
 
-   **Controllers\MessagesController.cs**
+   **V3PizzaBot\\Controllers\\MessagesController.cs**
+
+   Update the using statements.
+
    <!--TODO Insert code link.-->
 
-1. 
+   Update the class attribute from `BotAuthentication` to `SkillBotAuthentication`.
 
-### To convert the pizza bot
+   <!--TODO Insert code link.-->
+
+   Modify the bot code to send an 
+
+   <!--TODO Insert code link.-->
+
+1. Modify the bot code.
+
+   **V3PizzaBot\\Dialogs\\RootDialog.cs**
+   <!--TODO Insert code link.-->
+
+1. Create a manifest.
+
+   **V3PizzaBot\\wwwroot\\echo-bot-manifest.json**
+   <!--TODO Insert code link.-->
 
 ### To convert the sandwich bot
 
