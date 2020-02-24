@@ -28,6 +28,8 @@ To convert a JavaScript v3 bot to a skill, see how to [Convert a JavaScript v3 b
 - Copies of the v3 .NET sample bots to convert: an echo bot, the [**PizzaBot**](https://aka.ms/v3-cs-pizza-bot), and the [**SimpleSandwichBot**](https://aka.ms/v3-cs-simple-sandwich-bot).
 - A copy of the v4 .NET sample skill consumer: [**SimpleRootBot**](https://aka.ms/cs-simple-root-bot).
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- .NET Core SDK 2.1.
+- .NET Framework 4.6.1 or later.
 
 ## About the bots
 
@@ -39,6 +41,8 @@ In this article, each v3 bot is updated to act as a skill. A v4 skill consumer i
 - The **SimpleSandwichBot** walks a user through ordering a sandwich. As a skill, it sends the user's order back to the parent when finished.
 
 Also, a v4 skill consumer, the **SimpleRootBot**, demonstrates how to consume the skills and allows you to test them.
+
+To use the skill consumer to test the skills, all 4 bots need to be running at the same time. The bots can be tested locally using the Bot Framework Emulator, and each bot is assigned a different local port.
 
 ## Create Azure resources for the bots
 
@@ -62,7 +66,11 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
 In this project the root dialog was moved from the **V3EchoBot\\Controllers\\MessagesController.cs** file to a new **V3EchoBot\\Dialogs\\RootDialog.cs** file.
 
-1. Create a new project from the v3 **Bot Builder Echo Bot** project template.
+1. Create a new project from the v3 **Bot Builder Echo Bot** project template, and set it to use port 3979.
+
+   1. Open the project's properties.
+   1. Select the **Web** category, and set the **Project Url** to `http://localhost:3979/`.
+   1. Save your changes and close the properties tab.
 
 1. To the configuration file, add the echo bot's app ID and password. Also in app settings, add an `EchoBotAllowedCallers` property and add the simple root bot's app ID to its value.
 
@@ -105,14 +113,23 @@ In this project the root dialog was moved from the **V3EchoBot\\Controllers\\Mes
    **V3EchoBot\\Dialogs\\RootDialog.cs**
    [!code-csharp[message received](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Dialogs/RootDialog.cs?range=21-41)]
 
-1. Create a manifest.
+1. Use this manifest for the echo bot. Set the endpoint app ID to the bot's app ID.
 
    **V3EchoBot\\wwwroot\\echo-bot-manifest.json**
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json)]
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json?highlight=21-22)]
+
+   > [!TIP]
+   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
+   >
+   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
 
 ## Convert the pizza bot
 
-1. Open your copy of the PizzaBot project.
+1. Open your copy of the PizzaBot project, and set it to use port 3980.
+
+   1. Open the project's properties.
+   1. Select the **Web** category, and set the **Project Url** to `http://localhost:3980/`.
+   1. Save your changes and close the properties tab.
 
 1. To the configuration file, add the pizza bot's app ID and password. Also in app settings, add an `AllowedCallers` property and add the simple root bot's app ID to its value.
 
@@ -170,14 +187,23 @@ In this project the root dialog was moved from the **V3EchoBot\\Controllers\\Mes
 
    [!code-csharp[form complete](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=76-104)]
 
-1. Create a manifest.
+1. Use this manifest for the pizza bot. Set the endpoint app ID to the bot's app ID.
 
    **V3PizzaBot\\wwwroot\\pizza-bot-manifest.json**
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json)]
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json?highlight=21-22)]
+
+   > [!TIP]
+   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
+   >
+   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
 
 ## Convert the sandwich bot
 
-1. Open your copy of the SimpleSandwichBot project.
+1. Open your copy of the SimpleSandwichBot project, and set it to use port 3981.
+
+   1. Open the project's properties.
+   1. Select the **Web** category, and set the **Project Url** to `http://localhost:3981/`.
+   1. Save your changes and close the properties tab.
 
 1. To the configuration file, add the pizza bot's app ID and password. Also in app settings, add an `AllowedCallers` property and add the simple root bot's app ID to its value.
 
@@ -235,6 +261,34 @@ In this project the root dialog was moved from the **V3EchoBot\\Controllers\\Mes
 
    [!code-csharp[form complete](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=47-54&highlight=6)]
 
+1. Create a manifest.
+
+   **V3SimpleSandwichBot\\wwwroot\\sandwich-bot-manifest.json**
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json)]
+
+1. Use this manifest for the sandwich bot. Set the endpoint app ID to the bot's app ID.
+
+   **V3SimpleSandwichBot\\wwwroot\\sandwich-bot-manifest.json**
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json?highlight=21-22)]
+
+   > [!TIP]
+   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
+   >
+   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
+
 ## Create the v4 root bot
 
+The simple root bot consumes the 3 skills and lets you verify that the conversion steps worked as planned. This bot will run locally on port 3978.
+
+1. To the configuration file, add the root bot's app ID and password. For each of the v3 skills, add the skill's app ID.
+
+   **V4SimpleRootBot\\appsettings.json**
+   [!code-json[configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V4SimpleRootBot/appsettings.json)]
+
 ## Test the root bot
+
+Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+
+1. Run all four bots locally on your machine.
+
+1. Use the Emulator to test the skills and skill consumer.
