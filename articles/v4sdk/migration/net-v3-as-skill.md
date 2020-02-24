@@ -40,6 +40,13 @@ In this article, each v3 bot is updated to act as a skill. A v4 skill consumer i
 
 Also, a v4 skill consumer, the **SimpleRootBot**, demonstrates how to consume the skills and allows you to test them.
 
+## Create Azure resources for the bots
+
+Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
+
+1. Create a Bot Channels Registration for any of the 4 bots as needed.
+1. Record the app ID and password for each one.
+
 ## Convert each v3 bot to a skill
 
 To convert an existing bot to a skill bot takes just a few steps, as outlined in the next couple sections. For more in-depth information, see [about skills](../skills-conceptual.md).
@@ -50,13 +57,6 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 - Modify the bot code to return an `endOfConversation` activity when the skill completes.
 - Add a manifest file that describes the expected inputs and outputs of the skill.
   The current manifest schema is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
-
-## Create Azure resources for the bots
-
-Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-
-1. Create a Bot Channels Registration for all 4 bots.
-1. Record the app ID and password for each one.
 
 ## Convert the echo bot
 
@@ -142,7 +142,7 @@ In this project the root dialog was moved from the **V3EchoBot\\Controllers\\Mes
 
    [!code-csharp[allowed callers](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/SkillsHelper.cs?range=4-46)]
 
-1. Replace the implementation of the `MessagesController` class.
+1. Update the `MessagesController` class.
 
    **V3PizzaBot\\Controllers\\MessagesController.cs**
 
@@ -184,6 +184,56 @@ In this project the root dialog was moved from the **V3EchoBot\\Controllers\\Mes
    **V3SimpleSandwichBot\\Web.config**
 
    [!code-xml[app settings](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Web.config?range=11-16)]
+
+<!--
+1. Add a claims validator.
+
+   **V3SimpleSandwichBot\\Authentication\\CustomAllowedCallersClaimsValidator.cs**
+
+   This performs the claims validation and throws an `UnauthorizedAccessException` if validation fails.
+
+   [!code-csharp[claims validator](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Authentication/CustomAllowedCallersClaimsValidator.cs?range=4-72&highlight=48-66)]
+
+   **V3SimpleSandwichBot\\Authentication\\CustomSkillAuthenticationConfiguration.cs**
+
+   This loads the allowed callers information from the configuration file.
+
+   [!code-csharp[allowed callers](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Authentication/CustomSkillAuthenticationConfiguration.cs?range=4-20)]
+-->
+
+1. Add a `SkillsHelper` class that can send the `endOfConversation` activity when the skill ends. If the user completed the order, return the order information in the activity's `Value` property.
+
+   **V3SimpleSandwichBot\\SkillsHelper.cs**
+
+   [!code-csharp[allowed callers](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/SkillsHelper.cs?range=4-46)]
+
+1. Update the `MessagesController` class.
+
+   **V3SimpleSandwichBot\\Controllers\\MessagesController.cs**
+
+   Update the using statements.
+
+   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=4-17)]
+
+   Update the class attribute from `BotAuthentication` to `SkillBotAuthentication`.
+
+   [!code-csharp[attribute](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=21-22)]
+
+   In the `Post` method, add a condition to handle an `endOfConversation` message. This allows the skill to clear state and release resources when the conversation is ended from the skill consumer.
+
+   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=53-68)]
+
+1. Modify the sandwich form.
+
+   **V3SimpleSandwichBot\\Sandwich.cs**
+
+   Update the using statements.
+
+   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=4-8)]
+
+   Modify the form's `BuildForm` method to allow the skill to flag that the conversation is complete.
+
+   [!code-csharp[form complete](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=47-54&highlight=6)]
 
 ## Create the v4 root bot
 
