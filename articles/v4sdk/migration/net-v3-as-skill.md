@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Converting an existing v3 bot to a skill takes just a few steps. It allows other bots to access the v3 bot, while allowing users to still access the v3 bot. This can be less work than migrating the v3 bot to the v3 SDK. Any v4 bot designed to do so can consume a skill.
 
-The skill consumer and skill use the Bot Connector service to communicate with each other. The consumer and skill can be implemented in different languages, such as .NET and JavaScript.
+The skill consumer and skill use HTTP to communicate with each other. The consumer and skill can be implemented in different languages, such as .NET and JavaScript.
 
 This article describes how to convert 3 sample .NET v3 bots to skills and to create a v4 skill consumer that can access these skills.
 
@@ -56,10 +56,11 @@ Bot-to-bot authentication requires that each participating bot has a valid app I
 To convert an existing bot to a skill bot takes just a few steps, as outlined in the next couple sections. For more in-depth information, see [about skills](../skills-conceptual.md).
 
 - Update the bot's configuration file to set the bot's app ID and password and to add an _allowed callers_ property.
-- Add claims validation. This will restrict access to the skill so that only users or your root bot can access the skill. See the [addtional information](#additional-information) section for more information about default and custom claims validation.
+- Add claims validation. This will restrict access to the skill so that only users or your root bot can access the skill. See the [additional information](#additional-information) section for more information about default and custom claims validation.
 - Modify the bot's messages controller to handle `endOfConversation` activities from the root bot.
 - Modify the bot code to return an `endOfConversation` activity when the skill completes.
-- Add a manifest file that describes the expected inputs and outputs of the skill.
+- Optionally add a manifest file.
+  Since a skill consumer does not necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
   The current manifest schema is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Convert the echo bot
@@ -262,6 +263,8 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 1. Test the skills and skill consumer.
 
 ## Additional information
+
+The root and skill communicate over HTTP. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. It uses an authentication configuration object to validate the authentication header on incoming requests. You can add a claims validator to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request.
 
 The default claims validator reads the `AllowedCallers` application setting from the bot's configuration file. This setting should contain a comma separated list of the application IDs of the bots that are allowed to call the skill, or "*" to allow all bots to call the skill.
 
