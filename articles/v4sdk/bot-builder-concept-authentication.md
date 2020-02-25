@@ -22,7 +22,7 @@ In order for a bot to access protected online resources on behalf of the user, t
 
 The following picture shows the architecture of the Azure Bot Service which uses the Azure AD as the identity provider for authentication.
 
-![Azure Bot Service architecture](media\concept-bot-authentication/azure-bot-service-architecture.png)
+![Azure Bot Service architecture](media/concept-bot-authentication/azure-bot-service-architecture.png)
 
 ## User authentication in a conversation
 
