@@ -203,6 +203,10 @@ Specific scenarios to consider include:
   - To check why the skill is ending, check the activity's _code_ parameter, which could indicate that the skill encountered an error.
 - Cancelling a skill from the consumer by sending an `endOfConversation` activity to the skill.
 
+#### Invoking a skill from a dialog
+
+If you are using dialogs, you can use a _skill dialog_ to start and continue a skill. While the skill dialog is the active dialog, it will forward activities to the invoked skill. <!--TODO Flesh this out-->
+
 ## Skill bots
 
 With minor modifications, any bot can act as a skill. Skill bots:
@@ -213,6 +217,10 @@ With minor modifications, any bot can act as a skill. Skill bots:
 - Signal skill completion or cancellation via an `endOfConversation` activity.
   - Provide the return value, if any, in the activity's _value_ property.
   - Provide an error code, if any, in the activity's _code_ property.
+
+### Skill activities
+
+ Some skills can perform a variety of tasks or _activities_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations. <!--TODO Flesh this out-->
 
 ### Skill manifest
 
