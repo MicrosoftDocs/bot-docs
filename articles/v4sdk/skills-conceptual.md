@@ -37,6 +37,7 @@ The skills feature is designed so that:
 - Skills support user authentication; however, user authentication is local to the skill and cannot be transferred to another bot.
 - A skill consumer can consume multiple skills.
 - A skill consumer can run multiple skills in parallel.
+- A skill consumer can consume a skill regardless of the language or SDK version of the skill.
 - The Bot Connector service provides bot-to-bot authentication; however, you can test a root bot locally using the Emulator.
 <!--TBD: - Skills support proactive messaging. -->
 <!--TBD: - A skill can also be a skill consumer. -->
