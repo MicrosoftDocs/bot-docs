@@ -58,7 +58,7 @@ Bot-to-bot authentication requires that each participating bot has a valid app I
 
 To convert an existing bot to a skill bot takes just a few steps, as outlined in the next couple sections. For more in-depth information, see [about skills](../skills-conceptual.md).
 
-- Update the bot's configuration file to set the bot's app ID and password and to add an _allowed callers_ property.
+- Update the bot's `web.config` file to set the bot's app ID and password and to add an _allowed callers_ property.
 - Add claims validation. This will restrict access to the skill so that only users or your root bot can access the skill. See the [additional information](#additional-information) section for more information about default and custom claims validation.
 - Modify the bot's messages controller to handle `endOfConversation` activities from the root bot.
 - Modify the bot code to return an `endOfConversation` activity when the skill completes.
@@ -81,7 +81,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    [!code-xml[app settings](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Web.config?range=11-16)]
 
-1. Add a custom claims validator and a supporting allowed callers class.
+1. Add a custom claims validator and a supporting authentication configuration class.
 
    **V3EchoBot\\Authentication\\CustomAllowedCallersClaimsValidator.cs**
 
