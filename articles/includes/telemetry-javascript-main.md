@@ -1,28 +1,12 @@
-## Prerequisites
-
-- The [CoreBot sample code](https://aka.ms/js-core-sample)
-- The [Application Insights sample code](https://aka.ms/javascript-corebot-app-insights-sample)
-- A subscription to [Microsoft Azure](https://portal.azure.com/)
-- An [Application Insights key](../bot-service-resources-app-insights-keys.md)
-- Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
-- [Visual Studio Code](https://www.visualstudio.com/downloads)
-- [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed. 
-- [Yeoman](http://yeoman.io/), which uses a generator to create a bot for you
-- [git](https://git-scm.com/)
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
-
-
-
-## Wiring up telemetry in your bot
 
 We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and add the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
 > If you have not setup your [Application Insights](https://aka.ms/appinsights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
-1. Open the [CoreBot sample app](https://aka.ms/js-core-sample) in Visual Studio Code
+1. Open the [CoreBot sample app](https://aka.ms/js-core-sample) in Visual Studio Code.
 
-2. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the Bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
+2. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
     [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?range=1-6&highlight=6)]
 
@@ -38,7 +22,7 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     ```
     Note: Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
-3. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `Index.js`, just after the code to Import required packages:
+3. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `index.js`, just after the code to import required packages:
 
     [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=10-12)]
 
@@ -55,7 +39,7 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
 
 4. Create a new function at the end of `Index.js` named `getTelemetryClient` that takes your `InstrumentationKey` as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
-    [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=98-104)]
+    [!code-javascript](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=98-104)]
 
     <!-- TODO: Comment out this code block once the code snippet link is validated. --->
     ```javascript
@@ -90,9 +74,9 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     adapter.use(initializerMiddleware);
     ```
 
-6. In order for your dialog to report telemetry data. you need to set its `telemetryClient` property to the telemetryClient value just set: `dialog.telemetryClient = telemetryClient;`
+6. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
-    [!code-json[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=70-73&highlight=73)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=70-73&highlight=73)]
 
     <!-- TODO: Comment out this code block once the code snippet link is validated. --->
     ```javascript
@@ -102,9 +86,9 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     dialog.telemetryClient = telemetryClient;
     ```
 
-7. Immediately after creating the restify HTTP web server object, you will need to instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
+7.  After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
-    [!code-json[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=80-82)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=80-82)]
 
 
     <!-- TODO: Comment out this code block once the code snippet link is validated. --->
@@ -115,9 +99,9 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     ```
 
     > [!TIP]
-    > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth. ” See the [restify](http://restify.com) web site for more information.
+    > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." See the [restify](http://restify.com) web site for more information.
     
     
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files. 
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information. 
+At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information. 

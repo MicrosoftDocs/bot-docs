@@ -21,150 +21,119 @@ Telemetry logging was added to version 4.2 of the Bot Framework SDK.  This enabl
 ***Note: In version 4.6, the standard method for implementing telemetry into a bot has been updated in order to ensure telemetry is logged correctly when using a custom adapter. This article has been updated to show the updated method. The changes are backwards compatible and bots using the previous method will continue to log telemetry correctly.***
 
 
-In this article you will learn how to implement telemetry into your bot using Application Insights:
+In this article you will learn how to implement telemetry into your bot using Application Insights. It will cover:
 
-* The code required to wire up telemetry in your bot and connect to Application Insights
+* The code required to wire up telemetry in your bot and connect to Application Insights.
 
-* Enabling telemetry in your bots [Dialogs](bot-builder-concept-dialog.md)
+* Enabling telemetry in your bot's [Dialogs](bot-builder-concept-dialog.md).
 
 * Enabling telemetry to capture usage data from other services like [LUIS](bot-builder-howto-v4-luis.md) and [QnA Maker](bot-builder-howto-qna.md).
 
-* Visualizing your telemetry data in Application Insights
+* Visualizing your telemetry data in Application Insights.
 
-
+<!-- Prerequisites-->
+## Prerequisites
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart](~/includes/telemetry-dotnet.md)]
+* The [CoreBot sample code](https://aka.ms/cs-core-sample)
+* The [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample)
+* A subscription to [Microsoft Azure](https://portal.azure.com/)
+* An [Application Insights key](../bot-service-resources-app-insights-keys.md)
+* Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+* [git](https://git-scm.com/)
+
+> [!NOTE]
+> The [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) was built on top of the [CoreBot sample code](https://aka.ms/cs-core-sample). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time we are finished.
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart](~/includes/telemetry-javascript.md)]
+- The [CoreBot sample code](https://aka.ms/js-core-sample)
+- The [Application Insights sample code](https://aka.ms/js-corebot-app-insights-sample)
+- A subscription to [Microsoft Azure](https://portal.azure.com/)
+- An [Application Insights key](../bot-service-resources-app-insights-keys.md)
+- Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+- [Visual Studio Code](https://www.visualstudio.com/downloads)
+- [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed. 
+- [Yeoman](http://yeoman.io/), which uses a generator to create a bot for you
+- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+
+> [!NOTE]
+> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time we are finished.
 
 <!--
-
-[!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
-
-
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart](~/includes/quickstart-python.md)]
+
+* The [CoreBot sample code](https://aka.ms/py-core-sample)
+* The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample)
+* A subscription to [Microsoft Azure](https://portal.azure.com/)
+* An [Application Insights key](../bot-service-resources-app-insights-keys.md)
+* Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+
+> [!NOTE]
+> The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample) was built on top of the [CoreBot sample code](https://aka.ms/py-core-sample). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time we are finished.
+-->
+
+
+
+
+## Wiring up telemetry in your bot
+<!-- Main article on implementing telemetry--->
+# [C#](#tab/csharp)
+
+[!INCLUDE [dotnet telemetry section](../includes/telemetry-dotnet-main.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [javascript telemetry section](../includes/telemetry-javascript-main.md)]
+
 <!--
+
+# [Python](#tab/python)
+
+[!INCLUDE [python telemetry section](../includes/telemetry-python.md)]
+-->
 ---
 
 
 
 ## Enabling / disabling activity event and personal information logging
 
-### Enabling or disabling Activity logging
+# [C#](#tab/csharp)
 
-By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receives activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disable activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` when registering it in **Startup.cs**.
+[!INCLUDE [dotnet telemetry-Enabling disabling activity section](../includes/telemetry-dotnet-enabling-disabling-activity-event-personal-information-logging.md)]
 
-```cs
-public void ConfigureServices(IServiceCollection services)
-{
-    ...
-    // Add the telemetry initializer middleware
-    services.AddSingleton<TelemetryInitializerMiddleware>(sp =>
-            {
-                var httpContextAccessor = sp.GetService<IHttpContextAccessor>();
-                var loggerMiddleware = sp.GetService<TelemetryLoggerMiddleware>();
-                return new TelemetryInitializerMiddleware(httpContextAccessor, loggerMiddleware, logActivityTelemetry: false);
-            });
-    ...
-}
-```
+# [JavaScript](#tab/javascript)
 
-The addition of `IHttpContextAccessor` will also require that you reference the  Microsoft ASPNetCore HTTP library, which you achieve with the addition of this using statement:
+[!INCLUDE [javascript telemetry section](../includes/telemetry-javascript-enabling-disabling-activity-event-personal-information-logging.md)]
 
-```cs
-using Microsoft.AspNetCore.Http; 
-```
+<!--
 
-### Enable or disable logging personal information
+# [Python](#tab/python)
 
-By default, if activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by making the following change to **Startup.cs** when registering the `TelemetryLoggerMiddleware`.
-
-```cs
-public void ConfigureServices(IServiceCollection services)
-{
-    ...
-    // Add the telemetry initializer middleware
-    services.AddSingleton<TelemetryLoggerMiddleware>(sp =>
-            {
-                var telemetryClient = sp.GetService<IBotTelemetryClient>();
-                return new TelemetryLoggerMiddleware(telemetryClient, logPersonalInformation: true);
-            });
-    ...
-}
-```
-
-Next we will see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
-
-## Enabling telemetry in your bots Dialogs
-
-When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
- 
- Follow the steps below to update your CoreBot example:
-
-1.  In `MainDialog.cs`, update the constructor's parameter list to include the `IBotTelemetryClient` parameter, then set the MainDialog's TelemetryClient property to that value as shown in the following code snippet:
-
-    ```csharp
-    public MainDialog(IConfiguration configuration, ILogger<MainDialog> logger, IBotTelemetryClient telemetryClient)
-        : base(nameof(MainDialog))
-    {
-        // Set the telemetry client for this and all child dialogs.
-        this.TelemetryClient = telemetryClient;
-        ...
-    }
-    ```
-
-> [!TIP] 
-> If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) if you run into any problems.
-
-That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as LUIS and QnA Maker you will need to add the `TelemetryClient` to that code as well.
-
-
+[!INCLUDE [python telemetry section](../includes/telemetry-python-enabling-disabling-activity-event-personal-information-logging.md)]
+-->
+---
 ## Enabling telemetry to capture usage data from other services like LUIS and QnA Maker
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](bot-builder-telemetry-QnAMaker.md)
+# [C#](#tab/csharp)
 
-1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.cs`:
+[!INCLUDE [dotnet telemetry-luis section](../includes/telemetry-dotnet-luis.md)]
 
-    ```cs
-    public FlightBookingRecognizer(IConfiguration configuration, IBotTelemetryClient telemetryClient)
-    ```
+# [JavaScript](#tab/javascript)
 
-2. Next you will need to enable the `telemetryClient` when creating your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. You do this by adding the `telemetryClient` as a new _LuisPredictionOption_:
+[!INCLUDE [javascript telemetry-luis section](../includes/telemetry-javascript-luis.md)]
 
-    ```cs
-    if (luisIsConfigured)
-    {
-        var luisApplication = new LuisApplication(
-            configuration["LuisAppId"],
-            configuration["LuisAPIKey"],
-            "https://" + configuration["LuisAPIHostName"]);
+<!--
 
-        // Set the recognizer options depending on which endpoint version you want to use.
-        // More details can be found in https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3
-        var recognizerOptions = new LuisRecognizerOptionsV3(luisApplication)
-        {
-            TelemetryClient = telemetryClient,
-        };
-        _recognizer = new LuisRecognizer(recognizerOptions);
-    }
-    ```
+# [Python](#tab/python)
 
-3. You will need to have your LUIS 
+[!INCLUDE [python telemetry-luis section](../includes/telemetry-python-luis.md)]
+-->
+---
 
-That's it, you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages and in the next section we will review the telemetry results in Application Insights.
-
-For information on testing and debugging your bot, you can refer to the following articles:
-
- * [Debug a bot](../bot-service-debug-bot.md)
- * [Testing and debugging guidelines](bot-builder-testing-debugging.md)
- * [Debug with the emulator](../bot-service-debug-emulator.md)
 
 
 ## Visualizing your telemetry data in Application Insights
