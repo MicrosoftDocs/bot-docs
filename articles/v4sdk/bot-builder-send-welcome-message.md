@@ -144,7 +144,7 @@ It uses the property accessor in the `on_message_activity` handler and overrides
 
 In **WelcomeUserBot**, we check for an activity update using `OnMembersAddedAsync()` to see if a new user has been added to the conversation and then send them a set of three initial welcome messages `WelcomeMessage`, `InfoMessage` and `PatternMessage`. Complete code for this interaction is shown below.
 
-**Bots\WelcomeUserBot.cs**
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[Define messages](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=20-39)]
 [!code-csharp[Send messages](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=55-66)]
 
@@ -159,7 +159,7 @@ This JavaScript code sends initial welcome messages when a user is added. This i
 
 The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a *welcome message*, an *information message* and a *pattern message*.
 
-**bots/welcome-user-bot.py**
+**bots/welcome-user-bot.py**  
 [!code-python[on_members_added_activity](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=45-74)]
 
 ---
