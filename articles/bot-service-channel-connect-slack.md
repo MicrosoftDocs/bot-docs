@@ -24,7 +24,7 @@ There are two ways in which you can confgure Slack messaging app:
 
 ![Set up bot](~/media/channels/slack-NewApp.png)
 
-**Create an app and assign a Development Slack team**
+## Create an app and assign a Development Slack team
 
 1. Click the **Create New App** button.
 1. Enter an App Name and select a Development Slack Team.
@@ -34,7 +34,7 @@ If you are not already a member of a Development Slack Team, [create or join one
 
 1. Click the **Create App** button. Slack will create your app and generate a **Client ID** and **Client Secret**.
 
-**Add a new Redirect URL**
+## Add a new Redirect URL
 
 1. In the left panel, click the **OAuth & Permissions** link.
 2. In the right panel, click the **Add a new Redirect URL** button.
@@ -44,12 +44,12 @@ If you are not already a member of a Development Slack Team, [create or join one
 
 ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-**Add bot token scopes**
+## Add bot token scopes
 
 1. In the left panel, click the **OAuth & Permissions** link.
 1. In the right panel, scroll down to **Scopes**.
 1. In the **Bot Token Scopes** section, click the **Add an OAuth Scope** button.
-1. Make sure that the following scopes are included:
+1. Make sure to select the following scopes, also shown in the picture:
 
     - app_mentions:read
     - channels:history
