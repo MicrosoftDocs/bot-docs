@@ -43,18 +43,27 @@ Next you will add a new Redirect URL.
 
 ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-## Create a Slack Bot User
+## Add bot token
 
-Adding a Bot User allows you to assign a username for your bot and choose whether it is always shown as online.
+1. Select the **OAuth & Permissions** tab.
+1. Scroll down to **Scopes**.
+1. In the **Bot Token Scopes** section, click **Add an OAuth Scope**
+1. Add the following scopes:
+    - app_mentions:read
+    - channels:history
+    - channels:read
+    - chat:write
+    - groups:history
+    - groups:read
+    - im:history
+    - mpim:history
 
-1. Select the **Bot Users** tab.
-2. Click **Add a Bot User**.
+    ![slack bot scopes](media/channels/slack-bot-scopes.PNG)
 
-![Create bot](~/media/channels/slack-CreateBot.png)
+1. Select the **App Home** tab.
+1. Toggle **Always Show My Bot as Online**.
 
-Click **Add Bot User** to validate your settings, click **Always Show My Bot as Online** to **On**, and then click **Save Changes**.
-
-![Create bot](~/media/channels/slack-CreateApp-AddBotUser.png)
+    ![slack bot scopes](media/channels/slack-bot.PNG)
 
 ## Subscribe to Bot Events
 
@@ -281,10 +290,10 @@ Now that you have created a Slack app and wired up the adapter in your bot proje
 To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL to your deployed bot.
 
 > [!NOTE]
-> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Slack adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this. 
-> 
+> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Slack adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
+>
 > If you wish create an ngrok tunnel and obtain a URL to your bot, use the following command in a terminal window (this assumes your local bot is running on port 3978, alter the port numbers in the command if your bot is not).
-> 
+>
 > ```
 > ngrok.exe http 3978 -host-header="localhost:3978"
 > ```
