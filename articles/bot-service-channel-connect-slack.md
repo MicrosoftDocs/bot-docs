@@ -45,7 +45,7 @@ If you are not already a member of a Development Slack Team, [create or join one
 ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
 ## Add bot token scopes
-
+<!-- Replaces add user -->
 1. In the left panel, click the **OAuth & Permissions** link.
 1. In the right panel, scroll down to **Scopes**.
 1. In the **Bot Token Scopes** section, click the **Add an OAuth Scope** button.
