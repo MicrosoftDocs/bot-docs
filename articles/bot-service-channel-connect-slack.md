@@ -43,12 +43,13 @@ Next you will add a new Redirect URL.
 
 ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-## Add bot token
+## Add bot token scopes
 
 1. Select the **OAuth & Permissions** tab.
 1. Scroll down to **Scopes**.
 1. In the **Bot Token Scopes** section, click **Add an OAuth Scope**
-1. Add the following scopes:
+1. Make sure that the following scopes are included and remove the ones that are not required:
+
     - app_mentions:read
     - channels:history
     - channels:read
