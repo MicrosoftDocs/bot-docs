@@ -19,36 +19,37 @@ There are two ways in which you can confgure Slack messaging app:
 ## [Azure Bot Service Portal](#tab/abs)
 ## Create a Slack application for your bot
 
-Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
+1. In your browser, log into [Slack](https://slack.com/signin).
+1. Navigate to [create a Slack application](https://api.slack.com/apps) channel.
 
 ![Set up bot](~/media/channels/slack-NewApp.png)
 
-## Create an app and assign a Development Slack team
+**Create an app and assign a Development Slack team**
 
-Enter an App Name and select a Development Slack Team. If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
+1. Click the **Create New App** button.
+1. Enter an App Name and select a Development Slack Team.
+If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
 
 ![Create app](~/media/channels/slack-CreateApp.png)
 
-Click **Create App**. Slack will create your app and generate a Client ID and Client Secret.
+1. Click the **Create App** button. Slack will create your app and generate a **Client ID** and **Client Secret**.
 
-## Add a new Redirect URL
+**Add a new Redirect URL**
 
-Next you will add a new Redirect URL.
-
-1. Select the **OAuth & Permissions** tab.
-2. Click **Add a new Redirect URL**.
-3. Enter [https://slack.botframework.com](https://slack.botframework.com).
-4. Click **Add**.
-5. Click **Save URLs**.
+1. In the left panel, click the **OAuth & Permissions** link.
+2. In the right panel, click the **Add a new Redirect URL** button.
+3. Enter the following value `https://slack.botframework.com`.
+4. Click the **Add** button.
+5. Click the **Save URLs** button.
 
 ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-## Add bot token scopes
+**Add bot token scopes**
 
-1. Select the **OAuth & Permissions** tab.
-1. Scroll down to **Scopes**.
-1. In the **Bot Token Scopes** section, click **Add an OAuth Scope**
-1. Make sure that the following scopes are included and remove the ones that are not required:
+1. In the left panel, click the **OAuth & Permissions** link.
+1. In the right panel, scroll down to **Scopes**.
+1. In the **Bot Token Scopes** section, click the **Add an OAuth Scope** button.
+1. Make sure that the following scopes are included:
 
     - app_mentions:read
     - channels:history
@@ -61,10 +62,10 @@ Next you will add a new Redirect URL.
 
     ![slack bot scopes](media/channels/slack-bot-scopes.PNG)
 
-1. Select the **App Home** tab.
-1. Toggle **Always Show My Bot as Online**.
+1. In the left panel select the **App Home** link.
+1. In the right panel, scroll down and enable **Always Show My Bot as Online**.
 
-    ![slack bot scopes](media/channels/slack-bot.PNG)
+    ![slack bot display](media/channels/slack-bot-display.PNG)
 
 ## Subscribe to Bot Events
 
