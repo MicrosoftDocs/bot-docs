@@ -13,14 +13,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Convert a .NET v3 bot to a skill
 
-Converting an existing v3 bot to a skill takes just a few steps.
-It allows other bots to access the v3 bot, while allowing users to still access the v3 bot.
-This can be less work than migrating the v3 bot to the v3 SDK.
-
-Any v4 bot designed to do so can consume a skill.
-The consumer and skill can be implemented in different languages, such as .NET and JavaScript.
-The skill consumer and skill use HTTP to communicate with each other.
-
 This article describes how to convert 3 sample .NET v3 bots to skills and to create a v4 skill consumer that can access these skills.
 To convert a JavaScript v3 bot to a skill, see how to [Convert a JavaScript v3 bot to a skill](javascript-v3-as-skill.md).
 To migrate a .NET bot from v3 to v4, see how to [Migrate a .NET v3 bot to a .NET Framework v4 bot](conversion-framework.md).
