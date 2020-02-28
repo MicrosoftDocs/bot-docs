@@ -106,10 +106,10 @@ Next, we register `MemoryStorage` that is then used to create `UserState` and `C
 
 Next, we register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. These are created in **app.py** and consumed when the bot is created.
 
-**app.py**
+**app.py**  
 [!code-python[app.py](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=67-70)]
 
-**bots/state_management_bot.py**
+**bots/state_management_bot.py**  
 [!code-python[bot constructor](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=13-25)]
 
 ---
