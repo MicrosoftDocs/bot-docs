@@ -51,14 +51,14 @@ If you are not already a member of a Development Slack Team, [create or join one
 1. In the **Bot Token Scopes** section, click the **Add an OAuth Scope** button.
 1. Make sure to select the following scopes, also shown in the picture:
 
-    - app_mentions:read
-    - channels:history
-    - channels:read
-    - chat:write
-    - groups:history
-    - groups:read
-    - im:history
-    - mpim:history
+    - `app_mentions:read`
+    - `channels:history`
+    - `channels:read`
+    - `chat:write`
+    - `groups:history`
+    - `groups:read`
+    - `im:history`
+    - `mpim:history`
 
     ![slack bot scopes](media/channels/slack-bot-scopes.PNG)
 
@@ -84,12 +84,13 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 
 4. In **Subscribe to Bot Events**, click **Add Bot User Event**.
 5. In the list of events, select these six event types:
-    * `member_joined_channel`
-    * `member_left_channel`
-    * `message.channels`
-    * `message.groups`
-    * `message.im`
-    * `message.mpim`
+
+    - `member_joined_channel`
+    - `member_left_channel`
+    - `message.channels`
+    - `message.groups`
+    - `message.im`
+    - `message.mpim`
 
    ![Subscribe Events: middle](~/media/channels/slack-SubscribeEvents-b.png)
 
