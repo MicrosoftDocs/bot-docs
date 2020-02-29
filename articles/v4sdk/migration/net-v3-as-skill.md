@@ -43,7 +43,7 @@ To use the skill consumer to test the skills, all 4 bots need to be running at t
 
 Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 
-1. Create a Bot Channels Registration for any of the 4 bots as needed.
+1. Create a Bot Channels Registration for the bots as needed.
 1. Record the app ID and password for each one.
 
 ## Conversion process
@@ -54,6 +54,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 - Add claims validation. This will restrict access to the skill so that only users or your root bot can access the skill. See the [additional information](#additional-information) section for more information about default and custom claims validation.
 - Modify the bot's messages controller to handle `endOfConversation` activities from the root bot.
 - Modify the bot code to return an `endOfConversation` activity when the skill completes.
+- Whenever the skill completes, if it has conversation state or maintains resources, it should clear its conversation state and release resources.
 - Optionally add a manifest file.
   Since a skill consumer does not necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
   The current manifest schema is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
@@ -106,11 +107,13 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 1. Modify the bot code to allow the skill to flag that the conversation is complete when it receives an "end" or "stop" message from the user. The skill should also clear state and release resources when it ends the conversation.
 
    **V3EchoBot\\Dialogs\\RootDialog.cs**
+
    [!code-csharp[message received](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Dialogs/RootDialog.cs?range=21-41&highlight=5-13)]
 
 1. Use this manifest for the echo bot. Set the endpoint app ID to the bot's app ID.
 
    **V3EchoBot\\wwwroot\\echo-bot-manifest.json**
+
    [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json?highlight=21-22)]
 
    > [!TIP]
@@ -137,6 +140,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
    - Clear conversation state and release any associated resources.
 
    **V3PizzaBot\\ConversationHelper.cs**
+
    [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-74)]
 
 1. Update the `MessagesController` class.
@@ -174,6 +178,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 1. Use this manifest for the pizza bot. Set the endpoint app ID to the bot's app ID.
 
    **V3PizzaBot\\wwwroot\\pizza-bot-manifest.json**
+
    [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json?highlight=21-22)]
 
    > [!TIP]
@@ -200,6 +205,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
    - Clear conversation state and release any associated resources.
 
    **V3PizzaBot\\ConversationHelper.cs**
+
    [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-74)]
 
 1. Update the `MessagesController` class.
@@ -233,6 +239,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 1. Use this manifest for the sandwich bot. Set the endpoint app ID to the bot's app ID.
 
    **V3SimpleSandwichBot\\wwwroot\\sandwich-bot-manifest.json**
+
    [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json?highlight=21-22)]
 
    > [!TIP]
@@ -247,6 +254,7 @@ The simple root bot consumes the 3 skills and lets you verify that the conversio
 1. To the configuration file, add the root bot's app ID and password. For each of the v3 skills, add the skill's app ID.
 
    **V4SimpleRootBot\\appsettings.json**
+
    [!code-json[configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V4SimpleRootBot/appsettings.json?highlight=2-3,8,13,18)]
 
 ## Test the root bot
