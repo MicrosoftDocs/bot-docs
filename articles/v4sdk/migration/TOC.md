@@ -13,7 +13,7 @@
 # Convert a v3 bot to a skill
 ## [Converting to a skill overview](convert-to-skill-overview.md)
 ## [Convert a .NET v3 bot to a skill](net-v3-as-skill.md)
-## [Convert a JavaScript v3 bot to a skill](net-v3-as-skill.md)
+## [Convert a JavaScript v3 bot to a skill](javascript-v3-as-skill.md)
 
 <!-- Current target:
 For walkthroughs, how-tos, and overview: mention why you'd use each approach.
