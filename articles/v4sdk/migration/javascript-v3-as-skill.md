@@ -22,7 +22,7 @@ To migrate a JavaScript bot from v3 to v4, see how to [Migrate a Javascript v3 b
 - Visual Studio Code.
 - Node.js.
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- A copy of the v4 JavaScript sample skill consumer: [**v4-root-bot**](https://aka.ms/js-simple-root-bot). <!--TODO Create aka link once there's a target-->
+- A copy of the v4 JavaScript sample skill consumer: [**v4-root-bot**](https://aka.ms/js-simple-root-bot).
 
 ## About the bots
 
@@ -57,7 +57,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
 ## Convert the echo bot
 
-See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v3 echo bot that has been converted to a basic skill. <!--TODO Create aka link once there's a target-->
+See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v3 echo bot that has been converted to a basic skill.
 
 1. Create a simple JavaScript v3 bot project and import required modules.
 
@@ -101,7 +101,7 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
 ## Convert the booking bot
 
-See [Skills/v3-booking-bot-skill](https://aka.ms/v3-js-booking-skill) for an example of a v3 booking bot that has been converted to a basic skill. <!--TODO Create aka link once there's a target-->
+See [Skills/v3-booking-bot-skill](https://aka.ms/v3-js-booking-skill) for an example of a v3 booking bot that has been converted to a basic skill.
 Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka.ms/v3-js-core-multidialogs) sample.
 
 1. Import required modules.
@@ -145,7 +145,6 @@ Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka
     When the user completes the process, use the helper method to end the skill and return the user's collected data.
 
     [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=39-40)]
-    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=50-51)]
     [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=72-77&highlight=4)]
 
     If instead the user ends the process early, the helper method is still invoked.
@@ -191,4 +190,4 @@ When creating a chat connector, include either an `allowedCallers` or an `authCo
 
 The default claims validator for the chat connector uses the `allowedCallers` property. Its value should be an array of the application IDs of the bots that are allowed to call the skill. Set the first element to '*' to allow all bots to call the skill.
 
-To use a custom claims validation function, set the `authConfiguration` field to your validation function. This function should accept an array of claim objects and throw an error if validation fails. <!--TODO Validate--> Steps 3 and 4 of the [convert the booking bot](#convert-the-booking-bot) section has example claims validation classes.
+To use a custom claims validation function, set the `authConfiguration` field to your validation function. This function should accept an array of claim objects and throw an error if validation fails. Step 4 of the [convert the booking bot](#convert-the-booking-bot) section has an example claims validator.
