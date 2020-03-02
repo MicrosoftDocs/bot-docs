@@ -59,7 +59,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
 See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v3 echo bot that has been converted to a basic skill. <!--TODO Create aka link once there's a target-->
 
-1. Create a simple JavaScript v3 bot project.
+1. Create a simple JavaScript v3 bot project and import required modules.
 
    **v3-skill-bot/app.js**
 
@@ -71,13 +71,13 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
    [!code-javascript[Setup server and port](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/app.js?range=9-13)]
 
-1. To the configuration file, add the echo bot's app ID and password. Also, add a `ROOT_BOT_APP_ID` property and add the simple root bot's app ID to its value.
+1. In the configuration file, add the echo bot's app ID and password. Also, add a `ROOT_BOT_APP_ID` property with the simple root bot's app ID as its value.
 
    **v3-skill-bot/.env**
 
    [!code[.env file](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/.env)]
 
-1. Create the chat connector for the bot. This one uses the default authentication configuration. The `allowedCallers` parameter is an array of the app IDs of the bots allowed to use this skill. If the first value of this array is '*', then any bot could use this skill.
+1. Create the chat connector for the bot. This one uses the default authentication configuration. The `allowedCallers` parameter is an array of the app IDs of the bots allowed to use this skill. If the first value of this array was '*', then any bot could use this skill.
 
    **v3-skill-bot/app.js**
 
@@ -95,9 +95,41 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
    **v3-skill-bot/manifest/v3-skill-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/Node/Skills/V3EchoBot/v3-skill-bot/manifest/v3-skill-bot-manifest.json?highlight=22)]
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/manifest/v3-skill-bot-manifest.json?highlight=22)]
 
    > [!TIP]
    > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
    >
    > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
+
+## Convert the booking bot
+
+## Create the v4 root bot
+
+The simple root bot consumes the 2 skills and lets you verify that the conversion steps worked as planned. This bot will run locally on port 3978.
+
+1. To the configuration file, add the root bot's app ID and password. For each of the v3 skills, add the skill's app ID.
+
+   **v4-root-bot/.env**
+
+   [!code-json[configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/v4-root-bot/.env?highlight=2-3,6,10)]
+
+## Test the root bot
+
+Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+
+1. Start all three bots locally on your machine.
+1. Use the Emulator to connect to the root bot.
+1. Test the skills and skill consumer.
+
+## Additional information
+
+### Bot-to-bot authentication
+
+The root and skill communicate over HTTP. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. It uses an authentication configuration object to validate the authentication header on incoming requests. You can add a claims validator to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request.
+
+When creating a chat connector, include either an `allowedCallers` or an `authConfiguration` property in the settings parameter to enable bot-to-bot authentication.
+
+The default claims validator for the chat connector uses the `allowedCallers` property. Its value should be an array of the application IDs of the bots that are allowed to call the skill. Set the first element to '*' to allow all bots to call the skill.
+
+To use a custom claims validation function, set the `authConfiguration` field to your validation function. This function should accept an array of claim objects and throw an error if validation fails. <!--TODO Validate--> Steps 3 and 4 of the [convert the booking bot](#convert-the-booking-bot) section has example claims validation classes.
