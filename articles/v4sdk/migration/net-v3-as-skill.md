@@ -114,12 +114,9 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3EchoBot\\wwwroot\\echo-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json?highlight=21-22)]
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json?highlight=22)]
 
-   > [!TIP]
-   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
-   >
-   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
+   For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Convert the pizza bot
 
@@ -179,12 +176,9 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3PizzaBot\\wwwroot\\pizza-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json?highlight=21-22)]
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json?highlight=22)]
 
-   > [!TIP]
-   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
-   >
-   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
+   For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Convert the sandwich bot
 
@@ -240,12 +234,9 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3SimpleSandwichBot\\wwwroot\\sandwich-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json?highlight=21-22)]
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json?highlight=22)]
 
-   > [!TIP]
-   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
-   >
-   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
+   For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Create the v4 root bot
 

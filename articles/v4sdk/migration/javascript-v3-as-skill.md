@@ -77,11 +77,11 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
    [!code[.env file](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/.env)]
 
-1. Create the chat connector for the bot. This one uses the default authentication configuration. The `allowedCallers` parameter is an array of the app IDs of the bots allowed to use this skill. If the first value of this array was '*', then any bot could use this skill.
+1. Create the chat connector for the bot. This one uses the default authentication configuration. Set `enableSkills` to `true` to allow the bot to be used as a skill. `allowedCallers` is an array of the app IDs of the bots allowed to use this skill. If the first value of this array was '*', then any bot could use this skill.
 
    **v3-skill-bot/app.js**
 
-   [!code-javascript[chat connector](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/app.js?range=24-30&highlight=6)]
+   [!code-javascript[chat connector](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/app.js?range=24-30&highlight=5-6)]
 
 1. Update the message handler to send an `endOfConversation` activity when the user chooses to end the skill.
 
@@ -97,12 +97,71 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
    [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/manifest/v3-skill-bot-manifest.json?highlight=22)]
 
-   > [!TIP]
-   > The manifest lists the local endpoint for the bot. The port used for the `endpointUrl` should match the port you set in the project's properties.
-   >
-   > If you published this bot, you would update the `SkillEndpoint` to match the published endpoint.
+   For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Convert the booking bot
+
+See [Skills/v3-booking-bot-skill](https://aka.ms/v3-js-booking-skill) for an example of a v3 booking bot that has been converted to a basic skill. <!--TODO Create aka link once there's a target-->
+Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka.ms/v3-js-core-multidialogs) sample.
+
+1. Import required modules.
+
+   **v3-booking-bot-skill/app.js**
+
+   [!code-javascript[require statements](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=2-7)]
+
+1. Set the bot to run locally on port 3980.
+
+   **v3-booking-bot-skill/app.js**
+
+   [!code-javascript[Setup server and port](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=9-13)]
+
+1. In the configuration file, add the booking bot's app ID and password. Also, add a `ROOT_BOT_APP_ID` property with the simple root bot's app ID as its value.
+
+   **v3-booking-bot-skill/.env**
+
+   [!code[.env file](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/.env)]
+
+1. Create the chat connector for the bot. This one uses a custom authentication configuration. Set `enableSkills` to `true` to allow the bot to be used as a skill. `authConfiguration` contains the custom authentication configuration object to use for authentication and claims validation.
+
+   **v3-booking-bot-skill/app.js**
+
+   [!code-javascript[chat connector](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=18-24&highlight=5-6)]
+
+    **v3-booking-bot-skill/allowedCallersClaimsValidator.js**
+
+   This implements custom claims validation and throws an error if validation fails.
+
+   [!code-javascript[custom claims validation](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/allowedCallersClaimsValidator.js?range=4-47&highlight=22,25,39,41)]
+
+1. Update the message handler to send an `endOfConversation` activity when the skill ends.
+
+   **v3-booking-bot-skill/app.js**
+
+    Implement a helper function to set the `endOfConversation` activity's `code` and `value` properties and clear conversation state. If the bot managed any other resources for the conversation, you would release them here, too.
+
+    [!code-javascript[endConversation function](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=115-127)]
+
+    When the user completes the process, use the helper method to end the skill and return the user's collected data.
+
+    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=39-40)]
+    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=50-51)]
+    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=72-77&highlight=4)]
+
+    If instead the user ends the process early, the helper method is still invoked.
+
+    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=86-101&highlight=9-10)]
+    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=107-108)]
+
+1. If the bot needed to release resources, it would also handle any `endOfConversation` activities that it received from the skill consumer.
+
+1. Use this manifest for the booking bot. Set the endpoint app ID to the bot's app ID.
+
+   **v3-booking-bot-skill/manifest/v3-booking-bot-skill-manifest.json**
+
+   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/manifest/v3-booking-bot-skill-manifest.json?highlight=22)]
+
+   For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Create the v4 root bot
 
@@ -112,7 +171,7 @@ The simple root bot consumes the 2 skills and lets you verify that the conversio
 
    **v4-root-bot/.env**
 
-   [!code-json[configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/v4-root-bot/.env?highlight=2-3,6,10)]
+   [!code-json[configuration](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v4-root-bot/.env?highlight=2-3,6,10)]
 
 ## Test the root bot
 
