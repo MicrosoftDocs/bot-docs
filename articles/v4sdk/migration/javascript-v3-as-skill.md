@@ -73,9 +73,9 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
 1. To the configuration file, add the echo bot's app ID and password. Also, add a `ROOT_BOT_APP_ID` property and add the simple root bot's app ID to its value.
 
-   **v3-skill-bot/.env.example**
+   **v3-skill-bot/.env**
 
-   [!code[.env file](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/.env.example)]
+   [!code[.env file](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/.env)]
 
 1. Create the chat connector for the bot. This one uses the default authentication configuration. The `allowedCallers` parameter is an array of the app IDs of the bots allowed to use this skill. If the first value of this array is '*', then any bot could use this skill.
 
