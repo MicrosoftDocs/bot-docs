@@ -144,7 +144,7 @@ Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka
    Implement a helper function to set the `endOfConversation` activity's `code` and `value` properties and clear conversation state.
    If the bot managed any other resources for the conversation, you would release them here, too.
 
-   [!code-javascript[endConversation function](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=115-127&highlight=12)]
+   [!code-javascript[endConversation function](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=122-134&highlight=12)]
 
    When the user completes the process, use the helper method to end the skill and return the user's collected data.
 
@@ -158,7 +158,11 @@ Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka
 
    [!code-javascript[universal bot](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=107-108)]
 
-1. If the bot needed to release resources, it would also handle any `endOfConversation` activities that it received from the skill consumer.
+1. If the skill is cancelled by the skill consumer, the consumer sends an `endOfConversation` activity. Handle this activity and release any resources associated with the conversation.
+
+   **v3-booking-bot-skill/app.js**
+
+   [!code-javascript[endConversation function](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=110-115)]
 
 1. Use this manifest for the booking bot. Set the endpoint app ID to the bot's app ID.
 
