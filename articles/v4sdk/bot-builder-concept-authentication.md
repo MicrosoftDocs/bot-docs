@@ -68,7 +68,8 @@ The following picture shows the sequence of the user's interaction with a bot wh
 1. The user makes an email request to the bot.
 1. An activity with this message is sent from the user to the Bot Framework channel service. The channel service ensures that the `userid` field within the activity has been set and the message is sent to the bot.
 
-    User ID's are channel specific, such as the user's facebook ID or their SMS phone number.
+    > [!NOTE]
+    > User ID's are channel specific, such as the user's facebook ID or their SMS phone number.
 
 1. The bot makes a request to the Bot Framework Token Service asking if it already has a token for the UserId for the OAuth connection `GraphConnection`.
 1. Since this is the first time this user has interacted with the bot, the Bot Framework Token Service does not yet have a token for this user, and returns a *NotFound* result to the bot.
@@ -80,7 +81,7 @@ The following picture shows the sequence of the user's interaction with a bot wh
 1. The activity passes through the Bot Framework Channel Service, which calls into the Bot Framework Token Service to create a valid OAuth sign-in URL for this request. This sign-in URL is added to the OAuthCard and the card is returned to the user.
 1. The user is presented with a message to sign-in by clicking on the OAuthCard's sign-in button.
 1. When the user clicks the sign-in button, the channel service opens a web browser and calls out to the external service to load its sign-in page.
-1. The user signs-in to this page for the external service. Once complete, the external service completes the OAuth protocol exchange with the Bot Framework Token Service, resulting in the external service sending the Bot Framework Token Service the user token. The Bot Framework Token Service securely stores this token and sends an activity to the bot with this token.
+1. The user signs-in to this page for the external service. Then the external service completes the OAuth protocol exchange with the Bot Framework Token Service, resulting in the external service sending the Bot Framework Token Service the user token. The Bot Framework Token Service securely stores this token and sends an activity to the bot with this token.
 1. The bot receives the activity with the token and is able to use it to make calls against the MS Graph API.
 
 ## Securing the sign-in URL
