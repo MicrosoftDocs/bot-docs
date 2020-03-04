@@ -206,9 +206,17 @@ Specific scenarios to consider include:
 
 #### Invoking a skill from a dialog
 
-If you are using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill. <!--TODO Flesh this out. C# SDK is complete, JS is not.-->
+If you are using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
+<!--Language-specific Notes:
+- C#: SkillDialog, SkillDialogOptions, SkillDialogArgs
+  - public SkillDialog(SkillDialogOptions dialogOptions, string dialogId = null)
+- JS: SkillDialog, SkillDialogOptions, BeginSkillDialogOptions
+  - public constructor(dialogOptions: SkillDialogOptions, dialogId?: string)
+- Py (WIP): SkillDialog, SkillDialogOptions, SkillDialogArgs
+  - def __init__(self, dialog_options: SkillDialogOptions, conversation_state: ConversationState)
+-->
 
-- When you create the skill dialog, use the dialog options parameter to provide all the information the dialog needs to manage the skill, such as the consumer's app ID and callback URL, the conversation ID factory to use, the skill's properties, and so on.
+- When you create the skill dialog, use the _dialog options_ parameter to provide all the information the dialog needs to manage the skill, such as the consumer's app ID and callback URL, the conversation ID factory to use, the skill's properties, and so on.
   - If you want to manage more than one skill as a dialog, you will need to create a separate skill dialog for each skill.
   - Often, you will add the skill dialog to a component dialog.
 - To start the skill dialog, use the dialog context's _begin_ method and provide the skill dialog's ID. Use the _options_ parameter to provide the activity the consumer will send as the first activity to the skill.
