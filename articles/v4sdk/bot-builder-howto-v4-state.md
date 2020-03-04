@@ -127,7 +127,7 @@ Now we create property accessors using the `CreateProperty` method that provides
 
 Now we create property accessors for `UserState` and `ConversationState`. Each state property accessor allows you to get or set the value of the associated state property. We use each accessor to load the associated property from storage and retrieve its current state from cache.
 
-**bots/stateManagementBot.js**
+**bots/stateManagementBot.js**  
 [!code-javascript[Create accessors](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=13-15)]
 
 ## [Python](#tab/python)
@@ -163,12 +163,12 @@ Before we exit the turn handler, we use the state management objects' _SaveChang
 - If userProfile.Name is empty and conversationData.PromptedUserForName is _false_, we ask for the user's name.
 - If userProfile.Name was previously stored, we retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
-**bots/stateManagementBot.js**
+**bots/stateManagementBot.js**  
 [!code-javascript[OnMessage](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=21-58)]
 
 Before we exit each dialog turn, we use the state management objects' _saveChanges()_ method to persist all changes by writing state back out to storage.
 
-**bots/stateManagementBot.js**
+**bots/stateManagementBot.js**  
 [!code-javascript[OnDialog](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=72-81)]
 
 ## [Python](#tab/python)
