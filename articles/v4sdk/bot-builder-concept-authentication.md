@@ -25,7 +25,7 @@ The following picture shows the architecture of the Azure Bot Service which uses
 ![Azure Bot Service architecture](media/concept-bot-authentication/azure-bot-service-architecture.png)
 
 
-[Here's a good OAuth overview](https://aaronparecki.com/oauth-2-simplified/) that's easier to follow than the formal [OAuth specification](https://oauth.net/2/).
+[Here's a good OAuth overview](https://aaronparecki.com/oauth-2-simplified/) that is easier to follow than the formal [OAuth specification](https://oauth.net/2/).
 
 ## User authentication in a conversation
 
