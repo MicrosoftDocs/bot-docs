@@ -224,6 +224,8 @@ The next step is to register with your bot the Azure AD application that you jus
 
 1. Click **Save**.
 
+---
+
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
 
