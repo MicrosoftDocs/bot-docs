@@ -192,9 +192,6 @@ The next step is to register with your bot the Azure AD application that you jus
 
 1. Click **Save**.
 
-> [!NOTE]
-> These values enable your application to access Office 365 data via the Microsoft Graph API.
-
 # [Azure AD v2](#tab/aadv2)
 
 #### Azure AD v2
@@ -220,7 +217,7 @@ The next step is to register with your bot the Azure AD application that you jus
        `Mail.Read Mail.Send openid profile User.Read User.ReadBasic.All`.
 
         > [!NOTE]
-        > For Azure AD v2, **Scopes** takes a case-sensitive, space-separated list of values.
+        > For Azure AD v2, **Scopes** take a case-sensitive, space-separated list of values.
 
 1. Click **Save**.
 
