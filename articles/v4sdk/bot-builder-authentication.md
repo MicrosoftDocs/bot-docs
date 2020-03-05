@@ -9,7 +9,7 @@ ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-<!-- 
+<!--
 
 Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
@@ -164,6 +164,8 @@ You now have an Azure AD application configured.
 
 The next step is to register with your bot the Azure AD application that you just created.
 
+# [Azure AD v1](#tab/aadv1)
+
 #### Azure AD v1
 
 1. Navigate to your bot's resource page on the [Azure Portal](https://portal.azure.com/).
@@ -192,6 +194,8 @@ The next step is to register with your bot the Azure AD application that you jus
 
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
+
+# [Azure AD v2](#tab/aadv2)
 
 #### Azure AD v2
 
@@ -292,7 +296,7 @@ as shown in [Configure the emulator for authentication](../bot-service-debug-emu
 
 ### Testing
 
-After you have configured the authentication mechanism, you can perform the actual bot sample testing.  
+After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
 1. Run the bot sample locally on your machine.
 1. Start the emulator.
@@ -436,17 +440,17 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 # [C#](#tab/csharp)
 
-**Dialogs\LogoutDialog.cs**  
+**Dialogs\LogoutDialog.cs**
 [!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
 
-# [JavaScript](#tab/javascript)  
+# [JavaScript](#tab/javascript)
 
 **dialogs/logoutDialog.js**
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 # [Python](#tab/python)
 
-**dialogs/logout_dialog.py**  
+**dialogs/logout_dialog.py**
 [!code-python[allow logout](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/logout_dialog.py?range=27-34&highlight=6)]
 
 ---
@@ -459,12 +463,12 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 
 # [C#](#tab/csharp)
 
-**Bots/TeamsBot.cs**  
+**Bots/TeamsBot.cs**
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
 # [JavaScript](#tab/javascript)
 
-**bots/teamsBot.js**  
+**bots/teamsBot.js**
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
 
 # [Python](#tab/python)
@@ -477,12 +481,12 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 
 # [C#](#tab/csharp)
 
-**Bots/DialogBot.cs**  
+**Bots/DialogBot.cs**
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
 # [JavaScript](#tab/javascript)
 
-**Bots/dialogBot.js**  
+**Bots/dialogBot.js**
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
 
 # [Python](#tab/python)
