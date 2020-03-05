@@ -35,38 +35,27 @@ Related TODO:
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Azure Bot Service and the v4 SDK include new bot authentication capabilities, providing features to make it easier to develop a bot that authenticates users to various identity providers, such as Azure AD (Azure Active Directory), GitHub, Uber, and so on. These capabilities can improve the user experience by eliminating the _magic code verification_ for some clients.
+The Azure Bot Service v4 SDK facilitates the development of bots that can access online resources which require authentication. You no longer need to manage token exchange or storage. Azure does it for you using OAuth2 to generate a token, based on user's credentials. The bots use the token to access those resources. In this way the user does not have to provide ID and password to a third party app (bot) to access a secured resource.
 
-Prior to this, your bot needed to include OAuth controllers and login links, store the target client IDs and secrets, and perform user token management. The bot would ask the user sign in on a website, which would then generate a _magic code_ the user could use to verify their identity.
+[Here's a good OAuth overview](https://aaronparecki.com/oauth-2-simplified/) that's easier to follow than the formal [OAuth specification](https://oauth.net/2/).
 
-Now, bot developers no longer need to host OAuth controllers or manage the token life-cycle, as all of this can now be done by the Azure Bot Service.
-
+See also [User authentication within a conversation](bot-builder-concept-authentication.md).
 The features include:
-
-- Improvements to the channels to support new authentication features, such as new WebChat and DirectLineJS libraries to eliminate the need for the 6-digit magic code verification.
-- Improvements to the Azure Portal to  add, delete, and configure connection settings to various OAuth identity providers.
-- Support for a variety of out-of-the-box identity providers including Azure AD (both v1 and v2 endpoints), GitHub, and others.
-- Updates to the C# and Node.js Bot Framework SDKs to be able to retrieve tokens, create OAuthCards and handle TokenResponse events.
-- Samples for how to make a bot that authenticates to Azure AD.
-
-For more information about how the Azure Bot Service handles authentication, see [User authentication within a conversation](bot-builder-concept-authentication.md).
-
-You can extrapolate from the steps in this article to add such features to an existing bot. These sample bots demonstrate the new authentication features.
 
 > [!NOTE]
 > The authentication features also work with BotBuilder v3. However, this article covers just the v4 sample code.
 
-### About this sample
+### About the samples
 
-You need to create an Azure bot resource, and you need:
+To run the samples referenced in this article, you need the following:
 
-1. An Azure AD app registration to allow your bot to access an external resource, such as Office 365.
-1. A separate bot resource. The bot resource registers your bot's credentials, and you need these credentials to test the authentication features, even when running your bot code locally.
+1. An Azure Active Directory (AAD) bot channels registration application to allow your bot to access an external protected resource, such as [Microsoft Graph](https://developer.microsoft.com/en-us/graph). This application also allows the user to communicate with the bot via several channels such as Web Chat.
+1. A separate AAD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the protected resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are supported, also.
 
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD app. However, this app secures channel-to-bot access. You need an additional AAD app for each application that you want the bot to be able to authenticate on behalf of the user.
 
-This article describes a sample bot that connects to the Microsoft Graph using an Azure AD v1 or v2 token. It also covers how to create and register the associated Azure AD app. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo. This article covers these processes.
+This article describes a sample bot that connects to the Microsoft Graph using an Azure AD v1 or Azure AD v2 token. It also covers how to create and register the associated Azure AD app. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo. The article covers the following:
 
 - **Create your bot resource**
 - **Create an Azure AD application**
