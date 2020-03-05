@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 # Bot authentication
 
 <!-- work in progress -->
-In order for a bot to access protected online resources on behalf of the user, the bot must be authenticated. This authentication takes the form of a token based on the user's credentials. All this is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
+There are times when a bot must access protected online resources on behalf of the user; to do that it must be authenticated. This authentication takes the form of a token based on the user's credentials. This is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
 
 1. **Bot Channels Registration application**. This is the mechanism to *integrate* a bot within the Azure infrastructure, which allows the user to communicate via channels with the bot.
 1. **Bot**. The bot can be hosted anywhere including Azure. If hosted in Azure, you can build an deploy it.
@@ -23,6 +23,9 @@ In order for a bot to access protected online resources on behalf of the user, t
 The following picture shows the architecture of the Azure Bot Service which uses the Azure AD as the identity provider for authentication.
 
 ![Azure Bot Service architecture](media/concept-bot-authentication/azure-bot-service-architecture.png)
+
+
+[Here's a good OAuth overview](https://aaronparecki.com/oauth-2-simplified/) that's easier to follow than the formal [OAuth specification](https://oauth.net/2/).
 
 ## User authentication in a conversation
 
