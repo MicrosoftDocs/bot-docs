@@ -129,7 +129,7 @@ Add the information required to access your LUIS app including application id, a
 Add the information required to access your LUIS app including application id, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **config.py**
-[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/config.py?range=14-19)]
+[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/config.py?range=14-19&highlight=15,17)]
 
 ---
 
