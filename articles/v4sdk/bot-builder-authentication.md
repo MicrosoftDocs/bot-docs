@@ -49,7 +49,7 @@ This article uses two types of samples. One simpler type shows how to obtain the
 - [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
-Once you finish, you will have a bot running locally that can respond to a few simple tasks that, in the case of the Microsoft Graph example, are checking and sending an email, or displaying who you are and who your manager is. You do not need to publish your bot to test the OAuth sign-in features; however, your bot will need valid Azure credentials app ID and password.
+Once you finish this article, you will have a bot that can respond to a few simple tasks that, in the case of the Microsoft Graph example, are checking and sending an email, or displaying who you are and who your manager is. You do not need to publish your bot to test the OAuth features; however, your bot will need valid Azure credentials app ID and password.
 
 ### Web Chat and Direct Line considerations
 
@@ -86,12 +86,20 @@ Create a **Bot resource** using the [Azure Portal](https://portal.azure.com/).
 
 For more information, see [Create a bot with Azure Bot Service](./abs-quickstart.md).
 
-## Create the Azure AD identity provider application
+## Create the Azure AD identity application
 
-This section shows how to create an Azure AD identity provider  application that uses OAuth to authenticate the bot.
+Azure Active Directory (Azure AD) is a cloud identity service that allows to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-For this bot you can use Azure AD v1 or v2 endpoints.
-For information about the differences between the v1 and v2 endpoints, see the [v1-v2 comparison](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare) and the [Azure AD v2.0 endpoint overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+You can use one of these two identity services:
+
+1. Azure AD developer platform (v1.0). Also known as **Azure AD v1** endpoint, it allows to build apps that securely sign in users with a Microsoft work or school account.
+For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/en-us/azure/active-directory/azuread-dev/v1-overview).
+1. Microsoft identity platform (v2.0). Also known as **Azure AD v2** endpoint, it is an evolution of the Azure AD platform (v1.0). It allows to build applications that sign in all Microsoft identities and get tokens to call Microsoft APIs, such as Microsoft Graph, or APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
+
+For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare).
+
+This section shows how to create an Azure AD identity application that uses OAuth2 to authenticate the bot. You can use Azure AD v1 or Azure AD v2 endpoints.
+
 
 ### Create your Azure AD application
 
