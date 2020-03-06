@@ -31,7 +31,7 @@ Related TODO:
 - Does the bot need all of these scopes for the samples? (e.g. "Read all users' basic profiles")
 -->
 
-# Add authentication to your bot via Azure Bot Service
+# Add authentication to a bot
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
