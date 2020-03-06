@@ -31,15 +31,15 @@
 ### [Enterprise Productivity bot](bot-service-scenario-enterprise-productivity.md)
 ### [Information bot](bot-service-scenario-informational.md)
 ### [Internet of Things bot](bot-service-scenario-internet-things.md)
-# How-To 
+# How-To
 ## [Design](design/TOC.md)
 ## Develop
 <!-- ## [Best practice for welcoming the user](v4sdk/bot-builder-welcome-user.md) -->
 ### [Send and receive text message](v4sdk/bot-builder-howto-send-messages.md)
 ### [Add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md)
 ### [Add buttons to guide user action](v4sdk/bot-builder-howto-add-suggested-actions.md)
-### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md) 
-### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md) 
+### [Save user and conversation data](v4sdk/bot-builder-howto-v4-state.md)
+### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md)
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
@@ -51,7 +51,7 @@
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
-### [Add authentication to your bot](v4sdk/bot-builder-authentication.md)
+### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
