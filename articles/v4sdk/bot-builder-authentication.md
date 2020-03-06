@@ -45,22 +45,12 @@ The features include:
 > [!NOTE]
 > The authentication features also work with BotBuilder v3. However, this article covers just the v4 sample code.
 
-### About the samples
+This article uses a two kind of samples. One simpler sample shows how to obtain the authentication token. The more complex sample shows how to authenticate a bot to connect to the Microsoft Graph. In both cases you learn how to use Azure AD v1 or Azure AD v2 as identity providers. The following are the main areas covered:
 
-To run the samples referenced in this article, you need the following:
-
-1. An Azure Active Directory (AAD) bot channels registration application to allow your bot to access an external protected resource, such as [Microsoft Graph](https://developer.microsoft.com/en-us/graph). This application also allows the user to communicate with the bot via several channels such as Web Chat.
-1. A separate AAD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the protected resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are supported, also.
-
-> [!IMPORTANT]
-> Whenever you register a bot in Azure, it gets assigned an Azure AD app. However, this app secures channel-to-bot access. You need an additional AAD app for each application that you want the bot to be able to authenticate on behalf of the user.
-
-This article describes a sample bot that connects to the Microsoft Graph using an Azure AD v1 or Azure AD v2 token. It also covers how to create and register the associated Azure AD app. As part of this process, you'll use code from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) GitHub repo. The article covers the following:
-
-- **Create your bot resource**
-- **Create an Azure AD application**
-- **Register your Azure AD application with your bot**
-- **Prepare the bot sample code**
+- [Create the Azure bot resource](#create_the_azure_bot_resource)
+- [Create the Azure AD OAuth application](#create_the_azure_ad_oauth_application)
+- [Register the Azure AD OAuth application with the bot](#register_the_azure_ad_oauth_application_with_the_bot)
+- [Prepare the bot sample code](#prepare_the_bot_sample_code)
 
 Once you finish, you will have a bot running locally that can respond to a few simple tasks against an Azure AD application, such as checking and sending an email, or displaying who you are and who your manager is. To do this, your bot will use a token from an Azure AD application against the Microsoft.Graph library. You do not need to publish your bot to test the OAuth sign-in features; however, your bot will need a valid Azure app ID and password.
 
@@ -83,13 +73,23 @@ Once you finish, you will have a bot running locally that can respond to a few s
 | **Bot authentication** in [**CSharp**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
 | **Bot authentication MSGraph** in [**CSharp**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
 
-## Create your bot resource on Azure
+### About the samples
+
+To run the samples referenced in this article, you need the following:
+
+1. An Azure Active Directory (AAD) bot channels registration application to allow your bot to access an external protected resource, such as [Microsoft Graph](https://developer.microsoft.com/en-us/graph). This application also allows the user to communicate with the bot via several channels such as Web Chat.
+1. A separate AAD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the protected resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are supported, also.
+
+> [!IMPORTANT]
+> Whenever you register a bot in Azure, it gets assigned an Azure AD app. However, this app secures channel-to-bot access. You need an additional AAD app for each application that you want the bot to be able to authenticate on behalf of the user.
+
+## Create the Azure bot resource
 
 Create a **Bot resource** using the [Azure Portal](https://portal.azure.com/).
 
 For more information, see [Create a bot with Azure Bot Service](./abs-quickstart.md).
 
-## Create and register an Azure AD application
+## Create the Azure AD OAuth application
 
 You need an Azure AD application that your bot can use to connect to the Microsoft Graph API.
 
@@ -149,7 +149,7 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
 
 You now have an Azure AD application configured.
 
-### Register your Azure AD application with your bot
+### Register the Azure AD OAuth application with the bot
 
 The next step is to register with your bot the Azure AD application that you just created.
 
