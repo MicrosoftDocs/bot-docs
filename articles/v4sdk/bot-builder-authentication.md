@@ -50,7 +50,7 @@ This article uses a two kind of samples. One simpler sample shows how to obtain 
 - [Create the Azure bot resource](#create-the-azure-bot-resource)
 - [Create the Azure AD OAuth application](#create-the-azure-ad-oauth-application)
 - [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
-- [Prepare the bot sample code](#prepare-the-bot-sample=code)
+- [Prepare the bot code](#prepare-the-bot-code)
 
 Once you finish, you will have a bot running locally that can respond to a few simple tasks against an Azure AD application, such as checking and sending an email, or displaying who you are and who your manager is. To do this, your bot will use a token from an Azure AD application against the Microsoft.Graph library. You do not need to publish your bot to test the OAuth sign-in features; however, your bot will need a valid Azure app ID and password.
 
