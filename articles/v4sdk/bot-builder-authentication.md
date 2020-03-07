@@ -44,7 +44,7 @@ See also [Bot authentication](bot-builder-concept-authentication.md).
 
 This article uses two types of samples. One simpler type shows how to obtain the authentication token. A more complex sample shows how to authenticate a bot to use [Microsoft Graph](https://developer.microsoft.com/en-us/graph). In both cases you learn how to use Azure AD v1 or Azure AD v2 as identity providers to obtain an OAuth token the bot uses to be authenticated. The following are the main areas covered in this article:
 
-- [Create the Azure bot resource](#create-the-azure-bot-resource)
+- [Create the Azure bot application](#create-the-azure-bot-applicaion)
 - [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
 - [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
@@ -74,17 +74,44 @@ Once you finish this article, you will have a bot that can respond to a few simp
 
 To run the samples referenced in this article, you need the following:
 
-1. An Azure Active Directory (AAD) bot channels registration application to allow your bot to access an external secured resource, such as Microsoft Graph. This application also allows the user to communicate with the bot via several channels such as Web Chat.
+1. An Azure bot application to allow the bot to access an external secured resource, such as Microsoft Graph. This application also allows the user to communicate with the bot via several channels such as Web Chat.
 1. A separate AAD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are also supported.
 
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional AAD application for each external secured resource you want the bot to be authenticated on behalf of the user.
 
-## Create the Azure bot resource
+## Create the Azure bot application
 
-Create a **Bot resource** using the [Azure Portal](https://portal.azure.com/).
+This section shows how to create an Azure bot application which will host your bot code in Azure.
 
-For more information, see [Create a bot with Azure Bot Service](./abs-quickstart.md).
+1. In your browser, navigate to the [Azure portal](https://portal.azure.com/).
+1. In the left panel, select **Create a resource**.
+1. In the right panel, in the selection box, enter *bot*. From the drop-down list, select **Bot Channels Registration**.
+1. Click the **Create** button.
+1. In the left panel enter the required information. The following picture shows an example.
+
+    ![bot channels registration](./media/how-to-auth/bot-channels-registratiopn.PNG)
+
+
+1. Click **Microsoft App ID and password** and then **Create New**.
+1. Click **Create App ID** in the **App Registration Portal** link.
+1. In the displayed *App registration* window, click the **New registration** tab in the upper left.
+1. Enter the name of the bot application you are registering, we used *TestingBotAuth*, but you need to select your own unique name.
+1. For the **Supported account types** select *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*.
+1. Click the **Register** button. Once completed, Azure displays the Overview page for the application.
+1. Copy the **Application (client) ID** and save it to a file.
+1. In the left panel, click **Certificate and secrets**.
+    1. Under *Client secrets*, click **New client secret**.
+    1. Add a description to identify this secret from others you might need to create for this app.
+    1. Set *Expires* to your selection.
+    1. Click **Add**.
+    1. Copy the **Client secret** and save it to a file.
+1. Go back to the *Bot Channel Registration* window and copy the **App ID** and the **Client secret** in the **Microsoft App ID** and **Password** boxes, respectively.
+1. Click **OK**.
+1. Finally, click **Create**.
+
+After Azure has completed the registration, the bot channels registration and the bot app service will be included in the resource group you selected.
+
 
 ## Azure AD identity application
 
@@ -97,6 +124,7 @@ For more information, see the [Azure Active Directory for developers (v1.0) over
 1. Microsoft identity platform (v2.0). Also known as **Azure AD v2** endpoint, it is an evolution of the Azure AD platform (v1.0). It allows to build applications that sign in all Microsoft identities and get tokens to call Microsoft APIs, such as Microsoft Graph, or APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
 
 For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare).
+For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/en-us/azure/active-directory/develop/).
 
 ### Create the Azure AD identity application
 
