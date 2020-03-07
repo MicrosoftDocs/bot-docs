@@ -45,7 +45,7 @@ See also [Bot authentication](bot-builder-concept-authentication.md).
 This article uses two types of samples. One simpler type shows how to obtain the authentication token. A more complex sample shows how to authenticate a bot to use [Microsoft Graph](https://developer.microsoft.com/en-us/graph). In both cases you learn how to use Azure AD v1 or Azure AD v2 as identity providers to obtain an OAuth token the bot uses to be authenticated. The following are the main areas covered in this article:
 
 - [Create the Azure bot resource](#create-the-azure-bot-resource)
-- [Create the Azure AD identity provider application](#create-the-azure-ad-identity-provider-application)
+- [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
 - [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
@@ -86,7 +86,7 @@ Create a **Bot resource** using the [Azure Portal](https://portal.azure.com/).
 
 For more information, see [Create a bot with Azure Bot Service](./abs-quickstart.md).
 
-## Create the Azure AD identity application
+## Azure AD identity application
 
 Azure Active Directory (Azure AD) is a cloud identity service that allows to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
@@ -98,10 +98,9 @@ For more information, see the [Azure Active Directory for developers (v1.0) over
 
 For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare).
 
+### Create the Azure AD identity application
+
 This section shows how to create an Azure AD identity application that uses OAuth2 to authenticate the bot. You can use Azure AD v1 or Azure AD v2 endpoints.
-
-
-### Create your Azure AD application
 
 Use these steps to create a new Azure AD application. You can use the v1 or v2 endpoints with the app that you create.
 
