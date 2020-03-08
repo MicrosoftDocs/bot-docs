@@ -115,9 +115,9 @@ This section shows how to register a bot with Azure; it will host the bot code.
 After Azure has completed the registration, the bot channels registration and the bot app service will be included in the resource group you selected.
 
 
-## Azure AD identity application
+## Azure AD identity service
 
-Azure Active Directory (Azure AD) is a cloud identity service that allows to build applications that securely sign in users using industry standard protocols like OAuth2.0.
+The Azure Active Directory (Azure AD) is a cloud identity service that allows to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
 You can use one of these two identity services:
 
