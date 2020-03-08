@@ -93,10 +93,40 @@ An important consideration when the Bot Framework facilitates a user login is ho
 
 Some channels such as Cortana, Teams, Direct Line, and WebChat are able to do this without the user noticing. For example, WebChat uses session cookies to ensure that the sign-in flow took place in the same browser as the WebChat conversation. However, for other channels the user is often presented with a 6-digit _magic code_. This is similar to a built-in multi-factor authentication, as the Bot Framework Token Service will not release the token to the bot unless the user finishes the final authentication, proving that the person who signed-in has access to the chat experience by entering the 6-digit code.
 
-## Azure Activity Directory application registration
+## Azure Activity Directory in a bot
 
-Every bot that is registered as an Azure Bot Service uses an Azure Activity Directory (AD) application ID. It is important **not** to re-use this application ID and password to sign-in users. The Azure Bot Service's Azure AD application ID is to secure the service to service communication between the bot and the Bot Framework Channel Services. If you want to sign-in users to Azure AD, you should create a separate Azure AD application registration with the appropriate permissions and scopes.
+Azure Active Directory (AAD) plays a pivotal role when a bot is deployed to Azure.
 
-## Configure an OAuth connection setting
+### Bot registration
+ When you register a bot with Azure, for example via the bot channels registration, an Active Directory registration application is created. This application has its own application ID (app Id) and client secret (password) needed to configure the bot for deployment. The app Id is also needed to secure the service to service communication between the bot and the Bot Framework Channel Services.
 
-For more on how to register and use an OAuth connection setting, see [Add authentication to your bot](bot-builder-authentication.md).
+> [!IMPORTANT]
+> The application ID and password are not intended to be used for user's authentication.
+
+### Bot authentication
+
+The Azure Active Directory is a cloud identity service that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
+
+You can use one of these two identity services:
+
+1. Azure AD developer platform (v1.0) Also known as **Azure AD v1** endpoint, it allows to build  apps that securely sign in 
+users with a Microsoft work or school account.
+For more information, see [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
+
+1. Microsoft identity platform (v2.0). Also known as **Azure AD v2** endpoint, it is an evolution of the Azure AD platform (v1.0). 
+It allows to build applications that sign in all Microsoft identities and
+get tokens to call Microsoft APIs, such as Microsoft Graph
+or APIs that developers have built. 
+
+For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+
+For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). 
+
+For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
+
+### Next steps
+
+Now that you know the role that AD plays in a bot, let's take a look at how to authenticate a bot.
+
+> [!div class="nextstepaction"]
+> [Add authentication to a bot](bot-builder-authentication.md).
