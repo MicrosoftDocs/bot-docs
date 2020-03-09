@@ -1,9 +1,9 @@
 
-## Authentication security considerations
+### Authentication security considerations
 
 <!-- Summarized from: https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/ -->
 
-When you use *Azure Bot Service authentication* with [Web Chat](../bot-service-channel-connect-webchat.md) there are some important security considerations you must keep in mind.
+When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-channel-connect-webchat.md) there are some important security considerations you must keep in mind.
 
 1. **Impersonation**. Impersonation here means an attacker makes the bot thinks he is someone else. In Web Chat, an attacker can impersonate someone else by **changing the user ID** of his Web Chat instance. To prevent this, it is recommended to bot developers to make the **user ID unguessable**.
 
@@ -25,4 +25,3 @@ When you use *Azure Bot Service authentication* with [Web Chat](../bot-service-c
     2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
     To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
 
-    See also [Add authentication to your bot via Azure Bot Service](../v4sdk/bot-builder-authentication.md).
