@@ -99,7 +99,7 @@ Some channels such as Cortana, Teams, Direct Line, and WebChat are able to do th
 
 ## Azure Activity Directory in a bot
 
-Azure Active Directory (AAD) plays a pivotal role when a bot is deployed to Azure.
+The Azure Active Directory (AAD) plays a pivotal role when a bot is deployed to Azure as described below.
 
 ### Bot registration
 
