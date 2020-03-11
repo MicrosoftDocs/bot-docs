@@ -20,16 +20,15 @@ They provides user authentication as a service. Client applications, such as web
 Some of the advantages of the identity provider are:
 
 - Trusted providers that allow single sign-on (SSO) to access multiple secured applications.
-    > [!IMPORTANT]
-    > SSO enhances usability by reducing the number of times a user must enter a password. It also provides better security by decreasing the potential attack surface.
 - Facilitate connections between cloud computing resources and users, thus decreasing the need for users to re-authenticate when using different platforms.
 
 
 ## Single sign-on
 
 Single sign-on refers to systems where a single authentication provides access to multiple applications by passing the authentication token seamlessly to configured applications. A user logs in with a single ID and password to gain access to any of several related systems. This is often accomplished by using the Lightweight Directory Access Protocol (LDAP) and stored LDAP databases on (directory) servers.
-
 Conversely, single sign-off or single log-out (SLO) is the property whereby a single action of signing out terminates access to multiple software systems.
+> [!IMPORTANT]
+> SSO enhances usability by reducing the number of times a user must enter a password. It also provides better security by decreasing the potential attack surface.
 
 ## Azure Active Directory identity provider
 
