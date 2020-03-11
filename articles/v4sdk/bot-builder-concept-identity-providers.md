@@ -58,6 +58,35 @@ You can also see the list of these providers in the [Azure portal](https://ms.po
 
 ### OAuth generic providers
 
-This section describes the OAuth generic providers settings.
+The connection settings require the selection of an identity service provider.  This section shows how to configure the connection for **Generic Oauth2** and **Oauth2 Generic Provider**.
+
+# [Generic OAuth 2 ](#tab/ga2)
+### Generic OAuth 2
+
+This identity service provider can be used with any generic OAuth2 service that has similar expectations as Azure Active Directory provider, particularly AADv2. It has a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+
+1. In the left panel, click **All resources**.  In the right panel, search for the Azure registration app created earlier. Click on the name (link) of the app.
+1. In the displayed panel on the left, click **Settings**.
+1. In the displayed panel on the right, at the bottom under **OAuth Connection Settings**, click the **Add Setting** button.
+1. The **New Connection Setting** panel is displayed. Enter the following information:
+
+    [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
+
+1. Click the **Save** button.
+
+# [OAuth 2 generic provider ](#tab/a2gp)
+### OAuth 2 generic provider
+
+This identity service provider can be used with any generic OAuth 2 service provider and has the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+
+1. In the left panel, click **All resources**.  In the right panel, search for the Azure registration app created earlier. Click on the name (link) of the app.
+1. In the displayed blade, click **Settings**.
+1. In the displayed panel on the right, at the bottom under **OAuth Connection Settings**, click the **Add Setting** button.
+1. The **New Connection Setting** panel is displayed. Enter the following information:
+
+    [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
+
+1. Click the **Save** button.
+
 
 
