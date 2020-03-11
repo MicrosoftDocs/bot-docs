@@ -3,8 +3,8 @@
 |---|---|---|
 |**Name** | The name of your connection | \<Your name for the connection\> <img width="300px">|
 | **Service Provider**| Identity provider | From the drop-down list, select **Oauth 2 Generic Provider** |
-|**Client id** | Azure AD authentication app ID| \<Value recorded earlier\> |
-|**Client secret** | Azure AD authentication app secret| <Value recorded earlier\> |
+|**Client id** | Identity provider app ID| \<provider id\> |
+|**Client secret** | Identity provider app secret| <provider secret\> |
 |*Scope List Delimiter*|The character to use between scope values (often a space or comma) | *,* \<enter comma\> |
 |**Authorization URL Template** || https://login.microsoftonline.com/common/oauth2/v2.0/authorize |
 |*Authorization URL Query String* |The query string to append to the authorization URL,templated with any wanted parameters: {ClientId} {ClientSecret} {RedirectUrl} {Scopes} {State}| *?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}* |
