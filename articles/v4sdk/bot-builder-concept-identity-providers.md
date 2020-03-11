@@ -50,7 +50,7 @@ You can use one of these identity provider versions:
 
 ---
 
-For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). 
+For information about the differences between the v1 and v2 provider versions, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). 
 
 For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
 
