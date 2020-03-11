@@ -95,7 +95,9 @@ An important consideration when the Bot Framework facilitates a user login is ho
 
 Some channels such as Cortana, Teams, Direct Line, and WebChat are able to do this without the user noticing. For example, WebChat uses session cookies to ensure that the sign-in flow took place in the same browser as the WebChat conversation. However, for other channels the user is often presented with a 6-digit _magic code_. This is similar to a built-in multi-factor authentication, as the Bot Framework Token Service will not release the token to the bot unless the user finishes the final authentication, proving that the person who signed-in has access to the chat experience by entering the 6-digit code.
 
-[!INCLUDE [deploy prepare intro](~/includes/authentication/bot-builder-auth-security.md)]
+> [!IMPORTANT]
+> Please, keep in mind these important [Security considerations](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+
 
 ## Azure Activity Directory in a bot
 
