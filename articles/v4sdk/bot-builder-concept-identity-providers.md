@@ -19,7 +19,7 @@ They provides user authentication as a service. Client applications, such as web
 
 Some of the advantages of the identity provider are:
 
-- **Trusted providers** that allow single sign-on (SSO) to access multiple secured applications.
+- Trusted providers that allow single sign-on (SSO) to access multiple secured applications.
     > [!IMPORTANT]
     > SSO enhances usability by reducing the number of times a user must enter a password. It also provides better security by decreasing the potential attack surface.
 - Facilitate connections between cloud computing resources and users, thus decreasing the need for users to re-authenticate when using different platforms.
