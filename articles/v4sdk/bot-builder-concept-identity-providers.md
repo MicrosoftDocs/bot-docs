@@ -34,7 +34,7 @@ Conversely, single sign-off or single log-out (SLO) is the property whereby a si
 
 The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
 
-You can use one of these identity versions:
+You can use one of these identity provider versions:
 
 # [Azure AD v1](#tab/adv1)
 
@@ -42,7 +42,7 @@ You can use one of these identity versions:
 
 [!INCLUDE [azure-ad-v1-settings](~/includes/authentication/auth-aad-v1-settings.md)]
 
-# [Azure AD v2](#tab/adv1)
+# [Azure AD v2](#tab/adv2)
 
 ### Azure AD v2
 
