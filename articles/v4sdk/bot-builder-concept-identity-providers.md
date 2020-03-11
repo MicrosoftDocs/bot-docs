@@ -34,16 +34,21 @@ Conversely, single sign-off or single log-out (SLO) is the property whereby a si
 
 The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
 
-You can use one of these identity services:
+You can use one of these identity versions:
 
-- Azure AD developer platform (v1.0) Also known as **Azure AD v1** endpoint, it allows to build  apps that securely sign in 
-users with a Microsoft work or school account.
-For more information, see [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
+# [Azure AD v1](#tab/adv1)
 
-- Microsoft identity platform (v2.0). Also known as **Azure AD v2** endpoint, it is an evolution of the Azure AD platform (v1.0). 
-It allows to build applications that sign in all Microsoft identities and
-get tokens to call Microsoft APIs, such as Microsoft Graph
-or APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+### Azure AD v1
+
+[!INCLUDE [azure-ad-v1-settings](~/includes/authentication/auth-aad-v1-settings.md)]
+
+# [Azure AD v2](#tab/adv1)
+
+### Azure AD v2
+
+[!INCLUDE [azure-ad-v2-settings](~/includes/authentication/auth-aad-v2-settings.md)]
+
+---
 
 For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). 
 
@@ -66,7 +71,8 @@ You can also see the list of these providers in the [Azure portal](https://ms.po
 
 The connection settings require the selection of an identity service provider.  This section shows how to configure the connection for **Generic Oauth2** and **Oauth2 Generic Provider**.
 
-# [Generic OAuth 2 ](#tab/ga2)
+# [Generic OAuth 2](#tab/ga2)
+
 ### Generic OAuth 2
 
 This identity service provider can be used with any generic OAuth2 service that has similar expectations as Azure Active Directory provider, particularly AADv2. It has a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
@@ -80,7 +86,8 @@ This identity service provider can be used with any generic OAuth2 service that 
 
 1. Click the **Save** button.
 
-# [OAuth 2 generic provider ](#tab/a2gp)
+# [OAuth 2 generic provider](#tab/a2gp)
+
 ### OAuth 2 generic provider
 
 This identity service provider can be used with any generic OAuth 2 service provider and has the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
@@ -93,3 +100,5 @@ This identity service provider can be used with any generic OAuth 2 service prov
     [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
 1. Click the **Save** button.
+
+---
