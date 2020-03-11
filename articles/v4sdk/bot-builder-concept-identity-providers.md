@@ -87,6 +87,3 @@ This identity service provider can be used with any generic OAuth 2 service prov
     [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
 1. Click the **Save** button.
-
-
-
