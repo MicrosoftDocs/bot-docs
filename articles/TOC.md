@@ -18,7 +18,9 @@
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
 ## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
-## [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
+## Authentication
+### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
+### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
 ## [About skills](v4sdk/skills-conceptual.md)

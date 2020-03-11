@@ -112,22 +112,7 @@ The Azure Active Directory (AAD) plays a pivotal role when a bot is deployed to 
 
 ### Bot authentication
 
-The Azure Active Directory is a cloud identity service that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
-
-You can use one of these two identity services:
-
-1. Azure AD developer platform (v1.0) Also known as **Azure AD v1** endpoint, it allows to build  apps that securely sign in 
-users with a Microsoft work or school account.
-For more information, see [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
-
-1. Microsoft identity platform (v2.0). Also known as **Azure AD v2** endpoint, it is an evolution of the Azure AD platform (v1.0). 
-It allows to build applications that sign in all Microsoft identities and
-get tokens to call Microsoft APIs, such as Microsoft Graph
-or APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-
-For information about the differences between the v1 and v2 endpoints, see the [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). 
-
-For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
+The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**. For more information, see [Azure Active Directory (AAD) identity provider](bot-builder-concept-identity-providers.md#azure-active-directory-(aad)-identity-provider).
 
 ### Next steps
 
