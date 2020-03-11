@@ -24,7 +24,7 @@ Some of the advantages of the identity provider are:
     > SSO enhances usability by reducing the number of times a user must enter a password. It also provides better security by decreasing the potential attack surface.
 - Facilitate connections between cloud computing resources and users, thus decreasing the need for users to re-authenticate when using different platforms.
 
-## Azure Active Directory (AAD) identity provider
+## Azure Active Directory identity provider
 
 The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
 

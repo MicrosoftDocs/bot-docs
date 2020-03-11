@@ -112,7 +112,7 @@ The Azure Active Directory (AAD) plays a pivotal role when a bot is deployed to 
 
 ### Bot authentication
 
-The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**. For more information, see [Azure Active Directory (AAD) identity provider](bot-builder-concept-identity-providers.md#azure-active-directory-aad-identity-provider).
+The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**. For more information, see [Azure Active Directory identity provider](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider).
 
 ### Next steps
 
