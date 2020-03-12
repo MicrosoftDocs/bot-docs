@@ -120,3 +120,9 @@ Now that you know the role that AD plays in the authentication, let's take a loo
 
 > [!div class="nextstepaction"]
 > [Add authentication to a bot](bot-builder-authentication.md).
+
+## See also
+
+- [Identity providers](bot-builder-concept-identity-providers.md)
+- [REST Connector authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0)
+- [REST Directline authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)

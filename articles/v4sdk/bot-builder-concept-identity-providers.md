@@ -26,17 +26,23 @@ Some of the (trusted) identity providers' advantages are:
 
 ## Single sign-on
 
-Single sign-on refers to systems where a single authentication provides secured resources access to multiple applications by passing the authentication token seamlessly to configured applications.
-A user logs in with a single ID and password to gain access to any of several related systems. This is often accomplished by using the Lightweight Directory Access Protocol (LDAP) and stored LDAP databases on (directory) servers.
+Single sign-on refers to a single authentication which provides secured resources access to multiple applications by passing the authentication token seamlessly to configured applications.
+
+A user logs in with a single ID and password to gain access to any of several related software systems. This is often accomplished by using the Lightweight Directory Access Protocol (LDAP) and stored LDAP databases on (directory) servers.
+
 Conversely, single sign-off or single log-out (SLO) is the property whereby a single action of signing out terminates access to multiple software systems.
+
 > [!IMPORTANT]
-> SSO enhances usability by reducing the number of times a user must enter a password. It also provides better security by decreasing the potential attack surface.
+> SSO enhances usability by reducing the number of times a user must enter credentials. It also provides better security by decreasing the potential attack surface.
 
 ## Azure Active Directory identity provider
 
 The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
 
-You can use one of these identity provider versions:
+You can choose from two AD identity provider implementations which have different settings as shown below.
+
+> [!Note]
+> You use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application. See [Add authentication to a bot](bot-builder-authentication.md).
 
 # [Azure AD v1](#tab/adv1)
 
@@ -73,6 +79,14 @@ You can also see the list of these providers in the [Azure portal](https://ms.po
 
 ### OAuth generic providers
 
+Azure supports generic OAuth2 identity providers which allow you to use your own providers.
+
+You can choose from two generic identity provider implementations which have different settings as shown below.
+
+> [!Note]
+> You use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application.
+
+
 The connection settings require the selection of an identity service provider.  This section shows how to configure the connection for **Generic Oauth2** and **Oauth2 Generic Provider**.
 
 # [Generic OAuth 2](#tab/ga2)
@@ -81,28 +95,15 @@ The connection settings require the selection of an identity service provider.  
 
 This identity service provider can be used with any generic OAuth2 service that has similar expectations as Azure Active Directory provider, particularly AADv2. It has a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
-1. In the left panel, click **All resources**.  In the right panel, search for the Azure registration app created earlier. Click on the name (link) of the app.
-1. In the displayed panel on the left, click **Settings**.
-1. In the displayed panel on the right, at the bottom under **OAuth Connection Settings**, click the **Add Setting** button.
-1. The **New Connection Setting** panel is displayed. Enter the following information:
+[!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
 
-    [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
-
-1. Click the **Save** button.
 
 # [OAuth 2 generic provider](#tab/a2gp)
 
 ### OAuth 2 generic provider
 
-This identity service provider can be used with any generic OAuth 2 service provider and has the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+This identity provider can be used with any generic OAuth 2 service provider and has the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
-1. In the left panel, click **All resources**.  In the right panel, search for the Azure registration app created earlier. Click on the name (link) of the app.
-1. In the displayed blade, click **Settings**.
-1. In the displayed panel on the right, at the bottom under **OAuth Connection Settings**, click the **Add Setting** button.
-1. The **New Connection Setting** panel is displayed. Enter the following information:
-
-    [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
-
-1. Click the **Save** button.
+[!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
 ---
