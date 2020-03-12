@@ -20,10 +20,10 @@ Starting with version 4.7 of the Bot Framework SDK, you can extend a bot using a
 A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
 
 <!-- Terminology -->
-- A _skill_ is a bot that can perform a set of tasks for another bot and uses a manifest to describe its interface.
+- A _skill_ is a bot that can perform a set of tasks for another bot.
   Depending on design, a skill can also function as a typical, user-facing bot.
 - A _skill consumer_ is a bot that can invoke one or more skills. With respect to skills, a _root bot_ is a user-facing bot that is also a skill consumer.
-- A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints.
+- A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
   - Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer. See how to [implement a skill](./skill-implement-skill.md) for a sample skill manifest.
   - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
@@ -34,13 +34,13 @@ The skills feature is designed so that:
 
 - Skills can work with both the Bot Framework adapter and custom adapters.
 - Skills can work with the Microsoft Teams channel, which makes heavy use of `invoke` activities.
-- Skills support user authentication; however, user authentication is local to the skill and cannot be transferred to another bot.
+- Skills support user authentication; however, user authentication is local to the skill or skill consumer and cannot be transferred to another bot.
 - A skill consumer can consume multiple skills.
 - A skill consumer can run multiple skills in parallel.
 - A skill consumer can consume a skill regardless of the language or SDK version of the skill.
 - The Bot Connector service provides bot-to-bot authentication; however, you can test a root bot locally using the Emulator.
+- A skill can also be a skill consumer. Connecting through multiple skills will add network latency and the potential for error. Such bots are more complex and can be more difficult to debug.
 <!--TBD: - Skills support proactive messaging. -->
-<!--TBD: - A skill can also be a skill consumer. -->
 
 ## Architecture
 
