@@ -13,19 +13,21 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Identity providers
 
-An identity provider (IdP or IDP) is a system entity that creates, maintains, and manages identity information for principals while providing authentication services to client applications in a federation or distributed network.
+An identity provider (IdP or IDP) creates, maintains, and manages identity information for principals while providing authentication services to client applications in a federation or distributed network.
+It provides user authentication as a service.
 
-They provides user authentication as a service. Client applications, such as web applications, delegate authentication to a trusted identity provider. Such client applications are said to be federated, that is, they use federated identity.
+Client applications, such as web applications, delegate authentication to a trusted identity provider. Such client applications are said to be federated, that is, they use federated identity.
 
-Some of the advantages of the identity provider are:
+Some of the (trusted) identity providers' advantages are:
 
-- Trusted providers that allow single sign-on (SSO) to access multiple secured applications.
-- Facilitate connections between cloud computing resources and users, thus decreasing the need for users to re-authenticate when using different platforms.
+- Allow single sign-on (SSO) to access multiple secured applications.
+- Facilitate connections between cloud computing resources and users, thus decreasing the need for users to re-authenticate.
 
 
 ## Single sign-on
 
-Single sign-on refers to systems where a single authentication provides access to multiple applications by passing the authentication token seamlessly to configured applications. A user logs in with a single ID and password to gain access to any of several related systems. This is often accomplished by using the Lightweight Directory Access Protocol (LDAP) and stored LDAP databases on (directory) servers.
+Single sign-on refers to systems where a single authentication provides secured resources access to multiple applications by passing the authentication token seamlessly to configured applications.
+A user logs in with a single ID and password to gain access to any of several related systems. This is often accomplished by using the Lightweight Directory Access Protocol (LDAP) and stored LDAP databases on (directory) servers.
 Conversely, single sign-off or single log-out (SLO) is the property whereby a single action of signing out terminates access to multiple software systems.
 > [!IMPORTANT]
 > SSO enhances usability by reducing the number of times a user must enter a password. It also provides better security by decreasing the potential attack surface.
