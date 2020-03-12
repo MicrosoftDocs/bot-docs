@@ -97,10 +97,10 @@ At startup, user state is defined in `index.js` and consumed by the bot construc
 
 At startup, user state is defined in `app.py` and consumed by the bot constructor.
 
-**app.py**
+**app.py**  
 [!code-python[define state](~/../botbuilder-samples/samples/python/03.welcome-user/app.py?range=61-66)]
 
-**bots/welcome-user-bot.py**
+**bots/welcome-user-bot.py**  
 [!code-python[consume state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=23-29)]
 
 ---
@@ -128,7 +128,7 @@ We now create a property accessor that provides us a handle to welcomedUserPrope
 
 This sample creates a conversation state property accessor, `user_state_accessor`, in the bot constructor.
 
-**bots/welcome-user-bot.py**
+**bots/welcome-user-bot.py**  
 [!code-python[constructor](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=31)]
 
 It uses the property accessor in the `on_message_activity` handler and overrides the `on_turn` handler to save state before the end of the turn.
@@ -186,7 +186,7 @@ It is also important to consider when your user’s input might actually contain
 
 It is also important to consider when the user’s input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and does not process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
 
-**bots/welcome-user-bot.py**
+**bots/welcome-user-bot.py**  
 [!code-python[DidBotWelcomeUser](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=85-95)]
 
 ---
@@ -213,7 +213,7 @@ An input of 'intro' or 'help' uses CardFactory to present the user with an Intro
 
 An user's input of *intro* or *help* causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
 
-**bots/welcome-user-bot.py**
+**bots/welcome-user-bot.py**  
 [!code-python[SwitchOnUtterance](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=101-106&highlight=97-106)]
 
 ---
@@ -234,7 +234,7 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 
 ### [Python](#tab/python)
 
-**bots/welcome-user-bot.py**
+**bots/welcome-user-bot.py**  
 [!code-python[SendIntroCard](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=108-143)]
 
 ---
