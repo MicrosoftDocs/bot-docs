@@ -79,7 +79,7 @@ You can also see the list of these providers in the [Azure portal](https://ms.po
 
 ### OAuth generic providers
 
-Azure supports generic OAuth2 identity providers which allow you to use your own providers.
+Azure supports generic OAuth2 which allow you to use your own identity providers.
 
 You can choose from two generic identity provider implementations which have different settings as shown below.
 
@@ -87,13 +87,11 @@ You can choose from two generic identity provider implementations which have d
 > You use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application.
 
 
-The connection settings require the selection of an identity service provider.  This section shows how to configure the connection for **Generic Oauth2** and **Oauth2 Generic Provider**.
-
 # [Generic OAuth 2](#tab/ga2)
 
 ### Generic OAuth 2
 
-This identity service provider can be used with any generic OAuth2 service that has similar expectations as Azure Active Directory provider, particularly AADv2. It has a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+The settings shown can be used with any generic OAuth2 identity provider that has similar expectations as Azure Active Directory provider, particularly AADv2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
 
@@ -102,7 +100,7 @@ This identity service provider can be used with any generic OAuth2 service that 
 
 ### OAuth 2 generic provider
 
-This identity provider can be used with any generic OAuth 2 service provider and has the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+The settings shown can be used with any generic OAuth 2 service provider and provide the most flexibility, but require the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
