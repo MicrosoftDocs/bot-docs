@@ -13,6 +13,7 @@ ms.date: 07/25/2019
 # Create .NET Client to Connect to Direct Line App Service Extension
 
 This article describes how to create a .NET client in C# which connects to the direct line app service extension.
+Please, also read this companion article [Configure .NET bot for extension](bot-service-channel-directline-extension-net-bot.md).
 
 ## Gather your Direct Line Extension keys
 
