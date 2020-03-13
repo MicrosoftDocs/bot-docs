@@ -11,6 +11,8 @@
 |**Tenant ID** | | <directory (tenant) ID> or `common`. See note.|
 |**Resource URL** | | `https://graph.microsoft.com/` |
 |**Scopes** | | <blank> |
+|||
+
 
 **Note**
 

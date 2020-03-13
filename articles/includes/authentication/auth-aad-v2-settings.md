@@ -7,8 +7,9 @@
 |**Service Provider**| AAD Identity provider | `Azure Active Directory v2` |
 |**Client id** | AAD identity provider app ID| <AAD provider app id\> |
 |**Client secret** | AAD identity provider app secret| <AAD provider app secret\> |
-|**Tenant ID** | | <directory (tenant) ID> or `common`. See note.|
-|**Scopes** | | <API access permissions>. See note.|
+|**Tenant ID** | | <directory (tenant) ID> or `common`. See note. |
+|**Scopes** | | <API access permissions>. See note. |
+|||
 
 
 **Note**
