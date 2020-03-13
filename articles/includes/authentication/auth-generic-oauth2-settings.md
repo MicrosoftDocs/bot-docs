@@ -11,4 +11,4 @@
 |*Token Body* | Body to send for the token exchange | *code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}* |
 |**Refresh URL** | | https://login.microsoftonline.com/common/oauth2/v2.0/token |
 |*Refresh Body Template* | Body to send with the token refresh | *refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}* |
-|**Scopes** | Comma separated list of the API permissions you granted earlier to the Azure AD authentication app | Values such as **openid, profile, Mail.Read, Mail.Send, User.Read, User.ReadBasic.All**|
+|**Scopes** | Comma separated list of the API permissions you granted earlier to the Azure AD authentication app | Values such as `openid` `profile` `Mail.Read` `Mail.Send` `User.Read` `User.ReadBasic.All`|
