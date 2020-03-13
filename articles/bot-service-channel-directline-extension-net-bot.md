@@ -108,3 +108,8 @@ If everything is correct, the page will return this JSON content: `{"k":true,"ib
 - **initialized** determines whether Direct Line ASE can use the App Service Extension Key to download the bot metadata from Azure Bot Service
 - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
 - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create .NET Client](articles\bot-service-channel-directline-extension-net-client.md)
