@@ -48,11 +48,19 @@ You can choose from two AD identity provider implementations which have differ
 
 ### Azure AD v1
 
+You use the settings shown to configure the Azure AD developer platform (v1.0), also known as **Azure AD v1** endpoint, which allows to build  apps that securely sign in users with a Microsoft work or school account.
+For more information, see [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
+
 [!INCLUDE [azure-ad-v1-settings](~/includes/authentication/auth-aad-v1-settings.md)]
 
 # [Azure AD v2](#tab/adv2)
 
 ### Azure AD v2
+
+You use the settings shown to configure the Microsoft identity platform (v2.0), also known as **Azure AD v2** endpoint which is an evolution of the Azure AD platform (v1.0).  It allows a bot to get tokens to call Microsoft APIs, such as Microsoft Graph or custom APIs. 
+For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+
+The AD v2 settings enable a bot to access Office 365 data via the Microsoft Graph API.
 
 [!INCLUDE [azure-ad-v2-settings](~/includes/authentication/auth-aad-v2-settings.md)]
 
@@ -91,7 +99,7 @@ You can choose from two generic identity provider implementations which have d
 
 ### Generic OAuth 2
 
-The settings shown can be used with any generic OAuth2 identity provider that has similar expectations as Azure Active Directory provider, particularly AADv2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+You use the settings shown to configure any generic OAuth2 identity provider that has similar expectations as Azure Active Directory provider, particularly AADv2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
 
@@ -100,7 +108,7 @@ The settings shown can be used with any generic OAuth2 identity provider that ha
 
 ### OAuth 2 generic provider
 
-The settings shown can be used with any generic OAuth 2 service provider and provide the most flexibility, but require the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+You use the settings shown to configure any generic OAuth 2 service provider which provides the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
