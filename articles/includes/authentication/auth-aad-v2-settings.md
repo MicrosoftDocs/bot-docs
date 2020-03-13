@@ -8,7 +8,7 @@
 |**Client id** | AAD identity provider app ID| <AAD provider app id\> |
 |**Client secret** | AAD identity provider app secret| <AAD provider app secret\> |
 |**Tenant ID** | | <directory (tenant) ID> or `common`. See note.|
-|**Scopes** | | <values from the API access permissions>. See note.|
+|**Scopes** | | <API access permissions>. See note.|
 
 
 **Note**

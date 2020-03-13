@@ -9,7 +9,8 @@
 |**Grant Type** | | `authorization_code` |
 |**Login URL** | | `https://login.microsoftonline.com` |
 |**Tenant ID** | | <directory (tenant) ID> or `common`. See note.|
-|**Grant URL** | | `https://graph.microsoft.com/` |
+|**Resource URL** | | `https://graph.microsoft.com/` |
+|**Scopes** | | <blank> |
 
 **Note**
 
