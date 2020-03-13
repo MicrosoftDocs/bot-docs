@@ -97,6 +97,7 @@ Some channels such as Cortana, Teams, Direct Line, and WebChat are able to do th
 
 > [!IMPORTANT]
 > Please, keep in mind these important [Security considerations](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+> You can find additional information in this blog post: [Using WebChat with Azure Bot Service Authentication](https://blog.botframework.com/2018/09/01/using-webchat-with-azure-bot-services-authentication/).
 
 
 ## Azure Activity Directory in a bot
