@@ -112,4 +112,4 @@ If everything is correct, the page will return this JSON content: `{"k":true,"ib
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create .NET Client](articles\bot-service-channel-directline-extension-net-client.md)
+> [Create .NET Client](./bot-service-channel-directline-extension-net-client.md)
