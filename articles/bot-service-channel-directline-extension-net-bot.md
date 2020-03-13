@@ -79,7 +79,7 @@ This section describes how to enable the direct line app service extension using
 1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
 1. Scroll down to the App Service Extension Keys section.
-1. Click on the **Show link** to reveal one of the keys, then copy its value.
+1. Click on the **Show link** to reveal one of the keys, then copy ad save its value. You will use this value in the next section.
 
 ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
 
@@ -91,8 +91,10 @@ This section describes how to enable the direct line app service extension using
 
     |Name|Value|
     |---|---|
-    |DirectLineExtensionKey|<App_Service_Extension_Key_From_Section_1>|
+    |DirectLineExtensionKey|<App_Service_Extension_Key>|
     |DIRECTLINE_EXTENSION_VERSION|latest|
+
+    Where the *App_Service_Extension_Key* is the value you saved earlier.
 
 1. Within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
 1. Click on **Save** to save the settings. This restarts the Azure App Service.
