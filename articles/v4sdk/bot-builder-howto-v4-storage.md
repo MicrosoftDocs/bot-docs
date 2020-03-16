@@ -748,7 +748,7 @@ After you have run your bot and saved your information, we can view it in under 
 
 Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine while debugging your bot's performance.
 
-**NOTE: Javascript and Python do not currently support AzureBlobTranscriptStore.  The following directions are for C# only**
+**NOTE: Javascript and Python do not currently support AzureBlobTranscriptStore.  The following directions are for C# only.**
 
 ### Set up
 
