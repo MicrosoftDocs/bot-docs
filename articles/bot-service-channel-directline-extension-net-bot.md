@@ -14,7 +14,7 @@ ms.date: 01/16/2020
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
-This article describes how to update a bot to work with **named pipes**, and how to enable the direct line app service extension in the **Azure App Service** resource where the bot is hosted. Please, read this companion article [Create .NET Client to Connect to Direct Line App Service Extension](bot-service-channel-directline-extension-net-client.md).
+This article describes how to update a bot to work with **named pipes**, and how to enable the direct line app service extension in the **Azure App Service** resource where the bot is hosted. Please, also read this companion article [Create .NET Client to Connect to Direct Line App Service Extension](bot-service-channel-directline-extension-net-client.md).
 
 
 ## Prerequisites
