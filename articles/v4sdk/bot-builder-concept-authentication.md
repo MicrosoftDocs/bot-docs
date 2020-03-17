@@ -14,11 +14,11 @@ monikerRange: 'azure-bot-service-4.0'
 # Bot authentication
 
 <!-- work in progress -->
-There are times when a bot must access protected online resources on behalf of the user; to do that the bot must be authenticated. This authentication takes the form of a token based on the user's credentials. This is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
+There are times when a bot must access protected online resources on behalf of the user; to do that the bot must be authorized to do so. The authorization takes form of a bearer token. This is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
 
 1. **Bot Channels Registration application**. This is the mechanism to *integrate* a bot within the Azure infrastructure, which allows the user to communicate via channels with the bot.
-1. **Bot**. The bot can be hosted anywhere including Azure. If hosted in Azure, you can build an deploy it.
-1. **Identity provider application**. This application is needed for each protected resource the bot must access on behalf of the user. It is the **identity provider** which allows the bot to *access an external protected resource*, such as Office 365 MSGraph. The Azure Active Directory (AAD) is the identity provider to access Microsoft protected resources. Many other identity providers exist, for example GitHub, to access their protected resources.
+1. **Bot**. The bot can be hosted anywhere including Azure.
+1. **Identity provider application**. This application is needed for each protected resource the bot must access on behalf of the user. It is the **identity provider** which allows the bot to *access an external protected resource*, such as Office 365 MSGraph. The Azure Active Directory is the identity provider to access Microsoft protected resources. Many other identity providers exist, for example GitHub, to access their protected resources.
 
 The following picture shows the architecture of the Azure Bot Service which uses the Azure AD as the identity provider for authentication.
 
@@ -102,7 +102,7 @@ Some channels such as Cortana, Teams, Direct Line, and WebChat are able to do th
 
 ## Azure Activity Directory in a bot
 
-The Azure Active Directory (AAD) plays a pivotal role when a bot is deployed to Azure as described below.
+The Azure Active Directory plays a pivotal role when a bot is deployed to Azure as described below.
 
 ### Bot registration
 
