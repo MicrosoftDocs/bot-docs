@@ -5,8 +5,10 @@ Bots are published to Cortana from the [dashboard](https://aka.ms/cortana-publis
 Bots are published to Skype from the [configuration page](~/bot-service-channel-connect-skype.md). Publishing a bot submits it for review. Before review, the bot is limited to 100 contacts. Approved bots do not have limited contacts and you may opt to have the bot included in the Skype bot directory.
 
 ### Skype for Business
+
+>[!IMPORTANT]
+>Skype for Business Online will retire on July 31, 2021. Skype for Business Online customers should see no change to the service before the retirement date. Read [Skype for Business Online to Be Retired](https://aka.ms/skype-business-announcement) for more details.
+
 Skype for Business bots are registered with a [Skype for Business Online tenant](https://msdn.microsoft.com/skype/Skype-For-Business-Bot-Framework/docs/overview) by a Tenant Administrator.
 
-> [!TIP]
-> To view the status of a review, open the bot in the [Bot Framework Portal](https://dev.botframework.com/) and click **Channels**.
-> If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
+To view the status of a review, open the bot in the [Bot Framework Portal](https://dev.botframework.com/) and click **Channels**. If the bot is not approved, the result will link to the reason why. After making the required changes, resubmit the bot for review.
