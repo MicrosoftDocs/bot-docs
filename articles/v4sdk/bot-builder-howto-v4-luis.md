@@ -99,14 +99,13 @@ Once your LUIS app is published, you can access it from your bot. You will need 
 
 ### Retrieve application information from the LUIS.ai portal
 
-The settings file (`appsettings.json` or `.env`) acts as the place to bring all service references together in one place. The information you retrieve will be added to this file in the next section.
+The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place to bring all service references together in one place. The information you retrieve will be added to this file in the next section.
 
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
-![Manage LUIS app](./media/how-to-luis/manage-luis-app.png)
-1. Select the **Application Information** tab on the left side, record the value shown for _Application ID_ as <YOUR_APP_ID>.
-1. Select the **Keys and Endpoints** tab on the left side, record the value shown for _Authoring Key_ as <YOUR_AUTHORING_KEY>.
-1. Scroll down to the end of the page, record the value shown for _Region_ as <YOUR_REGION>.
+1. Select the **Application Information** tab on the left side. Record the value shown for _Application ID_ as <YOUR_APP_ID>.
+    ![Manage LUIS app](./media/how-to-luis/manage-luis-app.png)
+1. Select the **Azure Resources** tab on the left side. Record the value shown for:_Region_ as <YOUR_REGION> and _Authoring Key_ as <YOUR_AUTHORING_KEY>.
 
 ### Update the settings file
 
@@ -114,14 +113,14 @@ The settings file (`appsettings.json` or `.env`) acts as the place to bring all 
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
-**appsetting.json**  
+**appsetting.json**
 [!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
 
 # [JavaScript](#tab/javascript)
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
-**.env**  
+**.env**
 [!code[env](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
 # [Python](#tab/python)
@@ -196,7 +195,7 @@ If the top intent returned from LUIS resolves to "Book flight" your bot will ask
 
 ![LUIS booking result](./media/how-to-luis/luis-travel-result.png)
 
-At this point the code bot logic will reset and you can continue to create additional bookings. 
+At this point the code bot logic will reset and you can continue to create additional bookings.
 
 ## Next steps
 
