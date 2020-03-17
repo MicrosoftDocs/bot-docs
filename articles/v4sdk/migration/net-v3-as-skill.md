@@ -102,7 +102,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    In the `HandleSystemMessage` method, add a condition to handle an `endOfConversation` message. This allows the skill to clear state and release resources when the conversation is ended from the skill consumer.
 
-   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=45-60)]
+   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=45-65)]
 
 1. Modify the bot code to allow the skill to flag that the conversation is complete when it receives an "end" or "stop" message from the user. The skill should also clear state and release resources when it ends the conversation.
 
@@ -138,7 +138,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3PizzaBot\\ConversationHelper.cs**
 
-   [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-74)]
+   [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-79)]
 
 1. Update the `MessagesController` class.
 
@@ -198,9 +198,9 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
    - Send the `endOfConversation` activity when the skill ends. This can return the order information in the activity's `Value` property and set the `Code` property to reflect why the conversation ended.
    - Clear conversation state and release any associated resources.
 
-   **V3PizzaBot\\ConversationHelper.cs**
+   **V3SimpleSandwichBot\\ConversationHelper.cs**
 
-   [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-74)]
+   [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/ConversationHelper.cs?range=4-79)]
 
 1. Update the `MessagesController` class.
 
