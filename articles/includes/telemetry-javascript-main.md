@@ -39,7 +39,7 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
 
 4. Create a new function at the end of `Index.js` named `getTelemetryClient` that takes your `InstrumentationKey` as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
-    [!code-javascript](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=98-104)]
+    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=98-104)]
 
     <!-- TODO: Comment out this code block once the code snippet link is validated. --->
     ```javascript
