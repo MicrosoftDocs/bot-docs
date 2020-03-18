@@ -32,6 +32,6 @@ That's it, you should have a functional bot that logs telemetry data into Applic
 For information on testing and debugging your bot, you can refer to the following articles:
 
  * [Debug a bot](../bot-service-debug-bot.md)
- * [Testing and debugging guidelines](../bot-builder-testing-debugging.md)
+ * [Testing and debugging guidelines](../v4sdk/bot-builder-testing-debugging.md)
  * [Debug with the emulator](../bot-service-debug-emulator.md)
 
