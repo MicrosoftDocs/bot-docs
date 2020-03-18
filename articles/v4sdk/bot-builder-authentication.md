@@ -9,7 +9,7 @@ ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-<!-- 
+<!--
 
 Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
@@ -25,7 +25,7 @@ Related TODO:
 - This doc is a sample walkthrough, but there's no deeper documentation explaining how the Azure Bot Service is handling tokens. How does the OAuth flow work? Where is it storing my users' access tokens? What's the security and best practices around using it?
 
 "Minor issues":
-- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don’t currently have a way for the developer to specify which scope he wants at runtime.")
+- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don't currently have a way for the developer to specify which scope he wants at runtime.")
 
 - "The scope of the connection setting needs to have both openid and a resource in the Azure AD graph, such as Mail.Read." Unclear if I need to take some action at this point to make happen. Kind of out of context. I'm registering an AAD application in the portal, there's no connection setting
 - Does the bot need all of these scopes for the samples? (e.g. "Read all users' basic profiles")
@@ -292,7 +292,7 @@ as shown in [Configure the emulator for authentication](../bot-service-debug-emu
 
 ### Testing
 
-After you have configured the authentication mechanism, you can perform the actual bot sample testing.  
+After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
 1. Run the bot sample locally on your machine.
 1. Start the emulator.
@@ -436,17 +436,17 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 # [C#](#tab/csharp)
 
-**Dialogs\LogoutDialog.cs**  
+**Dialogs\LogoutDialog.cs**
 [!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
 
-# [JavaScript](#tab/javascript)  
+# [JavaScript](#tab/javascript)
 
-**dialogs/logoutDialog.js**  
+**dialogs/logoutDialog.js**
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 # [Python](#tab/python)
 
-**dialogs/logout_dialog.py**  
+**dialogs/logout_dialog.py**
 [!code-python[allow logout](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/logout_dialog.py?range=27-34&highlight=6)]
 
 ---
@@ -459,12 +459,12 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 
 # [C#](#tab/csharp)
 
-**Bots/TeamsBot.cs**  
+**Bots/TeamsBot.cs**
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
 # [JavaScript](#tab/javascript)
 
-**bots/teamsBot.js**  
+**bots/teamsBot.js**
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
 
 # [Python](#tab/python)
@@ -477,12 +477,12 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 
 # [C#](#tab/csharp)
 
-**Bots/DialogBot.cs**  
+**Bots/DialogBot.cs**
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
 # [JavaScript](#tab/javascript)
 
-**Bots/dialogBot.js**  
+**Bots/dialogBot.js**
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
 
 # [Python](#tab/python)
