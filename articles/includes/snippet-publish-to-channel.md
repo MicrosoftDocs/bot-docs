@@ -1,7 +1,12 @@
 ### Cortana
+
 Bots are published to Cortana from the [dashboard](https://aka.ms/cortana-publish) and are used to power Cortana skills. Publishing a bot submits it for review. Cortana skills can be deployed for your own use, deployed to a small group, or published to the world.
 
 ### Skype
+
+>[!NOTE]
+> As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
+
 Bots are published to Skype from the [configuration page](~/bot-service-channel-connect-skype.md). Publishing a bot submits it for review. Before review, the bot is limited to 100 contacts. Approved bots do not have limited contacts and you may opt to have the bot included in the Skype bot directory.
 
 ### Skype for Business
