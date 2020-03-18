@@ -14,11 +14,11 @@ monikerRange: 'azure-bot-service-4.0'
 # Bot authentication
 
 <!-- work in progress -->
-There are times when a bot must access protected online resources on behalf of the user; to do that the bot must be authorized to do so. The authorization takes form of a bearer token. This is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
+There are times when a bot must access secured online resources on behalf of the user; to do that the bot must be authorized to do so. The authorization takes form of a bearer token. This is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
 
 1. **Bot Channels Registration application**. This is the mechanism to *integrate* a bot within the Azure infrastructure, which allows the user to communicate via channels with the bot.
-1. **Bot**. The bot can be hosted anywhere including Azure.
-1. **Identity provider application**. This application is needed for each protected resource the bot must access on behalf of the user. It is the **identity provider** which allows the bot to *access an external protected resource*, such as Office 365 MSGraph. The Azure Active Directory is the identity provider to access Microsoft protected resources. Many other identity providers exist, for example GitHub, to access their protected resources.
+1. **Bot**. The bot can be hosted anywhere, including Azure.
+1. **Identity provider application**. This application is needed for each secured resource the bot must access on behalf of the user. It is the **identity provider** which allows the bot to *access an external secured resource*, such as Office 365 MSGraph. The Azure Active Directory is the identity provider to access Microsoft secured resources. Many other identity providers exist, for example GitHub, to access their secured resources.
 
 The following picture shows the architecture of the Azure Bot Service which uses the Azure AD as the identity provider for authentication.
 
@@ -32,7 +32,7 @@ If you want to refresh your OAuth knowledge, see the following:
 ## User authentication in a conversation
 
 To perform certain operations on behalf of a user, such as checking email, referencing a calendar, checking on flight status, or placing an order, the bot will need to call an external service, such as the Microsoft Graph, GitHub, or a company's REST service.
-Each external services has a way of securing those calls, and a common way is to issue those requests using a **user token** that uniquely identifies the user on that external service (sometimes referred to as a [JSON Web Token](https://jwt.io/introduction/) (JWT)).
+Each external service has a way of securing those calls. A common way to issue those requests is to use a *user token* that uniquely identifies the user on that external service (sometimes referred to as a [JSON Web Token](https://jwt.io/introduction/) (JWT)).
 
 To secure the call to an external service, the bot must ask the user to sign-in, so it can acquire the user's token for that service.
 Many services support token retrieval via the **OAuth** or **OAuth2** protocol.
@@ -63,7 +63,7 @@ The Bot Framework Token Service is responsible for:
 
 For example, a bot that can check a user's recent emails, using the Microsoft Graph API, requires an user token from an **Identity Provider**, in this case **Azure Active Directory**. At design time, the bot developer performs these 2 important steps:
 
-1. Registers an Azure Active Directory application i.e., an Identity Provider, with the Bot Framework Token Service, via the Azure Portal.
+1. Registers an Azure Active Directory application, an Identity Provider, with the Bot Framework Token Service, via the Azure Portal.
 1. Configures an OAuth connection (named for example `GraphConnection`) for the bot.
 
 The following picture shows the sequence of the user's interaction with a bot when an email request is made using the Microsoft Graph service.
@@ -106,7 +106,7 @@ The Azure Active Directory plays a pivotal role when a bot is deployed to Azure 
 
 ### Bot registration
 
- When you register a bot with Azure, for example via the bot channels registration, an Active Directory registration application is created. This application has its own application ID (app Id) and client secret (password) needed to configure the bot for deployment. The app Id is also needed to secure the service to service communication between the bot and the Bot Framework Channel Services.
+ When you register a bot with Azure, for example via the bot channels registration, an Active Directory registration application is created. This application has its own application ID (app ID) and client secret (password) needed to configure the bot for deployment. The app ID is also needed to secure the service to service communication between the bot and the Bot Framework Channel Services.
 
 > [!IMPORTANT]
 > The application ID and password are not intended to be used for bot authentication.
@@ -117,7 +117,7 @@ The Azure Active Directory is a cloud identity provider that allows to b
 
 ### Next steps
 
-Now that you know the role that AD plays in the authentication, let's take a look at how to authenticate a bot.
+Now that you know the role that AD plays, let's take a look at how to authenticate a bot.
 
 > [!div class="nextstepaction"]
 > [Add authentication to a bot](bot-builder-authentication.md).
