@@ -7,12 +7,13 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/09/2019
+ms.date: 03/08/2020
 ---
 
 # Connect a bot to Slack
 
-There are two ways in which you can confgure Slack messaging app:
+<!-- Update -->
+There are two ways in which you can configure Slack messaging app:
 - Use Azure Bot Service portal to connect your bot
 - Use the Slack adapter
 
