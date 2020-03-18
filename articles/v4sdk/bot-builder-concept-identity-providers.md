@@ -13,31 +13,30 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Identity providers
 
-An identity provider (IdP or IDP) creates, maintains, and manages identity information for principals while providing authentication services to client applications in a federation or distributed network.
-It provides user authentication as a service.
+An identity provider authenticates user or client identities and issues consumable security tokens. It provides user authentication as a service.
 
 Client applications, such as web applications, delegate authentication to a trusted identity provider. Such client applications are said to be federated, that is, they use federated identity.
 
-Some of the (trusted) identity providers' advantages are:
+Using a trusted identity provider:
 
-- Allow single sign-on (SSO) to access multiple secured applications.
-- Facilitate connections between cloud computing resources and users, thus decreasing the need for users to re-authenticate.
-
+- Enables single sign-on (SSO) features, allowing an application to access multiple secured resources.
+- Facilitates connections between cloud computing resources and users, decreasing the need for users to re-authenticate.
 
 ## Single sign-on
 
-Single sign-on refers to a single authentication which provides secured resources access to multiple applications by passing the authentication token seamlessly to configured applications.
+Single sign-on refers to an authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
 
-A user logs in with a single ID and password to gain access to any of several related software systems. This is often accomplished by using the Lightweight Directory Access Protocol (LDAP) and stored LDAP databases on (directory) servers.
+A user logs in with a single ID and password to gain access to any of several related software systems.
 
-Conversely, single sign-off or single log-out (SLO) is the property whereby a single action of signing out terminates access to multiple software systems.
+Many identity providers support a sign-out operation that revokes the user token and terminates access to to the associated applications and services.
+
 
 > [!IMPORTANT]
 > SSO enhances usability by reducing the number of times a user must enter credentials. It also provides better security by decreasing the potential attack surface.
 
 ## Azure Active Directory identity provider
 
-The Azure Active Directory is a cloud identity provider that allows to build applications that securely sign in users using industry  standard protocols like **OAuth2.0**.
+Azure Active Directory (AD) is the identity service in Microsoft Azure that provides identity management and access control capabilities. It allows you to securely sign in users using industry  standard protocols like **OAuth2.0**.
 
 You can choose from two AD identity provider implementations which have different settings as shown below.
 
@@ -99,7 +98,7 @@ You can choose from two generic identity provider implementations which have d
 
 ### Generic OAuth 2
 
-You use the settings shown to configure any generic OAuth2 identity provider that has similar expectations as Azure Active Directory provider, particularly AADv2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Azure AD provider, particularly AADv2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
 
@@ -108,7 +107,7 @@ You use the settings shown to configure any generic OAuth2 identity provider tha
 
 ### OAuth 2 generic provider
 
-You use the settings shown to configure any generic OAuth 2 service provider which provides the most flexibility, but requires the most configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+Use this provider to configure any generic OAuth 2 service provider when you need more flexibility. It requires more configuration parameters. With this configuration you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
