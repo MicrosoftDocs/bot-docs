@@ -1,6 +1,24 @@
 # Reference documentation - templates and boilerplate
 
-## Summary
+- [Summaries](#summaries)
+- [Parameters](#parameters)
+- [Return values](#return-values)
+- [Property values](#property-values)
+- [Errors and exceptions](#errors-and-exceptions)
+- [Remarks](#remarks)
+
+## Summaries
+
+- [Types](#summary-types)
+- [Constructors](#summary-constructors)
+- [Fields](#summary-fields)
+- [Methods](#summary-methods)
+- [Operators](#summary-operators)
+- [Properties](#summary-properties)
+- [Abstract and virtual members](#summary-abstract-and-virtual-members)
+- [Overloaded members](#summary-overloaded-members)
+- [Enumeration-related](#summary-enumeration-related)
+- [Event-related](#summary-event-related)
 
 The summary succinctly states what a type or member does or represents. Every public element should have a description, including protected members of public classes or interfaces, that conveys the importance of the class or member.
 
@@ -42,6 +60,46 @@ For types that represent a _standard_ conversational UI elements, such as dialog
 | _prompt_ | Defines the base class for prompts, which prompt the user for specific types of information. |
 | _text prompt_ | A prompt that gathers text input from the user. |
 
+### Summary: constructors
+
+See [overloaded member summaries](#summary-overloaded-members) for how to word constructor overloads.
+
+| Item | Wording | Examples |
+| :--- | :--- | :--- |
+| Constructor, concrete class/struct | Initializes a new instance of the _\<class/struct>_ class/struct. | Initializes a new instance of the `WebProxy` class.<br>&mdash;<br>Initializes a new instance of the `SqlInt64` struct using the supplied long integer. |
+
+### Summary: fields
+
+### Summary: methods
+
+### Summary: operators
+
+### Summary: properties
+
+### Summary: abstract and virtual members
+
+<dl>
+<dt>abstract type</dt>
+<dd>A type in a nominative type system that cannot be instantiated directly, as opposed to a <i>concrete</i> type.</dd>
+<dd>Interfaces (and their members) are inherently abstract.</dd>
+<dt>abstract method</dt>
+<dd>A pure abstract method is one with only a signature and no implementation body.</dd>
+<dd>Abstract methods are implicitly virtual (at least in C#).</dd>
+<dt>virtual method</dt>
+<dd>An inheritable and overridable function/method in which the implementation in derived types is used (where provided).</dd>
+</dl>
+
+| Item | Wording | Examples |
+| :--- | :--- | :--- |
+| Abstract method | When implemented in a derived class, _\<followed by what would normally go in the method summary>_. | When implemented in a bot, handles an incoming activity. |
+| Virtual method | Override this in a derived class to _\<followed by what would normally go in the method summary>_. | Override this in a derived class to provide logic specific to `EndOfConversation` activities, such as the conversational logic. |
+
+### Summary: overloaded members
+
+| Item | Wording | Examples |
+| :--- | :--- | :--- |
+|  |  |  |
+
 ### Summary: enumeration-related
 
 | Item | Wording | Example |
@@ -61,39 +119,12 @@ Some _\<on X>_ methods are now typical event handlers, even in this broader sens
 | :--- | :--- | :--- |
 | _\<On X>_ or _\<Handle X>_ methods | Handles _\<whatever the event-like thing is>_. | Override this in a derived class to handle an incoming activity.<br>&mdash;<br>Handles user input and attempts to parse it. |
 
-### Summary: abstract and virtual members
+## Parameters
 
-<dl>
-<dt>abstract type</dt>
-<dd>a type in a nominative type system that cannot be instantiated directly, as opposed to a <i>concrete</i> type. Interfaces (and their members) are inherently abstract.</dd>
-<dt>abstract method</dt>
-<dd>A pure abstract method is one with only a signature and no implementation body. Abstract methods are implicitly virtual (at least in C#).</dd>
-<dt>virtual method</dt>
-<dd>an inheritable and overridable function/method in which the implementation in derived types is used (where provided).</dd>
-</dl>
+## Return values
 
-| Item | Wording | Examples |
-| :--- | :--- | :--- |
-| _Abstract virtual_ method | Override this in a derived class to _\<followed by what would normally go in the method summary>_. | Override this in a derived class to provide logic specific to `EndOfConversation` activities, such as the conversational logic.<br>&mdash;<br>When implemented in a bot, handles an incoming activity. |
+## Property values
 
-### Summary: overloaded members
+## Errors and exceptions
 
-| Item | Wording | Examples |
-| :--- | :--- | :--- |
-|  |  |  |
-
-### Summary: constructors
-
-See [overloaded member summaries](#summary-overloaded-members) for how to word constructor overloads.
-
-| Item | Wording | Examples |
-| :--- | :--- | :--- |
-| Constructor, concrete class/struct | Initializes a new instance of the _\<class/struct>_ class/struct. | Initializes a new instance of the `WebProxy` class.<br>&mdash;<br>Initializes a new instance of the `SqlInt64` struct using the supplied long integer. |
-
-### Summary: fields
-
-### Summary: methods
-
-### Summary: operators
-
-### Summary: properties
+## Remarks
