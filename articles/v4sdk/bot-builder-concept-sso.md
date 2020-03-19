@@ -49,7 +49,7 @@ Let's analyse the flow.
 1. The client starts a conversation with the bot triggering an OAuth scenario.
 1. The bot sends back an OAuth Card to the client.
 1. The client intercepts the OAuth card before displaying it to the user and checks if it contains a `TokenExchangeResource` property.
-1. If the property exisists, the client sends a `TokenExchangeInvokeRequest` to the bot. The client must have an exchangeable token for the user, which must be an Azure AD v2 token and whose audience must be the same as `TokenExchangeResource.Uri` property. For a sample on how to get the user's exchangeable token, please refer to this [Webchat Sample](https://linkrequired). The client sends an Invoke activity to the bot with the body shown below.
+1. If the property exisists, the client sends a `TokenExchangeInvokeRequest` to the bot. The client must have an exchangeable token for the user, which must be an Azure AD v2 token and whose audience must be the same as `TokenExchangeResource.Uri` property. For an example on how to get the user's exchangeable token, please refer to this [Webchat Sample (TBD)](https://linkrequired). The client sends an Invoke activity to the bot with the body shown below.
 
     ```json
     {
