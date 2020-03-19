@@ -116,6 +116,7 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **appsetting.json**
+
 [!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
 
 # [JavaScript](#tab/javascript)
@@ -123,6 +124,7 @@ Add the information required to access your LUIS app including application id, a
 Add the information required to access your LUIS app including application id, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **.env**
+
 [!code[env](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
 # [Python](#tab/python)
@@ -130,6 +132,7 @@ Add the information required to access your LUIS app including application id, a
 Add the information required to access your LUIS app including application id, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **config.py**
+
 [!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/config.py?range=14-19)]
 
 ---
@@ -177,6 +180,7 @@ To connect to the LUIS service, the bot uses the information you added above fro
 The logic to extract *From*, *To* and *travel_date* is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
 
 **helpers/luis_helper.py**
+
 [!code-python[luis helper](~/../botbuilder-samples/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
 
 ---
