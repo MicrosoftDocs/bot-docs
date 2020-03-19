@@ -437,16 +437,19 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 # [C#](#tab/csharp)
 
 **Dialogs\LogoutDialog.cs**
+
 [!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
 
 # [JavaScript](#tab/javascript)
 
 **dialogs/logoutDialog.js**
+
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 # [Python](#tab/python)
 
 **dialogs/logout_dialog.py**
+
 [!code-python[allow logout](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/logout_dialog.py?range=27-34&highlight=6)]
 
 ---
@@ -460,11 +463,13 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 # [C#](#tab/csharp)
 
 **Bots/TeamsBot.cs**
+
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
 # [JavaScript](#tab/javascript)
 
 **bots/teamsBot.js**
+
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
 
 # [Python](#tab/python)
@@ -478,11 +483,13 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 # [C#](#tab/csharp)
 
 **Bots/DialogBot.cs**
+
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
 # [JavaScript](#tab/javascript)
 
 **Bots/dialogBot.js**
+
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
 
 # [Python](#tab/python)
