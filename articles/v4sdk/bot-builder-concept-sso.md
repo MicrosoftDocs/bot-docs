@@ -79,19 +79,22 @@ client should wait till it receives the `TokenExchangeInvokeResponse`.
 
 1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the client does not show the OAuth card. See the *normal flow* diagram. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the client shows the OAuth card to the user. See the *fallback flow* diagram. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
 
-# Create AAD applications
+> [!WARNING]
+> THe next section belong to the how to (sample) article. TBD
+
+# Create Azure AD applications
 
 Currently SSO in botframework is only supported for aadV2 apps.
 We need to create 2 applications - one for the client and one for the Bot.
 Depending on the scenario, the client may be webchat or a virtual assistant.
 The general case for a Bot would be a skill Bot.
 
-## Client AAD app
+## Client Azure AD app
 
 The client AAD application will be used to create an exchangeable token that will be passed onto the bot.
 For an example of how to create an AAD app, look at the [bot builder authentication docs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
 
-## Service AAD app
+## Service Azure AD app
 
 1) Follow the steps on [Create your Azure AD application](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
 2) In the **Expose an api** panel, click **Add a scope**
