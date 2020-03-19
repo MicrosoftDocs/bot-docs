@@ -21,6 +21,7 @@
 ## Authentication
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
+### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
 ## [About skills](v4sdk/skills-conceptual.md)
