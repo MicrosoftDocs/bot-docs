@@ -82,7 +82,7 @@ client should wait till it receives the `TokenExchangeInvokeResponse`.
 > [!WARNING]
 > THe next section belong to the how to (sample) article. TBD
 
-# Create Azure AD applications
+## Create Azure AD applications
 
 Currently SSO in botframework is only supported for aadV2 apps.
 We need to create 2 applications - one for the client and one for the Bot.
@@ -92,11 +92,11 @@ The general case for a Bot would be a skill Bot.
 ## Client Azure AD app
 
 The client AAD application will be used to create an exchangeable token that will be passed onto the bot.
-For an example of how to create an AAD app, look at the [bot builder authentication docs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
+For an example of how to create an AAD app, look at the [bot builder authentication docs](https://docs.microsoft.com/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
 
 ## Service Azure AD app
 
-1) Follow the steps on [Create your Azure AD application](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
+1) Follow the steps on [Create your Azure AD application](https://docs.microsoft.com/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
 2) In the **Expose an api** panel, click **Add a scope**
     - Fill in the fields
     - Click the **Add scope button**.
@@ -105,6 +105,6 @@ For an example of how to create an AAD app, look at the [bot builder authenticat
 
 ## Service Auth Connection
 
-1) Follow the directions in the [bot builder authentication doc](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#azure-ad-v2)
+1) Follow the directions in the [bot builder authentication doc](https://docs.microsoft.com/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#azure-ad-v2)
 2) In the **Expose an api** panel, copy the scope that you added earlier. Fill it in the **Token Exchange Uri** field.
 3) Save the connection setting.
