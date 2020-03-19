@@ -98,7 +98,7 @@ You can choose from two generic identity provider implementations which have d
 
 ### Generic OAuth 2
 
-Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Azure AD provider, particularly ADv2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
+Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Azure AD provider, particularly AD v2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
 
 [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
 

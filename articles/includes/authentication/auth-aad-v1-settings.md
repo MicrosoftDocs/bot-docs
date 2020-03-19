@@ -3,15 +3,16 @@
 | **Property** | **Description** | **Value** |
 |---|---|---|
 |**Name** | The name of your connection | \<Your name for the connection\> <img width="300px">|
-|**Service Provider**| AAD Identity provider | `Azure Active Directory` |
-|**Client id** | AAD identity provider app ID| <AAD provider app id\> |
-|**Client secret** | AAD identity provider app secret| <AAD provider app secret\> |
+|**Service Provider**| Azure AD Identity provider | `Azure Active Directory` |
+|**Client id** | Azure AD identity provider app ID| <AAD provider app id\> |
+|**Client secret** | Azure AD identity provider app secret| <AAD provider app secret\> |
 |**Grant Type** | | `authorization_code` |
 |**Login URL** | | `https://login.microsoftonline.com` |
 |**Tenant ID** | | <directory (tenant) ID> or `common`. See note.|
 |**Resource URL** | | `https://graph.microsoft.com/` |
 |**Scopes** | | <leave it blank> |
-|||
+|**Token Exchange URL** |Used for SSO in Azure AD v2| |
+| | |
 
 
 **Note**
