@@ -2,7 +2,7 @@
 title: Single sign on Azure Bot Service - Bot Service
 description: Learn about single sign on in the Azure Bot Service.
 keywords: azure bot service, authentication, bot framework token service
-author: v-mimiel
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
