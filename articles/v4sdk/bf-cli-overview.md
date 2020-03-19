@@ -41,12 +41,8 @@ The following commands are currently available.
 | :--- | :--- | :--- |
 | ChatDown | [`bf chatdown`](bf-cli-reference.md#bf-chatdown) | Commands for working with chat dialog (**.chat**) files. |
 | na | [`bf config`](bf-cli-reference.md#bf-config) | Configures various settings within the CLI. |
-| LuDown, LuisGen | [`bf luis`](bf-cli-reference.md#bf-luis) | Commands for working with LUIS resource files and managing LUIS models. |
+| LuDown, LuisGen, Luis (API) | [`bf luis`](bf-cli-reference.md#bf-luis) | Commands for working with LUIS resource files and managing LUIS models and LUIS service. |
 | QnAMaker | [`bf qnamaker`](bf-cli-reference.md#bf-qnamaker) | Commands for working with QnA Maker resource files and managing knowledge bases. |
-
-The following tools will be ported in upcoming releases:
-- LUIS (API)
-- Dispatch
 
 See [Porting Map](https://github.com/microsoft/botframework-cli/blob/master/PortingMap.md) for a mapping reference between the old and new tools.
 
@@ -57,8 +53,7 @@ All new investments, bug fixes, and new features in this area will target only t
 
 The BF CLI manages bots and related services. It is part of the Microsoft Bot Framework, a comprehensive framework for building enterprise-grade conversational AI experiences. In addition to managing bot related resources, the BF CLI can be used as part of continuous integration and continuous deployment (CI/CD) pipelines. As you build your bot, you might also need to integrate AI services like LUIS for language understanding, QnAMaker for your bot to respond to simple questions in a Q&A format, and more. To integrate AI service in your bot, use:
 
-* [`bf luis`](bf-cli-reference.md#bf-luis) command to work with LUIS **.lu** resource files and manage LUIS models. It can also generate corresponding source (C# or JavaScript) code.
-* [LUIS APIs tool](https://github.com/microsoft/botbuilder-tools/tree/master/packages/LUIS/readme.md) to deploy the local files, train, test, and publish them as Language Understanding models within the LUIS service.
+* [`bf luis`](bf-cli-reference.md#bf-luis) command to work with LUIS **.lu** resource files and manage LUIS models. It can also generate corresponding source (C# or JavaScript) code and can be used to deploy the local files, train, test, and publish them as Language Understanding models within the LUIS service.
 * [`bf qnamaker`](bf-cli-reference.md#bf-qnamaker) command to work with QnAMaker knowledge bases. It can create and manage QnA Maker assets both locally, and on the QnA Maker service.
 
 * Refer to the lu library [documentation](https://github.com/microsoft/botframework-cli/tree/master/packages/lu/README.md) for how to work with **.lu** and **.qna** file formats.
