@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it. Component dialogs are reusable in that they can be:
 - added to another `ComponentDialog` or `DialogSet` in your bot
-- exported as a part of a Node package
+- exported as a part of a package
 - used within other bots 
 
 ## Prerequisites
