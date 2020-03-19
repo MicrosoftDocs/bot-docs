@@ -99,7 +99,7 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 ## Gather credentials
 
 Select the **Basic Information** tab and scroll to the **App Credentials** section.
-The Client ID, Client Secret, and Verification Token required for configuration of your Slack bot are displayed.
+The Client ID, Client Secret, and Signing Secret required for configuration of your Slack bot are displayed.
 
 ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
