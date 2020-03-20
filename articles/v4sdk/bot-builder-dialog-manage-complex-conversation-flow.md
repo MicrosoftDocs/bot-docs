@@ -224,7 +224,7 @@ Create and register services as needed:
 
 **Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=18-37)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=22-44)]
 
 ### [JavaScript](#tab/javascript)
 
