@@ -12,18 +12,11 @@ public void ConfigureServices(IServiceCollection services)
     // Add the telemetry initializer middleware
     services.AddSingleton<TelemetryInitializerMiddleware>(sp =>
             {
-                var httpContextAccessor = sp.GetService<IHttpContextAccessor>();
                 var loggerMiddleware = sp.GetService<TelemetryLoggerMiddleware>();
-                return new TelemetryInitializerMiddleware(httpContextAccessor, loggerMiddleware, logActivityTelemetry: false);
+                return new TelemetryInitializerMiddleware(loggerMiddleware, logActivityTelemetry: false);
             });
     ...
 }
-```
-
-The addition of `IHttpContextAccessor` will also require that you reference the  Microsoft ASPNetCore HTTP library, which you achieve with the addition of this using statement:
-
-```cs
-using Microsoft.AspNetCore.Http; 
 ```
 
 ### Enable or disable logging personal information
