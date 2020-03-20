@@ -18,13 +18,16 @@ Currently, only the [Azure AD v2](./bot-builder-concept-identity-providers.md#az
 
 SSO applies to the following scenarios:
 
-- Virtual assistant and multiple skill bot. The user can sign in once into the virtual assistant. The assistant then invokes multiple skills on behalf of the user.
+- Virtual assistant and one or more skill bots. The user can sign in once into the virtual assistant. The assistant then invokes multiple skills on behalf of the user. See also [Virtual assistant](./bot-builder-virtual-assistant-introduction.md).
 - Webchat embedded into a website. The user sign in the website. The website then invokes a bot or a skill on behalf of the user.
 
 SSO provides the following advantages:
 
 - The user does not have to login over again, if already signed in a virtual assistant or website.
 - The virtual assistant or website do not have knowledge of user permissions.
+
+> [!NOTE]
+> SSO is a new feature in Bot Framework SDK v4.8.
 
 ## SSO components interaction
 
