@@ -246,7 +246,7 @@ The next step is to register the Azure AD application that you just created with
 
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
-> Also the **Token Exchange URL** is blank because it used for SSO in Azure AD v2.
+> Also, the **Token Exchange URL** should be left blank because it is used for SSO in Azure AD v2 only.
 
 ### Test your connection
 
