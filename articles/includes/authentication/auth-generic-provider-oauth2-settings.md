@@ -3,7 +3,7 @@
 |---|---|---|
 |**Name** | The name of your connection | \<Your name for the connection\> <img width="300px">|
 | **Service Provider**| Identity provider | From the drop-down list, select **Oauth 2 Generic Provider** |
-|**Client id** | Identity provider app ID| \<provider id\> |
+|**Client ID** | Identity provider app ID| \<provider ID\> |
 |**Client secret** | Identity provider app secret| <provider secret\> |
 |*Scope List Delimiter*|The character to use between scope values (often a space or comma) | *,* \<enter comma\> |
 |**Authorization URL Template** || https://login.microsoftonline.com/common/oauth2/v2.0/authorize |

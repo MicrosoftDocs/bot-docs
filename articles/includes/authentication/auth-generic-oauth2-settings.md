@@ -3,7 +3,7 @@
 |---|---|---|
 |**Name** | The name of your connection | \<Your name for the connection\> <img width="300px">|
 | **Service Provider**| Identity provider | From the drop-down list, select **Generic Oauth 2** |
-|**Client id** | Identity provider app ID| \<provider id\> |
+|**Client ID** | Identity provider app ID| \<provider ID\> |
 |**Client secret** | Identity provider app secret| <provider secret\> |
 |**Authorization URL** | | https://login.microsoftonline.com/common/oauth2/v2.0/authorize |
 |*Authorization URL Query String* | | *?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}* |

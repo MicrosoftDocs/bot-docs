@@ -46,7 +46,7 @@ The following time sequence diagrams show the interactions between the SSO vario
     In the case of failure, SSO falls back to the existing behavior of showing the OAuth card.
     The failure may be caused for example if the user consent is required or if the token exchange fails.
 
-Let's analyse the flow.
+Let's analyze the flow.
 
 1. The client starts a conversation with the bot triggering an OAuth scenario.
 1. The bot sends back an OAuth Card to the client.

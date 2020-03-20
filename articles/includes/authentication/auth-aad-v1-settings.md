@@ -4,8 +4,8 @@
 |---|---|---|
 |**Name** | The name of your connection | \<Your name for the connection\> <img width="300px">|
 |**Service Provider**| Azure AD Identity provider | `Azure Active Directory` |
-|**Client id** | Azure AD identity provider app ID| <AAD provider app id\> |
-|**Client secret** | Azure AD identity provider app secret| <AAD provider app secret\> |
+|**Client ID** | Azure AD identity provider app ID| \<AAD provider app ID\> |
+|**Client secret** | Azure AD identity provider app secret| \<AAD provider app secret\> |
 |**Grant Type** | | `authorization_code` |
 |**Login URL** | | `https://login.microsoftonline.com` |
 |**Tenant ID** | | <directory (tenant) ID> or `common`. See note.|
