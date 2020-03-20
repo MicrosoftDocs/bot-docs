@@ -466,7 +466,7 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 # [JavaScript](#tab/javascript)
 
-**dialogs/logoutDialog.js**
+**dialogs/logoutDialog.js**  
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 # [Python](#tab/python)
