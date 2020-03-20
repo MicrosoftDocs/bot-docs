@@ -61,9 +61,8 @@ Once you finish this article, you will have a bot that can respond to a few simp
 
 ## Prerequisites
 
-- Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs],
-how to [implement sequential conversation flow][simple-dialog],
-and how to [reuse dialogs][component-dialogs].
+- Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and
+how to [implement sequential conversation flow][simple-dialog], and how to [reuse dialogs][component-dialogs].
 - Knowledge of Azure and OAuth 2.0 development.
 - Visual Studio 2017 or later, Node.js, npm, and git.
 - One of the samples listed below.
@@ -77,54 +76,56 @@ and how to [reuse dialogs][component-dialogs].
 
 To run the samples referenced in this article, you need the following:
 
-1. An Azure Active Directory (AAD) application to register the bot with Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
-1. A separate AAD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are also supported.
+1. An Azure Active Directory (AD) application to register a bot resource in Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
+1. A separate Azure AD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are also supported.
 
 > [!IMPORTANT]
-> Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional AAD application for each external secured resource you want the bot to access (and be authenticated) on behalf of the user.
+> Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access (and be authenticated) on behalf of the user.
 
 ## Create the Azure bot application
 
 This section shows how to register a bot with Azure; it will host the bot code.
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/).
-1. In the left panel, select **Create a resource**.
-1. In the right panel, in the selection box, enter *bot*. From the drop-down list, select **Bot Channels Registration**.
-1. Click the **Create** button.
-1. In the left panel, enter the required information. The following picture shows an example.
+1. In the left panel, select create a new resource.
+1. In the right panel, search for resource types that include the word *bot*, and choose **Bot Channels Registration**.
+1. Click **Create**.
+1. In the **Bot Channels Registration** panel, enter the required information. The following picture shows an example.
 
     ![bot channels registration](./media/how-to-auth/bot-channels-registratiopn.PNG)
 
 
-1. Click **Microsoft App ID and password** and then **Create New**.
-1. Click **Create App ID** in the **App Registration Portal** link.
-1. In the displayed *App registration* window, click the **New registration** tab in the upper left.
-1. Enter the name of the bot application you are registering, we used *TestingBotAuth*, but you need to select your own unique name.
-1. For the **Supported account types** select *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*.
-1. Click the **Register** button. Once completed, Azure displays the Overview page for the application.
+1. Click **Auto create App ID and password** and select **Create New**.
+1. Click **Create App ID in the App Registration Portal**. This will open a new page.
+1. In the **App registration** page, click **New registration** in the upper left.
+1. Enter the name of the bot application you are registering. This article uses *TestingBotAuth* for the name, but each bot needs a unique name.
+1. For **Supported account types** select *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*.
+1. Click **Register**. Once completed, Azure displays an overview page for the app registration.
 1. Copy the **Application (client) ID** and save it to a file.
-1. In the left panel, click **Certificate and secrets**.
+1. In the left panel, click **Certificate & secrets**.
     1. Under *Client secrets*, click **New client secret**.
     1. Add a description to identify this secret from others you might need to create for this app.
-    1. Set *Expires* to your selection.
+    1. Set **Expires** to  **Never**.
     1. Click **Add**.
-    1. Copy the **Client secret** and save it to a file.
+    1. Copy the your new client secret and save it to a file.
+        > [!WARNING]
+        > Record the secret just long enough to get the bot set up.
+        > Do not keep a copy of it around unless you have a good reason, in this case, keep it in safe place.
 1. Go back to the *Bot Channel Registration* window and copy the **App ID** and the **Client secret** in the **Microsoft App ID** and **Password** boxes, respectively.
 1. Click **OK**.
 1. Finally, click **Create**.
 
 After Azure has completed the registration, the bot channels registration and the bot app service will be included in the resource group you selected.
 
-
 ## Azure AD identity service
 
-The Azure Active Directory (Azure AD) is a cloud identity service that allows to build applications that securely sign in users using industry standard protocols like OAuth2.0.
+The Azure Active Directory (Azure AD) is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
 You can use one of these two identity services:
 
-1. Azure AD developer platform (v1.0). Also known as **Azure AD v1** endpoint, it allows to build apps that securely sign in users with a Microsoft work or school account.
+1. Azure AD developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account.
 For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
-1. Microsoft identity platform (v2.0). Also known as **Azure AD v2** endpoint, it is an evolution of the Azure AD platform (v1.0). It allows to build applications that sign in all Microsoft identities and get tokens to call Microsoft APIs, such as Microsoft Graph, or APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
+1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
 
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
 
@@ -200,11 +201,11 @@ The next step is to register the Azure AD application that you just created with
     1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
     1. For **Grant Type**, enter `authorization_code`.
     1. For **Login URL**, enter `https://login.microsoftonline.com`.
-    1.For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
+    1.For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
 
-        - When creating the AAD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
+        - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the Azure AD app.
 
-        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
@@ -226,11 +227,11 @@ The next step is to register the Azure AD application that you just created with
     1. For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
     1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
     1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
-    1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
+    1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
 
-        - When creating the AAD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
+        - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
 
-        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
@@ -466,7 +467,7 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 # [JavaScript](#tab/javascript)
 
-**dialogs/logoutDialog.js**  
+**dialogs/logoutDialog.js**
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 # [Python](#tab/python)
