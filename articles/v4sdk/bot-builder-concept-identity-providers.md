@@ -26,7 +26,7 @@ Using a trusted identity provider:
 
 Single sign-on refers to an authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
 
-A user logs in with a single ID and password to gain access to any of several related software systems.
+A user logs in with a single ID and password to gain access to any of several related software systems. For more information, see [Single sign on](./bot-builder-concept-sso.md)
 
 Many identity providers support a sign-out operation that revokes the user token and terminates access to to the associated applications and services.
 
