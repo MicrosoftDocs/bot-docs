@@ -27,7 +27,7 @@ You can use one the following approaches to connect the Slack channel to a bot:
 - A bot deployed in Azure
 - A Slack application
 
-## Deploy bot in Azure
+## Deploy a bot in Azure
 
 To create and deploy a simple bot in Azure, see [Create a bot with Azure Bot Service](./v4sdk/abs-quickstart.md).
 
@@ -119,7 +119,7 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 2. Enter `https://slack.botframework.com/api/Actions` as the **Request URL**.
 3. Click the **Save changes** button.
 
-![Enable messages](media/channels/slack-MessageURL.png)
+    ![Enable messages](media/channels/slack-MessageURL.png)
 
 ## Gather credentials
 
