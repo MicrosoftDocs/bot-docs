@@ -7,31 +7,43 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/08/2020
+ms.date: 03/18/2020
 ---
 
 # Connect a bot to Slack
 
-<!-- Update -->
-There are two ways in which you can configure Slack messaging app:
-- Use Azure Bot Service portal to connect your bot
-- Use the Slack adapter
+This article describes how to configure the Slack channel to allow the user to communicate with a bot.
 
-## [Azure Bot Service Portal](#tab/abs)
+You can use one the following approaches to connect the Slack channel to a bot:
+
+- Configure Slack in the Azure portal
+- Use the Slack adapter in the bot code
+
+# [Slack in Azure portal](#tab/abs)
+
+
+## Prerequisites
+
+- A bot deployed in Azure
+- A Slack application
+
+## Deploy bot in Azure
+
+To create and deploy a simple bot in Azure, see [Create a bot with Azure Bot Service](v4sdk/abs-quickstart).
+
 ## Create a Slack application for your bot
 
-1. In your browser, log into [Slack](https://slack.com/signin).
-1. Navigate to [create a Slack application](https://api.slack.com/apps) channel.
+1. In your browser, log into [Slack][slack portal].
+1. Navigate to [create a Slack application][slack applications].
+1. Click the **Create New App** button.
 
-![Set up bot](~/media/channels/slack-NewApp.png)
-
-## Create an app and assign a Development Slack team
+    ![Set up bot](media/channels/slack-NewApp.png)
 
 1. Click the **Create New App** button.
 1. Enter an App Name and select a Development Slack Team.
 If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
 
-![Create app](~/media/channels/slack-CreateApp.png)
+    ![Create app](media/channels/slack-CreateApp.png)
 
 1. Click the **Create App** button. Slack will create your app and generate a **Client ID** and **Client Secret**.
 
@@ -43,7 +55,7 @@ If you are not already a member of a Development Slack Team, [create or join one
 4. Click the **Add** button.
 5. Click the **Save URLs** button.
 
-![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
+    ![Add Redirect URL](media/channels/slack-RedirectURL.png)
 
 ## Add bot token scopes
 <!-- Replaces add user -->
@@ -81,7 +93,7 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 2. Click **Enable Events** to **On**.
 3. In **Request URL**, enter `https://slack.botframework.com/api/Events/{YourBotHandle}`, where `{YourBotHandle}` is your bot handle, without the braces. The bot handle used in this example is **ContosoBot**.
 
-   ![Subscribe Events: top](~/media/channels/slack-SubscribeEvents-a.png)
+   ![Subscribe Events: top](media/channels/slack-SubscribeEvents-a.png)
 
 4. In **Subscribe to Bot Events**, click **Add Bot User Event**.
 5. In the list of events, select these six event types:
@@ -93,11 +105,11 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
     - `message.im`
     - `message.mpim`
 
-   ![Subscribe Events: middle](~/media/channels/slack-SubscribeEvents-b.png)
+   ![Subscribe Events: middle](media/channels/slack-SubscribeEvents-b.png)
 
 6. Click **Save Changes**.
 
-   ![Subscribe Events: bottom](~/media/channels/slack-SubscribeEvents-c.png)
+   ![Subscribe Events: bottom](media/channels/slack-SubscribeEvents-c.png)
 
 ## Add and Configure Interactive Messages (optional)
 
@@ -107,14 +119,14 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 2. Enter `https://slack.botframework.com/api/Actions` as the **Request URL**.
 3. Click the **Save changes** button.
 
-![Enable messages](~/media/channels/slack-MessageURL.png)
+![Enable messages](media/channels/slack-MessageURL.png)
 
 ## Gather credentials
 
 Select the **Basic Information** tab and scroll to the **App Credentials** section.
 The Client ID, Client Secret, and Verification Token required for configuration of your Slack bot are displayed.
 
-![Gather credentials](~/media/channels/slack-AppCredentials.png)
+![Gather credentials](media/channels/slack-AppCredentials.png)
 
 ## Submit credentials
 
@@ -126,7 +138,7 @@ In a separate browser window, return to the Bot Framework site at `https://dev.b
 4. The **Landing Page URL** is optional. You may omit or change it.
 5. Click **Save**.
 
-![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
+![Submit credentials](media/channels/slack-SubmitCredentials.png)
 
 Follow the instructions to authorize your Slack app's access to your Development Slack Team.
 
@@ -148,7 +160,8 @@ Follow these steps to get the replacement URL.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
 
-## [Slack adapter](#tab/adapter)
+# [Slack adapter](#tab/adapter)
+
 ## Connect a bot to Slack using the Slack adapter
 
 As well as the channel available in the Azure Bot Service to connect your bot with Slack, you can also use the Slack adapter. In this article you will learn how to connect a bot to Slack using the adapter.  This article will walk you through modifying the EchoBot sample to connect it to a Slack app.
@@ -308,7 +321,7 @@ Navigate back to the [Slack API dashboard]([https://api.slack.com/apps]) and sel
 
 1. In the **OAuth & Permissions** tab, the **Redirect URL** should be your bot's URL, plus the `api/slack` endpoint you specified in your newly created controller. For example, `https://yourboturl.com/api/slack`.
 
-![Slack redirect URL](~/media/bot-service-adapter-connect-slack/redirect-url.png)
+![Slack redirect URL](media/bot-service-adapter-connect-slack/redirect-url.png)
 
 2. In the **Event Subscriptions** tab, fill in the **Request URL** with the same URL you used in step 1.
 
@@ -316,7 +329,7 @@ Navigate back to the [Slack API dashboard]([https://api.slack.com/apps]) and sel
 
 4. Expand the **Subscribe to bot events** section and use the **Add Bot User Event** button to subscribe to the **im_created** and **message.im** events.
 
-![Slack event subscriptions](~/media/bot-service-adapter-connect-slack/event-subscriptions.png)
+![Slack event subscriptions](media/bot-service-adapter-connect-slack/event-subscriptions.png)
 
 ## Test your bot with adapter in Slack
 
@@ -325,3 +338,9 @@ Your Slack app is now configured and you can now login to the Slack workspace yo
 You can also test this feature using the [sample bot for the Slack adapter](https://aka.ms/csharp-60-slack-adapter-sample) by populating the appSettings.json file with the same values described in the steps above. This sample has additional steps described in the README file to show examples of link sharing, receiving attachments, and sending interactive messages.
 
 ---
+
+<!-- Footnote-style links -->
+
+[azure portal]: https://ms.portal.azure.com
+[slack portal]: https://slack.com/signin
+[slack applications]: https://api.slack.com/apps
