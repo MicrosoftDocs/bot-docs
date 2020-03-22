@@ -16,11 +16,10 @@ This article describes how to configure the Slack channel to allow the user to c
 
 You can use one the following approaches to connect the Slack channel to a bot:
 
-- Configure Slack in the Azure portal
+- Configure Slack in Azure
 - Use the Slack adapter in the bot code
 
-# [Slack in Azure portal](#tab/abs)
-
+# [Configure Slack in Azure](#tab/abs)
 
 ## Prerequisites
 
@@ -47,7 +46,7 @@ If you are not already a member of a Development Slack Team, [create or join one
 
 1. Click the **Create App** button. Slack will create your app and generate a **Client ID** and **Client Secret**.
 
-## Add a new Redirect URL
+### Add a new Redirect URL
 
 1. In the left panel, click the **OAuth & Permissions** link.
 2. In the right panel, click the **Add a new Redirect URL** button.
@@ -57,7 +56,7 @@ If you are not already a member of a Development Slack Team, [create or join one
 
     ![Add Redirect URL](media/channels/slack-RedirectURL.png)
 
-## Add bot token scopes
+### Add bot token scopes
 <!-- Replaces add user -->
 1. In the left panel, click the **OAuth & Permissions** link.
 1. In the right panel, scroll down to **Scopes**.
@@ -80,14 +79,14 @@ If you are not already a member of a Development Slack Team, [create or join one
 
     ![slack bot display](media/channels/slack-bot-display.PNG)
 
-## Subscribe to Bot Events
+### Subscribe to Bot Events
 
 Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify.
 
 > [!TIP]
-> Your bot handle is the name of your bot. To find a bot's handle,
-> visit [https://dev.botframework.com/bots](https://dev.botframework.com/bots),
-> choose a bot, and record the name of the bot.
+> Your bot handle is the name of your bot.
+> To find a bot's handle, visit [Azure portal][azure portal].
+> Select the bot app service you created, and record the name of the bot.
 
 1. Select the **Event Subscriptions** tab.
 2. Click **Enable Events** to **On**.
@@ -111,7 +110,7 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 
    ![Subscribe Events: bottom](media/channels/slack-SubscribeEvents-c.png)
 
-## Add and Configure Interactive Messages (optional)
+### Add and Configure Interactive Messages (optional)
 
 If your bot will use Slack-specific functionality such as buttons, follow these steps:
 
@@ -121,33 +120,33 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 
     ![Enable messages](media/channels/slack-MessageURL.png)
 
-## Gather credentials
+### Gather credentials
 
 Select the **Basic Information** tab and scroll to the **App Credentials** section.
 The Client ID, Client Secret, and Verification Token required for configuration of your Slack bot are displayed.
 
 ![Gather credentials](media/channels/slack-AppCredentials.png)
 
-## Submit credentials
+### Submit credentials
 
-In a separate browser window, return to the Bot Framework site at `https://dev.botframework.com/`.
+1. In a separate browser window, navigate to the [Azure portal][azure portal]
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
-2. In the **Channels** section, click the Slack icon.
-3. In the **Enter your Slack credentials** section, paste the App Credentials from the Slack website into the appropriate fields.
-4. The **Landing Page URL** is optional. You may omit or change it.
-5. Click **Save**.
+1. In the left panel, select the **Channels** entry.
+1. In the ruight panel, click the **Slack** icon.
+1. In the **Enter your Slack credentials** form, paste the relevant *App Credentials* from the Slack website.
+1. The **Landing Page URL** is optional. You may omit or change it.
+1. Click **Save**.
 
-![Submit credentials](media/channels/slack-SubmitCredentials.png)
+    ![Submit credentials](media/channels/slack-SubmitCredentials.png)
 
 Follow the instructions to authorize your Slack app's access to your Development Slack Team.
 
-## Enable the bot
+### Enable the bot
 
-On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**.
-Your bot is configured to communicate with users in Slack.
+On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**. Your bot is configured to communicate with users in Slack.
 
-## Create an Add to Slack button
+### Create an Add to Slack button
 
 Slack provides HTML you can use to help Slack users find your bot in the
 *Add the Slack button* section of [this page](https://api.slack.com/docs/slack-button).
