@@ -77,20 +77,20 @@ When a new user input is received, the `welcome_user_state.did_welcome_user` pro
 
 The user state object is created at startup and dependency injected into the bot constructor.
 
-**Startup.cs**
+**Startup.cs**  
 [!code-csharp[define state](~/../botBuilder-samples/samples/csharp_dotnetcore/03.welcome-user/Startup.cs?range=30-34)]
 
-**Bots\WelcomeUserBot.cs**
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[consume state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=41-47)]
 
 ### [JavaScript](#tab/javascript)
 
 At startup, user state is defined in `index.js` and consumed by the bot constructor.
 
-**index.js**
+**index.js**  
 [!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=51-55)]
 
-**bots/welcomeBot.js**
+**bots/welcomeBot.js**  
 [!code-javascript[consume state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomeBot.js?range=16-22)]
 
 ### [Python](#tab/python)
@@ -112,7 +112,7 @@ At startup, user state is defined in `app.py` and consumed by the bot constructo
 We now create a property accessor that provides us a handle to `WelcomeUserState` inside the `OnMessageActivityAsync` method.
 Then call the `GetAsync` method to get the properly scoped key. We then save user state data after each user input iteration using the `SaveChangesAsync` method.
 
-**Bots\WelcomeUserBot.cs**
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[Get state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=68-71)]
 [!code-csharp[Save state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range= 103-105)]
 
@@ -120,7 +120,7 @@ Then call the `GetAsync` method to get the properly scoped key. We then save use
 
 We now create a property accessor that provides us a handle to welcomedUserProperty which is persisted within userState.
 
-**bots/welcomeBot.js**
+**bots/welcomeBot.js**  
 [!code-javascript[Get state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-27)]
 [!code-javascript[Save state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=89-97)]
 
@@ -170,7 +170,7 @@ The `on_members_added_activity` checks to see if a new user has been added and t
 
 It is also important to consider when your user’s input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
 
-**Bots\WelcomeUserBot.cs**
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=68-84)]
 [!code-csharp[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=101-105)]
 
@@ -178,7 +178,7 @@ It is also important to consider when your user’s input might actually contain
 
 It is also important to consider when your user’s input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it does not exist, we set it to "false" and do not process the initial user input. We instead provide the user with an initial welcome message. The bool didBotWelcomeUser is then set to "true" and our code processes the user input from all additional message activities.
 
-**bots/welcomeBot.js**
+**bots/welcomeBot.js**  
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-39)]
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=57-61)]
 
@@ -199,14 +199,14 @@ Once a new user has been welcomed, user input information is evaluated for each 
 
 An input of 'intro' or 'help' calls the function `SendIntroCardAsync` to present the user with an informational hero card. That code is examined in the next section of this article.
 
-**Bots\WelcomeUserBot.cs**
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[SwitchOnUtterance](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=85-100)]
 
 ### [JavaScript](#tab/javascript)
 
 An input of 'intro' or 'help' uses CardFactory to present the user with an Intro Adaptive Card. That code is examined in the next section of this article.
 
-**bots/welcomeBot.js**
+**bots/welcomeBot.js**  
 [!code-javascript[SwitchOnUtterance](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=40-56)]
 
 ### [Python](#tab/python)
@@ -224,12 +224,12 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 
 ### [C#](#tab/csharp)
 
-**Bots\WelcomeUserBot.cs**
+**Bots\WelcomeUserBot.cs**  
 [!code-csharp[SendHeroCardGreeting](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=107-125)]
 
 ### [JavaScript](#tab/javascript)
 
-**bots/welcomeBot.js**
+**bots/welcomeBot.js**  
 [!code-javascript[SendIntroCard](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=99-124)]
 
 ### [Python](#tab/python)
