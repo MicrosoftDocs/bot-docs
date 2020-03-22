@@ -152,7 +152,7 @@ In **WelcomeUserBot**, we check for an activity update using `OnMembersAddedAsyn
 
 This JavaScript code sends initial welcome messages when a user is added. This is done by checking the conversation activity and verifying that a new member was added to the conversation.
 
-**bots/welcomeBot.js**
+**bots/welcomeBot.js**  
 [!code-javascript[onMembersAdded](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=63-86)]
 
 ### [Python](#tab/python)
