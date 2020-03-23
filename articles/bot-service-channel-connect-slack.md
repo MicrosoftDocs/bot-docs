@@ -131,16 +131,18 @@ The Client ID, Client Secret, and Verification Token required for configuration 
 
 1. In a separate browser window, navigate to the [Azure portal][azure portal]
 
-1. Select **My bots** and choose the Bot that you want to connect to Slack.
+1. Select your bot application that you want to connect to Slack.
 1. In the left panel, select the **Channels** entry.
-1. In the ruight panel, click the **Slack** icon.
+1. In the right panel, click the **Slack** icon.
 1. In the **Enter your Slack credentials** form, paste the relevant *App Credentials* from the Slack website.
 1. The **Landing Page URL** is optional. You may omit or change it.
 1. Click **Save**.
 
     ![Submit credentials](media/channels/slack-SubmitCredentials.png)
 
-Follow the instructions to authorize your Slack app's access to your Development Slack Team.
+If everything works correctly, in the Azure portal, you will see the Slack channel connected.
+
+![Slack channel connected](media/channels/slack-Connected.png)
 
 ### Enable the bot
 
