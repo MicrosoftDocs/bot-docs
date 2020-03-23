@@ -11,7 +11,7 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?range=1-6&highlight=6)]
 
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated. --->
+    <!-- This is the code block that the code snippet link should point to:
     ```json
     MicrosoftAppId=
     MicrosoftAppPassword=
@@ -20,6 +20,8 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     LuisAPIHostName=
     InstrumentationKey=
     ```
+    -->
+    
     Note: Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
 3. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `index.js`, just after the code to import required packages:
@@ -27,12 +29,13 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
     [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=10-12)]
 
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated. --->
+    <!-- This is the code block that the code snippet link should point to:
     ```javascript
     // Import required services for bot telemetry
     const { ApplicationInsightsTelemetryClient, TelemetryInitializerMiddleware } = require('botbuilder-applicationinsights');
     const { TelemetryLoggerMiddleware } = require('botbuilder-core');
     ```
+    -->
 
     > [!TIP]
     > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files. 
@@ -41,7 +44,7 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
 
     [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=98-104)]
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated. --->
+    <!-- This is the code block that the code snippet link should point to:
     ```javascript
     // Creates a new TelemetryClient based on a instrumentation key
     function getTelemetryClient(instrumentationKey) {
@@ -51,7 +54,7 @@ We will start with the [CoreBot sample app](https://aka.ms/js-core-sample) and a
         return new NullTelemetryClient();
     }
     ```
-
+    --->
 
 5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0#the-bot-middleware-pipeline), to do this add the following code, starting just after the error handling code:  
 
