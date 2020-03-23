@@ -151,7 +151,9 @@ On the Configure Slack page, confirm the slider by the Save button is set to **E
 ### Test Slack bot communication
 
 1. In your browser, navigate to the [Slack login page][slack portal].
-![Slack login](media/channels/slack-Login.png).
+
+    ![Slack login](media/channels/slack-Login.png)
+
 1. Enter your work-space URL.
 1.
 
