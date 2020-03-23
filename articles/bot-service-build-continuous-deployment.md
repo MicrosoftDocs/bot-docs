@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/10/2019
+ms.date: 03/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,11 +18,13 @@ monikerRange: 'azure-bot-service-4.0'
 This article shows you how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure. In this topic, we'll cover setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see the additional resource section at the bottom of this page.
 
 ## Prerequisites
+
 - If you don't have an Azure subscription, create a [free account](https://portal.azure.com) before you begin.
 - You **must** [deploy your bot to Azure](bot-builder-deploy-az-cli.md) before enabling continuous deployment.
 
 ## Prepare your repository
-Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the Azure App Service Kudu build server. 
+
+Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the build provider.
 
 |Runtime | Root directory files |
 |:-------|:---------------------|
@@ -30,21 +32,21 @@ Make sure that your repository root has the correct files in your project. This 
 | Node.js | server.js, app.js, or package.json with a start script |
 | Python | app.py |
 
-
 ## Continuous deployment using GitHub
+
 To enable continuous deployment with GitHub, navigate to the **App Service** page for your bot in the Azure portal.
 
-Click **Deployment Center** > **GitHub** > **Authorize**.
+1. Click **Deployment Center** > **GitHub** > **Authorize**.
 
-![Continous deployment](~/media/azure-bot-build/azure-deployment.png)
+   ![Continous deployment](~/media/azure-bot-build/azure-deployment.png)
 
-In the browser window that opens up, click **Authorize AzureAppService**. 
+   1. In the browser window that opens up, click **Authorize AzureAppService**.
 
-![Azure Github Permission](~/media/azure-bot-build/azure-deployment-github.png)
+      ![Azure Github Permission](~/media/azure-bot-build/azure-deployment-github.png)
 
-After authorizing the **AzureAppService**, go back to **Deployment Center** in the Azure portal.
+   1. After authorizing the **AzureAppService**, go back to **Deployment Center** in the Azure portal.
 
-1. Click **Continue**. 
+1. Click **Continue**.
 
 1. Select **App Service build service**.
 
