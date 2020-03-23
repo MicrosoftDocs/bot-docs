@@ -23,7 +23,7 @@ You can take one of the following approaches to connect the Slack channel to a b
 
 ## Prerequisites
 
-- A bot in Azure
+- A bot deployed in Azure
 - A Slack application
 
 ## Create a bot in Azure
@@ -164,13 +164,6 @@ On the Configure Slack page, confirm the slider by the Save button is set to **E
 The following picture shows the response when using an echo bot.
 
     ![Slack bot response](media/channels/slack-Botchat.png)
-
-
-
-you installed your app into. (You will see it listed under the 'Apps' section of the left hand menu.) Select your app and try sending a message. You should see it echoed back to you in the IM window.
-
-[slack portal]: https://slack.com/signin
-[slack applications]: https://api.slack.com/apps
 
 ### Create an Add to Slack button
 
