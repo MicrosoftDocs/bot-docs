@@ -155,8 +155,12 @@ On the Configure Slack page, confirm the slider by the Save button is set to **E
     ![Slack login](media/channels/slack-Login.png)
 
 1. Enter your work-space URL.
-1.
+1. Click the **Continue** button. This will take you tot your last chat page.
+1. Connect with your Slack bot application you created. This picture shows an example.
 
+    ![Slack bot app](media/channels/slack-Botapp.png)
+
+1. more
 
 
 you installed your app into. (You will see it listed under the 'Apps' section of the left hand menu.) Select your app and try sending a message. You should see it echoed back to you in the IM window.
