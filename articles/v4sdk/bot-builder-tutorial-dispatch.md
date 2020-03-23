@@ -1,4 +1,4 @@
---- 
+---
 title: Use multiple LUIS and QnA models - Bot Service
 description: Learn how to use LUIS and QnA maker in your bot.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
@@ -248,7 +248,7 @@ For each of the entities shown below, add the values you recorded earlier in the
 ```json
 "MicrosoftAppId": "",
 "MicrosoftAppPassword": "",
-  
+
 "QnAKnowledgebaseId": "<knowledge-base-id>",
 "QnAEndpointKey": "<qna-maker-resource-key>",
 "QnAEndpointHostName": "<your-hostname>",
@@ -281,7 +281,7 @@ npm install --save dotenv
 
 Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
-**.env**  
+**.env**
 [!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/.env?range=1-10)]
 
 Add your service connection values as shown below:
@@ -352,7 +352,7 @@ In **BotServices.cs**, the information contained within configuration file _apps
 
 **BotServices.cs**
 
-[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/BotServices.cs?range=14-45)]
+[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/BotServices.cs?range=14-46)]
 
 ## [JavaScript](#tab/js)
 
@@ -421,7 +421,7 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 
 When the model produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized _topIntent_ to show how to route the request on to the corresponding service.
 
-**bots/dispatchBot.js**  
+**bots/dispatchBot.js**
 [!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=61-77)]
 
 If method `processHomeAutomation` or `processWeather` are invoked, they are passed the results from the dispatch model within _recognizerResult.luisResult_. The specified method then provides user feedback showing the dispatch model's top intent, plus a ranked listing of all intents and entities that were detected.
@@ -447,7 +447,7 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 
 ## Test your bot
 
-1. Using your development environment, start the sample code. Note the _localhost_ address shown in the address bar of the browser window opened by your App: "https://localhost:<Port_Number>". 
+1. Using your development environment, start the sample code. Note the _localhost_ address shown in the address bar of the browser window opened by your App: "https://localhost:<Port_Number>".
 1. Open your Bot Framework Emulator, then select `Create a new bot configuration`. A `.bot` file enables you to use the _Inspector_ in the bot emulator to see the JSON returned from LUIS and QnA Maker.
 1. In the **New bot configuration** dialog box, enter your bot name, and your endpoint URL, such as `http://localhost:3978/api/messages`. Save the file at the root of your bot sample code project.
 1. Open the bot file and add sections for your LUIS and QnA Maker apps. Use [this example file](https://github.com/microsoft/botbuilder-tools/blob/master/packages/MSBot/docs/sample-bot-file.json) as a template for settings. Save the changes.
@@ -544,7 +544,7 @@ You can use the [Dispatch][dispatch-readme] command-line tool to test and evalua
 
 This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](https://aka.ms/create-luis-model#updating-your-cognitive-models).
 
-After updating the underlying models (QnA or LUIS) run `dispatch refresh` to update your Dispatch LUIS app. `dispatch refresh` is basically the same command as `dispatch create` except no new LUIS app ID is created. 
+After updating the underlying models (QnA or LUIS) run `dispatch refresh` to update your Dispatch LUIS app. `dispatch refresh` is basically the same command as `dispatch create` except no new LUIS app ID is created.
 
 Note that utterances that were added directly in LUIS will not be retained when running `dispatch refresh`. To keep those extra utterances in the Dispatch app add those utterances in a text file (one utterance per line), and then add the file to Dispatch by running the command:
 
