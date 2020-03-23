@@ -58,17 +58,17 @@ We begin by creating the `UserProfileDialog` that derives from the `ComponentDia
 
 In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=21-48)]
+[!code-csharp[Constructor snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=20-47)]
 
 Next, we implement the steps that the dialog uses. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step using `stepContext.Result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input; second, it returns the valid value, or starts over from the beginning with a reprompt until it receives a valid input.
 
 You should always return a non-null `DialogTurnResult` from a waterfall step. If you do not, your dialog may not work as designed. Here we show the implementation for the `NameStepAsync` in the waterfall dialog.
 
-[!code-csharp[Name step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=62-67)]
+[!code-csharp[Name step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=61-66)]
 
 In `AgeStepAsync`, we specify a retry prompt for when the user's input fails to validate, either because it is in a format that the prompt can not parse, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input.
 
-[!code-csharp[Age step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=80-99&highlight=10)]
+[!code-csharp[Age step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=79-98&highlight=10)]
 
 **UserProfile.cs**
 
@@ -80,7 +80,7 @@ The user's mode of transportation, name, and age are saved in an instance of the
 
 In the last step, we check the `stepContext.Result` returned by the dialog called in the previous waterfall step. If the return value is true, we use the user profile accessor to get and update the user profile. To get the user profile, we call the `GetAsync` method, and then set the values of the `userProfile.Transport`, `userProfile.Name`, `userProfile.Age` and `userProfile.Picture` properties. Finally, we summarize the information for the user before calling `EndDialogAsync` which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
 
-[!code-csharp[SummaryStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=137-179&highlight=5-11,41-42)]
+[!code-csharp[SummaryStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=136-178&highlight=5-11,41-42)]
 
 # [JavaScript](#tab/javascript)
 
@@ -225,7 +225,7 @@ This bot uses the following _services_.
 
 We register services for the bot in `Startup`. These services are available to other parts of the code through dependency injection.
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Startup.cs?range=17-39)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Startup.cs?range=15-37)]
 
 # [JavaScript](#tab/javascript)
 
@@ -279,15 +279,15 @@ There are various options for keeping dialog steps and bot state separate. For e
 
 **UserProfileDialog.cs**
 
-Below is an example validator code for the `AgePromptValidatorAsync` method definition. `promptContext.Recognized.Value` contains the parsed value, which is an integer here for the number prompt. `promptContext.Recognized.Succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario. 
+Below is an example validator code for the `AgePromptValidatorAsync` method definition. `promptContext.Recognized.Value` contains the parsed value, which is an integer here for the number prompt. `promptContext.Recognized.Succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
 
-[!code-csharp[prompt validator method](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=181-185)]
+[!code-csharp[prompt validator method](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=180-184)]
 
 # [JavaScript](#tab/javascript)
 
 **dialogs\userProfileDialog.js**
 
-Below is an example validator code for the `agePromptValidator` method definition. `promptContext.recognized.value` contains the parsed value, which is an integer here for the number prompt. `promptContext.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario. 
+Below is an example validator code for the `agePromptValidator` method definition. `promptContext.recognized.value` contains the parsed value, which is an integer here for the number prompt. `promptContext.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
 
 [!code-javascript[prompt validator method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=169-172)]
 
