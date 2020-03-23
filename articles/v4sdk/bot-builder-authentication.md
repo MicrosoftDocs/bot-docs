@@ -57,14 +57,16 @@ Once you finish this article, you will have a bot that can respond to a few simp
 <!-- Summarized from: https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/ -->
 
 > [!IMPORTANT]
-> Please, keep in mind these important [Security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
 
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and
 how to [implement sequential conversation flow][simple-dialog], and how to [reuse dialogs][component-dialogs].
 - Knowledge of Azure and OAuth 2.0 development.
-- Visual Studio 2017 or later, Node.js, npm, and git.
+- Visual Studio 2017 or later for .NET.
+- Node.js for Javascript.
+- Python 3.6 or 3.7 for Python.
 - One of the samples listed below.
 
 | Sample | BotBuilder version | Demonstrates |
@@ -77,14 +79,14 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 To run the samples referenced in this article, you need the following:
 
 1. An Azure Active Directory (AD) application to register a bot resource in Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
-1. A separate Azure AD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses the Active Directory as an identity provider. Many other providers are also supported.
+1. A separate Azure AD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses Active Directory as an identity provider. Many other providers are also supported.
 
 > [!IMPORTANT]
-> Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access (and be authenticated) on behalf of the user.
+> Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access on behalf of the user.
 
 ## Create the Azure bot application
 
-This section shows how to register a bot with Azure; it will host the bot code.
+This section shows how to register a bot resource with Azure to host the bot code.
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/).
 1. In the left panel, select create a new resource.
@@ -463,11 +465,13 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 # [C#](#tab/csharp)
 
 **Dialogs\LogoutDialog.cs**
+
 [!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
 
 # [JavaScript](#tab/javascript)
 
 **dialogs/logoutDialog.js**
+
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
 # [Python](#tab/python)
@@ -487,11 +491,13 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 # [C#](#tab/csharp)
 
 **Bots/TeamsBot.cs**
+
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
 # [JavaScript](#tab/javascript)
 
 **bots/teamsBot.js**
+
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
 
 # [Python](#tab/python)
@@ -505,11 +511,13 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 # [C#](#tab/csharp)
 
 **Bots/DialogBot.cs**
+
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
 # [JavaScript](#tab/javascript)
 
 **Bots/dialogBot.js**
+
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
 
 # [Python](#tab/python)
