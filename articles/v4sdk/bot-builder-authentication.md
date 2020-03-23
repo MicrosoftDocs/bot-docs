@@ -43,7 +43,7 @@ For an overview of how the Bot Framework handles authentication, see [Bot authen
 > Authentication also works with BotBuilder v3. However, this article covers just the v4 sample code.
 
 This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how access [Microsoft Graph](https://developer.microsoft.com/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
-This article covers:
+This article covers how to:
 
 - [Create the Azure bot application](#create-the-azure-bot-application)
 - [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
