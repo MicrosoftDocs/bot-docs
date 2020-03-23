@@ -14,23 +14,23 @@ ms.date: 03/18/2020
 
 This article describes how to configure the Slack channel to allow the user to communicate with a bot.
 
-You can use one the following approaches to connect the Slack channel to a bot:
+You can take one of the following approaches to connect the Slack channel to a bot:
 
 - Configure Slack in Azure
-- Use the Slack adapter in the bot code
+- Use the Slack adapter
 
 # [Configure Slack in Azure](#tab/abs)
 
 ## Prerequisites
 
-- A bot deployed in Azure
+- A bot in Azure
 - A Slack application
 
-## Deploy a bot in Azure
+## Create a bot in Azure
 
-To create and deploy a simple bot in Azure, see [Create a bot with Azure Bot Service](./v4sdk/abs-quickstart.md).
+To create and deploy a bot in Azure, see [Tutorial: Create and deploy a basic bot](./v4sdk/bot-builder-tutorial-basic-deploy.md).
 
-## Create a Slack application for your bot
+## Create a Slack application to communicate with your bot
 
 1. In your browser, log into [Slack][slack portal].
 1. Navigate to [create a Slack application][slack applications].
@@ -147,6 +147,20 @@ If everything works correctly, in the Azure portal, you will see the Slack chann
 ### Enable the bot
 
 On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**. Your bot is configured to communicate with users in Slack.
+
+### Test Slack bot communication
+
+1. In your browser, navigate to the [Slack login page][slack portal].
+![Slack login](media/channels/slack-Login.png).
+1. Enter your work-space URL.
+1.
+
+
+
+you installed your app into. (You will see it listed under the 'Apps' section of the left hand menu.) Select your app and try sending a message. You should see it echoed back to you in the IM window.
+
+[slack portal]: https://slack.com/signin
+[slack applications]: https://api.slack.com/apps
 
 ### Create an Add to Slack button
 
