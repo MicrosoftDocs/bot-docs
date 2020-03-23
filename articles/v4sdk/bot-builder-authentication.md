@@ -365,6 +365,7 @@ The following sections describe how the sample implements some common authentica
 
 ![Bot architecture](media/how-to-auth/architecture.png)
 
+<!-- Submit changes for line break issues -->
 <!-- The two authentication samples have nearly identical architecture. Using 18.bot-authentication for the sample code. -->
 
 **Dialogs\MainDialog.cs**
