@@ -260,3 +260,5 @@ Learn more about various media responses in [Add media to messages](./bot-builde
 
 > [!div class="nextstepaction"]
 > [Gather user input](bot-builder-prompts.md)
+
+
