@@ -55,7 +55,6 @@ In this article you will learn how to implement telemetry into your bot using Ap
 - Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
 - [Visual Studio Code](https://www.visualstudio.com/downloads)
 - [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed. 
-- [Yeoman](http://yeoman.io/), which uses a generator to create a bot for you
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
 > [!NOTE]
