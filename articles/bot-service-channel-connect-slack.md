@@ -129,8 +129,7 @@ The Client ID, Client Secret, and Verification Token required for configuration 
 
 ### Submit credentials
 
-1. In a separate browser window, navigate to the [Azure portal][azure portal]
-
+1. In a separate browser window, navigate to the [Azure portal][azure portal].
 1. Select your bot application that you want to connect to Slack.
 1. In the left panel, select the **Channels** entry.
 1. In the right panel, click the **Slack** icon.
@@ -173,9 +172,13 @@ Slack provides HTML you can use to help Slack users find your bot in the
 To use this HTML with your bot, replace the href value (begins with `https://`) with the URL found in your bot's Slack channel settings.
 Follow these steps to get the replacement URL.
 
-1. On [https://dev.botframework.com/bots](https://dev.botframework.com/bots), click your bot.
-2. Click **Channels**, right-click the entry named **Slack**, and click **Copy link**. This URL is now in your clipboard.
-3. Paste this URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
+1. In your browser, navigate to the [Azure portal][azure portal].
+1. Select your bot application.
+1. In the left panel, select the **Channels** entry.
+1. In the right panel, click the **Edit** link by the *Slack* icon.
+1. In the **Enter your Slack credentials** form, copy the *Event Subscription Request URL*.
+1. Click *Cancel*.
+1. Paste the copied URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
 
