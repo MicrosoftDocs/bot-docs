@@ -2,13 +2,27 @@ We will next implement telemetry functionality in your LUIS service. The LUIS se
 
 1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.js`:
 
-[!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=6-16&highlight=6)]
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=6-16&highlight=6)]
 
+
+    <!-- This is the code block that the code snippet link should point to:
     ```javascript
     class FlightBookingRecognizer {
-    constructor(config, telemetryClient) {
-    ...
+        constructor(config, telemetryClient) {
+            const luisIsConfigured = config && config.applicationId && config.endpointKey && config.endpoint;
+            if (luisIsConfigured) {
+                // Set the recognizer options depending on which endpoint version you want to use e.g v2 or v3.
+                // More details can be found in https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3
+                const recognizerOptions = {
+                    apiVersion: 'v3',
+                    telemetryClient: telemetryClient
+                };
+
+                this.recognizer = new LuisRecognizer(config, recognizerOptions);
+            }
+        }
     ```
+    -->
 
 2. Next you will need to enable the `telemetryClient` when creating your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. You do this by adding the `telemetryClient` as a new _LuisPredictionOption_ and passing it in when creating the new LuisRecognizer:
 
