@@ -1,5 +1,5 @@
 
-We will start with the [CoreBot sample app](https://aka.ms/cs-core-sample) and add the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
+This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
 > If you have not setup your [Application Insights](https://aka.ms/appinsights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
