@@ -175,9 +175,11 @@ Follow these steps to get the replacement URL.
 1. In your browser, navigate to the [Azure portal][azure portal].
 1. Select your bot application.
 1. In the left panel, select the **Channels** entry.
-1. In the right panel, click the **Edit** link by the *Slack* icon.
-1. In the **Enter your Slack credentials** form, copy the *Event Subscription Request URL*.
-1. Click *Cancel*.
+1. In the right panel, right-click on the **Slack** link.
+1. In the drop-down menu, click **Copy link**.
+
+    ![Slack button](media/channels/slack-Button.png)
+
 1. Paste the copied URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
