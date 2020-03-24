@@ -140,13 +140,14 @@ The Client ID, Client Secret, and Verification Token required for configuration 
 
     ![Submit credentials](media/channels/slack-SubmitCredentials.png)
 
-If everything works correctly, in the Azure portal, you will see the Slack channel connected.
+    If everything works correctly, in the Azure portal, you will see the Slack channel connected.
 
-![Slack channel connected](media/channels/slack-Connected.png)
+    ![Slack channel connected](media/channels/slack-Connected.png)
 
-### Enable the bot
+1. On the *Configure Slack* page, make sure that the slider by the Save button is set to **Enabled**. Your bot is now configured to communicate with users in Slack.
 
-On the Configure Slack page, confirm the slider by the Save button is set to **Enabled**. Your bot is configured to communicate with users in Slack.
+    ![Slack bot enabled](media/channels/slack-Botenabled.png)
+
 
 ### Test Slack bot communication
 
