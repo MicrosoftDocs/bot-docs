@@ -68,7 +68,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=48-52)]
 
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated. --->
+    <!-- TODO: Comment out this code block once the code snippet link is validated.
     ```javascript
     // Add telemetry middleware to the adapter middleware pipeline
     var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);
@@ -76,6 +76,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     var initializerMiddleware = new TelemetryInitializerMiddleware(telemetryLoggerMiddleware, true);
     adapter.use(initializerMiddleware);
     ```
+    --->
 
 6. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
