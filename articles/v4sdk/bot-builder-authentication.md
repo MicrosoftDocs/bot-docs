@@ -29,6 +29,7 @@ Related TODO:
 
 - "The scope of the connection setting needs to have both openid and a resource in the Azure AD graph, such as Mail.Read." Unclear if I need to take some action at this point to make happen. Kind of out of context. I'm registering an AAD application in the portal, there's no connection setting
 - Does the bot need all of these scopes for the samples? (e.g. "Read all users' basic profiles")
+
 -->
 
 # Add authentication to a bot
