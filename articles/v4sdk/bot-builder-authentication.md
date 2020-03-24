@@ -193,7 +193,7 @@ The next step is to register the Azure AD application that you just created with
 
 #### Azure AD v1
 
-1. Navigate to your bot's resource page on the [Azure Portal](https://portal.azure.com/).
+1. Navigate to your bot's resource page on the [Azure Portal][azure-portal].
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -221,7 +221,7 @@ The next step is to register the Azure AD application that you just created with
 
 #### Azure AD v2
 
-1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](https://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal][azure-portal].
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -309,7 +309,7 @@ You will need your bot's app ID and password to complete this process.
 If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can create a new password [as described here](../bot-service-quickstart-registration.md#get-registration-password)
 
 > [!NOTE]
-> You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
+> You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure portal.
 
 ## Test the bot using the emulator
 
@@ -542,7 +542,7 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 
 <!-- Footnote-style links -->
 
-[Azure portal]: https://ms.portal.azure.com
+[azure-portal]: https://ms.portal.azure.com
 [azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
 [aad-registration-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview
 
