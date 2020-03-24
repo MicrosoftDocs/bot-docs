@@ -9,7 +9,7 @@ ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-<!-- 
+<!--
 
 Related TODO:
 - Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
@@ -166,7 +166,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 #### Azure AD v1
 
-1. Navigate to your bot's resource page on the [Azure Portal](https://portal.azure.com/).
+1. Navigate to your bot's resource page on the [Azure Portal][azure-portal].
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -195,7 +195,7 @@ The next step is to register with your bot the Azure AD application that you jus
 
 #### Azure AD v2
 
-1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal](https://portal.azure.com/).
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal][azure-portal].
 1. Click **Settings**.
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
@@ -280,7 +280,7 @@ You will need your bot's app ID and password to complete this process.
 If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can create a new password [as described here](../bot-service-quickstart-registration.md#get-registration-password)
 
 > [!NOTE]
-> You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
+> You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure portal.
 
 ## Test the bot using the emulator
 
@@ -292,7 +292,7 @@ as shown in [Configure the emulator for authentication](../bot-service-debug-emu
 
 ### Testing
 
-After you have configured the authentication mechanism, you can perform the actual bot sample testing.  
+After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
 1. Run the bot sample locally on your machine.
 1. Start the emulator.
@@ -459,12 +459,12 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 
 # [C#](#tab/csharp)
 
-**Bots/TeamsBot.cs**  
+**Bots/TeamsBot.cs**
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
 # [JavaScript](#tab/javascript)
 
-**bots/teamsBot.js**  
+**bots/teamsBot.js**
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
 
 # [Python](#tab/python)
@@ -477,12 +477,12 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 
 # [C#](#tab/csharp)
 
-**Bots/DialogBot.cs**  
+**Bots/DialogBot.cs**
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
 # [JavaScript](#tab/javascript)
 
-**Bots/dialogBot.js**  
+**Bots/dialogBot.js**
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
 
 # [Python](#tab/python)
@@ -505,7 +505,7 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 
 <!-- Footnote-style links -->
 
-[Azure portal]: https://ms.portal.azure.com
+[azure-portal]: https://ms.portal.azure.com
 [azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
 [aad-registration-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview
 
