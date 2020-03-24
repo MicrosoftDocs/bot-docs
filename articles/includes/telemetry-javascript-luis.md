@@ -1,32 +1,26 @@
 We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  <!---If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md).-->
 
-1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.js`:
+To enable the telemetry client in your LUIS recognizer:
 
-    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=6-16&highlight=6)]
+1. Open `FlightBookingRecognizer.js`
+
+2. Pass the `telemetryClient` parameter to the `FlightBookingRecognizer` constructor:
+
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=7)]
 
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
-    class FlightBookingRecognizer {
-        constructor(config, telemetryClient) {
-            const luisIsConfigured = config && config.applicationId && config.endpointKey && config.endpoint;
-            if (luisIsConfigured) {
-                // Set the recognizer options depending on which endpoint version you want to use e.g v2 or v3.
-                // More details can be found in https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3
-                const recognizerOptions = {
-                    apiVersion: 'v3',
-                    telemetryClient: telemetryClient
-                };
 
-                this.recognizer = new LuisRecognizer(config, recognizerOptions);
-            }
-        }
+    ```
+        constructor(config, telemetryClient) {
+
     ```
     -->
 
-2. Next you will need to enable the `telemetryClient` in your `LuisRecognizer` when creating it in the `FlightBookingRecognizer` constructor. You do this by setting the `telemetryClient` field of the _recognizerOptions_  object to the `telemetryClient` property that is passed into the `FlightBookingRecognizer` constructor, then passing the recognizerOptions object when creating the new LuisRecognizer:
+2. Set the `telemetryClient` field of the `recognizerOptions` object to the `telemetryClient` property that is passed into the `FlightBookingRecognizer` constructor, once done your constructor will appear as follows:
 
-    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=7-19&highlight=12-17)]
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=7-19&highlight=7,14,17)]
 
 
     <!-- This is the code block that the code snippet link should point to:
@@ -44,10 +38,10 @@ We will next implement telemetry functionality in your LUIS service. The LUIS se
     ```
     -->
 
-3. And finally you need to include the `telemetryClient` when creating an instance of the `FlightBookingRecognizer` in `index.js`
+3. And finally you need to include the `telemetryClient` when creating an instance of the `FlightBookingRecognizer` in `index.js`:
 
 
-    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82)]
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=84)]
 
 
     <!-- This is the code block that the code snippet link should point to:
