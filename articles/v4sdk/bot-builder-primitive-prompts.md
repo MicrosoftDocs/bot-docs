@@ -76,10 +76,10 @@ Create the user and conversation state objects at startup and consume them via d
 
 Create the user and conversation state objects in **index.js** and consume them in the bot constructor.
 
-**index.js**
+**index.js**  
 [!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=33-39)]
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=20-22)]
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=27-29)]
 
@@ -101,7 +101,7 @@ Create the user and conversation state objects in **app.py** and consume them in
 
 Create property accessors for the user profile and conversation flow properties and then call `GetAsync` to retrieve the property value from state.
 
-**Bots/CustomPromptBot.cs**
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-37)]
 
 Before the turn ends, call `SaveChangesAsync` to write any state changes to storage.
@@ -112,7 +112,7 @@ Before the turn ends, call `SaveChangesAsync` to write any state changes to stor
 
 Create property accessors for the user profile and conversation flow properties and then call `get` to retrieve the property value from state.
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-33)]
 
 Before the turn ends, call `saveChanges` to write any state changes to storage.
