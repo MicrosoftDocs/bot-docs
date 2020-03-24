@@ -79,7 +79,7 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
 At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information. 
 
 
-## Enabling telemetry in your bots Dialogs
+### Enabling telemetry in your bots Dialogs
 
 When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
  
