@@ -15,11 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-
 Telemetry logging was added to version 4.2 of the Bot Framework SDK.  This enables bot applications to send event data to telemetry services such as [Application Insights](https://aka.ms/appinsights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior and offers visibility into availability, performance, and usage.
 
 ***Note: In version 4.6, the standard method for implementing telemetry into a bot has been updated in order to ensure telemetry is logged correctly when using a custom adapter. This article has been updated to show the updated method. The changes are backwards compatible and bots using the previous method will continue to log telemetry correctly.***
-
 
 In this article you will learn how to implement telemetry into your bot using Application Insights. It will cover:
 
@@ -48,23 +46,21 @@ In this article you will learn how to implement telemetry into your bot using Ap
 
 # [JavaScript](#tab/javascript)
 
-- The [CoreBot sample code](https://aka.ms/js-core-sample)
-- The [Application Insights sample code](https://aka.ms/js-corebot-app-insights-sample)
-- A subscription to [Microsoft Azure](https://portal.azure.com/)
-- An [Application Insights key](../bot-service-resources-app-insights-keys.md)
-- Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
-- [Visual Studio Code](https://www.visualstudio.com/downloads)
-- [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed. 
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+* The [CoreBot sample code](https://aka.ms/js-core-sample)
+* The [Application Insights sample code](https://aka.ms/js-corebot-app-insights-sample)
+* A subscription to [Microsoft Azure](https://portal.azure.com/)
+* An [Application Insights key](../bot-service-resources-app-insights-keys.md)
+* Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+* [Visual Studio Code](https://www.visualstudio.com/downloads)
+* [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed.
+* [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
 > [!NOTE]
 > The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
 
-
 <!--
 
     # [Python](#tab/python)
-
 
     * The [CoreBot sample code](https://aka.ms/py-core-sample)
     * The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample)
@@ -78,9 +74,9 @@ In this article you will learn how to implement telemetry into your bot using Ap
 
 ---
 
-
 ## Wiring up telemetry in your bot
 <!-- Main article on implementing telemetry--->
+
 # [C#](#tab/csharp)
 
 [!INCLUDE [dotnet telemetry section](../includes/telemetry-dotnet-main.md)]
@@ -95,7 +91,6 @@ In this article you will learn how to implement telemetry into your bot using Ap
 -->
 
 ---
-
 
 ## Enabling / disabling activity event and personal information logging
 
@@ -133,17 +128,18 @@ In this article you will learn how to implement telemetry into your bot using Ap
 
 ---
 
-
 ## Visualizing your telemetry data in Application Insights
-Application Insights monitors the availability, performance, and usage of your bot application whether it's hosted in the cloud or on-premises. It leverages the powerful data analysis platform in Azure Monitor to provide you with deep insights into your application's operations and diagnose errors without waiting for a user to report them. There are a few ways to see the telemetry data collected by Application Insights, two of the primary ways are through queries and the dashboard. 
+
+Application Insights monitors the availability, performance, and usage of your bot application whether it's hosted in the cloud or on-premises. It leverages the powerful data analysis platform in Azure Monitor to provide you with deep insights into your application's operations and diagnose errors without waiting for a user to report them. There are a few ways to see the telemetry data collected by Application Insights, two of the primary ways are through queries and the dashboard.
 
 ### Querying your telemetry data in Application Insights using Kusto Queries
+
 Use this section as a starting point to learn how to use log queries in Application Insights. It demonstrates two useful queries and provides links to other documentation with additional information.
 
 To query your data
 
 1. Go to the [Azure portal](https://portal.azure.com)
-2. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there. 
+2. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there.
 3. Once in your Application Insights, you can click on _Logs (Analytics)_ on the navigation bar.
 
     ![Logs (Analytics)](media/AppInsights-LogView.png)
@@ -155,32 +151,29 @@ To query your data
     | where name=="WaterfallStart"
     | extend DialogId = customDimensions['DialogId']
     | extend InstanceId = tostring(customDimensions['InstanceId'])
-    | join kind=leftouter (customEvents | where name=="WaterfallComplete" | extend InstanceId = tostring(customDimensions['InstanceId'])) on InstanceId    
+    | join kind=leftouter (customEvents | where name=="WaterfallComplete" | extend InstanceId = tostring(customDimensions['InstanceId'])) on InstanceId
     | summarize starts=countif(name=='WaterfallStart'), completes=countif(name1=='WaterfallComplete') by bin(timestamp, 1d), tostring(DialogId)
-    | project Percentage=max_of(0.0, completes * 1.0 / starts), timestamp, tostring(DialogId) 
+    | project Percentage=max_of(0.0, completes * 1.0 / starts), timestamp, tostring(DialogId)
     | render timechart
+
     ```
+
 5. This will return the percentage of waterfall dialogs that run to completion.
 
     ![Logs (Analytics)](media/AppInsights-Query-PercentCompleteDialog.png)
 
-
 > [!TIP]
 > You can pin any query to your Application Insights dashboard   by selecting the button on the top right of the **Logs (Analytics)** blade. Just select the dashboard you want it pinned to, and it will be available next time you visit that dashboard.
 
-
 ## The Application Insights dashboard
 
-Anytime you create an Application Insights resource in Azure, a new dashboard will automatically be created and associated with it.  You can see that dashboard by selecting the button at the top of your Application Insights blade, labeled **Application Dashboard**. 
+Anytime you create an Application Insights resource in Azure, a new dashboard will automatically be created and associated with it.  You can see that dashboard by selecting the button at the top of your Application Insights blade, labeled **Application Dashboard**.
 
 ![Application Dashboard Link](media/Application-Dashboard-Link.png)
-
 
 Alternatively, to view the data, go to the Azure portal. Click **Dashboard** on the left, then select the dashboard you want from the drop-down.
 
 There, you'll see some default information about your bot performance and any additional queries that you've pinned to your dashboard.
-
-
 
 ## Additional Information
 
