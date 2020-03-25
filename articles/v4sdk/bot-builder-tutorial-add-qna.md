@@ -146,7 +146,7 @@ Update your initialization code to load the service information for your knowled
 
    For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
 
-1. In your **Startup.cs** file, add these namespace reference.
+1. In your **Startup.cs** file, add this namespace reference.
 
    **Startup.cs**
 
