@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 > * Update your bot to query the knowledge base
 > * Republish your bot
 
-If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -146,15 +146,12 @@ Update your initialization code to load the service information for your knowled
 
    For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
 
-1. Add the **Microsoft.Extensions.Configuration** NuGet package to your project.
-
-1. In your **Startup.cs** file, add these namespace references.
+1. In your **Startup.cs** file, add these namespace reference.
 
    **Startup.cs**
 
    ```csharp
    using Microsoft.Bot.Builder.AI.QnA;
-   using Microsoft.Extensions.Configuration;
    ```
 
 1. And, modify the _ConfigureServices_ method create a QnAMakerEndpoint that connects to the knowledge base defined in the **appsettings.json** file.
@@ -174,7 +171,7 @@ Update your initialization code to load the service information for your knowled
 
 1. In your **EchoBot.cs** file, add these namespace references.
 
-   **EchoBot.cs**
+   **Bots\\EchoBot.cs**
 
    ```csharp
    using System.Linq;
