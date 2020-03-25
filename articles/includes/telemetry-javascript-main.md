@@ -10,7 +10,6 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?range=1-6&highlight=6)]
 
-
     <!-- This is the code block that the code snippet link should point to:
     ```json
     MicrosoftAppId=
@@ -21,13 +20,12 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     InstrumentationKey=
     ```
     -->
-    
+
     Note: Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
 3. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `index.js`, just after the code to import required packages:
 
     [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=10-12)]
-
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
@@ -38,7 +36,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     -->
 
     > [!TIP]
-    > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files. 
+    > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
 4. Create a new function at the end of `Index.js` named `getTelemetryClient` that takes your `InstrumentationKey` as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
@@ -64,9 +62,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
         - 
     -->
 
-
     [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=48-52)]
-
 
     <!-- TODO: Comment out this code block once the code snippet link is validated.
     ```javascript
@@ -90,10 +86,9 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     dialog.telemetryClient = telemetryClient;
     ```
 
-7.  After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
+7. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
     [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=80-82)]
-
 
     <!-- TODO: Comment out this code block once the code snippet link is validated. --->
     ```javascript
@@ -104,8 +99,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     > [!TIP]
     > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." See the [restify](http://restify.com) web site for more information.
-    
-    
-    Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files. 
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information. 
+    Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
+
+At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.

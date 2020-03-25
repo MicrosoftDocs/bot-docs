@@ -6,7 +6,6 @@ The following code snippet comes from sample `21.corebot-app-insights`, and show
 
 [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=62-66&highlight=65)]
 
-
 The code snippet below shows the changed needed in sample `21.corebot-app-insights`, in the call to `TelemetryInitializerMiddleware` to disable activity logging:
 
 ```javascript
@@ -20,7 +19,6 @@ adapter.use(initializerMiddleware);
 ### Enable or disable logging personal information
 
 When activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging by default as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by changing the `logPersonalInformation` parameter from `false` to `true` when registering the `TelemetryLoggerMiddleware` in **index.js**.
-
 
 [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=62-66&highlight=64)]
 
