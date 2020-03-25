@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/24/2020
+ms.date: 03/25/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -39,7 +39,7 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 **Dialogs\CancelAndHelpDialog.cs**
 
-We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions.
+We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions. The cancellable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
 [!code-csharp[Class signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=12)]
 
@@ -59,7 +59,7 @@ To use dialogs, install the **botbuilder-dialogs** npm package.
 
 **dialogs/cancelAndHelpDialog.js**
 
-We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions.
+We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions. The cancellable dialogs, `BookingDialog` and `DateResolverDialog` extend this class.
 
 [!code-javascript[Class signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=11)]
 
@@ -82,7 +82,7 @@ For more information, about installing the packages, see the samples repository 
 
 **dialogs/cancel-and-help-dialog.py**
 
-We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions.
+We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions. The cancellable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
 [!code-python[class signature](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=14)]
 
