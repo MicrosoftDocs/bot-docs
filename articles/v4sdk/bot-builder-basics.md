@@ -111,7 +111,7 @@ A bot is a web application, and templates are provided for each language.
 > [!NOTE]
 > .NET Core 2.1 and. NET Core 3.1 versions of the C# templates are now available.\
 > When creating new bots, you should use the .NET Core 3.1 version.\
-> The C# bot samples all use .NET Core 3.1. The .NET Core 2.1 can be found in this repository [branch](.).\
+> The C# bot samples all use .NET Core 3.1. The .NET Core 2.1 can be found in this repository branch (add link).\
 > See also the important note about creating and deploying .NET Core 3.1 bots in [Tutorial: Create and deploy a basic bot](bot-builder-tutorial-basic-deploy.md).
 
 
