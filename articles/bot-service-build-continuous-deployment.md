@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/10/2019
+ms.date: 03/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,7 +24,7 @@ This article shows you how to configure continuous deployment for your bot. You 
 
 ## Prepare your repository
 
-Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the Azure App Service Kudu build server.
+Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the build provider.
 
 |Runtime | Root directory files |
 |:-------|:---------------------|
@@ -36,18 +36,17 @@ Make sure that your repository root has the correct files in your project. This 
 
 To enable continuous deployment with GitHub, navigate to the **App Service** page for your bot in the Azure portal.
 
-1. Open the **Deployment Center**. On the **Source control** page, select **GitHub** and click **Authorize**.
+1. Click **Deployment Center** > **GitHub** > **Authorize**.
 
-    [ ![Select source control](~/media/azure-bot-build/azure-deployment.png) ](~/media/azure-bot-build/azure-deployment.png#lightbox)
+   ![Continous deployment](~/media/azure-bot-build/azure-deployment.png)
 
-    1. In the browser window that opens up, click **Authorize AzureAppService**.
+   1. In the browser window that opens up, click **Authorize AzureAppService**.
 
-        > [!div class="mx-imgBorder"]
-        > ![Authorize GitHub](~/media/azure-bot-build/azure-deployment-github.png)
+      ![Azure Github Permission](~/media/azure-bot-build/azure-deployment-github.png)
 
-        You may be asked to sign into your GitHub account.
+   1. After authorizing the **AzureAppService**, go back to **Deployment Center** in the Azure portal.
 
-    1. After authorizing the **AzureAppService**, click **Continue** in the **Deployment Center**.
+1. Click **Continue**.
 
         > [!div class="mx-imgBorder"]
         > ![Continue to build provider](~/media/azure-bot-build/azure-deployment-continue.png)
