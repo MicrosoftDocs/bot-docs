@@ -41,19 +41,20 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 
 When creating the bot application service, you can deploy your bot in a new or in an existing resource group. Choose the option that works best for you.
 
-Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to `template-file`.
-
-> [!NOTE]
+> [!IMPORTANT]
 > Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
+
+Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to `template-file`.
 
 #### **Deploy via ARM template (with **new** Resource Group)**
 
 <!-- ##### Create Azure resources -->
-[!INCLUDE [ARM with new resourece group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
+[!INCLUDE [ARM with new resource group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
+
 
 #### **Deploy via ARM template (with **existing**  Resource Group)**
 
-[!INCLUDE [ARM with existing resourece group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
+[!INCLUDE [ARM with existing resource group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
 
 ---
 
