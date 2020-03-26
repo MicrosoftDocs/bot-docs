@@ -17,9 +17,9 @@ In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.
 
 > [!NOTE]
-> .NET Core 2.1 and. NET Core 3.1 versions of the C# templates are available.\
+> Both .NET Core 2.1 and. NET Core 3.1 versions of the C# templates are available.\
 > When creating new bots, you should use the .NET Core 3.1 templates. Available in Visual Studio 2017 or higher.\
-> The C# bot samples all use .NET Core 3.1. The .NET Core 2.1 can be found in this repository [branch](https://github.com/microsoft/BotBuilder-Samples/tree/4.7-archive/samples/csharp_dotnetcore).\
+> The current bot samples use .NET Core 3.1 templates. You can find the samples that use .NET Core 2.1 templates in this repository [branch](https://github.com/microsoft/BotBuilder-Samples/tree/4.7-archive/samples/csharp_dotnetcore).\
 > See also the note about creating and deploying .NET Core 3.1 bots in [Tutorial: Create and deploy a basic bot](~/v4sdk/bot-builder-tutorial-basic-deploy.md).
 
 ## Start your bot in Visual Studio
