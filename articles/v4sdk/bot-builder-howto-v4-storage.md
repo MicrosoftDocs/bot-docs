@@ -23,6 +23,12 @@ You can read and write directly to your storage object without using middleware 
 - Familiarity with article: Create a bot locally for [dotnet](https://aka.ms/bot-framework-www-c-sharp-quickstart), [nodeJS](https://aka.ms/bot-framework-www-node-js-quickstart) or [Python](https://aka.ms/bot-framework-www-node-python-quickstart).
 - Bot Framework SDK v4 template for [C# template](https://aka.ms/bot-vsix), [nodeJS](https://nodejs.org) and [yeoman](http://yeoman.io).
 
+> [!NOTE]
+> .NET Core 2.1 and. NET Core 3.1 versions of the C# templates are available.\
+> When creating new bots, you should use the .NET Core 3.1 templates. Available in Visual Studio 2019 and above.\
+> The C# bot samples all use .NET Core 3.1. The .NET Core 2.1 can be found in this repository branch (add link).\
+> See also the note about creating and deploying .NET Core 3.1 bots in [Tutorial: Create and deploy a basic bot](bot-builder-tutorial-basic-deploy.md).
+
 ## About this sample
 
 The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they are received. Each turn, the full list of user inputs is echoed back to the user. The data structure containing this list of inputs is then saved to storage at the end of that turn. Various types of storage are explored as additional funtionality is added to this sample code.

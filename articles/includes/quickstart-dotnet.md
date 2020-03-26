@@ -18,7 +18,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 > [!NOTE]
 > .NET Core 2.1 and. NET Core 3.1 versions of the C# templates are available.\
-> When creating new bots, you should use the .NET Core 3.1 version.\
+> When creating new bots, you should use the .NET Core 3.1 templates. Available in Visual Studio 2019 and above.\
 > The C# bot samples all use .NET Core 3.1. The .NET Core 2.1 can be found in this repository branch (add link).\
 > See also the note about creating and deploying .NET Core 3.1 bots in [Tutorial: Create and deploy a basic bot](~/v4sdk/bot-builder-tutorial-basic-deploy.md).
 
