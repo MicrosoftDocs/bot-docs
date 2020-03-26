@@ -32,7 +32,7 @@ After you have changed settings for your bot, click the **Save** button at the t
 
 ## Additional Information
 
-You can use [`az bot update`](https://docs.microsoft.com/cli/azure/bot?view=azure-cli-latest#az-bot-update) to update bot settings from the command line.
+You can use the [az bot update] command (https://docs.microsoft.com/cli/azure/bot?view=azure-cli-latest#az-bot-update) to update bot settings from the command line.
 
 ## Next steps
 Now that you have learned how to configure settings for your bot service, learn about how to configure speech priming.
