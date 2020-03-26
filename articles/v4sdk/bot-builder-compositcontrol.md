@@ -184,14 +184,15 @@ Learn how to create complex conversations that branch and loop.
 
 <!-- Footnote-style links -->
 
+<!--concepts-->
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
-
+<!--how to-->
 [simple-flow]: bot-builder-dialog-manage-conversation-flow.md
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
-
+<!--samples-->
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample
