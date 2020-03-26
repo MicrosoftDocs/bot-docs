@@ -1,5 +1,5 @@
 
-You need to prepare your project files before you can deploy your C#, Javascript, or Typescript bot. If you are deploying a Python bot you can skip this step.
+You need to prepare your project files before you can deploy your C#, Javascript, or Typescript bot. If you are deploying a Python bot you can skip this step and continue to step 5.2.
 
 <!-- **C# bots** -->
 ##### [C#](#tab/csharp)
@@ -8,7 +8,9 @@ You need to prepare your project files before you can deploy your C#, Javascript
 az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.csproj"
 ```
 
-You must provide the path to the .csproj file relative to --code-dir. This can be performed via the --proj-file-path argument. The command would resolve --code-dir and --proj-file-path to "./MyBot.csproj"
+You must provide the path to the .csproj file relative to --code-dir. This can be performed via the --proj-file-path argument. The command would resolve --code-dir and --proj-file-path to "./MyBot.csproj".
+
+This command generates a `.deployment` file in your bot project folder.
 
 <!-- **JavaScript bots** -->
 ##### [JavaScript](#tab/javascript)
@@ -17,7 +19,7 @@ You must provide the path to the .csproj file relative to --code-dir. This can b
 az bot prepare-deploy --code-dir "." --lang Javascript
 ```
 
-This command will fetch a web.config which is needed for Node.js apps to work with IIS on Azure App Services. Make sure web.config is saved to the root of your bot.
+The command generates two `web.config` file in your project folder. Node.js apps need web.config to work with IIS on Azure App Services. Make sure web.config is saved to the root of your bot.
 
 <!-- **TypeScript bots** -->
 ##### [TypeScript](#tab/typescript)
@@ -26,13 +28,11 @@ This command will fetch a web.config which is needed for Node.js apps to work wi
 az bot prepare-deploy --code-dir "." --lang Typescript
 ```
 
-This command works similarly to JavaScript above, but for a Typescript bot.
+This command works similarly to JavaScript in that it generates two `web.config` files. One is in your project folder, and the other is in the **src** folder within your project folder.
+
+<!-- **TPython bots** -->
+##### [Python](#tab/Python)
+
+You do not need to prepare your project files before deploying a Python bot. Continue to step 5.2.
 
 ---
-
-> [!NOTE]
->  For C# bots, the `az bot prepare-deploy` command generate sa `.deployment` file in your bot project folder.
-> For JavaScript bots, the command generates two `web.config` file in your project folder.
-> For TypeScript bots, the command generates two `web.config` files. One is in your project folder and another in the **src** folder within your project folder.
-
-
