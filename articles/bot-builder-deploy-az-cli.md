@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/06/2019
+ms.date: 03/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -51,6 +51,7 @@ Make sure that you have the correct path to your bot project ARM deployment temp
 <!-- ##### Create Azure resources -->
 [!INCLUDE [ARM with new resource group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
 
+
 #### **Deploy via ARM template (with **existing**  Resource Group)**
 
 [!INCLUDE [ARM with existing resource group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
@@ -58,6 +59,8 @@ Make sure that you have the correct path to your bot project ARM deployment temp
 ---
 
 ### 5. Prepare your code for deployment
+
+[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
 
 #### 5.1 Retrieve or create necessary IIS/Kudu files
 
