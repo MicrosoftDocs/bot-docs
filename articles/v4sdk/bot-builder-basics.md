@@ -109,11 +109,10 @@ In the following sections, we examine _key pieces_ of an EchoBot that you can ea
 A bot is a web application, and templates are provided for each language.
 
 > [!NOTE]
-> Both .NET Core 2.1 and .NET Core 3.1 versions of the C# templates are available.\
-> When creating new bots, you should use the .NET Core 3.1 templates. Available in Visual Studio 2017 or higher.\
-> The current bot samples use .NET Core 3.1 templates. You can find the samples that use .NET Core 2.1 templates in this repository [branch](https://github.com/microsoft/BotBuilder-Samples/tree/4.7-archive/samples/csharp_dotnetcore).\
-> See also the note about creating and deploying .NET Core 3.1 bots in [Tutorial: Create and deploy a basic bot](~/v4sdk/bot-builder-tutorial-basic-deploy.md).
-
+> Both .NET Core 2.1 and .NET Core 3.1 versions of the C# templates are available.
+> When creating new bots, you should use the .NET Core 3.1 templates in Visual Studio 2019 or higher.
+> The current bot samples use .NET Core 3.1 templates. You can find the samples that use .NET Core 2.1 templates in the [4.7-archive](https://github.com/microsoft/BotBuilder-Samples/tree/4.7-archive/samples/csharp_dotnetcore) branch of the BotBuilder-Samples repository.
+> For information about deploying .NET Core 3.1 bots to Azure, see [Deploy your bot](../bot-builder-deploy-az-cli.md).
 
 # [C#](#tab/csharp)
 
