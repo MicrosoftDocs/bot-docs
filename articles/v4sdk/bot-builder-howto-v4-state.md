@@ -88,7 +88,7 @@ Next, we register `MemoryStorage` that is used to create `UserState` and `Conver
 [!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=26-29)]
 [!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=51-57)]
 
-**Bots/StateManagementBot.cs**
+**Bots/StateManagementBot.cs**  
 [!code-csharp[Bot constructor](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Bots/StateManagementBot.cs?range=15-22)]
 
 ## [JavaScript](#tab/javascript)
@@ -120,7 +120,7 @@ Next, we register `MemoryStorage` that is used to create `UserState` and `Conver
 
 Now we create property accessors using the `CreateProperty` method that provides a handle to the `BotState` object. Each state property accessor allows you to get or set the value of the associated state property. Before we use our state properties, we use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, we call the `GetAsync` method.
 
-**Bots/StateManagementBot.cs**
+**Bots/StateManagementBot.cs**  
 [!code-csharp[Create accessors](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Bots/StateManagementBot.cs?range=42,45)]
 
 ## [JavaScript](#tab/javascript)
@@ -149,12 +149,12 @@ The preceding section covers the initialization-time steps to add state property
 - If userProfile.Name is empty and conversationData.PromptedUserForName is _false_, we ask for the user's name.
 - If userProfile.Name was previously stored, we retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
-**Bots/StateManagementBot.cs**
+**Bots/StateManagementBot.cs**  
 [!code-csharp[OnMessageActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=38-85)]
 
 Before we exit the turn handler, we use the state management objects' _SaveChangesAsync()_ method to write all state changes back to storage.
 
-**Bots/StateManagementBot.cs**
+**Bots/StateManagementBot.cs**  
 [!code-csharp[OnTurnAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/bots/StateManagementBot.cs?range=24-31)]
 
 ## [JavaScript](#tab/javascript)
