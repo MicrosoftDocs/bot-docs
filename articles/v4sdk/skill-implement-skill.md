@@ -288,4 +288,4 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Implement a skill consumer](skill-implement-consumer.md)
+> [Implement a skill for Power Virtual Agents](skill-pva.md)
