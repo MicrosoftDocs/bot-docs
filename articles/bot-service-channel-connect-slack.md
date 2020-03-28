@@ -230,7 +230,7 @@ Once your app is created, collect the following information. You will need this 
 1. In the left pane, click the **Install App** link under the **Settings** menu.
 1. In the right pane, click the **permission scope** link.
 1. In the **Scopes** section, click the **Add an OAuth Scope** button.
-1. Make sure to select the scopes as described in this [section](#add-bot-token-scopes).
+1. Make sure to select the scopes as described in this [section](bot-service-channel-connect-slack.md#add-bot-token-scopes).
 1. Click the **Install App to Workspace** button.
 1. In the displayed page, click the **Allow** button.
 1. Once the application is installed, copy the **Bot User OAuth Access Token**. Save it for later to configure your bot settings.
