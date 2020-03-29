@@ -241,7 +241,7 @@ Once your app is created, collect the following information. You will need this 
 
 Add  the [Microsoft.Bot.Builder.Adapters.Slack](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Slack/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs)
 
-##### Create a Slack adapter class
+#### Create a Slack adapter class
 
 Create a new class that inherits from the ***SlackAdapter*** class. This class will act as our adapter for the Slack channel and include error handling capabilities (similar to the ***BotFrameworkAdapterWithErrorHandler*** class already in the sample, used for handling other requests from Azure Bot Service).
 
@@ -267,7 +267,7 @@ public class SlackAdapterWithErrorHandler : SlackAdapter
 }
 ```
 
-##### Create a new controller for handling Slack requests
+#### Create a new controller for handling Slack requests
 
 We create a new controller which will handle requests from your slack app, on a new endpoing 'api/slack' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Slack, using the same bot.
 
@@ -351,23 +351,23 @@ To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-dep
 
 #### Update your Slack app
 
-Navigate back to the [Slack API dashboard]([https://api.slack.com/apps]) and select your app.  You now need to configure 2 URLs for your app and subscribe to the appropriate events.
+Navigate back to the [Slack API dashboard]([https://api.slack.com/apps]) and select your app.  You now need to configure two URLs for your app and subscribe to the appropriate events.
 
 1. In the **OAuth & Permissions** tab, the **Redirect URL** should be your bot's URL, plus the `api/slack` endpoint you specified in your newly created controller. For example, `https://yourboturl.com/api/slack`.
 
 ![Slack redirect URL](media/bot-service-adapter-connect-slack/redirect-url.png)
 
-2. In the **Event Subscriptions** tab, fill in the **Request URL** with the same URL you used in step 1.
+1. In the **Event Subscriptions** tab, fill in the **Request URL** with the same URL you used in step 1.
 
-3. Enable events using the toggle at the top of the page.
+1. Enable events using the toggle at the top of the page.
 
-4. Expand the **Subscribe to bot events** section and use the **Add Bot User Event** button to subscribe to the **im_created** and **message.im** events.
+1. Expand the **Subscribe to bot events** section and use the **Add Bot User Event** button to subscribe to the **im_created** and **message.im** events.
 
 ![Slack event subscriptions](media/bot-service-adapter-connect-slack/event-subscriptions.png)
 
 ### Test your bot with adapter in Slack
 
-Your Slack app is now configured and you can now login to the Slack workspace you installed your app into. (You will see it listed under the 'Apps' section of the left hand menu.) Select your app and try sending a message. You should see it echoed back to you in the IM window. This picture shows an example:
+Your Slack app is now configured and you can login to the Slack workspace where you installed your application. You will see it listed under the 'Apps' section of the left hand menu. Select your app and try sending a message. You should see it echoed back to you in the IM window. This picture shows an example:
 
 ![Slack bot response](media/channels/slack-BotAdapterchat.png)
 
