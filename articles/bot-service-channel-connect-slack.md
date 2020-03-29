@@ -188,18 +188,17 @@ Authorized users can click the **Add to Slack** button provided by this modified
 
 ## Connect a bot to Slack using the Slack adapter
 
-Besides the Slack channel available in the Azure Bot Service, you can use the **Slack adapter** to connect your bot with Slack.
-This article shows how to do it by modifying the EchoBot sample to connect it to a Slack app.
+In addition to the Slack channel available in the Azure Bot Service, you can use the **Slack adapter** to connect your bot with Slack.
+This article shows how to do it by modifying the [echobot sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot) to connect it to a Slack app.
 
-You can also use the [slack adapter](https://aka.ms/csharp-60-slack-adapter-sample) sample and populate the appSettings.json file with the values described in the steps described in the next sections. This sample has additional steps described in the README file to show examples of link sharing, receiving attachments, and sending interactive messages.
-
+You can also use the [slack adapter](https://aka.ms/csharp-60-slack-adapter-sample) sample and populate the appSettings.json file with the values described in the next sections. This sample has additional steps that show examples of link sharing, receiving attachments, and sending interactive messages.
 
 > [!NOTE]
-> The instructions below cover the C# implementation of the Slack adapter. For instructions on using the JS adapter, part of the BotKit libraries, [see the BotKit Slack documentation](https://botkit.ai/docs/v4/platforms/slack.html).
+> The instructions below cover the C# implementation of the Slack adapter. For instructions on using the JS adapter, see the [botbuilder adapter slack](https://botkit.ai/docs/v4/platforms/slack.html).
 
 ### Prerequisites
 
-* The [EchoBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot)
+* The [echobot sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot)
 
 * Access to a Slack workspace with sufficient permissions to create and manage applications at  [https://api.slack.com/apps](https://api.slack.com/apps). If you do not have access to a Slack environment you can create a workspace for [free](https://www.slack.com).
 
@@ -207,7 +206,7 @@ You can also use the [slack adapter](https://aka.ms/csharp-60-slack-adapter-samp
 
 Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
 
-![Set up bot](~/media/channels/slack-NewApp.png)
+![Set up bot](media/channels/slack-NewApp.png)
 
 Click the 'Create new app' button.
 
@@ -215,7 +214,7 @@ Click the 'Create new app' button.
 
 Enter an **App Name** and select a **Development Slack Workspace**. If you are not already a member of a development Slack team, [create or join one](https://slack.com/).
 
-![Create app](~/media/channels/slack-CreateApp.png)
+![Create app](media/channels/slack-CreateApp.png)
 
 Click **Create App**. Slack will create your app and generate a client ID and client secret.
 
@@ -225,7 +224,7 @@ Once your app is created, collect the following information. You will need this 
 
 1. Note the **Verification Token** and the **Signing Secret** from the **Basic Information** tab and keep them for later to configure your bot settings.
 
-![Slack tokens](~/media/bot-service-adapter-connect-slack/slack-tokens.png)
+    ![Slack tokens](media/bot-service-adapter-connect-slack/slack-tokens.png)
 
 1. In the left pane, click the **Install App** link under the **Settings** menu.
 1. In the right pane, click the **permission scope** link.
