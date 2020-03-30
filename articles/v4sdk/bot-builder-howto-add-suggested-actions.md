@@ -25,7 +25,7 @@ You can enable your bot to present buttons that the user can tap to provide inpu
 
 The source code shown here is based on the [suggest actions sample](https://aka.ms/SuggestedActionsCSharp).
 
-[!code-csharp[suggested actions](~/../botbuilder-samples/samples/csharp_dotnetcore/08.suggested-actions/Bots/SuggestedActionsBot.cs?range=87-101)]
+[!code-csharp[suggested actions](~/../botbuilder-samples/samples/csharp_dotnetcore/08.suggested-actions/Bots/SuggestedActionsBot.cs?range=81-99)]
 
 # [JavaScript](#tab/javascript)
 
