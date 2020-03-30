@@ -20,7 +20,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md) and how bots [manage state](bot-builder-concept-state.md) is required.
-- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [CSharp](https://aka.ms/statebot-sample-cs), [JavaScript](https://aka.ms/statebot-sample-js) or [Python](https://aka.ms/bot-state-python-sample-code).
+- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#](https://aka.ms/statebot-sample-cs), [JavaScript](https://aka.ms/statebot-sample-js) or [Python](https://aka.ms/bot-state-python-sample-code).
 
 ## About this sample
 
