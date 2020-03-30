@@ -210,7 +210,7 @@ GET /v3/conversations/{conversationId}/members/{memberId}
 | | |
 |----|----|
 | **Request body** | n/a |
-| **Returns** | A [ChannelAccount](#channelaccount-object) object if a match is found; otherwise, an empty payload. |
+| **Returns** | A [ChannelAccount](#channelaccount-object) object for the member. |
 
 ### Get Conversation Members
 
@@ -223,7 +223,7 @@ GET /v3/conversations/{conversationId}/members
 | | |
 |----|----|
 | **Request body** | n/a |
-| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects |
+| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects for the members of the conversation. |
 
 ### Get Conversation Paged Members
 
