@@ -10,7 +10,9 @@ All languages of the Bot Builder SDK, and both versions (v3 and v4), are built o
 
 ## Swagger files
 
-The current source of truth (circa March 2020) for the REST APIs are their associated Swagger files, located in the [botframework-obi](https://github.com/microsoft/botframework-obi) repo, under [protocols/botframework-protocol](https://github.com/microsoft/botframework-obi/tree/master/protocols/botframework-protocol).
+The current source of truth (circa March 2020) for the REST APIs are their associated Swagger files is located in the [botframework-obi](https://github.com/microsoft/botframework-obi) repo, under [protocols/botframework-protocol/](https://github.com/microsoft/botframework-obi/tree/master/protocols/botframework-protocol).
+
+Copies of these _should_ propagate to the public [botframework-sdk](https://github.com/microsoft/botframework-sdk) repo, under [specs/botframework-protocol/](https://github.com/microsoft/botframework-sdk/tree/master/specs/botframework-protocol).
 
 ## Swagger-ui
 
@@ -22,9 +24,9 @@ Swagger UI runs on its own [local] server.
 
 ### Inspecting JSON Swagger files
 
-You need to host the Swagger files to access them from Swagger UI.
+You need to host the Swagger files to access them from Swagger UI. You can use a basic Node.js server for this.
 
-From the directory containing the swagger files you want to inspect:
+From a directory containing the swagger files you want to inspect:
 
     1. Install the http-server [only necessary to install or update the server package] `npm i -g http-server`.
     2. Run with CORS, `http-server --cors`.
