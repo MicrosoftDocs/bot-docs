@@ -20,7 +20,7 @@ Handling interruptions is an important aspect of a robust bot. Users will not al
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [reuse dialogs][component-dialogs].
-- A copy of the core bot sample in either [**CSharp**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
+- A copy of the core bot sample in either [**C#**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
 
 ## About this sample
 
