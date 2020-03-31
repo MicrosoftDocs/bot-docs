@@ -24,7 +24,7 @@ A Direct Line **secret** is a master key that can be used to access any conversa
 A Direct Line **token** is a key that can be used to access a single conversation. A token expires but can be refreshed.
 
 Deciding when or if to use the **secret** key or a **token** must be based on security considerations.
-Exposing the secret key could be acceptable if done intentionally and with care. As matter of a fact, this is the default behavior because allows Direct Line to figure out if the client is legitimate.
+Exposing the secret key could be acceptable if done intentionally and with care. As matter of a fact, this is the default behavior because this allows Direct Line to figure out if the client is legitimate.
 Generally speaking though, security is a concern if you're trying to persist user data.
 For more information, see section [Security considerations](#security-considerations).
 
