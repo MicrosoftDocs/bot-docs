@@ -1,39 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-stable">
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Facebook" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Testing" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Configuration" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Connector" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Schema" Version="4.7.0.0" />
-    <Assembly Name="Microsoft.Bot.Streaming" Version="4.7.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Testing" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Connector" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Schema" Version="4.8.0.0" />
+    <Assembly Name="Microsoft.Bot.Streaming" Version="4.8.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Bot.Builder">
+    <Type Name="Microsoft.Bot.Builder.ActivityFactory" Id="T:Microsoft.Bot.Builder.ActivityFactory">
+      <Member Id="M:Microsoft.Bot.Builder.ActivityFactory.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityFactory.CheckLGResult(System.Object)" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityFactory.FromObject(System.Object)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.ActivityHandler" Id="T:Microsoft.Bot.Builder.ActivityHandler">
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.CreateInvokeResponse(System.Object)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnConversationUpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnEndOfConversationActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEndOfConversationActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnEventActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnMembersAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnMembersRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnMessageActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnMessageReactionActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnReactionsAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnReactionsRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnSignInInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnTokenResponseEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnTypingActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.ITypingActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.OnUnrecognizedActivityTypeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.ActivityHandler/InvokeResponseException" Id="T:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException">
+      <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException.#ctor(System.Net.HttpStatusCode,System.Object)" />
+      <Member Id="M:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException.CreateInvokeResponse" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.AdapterExtensions" Id="T:Microsoft.Bot.Builder.AdapterExtensions">
       <Member Id="M:Microsoft.Bot.Builder.AdapterExtensions.UseState(Microsoft.Bot.Builder.BotAdapter,Microsoft.Bot.Builder.UserState,Microsoft.Bot.Builder.ConversationState,System.Boolean)" />
@@ -47,8 +58,11 @@
       <Member Id="P:Microsoft.Bot.Builder.AutoSaveStateMiddleware.BotStateSet" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.BotAdapter" Id="T:Microsoft.Bot.Builder.BotAdapter">
+      <Member Id="F:Microsoft.Bot.Builder.BotAdapter.BotIdentityKey" />
+      <Member Id="F:Microsoft.Bot.Builder.BotAdapter.OAuthScopeKey" />
       <Member Id="M:Microsoft.Bot.Builder.BotAdapter.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.BotAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,System.String,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotAdapter.ContinueConversationAsync(System.String,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotAdapter.ProcessActivityAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
@@ -76,25 +90,38 @@
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.BuildCredentialsAsync(System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.CanProcessOutgoingActivity(Microsoft.Bot.Schema.Activity)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,System.String,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ContinueConversationAsync(System.String,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.CreateConversationAsync(System.String,System.String,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,Microsoft.Bot.Schema.ConversationParameters,Microsoft.Bot.Builder.BotCallbackHandler,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.CreateConversationAsync(System.String,System.String,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,Microsoft.Bot.Schema.ConversationParameters,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.CreateOAuthApiClientAsync(Microsoft.Bot.Builder.ITurnContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.CreateOAuthApiClientAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.DeleteConversationMemberAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetActivityMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetConversationMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetConversationsAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetConversationsAsync(System.String,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetUserTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.GetUserTokenAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ProcessActivityAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ProcessActivityAsync(System.String,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.ProcessOutgoingActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.BotFrameworkAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" />
@@ -154,6 +181,7 @@
       <Member Id="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnSendToConversationAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnUpdateActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnUploadAttachmentAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.AttachmentData,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Bot.Builder.ChannelServiceHandler.ChannelProvider" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.ConversationState" Id="T:Microsoft.Bot.Builder.ConversationState">
       <Member Id="M:Microsoft.Bot.Builder.ConversationState.#ctor(Microsoft.Bot.Builder.IStorage)" />
@@ -177,6 +205,10 @@
       <Member Id="P:Microsoft.Bot.Builder.DelegatingTurnContext`1.TurnState" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.DeleteActivityHandler" Id="T:Microsoft.Bot.Builder.DeleteActivityHandler" />
+    <Type Name="Microsoft.Bot.Builder.EventFactory" Id="T:Microsoft.Bot.Builder.EventFactory">
+      <Member Id="M:Microsoft.Bot.Builder.EventFactory.CreateHandoffInitiation(Microsoft.Bot.Builder.ITurnContext,System.Object,Microsoft.Bot.Schema.Transcript)" />
+      <Member Id="M:Microsoft.Bot.Builder.EventFactory.CreateHandoffStatus(Microsoft.Bot.Schema.ConversationAccount,System.String,System.String)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.FileTranscriptLogger" Id="T:Microsoft.Bot.Builder.FileTranscriptLogger">
       <Member Id="M:Microsoft.Bot.Builder.FileTranscriptLogger.#ctor(System.String,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.FileTranscriptLogger.DeleteTranscriptAsync(System.String,System.String)" />
@@ -184,8 +216,18 @@
       <Member Id="M:Microsoft.Bot.Builder.FileTranscriptLogger.ListTranscriptsAsync(System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.FileTranscriptLogger.LogActivityAsync(Microsoft.Bot.Schema.IActivity)" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.HostContext" Id="T:Microsoft.Bot.Builder.HostContext">
+      <Member Id="M:Microsoft.Bot.Builder.HostContext.Get``1" />
+      <Member Id="M:Microsoft.Bot.Builder.HostContext.Get``1(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.HostContext.Set``1(``0)" />
+      <Member Id="M:Microsoft.Bot.Builder.HostContext.Set``1(System.String,``0)" />
+      <Member Id="P:Microsoft.Bot.Builder.HostContext.Current" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.IBot" Id="T:Microsoft.Bot.Builder.IBot">
       <Member Id="M:Microsoft.Bot.Builder.IBot.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.IBotPageViewTelemetryClient" Id="T:Microsoft.Bot.Builder.IBotPageViewTelemetryClient">
+      <Member Id="M:Microsoft.Bot.Builder.IBotPageViewTelemetryClient.TrackPageView(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.IBotTelemetryClient" Id="T:Microsoft.Bot.Builder.IBotTelemetryClient">
       <Member Id="M:Microsoft.Bot.Builder.IBotTelemetryClient.Flush" />
@@ -194,6 +236,22 @@
       <Member Id="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackTrace(System.String,Microsoft.Bot.Builder.Severity,System.Collections.Generic.IDictionary{System.String,System.String})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.IBotTelemetryClientExtensions" Id="T:Microsoft.Bot.Builder.IBotTelemetryClientExtensions">
+      <Member Id="M:Microsoft.Bot.Builder.IBotTelemetryClientExtensions.TrackDialogView(Microsoft.Bot.Builder.IBotTelemetryClient,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.IExtendedUserTokenProvider" Id="T:Microsoft.Bot.Builder.IExtendedUserTokenProvider">
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.GetUserTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.IExtendedUserTokenProvider.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.IMiddleware" Id="T:Microsoft.Bot.Builder.IMiddleware">
       <Member Id="M:Microsoft.Bot.Builder.IMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
@@ -226,6 +284,10 @@
       <Member Id="M:Microsoft.Bot.Builder.InvokeResponse.#ctor" />
       <Member Id="P:Microsoft.Bot.Builder.InvokeResponse.Body" />
       <Member Id="P:Microsoft.Bot.Builder.InvokeResponse.Status" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.InvokeResponse`1" Id="T:Microsoft.Bot.Builder.InvokeResponse`1">
+      <Member Id="M:Microsoft.Bot.Builder.InvokeResponse`1.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.InvokeResponse`1.Body" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.IPropertyManager" Id="T:Microsoft.Bot.Builder.IPropertyManager">
       <Member Id="M:Microsoft.Bot.Builder.IPropertyManager.CreateProperty``1(System.String)" />
@@ -326,6 +388,7 @@
       <Member Id="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackDependency(System.String,System.String,System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackPageView(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackTrace(System.String,Microsoft.Bot.Builder.Severity,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <Member Id="P:Microsoft.Bot.Builder.NullBotTelemetryClient.Instance" />
     </Type>
@@ -415,6 +478,7 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.TraceTranscriptLogger" Id="T:Microsoft.Bot.Builder.TraceTranscriptLogger">
       <Member Id="M:Microsoft.Bot.Builder.TraceTranscriptLogger.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.TraceTranscriptLogger.#ctor(System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.TraceTranscriptLogger.LogActivityAsync(Microsoft.Bot.Schema.IActivity)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.TranscriptInfo" Id="T:Microsoft.Bot.Builder.TranscriptInfo">
@@ -441,6 +505,7 @@
       <Member Id="M:Microsoft.Bot.Builder.TurnContext.UpdateActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Builder.TurnContext.Activity" />
       <Member Id="P:Microsoft.Bot.Builder.TurnContext.Adapter" />
+      <Member Id="P:Microsoft.Bot.Builder.TurnContext.BufferedReplyActivities" />
       <Member Id="P:Microsoft.Bot.Builder.TurnContext.Responded" />
       <Member Id="P:Microsoft.Bot.Builder.TurnContext.TurnState" />
     </Type>
@@ -452,6 +517,7 @@
       <Member Id="M:Microsoft.Bot.Builder.TurnContextStateCollection.Get``1" />
       <Member Id="M:Microsoft.Bot.Builder.TurnContextStateCollection.Get``1(System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.TurnContextStateCollection.Set``1(``0)" />
+      <Member Id="M:Microsoft.Bot.Builder.TurnContextStateCollection.Set``1(System.String,``0)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.TurnStateConstants" Id="T:Microsoft.Bot.Builder.TurnStateConstants">
       <Member Id="F:Microsoft.Bot.Builder.TurnStateConstants.OAuthLoginTimeoutKey" />
@@ -464,216 +530,38 @@
       <Member Id="M:Microsoft.Bot.Builder.UserState.GetStorageKey(Microsoft.Bot.Builder.ITurnContext)" />
     </Type>
   </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.#ctor(System.String,System.String,System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.GetAccessTokenForPageAsync(System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookAccessToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookApiHost" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookApiVersion" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookAppSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookVerifyToken" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.GetAppSecretProof" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PassThreadControlAsync(System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PostToFacebookApiAsync(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.RequestThreadControlAsync(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.SendMessageAsync(System.String,Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage,System.Net.Http.HttpMethod,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.TakeThreadControlAsync(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifyWebhookAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ActivityToFacebook(Microsoft.Bot.Schema.Activity)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.HandleMessageAttachments(Microsoft.Bot.Builder.Adapters.Facebook.Message)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ProcessSingleMessage(Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.WriteAsync(Microsoft.AspNetCore.Http.HttpResponse,System.Net.HttpStatusCode,System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.#ctor(System.String,Microsoft.Bot.Builder.Adapters.Facebook.Message,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.IsStandby" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.MessagingType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.NotificationType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.OptIn" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PassThreadControl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PersonaId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PostBack" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Recipient" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.RequestThreadControl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Sender" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.SenderAction" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Tag" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.TakeThreadControl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.TimeStamp" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.Message" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.Message">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.ShouldSerializeAttachments" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.ShouldSerializeIsEcho" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.ShouldSerializeQuickReplies" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Attachment" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Attachments" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.IsEcho" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Metadata" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Mid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.QuickReplies" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.StickerId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Text" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.ShouldSerializeButtons" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.ShouldSerializeElements" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.ShouldSerializeIsReusable" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.AttachmentId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Buttons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Elements" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.IsReusable" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.TemplateType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Url" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment.Type" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser.Id" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeChanges" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeMessaging" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeStandby" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Changes" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Id" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Messaging" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Standby" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Time" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Referral" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Title" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.ContentType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.ImageUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.Title" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.CommentId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.Id" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.PostId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.UserRef" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.ShouldSerializeEntry" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.Entry" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.ResponseObject" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk.MessageId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk.RecipientId" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.NewOwnerAppId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.PreviousOwnerAppId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.RequestedOwnerAppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl.RequestedOwnerAppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl.PreviousOwnerAppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.Metadata" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants">
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataPassThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataRequestThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataTakeThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PageInboxId" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PassThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.RequestThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.TakeThreadControl" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Title" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Url" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.MessengerExtensions" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.WebviewHeightRatio" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ShouldSerializeButtons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Buttons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.DefaultAction" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ImageUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.MediaType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Subtitle" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Title" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Url" />
-    </Type>
-  </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Adapters">
     <Type Name="Microsoft.Bot.Builder.Adapters.TestAdapter" Id="T:Microsoft.Bot.Builder.Adapters.TestAdapter">
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.#ctor(Microsoft.Bot.Schema.ConversationReference,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.#ctor(System.String,System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.AddExchangeableToken(System.String,System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.AddUserToken(System.String,System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.CreateConversation(System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.CreateConversationAsync(System.String,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetNextReply" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetNextReplyAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetUserTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetUserTokenAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.MakeActivity(System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ProcessActivityAsync(Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ProcessActivityAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.SendTextToBotAsync(System.String,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" />
@@ -687,6 +575,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.#ctor(Microsoft.Bot.Builder.Adapters.TestAdapter,Microsoft.Bot.Builder.IBot)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.#ctor(System.Func{System.Threading.Tasks.Task},Microsoft.Bot.Builder.Adapters.TestFlow)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.#ctor(System.Threading.Tasks.Task,Microsoft.Bot.Builder.Adapters.TestFlow)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertNoReply(System.String,System.UInt32)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(Microsoft.Bot.Schema.IActivity,System.Collections.Generic.IEqualityComparer{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(Microsoft.Bot.Schema.IActivity,System.String,System.UInt32)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.TestFlow.AssertReply(System.Action{Microsoft.Bot.Schema.IActivity},System.String,System.UInt32)" />
@@ -761,6 +650,9 @@
       <Member Id="P:Microsoft.Bot.Builder.AI.Luis.LuisApplication.Endpoint" />
       <Member Id="P:Microsoft.Bot.Builder.AI.Luis.LuisApplication.EndpointKey" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.AI.Luis.LuisExtensions" Id="T:Microsoft.Bot.Builder.AI.Luis.LuisExtensions">
+      <Member Id="M:Microsoft.Bot.Builder.AI.Luis.LuisExtensions.UseLuisSettings(Microsoft.Extensions.Configuration.IConfigurationBuilder)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions" Id="T:Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions">
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions.#ctor" />
       <Member Id="P:Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions.BingSpellCheckSubscriptionKey" />
@@ -820,6 +712,7 @@
       <Member Id="F:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3.LuisTraceLabel" />
       <Member Id="F:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3.LuisTraceType" />
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3.#ctor(Microsoft.Bot.Builder.AI.Luis.LuisApplication)" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3.ExternalEntityRecognizer" />
       <Member Id="P:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3.PredictionOptions" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants" Id="T:Microsoft.Bot.Builder.AI.Luis.LuisTelemetryConstants">
@@ -895,6 +788,7 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions" Id="T:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions">
       <Member Id="M:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.#ctor(Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions)" />
       <Member Id="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.DynamicLists" />
       <Member Id="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.ExternalEntities" />
       <Member Id="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.IncludeAllIntents" />
@@ -1107,6 +1001,7 @@
       <Member Id="M:Microsoft.Bot.Builder.ApplicationInsights.BotTelemetryClient.TrackDependency(System.String,System.String,System.String,System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.ApplicationInsights.BotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.ApplicationInsights.BotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.ApplicationInsights.BotTelemetryClient.TrackPageView(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
       <Member Id="M:Microsoft.Bot.Builder.ApplicationInsights.BotTelemetryClient.TrackTrace(System.String,Microsoft.Bot.Builder.Severity,System.Collections.Generic.IDictionary{System.String,System.String})" />
     </Type>
   </Namespace>
@@ -1204,6 +1099,10 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment}})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt.OnPromptAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Boolean,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.AttachmentPrompt.OnRecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.BeginSkillDialogOptions" Id="T:Microsoft.Bot.Builder.Dialogs.BeginSkillDialogOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.BeginSkillDialogOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.BeginSkillDialogOptions.Activity" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ChoicePrompt" Id="T:Microsoft.Bot.Builder.Dialogs.ChoicePrompt">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ChoicePrompt.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice},System.String)" />
@@ -1344,7 +1243,15 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.DialogManagerResult.TurnResult" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.DialogPath" Id="T:Microsoft.Bot.Builder.Dialogs.DialogPath">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.EventCounter" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.ExpectedProperties" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.LastEvent" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.LastIntent" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.LastTriggerEvent" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.RequiredProperties" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogPath.Retries" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.DialogPath.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.DialogPath.GetPropertyName(System.String)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.DialogReason" Id="T:Microsoft.Bot.Builder.Dialogs.DialogReason">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogReason.BeginCalled" />
@@ -1377,6 +1284,7 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.DialogTurnStatus" Id="T:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus.Cancelled" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus.Complete" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus.CompleteAndWait" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus.Empty" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.DialogTurnStatus.Waiting" />
     </Type>
@@ -1402,6 +1310,7 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings" Id="T:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.#ctor" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.ConnectionName" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.OAuthAppCredentials" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.Text" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.Timeout" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.Title" />
@@ -1410,14 +1319,18 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.Assign(System.Object,System.Object,System.Type)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.Assign``1(System.Object,System.Object)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.Clone``1(``0)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.ContainsProperty(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.ForEachProperty(System.Object,System.Action{System.String,System.Object})" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.GetPathValue``1(System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.GetPathValue``1(System.Object,System.String,``0)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.GetProperties(System.Object)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.HasValue(System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.MapValueTo``1(System.Object)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.Merge``1(``0,``0)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.RemovePathValue(System.Object,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.SetPathValue(System.Object,System.String,System.Object,System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.TryGetPathValue``1(System.Object,System.String,``0@)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.TryResolvePath(System.Object,System.String,System.Collections.Generic.List{System.Object}@,System.Boolean)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.PersistedState" Id="T:Microsoft.Bot.Builder.Dialogs.PersistedState">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.PersistedState.#ctor" />
@@ -1465,15 +1378,42 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.Recognized" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.PromptValidatorContext`1.State" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Recognizer" Id="T:Microsoft.Bot.Builder.Dialogs.Recognizer">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Recognizer.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Recognizer.FillRecognizerResultTelemetryProperties(Microsoft.Bot.Builder.RecognizerResult,System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.Bot.Builder.ITurnContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Recognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Recognizer.RecognizeAsync``1(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Recognizer.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Recognizer.TelemetryClient" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.ScopePath" Id="T:Microsoft.Bot.Builder.Dialogs.ScopePath">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.CLASS" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.CONVERSATION" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.DIALOG" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.DIALOGCLASS" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.SETTINGS" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.THIS" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.TURN" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.ScopePath.USER" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.ScopePath.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.SkillDialog" Id="T:Microsoft.Bot.Builder.Dialogs.SkillDialog">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.#ctor(Microsoft.Bot.Builder.Dialogs.SkillDialogOptions,System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.EndDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.RepromptDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialog.DialogOptions" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions" Id="T:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.BotId" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationIdFactory" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationState" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.Skill" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.SkillClient" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.SkillHostEndpoint" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.TextPrompt" Id="T:Microsoft.Bot.Builder.Dialogs.TextPrompt">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.TextPrompt.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{System.String})" />
@@ -1492,10 +1432,14 @@
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.INTERRUPTED" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.LASTRESULT" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.RECOGNIZED" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.RECOGNIZEDENTITIES" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.REPEATEDIDS" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.TEXT" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.TOPINTENT" />
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.TOPSCORE" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.TurnPath.UNRECOGNIZEDTEXT" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.TurnPath.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.TurnPath.GetPropertyName(System.String)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.WaterfallDialog" Id="T:Microsoft.Bot.Builder.Dialogs.WaterfallDialog">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.WaterfallDialog.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.WaterfallStep})" />
@@ -1568,6 +1512,8 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.#ctor" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.NoAction" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.NoValue" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.RecognizeNumbers" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.RecognizeOrdinals" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions" Id="T:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions.#ctor" />
@@ -1627,6 +1573,7 @@
   <Namespace Name="Microsoft.Bot.Builder.Dialogs.Debugging">
     <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.Dialog,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.Recognizer,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.IRecognizer,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.GetDebugger(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.GetDebugger(Microsoft.Bot.Builder.ITurnContext)" />
@@ -1684,14 +1631,20 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels" Id="T:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.GetSupportedCultures" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.MapToNearestLanguage(System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Bulgarian" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Chinese" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Dutch" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.English" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.French" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.German" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Hindi" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Italian" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Japanese" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Korean" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Portuguese" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Spanish" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Swedish" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Prompts.PromptCultureModels.Turkish" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi">
@@ -1722,6 +1675,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.#ctor(System.Net.Http.HttpClient,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.BuildCredentialsAsync(System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.PostActivityAsync(System.String,System.String,System.Uri,System.Uri,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.PostActivityAsync``1(System.String,System.String,System.Uri,System.Uri,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.AppCredentialMapCache" />
       <Member Id="P:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.ChannelProvider" />
       <Member Id="P:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.CredentialProvider" />
@@ -1775,6 +1729,8 @@
     <Type Name="Microsoft.Bot.Builder.Integration.AspNet.Core.Skills.SkillHttpClient" Id="T:Microsoft.Bot.Builder.Integration.AspNet.Core.Skills.SkillHttpClient">
       <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.Skills.SkillHttpClient.#ctor(System.Net.Http.HttpClient,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.Skills.SkillHttpClient.PostActivityAsync(System.String,Microsoft.Bot.Builder.Skills.BotFrameworkSkill,System.Uri,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.Skills.SkillHttpClient.PostActivityAsync``1(System.String,Microsoft.Bot.Builder.Skills.BotFrameworkSkill,System.Uri,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Integration.AspNet.Core.Skills.SkillHttpClient.PostActivityAsync``1(System.String,System.String,Microsoft.Bot.Builder.Skills.BotFrameworkSkill,System.Uri,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi">
@@ -1844,6 +1800,11 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Skills">
+    <Type Name="Microsoft.Bot.Builder.Skills.BotFrameworkClient" Id="T:Microsoft.Bot.Builder.Skills.BotFrameworkClient">
+      <Member Id="M:Microsoft.Bot.Builder.Skills.BotFrameworkClient.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Skills.BotFrameworkClient.PostActivityAsync(System.String,System.String,System.Uri,System.Uri,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Skills.BotFrameworkClient.PostActivityAsync``1(System.String,System.String,System.Uri,System.Uri,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+    </Type>
     <Type Name="Microsoft.Bot.Builder.Skills.BotFrameworkSkill" Id="T:Microsoft.Bot.Builder.Skills.BotFrameworkSkill">
       <Member Id="M:Microsoft.Bot.Builder.Skills.BotFrameworkSkill.#ctor" />
       <Member Id="P:Microsoft.Bot.Builder.Skills.BotFrameworkSkill.AppId" />
@@ -1852,9 +1813,23 @@
     </Type>
     <Type Name="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase" Id="T:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase">
       <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.CreateSkillConversationIdAsync(Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.CreateSkillConversationIdAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.DeleteConversationReferenceAsync(System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.GetConversationReferenceAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.GetSkillConversationReferenceAsync(System.String,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions" Id="T:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.Activity" />
+      <Member Id="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.BotFrameworkSkill" />
+      <Member Id="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.FromBotId" />
+      <Member Id="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.FromBotOAuthScope" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Skills.SkillConversationReference" Id="T:Microsoft.Bot.Builder.Skills.SkillConversationReference">
+      <Member Id="M:Microsoft.Bot.Builder.Skills.SkillConversationReference.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Skills.SkillConversationReference.ConversationReference" />
+      <Member Id="P:Microsoft.Bot.Builder.Skills.SkillConversationReference.OAuthScope" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Skills.SkillHandler" Id="T:Microsoft.Bot.Builder.Skills.SkillHandler">
       <Member Id="F:Microsoft.Bot.Builder.Skills.SkillHandler.SkillConversationReferenceKey" />
@@ -1907,6 +1882,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnConversationUpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnSignInInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsAppBasedLinkQueryAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.AppBasedLinkQuery,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsCardActionInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsChannelCreatedAsync(Microsoft.Bot.Schema.Teams.ChannelInfo,Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
@@ -1934,13 +1910,17 @@
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsTaskModuleFetchAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.TaskModuleRequest,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsTaskModuleSubmitAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},Microsoft.Bot.Schema.Teams.TaskModuleRequest,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTeamsTeamRenamedAsync(Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Teams.TeamsInfo" Id="T:Microsoft.Bot.Builder.Teams.TeamsInfo">
+      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetMemberAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetPagedMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetPagedTeamMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamChannelsAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamDetailsAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamMemberAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Teams.TeamsInfo.SendMessageToTeamsChannelAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.IActivity,System.String,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,System.Threading.CancellationToken)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.TemplateManager">
@@ -1983,6 +1963,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Testing.DialogTestClient.SendActivityAsync``1(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Testing.DialogTestClient.SendActivityAsync``1(System.String,System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Builder.Testing.DialogTestClient.ConversationState" />
+      <Member Id="P:Microsoft.Bot.Builder.Testing.DialogTestClient.DialogContext" />
       <Member Id="P:Microsoft.Bot.Builder.Testing.DialogTestClient.DialogTurnResult" />
     </Type>
   </Namespace>
@@ -2008,153 +1989,6 @@
       <Member Id="M:Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivityAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object,System.String,System.String,System.Threading.CancellationToken)" />
     </Type>
   </Namespace>
-  <Namespace Name="Microsoft.Bot.Configuration">
-    <Type Name="Microsoft.Bot.Configuration.AppInsightsService" Id="T:Microsoft.Bot.Configuration.AppInsightsService">
-      <Member Id="M:Microsoft.Bot.Configuration.AppInsightsService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.AppInsightsService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.AppInsightsService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.AppInsightsService.ApiKeys" />
-      <Member Id="P:Microsoft.Bot.Configuration.AppInsightsService.ApplicationId" />
-      <Member Id="P:Microsoft.Bot.Configuration.AppInsightsService.InstrumentationKey" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.AzureService" Id="T:Microsoft.Bot.Configuration.AzureService">
-      <Member Id="M:Microsoft.Bot.Configuration.AzureService.#ctor(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.AzureService.ResourceGroup" />
-      <Member Id="P:Microsoft.Bot.Configuration.AzureService.ServiceName" />
-      <Member Id="P:Microsoft.Bot.Configuration.AzureService.SubscriptionId" />
-      <Member Id="P:Microsoft.Bot.Configuration.AzureService.TenantId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.BlobStorageService" Id="T:Microsoft.Bot.Configuration.BlobStorageService">
-      <Member Id="M:Microsoft.Bot.Configuration.BlobStorageService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.BlobStorageService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BlobStorageService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.BlobStorageService.ConnectionString" />
-      <Member Id="P:Microsoft.Bot.Configuration.BlobStorageService.Container" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.BotConfiguration" Id="T:Microsoft.Bot.Configuration.BotConfiguration">
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.ClearSecret" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.ConnectService(Microsoft.Bot.Configuration.ConnectedService)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.DisconnectService(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.DisconnectServiceByNameOrId(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.DisconnectServiceByNameOrId``1(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.Encrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.FindService(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.FindServiceByNameOrId(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.FindServiceByNameOrId``1(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.GenerateKey" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.Load(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.LoadAsync(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolder(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolderAsync(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.MigrateData" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.Save(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAs(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAsAsync(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAsync(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfiguration.ValidateSecret(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotConfiguration.Description" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotConfiguration.Name" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotConfiguration.Padlock" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotConfiguration.Properties" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotConfiguration.Services" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotConfiguration.Version" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.BotConfigurationExtensions" Id="T:Microsoft.Bot.Configuration.BotConfigurationExtensions">
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.IsProjectNameSpaceless(Microsoft.Bot.Configuration.BotConfiguration,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateLuisKeyExistence(Microsoft.Bot.Configuration.BotConfiguration)" />
-      <Member Id="M:Microsoft.Bot.Configuration.BotConfigurationExtensions.ValidateQnAKeyExistence(Microsoft.Bot.Configuration.BotConfiguration)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.BotService" Id="T:Microsoft.Bot.Configuration.BotService">
-      <Member Id="M:Microsoft.Bot.Configuration.BotService.#ctor" />
-      <Member Id="P:Microsoft.Bot.Configuration.BotService.AppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.ConnectedService" Id="T:Microsoft.Bot.Configuration.ConnectedService">
-      <Member Id="M:Microsoft.Bot.Configuration.ConnectedService.#ctor(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.ConnectedService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.ConnectedService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.ConnectedService.Id" />
-      <Member Id="P:Microsoft.Bot.Configuration.ConnectedService.Name" />
-      <Member Id="P:Microsoft.Bot.Configuration.ConnectedService.Properties" />
-      <Member Id="P:Microsoft.Bot.Configuration.ConnectedService.Type" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.CosmosDbService" Id="T:Microsoft.Bot.Configuration.CosmosDbService">
-      <Member Id="M:Microsoft.Bot.Configuration.CosmosDbService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.CosmosDbService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.CosmosDbService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.CosmosDbService.Collection" />
-      <Member Id="P:Microsoft.Bot.Configuration.CosmosDbService.Database" />
-      <Member Id="P:Microsoft.Bot.Configuration.CosmosDbService.Endpoint" />
-      <Member Id="P:Microsoft.Bot.Configuration.CosmosDbService.Key" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.DispatchService" Id="T:Microsoft.Bot.Configuration.DispatchService">
-      <Member Id="M:Microsoft.Bot.Configuration.DispatchService.#ctor" />
-      <Member Id="P:Microsoft.Bot.Configuration.DispatchService.ServiceIds" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.EndpointService" Id="T:Microsoft.Bot.Configuration.EndpointService">
-      <Member Id="M:Microsoft.Bot.Configuration.EndpointService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.EndpointService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.EndpointService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.EndpointService.AppId" />
-      <Member Id="P:Microsoft.Bot.Configuration.EndpointService.AppPassword" />
-      <Member Id="P:Microsoft.Bot.Configuration.EndpointService.ChannelService" />
-      <Member Id="P:Microsoft.Bot.Configuration.EndpointService.Endpoint" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.FileService" Id="T:Microsoft.Bot.Configuration.FileService">
-      <Member Id="M:Microsoft.Bot.Configuration.FileService.#ctor" />
-      <Member Id="P:Microsoft.Bot.Configuration.FileService.Path" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.GenericService" Id="T:Microsoft.Bot.Configuration.GenericService">
-      <Member Id="M:Microsoft.Bot.Configuration.GenericService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.GenericService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.GenericService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.GenericService.Configuration" />
-      <Member Id="P:Microsoft.Bot.Configuration.GenericService.Url" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.LuisService" Id="T:Microsoft.Bot.Configuration.LuisService">
-      <Member Id="M:Microsoft.Bot.Configuration.LuisService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.LuisService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.LuisService.Encrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.LuisService.GetEndpoint" />
-      <Member Id="P:Microsoft.Bot.Configuration.LuisService.AppId" />
-      <Member Id="P:Microsoft.Bot.Configuration.LuisService.AuthoringKey" />
-      <Member Id="P:Microsoft.Bot.Configuration.LuisService.Region" />
-      <Member Id="P:Microsoft.Bot.Configuration.LuisService.SubscriptionKey" />
-      <Member Id="P:Microsoft.Bot.Configuration.LuisService.Version" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.QnAMakerService" Id="T:Microsoft.Bot.Configuration.QnAMakerService">
-      <Member Id="M:Microsoft.Bot.Configuration.QnAMakerService.#ctor" />
-      <Member Id="M:Microsoft.Bot.Configuration.QnAMakerService.Decrypt(System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.QnAMakerService.Encrypt(System.String)" />
-      <Member Id="P:Microsoft.Bot.Configuration.QnAMakerService.EndpointKey" />
-      <Member Id="P:Microsoft.Bot.Configuration.QnAMakerService.Hostname" />
-      <Member Id="P:Microsoft.Bot.Configuration.QnAMakerService.KbId" />
-      <Member Id="P:Microsoft.Bot.Configuration.QnAMakerService.SubscriptionKey" />
-    </Type>
-    <Type Name="Microsoft.Bot.Configuration.ServiceTypes" Id="T:Microsoft.Bot.Configuration.ServiceTypes">
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.AppInsights" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.BlobStorage" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.Bot" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.CosmosDB" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.Dispatch" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.Endpoint" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.File" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.Generic" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.Luis" />
-      <Member Id="F:Microsoft.Bot.Configuration.ServiceTypes.QnA" />
-      <Member Id="M:Microsoft.Bot.Configuration.ServiceTypes.#ctor" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Configuration.Encryption">
-    <Type Name="Microsoft.Bot.Configuration.Encryption.EncryptUtilities" Id="T:Microsoft.Bot.Configuration.Encryption.EncryptUtilities">
-      <Member Id="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Decrypt(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.DecryptStringFromBytes_Aes(System.Byte[],System.Byte[],System.Byte[])" />
-      <Member Id="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.Encrypt(System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.EncryptStringToBytes_Aes(System.String,System.Byte[],System.Byte[])" />
-      <Member Id="M:Microsoft.Bot.Configuration.Encryption.EncryptUtilities.GenerateKey" />
-    </Type>
-  </Namespace>
   <Namespace Name="Microsoft.Bot.Connector">
     <Type Name="Microsoft.Bot.Connector.Attachments" Id="T:Microsoft.Bot.Connector.Attachments">
       <Member Id="M:Microsoft.Bot.Connector.Attachments.#ctor(Microsoft.Bot.Connector.ConnectorClient)" />
@@ -2174,6 +2008,7 @@
       <Member Id="P:Microsoft.Bot.Connector.BotSignIn.Client" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.BotSignInExtensions" Id="T:Microsoft.Bot.Connector.BotSignInExtensions">
+      <Member Id="M:Microsoft.Bot.Connector.BotSignInExtensions.GetSignInResourceAsync(Microsoft.Bot.Connector.OAuthClient,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.BotSignInExtensions.GetSignInUrlAsync(Microsoft.Bot.Connector.IBotSignIn,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.Channels" Id="T:Microsoft.Bot.Connector.Channels">
@@ -2233,6 +2068,7 @@
       <Member Id="M:Microsoft.Bot.Connector.Conversations.DeleteConversationMemberWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.Conversations.GetActivityMembersWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.Conversations.GetConversationMembersWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Connector.Conversations.GetConversationMemberWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.Conversations.GetConversationPagedMembersWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.Conversations.GetConversationsWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.Conversations.ReplyToActivityWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
@@ -2251,6 +2087,7 @@
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteActivityAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.DeleteConversationMemberAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.GetActivityMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMemberAsync(Microsoft.Bot.Connector.Conversations,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationPagedMembersAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.ConversationsExtensions.GetConversationsAsync(Microsoft.Bot.Connector.IConversations,System.String,System.Threading.CancellationToken)" />
@@ -2320,6 +2157,8 @@
       <Member Id="M:Microsoft.Bot.Connector.OAuthClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.OAuthClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])" />
       <Member Id="M:Microsoft.Bot.Connector.OAuthClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
+      <Member Id="M:Microsoft.Bot.Connector.OAuthClient.ExchangeAsyncWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Connector.OAuthClient.GetSignInResourceWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Connector.OAuthClient.BaseUri" />
       <Member Id="P:Microsoft.Bot.Connector.OAuthClient.BotSignIn" />
       <Member Id="P:Microsoft.Bot.Connector.OAuthClient.Credentials" />
@@ -2352,6 +2191,7 @@
       <Member Id="P:Microsoft.Bot.Connector.UserToken.Client" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.UserTokenExtensions" Id="T:Microsoft.Bot.Connector.UserTokenExtensions">
+      <Member Id="M:Microsoft.Bot.Connector.UserTokenExtensions.ExchangeAsyncAsync(Microsoft.Bot.Connector.OAuthClient,System.String,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.UserTokenExtensions.GetAadTokensAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,Microsoft.Bot.Schema.AadResourceUrls,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Connector.UserTokenExtensions.GetTokenStatusAsync(Microsoft.Bot.Connector.IUserToken,System.String,System.String,System.String,System.Threading.CancellationToken)" />
@@ -2364,11 +2204,13 @@
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.GetTokenAsync(System.Boolean)" />
+      <Member Id="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.Microsoft#Bot#Connector#Authentication#IAuthenticator#GetTokenAsync(System.Boolean)" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.Authentication.AppCredentials" Id="T:Microsoft.Bot.Connector.Authentication.AppCredentials">
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.#ctor(System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.#ctor(System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger,System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.BuildAuthenticator" />
+      <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.BuildIAuthenticator" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.GetTokenAsync(System.Boolean)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.IsTrustedServiceUrl(System.String)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.AppCredentials.ProcessHttpRequestAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
@@ -2407,6 +2249,11 @@
       <Member Id="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.ToChannelFromBotLoginUrlTemplate" />
       <Member Id="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.ToChannelFromBotOAuthScope" />
       <Member Id="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.VersionClaim" />
+    </Type>
+    <Type Name="Microsoft.Bot.Connector.Authentication.AuthenticatorResult" Id="T:Microsoft.Bot.Connector.Authentication.AuthenticatorResult">
+      <Member Id="M:Microsoft.Bot.Connector.Authentication.AuthenticatorResult.#ctor" />
+      <Member Id="P:Microsoft.Bot.Connector.Authentication.AuthenticatorResult.AccessToken" />
+      <Member Id="P:Microsoft.Bot.Connector.Authentication.AuthenticatorResult.ExpiresOn" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.Authentication.CertificateAppCredentials" Id="T:Microsoft.Bot.Connector.Authentication.CertificateAppCredentials">
       <Member Id="M:Microsoft.Bot.Connector.Authentication.CertificateAppCredentials.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate,System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
@@ -2464,6 +2311,9 @@
       <Member Id="M:Microsoft.Bot.Connector.Authentication.GovernmentChannelValidation.ValidateIdentity(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Connector.Authentication.ICredentialProvider,System.String)" />
       <Member Id="P:Microsoft.Bot.Connector.Authentication.GovernmentChannelValidation.OpenIdMetadataUrl" />
     </Type>
+    <Type Name="Microsoft.Bot.Connector.Authentication.IAuthenticator" Id="T:Microsoft.Bot.Connector.Authentication.IAuthenticator">
+      <Member Id="M:Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync(System.Boolean)" />
+    </Type>
     <Type Name="Microsoft.Bot.Connector.Authentication.IChannelProvider" Id="T:Microsoft.Bot.Connector.Authentication.IChannelProvider">
       <Member Id="M:Microsoft.Bot.Connector.Authentication.IChannelProvider.GetChannelServiceAsync" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.IChannelProvider.IsGovernment" />
@@ -2510,8 +2360,8 @@
       <Member Id="F:Microsoft.Bot.Connector.Authentication.MicrosoftGovernmentAppCredentials.Empty" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.MicrosoftGovernmentAppCredentials.#ctor(System.String,System.String,System.Net.Http.HttpClient)" />
       <Member Id="M:Microsoft.Bot.Connector.Authentication.MicrosoftGovernmentAppCredentials.#ctor(System.String,System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Connector.Authentication.MicrosoftGovernmentAppCredentials.#ctor(System.String,System.String,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger,System.String)" />
       <Member Id="P:Microsoft.Bot.Connector.Authentication.MicrosoftGovernmentAppCredentials.OAuthEndpoint" />
-      <Member Id="P:Microsoft.Bot.Connector.Authentication.MicrosoftGovernmentAppCredentials.OAuthScope" />
     </Type>
     <Type Name="Microsoft.Bot.Connector.Authentication.OAuthConfiguration" Id="T:Microsoft.Bot.Connector.Authentication.OAuthConfiguration">
       <Member Id="M:Microsoft.Bot.Connector.Authentication.OAuthConfiguration.#ctor" />
@@ -2898,6 +2748,8 @@
       <Member Id="P:Microsoft.Bot.Schema.ConversationsResult.Conversations" />
     </Type>
     <Type Name="Microsoft.Bot.Schema.DeliveryModes" Id="T:Microsoft.Bot.Schema.DeliveryModes">
+      <Member Id="F:Microsoft.Bot.Schema.DeliveryModes.Ephemeral" />
+      <Member Id="F:Microsoft.Bot.Schema.DeliveryModes.ExpectReplies" />
       <Member Id="F:Microsoft.Bot.Schema.DeliveryModes.Normal" />
       <Member Id="F:Microsoft.Bot.Schema.DeliveryModes.Notification" />
     </Type>
@@ -2948,6 +2800,11 @@
       <Member Id="P:Microsoft.Bot.Schema.ErrorResponseException.Request" />
       <Member Id="P:Microsoft.Bot.Schema.ErrorResponseException.Response" />
     </Type>
+    <Type Name="Microsoft.Bot.Schema.ExpectedReplies" Id="T:Microsoft.Bot.Schema.ExpectedReplies">
+      <Member Id="M:Microsoft.Bot.Schema.ExpectedReplies.#ctor" />
+      <Member Id="M:Microsoft.Bot.Schema.ExpectedReplies.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Schema.Activity})" />
+      <Member Id="P:Microsoft.Bot.Schema.ExpectedReplies.Activities" />
+    </Type>
     <Type Name="Microsoft.Bot.Schema.Extensions" Id="T:Microsoft.Bot.Schema.Extensions">
       <Member Id="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.AnimationCard)" />
       <Member Id="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.AudioCard)" />
@@ -2971,6 +2828,10 @@
       <Member Id="P:Microsoft.Bot.Schema.GeoCoordinates.Longitude" />
       <Member Id="P:Microsoft.Bot.Schema.GeoCoordinates.Name" />
       <Member Id="P:Microsoft.Bot.Schema.GeoCoordinates.Type" />
+    </Type>
+    <Type Name="Microsoft.Bot.Schema.HandoffEventNames" Id="T:Microsoft.Bot.Schema.HandoffEventNames">
+      <Member Id="F:Microsoft.Bot.Schema.HandoffEventNames.HandoffStatus" />
+      <Member Id="F:Microsoft.Bot.Schema.HandoffEventNames.InitiateHandoff" />
     </Type>
     <Type Name="Microsoft.Bot.Schema.HeroCard" Id="T:Microsoft.Bot.Schema.HeroCard">
       <Member Id="F:Microsoft.Bot.Schema.HeroCard.ContentType" />
@@ -3150,6 +3011,7 @@
       <Member Id="P:Microsoft.Bot.Schema.OAuthCard.Buttons" />
       <Member Id="P:Microsoft.Bot.Schema.OAuthCard.ConnectionName" />
       <Member Id="P:Microsoft.Bot.Schema.OAuthCard.Text" />
+      <Member Id="P:Microsoft.Bot.Schema.OAuthCard.TokenExchangeResource" />
     </Type>
     <Type Name="Microsoft.Bot.Schema.PagedMembersResult" Id="T:Microsoft.Bot.Schema.PagedMembersResult">
       <Member Id="M:Microsoft.Bot.Schema.PagedMembersResult.#ctor" />
@@ -3344,6 +3206,17 @@
       <Member Id="P:Microsoft.Bot.Schema.SigninCard.Buttons" />
       <Member Id="P:Microsoft.Bot.Schema.SigninCard.Text" />
     </Type>
+    <Type Name="Microsoft.Bot.Schema.SignInConstants" Id="T:Microsoft.Bot.Schema.SignInConstants">
+      <Member Id="F:Microsoft.Bot.Schema.SignInConstants.TokenExchangeOperationName" />
+      <Member Id="F:Microsoft.Bot.Schema.SignInConstants.TokenResponseEventName" />
+      <Member Id="F:Microsoft.Bot.Schema.SignInConstants.VerifyStateOperationName" />
+    </Type>
+    <Type Name="Microsoft.Bot.Schema.SignInResource" Id="T:Microsoft.Bot.Schema.SignInResource">
+      <Member Id="M:Microsoft.Bot.Schema.SignInResource.#ctor" />
+      <Member Id="M:Microsoft.Bot.Schema.SignInResource.#ctor(System.String,Microsoft.Bot.Schema.TokenExchangeResource)" />
+      <Member Id="P:Microsoft.Bot.Schema.SignInResource.SignInLink" />
+      <Member Id="P:Microsoft.Bot.Schema.SignInResource.TokenExchangeResource" />
+    </Type>
     <Type Name="Microsoft.Bot.Schema.SuggestedActions" Id="T:Microsoft.Bot.Schema.SuggestedActions">
       <Member Id="M:Microsoft.Bot.Schema.SuggestedActions.#ctor" />
       <Member Id="M:Microsoft.Bot.Schema.SuggestedActions.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.CardAction})" />
@@ -3385,12 +3258,40 @@
       <Member Id="P:Microsoft.Bot.Schema.ThumbnailUrl.Alt" />
       <Member Id="P:Microsoft.Bot.Schema.ThumbnailUrl.Url" />
     </Type>
+    <Type Name="Microsoft.Bot.Schema.TokenExchangeInvokeRequest" Id="T:Microsoft.Bot.Schema.TokenExchangeInvokeRequest">
+      <Member Id="M:Microsoft.Bot.Schema.TokenExchangeInvokeRequest.#ctor" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeRequest.ConnectionName" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeRequest.Id" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeRequest.Properties" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeRequest.Token" />
+    </Type>
+    <Type Name="Microsoft.Bot.Schema.TokenExchangeInvokeResponse" Id="T:Microsoft.Bot.Schema.TokenExchangeInvokeResponse">
+      <Member Id="M:Microsoft.Bot.Schema.TokenExchangeInvokeResponse.#ctor" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeResponse.ConnectionName" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeResponse.FailureDetail" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeResponse.Id" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeInvokeResponse.Properties" />
+    </Type>
+    <Type Name="Microsoft.Bot.Schema.TokenExchangeRequest" Id="T:Microsoft.Bot.Schema.TokenExchangeRequest">
+      <Member Id="M:Microsoft.Bot.Schema.TokenExchangeRequest.#ctor" />
+      <Member Id="M:Microsoft.Bot.Schema.TokenExchangeRequest.#ctor(System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeRequest.Token" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeRequest.Uri" />
+    </Type>
+    <Type Name="Microsoft.Bot.Schema.TokenExchangeResource" Id="T:Microsoft.Bot.Schema.TokenExchangeResource">
+      <Member Id="M:Microsoft.Bot.Schema.TokenExchangeResource.#ctor" />
+      <Member Id="M:Microsoft.Bot.Schema.TokenExchangeResource.#ctor(System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeResource.Id" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeResource.ProviderId" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeResource.Uri" />
+    </Type>
     <Type Name="Microsoft.Bot.Schema.TokenExchangeState" Id="T:Microsoft.Bot.Schema.TokenExchangeState">
       <Member Id="M:Microsoft.Bot.Schema.TokenExchangeState.#ctor" />
       <Member Id="P:Microsoft.Bot.Schema.TokenExchangeState.BotUrl" />
       <Member Id="P:Microsoft.Bot.Schema.TokenExchangeState.ConnectionName" />
       <Member Id="P:Microsoft.Bot.Schema.TokenExchangeState.Conversation" />
       <Member Id="P:Microsoft.Bot.Schema.TokenExchangeState.MsAppId" />
+      <Member Id="P:Microsoft.Bot.Schema.TokenExchangeState.RelatesTo" />
     </Type>
     <Type Name="Microsoft.Bot.Schema.TokenPollingSettings" Id="T:Microsoft.Bot.Schema.TokenPollingSettings">
       <Member Id="M:Microsoft.Bot.Schema.TokenPollingSettings.#ctor" />
@@ -3820,7 +3721,9 @@
       <Member Id="M:Microsoft.Bot.Schema.Teams.TeamDetails.#ctor" />
       <Member Id="M:Microsoft.Bot.Schema.Teams.TeamDetails.#ctor(System.String,System.String,System.String)" />
       <Member Id="P:Microsoft.Bot.Schema.Teams.TeamDetails.AadGroupId" />
+      <Member Id="P:Microsoft.Bot.Schema.Teams.TeamDetails.ChannelCount" />
       <Member Id="P:Microsoft.Bot.Schema.Teams.TeamDetails.Id" />
+      <Member Id="P:Microsoft.Bot.Schema.Teams.TeamDetails.MemberCount" />
       <Member Id="P:Microsoft.Bot.Schema.Teams.TeamDetails.Name" />
     </Type>
     <Type Name="Microsoft.Bot.Schema.Teams.TeamInfo" Id="T:Microsoft.Bot.Schema.Teams.TeamInfo">
@@ -3845,6 +3748,12 @@
       <Member Id="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Notification" />
       <Member Id="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Team" />
       <Member Id="P:Microsoft.Bot.Schema.Teams.TeamsChannelData.Tenant" />
+    </Type>
+    <Type Name="Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult" Id="T:Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult">
+      <Member Id="M:Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult.#ctor" />
+      <Member Id="M:Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount})" />
+      <Member Id="P:Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult.ContinuationToken" />
+      <Member Id="P:Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult.Members" />
     </Type>
     <Type Name="Microsoft.Bot.Schema.Teams.TenantInfo" Id="T:Microsoft.Bot.Schema.Teams.TenantInfo">
       <Member Id="M:Microsoft.Bot.Schema.Teams.TenantInfo.#ctor" />
@@ -4188,6 +4097,7 @@
       <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.#ctor(System.String,Microsoft.Bot.Streaming.RequestHandler,System.Object)" />
       <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.ConnectAsync" />
       <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.ConnectAsync(System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.ConnectAsyncEx(System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.Disconnect" />
       <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.Dispose" />
       <Member Id="M:Microsoft.Bot.Streaming.Transport.WebSockets.WebSocketClient.SendAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />

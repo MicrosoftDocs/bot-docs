@@ -9,6 +9,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -47,9 +49,10 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.ITelemetryRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeAsync (turnContext As ITurnContext, telemetryProperties As Dictionary(Of String, String), telemetryMetrics As Dictionary(Of String, Double), Optional cancellationToken As CancellationToken = null) As Task(Of RecognizerResult)" />
       <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="iTelemetryRecognizer.RecognizeAsync (turnContext, telemetryProperties, telemetryMetrics, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -57,6 +60,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -80,9 +84,10 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = null) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.ITelemetryRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task(Of T)" />
       <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="iTelemetryRecognizer.RecognizeAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -93,6 +98,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -121,9 +127,10 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics, System.Threading.CancellationToken cancellationToken = null) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics, System.Threading.CancellationToken cancellationToken = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.ITelemetryRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (turnContext As ITurnContext, telemetryProperties As Dictionary(Of String, String), telemetryMetrics As Dictionary(Of String, Double), Optional cancellationToken As CancellationToken = null) As Task(Of T)" />
       <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="iTelemetryRecognizer.RecognizeAsync (turnContext, telemetryProperties, telemetryMetrics, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -131,6 +138,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -172,6 +180,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>

@@ -633,6 +633,7 @@
       <MemberSignature Language="C#" Value="public static void ValidateNeed (this Microsoft.Bot.Builder.Internals.Fibers.IWait wait, Microsoft.Bot.Builder.Internals.Fibers.Need need);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateNeed(class Microsoft.Bot.Builder.Internals.Fibers.IWait wait, valuetype Microsoft.Bot.Builder.Internals.Fibers.Need need) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ValidateNeed (wait As IWait, need As Need)" />
       <MemberSignature Language="F#" Value="static member ValidateNeed : Microsoft.Bot.Builder.Internals.Fibers.IWait * Microsoft.Bot.Builder.Internals.Fibers.Need -&gt; unit" Usage="Microsoft.Bot.Builder.Internals.Fibers.Extensions.ValidateNeed (wait, need)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

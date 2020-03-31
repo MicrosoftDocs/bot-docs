@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,6 +25,44 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Ephemeral">
+      <MemberSignature Language="C#" Value="public const string Ephemeral;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Ephemeral" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.DeliveryModes.Ephemeral" />
+      <MemberSignature Language="VB.NET" Value="Public Const Ephemeral As String " />
+      <MemberSignature Language="F#" Value="val mutable Ephemeral : string" Usage="Microsoft.Bot.Schema.DeliveryModes.Ephemeral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpectReplies">
+      <MemberSignature Language="C#" Value="public const string ExpectReplies;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ExpectReplies" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.DeliveryModes.ExpectReplies" />
+      <MemberSignature Language="VB.NET" Value="Public Const ExpectReplies As String " />
+      <MemberSignature Language="F#" Value="val mutable ExpectReplies : string" Usage="Microsoft.Bot.Schema.DeliveryModes.ExpectReplies" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Normal">
       <MemberSignature Language="C#" Value="public const string Normal;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Normal" />
@@ -39,6 +78,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -63,6 +103,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

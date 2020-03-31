@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AnimationCard (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Connector.ThumbnailUrl image = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; media = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = null, Nullable&lt;bool&gt; shareable = null, Nullable&lt;bool&gt; autoloop = null, Nullable&lt;bool&gt; autostart = null, string aspect = null, object value = null, string duration = null);" />
+      <MemberSignature Language="C#" Value="public AnimationCard (string title = default, string subtitle = default, string text = default, Microsoft.Bot.Connector.ThumbnailUrl image = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MediaUrl&gt; media = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = default, bool? shareable = default, bool? autoloop = default, bool? autostart = default, string aspect = default, object value = default, string duration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Connector.ThumbnailUrl image, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MediaUrl&gt; media, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons, valuetype System.Nullable`1&lt;bool&gt; shareable, valuetype System.Nullable`1&lt;bool&gt; autoloop, valuetype System.Nullable`1&lt;bool&gt; autostart, string aspect, object value, string duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AnimationCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Connector.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As ThumbnailUrl = null, Optional media As IList(Of MediaUrl) = null, Optional buttons As IList(Of CardAction) = null, Optional shareable As Nullable(Of Boolean) = null, Optional autoloop As Nullable(Of Boolean) = null, Optional autostart As Nullable(Of Boolean) = null, Optional aspect As String = null, Optional value As Object = null, Optional duration As String = null)" />
@@ -108,7 +108,7 @@
       </Docs>
     </Member>
     <Member MemberName="Autoloop">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Autoloop { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Autoloop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Autoloop" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AnimationCard.Autoloop" />
       <MemberSignature Language="VB.NET" Value="Public Property Autoloop As Nullable(Of Boolean)" />
@@ -135,7 +135,7 @@
       </Docs>
     </Member>
     <Member MemberName="Autostart">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Autostart { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Autostart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Autostart" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AnimationCard.Autostart" />
       <MemberSignature Language="VB.NET" Value="Public Property Autostart As Nullable(Of Boolean)" />
@@ -290,7 +290,7 @@
       </Docs>
     </Member>
     <Member MemberName="Shareable">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Shareable { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Shareable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Shareable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AnimationCard.Shareable" />
       <MemberSignature Language="VB.NET" Value="Public Property Shareable As Nullable(Of Boolean)" />

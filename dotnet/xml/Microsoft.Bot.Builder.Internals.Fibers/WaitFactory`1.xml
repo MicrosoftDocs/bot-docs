@@ -55,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`2&lt;!C, !!T&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;.Make&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.WaitFactory`1.Microsoft#Bot#Builder#Internals#Fibers#IWaitFactory&lt;C&gt;#Make``1" />
       <MemberSignature Language="VB.NET" Value="Function Make(Of T) () As IWait(Of C, T) Implements IWaitFactory(Of C).Make" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;.Make : unit -&gt; Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C, 'T&gt;&#xA;override this.Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;.Make : unit -&gt; Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C, 'T&gt;" Usage="waitFactory.Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory&lt;C&gt;.Make " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IWaitFactory`1.Make``1</InterfaceMember>
