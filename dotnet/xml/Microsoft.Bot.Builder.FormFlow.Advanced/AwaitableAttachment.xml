@@ -41,6 +41,7 @@
       <MemberSignature Language="C#" Value="public AwaitableAttachment (Microsoft.Bot.Connector.Attachment attachment);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Attachment attachment) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.AwaitableAttachment.#ctor(Microsoft.Bot.Connector.Attachment)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attachment As Attachment)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.AwaitableAttachment : Microsoft.Bot.Connector.Attachment -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.AwaitableAttachment" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.AwaitableAttachment attachment" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

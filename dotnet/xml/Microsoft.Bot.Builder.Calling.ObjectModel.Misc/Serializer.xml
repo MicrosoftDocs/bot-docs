@@ -53,6 +53,7 @@
       <MemberSignature Language="C#" Value="public static T DeserializeFromJToken&lt;T&gt; (Newtonsoft.Json.Linq.JToken jToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DeserializeFromJToken&lt;T&gt;(class Newtonsoft.Json.Linq.JToken jToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJToken``1(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeserializeFromJToken(Of T) (jToken As JToken) As T" />
       <MemberSignature Language="F#" Value="static member DeserializeFromJToken : Newtonsoft.Json.Linq.JToken -&gt; 'T" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.DeserializeFromJToken jToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -69,10 +70,8 @@
         <Parameter Name="jToken" Type="Newtonsoft.Json.Linq.JToken" />
       </Parameters>
       <Docs>
-        <typeparam name="T">
-        </typeparam>
-        <param name="jToken">
-        </param>
+        <typeparam name="T" />
+        <param name="jToken" />
         <summary>
             Deserialize from JToken
             </summary>
@@ -84,6 +83,7 @@
       <MemberSignature Language="C#" Value="public static Newtonsoft.Json.JsonSerializerSettings GetSerializerSettings (Newtonsoft.Json.Formatting formatting = Newtonsoft.Json.Formatting.None);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.JsonSerializerSettings GetSerializerSettings(valuetype Newtonsoft.Json.Formatting formatting) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.GetSerializerSettings(Newtonsoft.Json.Formatting)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSerializerSettings (Optional formatting As Formatting = Newtonsoft.Json.Formatting.None) As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="static member GetSerializerSettings : Newtonsoft.Json.Formatting -&gt; Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Serializer.GetSerializerSettings formatting" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -151,8 +151,7 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">
-        </param>
+        <param name="obj" />
         <summary>
             Serialize to JToken
             </summary>

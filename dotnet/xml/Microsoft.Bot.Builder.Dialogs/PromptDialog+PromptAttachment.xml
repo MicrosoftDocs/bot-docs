@@ -29,7 +29,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PromptAttachment (string prompt, string retry, int attempts, System.Collections.Generic.IEnumerable&lt;string&gt; contentTypes = null);" />
+      <MemberSignature Language="C#" Value="public PromptAttachment (string prompt, string retry, int attempts, System.Collections.Generic.IEnumerable&lt;string&gt; contentTypes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contentTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptAttachment.#ctor(System.String,System.String,System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional contentTypes As IEnumerable(Of String) = null)" />

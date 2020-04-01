@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Details related to a team
+            Details related to a team.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,17 +29,18 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
-            Initializes a new instance of the TeamDetails class.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Schema.Teams.TeamDetails" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TeamDetails (string id = null, string name = null, string aadGroupId = null);" />
+      <MemberSignature Language="C#" Value="public TeamDetails (string id = default, string name = default, string aadGroupId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string aadGroupId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamDetails.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional aadGroupId As String = null)" />
@@ -47,19 +49,25 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the parameter initialization method instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="aadGroupId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">Unique identifier representing a team</param>
+        <param name="id">Unique identifier representing a team.</param>
         <param name="name">Name of team.</param>
-        <param name="aadGroupId">Azure Active Directory (AAD) Group Id for
-            the team.</param>
+        <param name="aadGroupId">Azure Active Directory (AAD) Group Id for.
+            </param>
         <summary>
-            Initializes a new instance of the TeamDetails class.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Schema.Teams.TeamDetails" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -74,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -87,7 +96,38 @@
         <summary>
             Gets or sets azure Active Directory (AAD) Group Id for the team.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The AAD Group Id.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelCount">
+      <MemberSignature Language="C#" Value="public int ChannelCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChannelCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamDetails.ChannelCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChannelCount : int with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamDetails.ChannelCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelCount")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the number of channels in the team.
+            </summary>
+        <value>
+            The number of channels in the team.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,6 +141,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,9 +153,40 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets unique identifier representing a team
+            Gets or sets unique identifier representing a team.
             </summary>
-        <value>To be added.</value>
+        <value>
+            The team Id.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberCount">
+      <MemberSignature Language="C#" Value="public int MemberCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MemberCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamDetails.MemberCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MemberCount : int with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamDetails.MemberCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="memberCount")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the number of members in the team.
+            </summary>
+        <value>
+            The number of members in the team.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -141,7 +214,9 @@
         <summary>
             Gets or sets name of team.
             </summary>
-        <value>To be added.</value>
+        <value>
+            Name of team.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -43,6 +44,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,9 +55,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PaymentRequestComplete (string id = null, Microsoft.Bot.Schema.PaymentRequest paymentRequest = null, Microsoft.Bot.Schema.PaymentResponse paymentResponse = null);" />
+      <MemberSignature Language="C#" Value="public PaymentRequestComplete (string id = default, Microsoft.Bot.Schema.PaymentRequest paymentRequest = default, Microsoft.Bot.Schema.PaymentResponse paymentResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class Microsoft.Bot.Schema.PaymentRequest paymentRequest, class Microsoft.Bot.Schema.PaymentResponse paymentResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.PaymentRequestComplete.#ctor(System.String,Microsoft.Bot.Schema.PaymentRequest,Microsoft.Bot.Schema.PaymentResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional paymentRequest As PaymentRequest = null, Optional paymentResponse As PaymentResponse = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.PaymentRequestComplete : string * Microsoft.Bot.Schema.PaymentRequest * Microsoft.Bot.Schema.PaymentResponse -&gt; Microsoft.Bot.Schema.PaymentRequestComplete" Usage="new Microsoft.Bot.Schema.PaymentRequestComplete (id, paymentRequest, paymentResponse)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -66,6 +69,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -98,6 +102,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -130,6 +135,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -162,6 +168,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

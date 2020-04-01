@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName="End">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; End { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? End { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; End" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.End" />
       <MemberSignature Language="VB.NET" Value="Public Property End As Nullable(Of DateTime)" />
@@ -82,7 +82,7 @@
       </Docs>
     </Member>
     <Member MemberName="Start">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; Start { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? Start { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Start" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ChronoDurationResolution.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As Nullable(Of DateTime)" />

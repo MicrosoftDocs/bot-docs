@@ -41,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="BargeInAllowed">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; BargeInAllowed { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? BargeInAllowed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; BargeInAllowed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.BargeInAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Property BargeInAllowed As Nullable(Of Boolean)" />
@@ -124,7 +124,7 @@
       </Docs>
     </Member>
     <Member MemberName="Culture">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; Culture { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture? Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As Nullable(Of Culture)" />
@@ -151,7 +151,7 @@
       </Docs>
     </Member>
     <Member MemberName="InitialSilenceTimeoutInSeconds">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; InitialSilenceTimeoutInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? InitialSilenceTimeoutInSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; InitialSilenceTimeoutInSeconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InitialSilenceTimeoutInSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialSilenceTimeoutInSeconds As Nullable(Of Double)" />
@@ -183,7 +183,7 @@
       </Docs>
     </Member>
     <Member MemberName="InterdigitTimeoutInSeconds">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; InterdigitTimeoutInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? InterdigitTimeoutInSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; InterdigitTimeoutInSeconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Recognize.InterdigitTimeoutInSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property InterdigitTimeoutInSeconds As Nullable(Of Double)" />

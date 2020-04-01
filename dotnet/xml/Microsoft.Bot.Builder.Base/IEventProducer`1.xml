@@ -25,9 +25,10 @@
   </Docs>
   <Members>
     <Member MemberName="Post">
-      <MemberSignature Language="C#" Value="public void Post (Event event, Action onPull = null);" />
+      <MemberSignature Language="C#" Value="public void Post (Event event, Action onPull = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Post(!Event event, class System.Action onPull) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.IEventProducer`1.Post(`0,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Post (event As Event, Optional onPull As Action = null)" />
       <MemberSignature Language="F#" Value="abstract member Post : 'Event * Action -&gt; unit" Usage="iEventProducer.Post (event, onPull)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

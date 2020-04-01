@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,14 +21,16 @@
   </Docs>
   <Members>
     <Member MemberName="ToMessagingExtensionAttachment">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment ToMessagingExtensionAttachment (this Microsoft.Bot.Schema.Attachment attachment, Microsoft.Bot.Schema.Attachment previewAttachment = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment ToMessagingExtensionAttachment (this Microsoft.Bot.Schema.Attachment attachment, Microsoft.Bot.Schema.Attachment previewAttachment = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment ToMessagingExtensionAttachment(class Microsoft.Bot.Schema.Attachment attachment, class Microsoft.Bot.Schema.Attachment previewAttachment) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.AttachmentExtensions.ToMessagingExtensionAttachment(Microsoft.Bot.Schema.Attachment,Microsoft.Bot.Schema.Attachment)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToMessagingExtensionAttachment (attachment As Attachment, Optional previewAttachment As Attachment = null) As MessagingExtensionAttachment" />
       <MemberSignature Language="F#" Value="static member ToMessagingExtensionAttachment : Microsoft.Bot.Schema.Attachment * Microsoft.Bot.Schema.Attachment -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment" Usage="Microsoft.Bot.Schema.Teams.AttachmentExtensions.ToMessagingExtensionAttachment (attachment, previewAttachment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment</ReturnType>
