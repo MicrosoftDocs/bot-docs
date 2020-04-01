@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OAuthCard (string text = null, string connectionName = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = null);" />
+      <MemberSignature Language="C#" Value="public OAuthCard (string text = default, string connectionName = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string connectionName, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.OAuthCard.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional connectionName As String = null, Optional buttons As IList(Of CardAction) = null)" />
@@ -62,6 +64,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
@@ -94,6 +97,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -126,6 +130,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -158,6 +163,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -182,6 +188,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -194,6 +201,28 @@
       <Docs>
         <summary>
             Gets or sets text for signin request
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenExchangeResource">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.TokenExchangeResource TokenExchangeResource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.TokenExchangeResource TokenExchangeResource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.OAuthCard.TokenExchangeResource" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenExchangeResource As TokenExchangeResource" />
+      <MemberSignature Language="F#" Value="member this.TokenExchangeResource : Microsoft.Bot.Schema.TokenExchangeResource with get, set" Usage="Microsoft.Bot.Schema.OAuthCard.TokenExchangeResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.TokenExchangeResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The resource to try to perform token exchange with
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

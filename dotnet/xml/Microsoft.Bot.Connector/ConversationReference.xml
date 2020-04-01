@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConversationReference (string activityId = null, Microsoft.Bot.Connector.ChannelAccount user = null, Microsoft.Bot.Connector.ChannelAccount bot = null, Microsoft.Bot.Connector.ConversationAccount conversation = null, string channelId = null, string serviceUrl = null);" />
+      <MemberSignature Language="C#" Value="public ConversationReference (string activityId = default, Microsoft.Bot.Connector.ChannelAccount user = default, Microsoft.Bot.Connector.ChannelAccount bot = default, Microsoft.Bot.Connector.ConversationAccount conversation = default, string channelId = default, string serviceUrl = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string activityId, class Microsoft.Bot.Connector.ChannelAccount user, class Microsoft.Bot.Connector.ChannelAccount bot, class Microsoft.Bot.Connector.ConversationAccount conversation, string channelId, string serviceUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activityId As String = null, Optional user As ChannelAccount = null, Optional bot As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional channelId As String = null, Optional serviceUrl As String = null)" />

@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OAuthCard (string text = null, string connectionName = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = null);" />
+      <MemberSignature Language="C#" Value="public OAuthCard (string text = default, string connectionName = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string connectionName, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthCard.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional connectionName As String = null, Optional buttons As IList(Of CardAction) = null)" />

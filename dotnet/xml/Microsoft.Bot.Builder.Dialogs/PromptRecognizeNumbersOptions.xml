@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="IntegerOnly">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IntegerOnly { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IntegerOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IntegerOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.IntegerOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IntegerOnly As Nullable(Of Boolean)" />
@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxValue { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MaxValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxValue As Nullable(Of Double)" />
@@ -96,7 +96,7 @@
       </Docs>
     </Member>
     <Member MemberName="MinValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MinValue { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MinValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MinValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptRecognizeNumbersOptions.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Property MinValue As Nullable(Of Double)" />

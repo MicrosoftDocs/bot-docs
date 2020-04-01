@@ -62,6 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1&lt;!T&gt; Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;.GetAwaiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Dialogs#IAwaitable&lt;T&gt;#GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Function GetAwaiter () As IAwaiter(Of T) Implements IAwaitable(Of T).GetAwaiter" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;.GetAwaiter : unit -&gt; Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;'T&gt;&#xA;override this.Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;.GetAwaiter : unit -&gt; Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;'T&gt;" Usage="awaitableFromItem.Microsoft.Bot.Builder.Dialogs.IAwaitable&lt;T&gt;.GetAwaiter " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IAwaitable`1.GetAwaiter</InterfaceMember>
@@ -87,6 +88,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !T Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.GetResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#GetResult" />
       <MemberSignature Language="VB.NET" Value="Function GetResult () As T Implements IAwaiter(Of T).GetResult" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.GetResult : unit -&gt; 'T&#xA;override this.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.GetResult : unit -&gt; 'T" Usage="awaitableFromItem.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.GetResult " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.GetResult</InterfaceMember>
@@ -112,7 +114,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.Microsoft#Bot#Builder#Internals#Fibers#IAwaiter&lt;T&gt;#IsCompleted" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsCompleted As Boolean Implements IAwaiter(Of T).IsCompleted" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted : bool" Usage="Microsoft.Bot.Builder.Internals.Fibers.IAwaiter&lt;T&gt;.IsCompleted" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IAwaiter`1.IsCompleted</InterfaceMember>
@@ -137,6 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(class System.Action continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.AwaitableFromItem`1.System#Runtime#CompilerServices#INotifyCompletion#OnCompleted(System.Action)" />
       <MemberSignature Language="VB.NET" Value="Sub OnCompleted (continuation As Action) Implements INotifyCompletion.OnCompleted" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.CompilerServices.INotifyCompletion.OnCompleted : Action -&gt; unit&#xA;override this.System.Runtime.CompilerServices.INotifyCompletion.OnCompleted : Action -&gt; unit" Usage="awaitableFromItem.System.Runtime.CompilerServices.INotifyCompletion.OnCompleted continuation" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)</InterfaceMember>

@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,6 +22,11 @@
       <InterfaceName>Microsoft.Bot.Builder.IStorage</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This class is deprecated. Please use CosmosDbPartitionedStorage instead.", false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Implements an CosmosDB based storage provider for a bot.
@@ -32,6 +38,7 @@
       <MemberSignature Language="C#" Value="public CosmosDbStorage (Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions cosmosDbStorageOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions cosmosDbStorageOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.#ctor(Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cosmosDbStorageOptions As CosmosDbStorageOptions)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbStorage : Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions -&gt; Microsoft.Bot.Builder.Azure.CosmosDbStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbStorage cosmosDbStorageOptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -42,6 +49,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
@@ -59,6 +67,7 @@
       <MemberSignature Language="C#" Value="public CosmosDbStorage (Microsoft.Azure.Documents.IDocumentClient documentClient, Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions cosmosDbCustomClientOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Documents.IDocumentClient documentClient, class Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions cosmosDbCustomClientOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.#ctor(Microsoft.Azure.Documents.IDocumentClient,Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (documentClient As IDocumentClient, cosmosDbCustomClientOptions As CosmosDbCustomClientOptions)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbStorage : Microsoft.Azure.Documents.IDocumentClient * Microsoft.Bot.Builder.Azure.CosmosDbCustomClientOptions -&gt; Microsoft.Bot.Builder.Azure.CosmosDbStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbStorage (documentClient, cosmosDbCustomClientOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -68,6 +77,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="documentClient" Type="Microsoft.Azure.Documents.IDocumentClient" />
@@ -88,6 +98,7 @@
       <MemberSignature Language="C#" Value="public CosmosDbStorage (Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions cosmosDbStorageOptions, Newtonsoft.Json.JsonSerializer jsonSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions cosmosDbStorageOptions, class Newtonsoft.Json.JsonSerializer jsonSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.#ctor(Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cosmosDbStorageOptions As CosmosDbStorageOptions, jsonSerializer As JsonSerializer)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.CosmosDbStorage : Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions * Newtonsoft.Json.JsonSerializer -&gt; Microsoft.Bot.Builder.Azure.CosmosDbStorage" Usage="new Microsoft.Bot.Builder.Azure.CosmosDbStorage (cosmosDbStorageOptions, jsonSerializer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -95,6 +106,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
@@ -115,6 +127,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAsync (string[] keys, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.DeleteAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteAsync (keys As String(), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cosmosDbStorage.DeleteAsync (keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -128,6 +141,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -153,6 +167,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; ReadAsync (string[] keys, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; ReadAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.ReadAsync(System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadAsync (keys As String(), cancellationToken As CancellationToken) As Task(Of IDictionary(Of String, Object))" />
       <MemberSignature Language="F#" Value="abstract member ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;&#xA;override this.ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;" Usage="cosmosDbStorage.ReadAsync (keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -166,6 +181,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -203,6 +219,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -230,6 +247,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (System.Collections.Generic.IDictionary&lt;string,object&gt; changes, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; changes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteAsync (changes As IDictionary(Of String, Object), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cosmosDbStorage.WriteAsync (changes, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -243,6 +261,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

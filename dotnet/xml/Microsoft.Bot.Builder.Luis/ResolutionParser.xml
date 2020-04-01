@@ -46,6 +46,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; properties, [out] class Microsoft.Bot.Builder.Luis.Resolution&amp; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ResolutionParser.Microsoft#Bot#Builder#Luis#IResolutionParser#TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)" />
       <MemberSignature Language="VB.NET" Value="Function TryParse (properties As IDictionary(Of String, Object), ByRef resolution As Resolution) As Boolean Implements IResolutionParser.TryParse" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse : System.Collections.Generic.IDictionary&lt;string, obj&gt; * Resolution -&gt; bool&#xA;override this.Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse : System.Collections.Generic.IDictionary&lt;string, obj&gt; * Resolution -&gt; bool" Usage="resolutionParser.Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse (properties, resolution)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Luis.IResolutionParser.TryParse(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Luis.Resolution@)</InterfaceMember>

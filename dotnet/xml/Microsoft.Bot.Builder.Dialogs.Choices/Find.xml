@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
   </Docs>
   <Members>
     <Member MemberName="FindChoices">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; FindChoices (string utterance, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions options = null);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; FindChoices (string utterance, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.ModelResult`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; FindChoices(string utterance, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; choices, class Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Find.FindChoices(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Choices.Choice},Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindChoices (utterance As String, choices As IList(Of Choice), Optional options As FindChoicesOptions = null) As List(Of ModelResult(Of FoundChoice))" />
@@ -39,6 +40,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt;</ReturnType>
@@ -60,7 +62,7 @@
       </Docs>
     </Member>
     <Member MemberName="FindChoices">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; FindChoices (string utterance, System.Collections.Generic.IList&lt;string&gt; choices, Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions options = null);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; FindChoices (string utterance, System.Collections.Generic.IList&lt;string&gt; choices, Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.ModelResult`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt; FindChoices(string utterance, class System.Collections.Generic.IList`1&lt;string&gt; choices, class Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Find.FindChoices(System.String,System.Collections.Generic.IList{System.String},Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindChoices (utterance As String, choices As IList(Of String), Optional options As FindChoicesOptions = null) As List(Of ModelResult(Of FoundChoice))" />
@@ -74,6 +76,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundChoice&gt;&gt;</ReturnType>
@@ -95,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName="FindValues">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundValue&gt;&gt; FindValues (string utterance, System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.SortedValue&gt; values, Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions options = null);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundValue&gt;&gt; FindValues (string utterance, System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.SortedValue&gt; values, Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.ModelResult`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FoundValue&gt;&gt; FindValues(string utterance, class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.SortedValue&gt; values, class Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Find.FindValues(System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Choices.SortedValue},Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindValues (utterance As String, values As List(Of SortedValue), Optional options As FindValuesOptions = null) As List(Of ModelResult(Of FoundValue))" />
@@ -109,6 +112,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.ModelResult&lt;Microsoft.Bot.Builder.Dialogs.Choices.FoundValue&gt;&gt;</ReturnType>

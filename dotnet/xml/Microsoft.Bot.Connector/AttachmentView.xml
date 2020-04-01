@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AttachmentView (string viewId = null, Nullable&lt;int&gt; size = null);" />
+      <MemberSignature Language="C#" Value="public AttachmentView (string viewId = default, int? size = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string viewId, valuetype System.Nullable`1&lt;int32&gt; size) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.AttachmentView.#ctor(System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional viewId As String = null, Optional size As Nullable(Of Integer) = null)" />
@@ -62,7 +62,7 @@
       </Docs>
     </Member>
     <Member MemberName="Size">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Size { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Size" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.AttachmentView.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Nullable(Of Integer)" />

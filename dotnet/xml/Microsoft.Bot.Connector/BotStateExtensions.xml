@@ -55,9 +55,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteStateForUserAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;object&gt; DeleteStateForUserAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;object&gt; DeleteStateForUserAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;object&gt; DeleteStateForUserAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteStateForUserAsync (operations As IBotState, channelId As String, userId As String, Optional cancellationToken As CancellationToken = null) As Task(Of Object)" />
       <MemberSignature Language="F#" Value="static member DeleteStateForUserAsync : Microsoft.Bot.Connector.IBotState * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.DeleteStateForUserAsync (operations, channelId, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -124,9 +125,10 @@
       </Docs>
     </Member>
     <Member MemberName="ExportBotStateDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotStateDataResult&gt; ExportBotStateDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotStateDataResult&gt; ExportBotStateDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotStateDataResult&gt; ExportBotStateDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.ExportBotStateDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExportBotStateDataAsync (operations As IBotState, channelId As String, Optional cancellationToken As CancellationToken = null) As Task(Of BotStateDataResult)" />
       <MemberSignature Language="F#" Value="static member ExportBotStateDataAsync : Microsoft.Bot.Connector.IBotState * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotStateDataResult&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.ExportBotStateDataAsync (operations, channelId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -193,9 +195,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetConversationDataAsync (operations As IBotState, channelId As String, conversationId As String, Optional cancellationToken As CancellationToken = null) As Task(Of BotData)" />
       <MemberSignature Language="F#" Value="static member GetConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetConversationDataAsync (operations, channelId, conversationId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -266,9 +269,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrivateConversationDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetPrivateConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrivateConversationDataAsync (operations As IBotState, channelId As String, conversationId As String, userId As String, Optional cancellationToken As CancellationToken = null) As Task(Of BotData)" />
       <MemberSignature Language="F#" Value="static member GetPrivateConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetPrivateConversationDataAsync (operations, channelId, conversationId, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -339,9 +343,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; GetUserDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserDataAsync (operations As IBotState, channelId As String, userId As String, Optional cancellationToken As CancellationToken = null) As Task(Of BotData)" />
       <MemberSignature Language="F#" Value="static member GetUserDataAsync : Microsoft.Bot.Connector.IBotState * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.GetUserDataAsync (operations, channelId, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -378,6 +383,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetConversationData (operations As IBotState, channelId As String, conversationId As String, botData As BotData) As BotData" />
       <MemberSignature Language="F#" Value="static member SetConversationData : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetConversationData (operations, channelId, conversationId, botData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -411,9 +417,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetConversationDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetConversationDataAsync (operations As IBotState, channelId As String, conversationId As String, botData As BotData, Optional cancellationToken As CancellationToken = null) As Task(Of BotData)" />
       <MemberSignature Language="F#" Value="static member SetConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetConversationDataAsync (operations, channelId, conversationId, botData, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -452,6 +459,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetPrivateConversationData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetPrivateConversationData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetPrivateConversationData (operations As IBotState, channelId As String, conversationId As String, userId As String, botData As BotData) As BotData" />
       <MemberSignature Language="F#" Value="static member SetPrivateConversationData : Microsoft.Bot.Connector.IBotState * string * string * string * Microsoft.Bot.Connector.BotData -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationData (operations, channelId, conversationId, userId, botData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -487,9 +495,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetPrivateConversationDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetPrivateConversationDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetPrivateConversationDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string conversationId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetPrivateConversationDataAsync (operations As IBotState, channelId As String, conversationId As String, userId As String, botData As BotData, Optional cancellationToken As CancellationToken = null) As Task(Of BotData)" />
       <MemberSignature Language="F#" Value="static member SetPrivateConversationDataAsync : Microsoft.Bot.Connector.IBotState * string * string * string * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetPrivateConversationDataAsync (operations, channelId, conversationId, userId, botData, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -530,6 +539,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.BotData SetUserData (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.BotData SetUserData(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, class Microsoft.Bot.Connector.BotData botData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetUserData(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetUserData (operations As IBotState, channelId As String, userId As String, botData As BotData) As BotData" />
       <MemberSignature Language="F#" Value="static member SetUserData : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData -&gt; Microsoft.Bot.Connector.BotData" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetUserData (operations, channelId, userId, botData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -563,9 +573,10 @@
       </Docs>
     </Member>
     <Member MemberName="SetUserDataAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync (this Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, Microsoft.Bot.Connector.BotData botData, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.BotData&gt; SetUserDataAsync(class Microsoft.Bot.Connector.IBotState operations, string channelId, string userId, class Microsoft.Bot.Connector.BotData botData, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync(Microsoft.Bot.Connector.IBotState,System.String,System.String,Microsoft.Bot.Connector.BotData,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetUserDataAsync (operations As IBotState, channelId As String, userId As String, botData As BotData, Optional cancellationToken As CancellationToken = null) As Task(Of BotData)" />
       <MemberSignature Language="F#" Value="static member SetUserDataAsync : Microsoft.Bot.Connector.IBotState * string * string * Microsoft.Bot.Connector.BotData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.BotData&gt;" Usage="Microsoft.Bot.Connector.BotStateExtensions.SetUserDataAsync (operations, channelId, userId, botData, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

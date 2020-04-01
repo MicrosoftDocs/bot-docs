@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,11 +24,13 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DebuggerStepAsync (this Microsoft.Bot.Builder.Dialogs.DialogContext context, Microsoft.Bot.Builder.Dialogs.Dialog dialog, string more, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DebuggerStepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext context, class Microsoft.Bot.Builder.Dialogs.Dialog dialog, string more, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.Dialog,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DebuggerStepAsync (context As DialogContext, dialog As Dialog, more As String, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="static member DebuggerStepAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.Dialog * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync (context, dialog, more, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -51,14 +54,48 @@
       </Docs>
     </Member>
     <Member MemberName="DebuggerStepAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DebuggerStepAsync (this Microsoft.Bot.Builder.Dialogs.DialogContext context, Microsoft.Bot.Builder.Dialogs.Recognizer recognizer, string more, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DebuggerStepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext context, class Microsoft.Bot.Builder.Dialogs.Recognizer recognizer, string more, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.Recognizer,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DebuggerStepAsync (context As DialogContext, recognizer As Recognizer, more As String, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="static member DebuggerStepAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.Recognizer * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync (context, recognizer, more, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" RefType="this" />
+        <Parameter Name="recognizer" Type="Microsoft.Bot.Builder.Dialogs.Recognizer" />
+        <Parameter Name="more" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="context">dialogContext.</param>
+        <param name="recognizer">recognizer.</param>
+        <param name="more">label.</param>
+        <param name="cancellationToken">cancellation token for async operations.</param>
+        <summary>
+            Call into active IDialogDebugger and let it know that we are at given point in the Recognizer.
+            </summary>
+        <returns>async task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebuggerStepAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DebuggerStepAsync (this Microsoft.Bot.Builder.Dialogs.DialogContext context, Microsoft.Bot.Builder.IRecognizer recognizer, string more, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DebuggerStepAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext context, class Microsoft.Bot.Builder.IRecognizer recognizer, string more, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.IRecognizer,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DebuggerStepAsync (context As DialogContext, recognizer As IRecognizer, more As String, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="static member DebuggerStepAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.IRecognizer * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugSupport.DebuggerStepAsync (context, recognizer, more, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -91,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger</ReturnType>
@@ -117,6 +155,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.IDialogDebugger</ReturnType>
@@ -143,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap</ReturnType>

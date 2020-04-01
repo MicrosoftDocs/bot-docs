@@ -1,0 +1,77 @@
+<Type Name="AuthenticatorResult" FullName="Microsoft.Bot.Connector.Authentication.AuthenticatorResult">
+  <TypeSignature Language="C#" Value="public class AuthenticatorResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticatorResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.AuthenticatorResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class AuthenticatorResult" />
+  <TypeSignature Language="F#" Value="type AuthenticatorResult = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AuthenticatorResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AuthenticatorResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessToken">
+      <MemberSignature Language="C#" Value="public string AccessToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AccessToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.AuthenticatorResult.AccessToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property AccessToken As String" />
+      <MemberSignature Language="F#" Value="member this.AccessToken : string with get, set" Usage="Microsoft.Bot.Connector.Authentication.AuthenticatorResult.AccessToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpiresOn">
+      <MemberSignature Language="C#" Value="public DateTimeOffset ExpiresOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset ExpiresOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Authentication.AuthenticatorResult.ExpiresOn" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpiresOn As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.ExpiresOn : DateTimeOffset with get, set" Usage="Microsoft.Bot.Connector.Authentication.AuthenticatorResult.ExpiresOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -9,6 +9,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.InterceptionMiddleware</BaseTypeName>
@@ -20,9 +21,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public InspectionMiddleware (Microsoft.Bot.Builder.InspectionState inspectionState, Microsoft.Bot.Builder.UserState userState = null, Microsoft.Bot.Builder.ConversationState conversationState = null, Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials = null, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.InspectionMiddleware&gt; logger = null);" />
+      <MemberSignature Language="C#" Value="public InspectionMiddleware (Microsoft.Bot.Builder.InspectionState inspectionState, Microsoft.Bot.Builder.UserState userState = default, Microsoft.Bot.Builder.ConversationState conversationState = default, Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials = default, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.InspectionMiddleware&gt; logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.InspectionState inspectionState, class Microsoft.Bot.Builder.UserState userState, class Microsoft.Bot.Builder.ConversationState conversationState, class Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.InspectionMiddleware&gt; logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.#ctor(Microsoft.Bot.Builder.InspectionState,Microsoft.Bot.Builder.UserState,Microsoft.Bot.Builder.ConversationState,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.InspectionMiddleware})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inspectionState As InspectionState, Optional userState As UserState = null, Optional conversationState As ConversationState = null, Optional credentials As MicrosoftAppCredentials = null, Optional logger As ILogger(Of InspectionMiddleware) = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.InspectionMiddleware : Microsoft.Bot.Builder.InspectionState * Microsoft.Bot.Builder.UserState * Microsoft.Bot.Builder.ConversationState * Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.InspectionMiddleware&gt; -&gt; Microsoft.Bot.Builder.InspectionMiddleware" Usage="new Microsoft.Bot.Builder.InspectionMiddleware (inspectionState, userState, conversationState, credentials, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -30,6 +32,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inspectionState" Type="Microsoft.Bot.Builder.InspectionState" />
@@ -60,6 +63,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
@@ -75,6 +79,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;ValueTuple&lt;bool,bool&gt;&gt; InboundAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity traceActivity, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;valuetype System.ValueTuple`2&lt;bool, bool&gt;&gt; InboundAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity traceActivity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.InboundAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InboundAsync (turnContext As ITurnContext, traceActivity As Activity, cancellationToken As CancellationToken) As Task(Of ValueTuple(Of Boolean, Boolean))" />
       <MemberSignature Language="F#" Value="override this.InboundAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;ValueTuple&lt;bool, bool&gt;&gt;" Usage="inspectionMiddleware.InboundAsync (turnContext, traceActivity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -82,6 +87,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ValueTuple&lt;System.Boolean,System.Boolean&gt;&gt;</ReturnType>
@@ -109,6 +115,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OutboundAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Activity&gt; traceActivities, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OutboundAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Activity&gt; traceActivities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.OutboundAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Activity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OutboundAsync (turnContext As ITurnContext, traceActivities As IEnumerable(Of Activity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="override this.OutboundAsync : Microsoft.Bot.Builder.ITurnContext * seq&lt;Microsoft.Bot.Schema.Activity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="inspectionMiddleware.OutboundAsync (turnContext, traceActivities, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -116,6 +123,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -135,9 +143,10 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessCommandAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ProcessCommandAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ProcessCommandAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; ProcessCommandAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.ProcessCommandAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessCommandAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ProcessCommandAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="inspectionMiddleware.ProcessCommandAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -145,6 +154,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -165,6 +175,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task TraceStateAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task TraceStateAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.TraceStateAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TraceStateAsync (turnContext As ITurnContext, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="override this.TraceStateAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="inspectionMiddleware.TraceStateAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -172,6 +183,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

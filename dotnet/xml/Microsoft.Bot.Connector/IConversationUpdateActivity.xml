@@ -21,7 +21,7 @@
   </Docs>
   <Members>
     <Member MemberName="HistoryDisclosed">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HistoryDisclosed { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? HistoryDisclosed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HistoryDisclosed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IConversationUpdateActivity.HistoryDisclosed" />
       <MemberSignature Language="VB.NET" Value="Public Property HistoryDisclosed As Nullable(Of Boolean)" />

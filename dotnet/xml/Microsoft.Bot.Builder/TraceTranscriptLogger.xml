@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,7 +24,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Representas a transcript logger that writes activites to a <see cref="T:System.Diagnostics.Trace" /> object.
+            Represents a transcript logger that writes activities to a <see cref="T:System.Diagnostics.Trace" /> object.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -42,9 +43,30 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TraceTranscriptLogger (bool traceActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool traceActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TraceTranscriptLogger.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (traceActivity As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.TraceTranscriptLogger : bool -&gt; Microsoft.Bot.Builder.TraceTranscriptLogger" Usage="new Microsoft.Bot.Builder.TraceTranscriptLogger traceActivity" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="traceActivity" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="traceActivity">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,6 +89,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
