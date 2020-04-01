@@ -55,6 +55,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;T&gt;.Compare(!T x, !T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.NullComparer`1.System#Collections#Generic#IComparer&lt;T&gt;#Compare(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Function Compare (x As T, y As T) As Integer Implements IComparer(Of T).Compare" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IComparer&lt;T&gt;.Compare : 'T * 'T -&gt; int&#xA;override this.System.Collections.Generic.IComparer&lt;T&gt;.Compare : 'T * 'T -&gt; int" Usage="nullComparer.System.Collections.Generic.IComparer&lt;T&gt;.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>

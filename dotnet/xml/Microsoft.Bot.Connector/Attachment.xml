@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Attachment (string contentType = null, string contentUrl = null, object content = null, string name = null, string thumbnailUrl = null);" />
+      <MemberSignature Language="C#" Value="public Attachment (string contentType = default, string contentUrl = default, object content = default, string name = default, string thumbnailUrl = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string contentUrl, object content, string name, string thumbnailUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.#ctor(System.String,System.String,System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = null, Optional contentUrl As String = null, Optional content As Object = null, Optional name As String = null, Optional thumbnailUrl As String = null)" />

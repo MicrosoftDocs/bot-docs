@@ -23,7 +23,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LuisServiceResult (Microsoft.Bot.Builder.Luis.Models.LuisResult result, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, Microsoft.Bot.Builder.Luis.ILuisService service, Microsoft.Bot.Builder.Luis.ILuisOptions luisRequest = null);" />
+      <MemberSignature Language="C#" Value="public LuisServiceResult (Microsoft.Bot.Builder.Luis.Models.LuisResult result, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, Microsoft.Bot.Builder.Luis.ILuisService service, Microsoft.Bot.Builder.Luis.ILuisOptions luisRequest = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Luis.Models.LuisResult result, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation intent, class Microsoft.Bot.Builder.Luis.ILuisService service, class Microsoft.Bot.Builder.Luis.ILuisOptions luisRequest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.LuisServiceResult.#ctor(Microsoft.Bot.Builder.Luis.Models.LuisResult,Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,Microsoft.Bot.Builder.Luis.ILuisService,Microsoft.Bot.Builder.Luis.ILuisOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As LuisResult, intent As IntentRecommendation, service As ILuisService, Optional luisRequest As ILuisOptions = null)" />
