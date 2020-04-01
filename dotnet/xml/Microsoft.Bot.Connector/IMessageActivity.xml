@@ -112,7 +112,7 @@
       </Docs>
     </Member>
     <Member MemberName="Expiration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Expiration { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? Expiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Expiration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IMessageActivity.Expiration" />
       <MemberSignature Language="VB.NET" Value="Public Property Expiration As Nullable(Of DateTimeOffset)" />

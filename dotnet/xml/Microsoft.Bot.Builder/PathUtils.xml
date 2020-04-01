@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -37,12 +39,13 @@
       <Docs>
         <param name="ambigiousPath">authoredPath.</param>
         <summary>
-            Normalize authored path to os path.
+            Normalizes authored path to OS-compatible path.
             </summary>
         <returns>path expressed as OS path.</returns>
         <remarks>
-            path is from authored content which doesn't know what OS it is running on.
-            This method treats / and \ both as separators regardless of OS, for windows that means / -&gt; \ and for linux/mac \ -&gt; /.
+            Path is from authored content which doesn't know what OS it is running on.
+            This method treats / and \ both as separators regardless of OS, for Windows that means
+            changing all `/` characters to `/`, and for Linux/Mac `\` to `/`.
             This allows author to use ../foo.lg or ..\foo.lg as equivalents for importing.
             </remarks>
       </Docs>

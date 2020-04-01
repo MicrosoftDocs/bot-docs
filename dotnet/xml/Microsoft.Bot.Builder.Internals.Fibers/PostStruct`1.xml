@@ -54,6 +54,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;.Post(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.PostStruct`1.Microsoft#Bot#Builder#Internals#Fibers#IPost&lt;T&gt;#Post(`0)" />
       <MemberSignature Language="VB.NET" Value="Sub Post (item As T) Implements IPost(Of T).Post" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;.Post : 'T -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;.Post : 'T -&gt; unit" Usage="postStruct.Microsoft.Bot.Builder.Internals.Fibers.IPost&lt;T&gt;.Post item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IPost`1.Post(`0)</InterfaceMember>

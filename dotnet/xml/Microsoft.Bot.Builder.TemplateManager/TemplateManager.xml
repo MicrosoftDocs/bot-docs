@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -88,6 +91,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -109,16 +113,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets language fallback policy.
+            Gets or sets language fall-back policy.
             </summary>
         <value>
-            Language fallback policy.
+            Language fall-back policy.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,6 +143,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
@@ -166,6 +172,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TemplateManager.TemplateManager</ReturnType>
@@ -178,7 +185,7 @@
         <summary>
             Add a template engine for binding templates.
             </summary>
-        <returns>Reurns a template manager.</returns>
+        <returns>Returns a template manager.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,22 +199,23 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.TemplateManager.ITemplateRenderer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets template Renderers.
+            Gets or sets template renderers.
             </summary>
         <value>
-            Template Renderers.
+            Template renderers.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderTemplate">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; RenderTemplate (Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Activity&gt; RenderTemplate(class Microsoft.Bot.Builder.ITurnContext turnContext, string language, string templateId, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.RenderTemplate(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function RenderTemplate (turnContext As ITurnContext, language As String, templateId As String, Optional data As Object = null) As Task(Of Activity)" />
@@ -221,6 +229,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
@@ -235,7 +244,7 @@
         <param name="turnContext">Context for the current turn of conversation.</param>
         <param name="language">Template language.</param>
         <param name="templateId">The id of the template.</param>
-        <param name="data">Data to render the tempplate with.</param>
+        <param name="data">Data to render the template with.</param>
         <summary>
             Render the template.
             </summary>
@@ -244,7 +253,7 @@
       </Docs>
     </Member>
     <Member MemberName="ReplyWith">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReplyWith (Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ReplyWith (Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ReplyWith(class Microsoft.Bot.Builder.ITurnContext turnContext, string templateId, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TemplateManager.TemplateManager.ReplyWith(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReplyWith (turnContext As ITurnContext, templateId As String, Optional data As Object = null) As Task" />
@@ -258,6 +267,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -293,6 +303,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

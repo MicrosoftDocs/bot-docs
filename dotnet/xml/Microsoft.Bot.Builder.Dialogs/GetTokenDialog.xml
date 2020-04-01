@@ -38,7 +38,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public GetTokenDialog (string connectionName, string signInMessage, string buttonLabel, int retries = 0, string retryMessage = null);" />
+      <MemberSignature Language="C#" Value="public GetTokenDialog (string connectionName, string signInMessage, string buttonLabel, int retries = 0, string retryMessage = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionName, string signInMessage, string buttonLabel, int32 retries, string retryMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.GetTokenDialog.#ctor(System.String,System.String,System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionName As String, signInMessage As String, buttonLabel As String, Optional retries As Integer = 0, Optional retryMessage As String = null)" />

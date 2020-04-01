@@ -48,7 +48,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#Calendar" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Calendar As Calendar Implements ICalendarPlus.Calendar" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar : System.Globalization.Calendar" Usage="Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ICalendarPlus.Calendar</InterfaceMember>
@@ -73,7 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DayOfWeek Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#FirstDayOfWeek" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FirstDayOfWeek As DayOfWeek Implements ICalendarPlus.FirstDayOfWeek" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek : DayOfWeek" Usage="Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ICalendarPlus.FirstDayOfWeek</InterfaceMember>
@@ -97,6 +97,8 @@
       <MemberSignature Language="C#" Value="int ICalendarPlus.HourFor (Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart dayPart);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor(valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart dayPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#HourFor(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
+      <MemberSignature Language="VB.NET" Value="Function HourFor (dayPart As BuiltIn.DateTime.DayPart) As Integer Implements ICalendarPlus.HourFor" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor : Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart -&gt; int&#xA;override this.Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor : Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart -&gt; int" Usage="westernCalendarPlus.Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor dayPart" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)</InterfaceMember>
@@ -125,7 +127,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarWeekRule Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.WesternCalendarPlus.Microsoft#Bot#Builder#Luis#ICalendarPlus#WeekRule" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property WeekRule As CalendarWeekRule Implements ICalendarPlus.WeekRule" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule : System.Globalization.CalendarWeekRule" Usage="Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ICalendarPlus.WeekRule</InterfaceMember>

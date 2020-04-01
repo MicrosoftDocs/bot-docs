@@ -51,6 +51,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Runtime.Serialization.IObjectReference.GetRealObject(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.StoreInstanceByTypeSurrogate.ObjectReference.System#Runtime#Serialization#IObjectReference#GetRealObject(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Function GetRealObject (context As StreamingContext) As Object Implements IObjectReference.GetRealObject" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.Serialization.IObjectReference.GetRealObject : System.Runtime.Serialization.StreamingContext -&gt; obj&#xA;override this.System.Runtime.Serialization.IObjectReference.GetRealObject : System.Runtime.Serialization.StreamingContext -&gt; obj" Usage="objectReference.System.Runtime.Serialization.IObjectReference.GetRealObject context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)</InterfaceMember>

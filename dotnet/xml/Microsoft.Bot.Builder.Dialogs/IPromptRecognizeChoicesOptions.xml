@@ -21,7 +21,7 @@
   </Docs>
   <Members>
     <Member MemberName="ExcludeAction">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExcludeAction { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? ExcludeAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeAction" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeAction" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeAction As Nullable(Of Boolean)" />
@@ -43,7 +43,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExcludeValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExcludeValue { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? ExcludeValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExcludeValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeChoicesOptions.ExcludeValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeValue As Nullable(Of Boolean)" />

@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</BaseTypeName>
@@ -30,7 +31,8 @@
             Values persisted for the lifetime of the turn as part of the <see cref="T:Microsoft.Bot.Builder.ITurnContext" />.
             </summary>
     <remarks>
-            TODO: add more details on what kind of values can/should be stored here, by whom and what the lifetime semantics are, etc.
+            Typical values which are stored here are objects which are needed for the lifetime of a turn, such
+            as IStorage, BotState, ConversationState, ILanguageGenerator, ResourceExplorer etc.
             </remarks>
   </Docs>
   <Members>
@@ -48,6 +50,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -72,6 +75,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -87,14 +91,14 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the service.</typeparam>
-        <param name="value">The service object to add.</param>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="value">The object to add.</param>
         <summary>
             Adds a value to the turn's context.
             </summary>
-        <remarks>The default service key is the <see cref="P:System.Type.FullName" /> of the service type.</remarks>
+        <remarks>The default service key is the <see cref="P:System.Type.FullName" /> of the object type.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is null.</exception>
+          <paramref name="value" />is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add&lt;T&gt;">
@@ -112,6 +116,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -128,16 +133,15 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the service.</typeparam>
-        <param name="key">The name of the service.</param>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="key">The name of the object.</param>
         <param name="value">The value to add.</param>
         <summary>
             Adds a value to the turn's context.
             </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="key" /> or <paramref name="value" />
-            is null.</exception>
+          <paramref name="key" /> or <paramref name="value" />is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -158,6 +162,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -184,6 +189,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -197,12 +203,12 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the service.</typeparam>
+        <typeparam name="T">The type of the object.</typeparam>
         <summary>
             Gets the default value by type from the turn's context.
             </summary>
-        <returns>The service object; or null if no default service of the type is registered.</returns>
-        <remarks>The default service key is the <see cref="P:System.Type.FullName" /> of the service type.</remarks>
+        <returns>The object; or null if no default service of the type is registered.</returns>
+        <remarks>The default service key is the <see cref="P:System.Type.FullName" /> of the object type.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Get&lt;T&gt;">
@@ -220,6 +226,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -235,13 +242,13 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the service.</typeparam>
-        <param name="key">The name of the service.</param>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="key">The name of the object.</param>
         <summary>
             Gets a cached value by name from the turn's context.
             </summary>
-        <returns>The service object; or null if no service is registered by the key, or
-            the retrieved object does not match the service type.</returns>
+        <returns>The object; or null if no service is registered by the key, or
+            the retrieved object does not match the object type.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is null.</exception>
@@ -257,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -272,10 +280,51 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="value">The value to add.</param>
+        <summary>
+            Set a value to the turn's context.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" />is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Set&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Set&lt;T&gt; (string key, T value) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set&lt;class T&gt;(string key, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContextStateCollection.Set``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set(Of T As Class) (key As String, value As T)" />
+      <MemberSignature Language="F#" Value="member this.Set : string * 'T -&gt; unit (requires 'T : null)" Usage="turnContextStateCollection.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="key">The name of the object.</param>
+        <param name="value">The value to add.</param>
+        <summary>
+            Set a value to the turn's context.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" />is null.</exception>
       </Docs>
     </Member>
   </Members>

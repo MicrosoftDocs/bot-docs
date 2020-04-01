@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName="AllowPartialMatches">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AllowPartialMatches { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AllowPartialMatches { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AllowPartialMatches" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.AllowPartialMatches" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPartialMatches As Nullable(Of Boolean)" />
@@ -39,7 +39,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxTokenDistance">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxTokenDistance { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? MaxTokenDistance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxTokenDistance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.IPromptRecognizeValuesOptions.MaxTokenDistance" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTokenDistance As Nullable(Of Integer)" />

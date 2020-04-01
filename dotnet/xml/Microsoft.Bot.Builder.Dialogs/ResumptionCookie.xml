@@ -60,6 +60,7 @@
       <MemberSignature Language="C#" Value="public ResumptionCookie (Microsoft.Bot.Builder.Dialogs.Address address, string userName, bool isGroup, string locale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Address address, string userName, bool isGroup, string locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ResumptionCookie.#ctor(Microsoft.Bot.Builder.Dialogs.Address,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As Address, userName As String, isGroup As Boolean, locale As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.ResumptionCookie : Microsoft.Bot.Builder.Dialogs.Address * string * bool * string -&gt; Microsoft.Bot.Builder.Dialogs.ResumptionCookie" Usage="new Microsoft.Bot.Builder.Dialogs.ResumptionCookie (address, userName, isGroup, locale)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
