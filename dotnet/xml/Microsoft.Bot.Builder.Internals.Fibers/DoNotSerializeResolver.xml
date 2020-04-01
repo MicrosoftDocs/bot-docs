@@ -51,6 +51,8 @@
       <MemberSignature Language="C#" Value="bool IResolver.TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver.Microsoft#Bot#Builder#Scorables#Internals#IResolver#TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryResolve (type As Type, tag As Object, ByRef value As Object) As Boolean Implements IResolver.TryResolve" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve : Type * obj * obj -&gt; bool&#xA;override this.Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve : Type * obj * obj -&gt; bool" Usage="doNotSerializeResolver.Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.Internals.IResolver.TryResolve(System.Type,System.Object,System.Object@)</InterfaceMember>

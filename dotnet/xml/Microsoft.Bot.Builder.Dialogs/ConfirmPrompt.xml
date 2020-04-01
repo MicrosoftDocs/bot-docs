@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Prompt&lt;System.Boolean&gt;</BaseTypeName>
@@ -28,7 +29,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfirmPrompt (string dialogId, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;bool&gt; validator = null, string defaultLocale = null);" />
+      <MemberSignature Language="C#" Value="public ConfirmPrompt (string dialogId, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;bool&gt; validator = default, string defaultLocale = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;bool&gt; validator, string defaultLocale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConfirmPrompt.#ctor(System.String,Microsoft.Bot.Builder.Dialogs.PromptValidator{System.Boolean},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, Optional validator As PromptValidator(Of Boolean) = null, Optional defaultLocale As String = null)" />
@@ -42,6 +43,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -67,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfirmPrompt (string dialogId, System.Collections.Generic.Dictionary&lt;string,ValueTuple&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt;&gt; choiceDefaults, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;bool&gt; validator = null, string defaultLocale = null);" />
+      <MemberSignature Language="C#" Value="public ConfirmPrompt (string dialogId, System.Collections.Generic.Dictionary&lt;string,ValueTuple&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt;&gt; choiceDefaults, Microsoft.Bot.Builder.Dialogs.PromptValidator&lt;bool&gt; validator = default, string defaultLocale = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, class System.Collections.Generic.Dictionary`2&lt;string, valuetype System.ValueTuple`3&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice, class Microsoft.Bot.Builder.Dialogs.Choices.Choice, class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt;&gt; choiceDefaults, class Microsoft.Bot.Builder.Dialogs.PromptValidator`1&lt;bool&gt; validator, string defaultLocale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConfirmPrompt.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,System.ValueTuple{Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions}},Microsoft.Bot.Builder.Dialogs.PromptValidator{System.Boolean},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, choiceDefaults As Dictionary(Of String, ValueTuple(Of Choice, Choice, ChoiceFactoryOptions)), Optional validator As PromptValidator(Of Boolean) = null, Optional defaultLocale As String = null)" />
@@ -76,6 +78,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -85,12 +88,12 @@
       </Parameters>
       <Docs>
         <param name="dialogId">The ID to assign to this prompt.</param>
-        <param name="choiceDefaults">Overrides the dictionary of Bot Framework SDK-supported _choiceDefaults (for prompt localization).
-            Must be passed in to each ConfirmPrompt that needs the custom choice defaults.</param>
         <param name="validator">Optional, a <see cref="T:Microsoft.Bot.Builder.Dialogs.PromptValidator`1" /> that contains additional,
             custom validation for this prompt.</param>
         <param name="defaultLocale">Optional, the default locale used to determine language-specific behavior of the prompt.
             The locale is a 2, 3, or 4 character ISO 639 code that represents a language or language family.</param>
+        <param name="choiceDefaults">Overrides the dictionary of Bot Framework SDK-supported _choiceDefaults (for prompt localization).
+            Must be passed in to each ConfirmPrompt that needs the custom choice defaults.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.ConfirmPrompt" /> class.
             </summary>
@@ -118,6 +121,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions</ReturnType>
@@ -132,7 +136,7 @@
       </Docs>
     </Member>
     <Member MemberName="ConfirmChoices">
-      <MemberSignature Language="C#" Value="public Tuple&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; ConfirmChoices { get; set; }" />
+      <MemberSignature Language="C#" Value="public (Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.Choice) ConfirmChoices { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Tuple`2&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice, class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; ConfirmChoices" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.ConfirmPrompt.ConfirmChoices" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfirmChoices As Tuple(Of Choice, Choice)" />
@@ -146,6 +150,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Tuple&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice,Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;</ReturnType>
@@ -173,6 +178,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -186,9 +192,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnPromptAsync">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnPromptAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnPromptAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OnPromptAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, bool isRetry, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConfirmPrompt.OnPromptAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnPromptAsync (turnContext As ITurnContext, state As IDictionary(Of String, Object), options As PromptOptions, isRetry As Boolean, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="override this.OnPromptAsync : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Microsoft.Bot.Builder.Dialogs.PromptOptions * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="confirmPrompt.OnPromptAsync (turnContext, state, options, isRetry, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -199,6 +206,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -227,9 +235,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnRecognizeAsync">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;bool&gt;&gt; OnRecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;bool&gt;&gt; OnRecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.Dialogs.PromptOptions options, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1&lt;bool&gt;&gt; OnRecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.Dialogs.PromptOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ConfirmPrompt.OnRecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRecognizeAsync (turnContext As ITurnContext, state As IDictionary(Of String, Object), options As PromptOptions, Optional cancellationToken As CancellationToken = null) As Task(Of PromptRecognizerResult(Of Boolean))" />
       <MemberSignature Language="F#" Value="override this.OnRecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.IDictionary&lt;string, obj&gt; * Microsoft.Bot.Builder.Dialogs.PromptOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;bool&gt;&gt;" Usage="confirmPrompt.OnRecognizeAsync (turnContext, state, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -240,6 +249,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;System.Boolean&gt;&gt;</ReturnType>
@@ -279,6 +289,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.ListStyle</ReturnType>

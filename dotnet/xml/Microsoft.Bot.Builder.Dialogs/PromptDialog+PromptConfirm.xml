@@ -29,7 +29,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PromptConfirm (Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;string&gt; promptOptions, string[][] patterns = null);" />
+      <MemberSignature Language="C#" Value="public PromptConfirm (Microsoft.Bot.Builder.Dialogs.IPromptOptions&lt;string&gt; promptOptions, string[][] patterns = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.IPromptOptions`1&lt;string&gt; promptOptions, string[][] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(Microsoft.Bot.Builder.Dialogs.IPromptOptions{System.String},System.String[][])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As IPromptOptions(Of String), Optional patterns As String()() = null)" />
@@ -47,8 +47,7 @@
       </Parameters>
       <Docs>
         <param name="promptOptions"> THe prompt options.</param>
-        <param name="patterns">
-        </param>
+        <param name="patterns" />
         <summary>
             Constructor for a prompt confirmation dialog.
             </summary>
@@ -56,9 +55,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PromptConfirm (string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, string[] options = null, string[][] patterns = null);" />
+      <MemberSignature Language="C#" Value="public PromptConfirm (string prompt, string retry, int attempts, Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, string[] options = default, string[][] patterns = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, valuetype Microsoft.Bot.Builder.Dialogs.PromptStyle promptStyle, string[] options, string[][] patterns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm.#ctor(System.String,System.String,System.Int32,Microsoft.Bot.Builder.Dialogs.PromptStyle,System.String[],System.String[][])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional promptStyle As PromptStyle = Microsoft.Bot.Builder.Dialogs.PromptStyle.Auto, Optional options As String() = null, Optional patterns As String()() = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm : string * string * int * Microsoft.Bot.Builder.Dialogs.PromptStyle * string[] * string[][] -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptConfirm (prompt, retry, attempts, promptStyle, options, patterns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

@@ -1,0 +1,91 @@
+<Type Name="ExpectedReplies" FullName="Microsoft.Bot.Schema.ExpectedReplies">
+  <TypeSignature Language="C#" Value="public class ExpectedReplies" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpectedReplies extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.ExpectedReplies" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpectedReplies" />
+  <TypeSignature Language="F#" Value="type ExpectedReplies = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Replies in response to <see cref="F:Microsoft.Bot.Schema.DeliveryModes.ExpectReplies" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpectedReplies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ExpectedReplies.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the ExpectedReplies class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpectedReplies (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; activities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Activity&gt; activities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ExpectedReplies.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Schema.Activity})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activities As IList(Of Activity) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ExpectedReplies : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; -&gt; Microsoft.Bot.Schema.ExpectedReplies" Usage="new Microsoft.Bot.Schema.ExpectedReplies activities" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activities">A collection of Activities that conforms
+            to the ExpectedReplies schema.</param>
+        <summary>
+            Initializes a new instance of the ExpectedReplies class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; Activities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Activity&gt; Activities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.ExpectedReplies.Activities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Activities As IList(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.Activities : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; with get, set" Usage="Microsoft.Bot.Schema.ExpectedReplies.Activities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activities")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a collection of Activities that conforms to the
+            ExpectedReplies schema.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

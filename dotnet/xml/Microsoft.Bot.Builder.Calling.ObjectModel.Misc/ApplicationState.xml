@@ -35,8 +35,7 @@
         <Parameter Name="appState" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appState">
-        </param>
+        <param name="appState" />
         <summary>
             helper method to validate appState
             </summary>

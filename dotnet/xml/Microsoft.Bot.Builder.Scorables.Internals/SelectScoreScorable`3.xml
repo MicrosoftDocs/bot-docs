@@ -68,6 +68,8 @@
       <MemberSignature Language="C#" Value="TargetScore IScorable&lt;Item,TargetScore&gt;.GetScore (Item item, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !TargetScore Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;.GetScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.SelectScoreScorable`3.Microsoft#Bot#Builder#Scorables#IScorable&lt;Item,TargetScore&gt;#GetScore(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function GetScore (item As Item, state As Object) As TargetScore Implements IScorable(Of Item, TargetScore).GetScore" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;.GetScore : 'Item * obj -&gt; 'argetScore&#xA;override this.Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;.GetScore : 'Item * obj -&gt; 'argetScore" Usage="selectScoreScorable.Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,TargetScore&gt;.GetScore (item, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Scorables.IScorable`2.GetScore(`0,System.Object)</InterfaceMember>

@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public InnerHttpError (Nullable&lt;int&gt; statusCode = null, object body = null);" />
+      <MemberSignature Language="C#" Value="public InnerHttpError (int? statusCode = default, object body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; statusCode, object body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.InnerHttpError.#ctor(System.Nullable{System.Int32},System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional statusCode As Nullable(Of Integer) = null, Optional body As Object = null)" />
@@ -89,7 +89,7 @@
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; StatusCode { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? StatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; StatusCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.InnerHttpError.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusCode As Nullable(Of Integer)" />

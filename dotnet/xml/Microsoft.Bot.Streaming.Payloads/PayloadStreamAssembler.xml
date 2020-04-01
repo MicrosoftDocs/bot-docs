@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="streamManager" Type="Microsoft.Bot.Streaming.Payloads.IStreamManager" />
@@ -44,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PayloadStreamAssembler (Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, Guid id, string type, Nullable&lt;int&gt; length);" />
+      <MemberSignature Language="C#" Value="public PayloadStreamAssembler (Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, Guid id, string type, int? length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Streaming.Payloads.IStreamManager streamManager, valuetype System.Guid id, string type, valuetype System.Nullable`1&lt;int32&gt; length) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.#ctor(Microsoft.Bot.Streaming.Payloads.IStreamManager,System.Guid,System.String,System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (streamManager As IStreamManager, id As Guid, type As String, length As Nullable(Of Integer))" />
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="streamManager" Type="Microsoft.Bot.Streaming.Payloads.IStreamManager" />
@@ -82,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -93,7 +97,7 @@
       </Docs>
     </Member>
     <Member MemberName="ContentLength">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ContentLength { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? ContentLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ContentLength" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentLength As Nullable(Of Integer)" />
@@ -102,6 +106,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -122,6 +127,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -145,6 +151,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -166,6 +173,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -189,6 +197,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -210,6 +219,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -224,6 +234,7 @@
       <MemberSignature Language="C#" Value="public void OnReceive (Microsoft.Bot.Streaming.Payloads.Header header, System.IO.Stream stream, int contentLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnReceive(class Microsoft.Bot.Streaming.Payloads.Header header, class System.IO.Stream stream, int32 contentLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler.OnReceive(Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnReceive (header As Header, stream As Stream, contentLength As Integer)" />
       <MemberSignature Language="F#" Value="abstract member OnReceive : Microsoft.Bot.Streaming.Payloads.Header * System.IO.Stream * int -&gt; unit&#xA;override this.OnReceive : Microsoft.Bot.Streaming.Payloads.Header * System.IO.Stream * int -&gt; unit" Usage="payloadStreamAssembler.OnReceive (header, stream, contentLength)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -232,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -713,7 +713,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddDescription">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddDescription (object value, string description, string image = null, string message = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddDescription (object value, string description, string image = default, string message = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; AddDescription(object value, string description, string image, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddDescription(System.Object,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddDescription (value As Object, description As String, Optional image As String = null, Optional message As String = null) As Field(Of T)" />
@@ -1920,6 +1920,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; SetType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; SetType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.SetType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetType (type As Type) As Field(Of T)" />
       <MemberSignature Language="F#" Value="member this.SetType : Type -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;'T (requires 'T : null)&gt;" Usage="field.SetType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
