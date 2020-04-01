@@ -267,8 +267,7 @@
         <Parameter Name="words" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="words">
-        </param>
+        <param name="words" />
         <summary>
             Test words to see if they are all ignorable in a response.
             </summary>

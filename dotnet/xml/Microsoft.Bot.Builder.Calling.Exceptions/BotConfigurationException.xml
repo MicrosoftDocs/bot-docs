@@ -20,7 +20,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotConfigurationException (string message, string itemName = null, string itemValue = null);" />
+      <MemberSignature Language="C#" Value="public BotConfigurationException (string message, string itemName = default, string itemValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string itemName, string itemValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, Optional itemName As String = null, Optional itemValue As String = null)" />
@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotConfigurationException (string message, Exception innerException, string itemName = null, string itemValue = null, bool extendForInternalExceptionRemark = true);" />
+      <MemberSignature Language="C#" Value="public BotConfigurationException (string message, Exception innerException, string itemName = default, string itemValue = default, bool extendForInternalExceptionRemark = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, string itemName, string itemValue, bool extendForInternalExceptionRemark) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.Exceptions.BotConfigurationException.#ctor(System.String,System.Exception,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, Optional itemName As String = null, Optional itemValue As String = null, Optional extendForInternalExceptionRemark As Boolean = true)" />

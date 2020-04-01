@@ -67,6 +67,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt; SendAsync (System.Net.Http.HttpRequestMessage toBot, Microsoft.Bot.Builder.Calling.CallRequestType callRequestType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; SendAsync(class System.Net.Http.HttpRequestMessage toBot, valuetype Microsoft.Bot.Builder.Calling.CallRequestType callRequestType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingConversation.SendAsync(System.Net.Http.HttpRequestMessage,Microsoft.Bot.Builder.Calling.CallRequestType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendAsync (toBot As HttpRequestMessage, callRequestType As CallRequestType) As Task(Of HttpResponseMessage)" />
       <MemberSignature Language="F#" Value="static member SendAsync : System.Net.Http.HttpRequestMessage * Microsoft.Bot.Builder.Calling.CallRequestType -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="Microsoft.Bot.Builder.Calling.CallingConversation.SendAsync (toBot, callRequestType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

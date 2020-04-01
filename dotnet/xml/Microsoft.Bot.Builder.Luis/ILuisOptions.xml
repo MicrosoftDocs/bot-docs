@@ -43,7 +43,7 @@
       </Docs>
     </Member>
     <Member MemberName="Log">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberSignature Language="VB.NET" Value="Public Property Log As Nullable(Of Boolean)" />
@@ -67,7 +67,7 @@
       </Docs>
     </Member>
     <Member MemberName="SpellCheck">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; SpellCheck { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? SpellCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property SpellCheck As Nullable(Of Boolean)" />
@@ -91,7 +91,7 @@
       </Docs>
     </Member>
     <Member MemberName="Staging">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Staging { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Staging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberSignature Language="VB.NET" Value="Public Property Staging As Nullable(Of Boolean)" />
@@ -115,7 +115,7 @@
       </Docs>
     </Member>
     <Member MemberName="TimezoneOffset">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; TimezoneOffset { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? TimezoneOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property TimezoneOffset As Nullable(Of Double)" />
@@ -139,7 +139,7 @@
       </Docs>
     </Member>
     <Member MemberName="Verbose">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Verbose { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberSignature Language="VB.NET" Value="Public Property Verbose As Nullable(Of Boolean)" />

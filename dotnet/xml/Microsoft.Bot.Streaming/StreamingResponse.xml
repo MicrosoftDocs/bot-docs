@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -64,7 +67,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateResponse">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse CreateResponse (System.Net.HttpStatusCode statusCode, System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse CreateResponse (System.Net.HttpStatusCode statusCode, System.Net.Http.HttpContent body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse CreateResponse(valuetype System.Net.HttpStatusCode statusCode, class System.Net.Http.HttpContent body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.CreateResponse(System.Net.HttpStatusCode,System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateResponse (statusCode As HttpStatusCode, Optional body As HttpContent = null) As StreamingResponse" />
@@ -73,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
@@ -92,7 +96,7 @@
       </Docs>
     </Member>
     <Member MemberName="Forbidden">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse Forbidden (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse Forbidden (System.Net.Http.HttpContent body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse Forbidden(class System.Net.Http.HttpContent body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.Forbidden(System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Forbidden (Optional body As HttpContent = null) As StreamingResponse" />
@@ -101,6 +105,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
@@ -118,7 +123,7 @@
       </Docs>
     </Member>
     <Member MemberName="InternalServerError">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse InternalServerError (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse InternalServerError (System.Net.Http.HttpContent body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse InternalServerError(class System.Net.Http.HttpContent body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.InternalServerError(System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function InternalServerError (Optional body As HttpContent = null) As StreamingResponse" />
@@ -127,6 +132,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
@@ -144,7 +150,7 @@
       </Docs>
     </Member>
     <Member MemberName="NotFound">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse NotFound (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse NotFound (System.Net.Http.HttpContent body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse NotFound(class System.Net.Http.HttpContent body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.NotFound(System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function NotFound (Optional body As HttpContent = null) As StreamingResponse" />
@@ -153,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
@@ -170,7 +177,7 @@
       </Docs>
     </Member>
     <Member MemberName="OK">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse OK (System.Net.Http.HttpContent body = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Streaming.StreamingResponse OK (System.Net.Http.HttpContent body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Streaming.StreamingResponse OK(class System.Net.Http.HttpContent body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.StreamingResponse.OK(System.Net.Http.HttpContent)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OK (Optional body As HttpContent = null) As StreamingResponse" />
@@ -179,6 +186,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
@@ -205,6 +213,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -229,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Streaming.Payloads.ResponseMessageStream&gt;</ReturnType>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessageActionsPayload (string id = null, string replyToId = null, string messageType = null, string createdDateTime = null, string lastModifiedDateTime = null, Nullable&lt;bool&gt; deleted = null, string subject = null, string summary = null, string importance = null, string locale = null, Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom from = null, Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody body = null, string attachmentLayout = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; attachments = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; mentions = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; reactions = null);" />
+      <MemberSignature Language="C#" Value="public MessageActionsPayload (string id = default, string replyToId = default, string messageType = default, string createdDateTime = default, string lastModifiedDateTime = default, bool? deleted = default, string subject = default, string summary = default, string importance = default, string locale = default, Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom from = default, Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody body = default, string attachmentLayout = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; attachments = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; mentions = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; reactions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string replyToId, string messageType, string createdDateTime, string lastModifiedDateTime, valuetype System.Nullable`1&lt;bool&gt; deleted, string subject, string summary, string importance, string locale, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom from, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody body, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention&gt; mentions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction&gt; reactions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayload.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom,Microsoft.Bot.Schema.Teams.MessageActionsPayloadBody,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessageActionsPayloadAttachment},System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessageActionsPayloadMention},System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessageActionsPayloadReaction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional replyToId As String = null, Optional messageType As String = null, Optional createdDateTime As String = null, Optional lastModifiedDateTime As String = null, Optional deleted As Nullable(Of Boolean) = null, Optional subject As String = null, Optional summary As String = null, Optional importance As String = null, Optional locale As String = null, Optional from As MessageActionsPayloadFrom = null, Optional body As MessageActionsPayloadBody = null, Optional attachmentLayout As String = null, Optional attachments As IList(Of MessageActionsPayloadAttachment) = null, Optional mentions As IList(Of MessageActionsPayloadMention) = null, Optional reactions As IList(Of MessageActionsPayloadReaction) = null)" />
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -112,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -139,6 +143,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -166,6 +171,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -194,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -212,7 +219,7 @@
       </Docs>
     </Member>
     <Member MemberName="Deleted">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Deleted { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Deleted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Deleted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MessageActionsPayload.Deleted" />
       <MemberSignature Language="VB.NET" Value="Public Property Deleted As Nullable(Of Boolean)" />
@@ -221,6 +228,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -248,6 +256,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -275,6 +284,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -302,6 +312,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -330,6 +341,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -357,6 +369,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -384,6 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -411,6 +425,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -439,6 +454,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -466,6 +482,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -493,6 +510,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -520,6 +538,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

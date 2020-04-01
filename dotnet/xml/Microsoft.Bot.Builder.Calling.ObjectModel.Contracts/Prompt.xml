@@ -41,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="Culture">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; Culture { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture? Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt; Culture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Culture" />
       <MemberSignature Language="VB.NET" Value="Public Property Culture As Nullable(Of Culture)" />
@@ -68,7 +68,7 @@
       </Docs>
     </Member>
     <Member MemberName="Emphasize">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Emphasize { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Emphasize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Emphasize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Emphasize" />
       <MemberSignature Language="VB.NET" Value="Public Property Emphasize As Nullable(Of Boolean)" />
@@ -117,7 +117,7 @@
       </Docs>
     </Member>
     <Member MemberName="SayAs">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs&gt; SayAs { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs? SayAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.SayAs&gt; SayAs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.SayAs" />
       <MemberSignature Language="VB.NET" Value="Public Property SayAs As Nullable(Of SayAs)" />
@@ -144,7 +144,7 @@
       </Docs>
     </Member>
     <Member MemberName="SilenceLengthInMilliseconds">
-      <MemberSignature Language="C#" Value="public Nullable&lt;uint&gt; SilenceLengthInMilliseconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public uint? SilenceLengthInMilliseconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;unsigned int32&gt; SilenceLengthInMilliseconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.SilenceLengthInMilliseconds" />
       <MemberSignature Language="VB.NET" Value="Public Property SilenceLengthInMilliseconds As Nullable(Of UInteger)" />
@@ -244,7 +244,7 @@
       </Docs>
     </Member>
     <Member MemberName="Voice">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender&gt; Voice { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender? Voice { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.VoiceGender&gt; Voice" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Prompt.Voice" />
       <MemberSignature Language="VB.NET" Value="Public Property Voice As Nullable(Of VoiceGender)" />

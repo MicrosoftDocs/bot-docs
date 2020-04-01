@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessagingExtensionResult (string attachmentLayout = null, string type = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments = null, Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions = null, string text = null, Microsoft.Bot.Schema.Activity activityPreview = null);" />
+      <MemberSignature Language="C#" Value="public MessagingExtensionResult (string attachmentLayout = default, string type = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments = default, Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions = default, string text = default, Microsoft.Bot.Schema.Activity activityPreview = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachmentLayout, string type, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments, class Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions, string text, class Microsoft.Bot.Schema.Activity activityPreview) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment},Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction,System.String,Microsoft.Bot.Schema.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional attachmentLayout As String = null, Optional type As String = null, Optional attachments As IList(Of MessagingExtensionAttachment) = null, Optional suggestedActions As MessagingExtensionSuggestedAction = null, Optional text As String = null, Optional activityPreview As Activity = null)" />
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="attachmentLayout" Type="System.String" />
@@ -57,13 +60,13 @@
         <Parameter Name="activityPreview" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
+        <param name="suggestedActions">To be added.</param>
         <param name="attachmentLayout">Hint for how to deal with multiple
             attachments. Possible values include: 'list', 'grid'</param>
         <param name="type">The type of the result. Possible values include:
             'result', 'auth', 'config', 'message', 'botMessagePreview'</param>
         <param name="attachments">(Only when type is result)
             Attachments</param>
-        <param name="suggestedActions">To be added.</param>
         <param name="text">(Only when type is message) Text</param>
         <param name="activityPreview">(Only when type is botMessagePreview)
             Message activity to preview</param>
@@ -83,6 +86,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -139,6 +144,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -166,6 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -191,6 +198,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -218,6 +226,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

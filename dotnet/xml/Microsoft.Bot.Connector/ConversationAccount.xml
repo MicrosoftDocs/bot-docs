@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConversationAccount (Nullable&lt;bool&gt; isGroup = null, string id = null, string name = null, string conversationType = null, string role = null, string aadObjectId = null);" />
+      <MemberSignature Language="C#" Value="public ConversationAccount (bool? isGroup = default, string id = default, string name = default, string conversationType = default, string role = default, string aadObjectId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string id, string name, string conversationType, string role, string aadObjectId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional id As String = null, Optional name As String = null, Optional conversationType As String = null, Optional role As String = null, Optional aadObjectId As String = null)" />
@@ -231,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsGroup">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsGroup { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsGroup" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationAccount.IsGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property IsGroup As Nullable(Of Boolean)" />

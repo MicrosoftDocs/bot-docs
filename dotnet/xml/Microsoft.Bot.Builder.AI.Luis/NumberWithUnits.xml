@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,7 +28,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NumberWithUnits (Nullable&lt;double&gt; number, string units);" />
+      <MemberSignature Language="C#" Value="public NumberWithUnits (double? number, string units);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;float64&gt; number, string units) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.#ctor(System.Nullable{System.Double},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (number As Nullable(Of Double), units As String)" />
@@ -41,6 +42,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="number" Type="System.Nullable&lt;System.Double&gt;" />
@@ -56,7 +58,7 @@
       </Docs>
     </Member>
     <Member MemberName="Number">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Number { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? Number { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Number" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.NumberWithUnits.Number" />
       <MemberSignature Language="VB.NET" Value="Public Property Number As Nullable(Of Double)" />
@@ -70,6 +72,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,6 +107,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
