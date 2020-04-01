@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,9 +24,12 @@
   </Interfaces>
   <Docs>
     <summary>
-             Middleware to automatically call .SaveChanges() at the end of the turn for all BotState class it is managing.
+             Middleware to automatically persist state before the end of each turn.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+            This calls <see cref="M:Microsoft.Bot.Builder.BotState.SaveChangesAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" />
+            on each state object it manages.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +47,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="botStates" Type="Microsoft.Bot.Builder.BotState[]">
@@ -65,6 +70,7 @@
       <MemberSignature Language="C#" Value="public AutoSaveStateMiddleware (Microsoft.Bot.Builder.BotStateSet botStateSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.BotStateSet botStateSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.#ctor(Microsoft.Bot.Builder.BotStateSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (botStateSet As BotStateSet)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AutoSaveStateMiddleware : Microsoft.Bot.Builder.BotStateSet -&gt; Microsoft.Bot.Builder.AutoSaveStateMiddleware" Usage="new Microsoft.Bot.Builder.AutoSaveStateMiddleware botStateSet" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -75,6 +81,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="botStateSet" Type="Microsoft.Bot.Builder.BotStateSet" />
@@ -89,6 +96,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AutoSaveStateMiddleware Add (Microsoft.Bot.Builder.BotState botState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.AutoSaveStateMiddleware Add(class Microsoft.Bot.Builder.BotState botState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.Add(Microsoft.Bot.Builder.BotState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (botState As BotState) As AutoSaveStateMiddleware" />
       <MemberSignature Language="F#" Value="member this.Add : Microsoft.Bot.Builder.BotState -&gt; Microsoft.Bot.Builder.AutoSaveStateMiddleware" Usage="autoSaveStateMiddleware.Add botState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -99,6 +107,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AutoSaveStateMiddleware</ReturnType>
@@ -107,11 +116,11 @@
         <Parameter Name="botState" Type="Microsoft.Bot.Builder.BotState" />
       </Parameters>
       <Docs>
-        <param name="botState">botState to manage.</param>
+        <param name="botState">The bot state to add.</param>
         <summary>
-            Add a BotState to the list of sources to load.
+            Adds a state management object to the list of states to manage.
             </summary>
-        <returns>botstateset for chaining more .Use().</returns>
+        <returns>The updated <see cref="P:Microsoft.Bot.Builder.AutoSaveStateMiddleware.BotStateSet" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,6 +139,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotStateSet</ReturnType>
@@ -143,9 +153,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnTurnAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.NextDelegate next, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.NextDelegate next, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.NextDelegate next, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AutoSaveStateMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnTurnAsync (turnContext As ITurnContext, next As NextDelegate, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="autoSaveStateMiddleware.OnTurnAsync (turnContext, next, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -159,6 +170,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -169,14 +181,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">turn context.</param>
-        <param name="next">next middlware.</param>
-        <param name="cancellationToken">cancellationToken.</param>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="next">The delegate to call to continue the bot middleware pipeline.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
         <summary>
-            Middleware implementation which calls savesChanges automatically at the end of the turn.
+            Before the turn ends, calls <see cref="M:Microsoft.Bot.Builder.BotState.SaveChangesAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" />
+            on each state object.
             </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>This middleware persists state after the bot logic completes and before the turn ends.</remarks>
       </Docs>
     </Member>
   </Members>

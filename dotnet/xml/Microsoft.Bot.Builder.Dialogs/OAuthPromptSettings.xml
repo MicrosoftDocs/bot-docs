@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -60,6 +62,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -69,6 +72,28 @@
             Gets or sets the name of the OAuth connection.
             </summary>
         <value>The name of the OAuth connection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OAuthAppCredentials">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Authentication.AppCredentials OAuthAppCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.Authentication.AppCredentials OAuthAppCredentials" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.OAuthAppCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property OAuthAppCredentials As AppCredentials" />
+      <MemberSignature Language="F#" Value="member this.OAuthAppCredentials : Microsoft.Bot.Connector.Authentication.AppCredentials with get, set" Usage="Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.OAuthAppCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.Authentication.AppCredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the OAuthAppCredentials for OAuthPrompt.
+            </summary>
+        <value>The AppCredentials for OAuthPrompt.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,6 +112,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -100,7 +126,7 @@
       </Docs>
     </Member>
     <Member MemberName="Timeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Timeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Timeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Nullable(Of Integer)" />
@@ -114,6 +140,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -142,6 +169,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

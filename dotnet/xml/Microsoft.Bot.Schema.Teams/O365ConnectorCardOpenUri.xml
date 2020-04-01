@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public O365ConnectorCardOpenUri (string type = null, string name = null, string id = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; targets = null);" />
+      <MemberSignature Language="C#" Value="public O365ConnectorCardOpenUri (string type = default, string name = default, string id = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; targets = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget&gt; targets) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUri.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardOpenUriTarget})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional name As String = null, Optional id As String = null, Optional targets As IList(Of O365ConnectorCardOpenUriTarget) = null)" />
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -77,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,6 +108,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

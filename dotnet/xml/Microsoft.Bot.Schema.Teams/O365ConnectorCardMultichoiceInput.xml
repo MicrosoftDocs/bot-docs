@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.O365ConnectorCardInputBase</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public O365ConnectorCardMultichoiceInput (string type = null, string id = null, Nullable&lt;bool&gt; isRequired = null, string title = null, string value = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardMultichoiceInputChoice&gt; choices = null, string style = null, Nullable&lt;bool&gt; isMultiSelect = null);" />
+      <MemberSignature Language="C#" Value="public O365ConnectorCardMultichoiceInput (string type = default, string id = default, bool? isRequired = default, string title = default, string value = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardMultichoiceInputChoice&gt; choices = default, string style = default, bool? isMultiSelect = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;bool&gt; isRequired, string title, string value, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardMultichoiceInputChoice&gt; choices, string style, valuetype System.Nullable`1&lt;bool&gt; isMultiSelect) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardMultichoiceInput.#ctor(System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardMultichoiceInputChoice},System.String,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional id As String = null, Optional isRequired As Nullable(Of Boolean) = null, Optional title As String = null, Optional value As String = null, Optional choices As IList(Of O365ConnectorCardMultichoiceInputChoice) = null, Optional style As String = null, Optional isMultiSelect As Nullable(Of Boolean) = null)" />
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -92,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,7 +115,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsMultiSelect">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsMultiSelect { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsMultiSelect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsMultiSelect" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCardMultichoiceInput.IsMultiSelect" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMultiSelect As Nullable(Of Boolean)" />
@@ -120,6 +124,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -148,6 +153,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -176,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
