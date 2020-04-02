@@ -1,9 +1,10 @@
 # Reference documentation - templates and boilerplate
 
 - [Summaries](#summaries)
+- [Fields](#fields)
+- [Property values](#property-values)
 - [Parameters](#parameters)
 - [Return values](#return-values)
-- [Property values](#property-values)
 - [Errors and exceptions](#errors-and-exceptions)
 - [Remarks](#remarks)
 
@@ -26,6 +27,7 @@ The summary succinctly states what a type or member does or represents. Every pu
     - When in doubt, open with a verb phrase. Include one or two more short sentences as necessary, but leave most of the explanation for the remarks section.
 
 - [Types](#summary-types)
+  - [control-like types](#summary-control-like-types)
 - [Constructors](#summary-constructors)
 - [Fields](#summary-fields)
 - [Methods](#summary-methods)
@@ -129,11 +131,13 @@ Some _\<on X>_ methods are now typical event handlers, even in this broader sens
 | :--- | :--- | :--- |
 | _\<On X>_ or _\<Handle X>_ methods | Handles _\<whatever the event-like thing is>_. | Override this in a derived class to handle an incoming activity.<br>&mdash;<br>Handles user input and attempts to parse it. |
 
+## Fields
+
+## Property values
+
 ## Parameters
 
 ## Return values
-
-## Property values
 
 ## Errors and exceptions
 
