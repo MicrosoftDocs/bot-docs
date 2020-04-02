@@ -39,6 +39,9 @@ The Bot Framework SDK includes some implementations for the storage layer:
 - **Azure Blob Storage** connects to an Azure Blob Storage object database.
 - **Azure Cosmos DB storage** connects to a Cosmos DB NoSQL database.
 
+>[!IMPORTANT]
+> CosmosDbStorage has been deprecated. Containers created with CosmosDbStorage can be used with CosmosDbPartitionedStorage with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+
 For instructions on how to connect to other storage options, see [write directly to storage](bot-builder-howto-v4-storage.md).
 
 ## State management

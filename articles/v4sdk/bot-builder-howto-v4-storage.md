@@ -313,6 +313,9 @@ Send a message to your bot. The bot will list the messages it has received.
 
 ## Using Cosmos DB
 
+>[!IMPORTANT]
+> CosmosDbStorage has been deprecated. Containers created with CosmosDbStorage can be used with CosmosDbPartitionedStorage with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
 ### Set up
