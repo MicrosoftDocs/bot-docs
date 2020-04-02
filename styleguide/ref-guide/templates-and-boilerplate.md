@@ -139,6 +139,8 @@ Some _\<on X>_ methods are now typical event handlers, even in this broader sens
 
 ## Return values
 
+<!-- continuation methods -->
+
 ## Errors and exceptions
 
 ## Remarks
