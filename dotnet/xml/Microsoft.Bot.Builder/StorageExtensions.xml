@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,9 +26,10 @@
   </Docs>
   <Members>
     <Member MemberName="ReadAsync&lt;TStoreItem&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,TStoreItem&gt;&gt; ReadAsync&lt;TStoreItem&gt; (this Microsoft.Bot.Builder.IStorage storage, string[] keys, System.Threading.CancellationToken cancellationToken = null) where TStoreItem : class;" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,TStoreItem&gt;&gt; ReadAsync&lt;TStoreItem&gt; (this Microsoft.Bot.Builder.IStorage storage, string[] keys, System.Threading.CancellationToken cancellationToken = default) where TStoreItem : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, !!TStoreItem&gt;&gt; ReadAsync&lt;class TStoreItem&gt;(class Microsoft.Bot.Builder.IStorage storage, string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StorageExtensions.ReadAsync``1(Microsoft.Bot.Builder.IStorage,System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReadAsync(Of TStoreItem As Class) (storage As IStorage, keys As String(), Optional cancellationToken As CancellationToken = null) As Task(Of IDictionary(Of String, TStoreItem))" />
       <MemberSignature Language="F#" Value="static member ReadAsync : Microsoft.Bot.Builder.IStorage * string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, 'StoreItem&gt;&gt; (requires 'StoreItem : null)" Usage="Microsoft.Bot.Builder.StorageExtensions.ReadAsync (storage, keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -38,6 +40,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,TStoreItem&gt;&gt;</ReturnType>

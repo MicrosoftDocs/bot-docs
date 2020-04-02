@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -43,6 +44,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,7 +55,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = null, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = null, System.Collections.Generic.IList&lt;string&gt; supportedTypes = null);" />
+      <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = default, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = default, System.Collections.Generic.IList&lt;string&gt; supportedTypes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string merchantId, class System.Collections.Generic.IList`1&lt;string&gt; supportedNetworks, class System.Collections.Generic.IList`1&lt;string&gt; supportedTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional merchantId As String = null, Optional supportedNetworks As IList(Of String) = null, Optional supportedTypes As IList(Of String) = null)" />
@@ -67,6 +69,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="merchantId" Type="System.String" />
@@ -86,7 +89,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = null, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = null, System.Collections.Generic.IList&lt;string&gt; supportedTypes = null, bool testMode = false);" />
+      <MemberSignature Language="C#" Value="public MicrosoftPayMethodData (string merchantId = default, System.Collections.Generic.IList&lt;string&gt; supportedNetworks = default, System.Collections.Generic.IList&lt;string&gt; supportedTypes = default, bool testMode = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string merchantId, class System.Collections.Generic.IList`1&lt;string&gt; supportedNetworks, class System.Collections.Generic.IList`1&lt;string&gt; supportedTypes, bool testMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.MicrosoftPayMethodData.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional merchantId As String = null, Optional supportedNetworks As IList(Of String) = null, Optional supportedTypes As IList(Of String) = null, Optional testMode As Boolean = false)" />
@@ -100,6 +103,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="merchantId" Type="System.String" />
@@ -133,6 +137,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,6 +170,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -191,6 +197,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -225,6 +232,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -258,6 +266,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -290,6 +299,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.PaymentMethodData</ReturnType>

@@ -49,6 +49,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;.Compare(class System.Text.RegularExpressions.Match one, class System.Text.RegularExpressions.Match two) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.MatchComparer.System#Collections#Generic#IComparer&lt;System#Text#RegularExpressions#Match&gt;#Compare(System.Text.RegularExpressions.Match,System.Text.RegularExpressions.Match)" />
       <MemberSignature Language="VB.NET" Value="Function Compare (one As Match, two As Match) As Integer Implements IComparer(Of Match).Compare" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;.Compare : System.Text.RegularExpressions.Match * System.Text.RegularExpressions.Match -&gt; int&#xA;override this.System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;.Compare : System.Text.RegularExpressions.Match * System.Text.RegularExpressions.Match -&gt; int" Usage="matchComparer.System.Collections.Generic.IComparer&lt;System.Text.RegularExpressions.Match&gt;.Compare (one, two)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>

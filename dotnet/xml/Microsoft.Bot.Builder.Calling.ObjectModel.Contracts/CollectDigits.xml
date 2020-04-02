@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxNumberOfDtmfs">
-      <MemberSignature Language="C#" Value="public Nullable&lt;uint&gt; MaxNumberOfDtmfs { get; set; }" />
+      <MemberSignature Language="C#" Value="public uint? MaxNumberOfDtmfs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;unsigned int32&gt; MaxNumberOfDtmfs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.CollectDigits.MaxNumberOfDtmfs" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxNumberOfDtmfs As Nullable(Of UInteger)" />

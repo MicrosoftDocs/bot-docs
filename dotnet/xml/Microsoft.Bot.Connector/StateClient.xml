@@ -96,6 +96,7 @@
       <MemberSignature Language="C#" Value="protected StateClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (httpClient As HttpClient, disposeHttpClient As Boolean)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.StateClient : System.Net.Http.HttpClient * bool -&gt; Microsoft.Bot.Connector.StateClient" Usage="new Microsoft.Bot.Connector.StateClient (httpClient, disposeHttpClient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -215,6 +216,7 @@
       <MemberSignature Language="C#" Value="public StateClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.StateClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, httpClient As HttpClient, disposeHttpClient As Boolean)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.StateClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClient * bool -&gt; Microsoft.Bot.Connector.StateClient" Usage="new Microsoft.Bot.Connector.StateClient (credentials, httpClient, disposeHttpClient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -405,7 +407,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StateClient (Uri baseUri, string microsoftAppId = null, string microsoftAppPassword = null, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="C#" Value="public StateClient (Uri baseUri, string microsoftAppId = default, string microsoftAppPassword = default, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUri, string microsoftAppId, string microsoftAppPassword, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, Optional microsoftAppId As String = null, Optional microsoftAppPassword As String = null, ParamArray handlers As DelegatingHandler())" />

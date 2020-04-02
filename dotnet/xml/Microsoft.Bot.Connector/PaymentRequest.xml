@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PaymentRequest (string id = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentMethodData&gt; methodData = null, Microsoft.Bot.Connector.PaymentDetails details = null, Microsoft.Bot.Connector.PaymentOptions options = null, string expires = null);" />
+      <MemberSignature Language="C#" Value="public PaymentRequest (string id = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentMethodData&gt; methodData = default, Microsoft.Bot.Connector.PaymentDetails details = default, Microsoft.Bot.Connector.PaymentOptions options = default, string expires = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentMethodData&gt; methodData, class Microsoft.Bot.Connector.PaymentDetails details, class Microsoft.Bot.Connector.PaymentOptions options, string expires) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequest.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentMethodData},Microsoft.Bot.Connector.PaymentDetails,Microsoft.Bot.Connector.PaymentOptions,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional methodData As IList(Of PaymentMethodData) = null, Optional details As PaymentDetails = null, Optional options As PaymentOptions = null, Optional expires As String = null)" />

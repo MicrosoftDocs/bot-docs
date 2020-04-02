@@ -56,6 +56,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(class Microsoft.Bot.Connector.IActivity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.TraceActivityLogger.Microsoft#Bot#Builder#History#IActivityLogger#LogAsync(Microsoft.Bot.Connector.IActivity)" />
       <MemberSignature Language="VB.NET" Value="Function LogAsync (activity As IActivity) As Task Implements IActivityLogger.LogAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.History.IActivityLogger.LogAsync : Microsoft.Bot.Connector.IActivity -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.History.IActivityLogger.LogAsync : Microsoft.Bot.Connector.IActivity -&gt; System.Threading.Tasks.Task" Usage="traceActivityLogger.Microsoft.Bot.Builder.History.IActivityLogger.LogAsync activity" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.History.IActivityLogger.LogAsync(Microsoft.Bot.Connector.IActivity)</InterfaceMember>
