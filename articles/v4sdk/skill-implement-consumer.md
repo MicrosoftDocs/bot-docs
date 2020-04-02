@@ -25,6 +25,8 @@ A _root bot_ is a user-facing bot that can invoke one or more skills. A root bot
 
 This article demonstrates how to implement a skill consumer that uses the echo skill to echo the user's input. For a sample skill manifest and information about implementing the echo skill, see how to [implement a skill](skill-implement-skill.md).
 
+For information about using a skill bot within dialogs, see how to [use a dialog to consume a skill](skilldialog-howto.md).
+
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
