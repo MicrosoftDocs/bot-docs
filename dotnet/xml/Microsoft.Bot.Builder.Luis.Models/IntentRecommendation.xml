@@ -48,7 +48,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public IntentRecommendation (string intent = null, Nullable&lt;double&gt; score = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.Action&gt; actions = null);" />
+      <MemberSignature Language="C#" Value="public IntentRecommendation (string intent = default, double? score = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.Action&gt; actions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string intent, valuetype System.Nullable`1&lt;float64&gt; score, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.Action&gt; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.#ctor(System.String,System.Nullable{System.Double},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.Action})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional intent As String = null, Optional score As Nullable(Of Double) = null, Optional actions As IList(Of Action) = null)" />
@@ -134,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName="Score">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Score { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? Score { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Score" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.IntentRecommendation.Score" />
       <MemberSignature Language="VB.NET" Value="Public Property Score As Nullable(Of Double)" />

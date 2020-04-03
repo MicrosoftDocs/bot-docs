@@ -38,9 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Error (string code = null, string message = null, Microsoft.Bot.Connector.InnerHttpError innerHttpError = null);" />
+      <MemberSignature Language="C#" Value="public Error (string code = default, string message = default, Microsoft.Bot.Connector.InnerHttpError innerHttpError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message, class Microsoft.Bot.Connector.InnerHttpError innerHttpError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Error.#ctor(System.String,System.String,Microsoft.Bot.Connector.InnerHttpError)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = null, Optional message As String = null, Optional innerHttpError As InnerHttpError = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Error : string * string * Microsoft.Bot.Connector.InnerHttpError -&gt; Microsoft.Bot.Connector.Error" Usage="new Microsoft.Bot.Connector.Error (code, message, innerHttpError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

@@ -1,0 +1,90 @@
+<Type Name="SignInConstants" FullName="Microsoft.Bot.Schema.SignInConstants">
+  <TypeSignature Language="C#" Value="public static class SignInConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SignInConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.SignInConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class SignInConstants" />
+  <TypeSignature Language="F#" Value="type SignInConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Names for signin invoke operations in the token protocol.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TokenExchangeOperationName">
+      <MemberSignature Language="C#" Value="public const string TokenExchangeOperationName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TokenExchangeOperationName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SignInConstants.TokenExchangeOperationName" />
+      <MemberSignature Language="VB.NET" Value="Public Const TokenExchangeOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable TokenExchangeOperationName : string" Usage="Microsoft.Bot.Schema.SignInConstants.TokenExchangeOperationName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name for signin invoke to perform a token exchange.
+            </summary>
+        <remarks>
+            This invoke operation includes a value of the token exchange class.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenResponseEventName">
+      <MemberSignature Language="C#" Value="public const string TokenResponseEventName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TokenResponseEventName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SignInConstants.TokenResponseEventName" />
+      <MemberSignature Language="VB.NET" Value="Public Const TokenResponseEventName As String " />
+      <MemberSignature Language="F#" Value="val mutable TokenResponseEventName : string" Usage="Microsoft.Bot.Schema.SignInConstants.TokenResponseEventName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The EventActivity name when a token is sent to the bot.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyStateOperationName">
+      <MemberSignature Language="C#" Value="public const string VerifyStateOperationName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string VerifyStateOperationName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SignInConstants.VerifyStateOperationName" />
+      <MemberSignature Language="VB.NET" Value="Public Const VerifyStateOperationName As String " />
+      <MemberSignature Language="F#" Value="val mutable VerifyStateOperationName : string" Usage="Microsoft.Bot.Schema.SignInConstants.VerifyStateOperationName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name for the signin invoke to verify the 6-digit authentication code as part of sign-in.
+            </summary>
+        <remarks>
+            This invoke operation includes a value containing a state property for the magic code.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

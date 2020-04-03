@@ -475,7 +475,7 @@
       </Docs>
     </Member>
     <Member MemberName="LocalTimestamp">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; LocalTimestamp { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LocalTimestamp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LocalTimestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.LocalTimestamp" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalTimestamp As Nullable(Of DateTimeOffset)" />
@@ -563,7 +563,7 @@
       </Docs>
     </Member>
     <Member MemberName="Timestamp">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Timestamp { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? Timestamp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Timestamp" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.IActivity.Timestamp" />
       <MemberSignature Language="VB.NET" Value="Public Property Timestamp As Nullable(Of DateTimeOffset)" />

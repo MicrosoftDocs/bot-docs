@@ -47,6 +47,7 @@
       <MemberSignature Language="C#" Value="public static void Disable (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.Disable(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Disable (type As Type)" />
       <MemberSignature Language="F#" Value="static member Disable : Type -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Disable type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -73,6 +74,7 @@
       <MemberSignature Language="C#" Value="public static void Disable (Type type, Autofac.ContainerBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(class System.Type type, class Autofac.ContainerBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.Disable(System.Type,Autofac.ContainerBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Disable (type As Type, builder As ContainerBuilder)" />
       <MemberSignature Language="F#" Value="static member Disable : Type * Autofac.ContainerBuilder -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.Disable (type, builder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -98,9 +100,10 @@
       </Docs>
     </Member>
     <Member MemberName="ResumeAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie, class Microsoft.Bot.Connector.IActivity toBot, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Builder.Dialogs.ResumptionCookie,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResumeAsync (resumptionCookie As ResumptionCookie, toBot As IActivity, Optional token As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Builder.Dialogs.ResumptionCookie * Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync (resumptionCookie, toBot, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -134,9 +137,10 @@
       </Docs>
     </Member>
     <Member MemberName="ResumeAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ResumeAsync (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Connector.IActivity toBot, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ResumeAsync(class Microsoft.Bot.Connector.ConversationReference conversationReference, class Microsoft.Bot.Connector.IActivity toBot, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Connector.IActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ResumeAsync (conversationReference As ConversationReference, toBot As IActivity, Optional token As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="static member ResumeAsync : Microsoft.Bot.Connector.ConversationReference * Microsoft.Bot.Connector.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.Conversation.ResumeAsync (conversationReference, toBot, token)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -165,7 +169,7 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendAsync (Microsoft.Bot.Connector.IMessageActivity toBot, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt;&gt; MakeRoot, System.Threading.CancellationToken token = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendAsync (Microsoft.Bot.Connector.IMessageActivity toBot, Func&lt;Microsoft.Bot.Builder.Dialogs.IDialog&lt;object&gt;&gt; MakeRoot, System.Threading.CancellationToken token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendAsync(class Microsoft.Bot.Connector.IMessageActivity toBot, class System.Func`1&lt;class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;object&gt;&gt; MakeRoot, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Conversation.SendAsync(Microsoft.Bot.Connector.IMessageActivity,System.Func{Microsoft.Bot.Builder.Dialogs.IDialog{System.Object}},System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SendAsync (toBot As IMessageActivity, MakeRoot As Func(Of IDialog(Of Object)), Optional token As CancellationToken = null) As Task" />
