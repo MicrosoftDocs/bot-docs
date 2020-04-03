@@ -61,7 +61,7 @@ Within the constructor, the `AddDialog` method adds dialogs and prompts to the c
 
 This is the implementation of the first step of the waterfall dialog.
 
-[!code-csharp[First step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=59-59)]
+[!code-csharp[First step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=61-66)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 

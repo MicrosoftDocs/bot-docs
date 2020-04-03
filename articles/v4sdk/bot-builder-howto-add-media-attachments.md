@@ -43,21 +43,25 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets. The code below is setting up the reply for an inline attachment:
 
 **Bots/AttachmentsBot.cs**
+
 [!code-csharp[reply inline](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=105-106)]
 
 Next, we look at the types of attachments. First is an inline attachment:
 
 **Bots/AttachmentsBot.cs**
+
 [!code-csharp[inline attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=167-178)]
 
 Then, an uploaded attachment:
 
 **Bots/AttachmentsBot.cs**
+
 [!code-csharp[uploaded attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=181-214)]
 
 Lastly, an internet attachment:
 
 **Bots/AttachmentsBot.cs**
+
 [!code-csharp[online attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=217-226)]
 
 ### [JavaScript](#tab/javascript)
@@ -67,26 +71,31 @@ The source code shown here is based on the [JS Handling Attachments](https://aka
 To use attachments, include the following libraries in your bot:
 
 **bots/attachmentsBot.js**
+
 [!code-javascript[attachments libraries](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=4)]
 
 To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets. The code below is setting up the reply for an inline attachment:
 
 **bots/attachmentsBot.js**
+
 [!code-javascript[attachments](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=119,128-129)]
 
 To send the user a single piece of content like an image or a video, you can send media in a few different ways. First, as an inline attachment:
 
 **bots/attachmentsBot.js**
+
 [!code-javascript[inline attachments](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=170-179)]
 
 Then, an uploaded attachment:
 
 **bots/attachmentsBot.js**
+
 [!code-javascript[uploaded attachments](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=197-215)]
 
 Lastly, an internet attachment contained in a URL:
 
 **bots/attachmentsBot.js**
+
 [!code-javascript[internet attachments](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=184-191)]
 
 ### [Python](#tab/python)
@@ -98,21 +107,25 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 The code below is setting up the reply for an inline attachment:
 
 **bots/attachments_bot.py**
+
 [!code-python[attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=112-113)]
 
 To send the user a single piece of content like an image or a video, you can send media in a few different ways. First, as an inline attachment:
 
 **bots/attachments_bot.py**
+
 [!code-python[inline attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=153-170)]
 
 Then, an uploaded attachment:
 
 **bots/attachments_bot.py**
+
 [!code-python[upload attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=172-207)]
 
 Lastly, an internet attachment contained in a URL:
 
 **bots/attachments_bot.py**
+
 [!code-python[internet attachments](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=209-218)]
 
 ---
@@ -130,6 +143,7 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-attachments-sample-code) sample.
 
 **Bots/AttachmentsBot.cs**
+
 [!code-csharp[Hero card](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=39-58)]
 
 ### [JavaScript](#tab/javascript)
@@ -139,6 +153,7 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 The source code shown here is based on the [JS Handling Attachments](https://aka.ms/bot-attachments-sample-code-js) sample.
 
 **bots/attachmentsBot.js**
+
 [!code-javascript[hero card](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=147-165)]
 
 ### [Python](#tab/python)
@@ -148,6 +163,7 @@ To compose a message with a hero card and button, you can attach a `HeroCard` to
 The source code shown here is based on the [Handling Attachments](https://aka.ms/bot-media-attachments-python-sample-code) sample.
 
 **bots/attachments_bot.py**
+
 [!code-python[hero card](~/../botbuilder-samples/samples/python/15.handling-attachments/bots/attachments_bot.py?range=125-148)]
 
 ---
@@ -179,9 +195,11 @@ The following code shows examples using various rich card events.
 For examples of all the available cards, see the [C# cards sample](https://aka.ms/bot-cards-sample-code).
 
 **Cards.cs**
+
 [!code-csharp[hero cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=27-40)]
 
 **Cards.cs**
+
 [!code-csharp[cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=91-100)]
 
 ### [JavaScript](#tab/javascript)
@@ -189,9 +207,11 @@ For examples of all the available cards, see the [C# cards sample](https://aka.m
 For examples of all the available cards, see the [JS cards sample](https://aka.ms/bot-cards-js-sample-code).
 
 **dialogs/mainDialog.js**
+
 [!code-javascript[hero cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=206-218)]
 
 **dialogs/mainDialog.js**
+
 [!code-javascript[sign in cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=259-265)]
 
 ### [Python](#tab/python)
@@ -199,14 +219,17 @@ For examples of all the available cards, see the [JS cards sample](https://aka.m
 For examples of all the available cards, see the [Python cards sample](https://aka.ms/bot-cards-python-sample-code).
 
 **dialogs/main_dialog.py**
+
 [!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=163-179)]
 
 **dialogs/main_dialog.py**
+
 [!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=245-256)]
 
 ---
 
 ## Send an Adaptive Card
+
 Adaptive Card and MessageFactory are used to send rich messages including texts, images, video, audio and files to communicate with users. However, there are some differences between them.
 
 First, only some channels support Adaptive Cards, and channels that do support it might partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. MessageFactory is just a helper class within the Bot Framework SDK to automate creation steps for you, and supported by most channels.
@@ -227,6 +250,7 @@ To use Adaptive Cards, be sure to add the `AdaptiveCards` NuGet package.
 The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-sample-code) sample.
 
 **Cards.cs**
+
 [!code-csharp[adaptive cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=13-25)]
 
 ### [JavaScript](#tab/javascript)
@@ -238,11 +262,13 @@ The source code shown here is based on the [JS Using Cards](https://aka.ms/bot-c
 Here, the Adaptive card is stored in it's own file and included in our bot:
 
 **resources/adaptiveCard.json**
+
 [!code-json[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/resources/adaptiveCard.json)]
 
 The card is created as follows:
 
 **dialogs/mainDialog.js**
+
 [!code-javascript[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=6)]
 [!code-javascript[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=170-172)]
 
@@ -251,11 +277,13 @@ The card is created as follows:
 The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
 
 **dialogs/resources/adaptive_card_example.py**
+
 [!code-python[adaptive cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/resources/adaptive_card_example.py)]
 
 The card is created as follows:
 
 **bots/main_dialog.py**
+
 [!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=127-128)]
 
 ---
@@ -271,16 +299,19 @@ The source code shown here is based on the [Cards sample](https://aka.ms/bot-car
 First, create the reply and define the attachments as a list.
 
 **Dialogs/MainDialog.cs**
+
 [!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=61-66)]
 
 Then add the attachments. Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
 
 **Dialogs/MainDialog.cs**
+
 [!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=104-113)]
 
 Once the attachments are added, you can send the reply just like any other.
 
 **Dialogs/MainDialog.cs**
+
 [!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=117-118)]
 
 ### [JavaScript](#tab/javascript)
@@ -301,11 +332,13 @@ The source code shown here is based on [Python cards sample](https://aka.ms/bot-
 To send a carousel of cards, send a reply with the attachments as an array and the layout type defined as `Carousel`:
 
 **dialogs/main_dialog.py**
+
 [!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=104-112)]
 
 Once the attachments are added, you can send the reply.
 
 **dialogs/main_dialog.py**
+
 [!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=114-115)]
 
 ---
