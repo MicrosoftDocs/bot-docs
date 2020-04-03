@@ -46,15 +46,15 @@ For information about logging activities coming from a skill, see how to [manage
 
 ### [C#](#tab/cs)
 
-![Skill consumer class diagram](./media/skills-dialog-root-cs.png)
+![Skill consumer class diagram](./media/skill-dialog/dialog-root-bot-cs.png)
 
 ### [JavaScript](#tab/js)
 
-![Skill consumer class diagram](./media/skills-dialog-root-js.png)
+![Skill consumer class diagram](./media/skill-dialog/dialog-root-bot-js.png)
 
 ### [Python](#tab/python)
 
-![Skill consumer class diagram](./media/skills-dialog-root-py.png)
+![Skill consumer class diagram](./media/skill-dialog/dialog-root-bot-py.png)
 
 ---
 
