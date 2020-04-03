@@ -1,6 +1,6 @@
 ---
-title: Reuse dialogs - Bot Service
-description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
+title: Manage dialog complexity | Microsoft Docs
+description: Learn how to modularize your dialog complexity using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
 ms.author: kamrani
@@ -11,11 +11,14 @@ ms.date: 01/30/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Reuse dialogs
+# Manage dialog complexity
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it.
+With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it. Component dialogs are reusable in that they can be:
+- added to another `ComponentDialog` or `DialogSet` in your bot
+- exported as a part of a package
+- used within other bots 
 
 ## Prerequisites
 
@@ -174,22 +177,22 @@ If you call _cancel all dialogs_ from the outer context, the component is cancel
 Keep this in mind when managing nested component dialogs in your bot.
 
 ## Next steps
-
-You can enhance bots to react to additional input, like "help" or "cancel", that can interrupt the normal flow of the conversation.
+Learn how to create complex conversations that branch and loop.
 
 > [!div class="nextstepaction"]
-> [Handle user interruptions](bot-builder-howto-handle-user-interrupt.md)
+> [Handle user interruptions](bot-builder-dialog-manage-complex-conversation-flow.md)
 
 <!-- Footnote-style links -->
 
+<!--concepts-->
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
-
+<!--how to-->
 [simple-flow]: bot-builder-dialog-manage-conversation-flow.md
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
-
+<!--samples-->
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample

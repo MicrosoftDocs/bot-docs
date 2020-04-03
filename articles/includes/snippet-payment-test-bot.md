@@ -1,5 +1,5 @@
 To fully test a bot that requests payment, [configure](~/bot-service-manage-channels.md) 
-it to run on channels that support Bot Framework payments, like Web Chat and Skype. 
+it to run on channels that support Bot Framework payments, like Web Chat. 
 Alternatively, you can test your bot locally using the [Bot Framework Emulator](~/bot-service-debug-emulator.md).
 
 > [!TIP]
