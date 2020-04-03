@@ -106,6 +106,7 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 | 401 | The bot is not authorized to make the request. |
 | 403 | The bot is not allowed to perform the requested operation. |
 | 404 | The requested resource was not found. |
+| 405 | The channel does not support the requested operation. |
 | 500 | An internal server error occurred. |
 | 503 | The service is unavailable. |
 
@@ -120,16 +121,17 @@ Use these operations to create conversations, send messages (activities), and ma
 | Operation | Description |
 |----|----|
 | [Create Conversation](#create-conversation) | Creates a new conversation. |
-| [Send to Conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. |
-| [Reply to Activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. |
-| [Get Conversations](#get-conversations) | Gets a list of conversations the bot has participated in. |
-| [Get Conversation Members](#get-conversation-members) | Gets the members of the specified conversation. |
-| [Get Conversation Paged Members](#get-conversation-paged-members) | Gets the members of the specified conversation one page at a time. |
-| [Get Activity Members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. |
-| [Update Activity](#update-activity) | Updates an existing activity. |
 | [Delete Activity](#delete-activity) | Deletes an existing activity. |
 | [Delete Conversation Member](#delete-conversation-member) | Removes a member from a conversation. |
+| [Get Activity Members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. |
+| [Get Conversation Member](#get-conversation-member) | Gets details about a member of a conversation. |
+| [Get Conversation Members](#get-conversation-members) | Gets the members of the specified conversation. |
+| [Get Conversation Paged Members](#get-conversation-paged-members) | Gets the members of the specified conversation one page at a time. |
+| [Get Conversations](#get-conversations) | Gets a list of conversations the bot has participated in. |
+| [Reply to Activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. |
 | [Send Conversation History](#send-conversation-history) | Uploads a transcript of past activities to the conversation. |
+| [Send to Conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. |
+| [Update Activity](#update-activity) | Updates an existing activity. |
 | [Upload Attachment to Channel](#upload-attachment-to-channel) | Uploads an attachment directly into a channel's blob storage. |
 
 ### Create Conversation
@@ -144,97 +146,6 @@ POST /v3/conversations
 |----|----|
 | **Request body** | A [ConversationParameters](#conversationparameters-object) object |
 | **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object |
-
-### Send to Conversation
-
-Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
-
-```http
-POST /v3/conversations/{conversationId}/activities
-```
-
-| | |
-|----|----|
-| **Request body** | An [Activity](#activity-object) object |
-| **Returns** | A [ResourceResponse](#resourceresponse-object) object |
-
-### Reply to Activity
-
-Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel does not support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
-
-```http
-POST /v3/conversations/{conversationId}/activities/{activityId}
-```
-
-| | |
-|----|----|
-| **Request body** | An [Activity](#activity-object) object |
-| **Returns** | A [ResourceResponse](#resourceresponse-object) object |
-
-### Get Conversations
-
-Gets a list of conversations the bot has participated in.
-
-```http
-GET /v3/conversations?continuationToken={continuationToken}
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | A [ConversationsResult](#conversationsresult-object) object |
-
-### Get Conversation Members
-
-Gets the members of the specified conversation.
-
-```http
-GET /v3/conversations/{conversationId}/members
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects |
-
-### Get Conversation Paged Members
-
-Gets the members of the specified conversation one page at a time.
-
-```http
-GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continuationToken={continuationToken}
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | A [PagedMembersResult](#pagedmembersresult-object) object |
-
-### Get Activity Members
-
-Gets the members of the specified activity within the specified conversation.
-
-```http
-GET /v3/conversations/{conversationId}/activities/{activityId}/members
-```
-
-| | |
-|----|----|
-| **Request body** | n/a |
-| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects |
-
-### Update Activity
-
-Some channels allow you to edit an existing activity to reflect the new state of a bot conversation. For example, you might remove buttons from a message in the conversation after the user has clicked one of the buttons. If successful, this operation updates the specified activity within the specified conversation.
-
-```http
-PUT /v3/conversations/{conversationId}/activities/{activityId}
-```
-
-| | |
-|----|----|
-| **Request body** | An [Activity](#activity-object) object |
-| **Returns** | A [ResourceResponse](#resourceresponse-object) object |
 
 ### Delete Activity
 
@@ -262,6 +173,84 @@ DELETE /v3/conversations/{conversationId}/members/{memberId}
 | **Request body** | n/a |
 | **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. |
 
+### Get Activity Members
+
+Gets the members of the specified activity within the specified conversation.
+
+```http
+GET /v3/conversations/{conversationId}/activities/{activityId}/members
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects |
+
+### Get Conversations
+
+Gets a list of conversations the bot has participated in.
+
+```http
+GET /v3/conversations?continuationToken={continuationToken}
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | A [ConversationsResult](#conversationsresult-object) object |
+
+### Get Conversation Member
+
+Gets details about a specific member of a specific conversation.
+
+```http
+GET /v3/conversations/{conversationId}/members/{memberId}
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | A [ChannelAccount](#channelaccount-object) object for the member. |
+
+### Get Conversation Members
+
+Gets the members of the specified conversation.
+
+```http
+GET /v3/conversations/{conversationId}/members
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | An array of [ChannelAccount](#channelaccount-object) objects for the members of the conversation. |
+
+### Get Conversation Paged Members
+
+Gets the members of the specified conversation one page at a time.
+
+```http
+GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continuationToken={continuationToken}
+```
+
+| | |
+|----|----|
+| **Request body** | n/a |
+| **Returns** | A [PagedMembersResult](#pagedmembersresult-object) object |
+
+### Reply to Activity
+
+Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel does not support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
+
+```http
+POST /v3/conversations/{conversationId}/activities/{activityId}
+```
+
+| | |
+|----|----|
+| **Request body** | An [Activity](#activity-object) object |
+| **Returns** | A [ResourceResponse](#resourceresponse-object) object |
+
 ### Send Conversation History
 
 Uploads a transcript of past activities to the conversation so that the client can render them.
@@ -274,6 +263,32 @@ POST /v3/conversations/{conversationId}/activities/history
 |----|----|
 | **Request body** | A [Transcript](#transcript-object) object. |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object. |
+
+### Send to Conversation
+
+Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
+
+```http
+POST /v3/conversations/{conversationId}/activities
+```
+
+| | |
+|----|----|
+| **Request body** | An [Activity](#activity-object) object |
+| **Returns** | A [ResourceResponse](#resourceresponse-object) object |
+
+### Update Activity
+
+Some channels allow you to edit an existing activity to reflect the new state of a bot conversation. For example, you might remove buttons from a message in the conversation after the user has clicked one of the buttons. If successful, this operation updates the specified activity within the specified conversation.
+
+```http
+PUT /v3/conversations/{conversationId}/activities/{activityId}
+```
+
+| | |
+|----|----|
+| **Request body** | An [Activity](#activity-object) object |
+| **Returns** | A [ResourceResponse](#resourceresponse-object) object |
 
 ### Upload Attachment to Channel
 
@@ -826,7 +841,7 @@ Defines a line item within a receipt.
 | **image** | [CardImage](#cardimage-object) | A **CardImage** object that specifies thumbnail image to display next to the line item.  |
 | **price** | string | A currency-formatted string that specifies the total price of all units purchased. |
 | **quantity** | string | A numeric string that specifies the number of units purchased. |
-| **subtitle** | string | Subtitle to be displayed under the line item’s title. |
+| **subtitle** | string | Subtitle to be displayed under the line item's title. |
 | **tap** | [CardAction](#cardaction-object) | A **CardAction** object that specifies the action to perform if the user taps or clicks the line item. |
 | **text** | string | Description of the line item. |
 | **title** | string | Title of the line item. |
