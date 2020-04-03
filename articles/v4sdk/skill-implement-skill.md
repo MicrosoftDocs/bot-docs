@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/27/2020
+ms.date: 03/19/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -114,7 +114,7 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 **EchoSkillBot\Bots\EchoBot.cs**
 
-[!code-csharp[Message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=14-29)]
+[!code-csharp[Message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=13-28)]
 
 #### [JavaScript](#tab/javascript)
 
@@ -126,7 +126,7 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 **echo-skill-bot/bots/echo_bot.py**
 
-[!code-python[Message handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/bots/echo_bot.py?range=10-27)]
+[!code-python[Message handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/bots/echo_bot.py?range=10-26)]
 
 ---
 
@@ -140,7 +140,7 @@ The logic for this skill does not change from turn to turn. If you implement a s
 
 **EchoSkillBot\Bots\EchoBot.cs**
 
-[!code-csharp[End-of-conversation handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=31-37)]
+[!code-csharp[End-of-conversation handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=30-36)]
 
 #### [JavaScript](#tab/javascript)
 
@@ -243,7 +243,6 @@ This samples adds claims validation to the authentication configuration and uses
 **app.py**
 
 [!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=22-34)]
-
 
 ---
 

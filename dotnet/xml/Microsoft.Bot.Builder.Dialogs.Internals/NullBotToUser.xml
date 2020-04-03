@@ -50,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage" />
       <MemberSignature Language="VB.NET" Value="Function MakeMessage () As IMessageActivity Implements IBotToUser.MakeMessage" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage : unit -&gt; Microsoft.Bot.Connector.IMessageActivity&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage : unit -&gt; Microsoft.Bot.Connector.IMessageActivity" Usage="nullBotToUser.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage</InterfaceMember>
@@ -74,6 +75,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotToUser.PostAsync (Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync(class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.NullBotToUser.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PostAsync (message As IMessageActivity, cancellationToken As CancellationToken) As Task Implements IBotToUser.PostAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync : Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync : Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="nullBotToUser.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync (message, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)</InterfaceMember>

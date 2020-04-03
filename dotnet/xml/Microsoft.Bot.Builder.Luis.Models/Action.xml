@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Action (Nullable&lt;bool&gt; triggered = null, string name = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; parameters = null);" />
+      <MemberSignature Language="C#" Value="public Action (bool? triggered = default, string name = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; parameters = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; triggered, string name, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.ActionParameter&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.Action.#ctor(System.Nullable{System.Boolean},System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.ActionParameter})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional triggered As Nullable(Of Boolean) = null, Optional name As String = null, Optional parameters As IList(Of ActionParameter) = null)" />
@@ -126,7 +126,7 @@
       </Docs>
     </Member>
     <Member MemberName="Triggered">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Triggered { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Triggered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Triggered" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.Action.Triggered" />
       <MemberSignature Language="VB.NET" Value="Public Property Triggered As Nullable(Of Boolean)" />

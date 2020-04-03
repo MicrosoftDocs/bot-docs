@@ -26,8 +26,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">
-    </typeparam>
+    <typeparam name="T" />
     <summary>
             Interface to track all of the fields in a form.
             </summary>

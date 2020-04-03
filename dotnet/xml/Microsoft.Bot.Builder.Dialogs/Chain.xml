@@ -25,6 +25,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.ICase&lt;string,R&gt; Case&lt;R&gt; (System.Text.RegularExpressions.Regex regex, Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string,R&gt; selector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.ICase`2&lt;string, !!R&gt; Case&lt;R&gt;(class System.Text.RegularExpressions.Regex regex, class Microsoft.Bot.Builder.Dialogs.ContextualSelector`2&lt;string, !!R&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Chain.Case``1(System.Text.RegularExpressions.Regex,Microsoft.Bot.Builder.Dialogs.ContextualSelector{System.String,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Case(Of R) (regex As Regex, selector As ContextualSelector(Of String, R)) As ICase(Of String, R)" />
       <MemberSignature Language="F#" Value="static member Case : System.Text.RegularExpressions.Regex * Microsoft.Bot.Builder.Dialogs.ContextualSelector&lt;string, 'R&gt; -&gt; Microsoft.Bot.Builder.Dialogs.ICase&lt;string, 'R&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Chain.Case (regex, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

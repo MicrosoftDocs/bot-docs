@@ -57,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakePrompt">
-      <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Connector.IMessageActivity MakePrompt (Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, System.Collections.Generic.IReadOnlyList&lt;U&gt; options = null, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = null, string speak = null);" />
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Connector.IMessageActivity MakePrompt (Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, System.Collections.Generic.IReadOnlyList&lt;U&gt; options = default, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = default, string speak = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity MakePrompt(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, class System.Collections.Generic.IReadOnlyList`1&lt;!U&gt; options, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions, string speak) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakePrompt (context As IDialogContext, prompt As String, Optional options As IReadOnlyList(Of U) = null, Optional descriptions As IReadOnlyList(Of String) = null, Optional speak As String = null) As IMessageActivity" />
@@ -123,6 +123,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;.StartAsync(class Microsoft.Bot.Builder.Dialogs.IDialogContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.Microsoft#Bot#Builder#Dialogs#IDialog&lt;T&gt;#StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)" />
       <MemberSignature Language="VB.NET" Value="Function StartAsync (context As IDialogContext) As Task Implements IDialog(Of T).StartAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;.StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;.StartAsync : Microsoft.Bot.Builder.Dialogs.IDialogContext -&gt; System.Threading.Tasks.Task" Usage="prompt.Microsoft.Bot.Builder.Dialogs.IDialog&lt;T&gt;.StartAsync context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.IDialog`1.StartAsync(Microsoft.Bot.Builder.Dialogs.IDialogContext)</InterfaceMember>

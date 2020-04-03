@@ -66,6 +66,7 @@
       <MemberSignature Language="C#" Value="public int HourFor (Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart dayPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 HourFor(valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart dayPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.ICalendarPlus.HourFor(Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HourFor (dayPart As BuiltIn.DateTime.DayPart) As Integer" />
       <MemberSignature Language="F#" Value="abstract member HourFor : Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart -&gt; int" Usage="iCalendarPlus.HourFor dayPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

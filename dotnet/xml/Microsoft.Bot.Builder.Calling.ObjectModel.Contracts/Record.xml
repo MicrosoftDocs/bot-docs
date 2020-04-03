@@ -41,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="InitialSilenceTimeoutInSeconds">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; InitialSilenceTimeoutInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? InitialSilenceTimeoutInSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; InitialSilenceTimeoutInSeconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.InitialSilenceTimeoutInSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialSilenceTimeoutInSeconds As Nullable(Of Double)" />
@@ -71,7 +71,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxDurationInSeconds">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxDurationInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MaxDurationInSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxDurationInSeconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.MaxDurationInSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDurationInSeconds As Nullable(Of Double)" />
@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxSilenceTimeoutInSeconds">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxSilenceTimeoutInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MaxSilenceTimeoutInSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxSilenceTimeoutInSeconds" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.MaxSilenceTimeoutInSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSilenceTimeoutInSeconds As Nullable(Of Double)" />
@@ -128,7 +128,7 @@
       </Docs>
     </Member>
     <Member MemberName="PlayBeep">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; PlayBeep { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? PlayBeep { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; PlayBeep" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.PlayBeep" />
       <MemberSignature Language="VB.NET" Value="Public Property PlayBeep As Nullable(Of Boolean)" />
@@ -186,7 +186,7 @@
       </Docs>
     </Member>
     <Member MemberName="RecordingFormat">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat&gt; RecordingFormat { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat? RecordingFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Calling.ObjectModel.Misc.RecordingFormat&gt; RecordingFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Record.RecordingFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property RecordingFormat As Nullable(Of RecordingFormat)" />

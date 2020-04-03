@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ThumbnailUrl (string url = null, string alt = null);" />
+      <MemberSignature Language="C#" Value="public ThumbnailUrl (string url = default, string alt = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string alt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ThumbnailUrl.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional alt As String = null)" />

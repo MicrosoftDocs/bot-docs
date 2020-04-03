@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Choices.FindValuesOptions</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -60,6 +62,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -95,6 +98,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,6 +115,66 @@
             </summary>
         <value>
             A <c>true</c> if the choices value will NOT be search over; otherwise <c>false</c>.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeNumbers">
+      <MemberSignature Language="C#" Value="public bool RecognizeNumbers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RecognizeNumbers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.RecognizeNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecognizeNumbers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RecognizeNumbers : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.RecognizeNumbers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("recognizeNumbers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the recognizer should check for Numbers using the NumberRecognizer's
+            NumberModel.
+            </summary>
+        <value>
+            Default is <c>true</c>.  If <c>false</c>, the Number Model will not be used to check the utterance for numbers.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeOrdinals">
+      <MemberSignature Language="C#" Value="public bool RecognizeOrdinals { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RecognizeOrdinals" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.RecognizeOrdinals" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecognizeOrdinals As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RecognizeOrdinals : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions.RecognizeOrdinals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("recognizeOrdinals")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the recognizer should check for Ordinal Numbers using the NumberRecognizer's
+            OrdinalModel.
+            </summary>
+        <value>
+            Default is <c>true</c>.  If <c>false</c>, the Ordinal Model will not be used to check the utterance for ordinal numbers.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
