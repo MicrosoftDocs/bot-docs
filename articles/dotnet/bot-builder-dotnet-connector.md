@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-3.0'
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
 The Bot Framework Connector provides a single REST API that enables a bot to communicate across multiple 
-channels such as Skype, Email, Slack, and more. 
+channels such as Email, Slack, and more. 
 It facilitates communication between bot and user, by relaying messages from bot to channel 
 and from channel to bot. 
 
