@@ -314,7 +314,7 @@ Send a message to your bot. The bot will list the messages it has received.
 ## Using Cosmos DB
 
 >[!IMPORTANT]
-> CosmosDbStorage has been deprecated. Containers created with CosmosDbStorage can be used with CosmosDbPartitionedStorage with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
 
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
@@ -340,7 +340,7 @@ The account creation takes a few minutes. Wait for the portal to display the Con
 
 ### Add a database
 
-1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **Create Database** from the drop-down box next to the **Create Container** button. A panel will then open on the right hand side of the window, where you can enter the details for the new container.
+1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **Create Database** from the drop-down box next to the **Create Container** button. A panel will then open on the right hand side of the window, where you can enter the details for the new database.
 
     ![Cosmos DB](./media/create-cosmosdb-database-resource.png)
 
@@ -445,7 +445,7 @@ pip install botbuilder-azure
 ### Implementation
 
 > [!NOTE]
-> Version 4.6 introduced a new Cosmos DB storage provider, `CosmosDbPartitionedStorage`. Existing bots using the original `CosmosDbStorage` should continue using `CosmosDbStorage`. Bots using the older provider will continue to work as expected. New bots should use `CosmosDbPartitionedStorage` as partitioning offers increased performance.
+> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289).
 
 ### [C#](#tab/csharp)
 
@@ -453,6 +453,18 @@ The following sample code runs using the same bot code as the [memory storage](#
 The code snippet below shows an implementation of Cosmos DB storage for '_myStorage_' that replaces local Memory storage. Memory Storage is commented out and replaced with a reference to Cosmos DB.
 
 **EchoBot.cs**
+
+<!-- TODO Fix this and the initialization for the other languages
+    Ask Eric what part of the options need to be provided:
+    - public string CosmosDbEndpoint { get; set; }
+    - public string AuthKey { get; set; }
+    - public string DatabaseId { get; set; }
+    - public string ContainerId { get; set; }
+    - public CosmosClientOptions CosmosClientOptions { get; set; }
+    - public int ContainerThroughput { get; set; } = 400;
+    - public string KeySuffix { get; set; }
+    - public bool CompatibilityMode { get; set; } = true;
+ -->
 
 ```csharp
 
