@@ -561,4 +561,5 @@ QnAMaker instrumentation stores its data in the following Custom Dimensions fiel
 * [Visualizing data from Azure Monitor](https://aka.ms/azure-monitor-visualize-data)
 * Learn how to [Add telemetry to your bot](https://aka.ms/add-bot-telemetry)
 * Learn more about [Azure Monitor log queries](https://aka.ms/azure-monitor-log-queries)
+* Complete listing of Bot Framework [Application Insights Events](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry-reference?view=azure-bot-service-4.0).
 * [Create and share dashboards of Log Analytics data](https://aka.ms/log-analytics-create-share-dashboards)
