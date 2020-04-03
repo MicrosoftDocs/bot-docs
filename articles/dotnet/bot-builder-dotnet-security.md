@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
-Your bot can be connected to many different communication channels (Skype, SMS, email, and others) through the Bot Framework Connector service. This article describes how to secure your bot by using HTTPS and Bot Framework authentication.
+Your bot can be connected to many different communication channels (SMS, email, and others) through the Bot Framework Connector service. This article describes how to secure your bot by using HTTPS and Bot Framework authentication.
 
 ## Use HTTPS and Bot Framework authentication
 

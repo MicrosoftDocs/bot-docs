@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateEmulatorToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, System.Net.Http.HttpClient httpClient, string channelId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateEmulatorToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class System.Net.Http.HttpClient httpClient, string channelId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EmulatorValidation.AuthenticateEmulatorToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.Net.Http.HttpClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AuthenticateEmulatorToken (authHeader As String, credentials As ICredentialProvider, channelProvider As IChannelProvider, httpClient As HttpClient, channelId As String) As Task(Of ClaimsIdentity)" />
       <MemberSignature Language="F#" Value="static member AuthenticateEmulatorToken : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * System.Net.Http.HttpClient * string -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.EmulatorValidation.AuthenticateEmulatorToken (authHeader, credentials, channelProvider, httpClient, channelId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -36,6 +38,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -70,12 +73,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt; AuthenticateEmulatorToken (string authHeader, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, System.Net.Http.HttpClient httpClient, string channelId, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Security.Claims.ClaimsIdentity&gt; AuthenticateEmulatorToken(string authHeader, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentials, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class System.Net.Http.HttpClient httpClient, string channelId, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.EmulatorValidation.AuthenticateEmulatorToken(System.String,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,System.Net.Http.HttpClient,System.String,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AuthenticateEmulatorToken (authHeader As String, credentials As ICredentialProvider, channelProvider As IChannelProvider, httpClient As HttpClient, channelId As String, authConfig As AuthenticationConfiguration) As Task(Of ClaimsIdentity)" />
       <MemberSignature Language="F#" Value="static member AuthenticateEmulatorToken : string * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * System.Net.Http.HttpClient * string * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration -&gt; System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="Microsoft.Bot.Connector.Authentication.EmulatorValidation.AuthenticateEmulatorToken (authHeader, credentials, channelProvider, httpClient, channelId, authConfig)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -123,6 +128,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -154,6 +160,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.TokenValidationParameters</ReturnType>
