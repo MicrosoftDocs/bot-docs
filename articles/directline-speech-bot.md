@@ -17,9 +17,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 Direct Line Speech uses a new WebSocket based streaming capability of Bot Framework to exchange messages between the Direct Line Speech channel and your bot. After enabling the Direct Line Speech channel in the Azure Portal, you will need to update your bot to listen for and accept these WebSocket connections. These instructions explain how to do this.
 
-## Step 1: Upgrade to the 4.6 SDK
+## Step 1: Upgrade to the latest version of the SDK
 
-For Direct Line Speech ensure you are using version 4.6 or above the Bot Builder SDK.
+For Direct Line Speech ensure you are using the latest version of Bot Builder SDK.
 
 ## Step 2: Update your .NET Core bot code if your bot uses AddBot and UseBotFramework instead of a BotController
 
