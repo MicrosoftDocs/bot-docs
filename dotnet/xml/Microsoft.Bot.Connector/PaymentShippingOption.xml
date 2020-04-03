@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PaymentShippingOption (string id = null, string label = null, Microsoft.Bot.Connector.PaymentCurrencyAmount amount = null, Nullable&lt;bool&gt; selected = null);" />
+      <MemberSignature Language="C#" Value="public PaymentShippingOption (string id = default, string label = default, Microsoft.Bot.Connector.PaymentCurrencyAmount amount = default, bool? selected = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string label, class Microsoft.Bot.Connector.PaymentCurrencyAmount amount, valuetype System.Nullable`1&lt;bool&gt; selected) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentShippingOption.#ctor(System.String,System.String,Microsoft.Bot.Connector.PaymentCurrencyAmount,System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional label As String = null, Optional amount As PaymentCurrencyAmount = null, Optional selected As Nullable(Of Boolean) = null)" />
@@ -147,7 +147,7 @@
       </Docs>
     </Member>
     <Member MemberName="Selected">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Selected { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Selected" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.PaymentShippingOption.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Property Selected As Nullable(Of Boolean)" />

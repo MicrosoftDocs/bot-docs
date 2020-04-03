@@ -9,6 +9,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,8 +21,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Middleware for logging incoming, outgoing, updated or deleted Activity messages.
-            Uses the IBotTelemetryClient interface.
+            Uses a <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> object to log incoming, outgoing, updated, or deleted message activities.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -38,14 +38,15 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="telemetryClient" Type="Microsoft.Bot.Builder.IBotTelemetryClient" />
         <Parameter Name="logPersonalInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="telemetryClient">The IBotTelemetryClient implementation used for registering telemetry events.</param>
-        <param name="logPersonalInformation"> (Optional) TRUE to include personally identifiable information.</param>
+        <param name="telemetryClient">The telemetry client to send telemetry events to.</param>
+        <param name="logPersonalInformation">`true` to include personally identifiable information; otherwise, `false`.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.TelemetryLoggerMiddleware" /> class.
             </summary>
@@ -53,7 +54,7 @@
       </Docs>
     </Member>
     <Member MemberName="FillDeleteEventPropertiesAsync">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillDeleteEventPropertiesAsync (Microsoft.Bot.Schema.IMessageDeleteActivity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillDeleteEventPropertiesAsync (Microsoft.Bot.Schema.IMessageDeleteActivity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillDeleteEventPropertiesAsync(class Microsoft.Bot.Schema.IMessageDeleteActivity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillDeleteEventPropertiesAsync(Microsoft.Bot.Schema.IMessageDeleteActivity,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Protected Function FillDeleteEventPropertiesAsync (activity As IMessageDeleteActivity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
@@ -64,6 +65,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -76,17 +78,17 @@
         <param name="activity">The Activity object deleted by bot.</param>
         <param name="additionalProperties">Additional properties to add to the event.</param>
         <summary>
-            Fills the event properties for BotMessageDelete.
-            These properties are logged when an activity message is deleted by the Bot.
+            Fills event properties for the <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgDeleteEvent" /> event.
             </summary>
-        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageDelete event.</returns>
+        <returns>The properties and their values to log when the bot deletes a message it sent previously.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillReceiveEventPropertiesAsync">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillReceiveEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillReceiveEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillReceiveEventPropertiesAsync(class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillReceiveEventPropertiesAsync(Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillReceiveEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillReceiveEventPropertiesAsync : Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillReceiveEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -94,6 +96,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -103,20 +106,22 @@
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">Last activity sent from user.</param>
+        <param name="activity">The message activity sent from user.</param>
         <param name="additionalProperties">Additional properties to add to the event.</param>
         <summary>
-            Fills the event properties for the BotMessageReceived.
-            Adheres to the LogPersonalInformation flag to filter Name, Text and Speak properties.
+            Fills event properties for the <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgReceiveEvent" /> event.
+            If the <see cref="P:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.LogPersonalInformation" /> is true, filters out the sender's name and the
+            message's text and speak fields.
             </summary>
-        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageReceived event.</returns>
+        <returns>The properties and their values to log when a message is received from the user.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillSendEventPropertiesAsync">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillSendEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillSendEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillSendEventPropertiesAsync(class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillSendEventPropertiesAsync(Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillSendEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillSendEventPropertiesAsync : Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillSendEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -124,6 +129,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -133,20 +139,22 @@
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">Last activity sent from user.</param>
+        <param name="activity">The user's activity to which the bot is responding.</param>
         <param name="additionalProperties">Additional properties to add to the event.</param>
         <summary>
-            Fills the event properties for BotMessageSend.
-            These properties are logged when an activity message is sent by the Bot to the user.
+            Fills event properties for the <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgSendEvent" /> event.
+            If the <see cref="P:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.LogPersonalInformation" /> is true, filters out the recipient's name and the
+            message's text and speak fields.
             </summary>
-        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageSend event.</returns>
+        <returns>The properties and their values to log when the bot sends the user a message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillUpdateEventPropertiesAsync">
-      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillUpdateEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = null);" />
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillUpdateEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillUpdateEventPropertiesAsync(class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillUpdateEventPropertiesAsync(Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillUpdateEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillUpdateEventPropertiesAsync : Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillUpdateEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -154,6 +162,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -166,12 +175,10 @@
         <param name="activity">Last activity sent from user.</param>
         <param name="additionalProperties">Additional properties to add to the event.</param>
         <summary>
-            Fills the event properties for BotMessageUpdate.
-            These properties are logged when an activity message is updated by the Bot.
-            For example, if a card is interacted with by the use, and the card needs to be updated to reflect
-            some interaction.
+            Fills event properties for the <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgUpdateEvent" /> event.
+            If the <see cref="P:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.LogPersonalInformation" /> is true, filters out the message's text field.
             </summary>
-        <returns>A dictionary that is sent as "Properties" to IBotTelemetryClient.TrackEvent method for the BotMessageUpdate event.</returns>
+        <returns>The properties and their values to log when the bot updates a message it sent previously.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,6 +194,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -203,6 +211,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnDeleteActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnDeleteActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.OnDeleteActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeleteActivityAsync (activity As Activity, cancellation As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnDeleteActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnDeleteActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryLoggerMiddleware.OnDeleteActivityAsync (activity, cancellation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -210,6 +219,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -223,9 +233,10 @@
         <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Invoked when the bot deletes a message.
-            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
-            This event name used is "BotMessageDelete".
+            Uses the telemetry client's
+            <see cref="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" /> method to
+            log telemetry data when the bot deletes a message it sent previously.
+            The event name is <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgDeleteEvent" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
@@ -235,6 +246,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnReceiveActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnReceiveActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.OnReceiveActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnReceiveActivityAsync (activity As Activity, cancellation As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnReceiveActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnReceiveActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryLoggerMiddleware.OnReceiveActivityAsync (activity, cancellation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -242,6 +254,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -255,9 +268,10 @@
         <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Invoked when a message is received from the user.
-            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
-            This event name used is "BotMessageReceived".
+            Uses the telemetry client's
+            <see cref="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" /> method to
+            log telemetry data when a message is received from the user.
+            The event name is <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgReceiveEvent" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
@@ -267,6 +281,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnSendActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnSendActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.OnSendActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnSendActivityAsync (activity As Activity, cancellation As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnSendActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnSendActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryLoggerMiddleware.OnSendActivityAsync (activity, cancellation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -274,6 +289,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -287,9 +303,10 @@
         <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Invoked when the bot sends a message to the user.
-            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
-            This event name used is "BotMessageSend".
+            Uses the telemetry client's
+            <see cref="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" /> method to
+            log telemetry data when the bot sends the user a message. It uses the telemetry client's
+            The event name is <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgSendEvent" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
@@ -299,6 +316,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Builder.NextDelegate nextTurn, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Builder.NextDelegate nextTurn, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OnTurnAsync (context As ITurnContext, nextTurn As NextDelegate, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.NextDelegate * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryLoggerMiddleware.OnTurnAsync (context, nextTurn, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -309,6 +327,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -324,7 +343,7 @@
         <param name="cancellationToken">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Logs events based on incoming and outgoing activities using the <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> interface.
+            Logs events for incoming, outgoing, updated, or deleted message activities, using the <see cref="P:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.TelemetryClient" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
@@ -336,6 +355,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnUpdateActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnUpdateActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.OnUpdateActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUpdateActivityAsync (activity As Activity, cancellation As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnUpdateActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnUpdateActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="telemetryLoggerMiddleware.OnUpdateActivityAsync (activity, cancellation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -343,6 +363,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -356,9 +377,10 @@
         <param name="cancellation">A cancellation token that can be used by other objects
             or threads to receive notice of cancellation.</param>
         <summary>
-            Invoked when the bot updates a message.
-            Performs logging of telemetry data using the IBotTelemetryClient.TrackEvent() method.
-            This event name used is "BotMessageUpdate".
+            Uses the telemetry client's
+            <see cref="M:Microsoft.Bot.Builder.IBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" /> method to
+            log telemetry data when the bot updates a message it sent previously.
+            The event name is <see cref="F:Microsoft.Bot.Builder.TelemetryLoggerConstants.BotMsgUpdateEvent" />.
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
@@ -376,6 +398,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -387,10 +410,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the currently configured <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> that logs the QnaMessage event.
+            Gets The telemetry client to send telemetry events to.
             </summary>
         <value>
-            The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> being used to log events.
+            The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> this middleware uses to log events.
             </value>
         <remarks>To be added.</remarks>
       </Docs>

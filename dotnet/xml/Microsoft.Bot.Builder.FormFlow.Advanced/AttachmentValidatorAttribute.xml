@@ -92,6 +92,7 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;bool&gt; IsValidAsync (Microsoft.Bot.Connector.Attachment attachment, out string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsValidAsync(class Microsoft.Bot.Connector.Attachment attachment, [out] string&amp; errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.AttachmentValidatorAttribute.IsValidAsync(Microsoft.Bot.Connector.Attachment,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsValidAsync (attachment As Attachment, ByRef errorMessage As String) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member IsValidAsync : Microsoft.Bot.Connector.Attachment * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="attachmentValidatorAttribute.IsValidAsync (attachment, errorMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

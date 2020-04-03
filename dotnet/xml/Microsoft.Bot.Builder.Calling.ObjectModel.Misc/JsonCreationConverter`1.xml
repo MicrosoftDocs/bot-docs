@@ -16,8 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">
-    </typeparam>
+    <typeparam name="T" />
     <summary>
             Helper class to use for deserializing where the concrete classes are determined by checking 
             properties in the JSON data.

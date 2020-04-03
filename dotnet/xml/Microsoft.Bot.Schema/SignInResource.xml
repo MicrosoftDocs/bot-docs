@@ -1,0 +1,117 @@
+<Type Name="SignInResource" FullName="Microsoft.Bot.Schema.SignInResource">
+  <TypeSignature Language="C#" Value="public class SignInResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignInResource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.SignInResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class SignInResource" />
+  <TypeSignature Language="F#" Value="type SignInResource = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SignInResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.SignInResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the SignInUrlResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SignInResource (string signInLink = default, Microsoft.Bot.Schema.TokenExchangeResource tokenExchangeResource = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string signInLink, class Microsoft.Bot.Schema.TokenExchangeResource tokenExchangeResource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.SignInResource.#ctor(System.String,Microsoft.Bot.Schema.TokenExchangeResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional signInLink As String = null, Optional tokenExchangeResource As TokenExchangeResource = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.SignInResource : string * Microsoft.Bot.Schema.TokenExchangeResource -&gt; Microsoft.Bot.Schema.SignInResource" Usage="new Microsoft.Bot.Schema.SignInResource (signInLink, tokenExchangeResource)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="signInLink" Type="System.String" />
+        <Parameter Name="tokenExchangeResource" Type="Microsoft.Bot.Schema.TokenExchangeResource" />
+      </Parameters>
+      <Docs>
+        <param name="signInLink">To be added.</param>
+        <param name="tokenExchangeResource">To be added.</param>
+        <summary>
+            Initializes a new instance of the SignInUrlResponse class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInLink">
+      <MemberSignature Language="C#" Value="public string SignInLink { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignInLink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.SignInResource.SignInLink" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignInLink As String" />
+      <MemberSignature Language="F#" Value="member this.SignInLink : string with get, set" Usage="Microsoft.Bot.Schema.SignInResource.SignInLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="signInLink")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The sign-in link
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenExchangeResource">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.TokenExchangeResource TokenExchangeResource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.TokenExchangeResource TokenExchangeResource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.SignInResource.TokenExchangeResource" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenExchangeResource As TokenExchangeResource" />
+      <MemberSignature Language="F#" Value="member this.TokenExchangeResource : Microsoft.Bot.Schema.TokenExchangeResource with get, set" Usage="Microsoft.Bot.Schema.SignInResource.TokenExchangeResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tokenExchangeResource")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.TokenExchangeResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Additional properties that cna be used for token exchange operations
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

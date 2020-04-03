@@ -100,6 +100,7 @@
       <MemberSignature Language="C#" Value="protected void AddField (Type type, string[] path, int ipath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddField(class System.Type type, string[] path, int32 ipath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.AddField(System.Type,System.String[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddField (type As Type, path As String(), ipath As Integer)" />
       <MemberSignature Language="F#" Value="member this.AddField : Type * string[] * int -&gt; unit" Usage="fieldReflector.AddField (type, path, ipath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -180,6 +181,7 @@
       <MemberSignature Language="C#" Value="protected void ProcessEnumAttributes (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessEnumAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessEnumAttributes(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessEnumAttributes (type As Type)" />
       <MemberSignature Language="F#" Value="member this.ProcessEnumAttributes : Type -&gt; unit" Usage="fieldReflector.ProcessEnumAttributes type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -229,6 +231,7 @@
       <MemberSignature Language="C#" Value="protected void ProcessTemplates (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessTemplates(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.FieldReflector`1.ProcessTemplates(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ProcessTemplates (type As Type)" />
       <MemberSignature Language="F#" Value="member this.ProcessTemplates : Type -&gt; unit" Usage="fieldReflector.ProcessTemplates type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

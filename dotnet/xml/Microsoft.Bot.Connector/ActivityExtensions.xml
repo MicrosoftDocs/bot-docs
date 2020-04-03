@@ -110,7 +110,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetOAuthClient">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.OAuthClient GetOAuthClient (this Microsoft.Bot.Connector.IActivity activity, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl = null, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.OAuthClient GetOAuthClient (this Microsoft.Bot.Connector.IActivity activity, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl = default, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.OAuthClient GetOAuthClient(class Microsoft.Bot.Connector.IActivity activity, class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetOAuthClient(Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOAuthClient (activity As IActivity, credentials As MicrosoftAppCredentials, Optional serviceUrl As String = null, ParamArray handlers As DelegatingHandler()) As OAuthClient" />
@@ -148,7 +148,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetOAuthClient">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.OAuthClient GetOAuthClient (this Microsoft.Bot.Connector.IActivity activity, string microsoftAppId = null, string microsoftAppPassword = null, string serviceUrl = null, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.OAuthClient GetOAuthClient (this Microsoft.Bot.Connector.IActivity activity, string microsoftAppId = default, string microsoftAppPassword = default, string serviceUrl = default, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.OAuthClient GetOAuthClient(class Microsoft.Bot.Connector.IActivity activity, string microsoftAppId, string microsoftAppPassword, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetOAuthClient(Microsoft.Bot.Connector.IActivity,System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOAuthClient (activity As IActivity, Optional microsoftAppId As String = null, Optional microsoftAppPassword As String = null, Optional serviceUrl As String = null, ParamArray handlers As DelegatingHandler()) As OAuthClient" />
@@ -188,7 +188,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetStateClient">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.StateClient GetStateClient (this Microsoft.Bot.Connector.IActivity activity, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl = null, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.StateClient GetStateClient (this Microsoft.Bot.Connector.IActivity activity, Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl = default, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.IActivity activity, class Microsoft.Bot.Connector.MicrosoftAppCredentials credentials, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,Microsoft.Bot.Connector.MicrosoftAppCredentials,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStateClient (activity As IActivity, credentials As MicrosoftAppCredentials, Optional serviceUrl As String = null, ParamArray handlers As DelegatingHandler()) As StateClient" />
@@ -231,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetStateClient">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.StateClient GetStateClient (this Microsoft.Bot.Connector.IActivity activity, string microsoftAppId = null, string microsoftAppPassword = null, string serviceUrl = null, params System.Net.Http.DelegatingHandler[] handlers);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.StateClient GetStateClient (this Microsoft.Bot.Connector.IActivity activity, string microsoftAppId = default, string microsoftAppPassword = default, string serviceUrl = default, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.StateClient GetStateClient(class Microsoft.Bot.Connector.IActivity activity, string microsoftAppId, string microsoftAppPassword, string serviceUrl, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ActivityExtensions.GetStateClient(Microsoft.Bot.Connector.IActivity,System.String,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStateClient (activity As IActivity, Optional microsoftAppId As String = null, Optional microsoftAppPassword As String = null, Optional serviceUrl As String = null, ParamArray handlers As DelegatingHandler()) As StateClient" />
