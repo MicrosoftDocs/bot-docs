@@ -22,7 +22,7 @@ For more information about welcoming users, see how to [send welcome messages to
 ## Prerequisites
 
 - Knowledge of [managing state][concept-state], the [dialogs library][concept-dialogs], how to [manage conversations][simple-flow], and how to [gather user input using a dialog prompt][prompting].
-- A copy of the ??? sample in either [**CSharp**][cs-sample] or [**JavaScript**][js-sample].
+- A copy of the ??? sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample].
 
 ## \<task> [as in to do X, do these things]
 
