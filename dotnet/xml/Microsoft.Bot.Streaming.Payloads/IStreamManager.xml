@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -24,6 +25,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler</ReturnType>
@@ -65,11 +68,13 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetPayloadStream (Microsoft.Bot.Streaming.Payloads.Header header);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetPayloadStream(class Microsoft.Bot.Streaming.Payloads.Header header) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.IStreamManager.GetPayloadStream(Microsoft.Bot.Streaming.Payloads.Header)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPayloadStream (header As Header) As Stream" />
       <MemberSignature Language="F#" Value="abstract member GetPayloadStream : Microsoft.Bot.Streaming.Payloads.Header -&gt; System.IO.Stream" Usage="iStreamManager.GetPayloadStream header" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -88,11 +93,13 @@
       <MemberSignature Language="C#" Value="public void OnReceive (Microsoft.Bot.Streaming.Payloads.Header header, System.IO.Stream contentStream, int contentLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnReceive(class Microsoft.Bot.Streaming.Payloads.Header header, class System.IO.Stream contentStream, int32 contentLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.IStreamManager.OnReceive(Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnReceive (header As Header, contentStream As Stream, contentLength As Integer)" />
       <MemberSignature Language="F#" Value="abstract member OnReceive : Microsoft.Bot.Streaming.Payloads.Header * System.IO.Stream * int -&gt; unit" Usage="iStreamManager.OnReceive (header, contentStream, contentLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

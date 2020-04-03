@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FileUploadInfo (string name = null, string uploadUrl = null, string contentUrl = null, string uniqueId = null, string fileType = null);" />
+      <MemberSignature Language="C#" Value="public FileUploadInfo (string name = default, string uploadUrl = default, string contentUrl = default, string uniqueId = default, string fileType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string uploadUrl, string contentUrl, string uniqueId, string fileType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.FileUploadInfo.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional uploadUrl As String = null, Optional contentUrl As String = null, Optional uniqueId As String = null, Optional fileType As String = null)" />
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -79,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -106,6 +110,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -160,6 +166,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -187,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

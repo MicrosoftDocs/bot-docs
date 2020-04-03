@@ -1,0 +1,191 @@
+<Type Name="HostContext" FullName="Microsoft.Bot.Builder.HostContext">
+  <TypeSignature Language="C#" Value="public class HostContext : System.Collections.Generic.Dictionary&lt;string,object&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostContext extends System.Collections.Generic.Dictionary`2&lt;string, object&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.HostContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class HostContext&#xA;Inherits Dictionary(Of String, Object)" />
+  <TypeSignature Language="F#" Value="type HostContext = class&#xA;    inherit Dictionary&lt;string, obj&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.Object</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents global objects for the runtime host.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.HostContext Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Bot.Builder.HostContext Current" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.HostContext.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As HostContext" />
+      <MemberSignature Language="F#" Value="member this.Current : Microsoft.Bot.Builder.HostContext" Usage="Microsoft.Bot.Builder.HostContext.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.HostContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the HostContext for the current process.
+            </summary>
+        <value>
+            The HostContext for the current process.
+            </value>
+        <remarks>This class is always a singleton for the process =.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Get&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Get&lt;class T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.HostContext.Get``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get(Of T As Class) () As T" />
+      <MemberSignature Language="F#" Value="member this.Get : unit -&gt; 'T (requires 'T : null)" Usage="hostContext.Get " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of the object.</typeparam>
+        <summary>
+            Gets the default value by type from the HostContext.
+            </summary>
+        <returns>The object; or null if no default object of the type is registered.</returns>
+        <remarks>The default object key is the <see cref="P:System.Type.FullName" /> of the object type.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Get&lt;T&gt; (string key) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Get&lt;class T&gt;(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.HostContext.Get``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get(Of T As Class) (key As String) As T" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; 'T (requires 'T : null)" Usage="hostContext.Get key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="key">The name of the object.</param>
+        <summary>
+            Gets a cached value by name from the HostContext.
+            </summary>
+        <returns>The object; or null if no object is registered by the key, or
+            the retrieved object does not match the type.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Set&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Set&lt;T&gt; (T value) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set&lt;class T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.HostContext.Set``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set(Of T As Class) (value As T)" />
+      <MemberSignature Language="F#" Value="member this.Set : 'T -&gt; unit (requires 'T : null)" Usage="hostContext.Set value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="value">The value to add.</param>
+        <summary>
+            Set a value to the HostContext.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" />is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Set&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Set&lt;T&gt; (string key, T value) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set&lt;class T&gt;(string key, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.HostContext.Set``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set(Of T As Class) (key As String, value As T)" />
+      <MemberSignature Language="F#" Value="member this.Set : string * 'T -&gt; unit (requires 'T : null)" Usage="hostContext.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object.</typeparam>
+        <param name="key">The name of the object.</param>
+        <param name="value">The value to add.</param>
+        <summary>
+            Set a value to the HostContext.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" />is null.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

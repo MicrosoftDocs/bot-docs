@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -64,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -85,6 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -93,6 +98,32 @@
         <summary>
             The current dialog event (set during event processings).
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyName">
+      <MemberSignature Language="C#" Value="public static string GetPropertyName (string property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPropertyName(string property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.TurnPath.GetPropertyName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertyName (property As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetPropertyName : string -&gt; string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.GetPropertyName property" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="property">memory scope property path.</param>
+        <summary>
+            Utility function to get just the property name without the memory scope prefix.
+            </summary>
+        <returns>name of the property without the prefix.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,6 +137,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -127,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -148,6 +181,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -155,6 +189,27 @@
       <Docs>
         <summary>
             The recognized result for the current turn.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RECOGNIZEDENTITIES">
+      <MemberSignature Language="C#" Value="public const string RECOGNIZEDENTITIES;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RECOGNIZEDENTITIES" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.RECOGNIZEDENTITIES" />
+      <MemberSignature Language="VB.NET" Value="Public Const RECOGNIZEDENTITIES As String " />
+      <MemberSignature Language="F#" Value="val mutable RECOGNIZEDENTITIES : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.RECOGNIZEDENTITIES" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Entities that were recognized from text.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,6 +224,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -176,6 +232,27 @@
       <Docs>
         <summary>
             Used to track that we don't end up in infinite loop of RepeatDialogs().
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEXT">
+      <MemberSignature Language="C#" Value="public const string TEXT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TEXT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.TEXT" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEXT As String " />
+      <MemberSignature Language="F#" Value="val mutable TEXT : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.TEXT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original text.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,6 +267,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -211,6 +289,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -218,6 +297,27 @@
       <Docs>
         <summary>
             Path to the top score.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UNRECOGNIZEDTEXT">
+      <MemberSignature Language="C#" Value="public const string UNRECOGNIZEDTEXT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UNRECOGNIZEDTEXT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.TurnPath.UNRECOGNIZEDTEXT" />
+      <MemberSignature Language="VB.NET" Value="Public Const UNRECOGNIZEDTEXT As String " />
+      <MemberSignature Language="F#" Value="val mutable UNRECOGNIZEDTEXT : string" Usage="Microsoft.Bot.Builder.Dialogs.TurnPath.UNRECOGNIZEDTEXT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Original utterance split into unrecognized strings.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

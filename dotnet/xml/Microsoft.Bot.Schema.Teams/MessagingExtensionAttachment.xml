@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Attachment</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessagingExtensionAttachment (string contentType = null, string contentUrl = null, object content = null, string name = null, string thumbnailUrl = null, Microsoft.Bot.Schema.Attachment preview = null);" />
+      <MemberSignature Language="C#" Value="public MessagingExtensionAttachment (string contentType = default, string contentUrl = default, object content = default, string name = default, string thumbnailUrl = default, Microsoft.Bot.Schema.Attachment preview = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string contentUrl, object content, string name, string thumbnailUrl, class Microsoft.Bot.Schema.Attachment preview) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment.#ctor(System.String,System.String,System.Object,System.String,System.String,Microsoft.Bot.Schema.Attachment)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = null, Optional contentUrl As String = null, Optional content As Object = null, Optional name As String = null, Optional thumbnailUrl As String = null, Optional preview As Attachment = null)" />
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contentType" Type="System.String" />
@@ -58,13 +61,13 @@
         <Parameter Name="preview" Type="Microsoft.Bot.Schema.Attachment" />
       </Parameters>
       <Docs>
+        <param name="preview">To be added.</param>
         <param name="contentType">mimetype/Contenttype for the file</param>
         <param name="contentUrl">Content Url</param>
         <param name="content">Embedded content</param>
         <param name="name">(OPTIONAL) The name of the attachment</param>
         <param name="thumbnailUrl">(OPTIONAL) Thumbnail associated with
             attachment</param>
-        <param name="preview">To be added.</param>
         <summary>
             Initializes a new instance of the MessagingExtensionAttachment
             class.
@@ -82,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

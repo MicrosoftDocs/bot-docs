@@ -28,6 +28,7 @@
       <MemberSignature Language="C#" Value="public InvalidTypeException (Microsoft.Bot.Builder.Internals.Fibers.IWait wait, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Internals.Fibers.IWait wait, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (wait As IWait, type As Type)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException : Microsoft.Bot.Builder.Internals.Fibers.IWait * Type -&gt; Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException" Usage="new Microsoft.Bot.Builder.Internals.Fibers.InvalidTypeException (wait, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

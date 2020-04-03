@@ -28,6 +28,7 @@
       <MemberSignature Language="C#" Value="public InvalidNeedException (Microsoft.Bot.Builder.Internals.Fibers.IWait wait, Microsoft.Bot.Builder.Internals.Fibers.Need need);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Internals.Fibers.IWait wait, valuetype Microsoft.Bot.Builder.Internals.Fibers.Need need) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.InvalidNeedException.#ctor(Microsoft.Bot.Builder.Internals.Fibers.IWait,Microsoft.Bot.Builder.Internals.Fibers.Need)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (wait As IWait, need As Need)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Internals.Fibers.InvalidNeedException : Microsoft.Bot.Builder.Internals.Fibers.IWait * Microsoft.Bot.Builder.Internals.Fibers.Need -&gt; Microsoft.Bot.Builder.Internals.Fibers.InvalidNeedException" Usage="new Microsoft.Bot.Builder.Internals.Fibers.InvalidNeedException (wait, need)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

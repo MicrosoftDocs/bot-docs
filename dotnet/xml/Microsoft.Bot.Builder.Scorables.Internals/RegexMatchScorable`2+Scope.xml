@@ -30,6 +30,7 @@
       <MemberSignature Language="C#" Value="public Scope (System.Text.RegularExpressions.Regex regex, System.Text.RegularExpressions.Match match, Microsoft.Bot.Builder.Scorables.Internals.IResolver inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.RegularExpressions.Regex regex, class System.Text.RegularExpressions.Match match, class Microsoft.Bot.Builder.Scorables.Internals.IResolver inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.#ctor(System.Text.RegularExpressions.Regex,System.Text.RegularExpressions.Match,Microsoft.Bot.Builder.Scorables.Internals.IResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (regex As Regex, match As Match, inner As IResolver)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;.Scope : System.Text.RegularExpressions.Regex * System.Text.RegularExpressions.Match * Microsoft.Bot.Builder.Scorables.Internals.IResolver -&gt; Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;.Scope" Usage="new Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable&lt;'InnerState, 'InnerScore&gt;.Scope (regex, match, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -97,6 +98,7 @@
       <MemberSignature Language="C#" Value="public override bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable`2.Scope.TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryResolve (type As Type, tag As Object, ByRef value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.TryResolve : Type * obj * obj -&gt; bool" Usage="scope.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

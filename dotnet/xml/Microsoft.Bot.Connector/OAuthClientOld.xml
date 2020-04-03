@@ -10,6 +10,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.OAuthClientOld&gt;</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
@@ -65,6 +67,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -80,9 +83,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAadTokensAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (string userId, string connectionName, string[] resourceUrls, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (string userId, string connectionName, string[] resourceUrls, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync(string userId, string connectionName, string[] resourceUrls, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetAadTokensAsync(System.String,System.String,System.String[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAadTokensAsync (userId As String, connectionName As String, resourceUrls As String(), Optional cancellationToken As CancellationToken = null) As Task(Of Dictionary(Of String, TokenResponse))" />
       <MemberSignature Language="F#" Value="member this.GetAadTokensAsync : string * string * string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="oAuthClientOld.GetAadTokensAsync (userId, connectionName, resourceUrls, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -91,6 +95,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -116,9 +121,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSignInLinkAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetSignInLinkAsync (string state, string finalRedirect = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetSignInLinkAsync (string state, string finalRedirect = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetSignInLinkAsync(string state, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetSignInLinkAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignInLinkAsync (state As String, Optional finalRedirect As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetSignInLinkAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="oAuthClientOld.GetSignInLinkAsync (state, finalRedirect, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -127,6 +133,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -150,9 +157,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTokenStatusAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync (string userId, string includeFilter = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync (string userId, string includeFilter = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync(string userId, string includeFilter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetTokenStatusAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenStatusAsync (userId As String, Optional includeFilter As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TokenStatus())" />
       <MemberSignature Language="F#" Value="member this.GetTokenStatusAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;" Usage="oAuthClientOld.GetTokenStatusAsync (userId, includeFilter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -161,6 +169,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;</ReturnType>
@@ -182,9 +191,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserTokenAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, string magicCode, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, string magicCode, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync(string userId, string connectionName, string magicCode, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.GetUserTokenAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (userId As String, connectionName As String, magicCode As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
       <MemberSignature Language="F#" Value="member this.GetUserTokenAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="oAuthClientOld.GetUserTokenAsync (userId, connectionName, magicCode, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -193,6 +203,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -231,6 +242,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -258,6 +270,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -275,9 +288,10 @@
       </Docs>
     </Member>
     <Member MemberName="SignOutUserAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string userId, string connectionName = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string userId, string connectionName = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignOutUserAsync(string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClientOld.SignOutUserAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (userId As String, Optional connectionName As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.SignOutUserAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="oAuthClientOld.SignOutUserAsync (userId, connectionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -286,6 +300,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>

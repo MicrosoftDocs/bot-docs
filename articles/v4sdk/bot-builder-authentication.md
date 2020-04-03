@@ -25,7 +25,7 @@ Related TODO:
 - This doc is a sample walkthrough, but there's no deeper documentation explaining how the Azure Bot Service is handling tokens. How does the OAuth flow work? Where is it storing my users' access tokens? What's the security and best practices around using it?
 
 "Minor issues":
-- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don’t currently have a way for the developer to specify which scope he wants at runtime.")
+- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don't currently have a way for the developer to specify which scope he wants at runtime.")
 
 - "The scope of the connection setting needs to have both openid and a resource in the Azure AD graph, such as Mail.Read." Unclear if I need to take some action at this point to make happen. Kind of out of context. I'm registering an AAD application in the portal, there's no connection setting
 - Does the bot need all of these scopes for the samples? (e.g. "Read all users' basic profiles")
@@ -207,8 +207,7 @@ The next step is to register the Azure AD application that you just created with
     1.For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
 
         - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the Azure AD app.
-
-        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
@@ -233,8 +232,7 @@ The next step is to register the Azure AD application that you just created with
     1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
 
         - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
-
-        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 

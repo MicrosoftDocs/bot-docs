@@ -78,6 +78,7 @@
       <MemberSignature Language="C#" Value="public virtual bool TryResolve (Type type, object tag, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryResolve(class System.Type type, object tag, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.ResolverScope`1.TryResolve(System.Type,System.Object,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryResolve (type As Type, tag As Object, ByRef value As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryResolve : Type * obj * obj -&gt; bool&#xA;override this.TryResolve : Type * obj * obj -&gt; bool" Usage="resolverScope.TryResolve (type, tag, value)" />
       <MemberType>Method</MemberType>
       <Implements>

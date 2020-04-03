@@ -36,8 +36,7 @@
         <Parameter Name="settings" Type="Microsoft.Bot.Builder.Calling.CallingBotServiceSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">
-        </param>
+        <param name="settings" />
         <summary>
                 Instantiates CallingBotService using provided settings
             </summary>
