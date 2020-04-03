@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/24/2020
+ms.date: 03/25/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow, step by step. They may try to ask a question in the middle of the process, or simply want to cancel it instead of completing it. In this topic, we will explore some common ways to handle user interruptions in your bot.
+Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow, step by step. They may try to ask a question in the middle of the process, or simply want to cancel it instead of completing it. In this topic, this topic describes some common ways to handle user interruptions in your bot.
 
 ## Prerequisites
 
@@ -24,14 +24,14 @@ Handling interruptions is an important aspect of a robust bot. Users will not al
 
 ## About this sample
 
-The sample used in this article models a flight booking bot that uses dialogs to get flight information from the user. At any time during the conversation with the bot, the user can issue _help_ or _cancel_ commands to cause an interruption. There are two types of interruptions we handle here:
+The sample used in this article models a flight booking bot that uses dialogs to get flight information from the user. At any time during the conversation with the bot, the user can issue _help_ or _cancel_ commands to cause an interruption. There are two types of interruptions handled:
 
-- **Turn level**: Bypass processing at the turn level but leave the dialog on the stack with the information that was provided. In the next turn, continue from where we left off.
+- **Turn level**: Bypass processing at the turn level but leave the dialog on the stack with the information that was provided. In the next turn, continue from where the conversation left off.
 - **Dialog level**: Cancel the processing completely, so the bot can start all over again.
 
 ## Define and implement the interruption logic
 
-First, we define and implement the _help_ and _cancel_ interruptions.
+First, define and implement the _help_ and _cancel_ interruptions.
 
 # [C#](#tab/csharp)
 
@@ -39,7 +39,7 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 **Dialogs\CancelAndHelpDialog.cs**
 
-We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions.
+Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancellable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
 [!code-csharp[Class signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=12)]
 
@@ -47,7 +47,7 @@ In the `CancelAndHelpDialog` class the `OnContinueDialogAsync` method calls the 
 
 [!code-csharp[Overrides](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=22-31)]
 
-If the user types "help", the `InterrupAsync` method sends a message and then calls `DialogTurnResult (DialogTurnStatus.Waiting)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and in the next turn we continue from where we left off.
+If the user types "help", the `InterrupAsync` method sends a message and then calls `DialogTurnResult (DialogTurnStatus.Waiting)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel", it calls `CancelAllDialogsAsync` on its inner dialog context, which clears its dialog stack and causes it to exit with a cancelled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
@@ -59,7 +59,7 @@ To use dialogs, install the **botbuilder-dialogs** npm package.
 
 **dialogs/cancelAndHelpDialog.js**
 
-We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions.
+Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancellable dialogs, `BookingDialog` and `DateResolverDialog` extend this class.
 
 [!code-javascript[Class signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=11)]
 
@@ -67,7 +67,7 @@ In the `CancelAndHelpDialog` class the `onContinueDialog` method calls the `inte
 
 [!code-javascript[Overrides](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=12-18)]
 
-If the user types "help", the `interrupt` method sends a message and then returns a `{ status: DialogTurnStatus.waiting }` object to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and in the next turn we continue from where we left off.
+If the user types "help", the `interrupt` method sends a message and then returns a `{ status: DialogTurnStatus.waiting }` object to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog context, which clears its dialog stack and causes it to exit with a cancelled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
@@ -82,7 +82,7 @@ For more information, about installing the packages, see the samples repository 
 
 **dialogs/cancel-and-help-dialog.py**
 
-We begin by implementing the `CancelAndHelpDialog` class to handle user interruptions.
+Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancellable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
 [!code-python[class signature](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=14)]
 
@@ -90,8 +90,7 @@ In the `CancelAndHelpDialog` class the `on_continue_dialog` method calls the `in
 
 [!code-python[dialog](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=18-23)]
 
-If the user types *help* or *?*, the `interrupt` method sends a message and then calls 
-`DialogTurnResult(DialogTurnStatus.Waiting)` to indicate that the dialog on top of the stack is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and in the next turn we continue from where we left off.
+If the user types *help* or *?*, the `interrupt` method sends a message and then calls `DialogTurnResult(DialogTurnStatus.Waiting)` to indicate that the dialog on top of the stack is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types *cancel* or *quit*, it calls `cancel_all_dialogs()` on its inner dialog context, which clears its dialog stack and causes it to exit with a cancelled status and no result value. To the `MainDialog`, shown later, it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
@@ -101,7 +100,7 @@ If the user types *cancel* or *quit*, it calls `cancel_all_dialogs()` on its inn
 
 ## Check for interruptions each turn
 
-Now that we've covered how the interrupt handling class works, let's step back and look at what happens when the bot receives a new message from the user.
+Once the interrupt handling class is implemented, review what happens when this bot receives a new message from the user.
 
 # [C#](#tab/csharp)
 
@@ -147,7 +146,7 @@ Next, in the `final_step` method of the `MainDialog` class, the booking dialog e
 
 ## Handle unexpected errors
 
-Next, we deal with any unhandled exceptions that might occur.
+The adapter's error handler handles any exceptions that were not caught in the bot.
 
 # [C#](#tab/csharp)
 
@@ -189,7 +188,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 [!code-csharp[MainDialog signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=17)]
 [!code-csharp[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=16)]
-[!code-csharp[DialogBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogBot.cs?range=18)]
+[!code-csharp[DialogBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogBot.cs?range=18-19)]
 
 # [JavaScript](#tab/javascript)
 
