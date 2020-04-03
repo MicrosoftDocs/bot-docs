@@ -133,7 +133,7 @@ The [Bot Framework Solutions repository](https://github.com/Microsoft/AI#readme)
 
 ## Azure Bot Service
 Azure Bot Service enables you to host intelligent, enterprise-grade bots with complete ownership and control of your data. 
-Developers can register and connect their bots to users on Skype, Microsoft Teams, Cortana, Web Chat, 
+Developers can register and connect their bots to users on Microsoft Teams, Cortana, Web Chat, 
 and more. [Azure][27]  |  [docs][28] | [connect to channels][29] 
 
 * **Direct Line JS Client**: If you want to use the Direct Line channel in Azure Bot Service and are not using the WebChat client, 
@@ -153,7 +153,7 @@ The [Bot Framework Emulator][60] is a  cross-platform desktop application that a
 ### Bot Inspector (New! In preview)
 
 The Bot Framework Emulator has released a beta of the new Bot Inspector feature. It provides a way to debug and test your 
-Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger, Skype, etc. 
+Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger,etc. 
 As you have the conversation, messages will be mirrored to the Bot Framework Emulator where you can inspect the 
 message data that the bot received. Additionally, a snapshot of the bot state for any given turn between the 
 channel and the bot is rendered as well. Read more about 

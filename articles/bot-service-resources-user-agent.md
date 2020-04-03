@@ -22,7 +22,7 @@ If you’re a bot developer, you may already know why these requests are being d
 
 ## Why is Microsoft contacting my service?
 
-The Bot Framework connects users on chat services like Skype and Facebook Messenger to bots, which are web servers with REST APIs running on internet-accessible endpoints. The HTTP calls to bots (also called webhook calls) are sent only to URLs specified by a bot developer who registered with the Bot Framework developer portal.
+The Bot Framework connects users on chat services like Facebook Messenger to bots, which are web servers with REST APIs running on internet-accessible endpoints. The HTTP calls to bots (also called webhook calls) are sent only to URLs specified by a bot developer who registered with the Bot Framework developer portal.
 
 If you’re receiving unsolicited requests from Bot Framework services to your web service, it is likely because a developer has either accidentally or knowingly entered your URL as the webhook callback for their bot.
 

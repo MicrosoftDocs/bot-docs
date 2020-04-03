@@ -14,6 +14,9 @@ monikerRange: 'azure-bot-service-3.0'
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
+>[!NOTE]
+> As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
+
 [!INCLUDE [Introduction to conducting audio calls](../includes/snippet-audio-call-intro.md)]
 
 The architecture for a bot that supports audio calls is very similar to that of a typical bot. 
