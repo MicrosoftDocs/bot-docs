@@ -70,7 +70,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IActivity Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#IBotContext#Activity" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Activity As IActivity Implements IBotContext.Activity" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.IBotContext.Activity : Microsoft.Bot.Connector.IActivity" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.Activity" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IBotContext.Activity</InterfaceMember>
@@ -95,7 +95,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.CancellationToken Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#IBotContext#CancellationToken" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CancellationToken As CancellationToken Implements IBotContext.CancellationToken" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken : System.Threading.CancellationToken" Usage="Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.IBotContext.CancellationToken</InterfaceMember>
@@ -120,7 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#ConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ConversationData As IBotDataBag Implements IBotData.ConversationData" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData : Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.ConversationData</InterfaceMember>
@@ -144,6 +144,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotData.FlushAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#FlushAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function FlushAsync (cancellationToken As CancellationToken) As Task Implements IBotData.FlushAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.FlushAsync(System.Threading.CancellationToken)</InterfaceMember>
@@ -171,6 +173,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotData.LoadAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#LoadAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function LoadAsync (cancellationToken As CancellationToken) As Task Implements IBotData.LoadAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.LoadAsync(System.Threading.CancellationToken)</InterfaceMember>
@@ -199,7 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#PrivateConversationData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property PrivateConversationData As IBotDataBag Implements IBotData.PrivateConversationData" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData : Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.PrivateConversationData</InterfaceMember>
@@ -224,7 +228,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.IBotDataBag Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotData#UserData" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property UserData As IBotDataBag Implements IBotData.UserData" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData : Microsoft.Bot.Builder.Dialogs.IBotDataBag" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IBotData.UserData</InterfaceMember>
@@ -249,6 +253,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#MakeMessage" />
       <MemberSignature Language="VB.NET" Value="Function MakeMessage () As IMessageActivity Implements IBotToUser.MakeMessage" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage : unit -&gt; Microsoft.Bot.Connector.IMessageActivity&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage : unit -&gt; Microsoft.Bot.Connector.IMessageActivity" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.MakeMessage</InterfaceMember>
@@ -273,6 +278,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IBotToUser.PostAsync (Microsoft.Bot.Connector.IMessageActivity message, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync(class Microsoft.Bot.Connector.IMessageActivity message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IBotToUser#PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Function PostAsync (message As IMessageActivity, cancellationToken As CancellationToken) As Task Implements IBotToUser.PostAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync : Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync : Microsoft.Bot.Connector.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync (message, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser.PostAsync(Microsoft.Bot.Connector.IMessageActivity,System.Threading.CancellationToken)</InterfaceMember>
@@ -303,6 +310,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Sub Call(Of R) (child As IDialog(Of R), resume As ResumeAfter(Of R)) Implements IDialogStack.Call" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; -&gt; unit" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call (child, resume)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Call``1(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})</InterfaceMember>
@@ -336,6 +344,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done&lt;R&gt;(!!R value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Done``1(``0)" />
       <MemberSignature Language="VB.NET" Value="Sub Done(Of R) (value As R) Implements IDialogStack.Done" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done : 'R -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done : 'R -&gt; unit" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Done``1(``0)</InterfaceMember>
@@ -367,6 +376,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Fail(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Sub Fail (error As Exception) Implements IDialogStack.Fail" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail : Exception -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail : Exception -&gt; unit" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail error" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Fail(System.Exception)</InterfaceMember>
@@ -394,6 +404,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward&lt;R, T&gt;(class Microsoft.Bot.Builder.Dialogs.IDialog`1&lt;!!R&gt; child, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume, !!T item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function Forward(Of R, T) (child As IDialog(Of R), resume As ResumeAfter(Of R), item As T, token As CancellationToken) As Task Implements IDialogStack.Forward" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; * 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward : Microsoft.Bot.Builder.Dialogs.IDialog&lt;'R&gt; * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; * 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward (child, resume, item, token)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Forward``2(Microsoft.Bot.Builder.Dialogs.IDialog{``0},Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0},``1,System.Threading.CancellationToken)</InterfaceMember>
@@ -434,7 +445,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class System.Delegate&gt; Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Frames" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Frames As IReadOnlyList(Of Delegate) Implements IDialogStack.Frames" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames : System.Collections.Generic.IReadOnlyList&lt;Delegate&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Frames</InterfaceMember>
@@ -459,6 +470,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post&lt;E&gt;(!!E event, class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!E&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Sub Post(Of E) (event As E, resume As ResumeAfter(Of E)) Implements IDialogStack.Post" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post : 'E * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'E&gt; -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post : 'E * Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'E&gt; -&gt; unit" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post (event, resume)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Post``1(``0,Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})</InterfaceMember>
@@ -492,6 +504,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Reset" />
       <MemberSignature Language="VB.NET" Value="Sub Reset () Implements IDialogStack.Reset" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset : unit -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset : unit -&gt; unit" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Reset</InterfaceMember>
@@ -516,6 +529,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait&lt;R&gt;(class Microsoft.Bot.Builder.Dialogs.ResumeAfter`1&lt;!!R&gt; resume) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.DialogContext.Microsoft#Bot#Builder#Dialogs#Internals#IDialogStack#Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})" />
       <MemberSignature Language="VB.NET" Value="Sub Wait(Of R) (resume As ResumeAfter(Of R)) Implements IDialogStack.Wait" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait : Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait : Microsoft.Bot.Builder.Dialogs.ResumeAfter&lt;'R&gt; -&gt; unit" Usage="dialogContext.Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait resume" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IDialogStack.Wait``1(Microsoft.Bot.Builder.Dialogs.ResumeAfter{``0})</InterfaceMember>

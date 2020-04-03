@@ -1,0 +1,135 @@
+<Type Name="SkillConversationIdFactoryOptions" FullName="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions">
+  <TypeSignature Language="C#" Value="public class SkillConversationIdFactoryOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SkillConversationIdFactoryOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class SkillConversationIdFactoryOptions" />
+  <TypeSignature Language="F#" Value="type SkillConversationIdFactoryOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A class defining the parameters used in <see cref="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase.CreateSkillConversationIdAsync(Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions,System.Threading.CancellationToken)" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkillConversationIdFactoryOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity Activity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Schema.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.Activity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Activity As Activity" />
+      <MemberSignature Language="F#" Value="member this.Activity : Microsoft.Bot.Schema.Activity with get, set" Usage="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the activity which will be sent to the skill.
+            </summary>
+        <value>
+            The activity which will be sent to the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotFrameworkSkill">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Skills.BotFrameworkSkill BotFrameworkSkill { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Skills.BotFrameworkSkill BotFrameworkSkill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.BotFrameworkSkill" />
+      <MemberSignature Language="VB.NET" Value="Public Property BotFrameworkSkill As BotFrameworkSkill" />
+      <MemberSignature Language="F#" Value="member this.BotFrameworkSkill : Microsoft.Bot.Builder.Skills.BotFrameworkSkill with get, set" Usage="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.BotFrameworkSkill" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Skills.BotFrameworkSkill</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the skill to create the conversation Id for.
+            </summary>
+        <value>
+            The skill to create the conversation Id for.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBotId">
+      <MemberSignature Language="C#" Value="public string FromBotId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FromBotId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.FromBotId" />
+      <MemberSignature Language="VB.NET" Value="Public Property FromBotId As String" />
+      <MemberSignature Language="F#" Value="member this.FromBotId : string with get, set" Usage="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.FromBotId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the id of the parent bot that is messaging the skill.
+            </summary>
+        <value>
+            The id of the parent bot that is messaging the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBotOAuthScope">
+      <MemberSignature Language="C#" Value="public string FromBotOAuthScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FromBotOAuthScope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.FromBotOAuthScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property FromBotOAuthScope As String" />
+      <MemberSignature Language="F#" Value="member this.FromBotOAuthScope : string with get, set" Usage="Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryOptions.FromBotOAuthScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the oauth audience scope, used during token retrieval (either https://api.botframework.com or bot app id).
+            </summary>
+        <value>
+            The oauth audience scope, used during token retrieval (either https://api.botframework.com or bot app id if this is a skill calling another skill).
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

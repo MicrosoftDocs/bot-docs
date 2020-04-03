@@ -96,6 +96,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.MicrosoftAppCredentials GetCredentialsFromClaims (this System.Security.Claims.ClaimsIdentity claimsIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.MicrosoftAppCredentials GetCredentialsFromClaims(class System.Security.Claims.ClaimsIdentity claimsIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ClaimsIdentityEx.GetCredentialsFromClaims(System.Security.Claims.ClaimsIdentity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetCredentialsFromClaims (claimsIdentity As ClaimsIdentity) As MicrosoftAppCredentials" />
       <MemberSignature Language="F#" Value="static member GetCredentialsFromClaims : System.Security.Claims.ClaimsIdentity -&gt; Microsoft.Bot.Connector.MicrosoftAppCredentials" Usage="Microsoft.Bot.Connector.ClaimsIdentityEx.GetCredentialsFromClaims claimsIdentity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

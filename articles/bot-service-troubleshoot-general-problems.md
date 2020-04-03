@@ -80,7 +80,7 @@ For details about identifiers in the Bot Framework, see the Bot Framework [guide
 
 ## How can I get access to the user ID?
 
-Bot Framework channels present the user's ID in the `from.Id` field of any Activity sent by the user. SMS and email messages will provide the raw user ID in this property. Channels like Skype obscure the `from.Id` property so it contains unique ID for the user which differs from the user's Skype ID. If you need to connect to an existing account, you can use a sign-in card and implement your own OAuth flow to connect the user ID to your own service's user ID.
+Bot Framework channels present the user's ID in the `from.Id` field of any Activity sent by the user. SMS and email messages will provide the raw user ID in this property. Some channels obscure the `from.Id` property so it contains unique ID for the user which differs from the user's ID in the channel. If you need to connect to an existing account, you can use a sign-in card and implement your own OAuth flow to connect the user ID to your own service's user ID.
 
 ## Why are my Facebook user names not showing anymore?
 
@@ -101,7 +101,7 @@ For Azure Active Directory authentication, see the adding authentication [V3](ht
 
 Some channels, such as SMS and email, provide unscoped addresses. In these cases, messages from the user will contain the raw user ID in the `from.Id` property.
 
-Other channels, such as Skype, Facebook, and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user’s ID ahead of time. In these cases, you will need to authenticate the user via a login link or shared secret in order to determine whether or not they are authorized to use the bot.
+Other channels, such as Facebook and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user’s ID ahead of time. In these cases, you will need to authenticate the user via a login link or shared secret in order to determine whether or not they are authorized to use the bot.
 
 ## Why does my Direct Line 1.1 conversation start over after every message?
 

@@ -210,7 +210,7 @@ If an error is indicated in the chat window, use the error message to determine 
 * The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal does not begin with `https` or is not trusted by the Bot Framework. Your bot must have a valid, chain-trusted certificate.
 * The bot is configured with missing or incorrect values for app ID or password. [Verify](#enable-security-localhost) that the bot configuration settings specify valid values for app ID and password.
 
-If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](~/bot-service-manage-channels.md) such as Skype, Facebook Messenger, Direct Line, and others.
+If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](~/bot-service-manage-channels.md) such as Facebook Messenger, Direct Line, and others.
 
 ## Additional resources
 

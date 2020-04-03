@@ -62,6 +62,7 @@
       <MemberSignature Language="C#" Value="public override bool HasScore (Item item, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HasScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.WhereScoreScorable`2.HasScore(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HasScore (item As Item, state As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.HasScore : 'Item * obj -&gt; bool" Usage="whereScoreScorable.HasScore (item, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

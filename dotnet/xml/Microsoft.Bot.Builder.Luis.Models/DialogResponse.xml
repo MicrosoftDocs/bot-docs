@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DialogResponse (string prompt = null, string parameterName = null, string parameterType = null, string contextId = null, string status = null);" />
+      <MemberSignature Language="C#" Value="public DialogResponse (string prompt = default, string parameterName = default, string parameterType = default, string contextId = default, string status = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string parameterName, string parameterType, string contextId, string status) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.DialogResponse.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional prompt As String = null, Optional parameterName As String = null, Optional parameterType As String = null, Optional contextId As String = null, Optional status As String = null)" />

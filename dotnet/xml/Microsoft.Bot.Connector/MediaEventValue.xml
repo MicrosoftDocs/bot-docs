@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MediaEventValue (object cardValue = null);" />
+      <MemberSignature Language="C#" Value="public MediaEventValue (object cardValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object cardValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.MediaEventValue.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional cardValue As Object = null)" />

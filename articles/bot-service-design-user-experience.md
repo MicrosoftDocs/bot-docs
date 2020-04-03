@@ -13,7 +13,7 @@ ms.date: 09/20/2018
 
 # Design the user experience
 
-You can create bots with a variety of features such as text, buttons, images, rich cards displayed in carousel or list format, and more. However, each channel such as Facebook, Slack, Skype, etc. ultimately controls how its messaging clients render features. Even when multiple channels support a feature, each channel may render the feature in a slightly different way. In cases where a message contains feature(s) that a channel does not natively support, the channel may attempt to down-render message contents as text or as a static image, which can significantly impact the message's appearance on the client. In some cases, a channel may not support a particular feature at all. For example, GroupMe clients cannot display a typing indicator.
+You can create bots with a variety of features such as text, buttons, images, rich cards displayed in carousel or list format, and more. However, each channel such as Facebook, Slack, etc. ultimately controls how its messaging clients render features. Even when multiple channels support a feature, each channel may render the feature in a slightly different way. In cases where a message contains feature(s) that a channel does not natively support, the channel may attempt to down-render message contents as text or as a static image, which can significantly impact the message's appearance on the client. In some cases, a channel may not support a particular feature at all. For example, GroupMe clients cannot display a typing indicator.
 
 ## Rich user controls
 

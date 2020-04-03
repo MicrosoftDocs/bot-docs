@@ -1,12 +1,13 @@
 <Type Name="ChannelServiceController" FullName="Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController">
-  <TypeSignature Language="C#" Value="public class ChannelServiceController : Microsoft.AspNetCore.Mvc.ControllerBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelServiceController extends Microsoft.AspNetCore.Mvc.ControllerBase" />
+  <TypeSignature Language="C#" Value="public abstract class ChannelServiceController : Microsoft.AspNetCore.Mvc.ControllerBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelServiceController extends Microsoft.AspNetCore.Mvc.ControllerBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController" />
-  <TypeSignature Language="VB.NET" Value="Public Class ChannelServiceController&#xA;Inherits ControllerBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelServiceController&#xA;Inherits ControllerBase" />
   <TypeSignature Language="F#" Value="type ChannelServiceController = class&#xA;    inherit ControllerBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.AspNetCore.Mvc.ControllerBase</BaseTypeName>
@@ -20,15 +21,16 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ChannelServiceController (Microsoft.Bot.Builder.ChannelServiceHandler handler);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.ChannelServiceHandler handler) cil managed" />
+      <MemberSignature Language="C#" Value="protected ChannelServiceController (Microsoft.Bot.Builder.ChannelServiceHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.ChannelServiceHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.#ctor(Microsoft.Bot.Builder.ChannelServiceHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (handler As ChannelServiceHandler)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (handler As ChannelServiceHandler)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController : Microsoft.Bot.Builder.ChannelServiceHandler -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController handler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handler" Type="Microsoft.Bot.Builder.ChannelServiceHandler" />
@@ -51,6 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,6 +91,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -121,6 +125,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -154,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -189,6 +195,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,7 +218,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationPagedMembersAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync (string conversationId, int pageSize = -1, string continuationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync (string conversationId, int pageSize = -1, string continuationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync(string conversationId, int32 pageSize, string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationPagedMembersAsync(System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationPagedMembersAsync (conversationId As String, Optional pageSize As Integer = -1, Optional continuationToken As String = null) As Task(Of IActionResult)" />
@@ -220,6 +227,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -246,7 +254,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetConversationsAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync (string continuationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync (string continuationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync(string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationsAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationsAsync (Optional continuationToken As String = null) As Task(Of IActionResult)" />
@@ -255,6 +263,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -280,11 +289,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; ReplyToActivityAsync (string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; ReplyToActivityAsync(string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.ReplyToActivityAsync(System.String,System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReplyToActivityAsync (conversationId As String, activityId As String, activity As Activity) As Task(Of IActionResult)" />
       <MemberSignature Language="F#" Value="abstract member ReplyToActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.ReplyToActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.ReplyToActivityAsync (conversationId, activityId, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -326,6 +337,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -359,11 +371,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; SendToConversationAsync (string conversationId, Microsoft.Bot.Schema.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; SendToConversationAsync(string conversationId, class Microsoft.Bot.Schema.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.SendToConversationAsync(System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SendToConversationAsync (conversationId As String, activity As Activity) As Task(Of IActionResult)" />
       <MemberSignature Language="F#" Value="abstract member SendToConversationAsync : string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.SendToConversationAsync : string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.SendToConversationAsync (conversationId, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -397,11 +411,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; UpdateActivityAsync (string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; UpdateActivityAsync(string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.UpdateActivityAsync(System.String,System.String,Microsoft.Bot.Schema.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateActivityAsync (conversationId As String, activityId As String, activity As Activity) As Task(Of IActionResult)" />
       <MemberSignature Language="F#" Value="abstract member UpdateActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.UpdateActivityAsync : string * string * Microsoft.Bot.Schema.Activity -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.UpdateActivityAsync (conversationId, activityId, activity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -443,6 +459,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

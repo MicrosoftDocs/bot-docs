@@ -61,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt;&gt; Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;.PollAsync(class Microsoft.Bot.Builder.Internals.Fibers.IFiber`1&lt;!C&gt; fiber, !C context, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IFrameLoop&lt;C&gt;#PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function PollAsync (fiber As IFiber(Of C), context As C, token As CancellationToken) As Task(Of IWait(Of C)) Implements IFrameLoop(Of C).PollAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;.PollAsync : Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;'C&gt; * 'C * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt;&gt;&#xA;override this.Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;.PollAsync : Microsoft.Bot.Builder.Internals.Fibers.IFiber&lt;'C&gt; * 'C * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt;&gt;" Usage="frame.Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop&lt;C&gt;.PollAsync (fiber, context, token)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IFrameLoop`1.PollAsync(Microsoft.Bot.Builder.Internals.Fibers.IFiber{`0},`0,System.Threading.CancellationToken)</InterfaceMember>
@@ -93,7 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Mark" />
       <MemberSignature Language="VB.NET" Value=" Property Mark As IWait(Of C) Implements IWaiter(Of C).Mark" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark : Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt; with get, set" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Mark" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Mark</InterfaceMember>
@@ -118,7 +119,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Internals.Fibers.IWait`1&lt;!C&gt; Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Internals.Fibers.Frame`1.Microsoft#Bot#Builder#Internals#Fibers#IWaiter&lt;C&gt;#Wait" />
       <MemberSignature Language="VB.NET" Value=" Property Wait As IWait(Of C) Implements IWaiter(Of C).Wait" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait : Microsoft.Bot.Builder.Internals.Fibers.IWait&lt;'C&gt; with get, set" Usage="Microsoft.Bot.Builder.Internals.Fibers.IWaiter&lt;C&gt;.Wait" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Internals.Fibers.IWaiter`1.Wait</InterfaceMember>
