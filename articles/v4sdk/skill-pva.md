@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-If you expect that your Skill will be consumed from a [Power Virtual Agents](https://powerva.microsoft.com/#/) bot there are some additional restrictions placed on your Skill you'll need to account for.
+If you expect that your Skill will be consumed from a [Power Virtual Agents](https://powerva.microsoft.com/#/) bot there are some additional restrictions placed on your Skill you'll need to account for. If you need to learn more about building a Skill in general please see [Implement a Skill](./skill-implement-skill.md)
 
 ## Manifest restrictions
 
