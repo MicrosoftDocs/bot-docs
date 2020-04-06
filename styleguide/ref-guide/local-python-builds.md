@@ -19,6 +19,15 @@ For more information, see [Testing Python Content Locally](https://review.docs.m
     ```cmd
     pip install -U sphinx-docfx-yaml
     ```
+### Check files for errors (optional)
+
+Before creating Sphinx content you can check your files for any issues. Run `pip install rstcheck` from a command line to install [rstcheck](https://pypi.org/project/rstcheck/).
+
+You can set a variety of [options](https://github.com/myint/rstcheck#options), like [ignoring specific errors](https://github.com/myint/rstcheck#ignore-specific-errors) or messages, when running rstcheck. To check a single file run:
+
+```cmd
+rstcheck <file_name>
+```
 
 ## Create Sphinx content
 
