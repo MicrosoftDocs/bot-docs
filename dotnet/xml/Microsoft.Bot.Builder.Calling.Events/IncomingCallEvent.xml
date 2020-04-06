@@ -21,6 +21,7 @@
       <MemberSignature Language="C#" Value="public IncomingCallEvent (Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation conversation, Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation conversation, class Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow resultingWorkflow) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent.#ctor(Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation,Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conversation As Conversation, resultingWorkflow As Workflow)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent : Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Conversation * Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.Workflow -&gt; Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent" Usage="new Microsoft.Bot.Builder.Calling.Events.IncomingCallEvent (conversation, resultingWorkflow)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

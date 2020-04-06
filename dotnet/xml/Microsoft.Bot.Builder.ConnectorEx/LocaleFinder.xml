@@ -29,6 +29,7 @@
       <MemberSignature Language="C#" Value="public LocaleFinder (Microsoft.Bot.Connector.ConversationReference conversationReference, Microsoft.Bot.Builder.ConnectorEx.ResumptionContext resumptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ConversationReference conversationReference, class Microsoft.Bot.Builder.ConnectorEx.ResumptionContext resumptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.LocaleFinder.#ctor(Microsoft.Bot.Connector.ConversationReference,Microsoft.Bot.Builder.ConnectorEx.ResumptionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conversationReference As ConversationReference, resumptionContext As ResumptionContext)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ConnectorEx.LocaleFinder : Microsoft.Bot.Connector.ConversationReference * Microsoft.Bot.Builder.ConnectorEx.ResumptionContext -&gt; Microsoft.Bot.Builder.ConnectorEx.LocaleFinder" Usage="new Microsoft.Bot.Builder.ConnectorEx.LocaleFinder (conversationReference, resumptionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

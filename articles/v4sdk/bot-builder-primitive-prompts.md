@@ -66,20 +66,20 @@ We use the bot's message turn handler plus user and conversation state propertie
 
 Create the user and conversation state objects at startup and consume them via dependency injection in the bot constructor.
 
-**Startup.cs**  
-[!code-csharp[Startup.cs](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=28-35)]
+**Startup.cs**
+[!code-csharp[Startup.cs](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=23-30)]
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=21-28)]
 
 ## [JavaScript](#tab/javascript)
 
 Create the user and conversation state objects in **index.js** and consume them in the bot constructor.
 
-**index.js**
+**index.js**  
 [!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=33-39)]
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=20-22)]
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=27-29)]
 
@@ -87,10 +87,10 @@ Create the user and conversation state objects in **index.js** and consume them 
 
 Create the user and conversation state objects in **app.py** and consume them in the bot constructor.
 
-**app.py**  
+**app.py**
 [!code-python[app.py](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/app.py?range=67-73)]
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[constructor](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=29-41)]
 
 ---
@@ -101,7 +101,7 @@ Create the user and conversation state objects in **app.py** and consume them in
 
 Create property accessors for the user profile and conversation flow properties and then call `GetAsync` to retrieve the property value from state.
 
-**Bots/CustomPromptBot.cs**
+**Bots/CustomPromptBot.cs**  
 [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-37)]
 
 Before the turn ends, call `SaveChangesAsync` to write any state changes to storage.
@@ -112,7 +112,7 @@ Before the turn ends, call `SaveChangesAsync` to write any state changes to stor
 
 Create property accessors for the user profile and conversation flow properties and then call `get` to retrieve the property value from state.
 
-**bots/customPromptBot.js**
+**bots/customPromptBot.js**  
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-33)]
 
 Before the turn ends, call `saveChanges` to write any state changes to storage.
@@ -123,7 +123,7 @@ Before the turn ends, call `saveChanges` to write any state changes to storage.
 
 In the constructor, we create the state property accessors and set up the state management objects (created above) for our conversation.
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[on_message_activity](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=46-49)]
 
 Before the turn ends, call `SaveChangesAsync` to write any state changes to storage.
@@ -138,17 +138,17 @@ When handling message activities, the message handler uses a helper method to ma
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-44)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.js**  
+**bots/customPromptBot.js**
 [!code-javascript[message handler](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-39)]
 
 ## [Python](#tab/python)
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[message handler](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=46-55)]
 
 ---
@@ -167,17 +167,17 @@ The validation methods are described in the following section.
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[FillOutUserProfileAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=46-103)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.js**  
+**bots/customPromptBot.js**
 [!code-javascript[fillOutUserProfile](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=53-118)]
 
 ## [Python](#tab/python)
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[_fill_out_user_profile](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=57-125)]
 
 ---
@@ -198,17 +198,17 @@ The bot uses the following criteria to validate input.
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[validation methods](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=105-203)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.cs**  
+**bots/customPromptBot.cs**
 [!code-javascript[validation methods](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=120-190)]
 
 ## [Python](#tab/python)
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[validation methods](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=127-189)]
 
 ---

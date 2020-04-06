@@ -1,0 +1,183 @@
+<Type Name="SkillDialogOptions" FullName="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions">
+  <TypeSignature Language="C#" Value="public class SkillDialogOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SkillDialogOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class SkillDialogOptions" />
+  <TypeSignature Language="F#" Value="type SkillDialogOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines the options that will be used to execute a <see cref="T:Microsoft.Bot.Builder.Dialogs.SkillDialog" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkillDialogOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BotId">
+      <MemberSignature Language="C#" Value="public string BotId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BotId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.BotId" />
+      <MemberSignature Language="VB.NET" Value="Public Property BotId As String" />
+      <MemberSignature Language="F#" Value="member this.BotId : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.BotId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Microsoft app ID of the bot calling the skill.
+            </summary>
+        <value>
+            The the Microsoft app ID of the bot calling the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationIdFactory">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase ConversationIdFactory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase ConversationIdFactory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationIdFactory" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationIdFactory As SkillConversationIdFactoryBase" />
+      <MemberSignature Language="F#" Value="member this.ConversationIdFactory : Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase with get, set" Usage="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationIdFactory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an instance of a <see cref="T:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase" /> used to generate conversation IDs for interacting with the skill.
+            </summary>
+        <value>
+            An instance of a <see cref="T:Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase" /> used to generate conversation IDs for interacting with the skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationState">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.ConversationState ConversationState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.ConversationState ConversationState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationState As ConversationState" />
+      <MemberSignature Language="F#" Value="member this.ConversationState : Microsoft.Bot.Builder.ConversationState with get, set" Usage="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.ConversationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationState" /> to be used by the dialog.
+            </summary>
+        <value>
+            The <see cref="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.ConversationState" /> to be used by the dialog.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skill">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Skills.BotFrameworkSkill Skill { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Skills.BotFrameworkSkill Skill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.Skill" />
+      <MemberSignature Language="VB.NET" Value="Public Property Skill As BotFrameworkSkill" />
+      <MemberSignature Language="F#" Value="member this.Skill : Microsoft.Bot.Builder.Skills.BotFrameworkSkill with get, set" Usage="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.Skill" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Skills.BotFrameworkSkill</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Bot.Builder.Skills.BotFrameworkSkill" /> that the dialog will call.
+            </summary>
+        <value>
+            The <see cref="T:Microsoft.Bot.Builder.Skills.BotFrameworkSkill" /> that the dialog will call.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkillClient">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Skills.BotFrameworkClient SkillClient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Skills.BotFrameworkClient SkillClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.SkillClient" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkillClient As BotFrameworkClient" />
+      <MemberSignature Language="F#" Value="member this.SkillClient : Microsoft.Bot.Builder.Skills.BotFrameworkClient with get, set" Usage="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.SkillClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Skills.BotFrameworkClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Bot.Builder.Skills.BotFrameworkClient" /> used to call the remote skill.
+            </summary>
+        <value>
+            The <see cref="T:Microsoft.Bot.Builder.Skills.BotFrameworkClient" /> used to call the remote skill.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkillHostEndpoint">
+      <MemberSignature Language="C#" Value="public Uri SkillHostEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SkillHostEndpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.SkillHostEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkillHostEndpoint As Uri" />
+      <MemberSignature Language="F#" Value="member this.SkillHostEndpoint : Uri with get, set" Usage="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions.SkillHostEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the callback Url for the skill host.
+            </summary>
+        <value>
+            The callback Url for the skill host.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

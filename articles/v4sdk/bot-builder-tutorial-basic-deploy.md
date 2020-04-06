@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/28/2020
+ms.date: 03/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 > * Run and interact with it locally
 > * Publish your bot
 
-If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 # [C#](#tab/csharp)
 
@@ -43,6 +43,7 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 ## Deploy your bot
 
 ### Prerequisites
+
 [!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
 
 ### Prepare for deployment
@@ -54,15 +55,19 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
 #### 1. Login to Azure
+
 [!INCLUDE [deploy az login](~/includes/deploy/snippet-az-login.md)]
 
 #### 2. Set the subscription
+
 [!INCLUDE [deploy az subscription](~/includes/deploy/snippet-az-set-subscription.md)]
 
 #### 3. Create an App registration
+
 [!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
 
 #### 4. Deploy via ARM template
+
 You can deploy your bot in a new resource group or an existing resource group. Choose the option that works best for you.
 
 > [!NOTE]
@@ -70,22 +75,31 @@ You can deploy your bot in a new resource group or an existing resource group. C
 >
 
 ##### **Deploy via ARM template with new Resource Group**
+
 [!INCLUDE [ARM with new resourece group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
 
 ##### **Deploy via ARM template with existing Resource Group**
+
 [!INCLUDE [ARM with existing resourece group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
 
 #### 5. Prepare your code for deployment
+
+[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
+
 ##### **Retrieve or create necessary IIS/Kudu files**
+
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
 
 ##### **Zip up the code directory manually**
+
 [!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 
 ### Deploy code to Azure
+
 [!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
 
 ### Test in Web Chat
+
 [!INCLUDE [test in web chat](~/includes/deploy/snippet-test-in-web-chat.md)]
 
 ## Additional resources
@@ -93,5 +107,6 @@ You can deploy your bot in a new resource group or an existing resource group. C
 [!INCLUDE [additional resources snippet](~/includes/deploy/snippet-additional-resources.md)]
 
 ## Next steps
+
 > [!div class="nextstepaction"]
 > [Use QnA Maker in your bot to answer questions](bot-builder-tutorial-add-qna.md)

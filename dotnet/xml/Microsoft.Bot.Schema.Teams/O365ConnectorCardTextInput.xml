@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.O365ConnectorCardInputBase</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public O365ConnectorCardTextInput (string type = null, string id = null, Nullable&lt;bool&gt; isRequired = null, string title = null, string value = null, Nullable&lt;bool&gt; isMultiline = null, Nullable&lt;double&gt; maxLength = null);" />
+      <MemberSignature Language="C#" Value="public O365ConnectorCardTextInput (string type = default, string id = default, bool? isRequired = default, string title = default, string value = default, bool? isMultiline = default, double? maxLength = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;bool&gt; isRequired, string title, string value, valuetype System.Nullable`1&lt;bool&gt; isMultiline, valuetype System.Nullable`1&lt;float64&gt; maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardTextInput.#ctor(System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional id As String = null, Optional isRequired As Nullable(Of Boolean) = null, Optional title As String = null, Optional value As String = null, Optional isMultiline As Nullable(Of Boolean) = null, Optional maxLength As Nullable(Of Double) = null)" />
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -78,7 +81,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsMultiline">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsMultiline { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsMultiline { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsMultiline" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCardTextInput.IsMultiline" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMultiline As Nullable(Of Boolean)" />
@@ -87,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -106,7 +110,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxLength { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? MaxLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxLength" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.O365ConnectorCardTextInput.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Nullable(Of Double)" />
@@ -115,6 +119,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -143,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

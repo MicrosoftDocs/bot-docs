@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +26,7 @@
   </Docs>
   <Members>
     <Member MemberName="GetTopScoringIntent">
-      <MemberSignature Language="C#" Value="public static ValueTuple&lt;string,double&gt; GetTopScoringIntent (this Microsoft.Bot.Builder.RecognizerResult result);" />
+      <MemberSignature Language="C#" Value="public static (string,double) GetTopScoringIntent (this Microsoft.Bot.Builder.RecognizerResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`2&lt;string, float64&gt; GetTopScoringIntent(class Microsoft.Bot.Builder.RecognizerResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RecognizerResultExtensions.GetTopScoringIntent(Microsoft.Bot.Builder.RecognizerResult)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTopScoringIntent (result As RecognizerResult) As ValueTuple(Of String, Double)" />
@@ -39,6 +40,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.String,System.Double&gt;</ReturnType>

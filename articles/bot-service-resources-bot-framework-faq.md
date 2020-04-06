@@ -251,7 +251,7 @@ The dialog stack and state are stored in bot data bags. For example, you might s
 
 ## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
 
-For a list of examples, see the [Pre-built entities section][LUISPreBuiltEntities] of the LUIS documentation.
+For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
 
 ## How can I use more than the maximum number of LUIS intents?
 
@@ -269,7 +269,7 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
 * [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
-* [LUIS documentation](/azure/cognitive-services/LUIS/Home)
+* [LUIS documentation](/azure/cognitive-services/luis/)
 * [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS) 
 
 
@@ -321,7 +321,7 @@ To create your own App ID, follow the steps below.
 3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
     > [!IMPORTANT]
-    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
     ![registration details](media/app-registration/registration-details.png)
 
