@@ -418,9 +418,8 @@ Install-Package Microsoft.Bot.Builder.Azure
 
 ### [JavaScript](#tab/javascript)
 
-you can add a references to botbuilder-azure in your project via npm.
->**Note** - this npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine here: [Python.org](https://www.python.org/downloads/)
-
+You can add a references to botbuilder-azure in your project via npm.
+>**Note** - this npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine here at [python.org](https://www.python.org/downloads/).
 ```powershell
 npm install --save botbuilder-azure
 ```
