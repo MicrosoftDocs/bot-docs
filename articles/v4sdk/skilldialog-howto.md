@@ -97,7 +97,7 @@ Add the root bot's app ID and password to the .env file. Also, add the app ID fo
 
 Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
 
-[!code-python[configuration file](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/config.py?range=14-29)]
+[!code-python[configuration file](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/config.py?range=14-25)]
 
 ---
 
