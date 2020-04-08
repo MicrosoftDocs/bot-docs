@@ -109,10 +109,17 @@ The main dialog also demonstrates how to cancel the skill (through the skill dia
 
 The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts, it sends and echo message.
 
-### The skill manifest
-
 The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
+
+Main aspects of the main dialog are:
+
+- [Initializing the main dialog](#initializing-the-main-dialog)
+- [Selecting a skill](#selecting-a-skill)
+- [Selecting a skill action](#selecting-a-skill-action)
+- [Starting a skill](#starting-a-skill)
+- [Summarizing the skill result](#summarizing-the-skill-result)
+- [Allowing the user to cancel the skill](#allowing-the-user-to-cancel-the-skill)
 
 ### Initializing the main dialog
 
@@ -131,10 +138,11 @@ In addition to conversation state, the dialog needs the root bot's app ID and re
 **DialogRootBot\Dialogs\MainDialog.cs**
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
+It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file.
+
+[!code-csharp[fields](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=33-36)]
 
 [!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=38-84)]
-
-The `AddSkillDialogs` helper method creates a `SkillDialog` for each skill that is included in the configuration file.
 
 [!code-csharp[AddSkillDialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=204-223)]
 
