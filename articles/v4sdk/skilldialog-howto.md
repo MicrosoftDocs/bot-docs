@@ -103,40 +103,40 @@ Add the root bot's app ID and password to the .env file. Also, add the app ID fo
 
 ## Dialog logic
 
-The bot's main dialog includes a _skill dialog_ that will manage the skill this bot uses. The skill dialog manages the various skill-related objects for you, such as the _skill client_ and the _skill converation ID factory_ objects.
+The bot's main dialog includes a _skill dialog_ for each skill this bot consumes. The skill dialog manages the skill through the various skill-related objects for you, such as the _skill client_ and the _skill conversation ID factory_ objects.
 
 The main dialog also demonstrates how to cancel the skill (through the skill dialog) based on user input.
 
-The skill this bot uses supports a couple different features. It can book a flight or get the wether for a city. In addition, if it receives a message outside either of these contexts, it sends and echo message.
+The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts, it sends and echo message.
 
 ### The skill manifest
 
 The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
-### Initialize the main dialog
+### Initializing the main dialog
 
-The main dialog includes dialogs for managing conversation flow outside the skill and a skill dialogs for managing skills.
-The waterfall includes these steps, which will be described in more detail in the next few sections.
+The main dialog includes dialogs (for managing conversation flow outside the skill) and a skill dialogs (for managing the skills).
+The waterfall includes the following steps, described in more detail in the next few sections.
 
-1. Prompt the user to select the skill to use. (The root bot defines 1 skill.)
+1. Prompt the user to select the skill to use. (The root bot consumes 1 skill.)
 1. Prompt the user to select the action to use for that skill. (The skill bot defines 3 actions.)
 1. Start the chosen skill with an initial activity based on the chosen action.
 1. Once the skill completes, display the results, if any. Then, restart the waterfall.
 
 #### [C#](#tab/cs)
 
-In addition to conversation state, the dialog needs references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects and the root bot's app ID.
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-The `AddSkillDialogs` helper method creates a `SkillDialog` for each skill that is included in the configuration file.
-
-[!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=204-233)]
-
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
-[!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=39-85)]
+[!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=38-84)]
+
+The `AddSkillDialogs` helper method creates a `SkillDialog` for each skill that is included in the configuration file.
+
+[!code-csharp[AddSkillDialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=204-223)]
 
 #### [JavaScript](#tab/js)
 
@@ -144,9 +144,13 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 ---
 
-### Select a skill
+### Selecting a skill
 
 #### [C#](#tab/cs)
+
+**DialogRootBot\Dialogs\MainDialog.cs**
+
+[!code-csharp[SelectSkillStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=103-118)]
 
 #### [JavaScript](#tab/js)
 
@@ -154,9 +158,17 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 ---
 
-### Select a skill action
+### Selecting a skill action
 
 #### [C#](#tab/cs)
+
+**DialogRootBot\Dialogs\MainDialog.cs**
+
+[!code-csharp[SelectSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=120-140)]
+
+[!code-csharp[GetSkillActions](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=225-242)]
+
+[!code-csharp[SkillActionPromptValidator](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=142-152)]
 
 #### [JavaScript](#tab/js)
 
@@ -164,9 +176,15 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 ---
 
-### Start a skill
+### Starting a skill
 
 #### [C#](#tab/cs)
+
+**DialogRootBot\Dialogs\MainDialog.cs**
+
+[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179)]
+
+[!code-csharp[CreateDialogSkillBotActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=244-295)]
 
 #### [JavaScript](#tab/js)
 
@@ -174,9 +192,13 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 ---
 
-### Summarize skill result
+### Summarizing the skill result
 
 #### [C#](#tab/cs)
+
+**DialogRootBot\Dialogs\MainDialog.cs**
+
+[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=181-202)]
 
 #### [JavaScript](#tab/js)
 
@@ -184,9 +206,13 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 ---
 
-### Allow user to cancel the skill
+### Allowing the user to cancel the skill
 
 #### [C#](#tab/cs)
+
+**DialogRootBot\Dialogs\MainDialog.cs**
+
+[!code-csharp[OnContinueDialogAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=86-101)]
 
 #### [JavaScript](#tab/js)
 
@@ -200,6 +226,14 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 ### [C#](#tab/cs)
 
+**DialogRootBot\Bots\RootBot.cs**
+
+[!code-csharp[class definition](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Bots/RootBot.cs?range=15-16)]
+
+[!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Bots/RootBot.cs?range=18-25)]
+
+[!code-csharp[OnTurnAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Bots/RootBot.cs?range=27-42)]
+
 ### [JavaScript](#tab/js)
 
 ### [Python](#tab/python)
@@ -209,6 +243,10 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 ## Service registration
 
 ### [C#](#tab/cs)
+
+**DialogRootBot\Startup.cs**
+
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Startup.cs?range=30-67)]
 
 ### [JavaScript](#tab/js)
 
