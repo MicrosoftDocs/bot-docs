@@ -104,15 +104,13 @@ Add the root bot's app ID and password to the .env file. Also, add the app ID fo
 ## Dialog logic
 
 The bot's main dialog includes a _skill dialog_ for each skill this bot consumes. The skill dialog manages the skill through the various skill-related objects for you, such as the _skill client_ and the _skill conversation ID factory_ objects.
-
 The main dialog also demonstrates how to cancel the skill (through the skill dialog) based on user input.
 
 The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts, it sends and echo message.
-
 The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
-Main aspects of the main dialog are:
+Main aspects of the main dialog:
 
 - [Initializing the main dialog](#initializing-the-main-dialog)
 - [Selecting a skill](#selecting-a-skill)
