@@ -24,6 +24,9 @@ https://github.com/Jeffders/DirectLineAppServiceExtensionPreview/tree/master/lib
 
 ## Integrate WebChat client
 
+> [!NOTE]
+> Adaptive Cards sent through the DirectLine App Service Extension do not undergo the same processing as those sent through other versions of the DirectLine channel. Due to this the JSON representation of the Adaptive Card sent to WebChat from the DirectLine App Service Extension will not have default values added by the channel if the fields are omitted by the bot when the card is created.
+
 Generally speaking, the approach is the same as before. With the exception that a new version of **WebChat** has been created that supports two-way **WebSocket** traffic, which instead of connecting to [https://directline.botframework.com/](https://directline.botframework.com/) connects directly to your hosted bot.
 The direct line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, where the `/.bot/` extension is the Direct Line **endpoint** on your App Service.
 If you can configure your own domain name you still must append the `/.bot/` path to access the direct line REST APIs.
