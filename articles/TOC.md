@@ -59,7 +59,6 @@
 ### Skills
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
-#### [Implement a skill for Power Virtual Agents](v4sdk/skill-pva.md)
 <!--
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
 #### [Manage multiple skills](#)

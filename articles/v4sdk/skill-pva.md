@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/30/2020
+ms.date: 04/15/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,7 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-If you expect that your Skill will be consumed from a [Power Virtual Agents](https://powerva.microsoft.com/#/) bot there are some additional restrictions placed on your Skill you'll need to account for.
+A skill is a bot that can be used by another bot. In this way you can create a single user-facing bot and extend it with one or more skills. You can learn more about skills in general in [Skills Overview](skills-conceptual.md), and how to build them in [Implement a skill](skill-implement-skill.md). Alternatively, the Virtual Assistant templates contain a set of [pre-built skills](bot-builder-skills-overview.md) you can customize and deploy instead of building one from scratch.
+
+If you expect that your skill will be consumed from a [Power Virtual Agents](https://powerva.microsoft.com/#/) bot there are some additional restrictions placed on your Skill you'll need to account for.
 
 ## Manifest restrictions
 
@@ -34,7 +36,7 @@ Please add in the Manifest URL to the [Home Page in the Azure Portal](/azure/act
 
 ## Validation performed during registering a Skill
 
-When an end user attempts to connect to your Skill from their Power Virtual Agents bot, they'll first need to [import the Skill to Power Virtual Agents](/power-virtual-agents/advanced-use-skills). Your Skill will go through a series of validation checks. A failure of one of these checks may result in an error message as described in this table.
+When an end user attempts to connect to your skill from their Power Virtual Agents bot, they'll first need to [import the skill to Power Virtual Agents](/power-virtual-agents/advanced-use-skills). Your skill will go through a series of validation checks. A failure of one of these checks may result in an error message as described in this table.
 
 Validation step|Error message|Description or mitigation
 |---|---|---
