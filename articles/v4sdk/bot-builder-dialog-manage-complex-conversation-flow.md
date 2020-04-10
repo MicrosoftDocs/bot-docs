@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/30/2020
+ms.date: 03/26/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -224,7 +224,7 @@ Create and register services as needed:
 
 **Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=22-44)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/43.complex-dialog/Startup.cs?range=16-35)]
 
 ### [JavaScript](#tab/javascript)
 
