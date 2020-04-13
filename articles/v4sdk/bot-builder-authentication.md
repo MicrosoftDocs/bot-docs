@@ -85,7 +85,7 @@ To run the samples referenced in this article, you need the following:
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access on behalf of the user.
 
-## Create the Azure bot application
+## Create the Azure bot registration
 
 This section shows how to register a bot resource with Azure to host the bot code.
 
