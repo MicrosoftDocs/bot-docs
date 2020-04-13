@@ -256,25 +256,25 @@ Notice that in the`SimpleRootBot` project `appsettings.json` file you have the f
 1. Type `hi` to start the conversation.
 1. Enter **login**.  The `SimpleRootBot` will display a *Sign In to AAD* authentication card.
 
-    ![Skill loign](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
+    ![Root login](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
 
 1. Click **Sign In**. The pop-up dialog *Confirm Open URL* is displayed.
 
-    ![Skill loign](media/how-to-auth/auth-bot-test-confirm-url.PNG)
+    ![Root confirm url](media/how-to-auth/auth-bot-test-confirm-url.PNG)
 
 1. Click **Confirm**. You will be logged in and your token is displayed.
 1. Enter **token** to display your token again.
 
-    ![Sample output](media/how-to-auth/auth-bot-sso-test.PNG)
+    ![Root token](media/how-to-auth/auth-bot-sso-test.PNG)
 
 1. Once you've signed in, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
 1. Enter **skill login** in the emulator box. You will not be asked to login again. Instead the token is displayed.
 
-    ![Skill loign](media/how-to-auth/auth-bot-sso-test-skill-login.PNG)
+    ![Skill login](media/how-to-auth/auth-bot-sso-test-skill-login.PNG)
 
 1. Go ahead enter **skill token**. Again you get the same token.
 
-     ![Skill loign](media/how-to-auth/auth-bot-sso-test-skill-token.PNG)
+     ![Skill token](media/how-to-auth/auth-bot-sso-test-skill-token.PNG)
 
 1. Now you can enter **skill logout** to sign out of `SkillBot`. Then enter **logout** to sign out of `SimpleRootBoot`.
 
