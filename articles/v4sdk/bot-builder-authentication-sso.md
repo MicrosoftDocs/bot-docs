@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add Single sign on to a bot
 
+<!--Added TOC entry -->
+
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 This article shows how to use the Single sign on (SSO) feature in a bot.
