@@ -408,7 +408,7 @@ COSMOS_DB_CONTAINER_ID="<your-container-id>"
 
 #### Installing packages
 
-Make sure you have the packages necessary for Cosmos DB
+Make sure you have the packages necessary for Cosmos DB.
 
 ### [C#](#tab/csharp)
 
@@ -419,7 +419,7 @@ Install-Package Microsoft.Bot.Builder.Azure
 ### [JavaScript](#tab/javascript)
 
 You can add a references to botbuilder-azure in your project via npm.
->**Note** - this npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine here at [python.org](https://www.python.org/downloads/).
+>**Note** - this npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [python.org](https://www.python.org/downloads/).
 ```powershell
 npm install --save botbuilder-azure
 ```
@@ -432,7 +432,7 @@ npm install --save dotenv
 
 ### [Python](#tab/python)
 
-you can add a references to botbuilder-azure in your project via pip.
+You can add a references to botbuilder-azure in your project via pip.
 
 ```powershell
 pip install botbuilder-azure
@@ -506,12 +506,12 @@ const storage = new CosmosDbPartitionedStorage({
 
 The following sample code is similar to [memory storage](#memory-storage) but with some slight changes.
 
-Require `CosmosDbStorage` from `botbuilder-azure` and create the CosmosDBStorage object.
+Require `CosmosDbPartitionedStorage` and `CosmosDbPartitionedConfig` from `botbuilder-azure` and create the CosmosDBStorage object.
 
 **bot.py**
 
 ```py
-from botbuilder.azure import CosmosDbStorage, CosmosDbConfig
+from botbuilder.azure import CosmosDbPartitionedStorage, CosmosDbPartitionedConfig
 ```
 
 Comment out Memory Storage in `__init__` and replace with reference to Cosmos DB.  Use the endpoint, auth key, database id and container id used above.
@@ -522,13 +522,14 @@ Comment out Memory Storage in `__init__` and replace with reference to Cosmos DB
 STORAGE = CosmosDb
 
 def __init__(self):
-    cosmos_config = CosmosDbConfig(
-        endpoint=COSMOSDB_SERVICE_ENDPOINT,
-        masterkey=COSMOSDB_KEY,
-        database=COSMOSDB_DATABASE_ID,
-        container=COSMOSDB_CONTAINER_ID
+    cosmos_config = CosmosDbPartitionedConfig(
+        cosmos_db_endpoint=COSMOSDB_SERVICE_ENDPOINT,
+        auth_key=COSMOSDB_KEY,
+        database_id=COSMOSDB_DATABASE_ID,
+        container_id=COSMOSDB_CONTAINER_ID,
+        compatibility_mode = False
     )
-    self.storage = CosmosDbStorage(cosmos_config)
+    self.storage = CosmosDbPartitionedStorage(cosmos_config)
 ```
 
 ---
