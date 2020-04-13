@@ -1,0 +1,327 @@
+---
+title: Add Single sign on to a bot - Bot Service
+description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 3/30/2020
+monikerRange: 'azure-bot-service-4.0'
+---
+
+
+# Add Single sign on to a bot
+
+[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+
+This article shows how to use the Single sign on (SSO) feature in a bot.
+To do so, it uses a *consumer* bot, also known as *root* bot, to interact with a *skill* bot.
+
+Once the user  signs in the root bot, she is "automatically" signed in each skill bot she uses through the root. This is because of SSO. Without it the user would have to sign in every time she communicates with a different skill bot.
+
+> [!NOTE]
+> The *consumer* bot is also called *root* or *parent* bot.\
+> The *skill* bot is also called *child* bot.\
+> The article uses **root** bot and **skill** bot.\
+> With skills, the root and skill bots are separate bots, running on potentially different servers, each with its own separate memory and state.
+
+### Web Chat and Direct Line considerations
+
+> [!IMPORTANT]
+> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
+
+## Prerequisites
+
+- Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], how to [implement sequential conversation flow][simple-dialog], and how to [reuse dialogs][component-dialogs].
+- Knowledge of Azure and OAuth 2.0 development.
+- Visual Studio 2017 or higher for .NET.
+- Node.js for Javascript.
+- Python 3.6 or 3.7 for Python.
+- The samples listed below.
+
+| Sample | BotBuilder version | Demonstrates |
+|:---|:---:|:---|
+| SSO with Simple Skill Consumer and Skill in [**CSharp**][cs-auth-sample] | v4 | SSO support |
+
+
+## About the samples
+
+This article references two samples. The **SimpleRootBot** is the root bot. It forwards activities to a skill bot, the **SkillBot** in this case. They model this *typical* skill scenario:
+
+- A *root* bot calls one or more skill bots.
+- Both the root and skill bots implement the basic authentication described in the [Add authentication to a bot](bot-builder-authentication.md) article.
+- When the user logs into the root bot, because of the SSO, she is logged into the skill bot, also.
+
+For an overview of how the Bot Framework handles authentication, see [Bot authentication](bot-builder-concept-authentication.md).
+For SSO background information, see [Single sign on](bot-builder-concept-sso.md).
+
+The **SimpleRootBot** supports user's SSO. It communicates with the
+**SkillBot** on behalf of the user, without the user being required to authenticate again into the *SkillBot*.
+
+For each sample, you need the following:
+
+1. An Azure AD application to register a bot resource in Azure.
+1. An Azure AD identity provider application for authentication.
+    > [!NOTE]
+    > Currently, only the [Azure AD v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
+
+# [SimpleRootBot](#tab/sb)
+
+## Create the Azure bot registration
+
+1. Create a bot registration in the [Azure portal][azure-portal] for the `SimpleRootBot`. Follow the steps described in
+[Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
+1. Copy and save the bot registration **app ID** and the **client secret**.
+
+## Create the Azure AD identity application
+
+The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
+
+1. Create an identity application for the `SkillRootBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
+
+1. In the left pane, click **Manifest**.
+1. Set `accessTokenAcceptedVersion` to 2.
+1. Click **Save**.
+1. In the left pane, click **Expose an API**.
+1. In the right pane, click **Add a scope**.
+1. In the far right *Add a scope* section click **Save and continue**.
+1. In the displayed window, under *Who can consent?* select **Admins and users**.
+1. Enter the remaining required information.
+1. Click **Add scope**.
+1. Copy and save the scope value.
+
+## Create Azure AD connection
+
+1. Create an Azure AD v2 connection in the `SimpleRootBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the value described below.
+1. In the **Scopes** box enter the `SimpleRootBot` scope value you saved in the previous steps.
+
+1. Copy and save the name of the connection.
+
+# [SkillBot](#tab/srb)
+
+## Create the Azure bot registration
+
+1. Create a bot registration in the [Azure portal][azure-portal] for the `SkillBot`. Follow the steps described in
+[Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
+1. Copy and save the bot registration **app ID** and the **client secret**.
+
+## Create the Azure AD identity application
+
+The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
+
+1. Create an identity application for the `SkillBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
+
+1. In the left pane, click **Manifest**.
+1. Set `accessTokenAcceptedVersion` to 2.
+1. Click **Save**.
+1. In the left pane, click **Expose an API**.
+1. In the right pane, click **Add a scope**.
+1. In the far right *Add a scope* section click **Save and continue**.
+1. In the displayed window, under *Who can consent?* select **Admins and users**.
+1. Enter the remaining required information.
+1. Click **Add scope**.
+1. Copy and save the scope value.
+1. Click **Add a client application**. In the far right section, enter the root *SimpleRootBot* identity app ID you saved before.
+1. Under **Authorized scope**, check the box by the scope value.
+1. Click **Add application**.
+1. In the navigation pane, click **API permissions** to open the **API permissions** panel. It is a best practice to explicitly set the API permissions for the app.
+
+   1. Click **Add a permission** to show the **Request API permissions** pane.
+   1. For this sample, select **Microsoft APIs** and **Microsoft Graph**.
+   1. Choose **Delegated permissions** and make sure the permissions you need are selected. This sample requires theses permissions.
+
+      > [!NOTE]
+      > Any permission marked as **ADMIN CONSENT REQUIRED** will require both a user and a tenant admin to login, so for your bot tend to stay away from these.
+
+      - **openid**
+      - **profile**
+      - **User.Read**
+      - **User.ReadBasic.All**
+
+   1. Click **Add permissions**.
+
+## Create Azure AD connection
+
+1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the values described below.
+1. In the **Token Exchange URL** box enter the `SkillBot` scope value you saved in the previous steps.
+1. In the **Scopes** box enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasicAll` `openid`.
+
+1. Copy and save to a file the name of the connection.
+
+---
+
+## Test the connection
+
+1. Click on the connection entry to open the connection you just created.
+1. Click **Test Connection** at the top of the **Service Provider Connection Setting** pane.
+1. The first time, this should open a new browser tab listing the permissions your app is requesting and prompt you to accept.
+1. Click **Accept**.
+1. This should then redirect you to a **Test Connection to \<your-connection-name> Succeeded** page.
+
+For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
+
+For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
+
+## Prepare the samples code
+
+You must update the `appsettings.json` file in both samples as described below.
+
+# [C#](#tab/csharp)
+
+1. From the github repository clone the sample you want to work with:
+ [SSO with Simple Skill Consumer and Skill][cs-auth-sample]
+
+ 1. Open the the `SkillBot` project `appsettings.json` file. From the saved file, assign the following values:
+
+    ```json
+    {
+        "MicrosoftAppId": "<SkillBot registration app ID>",
+        "MicrosoftAppPassword": "<SkillBot registration password>",
+        "ConnectionName": "<SkillBot connection name>",
+        "AllowedCallers": [ "<SimpleRootBot registration app ID>" ]
+    }
+
+1. Open the the `SimpleRootBot` project `appsettings.json` file. From the saved file, assign the following values:
+
+    ```json
+    {
+        "MicrosoftAppId": "<SimpleRootBot registration app ID>",
+        "MicrosoftAppPassword": "<SimpleRootBot registration password>",
+        "ConnectionName": "<SimpleRootBot connection name>",
+        "SkillHostEndpoint": "http://localhost:3978/api/skills/",
+        "BotFrameworkSkills": [
+                {
+                "Id": "SkillBot",
+                "AppId": "<SkillBot registration app ID>",
+                "SkillEndpoint": "http://localhost:39783/api/messages"
+                }
+            ]
+    }
+    ```
+
+<!--
+# [JavaScript](#tab/javascript)
+
+TBD
+
+# [Python](#tab/python)
+
+TBD
+-->
+
+---
+
+## Test the samples
+
+Before testing, note the following:
+
+- `SimpleRootBot` supported commands
+
+    - `login` command that allows the user to sign into the root bot. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
+    - `token` command that displays the user's token.
+    - `logout` command that logs the user out of `SkillRootBot`.
+
+- `SkillBot` supported commands
+
+    - `skill login` command that allows the skill root bot `SimpleRootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign in card, if already signed in, unless SSO fails.
+    - `skill token` command that displays the user's token from the `SkillBot`.
+    - `skill logout` command that logs the user out of `SkillBot`
+
+# [Emulator](#tab/eml)
+
+### Test using the emulator
+
+If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the emulator](../bot-service-debug-emulator.md).
+
+In order for the bot sample login to work you must configure the emulator
+as shown in [Configure the emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
+
+After you have configured the authentication mechanism, you can perform the actual bot sample testing.
+
+1. In Visual Studio, open the `SSOWithSkills.sln` solution and configure it to start [debugging with multiple processes](https://docs.microsoft.com/visualstudio/debugger/debug-multiple-processes?view=vs-2019#start-debugging-with-multiple-processes).
+1. Start debugging locally on your machine.
+Notice that in the`SimpleRootBot` project `appsettings.json` file you have the following settings:
+
+```json
+    "SkillHostEndpoint": "http://localhost:3978/api/skills/"
+    "SkillEndpoint": "http://localhost:39783/api/messages"
+```
+> [!NOTE]
+> These settings imply that, with both `SimpleRootBot` and `SkillBot` running on the local machine, the emulator communicates with `SimpleRootBot` on port 3978 and `SimpleRootBot` communicates with `SkillBot` on port 39783.
+
+1. Start the emulator.
+1. You will need to provide your `SimpleRootBot` app ID and password when you connect to the bot.
+1. Type `hi` to start the conversation.
+1. Enter **login**.  The `SimpleRootBot` will display a *Sign In to AAD* authentication card.
+
+    ![Skill loign](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
+
+1. Click **Sign In**. The pop-up dialog *Confirm Open URL* is displayed.
+
+    ![Skill loign](media/how-to-auth/auth-bot-test-confirm-url.PNG)
+
+1. Click **Confirm**. You will be logged in and your token is displayed.
+1. Enter **token** to display your token again.
+
+    ![Sample output](media/how-to-auth/auth-bot-sso-test.PNG)
+
+1. Once you've signed in, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
+1. Enter **skill login** in the emulator box. You will not be asked to login again. Instead the token is displayed.
+
+    ![Skill loign](media/how-to-auth/auth-bot-sso-test-skill-login.PNG)
+
+1. Go ahead enter **skill token**. Again you get the same token.
+
+     ![Skill loign](media/how-to-auth/auth-bot-sso-test-skill-token.PNG)
+
+1. Now you can enter **skill logout** to sign out of `SkillBot`. Then enter **logout** to sign out of `SimpleRootBoot`.
+
+# [Web Chat](#tab/wct)
+
+### Test using Web Chat
+
+1. Deploy the root bot and the skill bot to Azure. For information about deployment, see [Tutorial: Create and deploy a basic bot](bot-builder-tutorial-basic-deploy.md).
+1. In your code editor, for example Visual Studio, replace the localhost addresses in the `SimpleRootBot` project `appsetting.js` file with the actual Azure addresses as shown below.
+
+    ```json
+    "SkillHostEndpoint": "https://<your root bot deployed name>.azurewebsites.net/api/skills"
+    "SkillEndpoint": "https://<your skill bot deployed name>.azurewebsites.net/api/messages"
+    ````
+1. In your browser, navigate to the [Azure portal][azure-portal].
+1. Open your root bot registration. In the left, pane click **Test in Web Chat**. The dialog window with you root bot is displayed with the bot greeting message.
+1. Start the conversation with the bot by entering *hello* for example. The bot will echo your message back.
+1. Enter **login**. The `SimpleRootBot` will display a *Sign In to AAD* authentication card.
+
+    ![Skill loign](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
+
+1. Click **Sign In**. A web page with a validation code is displayed.
+1. Copy the code and enter in the input box to complete the sign in. The root bot identity token is displayed. Now you are ready to communicate with the `SkillBot`.
+1. Enter **skill login**.  A dialog is displayed asking you to give access permissions to the skill bot.
+
+    ![Skill loign](media/how-to-auth/auth-bot-sso-test-webchat-permissions-requested.PNG)
+
+1. Click **Accept**. The skill bot identity token is displayed.
+1. Go ahead and enter **skill token** to display the token again.
+This tells you that you are communicating with the `SkillBot` without the need to sign in again. SSO in action!
+1. Now you can enter **skill logout** to sign out of `SkillBot`. Then enter **logout** to sign out of `SimpleRootBoot`.
+
+---
+
+<!-- Footnote-style links -->
+
+[azure-portal]: https://ms.portal.azure.com
+[azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
+[aad-registration-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview
+
+[concept-basics]: bot-builder-basics.md
+[concept-state]: bot-builder-concept-state.md
+[concept-dialogs]: bot-builder-concept-dialog.md
+
+[simple-dialog]: bot-builder-dialog-manage-conversation-flow.md
+[dialog-prompts]: bot-builder-prompts.md
+[component-dialogs]: bot-builder-compositcontrol.md
+
+[cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/swagatm/sso/experimental/sso-with-skills
+[js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
+[python-auth-sample]: https://aka.ms/bot-auth-python-sample-code
+
