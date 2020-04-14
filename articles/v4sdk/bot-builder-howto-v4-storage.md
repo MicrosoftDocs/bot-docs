@@ -519,8 +519,6 @@ Comment out Memory Storage in `__init__` and replace with reference to Cosmos DB
 **bot.py**
 
 ```py
-STORAGE = CosmosDb
-
 def __init__(self):
     cosmos_config = CosmosDbPartitionedConfig(
         cosmos_db_endpoint=COSMOSDB_SERVICE_ENDPOINT,
