@@ -27,18 +27,11 @@ This section describes how to enable the direct line app service extension using
 
 ## Update .NET Bot to use Direct Line App Service Extension
 
-> [!NOTE]
-> `Microsoft.Bot.Builder.StreamingExtensions` are preview packages and will not be updated. The SDK v4.7 contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming) and you do not need to install the Streaming Packages separately.
-
 1. In Visual Studio, open your bot project.
-2. Add the **Streaming Extension NuGet** package to your project:
-    1. In your project, right click on **Dependencies** and select **Manage NuGet Packages**.
-    2. Under the *Browse* tab, click **Include prerelease** to show the preview packages.
-    3. Select the package **Microsoft.Bot.Builder.StreamingExtensions**.
-    4. Click the **Install** button to install the package; read and agree to the license agreement.
+2. Ensure the project is using version 4.8 or higher of the Bot Builder SDK.
 3. Allow your app to use the **Bot Framework NamedPipe**:
     - Open the `Startup.cs` file.
-    - In the ``Configure`` method, add code to ``UseBotFrameworkNamedPipe``
+    - In the ``Configure`` method, add code to ``UseNamedPipe``
 
     ```csharp
 
@@ -57,7 +50,7 @@ This section describes how to enable the direct line app service extension using
         app.UseStaticFiles();
 
         // Allow the bot to use named pipes.
-        app.UseNamedPipes();
+        app.UseNamedPipes(System.Environment.GetEnvironmentVariable("APPSETTING_WEBSITE_SITE_NAME") + ".directline");
 
         app.UseMvc();
     }
@@ -103,9 +96,10 @@ This section describes how to enable the direct line app service extension using
 ## Confirm Direct Line App Extension and the Bot are Initialized
 
 In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot.
-If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
+If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
-- **k** determines whether Direct Line App Service Extension (ASE) can read an App Service Extension Key from its configuration.
+- **v** displays the build version of the Direct Line App Service Extension (ASE).
+- **k** determines whether Direct Line ASE can read an App Service Extension Key from its configuration.
 - **initialized** determines whether Direct Line ASE can use the App Service Extension Key to download the bot metadata from Azure Bot Service
 - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
 - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot.
