@@ -31,7 +31,7 @@ This section describes how to enable the direct line app service extension using
 2. Ensure the project is using version 4.8 or higher of the Bot Builder SDK.
 3. Allow your app to use the **Bot Framework NamedPipe**:
     - Open the `Startup.cs` file.
-    - In the ``Configure`` method, add code to ``UseNamedPipe``
+    - In the ``Configure`` method, add code to ``UseNamedPipes``
 
     ```csharp
 
