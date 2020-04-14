@@ -52,7 +52,7 @@ Automated Deployment | All the Azure resources required for your Assistant are a
 Automotive Language Model | An Automotive language model covering core domains such as telephone, navigation and control of in-car features is coming soon.
 
 >[!IMPORTANT]
-> CosmosDbStorage has been deprecated. Containers created with CosmosDbStorage can be used with CosmosDbPartitionedStorage with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
 
 ## Example Scenarios
 
