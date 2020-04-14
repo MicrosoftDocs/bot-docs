@@ -91,7 +91,7 @@ Add the skill's app ID and password to the config.py file.
 
 **config.py**
 
-[!code-python[configuration file](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/config.py?range=14-19)]
+[!code-python[configuration file](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/config.py?range=12-17)]
 
 ---
 
@@ -175,7 +175,7 @@ Derive a claims validator from the `ClaimsValidator` class. It will throw an `Un
 
 **EchoSkillBot\Authentication\AllowedCallersClaimsValidator.cs**
 
-[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=22-52&highlight=24-27)]
+[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=22-59&highlight=30-32)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -183,7 +183,7 @@ Define a claims validation method that throws an error to reject an incoming req
 
 **echo-skill-bot/authentication/allowedCallersClaimsValidator.js**
 
-[!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=6-27&highlight=18-20)]
+[!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=4-33&highlight=23-24)]
 
 ### [Python](#tab/python)
 
@@ -191,7 +191,7 @@ Define a claims validation method that throws an error to reject an incoming req
 
 **echo-skill-bot/authentication/allowed_callers_claims_validator.py**
 
-[!code-python[Claims validator](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowed_callers_claims_validator.py?range=7-28&highlight=17-22)]
+[!code-python[Claims validator](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowed_callers_claims_validator.py?range=8-44&highlight=28-32)]
 
 ---
 
@@ -209,13 +209,13 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=41-69&highlight=21-28)]
+[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=40-67&highlight=12-15)]
 
 ### [Python](#tab/python)
 
-**echo-skill-bot/app.py**
+**echo-skill-bot/adapter_with_error_handler.py**
 
-[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=38-69&highlight=27-32)]
+[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=23-61&highlight=10-16)]
 
 ---
 
@@ -223,7 +223,7 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 The _Bot Framework adapter_ uses an _authentication configuration_ object (set when the adapter is created) to validate the authentication header on incoming requests.
 
-This samples adds claims validation to the authentication configuration and uses the _skill adapter with error handler_ described in the previous section.
+This sample adds claims validation to the authentication configuration and uses the _skill adapter with error handler_ described in the previous section.
 
 ### [C#](#tab/cs)
 
@@ -235,14 +235,14 @@ This samples adds claims validation to the authentication configuration and uses
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=34-38)]
+[!code-javascript[configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=32-38)]
 
 <!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
-**app.py**
+**echo-skill-bot/app.py**
 
-[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=22-34)]
+[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=20-31)]
 
 ---
 
