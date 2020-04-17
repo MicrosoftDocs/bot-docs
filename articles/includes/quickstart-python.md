@@ -7,7 +7,7 @@
 
 ## Create a bot
 
-1. Open a terminal and navigate to the folder where you're saving your bot locally. Run `pip install cookiecutter` to install the package that will generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
+1. Open a terminal and navigate to the folder where you're saving your bot locally. Run `pip install cookiecutter` to install the cookiecutter, the package that will generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
 
 2. To create your bot run:
 
