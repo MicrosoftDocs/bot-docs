@@ -30,9 +30,9 @@ Power Virtual Agents places restrictions on what you may declare in your manifes
 
 ## Same-tenant restriction
 
-(Need Pawan's assistance with writing this section.)
+In order to ensure compliance and adequate governance of custom skills being registered for use within Power Virtual Agents, it is required to register Skill as an application in Azure Active Directory. Upon adding a skill, we validate if the skill's application ID is the in the tenant of the signed in user and the skills endpoint matches the registered application's `Home Page URL`.
 
-Please add in the Manifest URL to the [Home Page in the Azure Portal](/azure/active-directory/manage-apps/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) and re-validate the Skill.
+Please add in the Manifest URL to the [Home Page in the Azure Portal](/azure/active-directory/manage-apps/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) prior to registering a skill.
 
 ## Validation performed during registering a Skill
 
