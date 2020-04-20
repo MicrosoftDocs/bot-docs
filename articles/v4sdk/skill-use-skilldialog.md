@@ -73,7 +73,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 
 ### [C#](#tab/cs)
 
-**SimpleRootBot\appsettings.json**
+**DialogRootBot\appsettings.json**
 
 Add the root bot's app ID and password to the appsettings.json file. Also, add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
@@ -81,7 +81,7 @@ Add the root bot's app ID and password to the appsettings.json file. Also, add t
 
 ### [JavaScript](#tab/js)
 
-**echo-skill-bot/.env**
+**dialogRootBot/.env**
 
 Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
 
@@ -89,7 +89,7 @@ Add the root bot's app ID and password to the .env file. Also, add the app ID fo
 
 ### [Python](#tab/python)
 
-**simple_root_bot/config.py**
+**dialog-root-bot/config.py**
 
 Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
 
@@ -106,7 +106,7 @@ The skill this bot uses supports a couple different features. It can book a flig
 The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
-Main aspects of the main dialog:
+The main dialog includes code to:
 
 - [Initialize the main dialog](#initialize-the-main-dialog)
 - [Select a skill](#select-a-skill)
@@ -114,6 +114,8 @@ Main aspects of the main dialog:
 - [Start a skill](#start-a-skill)
 - [Summarize the skill result](#summarize-the-skill-result)
 - [Allow the user to cancel the skill](#allow-the-user-to-cancel-the-skill)
+
+The main dialog inherits from the _component dialog_ class. For more about component dialogs, see how to [manage dialog complexity](bot-builder-compositcontrol.md)
 
 ### Initialize the main dialog
 
@@ -127,7 +129,7 @@ The waterfall includes the following steps, described in more detail in the next
 
 #### [C#](#tab/cs)
 
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The `MainDialog` class derives from `ComponentDialog`.
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
@@ -142,7 +144,25 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
-#### [Python](#tab/python)
+**dialogRootBot/dialogs/mainDialog.js**
+
+The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
+It calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file.
+
+[!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=21-54)]
+
+[!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=178-194)]
+
+### [Python](#tab/python)
+
+**dialog-root-bot/dialogs/main_dialog.py**
+
+The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
+It calls `_add_skill_dialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file.
+
+[!code-python[constructor](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=36-106)]
+
+[!code-python[_add_skill_dialogs](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=215-235)]
 
 ---
 
