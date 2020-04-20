@@ -7,28 +7,27 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/17/2020
+ms.date: 04/20/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # How to write a skill manifest
 
-This article describes the format of the Bot Framework skill manifest schema. A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
+This article describes the format of the Bot Framework skill manifest schema.
 
-## Sample manifest
+A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
 
-This is a sample manifest for a skill that exposes multiple activities.
+The current skill manifest schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
 
-[!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)]
-
-## Skill manifest
+## The skill manifest
 
 The skill manifest contains 4 categories of information:
 
 - Metadata that describes the skill at a general level.
 - A list of the endpoints that the skill provides.
 - A list of the activities the the skill supports.
-- A definitions object that describes the types of objects the activities can take as input or generate as output.
+- An optional definitions object that describes the types of objects the activities can take as input or generate as output.
 
 The following is the full schema for the Bot Framework skill manifest.
 
@@ -100,7 +99,8 @@ Describes a message activity accepted by the skill, where the `text` property co
 | type | string | Required | The activity type. Must be "message".
 | value | object | Optional | A JSON schema definition of the type of object that this activity expects as input.
 
-## Additional information
+## Sample manifest
 
-The current skill manifest schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
-This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
+This is a sample manifest for a skill that exposes multiple activities.
+
+[!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)]
