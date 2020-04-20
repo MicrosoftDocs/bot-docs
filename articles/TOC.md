@@ -58,7 +58,10 @@
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
+#### [Use dialogs within a skill]()
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
+#### [Use a dialog to consume a skill](v4sdk/skill-use-skilldialog.md)
+#### [use middleware in a skill consumer]()
 <!--
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
 #### [Manage multiple skills](#)

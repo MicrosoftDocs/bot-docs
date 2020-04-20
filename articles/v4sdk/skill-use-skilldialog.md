@@ -35,14 +35,10 @@ The **skills skillDialog** sample includes projects for two bots:
 - The _dialog root bot_, which uses a _skill dialog_ class to consume a skill.
 - The _dialog skill bot_, which uses a dialog to handle activities coming from skill consumers.
 
-This article focuses on these aspects of the root bot:
+This article focuses on how to use a _skill dialog_ class in a root bot to manage the skill, to send message and event activities and to cancel the skill.
 
-- Use a _skill dialog_ class to manage the skill: to send message and event activities and to cancel the skill.
-- Use a _skills configuration_ class to load skill definitions and to configure the _skill dialog_.
-
-For information about defining a skills endpoint and the _skills configuration_, _skill conversation ID factory_, _skill client_, _skill handler_, and _adapter_ classes, see how to [implement a skill consumer](skill-implement-consumer.md), as the use of these classes is the same.
-
-For information about logging activities coming from a skill, see how to [manage logging in a skill consumer]().
+If you use middleware in your skill consumer, see how to [use middleware in a skill consumer]() to avoid some common problems.
+For information about other aspects of creating a skill consumer, see how to [implement a skill consumer](skill-implement-consumer.md).
 
 ### [C#](#tab/cs)
 
@@ -112,14 +108,14 @@ Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also 
 
 Main aspects of the main dialog:
 
-- [Initializing the main dialog](#initializing-the-main-dialog)
-- [Selecting a skill](#selecting-a-skill)
-- [Selecting a skill action](#selecting-a-skill-action)
-- [Starting a skill](#starting-a-skill)
-- [Summarizing the skill result](#summarizing-the-skill-result)
-- [Allowing the user to cancel the skill](#allowing-the-user-to-cancel-the-skill)
+- [Initialize the main dialog](#initialize-the-main-dialog)
+- [Select a skill](#select-a-skill)
+- [Select a skill action](#select-a-skill-action)
+- [Start a skill](#start-a-skill)
+- [Summarize the skill result](#summarize-the-skill-result)
+- [Allow the user to cancel the skill](#allow-the-user-to-cancel-the-skill)
 
-### Initializing the main dialog
+### Initialize the main dialog
 
 The main dialog includes dialogs (for managing conversation flow outside the skill) and a skill dialogs (for managing the skills).
 The waterfall includes the following steps, described in more detail in the next few sections.
@@ -150,7 +146,7 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ---
 
-### Selecting a skill
+### Select a skill
 
 #### [C#](#tab/cs)
 
@@ -164,7 +160,7 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ---
 
-### Selecting a skill action
+### Select a skill action
 
 #### [C#](#tab/cs)
 
@@ -182,7 +178,7 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ---
 
-### Starting a skill
+### Start a skill
 
 #### [C#](#tab/cs)
 
@@ -198,7 +194,7 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ---
 
-### Summarizing the skill result
+### Summarize the skill result
 
 #### [C#](#tab/cs)
 
@@ -212,7 +208,7 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ---
 
-### Allowing the user to cancel the skill
+### Allow the user to cancel the skill
 
 #### [C#](#tab/cs)
 
