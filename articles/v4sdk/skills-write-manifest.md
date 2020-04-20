@@ -23,17 +23,22 @@ This is a sample manifest for a skill that exposes multiple activities.
 
 ## Skill manifest
 
+The skill manifest contains 4 categories of information:
+
+- Metadata that describes the skill at a general level.
+- A list of the endpoints that the skill provides.
+- A list of the activities the the skill supports.
+- A definitions object that describes the types of objects the activities can take as input or generate as output.
+
 The following is the full schema for the Bot Framework skill manifest.
 
-| Field | Type | Required | Description |
+| Category/Field | Type | Required | Description |
 |:-|:-|:-|:-|
+| **Metadata**
 | $id | string | Required | The identifier for this skill manifest. |
 | $schema | string | Optional | The HTTPS URI of a a JSON schema resource that describes the format of this manifest; optional but recommended. |
-| activities | array of [eventActivity](#eventactivity), [invokeActivity](#invokeactivity), or [messageActivity](#messageactivity) objects | Required | The list of the activities accepted by the skill. |
 | copyright | string | Optional | The copyright notice for the skill. |
-| definitions | an object | Optional | Defines the structure of object payloads. |
 | description | string | Optional | A description of the skill. |
-| endpoints | array of [endpoint](#endpoint) objects | Required | The list of endpoints supported by the skill. |
 | iconUrl | string | Optional | The URI of the icon to show for the skill. |
 | license | string | Optional | The license agreement for the skill. |
 | name | string | Required | The name of the skill. |
@@ -41,8 +46,14 @@ The following is the full schema for the Bot Framework skill manifest.
 | privacyUrl | string | Optional | The URI of the privacy description for the skill. |
 | publisherName | string | Required | The name of the skill publisher. |
 | tags | string array | Optional | A set of tags for the skill. If present, each tag must be unique. |
+| **Endpoints**
+| endpoints | array of [endpoint](#endpoint) objects | Required | The list of endpoints supported by the skill. |
+| **Activities**
+| activities | array of [eventActivity](#eventactivity), [invokeActivity](#invokeactivity), or [messageActivity](#messageactivity) objects | Required | The list of the activities accepted by the skill. |
+| **Definitions**
+| definitions | object | Optional | An object containing JSON schema definitions for the objects referenced by other parts of this schema. |
 
-## endpoint
+## endpoint object
 
 Describes an endpoint supported by the skill.
 
@@ -54,7 +65,7 @@ Describes an endpoint supported by the skill.
 | name | string | Required | The unique name for the endpoint.
 | protocol | string | Optional | The supported protocol. Default is "BotFrameworkV3".
 
-## eventActivity
+## eventActivity object
 
 Describes an event activity accepted by the skill, where the `name` property indicates the task that the skill will perform.
 
@@ -66,7 +77,7 @@ Describes an event activity accepted by the skill, where the `name` property ind
 | type | string | Required | The activity type. Must be "event".
 | value | object | Optional | A JSON schema definition of the type of object that this activity expects as input.
 
-## invokeActivity
+## invokeActivity object
 
 Describes an invoke activity accepted by the skill, where the `name` property indicates the task that the skill will perform.
 
@@ -78,7 +89,7 @@ Describes an invoke activity accepted by the skill, where the `name` property in
 | type | string | Required | The activity type. Must be "invoke".
 | value | object | Optional | A JSON schema definition of the type of object that this activity expects as input.
 
-## messageActivity
+## messageActivity object
 
 Describes a message activity accepted by the skill, where the `text` property contains the user's utterance.
 
@@ -92,4 +103,4 @@ Describes a message activity accepted by the skill, where the `text` property co
 ## Additional information
 
 The current skill manifest schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
-This schema uses the draft 7 JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
+This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
