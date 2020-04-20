@@ -129,7 +129,9 @@ The waterfall includes the following steps, described in more detail in the next
 
 #### [C#](#tab/cs)
 
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The `MainDialog` class derives from `ComponentDialog`.
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+
+The `MainDialog` class derives from `ComponentDialog`.
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
@@ -144,6 +146,10 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The code retrieves the bot's app ID from the user environment.
+
+The `MainDialog` class derives from `ComponentDialog`.
+
 **dialogRootBot/dialogs/mainDialog.js**
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
@@ -154,6 +160,10 @@ It calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 [!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=178-194)]
 
 ### [Python](#tab/python)
+
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+
+The `MainDialog` class derives from `ComponentDialog`.
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
