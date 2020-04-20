@@ -47,9 +47,9 @@ The following is the full schema for the Bot Framework skill manifest.
 | publisherName | string | Required | The name of the skill publisher. |
 | tags | string array | Optional | A set of tags for the skill. If present, each tag must be unique. |
 | **Endpoints**
-| endpoints | array of [endpoint](#endpoint) objects | Required | The list of endpoints supported by the skill. |
+| endpoints | array of [endpoint](#endpoint-object) objects | Required | The list of endpoints supported by the skill. |
 | **Activities**
-| activities | array of [eventActivity](#eventactivity), [invokeActivity](#invokeactivity), or [messageActivity](#messageactivity) objects | Required | The list of the activities accepted by the skill. |
+| activities | array of [eventActivity](#eventactivity-object), [invokeActivity](#invokeactivity-object), or [messageActivity](#messageactivity-object) objects | Required | The list of the activities accepted by the skill. |
 | **Definitions**
 | definitions | object | Optional | An object containing JSON schema definitions for the objects referenced by other parts of this schema. |
 
