@@ -36,8 +36,10 @@ This section describes how to enable the direct line app service extension using
     
     adapter.useNamedPipe(async (context) => {
         await myBot.run(context);
-    });
-    ```
+        },
+        process.env.APPSETTING_WEBSITE_SITE_NAME + '.directline'
+    );
+    ```   
 
 1. Save the `index.js` file.
 1. Update the default `Web.Config` file to add the `AspNetCore` handler needed by Direct Line App Service Extension to service requests:
@@ -93,9 +95,10 @@ This section describes how to enable the direct line app service extension using
 ### Confirm Direct Line App Extension and the Bot are Initialized
 
 1. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot. 
-If everything is correct, the page will return this JSON content: `{"k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
+If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
-    - **k** determines whether Direct Line App Service Extension (ASE) can read an App Service Extension Key from its configuration. 
+    - **v** displays the build version of the Direct Line App Service Extension (ASE).
+    - **k** determines whether Direct Line ASE can read an App Service Extension Key from its configuration. 
     - **initialized** determines whether Direct Line ASE can use the App Service Extension Key to download the bot metadata from Azure Bot Service
     - **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
     - **ob** determines whether Direct Line ASE can establish an outbound connection with the bot. 

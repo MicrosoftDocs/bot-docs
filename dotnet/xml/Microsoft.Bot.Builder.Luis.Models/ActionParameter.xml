@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ActionParameter (string name = null, Nullable&lt;bool&gt; required = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; value = null);" />
+      <MemberSignature Language="C#" Value="public ActionParameter (string name = default, bool? required = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; value = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;bool&gt; required, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.ActionParameter.#ctor(System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional required As Nullable(Of Boolean) = null, Optional value As IList(Of EntityRecommendation) = null)" />
@@ -97,7 +97,7 @@
       </Docs>
     </Member>
     <Member MemberName="Required">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Required { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Required { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Required" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.Models.ActionParameter.Required" />
       <MemberSignature Language="VB.NET" Value="Public Property Required As Nullable(Of Boolean)" />

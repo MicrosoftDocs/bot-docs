@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotStateDataResult (System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt; botStateData = null, string continuationToken = null);" />
+      <MemberSignature Language="C#" Value="public BotStateDataResult (System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.BotStateData&gt; botStateData = default, string continuationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.BotStateData&gt; botStateData, string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateDataResult.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Connector.BotStateData},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional botStateData As IList(Of BotStateData) = null, Optional continuationToken As String = null)" />

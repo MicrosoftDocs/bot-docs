@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ChannelAccount (string id = null, string name = null, string role = null, string aadObjectId = null);" />
+      <MemberSignature Language="C#" Value="public ChannelAccount (string id = default, string name = default, string role = default, string aadObjectId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string role, string aadObjectId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ChannelAccount.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional role As String = null, Optional aadObjectId As String = null)" />
@@ -60,6 +62,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -71,10 +74,10 @@
         <param name="id">Channel id for the user or bot on this channel
             (Example: joe@smith.com, or @joesmith or 123456)</param>
         <param name="name">Display friendly name</param>
-        <param name="role">Role of the entity behind the account (Example:
-            User, Bot, etc.). Possible values include: 'user', 'bot'</param>
         <param name="aadObjectId">This account's object ID within Azure
             Active Directory (AAD)</param>
+        <param name="role">Role of the entity behind the account (Example:
+            User, Bot, etc.). Possible values include: 'user', 'bot'</param>
         <summary>
             Initializes a new instance of the ChannelAccount class.
             </summary>
@@ -94,6 +97,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -127,6 +131,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -160,6 +165,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -192,6 +198,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -227,6 +234,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

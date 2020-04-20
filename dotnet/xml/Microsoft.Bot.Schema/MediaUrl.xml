@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MediaUrl (string url = null, string profile = null);" />
+      <MemberSignature Language="C#" Value="public MediaUrl (string url = default, string profile = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string profile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.MediaUrl.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional profile As String = null)" />
@@ -62,6 +64,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
@@ -92,6 +95,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -125,6 +129,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

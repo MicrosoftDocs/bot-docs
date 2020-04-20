@@ -22,7 +22,7 @@ This article introduces key concepts in the Bot Framework SDK for .NET.
 
 ## Connector
 
-The [Bot Framework Connector](bot-builder-dotnet-connector.md) provides a single REST API that enables a bot to communicate across multiple channels such as Skype, Email, Slack, and more. It facilitates communication between bot and user by relaying messages from bot to channel and from channel to bot. 
+The [Bot Framework Connector](bot-builder-dotnet-connector.md) provides a single REST API that enables a bot to communicate across multiple channels such as Email, Slack, and more. It facilitates communication between bot and user by relaying messages from bot to channel and from channel to bot. 
 
 In the Bot Framework SDK for .NET, the [Connector][connectorLibrary] library enables access to the Connector. 
 

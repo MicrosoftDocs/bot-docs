@@ -58,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.IDisposable&gt; Microsoft.Bot.Builder.Internals.Fibers.IScope&lt;T&gt;.WithScopeAsync(!T item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.LocalMutualExclusion`1.Microsoft#Bot#Builder#Internals#Fibers#IScope&lt;T&gt;#WithScopeAsync(`0,System.Threading.CancellationToken)" />
       <MemberSignature Language="VB.NET" Value="Function WithScopeAsync (item As T, token As CancellationToken) As Task(Of IDisposable) Implements IScope(Of T).WithScopeAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Internals.Fibers.IScope&lt;T&gt;.WithScopeAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;IDisposable&gt;&#xA;override this.Microsoft.Bot.Builder.Internals.Fibers.IScope&lt;T&gt;.WithScopeAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;IDisposable&gt;" Usage="localMutualExclusion.Microsoft.Bot.Builder.Internals.Fibers.IScope&lt;T&gt;.WithScopeAsync (item, token)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Internals.Fibers.IScope`1.WithScopeAsync(`0,System.Threading.CancellationToken)</InterfaceMember>

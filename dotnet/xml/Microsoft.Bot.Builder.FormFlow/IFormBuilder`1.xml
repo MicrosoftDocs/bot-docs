@@ -42,7 +42,7 @@
   </Docs>
   <Members>
     <Member MemberName="AddRemainingFields">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; AddRemainingFields (System.Collections.Generic.IEnumerable&lt;string&gt; exclude = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; AddRemainingFields (System.Collections.Generic.IEnumerable&lt;string&gt; exclude = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; AddRemainingFields(class System.Collections.Generic.IEnumerable`1&lt;string&gt; exclude) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddRemainingFields (Optional exclude As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
@@ -73,7 +73,7 @@
       </Docs>
     </Member>
     <Member MemberName="Build">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; Build (System.Reflection.Assembly resourceAssembly = null, string resourceName = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; Build (System.Reflection.Assembly resourceAssembly = default, string resourceName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Build(class System.Reflection.Assembly resourceAssembly, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Build(System.Reflection.Assembly,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (Optional resourceAssembly As Assembly = null, Optional resourceName As String = null) As IForm(Of T)" />
@@ -130,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="Confirm">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Confirm (Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;T&gt; generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = null, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Confirm (Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;T&gt; generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = default, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Confirm(class Microsoft.Bot.Builder.FormFlow.MessageDelegate`1&lt;!T&gt; generateMessage, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function Confirm (generateMessage As MessageDelegate(Of T), Optional condition As ActiveDelegate(Of T) = null, Optional dependencies As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
@@ -160,7 +160,7 @@
       </Docs>
     </Member>
     <Member MemberName="Confirm">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Confirm (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = null, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Confirm (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = default, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Confirm(class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function Confirm (prompt As PromptAttribute, Optional condition As ActiveDelegate(Of T) = null, Optional dependencies As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
@@ -194,7 +194,7 @@
       </Docs>
     </Member>
     <Member MemberName="Confirm">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Confirm (string prompt = null, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = null, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Confirm (string prompt = default, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = default, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Confirm(string prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Confirm(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function Confirm (Optional prompt As String = null, Optional condition As ActiveDelegate(Of T) = null, Optional dependencies As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
@@ -261,7 +261,7 @@
       </Docs>
     </Member>
     <Member MemberName="Field">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = default, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Field (name As String, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
@@ -293,7 +293,7 @@
       </Docs>
     </Member>
     <Member MemberName="Field">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = default, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Field (name As String, prompt As PromptAttribute, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
@@ -327,7 +327,7 @@
       </Docs>
     </Member>
     <Member MemberName="Field">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, string prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = null, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, string prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = default, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, string prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Field (name As String, prompt As String, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
@@ -380,8 +380,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">
-        </param>
+        <param name="name" />
         <summary>
             Test to see if there is already a field with <paramref name="name" />.
             </summary>
@@ -390,7 +389,7 @@
       </Docs>
     </Member>
     <Member MemberName="Message">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Message (Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;T&gt; generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = null, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Message (Microsoft.Bot.Builder.FormFlow.MessageDelegate&lt;T&gt; generateMessage, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = default, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Message(class Microsoft.Bot.Builder.FormFlow.MessageDelegate`1&lt;!T&gt; generateMessage, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.MessageDelegate{`0},Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function Message (generateMessage As MessageDelegate(Of T), Optional condition As ActiveDelegate(Of T) = null, Optional dependencies As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
@@ -420,7 +419,7 @@
       </Docs>
     </Member>
     <Member MemberName="Message">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Message (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = null, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Message (Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = default, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Message(class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function Message (prompt As PromptAttribute, Optional condition As ActiveDelegate(Of T) = null, Optional dependencies As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
@@ -452,7 +451,7 @@
       </Docs>
     </Member>
     <Member MemberName="Message">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Message (string message, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = null, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Message (string message, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; condition = default, System.Collections.Generic.IEnumerable&lt;string&gt; dependencies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Message(string message, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; condition, class System.Collections.Generic.IEnumerable`1&lt;string&gt; dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.IFormBuilder`1.Message(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function Message (message As String, Optional condition As ActiveDelegate(Of T) = null, Optional dependencies As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />

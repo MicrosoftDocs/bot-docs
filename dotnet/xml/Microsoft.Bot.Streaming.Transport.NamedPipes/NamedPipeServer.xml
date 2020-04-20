@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,11 +28,13 @@
       <MemberSignature Language="C#" Value="public NamedPipeServer (string baseName, Microsoft.Bot.Streaming.RequestHandler requestHandler, bool autoReconnect = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string baseName, class Microsoft.Bot.Streaming.RequestHandler requestHandler, bool autoReconnect) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.#ctor(System.String,Microsoft.Bot.Streaming.RequestHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseName As String, requestHandler As RequestHandler, Optional autoReconnect As Boolean = true)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer : string * Microsoft.Bot.Streaming.RequestHandler * bool -&gt; Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer" Usage="new Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer (baseName, requestHandler, autoReconnect)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseName" Type="System.String" />
@@ -61,6 +64,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -86,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler</ReturnType>
@@ -107,6 +112,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,9 +128,10 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync (Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync (Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; SendAsync(class Microsoft.Bot.Streaming.StreamingRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Transport.NamedPipes.NamedPipeServer.SendAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (request As StreamingRequest, Optional cancellationToken As CancellationToken = null) As Task(Of ReceiveResponse)" />
       <MemberSignature Language="F#" Value="abstract member SendAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&#xA;override this.SendAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="namedPipeServer.SendAsync (request, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -133,6 +140,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
@@ -166,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -60,6 +60,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DoneAsync (Item item, object state, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DoneAsync(!Item item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.DoneAsync(`0,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DoneAsync (item As Item, state As Object, token As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member DoneAsync : 'Item * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DoneAsync : 'Item * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="delegatingScorable.DoneAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -92,6 +93,7 @@
       <MemberSignature Language="C#" Value="public virtual Score GetScore (Item item, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Score GetScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.GetScore(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScore (item As Item, state As Object) As Score" />
       <MemberSignature Language="F#" Value="abstract member GetScore : 'Item * obj -&gt; 'Score&#xA;override this.GetScore : 'Item * obj -&gt; 'Score" Usage="delegatingScorable.GetScore (item, state)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -122,6 +124,7 @@
       <MemberSignature Language="C#" Value="public virtual bool HasScore (Item item, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasScore(!Item item, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.HasScore(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasScore (item As Item, state As Object) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member HasScore : 'Item * obj -&gt; bool&#xA;override this.HasScore : 'Item * obj -&gt; bool" Usage="delegatingScorable.HasScore (item, state)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -173,6 +176,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task PostAsync (Item item, object state, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task PostAsync(!Item item, object state, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.PostAsync(`0,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostAsync (item As Item, state As Object, token As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member PostAsync : 'Item * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.PostAsync : 'Item * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="delegatingScorable.PostAsync (item, state, token)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -205,6 +209,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;object&gt; PrepareAsync (Item item, System.Threading.CancellationToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; PrepareAsync(!Item item, valuetype System.Threading.CancellationToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.DelegatingScorable`2.PrepareAsync(`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PrepareAsync (item As Item, token As CancellationToken) As Task(Of Object)" />
       <MemberSignature Language="F#" Value="abstract member PrepareAsync : 'Item * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;&#xA;override this.PrepareAsync : 'Item * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="delegatingScorable.PrepareAsync (item, token)" />
       <MemberType>Method</MemberType>
       <Implements>

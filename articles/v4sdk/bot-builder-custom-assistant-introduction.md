@@ -34,7 +34,7 @@ Your Custom Assistant will be deployed within your Azure subscription. Therefore
 
 ## Your Assistant, anywhere..
 
-The Custom Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) – e.g. WebChat, FaceBook Messenger, Skype, etc. In addition, through the [Direct Line](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel we can embed experiences into Desktop and Mobile Apps including devices such as Cars, Speakers, Alarm Clocks, etc.
+The Custom Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) – e.g. WebChat, Facebook Messenger, etc. In addition, through the [Direct Line](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel we can embed experiences into Desktop and Mobile Apps including devices such as Cars, Speakers, Alarm Clocks, etc.
 
 ## Built on Enterprise grade technology
 
@@ -82,5 +82,5 @@ The Custom Assistant extends across a broad number of industry scenarios, exampl
 
 ## Getting Started
 
-At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months. To register your interest and get started please fill in [this form](https://aka.ms/customassistantpreviewform) and we'll be in touch.
+At this time we are running an initial preview and working closely with initial customers and partners in an open-source repository to bring to life the first experiences and make it available more broadly in the coming months. To register your interest and get started please fill in [this form](https://aka.ms/va-scenario-submission-form) and we'll be in touch.
 

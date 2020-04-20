@@ -19,7 +19,7 @@ This guide describes the characteristics of ID fields in the Bot Framework.
 
 Every Bot Framework channel is identified by a unique ID.
 
-Example: `"channelId": "skype"`
+Example: `"channelId": "slack"`
 
 Channel IDs serve as namespaces for other IDs. Runtime calls in the Bot Framework protocol must take place
 within the context of a channel; the channel gives meaning to the conversation and account IDs used when
@@ -83,7 +83,7 @@ informative bot non-structural data, like an optional name.
 Example: `"from": { "id": "john.doe@contoso.com", "name": "John Doe" }`
 
 This account describes the address within the channel where messages may be sent and received. In some
-cases, these registrations exist within a single service (e.g., Skype, Facebook). In others, they are registered
+cases, these registrations exist within a single service (e.g., Facebook). In others, they are registered
 across many systems (email addresses, phone numbers). In more anonymous channels (e.g., Web Chat), the registration
 may be ephemeral.
 
@@ -98,8 +98,7 @@ in perpetuity, although it is not uncommon for two people to share a Facebook ac
 In most channels, it's appropriate to think of a channel account as a kind of mailbox where messages can be
 delivered. It's typical for most channels to allow multiple address to map to a single mailbox; for example,
 "jdoe@contoso.com" and "john.doe@service.contoso.com" may resolve to the same inbox. Some channels go
-a step further and alter the account's address based on which bot is accessing it; for example, both Skype
-and Facebook alter user IDs so every bot has a different address for sending and receiving messages.
+a step further and alter the account's address based on which bot is accessing it; for example, Facebook alters user IDs so every bot has a different address for sending and receiving messages.
 
 While it's possible in some cases to establish equivalency between addresses, establishing equivalency
 between mailboxes and equivalency between people requires knowledge of the conventions within the channel,
@@ -132,7 +131,7 @@ The activities within a conversation are sent by users and bots. The definition 
 in a conversation varies by channel, and can theoretically include present users, users who have ever
 received a message, users who sent a message.
 
-Several channels (e.g., SMS, Skype, and possibly others) have the quirk that the conversation ID assigned to a 1:1
+Several channels (e.g., SMS, and possibly others) have the quirk that the conversation ID assigned to a 1:1
 conversation is the remote channel account ID. This quirk has two side-effects:
 1. The conversation ID is subjective based on who is viewing it. If Participants A and B are talking,
    participant A sees the conversation ID to be "B" and participant B sees the conversation ID to be "A."

@@ -29,7 +29,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PromptInt64 (Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;long&gt; promptOptions, Nullable&lt;long&gt; min = null, Nullable&lt;long&gt; max = null);" />
+      <MemberSignature Language="C#" Value="public PromptInt64 (Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;long&gt; promptOptions, long? min = default, long? max = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.PromptOptions`1&lt;int64&gt; promptOptions, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As PromptOptions(Of Long), Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
@@ -48,14 +48,14 @@
       </Parameters>
       <Docs>
         <param name="promptOptions"> THe prompt options.</param>
-        <param name="min">Minimun value.</param>
         <param name="max">Maximum value.</param>
+        <param name="min">Minimun value.</param>
         <summary>   Constructor for a prompt int64 dialog. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PromptInt64 (string prompt, string retry, int attempts, string speak = null, Nullable&lt;long&gt; min = null, Nullable&lt;long&gt; max = null);" />
+      <MemberSignature Language="C#" Value="public PromptInt64 (string prompt, string retry, int attempts, string speak = default, long? min = default, long? max = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, string speak, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional speak As String = null, Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
@@ -80,14 +80,14 @@
         <param name="retry">    What to display on retry. </param>
         <param name="attempts"> Maximum number of attempts. </param>
         <param name="speak">    Speak tag (SSML markup for text to speech)</param>
-        <param name="min">      Minimun value.</param>
         <param name="max">      Maximum value.</param>
+        <param name="min">      Minimun value.</param>
         <summary>   Constructor for a prompt int64 dialog. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Max">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; Max { get; }" />
+      <MemberSignature Language="C#" Value="public long? Max { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Max" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Max" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Max As Nullable(Of Long)" />
@@ -111,7 +111,7 @@
       </Docs>
     </Member>
     <Member MemberName="Min">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; Min { get; }" />
+      <MemberSignature Language="C#" Value="public long? Min { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Min" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.Min" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Min As Nullable(Of Long)" />

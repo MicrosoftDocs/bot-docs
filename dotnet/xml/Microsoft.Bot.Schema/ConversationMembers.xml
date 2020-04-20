@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConversationMembers (string id = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; members = null);" />
+      <MemberSignature Language="C#" Value="public ConversationMembers (string id = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; members = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; members) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationMembers.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional members As IList(Of ChannelAccount) = null)" />
@@ -62,6 +64,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -91,6 +94,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -123,6 +127,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

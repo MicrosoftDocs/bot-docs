@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SuggestedActions (System.Collections.Generic.IList&lt;string&gt; to = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; actions = null);" />
+      <MemberSignature Language="C#" Value="public SuggestedActions (System.Collections.Generic.IList&lt;string&gt; to = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; actions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; to, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SuggestedActions.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional to As IList(Of String) = null, Optional actions As IList(Of CardAction) = null)" />

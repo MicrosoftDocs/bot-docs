@@ -24,6 +24,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; FlushAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; FlushAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.FlushAsync(Microsoft.Bot.Builder.Dialogs.IAddress,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FlushAsync (key As IAddress, cancellationToken As CancellationToken) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member FlushAsync : Microsoft.Bot.Builder.Dialogs.IAddress * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iBotDataStore.FlushAsync (key, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -51,6 +52,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; LoadAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; LoadAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadAsync (key As IAddress, botStoreType As BotStoreType, cancellationToken As CancellationToken) As Task(Of T)" />
       <MemberSignature Language="F#" Value="abstract member LoadAsync : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="iBotDataStore.LoadAsync (key, botStoreType, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -82,6 +84,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Microsoft.Bot.Builder.Dialogs.IAddress key, Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, T data, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SaveAsync(class Microsoft.Bot.Builder.Dialogs.IAddress key, valuetype Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType botStoreType, !T data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.IBotDataStore`1.SaveAsync(Microsoft.Bot.Builder.Dialogs.IAddress,Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType,`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveAsync (key As IAddress, botStoreType As BotStoreType, data As T, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member SaveAsync : Microsoft.Bot.Builder.Dialogs.IAddress * Microsoft.Bot.Builder.Dialogs.Internals.BotStoreType * 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iBotDataStore.SaveAsync (key, botStoreType, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

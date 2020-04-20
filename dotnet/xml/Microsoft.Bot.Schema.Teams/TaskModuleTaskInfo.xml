@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskModuleTaskInfo (string title = null, object height = null, object width = null, string url = null, Microsoft.Bot.Schema.Attachment card = null, string fallbackUrl = null, string completionBotId = null);" />
+      <MemberSignature Language="C#" Value="public TaskModuleTaskInfo (string title = default, object height = default, object width = default, string url = default, Microsoft.Bot.Schema.Attachment card = default, string fallbackUrl = default, string completionBotId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, object height, object width, string url, class Microsoft.Bot.Schema.Attachment card, string fallbackUrl, string completionBotId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TaskModuleTaskInfo.#ctor(System.String,System.Object,System.Object,System.String,Microsoft.Bot.Schema.Attachment,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional height As Object = null, Optional width As Object = null, Optional url As String = null, Optional card As Attachment = null, Optional fallbackUrl As String = null, Optional completionBotId As String = null)" />
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -90,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -146,6 +151,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -174,6 +180,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -202,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -230,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -258,6 +267,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

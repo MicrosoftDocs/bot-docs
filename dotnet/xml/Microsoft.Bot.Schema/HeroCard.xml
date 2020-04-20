@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HeroCard (string title = null, string subtitle = null, string text = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardImage&gt; images = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = null, Microsoft.Bot.Schema.CardAction tap = null);" />
+      <MemberSignature Language="C#" Value="public HeroCard (string title = default, string subtitle = default, string text = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardImage&gt; images = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = default, Microsoft.Bot.Schema.CardAction tap = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardImage&gt; images, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardAction&gt; buttons, class Microsoft.Bot.Schema.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.HeroCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},Microsoft.Bot.Schema.CardAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional images As IList(Of CardImage) = null, Optional buttons As IList(Of CardAction) = null, Optional tap As CardAction = null)" />
@@ -62,6 +64,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -101,6 +104,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -133,6 +137,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -157,6 +162,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -189,6 +195,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -221,6 +228,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -254,6 +262,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -286,6 +295,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

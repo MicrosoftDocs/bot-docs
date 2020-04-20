@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 03/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 > * Update your bot to query the knowledge base
 > * Republish your bot
 
-If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -93,7 +93,7 @@ Add the following values to you appsetting.json file:
 
 Add the following values to your .env file:
 
-```
+```text
 MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
@@ -146,15 +146,12 @@ Update your initialization code to load the service information for your knowled
 
    For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
 
-1. Add the **Microsoft.Extensions.Configuration** NuGet package to your project.
-
-1. In your **Startup.cs** file, add these namespace references.
+1. In your **Startup.cs** file, add this namespace reference.
 
    **Startup.cs**
 
    ```csharp
    using Microsoft.Bot.Builder.AI.QnA;
-   using Microsoft.Extensions.Configuration;
    ```
 
 1. And, modify the _ConfigureServices_ method create a QnAMakerEndpoint that connects to the knowledge base defined in the **appsettings.json** file.
@@ -174,7 +171,7 @@ Update your initialization code to load the service information for your knowled
 
 1. In your **EchoBot.cs** file, add these namespace references.
 
-   **EchoBot.cs**
+   **Bots\\EchoBot.cs**
 
    ```csharp
    using System.Linq;
@@ -230,6 +227,7 @@ Update your initialization code to load the service information for your knowled
 
 1. Open a terminal or command prompt to the root directory for your project.
 1. Add the **botbuilder-ai** npm package to your project.
+
    ```shell
    npm i botbuilder-ai
    ```
@@ -237,6 +235,7 @@ Update your initialization code to load the service information for your knowled
 1. In **index.js**, following the // Create Adapter section, add the following code to read your .env file configuration information needed to generate the QnA Maker services.
 
    **index.js**
+
    ```javascript
    // Map knowledge base endpoint values from .env file into the required format for `QnAMaker`.
    const configuration = {
@@ -250,6 +249,7 @@ Update your initialization code to load the service information for your knowled
 1. Update the bot construction to pass in the QnA services configuration information.
 
    **index.js**
+
    ```javascript
    // Create the main dialog.
    const myBot = new MyBot(configuration, {});
@@ -258,6 +258,7 @@ Update your initialization code to load the service information for your knowled
 1. In your **bot.js** file, add this require for QnAMaker
 
    **bot.js**
+
    ```javascript
    const { QnAMaker } = require('botbuilder-ai');
    ```
@@ -265,6 +266,7 @@ Update your initialization code to load the service information for your knowled
 1. Modify the constructor to now receive passed configuration parameters required to create a QnAMaker connector and throw an error if these parameters are not provided.
 
    **bot.js**
+
    ```javascript
       class MyBot extends ActivityHandler {
          constructor(configuration, qnaOptions) {
@@ -381,9 +383,13 @@ At this point your bot should be able to answer some questions. Run the bot loca
 ![test qna sample](./media/qna-test-bot.png)
 
 ## Republish your bot
-You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article. 
 
-### Zip your project folder 
+You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article.
+
+[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
+
+### Zip your project folder
+
 [!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 
 <!-- > [!IMPORTANT]
@@ -397,6 +403,7 @@ You can now republish your bot back to Azure. You need to zip your project folde
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**. -->
 
 ### Deploy your code to Azure
+
 [!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
 
 <!-- # [C#](#tab/csharp)

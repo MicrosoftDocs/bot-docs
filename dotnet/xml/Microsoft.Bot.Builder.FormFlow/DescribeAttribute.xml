@@ -30,7 +30,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DescribeAttribute (string description = null, string image = null, string message = null, string title = null, string subTitle = null);" />
+      <MemberSignature Language="C#" Value="public DescribeAttribute (string description = default, string image = default, string message = default, string title = default, string subTitle = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, string image, string message, string title, string subTitle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = null, Optional image As String = null, Optional message As String = null, Optional title As String = null, Optional subTitle As String = null)" />

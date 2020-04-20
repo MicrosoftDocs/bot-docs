@@ -6,39 +6,39 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/30/2019
+ms.date: 02/25/2020
 ---
 
 # Troubleshooting Bot Framework authentication
 
-This guide can help you to troubleshoot authentication issues with your bot by evaluating a series of scenarios to determine where the problem exists. 
+This guide can help you to troubleshoot authentication issues with your bot by evaluating a series of scenarios to determine where the problem exists.
 
 > [!NOTE]
-> To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
+> To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the [Azure Portal](https://portal.azure.com).
 
 ## <a id="PW"></a> App ID and password
 
-Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service. 
+Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service.
 
-If you have not yet done so, [deploy your bot to azure](~/bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication. 
+If you have not yet done so, [deploy your bot to azure](~/bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication.
 
 > [!NOTE]
 > To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 ## Step 1: Disable security and test on localhost
 
-In this step, you will verify that your bot is accessible and functional on localhost when security is disabled. 
+In this step, you will verify that your bot is accessible and functional on localhost when security is disabled.
 
 > [!WARNING]
 > Disabling security for your bot may allow unknown attackers to impersonate users. Only implement the following procedure if you are operating in a protected debugging environment.
 
 ### <a id="disable-security-localhost"></a> Disable security
 
-To disable security for your bot, edit its configuration settings to remove the values for app ID and password. 
+To disable security for your bot, edit its configuration settings to remove the values for app ID and password.
 
 ::: moniker range="azure-bot-service-3.0"
 
-If you're using the Bot Framework SDK for .NET, edit these settings in your Web.config file: 
+If you're using the Bot Framework SDK for .NET, edit these settings in your Web.config file:
 
 ```xml
 <appSettings>
@@ -63,8 +63,8 @@ var connector = new builder.ChatConnector({
 If you're using the Bot Framework SDK for .NET, edit the settings in your `appsettings.json` file:
 
 ```json
-  "MicrosoftAppId": "<your app ID>",
-  "MicrosoftAppPassword": "<your app password>"
+  "MicrosoftAppId": "",
+  "MicrosoftAppPassword": ""
 ```
 
 If you're using the Bot Framework SDK for Node.js, edit these values (or update the corresponding environment variables):
@@ -78,14 +78,14 @@ const adapter = new BotFrameworkAdapter({
 
 ::: moniker-end
 
-### Test your bot on localhost 
+### Test your bot on localhost
 
 Next, test your bot on localhost by using the Bot Framework Emulator.
 
 1. Start your bot on localhost.
 2. Start the Bot Framework Emulator.
 3. Connect to your bot using the emulator.
-    - Type `http://localhost:port-number/api/messages` into the emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running. 
+    - Type `http://localhost:port-number/api/messages` into the emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
     - Ensure that the **Microsoft App ID** and **Microsoft App Password** fields are both empty.
     - Click **Connect**.
 4. To test connectivity to your bot, type some text into the emulator and press Enter.
@@ -210,7 +210,7 @@ If an error is indicated in the chat window, use the error message to determine 
 * The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal does not begin with `https` or is not trusted by the Bot Framework. Your bot must have a valid, chain-trusted certificate.
 * The bot is configured with missing or incorrect values for app ID or password. [Verify](#enable-security-localhost) that the bot configuration settings specify valid values for app ID and password.
 
-If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](~/bot-service-manage-channels.md) such as Skype, Facebook Messenger, Direct Line, and others.
+If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](~/bot-service-manage-channels.md) such as Facebook Messenger, Direct Line, and others.
 
 ## Additional resources
 

@@ -23,7 +23,7 @@
   </Docs>
   <Members>
     <Member MemberName="Help">
-      <MemberSignature Language="C#" Value="public string Help (T state, object defaultValue = null);" />
+      <MemberSignature Language="C#" Value="public string Help (T state, object defaultValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Help(!T state, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Help(`0,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Help (state As T, Optional defaultValue As Object = null) As String" />
@@ -53,7 +53,7 @@
       </Docs>
     </Member>
     <Member MemberName="Matches">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches (Microsoft.Bot.Connector.IMessageActivity input, object defaultValue = null);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches (Microsoft.Bot.Connector.IMessageActivity input, object defaultValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (input As IMessageActivity, Optional defaultValue As Object = null) As IEnumerable(Of TermMatch)" />

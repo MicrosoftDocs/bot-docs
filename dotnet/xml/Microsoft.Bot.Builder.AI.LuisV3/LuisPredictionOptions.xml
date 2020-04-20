@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,10 +29,35 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisPredictionOptions (Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.#ctor(Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As LuisPredictionOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions : Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions -&gt; Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions" Usage="new Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions other" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions" />
+      </Parameters>
+      <Docs>
+        <param name="other">Source of values.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions" /> class from an existing instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,6 +71,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.DynamicList&gt;</ReturnType>
@@ -69,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ExternalEntity&gt;</ReturnType>
@@ -93,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -117,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -144,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -159,7 +190,7 @@
       </Docs>
     </Member>
     <Member MemberName="Log">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Log { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions.Log" />
       <MemberSignature Language="VB.NET" Value="Public Property Log As Nullable(Of Boolean)" />
@@ -168,6 +199,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -192,6 +224,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -216,6 +249,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -243,6 +277,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

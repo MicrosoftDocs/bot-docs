@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 All **Azure Bot Service (Preview)** bots created in the [Bot Framework Portal](http://dev.botframework.com) must migrate to the new Bot Service in Azure. The service was made generally available (GA) in December 2017. 
 
-Note that, registration bots connected only to the following channels are *not* required to migrate: **Teams**, **Skype**, or **Cortana**. For example, a registration bot connected to **Facebook** and **Skype** *is required* to migrate but a registration bot connected to **Skype** and **Cortana** *is not required* to migrate.
+Note that, registration bots connected only to the following channels are *not* required to migrate: **Microsoft Teams** and **Cortana**. For example, a registration bot connected to **Facebook** and **Slack** *is required* to migrate but a registration bot connected to **Facebook** and **Cortana** *is not required* to migrate.
 
 > [!IMPORTANT]
 > Before migrating a Functions bot created with Node.js, it is required that you use **Azure Functions Pack** to package the **node_modules** modules together. Doing so will improve performance during migration and execution of the Functions bot after it is migrated. 
