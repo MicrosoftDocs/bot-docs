@@ -75,25 +75,28 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 
 **DialogRootBot\appsettings.json**
 
-Add the root bot's app ID and password to the appsettings.json file. Also, add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+- Add the root bot's app ID and password.
+- Add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
-[!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json)]
+[!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json?highlight=2-3,9)]
 
 ### [JavaScript](#tab/js)
 
 **dialogRootBot/.env**
 
-Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
+- Add the root bot's app ID and password.
+- Add the app ID for the echo skill bot.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
 
 ### [Python](#tab/python)
 
 **dialog-root-bot/config.py**
 
-Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
+- Add the root bot's app ID and password.
+- Add the app ID for the echo skill bot.
 
-[!code-python[configuration file](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/config.py?range=14-25)]
+[!code-python[configuration file](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/config.py?range=14-25&highlight=1,3,9)]
 
 ---
 
@@ -103,6 +106,7 @@ The bot's main dialog includes a _skill dialog_ for each skill this bot consumes
 The main dialog also demonstrates how to cancel the skill (through the skill dialog) based on user input.
 
 The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts, it sends and echo message.
+
 The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
@@ -161,7 +165,7 @@ The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDial
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=21-54)]
 -->
 
-[!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=178-194)]
+[!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=175-194)]
 
 ### [Python](#tab/python)
 
@@ -233,7 +237,7 @@ The choices included in this bot help test the actions defined for this skill. M
 
 [!code-javascript[selectSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=104-120)]
 
-[!code-javascript[getSkillActions](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=196-112)]
+[!code-javascript[getSkillActions](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=196-212)]
 
 [!code-javascript[skillActionPromptValidator](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=270-279)]
 
@@ -263,23 +267,30 @@ In the next step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179&highlight=178)]
+[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179&highlight=25)]
 
 #### [JavaScript](#tab/js)
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[callSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=126-150&highlight=149)]
+[!code-javascript[callSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=126-150&highlight=24)]
 
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=190)]
+[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=23)]
 
 ---
 
 ### Summarize the skill result
+
+In the last step, the main dialog:
+
+1. If the skill returned a value, display the result to the user.
+1. Clears the active skill from dialog state.
+1. Removes the active skill property from conversation state.
+1. Restarts itself (the main dialog).
 
 #### [C#](#tab/cs)
 
@@ -291,17 +302,22 @@ In the next step, the main dialog:
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102)]
+[!code-javascript[finalStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=152-173)]
 
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144)]
+[!code-python[_final_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=192-212)]
 
 ---
 
 ### Allow the user to cancel the skill
+
+The main dialog overrides the default behavior of the _on continue dialog_ method to allow the user to cancel the current skill, if any. The method:
+
+- If there is an active skill and the user sends an "abort" message, cancel all dialogs and queue the main dialog to restart from the beginning.
+- Then, call the base implementation of the _on continue dialog_ method to continue processing the current turn.
 
 #### [C#](#tab/cs)
 
@@ -313,13 +329,13 @@ In the next step, the main dialog:
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102)]
+[!code-javascript[onContinueDialog](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=73-85)]
 
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144)]
+[!code-python[on_continue_dialog](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=108-122)]
 
 ---
 
