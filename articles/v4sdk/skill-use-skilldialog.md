@@ -129,15 +129,14 @@ The waterfall includes the following steps, described in more detail in the next
 
 #### [C#](#tab/cs)
 
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+**DialogRootBot\Dialogs\MainDialog.cs**
 
 The `MainDialog` class derives from `ComponentDialog`.
-
-**DialogRootBot\Dialogs\MainDialog.cs**
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
-It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
+The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
 <!--
 [!code-csharp[fields](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=33-36)]
@@ -149,15 +148,14 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The code retrieves the bot's app ID from the user environment.
+**dialogRootBot/dialogs/mainDialog.js**
 
 The `MainDialog` class derives from `ComponentDialog`.
-
-**dialogRootBot/dialogs/mainDialog.js**
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The code retrieves the bot's app ID from the user environment.
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
-It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
+The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
 <!--
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=21-54)]
@@ -167,15 +165,14 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ### [Python](#tab/python)
 
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+**dialog-root-bot/dialogs/main_dialog.py**
 
 The `MainDialog` class derives from `ComponentDialog`.
-
-**dialog-root-bot/dialogs/main_dialog.py**
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
-It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillConfiguration` object.
+The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillConfiguration` object.
 
 <!--
 [!code-python[constructor](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=36-106)]
@@ -187,6 +184,8 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 ### Select a skill
 
+In its first step, the main dialog prompts the user for which skill they'd like to call, and uses the "SkllPrompt" choice prompt to get the answer. (This bot defines only one skill.)
+
 #### [C#](#tab/cs)
 
 **DialogRootBot\Dialogs\MainDialog.cs**
@@ -195,11 +194,28 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
+**dialogRootBot/dialogs/mainDialog.js**
+
+[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102)]
+
 #### [Python](#tab/python)
+
+**dialog-root-bot/dialogs/main_dialog.py**
+
+[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144)]
 
 ---
 
 ### Select a skill action
+
+In the next step, the main dialog:
+
+1. Saves information about the skill the user selected.
+1. Prompts the user for which skill action they'd like to use, and uses the "SkillActionPrompt" choice prompt to get the answer.
+   - It uses a helper method to get a list of actions to choose from.
+   - The prompt validator associated with this prompt will default to sending the skill a message if the user's input doesn't match one of the choices.
+
+The choices included in this bot help test the actions defined for this skill. More typically, you would read the options from the skill's manifest, and present options to the user based on that list.
 
 #### [C#](#tab/cs)
 
@@ -213,23 +229,53 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
+**dialogRootBot/dialogs/mainDialog.js**
+
+[!code-javascript[selectSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=104-120)]
+
+[!code-javascript[getSkillActions](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=196-112)]
+
+[!code-javascript[skillActionPromptValidator](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=270-279)]
+
 #### [Python](#tab/python)
+
+**dialog-root-bot/dialogs/main_dialog.py**
+
+[!code-python[_select_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=146-166)]
+
+[!code-python[_get_skill_actions](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=249-260)]
+
+[!code-python[_skill_action_prompt_validator](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=237-247)]
 
 ---
 
 ### Start a skill
 
+In the next step, the main dialog:
+
+1. Retrieves information about the skill and skill activity the user selected.
+1. Uses a helper method to create the activity to initially send to the skill.
+1. Creates the dialog options with which to start the skill dialog. This includes the initial activity to send.
+1. Saves state before calling the skill. (This is necessary, as the skill response might come to a different instance of the skill consumer.)
+1. Begins the skill dialog, passing in the skill ID to call and the options with which to call it.
+
 #### [C#](#tab/cs)
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179)]
-
-[!code-csharp[CreateDialogSkillBotActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=244-295)]
+[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179&highlight=178)]
 
 #### [JavaScript](#tab/js)
 
+**dialogRootBot/dialogs/mainDialog.js**
+
+[!code-javascript[callSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=126-150&highlight=149)]
+
 #### [Python](#tab/python)
+
+**dialog-root-bot/dialogs/main_dialog.py**
+
+[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=190)]
 
 ---
 
@@ -243,7 +289,15 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
+**dialogRootBot/dialogs/mainDialog.js**
+
+[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102)]
+
 #### [Python](#tab/python)
+
+**dialog-root-bot/dialogs/main_dialog.py**
+
+[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144)]
 
 ---
 
@@ -257,7 +311,15 @@ It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each 
 
 #### [JavaScript](#tab/js)
 
+**dialogRootBot/dialogs/mainDialog.js**
+
+[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102)]
+
 #### [Python](#tab/python)
+
+**dialog-root-bot/dialogs/main_dialog.py**
+
+[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144)]
 
 ---
 
