@@ -136,7 +136,8 @@ The `MainDialog` class derives from `ComponentDialog`.
 **DialogRootBot\Dialogs\MainDialog.cs**
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
-It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file.
+
+It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
 <!--
 [!code-csharp[fields](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=33-36)]
@@ -155,7 +156,8 @@ The `MainDialog` class derives from `ComponentDialog`.
 **dialogRootBot/dialogs/mainDialog.js**
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
-It calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file.
+
+It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
 <!--
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=21-54)]
@@ -172,7 +174,8 @@ The `MainDialog` class derives from `ComponentDialog`.
 **dialog-root-bot/dialogs/main_dialog.py**
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
-It calls `_add_skill_dialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file.
+
+It calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillConfiguration` object.
 
 <!--
 [!code-python[constructor](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=36-106)]
