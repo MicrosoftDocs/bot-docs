@@ -142,13 +142,7 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
-<!--
-[!code-csharp[fields](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=33-36)]
-
-[!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=38-84)]
--->
-
-[!code-csharp[AddSkillDialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=204-223)]
+[!code-csharp[AddSkillDialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=204-223&highlight=18)]
 
 #### [JavaScript](#tab/js)
 
@@ -161,11 +155,7 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
-<!--
-[!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=21-54)]
--->
-
-[!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=175-194)]
+[!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=175-194&highlight=18)]
 
 ### [Python](#tab/python)
 
@@ -178,11 +168,7 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillConfiguration` object.
 
-<!--
-[!code-python[constructor](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=36-106)]
--->
-
-[!code-python[_add_skill_dialogs](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=215-235)]
+[!code-python[_add_skill_dialogs](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=215-235&highlight=21)]
 
 ---
 
@@ -194,19 +180,19 @@ In its first step, the main dialog prompts the user for which skill they'd like 
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[SelectSkillStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=103-118)]
+[!code-csharp[SelectSkillStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=103-118&highlight=11)]
 
 #### [JavaScript](#tab/js)
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102)]
+[!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=87-102&highlight=11)]
 
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144)]
+[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144&highlight=14-17)]
 
 ---
 
@@ -267,19 +253,19 @@ In the next step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179&highlight=25)]
+[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=154-179&highlight=10,19,25)]
 
 #### [JavaScript](#tab/js)
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[callSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=126-150&highlight=24)]
+[!code-javascript[callSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=126-150&highlight=10,18,24)]
 
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=23)]
+[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=10-11,17,23)]
 
 ---
 
@@ -296,19 +282,19 @@ In the last step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=181-202)]
+[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=181-202&highlight=7-12)]
 
 #### [JavaScript](#tab/js)
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[finalStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=152-173)]
+[!code-javascript[finalStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=152-173&highlight=9-11)]
 
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_final_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=192-212)]
+[!code-python[_final_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=192-212&highlight=5-9)]
 
 ---
 
@@ -355,7 +341,21 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 ### [JavaScript](#tab/js)
 
+**dialogRootBot/bots/rootBot.js**
+
+[!code-javascript[class definition](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=8)]
+
+[!code-javascript[partial constructor plus onTurn](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=14-29)]
+
+[!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=46-54)]
+
 ### [Python](#tab/python)
+
+**dialog-root-bot/bots/root_bot.py**
+
+[!code-python[class definition](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/bots/root_bot.py?range=16)]
+
+[!code-python[constructor and on_turn](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/bots/root_bot.py?range=17-37)]
 
 ---
 
