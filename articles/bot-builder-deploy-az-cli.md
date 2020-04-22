@@ -60,8 +60,6 @@ Make sure that you have the correct path to your bot project ARM deployment temp
 
 ### 5. Prepare your code for deployment
 
-[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
-
 #### 5.1 Retrieve or create necessary IIS/Kudu files
 
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
