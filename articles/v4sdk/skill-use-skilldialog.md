@@ -265,7 +265,7 @@ In the next step, the main dialog:
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=10-11,17,23)]
+[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=10-12,17,23)]
 
 ---
 
@@ -282,7 +282,7 @@ In the last step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=181-202&highlight=7-12)]
+[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=181-202&highlight=9-11)]
 
 #### [JavaScript](#tab/js)
 
@@ -347,7 +347,7 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 [!code-javascript[partial constructor plus onTurn](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=14-29)]
 
-[!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=46-54)]
+[!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=46-55)]
 
 ### [Python](#tab/python)
 
@@ -361,19 +361,17 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 ## Service registration
 
-### [C#](#tab/cs)
-
-**DialogRootBot\Startup.cs**
-
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Startup.cs?range=30-67)]
-
-### [JavaScript](#tab/js)
-
-### [Python](#tab/python)
-
----
+The services needed to use a skill dialog are the same as those needed for a skill consumer in general.
+See how to [implement a skill consumer](skill-implement-consumer.md) for a discussion of the required services.
 
 ## Test the root bot
+
+You can test the skill consumer in the Emulator as if it were a normal bot; however, you need to run both the skill and skill consumer bots at the same time. See how to [use dialogs within a skill]() for information on how to configure the skill.
+
+Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+
+1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the README file for the  [C#](https://aka.ms/skills-using-dialogs-cs), [JavaScript](https://aka.ms/skills-using-dialogs-js) or [Python](https://aka.ms/skills-using-dialogs-py) sample.
+1. Use the Emulator to test the bot as shown below.
 
 ## Additional information
 
