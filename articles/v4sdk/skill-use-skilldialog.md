@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 This article demonstrates how to use a _skill dialog_ within a root bot use a skill bot.
 The skill bot can handle both message and event activities.
 It demonstrates how to post activities from the parent bot to the skill bot and return the skill responses to the user.
-For a sample skill manifest and information about implementing the skill, see how to [use dialogs within a skill]().
+For a sample skill manifest and information about implementing the skill, see how to [use dialogs within a skill](skill-actions-in-dialogs.md).
 
 For information about using a skill bot outside of dialogs, see how to [implement a skill consumer](skill-implement-consumer.md).
 
@@ -37,7 +37,7 @@ The **skills skillDialog** sample includes projects for two bots:
 
 This article focuses on how to use a _skill dialog_ class in a root bot to manage the skill, to send message and event activities and to cancel the skill.
 
-If you use middleware in your skill consumer, see how to [use middleware in a skill consumer]() to avoid some common problems.
+If you use middleware in your skill consumer, see how to [use middleware in a skill consumer](skill-middleware-in-consumer.md) to avoid some common problems.
 For information about other aspects of creating a skill consumer, see how to [implement a skill consumer](skill-implement-consumer.md).
 
 ### [C#](#tab/cs)
@@ -54,7 +54,7 @@ For information about other aspects of creating a skill consumer, see how to [im
 
 ---
 
-For information about the dialog skill bot, see how to [use dialogs within a skill]().
+For information about the dialog skill bot, see how to [use dialogs within a skill](skill-actions-in-dialogs.md).
 
 ## Resources
 
@@ -366,7 +366,7 @@ See how to [implement a skill consumer](skill-implement-consumer.md) for a discu
 
 ## Test the root bot
 
-You can test the skill consumer in the Emulator as if it were a normal bot; however, you need to run both the skill and skill consumer bots at the same time. See how to [use dialogs within a skill]() for information on how to configure the skill.
+You can test the skill consumer in the Emulator as if it were a normal bot; however, you need to run both the skill and skill consumer bots at the same time. See how to [use dialogs within a skill](skill-actions-in-dialogs.md) for information on how to configure the skill.
 
 Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 
@@ -374,15 +374,14 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 1. Use the Emulator to test the bot.
    - When you first join the conversation, the bot displays a welcome message and asks you what skill you would like to call. The skill bot for this sample has just one skill.
    - Select **DialogSkillBot**.
-1. The bot next asks you to choose an action for the skill.
-   - Book a flight.
-   - Book a flight with some input parameters already provided.
-   - Get the weather.
+1. The bot next asks you to choose an action for the skill. Choose "BookFlight".
+   1. Answer the prompts.
+   1. The skill completes, and the root bot displays the booking details before prompting again for the skill you'd like to call.
+1. Select **DialogSkillBot** again and "BookFlight".
+   1. Answer the first prompt, then enter "abort" to interrupt the skill.
+   1. The root bot cancels the skill and prompts for the skill you'd like to call.
 
 ## Additional information
 
-<!--
-TODO Write:
-- use dialogs within a skill
-- manage logging in a skill consumer
--->
+- [Implement a skill consumer](skill-implement-consumer.md) describes how to implement a skill consumer in general.
+- [Use middleware in a skill consumer](skill-middleware-in-consumer.md) describes how to avoid some common problems.
