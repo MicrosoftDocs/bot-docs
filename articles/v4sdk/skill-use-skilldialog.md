@@ -371,7 +371,13 @@ You can test the skill consumer in the Emulator as if it were a normal bot; howe
 Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 
 1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the README file for the  [C#](https://aka.ms/skills-using-dialogs-cs), [JavaScript](https://aka.ms/skills-using-dialogs-js) or [Python](https://aka.ms/skills-using-dialogs-py) sample.
-1. Use the Emulator to test the bot as shown below.
+1. Use the Emulator to test the bot.
+   - When you first join the conversation, the bot displays a welcome message and asks you what skill you would like to call. The skill bot for this sample has just one skill.
+   - Select **DialogSkillBot**.
+1. The bot next asks you to choose an action for the skill.
+   - Book a flight.
+   - Book a flight with some input parameters already provided.
+   - Get the weather.
 
 ## Additional information
 
