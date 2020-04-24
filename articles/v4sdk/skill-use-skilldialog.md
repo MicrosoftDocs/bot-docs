@@ -15,16 +15,16 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-This article demonstrates how to use a _skill dialog_ within a root bot use a skill bot.
-The skill bot can handle both message and event activities.
-It demonstrates how to post activities from the parent bot to the skill bot and return the skill responses to the user.
+This article demonstrates how to use a _skill dialog_ within a skill consumer.
+The skill dialog posts activities from the parent bot to the skill bot and returns the skill responses to the user.
+The skill bot accessed by this consumer can handle both message and event activities.
 For a sample skill manifest and information about implementing the skill, see how to [use dialogs within a skill](skill-actions-in-dialogs.md).
 
 For information about using a skill bot outside of dialogs, see how to [implement a skill consumer](skill-implement-consumer.md).
 
 ## Prerequisites
 
-- Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
+- Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill consumer](skill-implement-consumer.md).
 - An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js) or [**Python**](https://aka.ms/skills-using-dialogs-py).
 
