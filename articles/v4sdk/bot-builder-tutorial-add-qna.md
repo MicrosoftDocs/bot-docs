@@ -82,7 +82,7 @@ Add the following values to you appsetting.json file:
   "MicrosoftAppId": "",
   "MicrosoftAppPassword": "",
   "ScmType": "None",
-  
+
   "QnAKnowledgebaseId": "knowledge-base-id",
   "QnAAuthKey": "qna-maker-resource-key",
   "QnAEndpointHostName": "your-hostname" // This is a URL ending in /qnamaker
@@ -335,7 +335,7 @@ Update your initialization code to load the service information for your knowled
    from botbuilder.schema import ChannelAccount
    ```
 
-1. Add a __init__ function to instantiate a `qna-maker` object. using the configuration parameters provided in the `config.py` file.  
+1. Add a __init__ function to instantiate a `qna-maker` object. using the configuration parameters provided in the `config.py` file.
 
    **bot.py**
 
@@ -386,17 +386,15 @@ At this point your bot should be able to answer some questions. Run the bot loca
 
 You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article.
 
-[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
-
 ### Zip your project folder
 
 [!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 
 <!-- > [!IMPORTANT]
-> Before creating a zip of your project files, make sure that you are _in_ the correct folder. 
-> - For C# bots, it is the folder that has the .csproj file. 
-> - For JS bots, it is the folder that has the app.js or index.js file. 
-> - For Python bots, it is the folder that has the app.py file. 
+> Before creating a zip of your project files, make sure that you are _in_ the correct folder.
+> - For C# bots, it is the folder that has the .csproj file.
+> - For JS bots, it is the folder that has the app.js or index.js file.
+> - For Python bots, it is the folder that has the app.py file.
 >
 > Select all the files and zip them up while in that folder, then run the command while still in that folder.
 >
