@@ -2,7 +2,7 @@
 title: .lu file format - Bot Service
 description: .lu file format reference
 keywords: lu file format, reference, language understanding
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
