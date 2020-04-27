@@ -1,4 +1,16 @@
-# .LG file format
+---
+title: .lg file format - Bot Service
+description: .lg file format reference
+keywords: lg file format, reference, language generation
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+---
+
+# .lg file format
 
 .lg files help describe Language Generation templates with entity references and their composition. This document covers the various concepts expressed via the .lg file format.
 
