@@ -2,7 +2,7 @@
 title: Structured response template - Bot Service
 description: Describe the structure response templates available with language generation.
 keywords: structure response template, reference, language generation
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
