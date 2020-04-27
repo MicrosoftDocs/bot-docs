@@ -1,3 +1,15 @@
+---
+title: Structured response template - Bot Service
+description: Describe the structure response templates available with language generation.
+keywords: structure response template, reference, language generation
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+---
+
 # Structured response template
 Structured response template enable you to define a complex structure that supports all the goodness of LG (templating, composition, substitution) while leaving the interpretation of the structured response up to the caller of the LG library. 
 
