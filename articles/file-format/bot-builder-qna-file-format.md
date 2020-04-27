@@ -14,8 +14,8 @@ ms.date: 05/16/2020
 # .qna file format
 .qna files contain markdown-like, simple text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts.
 
-See [here](../../luis/docs/lu-file-format.md) to learn more about the .lu file format.
-
+See [here](./articles/file-format/bot-builder-lu-file-format.md) to learn more about the .lu file format.
+<!--
 Supported concepts:
 
 - [Comments](#Adding-comments)
@@ -25,7 +25,7 @@ Supported concepts:
 - [File references](#QnA-Maker-pdf-file-ingestion)
 - [References](#External-references)
 - [Model description](#Model-description)
-- [Multi-turn content](#Multi-turn-content)
+- [Multi-turn content](#Multi-turn-content)-->
 
 ## Adding comments
 You can add comments to your .lu document by prefixing the comment with >. Here's an example:
