@@ -2,7 +2,7 @@
 title: .qna file format - Bot Service
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
