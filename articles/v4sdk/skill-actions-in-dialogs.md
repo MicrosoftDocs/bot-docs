@@ -202,7 +202,7 @@ The get-weather action is not implemented. Currently, it sends a placeholder mes
 
 **DialogSkillBot\Dialogs\ActivityRouterDialog.cs**
 
-[!code-csharp[BeginBookFlight](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/Dialogs/ActivityRouterDialog.cs?range=)138-150]
+[!code-csharp[BeginBookFlight](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/Dialogs/ActivityRouterDialog.cs?range=138-150)]
 
 [!code-csharp[BeginGetWeather](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/Dialogs/ActivityRouterDialog.cs?range=122-136)]
 
