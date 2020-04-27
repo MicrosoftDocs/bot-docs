@@ -86,7 +86,7 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 - [Pre-built functions](./prebuilt-functions.md) supported by the Adaptive Expressions library
 - [Extend functions](./extend-functions.md)
 
-[1]:./adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
+[1]:~/adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
 [2]:prebuilt-functions.md#sub
 [3]:prebuilt-functions.md#mul
 [4]:prebuilt-functions.md#div
