@@ -31,7 +31,7 @@ ms.date: 05/16/2020
   - [Multi-line text in variations](#multi-line-text-in-variations)
 - [Parametrization of templates](#parametrization-of-templates)
 - [Importing external references](#importing-external-references)
-- [LG specific adaptive expression functions](#functions-injected-by-LG)
+- [LG specific adaptive expression functions](#functions-injected-by-lg)
 - [Strict option](#strict-option)
 ## Comments
 
@@ -128,7 +128,7 @@ Here is another example that shows IF ... ELSEIF ... ELSE conditional response t
     - I love the evenings! Just saying. ${eveningTemplate()}
 ```
 
-#### Switch..Case
+#### Switch case
 
 The SWITCH ... CASE ... DEFAULT construct lets you design a conditional template that matches an expression's value to a case clause and produces output based on that case. Condition expressions are enclosed in curly brackets - ${}.
 
@@ -343,10 +343,10 @@ Otherwise, if strict is not set, or set to false, a compatible result will be gi
 
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
-[2]:./api-reference.md
-[3]:../../common-expression-language#readme
-[4]:../../common-expression-language/prebuilt-functions.md
-[5]:../../common-expression-language/prebuilt-functions.md#join
+[2]:../language-generation/language-generation-API-reference.md
+[3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
+[4]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md
+[5]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join
 [6]:https://github.com/microsoft/botframework-cli/tree/master/packages/chatdown
 [7]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
 [8]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/examples/CardExamples.chat
@@ -354,4 +354,4 @@ Otherwise, if strict is not set, or set to false, a compatible result will be gi
 [10]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-cards
 [11]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-attachments
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
-[13]:./Functions-injected-from-LG.md
+[13]:../articles/language-generation/functions-injected-from-language-generation.md
