@@ -1,3 +1,15 @@
+---
+title: .lu file format - Bot Service
+description: .lu file format reference
+keywords: lu file format, reference, language understanding
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+---
+
 # .lu File Format
 .lu files contain markdown-like, simple text based definitions for [LUIS][1] concepts. 
 
