@@ -1,5 +1,17 @@
-# Adaptive expressions ***_[PREVIEW]_***
-## Pre-built functions 
+---
+title: Adaptive expressions pre-built functions  - Bot Service
+description: Adaptive expressions prebuilt functions reference
+keywords: adaptive expressions, prebuilt functions, reference
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
+---
+
+# Adaptive expressions pre-built functions ***_[PREVIEW]_***
 This document lists the available prebuilt functions ordered by their general purpose,
 or you can browse the functions based on [alphabetical order](#alphabetical-list).
 
