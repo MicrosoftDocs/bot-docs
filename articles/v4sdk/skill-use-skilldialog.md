@@ -37,7 +37,9 @@ The **skills skillDialog** sample includes projects for two bots:
 
 This article focuses on how to use a _skill dialog_ class in a root bot to manage the skill, to send message and event activities and to cancel the skill.
 
+<!--
 If you use middleware in your skill consumer, see how to [use middleware in a skill consumer](skill-middleware-in-consumer.md) to avoid some common problems.
+-->
 For information about other aspects of creating a skill consumer, see how to [implement a skill consumer](skill-implement-consumer.md).
 
 ### [C#](#tab/cs)
@@ -383,5 +385,6 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 
 ## Additional information
 
-- [Implement a skill consumer](skill-implement-consumer.md) describes how to implement a skill consumer in general.
-- [Use middleware in a skill consumer](skill-middleware-in-consumer.md) describes how to avoid some common problems.
+See how to [implement a skill consumer](skill-implement-consumer.md) for how to implement a skill consumer in general.
+
+<!-- [Use middleware in a skill consumer](skill-middleware-in-consumer.md) describes how to avoid some common problems. -->

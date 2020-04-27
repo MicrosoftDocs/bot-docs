@@ -208,33 +208,36 @@ The get-weather action is not implemented. Currently, it sends a placeholder mes
 
 #### [JavaScript](#tab/js)
 
+**dialogSkillBot/dialogs/activityRouterDialog.js**
+
+[!code-javascript[beginBookFlight](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=148-155)]
+
+[!code-javascript[beginGetWeather](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=138-146)]
+
 #### [Python](#tab/python)
+
+**dialog-skill-bot/dialogs/activity_router_dialog.py**
+
+[!code-python[_begin_book_flight](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=153-163)]
+
+[!code-python[_begin_get_weather](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=135-149)]
 
 ---
 
 ### Return a result
 
-<!-- Discuss fall-through logic and the dialog turn result -->
+The skill starts a booking dialog for the book-flight action. Since the activity-routing dialog has just one step, when the booking dialog ends, the activity-routing dialog also ends, and the dialog result from the booking dialog becomes the dialog result for the activity-routing dialog.
 
-#### [C#](#tab/cs)
-
-#### [JavaScript](#tab/js)
-
-#### [Python](#tab/python)
-
----
+The get-weather action simply ends without setting a return value.
 
 ## Canceling a multi-step action
 
-<!-- CancelAndHelpDialog -->
+The booking dialog and its child date-resolver dialog both derive from the base cancel-and-help dialog, which checks messages from the user.
 
-#### [C#](#tab/cs)
+- On "help" or "?", it displays a help message, and then continues the conversation flow on the following turn.
+- On "cancel" or "quit", it cancels all dialogs, which ends the skill.
 
-#### [JavaScript](#tab/js)
-
-#### [Python](#tab/python)
-
----
+For more information, see how to [handle user interruptions](bot-builder-howto-handle-user-interrupt.md).
 
 ## Service registration
 
@@ -283,7 +286,7 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
    1. When the skill completes, the root bot displays the booking details before prompting again for the skill you'd like to call.
 1. Select **DialogSkillBot** again and "BookFlight".
    1. Answer the first prompt, then enter "cancel" to cancel the action.
-   1. The skill bot cancels the action, and the consumer prompts for the skill you'd like to call.
+   1. The skill bot ends without completing the action, and the consumer prompts for the skill you'd like to call.
 
 ## Additional information
 

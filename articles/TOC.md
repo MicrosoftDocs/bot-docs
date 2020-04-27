@@ -61,10 +61,9 @@
 #### [Use dialogs within a skill](v4sdk/skill-actions-in-dialogs.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
 #### [Use a dialog to consume a skill](v4sdk/skill-use-skilldialog.md)
-#### [Use middleware in a skill consumer](v4sdk/skill-middleware-in-consumer.md)
 <!--
+#### [Use middleware in a skill consumer](v4sdk/skill-middleware-in-consumer.md)
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
-#### [Manage multiple skills](#)
 -->
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Add telemetry to your QnA bot](v4sdk/bot-builder-telemetry-QnAMaker.md)
