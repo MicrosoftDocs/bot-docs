@@ -13,9 +13,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions ***_[PREVIEW]_***
 
-Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](botbuilder-language-generation-concept.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
+Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-language-generation-concept.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](./botbuilder-concept-language-generation.md), [Adaptive dialogs](TBD), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](./bot-builder-concept-language-generation.md), [Adaptive dialogs](TBD), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
 
 An adaptive expression can contain one or more explicit values, [pre-built functions](~/articles/adaptive-expressions/adaptive-expressions-prebuilt-functions.md) or [custom functions](TBD). Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
@@ -86,7 +86,7 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 - [Pre-built functions](./prebuilt-functions.md) supported by the Adaptive Expressions library
 - [Extend functions](./extend-functions.md)
 
-[1]:~/adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
+[1]:~../articles/adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
 [2]:prebuilt-functions.md#sub
 [3]:prebuilt-functions.md#mul
 [4]:prebuilt-functions.md#div
