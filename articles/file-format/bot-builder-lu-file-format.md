@@ -13,7 +13,7 @@ ms.date: 05/16/2020
 # .lu File Format
 .lu files contain markdown-like, simple text based definitions for [LUIS][1] concepts. 
 
-See [here](../file-format/bot-builder-qna-file-format.md) to learn more about the .qna file format.
+See [here](bot-builder-qna-file-format.md) to learn more about the .qna file format.
 
 <!--
 - [Comments](#Adding-comments)
