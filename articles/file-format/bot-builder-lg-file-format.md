@@ -169,7 +169,7 @@ For bot applications, we natively support:
 - card definition
 - any [chatdown][12] style constructs
 
-Read the [structure response templates](./structured-response-template.md) article for more information.
+Read the [structure response templates](../language-generation/language-generation-structured-response-template.md) article for more information.
 
 ## Template composition and expansion
 
@@ -213,7 +213,7 @@ When used directly within a one-of variation text, entity references are denoted
 Entities are expressed as `entityName`. - e.g. ${entityName == null} - when used as a parameter:
     - within a [pre-built function][4]
     - within a condition in a [conditional response template](#conditional-response-template)
-    - to [template resolution call](#Parametrization-of-templates)
+    - to [template resolution call](#parametrization-of-templates)
 
 ## Using pre-built functions in variations
 
@@ -354,4 +354,4 @@ Otherwise, if strict is not set, or set to false, a compatible result will be gi
 [10]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-cards
 [11]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-attachments
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
-[13]:../articles/language-generation/functions-injected-from-language-generation.md
+[13]:../language-generation/functions-injected-from-language-generation.md
