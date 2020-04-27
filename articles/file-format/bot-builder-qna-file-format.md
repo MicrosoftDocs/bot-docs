@@ -1,4 +1,17 @@
-# .qna File Format
+---
+title: .qna file format - Bot Service
+description: .qna file format reference
+keywords: qna file format, reference, qnamaker
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+---
+
+
+# .qna file format
 .qna files contain markdown-like, simple text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts.
 
 See [here](../../luis/docs/lu-file-format.md) to learn more about the .lu file format.
