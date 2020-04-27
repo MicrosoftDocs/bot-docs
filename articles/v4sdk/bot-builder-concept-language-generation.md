@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Language Generation ***_[PREVIEW]_***
 
-> See [here](#Change-Log) for what's new in **4.8.0 RC1** release.
+<!-- See [here](#Change-Log) for what's new in **4.8.0 RC1** release.-->
 
 Language Generation (LG) was created to let developers extract embedded strings from their code and resource files and manage them through a LG runtime and file format. Developers can now create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
@@ -89,7 +89,7 @@ For NodeJS
 
 ## Multi-lingual generation and language fallback policy
 
-Your bot might target more than one spoken/display language. To do this, you can manage separate instances of TemplateEngine, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample][25] for an example of how to add language fallback to your bot.
+Your bot might target more than one spoken/display language. To do this, you can manage separate instances of TemplateEngine, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add language fallback to your bot.
 
 ## Grammar check and correction
 
@@ -215,7 +215,7 @@ Nightlies:
 
 [1]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md
 [2]:./docs/api-reference.md
-[3]:./docs/lg-file-format.md
+[3]:./file-format/lg-file-format.md
 [6]:https://github.com/microsoft/botframework-cli/tree/master/packages/chatdown
 [7]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
 [8]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/examples/CardExamples.chat
@@ -230,7 +230,6 @@ Nightlies:
 [21]:./docs/lg-file-format.md#Importing-external-references
 [22]:https://aka.ms/lg-vscode-extension
 [23]:https://github.com/microsoft/botbuilder-tools/tree/V.Future/packages/MSLG
-[25]:./csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback/
 [26]:./javascript_nodejs/
 [50]:./docs/lg-file-format.md#importing-external-references
 [100]:./csharp_dotnetcore/20.extending-with-custom-functions/README.md
