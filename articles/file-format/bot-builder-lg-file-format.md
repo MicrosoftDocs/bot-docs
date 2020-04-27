@@ -2,7 +2,7 @@
 title: .lg file format - Bot Service
 description: .lg file format reference
 keywords: lg file format, reference, language generation
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
