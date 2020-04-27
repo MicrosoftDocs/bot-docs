@@ -156,7 +156,7 @@ The following LUIS prebuilt entity types are supported -
 @ prebuilt age userAge
 ```
 
-**Note:** Not all prebuilt entity types are available across all locales. See [here](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-reference-prebuilt-entities) for prebuilt entity support by locale.
+**Note:** Not all prebuilt entity types are available across all locales. See [here](https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-entities) for prebuilt entity support by locale.
 
 ### [List entity][6]
 
@@ -232,9 +232,9 @@ Example definition:
 
 ## [Roles][9]
 
-Roles](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-roles) are named, contextual subtypes of an entity.
+Roles](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-roles) are named, contextual subtypes of an entity.
 
-Every entity type except Phrase Lists can have [roles](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-roles). 
+Every entity type except Phrase Lists can have [roles](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-roles). 
 
 Roles give a name to those differences:
 
@@ -338,7 +338,7 @@ For phrase lists that need to be marked interchangeable, simply include that in 
 	- two
 ```
 
-You can enhance LUIS understanding of your model using [PhraseLists](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-tutorial-interchangeable-phrase-list).
+You can enhance LUIS understanding of your model using [PhraseLists](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-tutorial-interchangeable-phrase-list).
 
 You can describe Phrase List entities using the following notation:
 @ phraselist \<Name\>
@@ -641,14 +641,14 @@ Here's an example of those references:
 ```
 
 [1]:https://luis.ai
-[2]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-intent
-[3]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-entity-types
-[4]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-entity-types#simple-entity
-[5]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-entity-types#prebuilt-entity
-[6]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-entity-types#list-entity
-[7]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-entity-types#composite-entity
-[8]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-entity-types#regular-expression-entity
-[9]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-roles
-[10]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-patterns
-[11]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-feature
-[12]:https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-concept-utterance
+[2]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-intent
+[3]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types
+[4]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types#simple-entity
+[5]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types#prebuilt-entity
+[6]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types#list-entity
+[7]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types#composite-entity
+[8]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types#regular-expression-entity
+[9]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-roles
+[10]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-patterns
+[11]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-feature
+[12]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-utterance
