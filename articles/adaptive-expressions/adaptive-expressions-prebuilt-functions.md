@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 This document lists the available prebuilt functions ordered by their general purpose,
 or you can browse the functions based on [alphabetical order](#alphabetical-list).
 
-- [String functions](#String-functions)
+- [String functions](###String-functions)
 - [Collection functions](#Collection-functions)
 - [Logical comparison functions](#Logical-comparison-functions)
 - [Conversion functions](#Conversion-functions)
