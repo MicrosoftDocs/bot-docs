@@ -2,7 +2,7 @@
 title: Functions injected from LG library - Bot Service
 description: Describes how to inject functions from LG into template. 
 keywords: functions from lg, reference, language generation
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
