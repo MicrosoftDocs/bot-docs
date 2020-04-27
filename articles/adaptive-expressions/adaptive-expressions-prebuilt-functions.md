@@ -2,7 +2,7 @@
 title: Adaptive expressions pre-built functions  - Bot Service
 description: Adaptive expressions prebuilt functions reference
 keywords: adaptive expressions, prebuilt functions, reference
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
