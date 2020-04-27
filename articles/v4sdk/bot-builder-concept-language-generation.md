@@ -215,7 +215,7 @@ Nightlies:
 
 [1]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md
 [2]:../articles/language-generation/language-generation-API-reference.md
-[3]:../file-format/lg-file-format.md
+[3]:../articles/file-format/bot-builder-language-generation-file-format.md
 [6]:https://github.com/microsoft/botframework-cli/tree/master/packages/chatdown
 [7]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
 [8]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/examples/CardExamples.chat
