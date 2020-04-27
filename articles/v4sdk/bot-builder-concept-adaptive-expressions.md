@@ -70,7 +70,7 @@ An adaptive expression can contain one or more explicit values, [pre-built funct
 
 ## Variables
 
-Variables are always referenced by their name in the format `${myVariable}`. Variables can be referenced either using the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or using the [getProperty](./prebuilt-functions.md#getProperty) function. 
+Variables are always referenced by their name in the format `${myVariable}`. Variables can be referenced either using the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or using the [getProperty](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function. 
 
 There are two special variables, `[]` and  `{}`. `[]` represents an empty list and `{}` represents a empty object.
 
@@ -82,7 +82,7 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for Javascript
-- [API reference](adaptive-expressions-api-reference.md) for Adaptive Expressions
+- [API reference](../adaptive-expressions/adaptive-expressions-api-reference.md) for Adaptive Expressions
 - [Pre-built functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the Adaptive Expressions library
 - [Extend functions](./extend-functions.md)
 
@@ -97,7 +97,7 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 [9]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#greater
 [10]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#less
 [11]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#greaterOrEquals
-[12]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#essOrEquals
+[12]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#lessOrEquals
 [13]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#and
 [14]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#or
 [15]:https://botbuilder.myget.org/feed/botbuilder-declarative/package/nuget/Microsoft.Bot.Builder.Expressions
