@@ -245,7 +245,7 @@ The manifest contains the information you need to access the skill from another 
 
 [!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)]
 
-### [JavaScript](#tab/javascript)
+### [JavaScript](#tab/js)
 
 **dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json**
 
