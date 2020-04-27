@@ -2,7 +2,7 @@
 title: API reference for Language Generation  - Bot Service
 description: API reference for Language Generation library
 keywords: language generation api, reference, language generation
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
