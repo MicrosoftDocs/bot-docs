@@ -30,7 +30,7 @@ For bot applications, we will natively support ability to -
 
 There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains un-specified. E.g. If only `Text` property is specified, the `Speak` property **is not** automatically assigned to be the `Text` property etc. 
 
-# Definition
+## Definition
 Here's the definition of a structured template - 
 
 ```markdown
@@ -179,7 +179,7 @@ Use of '|' will make a definition a list. You can use '\\' as the escape charact
         Suggestions = 10 \\| cards | 20 \\| cards
 ]
 ```
-# Structured template composition
+## Structured template composition
 The following composition behavior is supported with structured template - 
 
 1. Composition will be structure context aware, if the target template being referred is also a structured template, then 
@@ -213,7 +213,7 @@ Call to `evaluateTemplate('T1')` would result in the following internal structur
 ]
 ```
 
-# Full reference to another structured template
+## Full reference to another structured template
 You can include reference to a full structured template 
     - as a property in another structured template
     - as a reference in another simple or conditional response template
@@ -269,7 +269,7 @@ With this content, call to `evaluateTemplate('ST1')` will result in the followin
 ```
 Note that this style of composition can only exists at the root level. If there is a reference to another structured template within a property, then the resolution is contextual to that property. 
 
-# external file reference in Attachment structured
+## External file reference in Attachment structured
 
 1. fromFile(fileAbsoluteOrRelativePath) prebuilt function that can load a file specified. Content returned by this function will support evaluation of content. Template references and properties/ expressions are evaluated.
 2. ActivityAttachment(content, contentType) prebuilt function that can set the ‘contentType’ if it is not already specified in content). ContentType can be one of the types here.
@@ -302,10 +302,10 @@ or use attachment
 ]
 ```
 
-# Chatdown style content as structured activity template
+## Chatdown style content as structured activity template
 It is a natural extension to also define full [chatdown][1] style templates using the structured template definition capability. This helps eliminate the need to always define chatdown style cards in a multi-line definition
 
-## Existing chatdown style constructs supported
+### Existing chatdown style constructs supported
 1. Typing
 2. Suggestions
 3. HeroCard
@@ -323,9 +323,9 @@ It is a natural extension to also define full [chatdown][1] style templates usin
 13. [New] AdaptiveCard
 14. Activity
 
-## Improvements to chatown style constructs
+### Improvements to chatown style constructs
 
-### CardAction
+#### CardAction
 ```markdown
 # CardAction (title, type, value)
 [CardAction
@@ -338,7 +338,7 @@ It is a natural extension to also define full [chatdown][1] style templates usin
 ]
 ```
 
-### Suggestions
+#### Suggestions
 Suggestions can now support a full blown CardAction structure. 
 
 ```markdown
@@ -348,7 +348,7 @@ Suggestions can now support a full blown CardAction structure.
 ]
 ```
 
-### Adaptive card
+#### Adaptive card
 Adaptive cards today are rendered via `[Attachment=cardpath.json adaptive]` notation. You can define adaptive cards inline and consume them via the `json()` function.
 
 
@@ -381,7 +381,7 @@ Here's an example:
 ]
 ```
 
-### other type of activity
+#### other type of activity
 [Bot framework activity protocol][2] supports ability for bot to send a custom activity to the client. We will add support for it via structured LG using the following definition. This should set the outgoing activities `type` property to `event` or the type Activity owns.
 
 ```markdown
