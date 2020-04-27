@@ -1,3 +1,16 @@
+---
+title: Adaptive expressions
+description: Describes how Adaptive expressions work within the Bot Framework SDK.
+keywords: adaptive expressions
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
+---
+
 # Adaptive expressions ***_[PREVIEW]_***
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](../language-generation) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
