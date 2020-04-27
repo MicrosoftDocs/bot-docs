@@ -2,7 +2,7 @@
 title: Language Generation
 description: Describes how Language Generation works within the Bot Framework SDK.
 keywords: language generation
-author: v-emolsh
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
