@@ -78,7 +78,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 - Add the root bot's app ID and password.
 - Add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
-[!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json?highlight=2-3,9)]
+[!code-json[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json?highlight=2-3,9)]
 
 ### [JavaScript](#tab/js)
 
@@ -87,7 +87,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 - Add the root bot's app ID and password.
 - Add the app ID for the echo skill bot.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
+[!code-text[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
 
 ### [Python](#tab/python)
 
@@ -105,7 +105,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 The bot's main dialog includes a _skill dialog_ for each skill this bot consumes. The skill dialog manages the skill through the various skill-related objects for you, such as the _skill client_ and the _skill conversation ID factory_ objects.
 The main dialog also demonstrates how to cancel the skill (through the skill dialog) based on user input.
 
-The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts, it sends and echo message.
+The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts and a LUIS recognizer is configured, it attempts to interpret the user's intent.
 
 The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
