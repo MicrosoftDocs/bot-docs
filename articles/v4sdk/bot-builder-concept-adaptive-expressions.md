@@ -82,23 +82,23 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for Javascript
-- [API reference](./api-reference.md) for Adaptive Expressions
-- [Pre-built functions](./prebuilt-functions.md) supported by the Adaptive Expressions library
+- [API reference](adaptive-expressions-api-reference.md) for Adaptive Expressions
+- [Pre-built functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the Adaptive Expressions library
 - [Extend functions](./extend-functions.md)
 
-[1]:~/articles/adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
-[2]:prebuilt-functions.md#sub
-[3]:prebuilt-functions.md#mul
-[4]:prebuilt-functions.md#div
-[5]:prebuilt-functions.md#exp
-[6]:prebuilt-functions.md#mod
-[7]:prebuilt-functions.md#equals
-[8]:prebuilt-functions.md#not
-[9]:prebuilt-functions.md#greater
-[10]:prebuilt-functions.md#less
-[11]:prebuilt-functions.md#greaterOrEquals
-[12]:prebuilt-functions.md#essOrEquals
-[13]:prebuilt-functions.md#and
-[14]:prebuilt-functions.md#or
+[1]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
+[2]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#sub
+[3]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#mul
+[4]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#div
+[5]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#exp
+[6]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#mod
+[7]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#equals
+[8]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#not
+[9]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#greater
+[10]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#less
+[11]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#greaterOrEquals
+[12]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#essOrEquals
+[13]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#and
+[14]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#or
 [15]:https://botbuilder.myget.org/feed/botbuilder-declarative/package/nuget/Microsoft.Bot.Builder.Expressions
 [20]:https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/language-generation/README.md
