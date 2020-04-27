@@ -1,3 +1,16 @@
+---
+title: Language Generation
+description: Describes how Language Generation works within the Bot Framework SDK.
+keywords: language generation
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
+---
+
 # Language Generation ***_[PREVIEW]_***
 
 > See [here](#Change-Log) for what's new in **4.8.0 RC1** release.
