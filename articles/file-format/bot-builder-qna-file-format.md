@@ -107,7 +107,7 @@ Here's an example usage:
 ```
 
 ## QnA Maker alterations
-QnA Maker supports [word alterations](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
+QnA Maker supports [word alterations](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
 
 You can describe word alterations/ synonyms list in .qna files using the following notation -
 ```markdown
@@ -251,4 +251,4 @@ Option 2: Assigning explicit ID for QnA pair and using that for follow up prompt
 	```
 ```
 
-[1]:https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt
+[1]:https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt
