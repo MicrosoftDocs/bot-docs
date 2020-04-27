@@ -119,7 +119,7 @@ The main dialog includes code to:
 - [Summarize the skill result](#summarize-the-skill-result)
 - [Allow the user to cancel the skill](#allow-the-user-to-cancel-the-skill)
 
-The main dialog inherits from the _component dialog_ class. For more about component dialogs, see how to [manage dialog complexity](bot-builder-compositcontrol.md)
+The main dialog inherits from the _component dialog_ class. For more about component dialogs, see how to [manage dialog complexity](bot-builder-compositcontrol.md).
 
 ### Initialize the main dialog
 
