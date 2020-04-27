@@ -1,3 +1,15 @@
+---
+title: API reference for Language Generation  - Bot Service
+description: API reference for Language Generation library
+keywords: language generation api, reference, language generation
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+---
+
 # API reference for LG 
 
 ## Templates Class
