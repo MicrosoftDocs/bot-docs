@@ -1,4 +1,17 @@
-# API reference for Expression
+---
+title: API reference for Adaptive expressions - Bot Service
+description: API reference for Adaptive expressions
+keywords: adaptive expressions, api reference
+author: v-emolsh
+ms.author: kamrani
+manager: kamrani
+ms.topic: article
+ms.service: bot-service
+ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
+---
+
+# API reference for Adaptive expressions
 
 For Nuget packages, see [this MyGet C# feed][1] and [this MyGet js feed][2]
 
