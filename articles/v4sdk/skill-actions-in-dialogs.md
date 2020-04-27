@@ -75,7 +75,7 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 **dialogSkillBot/.env**
 
-[!code-text[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env?highlight=1-2)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env?highlight=1-2)]
 
 ### [Python](#tab/python)
 
@@ -170,7 +170,6 @@ If the skill doesn't recognize the type of the incoming activity or the name of 
 ### Handle message activities
 
 If the LUIS recognizer is configured, the skill calls LUIS and then starts an action based on the intent.
-
 If the LUIS recognizer is not configured or the intent is not supported, the skill sends an error message and ends.
 
 #### [C#](#tab/cs)
@@ -195,9 +194,17 @@ If the LUIS recognizer is not configured or the intent is not supported, the ski
 
 ### Begin a multi-step action
 
-<!-- BeginBookFlight, BeginGetWeather -->
+The book-flight action starts a multi-step dialog to get the booking details from the user.
+
+The get-weather action is not implemented. Currently, it sends a placeholder message and then ends.
 
 #### [C#](#tab/cs)
+
+**DialogSkillBot\Dialogs\ActivityRouterDialog.cs**
+
+[!code-csharp[BeginBookFlight](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/Dialogs/ActivityRouterDialog.cs?range=)138-150]
+
+[!code-csharp[BeginGetWeather](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/Dialogs/ActivityRouterDialog.cs?range=122-136)]
 
 #### [JavaScript](#tab/js)
 
