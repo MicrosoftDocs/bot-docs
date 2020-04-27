@@ -13,8 +13,9 @@ ms.date: 05/16/2020
 # .lu File Format
 .lu files contain markdown-like, simple text based definitions for [LUIS][1] concepts. 
 
-See [here](../../qnamaker/docs/qna-file-format.md) to learn more about the .qna file format.
+See [here](../file-format/bot-builder-qna-file-format.md) to learn more about the .qna file format.
 
+<!--
 - [Comments](#Adding-comments)
 - [Intent](#Intent)
 - [Entities](#Entity)
@@ -31,7 +32,7 @@ See [here](../../qnamaker/docs/qna-file-format.md) to learn more about the .qna 
 - [Tie features to a specific model](#Tie-features-to-a-specific-model)
 - [Machine learned with children](#Machine-learned-entity-with-children)
 - [Model description](#Model-description)
-- [References](#External-references)
+- [References](#External-references)-->
 
 ## Adding comments
 You can add comments to your .lu document by prefixing the comment with >. Here's an example: 
