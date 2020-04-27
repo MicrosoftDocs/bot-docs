@@ -15,12 +15,12 @@ monikerRange: 'azure-bot-service-4.0'
 This document lists the available prebuilt functions ordered by their general purpose,
 or you can browse the functions based on [alphabetical order](#alphabetical-list).
 
-- [String functions](###String-functions)
-- [Collection functions](#Collection-functions)
-- [Logical comparison functions](#Logical-comparison-functions)
-- [Conversion functions](#Conversion-functions)
-- [Math functions](#Math-functions)
-- [Date and time functions](#Date-and-time-functions)
+- [String functions](#string-functions)
+- [Collection functions](#collection-functions)
+- [Logical comparison functions](#logical-comparison-functions)
+- [Conversion functions](#conversion-functions)
+- [Math functions](#math-functions)
+- [Date and time functions](#date-and-time-functions)
 
 ### String functions
 |Function	|Explanation|
