@@ -14,7 +14,7 @@ ms.date: 05/16/2020
 # .qna file format
 .qna files contain markdown-like, simple text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts.
 
-See [here](./articles/file-format/bot-builder-lu-file-format.md) to learn more about the .lu file format.
+See [here](../articles/file-format/bot-builder-lu-file-format.md) to learn more about the .lu file format.
 <!--
 Supported concepts:
 
