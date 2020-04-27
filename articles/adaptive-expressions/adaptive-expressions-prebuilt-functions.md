@@ -65,7 +65,7 @@ or you can browse the functions based on [alphabetical order](#alphabetical-list
 |[flatten](#flatten) | Flatten arrays into an array with non-array values |
 |[unique](#unique) | Remove all duplicates from an array |
 
-### Logical comparison functionsl
+### Logical comparison functions
 |Function	|Explanation|
 |-----------|-----------|
 |[and](#and)	|Logical and. Returns true if all specified expressions evaluate to true.	|
