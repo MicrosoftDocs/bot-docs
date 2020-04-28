@@ -32,6 +32,7 @@
       <MemberSignature Language="C#" Value="public DateTimeResolution (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dateTime As DateTime)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution : DateTime -&gt; Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution" Usage="new Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution dateTime" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -50,7 +51,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DateTimeResolution (Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference&gt; reference = null, Nullable&lt;int&gt; year = null, Nullable&lt;int&gt; month = null, Nullable&lt;int&gt; day = null, Nullable&lt;int&gt; week = null, Nullable&lt;DayOfWeek&gt; dayOfWeek = null, Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart&gt; dayPart = null, Nullable&lt;int&gt; hour = null, Nullable&lt;int&gt; minute = null, Nullable&lt;int&gt; second = null);" />
+      <MemberSignature Language="C#" Value="public DateTimeResolution (Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference? reference = default, int? year = default, int? month = default, int? day = default, int? week = default, DayOfWeek? dayOfWeek = default, Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart? dayPart = default, int? hour = default, int? minute = default, int? second = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference&gt; reference, valuetype System.Nullable`1&lt;int32&gt; year, valuetype System.Nullable`1&lt;int32&gt; month, valuetype System.Nullable`1&lt;int32&gt; day, valuetype System.Nullable`1&lt;int32&gt; week, valuetype System.Nullable`1&lt;valuetype System.DayOfWeek&gt; dayOfWeek, valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart&gt; dayPart, valuetype System.Nullable`1&lt;int32&gt; hour, valuetype System.Nullable`1&lt;int32&gt; minute, valuetype System.Nullable`1&lt;int32&gt; second) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.#ctor(System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DayOfWeek},System.Nullable{Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional reference As Nullable(Of BuiltIn.DateTime.Reference) = null, Optional year As Nullable(Of Integer) = null, Optional month As Nullable(Of Integer) = null, Optional day As Nullable(Of Integer) = null, Optional week As Nullable(Of Integer) = null, Optional dayOfWeek As Nullable(Of DayOfWeek) = null, Optional dayPart As Nullable(Of BuiltIn.DateTime.DayPart) = null, Optional hour As Nullable(Of Integer) = null, Optional minute As Nullable(Of Integer) = null, Optional second As Nullable(Of Integer) = null)" />
@@ -90,7 +91,7 @@
       </Docs>
     </Member>
     <Member MemberName="Day">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Day { get; }" />
+      <MemberSignature Language="C#" Value="public int? Day { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Day" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Day" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Day As Nullable(Of Integer)" />
@@ -112,7 +113,7 @@
       </Docs>
     </Member>
     <Member MemberName="DayOfWeek">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DayOfWeek&gt; DayOfWeek { get; }" />
+      <MemberSignature Language="C#" Value="public DayOfWeek? DayOfWeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DayOfWeek&gt; DayOfWeek" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayOfWeek" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayOfWeek As Nullable(Of DayOfWeek)" />
@@ -134,7 +135,7 @@
       </Docs>
     </Member>
     <Member MemberName="DayPart">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart&gt; DayPart { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DayPart? DayPart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/DayPart&gt; DayPart" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.DayPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DayPart As Nullable(Of BuiltIn.DateTime.DayPart)" />
@@ -234,7 +235,7 @@
       </Docs>
     </Member>
     <Member MemberName="Hour">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Hour { get; }" />
+      <MemberSignature Language="C#" Value="public int? Hour { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Hour" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Hour" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hour As Nullable(Of Integer)" />
@@ -256,7 +257,7 @@
       </Docs>
     </Member>
     <Member MemberName="Minute">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Minute { get; }" />
+      <MemberSignature Language="C#" Value="public int? Minute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Minute" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Minute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minute As Nullable(Of Integer)" />
@@ -278,7 +279,7 @@
       </Docs>
     </Member>
     <Member MemberName="Month">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Month { get; }" />
+      <MemberSignature Language="C#" Value="public int? Month { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Month" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Month" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Month As Nullable(Of Integer)" />
@@ -385,7 +386,7 @@
       </Docs>
     </Member>
     <Member MemberName="Reference">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference&gt; Reference { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.Reference? Reference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Luis.BuiltIn/DateTime/Reference&gt; Reference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Reference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reference As Nullable(Of BuiltIn.DateTime.Reference)" />
@@ -428,7 +429,7 @@
       </Docs>
     </Member>
     <Member MemberName="Second">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Second { get; }" />
+      <MemberSignature Language="C#" Value="public int? Second { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Second" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Second" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Second As Nullable(Of Integer)" />
@@ -478,7 +479,7 @@
       </Docs>
     </Member>
     <Member MemberName="Week">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Week { get; }" />
+      <MemberSignature Language="C#" Value="public int? Week { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Week" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Week" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Week As Nullable(Of Integer)" />
@@ -500,7 +501,7 @@
       </Docs>
     </Member>
     <Member MemberName="Year">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Year { get; }" />
+      <MemberSignature Language="C#" Value="public int? Year { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Year" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.BuiltIn.DateTime.DateTimeResolution.Year" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Year As Nullable(Of Integer)" />

@@ -22,7 +22,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FacebookMessage (string text, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply&gt; quickReplies = null);" />
+      <MemberSignature Language="C#" Value="public FacebookMessage (string text, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply&gt; quickReplies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply&gt; quickReplies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, Optional quickReplies As IList(Of FacebookQuickReply) = null)" />

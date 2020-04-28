@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AudioCard (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Schema.ThumbnailUrl image = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MediaUrl&gt; media = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = null, Nullable&lt;bool&gt; shareable = null, Nullable&lt;bool&gt; autoloop = null, Nullable&lt;bool&gt; autostart = null, string aspect = null, object value = null, string duration = null);" />
+      <MemberSignature Language="C#" Value="public AudioCard (string title = default, string subtitle = default, string text = default, Microsoft.Bot.Schema.ThumbnailUrl image = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MediaUrl&gt; media = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = default, bool? shareable = default, bool? autoloop = default, bool? autostart = default, string aspect = default, object value = default, string duration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Schema.ThumbnailUrl image, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MediaUrl&gt; media, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardAction&gt; buttons, valuetype System.Nullable`1&lt;bool&gt; shareable, valuetype System.Nullable`1&lt;bool&gt; autoloop, valuetype System.Nullable`1&lt;bool&gt; autostart, string aspect, object value, string duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.AudioCard.#ctor(System.String,System.String,System.String,Microsoft.Bot.Schema.ThumbnailUrl,System.Collections.Generic.IList{Microsoft.Bot.Schema.MediaUrl},System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As ThumbnailUrl = null, Optional media As IList(Of MediaUrl) = null, Optional buttons As IList(Of CardAction) = null, Optional shareable As Nullable(Of Boolean) = null, Optional autoloop As Nullable(Of Boolean) = null, Optional autostart As Nullable(Of Boolean) = null, Optional aspect As String = null, Optional value As Object = null, Optional duration As String = null)" />
@@ -60,6 +62,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -92,10 +95,10 @@
             playback of media in this card (default:true)</param>
         <param name="aspect">Aspect ratio of thumbnail/media placeholder.
             Allowed values are "16:9" and "4:3"</param>
-        <param name="value">Supplementary parameter for this card</param>
         <param name="duration">Describes the length of the media content
             without requiring a receiver to open the content. Formatted as an
             ISO 8601 Duration field.</param>
+        <param name="value">Supplementary parameter for this card</param>
         <summary>
             Initializes a new instance of the AudioCard class.
             </summary>
@@ -117,6 +120,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,7 +140,7 @@
       </Docs>
     </Member>
     <Member MemberName="Autoloop">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Autoloop { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Autoloop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Autoloop" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.AudioCard.Autoloop" />
       <MemberSignature Language="VB.NET" Value="Public Property Autoloop As Nullable(Of Boolean)" />
@@ -150,6 +154,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,7 +174,7 @@
       </Docs>
     </Member>
     <Member MemberName="Autostart">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Autostart { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Autostart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Autostart" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.AudioCard.Autostart" />
       <MemberSignature Language="VB.NET" Value="Public Property Autostart As Nullable(Of Boolean)" />
@@ -183,6 +188,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -216,6 +222,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -248,6 +255,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -270,6 +278,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -304,6 +313,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -336,6 +346,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -356,7 +367,7 @@
       </Docs>
     </Member>
     <Member MemberName="Shareable">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Shareable { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Shareable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Shareable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.AudioCard.Shareable" />
       <MemberSignature Language="VB.NET" Value="Public Property Shareable As Nullable(Of Boolean)" />
@@ -370,6 +381,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -402,6 +414,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -434,6 +447,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -466,6 +480,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -498,6 +513,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

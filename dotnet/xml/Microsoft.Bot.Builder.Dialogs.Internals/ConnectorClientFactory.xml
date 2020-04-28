@@ -78,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IConnectorClient Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeConnectorClient" />
       <MemberSignature Language="VB.NET" Value="Function MakeConnectorClient () As IConnectorClient Implements IConnectorClientFactory.MakeConnectorClient" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient : unit -&gt; Microsoft.Bot.Connector.IConnectorClient&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient : unit -&gt; Microsoft.Bot.Connector.IConnectorClient" Usage="connectorClientFactory.Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeConnectorClient</InterfaceMember>
@@ -103,6 +104,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IOAuthClient Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeOAuthClient() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeOAuthClient" />
       <MemberSignature Language="VB.NET" Value="Function MakeOAuthClient () As IOAuthClient Implements IConnectorClientFactory.MakeOAuthClient" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeOAuthClient : unit -&gt; Microsoft.Bot.Connector.IOAuthClient&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeOAuthClient : unit -&gt; Microsoft.Bot.Connector.IOAuthClient" Usage="connectorClientFactory.Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeOAuthClient " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeOAuthClient</InterfaceMember>
@@ -128,6 +130,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.Bot.Connector.IStateClient Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.ConnectorClientFactory.Microsoft#Bot#Builder#Dialogs#Internals#IConnectorClientFactory#MakeStateClient" />
       <MemberSignature Language="VB.NET" Value="Function MakeStateClient () As IStateClient Implements IConnectorClientFactory.MakeStateClient" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient : unit -&gt; Microsoft.Bot.Connector.IStateClient&#xA;override this.Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient : unit -&gt; Microsoft.Bot.Connector.IStateClient" Usage="connectorClientFactory.Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Internals.IConnectorClientFactory.MakeStateClient</InterfaceMember>

@@ -12,6 +12,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -43,9 +44,10 @@
   </Docs>
   <Members>
     <Member MemberName="Attachment">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Attachment (Microsoft.Bot.Schema.Attachment attachment, string text = null, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Attachment (Microsoft.Bot.Schema.Attachment attachment, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity Attachment(class Microsoft.Bot.Schema.Attachment attachment, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Attachment(Microsoft.Bot.Schema.Attachment,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Attachment (attachment As Attachment, Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member Attachment : Microsoft.Bot.Schema.Attachment * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.Attachment (attachment, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -56,6 +58,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -80,14 +83,14 @@
             </summary>
         <returns>A message activity containing the attachment.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="attachment" /> is <c>null</c>.</exception>
         <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.Attachment(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
         <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.Carousel(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attachment" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="Attachment">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Attachment (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, string text = null, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Attachment (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity Attachment(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Attachment(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Attachment (attachments As IEnumerable(Of Attachment), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
@@ -101,6 +104,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -125,14 +129,14 @@
             </summary>
         <returns>A message activity containing the attachment.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="attachments" /> is <c>null</c>.</exception>
         <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.Carousel(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
         <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.Attachment(Microsoft.Bot.Schema.Attachment,System.String,System.String,System.String)" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attachments" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="Carousel">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Carousel (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, string text = null, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Carousel (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity Carousel(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Carousel(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Carousel (attachments As IEnumerable(Of Attachment), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
@@ -146,6 +150,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -170,9 +175,9 @@
              </summary>
         <returns>A message activity containing the attachment.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.Attachment(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attachments" /> is <c>null</c>.</exception>
-        <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.Attachment(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
         <example>This code creates and sends a carousel of HeroCards.
              <code>
              // Create the activity and attach a set of Hero cards.
@@ -211,7 +216,7 @@
       </Docs>
     </Member>
     <Member MemberName="ContentUrl">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity ContentUrl (string url, string contentType, string name = null, string text = null, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity ContentUrl (string url, string contentType, string name = default, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity ContentUrl(string url, string contentType, string name, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.ContentUrl(System.String,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ContentUrl (url As String, contentType As String, Optional name As String = null, Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
@@ -225,6 +230,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -264,7 +270,7 @@
       </Docs>
     </Member>
     <Member MemberName="SuggestedActions">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedActions (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.CardAction&gt; cardActions, string text = null, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedActions (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.CardAction&gt; cardActions, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity SuggestedActions(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.CardAction&gt; cardActions, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.SuggestedActions(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedActions (cardActions As IEnumerable(Of CardAction), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
@@ -278,6 +284,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -304,8 +311,6 @@
              </summary>
         <returns>A message activity that contains the suggested actions.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="cardActions" /> is <c>null</c>.</exception>
         <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.SuggestedActions(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String)" />
         <example>
           <code>
@@ -322,10 +327,12 @@
              await context.SendActivity(activity);
              </code>
         </example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cardActions" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="SuggestedActions">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedActions (System.Collections.Generic.IEnumerable&lt;string&gt; actions, string text = null, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedActions (System.Collections.Generic.IEnumerable&lt;string&gt; actions, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity SuggestedActions(class System.Collections.Generic.IEnumerable`1&lt;string&gt; actions, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.SuggestedActions(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedActions (actions As IEnumerable(Of String), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
@@ -339,6 +346,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -369,8 +377,6 @@
              <see cref="P:Microsoft.Bot.Schema.CardAction.Title" /> and sets the <see cref="P:Microsoft.Bot.Schema.CardAction.Type" /> to
              <see cref="F:Microsoft.Bot.Schema.ActionTypes.ImBack" />.
              </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="actions" /> is <c>null</c>.</exception>
         <altmember cref="M:Microsoft.Bot.Builder.MessageFactory.SuggestedActions(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
         <example>
           <code>
@@ -383,10 +389,12 @@
              await context.SendActivity(activity);
              </code>
         </example>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="actions" /> is <c>null</c>.</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity Text (string text, string ssml = null, string inputHint = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity Text (string text, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity Text(string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Text(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Text (text As String, Optional ssml As String = null, Optional inputHint As String = null) As Activity" />
@@ -400,6 +408,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>

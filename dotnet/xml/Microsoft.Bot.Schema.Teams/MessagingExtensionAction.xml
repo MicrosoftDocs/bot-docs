@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.TaskModuleRequest</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MessagingExtensionAction (object data = null, Microsoft.Bot.Schema.Teams.TaskModuleRequestContext context = null, string commandId = null, string commandContext = null, string botMessagePreviewAction = null, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; botActivityPreview = null, Microsoft.Bot.Schema.Teams.MessageActionsPayload messagePayload = null);" />
+      <MemberSignature Language="C#" Value="public MessagingExtensionAction (object data = default, Microsoft.Bot.Schema.Teams.TaskModuleRequestContext context = default, string commandId = default, string commandContext = default, string botMessagePreviewAction = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; botActivityPreview = default, Microsoft.Bot.Schema.Teams.MessageActionsPayload messagePayload = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object data, class Microsoft.Bot.Schema.Teams.TaskModuleRequestContext context, string commandId, string commandContext, string botMessagePreviewAction, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Activity&gt; botActivityPreview, class Microsoft.Bot.Schema.Teams.MessageActionsPayload messagePayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionAction.#ctor(System.Object,Microsoft.Bot.Schema.Teams.TaskModuleRequestContext,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Activity},Microsoft.Bot.Schema.Teams.MessageActionsPayload)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional data As Object = null, Optional context As TaskModuleRequestContext = null, Optional commandId As String = null, Optional commandContext As String = null, Optional botMessagePreviewAction As String = null, Optional botActivityPreview As IList(Of Activity) = null, Optional messagePayload As MessageActionsPayload = null)" />
@@ -47,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="data" Type="System.Object" />
@@ -58,6 +61,7 @@
         <Parameter Name="messagePayload" Type="Microsoft.Bot.Schema.Teams.MessageActionsPayload" />
       </Parameters>
       <Docs>
+        <param name="botActivityPreview">To be added.</param>
         <param name="data">User input data. Free payload with key-value
             pairs.</param>
         <param name="context">Current user context, i.e., the current
@@ -68,7 +72,6 @@
             'commandbox'</param>
         <param name="botMessagePreviewAction">Bot message preview action
             taken by user. Possible values include: 'edit', 'send'</param>
-        <param name="botActivityPreview">To be added.</param>
         <param name="messagePayload">Message content sent as part of the
             command request.</param>
         <summary>
@@ -87,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -112,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -140,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -168,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -195,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

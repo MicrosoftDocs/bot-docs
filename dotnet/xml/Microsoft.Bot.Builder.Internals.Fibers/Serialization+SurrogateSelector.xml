@@ -50,6 +50,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISurrogateSelector.ChainSelector(class System.Runtime.Serialization.ISurrogateSelector selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#ChainSelector(System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberSignature Language="VB.NET" Value="Sub ChainSelector (selector As ISurrogateSelector) Implements ISurrogateSelector.ChainSelector" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.Serialization.ISurrogateSelector.ChainSelector : System.Runtime.Serialization.ISurrogateSelector -&gt; unit&#xA;override this.System.Runtime.Serialization.ISurrogateSelector.ChainSelector : System.Runtime.Serialization.ISurrogateSelector -&gt; unit" Usage="surrogateSelector.System.Runtime.Serialization.ISurrogateSelector.ChainSelector selector" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.ChainSelector(System.Runtime.Serialization.ISurrogateSelector)</InterfaceMember>
@@ -77,6 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Runtime.Serialization.ISurrogateSelector System.Runtime.Serialization.ISurrogateSelector.GetNextSelector() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetNextSelector" />
       <MemberSignature Language="VB.NET" Value="Function GetNextSelector () As ISurrogateSelector Implements ISurrogateSelector.GetNextSelector" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.Serialization.ISurrogateSelector.GetNextSelector : unit -&gt; System.Runtime.Serialization.ISurrogateSelector&#xA;override this.System.Runtime.Serialization.ISurrogateSelector.GetNextSelector : unit -&gt; System.Runtime.Serialization.ISurrogateSelector" Usage="surrogateSelector.System.Runtime.Serialization.ISurrogateSelector.GetNextSelector " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetNextSelector</InterfaceMember>
@@ -101,6 +103,8 @@
       <MemberSignature Language="C#" Value="System.Runtime.Serialization.ISerializationSurrogate ISurrogateSelector.GetSurrogate (Type type, System.Runtime.Serialization.StreamingContext context, out System.Runtime.Serialization.ISurrogateSelector selector);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Runtime.Serialization.ISerializationSurrogate System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] class System.Runtime.Serialization.ISurrogateSelector&amp; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Internals.Fibers.Serialization.SurrogateSelector.System#Runtime#Serialization#ISurrogateSelector#GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
+      <MemberSignature Language="VB.NET" Value="Function GetSurrogate (type As Type, context As StreamingContext, ByRef selector As ISurrogateSelector) As ISerializationSurrogate Implements ISurrogateSelector.GetSurrogate" />
+      <MemberSignature Language="F#" Value="abstract member System.Runtime.Serialization.ISurrogateSelector.GetSurrogate : Type * System.Runtime.Serialization.StreamingContext * ISurrogateSelector -&gt; System.Runtime.Serialization.ISerializationSurrogate&#xA;override this.System.Runtime.Serialization.ISurrogateSelector.GetSurrogate : Type * System.Runtime.Serialization.StreamingContext * ISurrogateSelector -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="surrogateSelector.System.Runtime.Serialization.ISurrogateSelector.GetSurrogate (type, context, selector)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)</InterfaceMember>
