@@ -103,6 +103,12 @@
          "url":"https://github.com/microsoft/BotBuilder-Samples",
          "branch":"master",
          "branch_mapping":{}
+      },
+      {
+         "path_to_root":"botbuilder-sdk",
+         "url":"https://github.com/microsoft/botbuilder-sdk",
+         "branch":"master",
+         "branch_mapping":{}
       }
    ],
    "branch_target_mapping":{

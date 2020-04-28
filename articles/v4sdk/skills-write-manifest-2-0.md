@@ -109,4 +109,8 @@ Describes a message activity accepted by the skill, where the `text` property co
 
 This is a sample manifest for a skill that exposes multiple activities.
 
-[!code-json[Manifest](https://schemas.botframework.com/schemas/skills/samples/complex-skillmanifest-2.0.0.json)]
+[!code-json[sample 2.0 manifest](~/../botbuilder-sdk/schemas/skills/samples/complex-skillmanifest-2.0.0.json)]
+
+<!--
+[!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)]
+-->

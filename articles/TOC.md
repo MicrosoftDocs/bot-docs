@@ -24,7 +24,10 @@
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
-## [About skills](v4sdk/skills-conceptual.md)
+## Skills
+### [Skills overview](v4sdk/skills-conceptual.md)
+### [Skill bots](v4sdk/skills-conceptual.md)
+### [Skill consumers](v4sdk/skills-conceptual.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
