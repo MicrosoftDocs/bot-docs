@@ -26,7 +26,7 @@ The skill manifest contains 4 categories of information:
 
 - Metadata that describes the skill at a general level.
 - A list of the endpoints that the skill provides.
-- A list of the activities the the skill supports.
+- An optional list of the activities the the skill supports.
 - An optional definitions object that describes the types of objects the activities can take as input or generate as output.
 
 The following is the full schema for the Bot Framework skill manifest.
@@ -118,7 +118,3 @@ See the [sample manifest](#sample-manifest) for an example definition list.
 This is a sample manifest for a skill that exposes multiple activities.
 
 [!code-json[sample 2.0 manifest](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.0.0.json)]
-
-<!--
-[!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)]
--->

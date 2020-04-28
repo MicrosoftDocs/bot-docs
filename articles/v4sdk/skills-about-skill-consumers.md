@@ -1,13 +1,13 @@
 ---
-title: About skills | Microsoft Docs
+title: About skill consumers | Microsoft Docs
 description: Describes how conversational logic in one bot can be used by another bot using the Bot Framework SDK.
-keywords: bot skill, host bot, skill bot.
+keywords: bot skill, host bot, skill consumer.
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/09/2019
+ms.date: 04/28/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -77,7 +77,7 @@ Specific scenarios to consider include:
   - To check why the skill is ending, check the activity's _code_ parameter, which could indicate that the skill encountered an error.
 - Cancelling a skill from the consumer by sending an `endOfConversation` activity to the skill.
 
-#### Invoking a skill from a dialog
+### Invoking a skill from a dialog
 
 If you are using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
 

@@ -1,7 +1,7 @@
 ---
 title: About skill bots | Microsoft Docs
 description: Describes how conversational logic in one bot can be used by another bot using the Bot Framework SDK.
-keywords: bot skill, host bot, skill bot.
+keywords: bot skill, skill bot.
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
@@ -16,7 +16,9 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
-With minor modifications, any bot can act as a skill. Skill bots:
+With minor modifications, any bot can act as a skill.
+
+Skill bots:
 
 - Implement access restrictions via a claims validator.
 - As appropriate, check for initialization parameters in the initial activity's _value_ property.
