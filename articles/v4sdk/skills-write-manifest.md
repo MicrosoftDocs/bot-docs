@@ -26,9 +26,9 @@ The skill manifest contains 4 categories of information:
 
 - Metadata that describes the skill at a general level.
 - A list of the endpoints that the skill provides.
-- An optional list of the actions the the skill can receive and proactively send.
+- An optional list of the activities the the skill can receive and proactively send.
 - An optional list of the dispatch (language) models the skill supports.
-- An optional definitions object that describes the types of objects the activities can take as input or generate as output.
+- An optional definitions object that contains schemas that can be consumed by other parts of the document.
 
 The following is the full schema for the Bot Framework skill manifest.
 
