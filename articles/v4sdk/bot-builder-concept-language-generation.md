@@ -196,7 +196,7 @@ Nightlies:
     - Old `display || speak` notation is deprecated in favor of structured template support. See below for more details on structured template. 
     - Old `Chatdown` style cards are deprecated in favor of structured template support. See below for more details on structured template. 
 - \[**NEW**\]:
-    - Structured Template support in .lg file format. See [here](./docs/structured-response-template.md) to learn more about Structured Template definition.
+    - Structured Template support in .lg file format. See [here](../language-generation/language-generation-structured-response-template.md) to learn more about Structured Template definition.
     - ActivityGenerator.GenerateFromLG static method to transform output from LG sub-system into a full blown [Bot Framework Activity][1]
 
 ### 4.6 PREVIEW
@@ -215,7 +215,7 @@ Nightlies:
 
 [1]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md
 [2]:../language-generation/language-generation-API-reference.md
-[3]:../file-format/bot-builder-language-generation-file-format.md
+[3]:../file-format/bot-builder-lg-file-format.md
 [6]:https://github.com/microsoft/botframework-cli/tree/master/packages/chatdown
 [7]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
 [8]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/examples/CardExamples.chat
@@ -227,10 +227,10 @@ Nightlies:
 [14]:https://www.nuget.org/packages/Microsoft.Bot.Builder.LanguageGeneration/4.7.0-preview
 [15]:https://www.npmjs.com/package/botbuilder-lg
 [20]:../file-format/bot-builder-lg-file-format.md#switch-case
-[21]:./file-format/bot-builder-lg-file-format.md#importing-external-references
+[21]:../file-format/bot-builder-lg-file-format.md#importing-external-references
 [22]:https://aka.ms/lg-vscode-extension
 [23]:https://github.com/microsoft/botbuilder-tools/tree/V.Future/packages/MSLG
-[26]:./javascript_nodejs/
-[50]:./docs/lg-file-format.md#importing-external-references
+[26]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/javascript_nodejs
+[50]:../file-format/bot-builder-lg-file-format.md#importing-external-references
 [100]:https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/language-generation/csharp_dotnetcore/20.extending-with-custom-functions/README.md
 [101]:https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/language-generation/javascript_nodejs/20.custom-functions/README.md
