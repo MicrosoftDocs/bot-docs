@@ -105,8 +105,8 @@
          "branch_mapping":{}
       },
       {
-         "path_to_root":"botbuilder-sdk",
-         "url":"https://github.com/microsoft/botbuilder-sdk",
+         "path_to_root":"botframework-sdk",
+         "url":"https://github.com/microsoft/botframework-sdk",
          "branch":"master",
          "branch_mapping":{}
       }
