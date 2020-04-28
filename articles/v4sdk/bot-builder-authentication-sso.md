@@ -316,11 +316,17 @@ The following time-sequence diagram applies to the samples used in the article a
 
 ![Skill token](media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG)
 
-1. The first time the user enter the `login` command for the **RootBot**.
-1. The **RootBot** sends an **OAuthCard** asking the user to enter the authentication credentials.
-1. The credentials are sent to the **ABS** (Azure Bot Service).
-
-
+<!-- verify -->
+1. The first time, the user enters the `login` command for the **RootBot**.
+1. The **RootBot** sends an **OAuthCard** asking the user to sign in.
+1. The user enters the authentication credentials that are sent to the **ABS** (Azure Bot Service).
+1. The **ABS** sends the authentication token, generated based on the user's credentials, to the **RootBot**.
+1. The **RootBot** displays the root token for the user to see.
+1. The user enters the `skill login` command for the **SkillBot**.
+1. The **SkillBot** sends an **OAuthCard** to the **RobBot**.
+1. The **RobBot** asks for an **exchangeable token** from **ABS**.
+1. At this point the SSO "dance" comes into play which ends with the **skill token** sent by the **SkillBot** to the **RootBot**.
+1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
 
 <!-- Footnote-style links -->
 
