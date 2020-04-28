@@ -229,10 +229,6 @@ Use the following for testing:
     - `skill token` displays the user's token from the `SkillBot`.
     - `skill logout` logs the user out of `SkillBot`
 
-The following time sequence diagram shows the interaction between the
-various parties involved.
-
-![Skill token](media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG)
 
 # [Emulator](#tab/eml)
 
@@ -313,6 +309,18 @@ This tells you that you are communicating with the `SkillBot` without the need t
 1. Now you can enter **skill logout** to sign out of `SkillBot`. Then enter **logout** to sign out of `SimpleRootBoot`.
 
 ---
+
+## Additional information
+
+The following time-sequence diagram applies to the samples used in the article and shows the interaction between the various components involved. *ABS* stands for *Azure Bot Service*.
+
+![Skill token](media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG)
+
+1. The first time the user enter the `login` command for the **RootBot**.
+1. The **RootBot** sends an **OAuthCard** asking the user to enter the authentication credentials.
+1. The credentials are sent to the **ABS** (Azure Bot Service).
+
+
 
 <!-- Footnote-style links -->
 
