@@ -215,19 +215,24 @@ TBD
 
 ## Test the samples
 
-Before testing, note the following:
+Use the following for testing:
 
-- `RootBot` supported commands
+- `RootBot` commands
 
-    - `login` command that allows the user to sign into the root bot. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
-    - `token` command that displays the user's token.
-    - `logout` command that logs the user out of `SkillRootBot`.
+    - `login` allows the user to sign into the root bot. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
+    - `token` displays the user's token.
+    - `logout` logs the user out of `SkillRootBot`.
 
-- `SkillBot` supported commands
+- `SkillBot` commands
 
-    - `skill login` command that allows the skill root bot `RootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign in card, if already signed in, unless SSO fails.
-    - `skill token` command that displays the user's token from the `SkillBot`.
-    - `skill logout` command that logs the user out of `SkillBot`
+    - `skill login` allows the `RootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign in card, if already signed in, unless SSO fails.
+    - `skill token` displays the user's token from the `SkillBot`.
+    - `skill logout` logs the user out of `SkillBot`
+
+The following time sequence diagram shows the interaction between the
+various parties involved.
+
+![Skill token](media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG)
 
 # [Emulator](#tab/eml)
 
