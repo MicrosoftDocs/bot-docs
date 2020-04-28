@@ -15,9 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article describes the format of the Bot Framework skill manifest schema.
 
-A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
+A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
 
-The current skill manifest schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+The current skill manifest schema version is [skill-manifest-2.0.0.json](https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json).
 This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
 
 ## The skill manifest
@@ -35,7 +35,7 @@ The following is the full schema for the Bot Framework skill manifest.
 |:-|:-|:-|:-|
 | **Metadata**
 | $id | string | Required | The identifier for this skill manifest. |
-| $schema | string | Optional | The HTTPS URI of a a JSON schema resource that describes the format of this manifest; optional but recommended. |
+| $schema | string | Required | The HTTPS URI of a a JSON schema resource that describes the format of this manifest; optional but recommended. |
 | copyright | string | Optional | The copyright notice for the skill. |
 | description | string | Optional | A description of the skill. |
 | iconUrl | string | Optional | The URI of the icon to show for the skill. |
@@ -48,13 +48,14 @@ The following is the full schema for the Bot Framework skill manifest.
 | **Endpoints**
 | endpoints | array of [endpoint](#endpoint-object) objects | Required | The list of endpoints supported by the skill. |
 | **Activities**
-| activities | array of [eventActivity](#eventactivity-object), [invokeActivity](#invokeactivity-object), or [messageActivity](#messageactivity-object) objects | Required | The list of the activities accepted by the skill. |
+| activities | object containing named [activity objects](#activity-objects): [eventActivity](#eventactivity-object), [invokeActivity](#invokeactivity-object), or [messageActivity](#messageactivity-object) | Required | The set of the activities accepted by the skill. |
 | **Definitions**
 | definitions | object | Optional | An object containing JSON schema definitions for the objects referenced by other parts of this schema. |
 
 ## endpoint object
 
-Describes an endpoint supported by the skill.
+Each endpoint object describes an endpoint supported by the skill.
+See the [sample manifest](#sample-manifest) for an example endpoint list.
 
 | Field | Type | Required | Description
 |:-|:-|:-|:-
@@ -64,7 +65,12 @@ Describes an endpoint supported by the skill.
 | name | string | Required | The unique name for the endpoint.
 | protocol | string | Optional | The supported protocol. Default is "BotFrameworkV3".
 
-## eventActivity object
+## Activity objects
+
+Each activity object describes an activity accepted by the skill.
+See the [sample manifest](#sample-manifest) for an example activity list.
+
+### eventActivity object
 
 Describes an event activity accepted by the skill, where the `name` property indicates the task that the skill will perform.
 
@@ -76,7 +82,7 @@ Describes an event activity accepted by the skill, where the `name` property ind
 | type | string | Required | The activity type. Must be "event".
 | value | object | Optional | A JSON schema definition of the type of object that this activity expects as input.
 
-## invokeActivity object
+### invokeActivity object
 
 Describes an invoke activity accepted by the skill, where the `name` property indicates the task that the skill will perform.
 
@@ -88,7 +94,7 @@ Describes an invoke activity accepted by the skill, where the `name` property in
 | type | string | Required | The activity type. Must be "invoke".
 | value | object | Optional | A JSON schema definition of the type of object that this activity expects as input.
 
-## messageActivity object
+### messageActivity object
 
 Describes a message activity accepted by the skill, where the `text` property contains the user's utterance.
 
@@ -103,4 +109,4 @@ Describes a message activity accepted by the skill, where the `text` property co
 
 This is a sample manifest for a skill that exposes multiple activities.
 
-[!code-json[Manifest](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)]
+[!code-json[Manifest](https://schemas.botframework.com/schemas/skills/samples/complex-skillmanifest-2.0.0.json)]

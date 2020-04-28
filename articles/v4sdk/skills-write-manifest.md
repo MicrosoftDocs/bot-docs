@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article describes the format of the Bot Framework skill manifest schema.
 
-A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
+A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
 
 The current skill manifest schema version is [skill-manifest-2.1.preview-0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.1.preview-0.json).
 This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
