@@ -49,10 +49,10 @@ The following is the full schema for the Bot Framework skill manifest.
 | **Endpoints**
 | endpoints | array of [endpoint](#endpoint-object) objects | Required | The list of endpoints supported by the skill. At least one endpoint must be defined. |
 | **Activities**
-| activities | array of [eventActivity](#eventactivity-object), [invokeActivity](#invokeactivity-object), or [messageActivity](#messageactivity-object) objects | Optional | Describes the activities accepted by the skill. |
-| activitiesSent | object | Optional | Describes the proactive activities that the skill can send.... |
+| activities | object containing named [activity objects](#activities) | Required | The set of initial activities accepted by the skill. |
+| activitiesSent | object | Optional | Describes the proactive activities that the skill can send. |
 | **Dispatch models**
-| dispatchModels | object | Optional | Describes the language models and intents supported by the skill.... |
+| dispatchModels | object | Optional | Describes the language models and intents supported by the skill. See [dispatch models](#dispatch-models) for the schema for this object. |
 | **Definitions**
 | definitions | object | Optional | An object containing JSON schema definitions for the objects referenced by other parts of this schema. |
 
@@ -117,19 +117,26 @@ Describes a message activity accepted by the skill, where the `text` property co
 ## Dispatch models
 
 The dispatch model contains a list of language models and a list of intents supported by the skill.
+A locale name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an optional ISO 3166 two-letter uppercase subculture code associated with a country or region, for example "en" or "en-US".
+
+| Field | Type | Required | Description |
+|:-|:-|:-|:-|
+| intents | object containing named arrays of strings | Optional | A list of the intents supported by the skill. Each name identifies the locale the intent is for, and the array contains the intents for that locale.
+| languages | object containing named arrays of [languageModel objects](#languagemodel-object) | Required | A list of the language models supported by the skill. Each name identifies the locale the language models are for, and the array contains the language modules for that locale.
+
 See the [sample manifest](#sample-manifest) for an example dispatch model.
 
 ### languageModel object
 
-Describes a language model for a given culture. The name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an ISO 3166 two-letter uppercase subculture code associated with a country or region.
+Describes a language model for a given culture. The name is a locale name.
 
 | Field | Type | Required | Description |
 |:-|:-|:-|:-|
-| contentType | string | Required |
-| description | string | Optional |
-| id | string | Required |
-| name | string | Required |
-| url | string | Required | The URI of a
+| contentType | string | Required | Type of the language model.
+| description | string | Optional | A description of the language model.
+| id | string | Required | Unique identifier for the language model.
+| name | string | Required |Name for the language model.
+| url | string | Required | The URL for the language model.
 
 ## Definitions
 
@@ -140,4 +147,4 @@ See the [sample manifest](#sample-manifest) for an example definition list.
 
 This is a sample manifest for a skill that exposes multiple activities.
 
-[!code-json[sample 2.1 manifest](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json)]
+[!code-json[sample 2.1 manifest](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-0.json)]
