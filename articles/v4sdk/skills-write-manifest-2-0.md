@@ -48,14 +48,16 @@ The following is the full schema for the Bot Framework skill manifest.
 | **Endpoints**
 | endpoints | array of [endpoint](#endpoint-object) objects | Required | The list of endpoints supported by the skill. |
 | **Activities**
-| activities | object containing named [activity objects](#activity-objects): [eventActivity](#eventactivity-object), [invokeActivity](#invokeactivity-object), or [messageActivity](#messageactivity-object) | Required | The set of the activities accepted by the skill. |
+| activities | object containing named [activity objects](#activities) | Required | The set of initial activities accepted by the skill. |
 | **Definitions**
 | definitions | object | Optional | An object containing JSON schema definitions for the objects referenced by other parts of this schema. |
 
-## endpoint object
+## Endpoints
 
 Each endpoint object describes an endpoint supported by the skill.
 See the [sample manifest](#sample-manifest) for an example endpoint list.
+
+### endpoint object
 
 | Field | Type | Required | Description
 |:-|:-|:-|:-
@@ -65,9 +67,10 @@ See the [sample manifest](#sample-manifest) for an example endpoint list.
 | name | string | Required | The unique name for the endpoint.
 | protocol | string | Optional | The supported protocol. Default is "BotFrameworkV3".
 
-## Activity objects
+## Activities
 
 Each activity object describes an activity accepted by the skill.
+The activity types allowed in the v2.0.0 skill manifest schema are: message, event, and invoke activities.
 See the [sample manifest](#sample-manifest) for an example activity list.
 
 ### eventActivity object
@@ -104,6 +107,11 @@ Describes a message activity accepted by the skill, where the `text` property co
 | resultValue | object | Optional | A JSON schema definition of the type of object that this activity can produce as output.
 | type | string | Required | The activity type. Must be "message".
 | value | object | Optional | A JSON schema definition of the type of object that this activity expects as input.
+
+## Definitions
+
+Each definition describes a schema that can be consumed by other parts of the document.
+See the [sample manifest](#sample-manifest) for an example definition list.
 
 ## Sample manifest
 
