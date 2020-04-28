@@ -89,7 +89,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 - Add the root bot's app ID and password.
 - Add the app ID for the echo skill bot.
 
-[!code-text[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
 
 ### [Python](#tab/python)
 
@@ -223,7 +223,7 @@ The choices included in this bot help test the actions defined for this skill. M
 
 **dialogRootBot/dialogs/mainDialog.js**
 
-[!code-javascript[selectSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=104-120)]
+[!code-javascript[selectSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=104-124)]
 
 [!code-javascript[getSkillActions](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=196-212)]
 
