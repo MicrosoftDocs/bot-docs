@@ -41,7 +41,7 @@ The following is the full schema for the Bot Framework skill manifest.
 |:-|:-|:-|:-|
 | **Metadata**
 | $id | string | Required | The identifier for the skill manifest. |
-| $schema | string | Required | The HTTPS URI of a a JSON schema resource that describes the format of the manifest. For version 2.1.preview-1, the URI is https://schemas.botframework.com/schemas/skills/skill-manifest-2.1.preview-1.json. |
+| $schema | string | Required | The HTTPS URI of a JSON schema resource that describes the format of the manifest. For version 2.1.preview-1, the URI is `https://schemas.botframework.com/schemas/skills/skill-manifest-2.1.preview-1.json`. |
 | copyright | string | Optional | The copyright notice for the skill. |
 | description | string | Optional | A human-readable description of the skill. |
 | iconUrl | string | Optional | The URI of the icon to show for the skill. |
@@ -154,7 +154,7 @@ A locale name is a combination of an ISO 639 two-letter lowercase culture code a
 
 | Field | Type | Required | Description |
 |:-|:-|:-|:-|
-| intents | object containing named string arrays | Optional | A list of the intents supported by the skill. Each name is the locale the intent is for, and the array contains the top-level intents for that locale. Each locale within the intents field must be unique.
+| intents | string array | Optional | A list of the top-level intents supported by the skill. Each intent must be unique.
 | languages | object containing named [languageModel](#languagemodel-object) arrays | Required | A list of the language models supported by the skill. Each name is the locale the language models are for, and the array contains the language modules for that locale. A dispatch model must support at least one locale. Each locale within the languages field must be unique.
 
 This is a sample dispatch model that contains two languages models across three locales. It also describes two top-level intents that the skill can recognize.
