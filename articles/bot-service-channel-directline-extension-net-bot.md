@@ -27,6 +27,9 @@ This section describes how to enable the direct line app service extension using
 
 ## Update .NET Bot to use Direct Line App Service Extension
 
+> [!NOTE]	
+> `Microsoft.Bot.Builder.StreamingExtensions` preview packages have been deprecated. The SDK v4.8 now contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming). If a bot previously made use of the preview packages they must be removed before following the steps below. 
+
 1. In Visual Studio, open your bot project.
 2. Ensure the project is using version 4.8 or higher of the Bot Builder SDK.
 3. Allow your app to use the **Bot Framework NamedPipe**:

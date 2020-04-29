@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 04/03/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -37,7 +37,10 @@ The Bot Framework SDK includes some implementations for the storage layer:
 
 - **Memory storage** implements in-memory storage for testing purposes. In-memory data storage is intended for local testing only as this storage is volatile and temporary. The data is cleared each time the bot is restarted.
 - **Azure Blob Storage** connects to an Azure Blob Storage object database.
-- **Azure Cosmos DB storage** connects to a Cosmos DB NoSQL database.
+- **Azure Cosmos DB partitioned storage** connects to a partitioned Cosmos DB NoSQL database.
+
+>[!IMPORTANT]
+> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
 
 For instructions on how to connect to other storage options, see [write directly to storage](bot-builder-howto-v4-storage.md).
 
