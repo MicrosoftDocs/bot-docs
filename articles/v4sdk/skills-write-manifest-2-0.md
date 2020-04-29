@@ -18,11 +18,16 @@ This article describes the format of the Bot Framework skill manifest schema.
 A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
 
 The current skill manifest schema version is [skill-manifest-2.0.0.json](https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json).
-This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
+This schema uses draft 7 of the JSON schema vocabulary.
+
+## Prerequisites
+
+- Knowledge of [skills](skills-conceptual.md) and [skill bots](skills-about-skill-bots.md).
+- Some familiarity with [JSON Schema](http://json-schema.org/) and the JSON format.
 
 ## The skill manifest
 
-The skill manifest contains 4 categories of information:
+The skill manifest contains different categories of information:
 
 - Metadata that describes the skill at a general level.
 - A list of the endpoints that the skill provides.
@@ -34,8 +39,8 @@ The following is the full schema for the Bot Framework skill manifest.
 | Category/Field | Type | Required | Description |
 |:-|:-|:-|:-|
 | **Metadata**
-| $id | string | Required | The identifier for this skill manifest. |
-| $schema | string | Required | The HTTPS URI of a a JSON schema resource that describes the format of this manifest; optional but recommended. |
+| $id | string | Required | The identifier for the skill manifest. |
+| $schema | string | Required | The HTTPS URI of a a JSON schema resource that describes the format of the manifest. |
 | copyright | string | Optional | The copyright notice for the skill. |
 | description | string | Optional | A description of the skill. |
 | iconUrl | string | Optional | The URI of the icon to show for the skill. |

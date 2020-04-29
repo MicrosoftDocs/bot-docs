@@ -18,43 +18,48 @@ This article describes the format of the Bot Framework skill manifest schema.
 A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
 
 The current skill manifest schema version is [skill-manifest-2.1.preview-1.json](https://schemas.botframework.com/schemas/skills/skill-manifest-2.1.preview-1.json).
-This schema uses draft 7 of the JSON schema vocabulary. For more information, see the [JSON Schema](http://json-schema.org/) site.
+This schema uses draft 7 of the JSON schema vocabulary.
+
+## Prerequisites
+
+- Knowledge of [skills](skills-conceptual.md) and [skill bots](skills-about-skill-bots.md).
+- Some familiarity with [JSON Schema](http://json-schema.org/) and the JSON format.
 
 ## The skill manifest
 
-The skill manifest contains 4 categories of information:
+The skill manifest contains different categories of information:
 
 - Metadata that describes the skill at a general level.
 - A list of the endpoints that the skill provides.
-- An optional list of the activities the the skill can receive and proactively send.
-- An optional list of the dispatch (language) models the skill supports.
-- An optional definitions object that contains schemas that can be consumed by other parts of the document.
+- Optional lists of the activities the the skill can receive and proactively send.
+- An optional list of the dispatch models the skill supports.
+- An optional definitions object that contains schemas for objects referenced by other parts of the document.
 
 The following is the full schema for the Bot Framework skill manifest.
 
 | Category/Field | Type | Required | Description |
 |:-|:-|:-|:-|
 | **Metadata**
-| $id | string | Required | The identifier for this skill manifest. |
-| $schema | string | Optional | The HTTPS URI of a a JSON schema resource that describes the format of this manifest; optional but recommended. |
+| $id | string | Required | The identifier for the skill manifest. |
+| $schema | string | Required | The HTTPS URI of a a JSON schema resource that describes the format of the manifest. |
 | copyright | string | Optional | The copyright notice for the skill. |
 | description | string | Optional | A human-readable description of the skill. |
 | iconUrl | string | Optional | The URI of the icon to show for the skill. |
 | license | string | Optional | The license agreement for the skill. |
 | name | string | Required | The name of the skill. |
-| version | string | Required | The skill's version. |
+| version | string | Required | The version of the skill the manifest describes. |
 | privacyUrl | string | Optional | The URI of the privacy description for the skill. |
 | publisherName | string | Required | The name of the skill publisher. |
 | tags | string array | Optional | A set of tags for the skill. If present, each tag must be unique. |
 | **Endpoints**
-| endpoints | array of [endpoint](#endpoint-object) objects | Required | The list of endpoints supported by the skill. At least one endpoint must be defined. |
+| endpoints | [endpoint](#endpoint-object) array | Required | The list of endpoints supported by the skill. At least one endpoint must be defined. Each endpoint must be unique. |
 | **Activities**
 | activities | object containing named [activity objects](#activities) | Required | The set of initial activities accepted by the skill. |
 | activitiesSent | object | Optional | Describes the proactive activities that the skill can send. |
 | **Dispatch models**
-| dispatchModels | object | Optional | Describes the language models and intents supported by the skill. See [dispatch models](#dispatch-models) for the schema for this object. |
+| dispatchModels | [dispatchModels](#dispatch-models) object | Optional | Describes the language models and top-level intents supported by the skill. See  for the schema for this object. |
 | **Definitions**
-| definitions | object | Optional | An object containing JSON schema definitions for the objects referenced by other parts of this schema. |
+| definitions | object | Optional | An object containing subschemas for objects used in the manifest. |
 
 ## Endpoints
 
@@ -116,13 +121,14 @@ Describes a message activity accepted by the skill, where the `text` property co
 
 ## Dispatch models
 
-The dispatch model contains a list of language models and a list of intents supported by the skill.
+The dispatch model contains a list of language models and a list of top-level intents supported by the skill.
+
 A locale name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an optional ISO 3166 two-letter uppercase subculture code associated with a country or region, for example "en" or "en-US".
 
 | Field | Type | Required | Description |
 |:-|:-|:-|:-|
-| intents | object containing named arrays of strings | Optional | A list of the intents supported by the skill. Each name identifies the locale the intent is for, and the array contains the intents for that locale.
-| languages | object containing named arrays of [languageModel objects](#languagemodel-object) | Required | A list of the language models supported by the skill. Each name identifies the locale the language models are for, and the array contains the language modules for that locale.
+| intents | object containing named arrays of strings | Optional | A list of the intents supported by the skill. Each name is the locale the intent is for, and the array contains the intents for that locale.
+| languages | object containing named arrays of [languageModel objects](#languagemodel-object) | Required | A list of the language models supported by the skill. Each name is the locale the language models are for, and the array contains the language modules for that locale.
 
 See the [sample manifest](#sample-manifest) for an example dispatch model.
 
