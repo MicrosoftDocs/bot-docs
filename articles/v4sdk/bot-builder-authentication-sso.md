@@ -19,13 +19,12 @@ monikerRange: 'azure-bot-service-4.0'
 This article shows how to use the Single sign on (SSO) feature in a bot.
 To do so, it uses a *consumer* bot, also known as *root* bot, to interact with a *skill* bot.
 
-Once the user  signs in the root bot, she is "automatically" signed in each skill bot she uses through the root. This is because of SSO. Without it the user would have to sign in every time she communicates with a different skill bot.
+Once the users sign in the root bot, they are "automatically" signed in each skill bot they might use through the root bot. This is because of SSO. Without it the users would have to sign in every time they communicate with a different skill bot.
 
 > [!NOTE]
-> The *consumer* bot is also called *root* or *parent* bot.\
-> The *skill* bot is also called *child* bot.\
-> The article uses **root** bot and **skill** bot.\
-> With skills, the root and skill bots are separate bots, running on potentially different servers, each with its own separate memory and state.
+> The *consumer* bot is also called *root* or *parent* bot. The *skill* bot is also called *child* bot.\
+> This article uses the terms **root** bot and **skill** bot.\
+> With skills, the root and skill are separate bots, running on potentially different servers, each with its own separate memory and state.
 
 ### Web Chat and Direct Line considerations
 
