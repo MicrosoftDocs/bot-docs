@@ -94,7 +94,7 @@ or you can browse the functions based on [alphabetical order](#alphabetical-list
 |[binary](#binary) | Return the binary version for an input value. |
 |[dataUri](#dataUri) | Return the URI for an input value. |
 |[dataUriToBinary](#dataUriToBinary) | Return the binary version of a data URI. |
-|[dataUriToString](#dateUriToString) | Return the string version of a data URI. |
+|[dataUriToString](#dataUriToString) | Return the string version of a data URI. |
 |[uriComponent](#uriComponent) | Return the URI-encoded version for an input value by replacing URL-unsafe characters with escape characters. |
 |[uriComponentToString](#uriComponentToString) | Return the string version for a URI-encoded string. |
 |[xml](#xml) | [C# only] Return the XML version for a string. |
@@ -640,7 +640,7 @@ And returns this result: `new byte[] { 3, 5, 1, 12 }`
 
 ### base64ToString
 
-Return the string version for a base64-encoded string, effectively decoding the base64 string. Use this function rather than [decodeBase64](#decodeBase64). Although both functions work the same way, base64ToString() is preferred.
+Return the string version for a base64-encoded string, effectively decoding the base64 string.
 
 ```
 base64ToString('<value>')
@@ -964,7 +964,6 @@ And return these results:
 ### createArray
 
 Return an array from multiple inputs.
-For single input arrays, see [array()](#array).
 
 ```
 createArray('<object1>', '<object2>', ...)
