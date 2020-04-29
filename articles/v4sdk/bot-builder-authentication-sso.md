@@ -79,7 +79,7 @@ For each sample, you need the following:
 
 The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `SkillRootBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
+1. Create an identity application for the `RootBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
 
 1. In the left pane, click **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.
@@ -95,8 +95,9 @@ The Azure AD is a cloud identity service that allows you to build applications t
 ## Create Azure AD connection
 
 1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the value described below.
-1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
 
+1. Leave the **Token Exchange URL** empty.
+1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
 1. Copy and save the name of the connection.
 
 # [SkillBot](#tab/srb)
@@ -123,15 +124,14 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Enter the remaining required information.
 1. Click **Add scope**.
 1. Copy and save the scope value.
-1. Click **Add a client application**. In the far right section, enter the root *RootBot* identity app ID you saved before.
+1. Click **Add a client application**. In the far right section, in the **Client ID** box, enter the **RootBot identity** app ID you saved before. Make sure you use the *RootBot* identity and not the registration app ID.
 1. Under **Authorized scope**, check the box by the scope value.
 1. Click **Add application**.
-1. In the navigation pane, click **API permissions** to open the **API permissions** panel. It is a best practice to explicitly set the API permissions for the app.
+1. In the navigation pane on the left, click **API permissions**. It is a best practice to explicitly set the API permissions for the app.
 
-   1. Click **Add a permission** to show the **Request API permissions** pane.
-   1. For this sample, select **Microsoft APIs** and **Microsoft Graph**.
-   1. Choose **Delegated permissions** and make sure the permissions you need are selected. This sample requires theses permissions.
-
+   1. In the right pane, click **Add a permission**.
+   1. Select **Microsoft APIs** then **Microsoft Graph**.
+   1. Choose **Delegated permissions** and make sure the permissions you need are selected. This sample requires the permissions listed below.
       > [!NOTE]
       > Any permission marked as **ADMIN CONSENT REQUIRED** will require both a user and a tenant admin to login, so for your bot tend to stay away from these.
 
@@ -146,7 +146,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the values described below.
 1. In the **Token Exchange URL** box enter the `SkillBot` scope value you saved in the previous steps.
-1. In the **Scopes** box enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasicAll` `openid`.
+1. In the **Scopes** box enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasic.All` `openid`.
 
 1. Copy and save to a file the name of the connection.
 
@@ -160,8 +160,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Click **Accept**.
 1. This should then redirect you to a **Test Connection to \<your-connection-name> Succeeded** page.
 
-For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
-
+For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
 
 ## Prepare the samples code
@@ -221,13 +220,13 @@ Use the following for testing:
 
     - `login` allows the user to sign into the root bot. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
     - `token` displays the user's token.
-    - `logout` logs the user out of `SkillRootBot`.
+    - `logout` logs the user out of the `RootBot`.
 
 - `SkillBot` commands
 
     - `skill login` allows the `RootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign in card, if already signed in, unless SSO fails.
     - `skill token` displays the user's token from the `SkillBot`.
-    - `skill logout` logs the user out of `SkillBot`
+    - `skill logout` logs the user out of the `SkillBot`
 
 
 # [Emulator](#tab/eml)
