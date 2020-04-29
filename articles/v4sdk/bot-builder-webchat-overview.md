@@ -194,7 +194,7 @@ There are several properties that you might pass into your Web Chat React Compon
 | `webSpeechPonyFillFactory` | Specify the Web Speech object for text-to-speech and speech-to-text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 ## Browser compatibility
 Web Chat supports the latest 2 versions of modern browsers like Chrome, Edge, and FireFox.
-If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/c.es5-bundle).
+If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/c.es5-bundle) and [demo](https://microsoft.github.io/BotFramework-WebChat/01.getting-started/c.es5-bundle/).
 
 Please note, however:
 - Web Chat does not support Internet Explorer older than version 11
