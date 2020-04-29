@@ -168,10 +168,10 @@ You must update the `appsettings.json` file in both samples as described below.
 
 # [C#](#tab/csharp)
 
-1. From the github repository clone the sample you want to work with:
+1. From the GitHub repository clone the sample
  [SSO with Simple Skill Consumer and Skill][cs-auth-sample]
 
- 1. Open the the `SkillBot` project `appsettings.json` file. From the saved file, assign the following values:
+ 1. Open the `SkillBot` project `appsettings.json` file. From the saved file, assign the following values:
 
     ```json
     {
@@ -181,7 +181,7 @@ You must update the `appsettings.json` file in both samples as described below.
         "AllowedCallers": [ "<RootBot registration app ID>" ]
     }
 
-1. Open the the `RootBot` project `appsettings.json` file. From the saved file, assign the following values:
+1. Open the `RootBot` project `appsettings.json` file. From the saved file, assign the following values:
 
     ```json
     {
@@ -248,10 +248,10 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
     "SkillEndpoint": "http://localhost:39783/api/messages"
 ```
 > [!NOTE]
-> These settings imply that, with both `RootBot` and `SkillBot` running on the local machine, the emulator communicates with `RootBot` on port 3978 and `RootBot` communicates with `SkillBot` on port 39783.
+> These settings imply that, with both `RootBot` and `SkillBot` are running on the local machine. The emulator communicates with `RootBot` on port 3978 and `RootBot` communicates with `SkillBot` on port 39783. As soon as you start debugging, two default browser windows open. One on port 3978 and the other on port 39783.
 
 1. Start the emulator.
-1. You will need to provide your `RootBot` app ID and password when you connect to the bot.
+1. You need to provide your `RootBot` registration app ID and password when you connect to the bot.
 1. Type `hi` to start the conversation.
 1. Enter **login**.  The `RootBot` will display a *Sign In to AAD* authentication card.
 
@@ -288,6 +288,7 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
     "SkillHostEndpoint": "https://<your root bot deployed name>.azurewebsites.net/api/skills"
     "SkillEndpoint": "https://<your skill bot deployed name>.azurewebsites.net/api/messages"
     ````
+
 1. In your browser, navigate to the [Azure portal][azure-portal].
 1. Open your root bot registration. In the left, pane click **Test in Web Chat**. The dialog window with you root bot is displayed with the bot greeting message.
 1. Start the conversation with the bot by entering *hello* for example. The bot will echo your message back.
