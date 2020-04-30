@@ -40,7 +40,7 @@ Using the new adaptive dialog architecture provided in the Bot Framework SDK mak
 
 ### Conditions
 
-All triggers contain a `Condition` property that, when defined, must be met in order for the trigger to execute. The `Condition` property is a string, but must contain a valid [adaptive expression][4] to work. Adaptive expressions enable sophisticated conditions that can enabled virtually any scenario that you might have. If the condition evaluates to false, processing of the event continues with the next trigger. Some triggers have built in conditions as listed in the table that appears in the [Trigger types](#-trigger-types) section below, however you can still define your own conditions in addition to the built in condition.
+All triggers contain a `Condition` property that, when defined, must be met in order for the trigger to execute. The `Condition` property is a string, but must contain a valid [adaptive expression][4] to work. Adaptive expressions enable sophisticated conditions that can enabled virtually any scenario that you might have. If the condition evaluates to false, processing of the event continues with the next trigger. Some triggers have built in conditions as listed in the table that appears in the [Trigger types](#trigger-types) section below, however you can still define your own conditions in addition to the built in condition.
 
 ### Actions
 
