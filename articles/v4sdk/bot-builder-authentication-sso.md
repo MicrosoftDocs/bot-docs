@@ -327,6 +327,11 @@ The following time-sequence diagram applies to the samples used in the article a
 1. At this point the SSO "dance" comes into play which ends with the **skill token** sent by the **SkillBot** to the **RootBot**.
 1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
 
+To see how the token exchange happens, please refer to the following example:
+
+[!code-csharp[sso-token-exchange](~/../botbuilder-samples/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs
+?range=90-136)]
+
 <!-- Footnote-style links -->
 
 [azure-portal]: https://ms.portal.azure.com
