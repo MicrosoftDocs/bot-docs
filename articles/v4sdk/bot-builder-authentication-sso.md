@@ -333,8 +333,12 @@ The following time-sequence diagram applies to the samples used in the article a
 
 To see how the token exchange happens, please refer to the following example:
 
+# [C#](#tab/csharp)
+
 <!-- Remember to fix the link once the code is published -->
 [!code-csharp[sso-token-exchange](~/../botbuilder-samples-sso/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=90-136)]
+
+---
 
 <!-- Footnote-style links -->
 
