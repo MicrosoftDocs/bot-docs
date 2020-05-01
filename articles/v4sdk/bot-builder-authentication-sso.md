@@ -255,27 +255,26 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
 1. Type `hi` to start the conversation.
 1. Enter **login**.  The `RootBot` will display a *Sign In to AAD* authentication card.
 
-    ![Root login](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
+    ![Root sign in](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
 
 1. Click **Sign In**. The pop-up dialog *Confirm Open URL* is displayed.
 
     ![Root confirm url](media/how-to-auth/auth-bot-test-confirm-url.PNG)
 
-1. Click **Confirm**. You will be logged in and your token is displayed.
-1. Enter **token** to display your token again.
+1. Click **Confirm**. You will be logged in and the `RootBot` token is displayed.
+1. Enter **token** to display the token again.
 
-    ![Root token](media/how-to-auth/auth-bot-sso-test.PNG)
+    ![Root token](media/how-to-auth/auth-bot-sso-test-token.PNG)
 
-1. Once you've signed in, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
-1. Enter **skill login** in the emulator box. You will not be asked to login again. Instead the token is displayed.
+    Now you are ready to communicate with the `SkillBot`. Once you've signed in the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
 
-    ![Skill login](media/how-to-auth/auth-bot-sso-test-skill-login.PNG)
+1. Enter **skill login** in the emulator box. You will not be asked to login again. Instead the SkillBot token is displayed.
 
-1. Go ahead enter **skill token**. Again you get the same token.
+1. Go ahead enter **skill token** to display the token again.
 
      ![Skill token](media/how-to-auth/auth-bot-sso-test-skill-token.PNG)
 
-1. Now you can enter **skill logout** to sign out of `SkillBot`. Then enter **logout** to sign out of `SimpleRootBoot`.
+1. Now you can enter **skill logout** to sign out of the `SkillBot`. Then enter **logout** to sign out of the `SimpleRootBoot`.
 
 # [Web Chat](#tab/wct)
 
@@ -291,21 +290,26 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
 
 1. In your browser, navigate to the [Azure portal][azure-portal].
 1. Open your root bot registration. In the left, pane click **Test in Web Chat**. The dialog window with you root bot is displayed with the bot greeting message.
-1. Start the conversation with the bot by entering *hello* for example. The bot will echo your message back.
+1. Start the conversation with the bot by entering *hi* for example. The bot will echo your message back.
 1. Enter **login**. The `RootBot` will display a *Sign In to AAD* authentication card.
 
-    ![Skill loign](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
+    ![Skill sign in](media/how-to-auth/auth-bot-sso-test-webchat-root-signin.PNG)
 
 1. Click **Sign In**. A web page with a validation code is displayed.
-1. Copy the code and enter in the input box to complete the sign in. The root bot identity token is displayed. Now you are ready to communicate with the `SkillBot`.
-1. Enter **skill login**.  A dialog is displayed asking you to give access permissions to the skill bot.
+1. Copy the code and enter in the input box to complete the sign in. The `RootBot` token is displayed.
+1. Enter **token** to display the token again.
 
-    ![Skill loign](media/how-to-auth/auth-bot-sso-test-webchat-permissions-requested.PNG)
+    ![Root token](media/how-to-auth/auth-bot-sso-test-webchat-token.PNG)
 
-1. Click **Accept**. The skill bot identity token is displayed.
-1. Go ahead and enter **skill token** to display the token again.
+    Now you are ready to communicate with the `SkillBot`. Once you've signed in the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
+
+1. Enter **skill login**.  The SkillBot token is displayed.
+
+    ![Skill token](media/how-to-auth/auth-bot-sso-test-webchat-skill-token.PNG)
+
+1. Go ahead enter **skill token** to display the token again.
 This tells you that you are communicating with the `SkillBot` without the need to sign in again. SSO in action!
-1. Now you can enter **skill logout** to sign out of `SkillBot`. Then enter **logout** to sign out of `SimpleRootBoot`.
+1. Now you can enter **skill logout** to sign out of the `SkillBot`. Then enter **logout** to sign out of the `SimpleRootBoot`.
 
 ---
 
