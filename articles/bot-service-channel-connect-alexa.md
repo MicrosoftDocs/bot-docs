@@ -95,7 +95,7 @@ You can configure your bot to communicate with people using Alexa devices that s
 
 9. In the Alexa Portal navigate to the **Endpoint** section on the left hand menu.  Select **HTTPS** as the **Service Endpoint Type** and set the **Default Region** endpoint to the **Alexa Service Endpoint URI** value copied from the Bot Framework Alexa Configuration page.
 
-10. In the drop down underneath the text box where you have defined your endpoint, you need to select the type of certificate being used. Choose **My development endpoint has a certificate from a trusted certificate authority**.
+10. In the drop down underneath the text box where you have defined your endpoint, you need to select the type of certificate being used. Choose **My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority**.
 
 ![Skill template](./media/channels/alexa-endpoint.PNG)
 
