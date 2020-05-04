@@ -270,7 +270,7 @@ Each one-of variation can include multiline text enclosed in triple quotes.
     ```
 ```
 
-Multiline variation can request template expansion and entity substitution by enclosing the requested operation in curly brackets - ${}.
+Multiline variation can request template expansion and entity substitution by enclosing the requested operation in braces, ${}.
 
 ```markdown
 # MultiLineExample
