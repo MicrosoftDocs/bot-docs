@@ -12,7 +12,7 @@ ms.date: 05/16/2020
 
 # .lg file format
 
-.lg files help describe Language Generation templates with entity references and their composition. This document covers the various concepts expressed via the .lg file format.
+.lg files help describe language generation templates with entity references and their composition. This document covers the various concepts expressed via the .lg file format.
 
 <!--
 **Concepts:**
