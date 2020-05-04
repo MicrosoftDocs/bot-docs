@@ -57,7 +57,7 @@ Use **\\** as an escape character.
 
 ## Templates
 
-At the core of Language Generation system is the concept of a template. Each template has a name and one of the following:
+At the core of the language generation system is the concept of a template. Each template has a name and one of the following:
 
 - list of one-of variation text values
 - structured content definition
