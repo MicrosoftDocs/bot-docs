@@ -48,14 +48,14 @@ Triggers = new List<OnCondition>()
 
 [Recognizers][8] extract meaningful pieces of information from a user's input in the form of _intents_ and _entities_ and when they do, they emit events. For example the `recognizedIntent` event fires when the recognizer picks up an intent (or extracts entities) from a given user utterance. You handle these events using the _recognizer event triggers_.
 
-| Event cause               | Trigger name       | Base class    | Description                                                       |
-| ------------------------- | -------------------- | ------------- | ----------------------------------------------------------------- |
-| Assign entity to property | OnAssignEntity       | OnDialogEvent | Triggered to assign an entity to a property.                      |
-| Choose entity             | OnChooseEntity       | OnDialogEvent | Occurs when there are multiple possible resolutions of an entity. |
-| Choose Intent | OnChooseIntent | OnIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
-| Intent recognized         | [OnIntent](#Recognizer-trigger-examples)| OnDialogEvent | Actions to perform when specified intent is recognized.           |
-|QnAMatch intent|OnQnAMatch|OnDialogEvent|This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
-|Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)|OnDialogEvent| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
+| Event cause               | Trigger name  | Base event    | Base class    | Description                                                       |
+| ------------------------- | ------------- | ------------- | ------------- | ----------------------------------------------------------------- |
+| Assign entity to property | OnAssignEntity| RecognizedIntent | OnDialogEvent | Triggered to assign an entity to a property.                      |
+| Choose entity             | OnChooseEntity| RecognizedIntent | OnDialogEvent | Occurs when there are multiple possible resolutions of an entity. |
+| Choose Intent | OnChooseIntent |ChooseIntent | OnDialogEvent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
+| Intent recognized| [OnIntent](#Recognizer-trigger-examples)| RecognizedIntent | OnDialogEvent | Actions to perform when specified intent is recognized.           |
+|QnAMatch intent|OnQnAMatch| RecognizedIntent |OnDialogEvent|This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
+|Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)| UnknownIntent |OnDialogEvent| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
 
 #### Recognizer trigger examples
 
@@ -117,20 +117,32 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 
 ### Dialog events
 
-| Event cause         | Base event   | Trigger name     | Base class    | Description                                                                    |
-| ------------------- | ------------ | ---------------- | ------------- | ------------------------------------------------------------------------------ |
-| Dialog started      | BeginDialog  | OnBeginDialog    | OnDialogEvent | Actions to perform when this dialog begins.                                    |
-| Dialog cancelled    |RepromptDialog| OnCancelDialog   | OnDialogEvent | Actions to perform on cancel dialog event (when this dialog ends).             |
-| Choose Property     | CancelDialog | OnChooseProperty | OnDialogEvent | This event occurs when there are multiple possible entity to property mappings.|
-| Actions processed   | EndOfActions | OnEndOfActions   | OnDialogEvent | This event occurs once all actions and ambiguity events have been processed.   |
-| An error occurred   | Error        | OnError          | OnDialogEvent | Action to perform when an 'Error' dialog event occurs.                         |
-| Re-prompt for input |RepromptDialog| OnRepromptDialog | OnDialogEvent | Actions to perform when 'RepromptDialog' event occurs.                         |
+The dialog triggers handle dialog specific events which are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the bot framework SDK.
+
+> You should use _dialog triggers_ to:
+>
+> * Take action immediately when the dialog starts, even before the recognizer is called.
+> * Take actions when a "cancel" event occurs.
+> * Take actions on messages received or sent.
+> * Evaluate and take action based on the content of an incoming activity.
+
+| Event cause         | Trigger name     | Base event   | Base class    | Description                                                                    |
+| ------------------- | ---------------- | ------------ | ------------- | ------------------------------------------------------------------------------ |
+| Dialog started      | OnBeginDialog    | BeginDialog  | OnDialogEvent | Actions to perform when this dialog begins.                                    |
+| Dialog cancelled    | OnCancelDialog   |RepromptDialog| OnDialogEvent | Actions to perform on cancel dialog event (when this dialog ends).             |
+| Choose Property     | OnChooseProperty | CancelDialog | OnDialogEvent | This event occurs when there are multiple possible entity to property mappings.|
+| Actions processed   | OnEndOfActions   | EndOfActions | OnDialogEvent | This event occurs once all actions and ambiguity events have been processed.   |
+| An error occurred   | OnError          | Error        | OnDialogEvent | Action to perform when an 'Error' dialog event occurs.                         |
+| Re-prompt for input | OnRepromptDialog |RepromptDialog| OnDialogEvent | Actions to perform when 'RepromptDialog' event occurs.                         |
 
 <!--| Clear Property      |  | OnClearProperty  | OnDialogEvent | This event occurs any time a property needs to be be cleared.                  |-->
 
-### Dialog event trigger examples
+> [!TIP]
+> Most dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-examples) or a [prompt for user input][14] etc.
 
-This sample demonstrates the `OnBeginDialog` trigger.
+#### Dialog event trigger example
+
+This example demonstrates sending a welcome message to the user, using the `OnBeginDialog` trigger.
 
 ```cs
 var adaptiveDialog = new AdaptiveDialog()
@@ -152,7 +164,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 Activity triggers enable you to associate actions to any incoming activity from the client, more information on activities can be found in [Bot Framework Activity schema][3].
 
-All activity events have a base event of `ActivityReceived` and are further refined by ActivityType.
+All activity events have a base event of `ActivityReceived` and are further refined by ActivityType. The _Base class_ is the class that the trigger derives from.
 
 | Event cause         | ActivityType | Trigger name                 | Base class | Description                                                                       |
 | ------------------- | ------------ | ---------------------------- | ---------- | --------------------------------------------------------------------------------- |
@@ -187,6 +199,8 @@ var myDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 ### Message events
 
+**Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
+
 Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by ActivityType.
 
 | Event cause      | ActivityType    | Trigger name             | Base class | Description                                                                                         |
@@ -202,14 +216,94 @@ Message events are a type of activity event and as such, all message events have
 
 ### Custom events
 
-You can create your own custom event handler that will work with your adaptive dialogs. This is used in conjunction with the [EmitEvent][13] action that enables you to fire your own custom events that you handle with the `OnDialogEvent` trigger.
+You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is the `OnDialogEvent` trigger that in effect becomes a custom trigger when you set the `Event` property to the same value as the EmitEvent's `EventName` property.
 
-| Event cause  | Trigger name  | Base class  | Description                                                                                                   |
-| ------------ | ------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
-| Custom event | OnDialogEvent | OnCondition | Actions to perform when a custom event is detected. Use 'Emit a custom event' action to raise a custom event. |
+> [!TIP]
+> You can allow other dialogs in your bot to handle your custom event by setting the EmitEvent's `BubbleEvent` property to true.
+
+| Event cause  | Trigger name  | Base event          | Base class  | Description                                                                                                   |
+| ------------ | ------------- | ------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
+| Custom event | OnDialogEvent | See [EmitEvent][13] | OnCondition | Actions to perform when a custom event is detected. Use 'Emit a custom event' action to raise a custom event. |
 
 <!--Was: OnCustomEvent-->
-<!--TODO: Need an OnCustomEvent example-->
+
+#### Custom event example
+
+```csharp
+var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
+    {
+        Generator = new TemplateEngineLanguageGenerator(),
+        Triggers = new List<OnCondition>()
+        {
+            new OnUnknownIntent()
+            {
+                Actions = new List<Dialog>()
+                {
+                    new TextInput()
+                    {
+                        Prompt = new ActivityTemplate("What's your name?"),
+                        Property = "user.name",
+                        AlwaysPrompt = true,
+                        OutputFormat = "toLower(this.value)"
+                    },
+                    new EmitEvent()
+                    {
+                        EventName = "contoso.custom",
+                        EventValue = "=user.name",
+                        BubbleEvent = true,
+                    },
+                    new SendActivity("Your name is ${user.name}"),
+                    new SendActivity("And you are ${$userType}")
+                }
+            },
+            new OnDialogEvent()
+            {
+                Event = "contoso.custom",
+                
+                // You can use conditions (expression) to examine value of the event as part of the trigger selection process.
+                Condition = "turn.dialogEvent.value && (substring(turn.dialogEvent.value, 0, 1) == 'v')",
+                Actions = new List<Dialog>()
+                {
+                    new SendActivity("In custom event: '${turn.dialogEvent.name}' with the following value '${turn.dialogEvent.value}'"),
+                    new SetProperty()
+                    {
+                        Property = "$userType",
+                        Value = "VIP"
+                    }
+                }
+            },
+            new OnDialogEvent()
+            {
+                Event = "contoso.custom",
+
+                // You can use conditions (expression) to examine value of the event as part of the trigger selection process.
+                Condition = "turn.dialogEvent.value && (substring(turn.dialogEvent.value, 0, 1) == 's')",
+                Actions = new List<Dialog>()
+                {
+                    new SendActivity("In custom event: '${turn.dialogEvent.name}' with the following value '${turn.dialogEvent.value}'"),
+                    new SetProperty()
+                    {
+                        Property = "$userType",
+                        Value = "Special"
+                    }
+                }
+            },
+            new OnCustomEvent()
+            {
+                Event = "contoso.custom",
+                Actions = new List<Dialog>()
+                {
+                    new SendActivity("In custom event: '${turn.dialogEvent.name}' with the following value '${turn.dialogEvent.value}'"),
+                    new SetProperty()
+                    {
+                        Property = "$userType",
+                        Value = "regular customer"
+                    }
+                }
+            }
+        }
+    };
+```
 
 ## Additional Information
 
@@ -230,3 +324,4 @@ You can create your own custom event handler that will work with your adaptive d
 [11]:bot-builder-adaptive-dialog-recognizer.md#Cross-Trained-Recognizer
 [12]:bot-builder-adaptive-dialog-recognizer.md#QnAMaker-Recognizer
 [13]:bot-builder-adaptive-dialog-Actions.md#EmitEvent
+[14]:bot-builder-adaptive-dialog-input.md
