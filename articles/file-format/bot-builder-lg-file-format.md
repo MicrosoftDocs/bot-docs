@@ -341,7 +341,7 @@ If the strict option is on, null errors will throw a friendly message.
 
 If name is null, the diagnostic would be: `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.`
 
-If the strict is set to false or not set, a compatible result will be given. The above sample would produce *hi null*.
+If strict is set to false or not set, a compatible result will be given. The above sample would produce `hi null`.
 
 ## Additional Resources
 
