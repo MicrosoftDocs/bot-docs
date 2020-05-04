@@ -11,7 +11,7 @@ ms.date: 05/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Language Generation ***_[PREVIEW]_***
+# Language Generation
 
 <!-- See [here](#Change-Log) for what's new in **4.8.0 RC1** release.-->
 
