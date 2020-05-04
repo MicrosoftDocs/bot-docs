@@ -288,7 +288,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
                     }
                 }
             },
-            new OnCustomEvent()
+            new OnDialogEvent()
             {
                 Event = "contoso.custom",
                 Actions = new List<Dialog>()
