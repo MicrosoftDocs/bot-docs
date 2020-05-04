@@ -40,7 +40,7 @@ ms.date: 05/16/2020
 
 ### Comments
 
-Comments are prefixed with the **>** character. All lines that have this prefix will be skipped by the parser.
+Use **>** to create a comment. All lines that have this prefix will be skipped by the parser.
 
 ```markdown
 > This is a comment.
