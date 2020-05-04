@@ -343,8 +343,8 @@ To see how the token exchange happens, please refer to the following example:
 ## Further reading
 
 - [Single sign on](bot-builder-concept-sso.md) background information
-- [Identity providers](bot-builder-concept-identity-providers.md) perform user authentication as a service
-- [Bot authentication](bot-builder-concept-authentication.md) bot accessing secured online resources on behalf of the user
+- [Identity providers](bot-builder-concept-identity-providers.md) are user authentication as a service
+- [Bot authentication](bot-builder-concept-authentication.md) for accessing secured online resources on behalf of the user
 
 <!-- Footnote-style links -->
 
