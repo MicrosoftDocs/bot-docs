@@ -55,6 +55,7 @@ Make sure you include the language Generation library [`botbuilder-lg`][15]. The
 ```typescript
      let lgTemplates = Templates.parseFile(filePath, importResolver?);
 ```
+---
 
 When you need template expansion, use `Evaluate` and pass in the relevant template nam.
 
@@ -69,6 +70,7 @@ When you need template expansion, use `Evaluate` and pass in the relevant templa
 ```typescript
     let lgOutput = lgTemplates.evaluate("<TemplateName>", evalData)
 ```
+---
 
 If your template needs specific properties to be passed for resolution/ expansion, you can pass them in on the call to `Evaluate`
 
@@ -83,14 +85,15 @@ If your template needs specific properties to be passed for resolution/ expansio
 ```typescript
     let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
+---
 
 ## Multi-lingual generation and language fallback policy
 
 Your bot might target more than one spoken or display language. You can manage separate instances of TemplateEngine, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add language fallback to your bot.
-<!--
-## Grammar check and correction
 
-The current library does not include any capabilities for grammar check or correction-->
+<!--
+## Grammar check and correction 
+The current library does not include any capabilities for grammar check or correction- ->
 
 ## Expand API
 
@@ -138,18 +141,6 @@ The call `ExpandTemplate("FinalGreeting")` results in four evaluations:
 - **Hello Evening**
 
 The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` with scope, results in two expansions: **Hi Evening** and **Hello Evening**.
-
-## Packages
-
-Preview packages:
-
-- C# -> [NuGet][14]
-- JS -> [npm][15]
-<!--
-Nightlies:
-
-- C# -> [BotBuilder MyGet feed][12]
-- JS -> [BotBuilder MyGet feed][13]-->
 
 ## Additional resources
 
