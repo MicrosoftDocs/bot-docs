@@ -306,7 +306,7 @@ To aid with contextual reusability, templates can be parametrized. Different cal
 
 ## Importing external references
 
-You may want to break the Language Generation templates into separate files and refer them from one another for organizational and reusability purposes. You can use Markdown-style links to import templates defined in another file.
+You can split your language generation templates into separate files and reference a template from one file in another. You can use Markdown-style links to import templates defined in another file.
 
 ```markdown
 [Link description](filePathOrUri)
