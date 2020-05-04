@@ -1,5 +1,5 @@
 ---
-title: How to write a skill manifest | Microsoft Docs
+title: How to write a v2.1 skill manifest | Microsoft Docs
 description: Learn how to a Bot Framework skill manifest.
 keywords: skills, manifest
 author: JonathanFingold
