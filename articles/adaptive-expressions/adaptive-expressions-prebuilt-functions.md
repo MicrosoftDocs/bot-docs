@@ -1,5 +1,5 @@
 ---
-title: Adaptive expressions prebuilt functions - Bot Service
+title: Adaptive expressions pre-built functions  - Bot Service
 description: Adaptive expressions prebuilt functions reference
 keywords: adaptive expressions, prebuilt functions, reference
 author: kamrani
@@ -11,9 +11,9 @@ ms.date: 05/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Adaptive expressions prebuilt functions
-
-This document lists the available prebuilt functions ordered by their general purpose. Prebuilt expressions are divided into the following categories:
+# Adaptive expressions pre-built functions ***_[PREVIEW]_***
+This document lists the available prebuilt functions ordered by their general purpose,
+or you can browse the functions based on [alphabetical order](#alphabetical-list).
 
 - [String functions](#string-functions)
 - [Collection functions](#collection-functions)
@@ -22,193 +22,185 @@ This document lists the available prebuilt functions ordered by their general pu
 - [Math functions](#math-functions)
 - [Date and time functions](#date-and-time-functions)
 
-You can also view the list in [alphabetical order](#add).
-
 ### String functions
-
 |Function	|Explanation|
 |-----------|-----------|
-|[length](#length)|Return the length of a string.|
-|[replace](#replace)|Replace a substring with the specified string and return the updated string. This function is case-sensitive.|
-|[replaceIgnoreCase](#replaceIgnoreCase)|	Replace a substring with the specified string, and return the updated string. This function is case-insensitive.|
-|[split](#split)	|Return an array that contains substrings based on the delimiter specified.|
-|[substring](#substring)|Return characters from a string. Substring(sourceString, startPos, endPos). startPos cannot be less than 0. endPos greater than the length of the source string will be taken as the max length of the string.|
-|[toLower](#toLower)|Convert a string to all lowercase characters.|
-|[toUpper](#toUpper)|Convert a string to all uppercase characters.|
-|[trim](#trim)|Removes leading and trailing white spaces from a string.|
-|[addOrdinal](#addOrdinal)|Return the ordinal number of the input number.|
-|[endsWith](#endsWith)|Check whether a string ends with a specific substring. Return true when the substring is found, or return false when not found. This function is case-insensitive.|
-|[startsWith](#startsWith)|Check whether a string starts with a specific substring. Return true when the substring is found, or return false when not found. This function is case-insensitive.|
-|[countWord](#countWord)|Return the number of words in the given string.|
-|[concat](#concat)|Combine two or more strings and return the resulting string.|
-|[newGuid](#newGuid)|Return a new Guid string.|
-|[indexOf](#indexOf)|Return the starting position or index value for a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
-|[lastIndexOf](#lastIndexOf)|Return the starting position or index value for the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
+|[length](#length)| Returns the length of a string |
+|[replace](#replace)| Replace a substring with the specified string, and return the updated string. case sensitive|
+|[replaceIgnoreCase](#replaceIgnoreCase)|	Replace a substring with the specified string, and return the updated string. Case in-sensitive	|
+|[split](#split)	|Returns an array that contains substrings based on the delimiter specified.|
+|[substring](#substring) |Returns characters from a string. Substring(sourceString, startPos, endPos). startPos cannot be less than 0. endPos greater than source strings length will be taken as the max length of the string	|
+|[toLower](#toLower) |Convert a string to all lower case characters |
+|[toUpper](#toUpper) |Convert a string to all upper case characters |
+|[trim](#trim) |Remove leading and trailing white spaces from a string |
+|[addOrdinal](#addOrdinal) | Return the ordinal number of the input number |
+|[endsWith](#endsWith) | Check whether a string ends with a specific substring. Return true when the substring is found, or return false when not found. This function is not case-sensitive. |
+|[startsWith](#startsWith) |Check whether a string starts with a specific substring. Return true when the substring is found, or return false when not found. This function is not case-sensitive. |
+|[countWord](#countWord)| Return the number of words in the given string |
+|[concat](#concat) | Combine two or more strings and return the resulting string |
+|[newGuid](#newGuid) | Return a new Guid string|
+|[indexOf](#indexOf)| Return the starting position or index value for a substring. Or Searches for the specified object and returns the zero-based index of the first occurrence within the entire list. This function is not case-sensitive, and indexes start with the number 0.|
+|[lastIndexOf](#lastIndexOf)| Return the starting position or index value for the last occurrence of a substring. Or searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the list.This function is not case-sensitive, and indexes start with the number 0. |
 
 ### Collection functions
-
 |Function	|Explanation|
 |-----------|-----------|
-|[contains](#contains)	|Works to find an item in a string, to find an item in an array, or to find a parameter in a complex object. <br> **Examples**: <br> contains('hello world', 'hello')<br> contains(createArray('1','2'), '1')<br> contains(json("{'foo':'bar'}"), 'foo')|
-|[empty](#empty)|Check if the collection is empty.|
-|[first](#first)|Return the first item from the collection.|
-|[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter. join(collection, delimiter). <br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
-|[last](#last) |Return the last item from the collection.|
-|[count](#count)|Return the number of items in the collection.|
-|[foreach](#foreach)|Operate on each element and return the new collection.|
-|[union](#union)|Return a collection that has all the items from the specified collections.|
-|[skip](#skip)|Remove items from the front of a collection, and return the remaining items.|
-|[take](#take)|Return items from the front of a collection.|
-|[intersection](#intersection)|Return a collection that has only the common items across the specified collections.|
-|[subArray](#subArray)|Return a sub-array from specified start and end position. Index values start with the number 0.|
-|[select](#select)|Operate on each element and return the new collection of transformed elements.|
-|[where](#where)|Filter on each element and return the new collection of filtered elements which match the specific condition.|
-|[sortBy](#sortBy)|Sort elements in the collection in ascending order and return the sorted collection.|
-|[sortByDescending](#sortByDescending)|Sort elements in the collection in descending order and return the sorted collection.|
-|[indicesAndValues](#indicesAndValues)|Turn an array or object into an array of objects with index and value property.|
-|[flatten](#flatten)|Flatten arrays into an array with non-array values.|
-|[unique](#unique)|Remove all duplicates from an array.|
+|[contains](#contains)	|Works to find an item in a string or to find an item in an array or to find a parameter in a complex object. E.g. contains('hello world', 'hello'); contains(createArray('1','2'), '1'); contains(json("{'foo':'bar'}"), 'foo')	|
+|[empty](#empty)	|Check if the collection is empty	|
+|[first](#first)	|Returns the first item from the collection	|
+|[join](#join) 	|Return a string that has all the items from an array and has each character separated by a delimiter. Join(collection, delimiter). Join(createArray('a','b'), '.') = "a.b"	|
+|[last](#last) 	|Returns the last item from the collection	|
+|[count](#count)	|Returns the number of items in the collection	|
+|[foreach](#foreach)	|Operate on each element and return the new collection	|
+|[union](#union) | Return a collection that has all the items from the specified collections |
+|[skip](#skip) | Remove items from the front of a collection, and return *\all the other* items |
+|[take](#take) | Return items from the front of a collection |
+|[intersection](#intersection) | Return a collection that has only the common items across the specified collections |
+|[subArray](#subArray) | Returns a sub-array from specified start and end position. Index values start with the number 0. |
+|[select](#select) | Operate on each element and return the new collection of transformed elements |
+|[where](#where) | Filter on each element and return the new collection of filtered elements which match specific condition |
+|[sortBy](#sortBy) | Sort elements in the collection with ascending order and return the sorted collection |
+|[sortByDescending](#sortByDescending) | Sort elements in the collection with descending order and return the sorted collection |
+|[indicesAndValues](#indicesAndValues) | Turned an array or object into an array of objects with index and value property |
+|[flatten](#flatten) | Flatten arrays into an array with non-array values |
+|[unique](#unique) | Remove all duplicates from an array |
 
 ### Logical comparison functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[and](#and)|Logical and. Return true if all specified expressions evaluate to true.|
-|[equals](#equals)|Comparison equal. Return true if specified values are equal.|
-|[greater](#greater)|Comparison greater than. Return true when the first value is more, or return false when less.|
-|[greaterOrEquals](#greaterOrEquals)|Comparison greater than or equal to. Return true when the first value is greater or equal, or return false when the first value is less.|
-|[if](#if)|Check whether an expression is true or false. Based on the result, return a specified value.|
-|[less](#less)|	Comparison less than opearation. Return true when the first value is less, or return false when the first value is more.|
-|[lessOrEquals](#lessOrEquals)|	Comparison less than or equal operation. Return true when the first value is less than or equal, or return false when the first value is more.|
-|[not](#not)|	Logical not opearator. Return true when the expression is false, or return false when true.|
-|[or](#or)|Logical or opearation. Return true when at least one expression is true, or return false when all are false.|
-|[exists](#exists)|Evaluate an expression for truthiness.|
+|[and](#and)	|Logical and. Returns true if all specified expressions evaluate to true.	|
+|[equals](#equals)	|Comparison equal. Returns true if specified values are equal	|
+|[greater](#greater)	|Comparison greater than	|
+|[greaterOrEquals](#greaterOrEquals)	| Comparison greater than or equal to. greaterOrEquals(exp1, exp2)	|
+|[if](#if)	| if(exp, valueIfTrue, valueIfFalse)	|
+|[less](#less)	|	Comparison less than opearation|
+|[lessOrEquals](#lessOrEquals)	|	Comparison less than or equal operation|
+|[not](#not)	|	Logical not opearator|
+|[or](#or)	| Logical OR opearation.	|
+|[exists](#exists) | Evaluates an expression for truthiness |
 
 ### Conversion functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[float](#float)|Return the floating point representation of the specified string or the string itself if conversion isn't possible.|
-|[int](#int)|Return the integer representation of the specified string or the string itself if conversion isn't possible.|
-|[string](#string)|Return the string version of the specified value.|
-|[bool](#bool)|Return the Boolean representation of the specified string.|
-|[createArray](#createArray)|Create an array from multiple inputs.|
-|[json](#json) |Return the JavaScript Object Notation (JSON) type value or object for a string or XML.|
-|[base64](#base64)|Return the base64-encoded version for a string or byte array.|
-|[base64ToBinary](#base64ToBinary)|Return the binary version for a base64-encoded string.|
-|[base64ToString](#base64ToString)|Return the string version of a base64-encoded string.|
-|[binary](#binary)|Return the binary version for an input value.|
-|[dataUri](#dataUri)|Return the URI for an input value.|
-|[dataUriToBinary](#dataUriToBinary)|Return the binary version of a data URI.|
-|[dataUriToString](#dataUriToString)|Return the string version of a data URI.|
-|[uriComponent](#uriComponent)|Return the URI-encoded version for an input value by replacing URL-unsafe characters with escape characters.|
-|[uriComponentToString](#uriComponentToString)|Return the string version of a URI-encoded string.|
-|[xml](#xml)|C# only. Return the XML version for a string.|
+|[float](#float)	|Return floating point representation of the specified string or the string itself if conversion is not possible	|
+|[int](#int)	|Return integer representation of the specified string or the string itself if conversion is not possible	|
+|[string](#string)	|Return string version of the specified value	|
+|[bool](#bool)	|Return Boolean representation of the specified string. Bool('true'), bool(1)	|
+|[createArray](#createArray)	|Create an array from multiple inputs	|
+|[json](#json)  | Return the JavaScript Object Notation (JSON) type value or object for a string or XML.    |
+|[base64](#base64) | Return the base64-encoded version for a string or byte array. |
+|[base64ToBinary](#base64ToBinary) | Return the binary version for a base64-encoded string. |
+|[base64ToString](#base64ToString) | Return thr string version for a base64-encoded string. |
+|[binary](#binary) | Return the binary version for an input value. |
+|[dataUri](#dataUri) | Return the URI for an input value. |
+|[dataUriToBinary](#dataUriToBinary) | Return the binary version of a data URI. |
+|[dataUriToString](#dataUriToString) | Return the string version of a data URI. |
+|[uriComponent](#uriComponent) | Return the URI-encoded version for an input value by replacing URL-unsafe characters with escape characters. |
+|[uriComponentToString](#uriComponentToString) | Return the string version for a URI-encoded string. |
+|[xml](#xml) | [C# only] Return the XML version for a string. |
 
 ### Math functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[add](#add)|Mathematical and. Return the result from adding two numbers.|
-|[div](#div)|Mathematical division.	Return the integer result from dividing two numbers.|
-|[max](#max)|Return the largest value from a collection.|
-|[min](#min)|Return the smallest value from a collection.|
-|[mod](#mod)|Return the remainder from dividing two numbers.|
-|[mul](#mul)|Mathematical multiplication. Return the product from multiplying two numbers.|
-|[rand](#rand)|Return a random number between specified min and max value.|
-|[sub](#sub)|Mathematical subtraction. Return the result from subtracting the second number from the first number.|
-|[sum](#sum)|Return the sum of numbers in an array.|
-|[range](#range)|Return an integer array that starts from a specified integer.|
-|[exp](#exp)|Return exponentiation of one number to another.|
-|[average](#average)|Return the average number of an numeric array.|
+|[add](#add)	|Mathematical and. Accepts two parameters	|
+|[div](#div)	|Mathematical division	|
+|[max](#max)	|Returns the largest value from a collection	|
+|[min](#min)	|Returns the smallest value from a collection	|
+|[mod](#mod)	|Returns remainder from dividing two numbers	|
+|[mul](#mul)	|Mathematical multiplication	|
+|[rand](#rand)	|Returns a random number between specified min and max value – rand(\<minValue\>, \<maxValue\>)	|
+|[sub](#sub)	|Mathematical subtraction	|
+|[sum](#sum)	|Returns sum of numbers in an array	|
+|[range](#range) | Return an integer array that starts from a specified integer. |
+|[exp](#exp)	|Exponentiation function. Exp(base, exponent)	|
+|[average](#average)	| Return the average number of an numeric array.	|
 
 ### Date and time functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[addDays](#addDays)|Add a number of specified days to a given timestamp.|
-|[addHours](#addHours)|Add a specified number of hours to a given timestamp.|
-|[addMinutes](#addMinutes)|Add a specified number of minutes to a given timestamp.|
-|[addSeconds](#addSeconds)|Add a specified number of seconds to a given timestamp.|
-|[dayOfMonth](#dayOfMonth)|Return the day of a month for a given timestamp or timex expression.|
-|[dayOfWeek](#dayOfWeek)|Return the day of the week for a given timestamp.|
-|[dayOfYear](#dayOfYear)|Return the day of the year for a given timestamp.|
-|[formatDateTime](#formatDateTime)|Return a timestamp in the specified format.|
-|[subtractFromTime](#subtractFromTime)|Subtract a number of time units from a timestamp.|
-|[utcNow](#utcNow)|Return the current timestamp as string.|
-|[dateReadBack](#dateReadBack)|Use the date-time library to provide a date readback.|
-|[month](#month)|Return the month of given timestamp.|
-|[date](#date)|Return the date for a given timestamp.|
-|[year](#year)|Return the year for the given timestamp.|
-|[getTimeOfDay](#getTimeOfDay)|Return the time of day for a given timestamp. |
-|[getFutureTime](#getFutureTime)|Return the current timestamp plus the specified time units.   |
-|[getPastTime](#getPastTime)|Return the current timestamp minus the specified time units.  |
-|[addToTime](#addToTime)   |Add a number of time units to a timestamp.   |
-|[convertFromUTC](#convertFromUTC) |Convert a timestamp from Universal Time Coordinated(UTC). |
-|[convertToUTC](#convertToUTC) |Convert a timestamp to Universal Time Coordinated (UTC).  |
-|[startOfDay](#startOfDay) |Return the start of the day for a timestamp.|
-|[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp. |
-|[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp.|
-|[ticks](#ticks)   |Return the ticks property value for a specified timestamp.|
+|[addDays](#addDays)	|Add number of specified days to a given timestamp	|
+|[addHours](#addHours)	|Add specified number of hours to a given timestamp	|
+|[addMinutes](#addMinutes)	|Add specified number of minutes to a given timestamp	|
+|[addSeconds](#addSeconds)	|Add specified number of seconds to a given timestamp	|
+|[dayOfMonth](#dayOfMonth)	|Returns day of month for a given timestamp or timex expression.	|
+|[dayOfWeek](#dayOfWeek)	|Returns day of the week for a given timestamp	|
+|[dayOfYear](#dayOfYear)	|Returns day of the year for a given timestamp	|
+|[formatDateTime](#formatDateTime)	|Return a timestamp in the specified format.|
+|[subtractFromTime](#subtractFromTime)	|Subtract a number of time units from a timestamp.|
+|[utcNow](#utcNow)	|Returns current timestamp as string	|
+|[dateReadBack](#dateReadBack)	|Uses the date-time library to provide a date readback. |
+|[month](#month)	|Returns the month of given timestamp	|
+|[date](#date)	|Returns date for a given timestamp	|
+|[year](#year)	|Returns year for the given timestamp	|
+|[getTimeOfDay](#getTimeOfDay)	|Returns time of day for a given timestamp (midnight = 12AM, morning = 12:01AM – 11:59PM, noon = 12PM, afternoon = 12:01PM -05:59PM, evening = 06:00PM – 10:00PM, night = 10:01PM – 11:59PM) 	|
+|[getFutureTime](#getFutureTime) | Return the current timestamp plus a specified time units.    |
+|[getPastTime](#getPastTime) | Return the current timestamp minus a specified time units.   |
+|[addToTime](#addToTime)    | Add a number of time units to a timestamp.    |
+|[convertFromUTC](#convertFromUTC)  | Convert a timestamp from Universal Time Coordinated(UTC).  |
+|[convertToUTC](#convertToUTC)  | Convert a timestamp To Universal Time Coordinated(UTC).   |
+|[startOfDay](#startOfDay)  | Return the start of the day for a timestamp. |
+|[startOfHour](#startOfHour)    | Return the start of the hour for a timestamp.  |
+|[startOfMonth](#startOfMonth)  | Return the start of the month for a timestamp. |
+|[ticks](#ticks)    | Return the ticks property value for a specified timestamp. |
 
 ### URI parsing functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[uriHost](#uriHost)   |Return the host value for a uniform resource identifier (URI).|
-|[uriPath](#uriPath)   |Return the path value for a unifor resource identifier (URI). |
-|[uriPathAndQuery](#uriPathAndQuery)  |Return the path and query values for a uniform resource identifier (URI).  |
-|[uriPort](#uriPort)   |Return the port value for a uniform resource identifier (URI).|
-|[uriQuery](#uriQuery) |Retur0sn the query value for a uniform resouce identifier (URI).|
-|[uriScheme](#uriScheme)|Return the scheme value for a uniform resource identifier(uri).  |
+|[uriHost](#uriHost)    | Return the host value for a uniform resource identifier(URI). |
+|[uriPath](#uriPath)    | Return the path value for a unifor resource identifier(URI).  |
+|[uriPathAndQuery](#uriPathAndQuery)   | Rtuen the path and query values for a uniform resource identifier(URI).   |
+|[uriPort](#uriPort)    | Return the port value for a uniform resource identifier(URI). |
+|[uriQuery](#uriQuery)  | Return the query value for a uniform resouce identifier(URI). |
+|[uriScheme](#uriScheme)| Return the scheme value for a uniform resource identifier(uri).   |
 
 ### Object manipulation and construction functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[addProperty](#addProperty)   |Add a property and its value, or name-value pair, to a JSON object and return the updated object.|
-|[removeProperty](#removeProperty) |Remove a property from JSON object and return the updated object.|
-|[setProperty](#setProperty)   |Set the value for a JSON object's property and return the updated object.|
-|[getProperty](#getProperty)   |Return the value of the given property in a JSON object. |
-|[coalesce](#coalesce) |Return the first non-null value from one or more parameters. |
-|[xPath](#xPath)   |C# only. Check XML for nodes or values that match an XPath(XML Path Language) expression, and return the matching nodes or values.|
-|[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
-|[setPathToValue](#setPathToValue)   |Set the value for a specific path and return the value.|
+|[addProperty](#addProperty)    | Add a property and its value, or name-value pair, to a JSON object abd return the updated object. |
+|[removeProperty](#removeProperty)  | Remove a property from JSON object and retuen the updated object. |
+|[setProperty](#setProperty)    | Set the value for a JSON object's property and return the updated object. |
+|[getProperty](#getProperty)    | Return the value of the given property in a JSON object.  |
+|[coalesce](#coalesce)  | Return the first non-null value from one or more parameters.  |
+|[xPath](#xPath)    | [C# only] Check XML for nodes or values that match an XPath(XML Path Language) expression, and return the matching nodes or values. |
+|[jPath](#jPath)    | Check JSON or JSON string for nodes or value that match a path expression, and return the matching nodes. |
+|[setPathToValue](#setPathToValue)    | Set the value for a specific path and return the value. |
 
 ### Regex functions
-
-|Function|Explanation|
+|Function	|Explanation|
 |-----------|-----------|
-|[isMatch](#isMatch)|Return true if a string matches a common regex pattern.|
+|[isMatch](#isMatch)	|test a given string is match a common regex pattern	|
 
-### Type checking Functions
-
-|Function|Explanation|
+###Type checking Functions
+|Function	|Explanation|
 |-----------|-----------|
-|[isInteger](#isInteger)|Return true if  given input is an integer number|
-|[isFloat](#isFloat)|Return true if the given input is a float point number|
-|[isBoolean](#isBoolean)|Return true if the given input is a Boolean.|
-|[isArray](#isArray)|Return true if the given input is an array.|
-|[isObject](#isObject)|Return true if the given input is an object.|
-|[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format	timestamp.|
-|[isString](#isString)|Return true if the given input is a string.|
+|[isInteger](#isInteger)	| determine whether a given input is an integer number	|
+|[isFloat](#isFloat)	| determine whether a given input is a float point number	|
+|[isBoolean](#isBoolean)	|determine whether a given input is a boolean	|
+|[isArray](#isArray)	|determine whether a given input is an array	|
+|[isObject](#isObject)	|determine whether a given input is an object	|
+|[isDateTime](#isDateTime)	|determine whether a given input is a UTC ISO format	timestamp|
+|[isString](#isString)	|determine whether a given input is a string |
+
+<a name="alphabetical-list"></a>
+
+<a name="add"></a>
 
 ### add
 
 Return the result from adding two numbers.
 
 ```
-add(<summand**1>, <summand**2>)
+add(<summand_1>, <summand_2>)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*summand**1*>, <*summand**2*> | Yes | integer, float, or mixed | The numbers to add |
+| <*summand_1*>, <*summand_2*> | Yes | Integer, Float, or mixed | The numbers to add |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*result-sum*> | integer or float | The result from adding the specified numbers |
+| <*result-sum*> | Integer or Float | The result from adding the specified numbers |
 ||||
 
 *Example*
@@ -219,7 +211,7 @@ This example adds the specified numbers:
 add(1, 1.5)
 ```
 
-And returns the result **2.5**.
+And returns this result: `2.5`
 
 <a name="addDays"></a>
 
@@ -233,14 +225,14 @@ addDays('<timestamp>', <days>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp which must be standard UTC ISO format<br>YYYY-MM-DDTHH:mm:ss.fffZ |
-| <*days*> | Yes | integer | The positive or negative number of days to add |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp which must be standard UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ |
+| <*days*> | Yes | Integer | The positive or negative number of days to add |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The timestamp plus the specified number of days  |
+| <*updated-timestamp*> | String | The timestamp plus the specified number of days  |
 ||||
 
 *Example 1*
@@ -251,7 +243,7 @@ This example adds 10 days to the specified timestamp:
 addDays('2018-03-15T13:00:00.000Z', 10)
 ```
 
-And returns the result **2018-03-25T00:00:00.000Z**.
+And returns this result: `"2018-03-25T00:00:00.000Z"`
 
 *Example 2*
 
@@ -261,7 +253,7 @@ This example subtracts five days from the specified timestamp:
 addDays('2018-03-15T00:00:00.000Z', -5)
 ```
 
-And returns the result **2018-03-10T00:00:00.000Z**.
+And returns this result: `"2018-03-10T00:00:00.000Z"`
 
 <a name="addHours"></a>
 
@@ -275,14 +267,14 @@ addHours('<timestamp>', <hours>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*hours*> | Yes | integer | The positive or negative number of hours to add |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*hours*> | Yes | Integer | The positive or negative number of hours to add |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The timestamp plus the specified number of hours  |
+| <*updated-timestamp*> | String | The timestamp plus the specified number of hours  |
 ||||
 
 *Example 1*
@@ -293,7 +285,7 @@ This example adds 10 hours to the specified timestamp:
 addHours('2018-03-15T00:00:00.000Z', 10)
 ```
 
-And returns the result **2018-03-15T10:00:00.000Z**.
+And returns this result: `"2018-03-15T10:00:00.000Z"`
 
 *Example 2*
 
@@ -303,7 +295,7 @@ This example subtracts five hours from the specified timestamp:
 addHours('2018-03-15T15:00:00.000Z', -5)
 ```
 
-And returns the result **2018-03-15T10:00:00.000Z**.
+And returns this result: `"2018-03-15T10:00:00.000Z"`
 
 <a name="addMinutes"></a>
 
@@ -317,14 +309,14 @@ addMinutes('<timestamp>', <minutes>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*minutes*> | Yes | integer | The positive or negative number of minutes to add |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*minutes*> | Yes | Integer | The positive or negative number of minutes to add |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The timestamp plus the specified number of minutes |
+| <*updated-timestamp*> | String | The timestamp plus the specified number of minutes |
 ||||
 
 *Example 1*
@@ -335,7 +327,7 @@ This example adds 10 minutes to the specified timestamp:
 addMinutes('2018-03-15T00:10:00.000Z', 10)
 ```
 
-And returns the result  **2018-03-15T00:20:00.000Z**.
+And returns this result: `"2018-03-15T00:20:00.000Z"`
 
 *Example 2*
 
@@ -345,7 +337,7 @@ This example subtracts five minutes from the specified timestamp:
 addMinutes('2018-03-15T00:20:00.000Z', -5)
 ```
 
-And returns the result **2018-03-15T00:15:00.000Z**.
+And returns this result: `"2018-03-15T00:15:00.000Z"`
 
 <a name="addOrdinal"></a>
 
@@ -359,12 +351,12 @@ addOrdinal(<number>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*number*>| Yes | integer | The numbers to convert to an ordinal number |
+| <*number*>| Yes | Integer| The numbers to convert to an ordinal number |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*result*> | string | The ordinal number converted from the input number |
+| <*result*> | String | The ordinal number converted from the input number |
 ||||
 
 *Example*
@@ -378,19 +370,14 @@ addOrdinal(22)
 addOrdinal(23)
 ```
 
-And respectively returns these results:
-* **11th**
-* **12th**
-* **13th**
-* **21st**
-* **22nd**
-* **23rd**
+And these return the results:
+`"11th", "12th", "13th", "21st", "22nd", "23rd"`
 
 <a name="addProperty"></a>
 
 ### addProperty
 
-Add a property and its value, or name-value pair, to a JSON object, and return the updated object. If the object already exists at runtime the function throws an error.
+Add a property and its value, or name-value pair, to a JSON object, and return the updated object. If the object already exists at runtime, the function throws an error.
 
 ```
 addProperty('<object>', '<property>', value)
@@ -398,17 +385,17 @@ addProperty('<object>', '<property>', value)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object*> | Yes | object | The JSON object where you want to add a property |
-|<*property*>| Yes | string | The name of the property to add |
-|<*value*>| Yes | any | The value of the property |
+| <*object*> | Yes | Object | The JSON Object where you want to add a property |
+|<*property*>| Yes | String | The name of the property to add |
+|<*value*>| Yes | Any | The value of the property |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-object*> | object | The updated JSON object after adding a new property |
+| <*updated-object*> | Object | The updated JSON object after adding a new property |
 ||||
 
-*Example*<br>
-This example adds the **accountNumber** property to the **customerProfile** object, which is converted to JSON with the [json()][#json] function. The function assigns a value that is generated by the guid() function, and returns the updated object:
+*Example*
+This example adds the accountNumber property to the customerProfile object, which is converted to JSON with the JSON() function. The function assigns a value that is generated by the guid() function, and returns the updated object:
 
 ```
 addProperty(json('customerProfile'), 'accountNumber', guid())
@@ -426,14 +413,14 @@ addSeconds('<timestamp>', <seconds>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*seconds*> | Yes | integer | The positive or negative number of seconds to add |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*seconds*> | Yes | Integer | The positive or negative number of seconds to add |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The timestamp plus the specified number of seconds  |
+| <*updated-timestamp*> | String | The timestamp plus the specified number of seconds  |
 ||||
 
 *Example 1*
@@ -444,7 +431,7 @@ This example adds 10 seconds to the specified timestamp:
 addSeconds('2018-03-15T00:00:00.000Z', 10)
 ```
 
-And returns the result **2018-03-15T00:00:10.000Z**.
+And returns this result: `"2018-03-15T00:00:10.000Z"`
 
 *Example 2*
 
@@ -454,7 +441,7 @@ This example subtracts five seconds to the specified timestamp:
 addSeconds('2018-03-15T00:00:30.000Z', -5)
 ```
 
-And returns the result **2018-03-15T00:00:25.000Z**.
+And returns this result: `"2018-03-15T00:00:25.000Z"`
 
 <a name="addToTime"></a>
 
@@ -468,40 +455,42 @@ addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*interval*> | Yes | integer | The number of specified time units to add |
-| <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Units included: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*interval*> | Yes | Integer | The number of specified time units to add |
+| <*timeUnit*> | Yes | String | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The timestamp plus the number of specified time units with given format. |
+| <*updated-timestamp*> | String | The timestamp plus the number of specified time units with given format. |
 ||||
 
-*Example 1*<br>
+*Example 1*
 This example adds one day to specified timestamp.
 
 ```
 addToTime('2018-01-01T00:00:00.000Z', 1, 'Day')
 ```
 
-And returns the result **2018-01-02T00:00:00.000Z**.
+And returns this result `'2018-01-02T00:00:00.000Z'`.
 
-*Example 2*<br>
-This example adds two weeks to the specified timestamp.
+*Example 2*
+This example adds two weeks to the specified timestamp, with given 'MM-DD-YY' format
 
 ```
 addToTime('2018-01-01T00:00:00.000Z', 2, 'Week', 'MM-DD-YY')
 ```
 
-And returns the result in the 'MM-DD-YY' format as **01-15-18**.
+And returns this result using the optional 'MM-DD-YY' format `'01-15-18'`.
 
 
 <a name="and"></a>
 
 ### and
 
-Check whether all expressions are true. Return true when all expressions are true, or return false when at least one expression is false.
+Check whether all expressions are true.
+Return true when all expressions are true,
+or return false when at least one expression is false.
 
 ```
 and(<expression1>, <expression2>, ...)
@@ -527,11 +516,11 @@ and(false, true)
 and(false, false)
 ```
 
-And respectively returns these results:
+And returns these results:
 
-* Both expressions are true, so the functions returns `true`.
-* One expression is false, so the functions returns `false`.
-* Both expressions are false, so the function returns `false`.
+* First example: Both expressions are true, so returns `true`.
+* Second example: One expression is false, so returns `false`.
+* Third example: Both expressions are false, so returns `false`.
 
 *Example 2*
 
@@ -543,17 +532,17 @@ and(equals(1, 1), equals(1, 2))
 and(equals(1, 2), equals(1, 3))
 ```
 
-And respectively returns these results:
+And returns these results:
 
-* Both expressions are true, so the functions returns `true`.
-* One expression is false, so the functions returns `false`.
-* Both expressions are false, so the functions returns `false`.
+* First example: Both expressions are true, so returns `true`.
+* Second example: One expression is false, so returns `false`.
+* Third example: Both expressions are false, so returns `false`.
 
 <a name="average"></a>
 
 ### average
 
-Return the number average of a numeric array.
+Return the average number of an numeric array.
 
 ```
 average(<numericArray>)
@@ -561,159 +550,157 @@ average(<numericArray>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*numericArray*> | Yes | array of number | The input array to calculate the average |
+| <*numericArray*> | Yes | Array of Number | The input array to calculate the average |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*average-of-array*> | number | The average value of the given array |
+| <*average-of-array*> | Number | The average value of the given array |
 ||||
 
 *Example*
-
-This example calculates the average of the array in `createArray()`:
 
 ```
 average(createArray(1,2,3))
 ```
 
-And returns the result **2**.
+And it returns the result: `2`
 
 <a name="base64"></a>
 
 ### base64
 
-Return the base64-encoded version of a string or byte array.
+Return the base64-encoded version for a string or byte array.
 
 ```
 base64('<value>')
 ```
-
+ 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string or byte array | The input string |
+| <*value*> | Yes | String or byte array | The input string |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*base64-string*> | string | The base64-encoded version of the input string |
+| <*base64-string*> | String | The base64-encoded version for the input string |
 ||||
 
-*Example 1*
+*Example1*
 
-This example converts the string **hello** to a base64-encoded string:
+This example converts the "hello" string to a base64-encoded string:
 
 ```
 base64('hello')
 ```
 
-And returns the result **"aGVsbG8="**.
+And returns this result: `"aGVsbG8="`
 
-*Example 2*
+*Example2*
 
-This examples takes byteArr, which equals **new byte[] { 3, 5, 1, 12 }**:
+Suppose we have a byte array named byteArr, equals `new byte[] { 3, 5, 1, 12 }`
 
 ```
 base64('byteArr')
 ```
 
-And returns the result **"AwUBDA=="**.
+And returns this result: `"AwUBDA=="`
 
 <a name="base64ToBinary"></a>
 
 ### base64ToBinary
 
-Return the binary array of a base64-encoded string.
+Return the binary array for a base64-encoded string.
 
 ```
 base64ToBinary('<value>')
 ```
-
+ 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The base64-encoded string to convert |
+| <*value*> | Yes | String | The base64-encoded string to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*binary-for-base64-string*> | byte array | The binary version of the base64-encoded string |
+| <*binary-for-base64-string*> | Byte Array | The binary version for the base64-encoded string |
 ||||
 
 *Example*
 
-This example converts the base64-encoded string **AwUBDA==** to a binary string:
+This example converts the "AwUBDA==" base64-encoded string to a binary string:
 
 ```
 base64ToBinary('AwUBDA==')
 ```
 
-And returns the result **new byte[] { 3, 5, 1, 12 }**.
+And returns this result: `new byte[] { 3, 5, 1, 12 }`
 
 <a name="base64ToString"></a>
 
 ### base64ToString
 
-Return the string version of a base64-encoded string, effectively decoding the base64 string.
+Return the string version for a base64-encoded string, effectively decoding the base64 string.
 
 ```
 base64ToString('<value>')
 ```
-
+ 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The base64-encoded string to decode |
+| <*value*> | Yes | String | The base64-encoded string to decode |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*decoded-base64-string*> | string | The string version of a base64-encoded string |
+| <*decoded-base64-string*> | String | The string version for a base64-encoded string |
 ||||
 
 *Example*
 
-This example converts the base64-encoded string **aGVsbG8=** to a decoded string:
+This example converts the "aGVsbG8=" base64-encoded string to just a string:
 
 ```
 base64ToString('aGVsbG8=')
 ```
 
-And returns the result **"hello"**.
+And returns this result: `"hello"`
 
 <a name="binary"></a>
 
 ### binary
 
-Return the binary version of a string.
+Return the binary version for a string.
 
 ```
-binary('<value>')
+bianry('<value>')
 ```
-
+ 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The string to convert |
+| <*value*> | Yes | String | The string to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*binary-for-input-value*> | byte array | The binary version of the specified string |
+| <*binary-for-input-value*> | Byte array | The binary version for the specified string |
 ||||
 
 *Example*
 
-This example converts the string **hello** to a binary string:
+This example converts the "hello" string to a binary string:
 
 ```
 binary('hello')
 ```
 
-And returns the result **new byte[] { 104, 101, 108, 108, 111 }**.
+And returns this result: `new byte[] { 104, 101, 108, 108, 111 }`
 
 <a name="bool"></a>
 
 ### bool
 
-Return the Boolean version of a value.
+Return the Boolean version for a value.
 
 ```
 bool(<value>)
@@ -721,12 +708,12 @@ bool(<value>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | any | The value to convert |
+| <*value*> | Yes | Any | The value to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| true or false | Boolean | The Boolean version of the specified value |
+| true or false | Boolean | The Boolean version for the specified value |
 ||||
 
 *Example*
@@ -738,10 +725,10 @@ bool(1)
 bool(0)
 ```
 
-And respectively returns these results:
+And returns these results:
 
-* `true`
-* `false`
+* First example: `true`
+* Second example: `false`
 
 <a name="coalesce"></a>
 
@@ -750,34 +737,31 @@ And respectively returns these results:
 Return the first non-null value from one or more parameters. Empty strings, empty arrays, and empty objects are not null.
 
 ```
-coalesce(<object**1>, <object**2>, ...)
+coalesce(<object_1>, <object_2>, ...)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object**1*>, <*object**2*>, ... | Yes | any (mixed types acceptable) | One or more items to check for null|
+| <*object_1*>, <*object_2*>, ... | Yes | Any, can mix types | One or more items to check for null|
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*first-non-null-item*> | any | The first item or value that is not null. If all parameters are null, this function returns null. |
+| <*first-non-null-item*> | Any | The first item or value that is not null. If all parameters are null, this function returns null. |
 ||||
 
-*Example*<br>
-These examples return the first non-null value from the specified values, or null when all the values are null.
-
-Here are some examples:
+*Example*
+These examples return the first non-null value from the specified values, or null when all the values are null:
 ```
 coalesce(null, true, false)
 coalesce(null, 'hello', 'world')
 coalesce(null, null, null)
 ```
+And returns these results:
 
-They respectively return these results:
-
-- `true`
-- **hello**
-- null
+- First example: true
+- Second example: "hello"
+- Third example: null
 
 <a name="concat"></a>
 
@@ -791,71 +775,72 @@ concat('<text1>', '<text2>', ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text1*>, <*text2*>, ... | Yes | string | At least two strings to combine |
+| <*text1*>, <*text2*>, ... | Yes | String | At least two strings to combine |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*text1text2...*> | string | The string created from the combined input strings |
+| <*text1text2...*> | String | The string created from the combined input strings |
 ||||
 
 *Example*
 
-This example combines the strings **Hello** and **World**:
+This example combines the strings "Hello" and "World":
 
 ```
 concat('Hello', 'World')
 ```
 
-And returns the result **HelloWorld**.
+And returns this result: `"HelloWorld"`
 
 <a name="contains"></a>
 
 ### contains
 
-Check whether a collection has a specific item. Return true when the item is found, or return false if not found. This function is case-sensitive.
+Check whether a collection has a specific item.
+Return true when the item is found,
+or return false when not found.
+This function is case-sensitive.
 
 ```
 contains('<collection>', '<value>')
 contains([<collection>], '<value>')
 ```
 
-This function works on the following collection types:
+Specifically, this function works on these collection types:
 
-* A string to find a substring
-* An array to find a value
-* A dictionary to find a key
+* A *string* to find a *substring*
+* An *array* to find a *value*
+* A *dictionary* to find a *key*
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string, array, or dictionary | The collection to check |
-| <*value*> | Yes | string, array, or dictionary, respectively | The item to find |
+| <*collection*> | Yes | String, Array, or Dictionary | The collection to check |
+| <*value*> | Yes | String, Array, or Dictionary, respectively | The item to find |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| true or false | Boolean | Return true when the item is found. Return false if not found. |
+| true or false | Boolean | Return true when the item is found. Return false when not found. |
 ||||
 
 *Example 1*
 
-This example checks the string **hello world** for the substring **world**:
+This example checks the string "hello world" for
+the substring "world" and returns true:
 
 ```
 contains('hello world', 'world')
 ```
 
-And returns the result `true`.
-
 *Example 2*
 
-This example checks the string **hello world** for the substring **universe**:
+This example checks the string "hello world" for
+the substring "universe" and returns false:
 
 ```
 contains('hello world', 'universe')
 ```
-
-And returns the result `false`.
 
 <a name="count"></a>
 
@@ -870,15 +855,15 @@ count([<collection>])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string or array | The collection with the items to count |
+| <*collection*> | Yes | String or Array | The collection with the items to count |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*length-or-count*> | integer | The number of items in the collection |
+| <*length-or-count*> | Integer | The number of items in the collection |
 ||||
 
-*Examples*:
+*Example*
 
 These examples count the number of items in these collections:
 
@@ -887,7 +872,7 @@ count('abcd')
 count(createArray(0, 1, 2, 3))
 ```
 
-And both return the result **4**.
+And return this result: `4`
 
 <a name="countWord"></a>
 
@@ -901,29 +886,27 @@ countWord('<text>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string to count |
+| <*text*> | Yes | String | The string contains some words to count |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*count*> | integer | The number of words in the string |
+| <*count*> | Integer | The number of words in the string |
 ||||
 
 *Example*
-
-This example counts the number of words in the string **hello world**:
 
 ```
 countWord("hello word")
 ```
 
-And it returns the result **2**.
+And it returns the result: `2`
 
 <a name="convertFromUTC"></a>
 
 ### convertFromUTC
 
-Convert a timestamp from Universal Time Coordinated (UTC) to a target time zone.
+Convert a timestamp from Universal Time Coordinated(UTC) to target time zone.
 
 ```
 convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?)
@@ -931,34 +914,28 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*destinationTimeZone*> | Yes | string | The name for the target time zone. Supports Windows and Iana time zones. |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string contains the timestamp |
+| <*destinationTimeZone*> | Yes | String | The name for the target time zone. Support Windows time zone and Iana time zone |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*converted-timestamp*> | string | The timestamp converted to the target time zone |
+| <*converted-timestamp*> | String | The timestamp converted to the target time zone. |
 ||||
-
-*Examples*:
-
-These examples convert from UTC to Pacific Standard Time:
 
 ```
 convertFromUTC("convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time', 'MM-DD-YY')"
 convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time')
 ```
 
-And respectively return these results:
-
-* **02-01-18**
-* **2018-02-01T18:00:00.000-08:00**
+And return these results:
+02-01-18
+2018-02-01T18:00:00.000-08:00
 
 <a name="convertToUTC"></a>
 
 ### convertToUTC
-
-Convert a timestamp to Universal Time Coordinated (UTC) from the source time zone.
+Convert a timestamp to Universal Time Coordinated(UTC) from source time zone.
 
 ```
 convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?)
@@ -966,22 +943,21 @@ convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*sourceTimeZone*> | Yes | string | The name for the target time zone. Supports Windows and Iana time zones. |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string contains the timestamp |
+| <*sourceTimeZone*> | Yes | String | The name for the target time zone. Support Windows time zone and Iana time zone |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*converted-timestamp*> | string | The timestamp converted to the target time zone |
+| <*converted-timestamp*> | String | The timestamp converted to the target time zone. |
 ||||
-
-*Example*
 
 ```
 convertToUTC('01/01/2018 00:00:00',', 'Pacific Standard Time')
 ```
 
-Returns the result **2018-01-01T08:00:00.000Z**.
+And return these results:
+2018-01-01T08:00:00.000Z
 
 <a name="createArray"></a>
 
@@ -995,23 +971,23 @@ createArray('<object1>', '<object2>', ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object1*>, <*object2*>, ... | Yes | any, but not mixed | At least two items to create the array |
+| <*object1*>, <*object2*>, ... | Yes | Any, but not mixed | At least two items to create the array |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| [<*object1*>, <*object2*>, ...] | array | The array created from all the input items |
+| [<*object1*>, <*object2*>, ...] | Array | The array created from all the input items |
 ||||
 
 *Example*
 
-This example creates an array from the following inputs:
+This example creates an array from these inputs:
 
 ```
 createArray('h', 'e', 'l', 'l', 'o')
 ```
 
-And returns the result **[h ,e, l, l, o]**.
+And returns this result: `["h", "e", "l", "l", "o"]`
 
 <a name="dataUri"></a>
 
@@ -1025,12 +1001,12 @@ dataUri('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*>| Yes | string | The string to convert |
+| <*value*>| Yes | String | The string to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| [<*date-uri*>] | string | The data URI for the input string |
+| [<*date-uri*>] | String | The data URI for the input string |
 ||||
 
 *Example*
@@ -1039,13 +1015,13 @@ dataUri('<value>')
 dataUri('hello')
 ```
 
-Returns the result **data:text/plain;charset=utf-8;base64,aGVsbG8=**.
+And returns this result: `"data:text/plain;charset=utf-8;base64,aGVsbG8="`
 
 <a name="dataUriToBinary"></a>
 
 ### dataUriToBinary
 
-Return the binary version of a data uniform resource identifier (URI).
+Return the binary version for a data uniform resource identifier (URI). Use this function rather than decodeDataUri(). Although both functions work the same way, dataUriBinary() is preferred.
 
 ```
 dataUriToBinary('<value>')
@@ -1053,29 +1029,31 @@ dataUriToBinary('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*>| Yes | string | The data URI to convert |
+| <*value*>| Yes | String | The data URI to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| [<*binary-for-data-uri*>] | byte array | The binary version of the data URI |
+| [<*binary-for-data-uri*>] | Byte array | The binary version for the data URI |
 ||||
 
 *Example*
 
-This example creates a binary version for the following data URI:
+This example creates a binary version for this data URI:
 
 ```
 dataUriToBinary('aGVsbG8=')
 ```
 
-And returns the result **new byte[] { 97, 71, 86, 115, 98, 71, 56, 61 }**.
+And returns this result:
+
+`new byte[] { 97, 71, 86, 115, 98, 71, 56, 61 }`
 
 <a name="dataUriToString"></a>
 
 ### dataUriToString
 
-Return the string version of a data uniform resource identifier (URI).
+Return the string version for a data uniform resource identifier (URI).
 
 ```
 dataUriToString('<value>')
@@ -1083,29 +1061,29 @@ dataUriToString('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*>| Yes | string | The data URI to convert |
+| <*value*>| Yes | String | The data URI to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| [<*string-for-data-uri*>] | string | The string version of the data URI |
+| [<*string-for-data-uri*>] | String | The string version for the data URI |
 ||||
 
 *Example*
 
-This example creates a string from the following data URI:
+This example creates a string for this data URI:
 
 ```
 dataUriToString('data:text/plain;charset=utf-8;base64,aGVsbG8=')
 ```
 
-And returns the result **hello**.
+And returns this result: `"hello"`
 
 <a name="date"></a>
 
 ### date
 
-Return the date of a specified timestamp in **m/dd/yyyy** format.
+Return the date of a specified timestamp in "M/dd/yyyy" format.
 
 ```
 date('<timestramp>')
@@ -1113,19 +1091,19 @@ date('<timestramp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
+| <*timestamp*> | Yes | String | The string contains the timestamp |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*date*> | string | The date of the specified timestamp |
+| <*date*> | String | The date of the specified timestamp |
 ||||
 
 ```
 date('2018-03-15T13:00:00.000Z')
 ```
 
-Returns the result **3-15-2018**.
+And it returns the result: `"3-15-2018"`
 
 <a name="dateReadBack"></a>
 
@@ -1139,13 +1117,13 @@ dateReadBack('<currentDate>', '<targetDate>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*currentDate*> | Yes | string | The string that contains the current date |
-| <*targetDate*> | Yes | string | The string that contains the target date |
+| <*currentDate*> | Yes | String | The string contains the current date |
+| <*targetDate*> | Yes | String | The string contains the target date |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*date-readback*> | string | The readback between current date and the target date  |
+| <*date-readback*> | String | The readback between current date and the target date  |
 ||||
 
 *Example 1*
@@ -1154,7 +1132,7 @@ dateReadBack('<currentDate>', '<targetDate>')
 dateReadBack('2018-03-15T13:00:00.000Z', '2018-03-16T13:00:00.000Z')
 ```
 
-Returns the result **tomorrow**.
+And it returns the result: ```tomorrow```
 
 <a name="dayOfMonth"></a>
 
@@ -1168,23 +1146,24 @@ dayOfMonth('<timestamp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*day-of-month*> | integer | The day of the month from the specified timestamp |
+| <*day-of-month*> | Integer | The day of the month from the specified timestamp |
 ||||
 
 *Example*
 
-This example returns the number for the day of the month from the following timestamp:
+This example returns the number for the day
+of the month from this timestamp:
 
 ```
 dayOfMonth('2018-03-15T13:27:36Z')
 ```
 
-And returns the result **15**.
+And returns this result: `15`
 
 <a name="dayOfWeek"></a>
 
@@ -1198,23 +1177,23 @@ dayOfWeek('<timestamp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*day-of-week*> | integer | The day of the week from the specified timestamp. Sunday is 0, Monday is 1, and so forth.  |
+| <*day-of-week*> | Integer | The day of the week from the specified timestamp where Sunday is 0, Monday is 1, and so on |
 ||||
 
 *Example*
 
-This example returns the number for the day of the week from the following timestamp:
+This example returns the number for the day of the week from this timestamp:
 
 ```
 dayOfWeek('2018-03-15T13:27:36Z')
 ```
 
-And returns the result **3**.
+And returns this result: `3`
 
 <a name="dayOfYear"></a>
 
@@ -1228,29 +1207,30 @@ dayOfYear('<timestamp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*day-of-year*> | integer | The day of the year from the specified timestamp |
+| <*day-of-year*> | Integer | The day of the year from the specified timestamp |
 ||||
 
 *Example*
 
-This example returns the number of the day of the year from the following timestamp:
+This example returns the number of the day of the year from this timestamp:
 
 ```
 dayOfYear('2018-03-15T13:27:36Z')
 ```
 
-And returns the result **74**.
+And returns this result: `74`
 
 <a name="div"></a>
 
 ### div
 
-Return the integer result from dividing two numbers. TO return the remainder see [mod()](#mod).
+Return the integer result from dividing two numbers.
+To get the remainder result, see [mod()](#mod).
 
 ```
 div(<dividend>, <divisor>)
@@ -1258,13 +1238,13 @@ div(<dividend>, <divisor>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*dividend*> | Yes | number | The number to divide by the *divisor* |
-| <*divisor*> | Yes | number | The number that divides the *dividend*. Cannot be 0. |
+| <*dividend*> | Yes | Number | The number to divide by the *divisor* |
+| <*divisor*> | Yes | Number | The number that divides the *dividend*, but cannot be 0 |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*quotient-result*> | number | The result from dividing the first number by the second number |
+| <*quotient-result*> | Number | The result from dividing the first number by the second number |
 ||||
 
 *Example*
@@ -1276,9 +1256,9 @@ div(10, 5)
 div(11, 5)
 ```
 
-And return the result **2**.
+And return this result: `2`
 
-If one of the parameters is Float type, the result will be a Float.
+If one of the parameters is Float type, the result would be a Float.
 
 *Example*
 
@@ -1286,13 +1266,15 @@ If one of the parameters is Float type, the result will be a Float.
 div(11.2, 3)
 ```
 
-Returns the result **5.5**.
+And return the result `5.5`
 
 <a name="empty"></a>
 
 ### empty
 
-Check whether a collection is empty. Return `true` when the collection is empty, or return `false` when not empty.
+Check whether a collection is empty.
+Return true when the collection is empty,
+or return false when not empty.
 
 ```
 empty('<collection>')
@@ -1301,12 +1283,12 @@ empty([<collection>])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | any | The collection to check |
+| <*collection*> | Yes | Any | The collection to check |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| true or false | Boolean | Return `true` when the collection is empty. Return `false`when not empty. |
+| true or false | Boolean | Return true when the collection is empty. Return false when not empty. |
 ||||
 
 *Example*
@@ -1318,16 +1300,16 @@ empty('')
 empty('abc')
 ```
 
-And return these results respectively:
+And returns these results:
 
-* Passes an empty string, so the function returns `true`.
-* Passes the string **abc**, so the function returns `false`.
+* First example: Passes an empty string, so the function returns `true`.
+* Second example: Passes the string "abc", so the function returns `false`.
 
 <a name="endsWith"></a>
 
 ### endsWith
 
-Check whether a string ends with a specific substring. Return `true` when the substring is found, or return `false` if not found. This function is case-insensitive.
+Check whether a string ends with a specific substring. Return true when the substring is found, or return false when not found. This function is not case-sensitive.
 
 ```
 endsWith('<text>', '<searchText>')
@@ -1335,40 +1317,41 @@ endsWith('<text>', '<searchText>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string to check |
-| <*searchText*> | Yes | string | The ending substring to find |
+| <*text*> | Yes | String | The string to check |
+| <*searchText*> | Yes | String | The ending substring to find |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| true or false | Boolean | Return `true` when the ending substring is found. Return `false` when not found |
+| true or false | Boolean | Return true when the ending substring is found. Return false when not found |
 ||||
 
 *Example 1*
 
-This example checks whether the **hello world** string ends with the string **world**:
+This example checks whether the "hello world" string ends with the "world" string:
 
 ```
 endsWith('hello world', 'world')
 ```
 
-And it returns the result **true**.
+And it returns the result: `true`
 
 *Example 2*
 
-This example checks whether the **hello world** string ends with the string ***universe**:
+This example checks whether the "hello world" string ends with the "universe" string:
 
 ```
 endsWith('hello world', 'universe')
 ```
 
-And it returns the result: **false**.
+And it returns the result: `false`
 
 <a name="equals"></a>
 
 ### equals
 
-Check whether both values, expressions, or objects are equivalent. Return `true` when both are equivalent, or return `false` if they're not equivalent.
+Check whether both values, expressions, or objects are equivalent.
+Return true when both are equivalent, or return false when they're not equivalent.
 
 ```
 equals('<object1>', '<object2>')
@@ -1376,33 +1359,33 @@ equals('<object1>', '<object2>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object1*>, <*object2*> | Yes | any | The values, expressions, or objects to compare |
+| <*object1*>, <*object2*> | Yes | Any | The values, expressions, or objects to compare |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| true or false | Boolean | Return `true` when both are equivalent. Return `false` when not equivalent. |
+| true or false | Boolean | Return true when both are equivalent. Return false when not equivalent. |
 ||||
 
 *Example*
 
-These examples check whether the specified inputs are equivalent:
+These examples check whether the specified inputs are equivalent.
 
 ```
 equals(true, 1)
 equals('abc', 'abcd')
 ```
 
-And returns these results respectively:
+And returns these results:
 
-* Both values are equivalent, so the function returns `true`.
-* Both values aren't equivalent, so the function returns `false`.
+* First example: Both values are equivalent, so the function returns `true`.
+* Second example: Both values aren't equivalent, so the function returns `false`.
 
 <a name="exists"></a>
 
 ### exists
 
-Evaluates an expression for truthiness.
+Evaluates an expression for truthfulness.
 
 ```
 exists(expression)
@@ -1410,25 +1393,23 @@ exists(expression)
 
 | Parameter | Required | Type | Description |
 |-----------|----------|------|-------------|
-| expression | Yes | expression | Expression to evaluate for truthiness |
+| expression | Yes | expression | expression to evaluate for truthiness |
 |||||
 
 | Return value | Type | Description |
 |--------------|------|-------------|
-| <*true or false*> | Boolean | Result of evaluating the expression |
+| <*true or false*> | Boolean | Result of evaluating the expression | 
 
 *Example*
-
-These example evaluate the truthiness of `foo = {"bar":"value"}`:
 
 ```
 exists(foo.bar)
 exists(foo.bar2)
 ```
+With foo = {"bar":"value"}
 
-And return these results respectively:
-- `true`.
-- `false`.
+The first example returns TRUE 
+The second example returns FALSE
 
 <a name="exp"></a>
 
@@ -1442,13 +1423,13 @@ exp(realNumber, exponentNumber)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| realNumber | Yes | number | Real number to compute exponent of |
-| exponentNumber | Yes | number | Exponent number |
+| realNumber | Yes | Number | real number to compute exponent of |
+| exponentNumber | Yes | Number | exponent number |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*result-exp*> | number | The result from computing exponent of `realNumber` |
+| <*result-exp*> | Number | The result from computing exponent of realNumber |
 ||||
 
 *Example*
@@ -1459,7 +1440,7 @@ This example computes the exponent:
 exp(2, 2)
 ```
 
-And returns the result **4**.
+And returns this result: `4`
 
 <a name="first"></a>
 
@@ -1474,33 +1455,33 @@ first([<collection>])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string or array | The collection in which to find the first item |
+| <*collection*> | Yes | String or Array | The collection where to find the first item |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*first-collection-item*> | any | The first item in the collection |
+| <*first-collection-item*> | Any | The first item in the collection |
 ||||
 
 *Example*
 
-These examples find the first item in the following collections:
+These examples find the first item in these collections:
 
 ```
 first('hello')
 first(createArray(0, 1, 2))
 ```
 
-And return these results respectively:
+And return these results:
 
-* **h**
-* **0**
+* First example: `"h"`
+* Second example: `0`
 
 <a name="flatten"/>
 
 ### flatten
 
-Flatten an array into non-array values.  You can optionally set the maximum depth to flatten.
+Flatten an array into non-array values.  With an optional depth flatten only to that depth.
 
 ```
 flatten([<collection>], '<depth>')
@@ -1508,40 +1489,38 @@ flatten([<collection>], '<depth>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | array | The collection to flatten |
-| <*depth*> | No | number | Maximum depth to flatten. Default is infinity. |
+| <*collection*> | Yes | Array | The collection to flatten |
+| <*depth*> | No | Number | Maximum depth to flatten, or infinity if not set|
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*new-collection*> | array | New collection whose elements have been flattened to a non-array to the specified depth |
+| <*new-collection*> | Array | new collection whose elements have been flattened to non-array to the specified depth |
 ||||
 
 *Example 1*
 
-THis example flattens the following array:
+```
+flatten(createArray(1, createArray(2), createArray(createArray(3, 4), createArray(5, 6)))
+```
+This example will flatten the array to: ```[1, 2, 3, 4, 5, 6]```
+
+*Example 2*
 
 ```
 flatten(createArray(1, createArray(2), createArray(createArray(3, 4), createArray(5, 6)))
 ```
 
-And returns the result **[1, 2, 3, 4, 5, 6]**.
-
-*Example 2*
-
-This example flattens the array to a depth of **1**:
-
-```
-flatten(createArray(1, createArray(2), createArray(createArray(3, 4), createArray(5, 6)), 1)
-```
-
-And returns the result **[1, 2, [3, 4], [5, 6]]**.
+This example will only flatten the first level to: ```[1, 2, [3, 4], [5, 6]]```
 
 <a name="float"></a>
 
 ### float
 
-Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app.
+Convert a string version for a floating-point
+number to an actual floating point number.
+You can use this function only when passing custom
+parameters to an app, such as a logic app.
 
 ```
 float('<value>')
@@ -1549,23 +1528,23 @@ float('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The string that has a valid floating-point number to convert |
+| <*value*> | Yes | String | The string that has a valid floating-point number to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*float-value*> | float | The floating-point number for the specified string |
+| <*float-value*> | Float | The floating-point number for the specified string |
 ||||
 
 *Example*
 
-This example creates the string version of the following floating-point number:
+This example creates a string version for this floating-point number:
 
 ```
 float('10.333')
 ```
 
-And returns the result `10.333`
+And returns this result: `10.333`
 
 <a name="foreach"></a>
 
@@ -1586,7 +1565,7 @@ foreach([<collection/instance>], <iteratorName>, <function>)
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*new-collection*> | array | the new collection which each element has been evaluated with the function  |
+| <*new-collection*> | Array | the new collection which each element has been evaluated with the function  |
 ||||
 
 *Example*
@@ -1597,7 +1576,7 @@ These examples generate new collections:
 foreach(createArray(0, 1, 2, 3), x, x + 1)
 ```
 
-And return the result `[1, 2, 3, 4]`
+And return this result: `[1, 2, 3, 4]`
 
 
 
@@ -1607,7 +1586,7 @@ These examples generate new collections from instance:
 foreach(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
 ```
 
-And return the result `['name:jack', 'age:15']`
+And return this result: `['name:jack', 'age:15']`
 
 <a name="formatDateTime"></a>
 
@@ -1621,13 +1600,13 @@ formatDateTime('<timestamp>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*reformatted-timestamp*> | string | The updated timestamp in the specified format |
+| <*reformatted-timestamp*> | String | The updated timestamp in the specified format |
 ||||
 
 *Example*
@@ -1638,7 +1617,7 @@ This example converts a timestamp to the specified format:
 formatDateTime('03/15/2018 12:00:00', 'yyyy-MM-ddTHH:mm:ss')
 ```
 
-And returns the result **2018-03-15T12:00:00**
+And returns this result: `"2018-03-15T12:00:00"`
 
 <a name="getFutureTime"></a>
 
@@ -1652,14 +1631,14 @@ getFutureTime(<interval>, <timeUnit>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*interval*> | Yes | integer | The number of specific time units to add |
-| <*timeUnit*> | Yes | string | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*interval*> | Yes | Integer | The number of specific time units to add |
+| <*timeUnit*> | Yes | String | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The current timestamp plus the specified number of time units |
+| <*updated-timestamp*> | String | The current timestamp plus the specified number of time units |
 ||||
 
 *Example 1*
@@ -1670,7 +1649,7 @@ Suppose the current timestamp is "2019-03-01T00:00:00.000Z". This example adds f
 getFutureTime(2, 'Week')
 ```
 
-And returns the result **2019-03-15T00:00:00.000Z**
+And returns this result: `"2019-03-15T00:00:00.000Z"`
 
 *Example 2*
 
@@ -1680,7 +1659,7 @@ Suppose the current timestamp is "2018-03-01T00:00:00.000Z". This example adds f
 getFutureTime(5, 'Day', 'MM-DD-YY')
 ```
 
-And returns the result `'03-06-18'`.
+And returns this result: `'03-06-18'`.
 
 <a name="getPastTime"></a>
 
@@ -1694,14 +1673,14 @@ getPastTime(<interval>, <timeUnit>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*interval*> | Yes | integer | The number of specific time units to substract |
-| <*timeUnit*> | Yes | string | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*interval*> | Yes | Integer | The number of specific time units to substract |
+| <*timeUnit*> | Yes | String | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The current timestamp minus the specified number of time units |
+| <*updated-timestamp*> | String | The current timestamp minus the specified number of time units |
 ||||
 
 *Example 1*
@@ -1712,7 +1691,7 @@ Suppose the current timestamp is "2018-02-01T00:00:00.000Z". This example adds f
 getPastTime(5, 'Day')
 ```
 
-And returns the result **2019-01-27T00:00:00.000Z**
+And returns this result: `"2019-01-27T00:00:00.000Z"`
 
 *Example 2*
 
@@ -1722,7 +1701,7 @@ Suppose the current timestamp is "2018-03-01T00:00:00.000Z". This example adds f
 getPastTime(5, 'Day', 'MM-DD-YY')
 ```
 
-And returns the result `'02-26-18'`.
+And returns this result: `'02-26-18'`.
 
 <a name="getProperty"></a>
 
@@ -1736,12 +1715,12 @@ getProperty(<JSONObject>, '<Property>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*JSONObject*> | Yes | object | The JSON Object contains the property and value you want to get |
-| <*property*> | Yes | string | The specified property you want to get from the JSON object |
+| <*JSONObject*> | Yes | Object | The JSON Object contains the property and value you want to get |
+| <*property*> | Yes | String | The specified property you want to get from the JSON object |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | object | The value of the specified property you want to get in the JSON object|
+| value | Object | The value of the specified property you want to get in the JSON object|
 ||||
 
 *Example*
@@ -1762,11 +1741,11 @@ getTimeOfDay('<timestamp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the specified timestamp |
+| <*timestamp*> | Yes | String | The string contains the specified timestamp |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*time-of-day*> | string | the time of day for the specified timestamp (midnight = 12AM, morning = 12:01AM – 11:59PM, noon = 12PM, afternoon = 12:01PM -05:59PM, evening = 06:00PM – 10:00PM, night = 10:01PM – 11:59PM)|
+| <*time-of-day*> | String | the time of day for the specified timestamp (midnight = 12AM, morning = 12:01AM – 11:59PM, noon = 12PM, afternoon = 12:01PM -05:59PM, evening = 06:00PM – 10:00PM, night = 10:01PM – 11:59PM)|
 ||||
 
 *Example*
@@ -1867,20 +1846,20 @@ if(<expression>, <valueIfTrue>, <valueIfFalse>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*expression*> | Yes | Boolean | The expression to check |
-| <*valueIfTrue*> | Yes | any | The value to return when the expression is true |
-| <*valueIfFalse*> | Yes | any | The value to return when the expression is false |
+| <*valueIfTrue*> | Yes | Any | The value to return when the expression is true |
+| <*valueIfFalse*> | Yes | Any | The value to return when the expression is false |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*specified-return-value*> | any | The specified value that returns based on whether the expression is true or false |
+| <*specified-return-value*> | Any | The specified value that returns based on whether the expression is true or false |
 ||||
 
 *Example*
 
-This example returns **yes** because the
+This example returns `"yes"` because the
 specified expression returns true.
-Otherwise, the example returns **no**:
+Otherwise, the example returns `"no"`:
 
 ```
 if(equals(1, 1), 'yes', 'no')
@@ -1899,12 +1878,12 @@ indexOf('<text>', '<searchText>')
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | String or Array   | The string that has the substring to find |
-| <*searchText*> | Yes | string | The substring to find |
+| <*searchText*> | Yes | String | The substring to find |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*index-value*> | integer | The starting position or index value for the specified substring.
+| <*index-value*> | Integer | The starting position or index value for the specified substring.
 If the string is not found, return the number -1. |
 ||||
 
@@ -1916,14 +1895,14 @@ This example finds the starting index value for the "world" substring in the "he
 indexOf('hello world', 'world')
 ```
 
-And returns the result `6`
+And returns this result: `6`
 
 This example finds the starting index value for the "def" substring in the Array ['abc', 'def', 'ghi']
 ```
 indexOf(createArray('abc', 'def', 'ghi'), 'def')
 ```
 
-And returns the result `1`
+And returns this result: `1`
 
 <a name="indicesAndValues"></a>
 
@@ -1942,7 +1921,7 @@ indicesAndValues('<collection or object>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*collection*> | array | New array that each item has two properties, one is index with the position in an array or the key for an object, the other one is the corresponding value |
+| <*collection*> | Array | New array that each item has two properties, one is index with the position in an array or the key for an object, the other one is the corresponding value |
 ||||
 
 *Example*
@@ -1977,7 +1956,7 @@ second example:
 where(indicesAndValues(items), elt, elt.index >= 1)
 ```
 
-And returns a new list:
+And returns a new list: 
 ```
 [
   {
@@ -2007,7 +1986,7 @@ Suppose there is an object { user: {name: 'jack', age: 20} }
 indicesAndValues(user)
 ```
 
-will get
+will get 
 ```
 [
   {
@@ -2034,12 +2013,12 @@ int('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The string to convert |
+| <*value*> | Yes | String | The string to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*integer-result*> | integer | The integer version for the specified string |
+| <*integer-result*> | Integer | The integer version for the specified string |
 ||||
 
 *Example*
@@ -2050,7 +2029,7 @@ This example creates an integer version for the string "10":
 int('10')
 ```
 
-And returns the result `10`
+And returns this result: `10`
 
 <a name="intersection"></a>
 
@@ -2095,12 +2074,12 @@ isArray('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is an array |
+| <*boolean-result*> | Boolean | Is the input is an array |
 ||||
 
 *Examples*
@@ -2122,7 +2101,7 @@ true
 
 ### isBoolean
 
-return a given input is a Boolean
+return a given input is a boolean
 
 ```
 isBoolean('<input>')
@@ -2130,12 +2109,12 @@ isBoolean('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is either true or false |
+| <*boolean-result*> | Boolean | Is the input is either true or false |
 ||||
 
 *Examples*
@@ -2165,12 +2144,12 @@ isDateTime('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is a UTC ISO format timestamp string |
+| <*boolean-result*> | Boolean | Is the input is a UTC ISO format timestamp string |
 ||||
 
 *Examples*
@@ -2200,12 +2179,12 @@ isFloat('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is a float point number |
+| <*boolean-result*> | Boolean | Is the input is a float point number |
 ||||
 
 *Examples*
@@ -2237,12 +2216,12 @@ isInteger('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is an integer number |
+| <*boolean-result*> | Boolean | Is the input is an integer number |
 ||||
 
 *Examples*
@@ -2269,18 +2248,18 @@ true
 return a given string is match a common regex pattern
 
 ```
-isMatch('<target**string>', '<pattern>')
+isMatch('<target_string>', '<pattern>')
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*target**string*> | Yes | string | the string to be matched |
-| <*pattern*> | Yes | string | regex pattern |
+| <*target_string*> | Yes | String | the string to be matched |
+| <*pattern*> | Yes | String | regex pattern |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the string matched the pattern |
+| <*boolean-result*> | Boolean | Is the string matched the pattern |
 ||||
 
 *Examples*
@@ -2307,12 +2286,12 @@ isObject('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is an object |
+| <*boolean-result*> | Boolean | Is the input is an object |
 ||||
 
 *Examples*
@@ -2342,12 +2321,12 @@ isString('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | any | the input to be tested |
+| <*input*> | Yes | Any | the input to be tested |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Is the input is a string |
+| <*boolean-result*> | Boolean | Is the input is a string |
 ||||
 
 *Examples*
@@ -2378,13 +2357,13 @@ join([<collection>], '<delimiter>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | array | The array that has the items to join |
-| <*delimiter*> | Yes | string | The separator that appears between each character in the resulting string |
+| <*collection*> | Yes | Array | The array that has the items to join |
+| <*delimiter*> | Yes | String | The separator that appears between each character in the resulting string |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*char1*><*delimiter*><*char2*><*delimiter*>... | string | The resulting string created from all the items in the specified array |
+| <*char1*><*delimiter*><*char2*><*delimiter*>... | String | The resulting string created from all the items in the specified array |
 ||||
 
 *Example*
@@ -2396,7 +2375,7 @@ array with the specified character as the delimiter:
 join(createArray('a', 'b', 'c'), '.')
 ```
 
-And returns the result **a.b.c**
+And returns this result: `"a.b.c"`
 
 
 <a name="jPath"></a>
@@ -2411,18 +2390,18 @@ jPath(<json>, '<path>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*json*> | Yes | any | The json object or string to search for nodes or values that match path expression value |
-| <*path*> | Yes | any | The path expression used to find matching json nodes or values |
+| <*json*> | Yes | Any | The json object or string to search for nodes or values that match path expression value |
+| <*path*> | Yes | Any | The path expression used to find matching json nodes or values |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-|[ <*json-node*>] | array | An list of json nodes or value that matches the specified path expression |
+|[ <*json-node*>] | Array | An list of json nodes or value that matches the specified path expression |
 ||||
 
 *C# Example*
 
-Given jsonStr is
+Given jsonStr is 
 ```json
 {
     "Stores": [
@@ -2456,16 +2435,16 @@ Given jsonStr is
 }
 ```
 
-and the path expression is
-"$..Products[?(@.Price >= 50)].Name"
+and the path expression is 
+"$..Products[?(@.Price >= 50)].Name" 
 
 ```
 jPath(jsonStr, path)
 ```
 
-And it returns the result `["Anvil", "Elbow Grease"]`
+And it returns this result: `["Anvil", "Elbow Grease"]`
 
-Given jsonStr is
+Given jsonStr is 
 
 ```json
 {
@@ -2512,7 +2491,7 @@ And the path expression is `.automobiles{.maker === "Honda" && .year > 2009}.mod
 jPath(jsonStr, path)
 ```
 
-And it returns the result `['Jazz', 'Accord']`
+And it returns this result: `['Jazz', 'Accord']`
 
 <a name="json"></a>
 
@@ -2531,7 +2510,7 @@ json('<value>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*JSON-result*> | string | The resulting string created from all the items in the specified array |
+| <*JSON-result*> | String | The resulting string created from all the items in the specified array |
 ||||
 
 *Example 1*
@@ -2542,7 +2521,7 @@ This example converts this string to JSON:
 json('{"fullName": "Sophia Owen"}')
 ```
 
-And returns the result:
+And returns this result:
 
 ```
 {
@@ -2558,7 +2537,7 @@ This example converts this XML to JSON:
 json(xml('<?xml version="1.0"?> <root> <person id='1'> <name>Sophia Owen</name> <occupation>Engineer</occupation> </person> </root>'))
 ```
 
-And returns the result:
+And returns this result:
 
 ```
 {
@@ -2588,7 +2567,7 @@ last([<collection>])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string or array | The collection where to find the last item |
+| <*collection*> | Yes | String or Array | The collection where to find the last item |
 |||||
 
 | Return value | Type | Description |
@@ -2607,7 +2586,7 @@ last(createArray(0, 1, 2, 3))
 
 And returns these results:
 
-* First example: **d**
+* First example: `"d"`
 * Second example: `3`
 
 <a name="lastIndexOf"></a>
@@ -2622,13 +2601,13 @@ lastIndexOf('<text>', '<searchText>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string or array | The string that has the substring to find |
-| <*searchText*> | Yes | string | The substring to find |
+| <*text*> | Yes | String or Array | The string that has the substring to find |
+| <*searchText*> | Yes | String | The substring to find |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*ending-index-value*> | integer | The starting position or index value for the last occurrence of the specified substring.
+| <*ending-index-value*> | Integer | The starting position or index value for the last occurrence of the specified substring.
 If the string is not found, return the number -1. |
 ||||
 
@@ -2640,14 +2619,14 @@ This example finds the starting index value for the last occurrence of the "worl
 lastIndexOf('hello world', 'world')
 ```
 
-And returns the result `6`
+And returns this result: `6`
 
 This example finds the starting index value for the last occurrence of "def" substring in the Array ['abc', 'def', 'ghi', 'def']
 ```
 lastIndexOf(createArray('abc', 'def', 'ghi', 'def'), 'def')
 ```
 
-And returns the result `3`
+And returns this result: `3`
 
 ### length
 
@@ -2659,12 +2638,12 @@ length('<str>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*str*> | Yes | string | The string where to get length |
+| <*str*> | Yes | String | The string where to get length |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*length*> | integer | The length of this string |
+| <*length*> | Integer | The length of this string |
 ||||
 
 *Example*
@@ -2771,13 +2750,13 @@ max([<number1>, <number2>, ...])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*number1*>, <*number2*>, ... | Yes | number | The set of numbers from which you want the highest value |
+| <*number1*>, <*number2*>, ... | Yes | Number | The set of numbers from which you want the highest value |
 | [<*number1*>, <*number2*>, ...] | Yes | Array - Number | The array of numbers from which you want the highest value |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*max-value*> | number | The highest value in the specified array or set of numbers |
+| <*max-value*> | Number | The highest value in the specified array or set of numbers |
 ||||
 
 *Example*
@@ -2789,7 +2768,7 @@ max(1, 2, 3)
 max(createArray(1, 2, 3))
 ```
 
-And return the result `3`
+And return this result: `3`
 
 <a name="min"></a>
 
@@ -2804,13 +2783,13 @@ min([<number1>, <number2>, ...])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*number1*>, <*number2*>, ... | Yes | number | The set of numbers from which you want the lowest value |
+| <*number1*>, <*number2*>, ... | Yes | Number | The set of numbers from which you want the lowest value |
 | [<*number1*>, <*number2*>, ...] | Yes | Array - Number | The array of numbers from which you want the lowest value |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*min-value*> | number | The lowest value in the specified set of numbers or specified array |
+| <*min-value*> | Number | The lowest value in the specified set of numbers or specified array |
 ||||
 
 *Example*
@@ -2822,7 +2801,7 @@ min(1, 2, 3)
 min(createArray(1, 2, 3))
 ```
 
-And return the result `1`
+And return this result: `1`
 
 <a name="mod"></a>
 
@@ -2837,13 +2816,13 @@ mod(<dividend>, <divisor>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*dividend*> | Yes | number | The number to divide by the *divisor* |
-| <*divisor*> | Yes | number | The number that divides the *dividend*, but cannot be 0. |
+| <*dividend*> | Yes | Number | The number to divide by the *divisor* |
+| <*divisor*> | Yes | Number | The number that divides the *dividend*, but cannot be 0. |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*modulo-result*> | number | The remainder from dividing the first number by the second number |
+| <*modulo-result*> | Number | The remainder from dividing the first number by the second number |
 ||||
 
 *Example*
@@ -2854,7 +2833,7 @@ This example divides the first number by the second number:
 mod(3, 2)
 ```
 
-And return the result `1`
+And return this result: `1`
 
 <a name="month"></a>
 
@@ -2868,12 +2847,12 @@ month('<timestamp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
+| <*timestamp*> | Yes | String | The string contains the timestamp |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*number-of-month*> | integer | The number of the month in the specified timestamp |
+| <*number-of-month*> | Integer | The number of the month in the specified timestamp |
 ||||
 
 *Example*
@@ -2896,13 +2875,13 @@ mul(<multiplicand1>, <multiplicand2>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*multiplicand1*> | Yes | integer or float | The number to multiply by *multiplicand2* |
-| <*multiplicand2*> | Yes | integer or float | The number that multiples *multiplicand1* |
+| <*multiplicand1*> | Yes | Integer or Float | The number to multiply by *multiplicand2* |
+| <*multiplicand2*> | Yes | Integer or Float | The number that multiples *multiplicand1* |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*product-result*> | integer or float | The product from multiplying the first number by the second number |
+| <*product-result*> | Integer or Float | The product from multiplying the first number by the second number |
 ||||
 
 *Example*
@@ -2935,7 +2914,7 @@ newGuid()
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Guid-string*> | string | A new guid string, length is 36 and looks like *xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx*|
+| <*Guid-string*> | String | A new guid string, length is 36 and looks like *xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx*|
 ||||
 
 *Example*
@@ -3059,13 +3038,13 @@ rand(<minValue>, <maxValue>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*minValue*> | Yes | integer | The lowest integer in the range |
-| <*maxValue*> | Yes | integer | The integer that follows the highest integer in the range that the function can return |
+| <*minValue*> | Yes | Integer | The lowest integer in the range |
+| <*maxValue*> | Yes | Integer | The integer that follows the highest integer in the range that the function can return |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*random-result*> | integer | The random integer returned from the specified range |
+| <*random-result*> | Integer | The random integer returned from the specified range |
 ||||
 
 *Example*
@@ -3090,13 +3069,13 @@ range(<startIndex>, <count>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*startIndex*> | Yes | integer | An integer value that starts the array as the first item |
-| <*count*> | Yes | integer | The number of integers in the array |
+| <*startIndex*> | Yes | Integer | An integer value that starts the array as the first item |
+| <*count*> | Yes | Integer | The number of integers in the array |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*range-result*> | integer | The array with integers starting from the specified index |
+| <*range-result*> | Integer | The array with integers starting from the specified index |
 ||||
 
 *Example*
@@ -3107,7 +3086,7 @@ This example creates an integer array that starts from the specified index and h
 range(1, 4)
 ```
 
-And returns the result `[1, 2, 3, 4]`
+And returns this result: `[1, 2, 3, 4]`
 
 <a name="removeProperty"></a>
 
@@ -3121,13 +3100,13 @@ removeProperty(<object>, '<property>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object*> | Yes | object | The JSON object from where you want to remove a property |
-| <*property*> | Yes | string | The name for the property to remove |
+| <*object*> | Yes | Object | The JSON object from where you want to remove a property |
+| <*property*> | Yes | String | The name for the property to remove |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-object*> | object | The updated JSON object without the specified property |
+| <*updated-object*> | Object | The updated JSON object without the specified property |
 ||||
 
 *Example*
@@ -3152,14 +3131,14 @@ replace('<text>', '<oldText>', '<newText>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string that has the substring to replace |
-| <*oldText*> | Yes | string | The substring to replace |
-| <*newText*> | Yes | string | The replacement string |
+| <*text*> | Yes | String | The string that has the substring to replace |
+| <*oldText*> | Yes | String | The substring to replace |
+| <*newText*> | Yes | String | The replacement string |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-text*> | string | The updated string after replacing the substring <p>If the substring is not found, return the original string. |
+| <*updated-text*> | String | The updated string after replacing the substring <p>If the substring is not found, return the original string. |
 ||||
 
 
@@ -3172,7 +3151,7 @@ and replaces "old" with "new":
 replace('the old string', 'old', 'new')
 ```
 
-And returns the result **the new string**
+And returns this result: `"the new string"`
 
 *Example 2*
 
@@ -3185,7 +3164,7 @@ replace('hello\n', '\n', '\\\\')
 @"replace('hello\n', '\n', '\\\\')"
 ```
 
-And returns these results: **hello\n**, **hello\\**, `@"hello\\**, `@"hello\\**
+And returns these results: `"hello\n"`, `"hello\\"`, `@"hello\\"`, `@"hello\\"`
 
 <a name="replaceIgnoreCase"></a>
 
@@ -3201,14 +3180,14 @@ replaceIgnoreCase('<text>', '<oldText>', '<newText>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string that has the substring to replace |
-| <*oldText*> | Yes | string | The substring to replace |
-| <*newText*> | Yes | string | The replacement string |
+| <*text*> | Yes | String | The string that has the substring to replace |
+| <*oldText*> | Yes | String | The substring to replace |
+| <*newText*> | Yes | String | The replacement string |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-text*> | string | The updated string after replacing the substring <p>If the substring is not found, return the original string. |
+| <*updated-text*> | String | The updated string after replacing the substring <p>If the substring is not found, return the original string. |
 ||||
 
 *Example*
@@ -3220,7 +3199,7 @@ and replaces "old" with "new":
 replace('the old string', 'old', 'new')
 ```
 
-And returns the result **the new string**
+And returns this result: `"the new string"`
 
 <a name="select"></a>
 
@@ -3234,14 +3213,14 @@ select([<collection/instance>], <iteratorName>, <function>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection/instance*> | Yes | array | The collection with the items |
+| <*collection/instance*> | Yes | Array | The collection with the items |
 | <*iteratorName*> | Yes | Iterator Name | The key item of arrow function |
 | <*function*> | Yes | Expression | function that can contains iteratorName |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*new-collection*> | array | the new collection which each element has been evaluated with the function  |
+| <*new-collection*> | Array | the new collection which each element has been evaluated with the function  |
 ||||
 
 *Example*
@@ -3252,7 +3231,7 @@ These examples generate new collections:
 select(createArray(0, 1, 2, 3), x, x + 1)
 ```
 
-And return the result `[1, 2, 3, 4]`
+And return this result: `[1, 2, 3, 4]`
 
 These examples generate new collections from instance:
 
@@ -3260,7 +3239,7 @@ These examples generate new collections from instance:
 select(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
 ```
 
-And return the result `['name:jack', 'age:15']`
+And return this result: `['name:jack', 'age:15']`
 
 <a name="setPathToValue"></a>
 
@@ -3274,12 +3253,12 @@ setPathToValue(<path>, <value>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*Path*> | Yes | object | the path which you want to set |
-| <*value*> | Yes | object | the value you want to set to the path |
+| <*Path*> | Yes | Object | the path which you want to set |
+| <*value*> | Yes | Object | the value you want to set to the path |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | object | the value be set, same with the second parameter|
+| value | Object | the value be set, same with the second parameter|
 ||||
 
 *Example*
@@ -3307,14 +3286,14 @@ setProperty(<object>, '<property>', <value>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object*> | Yes | object | The JSON object from where you want to set a property |
-| <*property*> | Yes | string | The name for the property to set |
-| <*value*> | Yes | any | The value to set for the specified property |
+| <*object*> | Yes | Object | The JSON object from where you want to set a property |
+| <*property*> | Yes | String | The name for the property to set |
+| <*value*> | Yes | Any | The value to set for the specified property |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-object*> | object | The updated JSON object whose property you set |
+| <*updated-object*> | Object | The updated JSON object whose property you set |
 ||||
 
 *Example*
@@ -3337,13 +3316,13 @@ skip([<collection>], <count>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | array | The collection whose items you want to remove |
-| <*count*> | Yes | integer | A positive integer for the number of items to remove at the front |
+| <*collection*> | Yes | Array | The collection whose items you want to remove |
+| <*count*> | Yes | Integer | A positive integer for the number of items to remove at the front |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updatedCollection*> | array | The updated collection after removing the specified items |
+| <*updatedCollection*> | Array | The updated collection after removing the specified items |
 ||||
 
 *Example*
@@ -3368,13 +3347,13 @@ sortBy([<collection>], '<property>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string or array | The collection to sort |
-| <*property*> | No | string | Sort by this specific property of the object element in the collection if set|
+| <*collection*> | Yes | String or Array | The collection to sort |
+| <*property*> | No | String | Sort by this specific property of the object element in the collection if set|
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*new-collection*> | array | the new collection whose elements have been sorted |
+| <*new-collection*> | Array | the new collection whose elements have been sorted |
 ||||
 
 *Example1*
@@ -3385,7 +3364,7 @@ This example generates new sorted collection:
 sortBy(createArray(1, 2, 0, 3))
 ```
 
-And return the result `[0, 1, 2, 3]`
+And return this result: `[0, 1, 2, 3]`
 
 *Example2*
 Suppose you have this collection:
@@ -3430,13 +3409,13 @@ sortBy([<collection>], '<property>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string or array | The collection to sort |
-| <*property*> | No | string | Sort by this specific property of the object element in the collection if set|
+| <*collection*> | Yes | String or Array | The collection to sort |
+| <*property*> | No | String | Sort by this specific property of the object element in the collection if set|
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*new-collection*> | array | the new collection whose elements have been sorted |
+| <*new-collection*> | Array | the new collection whose elements have been sorted |
 ||||
 
 *Example1*
@@ -3447,7 +3426,7 @@ This example generates new sorted collection:
 sortByDescending(createArray(1, 2, 0, 3))
 ```
 
-And return the result `[3, 2, 1, 0]`
+And return this result: `[3, 2, 1, 0]`
 
 *Example2*
 Suppose you have this collection:
@@ -3493,13 +3472,13 @@ split('<text>', '<delimiter>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string to separate into substrings based on the specified delimiter in the original string, if the text is a null value, it will be taken as an empty string |
-| <*delimiter*> | No | string | The character in the original string to use as the delimiter, if no delimiter given or delimiter is a null value, the default value will be an empty string |
+| <*text*> | Yes | String | The string to separate into substrings based on the specified delimiter in the original string, if the text is a null value, it will be taken as an empty string |
+| <*delimiter*> | No | String | The character in the original string to use as the delimiter, if no delimiter given or delimiter is a null value, the default value will be an empty string |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| [<*substring1*>,<*substring2*>,...] | array | An array that contains substrings from the original string, separated by commas |
+| [<*substring1*>,<*substring2*>,...] | Array | An array that contains substrings from the original string, separated by commas |
 ||||
 
 *Examples*
@@ -3508,7 +3487,7 @@ This example creates an array with substrings from the specified
 string based on the specified character as the delimiter:
 
 ```
-split('a**b**c', '**')
+split('a_b_c', '_')
 split('hello', '')
 split('', 'e')
 split('', '')
@@ -3529,13 +3508,13 @@ startOfDay('<timestamp>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| '<*updated-timestamp*>'| string | The specified timestamp but starting at the zero-hour mark for the day |
+| '<*updated-timestamp*>'| String | The specified timestamp but starting at the zero-hour mark for the day |
 ||||
 
 *Example*
@@ -3546,7 +3525,7 @@ This example finds the start of the day for this timestamp:
 startOfDay('2018-03-15T13:30:30.000Z')
 ```
 
-And returns the result **2018-03-15T00:00:00.000Z**
+And returns this result: `"2018-03-15T00:00:00.000Z"`
 
 <a name="startOfHour"></a>
 
@@ -3560,13 +3539,13 @@ startOfHour('<timestamp>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| '<*updated-timestamp*>'| string | The specified timestamp but starting at the zero-minute mark for the day |
+| '<*updated-timestamp*>'| String | The specified timestamp but starting at the zero-minute mark for the day |
 ||||
 
 *Example*
@@ -3577,7 +3556,7 @@ This example finds the start of the hour for this timestamp:
 startOfHour('2018-03-15T13:30:30.000Z')
 ```
 
-And returns the result **2018-03-15T13:00:00.000Z**
+And returns this result: `"2018-03-15T13:00:00.000Z"`
 
 <a name="startOfMonth"></a>
 
@@ -3591,13 +3570,13 @@ startOfDay('<timestamp>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| '<*updated-timestamp*>'| string | The specified timestamp but starting on the first day of the month at the zero-hour mark |
+| '<*updated-timestamp*>'| String | The specified timestamp but starting on the first day of the month at the zero-hour mark |
 ||||
 
 *Example*
@@ -3608,7 +3587,7 @@ This example finds the start of the month for this timestamp:
 startOfDay('2018-03-15T13:30:30.000Z')
 ```
 
-And returns the result **2018-03-01T00:00:00.000Z**
+And returns this result: `"2018-03-01T00:00:00.000Z"`
 
 <a name="startsWith"></a>
 
@@ -3622,8 +3601,8 @@ startsWith('<text>', '<searchText>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string to check |
-| <*searchText*> | Yes | string | The starting substring to find |
+| <*text*> | Yes | String | The string to check |
+| <*searchText*> | Yes | String | The starting substring to find |
 |||||
 
 | Return value | Type | Description |
@@ -3655,7 +3634,7 @@ And it returns the result: `false`
 
 ### string
 
-Return the string version of a value.
+Return the string version for a value.
 
 ```
 string(<value>)
@@ -3663,23 +3642,23 @@ string(<value>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | any | The value to convert |
+| <*value*> | Yes | Any | The value to convert |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*string-value*> | string | The string version of the specified value |
+| <*string-value*> | String | The string version for the specified value |
 ||||
 
 *Example 1*
 
-This example creates the string version of this number:
+This example creates the string version for this number:
 
 ```
 string(10)
 ```
 
-And returns the result **10**
+And returns this result: `"10"`
 
 *Example 2*
 
@@ -3691,7 +3670,7 @@ as an escape character for the double-quotation mark (").
 string( { "name": "Sophie Owen" } )
 ```
 
-And returns the result **{ \\"name\\": \\"Sophie Owen\\" }**
+And returns this result: `"{ \\"name\\": \\"Sophie Owen\\" }"`
 
 <a name="sub"></a>
 
@@ -3705,13 +3684,13 @@ sub(<minuend>, <subtrahend>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*minuend*> | Yes | number | The number from which to subtract the *subtrahend* |
-| <*subtrahend*> | Yes | number | The number to subtract from the *minuend* |
+| <*minuend*> | Yes | Number | The number from which to subtract the *subtrahend* |
+| <*subtrahend*> | Yes | Number | The number to subtract from the *minuend* |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*result*> | number | The result from subtracting the second number from the first number |
+| <*result*> | Number | The result from subtracting the second number from the first number |
 ||||
 
 *Example*
@@ -3722,7 +3701,7 @@ This example subtracts the second number from the first number:
 sub(10.3, .3)
 ```
 
-And returns the result `10`
+And returns this result: `10`
 
 <a name="subArray"></a>
 
@@ -3736,14 +3715,14 @@ subArray(<Array>, <startIndex>, <endIndex>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*array*> | Yes | array | The array whose items you want |
-| <*startIndex*> | Yes | integer | A positive number equal to or greater than 0 that you want to use as the starting position or index value |
-| <*endIndex*> | Yes | integer |  A positive number equal to or greater than 0 that you want to use as the ending position or index value|
+| <*array*> | Yes | Array | The array whose items you want |
+| <*startIndex*> | Yes | Integer | A positive number equal to or greater than 0 that you want to use as the starting position or index value |
+| <*endIndex*> | Yes | Integer |  A positive number equal to or greater than 0 that you want to use as the ending position or index value|
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*sub-array-result*> | array | A sub-array with the specified number of items, starting at the specified index position in the source string |
+| <*sub-array-result*> | Array | A sub-array with the specified number of items, starting at the specified index position in the source string |
 ||||
 
 *Example*
@@ -3755,7 +3734,7 @@ starting from the index value 2 and ending at the index of 5:
 subArray(createArray('H','e','l','l','o'), 2, 5)
 ```
 
-And returns the result `["l", "l", "o"]`
+And returns this result: `["l", "l", "o"]`
 
 <a name="substring"></a>
 
@@ -3771,14 +3750,14 @@ substring('<text>', <startIndex>, <length>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string whose characters you want |
-| <*startIndex*> | Yes | integer | A positive number equal to or greater than 0 that you want to use as the starting position or index value |
-| <*length*> | Yes | integer | A positive number of characters that you want in the substring |
+| <*text*> | Yes | String | The string whose characters you want |
+| <*startIndex*> | Yes | Integer | A positive number equal to or greater than 0 that you want to use as the starting position or index value |
+| <*length*> | Yes | Integer | A positive number of characters that you want in the substring |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*substring-result*> | string | A substring with the specified number of characters, starting at the specified index position in the source string |
+| <*substring-result*> | String | A substring with the specified number of characters, starting at the specified index position in the source string |
 ||||
 
 *Example*
@@ -3790,7 +3769,7 @@ starting from the index value 6:
 substring('hello world', 6, 5)
 ```
 
-And returns the result **world**
+And returns this result: `"world"`
 
 <a name="subtractFromTime"></a>
 
@@ -3805,15 +3784,15 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*interval*> | Yes | integer | The number of specified time units to subtract |
-| <*timeUnit*> | Yes | string | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*timestamp*> | Yes | String | The string that contains the timestamp |
+| <*interval*> | Yes | Integer | The number of specified time units to subtract |
+| <*timeUnit*> | Yes | String | The unit of time to use with *interval*: "Second", "Minute", "Hour", "Day", "Week", "Month", "Year" |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-timestamp*> | string | The timestamp minus the specified number of time units |
+| <*updated-timestamp*> | String | The timestamp minus the specified number of time units |
 ||||
 
 *Example 1*
@@ -3824,7 +3803,7 @@ This example subtracts one day from this timestamp:
 subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day')
 ```
 
-And returns the result **2018-01-01T00:00:00.000Z**
+And returns this result: `"2018-01-01T00:00:00.000Z"`
 
 *Example 2*
 
@@ -3834,7 +3813,7 @@ This example subtracts one day from this timestamp:
 subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day', 'D')
 ```
 
-And returns the result using the optional "D" format: **Monday, January, 1, 2018**
+And returns this result using the optional "D" format: `"Monday, January, 1, 2018"`
 
 <a name="sum"></a>
 
@@ -3853,7 +3832,7 @@ add([<list of numbers>])
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*result-sum*> | number | The result from adding the specified numbers |
+| <*result-sum*> | Number | The result from adding the specified numbers |
 ||||
 
 *Example*
@@ -3864,7 +3843,7 @@ This example adds the specified numbers:
 add(createArray(1, 1.5))
 ```
 
-And returns the result `2.5`
+And returns this result: `2.5`
 
 <a name="take"></a>
 
@@ -3879,8 +3858,8 @@ take([<collection>], <count>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | string or array | The collection whose items you want |
-| <*count*> | Yes | integer | A positive integer for the number of items that you want from the front |
+| <*collection*> | Yes | String or Array | The collection whose items you want |
+| <*count*> | Yes | Integer | A positive integer for the number of items that you want from the front |
 |||||
 
 | Return value | Type | Description |
@@ -3899,7 +3878,7 @@ take(createArray(0, 1, 2, 3, 4), 3)
 
 And return these results:
 
-- First example: **abc**
+- First example: `"abc"`
 - Second example: `[0, 1, 2]`
 
 <a name='ticks'></a>
@@ -3919,7 +3898,7 @@ ticks('<timestamp>')
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*ticks-number*> | integer | The number of ticks since the specified timestamp |
+| <*ticks-number*> | Integer | The number of ticks since the specified timestamp |
 ||||
 
 *Example*
@@ -3929,7 +3908,7 @@ The example convert a timestamp to its ticks property
 ticks('2018-01-01T08:00:00.000Z')
 ```
 
-And returns the result `636503904000000000`
+And returns this result: `636503904000000000`
 
 <a name="toLower"></a>
 
@@ -3945,12 +3924,12 @@ toLower('<text>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string to return in lowercase format |
+| <*text*> | Yes | String | The string to return in lowercase format |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*lowercase-text*> | string | The original string in lowercase format |
+| <*lowercase-text*> | String | The original string in lowercase format |
 ||||
 
 *Example*
@@ -3961,7 +3940,7 @@ This example converts this string to lowercase:
 toLower('Hello World')
 ```
 
-And returns the result **hello world**
+And returns this result: `"hello world"`
 
 <a name="toUpper"></a>
 
@@ -3977,12 +3956,12 @@ toUpper('<text>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string to return in uppercase format |
+| <*text*> | Yes | String | The string to return in uppercase format |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*uppercase-text*> | string | The original string in uppercase format |
+| <*uppercase-text*> | String | The original string in uppercase format |
 ||||
 
 *Example*
@@ -3993,7 +3972,7 @@ This example converts this string to uppercase:
 toUpper('Hello World')
 ```
 
-And returns the result **HELLO WORLD**
+And returns this result: `"HELLO WORLD"`
 
 <a name="trim"></a>
 
@@ -4008,12 +3987,12 @@ trim('<text>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The string that has the leading and trailing whitespace to remove |
+| <*text*> | Yes | String | The string that has the leading and trailing whitespace to remove |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updatedText*> | string | An updated version for the original string without leading or trailing whitespace |
+| <*updatedText*> | String | An updated version for the original string without leading or trailing whitespace |
 ||||
 
 *Example*
@@ -4025,7 +4004,7 @@ whitespace from the string " Hello World  ":
 trim(' Hello World  ')
 ```
 
-And returns the result **Hello World**
+And returns this result: `"Hello World"`
 
 <a name="union"></a>
 
@@ -4056,7 +4035,7 @@ This example gets all the items from these collections:
 union(createArray(1, 2, 3), createArray(1, 2, 10, 101))
 ```
 
-And returns the result `[1, 2, 3, 10, 101]`
+And returns this result: `[1, 2, 3, 10, 101]`
 
 <a name="unique"/>
 
@@ -4068,12 +4047,12 @@ unique([<collection>])
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | array | The collection to modify |
+| <*collection*> | Yes | Array | The collection to modify |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*new-collection*> | array | New collection with duplicate element removed |
+| <*new-collection*> | Array | New collection with duplicate element removed |
 ||||
 
 *Example 1*
@@ -4096,12 +4075,12 @@ uriComponent('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The string to convert to URI-encoded format |
+| <*value*> | Yes | String | The string to convert to URI-encoded format |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*encoded-uri*> | string | The URI-encoded string with escape characters |
+| <*encoded-uri*> | String | The URI-encoded string with escape characters |
 ||||
 
 *Example*
@@ -4112,13 +4091,13 @@ This example creates a URI-encoded version for this string:
 uriComponent('https://contoso.com')
 ```
 
-And returns the result **http%3A%2F%2Fcontoso.com**
+And returns this result: `"http%3A%2F%2Fcontoso.com"`
 
 <a name="uriComponentToString"></a>
 
 ### uriComponentToString
 
-Return the string version of a uniform resource identifier (URI) encoded string, effectively decoding the URI-encoded string.
+Return the string version for a uniform resource identifier (URI) encoded string, effectively decoding the URI-encoded string.
 
 ```
 uriComponentToString('<value>')
@@ -4126,12 +4105,12 @@ uriComponentToString('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The URI-encoded string to decode |
+| <*value*> | Yes | String | The URI-encoded string to decode |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*binary-for-encoded-uri*> | string | The decoded version for the URI-encoded string |
+| <*binary-for-encoded-uri*> | String | The decoded version for the URI-encoded string |
 ||||
 
 *Example*
@@ -4142,7 +4121,7 @@ This example creates the decoded string version for this URI-encoded string:
 uriComponentToString('http%3A%2F%2Fcontoso.com')
 ```
 
-And returns the result **https://contoso.com**
+And returns this result: `"https://contoso.com"`
 
 <a name="uriHost"></a>
 
@@ -4156,12 +4135,12 @@ uriHost('<uri>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*uri*> | Yes | string | The URI whose host value you want |
+| <*uri*> | Yes | String | The URI whose host value you want |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*host-value*> | string | The host value for the specified URI |
+| <*host-value*> | String | The host value for the specified URI |
 ||||
 
 *Example*
@@ -4172,7 +4151,7 @@ This example finds the host value for this URI:
 uriHost('https://www.localhost.com:8080')
 ```
 
-And returns the result **www.localhost.com**
+And returns this result: `"www.localhost.com"`
 
 <a name="uriPath"></a>
 
@@ -4186,12 +4165,12 @@ uriPath('<uri>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*uri*> | Yes | string | The URI whose path value you want |
+| <*uri*> | Yes | String | The URI whose path value you want |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*path-value*> | string | the path value for the specified URI |
+| <*path-value*> | String | the path value for the specified URI |
 ||||
 
 *Example*
@@ -4202,7 +4181,7 @@ This example finds the path value for this URI:
 uriPath('http://www.contoso.com/catalog/shownew.htm?date=today')
 ```
 
-And returns the result **/catalog/shownew.htm**
+And returns this result: `"/catalog/shownew.htm"`
 
 <a name="uriPathAndQuery"></a>
 
@@ -4216,12 +4195,12 @@ uriPathAndQuery('<uri>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*uri*> | Yes | string | The URI whose path and query value you want |
+| <*uri*> | Yes | String | The URI whose path and query value you want |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*path-query-value*> | string | the path and query value for the specified URI |
+| <*path-query-value*> | String | the path and query value for the specified URI |
 ||||
 
 *Example*
@@ -4232,7 +4211,7 @@ This example finds the path and query value for this URI:
 uriPathAndQuery('http://www.contoso.com/catalog/shownew.htm?date=today')
 ```
 
-And returns the result **/catalog/shownew.htm?date=today**
+And returns this result: `"/catalog/shownew.htm?date=today"`
 
 <a name="uriPort"></a>
 
@@ -4246,12 +4225,12 @@ uriPort('<uri>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*uri*> | Yes | string | The URI whose path value you want |
+| <*uri*> | Yes | String | The URI whose path value you want |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*port-value*> | string | the port value for the specified URI |
+| <*port-value*> | String | the port value for the specified URI |
 ||||
 
 *Example*
@@ -4262,7 +4241,7 @@ This example finds the portvalue for this URI:
 uriPort('http://www.localhost:8080')
 ```
 
-And returns the result `8080`
+And returns this result: `8080`
 
 <a name="uriQuery"></a>
 
@@ -4276,12 +4255,12 @@ uriQuery('<uri>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*uri*> | Yes | string | The URI whose query value you want |
+| <*uri*> | Yes | String | The URI whose query value you want |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*query-value*> | string | the query value for the specified URI |
+| <*query-value*> | String | the query value for the specified URI |
 ||||
 
 *Example*
@@ -4292,7 +4271,7 @@ This example finds the query value for this URI:
 uriQuery('http://www.contoso.com/catalog/shownew.htm?date=today')
 ```
 
-And returns the result **?date=today**
+And returns this result: `"?date=today"`
 
 <a name="uriScheme"></a>
 
@@ -4306,12 +4285,12 @@ uriScheme('<uri>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*uri*> | Yes | string | The URI whose query value you want |
+| <*uri*> | Yes | String | The URI whose query value you want |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*scheme-value*> | string | the scheme value for the specified URI |
+| <*scheme-value*> | String | the scheme value for the specified URI |
 ||||
 
 *Example*
@@ -4322,7 +4301,7 @@ This example finds the scheme value for this URI:
 uriQuery('http://www.contoso.com/catalog/shownew.htm?date=today')
 ```
 
-And returns the result **http**
+And returns this result: `"http"`
 
 <a name="utcNow"></a>
 
@@ -4339,12 +4318,12 @@ Optionally, you can specify a different format with the <*format*> parameter.
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*format*> | No | String | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format like YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*current-timestamp*> | string | The current date and time |
+| <*current-timestamp*> | String | The current date and time |
 ||||
 
 *Example 1*
@@ -4356,7 +4335,7 @@ This example gets the current timestamp:
 utcNow()
 ```
 
-And returns the result **2018-04-15T13:00:00.000Z**
+And returns this result: `"2018-04-15T13:00:00.000Z"`
 
 *Example 2*
 
@@ -4367,7 +4346,7 @@ This example gets the current timestamp using the optional "D" format:
 utcNow('D')
 ```
 
-And returns the result **Sunday, April 15, 2018**
+And returns this result: `"Sunday, April 15, 2018"`
 
 <a name="where"></a>
 
@@ -4381,7 +4360,7 @@ where([<collection/instance>], <iteratorName>, <function>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection/instance*> | Yes | array | The collection with the items |
+| <*collection/instance*> | Yes | Array | The collection with the items |
 | <*iteratorName*> | Yes | Iterater Name | The key item of arrow function |
 | <*function*> | Yes | Expression | condition function which is used to filter items|
 |||||
@@ -4399,7 +4378,7 @@ These examples generate new collections:
 where(createArray(0, 1, 2, 3), x, x > 1)
 ```
 
-And return the result `[2, 3]`
+And return this result: `[2, 3]`
 
 These examples generate new object:
 
@@ -4407,7 +4386,7 @@ These examples generate new object:
 where(json("{'name': 'jack', 'age': '15'}"), x, x.value == 'jack')
 ```
 
-And return the result `{'name': 'jack'}`
+And return this result: `{'name': 'jack'}`
 
 
 <a name="xml"></a>
@@ -4422,14 +4401,14 @@ xml('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The string with the JSON object to convert
-The JSON object must have only one root property, which can't be an array.
+| <*value*> | Yes | String | The string with the JSON object to convert
+The JSON object must have only one root property, which can't be an array. 
 Use the backslash character (\) as an escape character for the double quotation mark ("). |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*xml-version*> | object | The encoded XML for the specified string or JSON object |
+| <*xml-version*> | Object | The encoded XML for the specified string or JSON object |
 ||||
 
 *Example 1*
@@ -4438,7 +4417,7 @@ This example creates the XML version for this string, which contains a JSON obje
 
 `xml(json('{ \"name\": \"Sophia Owen\" }'))`
 
-And returns the result XML:
+And returns this result XML:
 
 ```
 <name>Sophia Owen</name>
@@ -4461,7 +4440,7 @@ This example creates XML for a string that contains this JSON object:
 
 `xml(json('{\"person\": {\"name\": \"Sophia Owen\", \"city\": \"Seattle\"}}'))`
 
-And returns the result XML:
+And returns this result XML:
 
 ```
 <person>
@@ -4482,15 +4461,15 @@ xPath('<xml>', '<xpath>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*xml*> | Yes | any | The XML string to search for nodes or values that match an XPath expression value |
-| <*xPath*> | Yes | any | The XPath expression used to find matching XML nodes or values |
+| <*xml*> | Yes | Any | The XML string to search for nodes or values that match an XPath expression value |
+| <*xPath*> | Yes | Any | The XPath expression used to find matching XML nodes or values |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*xml-node*> | XML | An XML node when only a single node matches the specified XPath expression |
-| <*value*> | any | The value from an XML node when only a single value matches the specified XPath expression |
-<*[<xml-node1>, <xml-node2>, ...] -or- [<value1>, <value2>, ...]*> | array | An array with XML nodes or values that match the specified XPath expression |
+| <*value*> | Any | The value from an XML node when only a single value matches the specified XPath expression |
+<*[<xml-node1>, <xml-node2>, ...] -or- [<value1>, <value2>, ...]*> | Array | An array with XML nodes or values that match the specified XPath expression |
 ||||
 
 *Example 1*
@@ -4503,7 +4482,7 @@ xpath(items, '/produce/item/name')
 
 Here are the arguments:
 
-- The "items" string, which contains this XML:
+- The "items" string, which contains this XML: 
 
 ```
 "<?xml version="1.0"?> <produce> <item> <name>Gala</name> <type>apple</type> <count>20</count> </item> <item> <name>Honeycrisp</name> <type>apple</type> <count>10</count> </item> </produce>"
@@ -4523,7 +4502,7 @@ Following on Example 1, this example finds nodes that match the <count></count> 
 xpath(xml(parameters('items')), 'sum(/produce/item/count)')
 ```
 
-And returns the result ```30```
+And returns this result: ```30```
 
 <a name="year"></a>
 
@@ -4537,12 +4516,12 @@ year('<timestamp>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string | The string that contains the timestamp |
+| <*timestamp*> | Yes | String | The string contains the timestamp |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*year*> | integer | The year in the specified timestamp |
+| <*year*> | Integer | The year in the specified timestamp |
 ||||
 
 *Example*
