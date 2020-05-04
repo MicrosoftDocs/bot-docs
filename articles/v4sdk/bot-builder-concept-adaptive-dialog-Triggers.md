@@ -48,12 +48,12 @@ Triggers = new List<OnCondition>()
 
 [Recognizers][8] extract meaningful pieces of information from a user's input in the form of _intents_ and _entities_ and when they do, they emit events. For example the `recognizedIntent` event fires when the recognizer picks up an intent (or extracts entities) from a given user utterance. You handle these events using the _recognizer event triggers_.
 
-| Event cause               | Trigger name  | Base event    | Base class    | Description                                                       |
-| ------------------------- | ------------- | ------------- | ------------- | ----------------------------------------------------------------- |
-| Assign entity to property | OnAssignEntity| RecognizedIntent | OnDialogEvent | Triggered to assign an entity to a property.                      |
-| Choose entity             | OnChooseEntity| RecognizedIntent | OnDialogEvent | Occurs when there are multiple possible resolutions of an entity. |
-| Choose Intent | OnChooseIntent |ChooseIntent | OnDialogEvent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
-| Intent recognized| [OnIntent](#Recognizer-trigger-examples)| RecognizedIntent | OnDialogEvent | Actions to perform when specified intent is recognized.           |
+| Event cause               | Trigger name  | Base event    | Description                                                       |
+| ------------------------- | ------------- | ------------- | ----------------------------------------------------------------- |
+| Assign entity to property | OnAssignEntity| RecognizedIntent | Triggered to assign an entity to a property.                      |
+| Choose entity             | OnChooseEntity| RecognizedIntent | Occurs when there are multiple possible resolutions of an entity. |
+| Choose Intent | OnChooseIntent |ChooseIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
+| Intent recognized| [OnIntent](#Recognizer-trigger-examples)| RecognizedIntent | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|OnQnAMatch| RecognizedIntent |OnDialogEvent|This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
 |Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)| UnknownIntent |OnDialogEvent| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
 
@@ -117,7 +117,7 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 
 ### Dialog events
 
-The dialog triggers handle dialog specific events which are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the bot framework SDK.
+The dialog triggers handle dialog specific events which are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the bot framework SDK and they all derive from the `OnDialogEvent` class.
 
 > You should use _dialog triggers_ to:
 >
@@ -126,16 +126,16 @@ The dialog triggers handle dialog specific events which are related to the "life
 > * Take actions on messages received or sent.
 > * Evaluate and take action based on the content of an incoming activity.
 
-| Event cause         | Trigger name     | Base event   | Base class    | Description                                                                    |
-| ------------------- | ---------------- | ------------ | ------------- | ------------------------------------------------------------------------------ |
-| Dialog started      | OnBeginDialog    | BeginDialog  | OnDialogEvent | Actions to perform when this dialog begins.                                    |
-| Dialog cancelled    | OnCancelDialog   |RepromptDialog| OnDialogEvent | Actions to perform on cancel dialog event (when this dialog ends).             |
-| Choose Property     | OnChooseProperty | CancelDialog | OnDialogEvent | This event occurs when there are multiple possible entity to property mappings.|
-| Actions processed   | OnEndOfActions   | EndOfActions | OnDialogEvent | This event occurs once all actions and ambiguity events have been processed.   |
-| An error occurred   | OnError          | Error        | OnDialogEvent | Action to perform when an 'Error' dialog event occurs.                         |
-| Re-prompt for input | OnRepromptDialog |RepromptDialog| OnDialogEvent | Actions to perform when 'RepromptDialog' event occurs.                         |
+| Event cause         | Trigger name     | Base event   | Description                                                                    |
+| ------------------- | ---------------- | ------------ | ------------------------------------------------------------------------------ |
+| Dialog started      | OnBeginDialog    | BeginDialog  | Actions to perform when this dialog begins.                                    |
+| Dialog cancelled    | OnCancelDialog   |RepromptDialog| Actions to perform on cancel dialog event (when this dialog ends).             |
+| Choose Property     | OnChooseProperty | CancelDialog | This event occurs when there are multiple possible entity to property mappings.|
+| Actions processed   | OnEndOfActions   | EndOfActions | This event occurs once all actions and ambiguity events have been processed.   |
+| An error occurred   | OnError          | Error        | Action to perform when an 'Error' dialog event occurs.                         |
+| Re-prompt for input | OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                         |
 
-<!--| Clear Property      |  | OnClearProperty  | OnDialogEvent | This event occurs any time a property needs to be be cleared.                  |-->
+<!--| Clear Property  |  OnClearProperty  | This event occurs any time a property needs to be be cleared.                  |-->
 
 > [!TIP]
 > Most dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-examples) or a [prompt for user input][14] etc.
@@ -162,18 +162,18 @@ var adaptiveDialog = new AdaptiveDialog()
 
 ### Activity events
 
-Activity triggers enable you to associate actions to any incoming activity from the client, more information on activities can be found in [Bot Framework Activity schema][3].
+Activity triggers enable you to associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][3].
 
-All activity events have a base event of `ActivityReceived` and are further refined by ActivityType. The _Base class_ is the class that the trigger derives from.
+All activity events have a base event of `ActivityReceived` and are further refined by their `ActivityType`. The Base class that all activity triggers derive from is `OnActivity`.
 
-| Event cause         | ActivityType | Trigger name                 | Base class | Description                                                                       |
-| ------------------- | ------------ | ---------------------------- | ---------- | --------------------------------------------------------------------------------- |
-| Greeting            | ConversationUpdate | OnConversationUpdateActivity | OnActivity | Handle the events fired when a user begins a new conversation with the bot. |
-| Conversation ended  | EndOfConversation | OnEndOfConversationActivity  | OnActivity | Actions to perform on receipt of an activity with type 'EndOfConversation'.  |
-| Event received      | Event        | OnEventActivity              | OnActivity | Actions to perform on receipt of an activity with type 'Event'.                   |
-| Handover to human   | Handoff      | OnHandoffActivity            | OnActivity | Actions to perform on receipt of an activity with type 'HandOff'.                 |
-| Conversation invoked| Invoke       | OnInvokeActivity             | OnActivity | Actions to perform on receipt of an activity with type 'Invoke'.                  |
-| User is typing      | Typing       | OnTypingActivity             | OnActivity | Actions to perform on receipt of an activity with type 'Typing'.                  |
+| Event cause         | ActivityType | Trigger name                 | Description                                                                       |
+| ------------------- | ------------ | ---------------------------- | --------------------------------------------------------------------------------- |
+| Greeting            | ConversationUpdate | OnConversationUpdateActivity | Handle the events fired when a user begins a new conversation with the bot. |
+| Conversation ended  | EndOfConversation | OnEndOfConversationActivity  | Actions to perform on receipt of an activity with type 'EndOfConversation'.  |
+| Event received      | Event        | OnEventActivity              | Actions to perform on receipt of an activity with type 'Event'.                   |
+| Handover to human   | Handoff      | OnHandoffActivity            | Actions to perform on receipt of an activity with type 'HandOff'.                 |
+| Conversation invoked| Invoke       | OnInvokeActivity             | Actions to perform on receipt of an activity with type 'Invoke'.                  |
+| User is typing      | Typing       | OnTypingActivity             | Actions to perform on receipt of an activity with type 'Typing'.                  |
 
 #### Activity events examples
 
@@ -201,14 +201,14 @@ var myDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 **Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
 
-Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by ActivityType.
+Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by ActivityType. The Base class that all message triggers derive from is `OnActivity`.
 
-| Event cause      | ActivityType    | Trigger name             | Base class | Description                                                                                         |
-| ---------------- | --------------- | ------------------------ | ---------- | --------------------------------------------------------------------------------------------------- |
-| Message received | Message         | OnMessageActivity        | OnActivity | Actions to perform on receipt of an activity with type 'MessageReceived'. Overrides Intent trigger. |
-| Message deleted  | MessageDeletion | OnMessageDeleteActivity  | OnActivity | Actions to perform on receipt of an activity with type 'MessageDelete'.                             |
-| Message reaction | MessageReaction | OnMessageReactionActivity| OnActivity | Actions to perform on receipt of an activity with type 'MessageReaction'.                           |
-| Message updated  | MessageUpdate   | OnMessageUpdateActivity  | OnActivity | Actions to perform on receipt of an activity with type 'MessageUpdate'.                             |
+| Event cause      | ActivityType    | Trigger name             | Description                                                                                         |
+| ---------------- | --------------- | ------------------------ | --------------------------------------------------------------------------------------------------- |
+| Message received | Message         | OnMessageActivity        | Actions to perform on receipt of an activity with type 'MessageReceived'. Overrides Intent trigger. |
+| Message deleted  | MessageDeletion | OnMessageDeleteActivity  | Actions to perform on receipt of an activity with type 'MessageDelete'.                             |
+| Message reaction | MessageReaction | OnMessageReactionActivity| Actions to perform on receipt of an activity with type 'MessageReaction'.                           |
+| Message updated  | MessageUpdate   | OnMessageUpdateActivity  | Actions to perform on receipt of an activity with type 'MessageUpdate'.                             |
 
 #### Message event examples
 
