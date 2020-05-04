@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Language Generation (LG) was created to let developers extract embedded strings from their code and resource files and manage them through a LG runtime and file format. Developers can now create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
-LG can be used to enhance the entire conversational experience. Using LG one can:
+LG can be used to enhance the entire conversational experience. LG can be used to:
 
 - achieve a coherent personality, tone of voice for their bot
 - separate business logic from presentation
@@ -25,7 +25,7 @@ LG can be used to enhance the entire conversational experience. Using LG one can
 - construct speak .vs. display adaptations
 - construct cards, suggested actions and attachments
 
-At the core of LG lies template expansion and entity substitution. You can provide one-off variation for expansion as well as conditionally expand a template. The output from LG can be a simple text string, multi-line response or a complex object payload that a layer above LG will use to construct an [activity][1].
+At the core of LG lies template expansion and entity substitution. You can provide one of variation for expansion as well as conditionally expand a template. The output from LG can be a simple text string, multi-line response, or a complex object payload that a layer above LG will use to construct an [activity][1].
 
 Below is a sample of a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
 
@@ -157,10 +157,10 @@ Nightlies:
 ## Change Log
 ### 4.8 PREVIEW
 - \[**BREAKING CHANGES**\]:
-    - `ActivityFactory` 
+    - `ActivityFactory`
         - has been moved to `Microsoft.Bot.Builder`
         - `CreateActivity` renamed to `FromObject`
-    - `TemplateEngine` 
+    - `TemplateEngine`
         - has been renamed to `Templates`
         - `TemplateEngine.EvaluateTemplate` renamed to `Templates.Evaluate`
         - `TemplateEngine.Evaluate` renamed to `Templates.EvaluateText`
@@ -184,7 +184,7 @@ Nightlies:
     |  Old  | New |
     |-------|-----|
     | # myTemplate <br/> - I have {user.name} as your name |  # myTemplate <br/> - I have @{user.name} as your name |
-    | # myTemplate <br/> - [ackPhrase] <br/><br/> # ackPhrase <br/> - hi <br/>- hello | # myTemplate <br/> - @{ackPhrase()} <br/><br/> # ackPhrase <br/> - hi <br/>- hello | 
+    | # myTemplate <br/> - [ackPhrase] <br/><br/> # ackPhrase <br/> - hi <br/>- hello | # myTemplate <br/> - @{ackPhrase()} <br/><br/> # ackPhrase <br/> - hi <br/>- hello |
 
 - \[**NEW**\]:
     - Language generation preview is now available for JavaScript as well. Checkout packages [here][15]. Samples are [here][26]
@@ -193,8 +193,8 @@ Nightlies:
 
 ### 4.6 PREVIEW 2
 - \[**BREAKING CHANGES**\]:
-    - Old `display || speak` notation is deprecated in favor of structured template support. See below for more details on structured template. 
-    - Old `Chatdown` style cards are deprecated in favor of structured template support. See below for more details on structured template. 
+    - Old `display || speak` notation is deprecated in favor of structured template support. See below for more details on structured template.
+    - Old `Chatdown` style cards are deprecated in favor of structured template support. See below for more details on structured template.
 - \[**NEW**\]:
     - Structured Template support in .lg file format. See [here](../language-generation/language-generation-structured-response-template.md) to learn more about Structured Template definition.
     - ActivityGenerator.GenerateFromLG static method to transform output from LG sub-system into a full blown [Bot Framework Activity][1]
@@ -204,9 +204,9 @@ Nightlies:
 - LG file format:
     - Support for [Switch..Case..Default][20]
     - Support for [import reference][21] to another .lg file.
-- [API changes][2]: 
-    - Dropped FromFile and FromText methods in favor of AddFile and AddFiles. 
-    - Added ability to provide a delegate to externally resolve import references found in content. 
+- [API changes][2]:
+    - Dropped FromFile and FromText methods in favor of AddFile and AddFiles.
+    - Added ability to provide a delegate to externally resolve import references found in content.
 - \[**NEW**\] Translate functionality in [MSLG CLI][23]
 
 ### 4.5 PREVIEW
