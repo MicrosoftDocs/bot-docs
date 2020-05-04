@@ -12,24 +12,24 @@ ms.date: 05/16/2020
 
 # Structured response template
 
-Structured response templates let developers define a complex structure that supports the extensively functionality of [Language Generation (LG)](../v4sdk/bot-builder-concept-language-generation.md) (like templating, composition, substitution) while leaving the interpretation of the structured response up to the caller of the LG library.
+Structured response templates let developers define a complex structure that supports the extensively functionality of [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md) (like templating, composition, substitution) while leaving the interpretation of the structured response up to the caller of the LG library.
 
 For bot applications, we support:
 - activity definition
 - card definition
 - [chatdown][1] style constructs
 
-[Bot Framework activity][2] includes several fields that are of interest and might require the ability for the user to customize or control but to start with the following are most widely used properties that should be configurable via an Activity template definition -
+[Bot Framework activity][2] includes several customizable fields. Below are the most widely used properties that should be configurable via an Activity template definition:
 
 | Property          | Use case                                                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Text              | Display text used by the channel to render visually                                                                               |
 | Speak             | Spoken text used by the channel to render audibly                                                                                 |
-| Attachments       | List of attachments with their type. Used by channels to render as UI cards or other generic file attachment types                |
+| Attachments       | List of attachments with their type. Used by channels to render as UI cards or other generic file attachment types.                |
 | SuggestedActions  | List of actions rendered as suggestions to user.                                                                                  |
-| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values can be accepting, expecting, ignoring   |
+| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values can be `accepting`, `expecting`, or `ignoring`.   |
 
-There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains un-specified. E.g. If only `Text` property is specified, the `Speak` property **is not** automatically assigned to be the `Text` property etc.
+There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains unspecified. For example, the `Speak` property **is not** automatically assigned to be the `Text` property if only the `Text` property is specified.
 
 ## Definition
 
@@ -129,7 +129,7 @@ For example, `# AskForAge.prompt` returns the same resolution text for both the 
 - what is your age?
 ```
 
-You can use the `<TemplateName>!()` to request a new evaluation on each reference within a structured template.
+You can use `<TemplateName>!()` to request a new evaluation on each reference within a structured template.
 
 In the example below, `Speak` and `Text` may have different resolution text because `GetAge` is re-evaluated on each instance.
 
@@ -184,7 +184,7 @@ Use **\\** to escape characters.
 
 ## Structured template composition
 
-The following composition behavior is supported with structured template:
+The following composition behavior is supported with structured templates:
 
 - Composition is structure context-aware. If the target template being referred is also a structured template, then the structure type must match (for example, an ActivityTemplate can be referred to in another ActivityTemplate).
 - References to simple or conditional response template can exist anywhere inside a structured template.
@@ -234,7 +234,7 @@ Here's an example of full reference to another structured template:
 ]
 ```
 
-With this content, call to `evaluateTemplate('ST1')` will result in the following internal structure:
+With this content, a call to `evaluateTemplate('ST1')` will result in the following internal structure:
 
 ```markdown
 [MyStruct
@@ -274,10 +274,13 @@ Note that this style of composition can only exists at the root level. If there 
 
 ## External file reference in Attachment structured
 
-1. fromFile(fileAbsoluteOrRelativePath) prebuilt function that can load a file specified. Content returned by this function will support evaluation of content. Template references and properties/ expressions are evaluated.
-2. ActivityAttachment(content, contentType) prebuilt function that can set the ‘contentType’ if it is not already specified in content). ContentType can be one of the types here.
+There are two prebuilt functions used to externally reference files
 
-With these two prebuilt functions, you can pull in any externally defined (including all card types) and use the following structured LG to compose an activity –
+1. fromFile(fileAbsoluteOrRelativePath) loads a specified file. Content returned by this function will support evaluation of content.Template references and properties/ expressions are evaluated.
+2. ActivityAttachment(content, contentType) sets the `contentType` if it is not already specified in the content. <!--ContentType can be one of the types here.-->
+
+With these two prebuilt functions, you can pull in any externally defined content, including all card types. Use the following structured LG to compose an activity:
+
 ```
 # AdaptiveCard
 [Activity
@@ -290,7 +293,8 @@ With these two prebuilt functions, you can pull in any externally defined (inclu
 ]
 ```
 
-or use attachment
+You can also use attachments, seen below:
+
 ```
 # AdaptiveCard
 [Attachment
@@ -394,8 +398,12 @@ Here's an example:
     value = some value
 ]
 ```
--->
+
 [more test samples][4]
+-->
+
+## Additional Information
+- [Language generation API Reference](language-generation-API-reference.md)
 
 [1]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/
 [2]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md

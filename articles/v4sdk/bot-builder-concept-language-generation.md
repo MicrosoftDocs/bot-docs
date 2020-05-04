@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Language Generation (LG) was created to let developers extract embedded strings from their code and resource files and manage them through a LG runtime and file format. Developers can now create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
-LG can be used to enhance the entire conversational experience. LG can be used to:
+LG can be used to enhance the entire conversational experience. Using LG developers can:
 
 - achieve a coherent personality, tone of voice for their bot
 - separate business logic from presentation
@@ -38,22 +38,19 @@ Below is a sample of a simple greeting LG template. Notice that all of the greet
 
 ## Language Generation in action
 
-You can use Language Generation in a variety of ways when developing bots. To start, create one or more [.lg file(s)][3] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to user.
+You can use Language Generation in a variety of ways when developing bots. To start, create one or more [.lg file(s)][3] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to a user.
 
-Then make sure you include the platform specific Language Generation library.
+# [C#](#tab/csharp)
 
-For C#, add Microsoft.Bot.Builder.LanguageGeneration.
-For NodeJS, add botbuilder-lg
-
-Parse and load templates in your .lg file
-
-For C#
+Make sure you include the language Generation library [`Microsoft.Bot.Builder.LanguageGeneration`](https://www.nuget.org/packages/Microsoft.Bot.Builder.LanguageGeneration/). Then parse and load templates in your .lg file by adding the following:
 
 ```c#
     Templates lgTemplates = Templates.ParseFile(filePath, importResolver?);
 ```
 
-For NodeJS
+# [JavaScript](#tab/javascript)
+
+Make sure you include the language Generation library [`botbuilder-lg`][15]. Then parse and load templates in your .lg file by adding the following:
 
 ```typescript
      let lgTemplates = Templates.parseFile(filePath, importResolver?);
@@ -61,13 +58,13 @@ For NodeJS
 
 When you need template expansion, use `Evaluate` and pass in the relevant template nam.
 
-For C#
+# [C#](#tab/csharp)
 
 ```c#
     var lgOutput = lgTemplates.Evaluate("<TemplateName>", evalData);
 ```
 
-For NodeJS
+# [JavaScript](#tab/javascript)
 
 ```typescript
     let lgOutput = lgTemplates.evaluate("<TemplateName>", evalData)
@@ -75,13 +72,13 @@ For NodeJS
 
 If your template needs specific properties to be passed for resolution/ expansion, you can pass them in on the call to `Evaluate`
 
-For C#
+# [C#](#tab/csharp)
 
 ```c#
     var lgOutput = lgTemplates.Evaluate("WordGameReply", new { GameName = "MarcoPolo" } );
 ```
 
-For NodeJS
+# [JavaScript](#tab/javascript)
 
 ```typescript
     let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } )
@@ -89,28 +86,29 @@ For NodeJS
 
 ## Multi-lingual generation and language fallback policy
 
-Your bot might target more than one spoken/display language. To do this, you can manage separate instances of TemplateEngine, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add language fallback to your bot.
-
+Your bot might target more than one spoken or display language. You can manage separate instances of TemplateEngine, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add language fallback to your bot.
+<!--
 ## Grammar check and correction
 
-The current library does not include any capabilities for grammar check or correction.
+The current library does not include any capabilities for grammar check or correction-->
 
-## Expand api
+## Expand API
 
 To get all possible expansions of a template, you can use `ExpandTemplate`.
-For C#
+# [C#](#tab/csharp)
+
 
 ```c#
     var results = lgTemplates.ExpandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
 
-For NodeJS
+# [JavaScript](#tab/javascript)
 
 ```typescript
     const results = lgTemplates.expandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
 
-As an example, given this LG content,
+For example, given this LG content:
 
 ```
 # Greeting
@@ -133,9 +131,13 @@ As an example, given this LG content,
     - ${Greeting()} Afternoon
 ```
 
-The call `ExpandTemplate("FinalGreeting")`, results in 4 evaluations: `"Hi Morning", "Hi Evening", "Hello Morning", "Hello Evening"`,
+The call `ExpandTemplate("FinalGreeting")` results in four evaluations:
+- **Hi Morning**
+- **Hi Evening**
+- **Hello Morning** 
+- **Hello Evening**
 
-The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` with scope, results in 2 expansions: `"Hi Evening", "Hello Evening"`
+The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` with scope, results in two expansions: **Hi Evening** and **Hello Evening**.
 
 ## Packages
 
@@ -143,17 +145,18 @@ Preview packages:
 
 - C# -> [NuGet][14]
 - JS -> [npm][15]
-
+<!--
 Nightlies:
 
 - C# -> [BotBuilder MyGet feed][12]
-- JS -> [BotBuilder MyGet feed][13]
+- JS -> [BotBuilder MyGet feed][13]-->
 
 ## Additional resources
 
-- [API reference][2]
-- [.lg file format][3]
+- See [.lg file format][3] for more information about .lg files.
+- [Language generation API reference][2]
 
+<!--
 ## Change Log
 ### 4.8 PREVIEW
 - \[**BREAKING CHANGES**\]:
@@ -211,8 +214,7 @@ Nightlies:
 
 ### 4.5 PREVIEW
 - Initial preview release
-
-
+-->
 [1]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md
 [2]:../language-generation/language-generation-API-reference.md
 [3]:../file-format/bot-builder-lg-file-format.md
