@@ -7,18 +7,18 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/20/2020
+ms.date: 05/04/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to write a skill manifest
-
-This article describes the format of the Bot Framework skill manifest schema.
+# How to write a v2.1 skill manifest
 
 A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints. The manifest contains the information a developer would need to access the skill from another bot.
 
-The current skill manifest schema version is [skill-manifest-2.1.preview-1.json](https://schemas.botframework.com/schemas/skills/skill-manifest-2.1.preview-1.json).
-This schema uses draft 7 of the JSON schema vocabulary.
+This article describes [version 2.1.preview-1](https://schemas.botframework.com/schemas/skills/skill-manifest-2.1.preview-1.json) of the Bot Framework skill manifest schema.
+For a description of version 2.0.0, see how to [Write a v2.0 skill manifest](v4sdk/skills-write-manifest-2-0.md).
+
+The Bot Framework skill manifest schema uses draft 7 of the JSON schema vocabulary.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ The skill manifest contains different categories of information:
 - An optional definitions object that contains schemas for objects referenced by other parts of the document.
 - An optional list of the dispatch models the skill supports.
 
-The following is the full schema for the Bot Framework skill manifest.
+The following is the full schema for v2.1 of the Bot Framework skill manifest.
 
 | Category/Field | Type | Required | Description |
 |:-|:-|:-|:-|
@@ -83,11 +83,11 @@ Describes an endpoint supported by the skill.
 
 ## Activities
 
-Each activity object describes an activity accepted by the skill. The skill will initiate an action or task based on the initial activity received. The name associated with the activity object indicates the action or task the skill will perform.
+Each activity object describes an activity accepted by the skill or one the skill can send proactively. For incoming activities, the skill will initiate an action or task based on the initial activity received. The name associated with the activity object indicates the action or task the skill will perform.
 
 Some activity types have a value property that can be used to provide additional input to the skill. When the skill ends (completes the action) it can provide a return value in the associated end-of-conversation activity's value property.
 
-The activity types allowed in the v2.1.preview-1 skill manifest schema are: message, event, invoke, and _other_ activities.
+The activity types allowed in the v2.1.preview-1 skill manifest schema are: message, event, invoke, and _other_ activities. A skill can receive an invoke activity, but can't send one.
 
 This is a sample activity description.
 
@@ -95,7 +95,7 @@ This is a sample activity description.
 
 ### eventActivity object
 
-Describes an event activity accepted by the skill.
+Describes an event activity accepted or sent by the skill.
 
 | Field | Type | Required | Description
 |:-|:-|:-|:-
@@ -119,7 +119,7 @@ Describes an invoke activity accepted by the skill.
 
 ### messageActivity object
 
-Describes a message activity accepted by the skill. The message activity's text property contains the user's utterance.
+Describes a message activity accepted or sent by the skill. The message activity's text property contains the user's utterance.
 
 | Field | Type | Required | Description |
 |:-|:-|:-|:-|
@@ -130,7 +130,7 @@ Describes a message activity accepted by the skill. The message activity's text 
 
 ### otherActivities object
 
-Describes an activity accepted by the skill.
+Describes an activity accepted or sent by the skill.
 
 | Field | Type | Required | Description |
 |:-|:-|:-|:-|
@@ -144,7 +144,7 @@ Each definition describes a subschema that can be consumed by other parts of the
 
 This is a sample subschema for flight booking information.
 
-[!code-json[sample activity](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json?range=121-140)]
+[!code-json[sample definition](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json?range=121-140)]
 
 ## Dispatch models
 
@@ -174,6 +174,6 @@ Describes a language model for a given culture. The name is a locale name.
 
 ## Sample manifest
 
-This is a full sample manifest for a skill that exposes multiple activities.
+This is a full sample v2.1 manifest for a skill that exposes multiple activities.
 
 [!code-json[sample 2.1 manifest](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json)]

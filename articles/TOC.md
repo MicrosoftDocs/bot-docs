@@ -61,8 +61,8 @@
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
-#### [Write a skill manifest v2.1](v4sdk/skills-write-manifest-2-1.md)
-#### [Write a skill manifest v2.0](v4sdk/skills-write-manifest-2-0.md)
+#### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)
+#### [Write a v2.0 skill manifest](v4sdk/skills-write-manifest-2-0.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
 <!--
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
