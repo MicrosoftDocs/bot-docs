@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
 With minor modifications, any bot can act as a skill.
 
-Skill bots:
+Skill bots have the following characteristics: 
 
 - Implement access restrictions via a claims validator.
 - As appropriate, check for initialization parameters in the initial activity's _value_ property.
