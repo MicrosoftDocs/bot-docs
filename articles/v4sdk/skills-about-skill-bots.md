@@ -15,10 +15,12 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
+A _skill_ is a bot that can perform a set of tasks for another bot.
+A skill can be consumed by another bot, facilitating reuse.
+In this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
 With minor modifications, any bot can act as a skill.
 
-Skill bots have the following characteristics: 
+Skill bots:
 
 - Implement access restrictions via a claims validator.
 - As appropriate, check for initialization parameters in the initial activity's _value_ property.

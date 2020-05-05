@@ -15,7 +15,12 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
+A _skill_ is a bot that can perform a set of tasks for another bot.
+A skill can be consumed by another bot, facilitating reuse.
+In this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
+
+A _skill consumer_ is a bot that can invoke one or more skills.
+With respect to skills, a _root bot_ is a user-facing bot that is also a skill consumer.
 
 From the user's perspective, the root bot is the bot they are interacting with.
 From the skill's perspective, the skill consumer is the channel over which it communicates with the user.
