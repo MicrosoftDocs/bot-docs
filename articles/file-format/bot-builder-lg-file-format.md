@@ -89,7 +89,7 @@ Variations are expressed as a Markdown list. You can prefix each variation using
 
 ### Simple response template
 
-A simple response template includes one or more variations of text that are used for composition and expansion. One of the variations provided will be picked at random by the LG library.
+A simple response template includes one or more variations of text that are used for composition and expansion. One of the variations provided will be selected at random by the LG library.
 
 Here is an example of a simple template that includes two variations.
 
