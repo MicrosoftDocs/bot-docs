@@ -159,6 +159,7 @@ You can also view the list in [alphabetical order](#add).
 ### Timex functions
 
 |Function	|Explanation|
+|-----------|-----------|
 |[isPresent](#isPresent)    | Return true if the TimexProperty or Timex expression refers to the present. |
 |[isDuration](#isDuration)    | Return true if the TimexProperty or Timex expression refers to a duration. |
 |[isTime](#isTime)    | Return true if the TimexProperty or Timex expression refers to a time. |
