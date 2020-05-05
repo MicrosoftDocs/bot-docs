@@ -119,7 +119,7 @@ Here's an example that shows a simple IF ELSE conditional response template defi
     - good evening
 ```
 
-Here's another example that shows an IF ELSE conditional response template definition. Note that you can include references to other simple or conditional response templates in the variation for any of the conditions.
+Here's another example that shows an if-else conditional response template definition. Note that you can include references to other simple or conditional response templates in the variation for any of the conditions.
 
 ```markdown
 # timeOfDayGreeting
