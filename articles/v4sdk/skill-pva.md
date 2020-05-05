@@ -40,17 +40,17 @@ When an end user attempts to connect to your skill from their Power Virtual Agen
 
 Validation step|Error message|Description or mitigation
 |---|---|---
-|Validate Skill manifest URL|The link isn't valid; The link must begin with https:// | Re-enter the link as a secure URL. |
-|Validate if Skill manifest can be retrieved|We ran into problems getting the Skill manifest.| Verify your manifest URL is a link to your manifest, and can be downloaded as a .json file.|
-|Validate if Skill manifest can be read|The manifest is too large; The manifest is incompatible.| Fix syntactical errors in the manifest. See [Manifest restrictions](#manifest-restrictions) |
-|Validate if Skill is previously registered|This Skill has already been added to your bot.|The end user has already added your skill to PVA. |
-|Validate Skill manifest endpoint origin|There's a mismatch in your Skill endpoints.|You AAD app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)|
-|Validate Skill is hosted in signed in user's tenant|To add a Skill, it must first be registered.| A global administrator must register the Skill into the signed in user's organization. |
-|Validate Skill actions|The Skill is limited to 25 actions.|There are too many Skill actions defined in Skill manifest. Remove actions and try again. |
-|Validate Skill action input parameters|Actions are limited to 25 inputs.|There are too many Skill action input parameters. Remove parameters and try again. |
-|Validate Skill action output parameters|Actions are limited to 25 outputs.|There are too many Skill action output parameters. Remove parameter and try again. |
-|Validate Skill count|Your bot can have a maximum of 25 Skills.| There are too many Skills added into a bot. Remove an existing Skill and try again. |
-|Validate Skill action language|Currently, Skills are only supported in English.| Skill has actions with unsupported locales. We only support Skills with Actions in English ('en') locale. |
-|Validate AAD app setting |The Skill must be registered multi-tenant.| Verify that your AAD app is marked as multi-tenant. See [Convert app to be multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant#update-registration-to-be-multi-tenant) |
+|Validate skill manifest URL|The link isn't valid; The link must begin with https:// | Re-enter the link as a secure URL. |
+|Validate if skill manifest can be retrieved|We ran into problems getting the skill manifest.| Verify your manifest URL is a link to your manifest, and can be downloaded as a .json file.|
+|Validate if skill manifest can be read|The manifest is too large; The manifest is incompatible.| Fix syntactical errors in the manifest. See [Manifest restrictions](#manifest-restrictions) |
+|Validate if skill is previously registered|This skill has already been added to your bot.|The end user has already added your skill to PVA. |
+|Validate skill manifest endpoint origin|There's a mismatch in your skill endpoints.|You AAD app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)|
+|Validate skill is hosted in signed in user's tenant|To add a skill, it must first be registered.| A global administrator must register the skill into the signed in user's organization. |
+|Validate skill actions|The skill is limited to 25 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again. |
+|Validate skill action input parameters|Actions are limited to 25 inputs.|There are too many skill action input parameters. Remove parameters and try again. |
+|Validate skill action output parameters|Actions are limited to 25 outputs.|There are too many skill action output parameters. Remove parameter and try again. |
+|Validate skill count|Your bot can have a maximum of 25 skills.| There are too many skills added into a bot. Remove an existing skill and try again. |
+|Validate skill action language|Currently, skills are only supported in English.| The skill has actions with unsupported locales. We only support skills with actions is English (`en-` locales). |
+|Validate AAD app setting |The skill must be registered multi-tenant.| Verify that your AAD app is marked as multi-tenant. See [Convert app to be multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant#update-registration-to-be-multi-tenant) |
 |Validate security token |It looks like something went wrong.|There may be a transient error to acquire a security token to trigger the skill. Retry importing the skill.|
 |Validate skill health|Something went wrong while checking your skill.|PVA received an unknown response when sending an `EndOfConversation` activity to your skill. Make sure your skill is running and responding correctly.|
