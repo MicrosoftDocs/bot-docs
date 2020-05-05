@@ -71,7 +71,7 @@ Template names follow the Markdown header definition.
 # TemplateName
 ```
 
-Variations are expressed as a Markdown list. You can prefix lists using the **-**, **'**, or **+** character.
+Variations are expressed as a Markdown list. You can prefix each variation using the **-**, **'**, or **+** character.
 
 ```markdown
 # Template1
