@@ -22,7 +22,7 @@ This article lists the available prebuilt functions ordered by their general pur
 - [Math](#math-functions)
 - [Date](#date-and-time-functions)
 - [Timex](#timex-functions)
-- [URI parsing](#uri-parsing-functions
+- [URI parsing](#uri-parsing-functions)
 - [Object manipulation and construction](#object-manipulation-and-construction-functions)
 - [Regular expression](#regular-expression-functions)
 - [Type checking](#type-checking-functions)
@@ -191,7 +191,7 @@ You can also view the list in [alphabetical order](#add).
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
 |[setPathToValue](#setPathToValue)   |Set the value of a specific path and return the value.|
 
-### Regular expressions functions
+### Regular expression functions
 
 |Function|Explanation|
 |-----------|-----------|
