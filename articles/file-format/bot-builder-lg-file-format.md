@@ -59,11 +59,11 @@ Use **\\** as an escape character.
 
 At the core of the language generation system is the concept of a template. Each template has a name and one of the following:
 
-- list of one-of variation text values
-- structured content definition
+- a list of one-of variation text values
+- a structured content definition
 - a collection of conditions, each with:
     - an [adaptive expression][3]
-    - a list of one-of variation text values per condition.
+    - a list of one-of variation text values per condition
 
 Template names follow the Markdown header definition.
 
