@@ -63,7 +63,7 @@ The skill consumer uses a skill handler to receive activities from a skill. The 
 - Retrieves the original conversation reference.
 - Generates an activity for the consumer's adapter. This activity will either signal that the skill has completed or be an activity to forward to the user.
 
-## Directly managing a skill from a skill consumer
+## Manage a skill directly
 
 You need to add logic to your skill consumer to track any active skills.
 It is up to the consumer as to how it manages skills in general, whether it can maintain multiple active skills in parallel or not, and so on.
@@ -79,7 +79,7 @@ Specific scenarios to consider include:
 
 See how to [implement a skill consumer](skill-implement-consumer.md) for a consumer that manages a skill directly.
 
-## Using a skill dialog ot manage a skill
+## Manage a skill using a skill dialog
 
 If you are using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
 
