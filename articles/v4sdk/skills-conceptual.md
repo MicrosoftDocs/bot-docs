@@ -24,8 +24,9 @@ A skill can be consumed by various other bots, facilitating reuse, and in this w
   Depending on design, a skill can also function as a typical, user-facing bot.
 - A _skill consumer_ is a bot that can invoke one or more skills. With respect to skills, a _root bot_ is a user-facing bot that is also a skill consumer.
 - A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
-  - Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer. See how to [implement a skill](./skill-implement-skill.md) for a sample skill manifest.
+  - Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer.
   - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+  - See how to [implement a skill](./skill-implement-skill.md), [write a v2.1 skill manifest](skills-write-manifest-2-0.md), and [write a v2.0 skill manifest](skills-write-manifest-2-0.md) for sample skill manifests.
 
 In other words, the user interacts directly with the root bot, and the root bot delegates some of its conversational logic to a skill.
 
@@ -33,13 +34,13 @@ In other words, the user interacts directly with the root bot, and the root bot 
 The skills feature is designed so that:
 
 - Skills can work with both the Bot Framework adapter and custom adapters.
-- Skills can work with the Microsoft Teams channel, which makes heavy use of `invoke` activities.
+- Skills can work with the Microsoft Teams channel, which makes extensive use of `invoke` activities.
 - Skills support user authentication; however, user authentication is local to the skill or skill consumer and cannot be transferred to another bot.
 - A skill consumer can consume multiple skills.
 - A skill consumer can run multiple skills in parallel.
 - A skill consumer can consume a skill regardless of the language or SDK version of the skill.
 - The Bot Connector service provides bot-to-bot authentication; however, you can test a root bot locally using the Emulator.
-- A skill can also be a skill consumer. Connecting through multiple skills will add network latency and the potential for error. Such bots are more complex and can be more difficult to debug.
+- A skill can also be a skill consumer. Connecting through multiple skills will add network latency and the potential for error. Such bots will be more complex and more difficult to debug.
 <!--TBD: - Skills support proactive messaging. -->
 
 ## Architecture
@@ -52,7 +53,7 @@ A skill and skill consumer are separate bots, and you publish them independently
 
 A skill needs to include additional logic to send an `endOfConversation` activity when it completes, so that the skill consumer knows when to stop forwarding activities to the skill.
 
-A root bot implements at least two HTTP endpoints, one for receiving activities from the user and one for receiving activities from skills. The skill consumer needs to pair code that receives the HTTP method request with a skill handler.
+A root bot implements at least two HTTP endpoints, one for receiving activities from the user and one for receiving activities from skills. The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.
 It requires added logic for managing a skill, such as when to invoke or cancel the skill, and so on. In addition to the usual bot and adapter objects, the consumer includes a few skill-related objects, used to exchange activities with the skill.
 
 This diagram outlines the flow of activities from the user to the root bot to a skill and back again.
@@ -107,8 +108,8 @@ In other words, it generates a conversation ID for use between the root and the 
 ### Cross-server coordination
 <!-- or, Statelessness in the host -->
 
-The root and skill communicate over HTTP.
-So, the root instance that receives an activity from a skill may not be the same instance that sent the initiating activity; in other words, different servers may handler these two requests.
+The root and skill bots communicate over HTTP.
+So, the instance of the root bot that receives an activity from a skill may not be the same instance that sent the initiating activity; in other words, different servers may handler these two requests.
 
 - Always save state in the skill consumer before forwarding an activity to a skill.
   This ensures that the instance that receives traffic from a skill can pick up where the previous instance left off before it invoked the skill.
@@ -131,7 +132,7 @@ The Bot Framework uses an _authentication configuration_ object to validate the 
 
 #### Claims validation
 
-You can add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request.
+You can add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Throw an error or exception in your validation code to reject the request.
 
 There are various reasons you might reject an otherwise authenticated request:
 
