@@ -34,11 +34,11 @@ As a skill consumer, a root bot includes some additional logic to manage traffic
 
 ## Managing skills
 
-Starting and letting a single skill run to completion is managed with a few additions to the host. More complicated scenarios are possible, with multiple skills or conversation threads.
+Starting and letting a single skill run to completion is managed with a few additions to the skill consumer. More complicated scenarios are possible, with multiple skills or conversation threads.
 
 ### Skill descriptions
 
-For each skill, add a _Bot Framework skill_ object to the skill consumer's configuration file. Each one will have an ID, an app ID, and the endpoint for the skill.
+For each skill, add a _Bot Framework skill_ object to the skill consumer's configuration file. Each one will have an ID, an app ID, and an endpoint for the skill.
 
 | Property | Description
 | :--- | :--- |
@@ -63,7 +63,7 @@ The skill consumer uses a skill handler to receive activities from a skill. The 
 - Retrieves the original conversation reference.
 - Generates an activity for the consumer's adapter. This activity will either signal that the skill has completed or be an activity to forward to the user.
 
-### Managing a skill from a skill consumer
+## Directly managing a skill from a skill consumer
 
 You need to add logic to your skill consumer to track any active skills.
 It is up to the consumer as to how it manages skills in general, whether it can maintain multiple active skills in parallel or not, and so on.
@@ -77,7 +77,9 @@ Specific scenarios to consider include:
   - To check why the skill is ending, check the activity's _code_ parameter, which could indicate that the skill encountered an error.
 - Cancelling a skill from the consumer by sending an `endOfConversation` activity to the skill.
 
-### Invoking a skill from a dialog
+See how to [implement a skill consumer](skill-implement-consumer.md) for a consumer that manages a skill directly.
+
+## Using a skill dialog ot manage a skill
 
 If you are using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
 
@@ -87,7 +89,6 @@ If you are using the [dialogs library](bot-builder-concept-dialog.md), you can u
 - To start the skill dialog, use the dialog context's _begin_ method and provide the skill dialog's ID. Use the _options_ parameter to provide the activity the consumer will send as the first activity to the skill.
 - You can cancel or interrupt the skill dialog as you would any other dialog. See how to [handle user interruptions](bot-builder-howto-handle-user-interrupt.md) for an example.
 
-## Additional information
-
-You publish skill and skill consumer bots separately.
-For more on how to implement skill and skill consumer bots, see how to [implement a skill](skill-implement-skill.md) and [implement a skill consumer](skill-implement-consumer.md).
+<!-- Waiting on merge of PR 2079:
+See how to [use a dialog to consume a skill](skill-use-skilldialog.md) for a consumer that uses a dialog to manage a skill.
+-->

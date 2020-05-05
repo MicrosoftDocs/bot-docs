@@ -29,15 +29,22 @@ Skill bots:
 
 ## Skill actions
 
- Some skills can perform a variety of tasks or _actions_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations. <!--TODO Flesh this out-->
-
-## Skill manifests
-
-Since a skill consumer does not necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints. For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+Some skills can perform a variety of tasks or _actions_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations.
 
 <!--TODO Flesh this out-->
 
-## Additional information
-
 You publish skill and skill consumer bots separately.
-For more on how to implement skill and skill consumer bots, see how to [implement a skill](skill-implement-skill.md) and [implement a skill consumer](skill-implement-consumer.md).
+
+See how to [implement a skill](skill-implement-skill.md) for a simple skill that implements one action.
+
+<!-- Waiting on merge of PR 2079:
+- See how to [use dialogs within a skill](skill-actions-in-dialogs.md) for a skill that uses dialogs to implement multiple actions.
+-->
+
+## Skill manifests
+
+Since a skill consumer does not necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
+
+<!--TODO Flesh this out-->
+
+For information about the skill manifest schema, see how to [write a v2.1 skill manifest](skills-write-manifest-2-1.md) (preview) or [write a v2.0 skill manifest](skills-write-manifest-2-0.md).
