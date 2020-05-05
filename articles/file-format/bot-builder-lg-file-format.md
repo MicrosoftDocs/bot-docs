@@ -106,7 +106,7 @@ Conditional response templates let you author content that's selected based on a
 
 #### If Else
 
-The IF ELSE construct lets you build a template that picks a collection based on a cascading order of conditions. Evaluation is top-down and stops when a condition evaluates to `true` or the ELSE block is hit.
+The if-else template lets you build a template that picks a collection based on a cascading order of conditions. Evaluation is top-down and stops when a condition evaluates to `true` or the ELSE block is hit.
 
 Here's an example that shows a simple IF ELSE conditional response template definition.
 
