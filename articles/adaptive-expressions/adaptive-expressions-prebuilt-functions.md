@@ -13,14 +13,19 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions prebuilt functions
 
-This document lists the available prebuilt functions ordered by their general purpose. Prebuilt expressions are divided into the following categories:
+This article lists the available prebuilt functions ordered by their general purpose. Prebuilt expressions are divided into the following function types:
 
-- [String functions](#string-functions)
-- [Collection functions](#collection-functions)
-- [Logical comparison functions](#logical-comparison-functions)
-- [Conversion functions](#conversion-functions)
-- [Math functions](#math-functions)
-- [Date and time functions](#date-and-time-functions)
+- [String](#string-functions)
+- [Collection](#collection-functions)
+- [Logical comparison](#logical-comparison-functions)
+- [Conversion](#conversion-functions)
+- [Math](#math-functions)
+- [Date](#date-and-time-functions)
+- [Timex](#timex-functions)
+- [URI parsing](#uri-parsing-functions
+- [Object manipulation and construction](#object-manipulation-and-construction-functions)
+- [Regular expression](#regular-expression-functions)
+- [Type checking](#type-checking-functions)
 
 You can also view the list in [alphabetical order](#add).
 
@@ -186,13 +191,13 @@ You can also view the list in [alphabetical order](#add).
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
 |[setPathToValue](#setPathToValue)   |Set the value of a specific path and return the value.|
 
-### Regex functions
+### Regular expressions functions
 
 |Function|Explanation|
 |-----------|-----------|
 |[isMatch](#isMatch)|Return true if a string matches a common regex pattern.|
 
-### Type checking Functions
+### Type checking functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -2177,6 +2182,7 @@ And return the following results respectively:
 
 - The input is a string, so the function returns `false`.
 - The input is a Boolean, so the function returns `true`.
+<a name="isDate"></a>
 
 ### isDate
 
@@ -2277,7 +2283,7 @@ And return the following results respectively:
 - The input is a string, so the function returns `false`.
 - The input is a UTC ISO format string, so the function returns `true`.
 
-<a name="isFloat"></a>
+<a name="isDefinite"></a>
 
 ### isDefinite
 
@@ -2344,6 +2350,8 @@ And return the following results respectively:
 
 - `true`
 - `false`
+
+<a name="isFloat"></a>
 
 ### isFloat
 
@@ -2482,6 +2490,8 @@ And return the following results respectively:
 
 - The input is a string, so the function returns `false`.
 - The input is an object, so the function returns `true`.
+
+<a name="isPresent"></a>
 
 ### isPresent
 
