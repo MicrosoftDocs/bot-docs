@@ -104,7 +104,7 @@ Here is an example of a simple template that includes two variations.
 
 Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions][3].
 
-#### If Else
+#### If-else template
 
 The if-else template lets you build a template that picks a collection based on a cascading order of conditions. Evaluation is top-down and stops when a condition evaluates to `true` or the ELSE block is hit.
 
@@ -178,7 +178,7 @@ Read about [structure response templates](../language-generation/language-genera
 
 ### References to templates
 
-Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using _- ${TemplateName()}._
+Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as _${TemplateName()}_.
 
 ```markdown
 > Example of a template that includes composition reference to another template.
@@ -211,16 +211,16 @@ Hello, good evening
 
 ## Entities
 
-When used directly within a one-of variation text, entity references are denoted by enclosing them in curly brackets -  ${`entityName`}.
+When used directly within a one-of variation text, entity references are denoted by enclosing them in braces, such as  ${`entityName`}, or without braces when used as a parameter.
 
-Entities are expressed as `entityName` when used as a parameter:
+Entities can be used as a parameter:
 - within a [prebuilt function][4]
 - within a condition in a [conditional response template](#conditional-response-template)
 - to [template resolution call](#parametrization-of-templates)
 
 ## Using prebuilt functions in variations
 
-[Prebuilt functions][4] supported by [adaptive expressions][3] can also be used inline in a one-of variation text to achieve even more powerful text composition. To use an expression inline, simply wrap it in curly brackets - ${}.
+[Prebuilt functions][4] supported by [adaptive expressions][3] can also be used inline in a one-of variation text to achieve even more powerful text composition. To use an expression inline, simply wrap it in braces.
 
 ```markdown
 # RecentTasks
