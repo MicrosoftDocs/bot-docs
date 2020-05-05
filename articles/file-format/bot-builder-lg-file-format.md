@@ -75,6 +75,8 @@ Variations are expressed as a Markdown list. You can prefix each variation using
 
 ```markdown
 # Template1
+- text variation 1
+- text variation 2
 - one
 - two
 

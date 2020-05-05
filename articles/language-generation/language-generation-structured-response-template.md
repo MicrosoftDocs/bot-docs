@@ -19,7 +19,7 @@ For bot applications, we support:
 - card definition
 - [chatdown][1] style constructs
 
-[Bot Framework activity][2] includes several customizable fields. Below are the most widely used properties that should be configurable via an Activity template definition:
+[Bot Framework activity][2] includes several customizable fields. The properties shown below are the most used  and are configurable via an Activity template definition:
 
 | Property          | Use case                                                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -186,7 +186,7 @@ Use **\\** to escape characters.
 
 The following composition behavior is supported with structured templates:
 
-- Composition is structure context-aware. If the target template being referred is also a structured template, then the structure type must match (for example, an ActivityTemplate can be referred to in another ActivityTemplate).
+- Composition is structure context-aware. If the target template being referred is also a structured template, then the structure type must match. For example, an ActivityTemplate can be referred to in another ActivityTemplate.
 - References to simple or conditional response template can exist anywhere inside a structured template.
 
 Suppose you have the following template:
@@ -244,7 +244,7 @@ With this content, a call to `evaluateTemplate('ST1')` will result in the follow
 ]
 ```
 
-When the same property exists in both the calling template as well as called template, the content in the caller will trump any content in the called template.
+When the same property exists in both the calling template as well as the called template, the content in the caller will overwrite any content in the called template.
 
 Here is an example:
 

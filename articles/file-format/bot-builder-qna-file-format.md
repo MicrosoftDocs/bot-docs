@@ -13,7 +13,7 @@ ms.date: 05/16/2020
 
 # .qna file format
 
-.qna files contain Markdown-like text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts. This document covers the various concepts expressed via the .qna file format.
+.qna files contain Markdown-like text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts. This article covers the various concepts expressed via the .qna file format.
 
 <!--
 Supported concepts:

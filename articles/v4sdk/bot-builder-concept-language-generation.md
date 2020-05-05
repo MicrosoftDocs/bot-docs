@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 <!-- See [here](#Change-Log) for what's new in **4.8.0 RC1** release.-->
 
-Language Generation (LG) was created to let developers extract embedded strings from their code and resource files and manage them through a LG runtime and file format. Developers can now create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
+Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
 LG can be used to enhance the entire conversational experience. Using LG developers can:
 
@@ -72,7 +72,7 @@ When you need template expansion, use `Evaluate` and pass in the relevant templa
 ```
 ---
 
-If your template needs specific properties to be passed for resolution/ expansion, you can pass them in on the call to `Evaluate`
+If your template needs specific properties to be passed for resolution/expansion, you can pass them when calling  `Evaluate`
 
 # [C#](#tab/csharp)
 
@@ -89,7 +89,7 @@ If your template needs specific properties to be passed for resolution/ expansio
 
 ## Multi-lingual generation and language fallback policy
 
-Your bot might target more than one spoken or display language. You can manage separate instances of TemplateEngine, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add language fallback to your bot.
+Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add multiple languages, also known as language fallback, to your bot.
 
 <!--
 ## Grammar check and correction 
