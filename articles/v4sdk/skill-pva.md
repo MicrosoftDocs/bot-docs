@@ -52,5 +52,5 @@ Validation step|Error message|Description or mitigation
 |Validate Skill count|Your bot can have a maximum of 25 Skills.| There are too many Skills added into a bot. Remove an existing Skill and try again. |
 |Validate Skill action language|Currently, Skills are only supported in English.| Skill has actions with unsupported locales. We only support Skills with Actions in English ('en') locale. |
 |Validate AAD app setting |The Skill must be registered multi-tenant.| Verify that your AAD app is marked as multi-tenant. See [Convert app to be multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant#update-registration-to-be-multi-tenant) |
-|Validate security token |It looks like something went wrong.|There may be a transient error to acquire a security token to trigger Skill. Retry.|
+|Validate security token |It looks like something went wrong.|There may be a transient error to acquire a security token to trigger the skill. Retry importing the skill.|
 |Validate Skill health|Something went wrong while checking your Skill.|PVA received an unknown response when sending an `EndOfConversation` activity to your Skill. Make sure your Skill is running and responding correctly.|
