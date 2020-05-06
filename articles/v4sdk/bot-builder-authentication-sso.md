@@ -65,7 +65,7 @@ For each project in the sample, you need the following:
 1. An Azure AD application to register a bot resource in Azure.
 1. An Azure AD identity provider application for authentication.
     > [!NOTE]
-    > Currently, only the [Azure AD v2](bot-builder-concept-identity-providers?view=azure-bot-service-4.0&%3Btabs=adv2%2Cga2&branch=pr-en-us-2084&tabs=adv2%2Cga2#azure-ad-v2-1) identity provider is supported.
+    > Currently, only the [Azure AD v2](bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1) identity provider is supported.
 
     https://review.docs.microsoft.com/en-us/azure/bot-service/
 ## Create the Azure RootBot registration
