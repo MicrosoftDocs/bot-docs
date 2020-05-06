@@ -65,9 +65,7 @@ For each project in the sample, you need the following:
 1. An Azure AD application to register a bot resource in Azure.
 1. An Azure AD identity provider application for authentication.
     > [!NOTE]
-    > Currently, only the [Azure AD v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
-
-<!-- # [RootBot](#tab/sb) -->
+    > Currently, only the [Azure AD v2](bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#tabpanel_CeZOj-G++Q_adv2) identity provider is supported.
 
 ## Create the Azure RootBot registration
 
@@ -92,15 +90,13 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Click **Add scope**.
 1. Copy and save the scope value.
 
-## Create an OAuth connection settings
+### Create an OAuth connection settings
 
 1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the value described below.
 
 1. Leave the **Token Exchange URL** empty.
 1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
 1. Copy and save the name of the connection.
-
-<!-- # [SkillBot](#tab/srb) -->
 
 ## Create the Azure SkillBot registration
 
@@ -142,15 +138,13 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
    1. Click **Add permissions**.
 
-## Create an OAuth connection settings
+### Create an OAuth connection settings
 
 1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the values described below.
 1. In the **Token Exchange URL** box enter the `SkillBot` scope value you saved in the previous steps.
 1. In the **Scopes** box enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasic.All` `openid`.
 
 1. Copy and save to a file the name of the connection.
-
-<!--- --- -->
 
 ## Test the connection
 
