@@ -56,6 +56,7 @@ It's possible that channel configuration parameters have been set incorrectly or
 
 The links below provide instructions for configuring channels supported by the Bot Framework:
 
+- [Alexa](bot-service-channel-connect-alexa.md)
 - [Cortana](bot-service-channel-connect-cortana.md)
 - [DirectLine](bot-service-channel-connect-directline.md)
 - [Email](bot-service-channel-connect-email.md)
