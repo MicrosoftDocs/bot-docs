@@ -22,6 +22,7 @@ The Bot Framework SDK provides API that makes it easier to collect and validate 
 * A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see [introduction to adaptive dialogs][1].
 * A general understanding of [Events and triggers in adaptive dialogs][2].
 * A general understanding of [Actions in adaptive dialogs][3].
+* A general understanding of [Memory scopes and managing state in Adaptive Dialogs][11].
 
 ## Inputs
 
@@ -39,14 +40,14 @@ Adaptive dialogs support the following inputs:
 
 | Input type       | Input class                       | Description                                          | Returns                                      |
 | ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
-| Base class       | [InputDialog](#InputDialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Text input       | [TextInput](#TextInput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
-| Number input     | [NumberInput](#NumberInput)       | Used to ask your users for a **number**.             | A numeric value.                             |
-| Confirmation     | [ConfirmInput](#ConfirmInput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
-| Multiple choice  | [ChoiceInput](#ChoiceInput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
-| File or attachment |[AttachmentInput](#AttachmentInput)| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.        |
-| Date or time     | [DateTimeInput](#DateTimeInput)   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
-| Oauth login      | [OAuthInput](#OAuth)              | Used to enable your users to **sign into a secure site**.| A Boolean value.                         |
+| Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
+| Text input       | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
+| Number input     | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
+| Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
+| Multiple choice  | [ChoiceInput](#choiceinput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
+| File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.        |
+| Date or time     | [DateTimeInput](#datetimeinput)   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
+| Oauth login      | [OAuthInput](#oauth)              | Used to enable your users to **sign into a secure site**.| A Boolean value.                         |
 
 ### InputDialog
 
@@ -70,7 +71,7 @@ DefaultValue = "9"
 
 #### DefaultValueResponse
 
-The **Default Value Response** is the value that is returned after the [max turn count](#MaxTurnCount) has been hit.
+The **Default Value Response** is the value that is returned after the [max turn count](#maxturncount) has been hit.
 
 ```csharp
 DefaultValueResponse = new ActivityTemplate("Sorry, we have reach the maximum number of attempts of '${%MaxTurnCount}' to get your input, so for now, we will go with a default value of: '${%DefaultValue}'")
@@ -136,13 +137,13 @@ Things to keep in mind regarding the `Value` property:
 * To use @age or @number as the input: "=coalesce(@age, @number)"
 
 > [!TIP]
-> You can see an example that uses these `InputDialog` properties in the code sample in the [NumberInput](#NumberInput) section below.
+> You can see an example that uses these `InputDialog` properties in the code sample in the [NumberInput](#numberinput) section below.
 
 ### TextInput
 
 Use _text input_ when you want to verbatim accept user input as a value for a specific piece of information your bot is trying to collect. Examples include _user's name_ and the _subject of an email_.
 
-<!--- The `TextInput` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines one additional property: -->
+<!--- The `TextInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines one additional property: -->
 
 > [!IMPORTANT]
 > How is the `OutputFormat` used in the `TextInput` action? The Code comment: "_Gets or sets the expression to use to format the result_."
@@ -176,7 +177,7 @@ getUserNameDialog.Triggers.Add(new OnIntent()
 
 Asks the user for a number.
 
-The `NumberInput` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines these two additional properties:
+The `NumberInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these two additional properties:
 
 1. `DefaultLocale`: Sets the default locale for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
 2. `OutputFormat`: Controls the output format of the value recognized by input. Possible options are Float, Integer
@@ -222,7 +223,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 **Confirmation inputs** are useful to use after you have already asked the user a question and want to confirm their answer. Unlike the **Multiple choice** action that enables your bot to present the user with a list to choose from, confirmation prompts ask the user to make a binary (yes/no) decision.
 
-The `ConfirmInput` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines these five additional properties:
+The `ConfirmInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these five additional properties:
 
 1. `ChoiceOptions`: This property is used to format the presentation of the confirmation choices that are presented to the user.
 2. `ConfirmChoices`: This is an expression that you use to evaluate the choices entered by the user.
@@ -273,7 +274,7 @@ var ConfirmationDialog = new AdaptiveDialog("ConfirmationDialog") {
 
 **Choice inputs** are a set of options presented to the user as a **Multiple choice** selection that enables you to present your users with a list of options to choose from.
 
-The `ChoiceInput` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines these six additional properties:
+The `ChoiceInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these six additional properties:
 
 1. `ChoiceOptions`: This property is used to format the presentation of the confirmation choices that are presented to the user.
 2. `ConfirmChoices`: This is an expression that you use to evaluate the choices entered by the user.
@@ -331,7 +332,7 @@ getUserFavoriteColor.Triggers.Add(new OnIntent()
 
 Asks for a date/time.
 
-The `DateTimeInput` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines these three additional properties:
+The `DateTimeInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these three additional properties:
 
 1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
 2. `OutputFormat`: The default output for `DateTimeInput` is an array of `DateTimeResolutions`, this property is an expression which is evaluated to determine the output of the dialog.
@@ -370,7 +371,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 Use to request an attachment from user as input.
 
-The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines these 2 additional properties:
+The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these 2 additional properties:
 
 1. `OutputFormat`: `OutputFormat = AttachmentOutputFormat.All` The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid AttachmentOutputFormat values are:
     1. `All`: Pass inputs in a List.
@@ -411,7 +412,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 Use to ask user to sign in.
 
-The `OAuth` action inherits all of the properties defined in [InputDialog](#InputDialog) and defines these four additional properties:
+The `OAuth` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these four additional properties:
 
 1. `ConnectionName`: Name of the OAuth connection configured in Azure Bot Service settings page for the bot.
 2. `Text`: The text to display in the sign in card.
@@ -477,3 +478,4 @@ The following links provide generalized information on the topic of authenticati
 [8]:bot-builder-adaptive-dialog-triggers.md#custom-events
 [9]:bot-builder-adaptive-dialog-generation.md
 [10]:PlaceholderFor-common-expressions-language
+[11]:bot-builder-adaptive-dialog-scopes.md
