@@ -219,6 +219,10 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
+> [!IMPORTANT]
+> PLEASE EXPLAIN `OutputFormat = NumberOutputFormat.Integer`
+> Is this obsolete code? Should this be `OutputFormat = "int"` - or?
+
 ### ConfirmInput
 
 **Confirmation inputs** are useful to use after you have already asked the user a question and want to confirm their answer. Unlike the **Multiple choice** action that enables your bot to present the user with a list to choose from, confirmation prompts ask the user to make a binary (yes/no) decision.
