@@ -64,7 +64,7 @@ The `# PromptForMissingInformation` template in **BookingDialog.LG** is an examp
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/samples/csharp_dotnetcorecore/13.core-bot/Resources/BookingDialog.LG?range=31-39)].
+[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/s13.core-bot/Resources/BookingDialog.LG?range=31-39)].
 
 ### Reference other templates
 
@@ -80,7 +80,7 @@ Language generation templates can leverage cards and media to create a richer co
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Resources/welcomeCard.LG?range=25-57)]
+[!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=25-57)]
 
 This card displays an image, one of the variations in `# HeaderText` as the card header, and buttons for suggested actions.
 
@@ -90,7 +90,7 @@ This card displays an image, one of the variations in `# HeaderText` as the card
 
 **Bots/DialogAndWelcomeBot.cs**
 
-[!code-csharp[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=30-48)]
+[!code-csharp[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=30-48)]
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
@@ -110,7 +110,7 @@ Finally the `# WelcomeCard` calls the `# AdaptiveCard` template to return the Ad
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Resources/welcomeCard.LG?range=11-14]
+[!code-lg[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=11-14]
 
 For more information about the `ActivityAttachment()` function, read [inject functions from the LG library](functions-injected-from-language-generation.md)
 
@@ -124,19 +124,19 @@ Make sure you have the **Microsoft.Bot.Builder.LanguageGeneration** package. Add
 
 **Bots/DialogAndWelcomeBot.cs**
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
 
 After loading the package create a private `Templates` object called **_templates**:
 
-[!code-csharp[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
+[!code-csharp[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
 
 Combine the path for cross-platform support and parse the path that contains **welcomeCard.lg** by adding the following to your code:
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
 
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57?highlight=7)]
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57?highlight=7)]
 
 Notice how the `WelcomeCard` template is referenced in the call `SendActivityAsync()`.
 
@@ -193,7 +193,7 @@ Add the information required to access your LUIS app including application id, a
 
 **appsetting.json**
 
-[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcorecore/13.core-bot/appsettings.json?range=1-7)]
+[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
 
 # [JavaScript](#tab/javascript)
 
