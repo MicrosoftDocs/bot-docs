@@ -12,10 +12,10 @@ ms.date: 04/27/2020
 <!--P2: Once the samples are done, link to them in each section on the individual actions to point to them as examples of how they are used-->
 # Actions in adaptive dialogs
 
-Actions help to create and maintain the bots conversation flow once an event is captured by a [Trigger][2]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to satisfy a user's request. In additional to creating and maintaining the bots conversational flow, actions are used to accomplish the things your bot does, like sending messages, responding to user questions using a [knowledge base][3], making calculations, and performing any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in memory, and make decisions based on user input.
+Actions help to create and maintain the bots conversation flow once an event is captured by a [trigger][2]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to accomplish any set of actions needed, such as satisfying a user's request. In addition to creating and maintaining the bot's conversational flow, you can use actions to send messages, respond to user questions using a [knowledge base][3], make calculations, and perform any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in memory, and make decisions based on user input.
 
 > [!IMPORTANT]
-> Actions are adaptive dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust bot. While the actions included in the bot framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
+> Actions are dialogs and any dialog can be used as an action, so actions have all of the power and flexibility you need to create a fully functional and robust bot. While the actions included in the bot framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
 
 ## Prerequisites
 
@@ -24,10 +24,16 @@ Actions help to create and maintain the bots conversation flow once an event is 
 
 ## Actions
 
-Actions that are included with the bot framework SDK provide the ability to perform conditional coding such as branching and looping, dialog management tasks such as starting a new dialog or cancelling, ending or repeating a dialog, memory management tasks such as creating, deleting or editing a property saved in memory, accessing external resources such as sending an [Http Request](#HttpRequest), preforming an [OAuth login request][4] and many others.
+Actions that are included with the bot framework SDK provide the ability to perform conditional coding such as:
+
+* Branching and looping
+* Dialog management tasks such as starting a new dialog or cancelling, ending or repeating a dialog.
+* Memory management tasks such as creating, deleting or editing a property saved in memory.
+* Accessing external resources such as sending an [Http Request](#httprequest).
+* Preforming an [OAuth login request][4] and many others.
 
 >[!TIP]
-> unlike Waterfall dialog where each step is a function, each action in an adaptive dialog is a fully functional dialog with all of the power and flexibility that entails. This enables adaptive dialogs by design to:
+> Unlike a waterfall dialog where each step is a function, each action in an adaptive dialog is a fully functional dialog with all of the power and flexibility that entails. This enables adaptive dialogs by design to:
 >
 > * Provide an easier way to handle [interruptions][6].
 > * Branch conditionally based on context or state.
@@ -38,7 +44,7 @@ Adaptive dialogs support the following actions:
 
 | Activity to accomplish | Action Name                   | What this action does                  |
 | ---------------------- | ----------------------------- | -------------------------------------- |
-| Respond to a user      | [SendActivity](#SendActivity) | Enables you to respond to your users.  |
+| Respond to a user      | [SendActivity](#sendactivity) | Enables you to respond to your users.  |
 
 ### Requesting user input
 
@@ -55,10 +61,10 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 | Activity to accomplish | Action Name                | What this action does                                                                                |
 | ---------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Branch: if/else        | [IfCondition](#IfCondition)| Used to create If and If-Else statements which are used to execute code only if a condition is true. |
-| Branch: Switch (Multiple options) | [SwitchCondition](#SwitchCondition) | Used to build a multiple-choice menu.                                            |
-| Loop: for each item    | [ForEach](#ForEach)        | Loop through a set of values stored in an array.                                                     |
-| Loop: for each page (multiple items) | [ForEachPage](#ForEachPage) | Loop through a large set of values stored in an array one page at a time.             |
+| Branch: if/else        | [IfCondition](#ifcondition)| Used to create If and If-Else statements which are used to execute code only if a condition is true. |
+| Branch: Switch (Multiple options) | [SwitchCondition](#switchcondition) | Used to build a multiple-choice menu.                                            |
+| Loop: for each item    | [ForEach](#foreach)        | Loop through a set of values stored in an array.                                                     |
+| Loop: for each page (multiple items) | [ForEachPage](#foreachpage) | Loop through a large set of values stored in an array one page at a time.             |
 | Exit a loop            | [BreakLoop](#break-loop)   | Break out of a loop.                                                                                 |
 | Continue a loop        | [ContinueLoop](#continue-loop) | Continue the loop.                                                                               |
 
@@ -66,17 +72,17 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
-| Begin a new dialog     | [BeginDialog](#BeginDialog)      | Begins executing another dialog which when, will return to the caller.    |
-| Cancel all dialogs     | [CancelAllDialog](#CancelAllDialog)| Cancels all active dialogs including any active parent dialogs.         |
-| End this dialog        | [EndDialog](#EndDialog)          | Ends the active dialog.                                                   |
-| End dialog turn        | [EndTurn](#EndTurn)              | Ends the current turn of conversation without ending the dialog.          |
-| Repeat this dialog     | [RepeatDialog](#RepeatDialog)    | Used to restart the parent dialog.                                        |
-| Replace this dialog    | [ReplaceDialog](#ReplaceDialog)  | Replaces the current dialog with a new dialog                             |
-| Update an activity     | [UpdateActivity](#UpdateActivity)| This enables you to update an activity that was sent.                     |
-| DeleteActivity        | [DeleteActivity](#DeleteActivity) | Enables you to delete an activity that was sent.                          |
-| Get activity members | [GetActivityMembers](#GetActivityMembers)| Enables you to get a list of activity members and save it to a property in memory.|
-| GetConversationMembers| [GetConversationMembers](#GetConversationMembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
-| EditActions    | [EditActions](#EditActions) | Enables you to edit the current action on the fly based on user input. Especially useful when handling [interruptions][6]. |
+| Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog which when, will return to the caller.    |
+| Cancel all dialogs     | [CancelAllDialog](#cancelalldialog)| Cancels all active dialogs including any active parent dialogs.         |
+| End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.                                                   |
+| End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
+| Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
+| Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
+| Update an activity     | [UpdateActivity](#updateactivity)| This enables you to update an activity that was sent.                     |
+| DeleteActivity        | [DeleteActivity](#deleteactivity) | Enables you to delete an activity that was sent.                          |
+| Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in memory.|
+| GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
+| EditActions    | [EditActions](#editactions) | Enables you to edit the current action on the fly based on user input. Especially useful when handling [interruptions][6]. |
 
 > [!IMPORTANT]
 > QUESTIONS:
@@ -88,23 +94,23 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 | Activity to accomplish | Action Name                           | What this action does                                                     |
 | ---------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
-| Edit an array          | [EditArray](#EditArray)               | This enables you to perform edit operations on an array.                  |
-| Delete a property      | [DeleteProperty](#DeleteProperty)     | This enables you to remove a property from memory.                        |
-| Delete properties      | [DeleteProperties](#DeleteProperties) | This enables you to delete more than one property in a single action.     |
-| Set a property         | [SetProperty](#SetProperty)           | This enables you to set a property's value in memory.                     |
-| Set properties         | [SetProperties](#SetProperties)       | This enables you to initialize one or more properties in a single action. |
+| Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
+| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from memory.                        |
+| Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
+| Set a property         | [SetProperty](#setproperty)           | This enables you to set a property's value in memory.                     |
+| Set properties         | [SetProperties](#setproperties)       | This enables you to initialize one or more properties in a single action. |
 
 ### Access external resources
 
 | Activity to accomplish | Action Name                | What this action does                                                                         |
 | ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------- |
 | Begin a skill dialog   | ?                          | |
-| Send an HTTP request   | [HttpRequest](#HttpRequest)| Enables you to make HTTP requests to any endpoint.                                            |
-| Emit a custom event    | [EmitEvent](#EmitEvent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8]. |
+| Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                            |
+| Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8]. |
 | OAuth Login            | ?                          | |
 | Connect to a QnA KB    | ?                          | |
-| Sign out a user        | [SignOutUser](#SignOutUser)| Enables you to sign out the currently signed in user. |
-| Call custom code       | [CodeAction](#CodeStep)    | Enables you to call your own custom code. |
+| Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user. |
+| Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code. |
 
 
 > [!IMPORTANT]
@@ -117,10 +123,10 @@ The remaining actions relate to looping statements which enable you to repeat th
 ### Debugging options
 
 
-| Activity to accomplish | Action Name                     | What this action does                                                                         |
-| ---------------------- | ------------------------------- | --------------------------------------------------------------------------------------------- |
-| Log to console         | [LogAction](#LogStep)           | Enables you to writes out to the console and optionally send the message as a trace activity. |
-| Emit a trace event     | [TraceActivity](#TraceActivity) | Enables you to send trace activities with what ever payload you specify.                      |
+| Activity to accomplish | Action Name                     | What this action does                                                       |
+| ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
+| Log to console         | [LogAction](#logstep)           | Writes to the console and optionally sends the message as a trace activity. |
+| Emit a trace event     | [TraceActivity](#traceactivity) | Enables you to send trace activities with what ever payload you specify.    |
 
 <!-------------------------------------------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------------------------------------------->
@@ -455,7 +461,9 @@ var adaptiveDialog = new AdaptiveDialog()
 
 #### BeginDialog
 
-Invoke and begin a new dialog. `BeginDialog` requires the name of the target dialog, which can be any type of dialog including Adaptive dialog or Waterfall dialog etc.
+Invoke and begin a new dialog. `BeginDialog` requires the name of the target dialog, which can be any type of dialog, it is not limited to Adaptive dialogs.
+
+The `BeginDialog` action defines a property named `ResultProperty` that allows you to specify where to save the results when the dialog ends. By default, `resultProperty` is set to `dialog.results` so anything that is set in that [memory scope][11] will automatically be returned to the caller when the adaptive dialog ends.
 
 ``` C#
 new BeginDialog("BookFlightDialog")
@@ -465,12 +473,12 @@ new BeginDialog("BookFlightDialog")
 }
 ```
 
+> [!TIP]
+> Just like when invoking any dialog in the bot framework SDK, when calling `BeginDialog` to invoke an adaptive dialog, you can use the `options` parameter to pass input information for the dialog.
+
 #### EndDialog
 
-Ends the active dialog.
-
-> [!TIP]
-> Adaptive dialogs will end automatically by default if the dialog has completed running all of its actions. To override this behavior, set the `AutoEndDialog` property on Adaptive Dialog to false.
+Ends the active dialog. By default, adaptive dialogs have a `resultProperty` set to `dialog.results`' so anything that is set in that memory scope will automatically be returned to the caller when the dialog ends. In addition the `EndDialog` action has the `value` property which contains a value that is passed back to the caller of the dialog.
 
 ``` C#
 new EndDialog()
@@ -479,6 +487,9 @@ new EndDialog()
     Value = "=$userName"
 }
 ```
+
+> [!TIP]
+> Adaptive dialogs will end automatically by default if the dialog has completed running all of its actions. To override this behavior, set the `AutoEndDialog` property on Adaptive Dialog to false.
 
 #### CancelAllDialog
 
@@ -653,7 +664,7 @@ new DeleteActivity ()
 
 #### Get activity members
 
-Calls BotFrameworkAdapter.GetActivityMembers() and sets the result to a memory property.
+Gets the members of the activity associated with this turn and saves the list to a property.
 
 ```C#
 new GetActivityMembers()
@@ -664,7 +675,7 @@ new GetActivityMembers()
 
 #### Get conversation members
 
-Calls BotFrameworkAdapter.GetConversationMembers() and sets the result to a memory property.
+Gets the members of the current conversation and saves the list to a property.
 
 ```C#
 new GetConversationMembers()
@@ -675,7 +686,7 @@ new GetConversationMembers()
 
 #### EditActions
 
-Used to edit the current action. Specifically helpful when handling an interruption. You can use EditActions to prevent the current set of steps from being executed or add to the beginning or end of the current action.
+Modifies the current sequence of actions. Specifically helpful when handling an interruption. You can use EditActions to insert or remove actions anywhere in the sequence, including adding actions to the beginning or end of the sequence.
 
 ``` C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -773,7 +784,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### SetProperty
 
-Used to set a property's value in memory. The value can either be an explicit string or an expression. See [the common expressions language][10] to learn more about expressions.
+Used to set a property's value in memory. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
 
 ``` C#
 new SetProperty()
@@ -879,6 +890,8 @@ new HttpRequest()
 };
 
 ```
+
+<!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.-->
 
 #### EmitEvent
 
@@ -1023,7 +1036,7 @@ new TraceActivity()
 
 #### LogStep
 
-Writes out to console and can also send the message as a trace activity
+Writes to the console and optionally sends the message as a trace activity.
 
 ``` C#
 new LogStep()
@@ -1036,8 +1049,8 @@ new LogStep()
 
 ## Additional Information
 
-* To learn about action specific to gathering user input see the article [Asking for user input using adaptive dialogs][7].
-* To learn more about expressions see the article [the common expressions language][10].
+* To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][7] article.
+* To learn more about adaptive expressions see the [adaptive expressions][10] article.
 
 [1]:bot-builder-adaptive-dialog-introduction.md
 [2]:bot-builder-adaptive-dialog-triggers.md
@@ -1048,4 +1061,5 @@ new LogStep()
 [7]:bot-builder-adaptive-dialog-input.md
 [8]:bot-builder-adaptive-dialog-triggers.md#custom-events
 [9]:bot-builder-adaptive-dialog-generation.md
-[10]:PlaceholderFor-common-expressions-language
+[10]:PlaceholderFor-adaptive expressions
+[11]:bot-builder-adaptive-dialog-memoryscopes.md
