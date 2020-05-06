@@ -36,7 +36,7 @@ The simple response templates in **BookingDialog.lg**, like `# PromptForDestinat
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Resources/BookingDialog.LG?range=4-6)]
+[!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=4-6)]
 
 For example, a call to `# PromptForDepartureCity`, see above, will produce one of the two possible text prompts:
 
@@ -49,7 +49,7 @@ Like more complex templates, simple response templates can reference memory. In 
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcorecore/13.core-bot/Resources/BookingDialog.LG?range=7-9)]
+[!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=7-9)]
 
 If the user enters _Seattle_ for the `Origin`, _Paris_ for the `Destination`, and _05/24/2020_ for the `TravelDate`, your bot will produce one of the following results:
 
@@ -64,7 +64,7 @@ The `# PromptForMissingInformation` template in **BookingDialog.LG** is an examp
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=31-39)].
+[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG??range=31-39)].
 
 ### Reference other templates
 
