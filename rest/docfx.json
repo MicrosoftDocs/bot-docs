@@ -30,7 +30,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "uhfHeaderId": "azure"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "bot-framework-rest-api",
