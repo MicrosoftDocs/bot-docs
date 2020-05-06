@@ -92,7 +92,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 ### Create an OAuth connection settings
 
-1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AS v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1) and the value described below.
+1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AD v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1) and the value described below.
 
 1. Leave the **Token Exchange URL** empty.
 1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
@@ -140,7 +140,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 ### Create an OAuth connection settings
 
-1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AS v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1) and the values described below.
+1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AD v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1) and the values described below.
 1. In the **Token Exchange URL** box enter the `SkillBot` scope value you saved in the previous steps.
 1. In the **Scopes** box enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasic.All` `openid`.
 
