@@ -41,6 +41,9 @@ The skills feature is designed so that:
 - A skill consumer can consume a skill regardless of the language or SDK version of the skill.
 - The Bot Connector service provides bot-to-bot authentication; however, you can test a root bot locally using the Emulator.
 - A skill can also be a skill consumer. Connecting through multiple skills will add network latency and the potential for error. Such bots will be more complex and more difficult to debug.
+
+![Block diagram](./media/skills-block-diagram.png)
+
 <!--TBD: - Skills support proactive messaging. -->
 
 ## Architecture

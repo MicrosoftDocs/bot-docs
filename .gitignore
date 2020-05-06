@@ -14,3 +14,4 @@ articles/directories.txt
 _themes*/
 
 .openpublishing.buildcore.ps1
+/.vs
