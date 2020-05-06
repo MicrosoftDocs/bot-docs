@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 3/30/2020
+ms.date: 4/15/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,7 +19,8 @@ monikerRange: 'azure-bot-service-4.0'
 This article shows how to use the Single sign on (SSO) feature in a bot.
 To do so, it uses a *consumer* bot, also known as *root* bot, to interact with a *skill* bot.
 
-Once the users sign in the root bot, they are "automatically" signed in each skill bot they might use through the root bot. This is because of SSO. Without it the users would have to sign in every time they communicate with a different skill bot.
+Once the users sign in the root bot, they are not required to sign into each skill bot they might use through the root bot. This is because of SSO. Without it the users would have to sign in every time they communicate with a different skill bot.
+
 
 > [!NOTE]
 > The *consumer* bot is also called *root* or *parent* bot. The *skill* bot is also called *child* bot.\
@@ -59,16 +60,16 @@ For SSO background information, see [Single sign on](bot-builder-concept-sso.md)
 The **RootBot** supports user's SSO. It communicates with the
 **SkillBot** on behalf of the user, without the user being required to authenticate again into the *SkillBot*.
 
-For each sample, you need the following:
+For each project in the sample, you need the following:
 
 1. An Azure AD application to register a bot resource in Azure.
 1. An Azure AD identity provider application for authentication.
     > [!NOTE]
     > Currently, only the [Azure AD v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
-# [RootBot](#tab/sb)
+<!-- # [RootBot](#tab/sb) -->
 
-## Create the Azure bot registration
+## Create the Azure RootBot registration
 
 1. Create a bot registration in the [Azure portal][azure-portal] for the `RootBot`. Follow the steps described in
 [Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
@@ -78,7 +79,7 @@ For each sample, you need the following:
 
 The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `RootBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
+1. Create an identity application for the `RootBot` that uses Azure AD v2  to authenticate the user. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
 
 1. In the left pane, click **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.
@@ -91,7 +92,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Click **Add scope**.
 1. Copy and save the scope value.
 
-## Create Azure AD connection
+## Create an OAuth connection settings
 
 1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the value described below.
 
@@ -99,9 +100,9 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
 1. Copy and save the name of the connection.
 
-# [SkillBot](#tab/srb)
+<!-- # [SkillBot](#tab/srb) -->
 
-## Create the Azure bot registration
+## Create the Azure SkillBot registration
 
 1. Create a bot registration in the [Azure portal][azure-portal] for the `SkillBot`. Follow the steps described in
 [Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
@@ -132,7 +133,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
    1. Select **Microsoft APIs** then **Microsoft Graph**.
    1. Choose **Delegated permissions** and make sure the permissions you need are selected. This sample requires the permissions listed below.
       > [!NOTE]
-      > Any permission marked as **ADMIN CONSENT REQUIRED** will require both a user and a tenant admin to login, so for your bot tend to stay away from these.
+      > Any permission marked as **ADMIN CONSENT REQUIRED** will require both a user and a tenant admin to login.
 
       - **openid**
       - **profile**
@@ -141,7 +142,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
    1. Click **Add permissions**.
 
-## Create Azure AD connection
+## Create an OAuth connection settings
 
 1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AS v2](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) and the values described below.
 1. In the **Token Exchange URL** box enter the `SkillBot` scope value you saved in the previous steps.
@@ -149,7 +150,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 1. Copy and save to a file the name of the connection.
 
----
+<!--- --- -->
 
 ## Test the connection
 
@@ -217,7 +218,7 @@ Use the following for testing:
 
 - `RootBot` commands
 
-    - `login` allows the user to sign into the root bot. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
+    - `login` allows the user to sign into the Azure AD registration using the `RootBot`. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
     - `token` displays the user's token.
     - `logout` logs the user out of the `RootBot`.
 
@@ -266,7 +267,7 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
 
     ![Root token](media/how-to-auth/auth-bot-sso-test-token.PNG)
 
-    Now you are ready to communicate with the `SkillBot`. Once you've signed in the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
+    Now you are ready to communicate with the `SkillBot`. Once you've signed using the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
 
 1. Enter **skill login** in the emulator box. You will not be asked to login again. Instead the SkillBot token is displayed.
 
@@ -326,7 +327,7 @@ The following time-sequence diagram applies to the samples used in the article a
 1. The **ABS** sends the authentication token, generated based on the user's credentials, to the **RootBot**.
 1. The **RootBot** displays the root token for the user to see.
 1. The user enters the `skill login` command for the **SkillBot**.
-1. The **SkillBot** sends an **OAuthCard** to the **RobBot**.
+1. The **SkillBot** sends an **OAuthCard** to the **RootBot**.
 1. The **RobBot** asks for an **exchangeable token** from **ABS**.
 1. At this point the SSO "dance" comes into play which ends with the **skill token** sent by the **SkillBot** to the **RootBot**.
 1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
