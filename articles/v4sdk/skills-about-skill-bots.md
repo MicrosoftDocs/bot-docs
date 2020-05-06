@@ -24,18 +24,18 @@ Skill bots:
 
 - Implement access restrictions via a claims validator.
 - As appropriate, check for initialization parameters in the initial activity's _value_ property.
-- Send messages to the user as normal, via `message` activities.
+- Send messages to the user as normal.
 - Signal skill completion or cancellation via an `endOfConversation` activity.
   - Provide the return value, if any, in the activity's _value_ property.
   - Provide an error code, if any, in the activity's _code_ property.
+
+For more information, see the [skills overview](skills-conceptual.md) and [about skill consumers](skills-about-skill-consumers.md).)
 
 ## Skill actions
 
 Some skills can perform a variety of tasks or _actions_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations.
 
 <!--TODO Flesh this out-->
-
-You publish skill and skill consumer bots separately.
 
 See how to [implement a skill](skill-implement-skill.md) for a simple skill that implements one action.
 
@@ -45,7 +45,7 @@ See how to [implement a skill](skill-implement-skill.md) for a simple skill that
 
 ## Skill manifests
 
-Since a skill consumer does not necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
+A skill manifest describes the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
 
 <!--TODO Flesh this out-->
 

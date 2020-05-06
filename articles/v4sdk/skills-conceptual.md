@@ -33,28 +33,20 @@ In other words, the user interacts directly with the root bot, and the root bot 
 <!-- Requirements/contract -->
 The skills feature is designed so that:
 
-- Skills can work with both the Bot Framework adapter and custom adapters.
-- Skills can work with the Microsoft Teams channel, which makes extensive use of `invoke` activities.
-- Skills support user authentication; however, user authentication is local to the skill or skill consumer and cannot be transferred to another bot.
+- Skills and consumers communicate over HTTP using the bot framework protocol.
 - A skill consumer can consume multiple skills.
-- A skill consumer can run multiple skills in parallel.
-- A skill consumer can consume a skill regardless of the language or SDK version of the skill.
-- The Bot Connector service provides bot-to-bot authentication; however, you can test a root bot locally using the Emulator.
-- A skill can also be a skill consumer. Connecting through multiple skills will add network latency and the potential for error. Such bots will be more complex and more difficult to debug.
+- A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using Python.
+- A skill can also be a skill consumer and call other skills.
+- Skills support user authentication; however, user authentication is local to the skill and cannot be transferred to another bot.
+- Skills can work with both the Bot Framework adapter and custom adapters.
 
 ![Block diagram](./media/skills-block-diagram.png)
 
 <!--TBD: - Skills support proactive messaging. -->
 
-## Architecture
+## Conceptual architecture
 
-A skill and skill consumer are separate bots, and you publish them independently.
-
-- The skill and skill consumer communicate over HTTP.
-- A skill consumer can invoke more than one skill.
-- A skill can be invoked by more than one consumer.
-
-A skill needs to include additional logic to send an `endOfConversation` activity when it completes, so that the skill consumer knows when to stop forwarding activities to the skill.
+A skill and skill consumer are separate bots, and you publish them independently. A skill needs to include additional logic to send an `endOfConversation` activity when it completes, so that the skill consumer knows when to stop forwarding activities to the skill.
 
 A root bot implements at least two HTTP endpoints, one for receiving activities from the user and one for receiving activities from skills. The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.
 It requires added logic for managing a skill, such as when to invoke or cancel the skill, and so on. In addition to the usual bot and adapter objects, the consumer includes a few skill-related objects, used to exchange activities with the skill.
