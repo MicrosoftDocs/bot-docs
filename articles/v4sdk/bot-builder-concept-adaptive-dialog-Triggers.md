@@ -54,8 +54,8 @@ Triggers = new List<OnCondition>()
 | Choose entity             | OnChooseEntity| RecognizedIntent | Occurs when there are multiple possible resolutions of an entity. |
 | Choose Intent | OnChooseIntent |ChooseIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
 | Intent recognized| [OnIntent](#Recognizer-trigger-examples)| RecognizedIntent | Actions to perform when specified intent is recognized.           |
-|QnAMatch intent|OnQnAMatch| RecognizedIntent |OnDialogEvent|This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
-|Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)| UnknownIntent |OnDialogEvent| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
+|QnAMatch intent|OnQnAMatch| RecognizedIntent |This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
+|Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)| UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
 
 #### Recognizer trigger examples
 
@@ -126,14 +126,14 @@ The dialog triggers handle dialog specific events which are related to the "life
 > * Take actions on messages received or sent.
 > * Evaluate and take action based on the content of an incoming activity.
 
-| Event cause         | Trigger name     | Base event   | Description                                                                    |
-| ------------------- | ---------------- | ------------ | ------------------------------------------------------------------------------ |
-| Dialog started      | OnBeginDialog    | BeginDialog  | Actions to perform when this dialog begins.                                    |
-| Dialog cancelled    | OnCancelDialog   |RepromptDialog| Actions to perform on cancel dialog event (when this dialog ends).             |
-| Choose Property     | OnChooseProperty | CancelDialog | This event occurs when there are multiple possible entity to property mappings.|
-| Actions processed   | OnEndOfActions   | EndOfActions | This event occurs once all actions and ambiguity events have been processed.   |
-| An error occurred   | OnError          | Error        | Action to perform when an 'Error' dialog event occurs.                         |
-| Re-prompt for input | OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                         |
+| Trigger name     | Base event   | Description                                                                    |
+| ---------------- | ------------ | ------------------------------------------------------------------------------ |
+| OnBeginDialog    | BeginDialog  | Actions to perform when this dialog begins.                                    |
+| OnCancelDialog   | CancelDialog | Actions to perform on cancel dialog event (when this dialog ends).             |
+| OnChooseProperty |ChooseProperty| This event occurs when there are multiple possible entity to property mappings.|
+| OnEndOfActions   | EndOfActions | This event occurs once all actions and ambiguity events have been processed.   |
+| OnError          | Error        | Action to perform when an 'Error' dialog event occurs.                         |
+| OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                         |
 
 <!--| Clear Property  |  OnClearProperty  | This event occurs any time a property needs to be be cleared.                  |-->
 
@@ -198,6 +198,8 @@ var myDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 ```
 
 ### Message events
+
+<!-- Should the Message events section be combined with the Activity events section? -->
 
 **Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
 
