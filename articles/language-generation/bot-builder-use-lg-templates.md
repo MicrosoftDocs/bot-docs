@@ -64,7 +64,7 @@ The `# PromptForMissingInformation` template in **BookingDialog.LG** is an examp
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG??range=31-39)].
+[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG??range=31-39)]
 
 ### Reference other templates
 
