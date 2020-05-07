@@ -287,7 +287,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
     1. `NoValue`: A Boolean value. `true` to search over each choice's _value_ property; otherwise, `false`. The default is `false`.
     2. `NoAction`: A Boolean value. `true` to search over the title of each choice's _action_ property; otherwise, `false`. The default is `false`.
     3. `RecognizeNumbers`: A Boolean value. `true` to allow the input fall-back on using a number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
-    4. `RecognizeOrdinals`: A boolean value that determines whether or not the the recognizer should check for Ordinal Numbers using the NumberRecognizer's OrdinalModel.
+    4. `RecognizeOrdinals`: A Boolean value. `true` to allow the input to fall-back on using an ordinal number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
 
 > [!IMPORTANT]
 >
