@@ -26,7 +26,7 @@ The Bot Framework SDK provides API that makes it easier to collect and validate 
 
 ## Inputs
 
-_Inputs_ in adaptive dialogs are similar to [prompts][4] that you can use in an adaptive dialog step to ask and collect a piece of input from a user, validate and accept it into memory. Inputs include these pre-built features:
+Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and collect a piece of input from a user, validate it, and accept it into memory. An input:
 
 * Accepts a property to bind to the new [state management][6] scopes.
 * Performs existential check before prompting.
