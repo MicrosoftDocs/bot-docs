@@ -13,12 +13,12 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use language generation templates in your bot
 
-Language generation templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages, cards, as well as evaluate text input from users.
+Language generation (LG) templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages and cards, and to evaluate text input from users.
 
 ## Prerequisites
 
 - [LUIS](https://luis.ai) account
-- A copy of the language generation core bot sample in either C# or Javascript
+- A copy of the language generation core bot sample in either [C#](https://aka.ms/lg-csharp-13-core-bot-sample) or [Javascript](https://aka.ms/lg-javascript-13-core-bot-sample)
 - Knowledge of [bot basics](../v4sdk/bot-builder-basics.md) and [language generation](../v4sdk/bot-builder-concept-language-generation.md)
 
 ## About the sample
@@ -60,7 +60,7 @@ If the user enters _Seattle_ for the `Origin`, _Paris_ for the `Destination`, an
 
 A [conditional response template](../file-format/bot-builder-lg-file-format.md#conditional-response-template) lets you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](../v4sdk/bot-builder-concept-adaptive-expressions.md).
 
-The `# PromptForMissingInformation` template in **BookingDialog.LG** is an example of an [if-else template](../file-format/bot-builder-lg-file-format.md#conditional-response-template). In the template, the user is prompted for pieces of information if their properties are set to `null`:
+The `# PromptForMissingInformation` template in **BookingDialog.lg** is an example of an [if-else template](../file-format/bot-builder-lg-file-format.md#conditional-response-template). In the template, the user is prompted for pieces of information if their properties are set to `null`:
 
 **Resources/BookingDialog.lg**
 
@@ -70,11 +70,11 @@ The `# PromptForMissingInformation` template in **BookingDialog.LG** is an examp
 
 Variations in templates can reference other templates. In the example above, if a property is `null` then the template calls the relevant template to prompt for the missing information.
 
-For example, if `Destination` equals `null`, then the `# PromptforDestinationCity` template would be called via `${PromptForDestinationCity()}` to obtain the missing flight destination information. If all properties equal non-null values then the template calls the `# ConfirmBooking` prompt.
+For example, if `Destination` equals `null`, then the `# PromptforDestinationCity` template would be called via `${PromptForDestinationCity()}` to obtain the missing flight destination information. If none of the properties are null then the template calls the `# ConfirmBooking` prompt.
 
 ## Create a cards template
 
-Language generation templates can leverage cards and media to create a richer conversational experience. In **welcomeCard.LG** four templates are used to create the Adaptive card that displays when you first start the bot.
+Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the Adaptive card that displays when you first start the bot.
 
 `# Adaptive Card` defines an Adaptive card JSON object:
 
@@ -82,7 +82,7 @@ Language generation templates can leverage cards and media to create a richer co
 
 [!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=25-57)]
 
-This card displays an image, one of the variations in `# HeaderText` as the card header, and buttons for suggested actions.
+This card displays an image, and uses LG templates for the card header a set of suggested actions.
 
 ## [C#](#tab/cs)
 
@@ -110,7 +110,7 @@ Finally the `# WelcomeCard` calls the `# AdaptiveCard` template to return the Ad
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=11-14]
+[!code-lg[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=11-14)]
 
 For more information about the `ActivityAttachment()` function, read [inject functions from the LG library](functions-injected-from-language-generation.md)
 
@@ -136,7 +136,7 @@ Combine the path for cross-platform support and parse the path that contains **w
 
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57?highlight=7)]
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=12,27,55)]
 
 Notice how the `WelcomeCard` template is referenced in the call `SendActivityAsync()`.
 
