@@ -347,7 +347,7 @@ If strict is set to false or not set, a compatible result will be given. The abo
 
 ## Additional Resources
 
-- Language Generation [API reference][2]
+- [Language generation API reference][2]
 
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
