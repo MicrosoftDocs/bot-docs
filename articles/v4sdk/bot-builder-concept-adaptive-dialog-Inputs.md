@@ -411,7 +411,7 @@ Use to ask user to sign in.
 The `OAuth` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these four additional properties:
 
 1. `ConnectionName`: Name of the OAuth connection configured in Azure Bot Service settings page for the bot.
-2. `Text`: The text to display in the sign in card.
+2. `Text`: Additional text to display in the sign in card.
 3. `Title`: Title text to display in the sign in card.
 4. `TokenProperty`: Property path to store the auth token
 
