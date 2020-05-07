@@ -145,7 +145,7 @@ Use _text input_ when you want to verbatim accept user input as a value for a sp
 
 The `TextInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines one additional property:
 
-* `OutputFormat`: Using [adaptive expressions][12] you can modify the string, for example, in the code example below you could add this property with an expression that will capitalize the first letter of each word.
+* `OutputFormat`: Using [adaptive expressions][12] you can modify the string, for example, in the code example below the `OutputFormat` expression will capitalize the first letter of each word of the users name.
 
 #### TextInput example
 
@@ -162,8 +162,9 @@ getUserNameDialog.Triggers.Add(new OnIntent()
         // Add TextInput step. This step will capture user's input and use it to populate the 'user.name' property.
         new TextInput()
         {
-            Property = "user.name",
-            Prompt = new ActivityTemplate("Hi, What is your name?")
+            Property = "user.fullName",
+            Prompt = new ActivityTemplate("Please enter your full name.")
+            OutputFormat = "join(foreach(split(this.value, ' '), item, concat(toUpper(substring(item, 0, 1)), substring(item, 1))), ' ')"
         }
     }
 });
@@ -175,8 +176,10 @@ Asks the user for a number.
 
 The `NumberInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these two additional properties:
 
+<!--https://blog.botframework.com/2018/02/01/contributing-luis-microsoft-recognizers-text-part-2/-->
+
 1. `DefaultLocale`: the default locale (or an expression for the default locale) for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: Controls the output format of the value recognized by input. Valid options are float, int.
+2. `OutputFormat`: Using [adaptive expressions][12] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in fahrenheit to its equivalent celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
 
 #### NumberInput example
 
@@ -273,9 +276,19 @@ var ConfirmationDialog = new AdaptiveDialog("ConfirmationDialog") {
 The `ChoiceInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these six additional properties:
 
 1. `ChoiceOptions`: This property is used to format the presentation of the confirmation choices that are presented to the user.
-2. `ConfirmChoices`: This is an expression that you use to evaluate the choices entered by the user.
+2. `Choices`: An adaptive expression that evaluates to a ChoiceSet that contains the [ordered] list of choices for the user to choose from.
 3. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
-4. `OutputFormat`: The default output format for `ConfirmInput` is a boolean. If this property is set then the output of the expression is the value returned by the dialog. <!-- huh? -->
+4. `OutputFormat`: an adaptive expression that evaluates to one of the `ChoiceOutputFormat` enumeration values:
+                switch (this.OutputFormat.GetValue(dc.State))
+                {
+                    case ChoiceOutputFormat.Value:
+                    default:
+                        dc.State.SetValue(VALUE_PROPERTY, foundChoice.Value);
+                        break;
+                    case ChoiceOutputFormat.Index:
+                        dc.State.SetValue(VALUE_PROPERTY, foundChoice.Index);
+                        break;
+                }
 5. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
     1. `None`: Don't include any choices for prompt.
     2. `Auto`: Automatically select the appropriate style for the current channel.
@@ -331,13 +344,7 @@ Asks for a date/time.
 The `DateTimeInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these three additional properties:
 
 1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: The default output for `DateTimeInput` is an array of `DateTimeResolutions`, this property is an expression which is evaluated to determine the output of the dialog.
-3. `callerPath`: Initializes a new instance of the System.Runtime.CompilerServices.CallerFilePathAttribute
-
-> [!IMPORTANT]
->
-> * Please verify the descriptions in the list of properties above.
-> * No idea what to put for `callerPath`.
+2. `OutputFormat`: The default output for `DateTimeInput` is an array of `DateTimeResolutions`, this property allows you to define an adaptive expression. Whatever value it returns become the final value for the dialog's `property` property, whether or not it evaluates to a date-time or not.
 
 #### DateTimeInput example
 
@@ -367,17 +374,11 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 Use to request an attachment from user as input.
 
-The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these 2 additional properties:
+The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines this additional property:
 
-1. `OutputFormat`: `OutputFormat = AttachmentOutputFormat.All` The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid AttachmentOutputFormat values are:
+1. `OutputFormat`: `OutputFormat = AttachmentOutputFormat.All` The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
     1. `All`: return all attachments as a List.
     2. `First`: return only the first attachment.
-2. `callerPath`: Initializes a new instance of the System.Runtime.CompilerServices.CallerFilePathAttribute
-
-> [!IMPORTANT]
->
-> * Please verify the descriptions in the list of properties above.
-> * No idea what to put for `callerPath`.
 
 #### AttachmentInput example
 
@@ -408,16 +409,18 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 Use to ask user to sign in.
 
-The `OAuth` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these four additional properties:
+The `OAuthInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these four additional properties:
 
 1. `ConnectionName`: Name of the OAuth connection configured in Azure Bot Service settings page for the bot.
 2. `Text`: Additional text to display in the sign in card.
 3. `Title`: Title text to display in the sign in card.
-4. `TokenProperty`: Property path to store the auth token
+4. `Timeout`: This is the number of milliseconds `OAuthInput` waits for the user authentication to complete.  The default is 900,000 milliseconds, which is 15 minutes.
 
-> [!IMPORTANT]
->
-> * Please verify the descriptions in the list of properties above.
+The `OAuthInput` action also defines two new methods:
+
+1. `GetUserTokenAsync`: This method attempts to retrieve the user's token.
+2. `SignOutUserAsync`: This method signs out the user.
+
 
 #### OAuth example
 
