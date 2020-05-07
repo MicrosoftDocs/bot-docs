@@ -404,7 +404,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-### OAuth
+### OAuthInput
 
 Use to ask user to sign in.
 
