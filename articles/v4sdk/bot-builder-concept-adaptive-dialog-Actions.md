@@ -97,20 +97,21 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 ### Access external resources
 
-| Activity to accomplish | Action Name                | What this action does                                                                         |
-| ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [AdaptiveSkillDialog](#adaptiveskilldialog) | TBD:TODO |
-| Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                            |
-| Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8]. |
-| Connect to a QnA KB    | [QnAMaker](#qnamaker)      | Provides access to a QnA Maker knowledge base.                                                |
-| Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user. |
-| Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code. |
+| Activity to accomplish | Action Name                | What this action does                                                                                       |
+| ---------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Begin a skill dialog   | [AdaptiveSkillDialog](#adaptiveskilldialog) | TBD:TODO                                                                                   |
+| Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                                          |
+| Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8].               |
+| Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user.                                                       |
+| Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code.                                                                   |
+
+<!--| Connect to a QnA KB    | [OnQnMakerDialog](#qnamakerdialog)| Why use this since Once QnA Maker is set as a recognizer on a dialog, you can use the OnQnAMatch trigger to render the answer.|-->
 
 > [!IMPORTANT]
-> **TODO**: Need information and sample code for:
+> **TODO**: Need information and/or sample code for:
 >
-> 1. **Begin a skill dialog**
-> 2. **Connect to a QnA Knowledgebase**
+> 1. **"Begin a skill dialog"**
+> 2. **"Connect to a QnA Knowledgebase" NOTE:** ***YOU DON'T NEED OR WANT TO CONNECT USING THE OnQnMakerDialog - CONNECT TO THE RECOGNIZER THEN USE THE OnQnAMatch TRIGGER***
 
 ### Debugging options
 
@@ -889,41 +890,10 @@ new HttpRequest()
 
 <!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.-->
 
-#### QnAMaker
+<!--
+#### OnQnAMakerDialog
 
-Use this to to a [QnA Maker][12] knowledge base. Refer to [QnAMakerDialog Class][15].
-
-<!--- need sample 
-``` C#
-new QnAMakerDialog()
-{
-    // Connect to a QnA Maker Knowledge Base.
-    KnowledgeBaseId = _configuration["QnAKnowledgebaseId"],
-    EndpointKey = _configuration["QnAEndpointKey"],
-    hostName = _configuration["QnAEndpointHostName"]
-};
-
-```
--->
-> [!TIP]
->
-> * See [Tutorial: Use QnA Maker in your bot to answer questions][13] for additional information on connecting to a QnA Maker knowledgebase.
-> * Also see [Use QnA Maker to answer questions][14].
-
-<!--Properties: 
-* `knowledgeBaseId`: The ID of the QnA Maker knowledge base to query.
-* `endpointKey`: The QnA Maker endpoint key to use to query the knowledge base.
-* `hostName`: The QnA Maker host URL for the knowledge base, starting with "https://" and ending with "/qnamaker".
-* `noAnswer`: The activity to send the user when QnA Maker does not find an answer.
-* `threshold`: The threshold for answers returned, based on score.
-* `activeLearningCardTitle`: The card title to use when showing active learning options to the user, if active learning is enabled.
-* `cardNoMatchText`: The button text to use with active learning options, allowing a user to indicate none of the options are applicable.
-* `top`: The maximum number of answers to return from the knowledge base.
-* `cardNoMatchResponse`: The activity to send the user if they select the no match option on an active learning card.
-* `strictFilters`: QnA Maker metadata with which to filter or boost queries to the knowledge base; or null to apply none.
-* `httpClient`: An HTTP client to use for requests to the QnA Maker Service; or `null` to use a default client.
-* `sourceFilePath`: The source file path, for debugging. Defaults to the full path of the source file that contains the caller.
-* `sourceLineNumber`: The line number, for debugging. Defaults to the line number in the source file at which the method is called.
+Use this to to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][16]. <!-Need details like sample app's name etc--->
 -->
 
 #### EmitEvent
@@ -1100,3 +1070,4 @@ new LogStep()
 [13]:https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp
 [14]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs
 [15]:https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.ai.qna.dialogs.qnamakerdialog?view=botbuilder-dotnet-stable
+[16]:https://github.com/microsoft/BotBuilder-Samples
