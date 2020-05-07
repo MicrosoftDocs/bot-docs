@@ -11,7 +11,7 @@ ms.date: 05/07/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-## Create a bot using adaptive, component, and waterfall dialogs  
+# Create a bot using adaptive, component, and waterfall dialogs  
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
