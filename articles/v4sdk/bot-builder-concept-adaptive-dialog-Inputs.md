@@ -283,7 +283,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
     4. `List`: Add choices to prompt as a numbered list.
     5. `SuggestedAction`: Add choices to prompt as suggested actions.
     6. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
-6. `RecognizerOptions`: FindChoicesOptions or expression which evaluates to FindChoicesOptions. The FindChoicesOptions include:
+6. `RecognizerOptions`: FindChoicesOptions or expression which evaluates to FindChoicesOptions. The FindChoicesOptions has these properties:
     1. `NoValue`: A boolean value that determines whether the `choices` value will be search over or not. The default is _false_.
     2. `NoAction`: A boolean value that determines whether the `title` of the `choices` action will be search over or not. The default is _false_.
     3. `RecognizeNumbers`: A boolean value that determines whether or not the the recognizer should check for Numbers using the NumberRecognizer's NumberModel.
