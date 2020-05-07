@@ -240,7 +240,7 @@ The example above uses the [join][5] prebuilt function to list all values in the
 
 Given templates and prebuilt functions share the same invocation signature, a template name cannot be the same as a prebuilt function name.
 
-There may be cases where you must have the template name be the same as a prebuilt function name. Use `lg.xxx`, as seen in the example below, to refer to the LG template and avoid possible collisions with prebuilt functions.
+ A template name should not match a pre-built function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
 
 ```markdown
 > Custom length function with one parameter.
