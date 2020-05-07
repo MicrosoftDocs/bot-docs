@@ -11,7 +11,7 @@ ms.date: 05/16/2020
 ---
 
 # .lu File Format
-.lu files contain Markdown-like, simple text based definitions for [LUIS][1] concepts. This document covers the various concepts expressed via the .lg file format.
+An .lu file contains Markdown-like, simple text based definitions for [LUIS][1] concepts. This article covers the various concepts expressed via the .lu file format.
 
 <!--
 - [Comments](#Adding-comments)
@@ -362,7 +362,7 @@ This example would be treated as an utterance since it has a labeled value with 
 
 ## Phrase list definition
 
-A [phrase list][11] is a list of words, phrases, numbers or other characters that help identify the concept you are trying to identify. The list is case-insensitive.
+A [phrase list][11] is a list of words, phrases, numbers or other characters that help find the concept you are trying to identify. The list is case-insensitive.
 
 You can describe phrase list entities using the following notation:
 
