@@ -73,8 +73,9 @@ The remaining actions relate to looping statements which enable you to repeat th
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog which when, will return to the caller.    |
-| Cancel all dialogs     | [CancelAllDialog](#cancelalldialog)| Cancels all active dialogs including any active parent dialogs.         |
-| End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.                                                   |
+| Cancel dialog          | [CancelDialog](#cancelalldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process. Emits the `CancelDialog` event.|
+| Cancel all dialogs     | [CancelAllDialogs](#cancelalldialogs)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
+| End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
 | Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
 | Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
@@ -83,12 +84,6 @@ The remaining actions relate to looping statements which enable you to repeat th
 | Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in memory.|
 | GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
 | EditActions    | [EditActions](#editactions) | Enables you to edit the current action on the fly based on user input. Especially useful when handling [interruptions][6]. |
-
-> [!IMPORTANT]
-> QUESTIONS:
->
-> * (CancelAllDialog): What does 'current dialogs' mean? does this refer to the 'Dialog Chain', meaning all dialogs from the leaf to the root dialog (including the leaf itself, but not the root dialog)? How does this relate to the DialogSet?
-> * Why is there a CancelDialog & EndDialog?
 
 ### Manage properties
 
@@ -104,21 +99,18 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 | Activity to accomplish | Action Name                | What this action does                                                                         |
 | ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | ?                          | |
+| Begin a skill dialog   | [AdaptiveSkillDialog](#adaptiveskilldialog) | TBD:TODO |
 | Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                            |
 | Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8]. |
-| OAuth Login            | ?                          | |
-| Connect to a QnA KB    | ?                          | |
+| Connect to a QnA KB    | [QnAMaker](#qnamaker)      | Provides access to a QnA Maker knowledge base.                                                |
 | Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user. |
 | Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code. |
 
-
 > [!IMPORTANT]
-> **QUESTION**: The following actions appear in Composer in the `Access external resources` menu,  why isn't there a class in the actions directory for them in the SDK? Should they be included in this article as actions and if not how should they be documented?
+> **TODO**: Need information and sample code for:
 >
 > 1. **Begin a skill dialog**
-> 2. **OAuth Login**
-> 3. **Connect to a QnA Knowledgebase**
+> 2. **Connect to a QnA Knowledgebase**
 
 ### Debugging options
 
@@ -875,6 +867,10 @@ addToDoDialog.Triggers.Add(new OnIntent()
 
 ### Access external resource examples
 
+#### AdaptiveSkillDialog
+
+<!-- TODO--->
+
 #### HttpRequest
 
 Use this to make HTTP requests to any endpoint.
@@ -892,6 +888,43 @@ new HttpRequest()
 ```
 
 <!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.-->
+
+#### QnAMaker
+
+Use this to to a [QnA Maker][12] knowledge base. Refer to [QnAMakerDialog Class][15].
+
+<!--- need sample 
+``` C#
+new QnAMakerDialog()
+{
+    // Connect to a QnA Maker Knowledge Base.
+    KnowledgeBaseId = _configuration["QnAKnowledgebaseId"],
+    EndpointKey = _configuration["QnAEndpointKey"],
+    hostName = _configuration["QnAEndpointHostName"]
+};
+
+```
+-->
+> [!TIP]
+>
+> * See [Tutorial: Use QnA Maker in your bot to answer questions][13] for additional information on connecting to a QnA Maker knowledgebase.
+> * Also see [Use QnA Maker to answer questions][14].
+
+<!--Properties: 
+* `knowledgeBaseId`: The ID of the QnA Maker knowledge base to query.
+* `endpointKey`: The QnA Maker endpoint key to use to query the knowledge base.
+* `hostName`: The QnA Maker host URL for the knowledge base, starting with "https://" and ending with "/qnamaker".
+* `noAnswer`: The activity to send the user when QnA Maker does not find an answer.
+* `threshold`: The threshold for answers returned, based on score.
+* `activeLearningCardTitle`: The card title to use when showing active learning options to the user, if active learning is enabled.
+* `cardNoMatchText`: The button text to use with active learning options, allowing a user to indicate none of the options are applicable.
+* `top`: The maximum number of answers to return from the knowledge base.
+* `cardNoMatchResponse`: The activity to send the user if they select the no match option on an active learning card.
+* `strictFilters`: QnA Maker metadata with which to filter or boost queries to the knowledge base; or null to apply none.
+* `httpClient`: An HTTP client to use for requests to the QnA Maker Service; or `null` to use a default client.
+* `sourceFilePath`: The source file path, for debugging. Defaults to the full path of the source file that contains the caller.
+* `sourceLineNumber`: The line number, for debugging. Defaults to the line number in the source file at which the method is called.
+-->
 
 #### EmitEvent
 
@@ -927,7 +960,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
             new OnDialogEvent()
             {
                 Event = "contoso.custom",
-                
+
                 // You can use conditions (expression) to examine value of the event as part of the trigger selection process.
                 Condition = "turn.dialogEvent.value && (substring(turn.dialogEvent.value, 0, 1) == 'v')",
                 Actions = new List<Dialog>()
@@ -1061,5 +1094,9 @@ new LogStep()
 [7]:bot-builder-adaptive-dialog-input.md
 [8]:bot-builder-adaptive-dialog-triggers.md#custom-events
 [9]:bot-builder-adaptive-dialog-generation.md
-[10]:PlaceholderFor-adaptive expressions
+[10]:PlaceholderFor-adaptiveExpressions
 [11]:bot-builder-adaptive-dialog-memoryscopes.md
+[12]:https://www.qnamaker.ai/
+[13]:https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp
+[14]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs
+[15]:https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.ai.qna.dialogs.qnamakerdialog?view=botbuilder-dotnet-stable
