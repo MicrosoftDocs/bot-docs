@@ -34,7 +34,7 @@ Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and
 * Accepts validation constraints such as min, max, and so on.
 * Can use as input locally relevant intents within a dialog as well as use interruption as a technique to bubble up user response to an appropriate parent dialog that can handle it. 
 
-See [here](./all-about-interruptions.md) to learn more about interruption.
+For more information, see [about interruptions in adaptive dialogs](./all-about-interruptions.md).
 
 Adaptive dialogs support the following inputs:
 
