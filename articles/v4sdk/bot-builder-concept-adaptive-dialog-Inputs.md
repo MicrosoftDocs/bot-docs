@@ -179,7 +179,7 @@ Asks the user for a number.
 
 The `NumberInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these two additional properties:
 
-1. `DefaultLocale`: Sets the default locale for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
+1. `DefaultLocale`: the default locale (or an expression for the default locale) for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
 2. `OutputFormat`: Controls the output format of the value recognized by input. Possible options are Float, Integer
 
 #### NumberInput example
