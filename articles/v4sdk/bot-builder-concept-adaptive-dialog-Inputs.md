@@ -41,8 +41,8 @@ The adaptive dialogs library defines the following input types:
 | Input type       | Input class                       | Description                                          | Returns                                      |
 | ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
 | Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Text input       | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
-| Number input     | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
+| Text | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
+| Number | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
 | Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
 | Multiple choice  | [ChoiceInput](#choiceinput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
 | File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.        |
