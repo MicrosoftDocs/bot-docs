@@ -79,7 +79,7 @@ Adaptive expressions support the following operator types and expression syntax:
 
 Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
 
-There are two special variables, `[]` and  `{}`. `[]` represents an empty list and `{}` represents a empty object.
+There are two special variables. `[]` represents an empty list, and `{}` represents a empty object.
 
 ## Explicit values
 

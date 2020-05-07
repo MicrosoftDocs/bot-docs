@@ -12,9 +12,9 @@ ms.date: 05/16/2020
 
 # Structured response template
 
-Structured response templates let developers define a complex structure that supports the extensively functionality of [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md) (like templating, composition, substitution) while leaving the interpretation of the structured response up to the caller of the LG library.
+Structured response templates let developers define a complex structure that supports the extensive functionality of [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md), like templating, composition, while leaving the interpretation of the structured response up to the caller of the LG library.
 
-For bot applications, we support:
+For bot applications, the followng support is provided:
 - activity definition
 - card definition
 - [chatdown][1] style constructs
@@ -218,7 +218,7 @@ A call to `evaluateTemplate('T1')` would result in the following internal struct
 
 ## Full reference to another structured template
 
-You can include a reference to a another structured template as 1) a property in another structured template ot 2) as a reference in another simple or conditional response template.
+You can include a reference to a another structured template as a property in another structured template, or as  a reference in another simple or conditional response template
 
 Here's an example of full reference to another structured template:
 

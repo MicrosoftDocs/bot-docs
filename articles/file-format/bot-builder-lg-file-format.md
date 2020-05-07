@@ -12,7 +12,7 @@ ms.date: 05/16/2020
 
 # .lg file format
 
-.lg files help describe language generation templates with entity references and their composition. This document covers the various concepts expressed via the .lg file format.
+The `.lg` file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the `.lg` file format.
 
 <!--
 **Concepts:**
@@ -57,7 +57,7 @@ Use **\\** as an escape character.
 
 ## Templates
 
-At the core of the language generation system is the concept of a template. Each template has a name and one of the following:
+**Templates** are the core concept of the language generation system. Each template has a name and one of the following:
 
 - a list of one-of variation text values
 - a structured content definition
@@ -133,9 +133,9 @@ Here's another example that shows an if-else conditional response template defin
     - I love the evenings! Just saying. ${eveningTemplate()}
 ```
 
-#### Switch Case Default
+#### Switch template
 
-The SWITCH CASE DEFAULT construct lets you design a conditional template that matches an expression's value to a case clause and produces output based on that case. Condition expressions are enclosed in curly brackets - ${}.
+The switch template lets you design a template that matches an expression's value to a CASE clause and produces output based on that case. Condition expressions are enclosed in braces- ${}.
 
 Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 

@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
-LG can be used to enhance the entire conversational experience. Using LG developers can:
+LG can be used developers to:
 
 - achieve a coherent personality, tone of voice for their bot
 - separate business logic from presentation
@@ -27,7 +27,7 @@ LG can be used to enhance the entire conversational experience. Using LG develop
 
 At the core of LG lies template expansion and entity substitution. You can provide one of variation for expansion as well as conditionally expand a template. The output from LG can be a simple text string, multi-line response, or a complex object payload that a layer above LG will use to construct an [activity][1].
 
-Below is a sample of a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
+The following is a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
 
 ```markdown
 # greetingTemplate
