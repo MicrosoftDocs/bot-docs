@@ -93,7 +93,7 @@ Your bot might target more than one spoken or display language. You can manage s
 
 <!--
 ## Grammar check and correction 
-The current library does not include any capabilities for grammar check or correction- ->
+The current library does not include any capabilities for grammar check or correction-->
 
 ## Expand API
 
