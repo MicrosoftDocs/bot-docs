@@ -143,13 +143,9 @@ Things to keep in mind regarding the `Value` property:
 
 Use _text input_ when you want to verbatim accept user input as a value for a specific piece of information your bot is trying to collect. Examples include _user's name_ and the _subject of an email_.
 
-<!--- The `TextInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines one additional property: -->
+The `TextInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines one additional property:
 
-> [!IMPORTANT]
-> How is the `OutputFormat` used in the `TextInput` action? The Code comment: "_Gets or sets the expression to use to format the result_."
-> 
-> The readme says: "_The default output is a string, if this property is set then the output is an expression that resolves to a string and is returned by the dialog_."
-> If I understand, all expressions are strings, but not all strings are valid expressions. How does the `OutputFormat` property change that?
+* `OutputFormat`: Using [adaptive expressions][12] you can modify the string, for example, in the code example below you could add this property with an expression that will capitalize the first letter of each word.
 
 #### TextInput example
 
@@ -179,8 +175,8 @@ Asks the user for a number.
 
 The `NumberInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these two additional properties:
 
-1. `DefaultLocale`: the default locale (or an expression for the default locale) for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
-2. `OutputFormat`: Controls the output format of the value recognized by input. Possible options are Float, Integer
+1. `DefaultLocale`: the default locale (or an expression for the default locale) for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
+2. `OutputFormat`: Controls the output format of the value recognized by input. Valid options are float, int.
 
 #### NumberInput example
 
@@ -210,7 +206,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
                     DefaultValueResponse = new ActivityTemplate("Sorry, we have tried for '${%MaxTurnCount}' number of times and I'm still not getting it. For now, I'm setting '${%property}' to '${%DefaultValue}'"),
                     AllowInterruptions = "false",
                     AlwaysPrompt = true,
-                    OutputFormat = NumberOutputFormat.Integer
+                    OutputFormat = "float(this.value)"
                 },
                 new SendActivity("Your favorite number is {user.favoriteNumber}")
             }
@@ -218,10 +214,6 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
     }
 };
 ```
-
-> [!IMPORTANT]
-> PLEASE EXPLAIN `OutputFormat = NumberOutputFormat.Integer`
-> Is this obsolete code? Should this be `OutputFormat = "int"` - or?
 
 ### ConfirmInput
 
@@ -483,3 +475,4 @@ The following links provide generalized information on the topic of authenticati
 [9]:bot-builder-adaptive-dialog-generation.md
 [10]:PlaceholderFor-common-expressions-language
 [11]:bot-builder-adaptive-dialog-scopes.md
+[12]:NEED-LINK-FOR-ADAPTIVE-EXPRESSIONS.MD
