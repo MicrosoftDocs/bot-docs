@@ -111,7 +111,7 @@ Property = "user.name"
 
 #### UnrecognizedPrompt
 
-This is the prompt (string) that the user will see if the input they provided was unrecognized. For example:
+The activity template with which to reprompt for input if the user input is not recognized. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)```
 
 ```csharp
 UnrecognizedPrompt = new ActivityTemplate("Sorry, '{turn.activity.text}' did not include a valid number")
