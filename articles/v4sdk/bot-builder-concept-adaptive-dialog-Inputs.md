@@ -119,7 +119,7 @@ UnrecognizedPrompt = new ActivityTemplate("Sorry, '{turn.activity.text}' did not
 
 #### Validations
 
-This is the list of expressions used to validate that the user input meets the desired constraints. You can use `turn.value` to examine the user input in the validation expressions
+A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `turn.value` to examine the user input in the validation expressions
 
 #### Value
 
