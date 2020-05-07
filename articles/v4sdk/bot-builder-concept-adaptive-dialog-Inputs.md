@@ -36,7 +36,7 @@ Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and
 
 For more information, see [about interruptions in adaptive dialogs](./all-about-interruptions.md).
 
-Adaptive dialogs support the following inputs:
+The adaptive dialogs library defines the following input types:
 
 | Input type       | Input class                       | Description                                          | Returns                                      |
 | ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
