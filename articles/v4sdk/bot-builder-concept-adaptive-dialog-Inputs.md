@@ -19,10 +19,10 @@ The Bot Framework SDK provides API that makes it easier to collect and validate 
 
 ## Prerequisites
 
-* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see [introduction to adaptive dialogs][1].
-* A general understanding of [Events and triggers in adaptive dialogs][2].
-* A general understanding of [Actions in adaptive dialogs][3].
-* A general understanding of [Memory scopes and managing state in Adaptive Dialogs][11].
+* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see an [introduction to adaptive dialogs][1].
+* A general understanding of [events and triggers in adaptive dialogs][2].
+* A general understanding of [actions in adaptive dialogs][3].
+* A general understanding of [memory scopes and managing state in adaptive dialogs][11].
 
 ## Inputs
 
