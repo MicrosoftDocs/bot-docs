@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use language generation templates in your bot
 
-Language generation templates make it easy for bot developers to send a variety of messages and media to users. In the is article we will show you how to leverage LG templates to send simple text messages, cards, as well as evaluate text input from users.
+Language generation templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages, cards, as well as evaluate text input from users.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Language generation templates make it easy for bot developers to send a variety 
 - A copy of the language generation core bot sample in either C# or Javascript
 - Knowledge of [bot basics](../v4sdk/bot-builder-basics.md) and [language generation](../v4sdk/bot-builder-concept-language-generation.md)
 
-## About this sample
+## About the sample
 
 This LG core bot sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
 
@@ -176,7 +176,7 @@ Once your LUIS app is published, you can access it from your bot. You will need 
 
 ### Retrieve application information from the LUIS.ai portal
 
-The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place to bring all service references together in one place. The information you retrieve will be added to this file in the next section.
+The settings file (`appsettings.json`, `.env` or `config.py`) allows you to bring all service references together in one place. The information you retrieve will be added to this file in the next section.
 
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
@@ -211,7 +211,7 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 
 1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://aka.ms/cs-core-sample), [JS Sample](https://aka.ms/js-core-sample) or [Python Sample](https://aka.ms/python-core-sample).
 
-1. In the emulator, type a message such as "travel to paris" or "going from paris to berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
+1. In the emulator, type a message such as "travel to Paris" or "going from Paris to Berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 
 ![LUIS booking input](../v4sdk/media/how-to-luis/luis-user-travel-input.png)
 
