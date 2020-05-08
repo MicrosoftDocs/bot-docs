@@ -12,7 +12,7 @@ ms.date: 05/08/2020
 
 # Memory scopes and managing state in Adaptive Dialogs
 
-State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides some abstractions to make state management easier. This topic is covered in detail in the bot framework SDK [Managing state][1] article, you need to read and understand the information covered in that article to make the best use of this article which covers additioanl information that you will need to know when creating adaptive dialogs.
+State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides some abstractions to make state management easier. This topic is covered in detail in the bot framework SDK [Managing state][1] article, you need to read and understand the information covered in that article to make the best use of this article which covers additional information that you will need to know when creating adaptive dialogs.
 
 ## Prerequisites
 
@@ -85,14 +85,14 @@ Examples:
 
 ### Dialog sub-scopes
 
-* `dialog.options` scope by default carry parameters/ input to the specific dialog being executed. 
-* `dialog.foreach` scope by default carry dialog.foreach.value and dialog.foreach.index and are available to actions within a `forEach` action. 
+* `dialog.options` scope by default carry parameters/ input to the specific dialog being executed.
+* `dialog.foreach` scope by default carry dialog.foreach.value and dialog.foreach.index and are available to actions within a `forEach` action.
 
 ## Turn scope
 
 Turn scope is *non-persistent* data scoped for *only the current turn*, providing a place to share data for the lifetime of the current turn.  
 
-Examples:
+### This scope example
 
     turn.bookingConfirmation
     turn.activityProcessed
@@ -148,6 +148,8 @@ var recognizer = new QnAMakerRecognizer()
 * `this.turnCount` holds the number of times the missing information has been prompted for this input.
 
 This example shows a common usage in a bots startup class:
+
+### This scope example
 
 ```csharp
 public Startup(IConfiguration configuration, IHostingEnvironment env)
