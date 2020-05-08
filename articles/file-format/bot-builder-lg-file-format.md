@@ -33,7 +33,7 @@ The `.lg` file describes language generation templates with entity references an
 - [Parametrization of templates](#parametrization-of-templates)
 - [Importing external references](#importing-external-references)
 - [LG specific adaptive expression functions](#functions-injected-by-lg)
-- [Strict option](#strict-option)
+- [Options](#options)
 -->
 
 ## Special Characters
@@ -42,7 +42,7 @@ The `.lg` file describes language generation templates with entity references an
 
 Use **>** to create a comment. All lines that have this prefix will be skipped by the parser.
 
-```markdown
+```
 > This is a comment.
 ```
 
@@ -50,7 +50,7 @@ Use **>** to create a comment. All lines that have this prefix will be skipped b
 
 Use **\\** as an escape character.
 
-```markdown
+```
 # TemplateName
 - You can say cheese and tomato \[toppings are optional\]
 ```
@@ -67,24 +67,22 @@ Use **\\** as an escape character.
 
 Template names follow the Markdown header definition.
 
-```markdown
+```
 # TemplateName
 ```
 
 Variations are expressed as a Markdown list. You can prefix each variation using the **-**, **'**, or **+** character.
 
-```markdown
+```
 # Template1
-- text variation 1
-- text variation 2
 - text variation 1
 - text variation 2
 - one
 - two
 
 # Template2
-* one
-* two
+* text variation 1
+* text variation 2
 
 # Template3
 + one
@@ -97,7 +95,7 @@ A simple response template includes one or more variations of text that are used
 
 Here is an example of a simple template that includes two variations.
 
-```markdown
+```
 > Greeting template with 2 variations.
 # GreetingPrefix
 - Hi
@@ -114,7 +112,7 @@ The if-else template lets you build a template that picks a collection based on 
 
 Here's an example that shows a simple IF ELSE conditional response template definition.
 
-```markdown
+```
 > time of day greeting reply template with conditions.
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
@@ -125,7 +123,7 @@ Here's an example that shows a simple IF ELSE conditional response template defi
 
 Here's another example that shows an if-else conditional response template definition. Note that you can include references to other simple or conditional response templates in the variation for any of the conditions.
 
-```markdown
+```
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
     - ${morningTemplate()}
@@ -141,7 +139,7 @@ The switch template lets you design a template that matches an expression's valu
 
 Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
-```markdown
+```
 # TestTemplate
 - SWITCH: ${condition}
 - CASE: ${case-expression-1}
@@ -154,7 +152,7 @@ Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
 Here's a more complicated SWITCH CASE DEFAULT example:
 
-```markdown
+```
 > Note: Any of the cases can include reference to one or more templates.
 # greetInAWeek
 - SWITCH: ${dayOfWeek(utcNow())}
@@ -183,7 +181,7 @@ Read about [structure response templates](../language-generation/language-genera
 
 Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as _${TemplateName()}_.
 
-```markdown
+```
 > Example of a template that includes composition reference to another template.
 # GreetingReply
 - ${GreetingPrefix()}, ${timeOfDayGreeting()}
@@ -225,7 +223,7 @@ Entities can be used as a parameter:
 
 [Prebuilt functions][4] supported by [adaptive expressions][3] can also be used inline in a one-of variation text to achieve even more powerful text composition. To use an expression inline, simply wrap it in braces.
 
-```markdown
+```
 # RecentTasks
 - IF: ${count(recentTasks) == 1}
     - Your most recent task is ${recentTasks[0]}. You can let me know if you want to add or complete a task.
@@ -243,7 +241,7 @@ Given templates and prebuilt functions share the same invocation signature, a te
 
  A template name should not match a pre-built function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
 
-```markdown
+```
 > Custom length function with one parameter.
 # length(a)
 - This is use's customized length function
@@ -261,7 +259,7 @@ Given templates and prebuilt functions share the same invocation signature, a te
 
 Each one-of variation can include multiline text enclosed in triple quotes.
 
-```markdown
+```
 # MultiLineExample
     - ```This is a multiline list
         - one
@@ -275,7 +273,7 @@ Each one-of variation can include multiline text enclosed in triple quotes.
 
 Multiline variation can request template expansion and entity substitution by enclosing the requested operation in braces, ${}.
 
-```markdown
+```
 # MultiLineExample
     - ```
         Here is what I have for the order
@@ -291,7 +289,7 @@ With multiline support, you can have the Language Generation sub-system fully re
 
 To aid with contextual reusability, templates can be parametrized. Different callers to the template can pass in different values for use in expansion resolution.
 
-```markdown
+```
 # timeOfDayGreetingTemplate (param1)
 - IF: ${param1 == 'morning'}
     - good morning
@@ -311,14 +309,14 @@ To aid with contextual reusability, templates can be parametrized. Different cal
 
 You can split your language generation templates into separate files and reference a template from one file in another. You can use Markdown-style links to import templates defined in another file.
 
-```markdown
+```
 [Link description](filePathOrUri)
 ```
 
 All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced via a # \<namespace>.\<templatename> convention) across files being pulled in.
 
 
-```markdown
+```
 [Shared](../shared/common.lg)
 ```
 
@@ -326,9 +324,17 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 [Adaptive expressions][3] provide the ability to inject a custom set of functions. Read [calling functions from LG templates][13] for more information.
 
-## Strict option
+## Options
 
-Developers who do not want to allow a null result for a null evaluated result can implement the strict option. To set parser instructions, like the strict option, use the `> !#` notation. Below is an example of a simple strict option:
+Deverloper can set parser options to further customize how input is evaluated. Set parser instructions use the `> !#` notation.
+
+> [!IMPORTANT]
+>
+> The last setting found in the file trumps any prior setting found in the same document.
+
+### Strict option
+
+Developers who do not want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
 
 ```
 > !# @strict = true
@@ -345,7 +351,35 @@ If the strict option is on, null errors will throw a friendly message.
 
 If name is null, the diagnostic would be `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.` If strict is set to false or not set, a compatible result will be given. The above sample would produce `hi null`.
 
-Note that the struct option applies to the entire document. The last setting in the file trumps and prior settings found in the same template document. 
+### replaceNull option
+
+Developers can creat delegates to replace null values in evaluated expressions by using the **replaceNull** option:
+
+```
+> !# @replaceNull = ${path} is undefined 
+```
+
+In the above example, the null input in the `path` variable would be replaced with `${path} is undefined`. The following input, where `user.name` is null:
+:
+
+```
+hi ${user.name}
+```
+
+Would result in **hi user.name is undefined**.
+
+### lineBreakStyle option
+
+Developers can set options for how the LG system renders line breaks using the **lineBreakStyle** option. Two modes are currently supported:
+
+- `default`: line breaks in multiline text create normal line breaks.
+- `markdown`: line breaks in multiline text will be automatically converted to two lines to create a newline
+
+The example below shows how to set the lineBreakStyle option to `markdown`:
+
+```
+> !# @lineBreakStyle = markdown
+```
 
 ## Additional Resources
 
