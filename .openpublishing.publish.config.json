@@ -103,6 +103,12 @@
          "url":"https://github.com/microsoft/BotBuilder-Samples",
          "branch":"master",
          "branch_mapping":{}
+      },
+      {
+         "path_to_root":"botbuilder-samples-adaptive",
+         "url":"https://github.com/microsoft/BotBuilder-Samples",
+         "branch":"vishwac/r9/js",
+         "branch_mapping":{}
       }
    ],
    "branch_target_mapping":{
