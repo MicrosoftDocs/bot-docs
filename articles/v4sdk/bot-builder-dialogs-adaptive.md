@@ -62,8 +62,17 @@ The bot interacts with the user via `UserProfileDialog`. At the time the `Dialog
 When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created. Triggers are also added to the `AdaptiveDialog` instance.
 In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`.
 
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-23)]
+In the `WelcomeUserSteps`, the sample iterates through the `membersAdded` list to greets the user added to the conversation.
+
+> [!NOTE]
+> Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
+> The code filters cases where the bot itself is the recipient of the message.
+
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-19)]
+
+
 
 
 # [JavaScript](#tab/javascript)
