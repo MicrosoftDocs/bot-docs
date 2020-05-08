@@ -17,7 +17,6 @@ Structured response templates let developers define a complex structure that sup
 For bot applications, the followng support is provided:
 - activity definition
 - card definition
-- [chatdown][1] style constructs
 
 [Bot Framework activity][2] includes several customizable fields. The properties shown below are the most used  and are configurable via an Activity template definition:
 
