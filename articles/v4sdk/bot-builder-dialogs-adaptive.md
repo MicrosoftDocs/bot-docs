@@ -36,14 +36,21 @@ You must follow the steps described below to add an adaptive dialog to a bot.
 
 This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
 
-| Steps        | Prompt type  |
+[!div class="mx-tdCol2BreakAll"]
+| Steps        | LG template prompt  |
 |:-------------|:-------------|
-| Ask the user for their mode of transportation | Choice prompt |
-| Ask the user for their name | Text prompt |
-| Ask the user if they want to provide their age | Confirm prompt |
-| If they answered yes, asks for their age | Number prompt with validation to only accept ages greater than 0 and less than 150 |
-| If they're not using Microsoft Teams, ask them for a profile picture | Attachment prompt with validation to allow a missing attachment |
-| Asks if the collected information is "ok" | Reuse Confirm prompt |
+| Ask the user for their mode of transportation | `ModeOfTransportPrompt` |
+| Ask the user for their name | `AskForName` |
+| Ask the user if they want to provide their age | `AgeConfirmPrompt` |
+| If they answered yes, asks for their age | `AskForAge` prompt with validation to only accept ages greater than 0 and less than 150 |
+| Asks if the collected information is "ok" | `ConfirmPrompt` prompt |
+
+> [!div class="mx-tdBreakAll"]
+> |Name|Syntax|Mandatory for silent installation?|Description|
+> |-------------|----------|---------|---------|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
 
@@ -53,19 +60,15 @@ Finally, if they answered yes, display the collected information; otherwise, tel
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** and **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet packages.
 
-The bot interacts with the user via `UserProfileDialog`. At the time the `DialogBot` class is instantiated, the `UserProfileDialog` is sets as the main dialog. The bot then uses a `Run` helper method to access the dialog.
-
-<!-- Add diagram -->
-
-**Dialogs\RootDialog.cs**
-
-The user interacts with
-
 The bot interacts with the user via the `RootDialog`. When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created.
 
 ![Root dialog](media/bot-builder-root-dialog-adaptive.png)
 
 
+**Dialogs\RootDialog.cs**
+
+The sample starts by instantiating the `RootDialog` class which in turns
+creates an instance of the `AdaptiveDialog`.
 Triggers are also added to the `AdaptiveDialog` instance. In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
 [!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
@@ -78,7 +81,7 @@ In `WelcomeUserSteps`, the code iterates through the `membersAdded` list to gree
 
 [!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-20)]
 
-The `OnBeginDialogSteps` implements the steps that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The following code shows `Name` prompt is created:
+The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The following code shows how the `Name` prompt is created:
 
 ```csharp
 {
