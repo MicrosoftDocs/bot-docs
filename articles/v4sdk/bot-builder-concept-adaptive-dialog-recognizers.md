@@ -1,7 +1,7 @@
 ---
-title: Recognizers - Bot framework SDK - adaptive dialogs
-description: Collecting user input using adaptive dialogs
-keywords: bot, recognizers, adaptive dialogs
+title: Recognizers in adaptive dialogs
+description: Providing Language Understanding (LU) to your adaptive dialogs using Recognizers
+keywords: bot, recognizers, adaptive dialogs, Language Understanding, LU
 author: WashingtonKayaker
 ms.author: kamrani
 manager: kamrani
@@ -12,7 +12,7 @@ ms.date: 05/06/2020
 
 # Recognizers in adaptive dialogs
 
-_Recognizers_ provide Language Understanding (LU) to your adaptive dialogs. 
+_Recognizers_ provide Language Understanding (LU) to your adaptive dialogs.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Without NLP, your bot can’t meaningfully differentiate between when a user ent
 
 One of the most significant challenges when it comes to NLP in your bot is the fact that users have a blank slate regarding what they can say to your bot. While you can try to predict what users will and will not say, there are bound to be conversations that you did not anticipate, fortunately the Bot Framework SDK provide the tools you need to continually refine your bots NLP capabilities.
 
-The two primary components of NLP in Composer are **recognizers** (Language Understanding) that processes and interprets _user input_ and **generators** (Language Generation) that produces _bot responses_.
+The two primary components of NLP in adaptive dialogs are **recognizers** (Language Understanding) that processes and interprets _user input_ which is the focus of this article, and [**generators**][4] (Language Generation) that produces _bot responses_, it is the process of producing meaningful phrases and sentences in the form of natural language. Simply put, it is when your bot responds to a user with human readable language.
 
 ## Language Understanding
 
@@ -374,16 +374,11 @@ var adaptiveDialog = new AdaptiveDialog()
 * [Language Understanding][11]
 * [.lu file format][12]
 * [Adaptive expressions][13]
-* [Using LUIS for language understanding][14] 
 * [Extract data from utterance text with intents and entities][15]
 * [Add natural language understanding (LU) to your bot][16]
 * [Add natural language generation (LG) to your bot][4]
 
-* [Introduction to adaptive dialogs][1]
-* [Dialog libraries][5]
-* [Actions in adaptive dialogs][2]
-
-<!--TODO P0 [6,8,13,14]: Update to new links when available-->
+<!--TODO P0 [6,8,13]: Update to new links when available-->
 <!--TODO P1 [7,16,17]: Update links to AKA links-->
 
 [1]:bot-builder-basics.md
@@ -399,7 +394,7 @@ var adaptiveDialog = new AdaptiveDialog()
 [11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
 [13]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
-[14]:https://github.com/microsoft/BotFramework-Composer/blob/kaiqb/Ignite2019/docs/howto-using-LUIS.md
+
 [15]:https://aka.ms/luis-concept-data-extraction?tabs=V2
 [16]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp
 [17]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-start-new-app
