@@ -63,7 +63,7 @@ When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog`
 In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`.
 
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=18-49&highlight=6-23)]
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-23)]
 
 
 # [JavaScript](#tab/javascript)
