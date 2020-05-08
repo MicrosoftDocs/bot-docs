@@ -15,8 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-This article shows how to create a bot using adaptive dialogs.
-It demonstrates how to use **Adaptive dialog** and **Language Generation** features to achieve the same functionality obtained with the waterfall model.
+This article shows how to use **Adaptive dialog** and **Language Generation** features to achieve the same functionality obtained with the waterfall model.
 
 ## Prerequisites
 
@@ -35,7 +34,18 @@ You must follow the steps described below to add an adaptive dialog to a bot.
 
 ## About the sample
 
-This sample demonstrates how to use **Adaptive dialog** and **Language Generation** features to achieve the same functionality obtained with the waterfall model.
+This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
+
+| Steps        | Prompt type  |
+|:-------------|:-------------|
+| Ask the user for their mode of transportation | Choice prompt |
+| Ask the user for their name | Text prompt |
+| Ask the user if they want to provide their age | Confirm prompt |
+| If they answered yes, asks for their age | Number prompt with validation to only accept ages greater than 0 and less than 150 |
+| If they're not using Microsoft Teams, ask them for a profile picture | Attachment prompt with validation to allow a missing attachment |
+| Asks if the collected information is "ok" | Reuse Confirm prompt |
+
+Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
 
 ## Create the main dialog
 
@@ -43,38 +53,23 @@ This sample demonstrates how to use **Adaptive dialog** and **Language Generatio
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** and **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet packages.
 
-The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot` class, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `Run` helper method to access the dialog.
+The bot interacts with the user via `UserProfileDialog`. At the time the `DialogBot` class is instantiated, the `UserProfileDialog` is sets as the main dialog. The bot then uses a `Run` helper method to access the dialog.
+
+<!-- Add diagram -->
+
+**Dialogs\RootDialog.cs**
+
+When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created. Triggers are also added to the `AdaptiveDialog` instance.
+In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`.
 
 
-**Dialogs\UserProfileDialog.cs**
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=18-49&highlight=6-23)]
 
-We begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
-
-**UserProfile.cs**
-
-The user's name, and age are saved in an instance of the `UserProfile` class.
-
-**Dialogs\UserProfileDialog.cs**
-
-In the last step, we check the `stepContext.Result` returned by the dialog
 
 # [JavaScript](#tab/javascript)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** npm package. Q? What about the adaptive dialogs?
 
-
-**dialogs/userProfileDialog.js**
-
-We begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class.
-
-
-**userProfile.js**
-
-The user's name, and age are saved in an instance of the `UserProfile` class.
-
-**dialogs/userProfileDialog.js**
-
-In the last step, we check the `step.result` returned by the dialog called in the previous waterfall step
 
 ---
 
