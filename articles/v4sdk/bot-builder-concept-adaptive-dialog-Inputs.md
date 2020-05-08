@@ -1,6 +1,6 @@
 ---
 title: Asking for user input in adaptive dialogs
-description: Collecting user input using adaptive dialogs
+description: Collecting input from users using adaptive dialogs
 keywords: bot, user, Events, triggers, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.service: bot-service
 ms.date: 04/27/2020
 ---
-<!--P2: Once the samples are done, link to them in each section on the individual input actions to point to them as examples of how they are used-->
+<!--TODO P2: For each of the inputs in this article, link to relevant samples in BotBuilder-Samples as examples of how that input is used-->
 # Asking for user input in adaptive dialogs
 
 The Bot Framework SDK provides API that makes it easier to collect and validate a variety of data types, and handle instances when users input invalid or unrecognized data.
@@ -30,9 +30,9 @@ Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and
 
 * Binds the prompt result to a property in a [state management][6] scope.
 * Prompts the user only if the result property doesn't already have a value.
-* Grounds input to the specified property if the input from user matches the type of entity expected.
+* Saves the input to the specified property if the input from user matches the type of entity expected.
 * Accepts validation constraints such as min, max, and so on.
-* Can use as input locally relevant intents within a dialog as well as use interruption as a technique to bubble up user response to an appropriate parent dialog that can handle it. 
+* Can use as input locally relevant intents within a dialog as well as use interruption as a technique to bubble up user response to an appropriate parent dialog that can handle it.
 
 For more information, see [about interruptions in adaptive dialogs](./all-about-interruptions.md).
 
@@ -41,8 +41,8 @@ The adaptive dialogs library defines the following input types:
 | Input type       | Input class                       | Description                                          | Returns                                      |
 | ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
 | Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Text | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
-| Number | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
+| Text             | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
+| Number           | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
 | Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
 | Multiple choice  | [ChoiceInput](#choiceinput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
 | File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.        |
@@ -145,7 +145,7 @@ Use _text input_ when you want to verbatim accept user input as a value for a sp
 
 The `TextInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines one additional property:
 
-* `OutputFormat`: Using [adaptive expressions][12] you can modify the string, for example, in the code example below the `OutputFormat` expression will capitalize the first letter of each word of the users name.
+* `OutputFormat`: Using [adaptive expressions][10] you can modify the string, for example, in the code example below the `OutputFormat` expression will capitalize the first letter of each word of the users name.
 
 #### TextInput example
 
@@ -179,7 +179,7 @@ The `NumberInput` action inherits all of the properties defined in [InputDialog]
 <!--https://blog.botframework.com/2018/02/01/contributing-luis-microsoft-recognizers-text-part-2/-->
 
 1. `DefaultLocale`: the default locale (or an expression for the default locale) for input processing. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: Using [adaptive expressions][12] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in fahrenheit to its equivalent celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
+2. `OutputFormat`: Using [adaptive expressions][10] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in fahrenheit to its equivalent celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
 
 #### NumberInput example
 
@@ -236,11 +236,6 @@ The `ConfirmInput` action inherits all of the properties defined in [InputDialog
     5. `SuggestedAction`: Add choices to prompt as suggested actions.
     6. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
 
-> [!IMPORTANT]
->
-> * Please verify the descriptions in the list of properties above.
-> * Need to update the source code comment "// See ../../language-generation/README.md to learn more." 
-
 #### ConfirmInput example
 
 ``` C#
@@ -260,7 +255,7 @@ var ConfirmationDialog = new AdaptiveDialog("ConfirmationDialog") {
                     // read from a specific memory location. The caller of this dialog needs to set the prompt
                     // string to that location before calling the "ConfirmationDialog".
                     // All prompts support rich language generation based resolution for output generation.
-                    // See ../../language-generation/README.md to learn more.
+                    // See https://aka.ms/bot-builder-language-generation-concept to learn more about LG concepts.
                     Prompt = new ActivityTemplate("${turn.contoso.travelBot.confirmPromptMessage}")
                 }
             }
@@ -302,10 +297,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
     3. `RecognizeNumbers`: A Boolean value. `true` to allow the input fall-back on using a number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
     4. `RecognizeOrdinals`: A Boolean value. `true` to allow the input to fall-back on using an ordinal number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
 
-> [!IMPORTANT]
->
-> * Please verify the descriptions in the list of properties above.
-> * Need a link to additional information on the `RecognizerOptions`.
+<!--TODO Nice to have: Need more complete description of RecognizerOptions --->
 
 #### ChoiceInput example
 
@@ -470,12 +462,11 @@ The following links provide generalized information on the topic of authenticati
 [1]:bot-builder-adaptive-dialog-introduction.md
 [2]:bot-builder-adaptive-dialog-triggers.md
 [3]:bot-builder-adaptive-dialog-actions.md
-[4]:https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0#prompts
-[5]:https://docs.microsoft.com/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0
-[6]:https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=aadv1%2Ccsharp
+[4]:https://aka.ms/bot-builder-concept-dialog#prompts
+[5]:https://aka.ms/azure-bot-authentication
+[6]:https://aka.ms/azure-bot-add-authentication
 [7]:bot-builder-adaptive-dialog-input.md
 [8]:bot-builder-adaptive-dialog-triggers.md#custom-events
 [9]:bot-builder-adaptive-dialog-generation.md
-[10]:PlaceholderFor-common-expressions-language
+[10]:https://aka.ms/bot-builder-adaptive-expressions-concept
 [11]:bot-builder-adaptive-dialog-scopes.md
-[12]:NEED-LINK-FOR-ADAPTIVE-EXPRESSIONS.MD
