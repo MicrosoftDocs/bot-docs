@@ -25,8 +25,60 @@ Language generation (LG) templates make it easy for bot developers to send a var
 
 This LG core bot sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
 
-<!--insert diagram here
--->
+This article is a bottom up approach to using LG templates in your bots. You will learn how to:
+
+- create a `Templates` object and [reference templates in your bot logic](#call-templates-in-files)
+- create a [simple response template](#create-a-simple-response-template)
+- create a [conditional response template](#create-a-conditional-response-template)
+- create a [cards template](#create-a-cards-template)
+- create a [structured response template](#create-a-structured-response-template)
+- add [LUIS to your bot]() and [test it](#test-the-bot)
+
+## Call templates in files
+
+To use templates in .lg files you need to reference them in your bot logic.
+
+### [C#](#tab/cs)
+
+Make sure you have the **Microsoft.Bot.Builder.LanguageGeneration** package. Add the following snippet to load the package:
+
+**Bots/DialogAndWelcomeBot.cs**
+
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
+
+After loading the package create a private `Templates` object called **_templates**:
+
+[!code-csharp[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
+
+Combine the path for cross-platform support and parse the path that contains **welcomeCard.lg** by adding the following to your code:
+
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
+
+Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
+
+[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=12,27,55)]
+
+Notice how the `WelcomeCard` template is referenced in the call `SendActivityAsync()`.
+
+### [JavaScript](#tab/js)
+
+Make sure you have the **botbuilder-lg** packaged installed. Add the following snippet to load the package:
+
+**bots/dialogAndWelcomeBot.js**
+
+[!code-javascript[add-package](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=6)]
+
+To use templates parse **welcomeCard.lg** and save the lg templates to **lgTemplates**:
+
+[!code-javascript[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=11)]
+
+Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
+
+[!code-javascript[reference-welcome-card-template](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43?highlight=3)]
+
+Notice how the `WelcomeCard` template is referenced in the creation of the **welcomeCard** constant.
+
+---
 
 ## Create a simple response template
 
@@ -84,7 +136,7 @@ Language generation templates can use cards and media to create a richer convers
 
 This card displays an image, and uses LG templates for the card header a set of suggested actions.
 
-## [C#](#tab/cs)
+### [C#](#tab/cs)
 
  The `actions` are filled in by calling `# cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **DialogAndWelcomeBot.cs**:
 
@@ -94,7 +146,7 @@ This card displays an image, and uses LG templates for the card header a set of 
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
-## [JavaScript](#tab/js)
+### [JavaScript](#tab/js)
 
  The `actions` are filled in by calling `# cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **dialogAndWelcomeBot.js**:
 
@@ -104,8 +156,6 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
----
-
 Finally the `# WelcomeCard` calls the `# AdaptiveCard` template to return the Adaptive card JSON object.
 
 **Resources/welcomeCard.lg**
@@ -113,50 +163,6 @@ Finally the `# WelcomeCard` calls the `# AdaptiveCard` template to return the Ad
 [!code-lg[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=11-14)]
 
 For more information about the `ActivityAttachment()` function, read [inject functions from the LG library](functions-injected-from-language-generation.md)
-
-## Call templates in files
-
-After creating .lg files you need to reference them in your bot logic.
-
-## [C#](#tab/cs)
-
-Make sure you have the **Microsoft.Bot.Builder.LanguageGeneration** package. Add the following snippet to load the package:
-
-**Bots/DialogAndWelcomeBot.cs**
-
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
-
-After loading the package create a private `Templates` object called **_templates**:
-
-[!code-csharp[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
-
-Combine the path for cross-platform support and parse the path that contains **welcomeCard.lg** by adding the following to your code:
-
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
-
-Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
-
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=12,27,55)]
-
-Notice how the `WelcomeCard` template is referenced in the call `SendActivityAsync()`.
-
-## [JavaScript](#tab/js)
-
-Make sure you have the **botbuilder-lg** packaged installed. Add the following snippet to load the package:
-
-**bots/dialogAndWelcomeBot.js**
-
-[!code-javascript[add-package](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=6)]
-
-To use templates parse **welcomeCard.lg** and save the lg templates to **lgTemplates**:
-
-[!code-javascript[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=11)]
-
-Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
-
-[!code-javascript[reference-welcome-card-template](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43?highlight=3)]
-
-Notice how the `WelcomeCard` template is referenced in the creation of the **welcomeCard** constant.
 
 ---
 
@@ -187,7 +193,7 @@ The settings file (`appsettings.json`, `.env` or `config.py`) allows you to brin
 
 ### Update the settings file
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
@@ -195,7 +201,7 @@ Add the information required to access your LUIS app including application id, a
 
 [!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
