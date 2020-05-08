@@ -212,9 +212,10 @@ Message events are a type of activity event and as such, all message events have
 | Message reaction | MessageReaction | OnMessageReactionActivity| Actions to perform on receipt of an activity with type 'MessageReaction'.                           |
 | Message updated  | MessageUpdate   | OnMessageUpdateActivity  | Actions to perform on receipt of an activity with type 'MessageUpdate'.                             |
 
+<!--TODO P1: Need Message event examples
 #### Message event examples
 
-<!--TODO: Need Message event examples--->
+--->
 
 ### Custom events
 
@@ -261,7 +262,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
             new OnDialogEvent()
             {
                 Event = "contoso.custom",
-                
+
                 // You can use conditions (expression) to examine value of the event as part of the trigger selection process.
                 Condition = "turn.dialogEvent.value && (substring(turn.dialogEvent.value, 0, 1) == 'v')",
                 Actions = new List<Dialog>()
@@ -318,11 +319,11 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 [3]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [4]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language
 [5]:bot-builder-concept-dialog.md
-[6]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp
+[6]:https://aka.ms/bot-service-add-luis-to-bot
 [7]:https://www.luis.ai/home
 [8]:bot-builder-adaptive-dialog-recognizer.md
-[9]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-prediction-score
-[10]:https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&tabs=csharp#the-activity-processing-stack
+[9]:https://aka.ms/luis-prediction-scores
+[10]:https://aka.ms/how-bots-work#the-activity-processing-stack
 [11]:bot-builder-adaptive-dialog-recognizer.md#Cross-Trained-Recognizer
 [12]:bot-builder-adaptive-dialog-recognizer.md#QnAMaker-Recognizer
 [13]:bot-builder-adaptive-dialog-Actions.md#EmitEvent
