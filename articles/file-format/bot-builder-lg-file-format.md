@@ -326,7 +326,7 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 ## Options
 
-Deverloper can set parser options to further customize how input is evaluated. Set parser instructions use the `> !#` notation.
+Deverloper can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
 
 > [!IMPORTANT]
 >
