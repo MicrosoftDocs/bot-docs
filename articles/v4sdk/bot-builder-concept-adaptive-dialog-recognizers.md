@@ -218,98 +218,44 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 
 [QnAMaker.ai][18] is one of the [Azure cognitive services][19] that enables you to create rich question-answer pairs from existing content - documents, urls, pdfs etc. You can use the QnA Maker recognizer to integrate with the service.
 
-```C#
-var adaptiveDialog = new AdaptiveDialog()
-{
-    Recognizer = new QnAMakerRecognizer()
-    {
-        KnowledgeBaseId = "<KBID>",
-        HostName = "<HostName>",
-        EndpointKey = "<Key>"
-    }
-};
-```
-
 > [!NOTE]
-> This recognizer will return a `QnAMatch` intent with the top answer promoted as an entity.
-> The entire QnA Maker response will be available in the `answer` property in the recognition result.
-
-### Value recognizer
-
-When using the post back option with [adaptive cards][20], the bot receives an activity with a value property set to the actual payload returned by the card. The value recognizer looks at the `value` property in an activity and transforms it to a recognition result that includes `intent` and `entities`.
-
-Given this adaptive card json, with the value recognizer, you can simply handle user clicking on submit button like any other intent.
-
-```json
-{
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "type": "AdaptiveCard",
-    "version": "1.0",
-    "body": [
-        {
-            "type": "TextBlock",
-            "size": "Medium",
-            "weight": "Bolder",
-            "text": " Info Form",
-            "horizontalAlignment": "Center"
-        },
-        {
-            "type": "Input.Text",
-            "placeholder": "Name",
-            "style": "text",
-            "maxLength": 0,
-            "id": "SimpleVal"
-        },
-        {
-            "type": "Input.Text",
-            "placeholder": "Homepage",
-            "style": "Url",
-            "maxLength": 0,
-            "id": "UrlVal"
-        },
-        {
-            "type": "Input.Text",
-            "placeholder": "Email",
-            "style": "Email",
-            "maxLength": 0,
-            "id": "EmailVal"
-        }
-    ],
-    "actions": [
-        {
-            "type": "Action.Submit",
-            "title": "Submit",
-            "data": {
-                "id": "1234567890",
-                "intent": "userProfile-card"
-            }
-        }
-    ]
-}
-```
+> QnA Maker Recognizer will emit a `QnAMatch`event which you can handle with an `OnQnAMatch` trigger.
+> The entire QnA Maker response will be available in the `answer` property.
 
 ```C#
 var adaptiveDialog = new AdaptiveDialog()
 {
-    Recognizer = new ValueRecognizer(),
+    var recognizer = new QnAMakerRecognizer()
+    {
+        HostName = configuration["qna:hostname"],
+        EndpointKey = configuration["qna:endpointKey"],
+        KnowledgeBaseId = configuration["qna:KnowledgeBaseId"],
+    }
+
     Triggers = new List<OnCondition>()
     {
-        new OnIntent()
+        new OnConversationUpdateActivity()
         {
-            Intent = "userProfile-card",
+            Actions = WelcomeUserAction()
+        },
+
+        // With QnA Maker set as a recognizer on a dialog, you can use the OnQnAMatch trigger to render the answer.
+        new OnQnAMatch()
+        {
             Actions = new List<Dialog>()
             {
-                // All properties posted back by adaptive card are transformed to entities.
-                // You can refer to entities using the @entityName shortcut or the long form turn.recognized.entities.entityName
-                new SendActivity("I have ID: ${@id} \n Name : ${@SimpleVal} \n Homepage: ${@UrlVal} \n Email : ${@EmailVal}")
+                new SendActivity()
+                {
+                    Activity = new ActivityTemplate("Here's what I have from QnA Maker - ${@answer}"),
+                }
             }
         }
     }
+
+    // Add adaptiveDialog to the DialogSet.
+    AddDialog(adaptiveDialog);
 };
 ```
-
-> [!TIP]
-> For additional information on adaptive cards, refer to [Adaptive Cards][21] in the Microsoft documentation site.
 
 ### Multi-language recognizer
 
