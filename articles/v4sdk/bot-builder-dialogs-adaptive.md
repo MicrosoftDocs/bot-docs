@@ -59,8 +59,14 @@ The bot interacts with the user via `UserProfileDialog`. At the time the `Dialog
 
 **Dialogs\RootDialog.cs**
 
-When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created. Triggers are also added to the `AdaptiveDialog` instance.
-In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
+The user interacts with
+
+The bot interacts with the user via the `RootDialog`. When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created.
+
+![Root dialog](media/bot-builder-root-dialog-adaptive.png)
+
+
+Triggers are also added to the `AdaptiveDialog` instance. In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
 [!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
 
@@ -84,7 +90,7 @@ The `OnBeginDialogSteps` implements the steps that the dialog uses. It defines t
 
 The following code shows how a prompt is built conditionally:
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=102-125)]
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=102-130)]
 
 
 # [JavaScript](#tab/javascript)
