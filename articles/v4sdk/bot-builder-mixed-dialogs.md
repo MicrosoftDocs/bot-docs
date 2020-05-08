@@ -1,7 +1,7 @@
 ---
-title: Create a bot using both traditional and adaptive dialogs   - Bot Service
+title: Create a bot using adaptive, component, and waterfall dialogs - Bot Service
 description: Learn how to manage a conversation flow with conventional and adaptive in the Bot Framework SDK.
-keywords: conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
+keywords: conversation flow, dialogs, component dialogs, custom dialogs, waterfall dialogs, adaptive dialogs
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
@@ -11,14 +11,14 @@ ms.date: 05/07/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot using adaptive, component, and waterfall dialogs  
+# Create a bot using adaptive, component, waterfall, and custom dialogs  
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-This article shows how to create a bot using adaptive along with traditional dialogs.
+All dialogs derive from a base _dialog_ class. If you use the _dialog manager_ to run your root dialog, all of the dialog classes can work together.
+This article shows how to use component, waterfall, custom, and adaptive dialogs together in one bot.
 
-BotFramework provides a built-in base class called `Dialog`. By sub-classing this class, you can create new ways to define and control dialog flows used by the bot. By adhering to the features of this class, you can create custom dialogs that can be used side-by-side with other dialog types, as well as built-in or custom prompts.
-
+This article focuses on the code that allows these dialogs to work together. See the [additional information](#additional-information) for articles that cover each type of dialog in more detail.
 
 ## Prerequisites
 
@@ -106,7 +106,6 @@ You register services for the bot in `index.js`.
 > Memory storage is used for testing purposes only and is not intended for production use.
 > Be sure to use a persistent type of storage for a production bot.
 
-
 ## To test the bot
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
@@ -115,6 +114,13 @@ You register services for the bot in `index.js`.
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/mixed-dialogs.png)
 
+## Additional information
+
+For more information on how to use each dialog type, see these articles:
+
+- For waterfall and prompt dialogs, see [implement sequential conversation flow][basic-dialog-how-to].
+- For component dialogs, see [manage dialog complexity][component-how-to].
+- For adaptive and input dialogs, see [create a bot using adaptive dialogs][basic-adaptive-how-to].
 
 ## Next steps
 
@@ -124,11 +130,12 @@ You register services for the bot in `index.js`.
 <!-- Footnote-style links -->
 
 [concept-basics]: bot-builder-basics.md
-[concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
+[concept-adaptive-dialogs]: tbd.md
 
-[prompting]: bot-builder-prompts.md
-[component-dialogs]: bot-builder-compositcontrol.md
+[basic-adaptive-how-to]: bot-builder-dialogs-adaptive.md
+[basic-dialog-how-to]: bot-builder-dialog-manage-conversation-flow.md
+[component-how-to]: bot-builder-compositcontrol.md
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/19.custom-dialogs
