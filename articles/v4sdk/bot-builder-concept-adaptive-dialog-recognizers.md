@@ -387,7 +387,7 @@ var adaptiveDialog = new AdaptiveDialog()
 [4]:bot-builder-adaptive-dialog-generators.md
 [5]:ot-builder-adaptive-dialog-triggers.md#onintent
 [6]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
-[7]:https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference
+[7]:https://aka.ms/regular-expression-language-reference
 [8]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [9]:https://luis.ai
 [10]:https://aka.ms/luis-what-is-luis
@@ -396,9 +396,9 @@ var adaptiveDialog = new AdaptiveDialog()
 [13]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
 
 [15]:https://aka.ms/luis-concept-data-extraction?tabs=V2
-[16]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp
-[17]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-start-new-app
+[16]:https://aka.ms/bot-service-add-luis-to-bot
+[17]:https://aka.ms/luis-create-new-app-in-luis-portal
 [18]:https://qnamaker.ai
 [19]:https://azure.microsoft.com/services/cognitive-services/
 [20]:https://adaptivecards.io
-[21]:https://docs.microsoft.com/adaptive-cards/
+[21]:https://aka.ms/adaptive-cards-overview
