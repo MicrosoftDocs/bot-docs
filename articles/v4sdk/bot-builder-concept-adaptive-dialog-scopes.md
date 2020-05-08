@@ -129,14 +129,14 @@ This is an example of an appsettings.json that holds configuration settings for 
 }
 ```
 
-This is an example of how you would refer to the configuration settings that are stored in your appsettings.json file where the configuration command references the file and QnAMaker references these properties:
+This is an example of how you would refer to the configuration settings that are stored in your appsettings.json file using the settings memory scope:
 
 ```csharp
 var recognizer = new QnAMakerRecognizer()
 {
-    HostName = configuration["QnAMaker:hostname"],
-    EndpointKey = configuration["QnAMaker:endpointKey"],
-    KnowledgeBaseId = configuration["QnAMaker:knowledgebaseId"],
+    HostName = settings.QnAMaker.hostname,
+    EndpointKey = settings.QnAMaker:endpointKey,
+    KnowledgeBaseId = settings.QnAMaker:knowledgebaseId,
 };
 ```
 
