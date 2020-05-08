@@ -20,7 +20,7 @@ This article shows how to use **Adaptive dialog** and **Language Generation** fe
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **waterfall custom dialog with adaptive** sample in either [**C#**][cs-sample], [**JavaScript** preview][js-sample]
+- A copy of the **multi turn prompt** sample in either [**C#**][cs-sample], [**JavaScript** preview][js-sample]
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
@@ -31,26 +31,18 @@ You must follow the steps described below to add an adaptive dialog to a bot.
 1. Add and configure `DialogManager` in `DialogBot.cs`. This internally takes care of saving state on each turn.
 1. Update the `adapter` to use `storage`, `conversation state` and `user state`.
 
-
 ## About the sample
 
 This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
 
-[!div class="mx-tdCol2BreakAll"]
-| Steps        | LG template prompt  |
-|:-------------|:-------------|
-| Ask the user for their mode of transportation | `ModeOfTransportPrompt` |
-| Ask the user for their name | `AskForName` |
-| Ask the user if they want to provide their age | `AgeConfirmPrompt` |
-| If they answered yes, asks for their age | `AskForAge` prompt with validation to only accept ages greater than 0 and less than 150 |
-| Asks if the collected information is "ok" | `ConfirmPrompt` prompt |
-
-> [!div class="mx-tdBreakAll"]
-> |Name|Syntax|Mandatory for silent installation?|Description|
-> |-------------|----------|---------|---------|
-> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
-> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
-> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
+> [!div class="mx-tdCol2BreakAll"]
+> | Steps        | LG template prompt  |
+> |:-------------|:-------------|
+> | Ask the user for their mode of transportation | `ModeOfTransportPrompt` |
+> | Ask the user for their name | `AskForName` |
+> | Ask the user if they want to provide their age | `AgeConfirmPrompt` |
+> | If they answered yes, asks for their age | `AskForAge` prompt with validation to only accept ages greater than 0 and less than 150 |
+> | Asks if the collected information is "ok" | `ConfirmPrompt` prompt |
 
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
 
@@ -153,5 +145,5 @@ You register services for the bot in `index.js`.
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/05.multi-turn-prompt
-[python-sample]:
+[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt
+
