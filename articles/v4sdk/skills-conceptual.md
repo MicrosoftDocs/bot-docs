@@ -21,8 +21,9 @@ A skill can be consumed by various other bots, facilitating reuse, and in this w
 
 <!-- Terminology -->
 - A _skill_ is a bot that can perform a set of tasks for another bot.
-  Depending on design, a skill can also function as a typical, user-facing bot.
-- A _skill consumer_ is a bot that can invoke one or more skills. With respect to skills, a _root bot_ is a user-facing bot that is also a skill consumer.
+  A bot can be both a skill and a user-facing bot.
+- A _skill consumer_ is a bot that can call one or more skills.
+  A user-facing skill consumer is also called a _root bot_.
 - A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
   - Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer.
   - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
@@ -40,6 +41,8 @@ The skills feature is designed so that:
 - Skills support user authentication; however, user authentication is local to the skill and cannot be transferred to another bot.
 - Skills can work with both the Bot Framework adapter and custom adapters.
 
+This diagram shows some of the possible permutations.
+
 ![Block diagram](./media/skills-block-diagram.png)
 
 <!--TBD: - Skills support proactive messaging. -->
@@ -49,7 +52,7 @@ The skills feature is designed so that:
 A skill and skill consumer are separate bots, and you publish them independently. A skill needs to include additional logic to send an `endOfConversation` activity when it completes, so that the skill consumer knows when to stop forwarding activities to the skill.
 
 A root bot implements at least two HTTP endpoints, one for receiving activities from the user and one for receiving activities from skills. The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.
-It requires added logic for managing a skill, such as when to invoke or cancel the skill, and so on. In addition to the usual bot and adapter objects, the consumer includes a few skill-related objects, used to exchange activities with the skill.
+It requires added logic for managing a skill, such as when to call or cancel the skill, and so on. In addition to the usual bot and adapter objects, the consumer includes a few skill-related objects, used to exchange activities with the skill.
 
 This diagram outlines the flow of activities from the user to the root bot to a skill and back again.
 
@@ -104,10 +107,10 @@ In other words, it generates a conversation ID for use between the root and the 
 <!-- or, Statelessness in the host -->
 
 The root and skill bots communicate over HTTP.
-So, the instance of the root bot that receives an activity from a skill may not be the same instance that sent the initiating activity; in other words, different servers may handler these two requests.
+So, the instance of the root bot that receives an activity from a skill may not be the same instance that sent the initiating activity; in other words, different servers may handle these two requests.
 
 - Always save state in the skill consumer before forwarding an activity to a skill.
-  This ensures that the instance that receives traffic from a skill can pick up where the previous instance left off before it invoked the skill.
+  This ensures that the instance that receives traffic from a skill can pick up where the previous instance left off before it called the skill.
 - When the skill handler receives an activity from a skill, it translates it into a form appropriate for the skill consumer, and forwards it to the consumer's adapter.
 
 ### Skill consumer and skill state
@@ -139,7 +142,7 @@ There are various reasons you might reject an otherwise authenticated request:
 
 ## Additional information
 
-From the user's perspective, the root bot is the bot they are interacting with.
+From the user's perspective, they are interacting with the root bot.
 From the skill's perspective, the skill consumer is the channel over which it communicates with the user.
 
 - For more information about skill bots and skill manifests, see [about skill bots](skills-about-skill-bots.md).
