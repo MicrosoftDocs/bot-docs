@@ -60,19 +60,31 @@ The bot interacts with the user via `UserProfileDialog`. At the time the `Dialog
 **Dialogs\RootDialog.cs**
 
 When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created. Triggers are also added to the `AdaptiveDialog` instance.
-In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`.
+In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
 [!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
 
-In the `WelcomeUserSteps`, the sample iterates through the `membersAdded` list to greets the user added to the conversation.
+In `WelcomeUserSteps`, the code iterates through the `membersAdded` list to greets the user added to the conversation.
 
 > [!NOTE]
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
 > The code filters cases where the bot itself is the recipient of the message.
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-19)]
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-20)]
 
+The `OnBeginDialogSteps` implements the steps that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The following code shows `Name` prompt is created:
 
+```csharp
+{
+    Prompt = new ActivityTemplate("${AskForName()}"),
+    Property = "user.userProfile.Name"
+}
+
+```
+
+The following code shows how a prompt is built conditionally:
+
+[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=102-125)]
 
 
 # [JavaScript](#tab/javascript)
@@ -114,7 +126,7 @@ You register services for the bot in `index.js`.
 1. Run the sample locally on your machine.
 1. Start the emulator, connect to your bot, and send messages as shown below.
 
-![Sample run of the multi-turn prompt dialog](../media/emulator-v4/mixed-dialogs.png)
+<!-- ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/mixed-dialogs.png) -->
 
 
 ## Next steps
