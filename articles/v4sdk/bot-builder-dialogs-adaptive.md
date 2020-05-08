@@ -11,7 +11,7 @@ ms.date: 05/08/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-## Create a bot using adaptive dialogs  
+# Create a bot using adaptive dialogs  
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
@@ -88,7 +88,7 @@ To allow the use of the adaptive dialogs, the start up code must contain the lin
 
 You register the adaptive dialogs in the `Startup` class, along with the other services.
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Startup.cs?range=21-54&highlight=8-15)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Startup.cs?range=21-54&highlight=5-15)]
 
 
 # [JavaScript](#tab/javascript)
