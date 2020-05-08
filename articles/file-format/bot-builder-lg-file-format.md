@@ -135,7 +135,7 @@ Here's another example that shows an if-else conditional response template defin
 
 #### Switch template
 
-The switch template lets you design a template that matches an expression's value to a CASE clause and produces output based on that case. Condition expressions are enclosed in braces- ${}.
+The switch template lets you design a template that matches an expression's value to a CASE clause and produces output based on that case. Condition expressions are enclosed in braces ${}.
 
 Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
@@ -172,7 +172,6 @@ For bot applications, we natively support:
 
 - activity definition
 - card definition
-- [Chatdown][12] style constructs
 
 Read about [structure response templates](../language-generation/language-generation-structured-response-template.md) for more information.
 
@@ -261,7 +260,7 @@ Given templates and prebuilt functions share the same invocation signature, a te
 Each one-of variation can include multiline text enclosed in triple quotes.
 
 ```markdown
-    # MultiLineExample
+# MultiLineExample
     - ```This is a multiline list
         - one
         - two
@@ -314,7 +313,8 @@ You can split your language generation templates into separate files and referen
 [Link description](filePathOrUri)
 ```
 
-All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced via a # <namespace>.<templatename> convention) across files being pulled in.
+All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced via a # \<namespace>.\<templatename> convention) across files being pulled in.
+
 
 ```markdown
 [Shared](../shared/common.lg)
@@ -326,7 +326,7 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 ## Strict option
 
-Developers who do not want to allow a null result for a null evaluated result can implement the strict option.
+Developers who do not want to allow a null result for a null evaluated result can implement the strict option. To set parser instructions, like the strict option, use the `> !#` notation. Below is an example of a simple strict option:
 
 ```
 > !# @strict = true
@@ -341,9 +341,9 @@ If the strict option is on, null errors will throw a friendly message.
 - hi ${name}
 ```
 
-If name is null, the diagnostic would be: `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.`
+If name is null, the diagnostic would be `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.` If strict is set to false or not set, a compatible result will be given. The above sample would produce `hi null`.
 
-If strict is set to false or not set, a compatible result will be given. The above sample would produce `hi null`.
+Note that the struct option applies to the entire document. The last setting in the file trumps and prior settings found in the same template document. 
 
 ## Additional Resources
 
