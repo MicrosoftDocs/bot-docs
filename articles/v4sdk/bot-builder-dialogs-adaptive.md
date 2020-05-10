@@ -127,7 +127,7 @@ You register services for the bot in `index.js`.
 1. Run the sample locally on your machine.
 1. Start the emulator, connect to your bot, and send messages as shown below.
 
-![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive.png)
+![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive-sample.png)
 
 ## Next steps
 
