@@ -38,9 +38,9 @@ This sample uses an adaptive dialog, a few prompts, and a component dialog to cr
 > [!div class="mx-tdCol2BreakAll"]
 > | Steps        | LG template prompt  |
 > |:-------------|:-------------|
-> | Ask the user for their mode of transportation | `ModeOfTransportPrompt` |
-> | Ask the user for their name | `AskForName` |
-> | Ask the user if they want to provide their age | `AgeConfirmPrompt` |
+> | Ask the users for their mode of transportation | `ModeOfTransportPrompt` |
+> | Ask the users for their name | `AskForName` |
+> | Ask the users if they want to provide their age | `AgeConfirmPrompt` |
 > | If they answered yes, asks for their age | `AskForAge` prompt with validation to only accept ages greater than 0 and less than 150 |
 > | Asks if the collected information is "ok" | `ConfirmPrompt` prompt |
 
@@ -52,16 +52,15 @@ Finally, if they answered yes, display the collected information; otherwise, tel
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** and **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet packages.
 
-The bot interacts with the user via the `RootDialog`. When the `RootDialog` class is instantiated, an instance of the `AdaptiveDialog` is created.
+The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
 
 ![Root dialog](media/bot-builder-root-dialog-adaptive.png)
 
+**Dialogs/RootDialog.cs**
 
-**Dialogs\RootDialog.cs**
-
-The sample starts by instantiating the `RootDialog` class which in turns
-creates an instance of the `AdaptiveDialog`.
-Triggers are also added to the `AdaptiveDialog` instance. In particular, how to welcome the user and how to respond to the user's messages. The created dialog is then added to the `DialogSet` and name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
+The code begins by instantiating the `RootDialog` class which in turns
+creates an instance of the `AdaptiveDialog`. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog.
+ The created dialog is then added to the `DialogSet` and the name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
 [!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
 
@@ -116,10 +115,27 @@ You register services for the bot in `index.js`.
 
 ---
 
+## Run the dialog
+
+# [C#](#tab/csharp)
+
+**Bots/Dialogs.cs**
+
+This IBot implementation shown can run any type of Dialog. The ConversationState is used by the Dialog system. The UserState isn't, however, it might have been used in a Dialog implementation, and the requirement is that all BotState objects are saved at the end of a turn.
+
+
+[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/Dialogs.cs?range=18-41&highlight=21)]
+
+
+# [JavaScript](#tab/javascript)
+
+TBD
+
+---
+
 > [!NOTE]
 > Memory storage is used for testing purposes only and is not intended for production use.
 > Be sure to use a persistent type of storage for a production bot.
-
 
 ## To test the bot
 
