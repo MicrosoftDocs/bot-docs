@@ -60,9 +60,9 @@ The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog
 
 The code begins by instantiating the `RootDialog` class which in turns
 creates an instance of the `AdaptiveDialog`. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog.
- The created dialog is then added to the `DialogSet` and the name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
+The created dialog is then added to the `DialogSet` and the name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=18-49&highlight=6-25)]
 
 In `WelcomeUserSteps`, the code iterates through the `membersAdded` list to greets the user added to the conversation.
 
@@ -70,26 +70,36 @@ In `WelcomeUserSteps`, the code iterates through the `membersAdded` list to gree
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
 > The code filters cases where the bot itself is the recipient of the message.
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-20)]
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-20)]
 
 The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The following code shows how the `Name` prompt is created:
 
-```csharp
-{
-    Prompt = new ActivityTemplate("${AskForName()}"),
-    Property = "user.userProfile.Name"
-}
-
-```
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=88-92)]
 
 The following code shows how a prompt is built conditionally:
 
-[!code-csharp[Constructor snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=102-130)]
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=102-130)]
 
 
 # [JavaScript](#tab/javascript)
 
-To use dialogs, your project needs to install the **botbuilder-dialogs** npm package. Q? What about the adaptive dialogs?
+To use dialogs, your project needs to install the **botbuilder-dialogs**, and the **botbuilder-dialogs-adaptive** npm packages.
+The sample demonstrates how to use **Adaptive dialog** and **Language Generation** features to achieve the same waterfall model functionality.
+
+At start up, the main dialog `UserProfileDialog` is initialized. The bot uses it to interact with the user.
+
+**dialogs/userProfileDialog.js**
+
+The code begins by instantiating the `UserProfileDialog ` class which in turns
+creates an instance of the `AdaptiveDialog` root dialog. At this time, the dialog steps are created using the **Language Generation** templates.
+
+The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file. The following code shows how the `Name` prompt is created:
+
+[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=19-124)]
+
+The following code shows how a prompt is built conditionally:
+
+[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=39-64)]
 
 
 ---
@@ -108,6 +118,7 @@ You register the adaptive dialogs in the `Startup` class, along with the other s
 
 
 # [JavaScript](#tab/javascript)
+
 
 **index.js**
 
