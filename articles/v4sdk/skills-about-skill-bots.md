@@ -45,7 +45,8 @@ See how to [implement a skill](skill-implement-skill.md) for a simple skill that
 
 ## Skill manifests
 
-A skill manifest describes the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
+A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
+With v2.1 of the skill manifest schema, the manifest can also describe proactive activities the skill can send and dispatch models the skill uses.
 
 <!--TODO Flesh this out-->
 
