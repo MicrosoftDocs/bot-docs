@@ -94,7 +94,7 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 ---
 
-## Register the adaptive
+## Register the adaptive dialog
 
 To allow the use of the adaptive dialog, the start up code must register the dialog as shown in the lines highlighted below, along with the other services.
 
