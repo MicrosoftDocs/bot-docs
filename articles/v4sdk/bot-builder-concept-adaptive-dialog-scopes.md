@@ -1,6 +1,6 @@
 ---
-title: Memory scopes and managing state in Adaptive Dialogs
-description: Collecting user input using adaptive dialogs
+title: Managing state in Adaptive Dialogs
+description: Managing state in adaptive dialogs
 keywords: bot, Managing state, User scope, Conversation scope, Dialog scope, Settings scope, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
@@ -10,9 +10,11 @@ ms.service: bot-service
 ms.date: 05/08/2020
 ---
 
-# Memory scopes and managing state in Adaptive Dialogs
+# Managing state in Adaptive Dialogs
 
-State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides some abstractions to make state management easier. This topic is covered in detail in the bot framework SDK [Managing state][1] article, you need to read and understand the information covered in that article to make the best use of this article which covers additional information that you will need to know when creating adaptive dialogs.
+The terms _Stateful_ and _stateless_ are adjectives that describe whether an application is designed to remember one or more preceding events in a given sequence of interactions with a user (or any other activity). Stateful means the application _does_ keep track of the state of its interactions, usually by saving values in memory in the form a properties. Stateless means the application does _not_ keep track of the state of its interactions, which means that there is no memory of any previous interactions and all incoming request must contain all relevant information that is required to perform the requested action. You can think of _state_ as the bots current set of values or contents such as the conversation id or the active users name etc.
+
+The bot framework SDK follows the same paradigms as modern web applications and does not actively manage state, however the Bot Framework SDK does provide some abstractions that make state management much easier to incorporate into your bot. This topic is covered in detail in the bot framework SDK [Managing state][1] article, it is recommended that you read and understand the information covered in that article before reading this article because this article will build on it and provide additional information that will be helpful in managing state in adaptive dialogs.
 
 ## Prerequisites
 
@@ -22,15 +24,23 @@ State within a bot follows the same paradigms as modern web applications, and th
 
 ## Managing state
 
-As with web apps, a bot is inherently stateless; a different instance of your bot may handle any given turn of the conversation. For some bots, this simplicity is preferred - the bot can either operate without additional information, or the information required is guaranteed to be within the incoming message. For others, state (such as where in the conversation we are or previously received data about the user) is necessary for the bot to have a useful conversation.
+The Bot Framework SDK provides memory scope api that enables Developers to store and retrieve values in the bot's memory, and can use those values when processing loops and branches and when creating dynamic messages and other behaviors in the bot.
 
-[Adaptive dialogs][2] provides a way to access and manage memory. All adaptive dialogs by default use this model, meaning that all components that read from or write to memory have a common way to access and write information to the appropriate scopes.
+This makes it possible for bots built using the Bot Framework SDK to do things like:
 
-All memory properties, in all memory scopes, are property bags, meaning you can store arbitrary information on them.
+* Store user profiles and preferences.
+* Remember things between sessions such as the last search query or the last selection made by the user.
+* Pass information between dialogs.
 
-See [here][3] for guidance on when to use each scope.
+A bot is inherently stateless, and this might be fine for your needs. For some bots, this simplicity is preferred - the bot can either operate without additional information, or the information required is guaranteed to be within the incoming activity. For other bots, state (such as where in the conversation we are or the response received from the user) is necessary for the bot to have a useful conversation.
 
-Here are the different memory scopes available:
+[Adaptive dialogs][2] provides a way to access and manage memory and all adaptive dialogs use this model, meaning that all components that read from or write to memory have a consistent way to handle information in the appropriate scopes.
+
+All memory properties, in all memory scopes, are property bags, meaning you can add properties to them as needed.
+
+See [When to use each type of state][3] in the article _Managing state_ for guidance on when to use each scope.
+
+Here are the different memory scopes available in adaptive dialogs:
 
 * [Managing state](#managing-state)
   * [User scope](#user-scope)
@@ -59,7 +69,7 @@ Conversation scope is persistent data scoped to the id of the conversation you a
 
 Examples:
 
-    conversation.hasAcceptedTOU
+    conversation.hasAccepted
     conversation.dateStarted
     conversation.lastMaleReference
     conversation.lastFemaleReference
@@ -67,7 +77,7 @@ Examples:
 
 ## Dialog scope
 
-Dialog scope is persistent data scoped for a giving executing dialog, providing an memory space for each dialog to have internal persistent bookkeeping. Dialog scope is cleared when dialog ends. You can access properties available under the `dialog.XXX` scope via `$XXX`. `$` is a shorthand for `dialog` memory scope.
+Dialog scope persists data for the life of the dialog, providing memory space for each dialog to have internal persistent bookkeeping. Dialog scope is cleared when dialog ends. You can access properties available under the `dialog.XXX` scope via `$XXX`. `$` is a shorthand for `dialog` memory scope.
 
 Examples:
 
@@ -83,10 +93,12 @@ Examples:
     $shoppingCart
 ```
 
+<!--
 ### Dialog sub-scopes
 
 * `dialog.options` scope by default carry parameters/ input to the specific dialog being executed.
 * `dialog.foreach` scope by default carry dialog.foreach.value and dialog.foreach.index and are available to actions within a `forEach` action.
+-->
 
 ## Turn scope
 
