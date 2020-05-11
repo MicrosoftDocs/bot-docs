@@ -11,7 +11,7 @@ ms.date: 05/07/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot using adaptive, component, waterfall, and custom dialogs  
+# Create a bot using adaptive, component, waterfall, and custom dialogs 
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
@@ -31,14 +31,14 @@ This article focuses on the code that allows these dialogs to work together. See
 You must follow the steps described below to add an adaptive dialog to a bot.
 These steps are covered in more detail in how to [create a bot using adaptive dialogs][basic-adaptive-how-to].
 
-#### [C#](#tab/cs)
+#### [C#](#tab/csharp)
 
 1. Update all Bot Builder NuGet packages to version 4.9.x.
 1. Add the `Microsoft.Bot.Builder.Dialogs.Adaptive` package to your bot project.
 1. Update the the bot adapter to add storage and the user and conversation state objects to every turn context.
 1. Use a dialog manager in the bot code to start or continue the root dialog each turn.
 
-#### [JavaScript](#tab/js)
+#### [JavaScript](#tab/javascript)
 
 1. Update all Bot Builder npm packages to version 4.9.x.
 1. Add the `botbuilder-dialogs-adaptive` package to your bot project.
@@ -183,6 +183,10 @@ The waterfall dialog contains 3 steps:
 
 ### [JavaScript](#tab/javascript)
 
+**dialogs/rootDialog.js**
+
+[!code-javascript[Waterfall steps](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=113-145)]
+
 ---
 
 ## The adaptive dialog
@@ -196,7 +200,7 @@ The adaptive dialog defines one trigger that runs when the dialog starts. The tr
 
 Since no other actions will be queued, the adaptive dialog will also end and return this result value.
 
-The adaptive dialog uses a language generator to format text and include values from bot and dialog state.
+The adaptive dialog uses a language generator to format text and include values from bot and dialog state. (See about using [generators in adaptive dialogs][lg-in-adaptive] For more information.)
 
 ### [C#](#tab/csharp)
 
@@ -205,6 +209,10 @@ The adaptive dialog uses a language generator to format text and include values 
 [!code-csharp[adaptive dialog and triggers](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=60-119&hihglight=3,7,10)]
 
 ### [JavaScript](#tab/javascript)
+
+**dialogs/rootDialog.js**
+
+[!code-javascript[adaptive dialog and triggers](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=39-87)]
 
 ---
 
@@ -239,6 +247,8 @@ For more information on how to use each dialog type, see:
 [about-dialogs]: bot-builder-concept-dialog.md
 [about-adaptive-dialogs]: tbd.md
 [about-input-dialogs]: tbd.md
+
+[lg-in-adaptive]: bot-builder-concept-adaptive-dialog-generators.md
 
 [basic-adaptive-how-to]: bot-builder-dialogs-adaptive.md
 [basic-dialog-how-to]: bot-builder-dialog-manage-conversation-flow.md
