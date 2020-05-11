@@ -4529,4 +4529,5 @@ year('<timestamp>')
 ```
 year('2018-03-15T00:00:00.000Z')
 ```
+
 And it returns the result: ```2018```
