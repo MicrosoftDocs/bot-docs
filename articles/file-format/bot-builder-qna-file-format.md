@@ -232,7 +232,7 @@ Developers have two options for creating follow-up prompts: using a question as 
 
 ### Use a question directly
 
-1. The first QnA pair that has the link text as a `question` will be added as the prompt. If you need more explicit control, use [IDs](#assign-an-explicit-id-for-a-qna-pair) instead.
+1. The first QnA pair that has the link text as a `question` will be added as the prompt. If you need more explicit control, use [IDs](#question-and-answer-pairs) instead.
 2. When you are directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
 ```.qna
