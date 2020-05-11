@@ -15,96 +15,73 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-All dialogs derive from a base _dialog_ class. If you use the _dialog manager_ to run your root dialog, all of the dialog classes can work together.
+All dialogs derive from a base _dialog_ class.
+If you use the _dialog manager_ to run your root dialog, all of the dialog classes can work together.
 This article shows how to use component, waterfall, custom, and adaptive dialogs together in one bot.
 
 This article focuses on the code that allows these dialogs to work together. See the [additional information](#additional-information) for articles that cover each type of dialog in more detail.
 
 ## Prerequisites
 
-- Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **waterfall custom dialog with adaptive** sample in either [**C#**][cs-sample], [**JavaScript** preview][js-sample]
+- Knowledge of [bot basics][bot-basics], [managing state][concept-state], the [dialogs library][about-dialogs], and [adaptive dialogs][about-adaptive-dialogs].
+- A copy of the **waterfall or custom dialog with adaptive** sample in either [**C#**][cs-sample], [**JavaScript** (preview)][js-sample]
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
 You must follow the steps described below to add an adaptive dialog to a bot.
+These steps are covered in more detail in how to [create a bot using adaptive dialogs][basic-adaptive-how-to].
 
-1. Update all packages to version 4.9.x from the [Nuget](https://www.nuget.org/) site.
-1. Add the `Microsoft.Bot.Builder.Dialogs.Adaptive` package.
-1. Add and configure `DialogManager` in `DialogBot.cs`. This internally takes care of saving state on each turn.
-1. Update the `adapter` to use `storage`, `conversation state` and `user state`.
+#### [C#](#tab/cs)
 
+1. Update all Bot Builder NuGet packages to version 4.9.x.
+1. Add the `Microsoft.Bot.Builder.Dialogs.Adaptive` package to your bot project.
+1. Update the the bot adapter to add storage and the user and conversation state objects to every turn context.
+1. Use a dialog manager in the bot code to start or continue the root dialog each turn.
+
+#### [JavaScript](#tab/js)
+
+1. Update all Bot Builder npm packages to version 4.9.x.
+1. Add the `botbuilder-dialogs-adaptive` package to your bot project.
+1. In the bot's on-turn handler:
+   1. Create a dialog manager.
+   1. Set the dialog manager's storage and user and conversation state properties.
+   1. Use the dialog manager to start or continue the root dialog.
+
+---
 
 ## About the sample
 
-The sample in this article demonstrates a custom `Dialog` class called `SlotFillingDialog`, which takes a series of "slots" which define a value the bot needs to collect from the user, as well as the prompt it should use. The bot will iterate through all of the slots until they are all full, at which point the dialog completes.
+By way of illustration, this sample combines various dialog types together in one bot.
+It does not demonstrate best practices for designing conversation flow.
+The sample:
 
+- Defines a custom _slot filling_ dialog.
+- Creates a root component dialog:
+  - A waterfall dialog manages the top-level conversation flow.
+  - Together, an adaptive dialog, 2 custom slot filling dialogs, and a few prompts manage the rest of the conversation flow.
+
+The custom dialog accepts a list of properties (slots to fill). If any of the values for these properties are missing, it will prompt for them until all of the slots are filled.
+The samples _binds_ a property to the adaptive dialog to allow the adaptive dialog to also fill slots.
+
+This article focuses on how the various dialog types work together.
+For information about configuring your bot to use adaptive dialogs, see how to [create a bot using adaptive dialogs][basic-adaptive-how-to].
+For more on using adaptive dialogs to gather user input, see [about inputs in adaptive dialogs][about-input-dialogs].
+
+## Define the custom dialog
+
+### [C#](#tab/csharp)
+
+### [JavaScript](#tab/javascript)
+
+---
 
 ## Create the main dialog
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
-To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** and **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet packages.
-
-The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot` class, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `Run` helper method to access the dialog.
-
-
-**Dialogs\UserProfileDialog.cs**
-
-We begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
-
-**UserProfile.cs**
-
-The user's name, and age are saved in an instance of the `UserProfile` class.
-
-**Dialogs\UserProfileDialog.cs**
-
-In the last step, we check the `stepContext.Result` returned by the dialog
-
-# [JavaScript](#tab/javascript)
-
-To use dialogs, your project needs to install the **botbuilder-dialogs** npm package. Q? What about the adaptive dialogs?
-
-
-**dialogs/userProfileDialog.js**
-
-We begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class.
-
-
-**userProfile.js**
-
-The user's name, and age are saved in an instance of the `UserProfile` class.
-
-**dialogs/userProfileDialog.js**
-
-In the last step, we check the `step.result` returned by the dialog called in the previous waterfall step
+### [JavaScript](#tab/javascript)
 
 ---
-
-## Register services and adaptive dialogs
-
-To allow the use of the adaptive dialogs, the start up code must contain the lines highlighted below along with the other services.
-
-# [C#](#tab/csharp)
-
-**Startup.cs**
-
-You register services for the bot in `Startup` along with the adaptive dialogs.
-
-[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Startup.cs?range=15-48&highlight=8-15)]
-
-
-# [JavaScript](#tab/javascript)
-
-**index.js**
-
-You register services for the bot in `index.js`.
-
----
-
-> [!NOTE]
-> Memory storage is used for testing purposes only and is not intended for production use.
-> Be sure to use a persistent type of storage for a production bot.
 
 ## To test the bot
 
@@ -125,13 +102,14 @@ For more information on how to use each dialog type, see these articles:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [TBD](bot-builder-howto-v4-luis.md)
+> [TBD](tbd.md)
 
 <!-- Footnote-style links -->
 
-[concept-basics]: bot-builder-basics.md
-[concept-dialogs]: bot-builder-concept-dialog.md
-[concept-adaptive-dialogs]: tbd.md
+[bot-basics]: bot-builder-basics.md
+[about-dialogs]: bot-builder-concept-dialog.md
+[about-adaptive-dialogs]: tbd.md
+[about-input-dialogs]: tbd.md
 
 [basic-adaptive-how-to]: bot-builder-dialogs-adaptive.md
 [basic-dialog-how-to]: bot-builder-dialog-manage-conversation-flow.md
@@ -139,4 +117,3 @@ For more information on how to use each dialog type, see these articles:
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/19.custom-dialogs
-[python-sample]:
