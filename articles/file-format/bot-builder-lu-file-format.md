@@ -10,33 +10,15 @@ ms.service: bot-service
 ms.date: 05/16/2020
 ---
 
-# .lu File Format
+# .lu file format
+
 An .lu file contains Markdown-like, simple text based definitions for [LUIS][1] concepts. This article covers the various concepts expressed via the .lu file format.
 
-<!--
-- [Comments](#Adding-comments)
-- [Intent](#Intent)
-- [Entities](#Entity)
-	- [Definition](#Definition)
-    - [Machine-learned](#Machine-learned-entity)
-	- [Prebuilt entity](#Prebuilt-entity)
-	- [List entity](#List-entity)
-	- [Composite entity](#Composite-entity)
-	- [Regex entity](#Regex-entity)
-- [Roles](#Roles)
-- [Patterns](#Patterns)
-- [Phrase lists features](#Phrase-list-definition)
-- [Model as a feature](#Model-as-feature)
-- [Tie features to a specific model](#Tie-features-to-a-specific-model)
-- [Machine-learned with children](#Machine-learned-entity-with-children)
-- [Model description](#Model-description)
-- [References](#External-references)-->
-
-## Adding comments
+## Add comments
 
 Use **>** to create a comment. Here's an example:
 
-```markdown
+```.lu
 > This is a comment and will be ignored.
 
 # Greeting
@@ -46,11 +28,11 @@ Use **>** to create a comment. Here's an example:
 
 ## Intent
 
-An [intent][2] represents an action the user wants to perform. The intent is a purpose or goal expressed in the user's input, such as booking a flight, paying a bill, or finding a news article. For example, a travel app may define an intent named "BookFlight." You define and name intents that correspond to these actions.
+An [intent][2] represents an action the user wants to perform. The intent is a purpose or goal expressed in the user's input, such as booking a flight, paying a bill, or finding a news article. For example, a travel app may define an intent named _BookFlight_. You define and name intents that correspond to these actions.
 
-Here's an .lu file that captures a simple 'Greeting' intent with a list of example utterances that capture ways users can express this intent. Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
+Here's an .lu file that captures a simple `Greeting` intent with a list of example utterances that capture ways users can express this intent. Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
 
-```markdown
+```
 # Greeting
 - Hi
 - Hello
@@ -58,11 +40,9 @@ Here's an .lu file that captures a simple 'Greeting' intent with a list of examp
 - Good evening
 ```
 
-'#\<intent-name\>' describes a new intent definition section. Each line after the intent definition are example utterances that describe that intent.
+`#\<intent-name\>` describes a new intent definition section. Each line after the intent definition are example utterances that describe that intent. You can add together multiple intent definitions in a single file like in the example below:
 
-You can add together multiple intent definitions in a single file like in the example below:
-
-```markdown
+```
 # Greeting
 - Hi
 - Hello
@@ -75,11 +55,11 @@ You can add together multiple intent definitions in a single file like in the ex
 - please help
 ```
 
-Each section is identified by #\<intent name\> notation. Blank lines are skipped when parsing the file.
+Each section is identified by `#\<intent name\>` notation. Blank lines are skipped when parsing the file.
 
 ## Entity
 
-An [entity][3] represents detailed information that is relevant in an utterance. For example, in the utterance "Book a ticket to Paris", "Paris" is a location.
+An [entity][3] represents detailed information that is relevant in an utterance. For example, in the utterance _Book a ticket to Paris_, _Paris_ is a location.
 
 |Sample user utterance|entity|
 |--------------------------|----------|
@@ -91,19 +71,19 @@ An [entity][3] represents detailed information that is relevant in an utterance.
 
 Entities are declared in the following way:
 
-```markdown
+```
 @ <entity-type> <entity-name> [[hasRoles] <comma-separated-list-of-roles>]
 ```
 
 Entities that require a definition, likes list and regular expressions entities, are represented using the following notation:
 
-```markdown
+```
 @ <entity-name> = <definition>
 ```
 
 Declaration and definition can also be combined into a single line:
 
-```markdown
+```
 @ <entity-type> <entity-name> [[hasRoles] <comma-separated-list-of-roles>] = <definition>
 ```
 
@@ -113,7 +93,7 @@ Entity names with a space in them can be wrapped in quotes. Note that prebuilt e
 
 Here's an example:
 
-```markdown
+```
 @ ml "this is a simple entity" role1, role2
 @ ml 'this is a simple entity' hasRoles role1, role2
 ```
@@ -124,13 +104,13 @@ Here's an example:
 
 In the example below, the ml entity `name` is defined as `firstName` and `lastName`.
 
-```markdown
+```
 @ ml name firstName, lastName
 ```
 
 For any labeled entity that is not explicitly assigned a type, the parser defaults to an ml entity type for that entity.
 
-```markdown
+```
 # getUserName
 - my name is {username=vishwac}
 
@@ -158,7 +138,7 @@ The following LUIS [prebuilt entity][5] types are supported:
 
 Here are some examples of prebuilt entities:
 
-```markdown
+```
 @ prebuilt number numOfGuests, age
 @ prebuilt datetimeV2 fromDate, toDate
 @ prebuilt age userAge
@@ -170,9 +150,9 @@ Not all prebuilt entity types are available across all locales. See [entities pe
 
 [List entities][6] represent a fixed, closed set of related words along with their synonyms.They are extracted based on an exact text match.
 
-In the example below a list entity is defined that include synonyms for colors.
+In the example below, a list entity is defined that includes synonyms for colors:
 
-```markdown
+```
 @ list color favColor, screenColor
 @ color =
     - <normalized-value>
@@ -189,15 +169,15 @@ In the example below a list entity is defined that include synonyms for colors.
         - <synonym1>; <synonym2>; ...
 ```
 
-You should include a value from the list directly in the utterance, not an entity label or any other value, when using list entities.
+When using list entities you should include a value from the list directly in the utterance, not an entity label or any other value.
 
 ### Composite entity
 
-A [composite entity][7] is made up of other entities, such as prebuilt entities, simple, regular expression, and list entities. The separate entities form a whole entity.
+A [composite entity][7] is made up of other entities, such as prebuilt, simple, regular expression, and list entities. The separate entities form a whole entity.
 
-Here's an example of a simple composite entity.
+Here's an example of a simple composite entity:
 
-```markdown
+```
 @ composite deviceTemperature from, to
 @ deviceTemperature =
     - child1, child2
@@ -209,7 +189,7 @@ Here's an example of a simple composite entity.
 
 Here's a more complex example definition:
 
-```markdown
+```
 # setThermostat
 > This utterance labels ‘thermostat to 72’ as composite entity deviceTemperature
     - Please set {deviceTemperature = thermostat to 72}
@@ -241,7 +221,7 @@ A [regular expression entity][8] extracts an entity based on a regular expressio
 
 Here's an example of a simple regular expression entity definition.
 
-```markdown
+```
 @ regex hrf-number from, to
 @ hrf-number = /hrf-[0-9]{6}/
 
@@ -254,7 +234,7 @@ Here's an example of a simple regular expression entity definition.
 
 A [role](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-entity-types#using-entity-role-to-define-context) is a named alias for an entity based on context within an utterance. A role can be used with any prebuilt or custom entity type (except phrases lists) and used in both example utterances and patterns.
 
-In the example below the **Location** entity has two roles, origin and destination:
+In the example below the **Location** entity has two roles, `origin` and `destination`:
 
 |Entity	|Role	|Purpose|
 |-------|-------|-------|
@@ -263,13 +243,13 @@ In the example below the **Location** entity has two roles, origin and destinati
 
 Roles in .lu file format can be explicitly or implicitly defined. Explicit role definition follows the notation:
 
-```markdown
+```
 @ <entityType> <entityName> [hasRole[s]] role1, role2, ...
 ```
 
 Shown below are the variety of ways you can explicitly define entities and their roles:
 
-```markdown
+```
 > # ml entity definition with roles
 
 @ ml name role1, role2
@@ -292,13 +272,13 @@ Shown below are the variety of ways you can explicitly define entities and their
 
 You can refer to implicitly defined roles directly in patterns and labeled utterances using the following format:
 
-```markdown
+```
 {@\<entityName\>:\<roleName\>}
 ```
 
-You can see in the example below how the roles `userNameLfirstName` and `userName:lastName` are implicitly defined:
+You can see in the example below how the roles `userName:firstName` and `userName:lastName` are implicitly defined:
 
-```markdown
+```
 # AskForUserName
 - {userName:firstName=vishwac} {userName:lastName=kannan}
 - I'm {userName:firstName=vishwac}
@@ -312,7 +292,7 @@ You can see in the example below how the roles `userNameLfirstName` and `userNam
 
 In patterns, you can use roles using the `{\<entityName\>:\<roleName\>}` notation. Here's an example:
 
-```markdown
+```
 # getUserName
 - call me {name:userName}
 - I'm {name:userName}
@@ -321,7 +301,7 @@ In patterns, you can use roles using the `{\<entityName\>:\<roleName\>}` notatio
 
 You can also define multiple roles for an entity in patterns:
 
-```markdown
+```
 > roles can be specified for list entity types as well - in this case fromCity and toCity are added as roles to the 'city' list entity defined further below
 
 # BookFlight
@@ -347,12 +327,12 @@ $city:Portland=
 
 For example, the following definition would be treated as a pattern with `alarmTime` set as a pattern:
 
-```markdown
+```
 # DeleteAlarm
 - delete the {alarmTime} alarm
 ```
-This example would be treated as an utterance since it has a labeled value with 7AM being the labeled value for entity alarmTime:
-```markdown
+This example would be treated as an utterance since it has a labeled value _7AM_:
+```
 # DeleteAlarm
 - delete the {alarmTime=7AM} alarm
 ```
@@ -366,7 +346,7 @@ A [phrase list][11] is a list of words, phrases, numbers or other characters tha
 
 You can describe phrase list entities using the following notation:
 
-```markdown
+```
 @ phraselist \<Name\>
     - \<synonym1\>
     - \<synonym2\>
@@ -374,7 +354,7 @@ You can describe phrase list entities using the following notation:
 
 Here's an example of a phrase list definition:
 
-```markdown
+```
 @ phraseList Want
 @ phraseList Want =
     - require, need, desire, know
@@ -388,9 +368,9 @@ Here's an example of a phrase list definition:
 	- know
 ```
 
-By default synonyms are set to be **not interchangeable** (matches with the portal experience). You can optionally set the synonyms to be **interchangeable** as part of the definition. Here's an example:
+By default synonyms are set to be _not interchangeable_. You can optionally set the synonyms to be _interchangeable_ as part of the definition. Here's an example:
 
-```markdown
+```
 @ phraselist question(interchangeable) =
     - are you
     - you are
@@ -398,7 +378,7 @@ By default synonyms are set to be **not interchangeable** (matches with the port
 
 Phrase lists can be marked as `disabled` using the following notation:
 
-```markdown
+```
 @ phraselist abc disabled
 
 > also same as this
@@ -409,9 +389,9 @@ Phrase lists can be marked as `disabled` using the following notation:
 @ question disabled
 ```
 
-Phrase lists by default are enabled for all models. However when you explicitly start assigning phrase lists as a feature (descriptor) to other models, the specific phrase lists is not enabled for all models. To explicitly make a phrase list always available to all models use the following:
+By default phrase lists are enabled for all models. However when you explicitly start assigning phrase lists as a feature (descriptor) to other models, the specific phrase lists is not enabled for all models. To explicitly make a phrase list always available to all models use the following:
 
-```markdown
+```
 @ phraselist abc enabledForAllModels
 ```
 
@@ -423,9 +403,9 @@ Phrase lists can be added as a feature to:
 - another entity
 - a child in an n-depth entity
 
-Here's an example of how you define a phrase list as a feature to another model:
+Here's an example of how to define a phrase list as a feature to another model:
 
-```markdown
+```
 > phrase list definition
 
 @ phraseList PLCity(interchangeable) =
@@ -456,11 +436,11 @@ Here's an example of how you define a phrase list as a feature to another model:
 ```
 
 
-## Add entity or intent as a feature
+## Add an entity or intent as a feature
 
-Below are examples of how to add intents and entities as a feature with `usesFeature`.
+Below are examples of how to add intents and entities as a feature with `usesFeature`:
 
-```markdown
+```
 > entity definition - @ <entityType> <entityName> [<roles>]
 
 @ prebuilt personName
@@ -499,7 +479,7 @@ Below are examples of how to add intents and entities as a feature with `usesFea
 
 Here's a definition of an `address` ml entity with `fromAddress` and `toAddress` as two roles as well as children.
 
-```markdown
+```
 @ list listCity
 @ prebuilt number
 @ prebuilt geographyV2
@@ -515,22 +495,22 @@ Here's a definition of an `address` ml entity with `fromAddress` and `toAddress`
 
 ## Utterances
 
-[Utterances][12] are input from the user that your app needs to interpret. To train LUIS to extract intents and entities, it's important to capture a variety of different example utterances for each intent. Active learning, or the process of continuing to train on new utterances, is essential to machine-learned intelligence that LUIS provides.
+[Utterances][12] are input from the user that your app needs to interpret. Active learning, or the process of continuing to train on new utterances, is essential to machine-learned intelligence that LUIS provides. To train LUIS to extract intents and entities, it's important to capture a variety of different example utterances for each intent.
 
 Collect utterances that you think users will enter. Include utterances with the same meaning and a variety of constructions, including but not limited to:
 
 - Utterance length - short, medium, and long for your client-application
 - Word and phrase length
-- Word placement - entity at beginning, middle, and end of utterance
+- Word placement - entities at beginning, middle, and end of utterances
 - Grammar
 - Pluralization
 - Stemming
 - Noun and verb choice
-- Punctuation - a good variety using correct, incorrect, and no grammar
+- Punctuation - a variety using correct, incorrect, and no grammar
 
 You can label entities in utterances using the following notation:
 
-```markdown
+```
 # getUserProfile
 - my name is {@userName = vishwac}
 
@@ -539,16 +519,16 @@ You can label entities in utterances using the following notation:
 
 You can label roles in utterances directly as well:
 
-```markdown
+```
 # getUserProfile
 - my name is {@firstName = vishwac}
 
 @ ml userName hasRoles firstName
 ```
 
-Machine-learned entity with children can also be labeled:
+Machine-learned entities with children can also be labeled:
 
-```markdown
+```
 # getUserProfile
 - my name is {@userProfile = {@firstName = vishwac}}
 
@@ -559,9 +539,9 @@ Machine-learned entity with children can also be labeled:
     - @ personName lastName
 ```
 
-To help easily label child entities for both machine-learned as well as composite entity types, you can break up your labels:
+To help easily label child entities for both machine-learned and composite entity types, you can break up your labels:
 
-```markdown
+```
 # getUserProfile
 - my name is vishwac and I'm 36 years old
     - my name is {@userProfile = vishwac and I'm 36 years old}
@@ -582,7 +562,7 @@ You can include configuration information for your LUIS application or QnA Maker
 
 Here's how to define configuration information:
 
-```markdown
+```
 > !# @<property> = <value>
 > !# @<scope>-<property> = <value>
 > !# @<scope>-<property> = <semicolon-delimited-key-value-pairs>
@@ -590,7 +570,7 @@ Here's how to define configuration information:
 
 Note that any information explicitly passed in via CLI arguments will override information in the .lu file.
 
-```markdown
+```
 > Parser instruction - this is optional; unless specified, parser will default to the latest version.
 > !# @version = 1.0
 
@@ -608,24 +588,23 @@ References the .lu file. follow Markdown link syntax. Supported references inclu
 
 - Reference to another .lu file via `[link name](<.lu file name>)`. Reference can be an absolute path or a relative path from the containing .lu file.
 - Reference to a folder with other .lu files is supported through:
-	- `[link name](<.lu file path>/*)` will look for .lu files under the specified absolute or relative path
-	- `[link name](<.lu file path>/**)` will recursively look for .lu files under the specified absolute or relative path, including subfolders.
+	- `[link name](<.lu file path>/*)` looks for .lu files under the specified absolute or relative path
+	- `[link name](<.lu file path>/**)` recursively looks for .lu files under the specified absolute or relative path, including subfolders.
 - You can also add references to utterances defined in a specific file under an intent section or as QnA pairs.
-	- `[link name](<.lu file path>#<INTENT-NAME>)` will find all utterances under <INTENT-NAME> in the .lu file and add them to the list of utterances where the reference is specified.
-    - `[link name](<.lu file path>#<INTENT-NAME>*utterances*)` will find all utterances (not patterns) under <INTENT-NAME> in the .lu file and add them to the list of utterances where the reference is specified.
-    - `[link name](<.lu file path>#<INTENT-NAME>*patterns*)` will find all patterns (not utterances) under <INTENT-NAME> in the .lu file and add them to the list of patterns where the reference is specified.
-	- `[link name](\<.lu file path>#*utterances*)` will find all utterances in the .lu file and add them to the list of utterances where the reference is specified.
-    - `[link name](\<.lu file path>#*patterns*)` will find all patterns in the .lu file and add them to the list of utterances where the reference is specified.
-	- `[link name](\<.lu file path>#*utterancesAndPatterns*)` will find all utterances and patterns in the .lu file and add them to the list of utterances where the reference is specified.
-    - `[link name](\<.qna file path>#$name?)` will find all alterations from the specific alteration definition in the .qna content and add them to the list of utterances where the reference is specified.
-    - `[link name](\<.qna file path>#*alterations*?)` will find all alterations from the .qna content and add them to the list of utterances where the reference is specified.
-    - `[link name](\<.qna file path>#?question-to-find?)` will find all variation questions from the specific question and add them to the list of utterances where the reference is specified. Note that any spaces in your question will need to be replaced with the **-** character.
-    - `[link name](\<.qna file path>#*answers*?)` will find all answers and add them to the list of utterances where the reference is specified.
-
+	- `[link name](<.lu file path>#<INTENT-NAME>)` finds all utterances under <INTENT-NAME> in the .lu file and adds them to the list of utterances where the reference is specified.
+    - `[link name](<.lu file path>#<INTENT-NAME>*utterances*)` finds all utterances (not patterns) under <INTENT-NAME> in the .lu file and adds them to the list of utterances where the reference is specified.
+    - `[link name](<.lu file path>#<INTENT-NAME>*patterns*)` finds all patterns (not utterances) under <INTENT-NAME> in the .lu file and adds them to the list of patterns where the reference is specified.
+	- `[link name](\<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of utterances where the reference is specified.
+    - `[link name](\<.lu file path>#*patterns*)` finds all patterns in the .lu file and adds them to the list of utterances where the reference is specified.
+	- `[link name](\<.lu file path>#*utterancesAndPatterns*)` finds all utterances and patterns in the .lu file and adds them to the list of utterances where the reference is specified.
+    - `[link name](\<.qna file path>#$name?)` finds all alterations from the specific alteration definition in the .qna content and adds them to the list of utterances where the reference is specified.
+    - `[link name](\<.qna file path>#*alterations*?)` finds all alterations from the .qna content and adds them to the list of utterances where the reference is specified.
+    - `[link name](\<.qna file path>#?question-to-find?)` finds all variation questions from the specific question and adds them to the list of utterances where the reference is specified. Note that any spaces in your question will need to be replaced with the **-** character.
+    - `[link name](\<.qna file path>#*answers*?)` finds all answers and adds them to the list of utterances where the reference is specified.
 
 Here's an example of the aforementioned references:
 
-```markdown
+```
 > You can include references to other .lu files
 
 [All LU files](./all.lu)
@@ -673,7 +652,7 @@ Here's an example of the aforementioned references:
 
 ## Additional Information:
 
-- Read [.qna file format](bot-builder-qna-file-format.md) for more information about creating .qna files.
+- Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
 
 [1]:https://luis.ai
 [2]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-intent
