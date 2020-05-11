@@ -15,9 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions address this core need. They provide an adaptive expression language  that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](https://aka.ms/bot-builder-adaptive-dialogs-concept), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](https://aka.ms/bot-builder-adaptive-dialogs-concept), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
 
-An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
+An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md), or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
 ## Operators
 
@@ -32,47 +32,47 @@ Adaptive expressions support the following operator types and expression syntax:
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
-|+          | Addition. E.g. A + B                                                    |[add][1]                           |
-|-            | Subtraction. E.g. A – B                                                |[sub][2]                           |
-|unary +    | Positive value E.g. +1, +A                                                    |N/A                                |
-|unary -    | Negative value E.g. –2, -B                                            |N/A                                |
-|*            | Multiplication. E.g. A * B                                            |[mul][3]                           |
-|/            | Division. E.g. A / B                                                    |[div][4]                           |
-|^            | Exponentiation. E.g. A ^ B                                            |[exp][5]                           |
-|%            | Modulus. E.g. A % B                                                    |[mod][6]                           |
+|+          | Addition. Example: A + B                                                    |[add][1]                           |
+|-            | Subtraction. Example: A – B                                                |[sub][2]                           |
+|unary +    | Positive value. Example: +1, +A                                                    |N/A                                |
+|unary -    | Negative value. Example: –2, -B                                            |N/A                                |
+|*            | Multiplication. Example: A * B                                            |[mul][3]                           |
+|/            | Division. Example: A / B                                                    |[div][4]                           |
+|^            | Exponentiation. Example: A ^ B                                            |[exp][5]                           |
+|%            | Modulus. Example: A % B                                                    |[mod][6]                           |
 
 ### Comparison operators
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
-|==            | Equals. E.g. A == B                                                    |[equals][7]                        |
-|!=            | Not equals. E.g. A != B                                                |[not][8]([equals][7]())            |
-|>            | Greater than. A > B                                                    |[greater][9]                       |
-|<            | Less than. A < B                                                        |[less][10]                         |
-|>=         | Greater than or equal. A >= B                                        |[greaterOrEquals][11]              |
-|<=            | Less than or equal. A <= B                                            |[lessOrEquals][12]                 |
+|==            | Equals. Example: A == B                                                    |[equals][7]                        |
+|!=            | Not equals. Example: A != B                                                |[not][8]([equals][7]())            |
+|>            | Greater than. Example: A > B                                                   |[greater][9]                       |
+|<            | Less than. Example: A < B                                                        |[less][10]                         |
+|>=         | Greater than or equal. Example: A >= B                                        |[greaterOrEquals][11]              |
+|<=            | Less than or equal. Example: A <= B                                            |[lessOrEquals][12]                 |
 
 ### Logical operators
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
-|&&            |And. E.g. exp1 && exp2                                                    |[and][13]                          |
-|\|\|        |Or. E.g. exp1 \|\| exp2                                                    |[or][14]                           |
-|!            |Not. E.g. !exp1                                                            |[not][8]                           |
+|&&            |And. Example: exp1 && exp2                                                    |[and][13]                          |
+|\|\|        |Or. Example: exp1 \|\| exp2                                                    |[or][14]                           |
+|!            |Not. Example: !exp1                                                            |[not][8]                           |
 
 
 ### Other operators and expression syntax
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
-|&, +            |Concatenation operators. Operands will always be cast to string – E.g. A & B, 'foo' + ' bar' => 'foo bar', 'foo' + 3 => 'foo3', 'foo' + (3 + 3) => 'foo6'                |N/A                                |
-|'            |Used to wrap a string literal. E.g. 'myValue'                                                |N/A                                |
-|"            |Used to wrap a string literal. E.g. "myValue"                                                |N/A                                |
-|[]            |Used to refer to an item in a list by its index. E.g. A[0]                                    |N/A                                |
-|${}        |Used to denote an expression. E.g. ${A == B}.                                              |N/A                                |
-|${}        |Used to denote a variable in template expansion. E.g. ${myVariable}                        |N/A                                |
-|()            |Enforces precedence order and groups sub expressions into larger expressions. E.g. (A+B)*C    |N/A                                |
-|.            |Property selector. E.g. myObject.Property1                                                    |N/A                                |
+|&, +            |Concatenation operators. Operands will always be cast to string. Examples: A & B, 'foo' + ' bar' => 'foo bar', 'foo' + 3 => 'foo3', 'foo' + (3 + 3) => 'foo6'                |N/A                                |
+|'            |Used to wrap a string literal. Example: 'myValue'                                                |N/A                                |
+|"            |Used to wrap a string literal. Example: "myValue"                                                |N/A                                |
+|[]            |Used to refer to an item in a list by its index. Example: A[0]                                    |N/A                                |
+|${}        |Used to denote an expression. Example: ${A == B}.                                              |N/A                                |
+|${}        |Used to denote a variable in template expansion. Example: ${myVariable}                        |N/A                                |
+|()            |Enforces precedence order and groups sub expressions into larger expressions. Example: (A+B)*C    |N/A                                |
+|.            |Property selector. Example: myObject.Property1                                                    |N/A                                |
 |\            |Escape character for templates, expressions.                                               |N/A                                |
 
 ## Variables
@@ -89,9 +89,10 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for Javascript
-- [API reference](../adaptive-expressions/adaptive-expressions-api-reference.md) for Adaptive Expressions
 - [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the Adaptive Expressions library
-<!-- [Extend functions](./extend-functions.md)-->
+<!--
+- [API reference](../adaptive-expressions/adaptive-expressions-api-reference.md) for Adaptive Expressions
+- [Extend functions](./extend-functions.md)-->
 
 [1]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
 [2]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#sub
