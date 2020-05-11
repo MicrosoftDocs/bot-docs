@@ -1,6 +1,6 @@
 ---
 title: Configure continuous deployment for Bot Service - Bot Service
-description: Learn how to setup continuous deployment from source control for a Bot Service. 
+description: Learn how to setup continuous deployment from source control for a Bot Service.
 keywords: continuous deployment, publish, deploy, azure portal
 author: ivorb
 ms.author: kamrani
@@ -52,17 +52,6 @@ To enable continuous deployment with GitHub, navigate to the **App Service** pag
         > ![Continue to build provider](~/media/azure-bot-build/azure-deployment-continue.png)
 
 1. On the **Build provider** page, select the build provider you want to use and click **Continue**.
-
-    > [!IMPORTANT]
-    > With the release of the Bot Framework 4.8 SDK, the .NET Bot Framework samples now target the .NET Core 3.1 SDK.
-    > Not all Azure data centers are configured to build such bots.
-    >
-    > See the map of [.NET Core on App Service](https://aspnetcoreon.azurewebsites.net/) for the centers in which you can build .NET Core 3.1 apps using Kudu. (All centers can run .NET Core 3.1 apps.)
-    >
-    > If you you are deploying a bot that targets the .NET Core 3.1 SDK and you are deploying to a center that can't build .NET Core 3.1 apps using Kudu, use either **GitHub Actions (Preview)** or **Azure Pipelines (Preview)** for your build provider.
-
-    > [!div class="mx-imgBorder"]
-    > ![Select build provider](~/media/azure-bot-build/azure-deployment-build-provider.png)
 
 1. On the **Configure** page, enter the required information and click **Continue**. The information required will depend on which source control service and build provider you chose.
 
