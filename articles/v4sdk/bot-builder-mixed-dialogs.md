@@ -92,7 +92,7 @@ The `SlotDetails` class describes the information to collect and the prompt with
 
 **Dialogs\SlotFillingDialog.cs**
 
-`SlotFillingDialog` derives from the base `Dialog` class.
+The `SlotFillingDialog` class derives from the base `Dialog` class.
 
 It tracks the values it has collected, which slot it prompted for last, and details for the slots to fill.
 
@@ -103,6 +103,26 @@ The core logic for collecting missing information is in the `RunPromptAsync` hel
 [!code-csharp[slot-filling RunPromptAsync](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/SlotFillingDialog.cs?range=121-151&highlight=23-24,28-29)]
 
 ### [JavaScript](#tab/javascript)
+
+**dialogs/slotDetails.js**
+
+The `SlotDetails` class describes the information to collect and the prompt with which to collect it.
+
+[!code-javascript[slot details](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotDetails.js?range=4-26)]
+
+**dialogs/slotFillingDialog.js**
+
+The `SlotFillingDialog` class extends the base `Dialog` class.
+
+[!code-javascript[slot-filling constants](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotFillingDialog.js?range=7-12)]
+
+[!code-javascript[slot-filling constructor](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotFillingDialog.js?range=15-30)]
+
+The core logic for collecting missing information is in the `RunPromptAsync` helper method.
+It tracks the values it has collected, which slot it prompted for last, and details for the slots to fill.
+When all the information has been collected, it ends the dialog and returns the information.
+
+[!code-javascript[slot-filling runPrompt](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotFillingDialog.js?range=84-109)]
 
 ---
 
@@ -131,15 +151,35 @@ The `RootDialog` class is a `ComponentDialog`. It defines the user state propert
 
 Its constructor creates an adaptive dialog `adaptiveSlotFillingDialog`. It then creates and adds the rest of the dialogs it uses and adds the adaptive dialog.
 
-[!code-csharp[slot details](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=121-139)]
+[!code-csharp[add dialogs plus closing](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=121-139)]
 
 ### [JavaScript](#tab/javascript)
+
+**dialogs/rootDialog.js**
+
+The `RootDialog` class extends `ComponentDialog`. It defines the user state property in which to save the collected information.
+
+[!code-javascript[class and constructor opening](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=16-23)]
+
+Its constructor creates an adaptive dialog `adaptiveSlotFillingDialog`. It then creates and adds the rest of the dialogs it uses and adds the adaptive dialog.
+
+[!code-javascript[add dialogs plus closing](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=89-111)]
 
 ---
 
 ## The waterfall dialog
 
+The waterfall dialog contains 3 steps:
+
+1. Start the "fullname" slot-filling dialog, which will gather and return the user's full name.
+1. Record the user's name and start the adaptive dialog, which will gather the rest of the user's information.
+1. Write the user's information to the user state property accessor and summarize to the user the collected information.
+
 ### [C#](#tab/csharp)
+
+**Dialogs\RootDialog.cs**
+
+[!code-csharp[Waterfall steps](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=159-199)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -147,7 +187,22 @@ Its constructor creates an adaptive dialog `adaptiveSlotFillingDialog`. It then 
 
 ## The adaptive dialog
 
+The adaptive dialog defines one trigger that runs when the dialog starts. The trigger will run these actions:
+
+1. Use an input dialog to ask for the user's age.
+1. Use an input dialog to ask for the user's shoe size.
+1. Start the "address" slot-filling dialog to collect the user's address.
+1. Set trigger's result value and end.
+
+Since no other actions will be queued, the adaptive dialog will also end and return this result value.
+
+The adaptive dialog uses a language generator to format text and include values from bot and dialog state.
+
 ### [C#](#tab/csharp)
+
+**Dialogs\RootDialog.cs**
+
+[!code-csharp[adaptive dialog and triggers](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=60-119&hihglight=3,7,10)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -157,22 +212,26 @@ Its constructor creates an adaptive dialog `adaptiveSlotFillingDialog`. It then 
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
-
-![Sample run of the multi-turn prompt dialog](../media/emulator-v4/mixed-dialogs.png)
+1. Start the emulator, connect to your bot, and respond to the prompts: first and last name, shoe size, street, city, and zip.
+1. The bot will display the information it collected.
+1. Send the bot any message to start the process over again.
 
 ## Additional information
 
-For more information on how to use each dialog type, see these articles:
+For more information on how to use each dialog type, see:
 
-- For waterfall and prompt dialogs, see [implement sequential conversation flow][basic-dialog-how-to].
-- For component dialogs, see [manage dialog complexity][component-how-to].
-- For adaptive and input dialogs, see [create a bot using adaptive dialogs][basic-adaptive-how-to].
+| Dialog type | Article
+|:-|:-
+| Adaptive and input dialogs | [Create a bot using adaptive dialogs][basic-adaptive-how-to].
+| Component dialogs | [Manage dialog complexity][component-how-to]
+| Custom dialogs | [Handle user interruptions][interruptions-how-to]
+| Waterfall and prompt dialogs | [Implement sequential conversation flow][basic-dialog-how-to]
 
+<!--
 ## Next steps
-
 > [!div class="nextstepaction"]
 > [TBD](tbd.md)
+-->
 
 <!-- Footnote-style links -->
 
