@@ -123,9 +123,7 @@ You register services for the bot in `index.js`.
 
 This IBot implementation shown can run any type of Dialog. The ConversationState is used by the Dialog system. The UserState isn't, however, it might have been used in a Dialog implementation, and the requirement is that all BotState objects are saved at the end of a turn.
 
-
-[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/Dialogs.cs?range=18-41&highlight=21)]
-
+[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-41&highlight=21)]
 
 # [JavaScript](#tab/javascript)
 
