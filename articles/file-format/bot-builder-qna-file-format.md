@@ -29,7 +29,7 @@ Supported concepts:
 
 ## Adding comments
 
-You can add comments to your .lu document by prefixing the comment with **>**.
+You can add comments to your .qna document by prefixing the comment with **>**.
 
 ```.qna
 > This is a comment and will be ignored
@@ -37,7 +37,7 @@ You can add comments to your .lu document by prefixing the comment with **>**.
 
 ## Question and Answer pairs
 
-The .qna file (and parser) supports question and answer definitions as well.
+The .qna file (and parser) supports question and answer definitions.
 
 Here's an example of basic question and answer definition.
 
@@ -137,7 +137,7 @@ $botframework : qna-alterations=
 
 ## QnA Maker PDF file ingestion
 
-QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type is not text/html, then the parser will add it to files collection for QnA Maker to ingest.
+QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type is not text or HTML, then the parser will add it to files collection for QnA Maker to ingest.
 
 ```.qna
 [SurfaceManual.pdf](https://download.microsoft.com/download/2/9/B/29B20383-302C-4517-A006-B0186F04BE28/surface-pro-4-user-guide-EN.pdf)
@@ -145,7 +145,7 @@ QnA Maker also supports ingesting PDF files during KB creation. You can add file
 
 ## External references
 
-External references are supported in the .qna file and Markdown link syntax.
+External references are supported in the .qna file and use Markdown link syntax.
 
 ### Reference another .qna file
 
@@ -160,16 +160,16 @@ Reference to a folder with other .qna files is supported through:
 
 ### Reference a URL
 
-Reference a URL for QnAMaker to ingest during KB creation via `\[link name](\<URL\>)`
+Reference a URL for QnAMaker to ingest during KB creation via `\[link name](\<URL\>)`.
 
 ### Reference from a specific file
 
 You can also add references to utterances defined in a specific file under an Intent section or as QnA pairs.
 
-- `[link name](<.lu file path>#<INTENT-NAME>)` will find all utterances found under <INTENT-NAME> in the .lu file and add them to the list of questions where the reference is specified.
-- `[link name](\<.lu file path>#*utterances*)` will find all utterances in the .lu file and add them to the list of questions where the reference is specified.
-- `\[link name](\<.qna file path\>#?)` will find questions from all QnA pairs defined in the .qna file and add them to the list of utterances where this reference is specified.
-- `\[link name](\<.qna folder\>/*#?)` will find all questions from all .qna files in the specified folder and add them to the list of utterances where this reference is specified.
+- `[link name](<.lu file path>#<INTENT-NAME>)` finds all utterances found under <INTENT-NAME> in the .lu file and adds them to the list of questions where the reference is specified.
+- `[link name](\<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of questions where the reference is specified.
+- `\[link name](\<.qna file path\>#?)` finds questions from all QnA pairs defined in the .qna file and adds them to the list of utterances where this reference is specified.
+- `\[link name](\<.qna folder\>/*#?)` finds all questions from all .qna files in the specified folder and adds them to the list of utterances where this reference is specified.
 
 Here's an example of those references.
 
@@ -189,7 +189,7 @@ Here's an example of those references.
 
 ## Model description
 
-You can include configuration information for your LUIS application or QnA Maker KB in the qna file to help direct the parser to handle the LU content correctly.
+You can include configuration information for your LUIS application or QnA Maker KB in the .qna file to help direct the parser to handle the LU content correctly.
 
 Here's how to add configuration information.
 
@@ -212,9 +212,9 @@ Note that any information explicitly passed in via CLI arguments will override i
 > !# @qna.pair.source = <source value>
 ```
 
-## Multi-turn content
+## Multiturn content
 
-Multi-turn content is represented in .qna format using markdown link notation. Links are specified via the following semantics.
+Multiturn content is represented in .qna format using Markdown link notation. Links are specified using the following notation.
 
 ```
 - [display text](#<ID or question>)
@@ -228,12 +228,12 @@ You can optionally include `context-only` for any prompts that are only contextu
 
 ### Follow-up prompts
 
-Developers have two options for creating follow-up prompts: using a question as a follow-up prompt directly , or assigning an explicit ID to a QnA pair.
+Developers have two options for creating follow-up prompts: using a question as a follow-up prompt directly, or assigning an explicit ID to a QnA pair.
 
 ### Use a question directly
 
-1. The first QnA pair that has the link text as a `question` will be added as the prompt. If you need more explicit control, use [IDs][assign-an-explicit-id-for-a-qna-pair] instead.
-2. When you are directly using a question, use markdown convention and replace spaces with hyphen. e.g. `#?when-is-the-portland-store-open` .vs. `#?when is the portland store open`. The parser will do its best to find the link but this would not actually render as a clickable link in most Markdown renderers.
+1. The first QnA pair that has the link text as a `question` will be added as the prompt. If you need more explicit control, use [IDs](#assign-an-explicit-id-for-a-qna-pair) instead.
+2. When you are directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
 ```.qna
 # ?store hours
@@ -255,6 +255,8 @@ Developers have two options for creating follow-up prompts: using a question as 
 		Portland store is open 24x7.
 	```
 ```
+
+Note that the link will not actually render as a clickable link in most Markdown renderers.
 
 ### Assign an explicit ID to a QnA pair
 
