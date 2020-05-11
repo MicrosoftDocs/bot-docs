@@ -94,9 +94,9 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 ---
 
-## Register services and adaptive dialogs
+## Register the adaptive
 
-To allow the use of the adaptive dialogs, the start up code must contain the lines highlighted below along with the other services.
+To allow the use of the adaptive dialog, the start up code must register the dialog as shown in the lines highlighted below, along with the other services.
 
 # [C#](#tab/csharp)
 
@@ -121,7 +121,8 @@ You register services for the bot in `index.js`.
 
 **Bots/Dialogs.cs**
 
-The implementation shown can run any type of dialog. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation, and the requirement is that all `BotState` objects are saved at the end of a turn.
+The `DialogManager.OnTurnAsync` runs the adaptive dialog with activities.
+The implementation shown can run any type of `Dialog`. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation, and the requirement is that all `BotState` objects are saved at the end of a turn.
 
 [!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-41&highlight=21)]
 
