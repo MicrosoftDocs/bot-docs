@@ -13,7 +13,7 @@ ms.date: 05/16/2020
 
 # Functions injected from the language generation library
 
-The following article details how to inject functions from the [Language Generation](../v4sdk/bot-builder-concept-language-generation.md) library.
+The following article details how to inject functions from the [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md) library.
 
 ## ActivityAttachment
 
@@ -25,7 +25,7 @@ ActivityAttachment(<collection-of-objects>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*content*> | Yes | object | Object contains the information of attachment |
+| <*content*> | Yes | object | Object containing the information of the attachment |
 | <*type*> | Yes | string  | A string representing the type of attachment |
 |||||
 
@@ -214,6 +214,7 @@ This example uses the `isTemplate()` function to check whether a given template 
 
 Calling `isTemplate("welcome")` would evaluate to `true`. Calling `isTemplate("delete-to-do")` would evaluate to `false`.
 
+<!--
 ## Additional Information
 
-- For more information about .lg templates read the [.lg file format](../file-format/bot-builder-lg-file-format.md) and [structured response template](language-generation-structured-response-template.md) reference articles.
+- For more information about .lg templates read the [.lg file format](../file-format/bot-builder-lg-file-format.md) and [structured response template](language-generation-structured-response-template.md) reference articles.-->
