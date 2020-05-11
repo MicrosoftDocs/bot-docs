@@ -33,10 +33,10 @@ You must follow the steps described below to add an adaptive dialog to a bot.
 
 ## About the sample
 
-This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
+This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The questions are created using LG templates defined in the [RootDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.lg) file. The code uses a dialog to cycle through these steps:
 
 > [!div class="mx-tdCol2BreakAll"]
-> | Steps        | LG template prompt  |
+> | Steps        | LG template  |
 > |:-------------|:-------------|
 > | Ask the users for their mode of transportation | `ModeOfTransportPrompt` |
 > | Ask the users for their name | `AskForName` |
