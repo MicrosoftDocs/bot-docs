@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
-LG can be used developers to:
+LG can be used by developers to:
 
 - achieve a coherent personality, tone of voice for their bot
 - separate business logic from presentation
@@ -25,9 +25,9 @@ LG can be used developers to:
 - construct speak .vs. display adaptations
 - construct cards, suggested actions and attachments
 
-At the core of LG lies template expansion and entity substitution. You can provide one of variation for expansion as well as conditionally expand a template. The output from LG can be a simple text string, multi-line response, or a complex object payload that a layer above LG will use to construct an [activity][1].
+At the core of LG lies template expansion and entity substitution. You can provide one-of variation for expansion as well as conditionally expand a template. The output from LG can be a simple text string, multi-\line response, or a complex object payload that a layer above LG will use to construct an [activity][1].
 
-The following is a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
+The following is a simple greeting LG template. Notice thaa all of the greetings reference the user's name in memory with the variable `${user.name}`.
 
 ```markdown
 # greetingTemplate
@@ -36,9 +36,9 @@ The following is a simple greeting LG template. Notice that all of the greetings
 - Good day ${user.name}. What can I do for you today?
 ```
 
-## Language Generation in action
+## LG in action
 
-You can use Language Generation in a variety of ways when developing bots. To start, create one or more [.lg file(s)][3] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to a user.
+You can use LG in a variety of ways when developing bots. To start, create one or more [.lg file(s)][3] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to a user.
 
 # [C#](#tab/csharp)
 
@@ -57,7 +57,7 @@ Make sure you include the language Generation library [`botbuilder-lg`][15]. The
 ```
 ---
 
-When you need template expansion, use `Evaluate` and pass in the relevant template nam.
+When you need template expansion, use `Evaluate` and pass in the relevant template name.
 
 # [C#](#tab/csharp)
 
@@ -111,6 +111,8 @@ To get all possible expansions of a template, you can use `ExpandTemplate`.
     const results = lgTemplates.expandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
 
+---
+
 For example, given this LG content:
 
 ```
@@ -140,14 +142,16 @@ The call `ExpandTemplate("FinalGreeting")` results in four evaluations:
 - **Hello Morning** 
 - **Hello Evening**
 
-The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` with scope, results in two expansions: **Hi Evening** and **Hello Evening**.
+The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` with scope, results in two expansions:
+- **Hi Evening**
+- **Hello Evening**
 
 ## Additional resources
 
 - See [.lg file format][3] for more information about .lg files.
-- [Language generation API reference][2]
+- Read [structured response templates](../language-generation/language-generation-structured-response-template.md) to learn more about complex templates.
 
-<!--
+<!--- [Language generation API reference][2]
 ## Change Log
 ### 4.8 PREVIEW
 - \[**BREAKING CHANGES**\]:
