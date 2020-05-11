@@ -27,7 +27,7 @@ LG can be used by developers to:
 
 At the core of LG lies template expansion and entity substitution. You can provide one-of variation for expansion as well as conditionally expand a template. The output from LG can be a simple text string, multi-\line response, or a complex object payload that a layer above LG will use to construct an [activity][1].
 
-The following is a simple greeting LG template. Notice thaa all of the greetings reference the user's name in memory with the variable `${user.name}`.
+The following is a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
 
 ```markdown
 # greetingTemplate
