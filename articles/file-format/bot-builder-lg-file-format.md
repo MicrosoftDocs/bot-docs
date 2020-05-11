@@ -296,7 +296,7 @@ You can split your language generation templates into separate files and referen
 [Link description](filePathOrUri)
 ```
 
-All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced via a # \<namespace>.\<templatename> convention) across files being pulled in.
+All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced with `# \<namespace>.\<templatename>`) across files being pulled in.
 
 
 ```.lg
