@@ -63,7 +63,7 @@ Each endpoint object describes an endpoint supported by the skill.
 
 This example lists two endpoints for a skill.
 
-[!code-json[sample endpoints](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.0.0.json?range=17-32)]
+[!code-json[sample endpoints](~/../botframework-sdk/schemas/skills/v2.0/samples/complex-skillmanifest.json?range=17-32)]
 
 ### endpoint object
 
@@ -85,7 +85,7 @@ The activity types allowed in the v2.0.0 skill manifest schema are: message, eve
 
 This is a sample activity description.
 
-[!code-json[sample activity](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.0.0.json?range=34-44)]
+[!code-json[sample activity](~/../botframework-sdk/schemas/skills/v2.0/samples/complex-skillmanifest.json?range=34-44)]
 
 ### eventActivity object
 
@@ -128,10 +128,10 @@ Each definition describes a subschema that can be consumed by other parts of the
 
 This is a sample subschema for flight booking information.
 
-[!code-json[sample definition](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.0.0.json?range=71-90)]
+[!code-json[sample definition](~/../botframework-sdk/schemas/skills/v2.0/samples/complex-skillmanifest.json?range=71-90)]
 
 ## Sample manifest
 
 This is a full sample v2.0 manifest for a skill that exposes multiple activities.
 
-[!code-json[sample 2.0 manifest](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.0.0.json)]
+[!code-json[sample 2.0 manifest](~/../botframework-sdk/schemas/skills/v2.0/samples/complex-skillmanifest.json)]

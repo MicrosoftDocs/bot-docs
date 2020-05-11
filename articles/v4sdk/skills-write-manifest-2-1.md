@@ -67,7 +67,7 @@ Each endpoint object describes an endpoint supported by the skill.
 
 This example lists two endpoints for a skill.
 
-[!code-json[sample endpoints](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json?range=17-32)]
+[!code-json[sample endpoints](~/../botframework-sdk/schemas/skills/v2.1/samples/complex-skillmanifest.json?range=17-32)]
 
 ### endpoint object
 
@@ -91,7 +91,7 @@ The activity types allowed in the v2.1.preview-1 skill manifest schema are: mess
 
 This is a sample activity description.
 
-[!code-json[sample activity](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json?range=84-94)]
+[!code-json[sample activity](~/../botframework-sdk/schemas/skills/v2.1/samples/complex-skillmanifest.json?range=84-94)]
 
 ### eventActivity object
 
@@ -144,7 +144,7 @@ Each definition describes a subschema that can be consumed by other parts of the
 
 This is a sample subschema for flight booking information.
 
-[!code-json[sample definition](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json?range=121-140)]
+[!code-json[sample definition](~/../botframework-sdk/schemas/skills/v2.1/samples/complex-skillmanifest.json?range=121-140)]
 
 ## Dispatch models
 
@@ -159,7 +159,7 @@ A locale name is a combination of an ISO 639 two-letter lowercase culture code a
 
 This is a sample dispatch model that contains two languages models across three locales. It also describes two top-level intents that the skill can recognize.
 
-[!code-json[sample activity](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json?range=33-82)]
+[!code-json[sample activity](~/../botframework-sdk/schemas/skills/v2.1/samples/complex-skillmanifest.json?range=33-82)]
 
 ### languageModel object
 
@@ -176,4 +176,4 @@ Describes a language model for a given culture. The name is a locale name.
 
 This is a full sample v2.1 manifest for a skill that exposes multiple activities.
 
-[!code-json[sample 2.1 manifest](~/../botframework-sdk/schemas/skills/samples/complex-skillmanifest-2.1.preview-1.json)]
+[!code-json[sample 2.1 manifest](~/../botframework-sdk/schemas/skills/v2.1/samples/complex-skillmanifest.json)]
