@@ -34,7 +34,7 @@ There is no default fallback behavior implemented by the template resolver. If a
 
 Here's the definition of a structured template:
 
-```markdown
+```.lg
 # TemplateName
 > this is a comment
 [Structure-name
@@ -47,7 +47,7 @@ Here's the definition of a structured template:
 
 Here's an example of a basic text template:
 
-```markdown
+```.lg
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
@@ -61,7 +61,7 @@ Here's an example of a basic text template:
 
 Here's an example of text with a suggested action. Use **|** to denote a list.
 
-```markdown
+```.lg
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
@@ -75,7 +75,7 @@ Here's an example of text with a suggested action. Use **|** to denote a list.
 
 Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#hero-card) definition:
 
-```markdown
+```.lg
 # HeroCard (params)
 [Herocard
     title = ${params.title}
@@ -88,7 +88,7 @@ Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/pla
 
 Below is the combination of the previous templates:
 
-```markdown
+```.lg
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
@@ -116,7 +116,7 @@ By default any template reference is evaluated once during evaluation of a struc
 
 For example, `# AskForAge.prompt` returns the same resolution text for both the `Speak` and `Text` properties.
 
-```markdown
+```.lg
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
@@ -132,7 +132,7 @@ You can use `<TemplateName>!()` to request a new evaluation on each reference wi
 
 In the example below, `Speak` and `Text` may have different resolution text because `GetAge` is re-evaluated on each instance.
 
-```markdown
+```.lg
 [Activity
     Text = ${GetAge()}
     Speak = ${GetAge!()}
@@ -145,7 +145,7 @@ In the example below, `Speak` and `Text` may have different resolution text beca
 
 Here's how to display a carousel of cards:
 
-```markdown
+```.lg
 # AskForAge.prompt
 [Activity
 > Defaults to carousel layout in case of list of cards
@@ -171,7 +171,7 @@ Here's how to display a carousel of cards:
 
 Use **\\** to escape characters.
 
-```markdown
+```.lg
 # AskForAge.prompt
 [Activity
 > With '|' you are making attachments a list.
@@ -190,7 +190,7 @@ The following composition behavior is supported with structured templates:
 
 Suppose you have the following template:
 
-```markdown
+```.lg
 # T1
 [Activity
     Text = ${T2()}
@@ -208,7 +208,7 @@ Suppose you have the following template:
 
 A call to `evaluateTemplate('T1')` would result in the following internal structure:
 
-```markdown
+```.lg
 [Activity
     Text = This is awesome
     Speak = I can also speak!
@@ -221,7 +221,7 @@ You can include a reference to a another structured template as a property in an
 
 Here's an example of full reference to another structured template:
 
-```markdown
+```.lg
 # ST1
 [MyStruct
     Text = foo
@@ -235,7 +235,7 @@ Here's an example of full reference to another structured template:
 
 With this content, a call to `evaluateTemplate('ST1')` will result in the following internal structure:
 
-```markdown
+```.lg
 [MyStruct
     Text = foo
     Speak = bar
@@ -247,7 +247,7 @@ When the same property exists in both the calling template as well as the called
 
 Here's an example:
 
-```markdown
+```.lg
 # ST1
 [MyStruct
     Text = foo
@@ -262,7 +262,7 @@ Here's an example:
 
 With this context, a call to `evaluateTemplate('ST1')` will result in the following internal structure:
 
-```markdown
+```.lg
 [MyStruct
     Text = foo
     Speak = bar
@@ -332,7 +332,7 @@ It is a natural extension to also define full [chatdown][1] style templates usin
 ### Improvements to chatown style constructs
 
 #### CardAction
-```markdown
+```.lg
 # CardAction (title, type, value)
 [CardAction
 > type can be 'openUrl', 'imBack', 'postBack', 'messageBack'
@@ -347,7 +347,7 @@ It is a natural extension to also define full [chatdown][1] style templates usin
 #### Suggestions
 Suggestions can now support a full blown CardAction structure.
 
-```markdown
+```.lg
 # AskForColor
 [Activity
     SuggestedActions = ${CardAction('red')} | ${CardAction('blue') | ${CardAction('See all choices', 'openUrl', 'http://contoso.com/color/choices')}}
@@ -358,7 +358,7 @@ Suggestions can now support a full blown CardAction structure.
 Adaptive cards today are rendered via `[Attachment=cardpath.json adaptive]` notation. You can define adaptive cards inline and consume them via the `json()` function.
 
 
-```markdown
+```.lg
     # GetColor.prompt
     [Activity
         Attachments = ${json(GetColor.adaptive.card())
@@ -376,7 +376,7 @@ Adaptive cards today are rendered via `[Attachment=cardpath.json adaptive]` nota
 Buttons in any of the card types will also support full blown CardAction definition.
 
 Here's an example:
-```markdown
+```.lg
 # HeroCardTemplate
 [HeroCard
     title = BotFramework Hero Card
@@ -390,7 +390,7 @@ Here's an example:
 #### other type of activity
 [Bot framework activity protocol][2] supports ability for bot to send a custom activity to the client. We will add support for it via structured LG using the following definition. This should set the outgoing activities `type` property to `event` or the type Activity owns.
 
-```markdown
+```.lg
 [Activity
     type = event
     name = some name
