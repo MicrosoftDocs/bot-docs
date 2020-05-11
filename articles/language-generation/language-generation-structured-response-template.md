@@ -18,7 +18,7 @@ For bot applications, the followng support is provided:
 - activity definition
 - card definition
 
-[Bot Framework activity][2] includes several customizable fields. The properties shown below are the most used  and are configurable via an Activity template definition:
+[Bot Framework activity][2] includes several customizable fields. The properties shown below are the most used and are configurable via an Activity template definition:
 
 | Property          | Use case                                                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -26,9 +26,9 @@ For bot applications, the followng support is provided:
 | Speak             | Spoken text used by the channel to render audibly                                                                                 |
 | Attachments       | List of attachments with their type. Used by channels to render as UI cards or other generic file attachment types.                |
 | SuggestedActions  | List of actions rendered as suggestions to user.                                                                                  |
-| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values can be `accepting`, `expecting`, or `ignoring`.   |
+| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values inclue `accepting`, `expecting`, or `ignoring`.   |
 
-There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains unspecified. For example, the `Speak` property **is not** automatically assigned to be the `Text` property if only the `Text` property is specified.
+There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains unspecified. For example, the `Speak` property isn't automatically assigned to be the `Text` property if only the `Text` property is specified.
 
 ## Definition
 
@@ -245,7 +245,7 @@ With this content, a call to `evaluateTemplate('ST1')` will result in the follow
 
 When the same property exists in both the calling template as well as the called template, the content in the caller will overwrite any content in the called template.
 
-Here is an example:
+Here's an example:
 
 ```markdown
 # ST1
@@ -260,7 +260,7 @@ Here is an example:
 ]
 ```
 
-With this content, a call to `evaluateTemplate('ST1')` will result in the following internal structure
+With this context, a call to `evaluateTemplate('ST1')` will result in the following internal structure:
 
 ```markdown
 [MyStruct
@@ -271,12 +271,12 @@ With this content, a call to `evaluateTemplate('ST1')` will result in the follow
 
 Note that this style of composition can only exists at the root level. If there is a reference to another structured template within a property, then the resolution is contextual to that property.
 
-## External file reference in Attachment structured
+## External file reference in attachment structured
 
 There are two prebuilt functions used to externally reference files
 
-1. fromFile(fileAbsoluteOrRelativePath) loads a specified file. Content returned by this function will support evaluation of content.Template references and properties/ expressions are evaluated.
-2. ActivityAttachment(content, contentType) sets the `contentType` if it is not already specified in the content. <!--ContentType can be one of the types here.-->
+1. `fromFile(fileAbsoluteOrRelativePath)` loads a specified file. Content returned by this function will support evaluation of content.Template references and properties/ expressions are evaluated.
+2. `ActivityAttachment(content, contentType)` sets the `contentType` if it is not already specified in the content.
 
 With these two prebuilt functions, you can pull in any externally defined content, including all card types. Use the following structured LG to compose an activity:
 
