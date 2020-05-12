@@ -86,6 +86,4 @@ If you are using the [dialogs library](bot-builder-concept-dialog.md), you can u
 - To start the skill dialog, use the dialog context's _begin_ method and provide the skill dialog's ID. Use the _options_ parameter to provide the activity the consumer will send as the first activity to the skill.
 - You can cancel or interrupt the skill dialog as you would any other dialog. See how to [handle user interruptions](bot-builder-howto-handle-user-interrupt.md) for an example.
 
-<!-- Waiting on merge of PR 2079:
 See how to [use a dialog to consume a skill](skill-use-skilldialog.md) for a consumer that uses a dialog to manage a skill.
--->

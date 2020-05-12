@@ -26,8 +26,8 @@ A skill can be consumed by various other bots, facilitating reuse, and in this w
   A user-facing skill consumer is also called a _root bot_.
 - A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
   - Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer.
-  - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
-  - See how to [implement a skill](./skill-implement-skill.md), [write a v2.1 skill manifest](skills-write-manifest-2-1.md) (preview), and [write a v2.0 skill manifest](skills-write-manifest-2-0.md) for sample skill manifests.
+  - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current version is [2.1.0](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
+  - See how to [implement a skill](./skill-implement-skill.md), [write a v2.1 skill manifest](skills-write-manifest-2-1.md), and [write a v2.0 skill manifest](skills-write-manifest-2-0.md) for sample skill manifests.
 
 In other words, the user interacts directly with the root bot, and the root bot delegates some of its conversational logic to a skill.
 
