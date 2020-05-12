@@ -393,7 +393,7 @@ Use to request an attachment from user as input.
 
 The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines this additional property:
 
-1. `OutputFormat`: `OutputFormat = AttachmentOutputFormat.All` The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
+- `OutputFormat`: The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
     1. `All`: return all attachments as a List.
     2. `First`: return only the first attachment.
 
