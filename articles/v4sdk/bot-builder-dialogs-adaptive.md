@@ -95,7 +95,7 @@ creates an instance of the `AdaptiveDialog` root dialog. At this time, the dialo
 
 The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file. The following code shows how the `Name` prompt is created:
 
-[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=19-24)]
+[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=20-24)]
 
 The following code shows how a prompt is built conditionally:
 
@@ -122,7 +122,27 @@ You register the adaptive dialogs in the `Startup` class, along with the other s
 
 **index.js**
 
-You register services for the bot in `index.js`.
+The code registers the adaptive dialog and services in `index.js`. In particular, it registers:
+
+- Adaptive dialog.
+- Basic services for a bot: a credential provider, an adapter, and the bot implementation.
+- Services for managing state: storage, user state, and conversation state.
+
+Import required bot services and the adaptive dialog class `userProfileDialog`.
+
+[!code-javascript[index-import](../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13]
+
+Create conversation state with in-memory storage provider.
+
+[!code-javascript[index-storage](../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54]
+
+Create the main dialog.
+
+[!code-javascript[index-storage](../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=57-58]
+
+Listen for incoming requests and route the message to the bot's main handler.
+
+[!code-javascript[index-run](../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-73]
 
 ---
 
@@ -139,8 +159,9 @@ The implementation shown can run any type of `Dialog`. The `ConversationState` i
 
 # [JavaScript](#tab/javascript)
 
-TBD
+The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with activities.
 
+[!code-javascript[DialogBot](../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=19-21]
 ---
 
 > [!NOTE]
@@ -155,10 +176,12 @@ TBD
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive-sample.png)
 
+<!--
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [TBD](bot-builder-howto-v4-luis.md)
+-->
 
 <!-- Footnote-style links -->
 
