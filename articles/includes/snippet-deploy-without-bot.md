@@ -96,7 +96,7 @@ Note that if your appsettings.json or .env file has additional keys for other se
 
 Save the file.
 
-Next, depending on the programming langauge (**C#** or **JS**) you used to create the bot, follow the steps that apply to you.
+Next, depending on the programming language (**C#** or **JS**) you used to create the bot, follow the steps that apply to you.
 
 **C# Bot:** 
 

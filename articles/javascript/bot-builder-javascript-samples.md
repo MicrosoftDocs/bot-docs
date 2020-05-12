@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 # JavaScript samples for Bot Framework SDK
 [!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
 
-Samples in the Bot Builder Samples repo demonstrate task-focused bots that show how to take advantage of features provided in the SDK for JavaScript. You can use the samples to help you quickly get started with building great bots with rich capabilities. Refer to [readme](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) file for sample list and additional informaiton.
+Samples in the Bot Builder Samples repo demonstrate task-focused bots that show how to take advantage of features provided in the SDK for JavaScript. You can use the samples to help you quickly get started with building great bots with rich capabilities. Refer to [readme](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) file for sample list and additional information.
 
 To get the samples, clone the [botbuilder-samples](https://github.com/Microsoft/botbuilder-samples) GitHub repository using Git.
 ```cmd

@@ -30,7 +30,7 @@ Copy the last for digits in the address on the last line (usually 3978) since yo
 ## Start you bot
 1. From a terminal navigate to the `echo-bot` folder where you saved your bot. Run `pip install -r requirements.txt` to install any required packages to run your bot.
 
-2. Once the packages are installted run `python app.py` to start your bot. You will know your bot is ready to test when you see  the last line shown in the screenshot below:
+2. Once the packages are installed run `python app.py` to start your bot. You will know your bot is ready to test when you see  the last line shown in the screenshot below:
 
 ![bot running locally](~/media/python/quickstart/bot-running-locally.png)
 
