@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Language Generation
 
+[!INCLUDE[applies-to](../includes/applies-to.md)]
+
 <!-- See [here](#Change-Log) for what's new in **4.8.0 RC1** release.-->
 
 Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.

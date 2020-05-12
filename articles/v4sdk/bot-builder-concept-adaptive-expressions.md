@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions
 
+[!INCLUDE[applies-to](../includes/applies-to.md)]
+
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
 Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](https://aka.ms/bot-builder-adaptive-dialogs-concept), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
