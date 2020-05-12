@@ -116,7 +116,6 @@ You register the adaptive dialogs in the `Startup` class, along with the other s
 
 [!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Startup.cs?range=21-54&highlight=5-15)]
 
-
 # [JavaScript](#tab/javascript)
 
 
@@ -130,19 +129,19 @@ The code registers the adaptive dialog and services in `index.js`. In particular
 
 Import required bot services and the adaptive dialog class `userProfileDialog`.
 
-[!code-javascript[index-import](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13]
+[!code-javascript[index-import](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13)]
 
 Create conversation state with in-memory storage provider.
 
-[!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54]
+[!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54)]
 
 Create the main dialog.
 
-[!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=57-58]
+[!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=57-58)]
 
 Listen for incoming requests and route the message to the bot's main handler.
 
-[!code-javascript[index-run](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-73]
+[!code-javascript[index-run](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-73)]
 
 ---
 
@@ -159,9 +158,11 @@ The implementation shown can run any type of `Dialog`. The `ConversationState` i
 
 # [JavaScript](#tab/javascript)
 
+**bots/dialogBot.js**
+
 The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with activities.
 
-[!code-javascript[DialogBot](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=19-21]
+[!code-javascript[DialogBot](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=19-21)]
 
 ---
 
