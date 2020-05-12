@@ -178,12 +178,10 @@ The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with 
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive-sample.png)
 
-<!--
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [TBD](bot-builder-howto-v4-luis.md)
--->
+> [Create a bot using adaptive, component, waterfall, and custom dialogs](bot-builder-mixed-dialogs.md)
 
 <!-- Footnote-style links -->
 
