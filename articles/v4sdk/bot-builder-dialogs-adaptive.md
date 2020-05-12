@@ -140,7 +140,7 @@ Create conversation state with in-memory storage provider.
 
 [!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54)]
 
-Create the main dialog.
+Create the main dialog and the bot.
 
 [!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=57-58)]
 
