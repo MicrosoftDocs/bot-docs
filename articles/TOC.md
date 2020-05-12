@@ -89,11 +89,11 @@
 ### [BF CLI overview](v4sdk/bf-cli-overview.md)
 ### [BF CLI reference](v4sdk/bf-cli-reference.md)
 ## LG
-### [.lg file format](articles/file-format/bot-builder-lg-file-format.md)
-### [Structured response template](articles/language-generation/language-generation-structured-response-template.md)
+### [.lg file format](file-format/bot-builder-lg-file-format.md)
+### [Structured response template](language-generation/language-generation-structured-response-template.md)
 ## File formats
-### [.lu file format](articles/file-format/bot-builder-lu-file-format.md)
-### [.qna file format](articles/file-format/bot-builder-qna-file-format.md)
-### [Functions injected from LG](articles/language-generation/functions-injected-from-language-generation.md)
+### [.lu file format](file-format/bot-builder-lu-file-format.md)
+### [.qna file format](file-format/bot-builder-qna-file-format.md)
+### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
 ## [Entities and activity types](bot-service-activities-entities.md)
 # [Resources](resources/TOC.md)
