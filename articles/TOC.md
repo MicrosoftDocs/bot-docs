@@ -91,9 +91,9 @@
 ## LG
 ### [.lg file format](file-format/bot-builder-lg-file-format.md)
 ### [Structured response template](language-generation/language-generation-structured-response-template.md)
+### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
 ## File formats
 ### [.lu file format](file-format/bot-builder-lu-file-format.md)
 ### [.qna file format](file-format/bot-builder-qna-file-format.md)
-### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
 ## [Entities and activity types](bot-service-activities-entities.md)
 # [Resources](resources/TOC.md)
