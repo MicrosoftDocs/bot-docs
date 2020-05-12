@@ -246,7 +246,7 @@ For more information on how to use each dialog type, see:
 [bot-basics]: bot-builder-basics.md
 [about-dialogs]: bot-builder-concept-dialog.md
 [about-adaptive-dialogs]: tbd.md
-[about-input-dialogs]: tbd.md
+[about-input-dialogs]: bot-builder-concept-adaptive-dialog-Inputs.md
 
 [lg-in-adaptive]: bot-builder-concept-adaptive-dialog-generators.md
 
