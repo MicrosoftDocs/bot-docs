@@ -328,7 +328,7 @@ The following time-sequence diagram applies to the samples used in the article a
 1. At this point the SSO "dance" comes into play which ends with the **skill token** sent by the **SkillBot** to the **RootBot**.
 1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
 
-To see how the token exchange happens, please refer to the following example:
+To see how the token exchange happens, please refer to the example shown below. The function can be found in [TokenExchangeSkillHandler.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs).
 
 # [C#](#tab/csharp)
 
@@ -356,7 +356,7 @@ To see how the token exchange happens, please refer to the following example:
 [dialog-prompts]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
-[cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/swagatm/sso/experimental/sso-with-skills
+[cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/sso-with-skills
 [js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
 [python-auth-sample]: https://aka.ms/bot-auth-python-sample-code
 
