@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use language generation templates in your bot
 
-Language generation (LG) templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages and cards, and to evaluate text input from users.
+Language generation (LG) templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages and cards, and how to evaluate text input from users.
 
 ## Prerequisites
 
@@ -25,18 +25,18 @@ Language generation (LG) templates make it easy for bot developers to send a var
 
 This LG core bot sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
 
-This article is a bottom up approach to using LG templates in your bots. You will learn how to:
+This article uses a bottom up approach to using LG templates in your bots.You will learn how to:
 
 - create a `Templates` object and [reference templates in your bot logic](#call-templates-in-files)
 - create a [simple response template](#create-a-simple-response-template)
 - create a [conditional response template](#create-a-conditional-response-template)
 - create a [cards template](#create-a-cards-template)
 - create a [structured response template](#create-a-structured-response-template)
-- add [LUIS to your bot]() and [test it](#test-the-bot)
+- add [LUIS to your bot](#add-luis-to-your-bot) and [test it](#test-the-bot)
 
 ## Call templates in files
 
-To use templates in .lg files you need to reference them in your bot logic.
+To use templates in .lg files you need to reference them in your bot logic. The instructions below show you how the LG templates you will create are referenced in your main bot logic by loading them into a `Templates` object. The example uses the templates from **welcomeCard.lg**.
 
 ### [C#](#tab/cs)
 
@@ -49,6 +49,8 @@ Make sure you have the **Microsoft.Bot.Builder.LanguageGeneration** package. Add
 After loading the package create a private `Templates` object called **_templates**:
 
 [!code-csharp[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
+
+The **_templates** object is used to reference templates in your .lg files.
 
 Combine the path for cross-platform support and parse the path that contains **welcomeCard.lg** by adding the following to your code:
 
@@ -72,6 +74,8 @@ To use templates parse **welcomeCard.lg** and save the lg templates to **lgTempl
 
 [!code-javascript[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=11)]
 
+The **lgtemplates** object is used to reference templates in your .lg files.
+
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
 [!code-javascript[reference-welcome-card-template](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43?highlight=3)]
@@ -79,6 +83,8 @@ Now you can can reference templates from the **welcomeCard.lg** by name, seen be
 Notice how the `WelcomeCard` template is referenced in the creation of the **welcomeCard** constant.
 
 ---
+
+Now that your bot can reference templates, it's time to starting creating templates in LG files. By using LG you easily add conversational variety.
 
 ## Create a simple response template
 
@@ -166,48 +172,14 @@ For more information about the `ActivityAttachment()` function, read [inject fun
 
 ---
 
-## Create a LUIS app in the LUIS portal
+## Add LUIS to your bot
 
-Sign in to the LUIS portal to create your own version of the sample LUIS app. You can create and manage your applications on **My Apps**.
+After updating your bot logic and LG templates you are ready to add LUIS to your bot. Follow the steps in the sections below to add LUIS to your bot:
 
-1. Select **Import new app**.
-1. Click **Choose App file (JSON format)...**
-1. Select `FlightBooking.json` file located in the `CognitiveModels` folder of the sample. In the **Optional Name**, enter **FlightBooking**. This file contains three intents: 'Book Flight', 'Cancel', and 'None'. We'll use these intents to understand what the user meant when they send a message to the bot.
-1. [Train](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-train) the app.
-1. [Publish](https://docs.microsoft.com/azure/cognitive-services/LUIS/publishapp) the app to *production* environment.
+- [Create a LUIS app in the LUIS portal](https://aka.ms/bot-service-add-luis-to-bot#create-a-luis-app-in-the-luis-portal).
+- [Retrieve application information in the LUIS portal](https://aka.ms/bot-service-add-luis-to-bot##retrieve-application-information-from-the-luisai-portal)
+- [Update your bot's settings file](https://aka.ms/bot-service-add-luis-to-bot#update-the-settings-file)
 
-## Obtain values to connect to your LUIS app
-
-Once your LUIS app is published, you can access it from your bot. You will need to record several values to access your LUIS app from within your bot. You can retrieve that information using the LUIS portal.
-
-### Retrieve application information from the LUIS.ai portal
-
-The settings file (`appsettings.json`, `.env` or `config.py`) allows you to bring all service references together in one place. The information you retrieve will be added to this file in the next section.
-
-1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
-1. With your published LUIS app open, select the **MANAGE** tab.
-1. Select the **Application Information** tab on the left side. Record the value shown for _Application ID_ as <YOUR_APP_ID>.
-    ![Manage LUIS app - Application Information](../v4sdk/media/how-to-luis/manage-luis-app-app-info.png)
-1. Select the **Azure Resources** tab on the left side. Record the value shown for:_Region_ as <YOUR_REGION> and _Primary key_ as <YOUR_AUTHORING_KEY>.
-    ![Manage LUIS app - Application Information](../v4sdk/media/how-to-luis/manage-luis-app-azure-resources.png)
-
-### Update the settings file
-
-### [C#](#tab/csharp)
-
-Add the information required to access your LUIS app including application id, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
-
-**appsetting.json**
-
-[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
-
-### [JavaScript](#tab/javascript)
-
-Add the information required to access your LUIS app including application id, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
-
-**.env**
-
-[!code[env](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
 ---
 
@@ -230,9 +202,10 @@ At this point the code bot logic will reset and you can continue to create addit
 ## Additional Information
 
 - Read about [structured response templates](language-generation-structured-response-template.md) for more information about activities and cards
-- Reference [.lg file format](../file-format/bot-builder-lg-file-format.md) for more information about .lg files
-- See [Adaptive expressions prebuilt functions reference](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) for more information about prebuilt functions you can user in expressions in your templates
+- Reade [.lg file format](../file-format/bot-builder-lg-file-format.md) for more information about .lg files
+- Read [adaptive expressions prebuilt functions reference](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) for more information about prebuilt functions.
 
+<!--
 ## Next steps
 
-> [!div class="nextstepaction"]
+> [!div class="nextstepaction"]->
