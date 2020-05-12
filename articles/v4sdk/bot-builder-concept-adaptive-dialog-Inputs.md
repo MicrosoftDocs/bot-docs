@@ -75,6 +75,11 @@ A Boolean expression. `true` to let the parent dialog interrupt the input dialog
 
 A Boolean expression. If `true`, always prompt for input; if `false`, only prompt when the bound [property](#property) is null or empty.
 
+<!--TODO P1:
+This is true enough. I lost some sanity following the code down a rabbit hole. The full story is that the input dialog will run the property value (or the evaluation of the value value if _property is null) through all its recognition and validation logic. Thus, if it is null or empty or isn't recognized or doesn't validate, then the input dialog will prompt the user.
+This clarification is probably a low priority, but should happen at some point. Since this logic involves about 4 properties and is a little complex, it would be worth describing outside the list of properties.
+--->
+
 #### DefaultValue
 
 An adaptive expression representing the default result for the input dialog. If the user input fails for [max turn count](#maxturncount) turns, the input dialog ends and sets the default value to this property.
@@ -122,7 +127,7 @@ Prompt = new ActivityTemplate("Hi, What is your name?")
 
 #### Property
 
-A string expression. The memory path of the property to bind the input dialog to. This property is a string will be used as the initial value for the input dialog. The result of this dialog will be placed into this property path in the caller's memory scope. Both the `Prompt` and the `Value` property go through recognition and validation steps, so an invalid initial value will result in a prompt.
+The memory path, or an expression that evaluates to the memory path, of the property to bind the input dialog to. The memory path will be used to get the initial value for the input dialog. It will also be used to store the result of this dialog. Both the `Prompt` and the `Value` property go through recognition and validation steps, so an invalid initial value will result in a prompt.
 
 Use this to define what property the input dialog is bound to. For example:
 
@@ -132,7 +137,7 @@ Property = "user.name"
 
 #### UnrecognizedPrompt
 
-The activity template with which to reprompt for input if the user input is not recognized. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)```
+The activity template with which to reprompt for input if the user input is not recognized. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)
 
 ```csharp
 UnrecognizedPrompt = new ActivityTemplate("Sorry, '{turn.activity.text}' did not include a valid number")
