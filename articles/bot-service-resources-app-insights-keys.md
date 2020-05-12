@@ -54,7 +54,7 @@ To get the API key, do the following:
 
 2. Click **Create API Key**.
 
-3. Enter a short description, check the **Read telementry** option, and click the **Generate key** button.
+3. Enter a short description, check the **Read telemetry** option, and click the **Generate key** button.
 ![Portal screen capture of the Application ID and API Key](~/media/portal-app-insights-appid-apikey.png)
 
    > [!WARNING]
