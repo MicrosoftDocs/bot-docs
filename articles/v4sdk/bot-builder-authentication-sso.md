@@ -52,7 +52,9 @@ This article references two samples: the **RootBot** and the **SkillBot**. The *
 
 - A *root* bot calls one or more skill bots.
 - Both the root and skill bots implement the basic authentication described in the [Add authentication to a bot](bot-builder-authentication.md) article.
-- When the user logs into the root bot, because of the SSO, she is logged into the skill bot, also.
+- The user logs into root bot.
+- Because of the SSO and being already logged into the root bot, she is logged into the skill bot without requiring user interaction again.
+
 
 For an overview of how the Bot Framework handles authentication, see [Bot authentication](bot-builder-concept-authentication.md).
 For SSO background information, see [Single sign on](bot-builder-concept-sso.md).
@@ -73,7 +75,7 @@ For each project in the sample, you need the following:
 [Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
-## Create the Azure AD identity application
+## Create the Azure AD identity for RootBot
 
 The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
@@ -104,7 +106,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 [Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
-## Create the Azure AD identity application
+## Create the Azure AD identity for SkillBot
 
 The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
@@ -322,7 +324,7 @@ The following time-sequence diagram applies to the samples used in the article a
 1. The **RootBot** displays the root token for the user to see.
 1. The user enters the `skill login` command for the **SkillBot**.
 1. The **SkillBot** sends an **OAuthCard** to the **RootBot**.
-1. The **RobBot** asks for an **exchangeable token** from **ABS**.
+1. The **RootBot** asks for an **exchangeable token** from **ABS**.
 1. At this point the SSO "dance" comes into play which ends with the **skill token** sent by the **SkillBot** to the **RootBot**.
 1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
 
@@ -330,8 +332,7 @@ To see how the token exchange happens, please refer to the following example:
 
 # [C#](#tab/csharp)
 
-<!-- Remember to fix the link once the code is published -->
-[!code-csharp[sso-token-exchange](~/../botbuilder-samples-sso/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=90-136)]
+[!code-csharp[sso-token-exchange](~/../botbuilder-samples/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=92-136)]
 
 ---
 
