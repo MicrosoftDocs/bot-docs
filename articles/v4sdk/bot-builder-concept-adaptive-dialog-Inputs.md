@@ -15,7 +15,7 @@ ms.date: 04/27/2020
 The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
 
 > [!IMPORTANT]
-> Actions (_trigger actions_) are adaptive dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the bot framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
+> Actions (_trigger actions_) are dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the bot framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
 
 ## Prerequisites
 
@@ -398,7 +398,7 @@ Use to request an attachment from user as input.
 
 The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines this additional property:
 
-1. `OutputFormat`: `OutputFormat = AttachmentOutputFormat.All` The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
+- `OutputFormat`: The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
     1. `All`: return all attachments as a List.
     2. `First`: return only the first attachment.
 
