@@ -332,6 +332,7 @@ To see how the token exchange happens, please refer to the example shown below. 
 
 # [C#](#tab/csharp)
 
+<!-- Fixed link -->
 [!code-csharp[sso-token-exchange](~/../botbuilder-samples/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=92-136)]
 
 ---
