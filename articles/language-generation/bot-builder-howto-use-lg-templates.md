@@ -31,7 +31,6 @@ This article uses a bottom up approach to using LG templates in your bots.You wi
 - create a [simple response template](#create-a-simple-response-template)
 - create a [conditional response template](#create-a-conditional-response-template)
 - create a [cards template](#create-a-cards-template)
-- create a [structured response template](#create-a-structured-response-template)
 - add [LUIS to your bot](#add-luis-to-your-bot) and [test it](#test-the-bot)
 
 ## Call templates in files
