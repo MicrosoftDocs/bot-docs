@@ -20,7 +20,7 @@ This article shows how to use **Adaptive dialog** and **Language Generation** fe
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **multi turn prompt** sample in either [**C#**][cs-sample], [**JavaScript** preview][js-sample]
+- A copy of the **multi turn prompt** sample in either [**C#**][cs-sample] or [**JavaScript** preview][js-sample].
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
@@ -194,4 +194,3 @@ The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with 
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt
-
