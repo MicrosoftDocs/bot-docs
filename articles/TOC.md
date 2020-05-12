@@ -89,4 +89,6 @@
 ### [BF CLI overview](v4sdk/bf-cli-overview.md)
 ### [BF CLI reference](v4sdk/bf-cli-reference.md)
 ## [Entities and activity types](bot-service-activities-entities.md)
+## LG
+## File formats
 # [Resources](resources/TOC.md)
