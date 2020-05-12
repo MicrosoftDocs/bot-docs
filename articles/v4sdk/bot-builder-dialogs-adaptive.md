@@ -95,7 +95,7 @@ creates an instance of the `AdaptiveDialog` root dialog. At this time, the dialo
 
 The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file. The following code shows how the `Name` prompt is created:
 
-[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=19-124)]
+[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=19-24)]
 
 The following code shows how a prompt is built conditionally:
 
