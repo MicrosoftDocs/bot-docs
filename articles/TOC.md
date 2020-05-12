@@ -46,7 +46,7 @@
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
 ### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
-### [Create a bot using adaptive dialogs](v4sdk/bot-builder-authentication-sso.md)
+### [Add Single sign on to a bot](v4sdk/bot-builder-authentication-sso.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
 ### [Use multiple LUIS and QnA models](v4sdk/bot-builder-tutorial-dispatch.md)
