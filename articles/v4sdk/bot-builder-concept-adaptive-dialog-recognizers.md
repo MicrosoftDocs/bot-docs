@@ -38,7 +38,7 @@ The two primary components of NLP in adaptive dialogs are **recognizers** (langu
 
 ## Language Understanding
 
-**Language Understanding** (LU) is the subset of NLP that deals with how the bot handles user inputs and converts them into something that it can understand and respond to intelligently. This process is achieved through setting up recognizers and providing training data to the dialog so that the **intents** and **entities** contained in the users message can be captured. When the recognizer identifies an intent, it emits an `IntentRecognized` event containing that intent and the [OnIntent trigger][5] that you defined for that intent will execute and preform the actions contained in that trigger.
+**Language understanding** (LU) is the subset of NLP that deals with how the bot handles user inputs and converts them into something that it can understand and respond to intelligently. This process is achieved through setting up recognizers and providing training data to the dialog so that the **intents** and **entities** contained in the users message can be captured. When the recognizer identifies an intent, it emits an `IntentRecognized` event containing that intent and the [OnIntent trigger][5] that you defined for that intent will execute and preform the actions contained in that trigger.
 
 ## Core LU concepts in adaptive dialogs
 
