@@ -216,7 +216,7 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 ```
 
 > [!TIP]
-> The following information will help you learn more about how to incorporate Language Understanding (LU) into your bot using LUIS:
+> The following information will help you learn more about how to incorporate language understanding (LU) into your bot using LUIS:
 >
 > * [LUIS.ai][9] is a machine learning-based service that enables you to build natural language capabilities into your bot.
 > * [What is LUIS][10]
