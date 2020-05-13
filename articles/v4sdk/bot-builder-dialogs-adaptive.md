@@ -26,10 +26,10 @@ This article shows how to use **Adaptive dialog** and **Language Generation** fe
 
 You must follow the steps described below to add an adaptive dialog to a bot.
 
-1. Update all packages to version 4.9.x from the [Nuget](https://www.nuget.org/) site.
-1. Add the `Microsoft.Bot.Builder.Dialogs.Adaptive` package.
-1. Add and configure `DialogManager` in `DialogBot.cs`. This internally takes care of saving state on each turn.
-1. Update the `adapter` to use `storage`, `conversation state` and `user state`.
+1. Update all Bot Builder NuGet packages to version 4.9.x.
+1. Add the `Microsoft.Bot.Builder.Dialogs.Adaptive` package to your bot project.
+1. Update the the bot adapter to add storage and the user and conversation state objects to every turn context.
+1. Use a dialog manager in the bot code to start or continue the root dialog each turn.
 
 ## About the sample
 
@@ -46,15 +46,15 @@ This sample uses an adaptive dialog, a few prompts, and a component dialog to cr
 
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
 
+The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
+
+![Root dialog](media/bot-builder-root-dialog-adaptive.png)
+
 ## Create the main dialog
 
 # [C#](#tab/csharp)
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** and **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet packages.
-
-The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
-
-![Root dialog](media/bot-builder-root-dialog-adaptive.png)
 
 **Dialogs/RootDialog.cs**
 
@@ -83,7 +83,7 @@ The following code shows how a prompt is built conditionally:
 
 # [JavaScript](#tab/javascript)
 
-To use dialogs, your project needs to install the **botbuilder-dialogs**, and the **botbuilder-dialogs-adaptive** npm packages.
+To use dialogs, your project needs to install the **botbuilder-dialogs-adaptive** npm package.
 The sample demonstrates how to use **Adaptive dialog** and **Language Generation** features to achieve the same waterfall model functionality.
 
 At start up, the main dialog `UserProfileDialog` is initialized. The bot uses it to interact with the user.
@@ -152,7 +152,7 @@ Listen for incoming requests and route the message to the bot's main handler.
 **Bots/Dialogs.cs**
 
 The `DialogManager.OnTurnAsync` runs the adaptive dialog with activities.
-The implementation shown can run any type of `Dialog`. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation, and the requirement is that all `BotState` objects are saved at the end of a turn.
+The implementation shown can run any type of `Dialog`. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation. The `DialogManager.OnTurnAsync` method takes care of saving the state.
 
 [!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-41&highlight=21)]
 
