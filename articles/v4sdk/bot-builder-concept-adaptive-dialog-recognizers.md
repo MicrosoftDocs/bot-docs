@@ -23,7 +23,7 @@ Recognizers provide the ability to understand user input. Your adaptive dialog c
 
 ## Introduction to Natural Language Processing in adaptive dialogs
 
-Recognizers, along with [generators][4] constitute the Natural Language Processing (NLP) capabilities in adaptive dialogs. NLP is a technological process that enables computer applications, such as bots, to derive meaning from a users input. To do this it attempts to identify valuable information contained in conversations by interpreting the users needs (intents) and extract valuable information (entities) from a sentence, and respond back in a language the user will understand.
+Recognizers, along with [generators][4] constitute the natural language processing (NLP) capabilities in adaptive dialogs. NLP is a technological process that enables computer applications, such as bots, to derive meaning from a users input. To do this it attempts to identify valuable information contained in conversations by interpreting the users needs (intents) and extract valuable information (entities) from a sentence, and respond back in a language the user will understand.
 
 A bots capabilities would be very minimal without NLP, it is what enables your bot to understand the messages your users send and respond appropriately. When a user sends a message with “Hello”, it is the bots Natural Language Processing capabilities that enables it to know that the user posted a standard greeting, which in turn allows your bot to leverage its AI capabilities to come up with a proper response. In this case, your bot can respond with a greeting.
 
