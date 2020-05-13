@@ -18,9 +18,9 @@ The bot framework SDK follows the same paradigms as modern web applications and 
 
 ## Prerequisites
 
-* A general understanding of [how bots work][1] in the Bot Framework V4 SDK is helpful.
-* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see [Introduction to adaptive dialogs][2] and [Dialog libraries][3].
-* See the bot framework SDK [Managing state][1] article for an overview of state management in BotBuilder V4 SDK.
+* A general understanding of [how bots work][1].
+* A general understanding of adaptive dialogs. For more information, see [Introduction to adaptive dialogs][2] and [Dialog libraries][3].
+* See the bot framework SDK [Managing state][1] article for an overview of state management.
 
 ## Managing state
 
