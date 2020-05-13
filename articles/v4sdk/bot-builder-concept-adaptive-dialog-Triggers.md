@@ -209,12 +209,12 @@ var myDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by ActivityType. The Base class that all message triggers derive from is `OnActivity`.
 
-| Event cause      | ActivityType    | Trigger name             | Description                                                                                         |
-| ---------------- | --------------- | ------------------------ | --------------------------------------------------------------------------------------------------- |
-| Message received | Message         | OnMessageActivity        | Actions to perform on receipt of an activity with type 'MessageReceived'. Overrides Intent trigger. |
-| Message deleted  | MessageDeletion | OnMessageDeleteActivity  | Actions to perform on receipt of an activity with type 'MessageDelete'.                             |
-| Message reaction | MessageReaction | OnMessageReactionActivity| Actions to perform on receipt of an activity with type 'MessageReaction'.                           |
-| Message updated  | MessageUpdate   | OnMessageUpdateActivity  | Actions to perform on receipt of an activity with type 'MessageUpdate'.                             |
+| Event cause      | ActivityType    | Trigger name             | Description                                                               |
+| ---------------- | --------------- | ------------------------ | ------------------------------------------------------------------------- |
+| Message received | Message         | OnMessageActivity        | Actions to perform on receipt of an activity with type 'MessageReceived'. | <!--Overrides Intent trigger.-->
+| Message deleted  | MessageDeletion | OnMessageDeleteActivity  | Actions to perform on receipt of an activity with type 'MessageDelete'.   |
+| Message reaction | MessageReaction | OnMessageReactionActivity| Actions to perform on receipt of an activity with type 'MessageReaction'. |
+| Message updated  | MessageUpdate   | OnMessageUpdateActivity  | Actions to perform on receipt of an activity with type 'MessageUpdate'.   |
 
 <!--TODO P1: Need Message event examples
 #### Message event examples
@@ -228,9 +228,9 @@ You can emit your own events by adding the [EmitEvent][13] action to any trigger
 > [!TIP]
 > You can allow other dialogs in your bot to handle your custom event by setting the EmitEvent's `BubbleEvent` property to true.
 
-| Event cause  | Trigger name  | Base event          | Base class  | Description                                                                                                   |
-| ------------ | ------------- | ------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
-| Custom event | OnDialogEvent | See [EmitEvent][13] | OnCondition | Actions to perform when a custom event is detected. Use 'Emit a custom event' action to raise a custom event. |
+| Event cause  | Trigger name  | Base class  | Description                                                                                                        |
+| ------------ | ------------- | ----------- | ------------------------------------------------------------------------------------------------------------------ |
+| Custom event | OnDialogEvent | OnCondition | Actions to perform when a custom event is detected. Use [Emit a custom event][13]' action to raise a custom event. |
 
 <!--Was: OnCustomEvent-->
 
