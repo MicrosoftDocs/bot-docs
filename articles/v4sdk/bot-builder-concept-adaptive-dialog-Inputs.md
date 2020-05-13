@@ -304,6 +304,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
 2. `Choices`: An adaptive expression that evaluates to a ChoiceSet that contains the [ordered] list of choices for the user to choose from.
 3. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
 4. `OutputFormat`: an adaptive expression that evaluates to one of the `ChoiceOutputFormat` enumeration values:
+~~~csharp
                 switch (this.OutputFormat.GetValue(dc.State))
                 {
                     case ChoiceOutputFormat.Value:
@@ -314,6 +315,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
                         dc.State.SetValue(VALUE_PROPERTY, foundChoice.Index);
                         break;
                 }
+~~~
 5. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
     1. `None`: Don't include any choices for prompt.
     2. `Auto`: Automatically select the appropriate style for the current channel.
