@@ -166,7 +166,7 @@ See [language generation in adaptive dialogs][9] to learn more about using langu
 
 #### IfCondition
 
-Used to represent a branch in the conversational flow based on a specific condition. Conditions are expressed using [the common expression language][10]. 
+Branches the conversational flow based on a specific condition. Conditions are expressed using [the common expression language][10]. 
 
 ``` C#
 var addToDoDialog = new AdaptiveDialog("addToDoDialog");
