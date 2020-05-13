@@ -87,7 +87,7 @@ new PropertyAssignment()
 
 ## Dialog scope
 
-Dialog scope persists data for the life of the dialog, providing memory space for each dialog to have internal persistent bookkeeping. Dialog scope is cleared when dialog ends. You can access properties available under the `dialog.XXX` scope via `$XXX`. `$` is a shorthand for `dialog` memory scope.
+Dialog scope persists data for the life of the associated dialog, providing memory space for each dialog to have internal persistent bookkeeping. Dialog scope is cleared when the associated dialog ends.
 
 Dialog scopes shorthand examples:
 
