@@ -36,7 +36,7 @@ This makes it possible for bots built using the Bot Framework SDK to do things l
 * Store user profiles and preferences.
 * Remember things between sessions such as the last search query or the last selection made by the user.
 
-[Adaptive dialogs][2] provides a way to access and manage memory and all adaptive dialogs use this model, meaning that all components that read from or write to memory have a consistent way to handle information within the appropriate scopes.
+Adaptive dialogs provide a way to access and manage memory and all adaptive dialogs use this model, meaning that all components that read from or write to memory have a consistent way to handle information within the appropriate scopes.
 
 > [!NOTE]
 > All memory properties, in all memory scopes, are property bags, meaning you can add properties to them as needed.
