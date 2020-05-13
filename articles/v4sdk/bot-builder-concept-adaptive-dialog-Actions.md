@@ -19,8 +19,8 @@ Actions help to create and maintain the bots conversation flow once an event is 
 
 ## Prerequisites
 
-* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see [introduction to adaptive dialogs][1]
-* A general understanding of [Events and triggers in adaptive dialogs][2].
+* [Introduction to adaptive dialogs][1]
+* [Events and triggers in adaptive dialogs][2].
 
 ## Actions
 
@@ -29,7 +29,7 @@ Actions that are included with the bot framework SDK provide the ability to perf
 * Branching and looping
 * Dialog management tasks such as starting a new dialog or cancelling, ending or repeating a dialog.
 * Memory management tasks such as creating, deleting or editing a property saved in memory.
-* Accessing external resources such as sending an [Http Request](#httprequest).
+* Accessing external resources such as sending an [HTTP Request](#httprequest).
 * Preforming an [OAuth login request][4] and many others.
 
 >[!TIP]
@@ -42,9 +42,9 @@ Adaptive dialogs support the following actions:
 
 ### Sending a response
 
-| Activity to accomplish | Action Name                   | What this action does                  |
-| ---------------------- | ----------------------------- | -------------------------------------- |
-| Respond to a user      | [SendActivity](#sendactivity) | Enables you to respond to your users.  |
+| Activity to accomplish                         | Action Name                   | What this action does                  |
+| ---------------------------------------------- | ----------------------------- | -------------------------------------- |
+| Send any activity such as responding to a user.| [SendActivity](#sendactivity) | Enables you send any type of activity such as responding to users or in the Teams channel, you could send an invoke activity to get information about a user or thread.  |
 
 ### Requesting user input
 
