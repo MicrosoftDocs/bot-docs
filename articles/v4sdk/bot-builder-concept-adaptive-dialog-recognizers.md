@@ -125,6 +125,8 @@ Adaptive dialogs support the following recognizers:
 * [RecognizerSet](#recognizer-set)
 * [Value recognizer](#value-recognizer)
 
+<!--TODO P2: Post R9, refactor the linked content out of this article and into one or more reference-like articles.-->
+
 ### RegexRecognizer
 
 The _RegEx recognizer_ gives you the ability to extract intent and entity data from an utterance based on regular expression patterns. 
