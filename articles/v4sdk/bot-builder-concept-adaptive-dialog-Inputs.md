@@ -207,7 +207,7 @@ The `NumberInput` action inherits all of the properties defined in [InputDialog]
 <!--https://blog.botframework.com/2018/02/01/contributing-luis-microsoft-recognizers-text-part-2/-->
 
 1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: Using [adaptive expressions][10] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in fahrenheit to its equivalent celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
+2. `OutputFormat`: Using [adaptive expressions][10] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in Fahrenheit to its equivalent Celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
 
 #### NumberInput example
 
