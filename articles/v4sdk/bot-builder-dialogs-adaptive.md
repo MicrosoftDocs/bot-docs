@@ -51,16 +51,15 @@ The code uses a dialog to cycle through these steps:
 
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
 
-The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
-
-![Root dialog](media/bot-builder-root-dialog-adaptive.png)
-
 ## Create the main dialog
 
 # [C#](#tab/csharp)
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package.
 
+The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
+
+![Root dialog](media/bot-builder-root-dialog-adaptive.png)
 **Dialogs/RootDialog.cs**
 
 The code begins by instantiating the `RootDialog` class which in turns creates an instance of the `AdaptiveDialog`. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog.
@@ -104,13 +103,11 @@ At start up, the main dialog `UserProfileDialog` is initialized. The bot uses it
 The code begins by instantiating the `UserProfileDialog ` class which in turns
 creates an instance of the `AdaptiveDialog` root dialog. At this time, the dialog steps are created using the **Language Generation** templates.
 
-The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file. The following code shows how the `Name` prompt is created:
+The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file.
 
-[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=20-24)]
+[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=11-17)]
 
-The following code shows how a prompt is built conditionally:
-
-[!code-javascript[userProfileDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=39-64)]
+[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=92-97)]
 
 
 ---
@@ -132,13 +129,13 @@ You register the adaptive dialogs in the `Startup` class, along with the other s
 
 **index.js**
 
-The code registers the adaptive dialog and services in `index.js`. In particular, it registers:
+The code creates the component dialog and services in `index.js`. In particular:
 
-- Adaptive dialog.
+- The root component dialog.
 - Basic services for a bot: a credential provider, an adapter, and the bot implementation.
 - Services for managing state: storage, user state, and conversation state.
 
-Import required bot services and the adaptive dialog class `userProfileDialog`.
+Import the required bot services and the component dialog class `userProfileDialog`.
 
 [!code-javascript[index-import](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13)]
 
@@ -172,8 +169,9 @@ The implementation shown can run any type of `Dialog`. The `ConversationState` i
 **bots/dialogBot.js**
 
 The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with activities.
+The state information contained by the`conversationState` and the `userState` are stored for the `dialogManager` to use.
 
-[!code-javascript[DialogBot](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=19-21)]
+[!code-javascript[DialogBot](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=13-14,19-21)]
 
 ---
 
