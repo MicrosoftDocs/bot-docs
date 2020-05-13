@@ -20,7 +20,7 @@ Actions help to create and maintain the bots conversation flow once an event is 
 ## Prerequisites
 
 * [Introduction to adaptive dialogs][1]
-* [Events and triggers in adaptive dialogs][2].
+* [Events and triggers in adaptive dialogs][2]
 
 ## Actions
 
@@ -95,7 +95,7 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 
 For code samples see [Dialog management examples](#dialog-management-examples).
 
-<!--TODO P1: Revisit table structure for actions: https://github.com/MicrosoftDocs/bot-docs-pr/pull/2115#discussion_r420272686 --->
+<!--TODO P1: Revisit table structure for activities: https://github.com/MicrosoftDocs/bot-docs-pr/pull/2115#discussion_r420272686 --->
 
 ### Manage properties
 
