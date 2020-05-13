@@ -909,7 +909,6 @@ new HttpRequest()
 #### OnQnAMakerDialog
 
 Use this to to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][13]. <!-Need details like sample app's name etc--->
--->
 
 #### EmitEvent
 
