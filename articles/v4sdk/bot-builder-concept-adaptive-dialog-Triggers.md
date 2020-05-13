@@ -56,7 +56,7 @@ Triggers = new List<OnCondition>()
 | Assign entity to property | OnAssignEntity| RecognizedIntent | Triggered to assign an entity to a property.                      |
 | Choose entity             | OnChooseEntity| RecognizedIntent | Occurs when there are multiple possible resolutions of an entity. |
 | Choose Intent | OnChooseIntent |ChooseIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
-| Intent recognized| [OnIntent](#Recognizer-trigger-examples)| RecognizedIntent | Actions to perform when specified intent is recognized.           |
+| Intent recognized| OnIntent | RecognizedIntent | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|OnQnAMatch| RecognizedIntent |This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
 |Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)| UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
 
