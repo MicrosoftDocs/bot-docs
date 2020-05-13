@@ -10,7 +10,7 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 
-# Add Single sign on to a bot
+# Add single sign on to a bot
 
 <!--Added TOC entry -->
 
