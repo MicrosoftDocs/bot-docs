@@ -128,7 +128,7 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 ### Sending a response example
 
-#### SendActivity
+#### Send activity
 
 Sends an activity.
 
