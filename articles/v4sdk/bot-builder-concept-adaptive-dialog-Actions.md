@@ -48,7 +48,7 @@ Adaptive dialogs support the following actions:
 
 ### Requesting user input
 
-See [Asking for user input using adaptive dialogs][7].
+For information on how you request user input, see [Asking for user input using adaptive dialogs][7].
 
 >[!TIP]
 > Inputs are an important and very useful type of action that is covered in the [Inputs in adaptive dialogs][5] article.
@@ -73,7 +73,7 @@ The remaining actions relate to looping statements which enable you to repeat th
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog which when, will return to the caller.    |
-| Cancel dialog          | [CancelDialog](#cancelalldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process. Emits the `CancelDialog` event.|
+| Cancel a dialog        | [CancelDialog](#cancelalldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process. Emits the `CancelDialog` event.|
 | Cancel all dialogs     | [CancelAllDialogs](#cancelalldialogs)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 | End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
@@ -83,7 +83,7 @@ The remaining actions relate to looping statements which enable you to repeat th
 | DeleteActivity        | [DeleteActivity](#deleteactivity) | Enables you to delete an activity that was sent.                          |
 | Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in memory.|
 | GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
-| EditActions    | [EditActions](#editactions) | Enables you to edit the current action on the fly based on user input. Especially useful when handling [interruptions][6]. |
+| EditActions    | [EditActions](#editactions) | Enables you to edit the current action on the fly based on user input. Especially useful when handling interruptions. <!--TODO: [interruptions][6]--> |
 
 ### Manage properties
 
@@ -99,22 +99,13 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 | Activity to accomplish | Action Name                | What this action does                                                                                       |
 | ---------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [AdaptiveSkillDialog](#adaptiveskilldialog) | TBD:TODO                                                                                   |
+| Begin a skill dialog   | [AdaptiveSkillDialog](#adaptiveskilldialog) | Use the adaptive skill dialog to run a skill.                                              |
 | Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                                          |
 | Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8].               |
 | Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user.                                                       |
 | Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code.                                                                   |
 
-<!--| Connect to a QnA KB    | [OnQnMakerDialog](#qnamakerdialog)| Why use this since Once QnA Maker is set as a recognizer on a dialog, you can use the OnQnAMatch trigger to render the answer.|-->
-
-> [!IMPORTANT]
-> **TODO**: Need information and/or sample code for:
->
-> 1. **"Begin a skill dialog"**
-> 2. **"Connect to a QnA Knowledgebase" NOTE:** ***YOU DON'T NEED OR WANT TO CONNECT USING THE OnQnMakerDialog - CONNECT TO THE RECOGNIZER THEN USE THE OnQnAMatch TRIGGER***
-
 ### Debugging options
-
 
 | Activity to accomplish | Action Name                     | What this action does                                                       |
 | ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
@@ -166,7 +157,7 @@ See [language generation in adaptive dialogs][9] to learn more about using langu
 
 #### IfCondition
 
-Branches the conversational flow based on a specific condition. Conditions are expressed using [the common expression language][10]. 
+Branches the conversational flow based on a specific condition. Conditions are expressed using [the common expression language][10].
 
 ``` C#
 var addToDoDialog = new AdaptiveDialog("addToDoDialog");
@@ -288,7 +279,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### ForEachPage
 
-Retrieves consecutive pages of results from a collection. Page size denotes how many items from the collection are selected at a time.
+Used to apply steps to items in a collection. Page size denotes how many items from the collection are selected at a time.
 
 ```C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -870,11 +861,15 @@ addToDoDialog.Triggers.Add(new OnIntent()
 
 #### AdaptiveSkillDialog
 
+The Adaptive skill dialog starts the skill, manages the forwarding of activities to the skill and receiving activities from the skill, and processes the skill result if any when the skill ends.
+
 <!-- TODO--->
 
 #### HttpRequest
 
 Use this to make HTTP requests to any endpoint.
+
+<!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.--->
 
 ``` C#
 new HttpRequest()
