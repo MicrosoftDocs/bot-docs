@@ -20,7 +20,7 @@ Adaptive dialogs introduce a new event based approach to model conversations. An
 
 * [How bots work][10]
 * [Introduction to adaptive dialogs][1]
-* [dialog libraries][5]
+* [Dialog libraries][5]
 
 ## Anatomy of a trigger
 
