@@ -46,7 +46,7 @@ The two primary components of NLP in adaptive dialogs are **recognizers** (langu
 
 Intents are how you categorize expected user intentions as expressed in their messages to your bot. You can think of an intent as a representation of the action the user wants to accomplish, the purpose or goal expressed in their input. Such things as booking a flight, paying a bill, or finding a news article. You define and name intents that correspond to these actions. For example any bot might define an intent named _Greeting_, a travel app might create an intent named _BookFlight_. Intents are defined in a language understanding template file (.lu), these files are text files with a .lu extension and generally reside in the same directory, and have the same name as your dialog.  For example your root dialog would contain a language understanding template file named **RootDialog.lu**
 
-Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use - or + or * to denote lists. Numbered lists are not supported.  
+Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use a `-`, `+`, or `*` character to denote lists. Numbered lists are not supported.  
 
 ```dos
 # Greeting
