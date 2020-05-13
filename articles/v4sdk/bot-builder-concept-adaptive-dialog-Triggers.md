@@ -14,7 +14,9 @@ ms.date: 04/27/2020
 
 Adaptive dialogs introduce a new event based approach to model conversations. Any sub-system in your bot can emit events and all adaptive dialogs contain one or more event handlers called _triggers_ that enable you to react to these events.  Any time an event fires, the active adaptive dialog's triggers are evaluated and if any trigger matches the current event, the [actions][2] associated with that trigger execute. If an event is not handled in the active dialog, it will be passed up to its parent dialog to be evaluated. This process continues until it is either handled or reaches the bots root dialog. If no event handler (_trigger_) is found, the event will be ignored and no action will be taken.
 
-<!--TODO P2: preBubble/consultation/postBubble phases https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r418164608 --->
+<!--TODO P1: preBubble/consultation/postBubble phases https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r418164608
+There is also the post-bubble/trailing-edge process where everyone who didn't handle the event on the leading-edge gets a second chance on the trailing edge, from the root back down to the leaf.
+--->
 
 ## Prerequisites
 
@@ -24,9 +26,11 @@ Adaptive dialogs introduce a new event based approach to model conversations. An
 
 ## Anatomy of a trigger
 
+ A trigger is made up of a condition and one or more actions. Bot Framework SDK offers several triggers, each with a set of predefined conditions that examine either the eventName or eventValue. You can add additional conditions to a trigger, giving you additional control when the trigger executes.
+
 The Bot Framework SDK provides various pre-defined triggers designed to handle common event types.  For example the `OnIntent` trigger fires anytime the [recognizer][8] detects an [intent][6]. If you are using a [LUIS][7] recognizer it will also return a [prediction score][9] that measures the degree of confidence LUIS has for its prediction results. In order to increase the reliability and accuracy of your bot, you may only want to execute the `OnIntent` trigger if the confidence rating is 80% or higher. You can accomplish this by adding a _condition_. Triggers all contain an optional `Condition` property that when defined, must evaluate to _true_ in order for the trigger to execute. The `Condition` property is a string, but must contain a valid [adaptive expression][4] to work. The above examples `Condition` property would look something like: `Condition = "#<IntentName>.Score >= 0.8"`. Adaptive expressions enable sophisticated conditions that can handle virtually any scenario that you might have.
 
-All triggers also contain a list of _Actions_. Actions contain the code that will execute when an event occurs.  This is the heart of the trigger. You can learn more about actions and what built in actions are provided in the Bot Framework SDK in the article [Actions in adaptive dialogs][2].
+All triggers also contain a list of _Actions_. Actions represent what your bot does in response to a trigger.  This is the heart of the trigger. You can learn more about actions and what built in actions are provided in the Bot Framework SDK in the article [Actions in adaptive dialogs][2].
 
 ## Trigger types
 
@@ -169,6 +173,10 @@ var adaptiveDialog = new AdaptiveDialog()
 Activity triggers enable you to associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][3].
 
 All activity events have a base event of `ActivityReceived` and are further refined by their `ActivityType`. The Base class that all activity triggers derive from is `OnActivity`.
+
+
+| Trigger name     | Base event   | Description                                                                    |
+| ---------------- | ------------ | ------------------------------------------------------------------------------ |
 
 | Event cause         | ActivityType | Trigger name                 | Description                                                                       |
 | ------------------- | ------------ | ---------------------------- | --------------------------------------------------------------------------------- |
