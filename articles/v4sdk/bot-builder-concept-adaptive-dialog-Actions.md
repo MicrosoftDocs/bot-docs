@@ -40,7 +40,7 @@ Actions that are included with the Bot Framework SDK provide the ability to perf
 
 Adaptive dialogs support the following actions:
 
-### Sending a response
+### Send a response
 
 | Activity to accomplish                         | Action Name                   | What this action does                  |
 | ---------------------------------------------- | ----------------------------- | -------------------------------------- |
