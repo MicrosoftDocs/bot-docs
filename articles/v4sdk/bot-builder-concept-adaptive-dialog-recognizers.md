@@ -19,7 +19,7 @@ Recognizers provide the ability to understand user input. Your adaptive dialog c
 ## Prerequisites
 
 * A general understanding of [how bots work][1] in the Bot Framework V4 SDK is helpful.
-* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see [Introduction to adaptive dialogs][2] and [Dialog libraries][3].
+* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see the [introduction to adaptive dialogs][2] and the [dialogs library][3].
 
 ## Introduction to Natural Language Processing in adaptive dialogs
 
