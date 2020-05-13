@@ -56,7 +56,7 @@ Here are the different memory scopes available in adaptive dialogs:
 
 ## User scope
 
-User scope is persistent data scoped to the id of the user you are conversing with.  
+User scope is persistent data scoped to the ID of the user you are conversing with.  
 
 Examples:
 
