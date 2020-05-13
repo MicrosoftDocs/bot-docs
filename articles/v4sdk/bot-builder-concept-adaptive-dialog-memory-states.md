@@ -24,7 +24,7 @@ The bot framework SDK follows the same paradigms as modern web applications and 
 
 ## Managing state
 
-A bot is inherently stateless, which might be fine for your needs. For some bots, this simplicity is preferred because the bot can either operate without additional information, or the information required is guaranteed to be contained within the incoming activity. For other bots, state (such as where in the conversation we are or the response received from the user) is necessary for the bot to have a useful conversation.
+A bot is inherently stateless. For some bots, the bot can either operate without additional information, or the information required is guaranteed to be contained within the incoming activity. For other bots, state (such as where in the conversation we are or the response received from the user) is necessary for the bot to have a useful conversation.
 
 The Bot Framework SDK provides memory scope api that enables Developers to store and retrieve values in the bot's memory, and can use those values when processing loops and branches, when creating dynamic messages and other behaviors in the bot.
 
