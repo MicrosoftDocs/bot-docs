@@ -130,7 +130,7 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 #### SendActivity
 
-Used to send an activity to user.
+Sends an activity.
 
 ``` C#
 // Example of a simple SendActivity step
