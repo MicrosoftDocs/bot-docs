@@ -88,6 +88,8 @@
 ## BF CLI tool reference
 ### [BF CLI overview](v4sdk/bf-cli-overview.md)
 ### [BF CLI reference](v4sdk/bf-cli-reference.md)
+## Adaptive expressions
+### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ## LG
 ### [.lg file format](file-format/bot-builder-lg-file-format.md)
 ### [Structured response template](language-generation/language-generation-structured-response-template.md)
