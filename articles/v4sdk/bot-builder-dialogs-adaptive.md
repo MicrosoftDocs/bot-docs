@@ -60,6 +60,7 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet pac
 The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
 
 ![Root dialog](media/bot-builder-root-dialog-adaptive.png)
+
 **Dialogs/RootDialog.cs**
 
 The code begins by instantiating the `RootDialog` class which in turns creates an instance of the `AdaptiveDialog`. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog.
@@ -187,10 +188,12 @@ The state information contained by the`conversationState` and the `userState` ar
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive-sample.png)
 
+<!--
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Create a bot using adaptive, component, waterfall, and custom dialogs](bot-builder-mixed-dialogs.md)
+-->
 
 <!-- Footnote-style links -->
 
