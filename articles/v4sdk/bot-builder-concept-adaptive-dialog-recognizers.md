@@ -325,7 +325,7 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 
 ### Recognizer set
 
-Sometimes you might need to run more than one recognizer on every turn of the conversation. Recognizer set does exactly that. All recognizer are run on each turn of the conversation and the result is a union of all recognition results.
+Sometimes you might need to run more than one recognizer on every turn of the conversation. The recognizer set does exactly that. All recognizers are run on each turn of the conversation and the result is a union of all recognition results.
 
 ```C#
 var adaptiveDialog = new AdaptiveDialog()
