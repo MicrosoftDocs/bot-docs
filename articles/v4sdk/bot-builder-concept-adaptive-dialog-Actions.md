@@ -205,7 +205,7 @@ addToDoDialog.Triggers.Add(new OnIntent()
 
 #### SwitchCondition
 
-Used to represent branching in conversational flow based on the outcome of an expression evaluation. See [the common expression language][10] for more information.
+Branches a conversational flow based on the outcome of an expression evaluation. See [the common expression language][10] for more information.
 
 ``` C#
 // Create an adaptive dialog.
