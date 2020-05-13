@@ -1,6 +1,6 @@
 ---
-title: Events and triggers - Bot framework SDK - adaptive dialogs
-description: Collecting user input using adaptive dialogs
+title: Events and triggers in adaptive dialogs
+description: Events and triggers in adaptive dialogs
 keywords: bot, user, Events, triggers, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
@@ -14,10 +14,13 @@ ms.date: 04/27/2020
 
 Adaptive dialogs introduce a new event based approach to model conversations. Any sub-system in your bot can emit events and all adaptive dialogs contain one or more event handlers called _triggers_ that enable you to react to these events.  Any time an event fires, the active adaptive dialog's triggers are evaluated and if any trigger matches the current event, the [actions][2] associated with that trigger execute. If an event is not handled in the active dialog, it will be passed up to its parent dialog to be evaluated. This process continues until it is either handled or reaches the bots root dialog. If no event handler (_trigger_) is found, the event will be ignored and no action will be taken.
 
+<!--TODO P2: preBubble/consultation/postBubble phases https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r418164608 --->
+
 ## Prerequisites
 
-* A general understanding of [how bots work][10] in the Bot Framework V4 SDK is helpful.
-* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see [introduction to adaptive dialogs][1] and [dialog libraries][5].
+* [how bots work][10]
+* [Introduction to adaptive dialogs][1]
+* [dialog libraries][5]
 
 ## Anatomy of a trigger
 
@@ -35,7 +38,7 @@ Each table in the following sections list all of the triggers supported by adapt
 
 ### Base trigger
 
-The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of OnCondition objects:
+The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` objects as demonstrated in the following example:
 
 ```csharp
 Triggers = new List<OnCondition>()
