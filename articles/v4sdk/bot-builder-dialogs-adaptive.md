@@ -125,7 +125,7 @@ To allow the use of the adaptive dialog, the start up code must register the dia
 
 You register the adaptive dialogs in the `Startup` class, along with the other services.
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Startup.cs?range=21-54&highlight=5-15)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Startup.cs?range=21-54&highlight=5-18)]
 
 # [JavaScript](#tab/javascript)
 
