@@ -346,7 +346,7 @@ var adaptiveDialog = new AdaptiveDialog()
 };
 ```
 
-### Cross trained recognizer set
+### Cross-trained recognizer set
 
 Cross trained recognizer set compares recognition results from more than one recognizer to decide a winner. Given a collection of recognizers, cross-trained recognizer will:
 
