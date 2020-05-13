@@ -47,7 +47,8 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "dotnet",
-      "author": "dotnet-bot"
+      "author": "dotnet-bot",
+      "uhfHeaderId": "azure"
     },
     "fileMetadata": {},
     "template": [],
