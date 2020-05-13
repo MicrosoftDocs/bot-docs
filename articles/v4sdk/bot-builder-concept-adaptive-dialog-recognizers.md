@@ -227,7 +227,7 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 
 ### QnA Maker Recognizer
 
-[QnAMaker.ai][18] is one of the [Azure cognitive services][19] that enables you to create rich question-answer pairs from existing content - documents, urls, pdfs etc. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][18] is one of the [Microsoft Cognitive Services][19] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 > [!NOTE]
 > QnA Maker Recognizer will emit a `QnAMatch`event which you can handle with an `OnQnAMatch` trigger.
