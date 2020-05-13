@@ -118,11 +118,13 @@ If the user enters _Seattle_ for the `Origin`, _Paris_ for the `Destination`, an
 
 A [conditional response template](../file-format/bot-builder-lg-file-format.md#conditional-response-template) lets you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](../v4sdk/bot-builder-concept-adaptive-expressions.md).
 
-The `# PromptForMissingInformation` template in **BookingDialog.lg** is an example of an [if-else template](../file-format/bot-builder-lg-file-format.md#conditional-response-template). In the template, the user is prompted for pieces of information if their properties are set to `null`:
+The `# PromptForMissingInformation` template in **BookingDialog.lg** is an example of an [if-else template](../file-format/bot-builder-lg-file-format.md#conditional-response-template). The if-else template lets you build a template that picks a collection based on a cascading order of conditions. In the template, the user is prompted for pieces of information if their properties are set to `null`:
 
 **Resources/BookingDialog.lg**
 
 [!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=31-39)]
+
+If a property is null then the bot will call the template associated with that property. If all properties are non-null values then the `# ConfirmBooking` template is called. 
 
 ### Reference other templates
 
