@@ -35,7 +35,7 @@ Actions that are included with the Bot Framework SDK provide the ability to perf
 >[!TIP]
 > Unlike a waterfall dialog where each step is a function, each action in an adaptive dialog is a fully functional dialog with all of the power and flexibility that entails. This enables adaptive dialogs by design to:
 >
-> * Provide an easier way to handle [interruptions][6].
+> * Provide an easier way to handle interruptions. <!--TODO P1: [interruptions][6]-->
 > * Branch conditionally based on context or state.
 
 Adaptive dialogs support the following actions:
@@ -46,9 +46,11 @@ Adaptive dialogs support the following actions:
 | ---------------------------------------------- | ----------------------------- | -------------------------------------- |
 | Send any activity such as responding to a user.| [SendActivity](#sendactivity) | Enables you send any type of activity such as responding to users or in the Teams channel, you could send an invoke activity to get information about a user or thread.  |
 
+For a code sample see [Send a response example](#send-a-response-example).
+
 ### Requesting user input
 
-For information on how you request usera input, see [Asking for user input using adaptive dialogs][7].
+For information on how you request user input, see [Asking for user input using adaptive dialogs][7].
 
 >[!TIP]
 > _Inputs_ are an important and very useful type of action that is covered in the [Asking for user input using adaptive dialogs][7] article.
@@ -69,6 +71,8 @@ The remaining actions relate to looping statements which enable you to repeat th
 | Continue a loop        | [ContinueLoop](#continue-loop) | Continue the loop.                                                                               |
 | Goto a different Action| [GotoAction](#goto-action) | Immediately goes to the specified action and continues execution. Determined by actionId.            |
 
+For code samples see [Create a condition examples](#create-a-condition-examples).
+
 <!--TODO P1: Regarding BreakLoop & ContinueLoop - Need better explanation.
 There's a mix of concepts going on here. There's the action sequence, which are the action list that's getting run for any given trigger. And then there are dialogs, which are either a parent dialog, a child dialog, or an action in the chain. Reducing confusion between action sequences and dialogs would probably help.  -->
 
@@ -87,7 +91,9 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | DeleteActivity        | [DeleteActivity](#deleteactivity) | Enables you to delete an activity that was sent.                          |
 | Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in memory.|
 | GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
-| EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO: [interruptions][6]--> |
+| EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
+
+For code samples see [Dialog management examples](#dialog-management-examples).
 
 <!--TODO P1: Revisit table structure for actions: https://github.com/MicrosoftDocs/bot-docs-pr/pull/2115#discussion_r420272686 --->
 
@@ -101,6 +107,8 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Create or update a property | [SetProperty](#SetProperty)      | This enables you to set a property's value in memory.                     |
 | Create or update properties | [SetProperties](#SetProperties)  | This enables you to initialize one or more properties in a single action. |
 
+For code samples see [Manage properties examples](#manage-properties-examples).
+
 ### Access external resources
 
 | Activity to accomplish | Action Name                | What this action does                                                                                       |
@@ -111,6 +119,8 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user.                                                       |
 | Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code.                                                                   |
 
+For code samples see [Access external resource examples](#access-external-resource-examples).
+
 ### Debugging options
 
 | Activity to accomplish | Action Name                     | What this action does                                                       |
@@ -118,9 +128,11 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Log to console         | [LogAction](#LogStep)           | Writes to the console and optionally sends the message as a trace activity. |
 | Emit a trace event     | [TraceActivity](#TraceActivity) | Sends a trace activity with whatever payload you specify.                   |
 
+For code samples see [Debugging option examples](#debugging-option-examples).
+
 ## Source code examples
 
-### Sending a response example
+### Send a response example
 
 #### Send activity
 
@@ -896,7 +908,7 @@ new HttpRequest()
 <!--
 #### OnQnAMakerDialog
 
-Use this to to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][16]. <!-Need details like sample app's name etc--->
+Use this to to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][13]. <!-Need details like sample app's name etc--->
 -->
 
 #### EmitEvent
@@ -1070,7 +1082,4 @@ new LogStep()
 [10]:PlaceholderFor-adaptiveExpressions
 [11]:bot-builder-adaptive-dialog-memoryscopes.md
 [12]:https://www.qnamaker.ai/
-[13]:https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp
-[14]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs
-[15]:https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.ai.qna.dialogs.qnamakerdialog?view=botbuilder-dotnet-stable
-[16]:https://github.com/microsoft/BotBuilder-Samples
+[13]:https://github.com/microsoft/BotBuilder-Samples
