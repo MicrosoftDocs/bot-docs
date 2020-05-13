@@ -171,7 +171,7 @@ Value = "=@fromCity.location"
 
 #### turn.interrupted
 
-`turn.interrupted`, a boolean property which if `true` indicates that an interruption has occurred.
+`turn.interrupted`, a Boolean property; `true` indicates that an interruption has occurred.
 
 ## Settings scope
 
