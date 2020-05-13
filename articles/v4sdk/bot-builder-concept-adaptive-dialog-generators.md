@@ -20,14 +20,14 @@ Generators tie a specific [language generation (LG)](bot-builder-concept-languag
 ## Prerequisites
 
 - Knowledge of [adaptive dialogs](bot-builder-adaptive-dialog-introduction.md)
-- Knowledge of [recognizers](bot-builder-adaptive-dialog-Recognizers.md) in adaptive dialogs
+- Knowledge of [recognizers](bot-builder-adaptive-dialog-recognizers.md) in adaptive dialogs
 - Knowledge of [adaptive expressions](bot-builder-concept-adaptive-expressions.md)
 
 ## Language generation
 
 Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
-LG, along with [recognizers](bot-builder-adaptive-dialog-Recognizers.md), enables clean separation and encapsulation of a dialog's Language Understanding and language generation assets. Recognizers give your bot the ability to understand input and LG lets your bot respond to that input in an intelligent way.
+LG, along with [recognizers](bot-builder-adaptive-dialog-recognizers.md), enables clean separation and encapsulation of a dialog's Language Understanding and language generation assets. Recognizers give your bot the ability to understand input and LG lets your bot respond to that input in an intelligent way.
 
 In this article you will learn about the LG templates that add variety and personality to bot responses, and how to call those templates in your root dialog using the `TemplateEngineLanguageGenerator`.
 
@@ -41,11 +41,11 @@ Templates are the core concept of the language generation system. Variations in 
     - an [adaptive expression](bot-builder-concept-adaptive-expressions.md)
     - a list of one-of variation text values per condition
 
-Templates are defined in [.lg](language-generation/bot-builder-lg-file-format.md) files, which can contain one or more templates. There are three types of templates:
+Templates are defined in [.lg](../file-format/bot-builder-lg-file-format.md) files, which can contain one or more templates. There are three types of templates:
 
-- [simple response](language-generation/bot-builder-lg-file-format.md#simple-response-template)
-- [conditional response](language-generation/bot-builder-lg-file-format.md#conditional-response-template)
-- [structured response](language-generation/bot-builder-lg-file-format.md#structured-response-template)
+- [simple response](../file-format/bot-builder-lg-file-format.md#simple-response-template)
+- [conditional response](../file-format/bot-builder-lg-file-format.md#conditional-response-template)
+- [structured response](../file-format/bot-builder-lg-file-format.md#structured-response-template)
 
 ### Simple response template
 
@@ -62,9 +62,9 @@ Here's an example of a simple response template with two variations:
 
 ### Conditional response template
 
-Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](bot-builder-concept-adaptive-expressions.md), both [prebuilt](adaptive-expressions/adaptive-expressions-prebuilt-functions.md) and custom.
+Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](bot-builder-concept-adaptive-expressions.md), both [prebuilt](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) and custom.
 
-There are two types of conditional response templates: [if-else](language-generation/bot-builder-lg-file-format.md#if-else-template) and [switch](language-generation/bot-builder-lg-file-format.md#switch-template).
+There are two types of conditional response templates: [if-else](../file-format/bot-builder-lg-file-format.md#if-else) and [switch](../file-format/bot-builder-lg-file-format.md#switch-case).
 
 #### If-else template
 
@@ -115,7 +115,7 @@ Here's the definition of a structured response template:
 ]
 ```
 
-Read [structured response template](language-generation/language-generation-structured-response-template.md) for more information and examples of complex templates.
+Read [structured response template](../language-generation/language-generation-structured-response-template.md) for more information and examples of complex templates.
 
 ## Call templates in your root dialog
 
@@ -160,6 +160,6 @@ In the example above, the bot calls the `# FinalUserProfileReadOut` template and
 
 ## Additional Information
 
-- [.lg file format](language-generation/bot-builder-lg-file-format.md)
-- [Structured response template](language-generation/language-generation-structured-response-template.md)
-- [Adaptive expression prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
+- [.lg file format](../file-format/bot-builder-lg-file-format.md)
+- [Structured response template](../language-generation/language-generation-structured-response-template.md)
+- [Adaptive expression prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
