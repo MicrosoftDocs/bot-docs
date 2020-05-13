@@ -90,7 +90,7 @@ The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defin
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=77-141&highlight=88-92,102-130)]
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=77-141&highlight=12-16,17-49)]
 
 # [JavaScript](#tab/javascript)
 
