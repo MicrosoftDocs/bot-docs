@@ -121,7 +121,7 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 
 ### Dialog events
 
-The dialog triggers handle dialog specific events which are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the bot framework SDK and they all derive from the `OnDialogEvent` class.
+The dialog triggers handle dialog specific events that are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the Bot Framework SDK and they all derive from the `OnDialogEvent` class.
 
 > You should use _dialog triggers_ to:
 >
