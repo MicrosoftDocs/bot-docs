@@ -43,9 +43,9 @@ The code uses a dialog to cycle through these steps:
 > [!div class="mx-tdCol2BreakAll"]
 > | Steps        | LG template  |
 > |:-------------|:-------------|
-> | Ask the users for their mode of transportation | `ModeOfTransportPrompt` |
-> | Ask the users for their name | `AskForName` |
-> | Ask the users if they want to provide their age | `AgeConfirmPrompt` |
+> | Ask the user for their mode of transportation | `ModeOfTransportPrompt` |
+> | Ask the user for their name | `AskForName` |
+> | Ask the user if they want to provide their age | `AgeConfirmPrompt` |
 > | If they answered yes, asks for their age | `AskForAge` prompt with validation to only accept ages greater than 0 and less than 150 |
 > | Asks if the collected information is "ok" | `ConfirmPrompt` prompt |
 
