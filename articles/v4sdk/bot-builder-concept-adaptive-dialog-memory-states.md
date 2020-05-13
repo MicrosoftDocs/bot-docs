@@ -89,7 +89,7 @@ new PropertyAssignment()
 
 Dialog scope persists data for the life of the associated dialog, providing memory space for each dialog to have internal persistent bookkeeping. Dialog scope is cleared when the associated dialog ends.
 
-Dialog scopes shorthand examples:
+Dialog scope shorthand examples:
 
 ```markdown
 The shorthand for `dialog.orderStarted`:
