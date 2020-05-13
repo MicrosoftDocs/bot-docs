@@ -48,10 +48,10 @@ Adaptive dialogs support the following actions:
 
 ### Requesting user input
 
-For information on how you request user input, see [Asking for user input using adaptive dialogs][7].
+For information on how you request usera input, see [Asking for user input using adaptive dialogs][7].
 
 >[!TIP]
-> Inputs are an important and very useful type of action that is covered in the [Inputs in adaptive dialogs][5] article.
+> _Inputs_ are an important and very useful type of action that is covered in the [Asking for user input using adaptive dialogs][7] article.
 
 ### Create a condition
 
@@ -67,12 +67,16 @@ The remaining actions relate to looping statements which enable you to repeat th
 | Loop: for each page (multiple items) | [ForEachPage](#foreachpage) | Loop through a large set of values stored in an array one page at a time.             |
 | Exit a loop            | [BreakLoop](#break-loop)   | Break out of a loop.                                                                                 |
 | Continue a loop        | [ContinueLoop](#continue-loop) | Continue the loop.                                                                               |
+| Goto a different Action| [GotoAction](#goto-action) | Immediately goes to the specified action and continues execution. Determined by actionId.            |
+
+<!--TODO P1: Regarding BreakLoop & ContinueLoop - Need better explanation.
+There's a mix of concepts going on here. There's the action sequence, which are the action list that's getting run for any given trigger. And then there are dialogs, which are either a parent dialog, a child dialog, or an action in the chain. Reducing confusion between action sequences and dialogs would probably help.  -->
 
 ### Dialog management
 
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
-| Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog which when, will return to the caller.    |
+| Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.    |
 | Cancel a dialog        | [CancelDialog](#cancelalldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process. Emits the `CancelDialog` event.|
 | Cancel all dialogs     | [CancelAllDialogs](#cancelalldialogs)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 | End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
@@ -83,7 +87,9 @@ The remaining actions relate to looping statements which enable you to repeat th
 | DeleteActivity        | [DeleteActivity](#deleteactivity) | Enables you to delete an activity that was sent.                          |
 | Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in memory.|
 | GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
-| EditActions    | [EditActions](#editactions) | Enables you to edit the current action on the fly based on user input. Especially useful when handling interruptions. <!--TODO: [interruptions][6]--> |
+| EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO: [interruptions][6]--> |
+
+<!--TODO P1: Revisit table structure for actions: https://github.com/MicrosoftDocs/bot-docs-pr/pull/2115#discussion_r420272686 --->
 
 ### Manage properties
 
@@ -92,8 +98,8 @@ The remaining actions relate to looping statements which enable you to repeat th
 | Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
 | Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from memory.                        |
 | Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Set a property         | [SetProperty](#setproperty)           | This enables you to set a property's value in memory.                     |
-| Set properties         | [SetProperties](#setproperties)       | This enables you to initialize one or more properties in a single action. |
+| Create or update a property | [SetProperty](#SetProperty)      | This enables you to set a property's value in memory.                     |
+| Create or update properties | [SetProperties](#SetProperties)  | This enables you to initialize one or more properties in a single action. |
 
 ### Access external resources
 
@@ -108,12 +114,8 @@ The remaining actions relate to looping statements which enable you to repeat th
 ### Debugging options
 
 | Activity to accomplish | Action Name                     | What this action does                                                       |
-| ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| Log to console         | [LogAction](#logstep)           | Writes to the console and optionally sends the message as a trace activity. |
-| Emit a trace event     | [TraceActivity](#traceactivity) | Enables you to send trace activities with what ever payload you specify.    |
-
-<!-------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------------------------------------------------------------------->
+| Log to console         | [LogAction](#LogStep)           | Writes to the console and optionally sends the message as a trace activity. |
+| Emit a trace event     | [TraceActivity](#TraceActivity) | Sends a trace activity with whatever payload you specify.                   |
 
 ## Source code examples
 
@@ -315,7 +317,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### Break Loop
 
-Break out of a loop
+Breaks out of a loop or the current action sequence.
 
 ```C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -364,7 +366,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### Continue Loop
 
-Continue current loop without processing rest of the statements within the loop.
+Continues the current loop or action sequence without processing the rest of the statements.
 
 ```C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -445,7 +447,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 #### BeginDialog
 
-Invoke and begin a new dialog. `BeginDialog` requires the name of the target dialog, which can be any type of dialog, it is not limited to Adaptive dialogs.
+Starts a new dialog and pushes it onto the dialog stack. `BeginDialog` requires the name of the target dialog, which can be any type of dialog including Adaptive dialog or Waterfall dialog etc.
 
 The `BeginDialog` action defines a property named `ResultProperty` that allows you to specify where to save the results when the dialog ends. By default, `resultProperty` is set to `dialog.results` so anything that is set in that [memory scope][11] will automatically be returned to the caller when the adaptive dialog ends.
 
@@ -462,7 +464,9 @@ new BeginDialog("BookFlightDialog")
 
 #### EndDialog
 
-Ends the active dialog. By default, adaptive dialogs have a `resultProperty` set to `dialog.results`' so anything that is set in that memory scope will automatically be returned to the caller when the dialog ends. In addition the `EndDialog` action has the `value` property which contains a value that is passed back to the caller of the dialog.
+Ends the active dialog by popping it off the stack and returns an optional result to the dialog's parent.
+
+By default, adaptive dialogs have a `resultProperty` set to `dialog.results` so anything that is set in that memory scope will automatically be returned to the caller when the dialog ends. In addition the `EndDialog` action has the `value` property which contains a value that is passed back to the caller of the dialog.
 
 ``` C#
 new EndDialog()
@@ -477,7 +481,7 @@ new EndDialog()
 
 #### CancelAllDialog
 
-Cancels all active dialogs including any active parent dialogs.
+Deletes all dialogs on the stack, including parent and child dialogs.
 
 ``` C#
 new CancelAllDialog()
@@ -493,10 +497,12 @@ new EndTurn()
 
 #### RepeatDialog
 
-Repeat dialog will restart the parent dialog. This is particularly useful if you are trying to have a conversation where the bot is paging results to the user that they can navigate through.
+Restarts the parent dialog. This is particularly useful if you are trying to have a conversation where the bot is paging results to the user that they can navigate through.
 
 > [!IMPORTANT]
 > Make sure to use `EndTurn()` or one of the Inputs to collect information from the user so you do not accidentally end up implementing an infinite loop.
+
+<!--TODO P2: Need a better code example--->
 
 ``` C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -557,7 +563,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### ReplaceDialog
 
-Replace current dialog with a new dialog by name.
+Starts a new dialog and replaces on the stack the currently active dialog with the new one.
 
 ``` C#
 // This sample illustrates the use of ReplaceDialog tied to explicit user confirmation
@@ -625,7 +631,7 @@ getUserName.Triggers.Add(new OnIntent()
 
 #### Update activity
 
-Update an activity that was sent.
+Updates an activity that was previously sent. Requires the ID of the previous activity.
 
 ```C#
 new UpdateActivity ()
@@ -637,7 +643,7 @@ new UpdateActivity ()
 
 #### Delete activity
 
-Deletes an activity that was sent. You must provide the activities `activityId` to specify the activity to delete.
+Deletes an activity that was previously sent. Requires the ID of the previous activity.
 
 ```C#
 new DeleteActivity ()
@@ -869,7 +875,8 @@ The Adaptive skill dialog starts the skill, manages the forwarding of activities
 
 Use this to make HTTP requests to any endpoint.
 
-<!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.--->
+<!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.
+the body property supports adaptive expressions, so it contains the body of the request or an expression that evaluates to the body of the request. --->
 
 ``` C#
 new HttpRequest()
