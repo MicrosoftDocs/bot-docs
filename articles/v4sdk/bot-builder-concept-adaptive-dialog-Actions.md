@@ -160,7 +160,7 @@ greetUserDialog.Triggers.Add(new OnIntent()
 });
 ```
 
-See [Language Generation in Adaptive Dialogs][9] to learn more about using language generation instead of hard coding actual response text in the SendActivity action.
+See [language generation in adaptive dialogs][9] to learn more about using language generation instead of hard coding actual response text in the _send activity_ action.
 
 ### Create a condition examples
 
