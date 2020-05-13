@@ -103,7 +103,7 @@ DefaultValueResponse = new ActivityTemplate("Sorry, we have reach the maximum nu
 The activity template with which to reprompt for input if the user input is recognized but fails validation. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)
 
 >[!NOTE]
-> The `InvalidPrompt` property works only in conjunction with the [Validations][#validations] property.
+> The `InvalidPrompt` property works only in conjunction with the [Validations](#validations) property.
 
 ```csharp
 InvalidPrompt = new ActivityTemplate("Sorry, {this.value} does not work. Please enter a number between one and ten (1-10).")
