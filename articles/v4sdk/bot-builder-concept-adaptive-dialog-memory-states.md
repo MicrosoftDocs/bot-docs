@@ -16,6 +16,8 @@ The terms _Stateful_ and _stateless_ are adjectives that describe whether an app
 
 The bot framework SDK follows the same paradigms as modern web applications and does not actively manage state, however the Bot Framework SDK does provide some abstractions that make state management much easier to incorporate into your bot. This topic is covered in detail in the bot framework SDK [Managing state][1] article, it is recommended that you read and understand the information covered in that article before reading this article.
 
+<!--TODO P2: reword this so it doesn't sound like the contents of this article are a summary of the managing state article. -->
+
 ## Prerequisites
 
 * A general understanding of [how bots work][1].
@@ -125,7 +127,7 @@ Each incoming [activity][5] to the bot is available via `turn.activity` scope.
 
 For example, you might have something like this defined in our .lg file to respond to a user that entered an invalid value when prompted for their age:
 
-```dockerfile
+```.lg
 Sorry, I do not understand '${turn.activity.text}'. ${GetAge()}
 ```
 
@@ -178,7 +180,7 @@ Value = "=@fromCity.location"
 This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you are developing your bot using C#, these settings will appear in the `appsettings.json` file, if you are developing your bot using JavaScript, these settings will appear in the `.env` file or the `config.py` file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope..
 
 ### Settings scope example
-
+<!--TODO P2: rewrite this with language tabs for C#/JS. -->
 This is an example of an appsettings.json that holds configuration settings for your bot:
 
 ```json
@@ -216,10 +218,12 @@ This example shows a common usage in a bots startup class:
 ### This scope example
 
 ```csharp
-public Startup(IConfiguration configuration, IHostingEnvironment env)
+new TextInput()
 {
-    this.Configuration = configuration;
-    this.HostingEnvironment = env;
+    property = "user.name",
+    prompt = new ActivityTemplate("what is your name?"),
+    defaultValue = "Human",
+    defaultValueResponse = new ActivityTemplate("Sorry, I still am not getting it after ${this.turnCount} attempts. For now, I'm setting your name to '${class.defaultValue}' for now. You can always say 'My name is <your name>' to re-introduce yourself to me.")
 }
 ```
 
