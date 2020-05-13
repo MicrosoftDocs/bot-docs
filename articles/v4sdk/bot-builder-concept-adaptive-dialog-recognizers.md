@@ -350,8 +350,8 @@ var adaptiveDialog = new AdaptiveDialog()
 
 The cross-trained recognizer set compares recognition results from more than one recognizer to decide a winner. Given a collection of recognizers, the cross-trained recognizer will:
 
-* Promote the recognition result of one of the recognizer if all other recognizers defer recognition to a single recognizer. To defer recognition, a recognizer can return `None` intent or an explicit `DeferToRecognizer_recognizerId` as intent.
-* Returns an `OnChooseIntent` intent which denotes confusability among recognizers. Each recognizer's results are returned via `turn.recognized.candidates`. This enables you to then use rules or other disambiguation techniques to decide an actual winner.
+* Promote the recognition result of one of the recognizer if all other recognizers defer recognition to a single recognizer. To defer recognition, a recognizer can return the `None` intent or an explicit `DeferToRecognizer_recognizerId` as intent.
+* Raises an `OnChooseIntent` event to allow your code to choose which recognition result to use. Each recognizer's results are returned via the `turn.recognized.candidates` property. This enables you to choose the most appropriate result.
 
 ```C#
 var adaptiveDialog = new AdaptiveDialog()
