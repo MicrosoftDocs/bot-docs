@@ -67,7 +67,7 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 > [!NOTE]
 >
 > * The `OnIntent` trigger enables you to handle the 'recognizedIntent' event. The 'recognizedIntent' event is raised by the [recognizer][8]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
-> * Use the `OnUnknownIntent` trigger to catch and respond when a 'recognizedIntent' event was not caught and handled by any of the other trigger. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
+> * Use the `OnUnknownIntent` trigger to catch and respond when a 'recognizedIntent' event was not caught and handled by any of the other triggers. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
 ``` C#
 // Create the root dialog as an Adaptive dialog.
