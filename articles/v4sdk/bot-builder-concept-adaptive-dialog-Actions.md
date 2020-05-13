@@ -114,6 +114,7 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 ### Debugging options
 
 | Activity to accomplish | Action Name                     | What this action does                                                       |
+| ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
 | Log to console         | [LogAction](#LogStep)           | Writes to the console and optionally sends the message as a trace activity. |
 | Emit a trace event     | [TraceActivity](#TraceActivity) | Sends a trace activity with whatever payload you specify.                   |
 
