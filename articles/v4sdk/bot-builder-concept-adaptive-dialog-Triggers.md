@@ -18,7 +18,7 @@ Adaptive dialogs introduce a new event based approach to model conversations. An
 
 ## Prerequisites
 
-* [how bots work][10]
+* [How bots work][10]
 * [Introduction to adaptive dialogs][1]
 * [dialog libraries][5]
 
