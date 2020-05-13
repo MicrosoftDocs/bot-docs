@@ -41,21 +41,18 @@ Adaptive dialogs provide a way to access and manage memory and all adaptive dial
 > [!NOTE]
 > All memory properties, in all memory scopes, are property bags, meaning you can add properties to them as needed.
 
-See [When to use each type of state][3] in the article _Managing state_ for guidance on when to use each scope.
-
 Here are the different memory scopes available in adaptive dialogs:
 
-* [Managing state](#managing-state)
-  * [User scope](#user-scope)
-  * [Conversation scope](#conversation-scope)
-  * [Dialog scope](#dialog-scope)
-    * [Dialog sub-scopes](#dialog-sub-scopes)
-  * [Turn scope](#turn-scope)
-    * [Turn sub-scopes](#turn-sub-scopes)
-  * [Settings scope](#settings-scope)
-  * [This scope](#this-scope)
-  * [Class scope](#class-scope)
-  * [Memory short-hand notations](#memory-short-hand-notations)
+* [User scope](#user-scope)
+* [Conversation scope](#conversation-scope)
+* [Dialog scope](#dialog-scope)
+  * [Dialog sub-scopes](#dialog-sub-scopes)
+* [Turn scope](#turn-scope)
+  * [Turn sub-scopes](#turn-sub-scopes)
+* [Settings scope](#settings-scope)
+* [This scope](#this-scope)
+* [Class scope](#class-scope)
+* [Memory short-hand notations](#memory-short-hand-notations)
 
 ## User scope
 
