@@ -1,5 +1,5 @@
 ---
-title: Actions - Bot framework SDK - adaptive dialogs
+title: Actions - Bot Framework SDK - adaptive dialogs
 description: Collecting user input using adaptive dialogs
 keywords: bot, user, Events, triggers, adaptive dialogs
 author: WashingtonKayaker
