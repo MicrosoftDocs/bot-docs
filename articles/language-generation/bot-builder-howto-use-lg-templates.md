@@ -31,7 +31,8 @@ This article uses a bottom up approach to using LG templates in your bots.You wi
 - create a [simple response template](#create-a-simple-response-template)
 - create a [conditional response template](#create-a-conditional-response-template)
 - create a [cards template](#create-a-cards-template)
-- add [LUIS to your bot](#add-luis-to-your-bot) and [test it](#test-the-bot)
+- add [LUIS to your bot](#add-luis-to-your-bot)
+- [test your bot](#test-the-bot)
 
 ## Call templates in files
 
@@ -95,7 +96,7 @@ The simple response templates in **BookingDialog.lg**, like `# PromptForDestinat
 
 [!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=4-6)]
 
-For example, a call to `# PromptForDepartureCity`, see above, will produce one of the two possible text prompts:
+For example, a call to `# PromptForDepartureCity`, seen above, will produce one of the two possible text prompts:
 
 - _Where would you like to travel to?_
 - _What is your destination city?_
@@ -106,7 +107,7 @@ Like more complex templates, simple response templates can reference memory. In 
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=7-9)]
+[!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=17-19)]
 
 If the user enters _Seattle_ for the `Origin`, _Paris_ for the `Destination`, and _05/24/2020_ for the `TravelDate`, your bot will produce one of the following results:
 
@@ -121,7 +122,7 @@ The `# PromptForMissingInformation` template in **BookingDialog.lg** is an examp
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG??range=31-39)]
+[!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=31-39)]
 
 ### Reference other templates
 
@@ -131,13 +132,13 @@ For example, if `Destination` equals `null`, then the `# PromptforDestinationCit
 
 ## Create a cards template
 
-Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the Adaptive card that displays when you first start the bot.
+Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the [Adaptive Card](https://aka.ms/msbot-adaptivecards) that displays when you first start the bot.
 
 `# Adaptive Card` defines an Adaptive card JSON object:
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=25-57)]
+[!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=24-57)]
 
 This card displays an image, and uses LG templates for the card header a set of suggested actions.
 
@@ -161,6 +162,8 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
+---
+
 Finally the `# WelcomeCard` calls the `# AdaptiveCard` template to return the Adaptive card JSON object.
 
 **Resources/welcomeCard.lg**
@@ -178,9 +181,6 @@ After updating your bot logic and LG templates you are ready to add LUIS to your
 - [Create a LUIS app in the LUIS portal](https://aka.ms/bot-service-add-luis-to-bot#create-a-luis-app-in-the-luis-portal).
 - [Retrieve application information in the LUIS portal](https://aka.ms/bot-service-add-luis-to-bot##retrieve-application-information-from-the-luisai-portal)
 - [Update your bot's settings file](https://aka.ms/bot-service-add-luis-to-bot#update-the-settings-file)
-
-
----
 
 ## Test the bot
 
@@ -200,9 +200,9 @@ At this point the code bot logic will reset and you can continue to create addit
 
 ## Additional Information
 
-- Read about [structured response templates](language-generation-structured-response-template.md) for more information about activities and cards
-- Reade [.lg file format](../file-format/bot-builder-lg-file-format.md) for more information about .lg files
-- Read [adaptive expressions prebuilt functions reference](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) for more information about prebuilt functions.
+- [Structured response templates](language-generation-structured-response-template.md)
+- [.lg file format](../file-format/bot-builder-lg-file-format.md)
+- [Adaptive expressions prebuilt functions reference](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 
 <!--
 ## Next steps
