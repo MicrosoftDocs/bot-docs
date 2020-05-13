@@ -20,7 +20,7 @@ This article shows how to use **Adaptive dialog** and **Language Generation** fe
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **multi turn prompt** sample in either [**C#**][cs-sample], [**JavaScript** preview][js-sample]
+- A copy of the **multi turn prompt** sample in either [**C#**][cs-sample] or [**JavaScript** preview][js-sample].
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
@@ -33,7 +33,12 @@ You must follow the steps described below to add an adaptive dialog to a bot.
 
 ## About the sample
 
-This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The questions are created using LG templates defined in [RootDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.lg) (C#) and [userProfileDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.lg) (JavaScript). The code uses a dialog to cycle through these steps:
+This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The questions are created using LG templates:
+
+- For C#, defined in [RootDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.lg)
+- For JavaScript, defined in [userProfileDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.lg) (JavaScript).
+
+The code uses a dialog to cycle through these steps:
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Steps        | LG template  |
@@ -76,7 +81,7 @@ The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defin
 
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=88-92)]
 
-The following code shows how a prompt is built conditionally:
+The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=102-130)]
 
@@ -135,7 +140,7 @@ Create conversation state with in-memory storage provider.
 
 [!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54)]
 
-Create the main dialog.
+Create the main dialog and the bot.
 
 [!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=57-58)]
 
@@ -174,7 +179,7 @@ The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with 
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator, connect to your bot, and send messages as shown below.
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive-sample.png)
 
@@ -194,4 +199,3 @@ The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with 
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/vishwac/r9/js/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt
-
