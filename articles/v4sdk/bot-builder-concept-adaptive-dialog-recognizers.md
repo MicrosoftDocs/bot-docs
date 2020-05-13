@@ -31,22 +31,22 @@ Without NLP, your bot can’t meaningfully differentiate between when a user ent
 
 One of the most significant challenges when it comes to NLP in your bot is the fact that users have a blank slate regarding what they can say to your bot. While you can try to predict what users will and will not say, there are bound to be conversations that you did not anticipate, fortunately the Bot Framework SDK provide the tools you need to continually refine your bots NLP capabilities.
 
-The two primary components of NLP in adaptive dialogs are **recognizers** (Language Understanding) that processes and interprets _user input_ which is the focus of this article, and [**generators**][4] (Language Generation) that produces _bot responses_, it is the process of producing meaningful phrases and sentences in the form of natural language. Simply put, it is when your bot responds to a user with human readable language.
+The two primary components of NLP in adaptive dialogs are **recognizers** (language understanding) that processes and interprets _user input_ which is the focus of this article, and [**generators**][4] (language generation) that produces _bot responses_, it is the process of producing meaningful phrases and sentences in the form of natural language. Simply put, it is when your bot responds to a user with human readable language.
 
 > [!TIP]
 > While it is common for users to communicate with your bot by typing or speaking a message, the recognizer is the sub-system that you can use to process any form of user input whether it is spoken, typed, clicked (like when responding to [adaptive cards][21]), even other modalities such as a geolocation recognizer or a gaze recognizer can be used. The recognizer layer abstracts away the complexities of processing user input from triggers and actions. That way your triggers and actions do not need to interpret the various types of user inputs but instead let the recognizers do it.
 
 ## Language Understanding
 
-**Language Understanding** (LU) is the subset of NLP that deals with how the bot handles user inputs and converts them into something that it can understand and respond to intelligently. This process is achieved through setting up recognizers and providing training data to the dialog so that the **intents** and **entities** contained in the users message can be captured. When the recognizer identifies an intent, it emits an `IntentRecognized` event containing that intent and the [OnIntent trigger][5] that you defined for that intent will execute and preform the actions contained in that trigger.
+**Language understanding** (LU) is the subset of NLP that deals with how the bot handles user inputs and converts them into something that it can understand and respond to intelligently. This process is achieved through setting up recognizers and providing training data to the dialog so that the **intents** and **entities** contained in the users message can be captured. When the recognizer identifies an intent, it emits an `IntentRecognized` event containing that intent and the [OnIntent trigger][5] that you defined for that intent will execute and preform the actions contained in that trigger.
 
 ## Core LU concepts in adaptive dialogs
 
 ### Intents
 
-Intents are how you categorize expected user intentions as expressed in their messages to your bot. You can think of an intent as a representation of the action the user wants to accomplish, the purpose or goal expressed in their input. Such things as booking a flight, paying a bill, or finding a news article. You define and name intents that correspond to these actions. For example any bot might define an intent named _Greeting_, a travel app might create an intent named _BookFlight_. Intents are defined in a language understanding template file (.lu), these files are text files with a .lu extension and generally reside in the same directory, and have the same name as your dialog.  For example your RootDialog would contain a language understanding template file named **RootDialog.lu**
+Intents are how you categorize expected user intentions as expressed in their messages to your bot. You can think of an intent as a representation of the action the user wants to accomplish, the purpose or goal expressed in their input. Such things as booking a flight, paying a bill, or finding a news article. You define and name intents that correspond to these actions. For example any bot might define an intent named _Greeting_, a travel app might create an intent named _BookFlight_. Intents are defined in a language understanding template file (.lu), these files are text files with a .lu extension and generally reside in the same directory, and have the same name as your dialog.  For example your root dialog would contain a language understanding template file named **RootDialog.lu**
 
-Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use - or + or * to denote lists. Numbered lists are not supported.  
+Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use a `-`, `+`, or `*` character to denote lists. Numbered lists are not supported.  
 
 ```dos
 # Greeting
@@ -68,7 +68,7 @@ Utterances (_trigger phrases_) are inputs from users and as such may contain a n
 
 Entities are a collection of objects, each consisting of data extracted from an utterance that add additional, clarifying information describing the intent such as places, times, and people. Entities and intents are both important pieces of data that are extracted from an utterance. Utterances will general include an intent and may include zero or more entities that provide important details related to the intent.
 
-Entities in the [.lu file format][6] are defined in this format: {\<entityName\>=\<labelled value\>}, such as {toCity=seattle} (EntityName is _toCity_ and labelled value is _seattle_).  For example:
+Entities in the [.lu file format][6] are defined in this format: `{\<entityName\>=\<labelled value\>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
 
 ```dos
 # BookFlight
@@ -197,11 +197,11 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 >
 > * RegexRecognizer will emit a 'None' intent when the input utterance does not match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
 > * RegexRecognizer is useful for testing and quick prototyping. For more sophisticated bots we recommend using the LUIS recognizer.
-> * You might find the Regular Expression Language (RegEx) [Quick Reference][7] helpful.
+> * You might find the regular expression language (RegEx) [Quick Reference][7] helpful.
 
 ### LUIS recognizer
 
-Language Understanding (LUIS) is a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information. The LUIS recognizer enables you to extract intents and entities from a users utterance based on the defined LUIS application, which you train in advance.
+Language Understanding Intelligent Service (LUIS) is a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information. The LUIS recognizer enables you to extract intents and entities from a users utterance based on the defined LUIS application, which you train in advance.
 
 To create a LUIS recognizer:
 
@@ -218,7 +218,7 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 ```
 
 > [!TIP]
-> The following information will help you learn more about how to incorporate Language Understanding (LU) into your bot using LUIS:
+> The following information will help you learn more about how to incorporate language understanding (LU) into your bot using LUIS:
 >
 > * [LUIS.ai][9] is a machine learning-based service that enables you to build natural language capabilities into your bot.
 > * [What is LUIS][10]
@@ -229,7 +229,7 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 
 ### QnA Maker Recognizer
 
-[QnAMaker.ai][18] is one of the [Azure cognitive services][19] that enables you to create rich question-answer pairs from existing content - documents, urls, pdfs etc. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][18] is one of the [Microsoft Cognitive Services][19] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 > [!NOTE]
 > QnA Maker Recognizer will emit a `QnAMatch`event which you can handle with an `OnQnAMatch` trigger.
