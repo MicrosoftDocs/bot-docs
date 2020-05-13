@@ -288,7 +288,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### ForEachPage
 
-Used to apply steps to items in a collection. Page size denotes how many items from the collection are selected at a time.
+Retrieves consecutive pages of results from a collection. Page size denotes how many items from the collection are selected at a time.
 
 ```C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
