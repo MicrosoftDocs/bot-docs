@@ -270,7 +270,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 ### Multi-language recognizer
 
-When building a sophisticated multi-lingual bot, you will typically have one recognizer tied to a specific language x locale. The Multi-language recognizer enables you to easily specify the recognizer to use based on the [locale][8] property on the incoming activity from a user.
+When building a sophisticated multi-lingual bot, you will typically have one recognizer tied to a specific language and locale. The Multi-language recognizer enables you to easily specify the recognizer to use based on the [locale][8] property on the incoming activity from a user.
 
 ``` C#
 var rootDialog = new AdaptiveDialog("rootDialog")
