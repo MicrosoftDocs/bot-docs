@@ -195,7 +195,7 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 >
 > * RegexRecognizer will emit a 'None' intent when the input utterance does not match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
 > * RegexRecognizer is useful for testing and quick prototyping. For more sophisticated bots we recommend using the LUIS recognizer.
-> * You might find the Regular Expression Language (RegEx) [Quick Reference][7] helpful.
+> * You might find the regular expression language (RegEx) [Quick Reference][7] helpful.
 
 ### LUIS recognizer
 
