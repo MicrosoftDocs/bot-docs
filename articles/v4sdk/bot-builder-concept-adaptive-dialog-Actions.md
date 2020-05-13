@@ -24,7 +24,7 @@ Actions help to create and maintain the bots conversation flow once an event is 
 
 ## Actions
 
-Actions that are included with the bot framework SDK provide the ability to perform conditional coding such as:
+Actions that are included with the Bot Framework SDK provide the ability to perform conditional coding such as:
 
 * Branching and looping
 * Dialog management tasks such as starting a new dialog or cancelling, ending or repeating a dialog.
