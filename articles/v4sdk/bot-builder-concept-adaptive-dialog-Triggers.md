@@ -18,15 +18,15 @@ Adaptive dialogs introduce a new event based approach to model conversations. An
 
 ## Prerequisites
 
-* [how bots work][10]
+* [How bots work][10]
 * [Introduction to adaptive dialogs][1]
-* [dialog libraries][5]
+* [Dialog libraries][5]
 
 ## Anatomy of a trigger
 
-The bot framework SDK provides various pre-defined triggers designed to handle common event types.  For example the `OnIntent` trigger fires anytime the [recognizer][8] detects an [intent][6]. If you are using a [LUIS][7] recognizer it will also return a [prediction score][9] that measures the degree of confidence LUIS has for its prediction results. In order to increase the reliability and accuracy of your bot, you may only want to execute the `OnIntent` trigger if the confidence rating is 80% or higher. You can accomplish this by adding a _condition_. Triggers all contain an optional `Condition` property that when defined, must evaluate to _true_ in order for the trigger to execute. The `Condition` property is a string, but must contain a valid [adaptive expression][4] to work. The above examples `Condition` property would look something like: `Condition = "#<IntentName>.Score >= 0.8"`. Adaptive expressions enable sophisticated conditions that can handle virtually any scenario that you might have.
+The Bot Framework SDK provides various pre-defined triggers designed to handle common event types.  For example the `OnIntent` trigger fires anytime the [recognizer][8] detects an [intent][6]. If you are using a [LUIS][7] recognizer it will also return a [prediction score][9] that measures the degree of confidence LUIS has for its prediction results. In order to increase the reliability and accuracy of your bot, you may only want to execute the `OnIntent` trigger if the confidence rating is 80% or higher. You can accomplish this by adding a _condition_. Triggers all contain an optional `Condition` property that when defined, must evaluate to _true_ in order for the trigger to execute. The `Condition` property is a string, but must contain a valid [adaptive expression][4] to work. The above examples `Condition` property would look something like: `Condition = "#<IntentName>.Score >= 0.8"`. Adaptive expressions enable sophisticated conditions that can handle virtually any scenario that you might have.
 
-All triggers also contain a list of _Actions_. Actions contain the code that will execute when an event occurs.  This is the heart of the trigger. You can learn more about actions and what built in actions are provided in the bot framework SDK in the article [Actions in adaptive dialogs][2].
+All triggers also contain a list of _Actions_. Actions contain the code that will execute when an event occurs.  This is the heart of the trigger. You can learn more about actions and what built in actions are provided in the Bot Framework SDK in the article [Actions in adaptive dialogs][2].
 
 ## Trigger types
 
@@ -58,7 +58,7 @@ Triggers = new List<OnCondition>()
 | Choose Intent | OnChooseIntent |ChooseIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
 | Intent recognized| OnIntent | RecognizedIntent | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|OnQnAMatch| RecognizedIntent |This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
-|Unknown intent recognized|[OnUnknownIntent](#Recognizer-trigger-examples)| UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
+|Unknown intent recognized| OnUnknownIntent | UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
 
 #### Recognizer trigger examples
 
@@ -66,8 +66,8 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 
 > [!NOTE]
 >
-> * The `OnIntent` trigger enables you to handle the 'recognizedIntent' event. The 'recognizedIntent' event is raised by the [recognizer][8]. All of the bot framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
-> * Use the `OnUnknownIntent` trigger to catch and respond when a 'recognizedIntent' event was not caught and handled by any of the other trigger. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
+> * The `OnIntent` trigger enables you to handle the 'recognizedIntent' event. The 'recognizedIntent' event is raised by the [recognizer][8]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
+> * Use the `OnUnknownIntent` trigger to catch and respond when a 'recognizedIntent' event was not caught and handled by any of the other triggers. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
 ``` C#
 // Create the root dialog as an Adaptive dialog.
@@ -121,7 +121,7 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 
 ### Dialog events
 
-The dialog triggers handle dialog specific events which are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the bot framework SDK and they all derive from the `OnDialogEvent` class.
+The dialog triggers handle dialog specific events that are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the Bot Framework SDK and they all derive from the `OnDialogEvent` class.
 
 > You should use _dialog triggers_ to:
 >
