@@ -206,7 +206,7 @@ var recognizer = new QnAMakerRecognizer()
 
 ## This scope
 
-`This` scope pertains the active action's property bag. This is helpful for input actions since their life type typically lasts beyond a single turn of the conversation.
+The `this` scope pertains the active action's property bag. This is helpful for input actions since their life type typically lasts beyond a single turn of the conversation.
 
 * `this.value` holds the current recognized value for the input.
 * `this.turnCount` holds the number of times the missing information has been prompted for this input.
