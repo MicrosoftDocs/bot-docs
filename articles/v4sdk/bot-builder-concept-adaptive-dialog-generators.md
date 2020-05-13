@@ -1,6 +1,6 @@
 ---
 title: Generators in adaptive dialogs
-description: Providing Language Understanding (LU) to your adaptive dialogs using Recognizers
+description: Providing Language Generation (LG) to your adaptive dialogs using Generators.
 keywords: bot, generators, adaptive dialogs, language generation, lg
 author: emgrol
 ms.author: kamrani
