@@ -65,7 +65,7 @@ Examples:
 
 ## Conversation scope
 
-Conversation scope is persistent data scoped to the id of the conversation you are having.  
+Conversation scope is persistent data scoped to the ID of the conversation you are having.  
 
 Examples:
 
