@@ -26,7 +26,7 @@
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
 ## [About skills](v4sdk/skills-conceptual.md)
 ## [Adaptive expressions](v4sdk/bot-builder-concept-adaptive-expressions.md)
-## [Language generation](v4sdk/bot-builder-concept-language-generation.md)
+## [Language Generation](v4sdk/bot-builder-concept-language-generation.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
