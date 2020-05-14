@@ -47,7 +47,7 @@ The [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-introducti
 
 <!-- TODO: review and rewrite post R9 -->
 
-The dialogs library has a few additional pieces included to make dialogs more useful. Besides the different [types of dialogs](#dialog-types) discussed below, the library contains the idea of a *dialog set*, *dialog context*, and *dialog result*, and *dialog manager*.
+The dialogs library has a few additional pieces included to make dialogs more useful. Besides the different [types of dialogs](#dialog-types) discussed below, the library contains the idea of a *dialog set*, *dialog context*, *dialog result*, and *dialog manager*.
 
 A *dialog set* is a collection of dialogs. Each dialog instance is added to the dialog set with an ID unique to that set. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that ID to specify which dialog to use. Both adaptive and component dialogs contain an inner dialog set.
 
