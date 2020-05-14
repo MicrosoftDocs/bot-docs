@@ -140,7 +140,7 @@ Language generation templates can use cards and media to create a richer convers
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=24-57)]
+[!code-lg[adaptive-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/welcomeCard.LG?range=24-58)]
 
 This card displays an image, and uses LG templates for the card header a set of suggested actions.
 
@@ -158,9 +158,9 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
  The `actions` are filled in by calling `# cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **dialogAndWelcomeBot.js**:
 
-**Bots/DialogAndWelcomeBot.js**
+**bots/dialogAndWelcomeBot.js**
 
-[!code-javascript[fill-card](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=30-48)]
+[!code-javascript[fill-card](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-39?highlight=5)]
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
