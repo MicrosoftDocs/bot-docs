@@ -2,12 +2,12 @@
 title: Dialogs within the Bot Framework SDK - Bot Service
 description: Describes what a dialog is and how it work within the Bot Framework SDK.
 keywords: conversation flow, prompt, dialog state, recognize intent, single turn, multiple turn, bot conversation, dialogs, prompts, waterfalls, dialog set
-author: johnataylor
-ms.author: johtaylo
+author: JonathanFingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 05/14/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,27 +15,52 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-*Dialogs* are a central concept in the SDK, and provide a useful way to manage a conversation with the user. Dialogs are structures in your bot that act like functions in your bot's program; each dialog is designed to perform a specific task, in a specific order. You can specify the order of individual dialogs to guide the conversation, and invoke them in different ways - sometimes in response to a user, sometimes in response to some outside stimuli, or from other dialogs.
+*Dialogs* are a central concept in the SDK, and provide a useful way to manage a conversation with the user. Dialogs are structures in your bot that act like functions in your bot's program; each dialog is designed to perform a specific task. You can specify the order of individual dialogs to guide the conversation, and invoke them in different ways - sometimes in response to a user, sometimes in response to some outside stimuli, or from other dialogs.
 
-The dialogs library provides a few built-in features, such as *prompts* and *waterfall dialogs* to make your bot's conversation easier to manage. [Prompts](#prompts) are used to ask for different types of information, such as text, a number, or a date. [Waterfall dialogs](#waterfall-dialogs) can combine multiple steps together in a sequence, allowing your bot to follow easily that predefined sequence and pass information along to the next step.
+The dialogs library provides a few built-in features to make your bot's conversation easier to manage.
 
-<!-- When we have samples for building your own, add links and one liner about them -->
+- [Waterfall](#waterfall-dialogs) and [prompt](#prompts) dialogs combine multiple steps together in a sequence, allowing your bot to follow easily that predefined sequence and pass information along to the next step.
+- [Component dialogs](#component-dialog) allow you to encapsulate and reuse sets of dialogs.
+- Adaptive, action, and input dialogs are an opinionated design for building sophisticated conversations.
+- Skill dialogs automate the management of skill bots from a skill consumer.
+
+This article describes the core features of the dialog library.
+
+### Adaptive dialogs
+
+Adaptive dialogs use an event driven model for conversations. They offer several built-in capabilities, including interruption handling, attaching a recognizer to each dialog, using the language generation system, and more. With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
+
+An adaptive dialog is part of the dialogs library and works with all of the other dialog types.
+You can easily build a bot that uses many dialog types.
+
+Consider using adaptive dialogs if your bot:
+
+- Requires the conversation flow to branch or loop based on business logic, user input, or other factors.
+- Needs to adjust to context, accept information in an arbitrary order, or allow one conversational thread to pause for a side-conversation and then pick back up again.
+- Needs context-specific language understanding models or needs to extract entity information from user input.
+- Would benefit from custom input processing or response generation.
+
+The [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-introduction) and its associated topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, and access to memory scopes.
 
 ## Dialogs and their pieces
 
-The dialogs library has a few additional pieces included to make dialogs more useful. Besides the different [types of dialogs](#dialog-types) discussed below, the library contains the idea of a *dialog set*, the *dialog context*, and the *dialog result*.
+<!-- TODO: review and rewrite post R9 -->
 
-*Dialog sets* are, in the simplest terms, a collection of dialogs. This can be things like prompts, waterfall dialogs, or [component dialogs](#component-dialog). Each of these are implementations of a dialog, and each are added to the dialog set with a specific string ID. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that string ID to specify which dialog to use.
+The dialogs library has a few additional pieces included to make dialogs more useful. Besides the different [types of dialogs](#dialog-types) discussed below, the library contains the idea of a *dialog set*, *dialog context*, and *dialog result*, and *dialog manager*.
 
-*Dialog context* contains information pertaining to the dialog, and is used to interact with a dialog set from within your bot's turn handler. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with its string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
+A *dialog set* is a collection of dialogs. Each dialog instance is added to the dialog set with an ID unique to that set. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that ID to specify which dialog to use. Both adaptive and component dialogs contain an inner dialog set.
+
+A *dialog context* contains information pertaining to a dialog set, and is used within the framework to interact with those dialogs. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with its string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
 
 When a dialog ends, it can return a *dialog result* with some resulting information from the dialog. This is returned to let the calling method see what happened within the dialog and save the information to some persisted location, if desired.
 
+A *dialog manager* automates many of the dialog management tasks for you. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager.
+
 ## Dialog state
 
-Dialogs are an approach to implementing a multi-turn conversation, and as such, they are an example of a feature in the SDK that relies on persisted state across multiple turns. Without state in dialogs, your bot wouldn't know where in the dialog set it is or what information it has already gathered.
+Dialogs are an approach to implementing a multi-turn conversation, and as such, they rely on persisted state across multiple turns. Without state in dialogs, your bot wouldn't know where it is in the conversation or what information it has already gathered. Again, a dialog manager automates many of these tasks for you.
 
-A dialog based bot typically holds a dialog set collection as a member variable in its bot implementation. That dialog set is created with a handle to an object called an accessor that provides access to persisted state. For background on state within bots, see [managing state](bot-builder-concept-state.md).
+A dialog based bot can hold a dialog set collection as a member variable in its bot implementation. That dialog set is created with a handle to an object called an accessor that provides access to persisted state. For background on state within bots, see [managing state](bot-builder-concept-state.md). The dialog manager manages state for a
 
 Within the bot’s on turn handler, the bot initializes the dialog subsystem by calling *create context* on the dialog set, which returns a *dialog context*. That dialog context contains the necessary information needed by the dialog.
 
@@ -43,9 +68,13 @@ The creation of a dialog context requires state, which is accessed with the acce
 
 ## Dialog types
 
-Dialogs come in a few different types: prompts, waterfall dialogs, and component dialogs, as shown in this class hierarchy.
+Dialogs come in a few different types as shown in this class hierarchy.
 
 ![dialog classes](media/bot-builder-dialog-classes.png)
+
+Prompt dialogs are designed to work with waterfall dialogs.
+Action and input dialogs are designed to work with adaptive dialogs.
+The skill and QnA Maker dialogs wrap skill and QnA Maker features as dialogs.
 
 ### Prompts
 
@@ -206,7 +235,12 @@ A dialog can start a new dialog within the same dialog set by calling the dialog
 
 Therefore, you can create a branch within your conversation flow by including a step in one dialog that can conditionally choose a dialog to start out of a set of available dialogs.
 
+## Additional information
+
+- For more about adaptive dialogs, see the [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-Introduction).
+- For information about skills, see [about skills](skills-conceptual).
+
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Use dialog library to gather user input](bot-builder-prompts.md)
+> [Use the dialog library to gather user input](bot-builder-prompts.md)
