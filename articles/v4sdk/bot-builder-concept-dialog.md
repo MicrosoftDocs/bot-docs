@@ -17,14 +17,17 @@ monikerRange: 'azure-bot-service-4.0'
 
 *Dialogs* are a central concept in the SDK, and provide a useful way to manage a conversation with the user. Dialogs are structures in your bot that act like functions in your bot's program; each dialog is designed to perform a specific task. You can specify the order of individual dialogs to guide the conversation, and invoke them in different ways - sometimes in response to a user, sometimes in response to some outside stimuli, or from other dialogs.
 
+This article describes the core features of the dialog library.
+You should be familiar with [how bots work](bot-builder-basics) and [managing state](bot-builder-concept-state).
+
+## About dialogs
+
 The dialogs library provides a few built-in dialog types to make your bot's conversation easier to manage.
 
 - [Waterfall](#waterfall-dialogs) and [prompt](#prompts) dialogs combine multiple steps, allowing your bot to follow a predefined sequence and pass information from one step to the next.
 - [Component dialogs](#component-dialog) allow you to encapsulate and reuse sets of dialogs.
 - Adaptive, action, and input dialogs are an event-driven design for building sophisticated conversations.
 - Skill dialogs automate the management of skill bots from a skill consumer.
-
-This article describes the core features of the dialog library.
 
 ### Adaptive dialogs
 
