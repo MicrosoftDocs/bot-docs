@@ -42,9 +42,9 @@ Adaptive dialogs support the following actions:
 
 ### Send a response
 
-| Activity to accomplish                         | Action Name                   | What this action does                  |
-| ---------------------------------------------- | ----------------------------- | -------------------------------------- |
-| Send any activity such as responding to a user.| [SendActivity](#sendactivity) | Enables you send any type of activity such as responding to users or in the Teams channel, you could send an invoke activity to get information about a user or thread.  |
+| Activity to accomplish                         | Action Name                   | What this action does                                              |
+| ---------------------------------------------- | ----------------------------- | ------------------------------------------------------------------ |
+| Send any activity such as responding to a user.| [SendActivity](#sendactivity) | Enables you send any type of activity such as responding to users. |
 
 For a code sample see [Send a response example](#send-a-response-example).
 
@@ -81,7 +81,7 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.    |
-| Cancel a dialog        | [CancelDialog](#cancelalldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process. Emits the `CancelDialog` event.|
+| Cancel a dialog        | [CancelDialog](#canceldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.|
 | Cancel all dialogs     | [CancelAllDialogs](#cancelalldialogs)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 | End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
@@ -113,7 +113,7 @@ For code samples see [Manage properties examples](#manage-properties-examples).
 
 | Activity to accomplish | Action Name                | What this action does                                                                                       |
 | ---------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [AdaptiveSkillDialog](#adaptiveskilldialog) | Use the adaptive skill dialog to run a skill.                                              |
+| Begin a skill dialog   | [BeginSkill](#adaptiveskilldialog) | Use the adaptive skill dialog to run a skill.                                              |
 | Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                                          |
 | Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8].               |
 | Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user.                                                       |
@@ -462,7 +462,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 Starts a new dialog and pushes it onto the dialog stack. `BeginDialog` requires the name of the target dialog, which can be any type of dialog including Adaptive dialog or Waterfall dialog etc.
 
-The `BeginDialog` action defines a property named `ResultProperty` that allows you to specify where to save the results when the dialog ends. By default, `resultProperty` is set to `dialog.results` so anything that is set in that [memory scope][11] will automatically be returned to the caller when the adaptive dialog ends.
+The `BeginDialog` action defines a property named `ResultProperty` that allows you to specify where to save the results when the dialog ends.
 
 ``` C#
 new BeginDialog("BookFlightDialog")
@@ -479,7 +479,7 @@ new BeginDialog("BookFlightDialog")
 
 Ends the active dialog by popping it off the stack and returns an optional result to the dialog's parent.
 
-By default, adaptive dialogs have a `resultProperty` set to `dialog.results` so anything that is set in that memory scope will automatically be returned to the caller when the dialog ends. In addition the `EndDialog` action has the `value` property which contains a value that is passed back to the caller of the dialog.
+By default, adaptive dialogs have their `defaultResultProperty` set to `dialog.results` so anything that is set in that memory scope will automatically be returned to the caller in scenarios when the dialog auto ends itself. If you end the dialog using the `EndDialog` action you'll need to specify what is returned to the caller in the `value` property.
 
 ``` C#
 new EndDialog()
@@ -644,7 +644,7 @@ getUserName.Triggers.Add(new OnIntent()
 
 #### Update activity
 
-Updates an activity that was previously sent. Requires the ID of the previous activity.
+Updates an activity that was previously sent. This ID is returned from the call to `SendActivity`.
 
 ```C#
 new UpdateActivity ()
@@ -878,9 +878,9 @@ addToDoDialog.Triggers.Add(new OnIntent()
 
 ### Access external resource examples
 
-#### AdaptiveSkillDialog
+#### BeginSkill
 
-The Adaptive skill dialog starts the skill, manages the forwarding of activities to the skill and receiving activities from the skill, and processes the skill result if any when the skill ends.
+The `BeginSkill` action starts the specified skill, manages the forwarding of activities to the skill and receiving activities from the skill, and processes the skill result if any when the skill ends.
 
 <!-- TODO--->
 
@@ -908,7 +908,7 @@ new HttpRequest()
 <!--
 #### OnQnAMakerDialog
 
-Use this to to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][13]. <!-Need details like sample app's name etc--->
+Use this to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][13]. <!-Need details like sample app's name etc--->
 
 #### EmitEvent
 
@@ -992,7 +992,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### Sign out user
 
-Sign out current signed in user.
+Sign out current signed in user that's been signed in using an [`OAuth` Input][4].
 
 ```C#
 new SignOutUser()
@@ -1003,7 +1003,7 @@ new SignOutUser()
 ```
 
 #### CodeAction
-
+<!--TODO P1: We should create a separate article that describes how to migrate waterfall steps to code actions. There are a couple of gotchas. (https://github.com/MicrosoftDocs/bot-docs-pr/pull/2115#discussion_r425436817)-->
 As the name implies, this action enables you to call a custom piece of code.
 
 ``` C#
