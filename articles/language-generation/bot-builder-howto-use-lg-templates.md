@@ -17,9 +17,9 @@ Language generation (LG) templates make it easy for bot developers to send a var
 
 ## Prerequisites
 
-- [LUIS](https://luis.ai) account
-- A copy of the language generation core bot sample in either [C#](https://aka.ms/lg-csharp-13-core-bot-sample) or [Javascript](https://aka.ms/lg-javascript-13-core-bot-sample)
-- Knowledge of [bot basics](../v4sdk/bot-builder-basics.md) and [language generation](../v4sdk/bot-builder-concept-language-generation.md)
+- A [LUIS](https://luis.ai) account.
+- A copy of the language generation core bot sample in either [C#](https://aka.ms/lg-csharp-13-core-bot-sample) or [Javascript](https://aka.ms/lg-javascript-13-core-bot-sample).
+- Knowledge of [bot basics](../v4sdk/bot-builder-basics.md) and [language generation](../v4sdk/bot-builder-concept-language-generation.md).
 
 ## About the sample
 
