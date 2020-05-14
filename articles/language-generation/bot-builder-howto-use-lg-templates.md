@@ -80,7 +80,7 @@ The **lgtemplates** object is used to reference templates in your .lg files.
 
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
-[!code-javascript[reference-welcome-card-template](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43)]
+[!code-javascript[reference-welcome-card-template](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43&highlight=5)]
 
 Notice how the `WelcomeCard` template is referenced in the creation of the **welcomeCard** constant.
 
@@ -152,7 +152,7 @@ This card displays an image, and uses LG templates for the card header a set of 
 
 **Bots/DialogAndWelcomeBot.cs**
 
-[!code-csharp[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=30-48)]
+[!code-csharp[fill-card](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=32-47)]
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
@@ -162,7 +162,7 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
 **bots/dialogAndWelcomeBot.js**
 
-[!code-javascript[fill-card](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-39)]
+[!code-javascript[fill-card](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=13-29)]
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
