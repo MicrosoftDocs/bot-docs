@@ -25,7 +25,7 @@ Language generation (LG) templates make it easy for bot developers to send a var
 
 This LG core bot sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
 
-This article uses a bottom up approach to using LG templates in your bots.You will learn how to:
+This article uses a bottom up approach to using LG templates in your bots. You will learn how to:
 
 - create a `Templates` object and [reference templates in your bot logic](#call-templates-in-files)
 - create a [simple response template](#create-a-simple-response-template)
@@ -158,7 +158,7 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
  The `actions` are filled in by calling `# cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **dialogAndWelcomeBot.js**:
 
-***Bots/DialogAndWelcomeBot.js**
+**Bots/DialogAndWelcomeBot.js**
 
 [!code-javascript[fill-card](~/../BotBuilder-Samples/experimental/language-generation/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=30-48)]
 
