@@ -11,7 +11,7 @@ ms.date: 5/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Use language generation templates in your bot
+Use language generation templates in your bot
 
 Language generation (LG) templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages and cards, and how to evaluate text input from users.
 
@@ -90,20 +90,20 @@ Now that your bot can reference templates, it's time to starting creating templa
 
 A [simple response template](../file-format/bot-builder-lg-file-format.md#simple-response-template) includes one or more variations of text that are used for composition and expansion. One of the variations provided will be selected at random by the LG library.
 
-The simple response templates in **BookingDialog.lg**, like `# PromptForDestinationCity`, `# PromptForDepartureCity`, and `# ConfirmPrefix`, add variety to flight booking prompts.
+The simple response templates in **BookingDialog.lg**, like `PromptForDestinationCity`, `PromptForDepartureCity`, and `ConfirmPrefix`, add variety to flight booking prompts.
 
 **Resources/BookingDialog.lg**
 
 [!code-lg[confirm-message](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=4-6)]
 
-For example, a call to `# PromptForDepartureCity`, seen above, will produce one of the two possible text prompts:
+For example, a call to `PromptForDepartureCity`, seen above, will produce one of the two possible text prompts:
 
 - _Where would you like to travel to?_
 - _What is your destination city?_
 
 ### Reference memory
 
-Like more complex templates, simple response templates can reference memory. In **BookingDialog.LG** the `# ConfirmMessage` simple response template references the `Destination`, `Origin`, and `TravelDate` properties:
+Like more complex templates, simple response templates can reference memory. In **BookingDialog.LG** the `ConfirmMessage` simple response template references the `Destination`, `Origin`, and `TravelDate` properties:
 
 **Resources/BookingDialog.lg**
 
@@ -118,25 +118,25 @@ If the user enters _Seattle_ for the `Origin`, _Paris_ for the `Destination`, an
 
 A [conditional response template](../file-format/bot-builder-lg-file-format.md#conditional-response-template) lets you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](../v4sdk/bot-builder-concept-adaptive-expressions.md).
 
-The `# PromptForMissingInformation` template in **BookingDialog.lg** is an example of an [if-else template](../file-format/bot-builder-lg-file-format.md#conditional-response-template). The if-else template lets you build a template that picks a collection based on a cascading order of conditions. In the template, the user is prompted for pieces of information if their properties are set to `null`:
+The `PromptForMissingInformation` template in **BookingDialog.lg** is an example of an [if-else template](../file-format/bot-builder-lg-file-format.md#conditional-response-template). The if-else template lets you build a template that picks a collection based on a cascading order of conditions. In the template, the user is prompted for pieces of information if their properties are set to `null`:
 
 **Resources/BookingDialog.lg**
 
 [!code-lg[conditional](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Resources/BookingDialog.LG?range=31-39)]
 
-If a property is null then the bot will call the template associated with that property. If all properties are non-null values then the `# ConfirmBooking` template is called. 
+If a property is null then the bot will call the template associated with that property. If all properties are non-null values then the `ConfirmBooking` template is called. 
 
 ### Reference other templates
 
 Variations in templates can reference other templates. In the example above, if a property is `null` then the template calls the relevant template to prompt for the missing information.
 
-For example, if `Destination` equals `null`, then the `# PromptforDestinationCity` template would be called via `${PromptForDestinationCity()}` to obtain the missing flight destination information. If none of the properties are null then the template calls the `# ConfirmBooking` prompt.
+For example, if `Destination` equals `null`, then the `PromptforDestinationCity` template would be called via `${PromptForDestinationCity()}` to obtain the missing flight destination information. If none of the properties are null then the template calls the `ConfirmBooking` prompt.
 
 ## Create a cards template
 
 Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the [Adaptive Card](https://aka.ms/msbot-adaptivecards) that displays when you first start the bot.
 
-`# Adaptive Card` defines an Adaptive card JSON object:
+`Adaptive Card` defines an Adaptive card JSON object:
 
 **Resources/welcomeCard.lg**
 
@@ -146,7 +146,7 @@ This card displays an image, and uses LG templates for the card header a set of 
 
 ### [C#](#tab/cs)
 
- The `actions` are filled in by calling `# cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **DialogAndWelcomeBot.cs**:
+ The `actions` are filled in by calling `cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **DialogAndWelcomeBot.cs**:
 
 **Bots/DialogAndWelcomeBot.cs**
 
@@ -156,7 +156,7 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
 ### [JavaScript](#tab/js)
 
- The `actions` are filled in by calling `# cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **dialogAndWelcomeBot.js**:
+ The `actions` are filled in by calling `cardActionTemplate(title, url, type)` and obtaining the`title`, `url`, and `type` from the `OnMembersAddedAsync()` method in **dialogAndWelcomeBot.js**:
 
 **bots/dialogAndWelcomeBot.js**
 
@@ -166,7 +166,7 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
 ---
 
-Finally the `# WelcomeCard` calls the `# AdaptiveCard` template to return the Adaptive card JSON object.
+Finally the `WelcomeCard` calls the `AdaptiveCard` template to return the Adaptive card JSON object.
 
 **Resources/welcomeCard.lg**
 
