@@ -20,8 +20,6 @@ monikerRange: 'azure-bot-service-4.0'
 This article describes the core features of the dialog library.
 You should be familiar with [how bots work](bot-builder-basics) and [managing state](bot-builder-concept-state).
 
-## About dialogs
-
 The dialogs library provides a few built-in dialog types to make your bot's conversation easier to manage.
 
 - [Waterfall](#waterfall-dialogs) and [prompt](#prompts) dialogs combine multiple steps, allowing your bot to follow a predefined sequence and pass information from one step to the next.
