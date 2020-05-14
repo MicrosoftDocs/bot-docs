@@ -13,8 +13,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 # API reference for Adaptive expressions
 
-For Nuget packages, see [this MyGet C# feed][1] and [this MyGet js feed][2]
-
 ## Expression Class
 
 ### Constructors
