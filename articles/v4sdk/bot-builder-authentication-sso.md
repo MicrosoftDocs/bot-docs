@@ -225,7 +225,7 @@ Use the following for testing:
     - `skill logout` logs the user out of the `SkillBot`
 
 >[!NOTE]
-> The first time users try SSO on a skill, they may be presented with an OAuth card to log. This is because they have not yet have given consent to the skill's Azure AD app. To avoid this, they can grant admin consent for any graph permissions requested by the Azure AD app.
+> The first time users try SSO on a skill, they may be presented with an OAuth card to log in. This is because they have not yet given consent to the skill's Azure AD app. To avoid this, they can grant admin consent for any graph permissions requested by the Azure AD app.
 
 # [Emulator](#tab/eml)
 
