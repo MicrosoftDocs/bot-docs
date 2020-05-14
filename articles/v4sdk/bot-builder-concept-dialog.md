@@ -61,7 +61,7 @@ A *dialog manager* automates many of the dialog management tasks for you. To run
 
 Dialogs are an approach to implementing a multi-turn conversation, and as such, they rely on persisted state across multiple turns. Without state in dialogs, your bot wouldn't know where it is in the conversation or what information it has already gathered. Again, a dialog manager automates many of these tasks for you.
 
-A dialog based bot can hold a dialog set collection as a member variable in its bot implementation. That dialog set is created with a handle to an object called an accessor that provides access to persisted state. For background on state within bots, see [managing state](bot-builder-concept-state.md). The dialog manager manages state for a
+A dialog based bot can hold a dialog set collection as a member variable in its bot implementation. That dialog set is created with a handle to an object called an accessor that provides access to persisted state. For background on state within bots, see [managing state](bot-builder-concept-state.md). The dialog manager manages state for adaptive dialogs.
 
 Within the bot’s on turn handler, the bot initializes the dialog subsystem by calling *create context* on the dialog set, which returns a *dialog context*. That dialog context contains the necessary information needed by the dialog.
 
