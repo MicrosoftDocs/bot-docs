@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # API reference for Adaptive expressions
 
+[!INCLUDE[applies-to](../includes/applies-to.md)]
+
 ## Expression Class
 
 ### Constructors
