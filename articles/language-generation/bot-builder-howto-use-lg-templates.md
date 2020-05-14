@@ -11,7 +11,9 @@ ms.date: 5/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-Use language generation templates in your bot
+# Use language generation templates in your bot
+
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 Language generation (LG) templates make it easy for bot developers to send a variety of messages and media to users. This article shows you how to leverage LG templates to send simple text messages and cards, and how to evaluate text input from users.
 
