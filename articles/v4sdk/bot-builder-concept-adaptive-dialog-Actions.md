@@ -12,7 +12,7 @@ ms.date: 04/27/2020
 <!--P2: Once the samples are done, link to them in each section on the individual actions to point to them as examples of how they are used-->
 # Actions in adaptive dialogs
 
-Actions help to create and maintain the bots conversation flow once an event is captured by a [trigger][2]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to accomplish any set of actions needed, such as satisfying a user's request. In addition to creating and maintaining the bot's conversational flow, you can use actions to send messages, respond to user questions using a [knowledge base][3], make calculations, and perform any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in memory, and make decisions based on user input.
+Actions help to create and maintain the bots conversation flow once an event is captured by a [trigger][2]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to accomplish any set of actions needed, such as satisfying a user's request. In addition to creating and maintaining the bot's conversational flow, you can use actions to send messages, respond to user questions using a [knowledge base][3], make calculations, and perform any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in [memory][11], and make decisions based on user input.
 
 > [!IMPORTANT]
 > Actions are dialogs and any dialog can be used as an action, so actions have all of the power and flexibility you need to create a fully functional and robust bot. While the actions included in the Bot Framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
@@ -28,7 +28,7 @@ Actions that are included with the Bot Framework SDK provide the ability to perf
 
 * Branching and looping
 * Dialog management tasks such as starting a new dialog or cancelling, ending or repeating a dialog.
-* Memory management tasks such as creating, deleting or editing a property saved in memory.
+* Memory management tasks such as creating, deleting or editing a property saved in [memory][11].
 * Accessing external resources such as sending an [HTTP Request](#httprequest).
 * Preforming an [OAuth login request][4] and many others.
 
@@ -89,8 +89,8 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
 | Update an activity     | [UpdateActivity](#updateactivity)| This enables you to update an activity that was sent.                     |
 | DeleteActivity        | [DeleteActivity](#deleteactivity) | Enables you to delete an activity that was sent.                          |
-| Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in memory.|
-| GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in memory.|
+| Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in [memory][11].|
+| GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in[memory][11].|
 | EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
 
 For code samples see [Dialog management examples](#dialog-management-examples).
@@ -102,9 +102,9 @@ For code samples see [Dialog management examples](#dialog-management-examples).
 | Activity to accomplish | Action Name                           | What this action does                                                     |
 | ---------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
 | Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
-| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from memory.                        |
+| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from[memory][11].                        |
 | Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Create or update a property | [SetProperty](#SetProperty)      | This enables you to set a property's value in memory.                     |
+| Create or update a property | [SetProperty](#SetProperty)      | This enables you to set a property's value in[memory][11].                     |
 | Create or update properties | [SetProperties](#SetProperties)  | This enables you to initialize one or more properties in a single action. |
 
 For code samples see [Manage properties examples](#manage-properties-examples).
@@ -479,7 +479,7 @@ new BeginDialog("BookFlightDialog")
 
 Ends the active dialog by popping it off the stack and returns an optional result to the dialog's parent.
 
-By default, adaptive dialogs have their `defaultResultProperty` set to `dialog.results` so anything that is set in that memory scope will automatically be returned to the caller in scenarios when the dialog auto ends itself. If you end the dialog using the `EndDialog` action you'll need to specify what is returned to the caller in the `value` property.
+By default, adaptive dialogs have their `defaultResultProperty` set to `dialog.results` so anything that is set in that [memory scope][11] will automatically be returned to the caller in scenarios when the dialog auto ends itself. If you end the dialog using the `EndDialog` action you'll need to specify what is returned to the caller in the `value` property.
 
 ``` C#
 new EndDialog()
@@ -787,7 +787,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### SetProperty
 
-Used to set a property's value in memory. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
+Used to set a property's value in[memory][11]. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
 
 ``` C#
 new SetProperty()
@@ -823,7 +823,7 @@ new SetProperties()
 
 #### DeleteProperty
 
-Removes a property from memory.
+Removes a property from[memory][11].
 
 ``` C#
 new DeleteProperty
@@ -1062,16 +1062,16 @@ new LogStep()
 * To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][7] article.
 * To learn more about adaptive expressions see the [adaptive expressions][10] article.
 
-[1]:bot-builder-adaptive-dialog-introduction.md
-[2]:bot-builder-adaptive-dialog-triggers.md
+[1]:https://aka.ms/adaptive-dialog-concept
+[2]:https://aka.ms/adaptive-dialog-concept-triggers
 [3]:https://www.qnamaker.ai/
-[4]:bot-builder-adaptive-dialog-inputs.md#oauth
+[4]:https://aka.ms/adaptive-dialog-concept-inputs#oauth
 [5]:bot-builder-concept-dialog.md
-[6]:NeedLinkToInterruptionsInfo/WhereIsIt/IDK/bot-builder-adaptive-dialog-input.md#interruptions
-[7]:bot-builder-adaptive-dialog-input.md
-[8]:bot-builder-adaptive-dialog-triggers.md#custom-events
-[9]:bot-builder-adaptive-dialog-generation.md
-[10]:PlaceholderFor-adaptiveExpressions
-[11]:bot-builder-adaptive-dialog-memoryscopes.md
+[6]:https://aka.ms/adaptive-dialog-concept-inputs#interruptions
+[7]:https://aka.ms/adaptive-dialog-concept-inputs
+[8]:https://aka.ms/adaptive-dialog-concept-triggers#custom-events
+[9]:https://aka.ms/adaptive-dialog-concept-generation
+[10]:https://aka.ms/bot-builder-adaptive-expressions-concept
+[11]:https://aka.ms/adaptive-dialog-concept-memory-states
 [12]:https://www.qnamaker.ai/
 [13]:https://github.com/microsoft/BotBuilder-Samples
