@@ -151,7 +151,7 @@ For example, a flight booking application might have a book flight intent with a
 Value = "=turn.recognized.entities.fromCity.location"
 ```
 
-There is another way to accomplish this using a [Memory short-hand notation](#Memory-short-hand-notations)
+There is another way to accomplish this using a [Memory short-hand notation](#memory-short-hand-notations)
 
 ```c#
 // Value is a property containing an expression. @entityName is shorthand to refer to the value of
