@@ -19,8 +19,8 @@ Generators tie a specific [language generation (LG)](bot-builder-concept-languag
 
 ## Prerequisites
 
-- Knowledge of [adaptive dialogs](bot-builder-adaptive-dialog-introduction.md)
-- Knowledge of [recognizers](bot-builder-adaptive-dialog-recognizers.md) in adaptive dialogs
+- Knowledge of [adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md)
+- Knowledge of [recognizers](bot-builder-concept-adaptive-dialog-recognizers.md) in adaptive dialogs
 - Knowledge of [adaptive expressions](bot-builder-concept-adaptive-expressions.md)
 
 ## Language generation
