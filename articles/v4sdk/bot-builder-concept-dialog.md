@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 *Dialogs* are a central concept in the SDK, and provide a useful way to manage a conversation with the user. Dialogs are structures in your bot that act like functions in your bot's program; each dialog is designed to perform a specific task. You can specify the order of individual dialogs to guide the conversation, and invoke them in different ways - sometimes in response to a user, sometimes in response to some outside stimuli, or from other dialogs.
 
 This article describes the core features of the dialog library.
-You should be familiar with [how bots work](bot-builder-basics) and [managing state](bot-builder-concept-state).
+You should be familiar with [how bots work](bot-builder-basics.md) and [managing state](bot-builder-concept-state.md).
 
 The dialogs library provides a few built-in dialog types to make your bot's conversation easier to manage.
 
@@ -41,7 +41,7 @@ Consider using adaptive dialogs if your bot:
 - Needs context-specific language understanding models or needs to extract entity information from user input.
 - Would benefit from custom input processing or response generation.
 
-The [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-introduction) and its associated topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, and access to memory scopes.
+The [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and its associated topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, and access to memory scopes.
 
 ## Dialogs and their pieces
 
@@ -238,8 +238,8 @@ Therefore, you can create a branch within your conversation flow by including a 
 
 ## Additional information
 
-- For more about adaptive dialogs, see the [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-Introduction).
-- For information about skills, see [about skills](skills-conceptual).
+- For more about adaptive dialogs, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
+- For information about skills, see [about skills](skills-conceptual.md).
 
 ## Next steps
 
