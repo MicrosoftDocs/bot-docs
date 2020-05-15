@@ -76,7 +76,7 @@ Entities in the [.lu file format][6] are defined in this format: `{<entityName>=
 - book a flight from {fromCity=new york} to {toCity=seattle}
 ```
 
-The example above shows the definition of a `BookFlight` intent with two example utterances and two entity definitions: `toCity` and `fromCity`. When triggered, if your chosen recognizer is able to identify a destination city, the city name will be made available as `@toCity` within the triggered actions or a departure city with `@fromCity` as available entity values. The entity values can be used directly in expressions and LG templates, or stored into a property in [memory](concept-memory.md) for later use.
+The example above shows the definition of a `BookFlight` intent with two example utterances and two entity definitions: `toCity` and `fromCity`. When triggered, if your chosen recognizer is able to identify a destination city, the city name will be made available as `@toCity` within the triggered actions or a departure city with `@fromCity` as available entity values. The entity values can be used directly in expressions and LG templates, or stored into a property in [memory][14] for later use.
 
 <!--TODO P1:  Need to discuss recognizers in the context of recognition results. There is intent recognizer, entity recognizer, there can be other types of recognizers as well but a recognizer gets 3 property bags to fill in - intents[], entities[], properties[]. 
 https://github.com/MicrosoftDocs/bot-docs-pr/pull/2123#discussion_r423237812
@@ -123,7 +123,7 @@ Adaptive dialogs support the following recognizers:
 * [Multi-language recognizer](#multi-language-recognizer)
 * [CrossTrained recognizer set](#cross-trained-recognizer-set)
 * [RecognizerSet](#recognizer-set)
-* [Value recognizer](#value-recognizer)
+<!--* [Value recognizer](#value-recognizer)-->
 
 <!--TODO P2: Post R9, refactor the linked content out of this article and into one or more reference-like articles.-->
 
@@ -404,7 +404,7 @@ var adaptiveDialog = new AdaptiveDialog()
 [11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
 [13]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
-
+[14]:https://aka.ms/adaptive-dialog-concept-memory-states
 [15]:https://aka.ms/luis-concept-data-extraction?tabs=V2
 [16]:https://aka.ms/bot-service-add-luis-to-bot
 [17]:https://aka.ms/luis-create-new-app-in-luis-portal
