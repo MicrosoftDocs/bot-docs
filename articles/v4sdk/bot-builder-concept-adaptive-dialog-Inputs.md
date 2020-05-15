@@ -52,7 +52,7 @@ The adaptive dialogs library defines the following input types:
 | Multiple choice  | [ChoiceInput](#choiceinput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
 | File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.| A collection of attachment objects.          |
 | Date or time     | [DateTimeInput](#datetimeinput)   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
-| Oauth login      | [OAuthInput](#oauth)              | Used to enable your users to **sign into a secure site**.| A token response.                        |
+| Oauth login      | [OAuthInput](#oauthinput)              | Used to enable your users to **sign into a secure site**.| A token response.                        |
 
 <!--TODO P1: Add a general section on locales to show all Supported locales that can be used in the  `DefaultLocale` property.
 `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
