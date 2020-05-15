@@ -24,7 +24,10 @@
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
-## [About skills](v4sdk/skills-conceptual.md)
+## Skills
+### [About skills](v4sdk/skills-conceptual.md)
+### [About skill bots](v4sdk/skills-about-skill-bots.md)
+### [About skill consumers](v4sdk/skills-about-skill-consumers.md)
 ## [Adaptive expressions](v4sdk/bot-builder-concept-adaptive-expressions.md)
 ## [Language Generation](v4sdk/bot-builder-concept-language-generation.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
@@ -55,17 +58,26 @@
 ### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
+### Adaptive dialogs
+#### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
+#### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### Authentication
 #### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
 #### [Add single sign on to a bot](v4sdk/bot-builder-authentication-sso.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
+## Language Generation
+### [Use language generation templates in your bot](language-generation/bot-builder-howto-use-lg-templates.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
+#### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)
+#### [Write a v2.0 skill manifest](v4sdk/skills-write-manifest-2-0.md)
+#### [Use dialogs within a skill](v4sdk/skill-actions-in-dialogs.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
+#### [Use a dialog to consume a skill](v4sdk/skill-use-skilldialog.md)
 <!--
+#### [Use middleware in a skill consumer](v4sdk/skill-middleware-in-consumer.md)
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
-#### [Manage multiple skills](#)
 -->
 ### [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
 ### [Add telemetry to your QnA bot](v4sdk/bot-builder-telemetry-QnAMaker.md)
