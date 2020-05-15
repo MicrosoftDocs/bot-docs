@@ -41,7 +41,7 @@ Consider using adaptive dialogs if your bot:
 - Needs context-specific language understanding models or needs to extract entity information from user input.
 - Would benefit from custom input processing or response generation.
 
-The [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-introduction.md) and its associated topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, and access to memory scopes.
+The [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and its associated topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, and access to memory scopes.
 
 ## Dialogs and their pieces
 
@@ -238,7 +238,7 @@ Therefore, you can create a branch within your conversation flow by including a 
 
 ## Additional information
 
-- For more about adaptive dialogs, see the [introduction to adaptive dialogs](../bot-builder-adaptive-dialog-Introduction.md).
+- For more about adaptive dialogs, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
 - For information about skills, see [about skills](skills-conceptual.md).
 
 ## Next steps
