@@ -17,6 +17,8 @@
 ## [How bots work](v4sdk/bot-builder-basics.md)
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
 ## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+## Adaptive dialogs
+### [Generators](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## Authentication
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
