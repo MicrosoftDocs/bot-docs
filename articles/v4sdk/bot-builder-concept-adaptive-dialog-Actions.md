@@ -903,13 +903,6 @@ new HttpRequest()
 
 ```
 
-<!--TODO P1: Would be good to call out that the properties support data binding. So you can have reference to memory in URI, body etc.-->
-
-<!--
-#### OnQnAMakerDialog
-
-Use this to a [QnA Maker][12] knowledge base. To see sample code demonstrating how to implement QnA Maker in adaptive dialogs, clone the GitHub repository [BotBuilder-Samples][13]. <!-Need details like sample app's name etc--->
-
 #### EmitEvent
 
 Used to raise a custom event that your bot can respond to. You can control bubbling behavior on the event raised so it can be contained just to your own dialog or bubbled up the parent chain.
