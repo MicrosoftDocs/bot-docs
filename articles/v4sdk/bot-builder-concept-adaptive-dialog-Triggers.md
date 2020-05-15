@@ -326,17 +326,17 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 * [Dialog libraries][5]
 * [Actions in adaptive dialogs][2]
 
-[1]:bot-builder-adaptive-dialog-Introduction.md
-[2]:bot-builder-adaptive-dialog-Actions.md
+[1]:https://aka.ms/adaptive-dialog-concept
+[2]:https://aka.ms/adaptive-dialog-concept-actions
 [3]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [4]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language
 [5]:bot-builder-concept-dialog.md
 [6]:https://aka.ms/bot-service-add-luis-to-bot
 [7]:https://www.luis.ai/home
-[8]:bot-builder-adaptive-dialog-recognizer.md
+[8]:https://aka.ms/adaptive-dialog-concept-recognizers
 [9]:https://aka.ms/luis-prediction-scores
 [10]:https://aka.ms/how-bots-work#the-activity-processing-stack
-[11]:bot-builder-adaptive-dialog-recognizer.md#Cross-Trained-Recognizer
-[12]:bot-builder-adaptive-dialog-recognizer.md#QnAMaker-Recognizer
-[13]:bot-builder-adaptive-dialog-Actions.md#EmitEvent
-[14]:bot-builder-adaptive-dialog-input.md
+[11]:https://aka.ms/adaptive-dialog-concept-recognizers#Cross-Trained-Recognizer
+[12]:https://aka.ms/adaptive-dialog-concept-recognizers#QnAMaker-Recognizer
+[13]:https://aka.ms/adaptive-dialog-concept-actions#EmitEvent
+[14]:https://aka.ms/adaptive-dialog-concept-inputs
