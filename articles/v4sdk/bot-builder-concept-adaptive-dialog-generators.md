@@ -64,7 +64,7 @@ Here's an example of a simple response template with two variations:
 
 Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](bot-builder-concept-adaptive-expressions.md), both [prebuilt](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) and custom.
 
-There are two types of conditional response templates: [if-else](../file-format/bot-builder-lg-file-format.md#if-else) and [switch](../file-format/bot-builder-lg-file-format.md#switch-case).
+There are two types of conditional response templates: [if-else](../file-format/bot-builder-lg-file-format.md#if-else-template) and [switch](../file-format/bot-builder-lg-file-format.md#switch-template).
 
 #### If-else template
 
