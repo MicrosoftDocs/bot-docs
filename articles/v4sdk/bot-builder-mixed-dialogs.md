@@ -24,7 +24,10 @@ This article focuses on the code that allows these dialogs to work together. See
 ## Prerequisites
 
 - Knowledge of [bot basics][bot-basics], [managing state][concept-state], the [dialogs library][about-dialogs], and [adaptive dialogs][about-adaptive-dialogs].
+
+<!--
 - A copy of the **waterfall or custom dialog with adaptive** sample in either [**C#**][cs-sample], [**JavaScript** (preview)][js-sample]
+-->
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
@@ -695,8 +698,8 @@ For more information on how to use each dialog type, see:
 
 [bot-basics]: bot-builder-basics.md
 [about-dialogs]: bot-builder-concept-dialog.md
-[about-adaptive-dialogs]: bot-builder-adaptive-dialog-Introduction.md.md
-[about-input-dialogs]: bot-builder-concept-adaptive-dialog-Inputs.md
+[about-adaptive-dialogs]: https://aka.ms/adaptive-dialog-concept
+[about-input-dialogs]: https://aka.ms/adaptive-dialog-concept-inputs
 
 [lg-in-adaptive]: bot-builder-concept-adaptive-dialog-generators.md
 
