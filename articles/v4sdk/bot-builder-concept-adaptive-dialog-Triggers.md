@@ -14,8 +14,11 @@ ms.date: 04/27/2020
 
 Adaptive dialogs introduce a new event based approach to model conversations. Any sub-system in your bot can emit events and all adaptive dialogs contain one or more event handlers called _triggers_ that enable you to react to these events.  Any time an event fires, the active adaptive dialog's triggers are evaluated and if any trigger matches the current event, the [actions][2] associated with that trigger execute. If an event is not handled in the active dialog, it will be passed up to its parent dialog to be evaluated. This process continues until it is either handled or reaches the bots root dialog. If no event handler (_trigger_) is found, the event will be ignored and no action will be taken.
 
-<!--TODO P1: preBubble/consultation/postBubble phases https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r418164608
+<!--TODO P3: preBubble/consultation/postBubble phases - Possibly document in an advanced section at some point.
+From: v-jofin: (https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r418164608)
 There is also the post-bubble/trailing-edge process where everyone who didn't handle the event on the leading-edge gets a second chance on the trailing edge, from the root back down to the leaf.
+From Stevenic: (https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r425335486)
+"If anything it seems like these details would be in an "Advanced Event Concepts" section as I'm not sure most devs ever need to worry about this or even understand it. I had to create this mechanism to get our consultation stuff to work but it's a super advanced concept."
 --->
 
 ## Prerequisites
@@ -57,12 +60,10 @@ Triggers = new List<OnCondition>()
 
 | Event cause               | Trigger name  | Base event    | Description                                                       |
 | ------------------------- | ------------- | ------------- | ----------------------------------------------------------------- |
-| Assign entity to property | OnAssignEntity| RecognizedIntent | Triggered to assign an entity to a property.                      |
-| Choose entity             | OnChooseEntity| RecognizedIntent | Occurs when there are multiple possible resolutions of an entity. |
 | Choose Intent | OnChooseIntent |ChooseIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
 | Intent recognized| OnIntent | RecognizedIntent | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|OnQnAMatch| RecognizedIntent |This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
-|Unknown intent recognized| OnUnknownIntent | UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. |
+|Unknown intent recognized| OnUnknownIntent | UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to to enable you to perfoam any needed tasks when the dialog first starts. |
 
 #### Recognizer trigger examples
 
@@ -127,6 +128,9 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 
 The dialog triggers handle dialog specific events that are related to the "lifecycle" of the dialog.  There are currently 6 dialog triggers in the Bot Framework SDK and they all derive from the `OnDialogEvent` class.
 
+> [!TIP]
+> These aren't like normal interruption event handlers where the a childs actions will continue running after the handlers actions complete. For all of the events below the bot will be running a new set of actions and will end the turn once those actions have finished.
+
 > You should use _dialog triggers_ to:
 >
 > * Take action immediately when the dialog starts, even before the recognizer is called.
@@ -134,17 +138,19 @@ The dialog triggers handle dialog specific events that are related to the "lifec
 > * Take actions on messages received or sent.
 > * Evaluate and take action based on the content of an incoming activity.
 
-| Trigger name     | Base event   | Description                                                                    |
-| ---------------- | ------------ | ------------------------------------------------------------------------------ |
-| OnBeginDialog    | BeginDialog  | Actions to perform when this dialog begins.                                    |
-| OnCancelDialog   | CancelDialog | Actions to perform on cancel dialog event (when this dialog ends).             |
-| OnChooseProperty |ChooseProperty| This event occurs when there are multiple possible entity to property mappings.|
-| OnEndOfActions   | EndOfActions | This event occurs once all actions and ambiguity events have been processed.   |
-| OnError          | Error        | Action to perform when an 'Error' dialog event occurs.                         |
-| OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                         |
+| Trigger name     | Base event   | Description                                                                                                                         |
+| ---------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| OnBeginDialog    | BeginDialog  | Actions to perform when this dialog begins. For use with child dialogs only, not to be used in your root dialog, In root dialogs, use `OnUnknownIntent` to perform dialog initialization activities.|
+| OnCancelDialog   | CancelDialog | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a CancelAllDialogs action. |
+| OnEndOfActions   | EndOfActions | This event occurs once all actions and ambiguity events have been processed.                                                        |
+| OnError          | Error        | Action to perform when an 'Error' dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
+| OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                                                                              |
 
 > [!TIP]
-> Most dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-examples) or a [prompt for user input][14] etc.
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-examples) or a [prompt for user input][14].
+
+> [!IMPORTANT]
+> Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
 
 #### Dialog event trigger example
 
