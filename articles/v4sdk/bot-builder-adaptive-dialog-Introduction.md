@@ -158,8 +158,8 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 ### How to develop a bot using adaptive dialogAdaptive
 
 * [Create a bot using adaptive dialogs][10]
-* [Create a bot using Declarative adaptive dialogs][11]
-<!-- (P1) * [Create a bot using both traditional and adaptive dialogs together][12] -->
+<!--* [Create a bot using Declarative adaptive dialogs][11]--->
+* [Create a bot combining adaptive, component, waterfall, and custom dialogs][12]
 
 [1]:https://aka.ms/bot-builder-concept-dialog
 
@@ -170,9 +170,9 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [7]:https://aka.ms/adaptive-dialog-concept-generation
 [8]:https://aka.ms/adaptive-dialog-concept-memory-states
 [9]:https://aka.ms/adaptive-dialog-concept-declarative
-[10]:bot-builder-bot-builder-howto-Create-using-Adaptive.md
-[11]:bot-builder-bot-builder-howto-Create-using-Declarative-Adaptive.md
-[12]:bot-builder-bot-builder-howto-Create-using-Declarative-Adaptive.md
+[10]:bot-builder-dialogs-adaptive.md
+[11]:bot-builder-dialogs-declarative-adaptive.md
+[12]:bot-builder-mixed-dialogs.md
 [13]:https://aka.ms/adaptive-dialog-concept-inputs#interruptions
 [14]:https://aka.ms/bot-builder-concept-dialog#prompts
 [15]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog
