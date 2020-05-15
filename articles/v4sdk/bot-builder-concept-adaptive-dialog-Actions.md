@@ -44,7 +44,7 @@ Adaptive dialogs support the following actions:
 
 | Activity to accomplish                         | Action Name                   | What this action does                                              |
 | ---------------------------------------------- | ----------------------------- | ------------------------------------------------------------------ |
-| Send any activity such as responding to a user.| [SendActivity](#sendactivity) | Enables you send any type of activity such as responding to users. |
+| Send any activity such as responding to a user.| [SendActivity](#send-activity) | Enables you send any type of activity such as responding to users. |
 
 For a code sample see [Send a response example](#send-a-response-example).
 
@@ -81,16 +81,16 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.    |
-| Cancel a dialog        | [CancelDialog](#canceldialog)| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.|
-| Cancel all dialogs     | [CancelAllDialogs](#cancelalldialogs)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
+| Cancel a dialog        | CancelDialog<!--[CancelDialog](#canceldialog)-->| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.|
+| Cancel all dialogs     | [CancelAllDialogs](#cancelalldialog)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 | End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
 | Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
 | Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
-| Update an activity     | [UpdateActivity](#updateactivity)| This enables you to update an activity that was sent.                     |
-| DeleteActivity        | [DeleteActivity](#deleteactivity) | Enables you to delete an activity that was sent.                          |
-| Get activity members | [GetActivityMembers](#getactivitymembers)| Enables you to get a list of activity members and save it to a property in [memory][11].|
-| GetConversationMembers| [GetConversationMembers](#getconversationmembers) | Enables you to get a list of the conversation members and save it to a property in[memory][11].|
+| Update an activity     | [UpdateActivity](#update-activity)| This enables you to update an activity that was sent.                     |
+| DeleteActivity        | [DeleteActivity](#delete-activity) | Enables you to delete an activity that was sent.                          |
+| Get activity members | [GetActivityMembers](#get-activity-members)| Enables you to get a list of activity members and save it to a property in [memory][11].|
+| GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in[memory][11].|
 | EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
 
 For code samples see [Dialog management examples](#dialog-management-examples).
@@ -104,8 +104,8 @@ For code samples see [Dialog management examples](#dialog-management-examples).
 | Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
 | Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from[memory][11].                        |
 | Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Create or update a property | [SetProperty](#SetProperty)      | This enables you to set a property's value in[memory][11].                     |
-| Create or update properties | [SetProperties](#SetProperties)  | This enables you to initialize one or more properties in a single action. |
+| Create or update a property | [SetProperty](#setproperty)      | This enables you to set a property's value in[memory][11].                     |
+| Create or update properties | [SetProperties](#setproperties)  | This enables you to initialize one or more properties in a single action. |
 
 For code samples see [Manage properties examples](#manage-properties-examples).
 
@@ -113,11 +113,11 @@ For code samples see [Manage properties examples](#manage-properties-examples).
 
 | Activity to accomplish | Action Name                | What this action does                                                                                       |
 | ---------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [BeginSkill](#adaptiveskilldialog) | Use the adaptive skill dialog to run a skill.                                              |
+| Begin a skill dialog   | [BeginSkill](#beginskill) | Use the adaptive skill dialog to run a skill.                                              |
 | Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                                          |
 | Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8].               |
-| Sign out a user        | [SignOutUser](#signoutuser)| Enables you to sign out the currently signed in user.                                                       |
-| Call custom code       | [CodeAction](#codestep)    | Enables you to call your own custom code.                                                                   |
+| Sign out a user        | [SignOutUser](#sign-out-user)| Enables you to sign out the currently signed in user.                                                       |
+| Call custom code       | [CodeAction](#codeaction)    | Enables you to call your own custom code.                                                                   |
 
 For code samples see [Access external resource examples](#access-external-resource-examples).
 
@@ -125,7 +125,7 @@ For code samples see [Access external resource examples](#access-external-resour
 
 | Activity to accomplish | Action Name                     | What this action does                                                       |
 | ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| Log to console         | [LogAction](#LogStep)           | Writes to the console and optionally sends the message as a trace activity. |
+| Log to console         | [LogAction](#log-action)           | Writes to the console and optionally sends the message as a trace activity. |
 | Emit a trace event     | [TraceActivity](#TraceActivity) | Sends a trace activity with whatever payload you specify.                   |
 
 For code samples see [Debugging option examples](#debugging-option-examples).
@@ -1044,12 +1044,12 @@ new TraceActivity()
 }
 ```
 
-#### LogStep
+#### Log action
 
 Writes to the console and optionally sends the message as a trace activity.
 
 ``` C#
-new LogStep()
+new LogAction()
 {
     Text = new TextTemplate("Hello"),
     // Automatically sends the provided text as a trace activity
