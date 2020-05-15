@@ -17,6 +17,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 In this article we will show you how to deploy a basic bot to Azure. We will explain how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
+> [!IMPORTANT]
+> Make sure that you are using the updated version of the Azure CLI.
+> For information about the latest release, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
+
+
 ## Prerequisites
 
 [!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
@@ -59,8 +64,6 @@ Make sure that you have the correct path to your bot project ARM deployment temp
 ---
 
 ### 5. Prepare your code for deployment
-
-[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
 
 #### 5.1 Retrieve or create necessary IIS/Kudu files
 

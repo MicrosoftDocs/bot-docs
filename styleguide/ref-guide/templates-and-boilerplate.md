@@ -22,7 +22,7 @@ The summary succinctly states what a type or member does or represents. Every pu
     - Use programming language-neutral text. For example, don't include Visual Basic or C#-specific terms in your summary.
     - Avoid using special formatting such as lists that might cause problems for IntelliSense builds.
     - Avoid using parameter names or self-referential type or member names in the summary. There are exceptions; for example, you can use the type name in summaries for constructors and for dispose methods.
-    - For **overloaded** constructors and methods, provide a general summary that is broad enough to apply to all the overloads, and write more specific summaries for the individual overloads. For the individual overloads, use wording that differentiates each overload from the others, and provide enough information to help users select the overload they'd like to call.  
+    - For **overloaded** constructors and methods, provide a general summary that is broad enough to apply to all the overloads, and write more specific summaries for the individual overloads. For the individual overloads, use wording that differentiates each overload from the others, and provide enough information to help users select the overload they'd like to call.
     This requires that the code comment language allows you to add overload topics. There may be a way to do this in YAML after the fact, but we probably don't want to introduce that headache.
     - When in doubt, open with a verb phrase. Include one or two more short sentences as necessary, but leave most of the explanation for the remarks section.
 
@@ -82,11 +82,39 @@ See [overloaded member summaries](#summary-overloaded-members) for how to word c
 
 ### Summary: fields
 
+| Item | Wording | Examples |
+|------|---------|----------|
+| Field | Begin with a present-tense third-person verb, such as *Specifies* or *Represents*. | Specifies that the message box should display Yes and No buttons<br>&mdash;<br>Represents the HKEY_CLASSES_ROOT registry key.|
+
 ### Summary: methods
+
+For guidelines about **On**_\<Event>_ methods, see the [event-related](#summary-event-related) section. For guidelines about documenting overloaded methods, see [overloaded members](#summary-overloaded-members).
+
+| Item | Wording | Examples |
+|------|---------|----------|
+| General method  | Begin with a present-tense third-person verb. | Displays XDO data in a scrollable grid.<br>&mdash;<br>Processes Windows messages that are currently in the message queue. |
+| **Dispose** method, general overload | Releases the resources used by the current instance of the *\<class>* class. | Releases the resources used by the current instance of the *ComponentDesigner* class. |
+| **Dispose()** method | Releases the resources used by the current instance of the *\<class>* class. | Releases the resources used by the current instance of the *Timer* class. |
+| **Dispose(Boolean)** method | Called by the **Dispose()** and **Finalize()** methods to release the managed and unmanaged resources used by the current instance of the *\<class>* class.  | Called by the **Dispose()** and **Finalize()** methods to release the managed and unmanaged resources used by the current instance of the *DocumentDesigner* class. |
+| <a name="exception"></a> Method that always throws an exception | Throws a/an *\<ExceptionType>* exception in all cases.<br /><br />**Note:**<br />In the Remarks section, explain why the member is not supported. | Throws a *NotSupportedException* exception in all cases. |
+| Explicit interface method implementation | \<Copy from the interface member if appropriate> |
 
 ### Summary: operators
 
+Read [overloaded members](#summary-overloaded-members) for guidelines about documenting overloaded operators.
+
+| Item | Wording | Examples |
+|------|---------|----------|
+| Unary/binary operator; for example, + operator | Begin with a present-tense verb. | Adds a value to a *Unit*. |
+| Conversion operator | Converts a *\<Type>* to a *\<Type>*.<br /><br />**Note:**<br />If one type is a primitive, use the language-neutral phrase for it. | Converts a decimal to a 32-bit signed integer. |
+
 ### Summary: properties
+
+| Item | Wording | Examples |
+|------|---------|----------|
+| Read/write property or indexed property | *Boolean:*<br />Gets or sets a value that indicates whether *\<condition>*.<br /><br />*Other:*<br />Gets or sets *\<summary without specifying the type>*.  | Gets or sets a value that indicates whether the control can accept data that the user drags onto it.<br>&mdash;<br>Gets or sets the background color for the control. |
+| Read-only property or indexed property | *Boolean:*<br />Gets a value that indicates whether *\<condition>*.<br /><br />Other:<br />Gets *\<summary without specifying the type>*.<br /><br />**Note:**<br />It isn't necessary to say "This property is read-only." | Gets a value that indicates whether the type is passed by reference.<br>&mdash;<br>Gets the default binder used by the system. |
+| Explicit interface property implementation | \<Copy from the interface member if appropriate> | |
 
 ### Summary: abstract and virtual members
 
