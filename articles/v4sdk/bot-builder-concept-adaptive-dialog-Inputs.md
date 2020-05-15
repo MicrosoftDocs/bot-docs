@@ -492,21 +492,20 @@ The following links provide generalized information on the topic of authenticati
 
 ## Additional information
 
-* To learn about action specific to gathering user input see the article [Asking for user input using adaptive dialogs][7].
 * To learn more about expressions see the article [Adaptive expressions][10].
 
-[1]:bot-builder-adaptive-dialog-introduction.md
-[2]:bot-builder-adaptive-dialog-triggers.md
-[3]:bot-builder-adaptive-dialog-actions.md
+[1]:https://aka.ms/adaptive-dialog-concept
+[2]:https://aka.ms/adaptive-dialog-concept-triggers
+[3]:https://aka.ms/adaptive-dialog-concept-actions
 [4]:https://aka.ms/bot-builder-concept-dialog#prompts
 [5]:https://aka.ms/azure-bot-authentication
 [6]:https://aka.ms/azure-bot-add-authentication
-[7]:bot-builder-adaptive-dialog-input.md
-[8]:bot-builder-adaptive-dialog-triggers.md#custom-events
-[9]:bot-builder-adaptive-dialog-generation.md
+
+[8]:https://aka.ms/adaptive-dialog-concept-triggers#custom-events
+[9]:https://aka.ms/adaptive-dialog-concept-generation
 [10]:https://aka.ms/bot-builder-adaptive-expressions-concept
-[11]:bot-builder-adaptive-dialog-memory-states.md
+[11]:https://aka.ms/adaptive-dialog-concept-memory-states
 [12]:https://aka.ms/bot-builder-adaptive-expressions-concept
-[13]:bot-builder-adaptive-dialog-recognizers.md
+[13]:https://aka.ms/adaptive-dialog-concept-recognizers
 [14]:https://aka.ms/language-generation-file-format
 [15]:https://aka.ms/bot-builder-adaptive-expressions-concept
