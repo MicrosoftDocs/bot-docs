@@ -392,10 +392,10 @@ var adaptiveDialog = new AdaptiveDialog()
 * [Add natural language generation (LG) to your bot][4]
 
 [1]:bot-builder-basics.md
-[2]:bot-builder-adaptive-dialog-introduction.md
+[2]:https://aka.ms/adaptive-dialog-concept
 [3]:bot-builder-concept-dialog.md
-[4]:bot-builder-adaptive-dialog-generators.md
-[5]:ot-builder-adaptive-dialog-triggers.md#onintent
+[4]:https://aka.ms/adaptive-dialog-concept-generation
+[5]:https://aka.ms/adaptive-dialog-concept-triggers#onintent
 [6]:https://aka.ms/bot-builder-language-generation-concept
 [7]:https://aka.ms/regular-expression-language-reference
 [8]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
