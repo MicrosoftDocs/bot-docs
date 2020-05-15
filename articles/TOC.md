@@ -24,7 +24,10 @@
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
-## [About skills](v4sdk/skills-conceptual.md)
+## Skills
+### [About skills](v4sdk/skills-conceptual.md)
+### [About skill bots](v4sdk/skills-about-skill-bots.md)
+### [About skill consumers](v4sdk/skills-about-skill-consumers.md)
 ## [Adaptive expressions](v4sdk/bot-builder-concept-adaptive-expressions.md)
 ## [Language Generation](v4sdk/bot-builder-concept-language-generation.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
@@ -64,6 +67,8 @@
 ### [Use language generation templates in your bot](language-generation/bot-builder-howto-use-lg-templates.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
+#### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)
+#### [Write a v2.0 skill manifest](v4sdk/skills-write-manifest-2-0.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
 <!--
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
