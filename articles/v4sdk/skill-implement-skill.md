@@ -271,7 +271,7 @@ The manifest contains the information you need to access the skill from another 
 
 ---
 
-The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current schema version is [2.1.0](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
 
 ## Test the skill
 

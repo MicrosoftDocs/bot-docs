@@ -24,7 +24,12 @@
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
-## [About skills](v4sdk/skills-conceptual.md)
+## Skills
+### [About skills](v4sdk/skills-conceptual.md)
+### [About skill bots](v4sdk/skills-about-skill-bots.md)
+### [About skill consumers](v4sdk/skills-about-skill-consumers.md)
+## [Adaptive expressions](v4sdk/bot-builder-concept-adaptive-expressions.md)
+## [Language Generation](v4sdk/bot-builder-concept-language-generation.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
@@ -57,10 +62,14 @@
 ### Adaptive dialogs
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
-### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
+### Authentication
+#### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
+#### [Add single sign on to a bot](v4sdk/bot-builder-authentication-sso.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
+#### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)
+#### [Write a v2.0 skill manifest](v4sdk/skills-write-manifest-2-0.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
 <!--
 #### [Add claims validation](v4sdk/skill-add-claims-validation.md)
@@ -91,5 +100,16 @@
 ## BF CLI tool reference
 ### [BF CLI overview](v4sdk/bf-cli-overview.md)
 ### [BF CLI reference](v4sdk/bf-cli-reference.md)
+## Adaptive expressions
+### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
+### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
+## LG
+### [API reference](language-generation/language-generation-API-reference.md)
+### [.lg file format](file-format/bot-builder-lg-file-format.md)
+### [Structured response template](language-generation/language-generation-structured-response-template.md)
+### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
+## File formats
+### [.lu file format](file-format/bot-builder-lu-file-format.md)
+### [.qna file format](file-format/bot-builder-qna-file-format.md)
 ## [Entities and activity types](bot-service-activities-entities.md)
 # [Resources](resources/TOC.md)

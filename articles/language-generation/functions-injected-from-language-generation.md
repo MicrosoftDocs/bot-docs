@@ -1,6 +1,6 @@
 ---
-title: Functions injected from LG library - Bot Service
-description: Describes how to inject functions from LG into template. 
+title: Functions injected from the language generation library - Bot Service
+description: Describes how to inject functions from LG into templates.
 keywords: functions from lg, reference, language generation
 author: kamrani
 ms.author: kamrani
@@ -8,54 +8,53 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
 ---
 
 
-# Functions injected from LG library
+# Functions injected from the language generation library
 
-## Functions
-- [ActivityAttachment](#ActivityAttachment)
-- [template](#template)
-- [fromFile](#fromFile)
-- [isTemplate](#isTemplate)
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
-<a name="ActivityAttachment"></a>
-### ActivityAttachment
+The following article details how to inject functions from the [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md) library.
 
-Return an activityAttachment constructed from an object and a type.
+## ActivityAttachment
 
-```
+Return an `activityAttachment` constructed from an object and a type.
+
+```.lg
 ActivityAttachment(<collection-of-objects>)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*content*> | Yes | Object  | Object contains the information of attachment |
-| <*type*> | Yes | string  | A string represents the type of attachment |
+| <*content*> | Yes | object | Object containing the information of the attachment |
+| <*type*> | Yes | string  | A string representing the type of attachment |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*activityAttachment*> | Object | An activityAttachment formed from the inputs |
+| <*activityAttachment*> | object | An `activityAttachment` formed from the inputs |
 ||||
 
-*Example*
+*Example*:
 
-This example converts an collection of objects to an activityAttachment.
+This example converts a collection of objects to an `activityAttachment`.
+<!--
+Using the `ActivityAttachment()` function in the template body, type, title, value are parameters in the template name.-->
 
-Using ActivityAttachment function in the template body, type, title, value are parameters in the template name.
-Suppose we have a template:
+Suppose you have the following template:
 
-```
+```.lg
 # externalHeroCardActivity(type, title, value)
 [Activity
     attachments = ${ActivityAttachment(json(fromFile('.\\herocard.json')), 'herocard')}
 ]
 ```
 
-The content in herocard.json:
+and the following `herocard.json`:
 
-```
+```.lg
 {
   "title": "titleContent",
   "text": "textContent",
@@ -76,15 +75,15 @@ The content in herocard.json:
 }
 ```
 
-By calling externalHeroCardActivity as a function:
+By calling `externalHeroCardActivity()` as a function:
 
-```
+```.lg
 externalHeroCardActivity('signin', 'Signin Button', 'http://login.microsoft.com')
 ```
 
-And it returns a herocard:
+It returns a `herocard`:
 
-```
+```.lg
 {
     "lgType" = "attachment",
     "contenttype" = "herocard",
@@ -109,32 +108,32 @@ And it returns a herocard:
 }
 ```
 
-<a name="template"></a>
-### template
+## template
 
 Return the evaluated result of given template name and scope.
 
-```
+```.lg
 template(<templateName>, '<param1>', '<param2>', ...)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*templateName*> | Yes | String  | A string represents the template name |
+| <*templateName*> | Yes | string  | A string representing the template name |
 | <*param1*>,<*param2*>, ... | Yes | Object  | The  parameters passed to the template |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*evaluated-result*> | Object | the result evaluated from the template as a function  |
+| <*evaluated-result*> | object | The result evaluated from the template as a function  |
 ||||
 
-*Example*
+*Example*:
 
-This example evaluates the result of calling the template as a function :
-Suppose we have template:
+This example evaluates the result of calling the template as a function.
 
-```    
+Suppose you have the following template:
+
+```.lg
     # welcome(userName)
 
     - Hi ${userName}
@@ -144,25 +143,17 @@ Suppose we have template:
     - Hey ${userName}
 ```
 
-```
-template("welcome", "DL")
-```
+Calling `template("welcome", "DL")` will result in one of the following:
 
-And it returns one of these results:
+- _Hi DL_
+- _Hello DL_
+- _Hey DL_
 
-```
-Hi DL
-Hello DL
-Hey DL
-```
+## fromFile
 
-<a name="fromFile"></a>
+Return the evaluated result of the expression in the given file.
 
-### fromFile
-
-Return the evaluated result of the expression in the given file. 
-
-```
+```.lg
 fromFile(<filePath>)
 ```
 
@@ -178,50 +169,42 @@ fromFile(<filePath>)
 
 *Example*
 
-This example evaluates the result from the given file:
-Suppose we have a file whose filepath is:  
+This example evaluates the result from the given file.
 
-`/home/user/test.txt`
+Suppose you have a file called  `/home/user/test.txt`. Inside the file there is the following:
+```.lg
+   `you have ${add(1,2)} alarms`
 
-
-The content of the file is 
-
-
-`you have ${add(1,2)} alarms`
-
-```
-fromFile('/home/user/test.txt')
+    fromFile('/home/user/test.txt')
 ```
 
-The fromFile function will evaluate the expression part and the result will replace the original expression. So it returns the result: 
+The `fromFile()` function will evaluate the expression and the result will replace the original expression.
 
-`'you have 3 alarms'`
+Calling `fromFile('/home/user/test.txt')` results in the string _you have 3 alarms_.
 
-<a name="isTemplate"></a>
-### isTemplate
+## isTemplate
 
 Return whether a given template name is included in the evaluator.
 
-```
-isTemplate(<tempalteName>)
+```.lg
+isTemplate(<templateName>)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*tempalteName*> | Yes | String  | A tempalte name to check |
+| <*tempalteName*> | Yes | String  | A template name to check |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*result*> | Boolean | whether the given template name is included in the evaluator  |
+| <*result*> | Boolean | Whether the given template name is included in the evaluator  |
 ||||
 
 *Example*
 
-This example uses isTempalte function to check whether given template name is in the evaluator:
-Suppose we have evalutor contains these templates:
+This example uses the `isTemplate()` function to check whether a given template name is in the evaluator. For example, here are three templates:
 
-```
+```.lg
 # welcome
 - hi
 
@@ -232,24 +215,9 @@ Suppose we have evalutor contains these templates:
 - you add a task at 7:pm
 ```
 
-By calling
+Calling `isTemplate("welcome")` would evaluate to `true`. Calling `isTemplate("delete-to-do")` would evaluate to `false`.
 
-```
-isTemplate("welcome")
-```
+<!--
+## Additional Information
 
-And it returns the result:
-
-```
-true
-```
-
-```
-isTemplate("delete-to-do")
-```
-
-And it returns the result:
-
-```
-false
-```
+- For more information about .lg templates read the [.lg file format](../file-format/bot-builder-lg-file-format.md) and [structured response template](language-generation-structured-response-template.md) reference articles.-->
