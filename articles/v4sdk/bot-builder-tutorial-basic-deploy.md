@@ -84,8 +84,6 @@ You can deploy your bot in a new resource group or an existing resource group. C
 
 #### 5. Prepare your code for deployment
 
-[!INCLUDE [Work around for .NET Core 3.1 SDK](~/includes/deploy/samples-workaround-3-1.md)]
-
 ##### **Retrieve or create necessary IIS/Kudu files**
 
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
