@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/18/2020
+ms.date: 04/20/2020
 ---
 
 # Connect a bot to Slack
@@ -16,8 +16,8 @@ This article describes how to configure the Slack channel to allow the user to c
 
 You can take one of the following approaches to connect the Slack channel to a bot:
 
-- Configure Slack in Azure
-- Use the Slack adapter
+- Configure Slack in Azure.
+- Use the Slack adapter (available only for the C# SDK for now).
 
 # [Configure Slack in Azure](#tab/abs)
 

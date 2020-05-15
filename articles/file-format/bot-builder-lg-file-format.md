@@ -8,74 +8,62 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
 ---
 
 # .lg file format
 
-.lg files help describe Language Generation templates with entity references and their composition. This document covers the various concepts expressed via the .lg file format.
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
-**Concepts:**
-- [.LG file format](#lg-file-format)
-- [Comments](#comments)
-- [Escape character](#escape-character)
-- [Templates](#templates)
-  - [Simple response template](#simple-response-template)
-  - [Conditional response template](#conditional-response-template)
-    - [If..Else](#if-else)
-    - [Switch..Case](#switch-case)
-  - [Structured response template](#structured-response-template)
-- [Template composition and expansion](#template-composition-and-expansion)
-  - [References to templates](#references-to-templates)
-  - [Entities](#entities)
-  - [Using pre-built functions in variations](#using-pre-built-functions-in-variations)
-  - [Multi-line text in variations](#multi-line-text-in-variations)
-- [Parametrization of templates](#parametrization-of-templates)
-- [Importing external references](#importing-external-references)
-- [LG specific adaptive expression functions](#functions-injected-by-lg)
-- [Strict option](#strict-option)
-## Comments
+The `.lg` file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the `.lg` file format.
 
-Comments are prefixed with `>` character. All lines that have this prefix will be skipped by the parser.
+## Special Characters
 
-```markdown
-> this is a comment.
+### Comments
+
+Use **>** to create a comment. All lines that have this prefix will be skipped by the parser.
+
+```.lg
+> This is a comment.
 ```
 
-## Escape character
+### Escape character
 
-Use `\` as escape character.
+Use **\\** as an escape character.
 
-```markdown
+```.lg
 # TemplateName
 - You can say cheese and tomato \[toppings are optional\]
 ```
 
 ## Templates
 
-At the core of language generation system is the concept of a template. Each template has a name and one of the following:
+**Templates** are the core concept of the language generation system. Each template has a name and one of the following:
 
-- list of one-of variation text values
-- structured content definition
+- a list of one-of variation text values
+- a structured content definition
 - a collection of conditions, each with:
     - an [adaptive expression][3]
-    - a list of one-of variation text values per condition.
+    - a list of one-of variation text values per condition
 
-Template names follow the markdown header definition
+Template names follow the Markdown header definition.
 
-```markdown
+```.lg
 # TemplateName
 ```
 
-Variations are expressed as a Markdown list. You can prefix lists using the '-', '*', or '+' character.
+Variations are expressed as a Markdown list. You can prefix each variation using the **-**, **'**, or **+** character.
 
-```markdown
+```.lg
 # Template1
+- text variation 1
+- text variation 2
 - one
 - two
 
 # Template2
-* one
-* two
+* text variation 1
+* text variation 2
 
 # Template3
 + one
@@ -84,13 +72,11 @@ Variations are expressed as a Markdown list. You can prefix lists using the '-',
 
 ### Simple response template
 
-A simple response template includes one or more variations of text that must be used for composition and expansion. 
-
-One of the variations provided will be picked at random by the LG library.
+A simple response template includes one or more variations of text that are used for composition and expansion. One of the variations provided will be selected at random by the LG library.
 
 Here is an example of a simple template that includes two variations.
 
-```markdown
+```.lg
 > Greeting template with 2 variations.
 # GreetingPrefix
 - Hi
@@ -99,15 +85,18 @@ Here is an example of a simple template that includes two variations.
 
 ### Conditional response template
 
-Conditional response templates enable you to author content that is selecting based on a condition. All conditions are expressed using [adaptive expressions][3].
+Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions][3].
+ 
+> [!IMPORTANT]
+> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](#structured-response-template) to nest conditionals. 
 
-#### If Else
+#### If-else template
 
-IF ... ELSEIF ... ELSE construct lets you to build a template that picks a collection based on a cascading order of conditions. Evaluation is top-down and stops when a condition evaluates to `true` or the ELSE block is hit.
+The if-else template lets you build a template that picks a collection based on a cascading order of conditions. Evaluation is top-down and stops when a condition evaluates to `true` or the ELSE block is hit.
 
-Here is an example that shows the simple IF ... ELSE conditional response template definition.
+Conditional expressions are enclosed in braces **${}**. Here's an example that shows a simple IF ELSE conditional response template definition.
 
-```markdown
+```.lg
 > time of day greeting reply template with conditions.
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
@@ -116,9 +105,9 @@ Here is an example that shows the simple IF ... ELSE conditional response templa
     - good evening
 ```
 
-Here is another example that shows IF ... ELSEIF ... ELSE conditional response template definition. Note that you can include references to other simple or conditional response templates in the variation for any of the conditions.
+Here's another example that shows an if-else conditional response template definition. Note that you can include references to other simple or conditional response templates in the variation for any of the conditions.
 
-```markdown
+```.lg
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
     - ${morningTemplate()}
@@ -128,13 +117,13 @@ Here is another example that shows IF ... ELSEIF ... ELSE conditional response t
     - I love the evenings! Just saying. ${eveningTemplate()}
 ```
 
-#### Switch case
+#### Switch template
 
-The SWITCH ... CASE ... DEFAULT construct lets you design a conditional template that matches an expression's value to a case clause and produces output based on that case. Condition expressions are enclosed in curly brackets - ${}.
+The switch template lets you design a template that matches an expression's value to a CASE clause and produces output based on that case. Condition expressions are enclosed in braces ${}.
 
-Here's how you can specify SWITCH ... CASE block in LG.
+Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
-```markdown
+```.lg
 # TestTemplate
 - SWITCH: ${condition}
 - CASE: ${case-expression-1}
@@ -145,19 +134,21 @@ Here's how you can specify SWITCH ... CASE block in LG.
    - final output
 ```
 
-Here's a more complicated example:
+Here's a more complicated SWITCH CASE DEFAULT example:
 
-```markdown
-> Note: any of the cases can include reference to one or more templates
+```.lg
+> Note: Any of the cases can include reference to one or more templates.
 # greetInAWeek
 - SWITCH: ${dayOfWeek(utcNow())}
 - CASE: ${0}
     - Happy Sunday!
 -CASE: ${6}
     - Happy Saturday!
--DEFAULT:  
+-DEFAULT:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
+
+Like conditional templates, switch templates also cannot be nested. 
 
 ### Structured response template
 
@@ -167,18 +158,17 @@ For bot applications, we natively support:
 
 - activity definition
 - card definition
-- any [chatdown][12] style constructs
 
-Read the [structure response templates](../language-generation/language-generation-structured-response-template.md) article for more information.
+Read about [structure response templates](../language-generation/language-generation-structured-response-template.md) for more information.
 
 ## Template composition and expansion
 
 ### References to templates
 
-Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using _- ${TemplateName()}._
+Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as _${TemplateName()}_.
 
-```markdown
-> Example of a template that includes composition reference to another template
+```.lg
+> Example of a template that includes composition reference to another template.
 # GreetingReply
 - ${GreetingPrefix()}, ${timeOfDayGreeting()}
 
@@ -197,7 +187,7 @@ Variation text can include references to another named template to aid with comp
 
 Calling the `GreetingReply` template can result in one of the following expansion resolutions:
 
-```
+```.lg
 Hi, good morning
 Hi, good afternoon
 Hi, good evening
@@ -208,18 +198,18 @@ Hello, good evening
 
 ## Entities
 
-When used directly within a one-of variation text, entity references are denoted by enclosing them in curly brackets -  ${`entityName`}.
+When used directly within a one-of variation text, entity references are denoted by enclosing them in braces, such as  ${`entityName`}, or without braces when used as a parameter.
 
-Entities are expressed as `entityName`. - e.g. ${entityName == null} - when used as a parameter:
-    - within a [pre-built function][4]
-    - within a condition in a [conditional response template](#conditional-response-template)
-    - to [template resolution call](#parametrization-of-templates)
+Entities can be used as a parameter:
+- within a [prebuilt function][4]
+- within a condition in a [conditional response template](#conditional-response-template)
+- to [template resolution call](#parametrization-of-templates)
 
-## Using pre-built functions in variations
+## Using prebuilt functions in variations
 
-[Pre-built functions][4] supported by the [adaptive expressions][3] can also be used inline in a one-of variation text to achieve even more powerful text composition. To use an expression inline, simply wrap it in curly brackets - ${}.
+[Prebuilt functions][4] supported by [adaptive expressions][3] can also be used inline in a one-of variation text to achieve even more powerful text composition. To use an expression inline, simply wrap it in braces.
 
-```markdown
+```.lg
 # RecentTasks
 - IF: ${count(recentTasks) == 1}
     - Your most recent task is ${recentTasks[0]}. You can let me know if you want to add or complete a task.
@@ -231,13 +221,13 @@ Entities are expressed as `entityName`. - e.g. ${entityName == null} - when used
     - You don't have any tasks.
 ```
 
-The example uses the [join][5] pre-built function to list all values in the `recentTasks` collection.
+The example above uses the [join][5] prebuilt function to list all values in the `recentTasks` collection.
 
-Given templates and prebuilt functions share the same invocation signature, a template name cannot be the same as a prebuilt function name. See [here][4] for list of prebuilt functions. 
+Given templates and prebuilt functions share the same invocation signature, a template name cannot be the same as a prebuilt function name.
 
-In cases where you must have the template name be the same as a pre-built function name you can use `lg.xxx`, as seen in the example below, to refer to the LG template and avoid possible collisions with pre-built functions.
+ A template name should not match a prebuilt function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
 
-```markdown
+```.lg
 > Custom length function with one parameter.
 # length(a)
 - This is use's customized length function
@@ -251,27 +241,25 @@ In cases where you must have the template name be the same as a pre-built functi
 - ${lg.length('hi')}
 ```
 
-## Functions injected by LG
-[Adaptive expressions][3] provide an ability to inject custom set of functions. Language generation takes advantage of this facility and adds [these functions][13]
+## Multiline text in variations
 
-## Multi-line text in variations
-Each one-of variation can include multi-line text enclosed in triple quotes.
+Each one-of variation can include multiline text enclosed in triple quotes.
 
-```markdown
-    # MultiLineExample
-    - ```This is a multi-line list
+```.lg
+# MultiLineExample
+    - ```This is a multiline list
         - one
         - two
         ```
-    - ```This is a multi-line variation
+    - ```This is a multiline variation
         - three
         - four
     ```
 ```
 
-Multi-line variation can request template expansion and entity substitution by enclosing the requested operation in ${}.
+Multiline variation can request template expansion and entity substitution by enclosing the requested operation in braces, ${}.
 
-```markdown
+```.lg
 # MultiLineExample
     - ```
         Here is what I have for the order
@@ -281,19 +269,19 @@ Multi-line variation can request template expansion and entity substitution by e
     ```
 ```
 
-With multi-line support, you can have the language generation sub-system fully resolve a complex JSON or XML (e.g. SSML wrapped text to control bot's spoken reply).
+With multiline support, you can have the Language Generation sub-system fully resolve a complex JSON or XML (like SSML wrapped text to control bot's spoken reply).
 
 ## Parametrization of templates
 
-To aid with contextual re-usability, templates can be parametrized. Different callers to the template can pass in different values for use in expansion resolution.
+To aid with contextual reusability, templates can be parametrized. Different callers to the template can pass in different values for use in expansion resolution.
 
-```markdown
+```.lg
 # timeOfDayGreetingTemplate (param1)
 - IF: ${param1 == 'morning'}
     - good morning
 - ELSEIF: ${param1 == 'afternoon'}
     - good afternoon
-- ELSE: 
+- ELSE:
     - good evening
 
 # morningGreeting
@@ -305,41 +293,83 @@ To aid with contextual re-usability, templates can be parametrized. Different ca
 
 ## Importing external references
 
-You may want to break the language generation templates into separate files and refer them from one another for organizational and reusability purposes. You can use Markdown-style links to import templates defined in another file.
+You can split your language generation templates into separate files and reference a template from one file in another. You can use Markdown-style links to import templates defined in another file.
 
-```markdown
+```.lg
 [Link description](filePathOrUri)
 ```
 
-All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced via a # <namespace>.<templatename> convention) across files being pulled in.
+All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced with `# \<namespace>.\<templatename>`) across files being pulled in.
 
-```markdown
+
+```.lg
 [Shared](../shared/common.lg)
 ```
 
-## Strict option
-Sometimes user does not want to tolerate null result for the null evaluated result, if so, you could add the strict option command at the beginning of the lg file, such as:
+## Functions injected by LG
 
-```
+[Adaptive expressions][3] provide the ability to inject a custom set of functions. Read [calling functions from LG templates][13] for more information.
+
+## Options
+
+Deverloper can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
+
+> [!IMPORTANT]
+>
+> The last setting found in the file trumps any prior setting found in the same document.
+
+### Strict option
+
+Developers who do not want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
+
+```.lg
 > !# @strict = true
 # template
 - hi
 ```
 
-If the strict option is on, null errors would be thrown by friendly message. for example:
+If the strict option is on, null errors will throw a friendly message.
 
-```
+```.lg
 # welcome
 - hi ${name}
 ```
 
-If name is null, the diagnostic would be: `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.`
+If name is null, the diagnostic would be `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.` If strict is set to false or not set, a compatible result will be given. The above sample would produce `hi null`.
 
-Otherwise, if strict is not set, or set to false, a compatible result will be given. The above sample would get the result "hi null"
+### replaceNull option
+
+Developers can creat delegates to replace null values in evaluated expressions by using the **replaceNull** option:
+
+```.lg
+> !# @replaceNull = ${path} is undefined 
+```
+
+In the above example, the null input in the `path` variable would be replaced with `${path} is undefined`. The following input, where `user.name` is null:
+:
+
+```.lg
+hi ${user.name}
+```
+
+Would result in **hi user.name is undefined**.
+
+### lineBreakStyle option
+
+Developers can set options for how the LG system renders line breaks using the **lineBreakStyle** option. Two modes are currently supported:
+
+- `default`: line breaks in multiline text create normal line breaks.
+- `markdown`: line breaks in multiline text will be automatically converted to two lines to create a newline
+
+The example below shows how to set the lineBreakStyle option to `markdown`:
+
+```.lg
+> !# @lineBreakStyle = markdown
+```
 
 ## Additional Resources
 
-- Language Generation [API reference][2]
+- [Language generation API reference][2]
 
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
