@@ -54,6 +54,9 @@ Here are the different memory scopes available in adaptive dialogs:
 * [Class scope](#class-scope)
 * [Memory short-hand notations](#memory-short-hand-notations)
 
+> [!TIP]
+> All property paths are case-insensitive. For example, `user.name` is the same as `user.Name`. Also, if you do not have a property named `user.name` and you create a property named `user.name.first` the `user.name` object will automatically be created for you.
+
 ## User scope
 
 User scope is persistent data scoped to the ID of the user you are conversing with.  
