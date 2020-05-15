@@ -700,7 +700,7 @@ For more information on how to use each dialog type, see:
 [concept-state]: bot-builder-concept-state.md
 [about-dialogs]: bot-builder-concept-dialog.md
 [about-adaptive-dialogs]: bot-builder-adaptive-dialog-Introduction.md
-[about-input-dialogs]: bot-builder-concept-adaptive-dialog-Inputs.md
+[about-input-dialogs]: bot-builder-concept-adaptive-dialog-inputs.md
 
 [lg-in-adaptive]: bot-builder-concept-adaptive-dialog-generators.md
 
