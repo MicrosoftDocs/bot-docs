@@ -255,10 +255,10 @@ There are few short-hand notations supported to access specific memory scopes.
 | @@     | @@entityName  | turn.recognized.entities.entityName | @@entityName will return the actual value of the entity, preserving the value's cardinality.                          |
 | %      | %propertyName | class.propertyName                  | Used to refer to instance properties (e.g. MaxTurnCount, DefaultValue etc).                                           |
 
-[1]:https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0
-[2]:bot-builder-concept-adaptive-dialog-introduction.md
-[3]:https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#when-to-use-each-type-of-state
-[4]:bot-builder-concept-adaptive-dialog-recognizers.md
+[1]:https://aka.ms/bot-builder-concept-state
+[2]:https://aka.ms/adaptive-dialog-concept
+[3]:https://aka.ms/bot-builder-concept-state#when-to-use-each-type-of-state
+[4]:https://aka.ms/adaptive-dialog-concept-recognizers
 [5]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md
-[6]:bot-builder-concept-adaptive-dialog-actions.md#foreach
-[7]:bot-builder-concept-adaptive-dialog-actions.md#SetProperties
+[6]:https://aka.ms/adaptive-dialog-concept-actions#foreach
+[7]:https://aka.ms/adaptive-dialog-concept-actions#SetProperties
