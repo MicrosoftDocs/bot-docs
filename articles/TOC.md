@@ -60,6 +60,8 @@
 #### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
 #### [Add single sign on to a bot](v4sdk/bot-builder-authentication-sso.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
+## Language Generation
+### [Use language generation templates in your bot](language-generation/bot-builder-howto-use-lg-templates.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
