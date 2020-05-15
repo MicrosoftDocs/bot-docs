@@ -18,6 +18,14 @@
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
 ## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
+## Adaptive dialogs
+### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
+### [Events and triggers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md)
+### [Actions in Adaptive Dialogs](v4sdk/bot-builder-concept-adaptive-dialog-Actions.md)
+### [Asking for user input using adaptive dialogs ](v4sdk/bot-builder-concept-adaptive-dialog-Inputs.md)
+### [Recognizers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md)
+### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
+### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
 ## Authentication
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
