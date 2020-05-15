@@ -197,6 +197,7 @@ new SendActivity('${FinalUserProfileReadOut()}')
 ```
 
 In the example above, the bot calls the `FinalUserProfileReadOut` template and responds with the contents of the template.
+
 ---
 
 ## Additional Information
