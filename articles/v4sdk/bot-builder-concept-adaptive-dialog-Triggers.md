@@ -143,8 +143,6 @@ The dialog triggers handle dialog specific events that are related to the "lifec
 | OnError          | Error        | Action to perform when an 'Error' dialog event occurs.                         |
 | OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                         |
 
-<!--| Clear Property  |  OnClearProperty  | This event occurs any time a property needs to be be cleared.                  |-->
-
 > [!TIP]
 > Most dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-examples) or a [prompt for user input][14] etc.
 
@@ -173,10 +171,6 @@ var adaptiveDialog = new AdaptiveDialog()
 Activity triggers enable you to associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][3].
 
 All activity events have a base event of `ActivityReceived` and are further refined by their `ActivityType`. The Base class that all activity triggers derive from is `OnActivity`.
-
-
-| Trigger name     | Base event   | Description                                                                    |
-| ---------------- | ------------ | ------------------------------------------------------------------------------ |
 
 | Event cause         | ActivityType | Trigger name                 | Description                                                                       |
 | ------------------- | ------------ | ---------------------------- | --------------------------------------------------------------------------------- |
