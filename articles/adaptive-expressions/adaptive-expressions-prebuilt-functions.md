@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions prebuilt functions
 
+[!INCLUDE[applies-to](../includes/applies-to.md)]
+
 This article lists the available prebuilt functions ordered by their general purpose. Prebuilt expressions are divided into the following function types:
 
 - [String](#string-functions)
