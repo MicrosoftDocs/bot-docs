@@ -49,7 +49,7 @@ Templates are defined in [.lg](../file-format/bot-builder-lg-file-format.md) fil
 
 ### Simple response template
 
-A simple response template includes one or more variations of text that are used for composition and expansion.
+A simple response template includes one or more variations of text that are used for composition and expansion. When this template is evaluated, the LG runtime will randomly pick one of these variations.
 
 Here's an example of a simple response template with two variations:
 
