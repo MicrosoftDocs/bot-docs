@@ -126,7 +126,7 @@ For code samples see [Access external resource examples](#access-external-resour
 | Activity to accomplish | Action Name                     | What this action does                                                       |
 | ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
 | Log to console         | [LogAction](#log-action)           | Writes to the console and optionally sends the message as a trace activity. |
-| Emit a trace event     | [TraceActivity](#TraceActivity) | Sends a trace activity with whatever payload you specify.                   |
+| Emit a trace event     | [TraceActivity](#traceactivity) | Sends a trace activity with whatever payload you specify.                   |
 
 For code samples see [Debugging option examples](#debugging-option-examples).
 
