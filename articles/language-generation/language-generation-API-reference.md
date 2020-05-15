@@ -8,9 +8,12 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 05/16/2020
+monikerRange: 'azure-bot-service-4.0'
 ---
 
 # API reference for LG 
+
+[!INCLUDE[applies-to](../includes/applies-to.md)]
 
 ## Templates Class
 
