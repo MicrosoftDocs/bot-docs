@@ -105,9 +105,9 @@
          "branch_mapping":{}
       },
       {
-         "path_to_root":"botbuilder-samples-adaptive",
-         "url":"https://github.com/microsoft/BotBuilder-Samples",
-         "branch":"vishwac/r9/js",
+         "path_to_root":"botframework-sdk",
+         "url":"https://github.com/microsoft/botframework-sdk",
+         "branch":"master",
          "branch_mapping":{}
       }
    ],
