@@ -68,7 +68,7 @@ There are two types of conditional response templates: [if-else](../file-format/
 
 #### If-else template
 
-The if-else template lets you build a template that picks a collection based on a cascading order of conditions.
+The if-else template lets you build a template that picks a collection based on a cascading order of conditions. Like simple response templates, can have inline variations in IF or ELSE blocks. Nesting is achieved through [composition](#structured-response-template).
 
 Here's an example of an if-else conditional response template:
 
@@ -76,9 +76,12 @@ Here's an example of an if-else conditional response template:
 > time of day greeting reply template with conditions.
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
-    - good morning
+    - Good morning!
+    - Wake up.
 - ELSE:
-    - good evening
+    - Good evening
+    - Sleep well!
+    - Goodnight.
 ```
 
 #### Switch template
@@ -121,6 +124,8 @@ Read [structured response template](../language-generation/language-generation-s
 
 After creating templates for your bot you can add them to your adaptive dialog. You can set the generator to an _.lg_ file or set the generator to a `TemplateEngineLanguageGenerator` instance where you explicitly manage the one or more _.lg_ files. The example below shows the latter approach.
 
+### [C#](#tab/csharp)
+
 Say you want to add templates from **RootDialog.lg** to an adaptive dialog. Add the following packages to your code:
 
 ```csharp
@@ -156,7 +161,39 @@ You can now call templates in your bot by name, using the format `${<template-na
 new SendActivity("${FinalUserProfileReadOut()}")
 ```
 
-In the example above, the bot calls the `# FinalUserProfileReadOut` template and responds with the contents of the template.
+In the example above, the bot calls the `FinalUserProfileReadOut` template and responds with the contents of the template.
+
+### [Javascript](#tab/javascript)
+
+Say you want to add templates from **RootDialog.lg** to an adaptive dialog. Add the following lines to your code to require the necessary packages:
+
+```javascript
+const { NumberInput, AttachmentInput, ConfirmInput, IfCondition, ActivityTemplate, AdaptiveDialog, TextInput, SendActivity, TemplateEngineLanguageGenerator, OnBeginDialog } = require('botbuilder-dialogs-adaptive');
+const { Templates } = require('botbuilder-lg');
+```
+
+Resolve the path using `path.join()` and use the `Templates` constant to parse the **rootDialog.lg** file:
+
+```javascript
+const lgFile = Templates.parseFile(path.join(__dirname, 'rootDialog.lg'));
+```
+
+By joining the path you ensure that you are calling the correct template files for your bot.
+
+Now you can create the `TemplateEngineLanguageGenerator` to manage the templates in **rootDialog.lg**:
+
+```javascript
+generator: new TemplateEngineLanguageGenerator(lgFile)
+```
+
+You can now call templates in your bot by name, using the format `${<template-name>}`.
+
+```javascript
+new SendActivity('${FinalUserProfileReadOut()}')
+```
+
+In the example above, the bot calls the `FinalUserProfileReadOut` template and responds with the contents of the template.
+---
 
 ## Additional Information
 
