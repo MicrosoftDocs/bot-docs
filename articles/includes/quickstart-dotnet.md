@@ -2,7 +2,7 @@
 - [Visual Studio 2017 or later](https://www.visualstudio.com/downloads)
 - [Bot Framework SDK v4 template for C#](https://aka.ms/bot-vsix)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
-- Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
+- Knowledge of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
 ## Create a bot
 Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
