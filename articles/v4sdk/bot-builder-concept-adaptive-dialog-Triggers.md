@@ -147,7 +147,7 @@ The dialog triggers handle dialog specific events that are related to the "lifec
 | OnRepromptDialog |RepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                                                                              |
 
 > [!TIP]
-> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-examples) or a [prompt for user input][14].
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-example) or a [prompt for user input][14].
 
 > [!IMPORTANT]
 > Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
