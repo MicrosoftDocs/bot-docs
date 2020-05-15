@@ -56,7 +56,9 @@
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
-### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
+### Authentication
+#### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
+#### [Add single sign on to a bot](v4sdk/bot-builder-authentication-sso.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
