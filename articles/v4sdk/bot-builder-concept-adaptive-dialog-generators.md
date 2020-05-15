@@ -183,6 +183,10 @@ By joining the path you ensure that you are calling the correct template files f
 Now you can create the `TemplateEngineLanguageGenerator` to manage the templates in **rootDialog.lg**:
 
 ```javascript
+const rootDialog = new AdaptiveDialog(ROOT_DIALOG).configure(
+.
+.
+.
 generator: new TemplateEngineLanguageGenerator(lgFile)
 ```
 
