@@ -49,7 +49,7 @@ See the [_Events and triggers in adaptive dialogs_][3] article for more informat
 
 <!--- If an event is not handled in a child dialog, it gets passed up to its parent dialog to handle and this continues until it is either handled or reaches the bots main dialog. If no event handler is found, it will be ignored and no action will be taken.
 
-_Triggers_ enable you to catch and respond to events. The broadest trigger is the OnEvent trigger that allows you to catch and attach a set of steps to execute when a specific event is emitted by any sub-system. Adaptive dialogs supports a couple of other specialized triggers to wrap common events that your bot would handle. See [here][2] to learn more about supported triggers and their usage.-->
+_Triggers_ enable you to catch and respond to events. The broadest trigger is the OnEvent trigger that allows you to catch and attach a set of steps to execute when a specific event is emitted by any sub-system. Adaptive dialogs supports a couple of other specialized triggers to wrap common events that your bot would handle. See [here][3] to learn more about supported triggers and their usage.-->
 
 ### Actions
 
@@ -162,18 +162,18 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 <!-- (P1) * [Create a bot using both traditional and adaptive dialogs together][12] -->
 
 [1]:https://aka.ms/bot-builder-concept-dialog
-[2]:events-triggers-in-adaptive-dialogs.md
-[3]:bot-builder-adaptive-dialog-Triggers.md
-[4]:bot-builder-adaptive-dialog-Actions
-[5]:bot-builder-adaptive-dialog-Inputs.md
-[6]:bot-builder-adaptive-dialog-Recognizers.md
-[7]:bot-builder-adaptive-dialog-Generator.md
-[8]:bot-builder-concept-adaptive-dialog-memory-states.md
-[9]:bot-builder-adaptive-dialog-Declarative.md
+
+[3]:https://aka.ms/adaptive-dialog-concept-triggers
+[4]:https://aka.ms/adaptive-dialog-concept-actions
+[5]:https://aka.ms/adaptive-dialog-concept-inputs
+[6]:https://aka.ms/adaptive-dialog-concept-recognizers
+[7]:https://aka.ms/adaptive-dialog-concept-generation
+[8]:https://aka.ms/adaptive-dialog-concept-memory-states
+[9]:https://aka.ms/adaptive-dialog-concept-declarative
 [10]:bot-builder-bot-builder-howto-Create-using-Adaptive.md
 [11]:bot-builder-bot-builder-howto-Create-using-Declarative-Adaptive.md
 [12]:bot-builder-bot-builder-howto-Create-using-Declarative-Adaptive.md
-[13]:bot-builder-adaptive-dialog-Inputs.md#interruptions
+[13]:https://aka.ms/adaptive-dialog-concept-inputs#interruptions
 [14]:https://aka.ms/bot-builder-concept-dialog#prompts
 [15]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
