@@ -66,3 +66,5 @@ landingContent:
             url: https://docs.microsoft.com/dotnet/api/?view=botbuilder-dotnet-stable
           - text: JavaScript
             url: https://docs.microsoft.com/javascript/api/botbuilder
+          - text: Python
+          - url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
