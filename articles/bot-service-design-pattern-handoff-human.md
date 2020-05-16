@@ -16,7 +16,7 @@ Regardless of how much artificial intelligence a bot possesses, there may still 
 
 Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms. 
 
-# Handoff protocol
+## Handoff protocol
 
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
 
@@ -36,7 +36,7 @@ The event contains two components:
 
 You can read more about the Bot Framework handoff protocol <a href="https://aka.ms/bfhandoffprotocol" target="blank">here</a>. 
 
-# Handoff integration models
+## Handoff integration models
 
 Microsoft Bot Framework supports two models for integration with agent engagement platforms. The handoff protocol is identical for both models, however the onboarding details differ between the models and the agent engagement platforms.
 
@@ -56,7 +56,7 @@ Flexibility and control are the main advantages of this model. The bot can suppo
 
 ![Bot as a proxy scenario](~/media/designing-bots/patterns/bot-as-proxy.PNG)
 
-# Natural language
+## Natural language
 
 Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent. 
  
@@ -73,7 +73,7 @@ or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
 > valid choices, however, the bot will always respond appropriately to that input. 
 
 
-# Additional resources
+## Additional resources
 
 - <a href="https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples" target="blank">Integration with Microsoft Dynamics Omnichannel for Customer Service</a> 
 
