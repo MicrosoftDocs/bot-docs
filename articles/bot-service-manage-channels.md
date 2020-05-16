@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/22/2018
+ms.date: 05/17/2019
 ---
 
 # Connect a bot to channels
