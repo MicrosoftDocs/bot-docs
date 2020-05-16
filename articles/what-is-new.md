@@ -26,9 +26,9 @@ This article summarizes key new features and improvements in Bot Framework and A
 |Docs | [docs][5] |[docs][5] |[docs][5]  | |
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] | | 
 
-Welcome to the May  2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
+Welcome to the May 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
 
-* [Skills](#Skills) - Skills now support adaptive dialogs and all activity types, and have improved support for SSO and OAuth. The v2.1 skill manifest is now GA.  We also added Bot Framework Composer support for building and consuming Skills.   
+* [Skills](#skills) - Skills now support adaptive dialogs and all activity types, and have improved support for SSO and OAuth. The v2.1 skill manifest is now GA.  We also added Bot Framework Composer support for building and consuming Skills.   
 * [Microsoft Teams](#microsoft-teams) - Improvements in Microsoft Teams API support, including support in Java! 
 * [Bot Telemetry](#bot-telemetry) - Mapping of Dialogs into Azure AppInsights Page View Events.
 * [Health Check APIs](#health-check-apis) - Quickly verify a bot is running. 
@@ -58,6 +58,7 @@ The `TeamsChannelAccount` object has been updated to include `userRole` (one of 
 
 ## Bot Telemetry 
 Bots now capture Page View events, native to Application Insights, whenever a dialog is started. This allows you to use the User Flows dashboard in Application Insights to see how users move through your bot, between dialogs and where they drop out.
+
 ![Telemetry In AppInsights](https://raw.githubusercontent.com/microsoft/botframework-sdk/master/docs/media/UserFlowsAppInsights.jpg?raw=true)
 
 ## Health Check APIs 
@@ -144,3 +145,19 @@ During this release, the Bot Builder Community has further raised the bar by add
 2. A new C# [Zoom Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.Zoom). Currently supports Zoom 1:1 and channel chat capabilities, being converted to native BF activity types. Also supports the subscribing to any event a Zoom as supports (translated into Event activities), with full support for Zoom interactive messages and rich message templates.
 
 3. A [RingCentral Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.RingCentral). The [RingCentral](https://www.ringcentral.com/) Engage adapter allows you to add an additional endpoint to your bot for [RingCentral Engage Digital Platform](https://www.ringcentral.com/digital-customer-engagement.html) integration. The RingCentral endpoint can be used in conjunction with other channels meaning, for example, you can have a bot exposed on out of the box channels such as Facebook and Teams, but also integrated as an [RingCentral Engage Digital Source SDK](https://support.ringcentral.com/s/article/RingCentral-Engage-Digital-Introduction?language=en_US) into RingCentral.
+
+
+[1]:https://github.com/Microsoft/botbuilder-dotnet/#packages
+[2]:https://github.com/Microsoft/botbuilder-js#packages
+[3]:https://github.com/Microsoft/botbuilder-python#packages
+[3a]:https://github.com/Microsoft/botbuilder-java#packages
+[5]:https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0
+[6]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
+[7]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs
+[8]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/typescript_nodejs
+[9]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_es6
+[10]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi
+[11a]:https://aka.ms/python-sample-repo
+
+## Additional information
+- You can see previous announcements [here](what-is-new-archive.md).
