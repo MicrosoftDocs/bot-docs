@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 A skill is a bot that can be used by another bot. In this way you can create a single user-facing bot and extend it with one or more skills. You can learn more about skills in general in [Skills Overview](skills-conceptual.md), and how to build them in [Implement a skill](skill-implement-skill.md). Alternatively, the Virtual Assistant templates contain a set of [pre-built skills](bot-builder-skills-overview.md) you can customize and deploy instead of building one from scratch.
 
-If you expect that your skill will be consumed from a [Power Virtual Agents](https://powerva.microsoft.com/#/) bot there are some additional restrictions placed on your Skill you'll need to account for.
+If you expect that your skill will be consumed from a [Power Virtual Agents](https://powerva.microsoft.com/#/) bot there, are some additional restrictions placed on your skill you'll need to account for.
 
 ## Manifest restrictions
 
