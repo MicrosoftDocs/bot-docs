@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/10/2019
+ms.date: 05/17/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -28,6 +28,7 @@ This quickstart walks you through building a bot by using the Python Echo Bot te
 - `pip install botbuilder-core`
 - `pip install asyncio`
 - `pip install cookiecutter`
+- `pip install aiohttp`
 
 The last package, cookiecutter, will be used to generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
 
