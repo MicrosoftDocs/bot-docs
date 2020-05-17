@@ -170,7 +170,7 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillConfiguration` object.
 
-[!code-python[_add_skill_dialogs](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=215-235&highlight=21)]
+[!code-python[_add_skill_dialogs](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=239-263)]
 
 ---
 
@@ -194,7 +194,7 @@ In its first step, the main dialog prompts the user for which skill they'd like 
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=124-144&highlight=14-17)]
+[!code-python[_select_skill_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=131-155)]
 
 ---
 
@@ -233,11 +233,11 @@ The choices included in this bot help test the actions defined for this skill. M
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_select_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=146-166)]
+[!code-python[_select_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=157-184)]
 
-[!code-python[_get_skill_actions](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=249-260)]
+[!code-python[_get_skill_actions](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=280-294)]
 
-[!code-python[_skill_action_prompt_validator](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=237-247)]
+[!code-python[_skill_action_prompt_validator](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=265-278)]
 
 ---
 
@@ -267,7 +267,7 @@ In the next step, the main dialog:
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=168-190&highlight=10-12,17,23)]
+[!code-python[_call_skill_action_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=186-211)]
 
 ---
 
@@ -296,7 +296,7 @@ In the last step, the main dialog:
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[_final_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=192-212&highlight=5-9)]
+[!code-python[_final_step](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=213-237)]
 
 ---
 
@@ -323,7 +323,7 @@ The main dialog overrides the default behavior of the _on continue dialog_ metho
 
 **dialog-root-bot/dialogs/main_dialog.py**
 
-[!code-python[on_continue_dialog](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=108-122)]
+[!code-python[on_continue_dialog](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/dialogs/main_dialog.py?range=113-129)]
 
 ---
 
@@ -349,7 +349,7 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 [!code-javascript[partial constructor plus onTurn](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=14-29)]
 
-[!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=46-55)]
+[!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=47-56)]
 
 ### [Python](#tab/python)
 
@@ -357,7 +357,7 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 [!code-python[class definition](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/bots/root_bot.py?range=16)]
 
-[!code-python[constructor and on_turn](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/bots/root_bot.py?range=17-37)]
+[!code-python[constructor and on_turn](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/bots/root_bot.py?range=17-36)]
 
 ---
 
