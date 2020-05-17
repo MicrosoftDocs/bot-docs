@@ -31,7 +31,6 @@ Welcome to the May 2020 release of the Bot Framework SDK. There are a number of 
 * [Skills](#skills) - Skills now support adaptive dialogs and all activity types, and have improved support for SSO and OAuth. The v2.1 skill manifest is now GA.  We also added Bot Framework Composer support for building and consuming Skills.   
 * [Microsoft Teams](#microsoft-teams) - Improvements in Microsoft Teams API support, including support in Java! 
 * [Bot Telemetry](#bot-telemetry) - Mapping of Dialogs into Azure AppInsights Page View Events.
-* [Health Check APIs](#health-check-apis) - Quickly verify a bot is running. 
 * [Adaptive Dialogs](#adaptive-dialogs) - A more flexible, event driven dialog system for implementing multi-turn conversational patterns. 
 * [CLI tools for Adaptive Dialogs](#cli-tools-for-adaptive-dialogs) - new ability to merge and validate adaptive schema assets.
 * [Language Generation](#language-generation) - Add language and personality responses to your bot conversations. 
@@ -96,7 +95,7 @@ Full access to the current bot's memory so you can data bind language to the sta
 * Parser and runtime libraries that help achieve runtime resolution.
 
 ## Adaptive Expressions
-[Adaptive Expressions](v4dk/bot-builder-concept-adaptive-expressions.md) are Generally Available (GA) on both the C# and JS Platforms. 
+[Adaptive Expressions](v4sdk/bot-builder-concept-adaptive-expressions.md) are Generally Available (GA) on both the C# and JS Platforms. 
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the Language Generation system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
