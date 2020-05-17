@@ -43,7 +43,7 @@ Welcome to the May 2020 release of the Bot Framework SDK. There are a number of 
 **Insiders**: Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/master/UsingMyGet.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/master/UsingMyGet.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/master/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
 
 ## Skills 
-Skills have been updated to work with adaptive dialogs, and both adaptive and traditional dialogs will now accept all types of activities.
+[Skills](v4sdk/skills-conceptual.md) have been updated to work with adaptive dialogs, and both adaptive and traditional dialogs will now accept all types of activities.
  
 The skill manifest schema has been updated to [version 2.1](https://github.com/microsoft/botframework-sdk/tree/master/schemas/skills). Improvements in this version include the ability to declare & share your language models, and define any type of activity that your skill can receive.
  
@@ -61,11 +61,8 @@ Bots now capture Page View events, native to Application Insights, whenever a di
 
 ![Telemetry In AppInsights](https://raw.githubusercontent.com/microsoft/botframework-sdk/master/docs/media/UserFlowsAppInsights.jpg?raw=true)
 
-## Health Check APIs 
-Support was added for a new invoke named `healthCheck` that allows a sender to verify if a bot is responding to requests, and if trust can be established between the sender and the bot. The bot also has the option of overriding the response to add additional health information in the response.
-
 ## Adaptive Dialogs 
-We’re also excited to make Adaptive Dialogs generally available in C# and as a preview release in JavaScript! 
+We’re also excited to make [Adaptive Dialogs](v4sdk/bot-builder-adaptive-dialog-introduction.md) generally available in C# and as a preview release in JavaScript! 
 
 Adaptive Dialogs, which underpin the dialog design and management authoring features found in Bot Framework Composer, enable developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with more sophisticated conversation requirements, such as context switches and interruptions.  Bot Framework Skills can now also leverage Adaptive Dialogs. 
 
@@ -84,7 +81,7 @@ New CLI Tools were added for management of Adaptive Dialogs.
 
 LG is Generally Available (GA) on both the C# and JS Platforms. 
 
-[Language Generation (LG)](https://docs.microsoft.com/composer/concept-language-generation) enables you to define multiple variations of a phrase, execute simple expressions based on context, and refer to conversational memory. At the core of language generation lies template expansion and entity substitution. You can provide one-off variation for expansion as well as conditionally expanding a template. The output from language generation can be a simple text string or multi-line response or a complex object payload that a layer above language generation will use to construct a complete activity. The Bot Framework Composer natively supports language generation to produce output activities using the LG templating system.
+[Language Generation (LG)](v4sdk/bot-builder-concept-language-generation.md) enables you to define multiple variations of a phrase, execute simple expressions based on context, and refer to conversational memory. At the core of language generation lies template expansion and entity substitution. You can provide one-off variation for expansion as well as conditionally expanding a template. The output from language generation can be a simple text string or multi-line response or a complex object payload that a layer above language generation will use to construct a complete activity. The Bot Framework Composer natively supports language generation to produce output activities using the LG templating system.
 
 You can use Language Generation to:
 * Achieve a coherent personality, tone of voice for your bot.
@@ -99,13 +96,13 @@ Full access to the current bot's memory so you can data bind language to the sta
 * Parser and runtime libraries that help achieve runtime resolution.
 
 ## Adaptive Expressions
-[Adaptive Expressions](https://aka.ms/adaptive-expressions) are Generally Available (GA) on both the C# and JS Platforms. 
+[Adaptive Expressions](v4dk/bot-builder-concept-adaptive-expressions.md) are Generally Available (GA) on both the C# and JS Platforms. 
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the Language Generation system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), Language Generation, Adaptive dialogs, and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https:/docs.microsoft.com/composer), Language Generation, Adaptive dialogs, and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
 
-An adaptive expression can contain one or more explicit values, pre-built functions or [custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
+An adaptive expression can contain one or more explicit values, pre-built functions or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
 ## Authentication Improvements
 We added support for single sign-on while using Expect Replies. This applies to SSO performed between a pair of bots: host and a skill.
