@@ -20,7 +20,7 @@ Adaptive dialogs offer new A new event based addition to the [Dialogs library][1
 ## Prerequisites
 
 * An understanding of [dialogs][1] in the Bot Framework V4 SDK
-* A general understanding of [prompts][1] in the Bot Framework V4 SDK
+* A general understanding of [prompts][14] in the Bot Framework V4 SDK
 
 ## Adaptive dialogs defined
 
@@ -53,7 +53,7 @@ _Triggers_ enable you to catch and respond to events. The broadest trigger is th
 
 ### Actions
 
-_Actions_ define the conversation flow when a specific event is captured via a Trigger. Unlike a waterfall dialog where each step is a function, each action in an Adaptive dialog is in itself a dialog. This makes adaptive dialogs both powerful and flexible and enables adaptive dialogs to easily handle interruptions and branch conditionally based on context or current state. <!--TBD: Provide links to these topics including [interruptions][13]--->
+_Actions_ define the conversation flow when a specific event is captured via a Trigger. Unlike a waterfall dialog where each step is a function, each action in an Adaptive dialog is in itself a dialog. This makes adaptive dialogs both powerful and flexible and enables adaptive dialogs to easily handle interruptions and branch conditionally based on context or current state.
 
 The bot framework SDK provides many built in actions to enable you to perform various actions such as memory manipulation, dialog management, and controlling the conversational flow of your bot. Since actions are in fact dialogs, they are extensible, making it possible to create your own custom actions.
 
@@ -163,17 +163,17 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 
 [1]:https://aka.ms/bot-builder-concept-dialog
 
-[3]:https://aka.ms/adaptive-dialog-concept-triggers
-[4]:https://aka.ms/adaptive-dialog-concept-actions
-[5]:https://aka.ms/adaptive-dialog-concept-inputs
-[6]:https://aka.ms/adaptive-dialog-concept-recognizers
-[7]:https://aka.ms/adaptive-dialog-concept-generation
-[8]:https://aka.ms/adaptive-dialog-concept-memory-states
-[9]:https://aka.ms/adaptive-dialog-concept-declarative
+[3]:bot-builder-concept-adaptive-dialog-triggers.md
+[4]:bot-builder-concept-adaptive-dialog-actions.md
+[5]:bot-builder-concept-adaptive-dialog-inputs.md
+[6]:bot-builder-concept-adaptive-dialog-recognizers.md
+[7]:bot-builder-concept-adaptive-dialog-generators.md
+[8]:bot-builder-concept-adaptive-dialog-memory-states.md
+[9]:bot-builder-concept-adaptive-dialog-declarative.md
 [10]:bot-builder-dialogs-adaptive.md
 [11]:bot-builder-dialogs-declarative-adaptive.md
 [12]:bot-builder-mixed-dialogs.md
-[13]:https://aka.ms/adaptive-dialog-concept-inputs#interruptions
+[13]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
 [14]:https://aka.ms/bot-builder-concept-dialog#prompts
-[15]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog
-[16]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
+[15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
+[16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore

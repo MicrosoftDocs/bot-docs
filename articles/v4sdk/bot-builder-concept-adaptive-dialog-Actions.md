@@ -787,7 +787,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### SetProperty
 
-Used to set a property's value in[memory][11]. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
+Used to set a property's value in [memory][11]. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
 
 ``` C#
 new SetProperty()
@@ -823,7 +823,7 @@ new SetProperties()
 
 #### DeleteProperty
 
-Removes a property from[memory][11].
+Removes a property from [memory][11].
 
 ``` C#
 new DeleteProperty
@@ -1062,16 +1062,16 @@ new LogAction()
 * To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][7] article.
 * To learn more about adaptive expressions see the [adaptive expressions][10] article.
 
-[1]:https://aka.ms/adaptive-dialog-concept
-[2]:https://aka.ms/adaptive-dialog-concept-triggers
+[1]:bot-builder-adaptive-dialog-introduction.md
+[2]:bot-builder-concept-adaptive-dialog-triggers.md
 [3]:https://www.qnamaker.ai/
-[4]:https://aka.ms/adaptive-dialog-concept-inputs#oauth
+[4]:bot-builder-concept-adaptive-dialog-inputs.md#oauth
 [5]:bot-builder-concept-dialog.md
-[6]:https://aka.ms/adaptive-dialog-concept-inputs#interruptions
-[7]:https://aka.ms/adaptive-dialog-concept-inputs
-[8]:https://aka.ms/adaptive-dialog-concept-triggers#custom-events
-[9]:https://aka.ms/adaptive-dialog-concept-generation
-[10]:https://aka.ms/bot-builder-adaptive-expressions-concept
-[11]:https://aka.ms/adaptive-dialog-concept-memory-states
+[6]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
+[7]:bot-builder-concept-adaptive-dialog-inputs.md
+[8]:bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+[9]:bot-builder-concept-adaptive-dialog-generators.md
+[10]:bot-builder-concept-adaptive-expressions.md
+[11]:bot-builder-concept-adaptive-dialog-memory-states.md
 [12]:https://www.qnamaker.ai/
-[13]:https://github.com/microsoft/BotBuilder-Samples
+[13]:https://github.com/microsoft/botbuilder-samples
