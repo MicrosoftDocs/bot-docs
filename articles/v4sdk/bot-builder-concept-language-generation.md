@@ -74,7 +74,7 @@ When you need template expansion, use `Evaluate` and pass in the relevant templa
 ```
 ---
 
-If your template needs specific properties to be passed for resolution/expansion, you can pass them when calling  `Evaluate`
+If your template needs specific properties to be passed for resolution/expansion, you can pass them when calling  `Evaluate`.
 
 # [C#](#tab/csharp)
 
