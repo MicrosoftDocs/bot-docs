@@ -46,11 +46,11 @@ Make sure you have the **Microsoft.Bot.Builder.LanguageGeneration** package. Add
 
 **Bots/DialogAndWelcomeBot.cs**
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
+[!code-csharp[add-package](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
 
 After loading the package create a private `Templates` object called **_templates**:
 
-[!code-csharp[create-Templates](~/../BotBuilder-Samples/experimental/language-generation/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
+[!code-csharp[create-Templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
 
 The **_templates** object is used to reference templates in your .lg files.
 
