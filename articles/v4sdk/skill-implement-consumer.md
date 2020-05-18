@@ -187,7 +187,7 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **simple-root-bot/app.py**
 
-[!code-python[skill client](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=451)]
+[!code-python[skill client](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=51)]
 
 [!code-python[skill handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=60-62)]
 
