@@ -396,7 +396,7 @@ var adaptiveDialog = new AdaptiveDialog()
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
 [6]:https://aka.ms/bot-builder-language-generation-concept
-[7]:https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference
+[7]:https://aka.ms/regular-expression-language-reference
 [8]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [9]:https://luis.ai
 [10]:https://aka.ms/luis-what-is-luis
