@@ -75,7 +75,7 @@ An [entity][3] represents detailed information that is relevant in an utterance.
 Entities are declared in the following way:
 
 ```.lu
-@ <entity-type> <entity-name> [[hasRoles] <comma-separated-list-of-roles>]
+@ <entity-type> <entity-name> [[hasRole[s]] <comma-separated-list-of-roles>] [hasFeature[s] <comma-separated-list-of-features>]
 ```
 
 Entities that require a definition, likes list and regular expressions entities, are represented using the following notation:
@@ -158,17 +158,17 @@ In the example below, a list entity is defined that includes synonyms for colors
 ```.lu
 @ list color favColor, screenColor
 @ color =
-    - <normalized-value>
+    - <normalized-value> :
         - <synonym1>
         - <synonym2>
         - ...
-    - <normalized-value>
+    - <normalized-value> :
         - <synonym1>, <synonym2>, ...
 
 > Alternate definition
 
 @ list color favColor, screenColor =
-    - <normalized-value>
+    - <normalized-value> :
         - <synonym1>; <synonym2>; ...
 ```
 
@@ -225,11 +225,13 @@ A [regular expression entity][8] extracts an entity based on a regular expressio
 Here's an example of a simple regular expression entity definition.
 
 ```.lu
+> from, to are roles to hrf-number.
 @ regex hrf-number from, to
 @ hrf-number = /hrf-[0-9]{6}/
 
 > Alternate definition
 
+> from, to are roles to hrf-number.
 @ regex hrf-number from, to = /hrf-[0-9]{6}/
 ```
 
