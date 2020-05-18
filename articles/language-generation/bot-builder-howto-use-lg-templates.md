@@ -56,11 +56,11 @@ The **_templates** object is used to reference templates in your .lg files.
 
 Combine the path for cross-platform support and parse the path that contains **welcomeCard.lg** by adding the following to your code:
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
+[!code-csharp[combine-path](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
 
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=12,27,55)]
+[!code-csharp[reference-template](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=7)]
 
 Notice how the `WelcomeCard` template is referenced in the call `SendActivityAsync()`.
 
@@ -126,7 +126,7 @@ The `PromptForMissingInformation` template in **BookingDialog.lg** is an example
 
 [!code-lg[conditional](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=31-39)]
 
-If a property is null then the bot will call the template associated with that property. If all properties are non-null values then the `ConfirmBooking` template is called. 
+If a property is null then the bot will call the template associated with that property. If all properties are non-null values then the `ConfirmBooking` template is called.
 
 ### Reference other templates
 

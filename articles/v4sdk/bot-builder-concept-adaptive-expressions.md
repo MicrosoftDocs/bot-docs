@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](https://aka.ms/bot-builder-adaptive-dialogs-concept), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer#microsoft-bot-framework-composer-preview), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](https://aka.ms/adaptive-dialogs-concept), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
 
 An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md), or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
@@ -79,9 +79,9 @@ Adaptive expressions support the following operator types and expression syntax:
 
 ## Variables
 
-Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
+Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty()](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
 
-There are two special variables. `[]` represents an empty list, and `{}` represents a empty object.
+There are two special variables. **[]** represents an empty list, and **{}** represents a empty object.
 
 ## Explicit values
 
