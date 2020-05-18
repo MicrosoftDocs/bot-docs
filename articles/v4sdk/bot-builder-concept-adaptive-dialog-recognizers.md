@@ -68,7 +68,7 @@ Utterances (_trigger phrases_) are inputs from users and as such may contain a n
 
 Entities are a collection of objects, each consisting of data extracted from an utterance that add additional, clarifying information describing the intent such as places, times, and people. Entities and intents are both important pieces of data that are extracted from an utterance. Utterances will general include an intent and may include zero or more entities that provide important details related to the intent.
 
-Entities in the [.lu file format][6] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
+Entities in the [.lu file format][12] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
 
 ```dos
 # BookFlight
@@ -396,14 +396,14 @@ var adaptiveDialog = new AdaptiveDialog()
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
 [6]:https://aka.ms/bot-builder-language-generation-concept
-[7]:bot-builder-concept-adaptive-expressions.md
+[7]:https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference
 [8]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [9]:https://luis.ai
 [10]:https://aka.ms/luis-what-is-luis
 [11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
-[13]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/common-expression-language#readme
-[14]:bot-builder-adaptive-dialog-introduction-memory-states.md
+[13]:bot-builder-concept-adaptive-expressions.md
+[14]:bot-builder-adaptive-dialog-memory-states.md
 [15]:https://aka.ms/luis-concept-data-extraction?tabs=v2
 [16]:https://aka.ms/bot-service-add-luis-to-bot
 [17]:https://aka.ms/luis-create-new-app-in-luis-portal
