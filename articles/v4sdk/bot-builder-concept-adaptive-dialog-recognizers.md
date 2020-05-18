@@ -38,7 +38,7 @@ The two primary components of NLP in adaptive dialogs are **recognizers** (langu
 
 ## Language Understanding
 
-**Language understanding** (LU) is the subset of NLP that deals with how the bot handles user inputs and converts them into something that it can understand and respond to intelligently. This process is achieved through setting up recognizers and providing training data to the dialog so that the **intents** and **entities** contained in the users message can be captured. When the recognizer identifies an intent, it emits an `IntentRecognized` event containing that intent and the [OnIntent trigger][5] that you defined for that intent will execute and preform the actions contained in that trigger.
+**Language understanding** (LU) is the subset of NLP that deals with how the bot handles user inputs and converts them into something that it can understand and respond to intelligently. This process is achieved through setting up recognizers and providing training data to the dialog so that the **intents** and **entities** contained in the users message can be captured. When the recognizer identifies an intent, it emits an `IntentRecognized` event containing that intent and the OnIntent trigger that you defined for that intent will execute and preform the actions contained in that trigger.
 
 ## Core LU concepts in adaptive dialogs
 
@@ -68,7 +68,7 @@ Utterances (_trigger phrases_) are inputs from users and as such may contain a n
 
 Entities are a collection of objects, each consisting of data extracted from an utterance that add additional, clarifying information describing the intent such as places, times, and people. Entities and intents are both important pieces of data that are extracted from an utterance. Utterances will general include an intent and may include zero or more entities that provide important details related to the intent.
 
-Entities in the [.lu file format][6] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
+Entities in the [.lu file format][12] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
 
 ```dos
 # BookFlight
@@ -392,20 +392,19 @@ var adaptiveDialog = new AdaptiveDialog()
 * [Add natural language generation (LG) to your bot][4]
 
 [1]:bot-builder-basics.md
-[2]:https://aka.ms/adaptive-dialog-concept
+[2]:bot-builder-adaptive-dialog-introduction.md
 [3]:bot-builder-concept-dialog.md
-[4]:https://aka.ms/adaptive-dialog-concept-generation
-[5]:https://aka.ms/adaptive-dialog-concept-triggers#onintent
+[4]:bot-builder-concept-adaptive-dialog-generators.md
 [6]:https://aka.ms/bot-builder-language-generation-concept
 [7]:https://aka.ms/regular-expression-language-reference
-[8]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
+[8]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [9]:https://luis.ai
 [10]:https://aka.ms/luis-what-is-luis
 [11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
-[13]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
-[14]:https://aka.ms/adaptive-dialog-concept-memory-states
-[15]:https://aka.ms/luis-concept-data-extraction?tabs=V2
+[13]:bot-builder-concept-adaptive-expressions.md
+[14]:bot-builder-concept-adaptive-dialog-memory-states.md
+[15]:https://aka.ms/luis-concept-data-extraction?tabs=v2
 [16]:https://aka.ms/bot-service-add-luis-to-bot
 [17]:https://aka.ms/luis-create-new-app-in-luis-portal
 [18]:https://qnamaker.ai

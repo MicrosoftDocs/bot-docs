@@ -90,7 +90,7 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Update an activity     | [UpdateActivity](#update-activity)| This enables you to update an activity that was sent.                     |
 | DeleteActivity        | [DeleteActivity](#delete-activity) | Enables you to delete an activity that was sent.                          |
 | Get activity members | [GetActivityMembers](#get-activity-members)| Enables you to get a list of activity members and save it to a property in [memory][11].|
-| GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in[memory][11].|
+| GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in [memory][11].|
 | EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
 
 For code samples see [Dialog management examples](#dialog-management-examples).
@@ -102,9 +102,9 @@ For code samples see [Dialog management examples](#dialog-management-examples).
 | Activity to accomplish | Action Name                           | What this action does                                                     |
 | ---------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
 | Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
-| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from[memory][11].                        |
+| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from [memory][11].                        |
 | Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Create or update a property | [SetProperty](#setproperty)      | This enables you to set a property's value in[memory][11].                     |
+| Create or update a property | [SetProperty](#setproperty)      | This enables you to set a property's value in [memory][11].                     |
 | Create or update properties | [SetProperties](#setproperties)  | This enables you to initialize one or more properties in a single action. |
 
 For code samples see [Manage properties examples](#manage-properties-examples).
@@ -172,7 +172,7 @@ See [language generation in adaptive dialogs][9] to learn more about using langu
 
 #### IfCondition
 
-Branches the conversational flow based on a specific condition. Conditions are expressed using [the common expression language][10].
+Branches the conversational flow based on a specific condition. Conditions are expressed using [Adaptive expressions][10].
 
 ``` C#
 var addToDoDialog = new AdaptiveDialog("addToDoDialog");
@@ -211,7 +211,7 @@ addToDoDialog.Triggers.Add(new OnIntent()
 
 #### SwitchCondition
 
-Branches a conversational flow based on the outcome of an expression evaluation. See [the common expression language][10] for more information.
+Branches a conversational flow based on the outcome of an expression evaluation. See [Adaptive expressions][10] for more information.
 
 ``` C#
 // Create an adaptive dialog.
@@ -787,7 +787,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### SetProperty
 
-Used to set a property's value in[memory][11]. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
+Used to set a property's value in [memory][11]. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
 
 ``` C#
 new SetProperty()
@@ -823,7 +823,7 @@ new SetProperties()
 
 #### DeleteProperty
 
-Removes a property from[memory][11].
+Removes a property from [memory][11].
 
 ``` C#
 new DeleteProperty
@@ -1062,16 +1062,16 @@ new LogAction()
 * To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][7] article.
 * To learn more about adaptive expressions see the [adaptive expressions][10] article.
 
-[1]:https://aka.ms/adaptive-dialog-concept
-[2]:https://aka.ms/adaptive-dialog-concept-triggers
+[1]:bot-builder-adaptive-dialog-introduction.md
+[2]:bot-builder-concept-adaptive-dialog-triggers.md
 [3]:https://www.qnamaker.ai/
-[4]:https://aka.ms/adaptive-dialog-concept-inputs#oauth
+[4]:bot-builder-concept-adaptive-dialog-inputs.md#oauthinput
 [5]:bot-builder-concept-dialog.md
-[6]:https://aka.ms/adaptive-dialog-concept-inputs#interruptions
-[7]:https://aka.ms/adaptive-dialog-concept-inputs
-[8]:https://aka.ms/adaptive-dialog-concept-triggers#custom-events
-[9]:https://aka.ms/adaptive-dialog-concept-generation
-[10]:https://aka.ms/bot-builder-adaptive-expressions-concept
-[11]:https://aka.ms/adaptive-dialog-concept-memory-states
+[6]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
+[7]:bot-builder-concept-adaptive-dialog-inputs.md
+[8]:bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+[9]:bot-builder-concept-adaptive-dialog-generators.md
+[10]:bot-builder-concept-adaptive-expressions.md
+[11]:bot-builder-concept-adaptive-dialog-memory-states.md
 [12]:https://www.qnamaker.ai/
-[13]:https://github.com/microsoft/BotBuilder-Samples
+[13]:https://github.com/microsoft/botbuilder-samples
