@@ -63,7 +63,7 @@ Triggers = new List<OnCondition>()
 | Choose Intent | OnChooseIntent |ChooseIntent | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
 | Intent recognized| OnIntent | RecognizedIntent | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|OnQnAMatch| RecognizedIntent |This trigger is run when the [QnAMakerRecognizer][12] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.|
-|Unknown intent recognized| OnUnknownIntent | UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to to enable you to perfoam any needed tasks when the dialog first starts. |
+|Unknown intent recognized| OnUnknownIntent | UnknownIntent | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to to enable you to preform any needed tasks when the dialog first starts. |
 
 #### Recognizer trigger examples
 
