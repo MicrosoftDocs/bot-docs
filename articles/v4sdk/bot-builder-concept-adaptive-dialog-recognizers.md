@@ -403,7 +403,7 @@ var adaptiveDialog = new AdaptiveDialog()
 [11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [12]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
 [13]:bot-builder-concept-adaptive-expressions.md
-[14]:bot-builder-adaptive-dialog-memory-states.md
+[14]:bot-builder-concept-adaptive-dialog-memory-states.md
 [15]:https://aka.ms/luis-concept-data-extraction?tabs=v2
 [16]:https://aka.ms/bot-service-add-luis-to-bot
 [17]:https://aka.ms/luis-create-new-app-in-luis-portal
