@@ -308,7 +308,7 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 ## Functions injected by LG
 
-[Adaptive expressions][3] provide the ability to inject a custom set of functions. Read [calling functions from LG templates][13] for more information.
+[Adaptive expressions][3] provide the ability to inject a custom set of functions. Read [functions injected from the LG library][13] for more information.
 
 ## Options
 
