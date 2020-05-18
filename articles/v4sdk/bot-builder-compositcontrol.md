@@ -232,4 +232,4 @@ Learn how to create complex conversations that branch and loop.
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample
-[lg-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.multi-turn-prompt
+[lg-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt
