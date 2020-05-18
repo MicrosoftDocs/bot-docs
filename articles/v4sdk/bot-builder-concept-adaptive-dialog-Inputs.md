@@ -24,16 +24,16 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 * A general understanding of [Actions in adaptive dialogs][3].
 * A general understanding of [Memory scopes and managing state in adaptive dialogs][11].
 * A familiarity with [Language Generation templates][14].
-* A familiarity with [Adaptive expressions][15].
+* A familiarity with [Adaptive expressions][10].
 
 > [!TIP]
-> This syntax defined in the [Language Generation templates][14], which includes [Adaptive expressions][15], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the bot framework SDK.
+> This syntax defined in the [Language Generation templates][14], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the bot framework SDK.
 
 ## Inputs
 
 Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and collect input from a user, validate it, and accept it into memory. An input:
 
-* Binds the prompt result to a property in a [state management][6] scope.
+* Binds the prompt result to a property in a [state management][11] scope.
 * Prompts the user only if the result property doesn't already have a value.
 * Saves the input to the specified property if the input from user matches the type of entity expected.
 * Accepts validation constraints such as min, max, and so on.
@@ -145,7 +145,7 @@ UnrecognizedPrompt = new ActivityTemplate("Sorry, '{turn.activity.text}' did not
 
 #### Validations
 
-A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `this.value` to examine the user input in the validation expressions. Validations are expressed using [adaptive expressions][12]
+A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `this.value` to examine the user input in the validation expressions. Validations are expressed using [adaptive expressions][10]
 
 #### Value
 
@@ -153,7 +153,7 @@ A string expression. The memory path of the property to get input from each turn
 
 Things to keep in mind regarding the `Value` property:
 
-* The `Value` property is an [adaptive expression][12].
+* The `Value` property is an [adaptive expression][10].
 * If the expression returns null, the input dialog may attempt to pull data from the input directly.
 * If the expression is a value then it will be used as the input.
 * The `Value` property allows you to define a how data such as [Recognizer][13] results are bound to the input dialog.
@@ -494,18 +494,16 @@ The following links provide generalized information on the topic of authenticati
 
 * To learn more about expressions see the article [Adaptive expressions][10].
 
-[1]:https://aka.ms/adaptive-dialog-concept
-[2]:https://aka.ms/adaptive-dialog-concept-triggers
-[3]:https://aka.ms/adaptive-dialog-concept-actions
+[1]:bot-builder-adaptive-dialog-introduction.md
+[2]:bot-builder-concept-adaptive-dialog-triggers.md
+[3]:bot-builder-concept-adaptive-dialog-actions.md
 [4]:https://aka.ms/bot-builder-concept-dialog#prompts
 [5]:https://aka.ms/azure-bot-authentication
 [6]:https://aka.ms/azure-bot-add-authentication
 
-[8]:https://aka.ms/adaptive-dialog-concept-triggers#custom-events
-[9]:https://aka.ms/adaptive-dialog-concept-generation
-[10]:https://aka.ms/bot-builder-adaptive-expressions-concept
-[11]:https://aka.ms/adaptive-dialog-concept-memory-states
-[12]:https://aka.ms/bot-builder-adaptive-expressions-concept
-[13]:https://aka.ms/adaptive-dialog-concept-recognizers
-[14]:https://aka.ms/language-generation-file-format
-[15]:https://aka.ms/bot-builder-adaptive-expressions-concept
+[8]:bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+[9]:bot-builder-concept-adaptive-dialog-generators.md
+[10]:bot-builder-concept-adaptive-expressions.md
+[11]:bot-builder-concept-adaptive-dialog-memory-states.md
+[13]:bot-builder-concept-adaptive-dialog-recognizers.md
+[14]:bot-builder-concept-language-generation.md
