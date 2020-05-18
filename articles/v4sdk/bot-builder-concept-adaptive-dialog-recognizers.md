@@ -395,13 +395,13 @@ var adaptiveDialog = new AdaptiveDialog()
 [2]:bot-builder-adaptive-dialog-introduction.md
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
-[6]:https://aka.ms/bot-builder-language-generation-concept
+
 [7]:https://aka.ms/regular-expression-language-reference
 [8]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [9]:https://luis.ai
 [10]:https://aka.ms/luis-what-is-luis
 [11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
-[12]:https://github.com/microsoft/botframework-cli/blob/master/packages/luis/docs/lu-file-format.md
+[12]:../file-format/bot-builder-lu-file-format.md
 [13]:bot-builder-concept-adaptive-expressions.md
 [14]:bot-builder-concept-adaptive-dialog-memory-states.md
 [15]:https://aka.ms/luis-concept-data-extraction?tabs=v2

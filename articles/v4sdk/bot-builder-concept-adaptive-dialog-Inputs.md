@@ -22,18 +22,18 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 * A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see an [Introduction to adaptive dialogs][1].
 * A general understanding of [Events and triggers in adaptive dialogs][2].
 * A general understanding of [Actions in adaptive dialogs][3].
-* A general understanding of [Memory scopes and managing state in adaptive dialogs][11].
-* A familiarity with [Language Generation templates][14].
+* A general understanding of [Memory scopes and managing state in adaptive dialogs][7].
+* A familiarity with [Language Generation templates][9].
 * A familiarity with [Adaptive expressions][10].
 
 > [!TIP]
-> This syntax defined in the [Language Generation templates][14], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the bot framework SDK.
+> This syntax defined in the [Language Generation templates][9], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the bot framework SDK.
 
 ## Inputs
 
 Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and collect input from a user, validate it, and accept it into memory. An input:
 
-* Binds the prompt result to a property in a [state management][11] scope.
+* Binds the prompt result to a property in a [state management][7] scope.
 * Prompts the user only if the result property doesn't already have a value.
 * Saves the input to the specified property if the input from user matches the type of entity expected.
 * Accepts validation constraints such as min, max, and so on.
@@ -156,7 +156,7 @@ Things to keep in mind regarding the `Value` property:
 * The `Value` property is an [adaptive expression][10].
 * If the expression returns null, the input dialog may attempt to pull data from the input directly.
 * If the expression is a value then it will be used as the input.
-* The `Value` property allows you to define a how data such as [Recognizer][13] results are bound to the input dialog.
+* The `Value` property allows you to define a how data such as [Recognizer][8] results are bound to the input dialog.
 
  Examples:
 
@@ -256,7 +256,7 @@ The `ConfirmInput` action inherits all of the properties defined in [InputDialog
 2. `ConfirmChoices`: The choices or an [adaptive expression][10] that evaluates to the choices that will be presented to the user.
 3. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
 4. `OutputFormat`: The default output format for the `ConfirmInput` action is a boolean. You can override that using the `OutputFormat` property, an [adaptive expressions][10] which you can use to modify the return results if needed. For example you can use this to cause the  `ConfirmInput` action to return a number: `OutputFormat = "if(this.value == true, 1, 0)"`.
-If this property is set then the output of the expression is the value returned by the dialog. <!-- huh? Using [adaptive expressions][10] you can evaluate the yes/no response for what purpose?-->
+If this property is set then the output of the expression is the value returned by the dialog.
 5. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
     1. `None`: Don't include any choices for prompt.
     2. `Auto`: Automatically select the appropriate style for the current channel.
@@ -500,10 +500,7 @@ The following links provide generalized information on the topic of authenticati
 [4]:https://aka.ms/bot-builder-concept-dialog#prompts
 [5]:https://aka.ms/azure-bot-authentication
 [6]:https://aka.ms/azure-bot-add-authentication
-
-[8]:bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+[7]:bot-builder-concept-adaptive-dialog-memory-states.md
+[8]:bot-builder-concept-adaptive-dialog-recognizers.md
 [9]:bot-builder-concept-adaptive-dialog-generators.md
 [10]:bot-builder-concept-adaptive-expressions.md
-[11]:bot-builder-concept-adaptive-dialog-memory-states.md
-[13]:bot-builder-concept-adaptive-dialog-recognizers.md
-[14]:bot-builder-concept-language-generation.md
