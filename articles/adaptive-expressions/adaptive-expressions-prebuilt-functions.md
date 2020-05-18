@@ -2532,7 +2532,7 @@ isPresent(validNow)
 And return the following results respectively:
 
 - `false`
--`true`
+- `true`
 
 <a name="isString"></a>
 
