@@ -1065,7 +1065,7 @@ new LogAction()
 [1]:bot-builder-adaptive-dialog-introduction.md
 [2]:bot-builder-concept-adaptive-dialog-triggers.md
 [3]:https://www.qnamaker.ai/
-[4]:bot-builder-concept-adaptive-dialog-inputs.md#oauth
+[4]:bot-builder-concept-adaptive-dialog-inputs.md#oauthinput
 [5]:bot-builder-concept-dialog.md
 [6]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
 [7]:bot-builder-concept-adaptive-dialog-inputs.md

@@ -77,7 +77,7 @@ See the [_Recognizers in adaptive dialogs_][6] article for more information on _
 
 ### Generator
 
-_Generator_ ties a specific language generation system to an adaptive dialog. This, along with the recognizer enables clean separation and encapsulation of a specific dialog's Language Understanding and Language Generation assets. With the [Language Generation][5] feature, you can associate the generator with a _.lg_ file or set the generator to a [TemplateEngine][6] instance where you explicitly manage the one or more _.lg_ files that power the adaptive dialog.
+_Generator_ ties a specific language generation system to an adaptive dialog. This, along with the recognizer enables clean separation and encapsulation of a specific dialog's Language Understanding and Language Generation assets. With the [Language Generation][7] feature, you can associate the generator with a _.lg_ file or set the generator to a `TemplateEngine` instance where you explicitly manage the one or more _.lg_ files that power the adaptive dialog.
 
 See the [_Language Generation in adaptive dialogs_][7] article for more information on _generators_ in adaptive dialogs.
 
@@ -162,7 +162,6 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 * [Create a bot combining adaptive, component, waterfall, and custom dialogs][12]
 
 [1]:https://aka.ms/bot-builder-concept-dialog
-
 [3]:bot-builder-concept-adaptive-dialog-triggers.md
 [4]:bot-builder-concept-adaptive-dialog-actions.md
 [5]:bot-builder-concept-adaptive-dialog-inputs.md

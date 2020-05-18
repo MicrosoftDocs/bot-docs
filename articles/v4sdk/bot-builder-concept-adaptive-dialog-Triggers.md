@@ -326,7 +326,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 * [Dialog libraries][5]
 * [Actions in adaptive dialogs][2]
 
-[1]:bot-builder-adaptive-dialog-introduction
+[1]:bot-builder-adaptive-dialog-introduction.md
 [2]:bot-builder-concept-adaptive-dialog-actions.md
 [3]:https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [4]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/common-expression-language
@@ -336,7 +336,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 [8]:bot-builder-concept-adaptive-dialog-recognizers.md
 [9]:https://aka.ms/luis-prediction-scores
 [10]:https://aka.ms/how-bots-work#the-activity-processing-stack
-[11]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer
-[12]:bot-builder-concept-adaptive-dialog-recognizers.md#qnamaker-recognizer
+[11]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
+[12]:bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 [13]:bot-builder-concept-adaptive-dialog-actions.md#emitevent
 [14]:bot-builder-concept-adaptive-dialog-inputs.md
