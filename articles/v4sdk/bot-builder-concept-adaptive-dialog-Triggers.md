@@ -329,13 +329,13 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 [1]:bot-builder-adaptive-dialog-introduction.md
 [2]:bot-builder-concept-adaptive-dialog-actions.md
 [3]:https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
-[4]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/common-expression-language
+[4]:bot-builder-concept-adaptive-expressions.md
 [5]:bot-builder-concept-dialog.md
-[6]:https://aka.ms/bot-service-add-luis-to-bot
+[6]:bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [7]:https://www.luis.ai/home
 [8]:bot-builder-concept-adaptive-dialog-recognizers.md
 [9]:https://aka.ms/luis-prediction-scores
-[10]:https://aka.ms/how-bots-work#the-activity-processing-stack
+[10]:https://aka.ms/how-bots-work
 [11]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [12]:bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 [13]:bot-builder-concept-adaptive-dialog-actions.md#emitevent
