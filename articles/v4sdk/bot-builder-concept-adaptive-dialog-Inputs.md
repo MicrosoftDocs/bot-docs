@@ -33,7 +33,7 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 
 Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and collect input from a user, validate it, and accept it into memory. An input:
 
-* Binds the prompt result to a property in a [state management][6] scope.
+* Binds the prompt result to a property in a [state management][11] scope.
 * Prompts the user only if the result property doesn't already have a value.
 * Saves the input to the specified property if the input from user matches the type of entity expected.
 * Accepts validation constraints such as min, max, and so on.
