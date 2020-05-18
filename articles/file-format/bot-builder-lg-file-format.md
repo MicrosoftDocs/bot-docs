@@ -88,7 +88,7 @@ Here is an example of a simple template that includes two variations.
 Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions][3].
  
 > [!IMPORTANT]
-> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](#structured-response-template) to nest conditionals. 
+> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals. 
 
 #### If-else template
 
@@ -119,7 +119,7 @@ Here's another example that shows an if-else conditional response template defin
 
 #### Switch template
 
-The switch template lets you design a template that matches an expression's value to a CASE clause and produces output based on that case. Condition expressions are enclosed in braces ${}.
+The switch template lets you design a template that matches an expression's value to a CASE clause and produces output based on that case. Condition expressions are enclosed in braces **${}**.
 
 Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
@@ -165,7 +165,7 @@ Read about [structure response templates](../language-generation/language-genera
 
 ### References to templates
 
-Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as _${TemplateName()}_.
+Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as **${<TemplateName>()}**.
 
 ```.lg
 > Example of a template that includes composition reference to another template.
@@ -335,7 +335,7 @@ If the strict option is on, null errors will throw a friendly message.
 - hi ${name}
 ```
 
-If name is null, the diagnostic would be `'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.` If strict is set to false or not set, a compatible result will be given. The above sample would produce `hi null`.
+If name is null, the diagnostic would be **'name' evaluated to null. [welcome] Error occurred when evaluating '- hi ${name}'.**. If strict is set to false or not set, a compatible result will be given. The above sample would produce **hi null**.
 
 ### replaceNull option
 
@@ -345,7 +345,7 @@ Developers can creat delegates to replace null values in evaluated expressions b
 > !# @replaceNull = ${path} is undefined 
 ```
 
-In the above example, the null input in the `path` variable would be replaced with `${path} is undefined`. The following input, where `user.name` is null:
+In the above example, the null input in the `path` variable would be replaced with **${path} is undefined**. The following input, where `user.name` is null:
 :
 
 ```.lg
