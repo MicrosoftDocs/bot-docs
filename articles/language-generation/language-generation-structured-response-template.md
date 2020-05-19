@@ -172,7 +172,7 @@ Here's how to display a carousel of cards:
 ]
 ```
 
-Use **\\** to escape characters.
+Use **\\** to escape |.
 
 ```.lg
 # AskForAge.prompt
@@ -408,5 +408,4 @@ Here's an example:
 
 [1]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/
 [2]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
-[3]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language
 [4]:https://github.com/microsoft/botbuilder-dotnet/blob/master/tests/Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.Tests/lg/NormalStructuredLG.lg

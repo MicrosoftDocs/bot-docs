@@ -194,16 +194,18 @@ public static Templates ParseText(
 /// </summary>
 /// <param name="templateName">Template name to be evaluated.</param>
 /// <param name="scope">The state visible in the evaluation.</param>
+/// <param name="opt">The EvaluationOptions in evaluating a template.</param>
 /// <returns>Evaluate result.</returns>
-public object Evaluate(string templateName, object scope = null);
+public object Evaluate(string templateName, object scope = null, EvaluationOptions opt = null);
 
 /// <summary>
 /// Use to evaluate an inline template str.
 /// </summary>
-/// <param name="text">inline string which will be evaluated.</param>
-/// <param name="scope">scope object or JToken.</param>
+/// <param name="text">Inline string which will be evaluated.</param>
+/// <param name="scope">Scope object or JToken.</param>
+/// <param name="opt">The EvaluationOptions in evaluating a template.</param>
 /// <returns>Evaluate result.</returns>
-public object EvaluateText(string text, object scope = null);
+public object EvaluateText(string text, object scope = null, EvaluationOptions opt = null);
 
 /// <summary>
 /// Expand a template with given name and scope.

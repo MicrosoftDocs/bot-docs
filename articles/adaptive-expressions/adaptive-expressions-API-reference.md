@@ -159,8 +159,9 @@ public void ValidateTree();
 /// Global state to evaluate accessor expressions against.  Can be <see cref="System.Collections.Generic.IDictionary{String, Object}"/>,
 /// <see cref="System.Collections.IDictionary"/> otherwise reflection is used to access property and then indexer.
 /// </param>
+/// <param name="options">Options used in the evaluation. </param>
 /// <returns>Computed value and an error string.  If the string is non-null, then there was an evaluation error.</returns>
-public (object value, string error) TryEvaluate(object state);
+public (object value, string error) TryEvaluate(object state, Options options = null)
 
 /// <summary>
 /// Evaluate the expression.
@@ -169,19 +170,9 @@ public (object value, string error) TryEvaluate(object state);
 /// Global state to evaluate accessor expressions against.  Can be <see cref="System.Collections.Generic.IDictionary{String, Object}"/>,
 /// <see cref="System.Collections.IDictionary"/> otherwise reflection is used to access property and then indexer.
 /// </param>
+/// <param name="options">Options used in the evaluation. </param>
 /// <returns>Computed value and an error string.  If the string is non-null, then there was an evaluation error.</returns>
-public (object value, string error) TryEvaluate(IMemory state);
-
-/// <summary>
-/// Evaluate the expression.
-/// </summary>
-/// <typeparam name="T">type of result of the expression.</typeparam>
-/// <param name="state">
-/// Global state to evaluate accessor expressions against.  Can be <see cref="System.Collections.Generic.IDictionary{String, Object}"/>,
-/// <see cref="System.Collections.IDictionary"/> otherwise reflection is used to access property and then indexer.
-/// </param>
-/// <returns>Computed value and an error string.  If the string is non-null, then there was an evaluation error.</returns>
-public (T value, string error) TryEvaluate<T>(object state);
+public (object value, string error) TryEvaluate(IMemory state, Options options = null);
 
 /// <summary>
 /// Evaluate the expression.
@@ -191,6 +182,19 @@ public (T value, string error) TryEvaluate<T>(object state);
 /// Global state to evaluate accessor expressions against.  Can be <see cref="System.Collections.Generic.IDictionary{String, Object}"/>,
 /// <see cref="System.Collections.IDictionary"/> otherwise reflection is used to access property and then indexer.
 /// </param>
+/// <param name="options">Options used in the evaluation. </param>
 /// <returns>Computed value and an error string.  If the string is non-null, then there was an evaluation error.</returns>
-public (T value, string error) TryEvaluate<T>(IMemory state);
+public (T value, string error) TryEvaluate<T>(object state, Options options = null);
+
+/// <summary>
+/// Evaluate the expression.
+/// </summary>
+/// <typeparam name="T">type of result of the expression.</typeparam>
+/// <param name="state">
+/// Global state to evaluate accessor expressions against.  Can be <see cref="System.Collections.Generic.IDictionary{String, Object}"/>,
+/// <see cref="System.Collections.IDictionary"/> otherwise reflection is used to access property and then indexer.
+/// </param>
+/// <param name="options">Options used in the evaluation. </param>
+/// <returns>Computed value and an error string.  If the string is non-null, then there was an evaluation error.</returns>
+public (T value, string error) TryEvaluate<T>(IMemory state, Options options = null)
 ```
