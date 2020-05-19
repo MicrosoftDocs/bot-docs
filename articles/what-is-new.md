@@ -7,11 +7,11 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 12/10/2019
+ms.date: 05/18/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# What's new May 2019
+# What's new May 2020
 
 [!INCLUDE[applies-to](includes/applies-to.md)]
 
