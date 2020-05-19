@@ -45,14 +45,14 @@ You can also customize what an action does after its been triggered by providing
 * [conversationUpdate][conversationUpdate]
 * [contactRelationUpdate][contactRelationUpdate]
 
-[conversationUpdate]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/iconversationupdate?view=botbuilder-ts-3.0
-[contactRelationUpdate]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/icontactrelationupdate?view=botbuilder-ts-3.0
+[conversationUpdate]: https://docs.microsoft.com/javascript/api/botbuilder/iconversationupdate?view=botbuilder-ts-3.0
+[contactRelationUpdate]: https://docs.microsoft.com/javascript/api/botbuilder/icontactrelationupdate?view=botbuilder-ts-3.0
 
-[onFindAction]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/itriggeractionoptions?view=botbuilder-ts-3.0#onfindaction
-[onSelectAction]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/itriggeractionoptions?view=botbuilder-ts-3.0#onselectaction
-[onInterrupted]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/itriggeractionoptions?view=botbuilder-ts-3.0#oninterrupted
+[onFindAction]: https://docs.microsoft.com/javascript/api/botbuilder/itriggeractionoptions?view=botbuilder-ts-3.0#onfindaction
+[onSelectAction]: https://docs.microsoft.com/javascript/api/botbuilder/itriggeractionoptions?view=botbuilder-ts-3.0#onselectaction
+[onInterrupted]: https://docs.microsoft.com/javascript/api/botbuilder/itriggeractionoptions?view=botbuilder-ts-3.0#oninterrupted
 
-[SendTyping]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/session?view=botbuilder-ts-3.0#sendtyping--
-[IMessage]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/imessage?view=botbuilder-ts-3.0
-[ChatConnector]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/chatconnector?view=botbuilder-ts-3.0
-[session_userData]: https://docs.microsoft.com/en-us/javascript/api/botbuilder/session?view=botbuilder-ts-3.0#userdata
+[SendTyping]: https://docs.microsoft.com/javascript/api/botbuilder/session?view=botbuilder-ts-3.0#sendtyping--
+[IMessage]: https://docs.microsoft.com/javascript/api/botbuilder/imessage?view=botbuilder-ts-3.0
+[ChatConnector]: https://docs.microsoft.com/javascript/api/botbuilder/chatconnector?view=botbuilder-ts-3.0
+[session_userData]: https://docs.microsoft.com/javascript/api/botbuilder/session?view=botbuilder-ts-3.0#userdata
