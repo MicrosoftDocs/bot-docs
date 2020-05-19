@@ -7,7 +7,7 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.author: kamrani 
-ms.date: 07/09/2019
+ms.date: 05/19/2020
 ---
 
 # Direct Line App Service Extension
