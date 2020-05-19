@@ -1,8 +1,8 @@
 # Virtual Assistant
 ## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
 ## [Template Introduction](../v4sdk/bot-builder-virtual-assistant-template.md)
-# Skills 
-## [Overview](../v4sdk/bot-builder-skills-overview.md)
+## [Virtual Assistant Skills](../v4sdk/bot-builder-skills-overview.md)
+# [Implement a skill for Power Virtual Agents](../v4sdk/skill-pva.md)
 # WebChat
 ## [Overview](../v4sdk/bot-builder-webchat-overview.md)
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
