@@ -12,7 +12,7 @@ ms.date: 04/24/2020
 
 # Introduction to adaptive dialogs
 
-Adaptive dialogs offer new A new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
+Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] that enables you to easily layer in sophisticated conversation management techniques like interruption handling, dispatching, and more.
 
 > [!IMPORTANT]
 > Adaptive dialogs is currently available in the .Net version of the bot framework SDK. You can find Sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub, however the JavaScript version is now in [Preview][15].
@@ -24,15 +24,16 @@ Adaptive dialogs offer new A new event based addition to the [Dialogs library][1
 
 ## Adaptive dialogs defined
 
-### Why adaptive dialog
+### Why adaptive dialogs
 <!--This needs work-->
 
-Because adaptive dialogs:
+Adaptive dialogs have many advantages to WaterfallDialogs. Primarily, they:
 
-* Provides the flexibility that enables you to model conversations as a sequence of steps while simultaneously allowing for rules that dynamically adjust to the context. This is especially useful when users do not provide the requested information in order or decide to start a new conversation in the middle of an active dialog.
-* Supports and sits on top of a rich event system for dialogs, so modeling interruptions, cancellation, and execution planning semantics are a lot easier to describe and manage.
-* Brings input recognition, event handling via rules, model of the conversation (dialog) and output generation into one cohesive, self-contained unit.
-* Supports extensibility points for recognition, event rules and machine learning.
+* Provide flexibility that enables you to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation.
+* Support and sit on top of a rich event system for dialogs, so modeling interruptions, cancellation, and execution planning semantics are a lot easier to describe and manage.
+* Bring input recognition and rule-based event handling
+* Combine the conversation model (dialog) and output generation into one cohesive, self-contained unit.
+* Support extensibility points for recognition, event rules and machine learning.
 * Was designed to be declarative from the start. This enables tooling including products like [Bot Framework Composer](https://aka.ms/bf-composer-docs-welcome-page) that provides a visual canvas to model conversations.
 
 ## Anatomy of an adaptive dialog  
