@@ -18,13 +18,26 @@
 ## [Managing state](v4sdk/bot-builder-concept-state.md)
 ## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
 ## [Middleware](v4sdk/bot-builder-concept-middleware.md)
+## Adaptive dialogs
+### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
+### [Events and triggers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md)
+### [Actions in Adaptive Dialogs](v4sdk/bot-builder-concept-adaptive-dialog-Actions.md)
+### [Asking for user input using adaptive dialogs ](v4sdk/bot-builder-concept-adaptive-dialog-Inputs.md)
+### [Recognizers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md)
+### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
+### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
 ## Authentication
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
 ## [How bots for Microsoft Teams work](v4sdk/bot-builder-basics-teams.md)
-## [About skills](v4sdk/skills-conceptual.md)
+## Skills
+### [About skills](v4sdk/skills-conceptual.md)
+### [About skill bots](v4sdk/skills-about-skill-bots.md)
+### [About skill consumers](v4sdk/skills-about-skill-consumers.md)
+## [Adaptive expressions](v4sdk/bot-builder-concept-adaptive-expressions.md)
+## [Language Generation](v4sdk/bot-builder-concept-language-generation.md)
 <!-- [Language understanding](v4sdk/bot-builder-concept-luis.md) -->
 ## [Bot Service templates](bot-service-concept-templates.md)
 ## [Cognitive Services](bot-service-concept-intelligence.md)
@@ -53,11 +66,20 @@
 ### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
+### Adaptive dialogs
+#### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
+#### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
-### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
+### Authentication
+#### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
+#### [Add single sign on to a bot](v4sdk/bot-builder-authentication-sso.md)
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
+### Language Generation
+#### [Use language generation templates in your bot](language-generation/bot-builder-howto-use-lg-templates.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
+#### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)
+#### [Write a v2.0 skill manifest](v4sdk/skills-write-manifest-2-0.md)
 #### [Use dialogs within a skill](v4sdk/skill-actions-in-dialogs.md)
 #### [Implement a skill consumer](v4sdk/skill-implement-consumer.md)
 #### [Use a dialog to consume a skill](v4sdk/skill-use-skilldialog.md)
@@ -90,5 +112,16 @@
 ## BF CLI tool reference
 ### [BF CLI overview](v4sdk/bf-cli-overview.md)
 ### [BF CLI reference](v4sdk/bf-cli-reference.md)
+## Adaptive expressions
+### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
+### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
+## LG
+### [API reference](language-generation/language-generation-API-reference.md)
+### [.lg file format](file-format/bot-builder-lg-file-format.md)
+### [Structured response template](language-generation/language-generation-structured-response-template.md)
+### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
+## File formats
+### [.lu file format](file-format/bot-builder-lu-file-format.md)
+### [.qna file format](file-format/bot-builder-qna-file-format.md)
 ## [Entities and activity types](bot-service-activities-entities.md)
 # [Resources](resources/TOC.md)

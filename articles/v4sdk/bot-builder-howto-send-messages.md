@@ -1,13 +1,13 @@
 ---
 title: Send and receive text message - Bot Service
 description: Learn about how to send and receive text messages within the Bot Framework SDK.
-keywords: sending message, message activities, simple text message, message, text message, receive message  
+keywords: sending message, message activities, simple text message, message, text message, receive message
 author: ivorb
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 05/14/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -49,14 +49,28 @@ In the bot's activity handlers, use the turn context object's `send_activity` me
 await turn_context.send_activity("Welcome!")
 ```
 
+# [LG](#tab/lg)
+
+**Language Generation** (LG) provides templates that include one or more variations of text that are used for composition and expansion.
+One of the variations provided will be picked at random by the LG system.
+
+The following example shows a simple template that includes two variations.
+
+```markdown
+# GreetingPrefix
+- Hi
+- Hello
+```
+
 ---
+
 ## Receive a text message
 
-To receive a simple text message, use the *text* property of the *activity* object. 
+To receive a simple text message, use the *text* property of the *activity* object.
 
 # [C#](#tab/csharp)
 
-In the bot's activity handlers, use the following code to receive a message. 
+In the bot's activity handlers, use the following code to receive a message.
 
 ```cs
 var responseMessage = turnContext.Activity.Text;
@@ -78,12 +92,21 @@ In the bot's activity handlers, use the following code to receive a message.
 response = context.activity.text
 ```
 
+# [LG](#tab/lg)
+
+Add the following LG template to your .lg file to receive a message.
+
+```markdown
+# EchoMessage
+You said ‘${turn.activity.text}’
+```
+
 ---
 
 ## Send a typing indicator
 Users expect a timely response to their messages. If your bot performs some long-running task like calling a server or executing a query without giving the user some indication that the bot heard them, the user could get impatient and send additional messages or just assume the bot is broken.
 
-Web Chat and Direct Line channel bots can support the sending of a typing indication to show the user that the message was received and is being processed. Be aware that your bot needs to let the turn end within 15 seconds or the Connector service will timeout. For longer processes read more about sending [proactive messages](bot-builder-howto-proactive-message.md). 
+Web Chat and Direct Line channel bots can support the sending of a typing indication to show the user that the message was received and is being processed. Be aware that your bot needs to let the turn end within 15 seconds or the Connector service will timeout. For longer processes read more about sending [proactive messages](bot-builder-howto-proactive-message.md).
 
 The following example demonstrates how to send a typing indication.
 
@@ -151,12 +174,22 @@ async def on_message_activity(self, turn_context: TurnContext):
         )
 ```
 
+# [LG](#tab/lg)
+
+```markdown
+# TypingIndicator
+[Activity
+    Type = typing
+]
+```
+
 ---
 
 ## Additional resources
 
-- For more information about activity processing in general, see [activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack).
-- For more information on formatting, see the [message activity section](https://aka.ms/botSpecs-activitySchema#message-activity) of the Bot Framework Activity schema.
+- [Activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack)
+- [Message activity section](https://aka.ms/botSpecs-activitySchema#message-activity)
+- [Language Generation](bot-builder-concept-language-generation.md)
 
 ## Next steps
 
