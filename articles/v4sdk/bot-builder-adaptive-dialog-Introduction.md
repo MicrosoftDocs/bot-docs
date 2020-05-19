@@ -27,7 +27,7 @@ Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] th
 ### Why adaptive dialogs
 <!--This needs work-->
 
-Adaptive dialogs have many advantages to WaterfallDialogs. Primarily, they:
+Adaptive dialogs have many advantages to [WaterfallDialogs][17]. Primarily, they:
 
 * Provide flexibility that enables you to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation.
 * Support and sit on top of a rich event system for dialogs, so modeling interruptions, cancellation, and execution planning semantics are a lot easier to describe and manage.
@@ -177,3 +177,4 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [14]:https://aka.ms/bot-builder-concept-dialog#prompts
 [15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore
+[17]: https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0#waterfall-dialogs
