@@ -1,11 +1,16 @@
 ## Prerequisites
 
-- Python [3.6](https://www.python.org/downloads/release/python-369/) or [3.7](https://www.python.org/downloads/release/python-375/) <!--[3.8](https://www.python.org/downloads/release/python-383/)-->
+- Python [3.6](https://www.python.org/downloads/release/python-369/), [3.7](https://www.python.org/downloads/release/python-375/), or[3.8](https://www.python.org/downloads/release/python-383/)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - [git](https://git-scm.com/)
 - Knowledge of ansynchronous programming in Python
 
 ## Create a bot
+
+>[!NOTE]
+>
+> Some developers may find it useful to create Python bots in a [virtual envrionment](https://docs.python.org/3/library/venv.html). The steps below will work regardless if you're developing in a virtual environment or on your local machine. 
+
 
 1. Open a terminal. Install the necessary packages by running the following commands:
 
