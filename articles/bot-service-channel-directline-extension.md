@@ -14,9 +14,6 @@ ms.date: 07/09/2019
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
-> [!WARNING]
-> The **Direct Line App Service Extension** is in public **preview**.  
-
 The direct line app service extension allows clients to connect directly with the host, where the bot is located. This provides workload isolation and, in some cases, improved performance. The following picture shows the overall architecture:
 
 ![Direct line extension architecture](./media/channels/direct-line-extension-architecture.png)
