@@ -15,16 +15,18 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-This quickstart walks you through building a bot by using the Python Echo Bot template, and then testing it with the Bot Framework Emulator.
+This quickstart walks you through building a bot using the Python Echo Bot template, and then testing it with the Bot Framework Emulator.
 
 ## Prerequisites
-- Python [3.6](https://www.python.org/downloads/release/python-369/) or [3.7](https://www.python.org/downloads/release/python-375/)
+
+- Python [3.6](https://www.python.org/downloads/release/python-369/) or [3.7](https://www.python.org/downloads/release/python-375/) <!--[3.8](https://www.python.org/downloads/release/python-383/)-->
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - [git](https://git-scm.com/)
 - knowledge of asynchronous programming in Python
 
 ## Create a bot
-1. Open a terminal and navigate to the folder where you're saving your bot locally. Install the necessary packages by running the following commands:
+
+1. Open a terminal. Install the necessary packages by running the following commands:
 - `pip install botbuilder-core`
 - `pip install asyncio`
 - `pip install cookiecutter`
