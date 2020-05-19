@@ -1,10 +1,9 @@
 ## Prerequisites
 
-- [Visual Studio Code](https://www.visualstudio.com/downloads)
 - [Node.js](https://nodejs.org/)
-- [git](https://git-scm.com/)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
+- [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
 
 > [!NOTE]
 > The install of Windows build tools listed below is only required if you use Windows as your development operating system.
