@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/10/2019
+ms.date: 05/17/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,10 +20,10 @@ This quickstart walks you through building a bot using the Python Echo Bot templ
 [!INCLUDE [python quickstart](../includes/quickstart-python.md)]
 
 ## Additional resources
+
 See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Deploy your bot to Azure](../bot-builder-deploy-az-cli.md)
-

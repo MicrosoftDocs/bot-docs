@@ -48,8 +48,8 @@ To enable continuous deployment with GitHub, navigate to the **App Service** pag
 
 1. Click **Continue**.
 
-        > [!div class="mx-imgBorder"]
-        > ![Continue to build provider](~/media/azure-bot-build/azure-deployment-continue.png)
+      > [!div class="mx-imgBorder"]
+      > ![Continue to build provider](~/media/azure-bot-build/azure-deployment-continue.png)
 
 1. On the **Build provider** page, select the build provider you want to use and click **Continue**.
 
