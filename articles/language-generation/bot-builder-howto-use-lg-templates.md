@@ -46,21 +46,21 @@ Make sure you have the **Microsoft.Bot.Builder.LanguageGeneration** package. Add
 
 **Bots/DialogAndWelcomeBot.cs**
 
-[!code-csharp[add-package](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
+[!code-csharp[add-package](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=12)]
 
 After loading the package create a private `Templates` object called **_templates**:
 
-[!code-csharp[create-Templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
+[!code-csharp[create-Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=19)]
 
 The **_templates** object is used to reference templates in your .lg files.
 
 Combine the path for cross-platform support and parse the path that contains **welcomeCard.lg** by adding the following to your code:
 
-[!code-csharp[combine-path](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
+[!code-csharp[combine-path](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=25-27)]
 
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
-[!code-csharp[reference-template](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=7)]
+[!code-csharp[reference-template](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=49-57&highlight=7)]
 
 Notice how the `WelcomeCard` template is referenced in the call `SendActivityAsync()`.
 
@@ -70,17 +70,17 @@ Make sure you have the **botbuilder-lg** packaged installed. Add the following s
 
 **bots/dialogAndWelcomeBot.js**
 
-[!code-javascript[add-package](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=6)]
+[!code-javascript[add-package](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=6)]
 
 To use templates parse **welcomeCard.lg** and save the lg templates to **lgTemplates**:
 
-[!code-javascript[create-Templates](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=11)]
+[!code-javascript[create-Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=11)]
 
 The **lgtemplates** object is used to reference templates in your .lg files.
 
 Now you can can reference templates from the **welcomeCard.lg** by name, seen below:
 
-[!code-javascript[reference-welcome-card-template](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43&highlight=5)]
+[!code-javascript[reference-welcome-card-template](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=31-43&highlight=5)]
 
 Notice how the `WelcomeCard` template is referenced in the creation of the **welcomeCard** constant.
 
@@ -96,7 +96,7 @@ The simple response templates in **BookingDialog.lg**, like `PromptForDestinatio
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[confirm-message](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=4-6)]
+[!code-lg[confirm-message](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=4-6)]
 
 For example, a call to `PromptForDepartureCity`, seen above, will produce one of the two possible text prompts:
 
@@ -109,7 +109,7 @@ Like more complex templates, simple response templates can reference memory. In 
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[confirm-message](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=17-19)]
+[!code-lg[confirm-message](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=17-19)]
 
 If the user enters _Seattle_ for the `Origin`, _Paris_ for the `Destination`, and _05/24/2020_ for the `TravelDate`, your bot will produce one of the following results:
 
@@ -124,7 +124,7 @@ The `PromptForMissingInformation` template in **BookingDialog.lg** is an example
 
 **Resources/BookingDialog.lg**
 
-[!code-lg[conditional](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=31-39)]
+[!code-lg[conditional](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/BookingDialog.LG?range=31-39)]
 
 If a property is null then the bot will call the template associated with that property. If all properties are non-null values then the `ConfirmBooking` template is called.
 
@@ -142,7 +142,7 @@ Language generation templates can use cards and media to create a richer convers
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[adaptive-card](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/welcomeCard.LG?range=24-58)]
+[!code-lg[adaptive-card](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/welcomeCard.LG?range=24-58)]
 
 This card displays an image, and uses LG templates for the card header a set of suggested actions.
 
@@ -152,7 +152,7 @@ This card displays an image, and uses LG templates for the card header a set of 
 
 **Bots/DialogAndWelcomeBot.cs**
 
-[!code-csharp[fill-card](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=32-47)]
+[!code-csharp[fill-card](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=32-47)]
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
@@ -162,7 +162,7 @@ The `title` is the text in the suggested action button, and the `url` is the url
 
 **bots/dialogAndWelcomeBot.js**
 
-[!code-javascript[fill-card](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=13-29)]
+[!code-javascript[fill-card](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/13.core-bot/bots/dialogAndWelcomeBot.js?range=13-29)]
 
 The `title` is the text in the suggested action button, and the `url` is the url opened when the button is clicked.
 
@@ -172,7 +172,7 @@ Finally the `WelcomeCard` calls the `AdaptiveCard` template to return the Adapti
 
 **Resources/welcomeCard.lg**
 
-[!code-lg[fill-card](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/welcomeCard.LG?range=11-14)]
+[!code-lg[fill-card](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot/Resources/welcomeCard.LG?range=11-14)]
 
 For more information about the `ActivityAttachment()` function, read [inject functions from the LG library](functions-injected-from-language-generation.md)
 

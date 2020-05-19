@@ -113,6 +113,22 @@ public IList<string> Options { get; set; }
 /// null or make the condition failed.
 /// </value>
 public bool StrictMode => GetStrictModeFromOptions(Options);
+
+/// <summary>
+/// Gets the evluation options for current LG file.
+/// </summary>
+/// <value>
+/// An EvaluationOption.
+/// </value>
+public EvaluationOptions LgOptions => new EvaluationOptions(Options);
+
+/// <summary>
+/// Gets the namespace to register for current LG file.
+/// </summary>
+/// <value>
+/// A string value.
+/// </value>
+public string Namespace => ExtractNameSpace(Options);
 ```
 
 ### Constructors
