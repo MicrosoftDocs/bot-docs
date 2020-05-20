@@ -111,12 +111,12 @@ python app.py
 
 3. Now open another emulator. This second emulator will work as a debugger. Follow the instructions as described in the previous step. Check **Open in debug mode** and then click **Connect**. 
 
-4. At this point you will see a UUID (`/INSPECT attach <identifier>`) in your debugging emulator. Copy the UUID and paste it to the chat box of the first emulator. 
+4. At this point you will see a command with a unique identifier (`/INSPECT attach <identifier>`) in your debugging emulator. Copy the whole command with the identifier from the debugging Emulator and paste it into the chat box of the first Emulator.
 
 > [!NOTE]
-> A universally unique identifier (UUID) is a unique ID for identifying information. A UUID is generated every time when the emulator is launched in debug mode after you add the inspection middleware in your bot's code. 
+> A unique identifier is generated every time when the emulator is launched in debug mode after you add the inspection middleware in your bot's code.
 
-5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will be able to see the state of your bot as follows: 
+5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will be able to see the state of your bot as follows in the debugging emulator:
 ![bot state](./media/bot-debug-inspection-middleware/bot-debug-bot-state.png)
 
 ## Inspect the state of a bot configured in Azure 
