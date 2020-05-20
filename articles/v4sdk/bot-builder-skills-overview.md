@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Skills Overview - Bot Service
-description: Learn more about the Bot Framework Skills
+title: Virtual Assistant Skills Overview - Bot Service
+description: Learn more about Virtual Assistant Skills
 author: darrenj
 ms.author: darrenj
 manager: kamrani
@@ -19,7 +19,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Developers can compose conversational experiences by stitching together re-usable conversational capabilities, known as Skills.
 
-Within an Enterprise, this could be creating one parent bot bringing together multiple sub-bots owned by different teams, or more broadly leveraging common capabilities provided by other developers. With this preview of Skills, developers can create a new bot (typically through the Virtual Assistant template) and add/remove Skills with one command line operation incorporating all Dispatch and Configuration changes.     
+Within an Enterprise, this could be creating one parent bot bringing together multiple sub-bots owned by different teams, or more broadly leveraging common capabilities provided by other developers. With this preview of Skills, developers can create a new bot (typically through the Virtual Assistant template) and add/remove Skills with one command line operation incorporating all Dispatch and Configuration changes.
 
 Skills are themselves Bots, invoked remotely and a Skill developer template (.NET, TS) is available to facilitate creation of new Skills.
 

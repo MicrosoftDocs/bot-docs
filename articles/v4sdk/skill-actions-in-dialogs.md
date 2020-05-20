@@ -188,7 +188,7 @@ If the LUIS recognizer is not configured or the intent is not supported, the ski
 
 **dialog-skill-bot/dialogs/activity_router_dialog.py**
 
-[!code-python[_on_message_activity](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=84-133&highlight=16,35-39)]
+[!code-python[_on_message_activity](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=88-142&highlight=20,37-43)]
 
 ---
 
@@ -218,9 +218,9 @@ The get-weather action is not implemented. Currently, it sends a placeholder mes
 
 **dialog-skill-bot/dialogs/activity_router_dialog.py**
 
-[!code-python[_begin_book_flight](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=153-163)]
+[!code-python[_begin_book_flight](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=162-172)]
 
-[!code-python[_begin_get_weather](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=135-149)]
+[!code-python[_begin_get_weather](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=144-160)]
 
 ---
 
