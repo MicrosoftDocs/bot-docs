@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,11 +24,13 @@
       <MemberSignature Language="C#" Value="public static object Assign (object startObject, object overlayObject, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Assign(object startObject, object overlayObject, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.Assign(System.Object,System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Assign (startObject As Object, overlayObject As Object, type As Type) As Object" />
       <MemberSignature Language="F#" Value="static member Assign : obj * obj * Type -&gt; obj" Usage="Microsoft.Bot.Builder.Dialogs.ObjectPath.Assign (startObject, overlayObject, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -58,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -94,6 +98,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -114,6 +119,61 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ContainsProperty">
+      <MemberSignature Language="C#" Value="public static bool ContainsProperty (object obj, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsProperty(object obj, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.ContainsProperty(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsProperty (obj As Object, name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ContainsProperty : obj * string -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.ObjectPath.ContainsProperty (obj, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">object.</param>
+        <param name="name">name of the property.</param>
+        <summary>
+            Detects if property exists on object.
+            </summary>
+        <returns>true if found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForEachProperty">
+      <MemberSignature Language="C#" Value="public static void ForEachProperty (object obj, Action&lt;string,object&gt; action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ForEachProperty(object obj, class System.Action`2&lt;string, object&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.ForEachProperty(System.Object,System.Action{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ForEachProperty (obj As Object, action As Action(Of String, Object))" />
+      <MemberSignature Language="F#" Value="static member ForEachProperty : obj * Action&lt;string, obj&gt; -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.ObjectPath.ForEachProperty (obj, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="action" Type="System.Action&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Object to map against.</param>
+        <param name="action">Action to take.</param>
+        <summary>
+            Apply an action to all properties in an object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetPathValue&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T GetPathValue&lt;T&gt; (object obj, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetPathValue&lt;T&gt;(object obj, string path) cil managed" />
@@ -124,6 +184,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -156,6 +217,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -180,6 +242,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; GetProperties (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; GetProperties(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.GetProperties(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Iterator Function GetProperties (obj As Object) As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="static member GetProperties : obj -&gt; seq&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.ObjectPath.GetProperties obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.ObjectPath/&lt;GetProperties&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Object to enumerate property names.</param>
+        <summary>
+            Get all properties in an object.
+            </summary>
+        <returns>enumeration of property names on the object if it is not a value type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HasValue">
       <MemberSignature Language="C#" Value="public static bool HasValue (object obj, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasValue(object obj, string path) cil managed" />
@@ -190,6 +283,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -218,6 +312,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -248,6 +343,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -284,6 +380,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -293,9 +390,11 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">Object to change.</param>
+        <param name="path">Path to remove.</param>
+        <summary>
+            Remove path from object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,6 +408,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -340,6 +440,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -361,6 +462,39 @@
             Get the value for a path relative to an object.
             </summary>
         <returns>true if successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolvePath">
+      <MemberSignature Language="C#" Value="public static bool TryResolvePath (object obj, string propertyPath, out System.Collections.Generic.List&lt;object&gt; segments, bool eval = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryResolvePath(object obj, string propertyPath, [out] class System.Collections.Generic.List`1&lt;object&gt;&amp; segments, bool eval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ObjectPath.TryResolvePath(System.Object,System.String,System.Collections.Generic.List{System.Object}@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryResolvePath (obj As Object, propertyPath As String, ByRef segments As List(Of Object), Optional eval As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryResolvePath : obj * string * List * bool -&gt; bool" Usage="Microsoft.Bot.Builder.Dialogs.ObjectPath.TryResolvePath (obj, propertyPath, segments, eval)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="propertyPath" Type="System.String" />
+        <Parameter Name="segments" Type="System.Collections.Generic.List&lt;System.Object&gt;" RefType="out" />
+        <Parameter Name="eval" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">root object.</param>
+        <param name="propertyPath">property path to resolve.</param>
+        <param name="segments">Path segments.</param>
+        <param name="eval">True to evaluate resulting segments.</param>
+        <summary>
+            Given an root object and property path, resolve to a constant if eval = true or a constant path otherwise.  
+            conversation[user.name][user.age] =&gt; ['conversation', 'joe', 32].
+            </summary>
+        <returns>True if it was able to resolve all nested references.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

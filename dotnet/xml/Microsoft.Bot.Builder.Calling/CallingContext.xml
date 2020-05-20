@@ -59,8 +59,7 @@
         <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
       </Parameters>
       <Docs>
-        <param name="request">
-        </param>
+        <param name="request" />
         <summary>
             Extracts the X-Microsoft-Skype-Chain-Id header from the request that is used for correlating logs across different services for a call
             </summary>
@@ -69,7 +68,7 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateParsedResults">
-      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults (System.Net.HttpStatusCode statusCode, string content = null, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; additionalData = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults (System.Net.HttpStatusCode statusCode, string content = default, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; additionalData = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults(valuetype System.Net.HttpStatusCode statusCode, string content, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; additionalData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.GenerateParsedResults(System.Net.HttpStatusCode,System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateParsedResults (statusCode As HttpStatusCode, Optional content As String = null, Optional additionalData As Task(Of Stream) = null) As ParsedCallingRequest" />

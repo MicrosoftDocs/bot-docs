@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BotStateData (string conversationId = null, string userId = null, string data = null, Nullable&lt;DateTimeOffset&gt; lastModified = null);" />
+      <MemberSignature Language="C#" Value="public BotStateData (string conversationId = default, string userId = default, string data = default, DateTimeOffset? lastModified = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conversationId, string userId, string data, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastModified) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotStateData.#ctor(System.String,System.String,System.String,System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional conversationId As String = null, Optional userId As String = null, Optional data As String = null, Optional lastModified As Nullable(Of DateTimeOffset) = null)" />
@@ -120,7 +120,7 @@
       </Docs>
     </Member>
     <Member MemberName="LastModified">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; LastModified { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastModified { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastModified" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.BotStateData.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public Property LastModified As Nullable(Of DateTimeOffset)" />

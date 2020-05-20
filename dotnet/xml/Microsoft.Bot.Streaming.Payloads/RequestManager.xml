@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="responseTasks" Type="System.Collections.Concurrent.ConcurrentDictionary&lt;System.Guid,System.Threading.Tasks.TaskCompletionSource&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&gt;" />
@@ -57,14 +60,13 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; GetResponseAsync (Guid requestId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; GetResponseAsync(valuetype System.Guid requestId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.RequestManager.GetResponseAsync(System.Guid,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResponseAsync (requestId As Guid, cancellationToken As CancellationToken) As Task(Of ReceiveResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetResponseAsync : Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;&#xA;override this.GetResponseAsync : Guid * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="requestManager.GetResponseAsync (requestId, cancellationToken)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IRequestManager.GetResponseAsync(System.Guid,System.Threading.CancellationToken)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
@@ -88,12 +90,10 @@
       <MemberSignature Language="VB.NET" Value="Public Function SignalResponseAsync (requestId As Guid, response As ReceiveResponse) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SignalResponseAsync : Guid * Microsoft.Bot.Streaming.ReceiveResponse -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.SignalResponseAsync : Guid * Microsoft.Bot.Streaming.ReceiveResponse -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="requestManager.SignalResponseAsync (requestId, response)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Bot.Streaming.Payloads.IRequestManager.SignalResponseAsync(System.Guid,Microsoft.Bot.Streaming.ReceiveResponse)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>

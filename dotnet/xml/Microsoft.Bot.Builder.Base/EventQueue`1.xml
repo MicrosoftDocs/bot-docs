@@ -53,6 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;.TryPull([out] !Event&amp; event) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.EventQueue`1.Microsoft#Bot#Builder#Base#IEventConsumer&lt;Event&gt;#TryPull(`0@)" />
       <MemberSignature Language="VB.NET" Value="Function TryPull (ByRef event As Event) As Boolean Implements IEventConsumer(Of Event).TryPull" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;.TryPull : 'Event -&gt; bool&#xA;override this.Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;.TryPull : 'Event -&gt; bool" Usage="eventQueue.Microsoft.Bot.Builder.Base.IEventConsumer&lt;Event&gt;.TryPull event" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Base.IEventConsumer`1.TryPull(`0@)</InterfaceMember>
@@ -80,6 +81,8 @@
       <MemberSignature Language="C#" Value="void IEventProducer&lt;Event&gt;.Post (Event event, Action onPull);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;.Post(!Event event, class System.Action onPull) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Base.EventQueue`1.Microsoft#Bot#Builder#Base#IEventProducer&lt;Event&gt;#Post(`0,System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Sub Post (event As Event, onPull As Action) Implements IEventProducer(Of Event).Post" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;.Post : 'Event * Action -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;.Post : 'Event * Action -&gt; unit" Usage="eventQueue.Microsoft.Bot.Builder.Base.IEventProducer&lt;Event&gt;.Post (event, onPull)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Builder.Base.IEventProducer`1.Post(`0,System.Action)</InterfaceMember>

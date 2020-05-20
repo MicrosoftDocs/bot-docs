@@ -25,7 +25,7 @@ Related TODO:
 - This doc is a sample walkthrough, but there's no deeper documentation explaining how the Azure Bot Service is handling tokens. How does the OAuth flow work? Where is it storing my users' access tokens? What's the security and best practices around using it?
 
 "Minor issues":
-- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don’t currently have a way for the developer to specify which scope he wants at runtime.")
+- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don't currently have a way for the developer to specify which scope he wants at runtime.")
 
 - "The scope of the connection setting needs to have both openid and a resource in the Azure AD graph, such as Mail.Read." Unclear if I need to take some action at this point to make happen. Kind of out of context. I'm registering an AAD application in the portal, there's no connection setting
 - Does the bot need all of these scopes for the samples? (e.g. "Read all users' basic profiles")
@@ -46,12 +46,12 @@ For an overview of how the Bot Framework handles authentication, see [Bot authen
 This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how access [Microsoft Graph](https://developer.microsoft.com/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
 This article covers how to:
 
-- [Create the Azure bot application](#create-the-azure-bot-application)
+- [Create the Azure bot registration](#create-the-azure-bot-registration)
 - [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
 - [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
-Once you finish this article, you will have a bot that can respond to a few simple tasks. In the case of the Microsoft Graph example, you check and send an email, display who and your manager are. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
+Once you finish this article, you will have a bot that can respond to a few simple tasks. In the case of the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
 
 ### Web Chat and Direct Line considerations
 
@@ -85,7 +85,7 @@ To run the samples referenced in this article, you need the following:
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access on behalf of the user.
 
-## Create the Azure bot application
+## Create the Azure bot registration
 
 This section shows how to register a bot resource with Azure to host the bot code.
 
@@ -207,8 +207,7 @@ The next step is to register the Azure AD application that you just created with
     1.For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
 
         - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the Azure AD app.
-
-        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
@@ -233,8 +232,7 @@ The next step is to register the Azure AD application that you just created with
     1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
 
         - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
-
-        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated.
 
