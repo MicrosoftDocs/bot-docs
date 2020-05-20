@@ -114,7 +114,7 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 **EchoSkillBot\Bots\EchoBot.cs**
 
-[!code-csharp[Message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=13-28)]
+[!code-csharp[Message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=13-31)]
 
 #### [JavaScript](#tab/javascript)
 
@@ -126,7 +126,7 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 **echo-skill-bot/bots/echo_bot.py**
 
-[!code-python[Message handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/bots/echo_bot.py?range=10-26)]
+[!code-python[Message handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/bots/echo_bot.py?range=9-27)]
 
 ---
 
@@ -140,7 +140,7 @@ The logic for this skill does not change from turn to turn. If you implement a s
 
 **EchoSkillBot\Bots\EchoBot.cs**
 
-[!code-csharp[End-of-conversation handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=30-36)]
+[!code-csharp[End-of-conversation handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=33-39)]
 
 #### [JavaScript](#tab/javascript)
 
@@ -175,7 +175,7 @@ Derive a claims validator from the `ClaimsValidator` class. It will throw an `Un
 
 **EchoSkillBot\Authentication\AllowedCallersClaimsValidator.cs**
 
-[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=22-59&highlight=30-32)]
+[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=17-58)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -183,7 +183,7 @@ Define a claims validation method that throws an error to reject an incoming req
 
 **echo-skill-bot/authentication/allowedCallersClaimsValidator.js**
 
-[!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=4-33&highlight=23-24)]
+[!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=11-31)]
 
 ### [Python](#tab/python)
 
@@ -203,19 +203,19 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 **EchoSkillBot\SkillAdapterWithErrorHandler.cs**
 
-[!code-csharp[Error handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/SkillAdapterWithErrorHandler.cs?range=20-59&highlight=19-24)]
+[!code-csharp[Error handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/SkillAdapterWithErrorHandler.cs?range=20-75)]
 
 ### [JavaScript](#tab/javascript)
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=40-67&highlight=12-15)]
+[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=40-82)]
 
 ### [Python](#tab/python)
 
 **echo-skill-bot/adapter_with_error_handler.py**
 
-[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=23-61&highlight=10-16)]
+[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=23-77&highlight=10-16)]
 
 ---
 
@@ -242,7 +242,7 @@ This sample adds claims validation to the authentication configuration and uses 
 
 **echo-skill-bot/app.py**
 
-[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=20-31)]
+[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=19-30)]
 
 ---
 
@@ -271,7 +271,7 @@ The manifest contains the information you need to access the skill from another 
 
 ---
 
-The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current schema version is [2.1.0](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
 
 ## Test the skill
 
@@ -287,4 +287,4 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Implement a skill consumer](skill-implement-consumer.md)
+> [Implement a skill for Power Virtual Agents](skill-pva.md)
