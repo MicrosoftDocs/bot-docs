@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
 A bot's interactions fall into three areas: firstly, the exchange of Activities with the Azure Bot Service, secondly,
-the loading and saving of dialog state with a Store and finally any other backend services the bot needs to work with
+the loading and saving of dialog state with a Store, and finally any other back-end services the bot needs to work with
 to get its job done.
 
 ![scaleout diagram](../media/scale-out/scale-out-interaction.png)
@@ -201,4 +201,3 @@ And finally, the custom Accessor, we only need to implement Get because the stat
 ## Additional information
 
 The [C# sample](https://aka.ms/scale-out) code used in this article is available on GitHub.
-
