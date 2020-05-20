@@ -95,26 +95,6 @@ public string Content { get; set; }
 public string Id { get; set; }
 
 /// <summary>
-/// Gets or sets lG file options.
-/// </summary>
-/// <value>
-/// LG file options.
-/// </value>
-public IList<string> Options { get; set; }
-
-/// <summary>
-/// Gets a value indicating whether lG parser/checker/evaluate strict mode.
-/// If strict mode is on, expression would throw exception instead of return
-/// null or make the condition failed.
-/// </summary>
-/// <value>
-/// A value indicating whether lG parser/checker/evaluate strict mode.
-/// If strict mode is on, expression would throw exception instead of return
-/// null or make the condition failed.
-/// </value>
-public bool StrictMode => GetStrictModeFromOptions(Options);
-
-/// <summary>
 /// Gets the evluation options for current LG file.
 /// </summary>
 /// <value>

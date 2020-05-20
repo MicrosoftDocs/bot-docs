@@ -367,6 +367,36 @@ The example below shows how to set the lineBreakStyle option to `markdown`:
 > !# @lineBreakStyle = markdown
 ```
 
+### Namespace option
+
+Developers can register a namespace for the LG templates they want to export. If there is no namespace specified, the namespace will be set to the filename without extension.
+
+The example below shows how to set the namespace option to `foo`:
+
+```.lg
+> !# @Namespace = foo
+```
+
+### Exports option
+
+Developers can set a list of LG templates to export. The exported templates can be called like prebuilt functions. 
+
+The example below shows how to set the exports option to `template1, template2`:
+
+```.lg
+> !# @Namespace = foo
+> !# @Exports = template1, template2
+
+# template1(a, b)
+- ${a + b}
+
+# template2(a, b)
+- ${join(a, b)}
+```
+
+The way developers can call these exported templates is: `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')`.
+
+
 ## Additional Resources
 
 - [Language generation API reference][2]
