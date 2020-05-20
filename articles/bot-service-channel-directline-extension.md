@@ -7,15 +7,12 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.author: kamrani 
-ms.date: 07/09/2019
+ms.date: 05/19/2020
 ---
 
 # Direct Line App Service Extension
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
-
-> [!WARNING]
-> The **Direct Line App Service Extension** is in public **preview**.  
 
 The direct line app service extension allows clients to connect directly with the host, where the bot is located. This provides workload isolation and, in some cases, improved performance. The following picture shows the overall architecture:
 
