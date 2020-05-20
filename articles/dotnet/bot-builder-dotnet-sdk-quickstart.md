@@ -18,9 +18,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator.
 
-[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
+[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
-[!INCLUDE [dotnet quickstart](~/includes/quickstart-dotnet.md)]
+[!INCLUDE [dotnet quickstart](../includes/quickstart-dotnet.md)]
 
 ## Additional resources
 
@@ -30,4 +30,3 @@ See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/
 
 > [!div class="nextstepaction"]
 > [Deploy your bot to Azure](../bot-builder-deploy-az-cli.md)
-
