@@ -20,7 +20,7 @@ Continuing Microsoft's open-sourced approach towards the Bot Framework SDK, the 
 
 This template incorporates the previous Enterprise Template and brings together all of the best practices and supporting components identified through building conversational experiences and greatly simplifies the creation of a new bot project including: basic conversational intents, Dispatch integration, QnA Maker, Application Insights and an automated deployment.
 
-We strongly believe our customers should own and enrich their customer relationships and insights. Therefore, any Virtual Assistant provides complete control of the user experience to our customers and partners through open-sourcing the code on GitHub. The name, voice and personality can be changed to suit the organization’s needs. Our Virtual Assistant solution simplifies creation of your own assistant enabling you to get started in minutes and then extended using our end to end development tooling.
+We strongly believe our customers should own and enrich their customer relationships and insights. Therefore, any Virtual Assistant provides complete control of the user experience to our customers and partners through open-sourcing the code on GitHub. The name, voice and personality can be changed to suit the organization's needs. Our Virtual Assistant solution simplifies creation of your own assistant enabling you to get started in minutes and then extended using our end to end development tooling.
 
 The scope of Virtual Assistant functionality is broad, typically offering end users a range of capabilities. To increase developer productivity and to enable a vibrant ecosystem of reusable conversational experiences, we are providing developers initial examples of reusable conversational skills. These Skills can be added into a conversational application to lighten up a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
 
@@ -30,17 +30,17 @@ The scope of Virtual Assistant functionality is broad, typically offering end us
 
 Explore the [Virtual Assistant and Skills](https://aka.ms/bf-solutions-docs) documentation for more detailed information.
 
-## What's in the box 
+## What's in the box
 
 The Virtual Assistant Template brings together a number of best practices we've identified through the building of conversational experiences and automates integration of components that we've found to be highly beneficial to Bot Framework developers. This section covers some background to key decisions to help explain why the template works the way it does.
 
-The Virtual Assistant template now incorporates the previous Enterprise Template  capabilities including base conversational intents in multiple languages, Dispatching, QnA, and conversational insights. The following Assistant related capabilities are provided at this time; further capabilities are planned and we'll be working closely with customers and partners to help inform the roadmap.
+The Virtual Assistant template now incorporates the previous Enterprise Template  capabilities including base conversational intents in multiple languages, Dispatching, QnA, and conversational insights. The following Assistant related capabilities are provided at this time; further capabilities are planned and we'll be working closely with customers and partners to help inform the road map.
 
 Feature | Description |
 ------------ | -------------
 Onboarding | An example OnBoarding flow enabling your Assistant to greet the user and collect initial information.
 Eventing Architecture | Events in the context of the Virtual Assistant enable the client application hosting the assistant (in a web-browser or on a device such as a car or speaker) to exchange information about the user or device events while also receiving events to perform device operations.
-Linked Accounts | In a speech-led scenario it's not practical for a user to enter their username and password for supporting systems through voice commands. Therefore, a separate companion experience provides an opportunity for the user to signin and provide permission for an Virtual Assistant to retrieve tokens for later use.
+Linked Accounts | In a speech-led scenario it's not practical for a user to enter their username and password for supporting systems through voice commands. Therefore, a separate companion experience provides an opportunity for the user to sign in and provide permission for an Virtual Assistant to retrieve tokens for later use.
 Skill Enablement | A broad set of common capabilities exist today, which require each developer to build themselves. Our Virtual Assistant solution includes a new Skill capability enabling new capabilities to be plugged into an Virtual Assistant through configuration only and provide an authentication mechanism for Skills to request tokens for down-stream activities.
 Point of Interest Skill | The preview Point of Interest (PoI) skill provides a comprehensive language model for finding points of interest and requesting directions. The skill currently provides integration into Azure Maps.
 Calendar Skill | The preview Calendar Skill provides a comprehensive language model for common calendar related activities, The skill is currently integrated into Microsoft Graph (Office 365/Outlook.com) with support for Google APIs to follow soon.
@@ -50,6 +50,9 @@ Device Integration | Our Azure Bot Service SDKs (DirectLine) along with Adaptive
 Test Harnesses | In addition to the Bot Framework Emulator, a WebChat based test harness is provided enabling more complex authentication scenarios to be tested. A simple Console based test harness demonstrates the approach to exchange messages to help frame the ease of device integration.
 Automated Deployment | All the Azure resources required for your Assistant are automatically deployed: Bot registration, Azure App Service, LUIS, QnAMaker, Content Moderator, CosmosDB, Azure Storage, and Application Insights. Additionally, LUIS models for all skills, QnAMaker, and Dispatch models are created, trained, and published to enable immediate testing.
 Automotive Language Model | An Automotive language model covering core domains such as telephone, navigation and control of in-car features is coming soon.
+
+>[!IMPORTANT]
+> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
 
 ## Example Scenarios
 
@@ -95,7 +98,7 @@ In addition to the base assistant there exists a broad set of common capabilitie
 
 This is then further complicated by the need to support multiple languages and results in a large amount of work required for any organisation building their own assistant.
 
-Our Virtual Assistant solution includes a new Skill capability that enables capabilities to be plugged into a custom-assistant through configuration only. 
+Our Virtual Assistant solution includes a new Skill capability that enables capabilities to be plugged into a custom-assistant through configuration only.
 
 All aspects of each Skill (language model, dialogs, integration code and language generation) are completely customizable by developers as the full source code is provided on GitHub along with the Virtual Assistant.
 

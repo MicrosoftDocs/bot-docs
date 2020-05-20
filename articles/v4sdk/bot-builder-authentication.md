@@ -46,12 +46,12 @@ For an overview of how the Bot Framework handles authentication, see [Bot authen
 This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how access [Microsoft Graph](https://developer.microsoft.com/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
 This article covers how to:
 
-- [Create the Azure bot application](#create-the-azure-bot-application)
+- [Create the Azure bot registration](#create-the-azure-bot-registration)
 - [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
 - [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
-Once you finish this article, you will have a bot that can respond to a few simple tasks. In the case of the Microsoft Graph example, you check and send an email, display who and your manager are. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
+Once you finish this article, you will have a bot that can respond to a few simple tasks. In the case of the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
 
 ### Web Chat and Direct Line considerations
 
@@ -85,7 +85,7 @@ To run the samples referenced in this article, you need the following:
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access on behalf of the user.
 
-## Create the Azure bot application
+## Create the Azure bot registration
 
 This section shows how to register a bot resource with Azure to host the bot code.
 
