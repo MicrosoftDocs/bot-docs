@@ -38,7 +38,7 @@ In the following example we’ve added a function that triggers the dialog any t
 
 [!INCLUDE [first-run sample Node.js](../includes/snippet-code-node-first-run-dialog-1.md)]
 
-You can also customize what an action does after its been triggered by providing an [onSelectAction][onSelectAction] handler. For trigger actions you can provide an [onInterrupted][onInterrupted] handler to intercept an interruption before it occurs. For more information, see [Handle user actions](bot-builder-nodejs-dialog-actions.md)
+You can also customize what an action does after its been triggered by providing an [onSelectAction][onSelectAction] handler. For trigger actions you can provide an [onInterrupted][onInterrupted] handler to intercept an interruption before it occurs. For more information, see [Handle user actions](bot-builder-nodejs-dialog-actions.md).
 
 ## Additional resources
 
