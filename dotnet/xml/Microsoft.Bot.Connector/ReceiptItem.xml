@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ReceiptItem (string title = null, string subtitle = null, string text = null, Microsoft.Bot.Connector.CardImage image = null, string price = null, string quantity = null, Microsoft.Bot.Connector.CardAction tap = null);" />
+      <MemberSignature Language="C#" Value="public ReceiptItem (string title = default, string subtitle = default, string text = default, Microsoft.Bot.Connector.CardImage image = default, string price = default, string quantity = default, Microsoft.Bot.Connector.CardAction tap = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class Microsoft.Bot.Connector.CardImage image, string price, string quantity, class Microsoft.Bot.Connector.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ReceiptItem.#ctor(System.String,System.String,System.String,Microsoft.Bot.Connector.CardImage,System.String,System.String,Microsoft.Bot.Connector.CardAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional image As CardImage = null, Optional price As String = null, Optional quantity As String = null, Optional tap As CardAction = null)" />

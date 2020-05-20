@@ -23,6 +23,7 @@
       <MemberSignature Language="C#" Value="public static string GZipSerialize (this Microsoft.Bot.Connector.ConversationReference conversationReference);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GZipSerialize(class Microsoft.Bot.Connector.ConversationReference conversationReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize(Microsoft.Bot.Connector.ConversationReference)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GZipSerialize (conversationReference As ConversationReference) As String" />
       <MemberSignature Language="F#" Value="static member GZipSerialize : Microsoft.Bot.Connector.ConversationReference -&gt; string" Usage="Microsoft.Bot.Builder.ConnectorEx.Extensions.GZipSerialize conversationReference" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -78,6 +79,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ConversationReference ToConversationReference (this Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ConversationReference ToConversationReference(class Microsoft.Bot.Builder.Dialogs.ResumptionCookie resumptionCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference(Microsoft.Bot.Builder.Dialogs.ResumptionCookie)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToConversationReference (resumptionCookie As ResumptionCookie) As ConversationReference" />
       <MemberSignature Language="F#" Value="static member ToConversationReference : Microsoft.Bot.Builder.Dialogs.ResumptionCookie -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="Microsoft.Bot.Builder.ConnectorEx.Extensions.ToConversationReference resumptionCookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

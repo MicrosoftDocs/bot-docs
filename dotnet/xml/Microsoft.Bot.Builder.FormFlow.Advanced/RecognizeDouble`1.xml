@@ -25,8 +25,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">
-    </typeparam>
+    <typeparam name="T" />
     <summary>
             Recognize a double or float field.
             </summary>

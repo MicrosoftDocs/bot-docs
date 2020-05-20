@@ -38,9 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PaymentRequestComplete (string id = null, Microsoft.Bot.Connector.PaymentRequest paymentRequest = null, Microsoft.Bot.Connector.PaymentResponse paymentResponse = null);" />
+      <MemberSignature Language="C#" Value="public PaymentRequestComplete (string id = default, Microsoft.Bot.Connector.PaymentRequest paymentRequest = default, Microsoft.Bot.Connector.PaymentResponse paymentResponse = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class Microsoft.Bot.Connector.PaymentRequest paymentRequest, class Microsoft.Bot.Connector.PaymentResponse paymentResponse) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestComplete.#ctor(System.String,Microsoft.Bot.Connector.PaymentRequest,Microsoft.Bot.Connector.PaymentResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional paymentRequest As PaymentRequest = null, Optional paymentResponse As PaymentResponse = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentRequestComplete : string * Microsoft.Bot.Connector.PaymentRequest * Microsoft.Bot.Connector.PaymentResponse -&gt; Microsoft.Bot.Connector.PaymentRequestComplete" Usage="new Microsoft.Bot.Connector.PaymentRequestComplete (id, paymentRequest, paymentResponse)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

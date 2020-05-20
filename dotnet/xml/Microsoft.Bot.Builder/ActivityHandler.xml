@@ -10,6 +10,7 @@
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -42,6 +43,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,10 +51,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateInvokeResponse">
+      <MemberSignature Language="C#" Value="protected static Microsoft.Bot.Builder.InvokeResponse CreateInvokeResponse (object body = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class Microsoft.Bot.Builder.InvokeResponse CreateInvokeResponse(object body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.CreateInvokeResponse(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateInvokeResponse (Optional body As Object = null) As InvokeResponse" />
+      <MemberSignature Language="F#" Value="static member CreateInvokeResponse : obj -&gt; Microsoft.Bot.Builder.InvokeResponse" Usage="Microsoft.Bot.Builder.ActivityHandler.CreateInvokeResponse body" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.InvokeResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnConversationUpdateActivityAsync">
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnConversationUpdateActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnConversationUpdateActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnConversationUpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnConversationUpdateActivityAsync (turnContext As ITurnContext(Of IConversationUpdateActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnConversationUpdateActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnConversationUpdateActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnConversationUpdateActivityAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -61,6 +88,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -106,11 +134,13 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnEndOfConversationActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEndOfConversationActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnEndOfConversationActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IEndOfConversationActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnEndOfConversationActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEndOfConversationActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnEndOfConversationActivityAsync (turnContext As ITurnContext(Of IEndOfConversationActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnEndOfConversationActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEndOfConversationActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnEndOfConversationActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEndOfConversationActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnEndOfConversationActivityAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -139,6 +169,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnEventActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnEventActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IEventActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnEventActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnEventActivityAsync (turnContext As ITurnContext(Of IEventActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnEventActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnEventActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnEventActivityAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -147,6 +178,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -195,6 +227,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnEventAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnEventAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IEventActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnEventAsync (turnContext As ITurnContext(Of IEventActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnEventAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnEventAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnEventAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -203,6 +236,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -231,10 +265,55 @@
         <altmember cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTokenResponseEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
       </Docs>
     </Member>
+    <Member MemberName="OnInvokeActivityAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; OnInvokeActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; OnInvokeActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnInvokeActivityAsync (turnContext As ITurnContext(Of IInvokeActivity), cancellationToken As CancellationToken) As Task(Of InvokeResponse)" />
+      <MemberSignature Language="F#" Value="abstract member OnInvokeActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;&#xA;override this.OnInvokeActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="activityHandler.OnInvokeActivityAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">A strongly-typed context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Invoked when an invoke activity is received from the connector when the base behavior of
+            <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" /> is used.
+            Invoke activities can be used to communicate many different things.
+            By default, this method will call <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnSignInInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" /> if the
+            activity's name is <c>signin/verifyState</c> or <c>signin/tokenExchange</c>.
+            A <c>signin/verifyState</c> or <c>signin/tokenExchange</c> invoke can be triggered by an <see cref="T:Microsoft.Bot.Schema.OAuthCard" />.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>
+            When the <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+            method receives an invoke activity, it calls this method.
+            If the event <see cref="P:Microsoft.Bot.Schema.IInvokeActivity.Name" /> is `signin/verifyState` or `signin/tokenExchange`, it calls
+            <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnSignInInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+            Invoke activities communicate programmatic commands from a client or channel to a bot.
+            The meaning of an invoke activity is defined by the <see cref="P:Microsoft.Bot.Schema.IInvokeActivity.Name" /> property,
+            which is meaningful within the scope of a channel.
+            A `signin/verifyState` or `signin/tokenExchange` invoke can be triggered by an <see cref="T:Microsoft.Bot.Schema.OAuthCard" /> or an OAuth prompt.
+            </remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
     <Member MemberName="OnMembersAddedAsync">
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnMembersAddedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnMembersAddedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersAdded, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnMembersAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMembersAddedAsync (membersAdded As IList(Of ChannelAccount), turnContext As ITurnContext(Of IConversationUpdateActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnMembersAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnMembersAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnMembersAddedAsync (membersAdded, turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,6 +322,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -275,6 +355,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnMembersRemovedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnMembersRemovedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt; membersRemoved, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IConversationUpdateActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnMembersRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.ChannelAccount},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IConversationUpdateActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMembersRemovedAsync (membersRemoved As IList(Of ChannelAccount), turnContext As ITurnContext(Of IConversationUpdateActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnMembersRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnMembersRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IConversationUpdateActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnMembersRemovedAsync (membersRemoved, turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -283,6 +364,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -315,6 +397,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnMessageActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnMessageActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnMessageActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMessageActivityAsync (turnContext As ITurnContext(Of IMessageActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnMessageActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnMessageActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnMessageActivityAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -323,6 +406,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -351,12 +435,14 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnMessageReactionActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnMessageReactionActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnMessageReactionActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMessageReactionActivityAsync (turnContext As ITurnContext(Of IMessageReactionActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnMessageReactionActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnMessageReactionActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnMessageReactionActivityAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -403,12 +489,14 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnReactionsAddedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnReactionsAddedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnReactionsAddedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnReactionsAddedAsync (messageReactions As IList(Of MessageReaction), turnContext As ITurnContext(Of IMessageReactionActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnReactionsAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnReactionsAddedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnReactionsAddedAsync (messageReactions, turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -446,12 +534,14 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnReactionsRemovedAsync (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnReactionsRemovedAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.MessageReaction&gt; messageReactions, class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IMessageReactionActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnReactionsRemovedAsync(System.Collections.Generic.IList{Microsoft.Bot.Schema.MessageReaction},Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IMessageReactionActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnReactionsRemovedAsync (messageReactions As IList(Of MessageReaction), turnContext As ITurnContext(Of IMessageReactionActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnReactionsRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnReactionsRemovedAsync : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.MessageReaction&gt; * Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IMessageReactionActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnReactionsRemovedAsync (messageReactions, turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -485,10 +575,51 @@
         <altmember cref="P:Microsoft.Bot.Schema.ResourceResponse.Id" />
       </Docs>
     </Member>
+    <Member MemberName="OnSignInInvokeAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnSignInInvokeAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnSignInInvokeAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IInvokeActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnSignInInvokeAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnSignInInvokeAsync (turnContext As ITurnContext(Of IInvokeActivity), cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnSignInInvokeAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnSignInInvokeAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnSignInInvokeAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IInvokeActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">A strongly-typed context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+             or threads to receive notice of cancellation.</param>
+        <summary>
+             Invoked when a <c>signin/verifyState</c> or <c>signin/tokenExchange</c> event is received when the base behavior of
+             <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" /> is used.
+             If using an <c>OAuthPrompt</c>, override this method to forward this <see cref="T:Microsoft.Bot.Schema.Activity" /> to the current dialog.
+             By default, this method does nothing.
+             </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>
+             When the <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+             method receives an Invoke with a <see cref="P:Microsoft.Bot.Schema.IInvokeActivity.Name" /> of `tokens/response`,
+             it calls this method.
+            
+             If your bot uses the <c>OAuthPrompt</c>, forward the incoming <see cref="T:Microsoft.Bot.Schema.Activity" /> to
+             the current dialog.
+             </remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.ActivityHandler.OnInvokeActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IInvokeActivity},System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
     <Member MemberName="OnTokenResponseEventAsync">
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTokenResponseEventAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTokenResponseEventAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.IEventActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnTokenResponseEventAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.IEventActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnTokenResponseEventAsync (turnContext As ITurnContext(Of IEventActivity), cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnTokenResponseEventAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTokenResponseEventAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.IEventActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnTokenResponseEventAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -497,6 +628,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -529,9 +661,10 @@
       </Docs>
     </Member>
     <Member MemberName="OnTurnAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task OnTurnAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OnTurnAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OnTurnAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTurnAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnTurnAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -543,6 +676,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -579,10 +713,45 @@
         <altmember cref="T:Microsoft.Bot.Schema.ActivityTypes" />
       </Docs>
     </Member>
+    <Member MemberName="OnTypingActivityAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnTypingActivityAsync (Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.ITypingActivity&gt; turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnTypingActivityAsync(class Microsoft.Bot.Builder.ITurnContext`1&lt;class Microsoft.Bot.Schema.ITypingActivity&gt; turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnTypingActivityAsync(Microsoft.Bot.Builder.ITurnContext{Microsoft.Bot.Schema.ITypingActivity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnTypingActivityAsync (turnContext As ITurnContext(Of ITypingActivity), cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member OnTypingActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.ITypingActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnTypingActivityAsync : Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.ITypingActivity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnTypingActivityAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext&lt;Microsoft.Bot.Schema.ITypingActivity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">A strongly-typed context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Override this in a derived class to provide logic specific to
+            <see cref="F:Microsoft.Bot.Schema.ActivityTypes.Typing" /> activities, such as the conversational logic.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>
+            When the <see cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+            method receives a message activity, it calls this method.
+            </remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.ActivityHandler.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
     <Member MemberName="OnUnrecognizedActivityTypeAsync">
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnUnrecognizedActivityTypeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnUnrecognizedActivityTypeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.OnUnrecognizedActivityTypeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUnrecognizedActivityTypeAsync (turnContext As ITurnContext, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnUnrecognizedActivityTypeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnUnrecognizedActivityTypeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activityHandler.OnUnrecognizedActivityTypeAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -591,6 +760,7 @@
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -70,19 +70,19 @@ For more information please refer to the following references:
 ### V3 Status Summary
 
 #### ABS Service
-1.	The ABS service side will continue to support running V3 bots with no planned end of life and any running bots will not be disrupted. 
-2.	Channels will remain compatible with V3 with no disruption or end of life plan.
-3.	Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
+1.    The ABS service side will continue to support running V3 bots with no planned end of life and any running bots will not be disrupted. 
+2.    Channels will remain compatible with V3 with no disruption or end of life plan.
+3.    Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
 
 #### SDK and Tools
-1.	We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
-2.	SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we’re already “there”).
-3.	We do not prevent anyone from running old tools to manage their V3 bots. 
+1.    We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
+2.    SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we're already "there").
+3.    We do not prevent anyone from running old tools to manage their V3 bots. 
 
 
 ## How can I migrate Azure Bot Service from one region to another?
 
-Azure Bot Service does not support region move. It’s a global service that is not tied to any specific region.
+Azure Bot Service does not support region move. It's a global service that is not tied to any specific region.
 
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
@@ -90,9 +90,9 @@ Azure Bot Service does not support region move. It’s a global service that is 
 We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.  
 If you would like a specific channel added to the framework, [let us know][Support].
 
-### I have a communication channel I’d like to be configurable with Bot Framework. Can I work with Microsoft to do that?
+### I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?
 
-We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI]. If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we’d love to hear from you][Support].
+We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI]. If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we'd love to hear from you][Support].
 
 ### If I want to create a bot for Microsoft Teams, what tools and services should I use?
 
@@ -103,7 +103,7 @@ If you already have a great bot and would like to reach the Teams audience, your
 ### How do I create a bot that uses the US Government data center?
 
 There are 2 major steps required to create a bot that uses a US Government data center.
-1. Add a “channel provider” setting in your appsettings.json (or the App Service Settings). This needs to be specifically set to this name/value constant: ChannelService = "https://botframework.azure.us". An example using appsetting.json is shown below.
+1. Add a "channel provider" setting in your appsettings.json (or the App Service Settings). This needs to be specifically set to this name/value constant: ChannelService = "https://botframework.azure.us". An example using appsetting.json is shown below.
 
 ```json
 {
@@ -136,21 +136,23 @@ Yes. Your bot can be hosted anywhere on the Internet. On your own servers, in Az
 
 ### How do you ban or remove bots from the service?
 
-Users have a way to report a misbehaving bot via the bot’s contact card in the directory. Developers must abide by Microsoft terms of service to participate in the service.
+Users have a way to report a misbehaving bot via the bot's contact card in the directory. Developers must abide by Microsoft terms of service to participate in the service.
 
 ### Which specific URLs do I need to whitelist in my corporate firewall to access Bot Framework services?
+
 If you have an outbound firewall blocking traffic from your bot to the Internet, you'll need to whitelist the following URLs in that firewall:
-- login.botframework.com (Bot authentication)
-- login.microsoftonline.com (Bot authentication)
-- westus.api.cognitive.microsoft.com (for Luis.ai NLP integration)
-- state.botframework.com (Bot state storage for prototyping)
-- cortanabfchanneleastus.azurewebsites.net (Cortana channel)
-- cortanabfchannelwestus.azurewebsites.net (Cortana Channel)
-- *.botframework.com (channels)
+
+- `login.botframework.com` (Bot authentication)
+- `login.microsoftonline.com` (Bot authentication)
+- `westus.api.cognitive.microsoft.com` (for Luis.ai NLP integration)
+- `cortanabfchanneleastus.azurewebsites.net` (Cortana channel)
+- `cortanabfchannelwestus.azurewebsites.net` (Cortana Channel)
+- `*.botframework.com` (channels)
+- `state.botframework.com` (backward compatibility)
 - Additional URLs for specific Bot Framework channels
 
-> [!NOTE] 
-> You may use `<channel>.botframework.com` if you’d prefer not to whitelist a URL with an asterisk. `<channel>` is equal to every channel your bot uses such as `directline.botframework.com`, `webchat.botframework.com`, and `slack.botframework.com`. It is also worthwhile to watch traffic over your firewall while testing the bot to make sure nothing else is getting blocked.
+> [!NOTE]
+> You may use `<channel>.botframework.com` if you'd prefer not to whitelist a URL with an asterisk. `<channel>` is equal to every channel your bot uses such as `directline.botframework.com`, `webchat.botframework.com`, and `slack.botframework.com`. It is also worthwhile to watch traffic over your firewall while testing the bot to make sure nothing else is getting blocked.
 
 ### Can I block all traffic to my bot except traffic from the Bot Framework Service?
 Bot Framework Services are hosted in Azure datacenters world-wide and the list of Azure IPs is constantly changing. Whitelisting certain IP addresses may work one day and break the next as the Azure IP Addresses change.
@@ -185,19 +187,19 @@ Note that these are outbound connections from the bot to the Internet. There is 
 
 ## Rate limiting
 ### What is rate limiting?
-The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we’ve added rate limits (also known as throttling) to our endpoints. By enforcing a rate limit, we can restrict the frequency with which a client or bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period. Please note that the purpose of rate-limiting is not to cap the total volume for a bot. It is designed to prevent abuse of the conversational infrastructure that does not follow human conversation patterns. For example, flooding two conversations with more content than two human could ever consume.
+The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we've added rate limits (also known as throttling) to our endpoints. By enforcing a rate limit, we can restrict the frequency with which a client or bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period. Please note that the purpose of rate-limiting is not to cap the total volume for a bot. It is designed to prevent abuse of the conversational infrastructure that does not follow human conversation patterns. For example, flooding two conversations with more content than two human could ever consume.
 
-### How will I know if I’m impacted?
-It is unlikely you’ll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages. 
+### How will I know if I'm impacted?
+It is unlikely you'll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages. 
 
 ### How does rate limiting occur?
 It can happen if:
--	a bot sends messages too frequently
--	a client of a bot sends messages too frequently
--	Direct Line clients request a new Web Socket too frequently
+-    a bot sends messages too frequently
+-    a client of a bot sends messages too frequently
+-    Direct Line clients request a new Web Socket too frequently
 
 ### What are the rate limits?
-We’re continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren’t publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
+We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
 
 ## Bot Framework SDK
 ## Why doesn't the Typing activity do anything?
@@ -321,7 +323,7 @@ To create your own App ID, follow the steps below.
 3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
     > [!IMPORTANT]
-    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
     ![registration details](media/app-registration/registration-details.png)
 
@@ -331,16 +333,16 @@ To create your own App ID, follow the steps below.
 
     ![application id](media/app-registration/app-id.png)
 
-If you’re creating your bot through the Bot Framework portal, then you’re done setting up your app registration; the secret will be generated automatically. 
+If you're creating your bot through the Bot Framework portal, then you're done setting up your app registration; the secret will be generated automatically. 
 
-If you’re making your bot in the Azure portal, you need to generate a secret for your app registration. 
+If you're making your bot in the Azure portal, you need to generate a secret for your app registration. 
 
-1. Click on **Certificates & secrets** in the left navigation column of your app registration’s blade.
+1. Click on **Certificates & secrets** in the left navigation column of your app registration's blade.
 2. In that blade, click the **New client secret** button. In the dialog that pops up, enter an optional description for the secret and select **Never** from the Expires radio button group. 
 
     ![new secret](media/app-registration/new-secret.png)
 
-3. Copy your secret’s value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation. 
+3. Copy your secret's value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation. 
 
     > [!NOTE]
     > The secret will only be visible while on this blade, and you won't be able to retreive it after you leave that page. Be sure to copy it somewhere safe.

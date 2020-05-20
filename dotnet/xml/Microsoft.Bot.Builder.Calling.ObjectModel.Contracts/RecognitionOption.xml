@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="DtmfVariation">
-      <MemberSignature Language="C#" Value="public Nullable&lt;char&gt; DtmfVariation { get; set; }" />
+      <MemberSignature Language="C#" Value="public char? DtmfVariation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;char&gt; DtmfVariation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Calling.ObjectModel.Contracts.RecognitionOption.DtmfVariation" />
       <MemberSignature Language="VB.NET" Value="Public Property DtmfVariation As Nullable(Of Char)" />

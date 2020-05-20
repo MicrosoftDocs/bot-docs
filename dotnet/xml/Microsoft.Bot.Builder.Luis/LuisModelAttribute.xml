@@ -40,7 +40,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, string domain = null, double threshold = 0);" />
+      <MemberSignature Language="C#" Value="public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, string domain = default, double threshold = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string modelID, string subscriptionKey, valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain, float64 threshold) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (modelID As String, subscriptionKey As String, Optional apiVersion As LuisApiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, Optional domain As String = null, Optional threshold As Double = 0)" />
@@ -253,7 +253,7 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#BingSpellCheckSubscriptionKey" />
       <MemberSignature Language="VB.NET" Value=" Property BingSpellCheckSubscriptionKey As String Implements ILuisOptions.BingSpellCheckSubscriptionKey" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey : string with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey</InterfaceMember>
@@ -274,11 +274,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.Log">
-      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log { get; set; }" />
+      <MemberSignature Language="C#" Value="bool? Microsoft.Bot.Builder.Luis.ILuisOptions.Log { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Log" />
       <MemberSignature Language="VB.NET" Value=" Property Log As Nullable(Of Boolean) Implements ILuisOptions.Log" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ILuisOptions.Log : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Log" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.Log</InterfaceMember>
@@ -299,11 +299,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck">
-      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck { get; set; }" />
+      <MemberSignature Language="C#" Value="bool? Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#SpellCheck" />
       <MemberSignature Language="VB.NET" Value=" Property SpellCheck As Nullable(Of Boolean) Implements ILuisOptions.SpellCheck" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.SpellCheck</InterfaceMember>
@@ -324,11 +324,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.Staging">
-      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging { get; set; }" />
+      <MemberSignature Language="C#" Value="bool? Microsoft.Bot.Builder.Luis.ILuisOptions.Staging { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Staging" />
       <MemberSignature Language="VB.NET" Value=" Property Staging As Nullable(Of Boolean) Implements ILuisOptions.Staging" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ILuisOptions.Staging : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Staging" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.Staging</InterfaceMember>
@@ -349,11 +349,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset">
-      <MemberSignature Language="C#" Value="Nullable&lt;double&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset { get; set; }" />
+      <MemberSignature Language="C#" Value="double? Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#TimezoneOffset" />
       <MemberSignature Language="VB.NET" Value=" Property TimezoneOffset As Nullable(Of Double) Implements ILuisOptions.TimezoneOffset" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.TimezoneOffset</InterfaceMember>
@@ -374,11 +374,11 @@
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose">
-      <MemberSignature Language="C#" Value="Nullable&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose { get; set; }" />
+      <MemberSignature Language="C#" Value="bool? Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Luis.LuisModelAttribute.Microsoft#Bot#Builder#Luis#ILuisOptions#Verbose" />
       <MemberSignature Language="VB.NET" Value=" Property Verbose As Nullable(Of Boolean) Implements ILuisOptions.Verbose" />
-      <MemberSignature Language="F#" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.Verbose</InterfaceMember>
@@ -596,7 +596,7 @@
       </Docs>
     </Member>
     <Member MemberName="UriFor">
-      <MemberSignature Language="C#" Value="public static Uri UriFor (Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain = null);" />
+      <MemberSignature Language="C#" Value="public static Uri UriFor (Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri UriFor(valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriFor(Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UriFor (apiVersion As LuisApiVersion, Optional domain As String = null) As Uri" />

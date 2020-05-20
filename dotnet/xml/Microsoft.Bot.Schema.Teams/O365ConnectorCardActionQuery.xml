@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public O365ConnectorCardActionQuery (string body = null, string actionId = null);" />
+      <MemberSignature Language="C#" Value="public O365ConnectorCardActionQuery (string body = default, string actionId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string body, string actionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardActionQuery.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional body As String = null, Optional actionId As String = null)" />
@@ -48,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="body" Type="System.String" />
@@ -76,6 +79,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -104,6 +108,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

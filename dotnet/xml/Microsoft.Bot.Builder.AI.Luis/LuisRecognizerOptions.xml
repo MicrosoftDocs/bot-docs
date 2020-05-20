@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.8.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="application" Type="Microsoft.Bot.Builder.AI.Luis.LuisApplication" />
@@ -49,6 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AI.Luis.LuisApplication</ReturnType>
@@ -73,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -93,6 +97,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -115,6 +120,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
@@ -139,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.8.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>

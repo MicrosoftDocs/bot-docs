@@ -75,6 +75,7 @@
       <MemberSignature Language="C#" Value="public static bool CanResolve (this Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, Type type, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanResolve(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Type type, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CanResolve (resolver As IResolver, type As Type, tag As Object) As Boolean" />
       <MemberSignature Language="F#" Value="static member CanResolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Type * obj -&gt; bool" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.CanResolve (resolver, type, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -104,6 +105,7 @@
       <MemberSignature Language="C#" Value="public static object Resolve (this Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, Type type, object tag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Resolve(class Microsoft.Bot.Builder.Scorables.Internals.IResolver resolver, class System.Type type, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve(Microsoft.Bot.Builder.Scorables.Internals.IResolver,System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Resolve (resolver As IResolver, type As Type, tag As Object) As Object" />
       <MemberSignature Language="F#" Value="static member Resolve : Microsoft.Bot.Builder.Scorables.Internals.IResolver * Type * obj -&gt; obj" Usage="Microsoft.Bot.Builder.Scorables.Internals.Extensions.Resolve (resolver, type, tag)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
