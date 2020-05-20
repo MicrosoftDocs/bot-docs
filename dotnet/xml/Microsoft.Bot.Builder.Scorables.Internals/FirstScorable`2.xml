@@ -55,6 +55,7 @@
       <MemberSignature Language="C#" Value="public override bool OnStageHandler (Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, Microsoft.Bot.Builder.Scorables.IScorable&lt;Item,Score&gt; scorable, Item item, object state, Score score);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool OnStageHandler(valuetype Microsoft.Bot.Builder.Scorables.Internals.FoldStage stage, class Microsoft.Bot.Builder.Scorables.IScorable`2&lt;!Item, !Score&gt; scorable, !Item item, object state, !Score score) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.FirstScorable`2.OnStageHandler(Microsoft.Bot.Builder.Scorables.Internals.FoldStage,Microsoft.Bot.Builder.Scorables.IScorable{`0,`1},`0,System.Object,`1)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function OnStageHandler (stage As FoldStage, scorable As IScorable(Of Item, Score), item As Item, state As Object, score As Score) As Boolean" />
       <MemberSignature Language="F#" Value="override this.OnStageHandler : Microsoft.Bot.Builder.Scorables.Internals.FoldStage * Microsoft.Bot.Builder.Scorables.IScorable&lt;'Item, 'Score&gt; * 'Item * obj * 'Score -&gt; bool" Usage="firstScorable.OnStageHandler (stage, scorable, item, state, score)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

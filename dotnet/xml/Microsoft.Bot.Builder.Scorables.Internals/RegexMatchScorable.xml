@@ -46,6 +46,7 @@
       <MemberSignature Language="C#" Value="public static double ScoreFor (System.Text.RegularExpressions.Match match);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ScoreFor(class System.Text.RegularExpressions.Match match) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.ScoreFor(System.Text.RegularExpressions.Match)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ScoreFor (match As Match) As Double" />
       <MemberSignature Language="F#" Value="static member ScoreFor : System.Text.RegularExpressions.Match -&gt; double" Usage="Microsoft.Bot.Builder.Scorables.Internals.RegexMatchScorable.ScoreFor match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

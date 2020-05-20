@@ -1,26 +1,32 @@
 ---
-title: Reuse dialogs - Bot Service
-description: Learn how to modularize your bot logic using component dialogs in the Bot Framework SDK.
+title: Manage dialog complexity | Microsoft Docs
+description: Learn how to modularize your dialog complexity using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/30/2020
+ms.date: 05/14/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Reuse dialogs
+# Manage dialog complexity
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it.
+<!--TODO This sample doesn't really need a separate LG tab. We need to decide whether we'll use the LG updated sample or the old sample.-->
+
+With component dialogs, you can create independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog sets outside of it. Component dialogs are reusable in that they can be:
+
+- Added to another `ComponentDialog` or `DialogSet` in your bot.
+- Exported as a part of a package.
+- Used within other bots.
 
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], the [dialogs library][concept-dialogs], and how to [manage conversations][simple-flow].
-- A copy of the multi-turn prompt sample in [**C#**][cs-sample], [**JavaScript**][js-sample], or [**Python**][python-sample].
+- A copy of the multi-turn prompt sample in [**C#**][cs-sample], [**JavaScript**][js-sample], or [**Python**][python-sample]<!--, or [**Language Generation**][lg-sample]-->.
 
 ## About the sample
 
@@ -50,15 +56,15 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 Here the `UserProfileDialog` class derives from the `ComponentDialog` class.
 
-[!code-csharp[Class](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=17)]
+[!code-csharp[Class](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=16)]
 
 Within the constructor, the `AddDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `InitialDialogId` property. When you start a component dialog, it will start its _initial dialog_.
 
-[!code-csharp[Constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=21-48)]
+[!code-csharp[Constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=20-47)]
 
 This is the implementation of the first step of the waterfall dialog.
 
-[!code-csharp[First step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=50-60)]
+[!code-csharp[First step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=61-66)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
@@ -101,6 +107,32 @@ This is the implementation of the first step of the waterfall dialog.
 [!code-python[First step](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=59-71)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
+
+<!--
+# [LG](#tab/lg)
+
+To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
+
+**Dialogs\UserProfileDialog.cs**
+
+Here the `UserProfileDialog` class derives from the `ComponentDialog` class.
+
+[!code-csharp[Class](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=15)]
+
+Within the constructor, the `AddDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog, but you can change this by explicitly setting the `InitialDialogId` property. When you start a component dialog, it will start its *initial dialog*.
+Notice the `paths` definition referencing the `UserProfileDialog.lg` containing the LG template items.
+
+[!code-csharp[Constructor](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=15-47&highlight=10)]
+
+This is the implementation of the first step of the waterfall dialog,
+Notice the use of the template item `AskForName`.
+
+[!code-csharp[First step](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=62-67&highlight=5)]
+
+The prompt dialog is generated using the `GenerateActivity` function and passing to it the LG `AskForName` parameter defined in the template file [UserProfileDialog.LG](https://github.com/microsoft/BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt/Resources/UserProfileDialog.LG). Similar prompt generation is applicable to all the items in the template.
+
+For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
+-->
 
 ---
 
@@ -153,6 +185,15 @@ The `run_dialog` method that is called from the bot's `on_message_activity` meth
 **bots/dialog_bot.py**
 [!code-python[om_message_activity](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=46-51&highlight=2-6)]
 
+<!--
+# [LG](#tab/lg)
+
+**Bots\DialogBot.cs**
+
+In the sample, this is done using the `Run` method that is called from the bot's `OnMessageActivityAsync` method.
+
+[!code-csharp[OnMessageActivityAsync](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt/Bots/DialogBot.cs?range=42-48&highlight=6)]
+
 ---
 
 ## To test the bot
@@ -175,21 +216,24 @@ Keep this in mind when managing nested component dialogs in your bot.
 
 ## Next steps
 
-You can enhance bots to react to additional input, like "help" or "cancel", that can interrupt the normal flow of the conversation.
+Learn how to create complex conversations that branch and loop.
 
 > [!div class="nextstepaction"]
-> [Handle user interruptions](bot-builder-howto-handle-user-interrupt.md)
+> [Handle user interruptions](bot-builder-dialog-manage-complex-conversation-flow.md)
 
 <!-- Footnote-style links -->
 
+<!--concepts-->
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
-
+<!--how to-->
 [simple-flow]: bot-builder-dialog-manage-conversation-flow.md
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
-
+<!--samples-->
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample
+[lg-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt
+

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 This topic shows you how to create an **Azure Bot Service** resource to register your bot. You need this if the bot is hosted elsewhere and you want to make it available in Azure and connect it to Azure Bot Service channels.
 
-This allows you to build, connect, and manage your bot to interact with users, wherever they are, via Cortana, Skype, Messenger and many other services.
+This allows you to build, connect, and manage your bot to interact with users, wherever they are, via Cortana,  Messenger and many other services.
 
 > [!IMPORTANT] 
 > You only need to register your bot if it is not hosted in Azure. If you [created a bot](v4sdk/abs-quickstart.md) through the Azure portal then it is already registered with the service.
@@ -82,7 +82,7 @@ A manual registration is necessary for situations like:
 See [FAQ - App Registration](bot-service-resources-bot-framework-faq.md#app-registration).
 
 > [!IMPORTANT]
-> In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+> In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
 ## Update the bot
 

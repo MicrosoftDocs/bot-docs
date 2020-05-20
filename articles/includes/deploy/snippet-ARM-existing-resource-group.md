@@ -7,7 +7,7 @@ From the resulting JSON output, copy the value of the **id** field to use as the
 
 **Option 1: Existing App Service Plan**
 
-In this case, we are using an existing App Service Plan, but creating new a Web App and Bot Channels Registration.
+In this case, we are using an existing App Service Plan, but creating a new Web App and Bot Channels Registration.
 
 This command below sets the bot's ID and display name. The `botId` parameter should be globally unique and is used as the immutable bot ID. The bot's display name is mutable.
 

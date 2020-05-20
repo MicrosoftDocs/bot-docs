@@ -102,7 +102,7 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
  
     > [!NOTE]
     > When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account, the emulator would issue the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect..* 
-    > In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*.
+    > In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Xbox)*.
 
 1. In the navigation pane, click **Certificates & secrets** to create a secret for your application.
 
