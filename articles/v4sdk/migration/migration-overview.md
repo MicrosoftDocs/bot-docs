@@ -150,10 +150,7 @@ For more information, see [Migrate a .NET v3 bot to a .NET Framework v4 bot](con
 
 - Create the new project using a template
 
-  > [!NOTE]
-  > Both .NET Core 2.1 and .NET Core 3.1 versions of the C# templates are available.
-  > When creating new bots, you should use the .NET Core 3.1 templates in Visual Studio 2019 or higher.
-  > The current bot samples use .NET Core 3.1 templates. You can find the samples that use .NET Core 2.1 templates in the [4.7-archive](https://github.com/microsoft/BotBuilder-Samples/tree/4.7-archive/samples/csharp_dotnetcore) branch of the BotBuilder-Samples repository.
+ [!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
 - Install additional NuGet packages as necessary
 - Personalize your bot, update your Startup.cs file, and update your controller class

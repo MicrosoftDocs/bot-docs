@@ -37,10 +37,7 @@ For more information about specific changes, see [differences between the v3 and
 
 ## Create the new project using a template
 
-> [!NOTE]
-> Both .NET Core 2.1 and .NET Core 3.1 versions of the C# templates are available.
-> When creating new bots, you should use the .NET Core 3.1 templates in Visual Studio 2019 or higher.
-> For information about deploying .NET Core 3.1 bots to Azure, see [Deploy your bot](../../bot-builder-deploy-az-cli.md).
+[!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
 1. If you haven't done so already, install the Bot Framework SDK v4 [template for C#](https://aka.ms/bot-vsix).
 1. Open Visual Studio, and create a new Echo Bot project from the template. Name your project `ContosoHelpdeskChatBot`.

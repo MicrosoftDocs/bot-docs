@@ -23,11 +23,7 @@ You can read and write directly to your storage object without using middleware 
 - Familiarity with article: Create a bot locally for [dotnet](https://aka.ms/bot-framework-www-c-sharp-quickstart), [nodeJS](https://aka.ms/bot-framework-www-node-js-quickstart) or [Python](https://aka.ms/bot-framework-www-node-python-quickstart).
 - Bot Framework SDK v4 template for [C# template](https://aka.ms/bot-vsix), [nodeJS](https://nodejs.org) and [yeoman](http://yeoman.io).
 
-> [!NOTE]
-> Both .NET Core 2.1 and .NET Core 3.1 versions of the C# templates are available.
-> When creating new bots, you should use the .NET Core 3.1 templates in Visual Studio 2019 or higher.
-> The current bot samples use .NET Core 3.1 templates. You can find the samples that use .NET Core 2.1 templates in the [4.7-archive](https://github.com/microsoft/BotBuilder-Samples/tree/4.7-archive/samples/csharp_dotnetcore) branch of the BotBuilder-Samples repository.
-> For information about deploying .NET Core 3.1 bots to Azure, see [Deploy your bot](../bot-builder-deploy-az-cli.md).
+[!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
 ## About this sample
 
