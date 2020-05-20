@@ -21,7 +21,7 @@ You can read and write directly to your storage object without using middleware 
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
 - Familiarity with article: Create a bot locally for [dotnet](https://aka.ms/bot-framework-www-c-sharp-quickstart), [nodeJS](https://aka.ms/bot-framework-www-node-js-quickstart) or [Python](https://aka.ms/bot-framework-www-node-python-quickstart).
-- Bot Framework SDK v4 template for [C# template](https://aka.ms/bot-vsix), [nodeJS](https://nodejs.org) and [yeoman](http://yeoman.io).
+- Bot Framework SDK v4 templates for [Visual Studio (C#)](https://aka.ms/bot-vsix), [Node.js](https://nodejs.org), or [Yeoman](http://yeoman.io).
 
 [!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
