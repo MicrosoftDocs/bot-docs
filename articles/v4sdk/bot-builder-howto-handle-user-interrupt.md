@@ -162,7 +162,7 @@ In our sample, the adapter's `OnTurnError` handler receives any exceptions throw
 
 In our sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
 
-[!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-57)]
+[!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=37-59)]
 
 ## [Python](#tab/python)
 
@@ -196,7 +196,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 Finally, in `index.js`, the bot is created.
 
-[!code-javascript[Create bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=78-81)]
+[!code-javascript[Create bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=70-83)]
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
@@ -209,7 +209,7 @@ For reference, here are the class definitions that are used in the call to creat
 **app.py**
 Finally, in `app.py`, the bot is created.
 
-[!code-python[create bot](~/../botbuilder-samples/samples/python/13.core-bot/app.py?range=45-49)]
+[!code-python[create bot](~/../botbuilder-samples/samples/python/13.core-bot/app.py?range=46-50)]
 
 For reference, here are the class definitions that are used in the call to create the bot.
 
