@@ -1,14 +1,10 @@
 ---
 title: Azure Bot Service encryption for data at rest | Microsoft Docs
 description: Azure Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
-services: botservice
-author: jameslew
-
-ms.service: botservice
+ms.service: bot-service
 ms.date: 05/21/2020
 ms.topic: conceptual
 ms.author: jameslew
-ms.reviewer: kamrani
 ---
 
 # Azure Bot Service encryption for data at rest
