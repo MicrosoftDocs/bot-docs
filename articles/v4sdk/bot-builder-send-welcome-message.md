@@ -98,9 +98,11 @@ At startup, user state is defined in `index.js` and consumed by the bot construc
 At startup, user state is defined in `app.py` and consumed by the bot constructor.
 
 **app.py**
-[!code-python[define state](~/../botbuilder-samples/samples/python/03.welcome-user/app.py?range=61-66)]
+
+[!code-python[define state](~/../botbuilder-samples/samples/python/03.welcome-user/app.py?range=62-67)]
 
 **bots/welcome-user-bot.py**
+
 [!code-python[consume state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=23-29)]
 
 ---

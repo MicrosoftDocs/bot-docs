@@ -239,7 +239,7 @@ We register services for the bot in `index.js`.
 
 We register services for the bot in `app.py`.
 
-[!code-python[configure services](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/app.py?range=27-76)]
+[!code-python[configure services](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/app.py?range=28-77)]
 
 ---
 
