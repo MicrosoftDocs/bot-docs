@@ -1,31 +1,46 @@
 ---
-title: Bot Service Compliance - Bot Service
-description: Bot Service Complinace
-author: v-ducvo
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
-ms.service: bot-service
-ms.date: 05/23/2019
-monikerRange: 'azure-bot-service-4.0'
+title: Azure Bot Service encryption for data at rest | Microsoft Docs
+description: Azure Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
+services: botservice
+author: jameslew
+
+ms.service: botservice
+ms.date: 05/21/2020
+ms.topic: conceptual
+ms.author: jameslew
+ms.reviewer: kamrani
 ---
 
-# Bot Service Compliance
+# Azure Bot Service encryption for data at rest
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+Azure Bot Service automatically encrypts your data when persisting it to the cloud. Encryption protects your data and to help you to meet your organizational security and compliance commitments. Data in Azure Bot Service is encrypted and decrypted transparently using 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), one of the strongest block ciphers available, and is FIPS 140-2 compliant. A checksum technique is also used to detect tampering of data that is not encrypted, such as GUIDs.
 
-Azure Bot service is compliant with ISO 27001:2013, ISO 27019:2014, SOC 1 and 2, Payment Card Industry Data Security Standard (PCI DSS), and Health Insurance Portability and Accountability Act Business Associate Agreement (HIPAA BAA)
+## Types of data encrypted in the Azure Bot Service
 
-## Azure Bot Service is compliant with ISO 27001:2013 and ISO 27018:2014 
-Azure Bot Service successfully completed the ISO 27001:2013 and ISO 27018:2014 audit with ZERO non-conformities (findings) in the audit report. Additionally, we also obtained the CSA STAR Certification with the highest possible Gold Award for the maturity capability assessment.  Azure is the first major public cloud service provider to earn this certification. For more details, you can find the Azure Bot Service included in the updated scope statement in Azure’s main [compliance overview document](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) that is referenced on [Trust Center](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001) ISO pages.  
- 
-## Azure Bot Service is compliant with PCI DSS
-Azure Bot Service has successfully obtained Payment Card Industry Data Security Standard (PCI DSS) compliance! The assessment results in an Attestation of Compliance (AoC) and Report on Compliance (RoC) issued by the QSA (auditor). The effective period for compliance begins upon passing the audit and receiving the AoC from the assessor, and ends one year from the date the AoC is signed (Dec 22 2017). For more details, you can find the Azure Bot Service included in the updated scope statement in Azure’s main [compliance overview document](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) that is referenced on [Trust Center](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001) PCI pages.  You can find certificates in [Service Trust Portal](https://servicetrust.microsoft.com/).
- 
-## Azure Bot Service is now covered under Microsoft’s HIPAA BAA
-Azure Bot Service is now covered by Microsoft’s Health Insurance Portability and Accountability Act Business Associate Agreement (HIPAA BAA)! For more details, you can find the Azure Bot Service included in the updated scope statement in Azure’s main [compliance overview document](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) that is referenced on [Trust Center HIPAA](https://www.microsoft.com/TrustCenter/Compliance/HIPAA) page.  
+Azure Bot Service encrypts your data in the bot service. Examples include, but are not limited to:
 
+1) Any developer account data such as name or email
+2) Any sensitive data about your bot (including URL's, third party channel credentials, bot names and descriptions)
+3) Any data temporarily stored while delivering activities including any conversation data and attachments
 
-## Azure Bot Service is compliant with SOC 1 and SOC 2 
-Azure Bot Service successfully completed the SOC 1 and 2 audit. The audit for Microsoft cloud services covers controls for data security, availability, processing integrity, and confidentiality as applicable to in-scope trust principles for each service. For more details, you can find the Azure Bot Service included in the updated scope statement in Azure’s main [compliance overview document](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) that is referenced on [Trust Center](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001) SOC pages.  
- 
+## About encryption key management
+
+Azure Bot Service encrypts data with Microsoft provided keys which are rotated on a pre-defined basis.  
+
+|                                        |    Microsoft-managed keys                             | 
+|----------------------------------------|-------------------------------------------------------|
+|    Encryption/decryption operations    |    Azure                                              |
+|    Key storage                         |    Azure Key Vault                              |
+|    Key rotation responsibility         |    Microsoft                                          |
+|    Key usage                           |    Microsoft                                          |
+|    Key access                          |    Microsoft only                                     |
+
+The following sections describe each of the options for key management in greater detail.
+
+## Microsoft-managed keys
+
+Your Azure Bot Service resource uses Microsoft-managed encryption keys. Azure Bot Service conforms to Microsoft best practices for Key storage access, encryption algorithms, and key rotation.
+
+## Customer-managed keys
+
+Currently the Azure Bot Service does not offer customer-managed encryption keys capability for data at rest.
