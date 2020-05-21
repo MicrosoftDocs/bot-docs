@@ -34,7 +34,9 @@ The event contains two components:
  - The context of the handoff request that is necessary to route the conversation to the right agent.
  - The transcript of the conversation. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
 
+<!-- We don't own this aka link, and for v4, I think there is an updated pattern.
 You can read more about the Bot Framework handoff protocol <a href="https://aka.ms/bfhandoffprotocol" target="blank">here</a>. 
+-->
 
 ## Handoff integration models
 
