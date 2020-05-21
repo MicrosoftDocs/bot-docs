@@ -75,7 +75,7 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 **index.js**
 
-[!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=35-57&highlight=8-14)]
+[!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=36-58&highlight=8-14)]
 
 # [Python](#tab/python)
 
