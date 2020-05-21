@@ -17,9 +17,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 This quickstart walks you through building a single bot by using the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript, and then testing it with the Bot Framework Emulator.
 
-[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
+[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
-[!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
+[!INCLUDE [javascript quickstart](../includes/quickstart-javascript.md)]
 
 ## Additional resources
 
