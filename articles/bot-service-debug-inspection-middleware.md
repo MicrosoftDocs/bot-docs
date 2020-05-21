@@ -73,7 +73,7 @@ Set up the inspection state in the **app.py** file by adding a middleware to the
 
 **app.py**
 
-[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=75-84)]
+[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=76-84)]
 
 Update the bot class in the **echo_bot.py** file.
 
