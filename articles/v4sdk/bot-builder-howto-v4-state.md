@@ -116,7 +116,7 @@ Next, we register `MemoryStorage` that is used to create `UserState` and `Conver
 
 **app.py**
 
-[!code-python[app.py](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=67-70)]
+[!code-python[app.py](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=68-71)]
 
 **bots/state_management_bot.py**
 
