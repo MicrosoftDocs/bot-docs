@@ -116,7 +116,7 @@ python app.py
 > [!NOTE]
 > A unique identifier is generated every time when the emulator is launched in debug mode after you add the inspection middleware in your bot's code.
 
-5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will be able to see the state of your bot as follows in the debugging emulator:
+5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will see the state of your bot in the debugging emulator:
 ![bot state](./media/bot-debug-inspection-middleware/bot-debug-bot-state.png)
 
 ## Inspect the state of a bot configured in Azure 
