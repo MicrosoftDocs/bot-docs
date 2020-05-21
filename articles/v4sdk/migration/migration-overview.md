@@ -61,7 +61,7 @@ If you can not migrate from a v3 bot to a v4 bot immediately, you may still want
 - Future
   - Declarative design permits level of abstraction for designers
   - GUI Dialog Designer
-- Azure Bot Service 
+- Azure Bot Service
   - Direct Line Speech Channel. Bringing together the Bot Framework and Microsoft's Speech Services. This provides a channel that enables streamed speech and text bi-directionally from the client to the bot application
 
 ## What's changed
@@ -96,35 +96,35 @@ The following worksheets can guide you in estimating your migration workload. In
 
 | Step | V3 | V4 | Occurrences | Complexity | T Shirt |
 | -- | -- | -- | -- | -- | -- |
-To get the incoming activity | IDialogContext.Activity | ITurnContext.Activity | count | Small  
+To get the incoming activity | IDialogContext.Activity | ITurnContext.Activity | count | Small
 To create and send an activity to the user | activity.CreateReply(“text”) IDialogContext.PostAsync | MessageFactory.Text(“text”) ITurnContext.SendActivityAsync | count | Small |
 State management | UserData, ConversationData, and PrivateConversationData context.UserData.SetValue context.UserData.TryGetValue botDataStore.LoadAsyn | UserState, ConversationState, and PrivateConversationState  With property accessors | context.UserData.SetValue - count context.UserData.TryGetValue - count botDataStore.LoadAsyn - count | Medium to Large (See [user state management](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
-Handle the start of your dialog | Implement IDialog.StartAsync | Make this the first step of a waterfall dialog. | count | Small |  
-Send an activity | IDialogContext.PostAsync. | Call ITurnContext.SendActivityAsync. | count | Small |  
-Wait for a user's response | Use an IAwaitable<IMessageActivity>parameter and call IDialogContext.Wait | Return await ITurnContext.PromptAsync to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |  
-Handle continuation of your dialog | IDialogContext.Wait | Add additional steps to a waterfall dialog, or implement Dialog.ContinueDialogAsync | count | Large |  
-Signal the end of processing until the user's next message | IDialogContext.Wait | Return Dialog.EndOfTurn. | count | Medium |  
-Begin a child dialog | IDialogContext.Call | Return await the step context's BeginDialogAsyncmethod. If the child dialog returns a value, that value is available in the next step of the waterfall via the step context's Resultproperty. | count | Medium |  
-Replace the current dialog with a new dialog | IDialogContext.Forward | Return await ITurnContext.ReplaceDialogAsync. | count | Large |  
-Signal that the current dialog has completed | IDialogContext.Done | Return await the step context's EndDialogAsync method. | count | Medium |  
-Fail out of a dialog. | IDialogContext.Fail | Throw an exception to be caught at another level of the bot, end the step with a status of Cancelled, or call the step or dialog context's CancelAllDialogsAsync. | count | Small |  
+Handle the start of your dialog | Implement IDialog.StartAsync | Make this the first step of a waterfall dialog. | count | Small |
+Send an activity | IDialogContext.PostAsync. | Call ITurnContext.SendActivityAsync. | count | Small |
+Wait for a user's response | Use an IAwaitable<IMessageActivity>parameter and call IDialogContext.Wait | Return await ITurnContext.PromptAsync to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |
+Handle continuation of your dialog | IDialogContext.Wait | Add additional steps to a waterfall dialog, or implement Dialog.ContinueDialogAsync | count | Large |
+Signal the end of processing until the user's next message | IDialogContext.Wait | Return Dialog.EndOfTurn. | count | Medium |
+Begin a child dialog | IDialogContext.Call | Return await the step context's BeginDialogAsyncmethod. If the child dialog returns a value, that value is available in the next step of the waterfall via the step context's Resultproperty. | count | Medium |
+Replace the current dialog with a new dialog | IDialogContext.Forward | Return await ITurnContext.ReplaceDialogAsync. | count | Large |
+Signal that the current dialog has completed | IDialogContext.Done | Return await the step context's EndDialogAsync method. | count | Medium |
+Fail out of a dialog. | IDialogContext.Fail | Throw an exception to be caught at another level of the bot, end the step with a status of Cancelled, or call the step or dialog context's CancelAllDialogsAsync. | count | Small |
 
 # [JavaScript](#tab/javascript)
 
 | Step | V3 | V4 | Occurrences | Complexity | T Shirt |
 | -- | -- | -- | -- | -- | -- |
-To get the incoming activity | IMessage | TurnContext.activity | count | Small  
+To get the incoming activity | IMessage | TurnContext.activity | count | Small
 To create and send an activity to the user | Call Session.send('message') | Call TurnContext.sendActivity | count | Small |
 State management | UserState & ConversationState UserState.get(), UserState.saveChanges(), ConversationState.get(), ConversationState.saveChanges() | UserState & ConversationState with property accessors | count | Medium to Large (See [user state management](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
-Handle the start of your dialog | call session.beginDialog, passing in the id of the dialog | call DialogContext.beginDialog | count | Small |  
-Send an activity | Call Session.send | Call TurnContext.sendActivity | count | Small |  
-Wait for a user's response | call a prompt from within the waterfall step, ex: builder.Prompts.text(session, 'Please enter your destination'). Retrieve the response in the next step. | Return await TurnContext.prompt to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |  
-Handle continuation of your dialog | Automatic | Add additional steps to a waterfall dialog, or implement Dialog.continueDialog | count | Large |  
-Signal the end of processing until the user's next message | Session.endDialog | Return Dialog.EndOfTurn | count | Medium |  
-Begin a child dialog | Session.beginDialog | Return await the step context's beginDialog method. If the child dialog returns a value, that value is available in the next step of the waterfall via the step context's Result property. | count | Medium |  
-Replace the current dialog with a new dialog | Session.replaceDialog | ITurnContext.replaceDialog | count | Large |  
-Signal that the current dialog has completed | Session.endDialog | Return await the step context's endDialog method. | count | Medium |  
-Fail out of a dialog. | Session.pruneDialogStack | Throw an exception to be caught at another level of the bot, end the step with a status of Cancelled, or call the step or dialog context's cancelAllDialogs. | count | Small |  
+Handle the start of your dialog | call session.beginDialog, passing in the id of the dialog | call DialogContext.beginDialog | count | Small |
+Send an activity | Call Session.send | Call TurnContext.sendActivity | count | Small |
+Wait for a user's response | call a prompt from within the waterfall step, ex: builder.Prompts.text(session, 'Please enter your destination'). Retrieve the response in the next step. | Return await TurnContext.prompt to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |
+Handle continuation of your dialog | Automatic | Add additional steps to a waterfall dialog, or implement Dialog.continueDialog | count | Large |
+Signal the end of processing until the user's next message | Session.endDialog | Return Dialog.EndOfTurn | count | Medium |
+Begin a child dialog | Session.beginDialog | Return await the step context's beginDialog method. If the child dialog returns a value, that value is available in the next step of the waterfall via the step context's Result property. | count | Medium |
+Replace the current dialog with a new dialog | Session.replaceDialog | ITurnContext.replaceDialog | count | Large |
+Signal that the current dialog has completed | Session.endDialog | Return await the step context's endDialog method. | count | Medium |
+Fail out of a dialog. | Session.pruneDialogStack | Throw an exception to be caught at another level of the bot, end the step with a status of Cancelled, or call the step or dialog context's cancelAllDialogs. | count | Small |
 
 ---
 
@@ -132,7 +132,7 @@ Fail out of a dialog. | Session.pruneDialogStack | Throw an exception to be caug
 
 The Bot Framework SDK v4 is based on the same underlying REST API as v3. However, v4 is a refactoring of the previous version of the SDK to allow more flexibility and control over the bots.
 
-We recommend migrating to .NET Core, since the performance is very much improved. 
+We recommend migrating to .NET Core, since the performance is very much improved.
 However, some existing V3 bots are using external libraries that do not have a .NET Core equivalent. In this case, the Bot Framework SDK v4 can be used with .NET Framework version 4.6.1 or higher. You can find an example at [corebot](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi) location.
 
 When migrating a project from v3 to v4, you can choose one of these options: convert in place for **.NET Framework** or port to a new project for **.NET Core**.
@@ -149,10 +149,14 @@ For more information, see [Migrate a .NET v3 bot to a .NET Framework v4 bot](con
 #### .NET Core
 
 - Create the new project using a template
+
+ [!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
+
 - Install additional NuGet packages as necessary
 - Personalize your bot, update your Startup.cs file, and update your controller class
 - Update your bot class
 - Copy over and update your dialogs and models
+
 
 For more information, see [Migrate a .NET v3 bot to a .NET Core v4 bot](conversion-core.md).
 
@@ -178,7 +182,7 @@ For more information, see [Migrate a SDK v3 Javascript bot to v4](conversion-jav
 
 ## Additional resources
 
-The following additional resources provide more information that can help during the migration.  
+The following additional resources provide more information that can help during the migration.
 
 ### [C#](#tab/csharp)
 
@@ -233,7 +237,7 @@ Please, refer to the following resources for more details and background informa
 |[Managing state](../bot-builder-concept-state.md)|Abstractions to make state management easier|
 |[Dialogs library](../bot-builder-concept-dialog.md)| Central concepts to manage a conversation|
 |[Send and receive text messages](../bot-builder-howto-send-messages.md)|Primary way a bot communicate with users|
-|[Send Media](../bot-builder-howto-add-media-attachments.md)|Media attachments, such as images, video, audio, and files| 
+|[Send Media](../bot-builder-howto-add-media-attachments.md)|Media attachments, such as images, video, audio, and files|
 |[Sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md)| Questioning as the main way a bot interacts with users|
 |[Save user and conversation data](../bot-builder-howto-v4-state.md)|Tracking a conversation while stateless|
 |[Complex Flow](../bot-builder-dialog-manage-complex-conversation-flow.md)|Manage complex conversation flows |
