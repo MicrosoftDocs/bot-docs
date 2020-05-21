@@ -102,11 +102,13 @@ The turn handler takes a turn context as its argument, typically the application
 
 ## Bot structure
 
-In the following sections, we examine _key pieces_ of an EchoBot that you can easily create using the templates provided for [**CSharp**](../dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md).
+In the following sections, we examine _key pieces_ of an EchoBot that you can easily create using the templates provided for [**CSharp**](../dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md) or [**Python**](../python/bot-builder-python-quickstart.md).
 
 <!--Need to add section calling out the controller in code, and explaining it further-->
 
-A bot is a web application, and we provide templates for each language.
+A bot is a web application, and templates are provided for each language.
+
+[!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
 # [C#](#tab/csharp)
 
