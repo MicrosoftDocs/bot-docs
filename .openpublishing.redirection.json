@@ -101,6 +101,11 @@
       "redirect_document_id": true 
     },
     {
+      "source_path": "articles/python/bot-builder-python-samples.md",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md",
+      "redirect_document_id": true 
+    },
+    {
       "source_path": "articles/bot-builder-sdk-download.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-quickstart",
       "redirect_document_id": false 
