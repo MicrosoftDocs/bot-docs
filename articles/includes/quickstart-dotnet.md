@@ -11,10 +11,12 @@ In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v
 
 ![Visual Studio create a new project dialog](../media/azure-bot-quickstarts/bot-builder-dotnet-project-vs2019.png)
 
-> [!TIP] 
+> [!TIP]
 > If using Visual Studio 2017, make sure that the project build type is ``.Net Core 2.1`` or later. Also if needed, update the `Microsoft.Bot.Builder` [NuGet packages](https://docs.microsoft.com/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You won't actually need to write any additional code.
+
+[!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
 ## Start your bot in Visual Studio
 
@@ -24,7 +26,7 @@ When you click the run button, Visual Studio will build the application, deploy 
 
 Next, start the emulator and then connect to your bot in the emulator:
 
-1. Click the **Create a new bot configuration** link in the emulator "Welcome" tab. 
+1. Click the **Create a new bot configuration** link in the emulator "Welcome" tab.
 2. Fill out the fields for your bot. Use your bot's welcome page address (typically http://localhost:3978) and append routing info '/api/messages' to this address.
 3. then click **Save and connect**.
 
