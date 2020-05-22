@@ -56,7 +56,7 @@ After the registration is completed, Azure Active Directory assigns a unique app
 To obtain the password follow the steps described next.
 
 1. In resource list, click on the Azure App Service resource just created.
-1. Im the right pane, in the resource blade, click  **Settings**. The resource *Settings* page is displayed.
+1. In the right pane, in the resource blade, click  **Settings**. The resource *Settings* page is displayed.
 1. In the Settings page copy the generated **Microsoft App ID** and save it to a file.
 1. Click the **Manage** link by *Microsoft App ID*.
 
