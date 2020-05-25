@@ -149,6 +149,7 @@ If you have an outbound firewall blocking traffic from your bot to the Internet,
 - `cortanabfchannelwestus.azurewebsites.net` (Cortana Channel)
 - `*.botframework.com` (channels)
 - `state.botframework.com` (backward compatibility)
+- `login.windows.net` (Windows login)
 - Additional URLs for specific Bot Framework channels
 
 > [!NOTE]
