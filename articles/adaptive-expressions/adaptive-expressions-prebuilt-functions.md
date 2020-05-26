@@ -1711,7 +1711,7 @@ formatEpoch('<epoch>', '<format>'?)
 These examples convert a Unix timestamp to the specified format:
 
 ```
-formatEpoch(1521118800,, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
+formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 ```
 
 And returns the following results:
