@@ -1330,7 +1330,7 @@ Check whether an instance is empty. Return `true` if the input is empty.
 Empty means:
 
 - input is null or undefined
-or input is string and the string is null or empty,
+- input is a null or empty string
 - input is zero size collection
 or input is object with no property.
 
