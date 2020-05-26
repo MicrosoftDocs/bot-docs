@@ -210,13 +210,13 @@ The adaptive dialog uses a language generator to format text and include values 
 
 **Dialogs\RootDialog.cs**
 
-[!code-csharp[adaptive dialog and triggers](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=60-122&hihglight=1-10)]
+[!code-csharp[adaptive dialog and triggers](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=60-122&highlight=1-10)]
 
 ### [JavaScript](#tab/javascript)
 
 **dialogs/rootDialog.js**
 
-[!code-javascript[adaptive dialog and triggers](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=39-87&hihglight=1-10)]
+[!code-javascript[adaptive dialog and triggers](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=39-87&highlight=1-10)]
 
 ---
 
