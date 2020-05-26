@@ -369,7 +369,7 @@ The example below shows how to set the lineBreakStyle option to `markdown`:
 
 ### Namespace option
 
-Developers can register a namespace for the LG templates they want to export. If there is no namespace specified, the namespace will be set to the filename without extension.
+You can register a namespace for the LG templates you want to export. If there is no namespace specified, the namespace will be set to the filename without an extension.
 
 The example below shows how to set the namespace option to `foo`:
 
