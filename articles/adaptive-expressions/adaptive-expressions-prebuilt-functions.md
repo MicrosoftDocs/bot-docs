@@ -1721,7 +1721,7 @@ And returns the result **2018-03-15T12:00:00.000Z**.
 
 ### formatTicks
 
-Return a timestamp in the specified format from ticks
+Return a timestamp in the specified format from ticks.
 
 ```
 formatTicks('<ticks>', '<format>'?)
