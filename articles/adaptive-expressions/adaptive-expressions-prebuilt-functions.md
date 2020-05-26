@@ -1740,7 +1740,7 @@ formatTicks('<ticks>', '<format>'?)
 
 *Examples*
 
-These examples convert ticks to the specified format:
+This example converts ticks to the specified format:
 
 ```
 formatTicks(637243624200000000, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
