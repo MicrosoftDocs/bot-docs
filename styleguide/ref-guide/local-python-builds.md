@@ -38,6 +38,7 @@ You can set a variety of [options](https://github.com/myint/rstcheck#options), l
 ```cmd
 rstcheck <file_name>
 ```
+
 ## Organize your code directory
 
 We suggest to perform the steps below to facilitate the creation of a local reference build.
@@ -99,6 +100,9 @@ The following steps produce a local doc build structure. `.rst` files that conta
     ```cmd
         sphinx-apidoc -f .\libraries  -o source
     ```
+1. Edit the `index.rst` file by adding the `modules` line as shown below. Make sure the alignment is correct
+
+    ![sphinx dir structure](../media/sphinx-index-rst.PNG)
 
 <!--
 sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-headings --no-toc --implicit-namespaces
@@ -124,16 +128,40 @@ Now that we have the `YML` files, we can preview them with a locally-running `Do
     ```
 This creates a new `docfx_project` folder.
 
-1. Copy the YAML files previously generated via Sphinx in `build/docfx_yaml`. into the `docfx_project/api` folder.
+1. Copy the `YML` files previously generated via Sphinx in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
-1. Build the site (on line docs) locally an display the documentation by running this command:
+1. Build the site (on line docs) locally and display the documentation by running this command:
 
     ```cmd
     "<path to DocFX folder>\docfx.exe" --serve
     ```
 
-1. In your browser, navigate to http://localhost:8080 to see the online docs.  The output should look similar to this:
+1. In your browser, navigate to http://localhost:8080 to see the online docs. The output should look similar to this:
 
     ![DocFX local build](../media/docfx-local-build.PNG)
 
 ## Some shortcuts
+
+When you rebuild the documentation because comments have changed or for whatever other reasons, you do not have to start from scratch. Instead, perform the steps described below.
+
+1. In the `source` folder, delete the `.rst` files, excluding the `index.rst` file.
+1. Delete the content of the `build` folder.
+1. Delete the content of the `docfx_project/api` folder, excluding the `index.md` file.
+1. in the directory `<local path>\APIReference` execute the commands:
+
+```cmd
+
+sphinx-apidoc -f .\libraries  -o source
+sphinx-build source build
+
+```
+
+1. Copy the `YML` files previously generated in `build/docfx_yaml`. into the `docfx_project/api` folder.
+1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
+1. Build the site (on line docs) locally and display the documentation by running this command:
+
+    ```cmd
+
+    "<path to DocFX folder>\docfx.exe" --serve
+
+    ```
