@@ -379,7 +379,7 @@ The example below shows how to set the namespace option to `foo`:
 
 ### Exports option
 
-Developers can set a list of LG templates to export. The exported templates can be called like prebuilt functions. 
+You can specify a list of LG templates to export. The exported templates can be called like prebuilt functions. 
 
 The example below shows how to set the exports option to `template1, template2`:
 
