@@ -1714,7 +1714,7 @@ This example convert a Unix timestamp to the specified format:
 formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 ```
 
-And returns the following results:
+And returns the result **2018-03-15T12:00:00.000Z**.
 
 
 <a name="formatTicks"></a>
