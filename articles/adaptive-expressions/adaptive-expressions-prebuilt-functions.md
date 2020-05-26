@@ -1331,7 +1331,7 @@ Empty means:
 
 - input is null or undefined
 or input is string and the string is null or empty,
-or input is collection and the collection's size is zero,
+- input is zero size collection
 or input is object with no property.
 
 ```
