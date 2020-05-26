@@ -394,7 +394,7 @@ The example below shows how to set the exports option to `template1, template2`:
 - ${join(a, b)}
 ```
 
-The way developers can call these exported templates is: `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')`.
+Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exported templates.
 
 
 ## Additional Resources
