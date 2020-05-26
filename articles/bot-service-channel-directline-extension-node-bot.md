@@ -94,7 +94,7 @@ This section describes how to enable the direct line app service extension using
 
 ### Confirm Direct Line App Extension and the Bot are Initialized
 
-1. In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot/. 
+1. In your browser, navigate to `https://<your_app_service>.azurewebsites.net/.bot/`. 
 If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
     - **v** displays the build version of the Direct Line App Service Extension (ASE).
