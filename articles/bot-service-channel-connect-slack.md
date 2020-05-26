@@ -85,6 +85,7 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 
 > [!TIP]
 > Your bot handle is the name of your bot.
+>
 > To find a bot's handle, visit [Azure portal][azure portal] and go to the **Bot Channels Registration** for the bot. Click **Settings** under **Bot management** on the left to see the **Bot handle**.
 
 1. Select the **Event Subscriptions** tab.
