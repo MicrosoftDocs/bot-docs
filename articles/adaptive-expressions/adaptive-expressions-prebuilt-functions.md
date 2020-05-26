@@ -253,7 +253,7 @@ add('hello','world')
 
 And returns the results
 - **hello**
-- **helloworld**.
+- **helloworld**
 
 <a name="addDays"></a>
 
