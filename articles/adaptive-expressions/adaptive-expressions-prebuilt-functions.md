@@ -1351,7 +1351,7 @@ empty([<instance>])
 
 *Example*
 
-These examples check whether the specified instance are empty:
+These examples check whether the specified instance is empty:
 
 ```
 empty('')
