@@ -116,7 +116,7 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
-|[add](#add)|Mathematical and. Return the result from adding two numbers (pure number case) or concat two or more strings and return the resulting string.|
+|[add](#add)|Mathematical and. Return the result from adding two numbers (pure number case) or concatting two or more strings.|
 |[div](#div)|Mathematical division.	Return the integer result from dividing two numbers.|
 |[max](#max)|Return the largest value from a collection.|
 |[min](#min)|Return the smallest value from a collection.|
@@ -4898,4 +4898,3 @@ year('2018-03-15T00:00:00.000Z')
 ```
 
 And it returns the result **2018**.
-
