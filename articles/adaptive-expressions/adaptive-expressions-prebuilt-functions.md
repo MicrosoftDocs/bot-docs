@@ -218,7 +218,7 @@ You can also view the list in [alphabetical order](#add).
 
 ### add
 
-Return the result from adding or more numbers (pure number case) or concat two or more strings and return the resulting string (other case).
+Return the result from adding two or more numbers (pure number case) or concatting two or more strings (other case).
 
 ```
 add(<item1>, <item2>, ...)
