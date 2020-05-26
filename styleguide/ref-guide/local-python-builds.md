@@ -1,14 +1,21 @@
 # Python local reference documentation build
 
-This article describes how to create a Python reference documentation build locally.
+This article describes how to create a local build for Python API reference documentation.
 
-For more information, see [Testing Python Content Locally](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/testing-locally?branch=master).
+The API reference documentation is generated from comments in the source code and created using the [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) format.
+
+The **reStructuredText** (RST) is a file format for textual data used primarily in the Python programming language community for technical documentation.
+It is a lightweight markup language designed to be both processable by documentation-processing software, and easily readable by humans.
+
+For the RST syntax, see [How to document a Python API](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master)
+
+This article follows the instructions provided in [Testing Python Content Locally](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/testing-locally?branch=master).
 
 ## Prerequisites
 
 - Install [Python 3.6](https://www.python.org/downloads/) or higher
-- Downloaded [DocFX](https://dotnet.github.io/docfx/) and extracted to C:\Program Files\docfx
-- Install [Sphinx](http://www.sphinx-doc.org/en/master/)
+- Install [Sphinx](http://www.sphinx-doc.org/en/master/). Creates Python documentation from `reStructuredText`, and has facilities for the documentation of software projects in a range of languages. Its output (YML files) feds into the DocFX tool.
+- Downloaded [DocFX](https://dotnet.github.io/docfx/). Generates static sites from markdown and code. Accepts as input the Sphinx output (YML files). It is recommended to extract it in C:\Program Files\docfx. If you create a PATH variable it is even better.
 
     ```cmd
     pip install -U Sphinx
@@ -19,6 +26,7 @@ For more information, see [Testing Python Content Locally](https://review.docs.m
     ```cmd
     pip install -U sphinx-docfx-yaml
     ```
+
 ### Check files for errors (optional)
 
 Before creating Sphinx content you can check your files for any issues. Run `pip install rstcheck` from a command line to install [rstcheck](https://pypi.org/project/rstcheck/).
