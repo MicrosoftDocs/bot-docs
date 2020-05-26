@@ -1708,7 +1708,7 @@ formatEpoch('<epoch>', '<format>'?)
 
 *Examples*
 
-These examples convert a Unix timestamp to the specified format:
+This example convert a Unix timestamp to the specified format:
 
 ```
 formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
