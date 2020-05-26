@@ -1747,7 +1747,6 @@ formatTicks(637243624200000000, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 ```
 
 And returns the result **2020-05-06T11:47:00.000Z**.
-- **2020-05-06T11:47:00.000Z**
 
 <a name="getFutureTime"></a>
 
