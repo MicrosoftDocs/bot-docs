@@ -46,13 +46,17 @@ We suggest to perform the steps below to facilitate the creation of a local refe
 1. Create a folder named `<local path>\APIReference` folder.
 1. In the folder, create a sub-folder named `libraries`.
 1. From your cloned SDK copy into the `libraries` the folders that contain the actual code (with related sub-folders). For examples from `\botbuilder-python\libraries\botbuilder-core\botbuilder\core` copy the `core` folder. From `botbuilder-python\libraries\botbuilder-dialogs\botbuilder\dialogs` copy the `dialogs` folder.
-1. Once than make sure that each library folder (and sub-folders) contain an `__init__.py` file. These **files must be empty**; delete whatever code they contain.
+The following is a an example of how the library directory looks like:
+
+    ![sphinx libraries dir structure](../media/sphinx-libraries.PNG)
+
+1. Once done copying, make sure that each library folder (and sub-folders) contain an `__init__.py` file. These **files must be empty**; delete whatever code they contain.
 1. Now, we are ready to `rock and roll`.
 
 
 ## Create Sphinx content
 
-The following steps produce a local doc build structure. `.rst`files that contain the info about packages and modules, and finally a set of `YML` files from the source code.
+The following steps produce a local doc build structure. `.rst` files that contain the info about packages and modules, and finally a set of `YML` files from the source code.
 
 1. Switch to the reference directory on your local machine where to create the documentation: `<local path>\APIReference`.
 1. Open a terminal console in this directory and set the Sphinx base configuration by executing this command:
@@ -78,9 +82,19 @@ The following steps produce a local doc build structure. `.rst`files that contai
 
 1. Open the `conf.py` file and add the following directive:
 
-    `extensions = ['sphinx.ext.autodoc', 'docfx_yaml.extension']`
+    ```python
+    extensions = ['sphinx.ext.autodoc', 'docfx_yaml.extension']
+    ```
 
-1. Create a number of  `.rst` files representing of the APIs to document.
+1. Add the following path information:
+
+    ```python
+    import os
+    import sys
+    sys.path.insert(0, os.path.abspath('../libraries'))
+    ```
+
+1. Create a number of  `.rst` files in the `source` folder representing of the APIs to document.
 
     ```cmd
         sphinx-apidoc -f .\libraries  -o source
@@ -90,20 +104,19 @@ The following steps produce a local doc build structure. `.rst`files that contai
 sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-headings --no-toc --implicit-namespaces
 -->
 
-1. Create the YAML files in the `_build/docfx_yaml` folder by executing this command:
+1. Create the `YML` files in the `build/docfx_yaml` folder by executing this command:
 
     ```cmd
-        sphinx-build source _build
+        sphinx-build source build
     ```
 
-    Once the build completes, you should have the `YML` files in `_build/docfx_yaml`.
+    Once the build completes, you should have the `YML` files in `build/docfx_yaml`.
 
 
 ## Documentation preview
 
 Now that we have the `YML` files, we can preview them with a locally-running `DocFX` instance.
 
-1. Copy the path of the `docfx.exe`.
 1. Bootstrap a documentation project based on our own pipeline. In the current folder, create a new folder, for example _docfx. In the console terminal, navigate to this folder and bootstrap a new DocFX project by executing this command:
 
     ```cmd
@@ -111,20 +124,16 @@ Now that we have the `YML` files, we can preview them with a locally-running `Do
     ```
 This creates a new `docfx_project` folder.
 
-1. Copy the YAML files previously generated via Sphinx in `_build/docfx_yaml`. into the `docfx_project/api` folder.
+1. Copy the YAML files previously generated via Sphinx in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
-1. Build the site (on line docs) by running this command:
+1. Build the site (on line docs) locally an display the documentation by running this command:
 
     ```cmd
-    "<path to DocFX folder>\docfx.exe"
-    ```
-
-1. Display the documentation the site as follows:
-
-    ```cmd
-    "<path to DocFX folder>\docfx.exe" serve _site
+    "<path to DocFX folder>\docfx.exe" --serve
     ```
 
 1. In your browser, navigate to http://localhost:8080 to see the online docs.  The output should look similar to this:
 
     ![DocFX local build](../media/docfx-local-build.PNG)
+
+## Some shortcuts
