@@ -7,21 +7,23 @@ The API reference documentation is generated from comments in the source code an
 The **reStructuredText** (RST) is a file format for textual data used primarily in the Python programming language community for technical documentation.
 It is a lightweight markup language designed to be both processable by documentation-processing software, and easily readable by humans.
 
-For the RST syntax, see [How to document a Python API](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master)
+- For the RST syntax, see [How to document a Python API](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master).
 
-This article follows the instructions provided in [Testing Python Content Locally](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/testing-locally?branch=master).
+- This article follows the instructions provided in [Testing Python Content Locally](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/testing-locally?branch=master).
 
 ## Prerequisites
 
-- Install [Python 3.6](https://www.python.org/downloads/) or higher
-- Install [Sphinx](http://www.sphinx-doc.org/en/master/). Creates Python documentation from `reStructuredText`, and has facilities for the documentation of software projects in a range of languages. Its output (YML files) feds into the DocFX tool.
-- Downloaded [DocFX](https://dotnet.github.io/docfx/). Generates static sites from markdown and code. Accepts as input the Sphinx output (YML files). It is recommended to extract it in C:\Program Files\docfx. If you create a PATH variable it is even better.
+- Install [Python 3.6](https://www.python.org/downloads/) or higher.
+- Install [Sphinx](http://www.sphinx-doc.org/en/master/). Refer to the steps described below. It creates Python documentation from `reStructuredText`, and has facilities for the documentation of software projects in a range of languages. Its output (YML files) feds into the DocFX tool.
+- Downloaded [DocFX](https://dotnet.github.io/docfx/). It generates static sites from markdown and code. Accepts as input the Sphinx output (YML files). It is recommended to extract it in C:\Program Files\docfx. If you create a PATH variable it is even better.
+
+### Install Sphinx
 
     ```cmd
     pip install -U Sphinx
     ```
 
-- Install an additional component:
+Install an additional component to support the DocFX tool:
 
     ```cmd
     pip install -U sphinx-docfx-yaml
@@ -36,12 +38,23 @@ You can set a variety of [options](https://github.com/myint/rstcheck#options), l
 ```cmd
 rstcheck <file_name>
 ```
+## Organize your code directory
+
+We suggest to perform the steps below to facilitate the creation of a local reference build.
+
+1. In your local repository clone the SDK library for which you want to create a local documentation build. For example for Python, clone https://github.com/microsoft/botbuilder-python.
+1. Create a folder named `<local path>\APIReference` folder.
+1. In the folder, create a sub-folder named `libraries`.
+1. From your cloned SDK copy into the `libraries` the folders that contain the actual code (with related sub-folders). For examples from `\botbuilder-python\libraries\botbuilder-core\botbuilder\core` copy the `core` folder. From `botbuilder-python\libraries\botbuilder-dialogs\botbuilder\dialogs` copy the `dialogs` folder.
+1. Once than make sure that each library folder (and sub-folders) contain an `__init__.py` file. These **files must be empty**; delete whatever code they contain.
+1. Now, we are ready to `rock and roll`.
+
 
 ## Create Sphinx content
 
-The following steps produce a local doc build structure. .rst files that must c and finally a set of YAML files from the source code.
+The following steps produce a local doc build structure. `.rst`files that contain the info about packages and modules, and finally a set of `YML` files from the source code.
 
-1. Create a new directory on your local machine where to create the documentation for example: `<local path>\Reference`.
+1. Switch to the reference directory on your local machine where to create the documentation: `<local path>\APIReference`.
 1. Open a terminal console in this directory and set the Sphinx base configuration by executing this command:
 
     ```cmd
@@ -51,16 +64,15 @@ The following steps produce a local doc build structure. .rst files that must c 
 1. You will be asked some questions. Answer as follows:
 
     1. Root path accept the current directory: Accept default (simply enter).
-    1. Separate source and build directories (y/n) [n]: Accept default (simply enter).
-    Accept the default hyphen prefix for the other directories to be created (simply enter).
-
-	1. Project name: botbuilder-python
+    1. Separate source and build directories (y/n) [n]: y.
+    1. Accept the default hyphen prefix for the other directories to be created (simply enter).
+	1. Project name: `API Reference` or whatever name you decide.
 	1. Author name(s): your alias
 	1. Project version: 1.0
 	1. Project release: 1.0.0
 	1. For all the requested values accept the defaults by just clicking enter.
 
-    After done entering the above values the following directory structure is created:
+    After done entering the above values the following directory structure is created in the source folder.
 
     ![sphinx dir structure](../media/sphinx-dir-structure.PNG)
 
@@ -71,21 +83,25 @@ The following steps produce a local doc build structure. .rst files that must c 
 1. Create a number of  `.rst` files representing of the APIs to document.
 
     ```cmd
-    sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-headings --no-toc --implicit-namespaces
+        sphinx-apidoc -f .\libraries  -o source
     ```
+
+<!--
+sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-headings --no-toc --implicit-namespaces
+-->
 
 1. Create the YAML files in the `_build/docfx_yaml` folder by executing this command:
 
     ```cmd
-    sphinx-build . _build
-	```
+        sphinx-build source _build
+    ```
 
-    Once the build completes, you should have the YAML files in `_build/docfx_yaml`.
+    Once the build completes, you should have the `YML` files in `_build/docfx_yaml`.
 
 
 ## Documentation preview
 
-Now that we have the YAML files, we can preview them with a locally-running DocFX instance.
+Now that we have the `YML` files, we can preview them with a locally-running `DocFX` instance.
 
 1. Copy the path of the `docfx.exe`.
 1. Bootstrap a documentation project based on our own pipeline. In the current folder, create a new folder, for example _docfx. In the console terminal, navigate to this folder and bootstrap a new DocFX project by executing this command:
@@ -109,4 +125,6 @@ This creates a new `docfx_project` folder.
     "<path to DocFX folder>\docfx.exe" serve _site
     ```
 
-1. In yout browser, navigate to http://localhost:8080 to see the online docs.
+1. In your browser, navigate to http://localhost:8080 to see the online docs.  The output should look similar to this:
+
+    ![DocFX local build](../media/docfx-local-build.PNG)
