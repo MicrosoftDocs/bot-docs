@@ -1328,7 +1328,8 @@ Returns the result **5.5**.
 
 Check whether an instance is empty. Return `true` if the input is empty.
 Empty means:
-input is null or undefined,
+
+- input is null or undefined
 or input is string and the string is null or empty,
 or input is collection and the collection's size is zero,
 or input is object with no property.
