@@ -1716,7 +1716,6 @@ formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 
 And returns the following results:
 
-- **2018-03-15T12:00:00.000Z**
 
 <a name="formatTicks"></a>
 
