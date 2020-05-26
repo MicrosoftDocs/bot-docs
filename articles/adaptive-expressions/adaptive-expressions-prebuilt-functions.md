@@ -244,7 +244,7 @@ add(1, 1.5)
 
 And returns the result **2.5**.
 
-This example concat the specified items:
+This example concats the specified items:
 
 ```
 add('hello',null)
