@@ -1332,7 +1332,7 @@ Empty means:
 - input is null or undefined
 - input is a null or empty string
 - input is zero size collection
-or input is object with no property.
+- input is an object with no property.
 
 ```
 empty('<instance>')
