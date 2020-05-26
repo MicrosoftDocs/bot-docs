@@ -4268,7 +4268,7 @@ ticks('<timestamp>')
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*ticks-number*> | integer (bigint in js)| The number of ticks since the specified timestamp |
+| <*ticks-number*> | integer (bigint in Javascript)| The number of ticks since the specified timestamp |
 ||||
 
 *Example*
