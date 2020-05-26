@@ -1729,7 +1729,7 @@ formatTicks('<ticks>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*epoch*> | Yes | number (or bigint in js)| The ticks number |
+| <*epoch*> | Yes | number (or bigint in Javascript)| The ticks number |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
 |||||
 
