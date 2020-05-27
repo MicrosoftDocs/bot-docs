@@ -20,7 +20,7 @@ This article shows how to create a bot that incorporates **Adaptive dialog** usi
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- Knowledge of [adaptive dialogs][concept-adaptive] and [declarative][concept-declarative].
+- Knowledge of [adaptive dialogs][concept-adaptive] and [declarative dialogs][concept-declarative].
 - A copy of the **EchoBot** sample in either [**C#**][cs-sample] or [**JavaScript** preview][js-sample].
 
 ### Preliminary steps to add a declarative adaptive dialog to a bot
