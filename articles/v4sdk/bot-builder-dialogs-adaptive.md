@@ -101,8 +101,7 @@ public RootDialog()
 }
 ```
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21-52&highlight=6-25)]
-
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21-52&highlight=6-25)]
 
 The root dialog is a component dialog:
 
