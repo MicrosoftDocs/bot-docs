@@ -219,22 +219,6 @@ If you don't pass in the `LanguageGenerator` parameter in the `UseLanguageGenera
 
 <!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=72-82)]-->
 
-```JavaScript
-let myBot;
-
-const loadRootDialog = () => {
-    console.log('(Re)Loading dialogs...');
-    // Load root dialog
-    let rootDialogResource = resourceExplorer.getResource('echo.dialog');
-    myBot = new DialogManager();
-    myBot.userState = userState;
-    myBot.conversationState = conversationState;
-    myBot.rootDialog = resourceExplorer.loadType(rootDialogResource);
-}
-```
-
-# [JavaScript](#tab/javascript)
-
 ```javascript
 let myBot;
 
