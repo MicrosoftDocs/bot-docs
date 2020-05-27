@@ -92,7 +92,7 @@ The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defin
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-145&&highlight=12-16,31-58)]
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-144&highlight=12-16,31-58)]
 
 <!--
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=77-141&highlight=12-16,31-58)]
@@ -146,48 +146,8 @@ To allow the use of the adaptive dialog, the start up code must register the dia
 
 You register the adaptive dialogs in the `Startup` class, along with the other services.
 
-```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs?range=22-55&highlight=5-18)]
 
-    // Register dialog. This sets up memory paths for adaptive.
-    ComponentRegistration.Add(new DialogsComponentRegistration());
-
-    // Register adaptive component
-    ComponentRegistration.Add(new AdaptiveComponentRegistration());
-
-    // Register to use language generation.
-    ComponentRegistration.Add(new LanguageGenerationComponentRegistration());
-
-    // Create the credential provider to be used with the Bot Framework Adapter.
-    services.AddSingleton<ICredentialProvider, ConfigurationCredentialProvider>();
-
-    // Create the Bot Framework Adapter with error handling enabled.
-    services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
-
-    // Create the storage we'll be using for User and Conversation state. (Memory is great for testing purposes.)
-    services.AddSingleton<IStorage, MemoryStorage>();
-
-    // Create the User state. (Used in this bot's Dialog implementation.)
-    services.AddSingleton<UserState>();
-
-    // Create the Conversation state. (Used by the Dialog system itself.)
-    services.AddSingleton<ConversationState>();
-
-    // The Dialog that will be run by the bot.
-    services.AddSingleton<RootDialog>();
-
-    // Create the bot. the ASP Controller is expecting an IBot.
-    services.AddSingleton<IBot, DialogBot<RootDialog>>();
-}
-```
-
-<!--
-
-[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Startup.cs?range=21-54&highlight=5-18)]
-
--->
 
 # [JavaScript](#tab/javascript)
 
@@ -271,33 +231,7 @@ Listen for incoming requests and route the message to the bot's main handler.
 The `DialogManager.OnTurnAsync` runs the adaptive dialog with activities.
 The implementation shown can run any type of `Dialog`. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation. The `DialogManager.OnTurnAsync` method takes care of saving the state.
 
-```csharp
-public class DialogBot<T> : ActivityHandler where T : Dialog
-    {
-        protected readonly BotState ConversationState;
-        protected readonly Dialog Dialog;
-        protected readonly ILogger Logger;
-        protected readonly BotState UserState;
-        private DialogManager DialogManager;
-
-        public DialogBot(ConversationState conversationState, UserState userState, T dialog, ILogger<DialogBot<T>> logger)
-        {
-            ConversationState = conversationState;
-            UserState = userState;
-            Dialog = dialog;
-            Logger = logger;
-            DialogManager = new DialogManager(Dialog);
-        }
-
-        public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default(CancellationToken))
-        {
-            Logger.LogInformation("Running dialog with Activity.");
-            await DialogManager.OnTurnAsync(turnContext, cancellationToken: cancellationToken).ConfigureAwait(false);
-        }
-    }
-}
-
-```
+[!code-csharp[Dialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-40&highlight=20]
 
 <!--
 [!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-41&highlight=21)]
@@ -355,12 +289,10 @@ class DialogBot extends ActivityHandler {
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt-adaptive-sample.png)
 
-<!--
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Create a bot using adaptive, component, waterfall, and custom dialogs](bot-builder-mixed-dialogs.md)
--->
 
 <!-- Footnote-style links -->
 
