@@ -1,5 +1,5 @@
 ---
-title: Create a bot using adaptive dialogs   - Bot Service
+title: Create a bot using declarative adaptive dialogs
 description: Learn how to create a bot that incorporates adaptive using the declarative approach in the Bot Framework SDK.
 keywords: declarative, adaptive
 author: kamrani
@@ -11,7 +11,7 @@ ms.date: 05/25/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Create a bot using adaptive dialogs  
+# Create a bot using declarative adaptive dialogs  
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
@@ -207,7 +207,6 @@ This tells the resource explorer that the `resource` represents an `AdaptiveDial
 **dialogManager.UseResourceExplorer(resourceExplorer);**
 
 This tells the `dialogManager` to use `resourceExplorer` as the resourceExplorer.
-<!--TODO P1: It’s not clear to me from the context why this is needed, but capturing changes to the file and updating the corresponding object (the `resourceExplorer.Changed` method ) would make sense as a reason-->
 
 **dialogManager.UseLanguageGeneration();**
 
