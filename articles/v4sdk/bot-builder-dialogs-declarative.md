@@ -25,7 +25,7 @@ This article shows how to create a bot that incorporates **Adaptive dialog** usi
 
 ### Preliminary steps to add a declarative adaptive dialog to a bot
 
-You must follow the steps described below to add an adaptive dialog to a bot using declarative.
+You must follow these steps to load and use a declarative dialog in a bot.
 
 1. Update all Bot Builder NuGet packages to version 4.9.x.
 1. Create the declarative files.
