@@ -47,7 +47,7 @@ You must follow these steps to load and use a declarative dialog in a bot.
 
 ## About the sample
 
-This sample, the Bot Framework Adaptive Dialog declarative Echo bot, demonstrates using a declaratively defined [adaptive dialog][concept-adaptive] that accepts input from the user and echoes it back.
+This sample, the Bot Framework Adaptive Dialog declarative Echo bot, demonstrates using a declaratively-defined [adaptive dialog][concept-adaptive] that accepts input from the user and echoes it back.
 
 ## Create the declarative files
 
