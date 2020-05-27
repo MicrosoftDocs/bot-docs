@@ -30,7 +30,7 @@ You must follow these steps to load and use a declarative dialog in a bot.
 1. Update all Bot Builder NuGet packages to version 4.9.x.
 1. Create the declarative files.
 1. Add the required packages and references to your bot project.
-1. Register the bot frameworks declarative components for adaptive dialogs.
+1. Register the Bot Framework's declarative components for adaptive dialogs.
 1. Use a dialog manager in the bot code to start or continue the root dialog each turn.
 1. Create a resource explorer in the bot code to load the declarative resources.
 
