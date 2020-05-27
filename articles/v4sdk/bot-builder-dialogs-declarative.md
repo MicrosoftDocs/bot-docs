@@ -53,6 +53,9 @@ This sample, the Bot Framework Adaptive Dialog declarative Echo bot, demonstrate
 
 Declarative dialog files are JSON files that declare the elements of a dialog. They typically have an extension of `.dialog`. The **EchoBot** sample only contains one adaptive dialog with a trigger to handle the `UnknownIntent` event, which when fires it sends a message to the user that echos what they said: _"You said '${turn.activity.text}'"_.
 
+> [!TIP]
+> Declarative files are JSON files and are language-agnostic meaning that they are the same regardless which language you use to create your bot.
+
 The declarative file ([C#][main.dialog] | [JavaScript][echo.dialog]) for the **EchoBot** sample:
 
 ```json
@@ -80,13 +83,13 @@ The declarative file ([C#][main.dialog] | [JavaScript][echo.dialog]) for the **E
 
 # [C#](#tab/csharp)
 
-Declarative only works with adaptive dialogs. To enable adaptive in your bot install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package. Once installed you can enable declarative by installing the **Microsoft.Bot.Builder.Dialogs.Declarative** NuGet package, then create the following references in your code in `Startup.cs`:
+Declarative only works with adaptive dialogs. To enable adaptive in your bot install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package, then create the following references in your code in `Startup.cs`:
 
-[!code-CSharp[Startup.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=4-10&highlight=10-12)]
+[!code-CSharp[Startup.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=4-10&highlight=7-9)]
 
 Also in `EchoBot.cs`:
 
-[!code-CSharp[EchoBot.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/echoBot.cs?range=4-10&highlight=9-10)]
+[!code-CSharp[EchoBot.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/echoBot.cs?range=4-10&highlight=6-7)]
 
 <!--
 ```CS
@@ -99,7 +102,7 @@ using Microsoft.Bot.Builder.Dialogs.Declarative.Resources;
 
 Declarative only works with adaptive dialogs. To use adaptive dialogs, your project needs to install the **botbuilder-dialogs-adaptive** npm package. Once installed you can enable declarative by installing the **botbuilder-dialogs-declarative** NuGet package, then create the following references in your code in `index.js`:
 
-<!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=4-10&highlight=7-8)]-->
+<!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=4-10&highlight=4-5)]-->
 
 ```JavaScript
 const { ResourceExplorer } = require('botbuilder-dialogs-declarative');
@@ -116,7 +119,7 @@ const { DialogManager } = require('botbuilder-dialogs');
 
 # [C#](#tab/csharp)
 
-[!code-CSharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=30-67&highlight=38-39,44-45,62-63)]
+[!code-CSharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=30-67&highlight=9-10,15-16,33-34)]
 
 <!--
 ```CS
@@ -146,7 +149,7 @@ Declarative dialogs are not typical code files. The resource explorer can interp
 
 First, create a private readonly parameter named `resourceExplorer` of type `ResourceExplorer` and in the `EchoBot` constructor set it to the `ResourceExplorer` object previously created in the `ConfigureServices` method in `Startup.cs`. You also need to create the `DialogManager` object that is required for all bots using adaptive dialogs.
 
-[!code-CSharp[EchoBot-Constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/EchoBot.cs?range=14-23&highlight=17,18,20,23)]
+[!code-CSharp[EchoBot-Constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/EchoBot.cs?range=14-23&highlight=4-5,7,10)]
 
 <!--
 ```Csharp
