@@ -140,7 +140,7 @@ resourceExplorer.addComponent(new AdaptiveDialogComponentRegistration(resourceEx
 
 ## Create the dialog declaratively
 
-Since declarative adaptive dialogs are created at run-time from `.dialog` files, you won't define them directly in your source code, but instead you will create them at run-time using `ResourceExplorer`.
+Declarative dialogs are not typical code files. The resource explorer can interpret the resource and generate an instance of the described dialog. Use a resource explorer to load them at run time.
 
 # [C#](#tab/csharp)
 
