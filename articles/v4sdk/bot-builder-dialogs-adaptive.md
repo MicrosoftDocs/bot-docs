@@ -92,11 +92,8 @@ The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defin
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-144&highlight=12-16,31-58)]
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-144&highlight=12-16,31-59)]
 
-<!--
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=77-141&highlight=12-16,31-58)]
--->
 
 # [JavaScript](#tab/javascript)
 
@@ -112,21 +109,9 @@ creates an instance of the `AdaptiveDialog` root dialog. At this time, the dialo
 
 The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file.
 
-```javascript
-constructor() {
-    super('userProfileDialog');
-    const lgFile = Templates.parseFile(path.join(__dirname, 'userProfileDialog.lg'));
-    const userProfileAdaptiveDialog = new AdaptiveDialog(ROOT_DIALOG).configure({
-        generator: new TemplateEngineLanguageGenerator(lgFile),
-        triggers: [
-            new OnBeginDialog(
-    ...............
+[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=30-31)]
 
-    });
-    this.addDialog(userProfileAdaptiveDialog);
-    this.initialDialogId = ROOT_DIALOG;
-}
-```
+[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=89-90)]
 
 <!--
 [!code-javascript[userProfileDialog constructor](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=11-17)]
@@ -162,27 +147,11 @@ The code creates the component dialog and services in `index.js`. In particular:
 
 Import the required bot services and the component dialog class `userProfileDialog`.
 
-```javascript
-// Import required bot services.
-// See https://aka.ms/bot-services to learn more about the different parts of a bot.
-const { BotFrameworkAdapter, ConversationState, MemoryStorage, UserState } = require('botbuilder');
-
-// Import our custom bot class that provides a turn handling function.
-const { DialogBot } = require('./bots/dialogBot');
-const { UserProfileDialog } = require('./dialogs/userProfileDialog');
-```
+[!code-javascript[index-import](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13)]
 
 Create conversation state with in-memory storage provider.
 
-```javascript
-
-// A bot requires a state storage system to persist the dialog and user state between messages.
-const memoryStorage = new MemoryStorage();
-
-// Create conversation state with in-memory storage provider.
-const conversationState = new ConversationState(memoryStorage);
-const userState = new UserState(memoryStorage);
-```
+[!code-javascript[index-storage](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54)]
 
 Create the main dialog and the bot.
 
@@ -192,17 +161,12 @@ const dialog = new UserProfileDialog();
 const bot = new DialogBot(conversationState, userState, dialog);
 ```
 
+[!code-javascript[index-main-dialog](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=56-58)]
+
 Listen for incoming requests and route the message to the bot's main handler.
 
-```javascript
+[!code-javascript[index-run](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-74)]
 
-// Listen for incoming requests.
-server.post('/api/messages', (req, res) => {
-    adapter.processActivity(req, res, async (context) => {
-        // Route the message to the bot's main handler.
-        await bot.run(context);
-    });
-```
 
 <!--
 [!code-javascript[index-import](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13)]
@@ -244,32 +208,7 @@ The implementation shown can run any type of `Dialog`. The `ConversationState` i
 The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with activities.
 The state information contained by the`conversationState` and the `userState` are stored for the `dialogManager` to use.
 
-```javascript
-class DialogBot extends ActivityHandler {
-    /**
-     *
-     * @param {Dialog} dialog
-     */
-    constructor(conversationState, userState, dialog) {
-        super();
-        if (!conversationState) throw new Error('[DialogBot]: Missing parameter. conversationState is required');
-        if (!userState) throw new Error('[DialogBot]: Missing parameter. userState is required');
-        if (!dialog) throw new Error('[DialogBot]: Missing parameter. dialog is required');
-
-        this.dialogManager = new DialogManager(dialog);
-        this.dialogManager.conversationState = conversationState;
-        this.dialogManager.userState = userState;
-
-        this.onTurn(async (context, next) => {
-            console.log('Running dialog with activity.');
-
-            await this.dialogManager.onTurn(context);
-
-            await next();
-        });
-    }
-}
-```
+[!code-javascript[index-run](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=13-14,19-2)]
 
 <!--
 [!code-javascript[DialogBot](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=13-14,19-21)]
@@ -292,7 +231,7 @@ class DialogBot extends ActivityHandler {
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a bot using adaptive, component, waterfall, and custom dialogs](bot-builder-mixed-dialogs.md)
+> [Create a bot using combined dialog types](bot-builder-mixed-dialogs.md)
 
 <!-- Footnote-style links -->
 
