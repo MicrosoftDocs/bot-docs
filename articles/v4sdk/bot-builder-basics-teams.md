@@ -176,4 +176,5 @@ The invoke activities listed above are for conversational bots in Teams. The Bot
 ---
 
 ## Next steps
+
 For building Teams bots, refer to Microsoft Teams Developer [documentation](https://aka.ms/teams-docs).
