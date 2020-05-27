@@ -81,33 +81,7 @@ client should wait till it receives the `TokenExchangeInvokeResponse`.
 
 1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the client does not show the OAuth card. See the *normal flow* diagram. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the client shows the OAuth card to the user. See the *fallback flow* diagram. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
 
-<!--
-This section belongs to a how to (sample) article (TBD).
+## Next steps
 
-## Create Azure AD applications
-
-Currently SSO in botframework is only supported for aadV2 apps.
-We need to create 2 applications - one for the client and one for the Bot.
-Depending on the scenario, the client may be webchat or a virtual assistant.
-The general case for a Bot would be a skill Bot.
-
-## Client Azure AD app
-
-The client AAD application will be used to create an exchangeable token that will be passed onto the bot.
-For an example of how to create an AAD app, look at the [bot builder authentication docs](https://docs.microsoft.com/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
-
-## Service Azure AD app
-
-1) Follow the steps on [Create your Azure AD application](https://docs.microsoft.com/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#create-your-azure-ad-application).
-2) In the **Expose an api** panel, click **Add a scope**. Fill in the fields
-    - Click the **Add scope button**.
-    - Click the **Add a client application** button, and enter the app Id for the client AAD app. Select the Scope that you created in the previous step. This ensures that the user will not be asked to consent when the client tries to get an exchangeable token for this app's scope
-3) In the **Manifest** panel, set the `accessTokenAcceptedVersion` key to be `2`.
-
-## Service Auth Connection
-
-Remove these links and add back to how to page after sample is posted to botbuilder-samples experimental folder
-
-1) Follow the directions in the [bot builder authentication doc](https://docs.microsoft.com/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp#azure-ad-v2)
-2) In the **Expose an api** panel, copy the scope that you added earlier. Fill it in the **Token Exchange Uri** field.
-3) Save the connection setting. -->
+> [!div class="nextstepaction"]
+> [Add single sign on to a bot](bot-builder-authentication-sso.md)
