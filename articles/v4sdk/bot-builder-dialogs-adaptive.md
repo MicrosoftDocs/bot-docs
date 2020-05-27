@@ -66,52 +66,12 @@ The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog
 The code begins by instantiating the `RootDialog` class which in turns creates an instance of the `AdaptiveDialog`. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog.
 The created dialog is then added to the `DialogSet` and the name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
-```csharp
-public RootDialog()
-    : base(nameof(RootDialog))
-{
-    string[] paths = { ".", "Dialogs", "RootDialog.LG" };
-    string fullPath = Path.Combine(paths);
-    // Create instance of adaptive dialog.
-    var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
-    {
-        // These steps are executed when this Adaptive Dialog begins
-        Triggers = new List<OnCondition>()
-        {
-            // Add a rule to welcome user
-            new OnConversationUpdateActivity()
-            {
-                Actions = WelcomeUserSteps()
-            },
-
-            // Respond to user on message activity
-            new OnUnknownIntent()
-            {
-                Actions = OnBeginDialogSteps()
-            }
-        },
-        Generator = new TemplateEngineLanguageGenerator(Templates.ParseFile(fullPath))
-    };
-
-    // Add named dialogs to the DialogSet. These names are saved in the dialog state.
-    AddDialog(rootDialog);
-
-    // The initial child Dialog to run.
-    InitialDialogId = nameof(AdaptiveDialog);
-}
-```
-
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21-52&highlight=6-25)]
 
 The root dialog is a component dialog:
 
-```csharp
-public class RootDialog : ComponentDialog
-```
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21&highlight=1)]
 
-<!--
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=16&highlight=1)]
--->
 
 Notice also:
 
@@ -125,37 +85,9 @@ In `WelcomeUserSteps` method provides the actions to perform when the trigger fi
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
 > The code filters cases where the bot itself is the recipient of the message. For more information, see [Categorized activities by channel](https://docs.microsoft.com/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0#welcome).
 
-```csharp
-private static List<Dialog> WelcomeUserSteps()
-{
-    return new List<Dialog>()
-    {
-        // Iterate through membersAdded list and greet user added to the conversation.
-        new Foreach()
-        {
-            ItemsProperty = "turn.activity.membersAdded",
-            Actions = new List<Dialog>()
-            {
-                // Note: Some channels send two conversation update events - one for the Bot added to the conversation and another for user.
-                // Filter cases where the bot itself is the recipient of the message.
-                new IfCondition()
-                {
-                    Condition = "$foreach.value.name != turn.activity.recipient.name",
-                    Actions = new List<Dialog>()
-                    {
-                        new SendActivity("Hello, I'm the multi-turn prompt bot. Please send a message to get started!")
-                    }
-                }
-            }
-        }
-    };
 
-}
-```
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=54-76&highlight=13-20)]
 
-<!--
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=51-75&highlight=13-20)]
--->
 
 The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The code below shows how the `Name` prompt is created.
 
