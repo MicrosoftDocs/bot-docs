@@ -85,7 +85,6 @@ In `WelcomeUserSteps` method provides the actions to perform when the trigger fi
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
 > The code filters cases where the bot itself is the recipient of the message. For more information, see [Categorized activities by channel](https://docs.microsoft.com/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0#welcome).
 
-
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=54-76&highlight=13-20)]
 
 
@@ -93,74 +92,7 @@ The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defin
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
-```csharp
-private static List<Dialog> OnBeginDialogSteps()
-{
-    return new List<Dialog>()
-    {
-        // Ask for user's age and set it in user.userProfile scope.
-        new TextInput()
-        {
-            Prompt = new ActivityTemplate("${ModeOfTransportPrompt()}"),
-            // Set the output of the text input to this property in memory.
-            Property = "user.userProfile.Transport"
-        },
-        new TextInput()
-        {
-            Prompt = new ActivityTemplate("${AskForName()}"),
-            Property = "user.userProfile.Name"
-        },
-        // SendActivity supports full language generation resolution.
-        // See here to learn more about language generation
-        // https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/language-generation
-        new SendActivity("${AckName()}"),
-        new ConfirmInput()
-        {
-            Prompt = new ActivityTemplate("${AgeConfirmPrompt()}"),
-            Property = "turn.ageConfirmation"
-        },
-        new IfCondition()
-        {
-            // All conditions are expressed using the common expression language.
-            // See https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language to learn more
-            Condition = "turn.ageConfirmation == true",
-            Actions = new List<Dialog>()
-            {
-                 new NumberInput()
-                 {
-                     Prompt = new ActivityTemplate("${AskForAge()}"),
-                     Property = "user.userProfile.Age",
-                     // Add validations
-                     Validations = new List<BoolExpression>()
-                     {
-                         // Age must be greater than or equal 1
-                         "int(this.value) >= 1",
-                         // Age must be less than 150
-                         "int(this.value) < 150"
-                     },
-                     InvalidPrompt = new ActivityTemplate("${AskForAge.invalid()}"),
-                     UnrecognizedPrompt = new ActivityTemplate("${AskForAge.unRecognized()}")
-                 },
-                 new SendActivity("${UserAgeReadBack()}")
-            },
-            ElseActions = new List<Dialog>()
-            {
-                new SendActivity("${NoName()}")
-            }
-        },
-        new ConfirmInput()
-        {
-            Prompt = new ActivityTemplate("${ConfirmPrompt()}"),
-            Property = "turn.finalConfirmation"
-        },
-        // Use LG template to come back with the final read out.
-        // This LG template is a great example of what logic can be wrapped up in LG sub-system.
-        new SendActivity("${FinalUserProfileReadOut()}"), // examines turn.finalConfirmation
-        new EndDialog()
-    };
-}
-
-```
+[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-145&&highlight=12-16,31-58)]
 
 <!--
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=77-141&highlight=12-16,31-58)]
