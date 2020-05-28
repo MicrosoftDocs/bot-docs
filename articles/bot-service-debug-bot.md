@@ -147,6 +147,8 @@ In Visual Studio Code, you can set breakpoints and run the bot in debug mode to 
 
    ![Debug in VS Code](~/media/bot-service-debug-bot/breakpoint-caught.png)
 
+::: moniker range="azure-bot-service-4.0"
+
 ## [Python](#tab/python)
 
 ### Debug a Python bot using breakpoints in Visual Studio Code
@@ -167,6 +169,8 @@ In Visual Studio Code, you can set breakpoints and run the bot in debug mode to 
    ![Debug in VS Code](~/media/bot-service-debug-bot/bot-debug-python-breakpoint-caught.png)
 
 For more information, see [Debug your Python code](https://aka.ms/bot-debug-python).
+
+::: moniker-end
 
 ---
 
