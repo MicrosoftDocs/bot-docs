@@ -113,12 +113,6 @@ The `OnBeginDialog` implements the **steps** that the dialog uses. It defines th
 
 [!code-javascript[userProfileDialog constructor](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=89-90)]
 
-<!--
-[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=11-17)]
-
-[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=92-97)]
--->
-
 ---
 
 ## Register the adaptive dialog
@@ -155,34 +149,11 @@ Create conversation state with in-memory storage provider.
 
 Create the main dialog and the bot.
 
-```javascript
-
-const dialog = new UserProfileDialog();
-const bot = new DialogBot(conversationState, userState, dialog);
-```
-
 [!code-javascript[index-main-dialog](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=56-58)]
 
 Listen for incoming requests and route the message to the bot's main handler.
 
 [!code-javascript[index-run](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-74)]
-
-
-<!--
-[!code-javascript[index-import](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13)]
-
-Create conversation state with in-memory storage provider.
-
-[!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54)]
-
-Create the main dialog and the bot.
-
-[!code-javascript[index-storage](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=57-58)]
-
-Listen for incoming requests and route the message to the bot's main handler.
-
-[!code-javascript[index-run](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-73)]
--->
 
 ---
 
@@ -197,11 +168,8 @@ The implementation shown can run any type of `Dialog`. The `ConversationState` i
 
 [!code-csharp[Dialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-40&highlight=20]
 
-<!--
-[!code-csharp[ConfigureServices](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/csharp_dotnetcore/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-41&highlight=21)]
--->
-
 # [JavaScript](#tab/javascript)
+
 
 **bots/dialogBot.js**
 
@@ -209,10 +177,6 @@ The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with 
 The state information contained by the`conversationState` and the `userState` are stored for the `dialogManager` to use.
 
 [!code-javascript[index-run](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=13-14,19-2)]
-
-<!--
-[!code-javascript[DialogBot](~/../botbuilder-samples-adaptive/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=13-14,19-21)]
--->
 
 ---
 
