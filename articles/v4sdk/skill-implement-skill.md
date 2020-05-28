@@ -191,7 +191,7 @@ Define a claims validation method that throws an error to reject an incoming req
 
 **echo-skill-bot/authentication/allowed_callers_claims_validator.py**
 
-[!code-python[Claims validator](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowed_callers_claims_validator.py?range=10-44)]
+[!code-python[Claims validator](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowed_callers_claims_validator.py?range=8-44&highlight=28-33)]
 
 ---
 
@@ -209,13 +209,13 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=34-82)]
+[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=40-82)]
 
 ### [Python](#tab/python)
 
 **echo-skill-bot/adapter_with_error_handler.py**
 
-[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=16-77)]
+[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=23-77&highlight=42-48)]
 
 ---
 
@@ -223,7 +223,7 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 The _Bot Framework adapter_ uses an _authentication configuration_ object (set when the adapter is created) to validate the authentication header on incoming requests.
 
-This samples adds claims validation to the authentication configuration and uses the _skill adapter with error handler_ described in the previous section.
+This sample adds claims validation to the authentication configuration and uses the _skill adapter with error handler_ described in the previous section.
 
 ### [C#](#tab/cs)
 
@@ -235,14 +235,14 @@ This samples adds claims validation to the authentication configuration and uses
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=34-38)]
+[!code-javascript[configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=32-38)]
 
 <!--C# & JS snippets checked 1/14-->
 ### [Python](#tab/python)
 
-**app.py**
+**echo-skill-bot/app.py**
 
-[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=23-30)]
+[!code-python[configuration](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/app.py?range=19-30)]
 
 ---
 
