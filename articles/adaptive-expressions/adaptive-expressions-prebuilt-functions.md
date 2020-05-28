@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/16/2020
+ms.date: 05/19/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -57,7 +57,6 @@ You can also view the list in [alphabetical order](#add).
 |Function	|Explanation|
 |-----------|-----------|
 |[contains](#contains)	|Works to find an item in a string, to find an item in an array, or to find a parameter in a complex object. <br> **Examples**: <br> contains('hello world', 'hello')<br> contains(createArray('1','2'), '1')<br> contains(json("{'foo':'bar'}"), 'foo')|
-|[empty](#empty)|Check if the collection is empty.|
 |[first](#first)|Return the first item from the collection.|
 |[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter. join(collection, delimiter). <br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
 |[last](#last) |Return the last item from the collection.|
@@ -82,6 +81,7 @@ You can also view the list in [alphabetical order](#add).
 |-----------|-----------|
 |[and](#and)|Logical and. Return true if all specified expressions evaluate to true.|
 |[equals](#equals)|Comparison equal. Return true if specified values are equal.|
+|[empty](#empty)|Check if the target is empty.|
 |[greater](#greater)|Comparison greater than. Return `true` if the first value is more, or return `false` if less.|
 |[greaterOrEquals](#greaterOrEquals)|Comparison greater than or equal to. Return `true` if the first value is greater or equal, or return `false` if the first value is less.|
 |[if](#if)|Check whether an expression is true or false. Based on the result, return a specified value.|
@@ -116,7 +116,7 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
-|[add](#add)|Mathematical and. Return the result from adding two numbers.|
+|[add](#add)|Mathematical and. Return the result from adding two numbers (pure number case) or concatting two or more strings.|
 |[div](#div)|Mathematical division.	Return the integer result from dividing two numbers.|
 |[max](#max)|Return the largest value from a collection.|
 |[min](#min)|Return the smallest value from a collection.|
@@ -141,6 +141,8 @@ You can also view the list in [alphabetical order](#add).
 |[dayOfWeek](#dayOfWeek)|Return the day of the week for a given timestamp.|
 |[dayOfYear](#dayOfYear)|Return the day of the year for a given timestamp.|
 |[formatDateTime](#formatDateTime)|Return a timestamp in the specified format.|
+|[formatEpoch](#formatEpoch)|Return a timestamp from UNIX Epoch time (Unix time, POSIX time).|
+|[formatTicks](#formatTicks)|Return a timestamp from ticks.|
 |[subtractFromTime](#subtractFromTime)|Subtract a number of time units from a timestamp.|
 |[utcNow](#utcNow)|Return the current timestamp as string.|
 |[dateReadBack](#dateReadBack)|Use the date-time library to provide a date readback.|
@@ -212,22 +214,24 @@ You can also view the list in [alphabetical order](#add).
 |[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format	timestamp.|
 |[isString](#isString)|Return true if the given input is a string.|
 
+<a name="add"></a>
+
 ### add
 
-Return the result from adding two numbers.
+Return the result from adding two or more numbers (pure number case) or concatting two or more strings (other case).
 
 ```
-add(<summand**1>, <summand**2>)
+add(<item1>, <item2>, ...)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*summand**1*>, <*summand**2*> | Yes | integer, float, or mixed | The numbers to add |
+| <*item1*>, <*item2*>,... | Yes | any | items |
 |||||
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*result-sum*> | integer or float | The result from adding the specified numbers |
+| <*result-sum*> | number or string | The result from adding the specified numbers or the concat result.|
 ||||
 
 *Example*
@@ -239,6 +243,17 @@ add(1, 1.5)
 ```
 
 And returns the result **2.5**.
+
+This example concats the specified items:
+
+```
+add('hello',null)
+add('hello','world')
+```
+
+And returns the results
+- **hello**
+- **helloworld**
 
 <a name="addDays"></a>
 
@@ -1311,36 +1326,46 @@ Returns the result **5.5**.
 
 ### empty
 
-Check whether a collection is empty. Return `true` if the collection is empty, or return `false` if not empty.
+Check whether an instance is empty. Return `true` if the input is empty.
+Empty means:
+
+- input is null or undefined
+- input is a null or empty string
+- input is zero size collection
+- input is an object with no property.
 
 ```
-empty('<collection>')
-empty([<collection>])
+empty('<instance>')
+empty([<instance>])
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*collection*> | Yes | any | The collection to check |
+| <*instance*> | Yes | any | The instance to check |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| true or false | Boolean | Return `true` when the collection is empty. Return `false`when not empty. |
+| true or false | Boolean | Return `true` when the instance is empty.|
 ||||
 
 *Example*
 
-These examples check whether the specified collections are empty:
+These examples check whether the specified instance is empty:
 
 ```
 empty('')
 empty('abc')
+empty([1])
+empty(null)
 ```
 
 And return these results respectively:
 
 * Passes an empty string, so the function returns `true`.
 * Passes the string **abc**, so the function returns `false`.
+* Passes the collection with one item, so the function returns `false`.
+* Passes the null object, so the function returns `true`.
 
 <a name="endsWith"></a>
 
@@ -1639,7 +1664,7 @@ formatDateTime('<timestamp>', '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timestamp*> | Yes | string or number | The string that contains the timestamp |
+| <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
 |||||
 
@@ -1654,13 +1679,74 @@ These examples convert a timestamp or a Unix timestamp to the specified format:
 
 ```
 formatDateTime('03/15/2018 12:00:00', 'yyyy-MM-ddTHH:mm:ss')
-formatDateTime(1521118800,, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 ```
 
 And returns the following results:
 
 - **2018-03-15T12:00:00**
-- **2018-03-15T12:00:00.000Z**
+
+<a name="formatEpoch"></a>
+
+### formatEpoch
+
+Return a timestamp in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
+
+```
+formatEpoch('<epoch>', '<format>'?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*epoch*> | Yes | number | The epoch number |
+| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*reformatted-timestamp*> | string | The updated timestamp in the specified format |
+||||
+
+*Examples*
+
+This example convert a Unix timestamp to the specified format:
+
+```
+formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
+```
+
+And returns the result **2018-03-15T12:00:00.000Z**.
+
+
+<a name="formatTicks"></a>
+
+### formatTicks
+
+Return a timestamp in the specified format from ticks.
+
+```
+formatTicks('<ticks>', '<format>'?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*epoch*> | Yes | number (or bigint in Javascript)| The ticks number |
+| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*reformatted-timestamp*> | string | The updated timestamp in the specified format |
+||||
+
+*Examples*
+
+This example converts ticks to the specified format:
+
+```
+formatTicks(637243624200000000, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
+```
+
+And returns the result **2020-05-06T11:47:00.000Z**.
 
 <a name="getFutureTime"></a>
 
@@ -4181,7 +4267,7 @@ ticks('<timestamp>')
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*ticks-number*> | integer | The number of ticks since the specified timestamp |
+| <*ticks-number*> | integer (bigint in Javascript)| The number of ticks since the specified timestamp |
 ||||
 
 *Example*
@@ -4810,4 +4896,3 @@ year('2018-03-15T00:00:00.000Z')
 ```
 
 And it returns the result **2018**.
-
