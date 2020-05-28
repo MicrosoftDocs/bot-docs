@@ -37,6 +37,7 @@ Welcome to the May 2020 release of the Bot Framework SDK. There are a number of 
 * [Authentication Improvements](#authentication-improvements) - SSO between Bots and Skills and improvements to X.509 auth.
 * [Generated Dialogs](#generated-dialogs---early-preview) (Early Preview) - Automatically create robust Bot Framework Composer assets from JSON or JSON Schema that leverage Adaptive Dialogs.   
 * [VS Code debugger for Adaptive Dialogs](#vs-code-debugger---early-preview) (Early Preview) - Create & validate .lu and .lg documents as well as debug declaratively defined adaptive dialogs.
+* [Bot Framework Composer](#bot-framework-composer)
 
 **Insiders**: Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/master/UsingMyGet.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/master/UsingMyGet.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/master/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
 
@@ -62,7 +63,7 @@ Bots now capture Page View events, native to Application Insights, whenever a di
 ## Adaptive Dialogs 
 We’re also excited to make [Adaptive Dialogs](v4sdk/bot-builder-adaptive-dialog-introduction.md) generally available in C# and as a preview release in JavaScript! 
 
-Adaptive Dialogs, which underpin the dialog design and management authoring features found in Bot Framework Composer, enable developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with more sophisticated conversation requirements, such as context switches and interruptions.  Bot Framework Skills can now also leverage Adaptive Dialogs. 
+Adaptive Dialogs, which underpin the dialog design and management authoring features found in Bot Framework Composer, enable developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with more sophisticated conversation requirements, such as context switches and interruptions.  Bot Framework Skills can now also leverage Adaptive Dialogs.
 
 Adaptive Dialogs also now support Telemetry. Data from Adaptive Dialogs, including  triggers, actions and recognizers now flow into your Azure Application Insights instance.
 
@@ -98,7 +99,7 @@ Full access to the current bot's memory so you can data bind language to the sta
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the Language Generation system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https:/docs.microsoft.com/composer), Language Generation, Adaptive dialogs, and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https:/docs.microsoft.com/composer/), Language Generation, Adaptive dialogs, and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
 
 An adaptive expression can contain one or more explicit values, pre-built functions or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
@@ -140,6 +141,14 @@ During this release, the Bot Builder Community has further raised the bar by add
 2. A new C# [Zoom Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.Zoom). Currently supports Zoom 1:1 and channel chat capabilities, being converted to native BF activity types. Also supports the subscribing to any event a Zoom as supports (translated into Event activities), with full support for Zoom interactive messages and rich message templates.
 
 3. A [RingCentral Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.RingCentral). The [RingCentral](https://www.ringcentral.com/) Engage adapter allows you to add an additional endpoint to your bot for [RingCentral Engage Digital Platform](https://www.ringcentral.com/digital-customer-engagement.html) integration. The RingCentral endpoint can be used in conjunction with other channels meaning, for example, you can have a bot exposed on out of the box channels such as Facebook and Teams, but also integrated as an [RingCentral Engage Digital Source SDK](https://support.ringcentral.com/s/article/RingCentral-Engage-Digital-Introduction?language=en_US) into RingCentral.
+
+## Bot Framework Composer
+[Bot Framework Composer](https://docs.microsoft.com/en-us/composer/) is an integrated development tool that developers and multi-disciplinary teams can use to build bots. It is built using the latest features of the Bot Framework SDK. Within Composer, you'll find everything you need to build a sophisticated conversational experience:
+
+* A visual dialog editor.
+* Tools to train and manage Language Understanding (LU).
+* Powerful language generation and templating systems.
+* A ready-to-use bot runtime executable.
 
 
 [1]:https://github.com/Microsoft/botbuilder-dotnet/#packages
