@@ -107,7 +107,7 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
     ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-app-info.png)
 1. Select the **Azure Resources** tab on the left side. Record the value shown for:_Region_ as <YOUR_REGION> and _Primary key_ as <YOUR_AUTHORING_KEY>.
     ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
-    
+
 
 ### Update the settings file
 
@@ -175,7 +175,7 @@ To connect to the LUIS service, the bot uses the information you added above fro
 
 **flight_booking_recognizer.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-34)]
+[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-36&highlight=26)]
 
 The logic to extract *From*, *To* and *travel_date* is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
 
