@@ -1,0 +1,279 @@
+<Type Name="EntityAssignment" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment">
+  <TypeSignature Language="C#" Value="public class EntityAssignment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityAssignment extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityAssignment" />
+  <TypeSignature Language="F#" Value="type EntityAssignment = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Possible assignment of an entity to a property.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityAssignment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAlternatives">
+      <MemberSignature Language="C#" Value="public void AddAlternatives (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt; alternatives);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAlternatives(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt; alternatives) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.AddAlternatives(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAlternatives (alternatives As IEnumerable(Of EntityAssignment))" />
+      <MemberSignature Language="F#" Value="member this.AddAlternatives : seq&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt; -&gt; unit" Usage="entityAssignment.AddAlternatives alternatives" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="alternatives" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="alternatives">Alternatives to add.</param>
+        <summary>
+            Add alternatives to a single assignment.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alternative">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment Alternative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment Alternative" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Alternative" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alternative As EntityAssignment" />
+      <MemberSignature Language="F#" Value="member this.Alternative : Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Alternative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("alternative")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an alternative assignment.
+            </summary>
+        <value>Alternative assignment.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alternatives">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt; Alternatives { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt; Alternatives" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Alternatives" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Alternatives As IEnumerable(Of EntityAssignment)" />
+      <MemberSignature Language="F#" Value="member this.Alternatives : seq&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Alternatives" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment/&lt;get_Alternatives&gt;d__25))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the alternative entity assignments.
+            </summary>
+        <value>
+            The alternative entity assignments.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entity">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo Entity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo Entity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Entity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entity As EntityInfo" />
+      <MemberSignature Language="F#" Value="member this.Entity : Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Entity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("entity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets entity being assigned.
+            </summary>
+        <value>Entity being assigned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public string Event { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Event" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Property Event As String" />
+      <MemberSignature Language="F#" Value="member this.Event : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Event" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("event")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets event name.
+            </summary>
+        <value>Event name to surface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpected">
+      <MemberSignature Language="C#" Value="public bool IsExpected { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExpected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.IsExpected" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsExpected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExpected : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.IsExpected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("isExpected")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether this entity was in <see cref="F:Microsoft.Bot.Builder.Dialogs.DialogPath.ExpectedProperties" />.
+            </summary>
+        <value>True if entity is expected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operation">
+      <MemberSignature Language="C#" Value="public string Operation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Operation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Operation As String" />
+      <MemberSignature Language="F#" Value="member this.Operation : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Operation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("operation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets operation to assign entity to property.
+            </summary>
+        <value>Operation to assign entity to property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public string Property { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Property" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Property" />
+      <MemberSignature Language="VB.NET" Value="Public Property Property As String" />
+      <MemberSignature Language="F#" Value="member this.Property : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.Property" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("property")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets name of property being assigned.
+            </summary>
+        <value>Property being assigned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityAssignment.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

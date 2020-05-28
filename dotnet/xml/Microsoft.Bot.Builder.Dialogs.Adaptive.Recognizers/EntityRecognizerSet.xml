@@ -1,0 +1,179 @@
+<Type Name="EntityRecognizerSet" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet">
+  <TypeSignature Language="C#" Value="public class EntityRecognizerSet : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityRecognizerSet extends System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityRecognizerSet&#xA;Inherits List(Of EntityRecognizer)" />
+  <TypeSignature Language="F#" Value="type EntityRecognizerSet = class&#xA;    inherit List&lt;EntityRecognizer&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            EntityRecognizerSet - Implements a workflow against a pool of IEntityRecognizer instances, iterating until nobody has anything new to add.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRecognizerSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRecognizerSet (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt; recognizers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt; recognizers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (recognizers As IEnumerable(Of EntityRecognizer))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet : seq&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet recognizers" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="recognizers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="recognizers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeEntitiesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, Optional entities As IEnumerable(Of Entity) = null) As Task(Of IList(Of Entity))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizerSet.RecognizeEntitiesAsync (dialogContext, entities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context for the current turn of conversation.</param>
+        <param name="entities">if no entities are passed in, it will generate a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntity" /> for turnContext.Activity.Text and then generate entities off of that.</param>
+        <summary>
+            Implement RecognizeEntities by iterating against the Recognizer pool.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Bot.Schema.Entity" /> list.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeEntitiesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, activity As Activity, Optional entities As IEnumerable(Of Entity) = null) As Task(Of IList(Of Entity))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizerSet.RecognizeEntitiesAsync (dialogContext, activity, entities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context for the current turn of conversation.</param>
+        <param name="activity">activity to recognize against.</param>
+        <param name="entities">if no entities are passed in, it will generate a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntity" /> for turnContext.Activity.Text and then generate entities off of that.</param>
+        <summary>
+            Implement RecognizeEntities by iterating against the Recognizer pool.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Bot.Schema.Entity" /> list.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeEntitiesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, text As String, locale As String, Optional entities As IEnumerable(Of Entity) = null) As Task(Of IList(Of Entity))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizerSet.RecognizeEntitiesAsync (dialogContext, text, locale, entities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context for the current turn of conversation.</param>
+        <param name="text">text to recognize.</param>
+        <param name="locale">locale to use.</param>
+        <param name="entities">if no entities are passed in, it will generate a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntity" /> for turnContext.Activity.Text and then generate entities off of that.</param>
+        <summary>
+            Implement RecognizeEntities by iterating against the Recognizer pool.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Bot.Schema.Entity" /> list.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

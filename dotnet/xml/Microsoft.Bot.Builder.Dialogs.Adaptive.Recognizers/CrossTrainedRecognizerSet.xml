@@ -1,0 +1,223 @@
+<Type Name="CrossTrainedRecognizerSet" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet">
+  <TypeSignature Language="C#" Value="public class CrossTrainedRecognizerSet : Microsoft.Bot.Builder.Dialogs.Recognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CrossTrainedRecognizerSet extends Microsoft.Bot.Builder.Dialogs.Recognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class CrossTrainedRecognizerSet&#xA;Inherits Recognizer" />
+  <TypeSignature Language="F#" Value="type CrossTrainedRecognizerSet = class&#xA;    inherit Recognizer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Recognizer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            CrossTrainedRecognizerSet - Recognizer for selecting between cross trained recognizers.
+            </summary>
+    <remarks>
+            Recognizer implementation which calls multiple recognizers that are cross trained with intents
+            that model deferring to another recognizer. Each recognizer should have intents 
+            with special intent name pattern $"DefersToRecognizer_{Id}" to represent a cross-trained 
+            intent for another recognizer.
+            
+            If there is consensus among the cross trained recognizers, the recognizerResult structure from
+            the consensus recognizer is returned.
+            
+            In the case that there is conflicting or ambigious signals from the recognizers then an 
+            intent of "ChooseIntent" will be returned with the results of all of the recognizers.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CrossTrainedRecognizerSet (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet (callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChooseIntent">
+      <MemberSignature Language="C#" Value="public const string ChooseIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChooseIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.ChooseIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChooseIntent As String " />
+      <MemberSignature Language="F#" Value="val mutable ChooseIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.ChooseIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Intent name that will be produced by this recognizer if the child recognizers do not have consensus for intents.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeferPrefix">
+      <MemberSignature Language="C#" Value="public const string DeferPrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeferPrefix" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.DeferPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Const DeferPrefix As String " />
+      <MemberSignature Language="F#" Value="val mutable DeferPrefix : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.DeferPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Standard cross trained intent name prefix.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoneIntent">
+      <MemberSignature Language="C#" Value="public const string NoneIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NoneIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.NoneIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Const NoneIntent As String " />
+      <MemberSignature Language="F#" Value="val mutable NoneIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.NoneIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Standard none intent that means none of the recognizers recognize the intent.
+            </summary>
+        <remarks>
+            If each recognizer returns no intents or None intents, then this recognizer will return None intent.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = null, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="crossTrainedRecognizerSet.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="telemetryProperties">To be added.</param>
+        <param name="telemetryMetrics">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recognizers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Recognizer&gt; Recognizers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Recognizer&gt; Recognizers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.Recognizers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recognizers As List(Of Recognizer)" />
+      <MemberSignature Language="F#" Value="member this.Recognizers : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Recognizer&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.Recognizers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("recognizers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Recognizer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the input recognizers.
+            </summary>
+        <value>
+            The input recognizers.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

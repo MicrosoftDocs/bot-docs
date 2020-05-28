@@ -1,0 +1,365 @@
+<Type Name="ChoiceInput" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput">
+  <TypeSignature Language="C#" Value="public class ChoiceInput : Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChoiceInput extends Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChoiceInput&#xA;Inherits InputDialog" />
+  <TypeSignature Language="F#" Value="type ChoiceInput = class&#xA;    inherit InputDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ChoiceInput - Declarative input to gather choices from user.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChoiceInput (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput (callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChoiceOptions">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt; ChoiceOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.ObjectExpression`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt; ChoiceOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.ChoiceOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChoiceOptions As ObjectExpression(Of ChoiceFactoryOptions)" />
+      <MemberSignature Language="F#" Value="member this.ChoiceOptions : AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.ChoiceOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("choiceOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets choiceOptions controls display options for customizing language.
+            </summary>
+        <value>
+            ChoiceOptions or expression which evluates to ChoiceOptions.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choices">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceSet&gt; Choices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.ObjectExpression`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceSet&gt; Choices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.Choices" />
+      <MemberSignature Language="VB.NET" Value="Public Property Choices As ObjectExpression(Of ChoiceSet)" />
+      <MemberSignature Language="F#" Value="member this.Choices : AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceSet&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.Choices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("choices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceSet&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets list of choices to present to user.
+            </summary>
+        <value>
+            ChoiceSet or expression which evalutes to a ChoiceSet.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultLocale">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression DefaultLocale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression DefaultLocale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.DefaultLocale" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultLocale As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.DefaultLocale : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.DefaultLocale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("defaultLocale")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the DefaultLocale to use to parse confirmation choices if there is not one passed by the caller.
+            </summary>
+        <value>
+            string or expression which evaluates to a string with locale.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitializeOptions">
+      <MemberSignature Language="C#" Value="protected override object OnInitializeOptions (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object OnInitializeOptions(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.OnInitializeOptions(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnInitializeOptions (dc As DialogContext, options As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.OnInitializeOptions : Microsoft.Bot.Builder.Dialogs.DialogContext * obj -&gt; obj" Usage="choiceInput.OnInitializeOptions (dc, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecognizeInputAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt; OnRecognizeInputAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt; OnRecognizeInputAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.OnRecognizeInputAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRecognizeInputAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of InputState)" />
+      <MemberSignature Language="F#" Value="override this.OnRecognizeInputAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;" Usage="choiceInput.OnRecognizeInputAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRenderPromptAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt; OnRenderPromptAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState state, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.IActivity&gt; OnRenderPromptAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState state, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.OnRenderPromptAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRenderPromptAsync (dc As DialogContext, state As InputState, Optional cancellationToken As CancellationToken = null) As Task(Of IActivity)" />
+      <MemberSignature Language="F#" Value="override this.OnRenderPromptAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt;" Usage="choiceInput.OnRenderPromptAsync (dc, state, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="state" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputFormat">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.EnumExpression&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat&gt; OutputFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.EnumExpression`1&lt;valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat&gt; OutputFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.OutputFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputFormat As EnumExpression(Of ChoiceOutputFormat)" />
+      <MemberSignature Language="F#" Value="member this.OutputFormat : AdaptiveExpressions.Properties.EnumExpression&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.OutputFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("outputFormat")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.EnumExpression&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the format of the response (value or the index of the choice).
+            </summary>
+        <value>
+            ChoiceOutputFormat or Expression which evaluates to ChoiceOutputFormat enumerated value.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizerOptions">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions&gt; RecognizerOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.ObjectExpression`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions&gt; RecognizerOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.RecognizerOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecognizerOptions As ObjectExpression(Of FindChoicesOptions)" />
+      <MemberSignature Language="F#" Value="member this.RecognizerOptions : AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.RecognizerOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("recognizerOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.FindChoicesOptions&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets how to recognize choices in the response.
+            </summary>
+        <value>
+            FindChoicesOptions or expression which evaluates to FindChoicesOptions.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ResumeDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ResumeDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResumeDialogAsync (dc As DialogContext, reason As DialogReason, Optional result As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="F#" Value="override this.ResumeDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.DialogReason * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="choiceInput.ResumeDialogAsync (dc, reason, result, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="reason" Type="Microsoft.Bot.Builder.Dialogs.DialogReason" />
+        <Parameter Name="result" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="reason">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.EnumExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.ListStyle&gt; Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.EnumExpression`1&lt;valuetype Microsoft.Bot.Builder.Dialogs.Choices.ListStyle&gt; Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As EnumExpression(Of ListStyle)" />
+      <MemberSignature Language="F#" Value="member this.Style : AdaptiveExpressions.Properties.EnumExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.ListStyle&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInput.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("style")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.EnumExpression&lt;Microsoft.Bot.Builder.Dialogs.Choices.ListStyle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets ListStyle to use to render the choices.
+            </summary>
+        <value>
+            ListStyle or expression which evaluates to ListStyle.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

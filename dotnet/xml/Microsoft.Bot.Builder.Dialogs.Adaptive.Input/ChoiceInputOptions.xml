@@ -1,0 +1,62 @@
+<Type Name="ChoiceInputOptions" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInputOptions">
+  <TypeSignature Language="C#" Value="public class ChoiceInputOptions : Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialogOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChoiceInputOptions extends Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialogOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInputOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChoiceInputOptions&#xA;Inherits InputDialogOptions" />
+  <TypeSignature Language="F#" Value="type ChoiceInputOptions = class&#xA;    inherit InputDialogOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialogOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChoiceInputOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInputOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; Choices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; Choices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInputOptions.Choices" />
+      <MemberSignature Language="VB.NET" Value="Public Property Choices As List(Of Choice)" />
+      <MemberSignature Language="F#" Value="member this.Choices : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceInputOptions.Choices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("choices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

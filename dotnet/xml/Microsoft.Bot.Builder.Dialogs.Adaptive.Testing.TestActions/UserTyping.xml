@@ -1,0 +1,144 @@
+<Type Name="UserTyping" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping">
+  <TypeSignature Language="C#" Value="public class UserTyping : Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserTyping extends Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserTyping&#xA;Inherits TestAction" />
+  <TypeSignature Language="F#" Value="type UserTyping = class&#xA;    inherit TestAction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("UserTyping")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserTyping (string path = &quot;&quot;, int line = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional path As String = &quot;&quot;, Optional line As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping (path, line)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="path" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="line" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task ExecuteAsync (Microsoft.Bot.Builder.Adapters.TestAdapter adapter, Microsoft.Bot.Builder.BotCallbackHandler callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task ExecuteAsync(class Microsoft.Bot.Builder.Adapters.TestAdapter adapter, class Microsoft.Bot.Builder.BotCallbackHandler callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.ExecuteAsync(Microsoft.Bot.Builder.Adapters.TestAdapter,Microsoft.Bot.Builder.BotCallbackHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteAsync (adapter As TestAdapter, callback As BotCallbackHandler) As Task" />
+      <MemberSignature Language="F#" Value="override this.ExecuteAsync : Microsoft.Bot.Builder.Adapters.TestAdapter * Microsoft.Bot.Builder.BotCallbackHandler -&gt; System.Threading.Tasks.Task" Usage="userTyping.ExecuteAsync (adapter, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
+        <Parameter Name="callback" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+      </Parameters>
+      <Docs>
+        <param name="adapter">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public string User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string User" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As String" />
+      <MemberSignature Language="F#" Value="member this.User : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("user")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the User name.
+            </summary>
+        <value>
+            If user is set then the channalAccount.Id and channelAccount.Name will be from user.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

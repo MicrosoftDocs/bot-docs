@@ -1,0 +1,226 @@
+<Type Name="DialogExpression" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression">
+  <TypeSignature Language="C#" Value="public class DialogExpression : AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogExpression extends AdaptiveExpressions.Properties.ObjectExpression`1&lt;class Microsoft.Bot.Builder.Dialogs.Dialog&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogExpression&#xA;Inherits ObjectExpression(Of Dialog)" />
+  <TypeSignature Language="F#" Value="type DialogExpression = class&#xA;    inherit ObjectExpression&lt;Dialog&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            DialogExpression - represents a property which is either a Dialog or a string expression for a dialogId.
+            </summary>
+    <remarks>String values are always interpreted as a string with interpolation, unless it has '=' prefix or not. The result is interpreted as a resource Id or dialogId.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogExpression (Microsoft.Bot.Builder.Dialogs.Dialog value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Dialog value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.#ctor(Microsoft.Bot.Builder.Dialogs.Dialog)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Dialog)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression : Microsoft.Bot.Builder.Dialogs.Dialog -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.Bot.Builder.Dialogs.Dialog" />
+      </Parameters>
+      <Docs>
+        <param name="value">dialog value.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogExpression (Newtonsoft.Json.Linq.JToken value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Newtonsoft.Json.Linq.JToken value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.#ctor(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As JToken)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression : Newtonsoft.Json.Linq.JToken -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <param name="value">JToken which is either dialog or dialogId.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogExpression (string dialogIdOrExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogIdOrExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogIdOrExpression As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression : string -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression dialogIdOrExpression" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogIdOrExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogIdOrExpression">dialogId or expression to dialogId.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression (Microsoft.Bot.Builder.Dialogs.Dialog value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression op_Implicit(class Microsoft.Bot.Builder.Dialogs.Dialog value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.op_Implicit(Microsoft.Bot.Builder.Dialogs.Dialog)~Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Dialog) As DialogExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Bot.Builder.Dialogs.Dialog -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.Bot.Builder.Dialogs.Dialog" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression (Newtonsoft.Json.Linq.JToken value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression op_Implicit(class Newtonsoft.Json.Linq.JToken value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.op_Implicit(Newtonsoft.Json.Linq.JToken)~Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As JToken) As DialogExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Newtonsoft.Json.Linq.JToken -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression (string dialogIdOrExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression op_Implicit(string dialogIdOrExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.op_Implicit(System.String)~Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (dialogIdOrExpression As String) As DialogExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.op_Implicit dialogIdOrExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogIdOrExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogIdOrExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.SetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj -&gt; unit" Usage="dialogExpression.SetValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dialogExpression.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

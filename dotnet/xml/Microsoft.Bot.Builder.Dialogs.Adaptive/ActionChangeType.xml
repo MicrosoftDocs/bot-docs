@@ -1,0 +1,111 @@
+<Type Name="ActionChangeType" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType">
+  <TypeSignature Language="C#" Value="public enum ActionChangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActionChangeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActionChangeType" />
+  <TypeSignature Language="F#" Value="type ActionChangeType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter), new System.Object[] { Mono.Cecil.CustomAttributeArgument })</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            How to modify an action sequence.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendActions">
+      <MemberSignature Language="C#" Value="AppendActions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType AppendActions = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.AppendActions" />
+      <MemberSignature Language="VB.NET" Value="AppendActions" />
+      <MemberSignature Language="F#" Value="AppendActions = 1" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.AppendActions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Add the changeactions to the tail of the sequence.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndSequence">
+      <MemberSignature Language="C#" Value="EndSequence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType EndSequence = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.EndSequence" />
+      <MemberSignature Language="VB.NET" Value="EndSequence" />
+      <MemberSignature Language="F#" Value="EndSequence = 2" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.EndSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Terminate the action sequence.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertActions">
+      <MemberSignature Language="C#" Value="InsertActions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType InsertActions = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.InsertActions" />
+      <MemberSignature Language="VB.NET" Value="InsertActions" />
+      <MemberSignature Language="F#" Value="InsertActions = 0" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.InsertActions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Add the change actions to the head of the sequence.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceSequence">
+      <MemberSignature Language="C#" Value="ReplaceSequence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType ReplaceSequence = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.ReplaceSequence" />
+      <MemberSignature Language="VB.NET" Value="ReplaceSequence" />
+      <MemberSignature Language="F#" Value="ReplaceSequence = 3" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType.ReplaceSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Terminate the action sequence, then add the change actions.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

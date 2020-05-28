@@ -1,0 +1,43 @@
+<Type Name="IComponentPathResolvers" FullName="Microsoft.Bot.Builder.Dialogs.Memory.IComponentPathResolvers">
+  <TypeSignature Language="C#" Value="public interface IComponentPathResolvers" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentPathResolvers" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.IComponentPathResolvers" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentPathResolvers" />
+  <TypeSignature Language="F#" Value="type IComponentPathResolvers = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Interface for declaring path resolvers in the memory system.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPathResolvers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Memory.IPathResolver&gt; GetPathResolvers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Memory.IPathResolver&gt; GetPathResolvers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.IComponentPathResolvers.GetPathResolvers" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPathResolvers () As IEnumerable(Of IPathResolver)" />
+      <MemberSignature Language="F#" Value="abstract member GetPathResolvers : unit -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Memory.IPathResolver&gt;" Usage="iComponentPathResolvers.GetPathResolvers " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Memory.IPathResolver&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return enumeration of pathresolvers.
+            </summary>
+        <returns>collection of IPathResolvers.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,159 @@
+<Type Name="StringUtils" FullName="Microsoft.Bot.Builder.StringUtils">
+  <TypeSignature Language="C#" Value="public static class StringUtils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringUtils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.StringUtils" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringUtils" />
+  <TypeSignature Language="F#" Value="type StringUtils = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ellipsis">
+      <MemberSignature Language="C#" Value="public static string Ellipsis (string text, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Ellipsis(string text, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StringUtils.Ellipsis(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ellipsis (text As String, length As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member Ellipsis : string * int -&gt; string" Usage="Microsoft.Bot.Builder.StringUtils.Ellipsis (text, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">text.</param>
+        <param name="length">length to truncate text.</param>
+        <summary>
+            Truncate string with ...
+            </summary>
+        <returns>string length + ...</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ellipsis">
+      <MemberSignature Language="C#" Value="public static System.Text.StringBuilder Ellipsis (System.Text.StringBuilder sb, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.StringBuilder Ellipsis(class System.Text.StringBuilder sb, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StringUtils.Ellipsis(System.Text.StringBuilder,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ellipsis (sb As StringBuilder, length As Integer) As StringBuilder" />
+      <MemberSignature Language="F#" Value="static member Ellipsis : System.Text.StringBuilder * int -&gt; System.Text.StringBuilder" Usage="Microsoft.Bot.Builder.StringUtils.Ellipsis (sb, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.StringBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sb" Type="System.Text.StringBuilder" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sb">stringbuilder which will be truncated.</param>
+        <param name="length">length to truncate text.</param>
+        <summary>
+            Truncate stringbuilder string with ...
+            </summary>
+        <returns>original stringbuilder modified.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EllipsisHash">
+      <MemberSignature Language="C#" Value="public static string EllipsisHash (string text, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EllipsisHash(string text, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StringUtils.EllipsisHash(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EllipsisHash (text As String, length As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member EllipsisHash : string * int -&gt; string" Usage="Microsoft.Bot.Builder.StringUtils.EllipsisHash (text, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">text to truncate.</param>
+        <param name="length">length to truncate at.</param>
+        <summary>
+            EllipsisHash - return truncated string with unique hash for the truncated part.
+            </summary>
+        <returns>prefix up to length + ... + uniquehash(text).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EllipsisHash">
+      <MemberSignature Language="C#" Value="public static System.Text.StringBuilder EllipsisHash (System.Text.StringBuilder sb, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.StringBuilder EllipsisHash(class System.Text.StringBuilder sb, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StringUtils.EllipsisHash(System.Text.StringBuilder,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EllipsisHash (sb As StringBuilder, length As Integer) As StringBuilder" />
+      <MemberSignature Language="F#" Value="static member EllipsisHash : System.Text.StringBuilder * int -&gt; System.Text.StringBuilder" Usage="Microsoft.Bot.Builder.StringUtils.EllipsisHash (sb, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.StringBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sb" Type="System.Text.StringBuilder" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sb">text to truncate.</param>
+        <param name="length">length to truncate at.</param>
+        <summary>
+            EllipsisHash - return truncated string with unique hash for the truncated part.
+            </summary>
+        <returns>original stringbuilder modified.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hash">
+      <MemberSignature Language="C#" Value="public static string Hash (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Hash(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.StringUtils.Hash(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Hash (text As String) As String" />
+      <MemberSignature Language="F#" Value="static member Hash : string -&gt; string" Usage="Microsoft.Bot.Builder.StringUtils.Hash text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">text to hash.</param>
+        <summary>
+            UniqueHash - create a unique hash from a string.
+            </summary>
+        <returns>string which is unique SHA256 hash.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

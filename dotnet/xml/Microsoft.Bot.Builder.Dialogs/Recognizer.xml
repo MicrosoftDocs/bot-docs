@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,31 +29,49 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Recognizer ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C#" Value="public Recognizer (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Recognizer : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Recognizer" Usage="new Microsoft.Bot.Builder.Dialogs.Recognizer (callerPath, callerLine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
       <Docs>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="FillRecognizerResultTelemetryProperties">
-      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.Dictionary&lt;string,string&gt; FillRecognizerResultTelemetryProperties (Microsoft.Bot.Builder.RecognizerResult recognizerResult, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, Microsoft.Bot.Builder.ITurnContext turnContext = default);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; FillRecognizerResultTelemetryProperties(class Microsoft.Bot.Builder.RecognizerResult recognizerResult, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class Microsoft.Bot.Builder.ITurnContext turnContext) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.FillRecognizerResultTelemetryProperties(Microsoft.Bot.Builder.RecognizerResult,System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.Bot.Builder.ITurnContext)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FillRecognizerResultTelemetryProperties (recognizerResult As RecognizerResult, telemetryProperties As Dictionary(Of String, String), Optional turnContext As ITurnContext = null) As Dictionary(Of String, String)" />
-      <MemberSignature Language="F#" Value="abstract member FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.ITurnContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;&#xA;override this.FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.ITurnContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="recognizer.FillRecognizerResultTelemetryProperties (recognizerResult, telemetryProperties, turnContext)" />
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.Dictionary&lt;string,string&gt; FillRecognizerResultTelemetryProperties (Microsoft.Bot.Builder.RecognizerResult recognizerResult, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; FillRecognizerResultTelemetryProperties(class Microsoft.Bot.Builder.RecognizerResult recognizerResult, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.FillRecognizerResultTelemetryProperties(Microsoft.Bot.Builder.RecognizerResult,System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FillRecognizerResultTelemetryProperties (recognizerResult As RecognizerResult, telemetryProperties As Dictionary(Of String, String), Optional dialogContext As DialogContext = null) As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="abstract member FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;&#xA;override this.FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="recognizer.FillRecognizerResultTelemetryProperties (recognizerResult, telemetryProperties, dialogContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -60,14 +79,16 @@
       <Parameters>
         <Parameter Name="recognizerResult" Type="Microsoft.Bot.Builder.RecognizerResult" />
         <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="recognizerResult">To be added.</param>
-        <param name="telemetryProperties">To be added.</param>
-        <param name="turnContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="recognizerResult">Recognizer Result.</param>
+        <param name="telemetryProperties">A list of properties to append or override the properties created using the RecognizerResult.</param>
+        <param name="dialogContext">Dialog Context.</param>
+        <summary>
+            Uses the RecognizerResult to create a list of propeties to be included when tracking the result in telemetry.
+            </summary>
+        <returns>A dictionary that can be included when calling the TrackEvent method on the TelemetryClient.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,6 +102,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -108,6 +130,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -142,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -185,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -199,6 +224,37 @@
             Gets or sets the currently configured <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> that logs the RecognizerResult event.
             </summary>
         <value>The <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" /> being used to log events.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackRecognizerResult">
+      <MemberSignature Language="C#" Value="protected void TrackRecognizerResult (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string eventName, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TrackRecognizerResult(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string eventName, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.TrackRecognizerResult(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub TrackRecognizerResult (dialogContext As DialogContext, eventName As String, telemetryProperties As Dictionary(Of String, String), telemetryMetrics As Dictionary(Of String, Double))" />
+      <MemberSignature Language="F#" Value="member this.TrackRecognizerResult : Microsoft.Bot.Builder.Dialogs.DialogContext * string * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; unit" Usage="recognizer.TrackRecognizerResult (dialogContext, eventName, telemetryProperties, telemetryMetrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Dialog Context.</param>
+        <param name="eventName">The name of the event to track.</param>
+        <param name="telemetryProperties">The properties to be included as part of the event tracking.</param>
+        <param name="telemetryMetrics">The metrics to be included as part of the event tracking.</param>
+        <summary>
+            Tracks an event with the event name provided using the TelemetryClient attaching the properties / metrics.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

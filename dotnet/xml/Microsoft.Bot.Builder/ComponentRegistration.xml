@@ -1,0 +1,105 @@
+<Type Name="ComponentRegistration" FullName="Microsoft.Bot.Builder.ComponentRegistration">
+  <TypeSignature Language="C#" Value="public class ComponentRegistration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentRegistration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.ComponentRegistration" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentRegistration" />
+  <TypeSignature Language="F#" Value="type ComponentRegistration = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ComponentRegistration is a signature class for discovering assets from components. 
+            </summary>
+    <remarks>
+            To make your components available to the system you derive from ComponentRegistration and implement appropriate 
+            interfaces which register functionality.  These components then are consumed in appropriate places by the 
+            systems that need them. For example, to add declarative types to the system you simply add class that 
+            implements IComponentDeclarativeTypes.
+            <code>
+            public class MyComponentRegistration : IComponentDeclarativeTypes
+            {
+                public IEnumerable&lt;DeclarativeType&gt;()
+                {  
+                     yield return new DeclarativeType&lt;MyType&gt;("Contoso.MyType");
+                     ...
+                }
+            }
+            startup.cs:
+                 ComponentRegistration.Add(new DeclarativeComponentRegistration()); 
+                 ComponentRegistration.Add(new MyComponentRegistration());
+            </code></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComponentRegistration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ComponentRegistration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (Microsoft.Bot.Builder.ComponentRegistration componentRegistration);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class Microsoft.Bot.Builder.ComponentRegistration componentRegistration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ComponentRegistration.Add(Microsoft.Bot.Builder.ComponentRegistration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Add (componentRegistration As ComponentRegistration)" />
+      <MemberSignature Language="F#" Value="static member Add : Microsoft.Bot.Builder.ComponentRegistration -&gt; unit" Usage="Microsoft.Bot.Builder.ComponentRegistration.Add componentRegistration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="componentRegistration" Type="Microsoft.Bot.Builder.ComponentRegistration" />
+      </Parameters>
+      <Docs>
+        <param name="componentRegistration">componentRegistration.</param>
+        <summary>
+            Add a component which implements registration methods.
+            </summary>
+        <remarks>Only one instance per type is allowed for components.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Components">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;object&gt; Components { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;object&gt; Components" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.ComponentRegistration.Components" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Components As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.Components : seq&lt;obj&gt;" Usage="Microsoft.Bot.Builder.ComponentRegistration.Components" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets list of all ComponentRegistration objects registered.
+            </summary>
+        <value>
+            A numeration of ComponentRegistration objects.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

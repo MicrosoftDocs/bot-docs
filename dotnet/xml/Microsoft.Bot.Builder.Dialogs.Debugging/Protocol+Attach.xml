@@ -1,0 +1,37 @@
+<Type Name="Protocol+Attach" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Attach">
+  <TypeSignature Language="C#" Value="public class Protocol.Attach : Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.LaunchAttach" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Protocol/Attach extends Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/LaunchAttach" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Attach" />
+  <TypeSignature Language="VB.NET" Value="Public Class Protocol.Attach&#xA;Inherits Protocol.LaunchAttach" />
+  <TypeSignature Language="F#" Value="type Protocol.Attach = class&#xA;    inherit Protocol.LaunchAttach" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+LaunchAttach</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Attach ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Attach.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

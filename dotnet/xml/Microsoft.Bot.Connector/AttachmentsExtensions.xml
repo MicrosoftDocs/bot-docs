@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
@@ -40,14 +41,15 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
-        <Parameter Name="attachmentId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="viewId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" RefType="this" />
+        <Parameter Name="attachmentId" Type="System.String" />
+        <Parameter Name="viewId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -118,13 +120,14 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.AttachmentInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
-        <Parameter Name="attachmentId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" RefType="this" />
+        <Parameter Name="attachmentId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -190,14 +193,15 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
-        <Parameter Name="attachmentId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="viewId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" RefType="this" />
+        <Parameter Name="attachmentId" Type="System.String" />
+        <Parameter Name="viewId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>
@@ -220,15 +224,16 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" RefType="this" />
-        <Parameter Name="attachmentId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="viewId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0" />
+        <Parameter Name="operations" Type="Microsoft.Bot.Connector.IAttachments" RefType="this" />
+        <Parameter Name="attachmentId" Type="System.String" />
+        <Parameter Name="viewId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="operations">To be added.</param>

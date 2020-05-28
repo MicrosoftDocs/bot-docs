@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -43,12 +44,37 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="service" Type="T" />
       </Parameters>
       <Docs>
         <param name="service">The object or service to add.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.RegisterClassMiddleware`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegisterClassMiddleware (T service, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T service, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.RegisterClassMiddleware`1.#ctor(`0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (service As T, key As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt; : 'T * string -&gt; Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.RegisterClassMiddleware&lt;'T (requires 'T : null)&gt; (service, key)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="service" Type="T" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="service">The object or service to add.</param>
+        <param name="key">optional key for service object in turn state (default is instance.GetType().FullName).</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.RegisterClassMiddleware`1" /> class.
             </summary>
@@ -69,6 +95,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -103,6 +130,7 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

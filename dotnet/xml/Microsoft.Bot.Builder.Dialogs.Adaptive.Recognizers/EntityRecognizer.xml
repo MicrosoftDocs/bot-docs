@@ -1,0 +1,127 @@
+<Type Name="EntityRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer">
+  <TypeSignature Language="C#" Value="public class EntityRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityRecognizer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityRecognizer" />
+  <TypeSignature Language="F#" Value="type EntityRecognizer = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeEntitiesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, entities As IEnumerable(Of Entity), Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of Entity))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizer.RecognizeEntitiesAsync (dialogContext, entities, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="entities">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeEntitiesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, activity As Activity, entities As IEnumerable(Of Entity), Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of Entity))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizer.RecognizeEntitiesAsync (dialogContext, activity, entities, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="entities">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeEntitiesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, text As String, locale As String, entities As IEnumerable(Of Entity), Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of Entity))" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizer.RecognizeEntitiesAsync (dialogContext, text, locale, entities, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="text">To be added.</param>
+        <param name="locale">To be added.</param>
+        <param name="entities">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

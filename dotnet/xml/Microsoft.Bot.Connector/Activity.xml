@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -76,6 +77,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -84,16 +86,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Activity (string type = default, string id = default, DateTimeOffset? timestamp = default, DateTimeOffset? localTimestamp = default, string serviceUrl = default, string channelId = default, Microsoft.Bot.Connector.ChannelAccount from = default, Microsoft.Bot.Connector.ConversationAccount conversation = default, Microsoft.Bot.Connector.ChannelAccount recipient = default, string textFormat = default, string attachmentLayout = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved = default, string topicName = default, bool? historyDisclosed = default, string locale = default, string text = default, string speak = default, string inputHint = default, string summary = default, Microsoft.Bot.Connector.SuggestedActions suggestedActions = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = default, object channelData = default, string action = default, string replyToId = default, string label = default, string valueType = default, object value = default, string name = default, Microsoft.Bot.Connector.ConversationReference relatesTo = default, string code = default, DateTimeOffset? expiration = default, string importance = default, string deliveryMode = default, System.Collections.Generic.IList&lt;string&gt; listenFor = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; textHighlights = default, Microsoft.Bot.Connector.SemanticAction semanticAction = default, string localTimezone = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Connector.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.TextHighlight&gt; textHighlights, class Microsoft.Bot.Connector.SemanticAction semanticAction, string localTimezone) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional id As String = null, Optional timestamp As Nullable(Of DateTimeOffset) = null, Optional localTimestamp As Nullable(Of DateTimeOffset) = null, Optional serviceUrl As String = null, Optional channelId As String = null, Optional from As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional recipient As ChannelAccount = null, Optional textFormat As String = null, Optional attachmentLayout As String = null, Optional membersAdded As IList(Of ChannelAccount) = null, Optional membersRemoved As IList(Of ChannelAccount) = null, Optional reactionsAdded As IList(Of MessageReaction) = null, Optional reactionsRemoved As IList(Of MessageReaction) = null, Optional topicName As String = null, Optional historyDisclosed As Nullable(Of Boolean) = null, Optional locale As String = null, Optional text As String = null, Optional speak As String = null, Optional inputHint As String = null, Optional summary As String = null, Optional suggestedActions As SuggestedActions = null, Optional attachments As IList(Of Attachment) = null, Optional entities As IList(Of Entity) = null, Optional channelData As Object = null, Optional action As String = null, Optional replyToId As String = null, Optional label As String = null, Optional valueType As String = null, Optional value As Object = null, Optional name As String = null, Optional relatesTo As ConversationReference = null, Optional code As String = null, Optional expiration As Nullable(Of DateTimeOffset) = null, Optional importance As String = null, Optional deliveryMode As String = null, Optional listenFor As IList(Of String) = null, Optional textHighlights As IList(Of TextHighlight) = null, Optional semanticAction As SemanticAction = null, Optional localTimezone As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * Microsoft.Bot.Connector.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Connector.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Connector.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; * Microsoft.Bot.Connector.SemanticAction * string -&gt; Microsoft.Bot.Connector.Activity" Usage="new Microsoft.Bot.Connector.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction, localTimezone)" />
+      <MemberSignature Language="C#" Value="public Activity (string type = default, string id = default, DateTimeOffset? timestamp = default, DateTimeOffset? localTimestamp = default, string serviceUrl = default, string channelId = default, Microsoft.Bot.Connector.ChannelAccount from = default, Microsoft.Bot.Connector.ConversationAccount conversation = default, Microsoft.Bot.Connector.ChannelAccount recipient = default, string textFormat = default, string attachmentLayout = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved = default, string topicName = default, bool? historyDisclosed = default, string locale = default, string text = default, string speak = default, string inputHint = default, string summary = default, Microsoft.Bot.Connector.SuggestedActions suggestedActions = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = default, object channelData = default, string action = default, string replyToId = default, string label = default, string valueType = default, object value = default, string name = default, Microsoft.Bot.Connector.ConversationReference relatesTo = default, string code = default, DateTimeOffset? expiration = default, string importance = default, string deliveryMode = default, System.Collections.Generic.IList&lt;string&gt; listenFor = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; textHighlights = default, Microsoft.Bot.Connector.SemanticAction semanticAction = default, string localTimezone = default, string callerId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Connector.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.TextHighlight&gt; textHighlights, class Microsoft.Bot.Connector.SemanticAction semanticAction, string localTimezone, string callerId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional id As String = null, Optional timestamp As Nullable(Of DateTimeOffset) = null, Optional localTimestamp As Nullable(Of DateTimeOffset) = null, Optional serviceUrl As String = null, Optional channelId As String = null, Optional from As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional recipient As ChannelAccount = null, Optional textFormat As String = null, Optional attachmentLayout As String = null, Optional membersAdded As IList(Of ChannelAccount) = null, Optional membersRemoved As IList(Of ChannelAccount) = null, Optional reactionsAdded As IList(Of MessageReaction) = null, Optional reactionsRemoved As IList(Of MessageReaction) = null, Optional topicName As String = null, Optional historyDisclosed As Nullable(Of Boolean) = null, Optional locale As String = null, Optional text As String = null, Optional speak As String = null, Optional inputHint As String = null, Optional summary As String = null, Optional suggestedActions As SuggestedActions = null, Optional attachments As IList(Of Attachment) = null, Optional entities As IList(Of Entity) = null, Optional channelData As Object = null, Optional action As String = null, Optional replyToId As String = null, Optional label As String = null, Optional valueType As String = null, Optional value As Object = null, Optional name As String = null, Optional relatesTo As ConversationReference = null, Optional code As String = null, Optional expiration As Nullable(Of DateTimeOffset) = null, Optional importance As String = null, Optional deliveryMode As String = null, Optional listenFor As IList(Of String) = null, Optional textHighlights As IList(Of TextHighlight) = null, Optional semanticAction As SemanticAction = null, Optional localTimezone As String = null, Optional callerId As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * Microsoft.Bot.Connector.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Connector.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Connector.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; * Microsoft.Bot.Connector.SemanticAction * string * string -&gt; Microsoft.Bot.Connector.Activity" Usage="new Microsoft.Bot.Connector.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction, localTimezone, callerId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -137,6 +138,7 @@
         <Parameter Name="textHighlights" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt;" />
         <Parameter Name="semanticAction" Type="Microsoft.Bot.Connector.SemanticAction" />
         <Parameter Name="localTimezone" Type="System.String" />
+        <Parameter Name="callerId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="type">To be added.</param>
@@ -180,6 +182,7 @@
         <param name="textHighlights">To be added.</param>
         <param name="semanticAction">To be added.</param>
         <param name="localTimezone">To be added.</param>
+        <param name="callerId">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,6 +203,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -230,6 +234,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -256,6 +261,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -282,6 +288,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -308,6 +315,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -334,6 +342,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInstallationUpdateActivity</ReturnType>
@@ -360,6 +369,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -386,6 +396,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -412,6 +423,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageDeleteActivity</ReturnType>
@@ -438,6 +450,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageReactionActivity</ReturnType>
@@ -464,6 +477,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageUpdateActivity</ReturnType>
@@ -490,6 +504,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ISuggestionActivity</ReturnType>
@@ -516,6 +531,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITraceActivity</ReturnType>
@@ -542,6 +558,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -568,6 +585,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -598,6 +616,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -606,6 +625,31 @@
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallerId">
+      <MemberSignature Language="C#" Value="public string CallerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CallerId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.Activity.CallerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallerId As String" />
+      <MemberSignature Language="F#" Value="member this.CallerId : string with get, set" Usage="Microsoft.Bot.Connector.Activity.CallerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="callerId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -628,6 +672,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -658,6 +703,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -688,6 +734,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -715,6 +762,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -739,6 +787,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -766,6 +815,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -789,6 +839,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -812,6 +863,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -835,6 +887,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -858,6 +911,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IHandoffActivity</ReturnType>
@@ -881,6 +935,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -904,6 +959,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -927,6 +983,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Activity</ReturnType>
@@ -955,6 +1012,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITraceActivity</ReturnType>
@@ -995,6 +1053,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -1021,6 +1080,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1053,6 +1113,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1083,6 +1144,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1113,6 +1175,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1140,6 +1203,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1169,6 +1233,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -1199,6 +1264,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Mention[]</ReturnType>
@@ -1225,6 +1291,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1251,6 +1318,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1281,6 +1349,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1311,6 +1380,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1341,6 +1411,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1368,6 +1439,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1397,6 +1469,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1424,6 +1497,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1454,6 +1528,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1484,6 +1559,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1510,6 +1586,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1540,6 +1617,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1570,6 +1648,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1602,6 +1681,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1629,6 +1709,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1659,6 +1740,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1689,6 +1771,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1719,6 +1802,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1751,6 +1835,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1781,6 +1866,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1808,6 +1894,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1838,6 +1925,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1868,6 +1956,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1898,6 +1987,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1928,6 +2018,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1959,6 +2050,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1989,6 +2081,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2019,6 +2112,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2049,6 +2143,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2079,6 +2174,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2109,6 +2205,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2142,6 +2239,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2175,6 +2273,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2205,6 +2304,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

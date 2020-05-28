@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.WaterfallDialog</BaseTypeName>
@@ -15,9 +16,10 @@
   <Interfaces />
   <Docs>
     <summary>
-            QnAMaker dialog which uses QnAMaker to get an answer.
+            A dialog that supports multi-step and adaptive-learning QnA Maker services.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>An instance of this class targets a specific QnA Maker knowledge base.
+            It supports knowledge bases that include follow-up prompt and active learning features.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +33,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -54,9 +57,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="sourceFilePath">To be added.</param>
-        <param name="sourceLineNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceFilePath">The source file path, for debugging. Defaults to the full path
+            of the source file that contains the caller.</param>
+        <param name="sourceLineNumber">The line number, for debugging. Defaults to the line number
+            in the source file at which the method is called.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" /> class.
+            The JSON serializer uses this constructor to deserialize objects of this class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,6 +79,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="knowledgeBaseId" Type="System.String" />
@@ -100,20 +109,61 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="knowledgeBaseId">To be added.</param>
-        <param name="endpointKey">To be added.</param>
-        <param name="hostName">To be added.</param>
-        <param name="noAnswer">To be added.</param>
-        <param name="threshold">To be added.</param>
-        <param name="activeLearningCardTitle">To be added.</param>
-        <param name="cardNoMatchText">To be added.</param>
-        <param name="top">To be added.</param>
-        <param name="cardNoMatchResponse">To be added.</param>
-        <param name="strictFilters">To be added.</param>
-        <param name="httpClient">To be added.</param>
-        <param name="sourceFilePath">To be added.</param>
-        <param name="sourceLineNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="knowledgeBaseId">The ID of the QnA Maker knowledge base to query.</param>
+        <param name="endpointKey">The QnA Maker endpoint key to use to query the knowledge base.</param>
+        <param name="hostName">The QnA Maker host URL for the knowledge base, starting with "https://" and
+            ending with "/qnamaker".</param>
+        <param name="noAnswer">The activity to send the user when QnA Maker does not find an answer.</param>
+        <param name="threshold">The threshold for answers returned, based on score.</param>
+        <param name="activeLearningCardTitle">The card title to use when showing active learning options
+            to the user, if active learning is enabled.</param>
+        <param name="cardNoMatchText">The button text to use with active learning options,
+            allowing a user to indicate none of the options are applicable.</param>
+        <param name="top">The maximum number of answers to return from the knowledge base.</param>
+        <param name="cardNoMatchResponse">The activity to send the user if they select the no match option
+            on an active learning card.</param>
+        <param name="strictFilters">QnA Maker metadata with which to filter or boost queries to the
+            knowledge base; or null to apply none.</param>
+        <param name="httpClient">An HTTP client to use for requests to the QnA Maker Service;
+            or `null` to use a default client.</param>
+        <param name="sourceFilePath">The source file path, for debugging. Defaults to the full path
+            of the source file that contains the caller.</param>
+        <param name="sourceLineNumber">The line number, for debugging. Defaults to the line number
+            in the source file at which the method is called.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveLearningCardTitle">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression ActiveLearningCardTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression ActiveLearningCardTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.ActiveLearningCardTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveLearningCardTitle As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.ActiveLearningCardTitle : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.ActiveLearningCardTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("activeLearningCardTitle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the card title to use when showing active learning options to the user,
+            if active learning is enabled.
+            </summary>
+        <value>
+            The path card title to use when showing active learning options to the user or an
+            expression which evaluates to the card title.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,6 +178,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -138,8 +189,104 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="options">Optional, initial information to pass to the dialog.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when the dialog is started and pushed onto the dialog stack.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.
+            
+            You can use the <paramref name="options" /> parameter to include the QnA Maker context data,
+            which represents context from the previous query. To do so, the value should include a
+            `context` property of type <see cref="T:Microsoft.Bot.Builder.AI.QnA.QnAResponseContext" />.</remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
+    <Member MemberName="CardNoMatchResponse">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt; CardNoMatchResponse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.ITemplate`1&lt;class Microsoft.Bot.Schema.Activity&gt; CardNoMatchResponse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.CardNoMatchResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Property CardNoMatchResponse As ITemplate(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.CardNoMatchResponse : Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.CardNoMatchResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("cardNoMatchResponse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template to send the user if they select the no match option on an
+            active learning card.
+            </summary>
+        <value>
+            The template to send the user if they select the no match option on an active learning card.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CardNoMatchText">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression CardNoMatchText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression CardNoMatchText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.CardNoMatchText" />
+      <MemberSignature Language="VB.NET" Value="Public Property CardNoMatchText As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.CardNoMatchText : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.CardNoMatchText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("cardNoMatchText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the button text to use with active learning options, allowing a user to
+            indicate none of the options are applicable.
+            </summary>
+        <value>
+            The button text to use with active learning options or an expression which evaluates to
+            the button text.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueDialogAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="F#" Value="override this.ContinueDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="qnAMakerDialog.ContinueDialogAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
         <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -157,13 +304,16 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <MemberValue>0.3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The default threshold for answers returned, based on score.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,13 +328,45 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The default maximum number of answers to be returned for the question.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointKey">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression EndpointKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression EndpointKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.EndpointKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointKey As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.EndpointKey : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.EndpointKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("endpointKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the QnA Maker endpoint key to use to query the knowledge base.
+            </summary>
+        <value>
+            The QnA Maker endpoint key to use or an expression which evaluates to the endpoint key.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,6 +381,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt;</ReturnType>
@@ -207,10 +390,12 @@
         <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <summary>
+            Gets an <see cref="T:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient" /> to use to access the QnA Maker knowledge base.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result contains the QnA Maker client to use.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetQnAMakerOptionsAsync">
@@ -224,6 +409,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt;</ReturnType>
@@ -232,10 +418,12 @@
         <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <summary>
+            Gets the options for the QnA Maker client that the dialog will use to query the knowledge base.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result contains the QnA Maker options to use.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetQnAResponseOptionsAsync">
@@ -249,6 +437,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt;</ReturnType>
@@ -257,9 +446,40 @@
         <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <summary>
+            Gets the options the dialog will use to display query results to the user.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result contains the response options to use.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostName">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression HostName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression HostName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.HostName" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostName As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.HostName : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.HostName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("hostname")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the QnA Maker host URL for the knowledge base.
+            </summary>
+        <value>
+            The QnA Maker host URL or an expression which evaluates to the host URL.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,6 +494,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,8 +505,180 @@
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
       </ReturnValue>
       <Docs>
+        <summary>
+            Gets or sets the <see cref="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.HttpClient" /> instance to use for requests to the QnA Maker service.
+            </summary>
+        <value>The HTTP client.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTest">
+      <MemberSignature Language="C#" Value="public bool IsTest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.IsTest" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTest : bool with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.IsTest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("isTest")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether gets or sets environment of knowledgebase to be called. 
+            </summary>
+        <value>
+            A value indicating whether to call test or prod environment of knowledge base. 
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The declarative name for this type.
+            </summary>
+        <remarks>Used by the framework to serialize and deserialize an instance of this type to JSON.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnowledgeBaseId">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression KnowledgeBaseId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression KnowledgeBaseId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.KnowledgeBaseId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KnowledgeBaseId As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.KnowledgeBaseId : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.KnowledgeBaseId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("knowledgeBaseId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the QnA Maker knowledge base ID to query.
+            </summary>
+        <value>
+            The knowledge base ID or an expression which evaluates to the knowledge base ID.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPersonalInformation">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.BoolExpression LogPersonalInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.BoolExpression LogPersonalInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.LogPersonalInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogPersonalInformation As BoolExpression" />
+      <MemberSignature Language="F#" Value="member this.LogPersonalInformation : AdaptiveExpressions.Properties.BoolExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.LogPersonalInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("logPersonalInformation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.BoolExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the flag to determine if personal information should be logged in telemetry.
+            </summary>
+        <value>
+            The flag to indicate in personal information should be logged in telemetry.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAnswer">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt; NoAnswer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.ITemplate`1&lt;class Microsoft.Bot.Schema.Activity&gt; NoAnswer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.NoAnswer" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoAnswer As ITemplate(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.NoAnswer : Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.NoAnswer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("noAnswer")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template to send the user when QnA Maker does not find an answer.
+            </summary>
+        <value>
+            The template to send the user when QnA Maker does not find an answer.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreBubbleEventAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;bool&gt; OnPreBubbleEventAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.DialogEvent e, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; OnPreBubbleEventAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, class Microsoft.Bot.Builder.Dialogs.DialogEvent e, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.OnPreBubbleEventAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogEvent,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnPreBubbleEventAsync (dc As DialogContext, e As DialogEvent, cancellationToken As CancellationToken) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="override this.OnPreBubbleEventAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.DialogEvent * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="qnAMakerDialog.OnPreBubbleEventAsync (dc, e, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="e" Type="Microsoft.Bot.Builder.Dialogs.DialogEvent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,13 +693,19 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            The path for storing and retrieving the options for this instance of the dialog.
+            </summary>
+        <remarks>This includes the options with which the dialog was started and options
+            expected by the QnA Maker service.
+            It is stored within the current step's <see cref="T:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext" />.
+            It supports QnA Maker and the dialog system.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousQnAId">
@@ -320,13 +719,18 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            The path for storing and retrieving the previous question ID.
+            </summary>
+        <remarks>This represents the QnA question ID from the previous turn.
+            It is stored within the current step's <see cref="T:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext" />.
+            It supports QnA Maker's follow-up prompt and active learning features.</remarks>
       </Docs>
     </Member>
     <Member MemberName="QnAContextData">
@@ -340,12 +744,137 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The path for storing and retrieving QnA Maker context data.
+            </summary>
+        <remarks>This represents context about the current or previous call to QnA Maker.
+            It is stored within the current step's <see cref="T:Microsoft.Bot.Builder.Dialogs.WaterfallStepContext" />.
+            It supports QnA Maker's follow-up prompt and active learning features.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RankerType">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression RankerType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression RankerType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.RankerType" />
+      <MemberSignature Language="VB.NET" Value="Public Property RankerType As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.RankerType : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.RankerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("rankerType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the QnA Maker ranker type to use.
+            </summary>
+        <value>
+            The QnA Maker ranker type to use or an expression which evaluates to the ranker type.
+            </value>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Bot.Builder.AI.QnA.RankerTypes" />
+      </Docs>
+    </Member>
+    <Member MemberName="StrictFilters">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.ArrayExpression&lt;Microsoft.Bot.Builder.AI.QnA.Metadata&gt; StrictFilters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.ArrayExpression`1&lt;class Microsoft.Bot.Builder.AI.QnA.Metadata&gt; StrictFilters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.StrictFilters" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrictFilters As ArrayExpression(Of Metadata)" />
+      <MemberSignature Language="F#" Value="member this.StrictFilters : AdaptiveExpressions.Properties.ArrayExpression&lt;Microsoft.Bot.Builder.AI.QnA.Metadata&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.StrictFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("strictFilters")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;Microsoft.Bot.Builder.AI.QnA.Metadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the QnA Maker metadata with which to filter or boost queries to the knowledge base;
+            or null to apply none.
+            </summary>
+        <value>
+            The QnA Maker metadata with which to filter or boost queries to the knowledge base
+            or an expression which evaluates to the QnA Maker metadata.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Threshold">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.NumberExpression Threshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.NumberExpression Threshold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Threshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property Threshold As NumberExpression" />
+      <MemberSignature Language="F#" Value="member this.Threshold : AdaptiveExpressions.Properties.NumberExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Threshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("threshold")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.NumberExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the threshold for answers returned, based on score.
+            </summary>
+        <value>
+            The threshold for answers returned or an expression which evaluates to the threshold.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.IntExpression Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.IntExpression Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As IntExpression" />
+      <MemberSignature Language="F#" Value="member this.Top : AdaptiveExpressions.Properties.IntExpression with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.Top" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("top")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.IntExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum number of answers to return from the knowledge base.
+            </summary>
+        <value>
+            The maximum number of answers to return from the knowledge base or an expression which
+            evaluates to the maximum number to return.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

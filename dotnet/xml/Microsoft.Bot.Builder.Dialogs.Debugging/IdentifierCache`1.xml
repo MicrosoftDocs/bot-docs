@@ -1,0 +1,316 @@
+<Type Name="IdentifierCache&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class IdentifierCache&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;ulong,T&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IdentifierCache`1&lt;T&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;unsigned int64, !T&gt;&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IdentifierCache(Of T)&#xA;Implements IEnumerable(Of KeyValuePair(Of ULong, T)), IIdentifier(Of T)" />
+  <TypeSignature Language="F#" Value="type IdentifierCache&lt;'T&gt; = class&#xA;    interface IIdentifier&lt;'T&gt;&#xA;    interface seq&lt;KeyValuePair&lt;uint64, 'T&gt;&gt;&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IdentifierCache (Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt; inner, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1&lt;!T&gt; inner, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As IIdentifier(Of T), count As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache&lt;'T&gt; : Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;'T&gt; * int -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache&lt;'T&gt; (inner, count)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Add">
+      <MemberSignature Language="C#" Value="ulong IIdentifier&lt;T&gt;.Add (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Add(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (item As T) As ULong Implements IIdentifier(Of T).Add" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Add : 'T -&gt; uint64&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Add : 'T -&gt; uint64" Usage="identifierCache.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Add item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Add(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Clear">
+      <MemberSignature Language="C#" Value="void IIdentifier&lt;T&gt;.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IIdentifier(Of T).Clear" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Clear : unit -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Clear : unit -&gt; unit" Usage="identifierCache.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Clear " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Clear</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item">
+      <MemberSignature Language="C#" Value="T Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item[ulong code] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item(unsigned int64)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(code As ULong) As T Implements IIdentifier(Of T).Item" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item(uint64) : 'T" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Item(System.UInt64)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="code">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item">
+      <MemberSignature Language="C#" Value="ulong Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item[T item] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item(!T)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(`0)" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(item As T) As ULong Implements IIdentifier(Of T).Item" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item('T) : uint64" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Item(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Items">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;T&gt; Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!T&gt; Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Items" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Items" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Items As IEnumerable(Of T) Implements IIdentifier(Of T).Items" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Items : seq&lt;'T&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Items" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Items</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Remove">
+      <MemberSignature Language="C#" Value="void IIdentifier&lt;T&gt;.Remove (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Remove(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (item As T) Implements IIdentifier(Of T).Remove" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Remove : 'T -&gt; unit&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Remove : 'T -&gt; unit" Usage="identifierCache.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.Remove item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Remove(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue">
+      <MemberSignature Language="C#" Value="bool IIdentifier&lt;T&gt;.TryGetValue (ulong code, out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue(unsigned int64 code, [out] !T&amp; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(System.UInt64,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryGetValue (code As ULong, ByRef item As T) As Boolean Implements IIdentifier(Of T).TryGetValue" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue : uint64 * 'T -&gt; bool&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue : uint64 * 'T -&gt; bool" Usage="identifierCache.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue (code, item)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.TryGetValue(System.UInt64,`0@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.UInt64" />
+        <Parameter Name="item" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="code">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue">
+      <MemberSignature Language="C#" Value="bool IIdentifier&lt;T&gt;.TryGetValue (T item, out ulong code);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue(!T item, [out] unsigned int64&amp; code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(`0,System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryGetValue (item As T, ByRef code As ULong) As Boolean Implements IIdentifier(Of T).TryGetValue" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue : 'T * uint64 -&gt; bool&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue : 'T * uint64 -&gt; bool" Usage="identifierCache.Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier&lt;T&gt;.TryGetValue (item, code)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.TryGetValue(`0,System.UInt64@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="code" Type="System.UInt64" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="code">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;ulong,T&gt;&gt; IEnumerable&lt;KeyValuePair&lt;ulong,T&gt;&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;unsigned int64, !T&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#UInt64,T&gt;&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of ULong, T)) Implements IEnumerable(Of KeyValuePair(Of ULong, T)).GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;uint64, 'T&gt;&gt;&#xA;override this.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;uint64, 'T&gt;&gt;" Usage="identifierCache.System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.UInt64,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="identifierCache.System.Collections.IEnumerable.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

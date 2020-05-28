@@ -1,0 +1,104 @@
+<Type Name="HttpRequest+ResponseTypes" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest+ResponseTypes">
+  <TypeSignature Language="C#" Value="public enum HttpRequest.ResponseTypes" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpRequest/ResponseTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HttpRequest.ResponseTypes" />
+  <TypeSignature Language="F#" Value="type HttpRequest.ResponseTypes = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activities">
+      <MemberSignature Language="C#" Value="Activities" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest/ResponseTypes Activities = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.Activities" />
+      <MemberSignature Language="VB.NET" Value="Activities" />
+      <MemberSignature Language="F#" Value="Activities = 3" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.Activities" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest+ResponseTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Json Array of activity objects to send to the user
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="Activity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest/ResponseTypes Activity = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.Activity" />
+      <MemberSignature Language="VB.NET" Value="Activity" />
+      <MemberSignature Language="F#" Value="Activity = 2" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.Activity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest+ResponseTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            JSON Activity object to send to the user
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Json">
+      <MemberSignature Language="C#" Value="Json" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest/ResponseTypes Json = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.Json" />
+      <MemberSignature Language="VB.NET" Value="Json" />
+      <MemberSignature Language="F#" Value="Json = 1" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.Json" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest+ResponseTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Plain JSON response 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest/ResponseTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.ResponseTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest+ResponseTypes</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            No response expected
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,72 @@
+<Type Name="DefaultLoader" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.DefaultLoader">
+  <TypeSignature Language="C#" Value="public class DefaultLoader : Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultLoader extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.DefaultLoader" />
+  <TypeSignature Language="VB.NET" Value="Public Class DefaultLoader&#xA;Implements ICustomDeserializer" />
+  <TypeSignature Language="F#" Value="type DefaultLoader = class&#xA;    interface ICustomDeserializer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultLoader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.DefaultLoader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public virtual object Load (Newtonsoft.Json.Linq.JToken obj, Newtonsoft.Json.JsonSerializer serializer, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(class Newtonsoft.Json.Linq.JToken obj, class Newtonsoft.Json.JsonSerializer serializer, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.DefaultLoader.Load(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.JsonSerializer,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Load (obj As JToken, serializer As JsonSerializer, type As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Load : Newtonsoft.Json.Linq.JToken * Newtonsoft.Json.JsonSerializer * Type -&gt; obj&#xA;override this.Load : Newtonsoft.Json.Linq.JToken * Newtonsoft.Json.JsonSerializer * Type -&gt; obj" Usage="defaultLoader.Load (obj, serializer, type)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer.Load(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.JsonSerializer,System.Type)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

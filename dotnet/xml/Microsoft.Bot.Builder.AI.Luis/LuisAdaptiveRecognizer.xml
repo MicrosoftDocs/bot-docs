@@ -1,0 +1,370 @@
+<Type Name="LuisAdaptiveRecognizer" FullName="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer">
+  <TypeSignature Language="C#" Value="public class LuisAdaptiveRecognizer : Microsoft.Bot.Builder.Dialogs.Recognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LuisAdaptiveRecognizer extends Microsoft.Bot.Builder.Dialogs.Recognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class LuisAdaptiveRecognizer&#xA;Inherits Recognizer" />
+  <TypeSignature Language="F#" Value="type LuisAdaptiveRecognizer = class&#xA;    inherit Recognizer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Recognizer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class that represents an adaptive LUIS recognizer.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LuisAdaptiveRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationId">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression ApplicationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression ApplicationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.ApplicationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationId As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.ApplicationId : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.ApplicationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("applicationId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets LUIS application ID.
+            </summary>
+        <value>Application ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynamicLists">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.ArrayExpression&lt;Microsoft.Bot.Builder.AI.Luis.DynamicList&gt; DynamicLists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.ArrayExpression`1&lt;class Microsoft.Bot.Builder.AI.Luis.DynamicList&gt; DynamicLists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.DynamicLists" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicLists As ArrayExpression(Of DynamicList)" />
+      <MemberSignature Language="F#" Value="member this.DynamicLists : AdaptiveExpressions.Properties.ArrayExpression&lt;Microsoft.Bot.Builder.AI.Luis.DynamicList&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.DynamicLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("dynamicLists")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;Microsoft.Bot.Builder.AI.Luis.DynamicList&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an expression or constant LUIS dynamic list.
+            </summary>
+        <value>Dynamic lists.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression Endpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression Endpoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property Endpoint As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Endpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("endpoint")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets LUIS endpoint like https://westus.api.cognitive.microsoft.com to query.
+            </summary>
+        <value>LUIS Endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointKey">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression EndpointKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression EndpointKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.EndpointKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointKey As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.EndpointKey : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.EndpointKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("endpointKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the key used to talk to a LUIS endpoint.
+            </summary>
+        <value>Endpoint key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalEntityRecognizer">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Recognizer ExternalEntityRecognizer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.Recognizer ExternalEntityRecognizer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.ExternalEntityRecognizer" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalEntityRecognizer As Recognizer" />
+      <MemberSignature Language="F#" Value="member this.ExternalEntityRecognizer : Microsoft.Bot.Builder.Dialogs.Recognizer with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.ExternalEntityRecognizer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("externalEntityRecognizer")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Recognizer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an external entity recognizer.
+            </summary>
+        <value>Recognizer.</value>
+        <remarks>This recognizer is run before calling LUIS and the results are passed to LUIS.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillRecognizerResultTelemetryProperties">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.Dictionary&lt;string,string&gt; FillRecognizerResultTelemetryProperties (Microsoft.Bot.Builder.RecognizerResult recognizerResult, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; FillRecognizerResultTelemetryProperties(class Microsoft.Bot.Builder.RecognizerResult recognizerResult, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.FillRecognizerResultTelemetryProperties(Microsoft.Bot.Builder.RecognizerResult,System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FillRecognizerResultTelemetryProperties (recognizerResult As RecognizerResult, telemetryProperties As Dictionary(Of String, String), dc As DialogContext) As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="override this.FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="luisAdaptiveRecognizer.FillRecognizerResultTelemetryProperties (recognizerResult, telemetryProperties, dc)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recognizerResult" Type="Microsoft.Bot.Builder.RecognizerResult" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="recognizerResult">To be added.</param>
+        <param name="telemetryProperties">To be added.</param>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpClient">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpClientHandler HttpClient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpClientHandler HttpClient" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.HttpClient" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpClient As HttpClientHandler" />
+      <MemberSignature Language="F#" Value="member this.HttpClient : System.Net.Http.HttpClientHandler with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.HttpClient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpClientHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets HTTP client handler.
+            </summary>
+        <value>HTTP client handler.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPersonalInformation">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.BoolExpression LogPersonalInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.BoolExpression LogPersonalInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.LogPersonalInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogPersonalInformation As BoolExpression" />
+      <MemberSignature Language="F#" Value="member this.LogPersonalInformation : AdaptiveExpressions.Properties.BoolExpression with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.LogPersonalInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("logPersonalInformation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.BoolExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the flag to determine if personal information should be logged in telemetry.
+            </summary>
+        <value>
+            The flag to indicate in personal information should be logged in telemetry.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PredictionOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions PredictionOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions PredictionOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.PredictionOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property PredictionOptions As LuisPredictionOptions" />
+      <MemberSignature Language="F#" Value="member this.PredictionOptions : Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.PredictionOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("predictionOptions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets LUIS prediction options.
+            </summary>
+        <value>Prediction options.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = null, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="luisAdaptiveRecognizer.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="telemetryProperties">To be added.</param>
+        <param name="telemetryMetrics">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizerOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3 RecognizerOptions (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3 RecognizerOptions(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.RecognizerOptions(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizerOptions (dialogContext As DialogContext) As LuisRecognizerOptionsV3" />
+      <MemberSignature Language="F#" Value="member this.RecognizerOptions : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3" Usage="luisAdaptiveRecognizer.RecognizerOptions dialogContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context.</param>
+        <summary>
+            Construct V3 recognizer options from the current dialog context.
+            </summary>
+        <returns>LUIS Recognizer options.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

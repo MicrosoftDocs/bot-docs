@@ -1,0 +1,74 @@
+<Type Name="IComponentDeclarativeTypes" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes">
+  <TypeSignature Language="C#" Value="public interface IComponentDeclarativeTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentDeclarativeTypes" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentDeclarativeTypes" />
+  <TypeSignature Language="F#" Value="type IComponentDeclarativeTypes = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Interface for registering declarative kinds and jsonconverters to support them.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetConverters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Newtonsoft.Json.JsonConverter&gt; GetConverters (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Newtonsoft.Json.JsonConverter&gt; GetConverters(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes.GetConverters(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConverters (resourceExplorer As ResourceExplorer, sourceContext As SourceContext) As IEnumerable(Of JsonConverter)" />
+      <MemberSignature Language="F#" Value="abstract member GetConverters : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext -&gt; seq&lt;Newtonsoft.Json.JsonConverter&gt;" Usage="iComponentDeclarativeTypes.GetConverters (resourceExplorer, sourceContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Newtonsoft.Json.JsonConverter&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+        <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
+      </Parameters>
+      <Docs>
+        <param name="resourceExplorer">resourceExplorer.</param>
+        <param name="sourceContext">SourceContext to build debugger source map.</param>
+        <summary>
+            Return an enumeration of JsonConverters for supporting loading declarative types.
+            </summary>
+        <returns>jsonsconverters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeclarativeTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt; GetDeclarativeTypes (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt; GetDeclarativeTypes(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes.GetDeclarativeTypes(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeclarativeTypes (resourceExplorer As ResourceExplorer) As IEnumerable(Of DeclarativeType)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclarativeTypes : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt;" Usage="iComponentDeclarativeTypes.GetDeclarativeTypes resourceExplorer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+      </Parameters>
+      <Docs>
+        <param name="resourceExplorer">resourceExplorer.</param>
+        <summary>
+            Return an enumeration of KindRegistrations $kind =&gt; Type.
+            </summary>
+        <returns>declarative type registration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

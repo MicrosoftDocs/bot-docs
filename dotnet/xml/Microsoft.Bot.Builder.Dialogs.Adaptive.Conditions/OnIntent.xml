@@ -1,0 +1,220 @@
+<Type Name="OnIntent" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent">
+  <TypeSignature Language="C#" Value="public class OnIntent : Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OnIntent extends Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent" />
+  <TypeSignature Language="VB.NET" Value="Public Class OnIntent&#xA;Inherits OnDialogEvent" />
+  <TypeSignature Language="F#" Value="type OnIntent = class&#xA;    inherit OnDialogEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Actions triggered when an Activity has been received and the recognized intents and entities match specified list of intent and entity filters.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OnIntent (string intent = default, System.Collections.Generic.List&lt;string&gt; entities = default, System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions = default, string condition = default, string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string intent, class System.Collections.Generic.List`1&lt;string&gt; entities, class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions, string condition, string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional intent As String = null, Optional entities As List(Of String) = null, Optional actions As List(Of Dialog) = null, Optional condition As String = null, Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent : string * System.Collections.Generic.List&lt;string&gt; * System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; * string * string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent (intent, entities, actions, condition, callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="intent" Type="System.String" />
+        <Parameter Name="entities" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+        <Parameter Name="actions" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="intent">To be added.</param>
+        <param name="entities">To be added.</param>
+        <param name="actions">To be added.</param>
+        <param name="condition">To be added.</param>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Entities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Entities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Entities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("entities")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets entities which must be recognized for this rule to trigger.
+            </summary>
+        <value>
+            Entities which must be recognized for this rule to trigger.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public override AdaptiveExpressions.Expression GetExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class AdaptiveExpressions.Expression GetExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.GetExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpression () As Expression" />
+      <MemberSignature Language="F#" Value="override this.GetExpression : unit -&gt; AdaptiveExpressions.Expression" Usage="onIntent.GetExpression " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIdentity">
+      <MemberSignature Language="C#" Value="public override string GetIdentity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetIdentity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.GetIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIdentity () As String" />
+      <MemberSignature Language="F#" Value="override this.GetIdentity : unit -&gt; string" Usage="onIntent.GetIdentity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intent">
+      <MemberSignature Language="C#" Value="public string Intent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Intent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Intent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Intent As String" />
+      <MemberSignature Language="F#" Value="member this.Intent : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Intent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("intent")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets intent to match on.
+            </summary>
+        <value>
+            Intent to match on.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateChangeList">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeList OnCreateChangeList (Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext actionContext, object dialogOptions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeList OnCreateChangeList(class Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext actionContext, object dialogOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.OnCreateChangeList(Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateChangeList (actionContext As ActionContext, Optional dialogOptions As Object = null) As ActionChangeList" />
+      <MemberSignature Language="F#" Value="override this.OnCreateChangeList : Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext * obj -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeList" Usage="onIntent.OnCreateChangeList (actionContext, dialogOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionContext" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" />
+        <Parameter Name="dialogOptions" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="actionContext">To be added.</param>
+        <param name="dialogOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

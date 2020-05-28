@@ -1,0 +1,105 @@
+<Type Name="LanguageGeneratorExtensions" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions">
+  <TypeSignature Language="C#" Value="public static class LanguageGeneratorExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LanguageGeneratorExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module LanguageGeneratorExtensions" />
+  <TypeSignature Language="F#" Value="type LanguageGeneratorExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseLanguageGeneration">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguageGeneration (this Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator languageGenerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguageGeneration(class Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, class Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator languageGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguageGeneration(Microsoft.Bot.Builder.Dialogs.DialogManager,Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseLanguageGeneration (dialogManager As DialogManager, languageGenerator As LanguageGenerator) As DialogManager" />
+      <MemberSignature Language="F#" Value="static member UseLanguageGeneration : Microsoft.Bot.Builder.Dialogs.DialogManager * Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator -&gt; Microsoft.Bot.Builder.Dialogs.DialogManager" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguageGeneration (dialogManager, languageGenerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogManager" Type="Microsoft.Bot.Builder.Dialogs.DialogManager" RefType="this" />
+        <Parameter Name="languageGenerator" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator" />
+      </Parameters>
+      <Docs>
+        <param name="dialogManager">botAdapter to add services to.</param>
+        <param name="languageGenerator">LanguageGenerator to use.</param>
+        <summary>
+            Register ILanguageGenerator as default langugage generator.
+            </summary>
+        <returns>botAdapter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLanguageGeneration">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguageGeneration (this Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, string defaultLg = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguageGeneration(class Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, string defaultLg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguageGeneration(Microsoft.Bot.Builder.Dialogs.DialogManager,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseLanguageGeneration (dialogManager As DialogManager, Optional defaultLg As String = null) As DialogManager" />
+      <MemberSignature Language="F#" Value="static member UseLanguageGeneration : Microsoft.Bot.Builder.Dialogs.DialogManager * string -&gt; Microsoft.Bot.Builder.Dialogs.DialogManager" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguageGeneration (dialogManager, defaultLg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogManager" Type="Microsoft.Bot.Builder.Dialogs.DialogManager" RefType="this" />
+        <Parameter Name="defaultLg" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogManager">The <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> to add services to.</param>
+        <param name="defaultLg">Default LG Resource Id (default: main.lg).</param>
+        <summary>
+            Register default LG file as language generation.
+            </summary>
+        <returns>The BotAdapter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLanguagePolicy">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguagePolicy (this Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, Microsoft.Bot.Builder.Dialogs.Adaptive.LanguagePolicy policy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguagePolicy(class Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, class Microsoft.Bot.Builder.Dialogs.Adaptive.LanguagePolicy policy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguagePolicy(Microsoft.Bot.Builder.Dialogs.DialogManager,Microsoft.Bot.Builder.Dialogs.Adaptive.LanguagePolicy)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseLanguagePolicy (dialogManager As DialogManager, policy As LanguagePolicy) As DialogManager" />
+      <MemberSignature Language="F#" Value="static member UseLanguagePolicy : Microsoft.Bot.Builder.Dialogs.DialogManager * Microsoft.Bot.Builder.Dialogs.Adaptive.LanguagePolicy -&gt; Microsoft.Bot.Builder.Dialogs.DialogManager" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguagePolicy (dialogManager, policy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogManager" Type="Microsoft.Bot.Builder.Dialogs.DialogManager" RefType="this" />
+        <Parameter Name="policy" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguagePolicy" />
+      </Parameters>
+      <Docs>
+        <param name="dialogManager">botAdapter to add services to.</param>
+        <param name="policy">policy to use.</param>
+        <summary>
+            Register language policy as default policy.
+            </summary>
+        <returns>botAdapter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -10,6 +10,7 @@
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,8 +18,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Provides additional, `static` (Shared in Visual Basic) methods for <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> and
-            derived classes.
+            Provides extension methods for <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> and derived classes.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -36,6 +36,7 @@
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.7.0.0</AssemblyVersion>
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

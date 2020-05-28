@@ -1,0 +1,188 @@
+<Type Name="BotStateMemoryScope&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class BotStateMemoryScope&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope where T : BotState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BotStateMemoryScope`1&lt;(class Microsoft.Bot.Builder.BotState) T&gt; extends Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class BotStateMemoryScope(Of T)&#xA;Inherits MemoryScope" />
+  <TypeSignature Language="F#" Value="type BotStateMemoryScope&lt;'T (requires 'T :&gt; BotState)&gt; = class&#xA;    inherit MemoryScope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>Microsoft.Bot.Builder.BotState</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">BotState type.</typeparam>
+    <summary>
+            BotStateMemoryScope represents a BotState scoped memory.
+            </summary>
+    <remarks>This relies on the BotState object being accessible from turnContext.TurnState.Get&lt;T&gt;().</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BotStateMemoryScope (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.BotState)&gt; : string -&gt; Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.BotState)&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.BotState)&gt; name" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">name of the property.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1.DeleteAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteAsync (dialogContext As DialogContext, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="override this.DeleteAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botStateMemoryScope.DeleteAsync (dialogContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemory">
+      <MemberSignature Language="C#" Value="public override object GetMemory (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetMemory(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1.GetMemory(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMemory (dialogContext As DialogContext) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetMemory : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; obj" Usage="botStateMemoryScope.GetMemory dialogContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">dc.</param>
+        <summary>
+            Get the backing memory for this scope.
+            </summary>
+        <returns>memory for the scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task LoadAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task LoadAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1.LoadAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function LoadAsync (dialogContext As DialogContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="override this.LoadAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botStateMemoryScope.LoadAsync (dialogContext, force, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="force">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveChangesAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task SaveChangesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task SaveChangesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1.SaveChangesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SaveChangesAsync (dialogContext As DialogContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="override this.SaveChangesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botStateMemoryScope.SaveChangesAsync (dialogContext, force, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="force">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMemory">
+      <MemberSignature Language="C#" Value="public override void SetMemory (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetMemory(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1.SetMemory(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetMemory (dialogContext As DialogContext, memory As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetMemory : Microsoft.Bot.Builder.Dialogs.DialogContext * obj -&gt; unit" Usage="botStateMemoryScope.SetMemory (dialogContext, memory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="memory" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">dc.</param>
+        <param name="memory">memory.</param>
+        <summary>
+            Changes the backing object for the memory scope.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

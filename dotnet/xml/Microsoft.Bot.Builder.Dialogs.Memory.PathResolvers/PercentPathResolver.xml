@@ -1,0 +1,39 @@
+<Type Name="PercentPathResolver" FullName="Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers.PercentPathResolver">
+  <TypeSignature Language="C#" Value="public class PercentPathResolver : Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers.AliasPathResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PercentPathResolver extends Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers.AliasPathResolver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers.PercentPathResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class PercentPathResolver&#xA;Inherits AliasPathResolver" />
+  <TypeSignature Language="F#" Value="type PercentPathResolver = class&#xA;    inherit AliasPathResolver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers.AliasPathResolver</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Maps %xxx =&gt; settings.xxx (aka activeDialog.Instance.xxx).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PercentPathResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.PathResolvers.PercentPathResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

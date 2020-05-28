@@ -1,0 +1,207 @@
+<Type Name="InterfaceConverter&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class InterfaceConverter&lt;T&gt; : Newtonsoft.Json.JsonConverter, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InterfaceConverter`1&lt;class T&gt; extends Newtonsoft.Json.JsonConverter implements class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class InterfaceConverter(Of T)&#xA;Inherits JsonConverter&#xA;Implements IObservableConverter" />
+  <TypeSignature Language="F#" Value="type InterfaceConverter&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit JsonConverter&#xA;    interface IObservableConverter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Newtonsoft.Json.JsonConverter</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InterfaceConverter (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.#ctor(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceExplorer As ResourceExplorer, sourceContext As SourceContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter&lt;'T (requires 'T : null)&gt; (resourceExplorer, sourceContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+        <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
+      </Parameters>
+      <Docs>
+        <param name="resourceExplorer">To be added.</param>
+        <param name="sourceContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvert">
+      <MemberSignature Language="C#" Value="public override bool CanConvert (Type objectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvert(class System.Type objectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.CanConvert(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvert (objectType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvert : Type -&gt; bool" Usage="interfaceConverter.CanConvert objectType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="objectType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter&lt;'T (requires 'T : null)&gt;.CanRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadJson">
+      <MemberSignature Language="C#" Value="public override object ReadJson (Newtonsoft.Json.JsonReader reader, Type objectType, object existingValue, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadJson(class Newtonsoft.Json.JsonReader reader, class System.Type objectType, object existingValue, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadJson (reader As JsonReader, objectType As Type, existingValue As Object, serializer As JsonSerializer) As Object" />
+      <MemberSignature Language="F#" Value="override this.ReadJson : Newtonsoft.Json.JsonReader * Type * obj * Newtonsoft.Json.JsonSerializer -&gt; obj" Usage="interfaceConverter.ReadJson (reader, objectType, existingValue, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="Newtonsoft.Json.JsonReader" />
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="existingValue" Type="System.Object" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="existingValue">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterObserver">
+      <MemberSignature Language="C#" Value="public void RegisterObserver (Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterObserver(class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObserver (observer As IConverterObserver)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver -&gt; unit&#xA;override this.RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver -&gt; unit" Usage="interfaceConverter.RegisterObserver observer" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveUnknownObject">
+      <MemberSignature Language="C#" Value="public virtual object ResolveUnknownObject (Newtonsoft.Json.Linq.JToken jToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ResolveUnknownObject(class Newtonsoft.Json.Linq.JToken jToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.ResolveUnknownObject(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveUnknownObject (jToken As JToken) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ResolveUnknownObject : Newtonsoft.Json.Linq.JToken -&gt; obj&#xA;override this.ResolveUnknownObject : Newtonsoft.Json.Linq.JToken -&gt; obj" Usage="interfaceConverter.ResolveUnknownObject jToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="jToken" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <param name="jToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteJson">
+      <MemberSignature Language="C#" Value="public override void WriteJson (Newtonsoft.Json.JsonWriter writer, object value, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteJson(class Newtonsoft.Json.JsonWriter writer, object value, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteJson (writer As JsonWriter, value As Object, serializer As JsonSerializer)" />
+      <MemberSignature Language="F#" Value="override this.WriteJson : Newtonsoft.Json.JsonWriter * obj * Newtonsoft.Json.JsonSerializer -&gt; unit" Usage="interfaceConverter.WriteJson (writer, value, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="Newtonsoft.Json.JsonWriter" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

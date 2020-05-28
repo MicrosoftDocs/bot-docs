@@ -1,0 +1,198 @@
+<Type Name="TemplateEngineLanguageGenerator" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator">
+  <TypeSignature Language="C#" Value="public class TemplateEngineLanguageGenerator : Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateEngineLanguageGenerator extends Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateEngineLanguageGenerator&#xA;Inherits LanguageGenerator" />
+  <TypeSignature Language="F#" Value="type TemplateEngineLanguageGenerator = class&#xA;    inherit LanguageGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ILanguageGenerator implementation which uses LGFile. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateEngineLanguageGenerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateEngineLanguageGenerator (Microsoft.Bot.Builder.LanguageGeneration.Templates engine = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.LanguageGeneration.Templates engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.#ctor(Microsoft.Bot.Builder.LanguageGeneration.Templates)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional engine As Templates = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator : Microsoft.Bot.Builder.LanguageGeneration.Templates -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator engine" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="engine" Type="Microsoft.Bot.Builder.LanguageGeneration.Templates" />
+      </Parameters>
+      <Docs>
+        <param name="engine">template engine.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateEngineLanguageGenerator (string filePath, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; resourceMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filePath, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; resourceMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filePath As String, resourceMapping As Dictionary(Of String, IList(Of Resource)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator (filePath, resourceMapping)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="resourceMapping" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">lg template file absolute path.</param>
+        <param name="resourceMapping">template resource loader delegate (locale) -&gt; <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateEngineLanguageGenerator (string lgText, string id, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; resourceMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string lgText, string id, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; resourceMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.#ctor(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (lgText As String, id As String, resourceMapping As Dictionary(Of String, IList(Of Resource)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator : string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator (lgText, id, resourceMapping)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="lgText" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="resourceMapping" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lgText">lg template text.</param>
+        <param name="id">optional label for the source of the templates (used for labeling source of template errors).</param>
+        <param name="resourceMapping">template resource loader delegate (locale) -&gt; <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;object&gt; GenerateAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string template, object data, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; GenerateAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string template, object data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.GenerateAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GenerateAsync (dialogContext As DialogContext, template As String, data As Object, Optional cancellationToken As CancellationToken = null) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.GenerateAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="templateEngineLanguageGenerator.GenerateAsync (dialogContext, template, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="template" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context for the current turn of conversation.</param>
+        <param name="template">template to evaluate.</param>
+        <param name="data">data to bind to.</param>
+        <param name="cancellationToken">the <see cref="T:System.Threading.CancellationToken" /> for the task.</param>
+        <summary>
+            Method to generate text from given template and data.
+            </summary>
+        <returns>generated text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("id")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets id of the source of this template (used for labeling errors).
+            </summary>
+        <value>
+            Id of the source of this template (used for labeling errors).
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

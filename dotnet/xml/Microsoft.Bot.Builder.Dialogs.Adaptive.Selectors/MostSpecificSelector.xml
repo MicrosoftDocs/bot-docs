@@ -1,0 +1,143 @@
+<Type Name="MostSpecificSelector" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector">
+  <TypeSignature Language="C#" Value="public class MostSpecificSelector : Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MostSpecificSelector extends Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Class MostSpecificSelector&#xA;Inherits TriggerSelector" />
+  <TypeSignature Language="F#" Value="type MostSpecificSelector = class&#xA;    inherit TriggerSelector" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Select the most specific true rule implementation of <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MostSpecificSelector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt; conditionals, bool evaluate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt; conditionals, bool evaluate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.Initialize(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (conditionals As IEnumerable(Of OnCondition), evaluate As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : seq&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt; * bool -&gt; unit" Usage="mostSpecificSelector.Initialize (conditionals, evaluate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conditionals" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt;" />
+        <Parameter Name="evaluate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="conditionals">To be added.</param>
+        <param name="evaluate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt;&gt; SelectAsync (Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext context, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt;&gt; SelectAsync(class Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.SelectAsync(Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SelectAsync (context As ActionContext, cancellationToken As CancellationToken) As Task(Of IReadOnlyList(Of OnCondition))" />
+      <MemberSignature Language="F#" Value="override this.SelectAsync : Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt;&gt;" Usage="mostSpecificSelector.SelectAsync (context, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selector">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector Selector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector Selector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.Selector" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selector As TriggerSelector" />
+      <MemberSignature Language="F#" Value="member this.Selector : Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Selectors.MostSpecificSelector.Selector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("selector")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.TriggerSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets optional rule selector to use when more than one most specific rule is true.
+            </summary>
+        <value>
+            Optional rule selector to use when more than one most specific rule is true.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

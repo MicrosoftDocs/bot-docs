@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
     <AssemblyVersion>4.1.5.0</AssemblyVersion>
     <AssemblyVersion>4.3.2.0</AssemblyVersion>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
@@ -47,6 +48,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -56,7 +58,7 @@
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -83,6 +85,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -93,7 +96,7 @@
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -116,37 +119,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected OAuthClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (httpClient As HttpClient, disposeHttpClient As Boolean)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.OAuthClient : System.Net.Http.HttpClient * bool -&gt; Microsoft.Bot.Connector.OAuthClient" Usage="new Microsoft.Bot.Connector.OAuthClient (httpClient, disposeHttpClient)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="disposeHttpClient" Type="System.Boolean" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
-      </Parameters>
-      <Docs>
-        <param name="httpClient">
-            HttpClient to be used
-            </param>
-        <param name="disposeHttpClient">
-            True: will dispose the provided httpClient on calling OAuthClient.Dispose(). False: will not dispose provided httpClient</param>
-        <summary>
-            Initializes a new instance of the OAuthClient class.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected OAuthClient (System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
@@ -157,6 +129,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -167,7 +140,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -197,6 +170,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -207,7 +181,7 @@
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -240,13 +214,14 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -261,44 +236,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OAuthClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, httpClient As HttpClient, disposeHttpClient As Boolean)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.OAuthClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClient * bool -&gt; Microsoft.Bot.Connector.OAuthClient" Usage="new Microsoft.Bot.Connector.OAuthClient (credentials, httpClient, disposeHttpClient)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="disposeHttpClient" Type="System.Boolean" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
-      </Parameters>
-      <Docs>
-        <param name="credentials">
-            Required. Subscription credentials which uniquely identify client subscription.
-            </param>
-        <param name="httpClient">
-            HttpClient to be used
-            </param>
-        <param name="disposeHttpClient">
-            True: will dispose the provided httpClient on calling OAuthClient.Dispose(). False: will not dispose provided httpClient</param>
-        <summary>
-            Initializes a new instance of the OAuthClient class.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OAuthClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
@@ -309,6 +246,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -320,7 +258,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -356,6 +294,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -367,7 +306,7 @@
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -403,6 +342,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -414,7 +354,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -450,14 +390,15 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Parameter Name="baseUri" Type="System.Uri" />
+        <Parameter Name="credentials" Type="Microsoft.Bot.Connector.MicrosoftAppCredentials" />
+        <Parameter Name="addJwtTokenRefresher" Type="System.Boolean" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -483,6 +424,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -495,7 +437,7 @@
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -534,14 +476,15 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="microsoftAppId" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="microsoftAppPassword" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-3.0" />
-        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]" Index="3" FrameworkAlternate="botbuilder-dotnet-3.0">
+        <Parameter Name="baseUri" Type="System.Uri" />
+        <Parameter Name="microsoftAppId" Type="System.String" />
+        <Parameter Name="microsoftAppPassword" Type="System.String" />
+        <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
-            <Attribute FrameworkAlternate="botbuilder-dotnet-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -570,6 +513,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -587,32 +531,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BotSignIn">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IBotSignIn BotSignIn { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IBotSignIn BotSignIn" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClient.BotSignIn" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BotSignIn As IBotSignIn" />
-      <MemberSignature Language="F#" Value="member this.BotSignIn : Microsoft.Bot.Connector.IBotSignIn" Usage="Microsoft.Bot.Connector.OAuthClient.BotSignIn" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.IBotSignIn</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the IBotSignIn.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Credentials">
       <MemberSignature Language="C#" Value="public Microsoft.Rest.ServiceClientCredentials Credentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Rest.ServiceClientCredentials Credentials" />
@@ -624,6 +542,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -652,6 +571,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -669,112 +589,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ExchangeAsyncWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; ExchangeAsyncWithHttpMessagesAsync (string userId, string connectionName, string channelId, Microsoft.Bot.Schema.TokenExchangeRequest exchangeRequest, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt;&gt; ExchangeAsyncWithHttpMessagesAsync(string userId, string connectionName, string channelId, class Microsoft.Bot.Schema.TokenExchangeRequest exchangeRequest, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClient.ExchangeAsyncWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ExchangeAsyncWithHttpMessagesAsync (userId As String, connectionName As String, channelId As String, exchangeRequest As TokenExchangeRequest, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of Object))" />
-      <MemberSignature Language="F#" Value="member this.ExchangeAsyncWithHttpMessagesAsync : string * string * string * Microsoft.Bot.Schema.TokenExchangeRequest * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;" Usage="oAuthClient.ExchangeAsyncWithHttpMessagesAsync (userId, connectionName, channelId, exchangeRequest, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="userId" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="connectionName" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="channelId" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="exchangeRequest" Type="Microsoft.Bot.Schema.TokenExchangeRequest" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="botbuilder-dotnet-stable" />
-      </Parameters>
-      <Docs>
-        <param name="userId" />
-        <param name="connectionName" />
-        <param name="channelId" />
-        <param name="exchangeRequest" />
-        <param name="customHeaders">
-            Headers that will be added to request.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Bot.Schema.ErrorResponseException">
-            Thrown when the operation returned an invalid status code
-            </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-            Thrown when unable to deserialize the response
-            </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown when a required parameter is null
-            </exception>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-        <return>
-            A response object containing the response body and response headers.
-            </return>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSignInResourceWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.SignInResource&gt;&gt; GetSignInResourceWithHttpMessagesAsync (string state, string codeChallenge = default, string emulatorUrl = default, string finalRedirect = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.SignInResource&gt;&gt; GetSignInResourceWithHttpMessagesAsync(string state, string codeChallenge, string emulatorUrl, string finalRedirect, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthClient.GetSignInResourceWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceWithHttpMessagesAsync (state As String, Optional codeChallenge As String = null, Optional emulatorUrl As String = null, Optional finalRedirect As String = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of SignInResource))" />
-      <MemberSignature Language="F#" Value="member this.GetSignInResourceWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.SignInResource&gt;&gt;" Usage="oAuthClient.GetSignInResourceWithHttpMessagesAsync (state, codeChallenge, emulatorUrl, finalRedirect, customHeaders, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.SignInResource&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="state" Type="System.String" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="codeChallenge" Type="System.String" Index="1" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="emulatorUrl" Type="System.String" Index="2" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="finalRedirect" Type="System.String" Index="3" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" Index="4" FrameworkAlternate="botbuilder-dotnet-stable" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="5" FrameworkAlternate="botbuilder-dotnet-stable" />
-      </Parameters>
-      <Docs>
-        <param name="state" />
-        <param name="codeChallenge" />
-        <param name="emulatorUrl" />
-        <param name="finalRedirect" />
-        <param name="customHeaders">
-            Headers that will be added to request.
-            </param>
-        <param name="cancellationToken">
-            The cancellation token.
-            </param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.HttpOperationException">
-            Thrown when the operation returned an invalid status code
-            </exception>
-        <exception cref="T:Microsoft.Rest.SerializationException">
-            Thrown when unable to deserialize the response
-            </exception>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown when a required parameter is null
-            </exception>
-        <exception cref="T:System.ArgumentNullException">
-            Thrown when a required parameter is null
-            </exception>
-        <return>
-            A response object containing the response body and response headers.
-            </return>
-      </Docs>
-    </Member>
     <Member MemberName="OAuthApi">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IOAuthApi OAuthApi { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IOAuthApi OAuthApi" />
@@ -786,9 +600,35 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use OAuthApiEx instead")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IOAuthApi</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OAuthApiEx">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IOAuthApiEx OAuthApiEx { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IOAuthApiEx OAuthApiEx" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClient.OAuthApiEx" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OAuthApiEx As IOAuthApiEx" />
+      <MemberSignature Language="F#" Value="member this.OAuthApiEx : Microsoft.Bot.Connector.IOAuthApiEx" Usage="Microsoft.Bot.Connector.OAuthClient.OAuthApiEx" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Connector.IOAuthApiEx</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -807,6 +647,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
@@ -819,32 +660,6 @@
       <Docs>
         <summary>
             Gets or sets json serialization settings.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UserToken">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.IUserToken UserToken { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Connector.IUserToken UserToken" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.OAuthClient.UserToken" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserToken As IUserToken" />
-      <MemberSignature Language="F#" Value="member this.UserToken : Microsoft.Bot.Connector.IUserToken" Usage="Microsoft.Bot.Connector.OAuthClient.UserToken" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Connector.IUserToken</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the IUserToken.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

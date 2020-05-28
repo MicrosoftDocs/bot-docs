@@ -1,0 +1,160 @@
+<Type Name="DialogExpressionConverter" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter">
+  <TypeSignature Language="C#" Value="public class DialogExpressionConverter : Newtonsoft.Json.JsonConverter&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt;, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogExpressionConverter extends Newtonsoft.Json.JsonConverter`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt; implements class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogExpressionConverter&#xA;Inherits JsonConverter(Of DialogExpression)&#xA;Implements IObservableConverter" />
+  <TypeSignature Language="F#" Value="type DialogExpressionConverter = class&#xA;    inherit JsonConverter&lt;DialogExpression&gt;&#xA;    interface IObservableConverter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Newtonsoft.Json.JsonConverter&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Converter which allows json to be expression to object or static object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogExpressionConverter (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.#ctor(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceExplorer As ResourceExplorer, sourceContext As SourceContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter (resourceExplorer, sourceContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+        <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
+      </Parameters>
+      <Docs>
+        <param name="resourceExplorer">resource explorer to use for resolving references.</param>
+        <param name="sourceContext">SourceContext to build debugger source map.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.CanRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadJson">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression ReadJson (Newtonsoft.Json.JsonReader reader, Type objectType, Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression existingValue, bool hasExistingValue, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression ReadJson(class Newtonsoft.Json.JsonReader reader, class System.Type objectType, class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression existingValue, bool hasExistingValue, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression,System.Boolean,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadJson (reader As JsonReader, objectType As Type, existingValue As DialogExpression, hasExistingValue As Boolean, serializer As JsonSerializer) As DialogExpression" />
+      <MemberSignature Language="F#" Value="override this.ReadJson : Newtonsoft.Json.JsonReader * Type * Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression * bool * Newtonsoft.Json.JsonSerializer -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" Usage="dialogExpressionConverter.ReadJson (reader, objectType, existingValue, hasExistingValue, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="Newtonsoft.Json.JsonReader" />
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="existingValue" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />
+        <Parameter Name="hasExistingValue" Type="System.Boolean" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="existingValue">To be added.</param>
+        <param name="hasExistingValue">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterObserver">
+      <MemberSignature Language="C#" Value="public void RegisterObserver (Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterObserver(class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObserver (observer As IConverterObserver)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver -&gt; unit&#xA;override this.RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver -&gt; unit" Usage="dialogExpressionConverter.RegisterObserver observer" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="WriteJson">
+      <MemberSignature Language="C#" Value="public override void WriteJson (Newtonsoft.Json.JsonWriter writer, Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression value, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteJson(class Newtonsoft.Json.JsonWriter writer, class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression value, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.WriteJson(Newtonsoft.Json.JsonWriter,Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteJson (writer As JsonWriter, value As DialogExpression, serializer As JsonSerializer)" />
+      <MemberSignature Language="F#" Value="override this.WriteJson : Newtonsoft.Json.JsonWriter * Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression * Newtonsoft.Json.JsonSerializer -&gt; unit" Usage="dialogExpressionConverter.WriteJson (writer, value, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="Newtonsoft.Json.JsonWriter" />
+        <Parameter Name="value" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

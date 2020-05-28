@@ -1,0 +1,312 @@
+<Type Name="DataModelBase&lt;TContext,TName,TValue&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase&lt;TContext,TName,TValue&gt;">
+  <TypeSignature Language="C#" Value="public abstract class DataModelBase&lt;TContext,TName,TValue&gt; : Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataModelBase`3&lt;TContext, TName, TValue&gt; extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataModelBase(Of TContext, TName, TValue)&#xA;Implements IDataModel" />
+  <TypeSignature Language="F#" Value="type DataModelBase&lt;'Context, 'Name, 'Value&gt; = class&#xA;    interface IDataModel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TContext" />
+    <TypeParameter Name="TName" />
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TContext">To be added.</typeparam>
+    <typeparam name="TName">To be added.</typeparam>
+    <typeparam name="TValue">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DataModelBase (Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion coercion);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion coercion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (coercion As ICoercion)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase&lt;'Context, 'Name, 'Value&gt; : Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase&lt;'Context, 'Name, 'Value&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase&lt;'Context, 'Name, 'Value&gt; coercion" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="coercion" Type="Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion" />
+      </Parameters>
+      <Docs>
+        <param name="coercion">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coerce&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected T Coerce&lt;T&gt; (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance !!T Coerce&lt;T&gt;(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Coerce``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Coerce(Of T) (item As Object) As T" />
+      <MemberSignature Language="F#" Value="member this.Coerce : obj -&gt; 'T" Usage="dataModelBase.Coerce item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScalar">
+      <MemberSignature Language="C#" Value="public virtual bool IsScalar (TContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsScalar(!TContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.IsScalar(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsScalar (context As TContext) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsScalar : 'Context -&gt; bool&#xA;override this.IsScalar : 'Context -&gt; bool" Usage="dataModelBase.IsScalar context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="TContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract TValue this[TContext context, TName name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue Item(!TContext, !TName)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Item(`0,`1)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride Property Item(context As TContext, name As TName) As TValue" />
+      <MemberSignature Language="F#" Value="member this.Item('Context * 'Name) : 'Value with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase&lt;'Context, 'Name, 'Value&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="TContext" />
+        <Parameter Name="name" Type="TName" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar">
+      <MemberSignature Language="C#" Value="bool IDataModel.IsScalar (object context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar(object context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#IsScalar(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IsScalar (context As Object) As Boolean Implements IDataModel.IsScalar" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar : obj -&gt; bool&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar : obj -&gt; bool" Usage="dataModelBase.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item">
+      <MemberSignature Language="C#" Value="object Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item[object context, object name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item(object, object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Item(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(context As Object, name As Object) As Object Implements IDataModel.Item" />
+      <MemberSignature Language="F#" Value="member this.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item(obj * obj) : obj with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item(System.Object,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Object" />
+        <Parameter Name="name" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;object&gt; IDataModel.Names (object context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names(object context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Names(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Names (context As Object) As IEnumerable(Of Object) Implements IDataModel.Names" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names : obj -&gt; seq&lt;obj&gt;&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names : obj -&gt; seq&lt;obj&gt;" Usage="dataModelBase.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString">
+      <MemberSignature Language="C#" Value="string IDataModel.ToString (object context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString(object context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#ToString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (context As Object) As String Implements IDataModel.ToString" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString : obj -&gt; string&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString : obj -&gt; string" Usage="dataModelBase.Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Names">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;TName&gt; Names (TContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!TName&gt; Names(!TContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Names(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Names (context As TContext) As IEnumerable(Of TName)" />
+      <MemberSignature Language="F#" Value="abstract member Names : 'Context -&gt; seq&lt;'Name&gt;" Usage="dataModelBase.Names context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TName&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="TContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rank">
+      <MemberSignature Language="C#" Value="public abstract int Rank { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rank" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Rank" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Rank As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rank : int" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase&lt;'Context, 'Name, 'Value&gt;.Rank" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Rank</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public virtual string ToString (TContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(!TContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.ToString(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToString (context As TContext) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : 'Context -&gt; string" Usage="dataModelBase.ToString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="TContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

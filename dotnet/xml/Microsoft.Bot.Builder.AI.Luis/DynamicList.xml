@@ -1,0 +1,99 @@
+<Type Name="DynamicList" FullName="Microsoft.Bot.Builder.AI.Luis.DynamicList">
+  <TypeSignature Language="C#" Value="public class DynamicList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicList extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.DynamicList" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicList" />
+  <TypeSignature Language="F#" Value="type DynamicList = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines an extension for a list entity.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.DynamicList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.DynamicList" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entity">
+      <MemberSignature Language="C#" Value="public string Entity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Entity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.DynamicList.Entity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entity As String" />
+      <MemberSignature Language="F#" Value="member this.Entity : string with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.DynamicList.Entity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the list entity to extend.
+            </summary>
+        <value>
+            The name of the list entity to extend.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ListElement&gt; List { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.AI.LuisV3.ListElement&gt; List" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.DynamicList.List" />
+      <MemberSignature Language="VB.NET" Value="Public Property List As IList(Of ListElement)" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ListElement&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.DynamicList.List" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="list")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.AI.LuisV3.ListElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the lists to append on the extended list entity.
+            </summary>
+        <value>
+            The lists to append on the extended list entity.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

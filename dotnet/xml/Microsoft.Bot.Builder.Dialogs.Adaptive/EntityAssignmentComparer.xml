@@ -1,0 +1,79 @@
+<Type Name="EntityAssignmentComparer" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer">
+  <TypeSignature Language="C#" Value="public class EntityAssignmentComparer : System.Collections.Generic.Comparer&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityAssignmentComparer extends System.Collections.Generic.Comparer`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityAssignmentComparer&#xA;Inherits Comparer(Of EntityAssignment)" />
+  <TypeSignature Language="F#" Value="type EntityAssignmentComparer = class&#xA;    inherit Comparer&lt;EntityAssignment&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.Comparer&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Compare two entity assignments to determine their relative priority.
+            </summary>
+    <remarks>
+            Compare by event: AssignEntity, ChooseProperty, ChooseEntity
+            Then unexpected before expected
+            Then by oldest first
+            Then by order of operations passed in.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityAssignmentComparer (string[] operations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] operations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (operations As String())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer : string[] -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer operations" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="operations" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="operations">Preference on operations.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public override int Compare (Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment x, Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Compare(class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment x, class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignmentComparer.Compare(Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment,Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Compare (x As EntityAssignment, y As EntityAssignment) As Integer" />
+      <MemberSignature Language="F#" Value="override this.Compare : Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment * Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment -&gt; int" Usage="entityAssignmentComparer.Compare (x, y)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment" />
+        <Parameter Name="y" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

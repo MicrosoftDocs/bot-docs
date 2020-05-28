@@ -1,0 +1,117 @@
+<Type Name="DynamicBeginDialog" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog">
+  <TypeSignature Language="C#" Value="public class DynamicBeginDialog : Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicBeginDialog extends Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicBeginDialog&#xA;Inherits BeginDialog" />
+  <TypeSignature Language="F#" Value="type DynamicBeginDialog = class&#xA;    inherit BeginDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Internal BeginDialog action which dynamically binds x.schema/x.dialog to invoke the x.dialog resource with properties as the options.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicBeginDialog (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog (callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindOptions">
+      <MemberSignature Language="C#" Value="protected override object BindOptions (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object BindOptions(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog.BindOptions(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function BindOptions (dc As DialogContext, options As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.BindOptions : Microsoft.Bot.Builder.Dialogs.DialogContext * obj -&gt; obj" Usage="dynamicBeginDialog.BindOptions (dc, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;string,object&gt; Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Properties As Dictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.Dictionary&lt;string, obj&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.DynamicBeginDialog.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the extra properties.
+            </summary>
+        <value>
+            options if there is no explicit options set.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
