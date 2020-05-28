@@ -1,7 +1,5 @@
 In this step, you create a bot application service which sets the deployment stage for the bot. When using an existing resource group, you can either use an existing app service plan or create a new one. Steps for both options are listed below.
 
-From the resulting JSON output, copy the value of the **id** field to use as the value for the **registration subscription id** in the next step.
-
 > [!NOTE]
 > This step can take a few minutes to complete.
 
