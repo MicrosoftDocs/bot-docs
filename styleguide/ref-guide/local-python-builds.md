@@ -138,7 +138,7 @@ This creates a new `docfx_project` folder.
 
 1. In your browser, navigate to http://localhost:8080 to see the online docs. The output should look similar to this:
 
-    ![DocFX local build](../media/docfx-local-build.PNG)
+    ![DocFX local build](../media/docfx-local-build.png)
 
 ## Some shortcuts
 
