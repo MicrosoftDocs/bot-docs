@@ -1,7 +1,7 @@
 At this point we are ready to deploy the code to the Azure Web App. Run the following command from the command line to perform deployment using the kudu zip push deployment for a web app.
 
 ```cmd
-az webapp deployment source config-zip --resource-group "<resource-group-name>" --name "<name-of-web-app>" --src <project-zip-path>
+az webapp deployment source config-zip --resource-group "<resource-group-name>" --name "<name-of-web-app>" --src “<project-zip-path>”
 ```
 
 | Option   | Description |
