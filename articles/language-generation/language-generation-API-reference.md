@@ -95,24 +95,20 @@ public string Content { get; set; }
 public string Id { get; set; }
 
 /// <summary>
-/// Gets or sets lG file options.
+/// Gets the evluation options for current LG file.
 /// </summary>
 /// <value>
-/// LG file options.
+/// An EvaluationOption.
 /// </value>
-public IList<string> Options { get; set; }
+public EvaluationOptions LgOptions => new EvaluationOptions(Options);
 
 /// <summary>
-/// Gets a value indicating whether lG parser/checker/evaluate strict mode.
-/// If strict mode is on, expression would throw exception instead of return
-/// null or make the condition failed.
+/// Gets the namespace to register for current LG file.
 /// </summary>
 /// <value>
-/// A value indicating whether lG parser/checker/evaluate strict mode.
-/// If strict mode is on, expression would throw exception instead of return
-/// null or make the condition failed.
+/// A string value.
 /// </value>
-public bool StrictMode => GetStrictModeFromOptions(Options);
+public string Namespace => ExtractNameSpace(Options);
 ```
 
 ### Constructors
@@ -178,16 +174,18 @@ public static Templates ParseText(
 /// </summary>
 /// <param name="templateName">Template name to be evaluated.</param>
 /// <param name="scope">The state visible in the evaluation.</param>
+/// <param name="opt">The EvaluationOptions in evaluating a template.</param>
 /// <returns>Evaluate result.</returns>
-public object Evaluate(string templateName, object scope = null);
+public object Evaluate(string templateName, object scope = null, EvaluationOptions opt = null);
 
 /// <summary>
 /// Use to evaluate an inline template str.
 /// </summary>
-/// <param name="text">inline string which will be evaluated.</param>
-/// <param name="scope">scope object or JToken.</param>
+/// <param name="text">Inline string which will be evaluated.</param>
+/// <param name="scope">Scope object or JToken.</param>
+/// <param name="opt">The EvaluationOptions in evaluating a template.</param>
 /// <returns>Evaluate result.</returns>
-public object EvaluateText(string text, object scope = null);
+public object EvaluateText(string text, object scope = null, EvaluationOptions opt = null);
 
 /// <summary>
 /// Expand a template with given name and scope.
