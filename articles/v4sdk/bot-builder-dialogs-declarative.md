@@ -197,23 +197,12 @@ dialogManager.UseLanguageGeneration();
 ```
 -->
 
-**var resource = this.resourceExplorer.GetResource("main.dialog");**
+The resource explorer's `GetResource` method reads the declarative file into a resource object, and its `LoadType` method casts the resource to an `AdaptiveDialog` object. Here, this is the **main.dialog** file.
+You can then create a dialog manager as you would for any other adaptive dialog. the dialog is being read in and created from the declarative file instead of defined in code.
 
-The method `GetResource` reads the declarative file into a resource object and assigns it to `resource`.
+The dialog manager's `UseResourceExplorer` method registers the resource explorer so that the dialog manager can make use of it later, as necessary. The `UseLanguageGeneration` method tells the dialog manager which language generator to use.
 
-**dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));**
-
-The method `LoadType` returns the first top-level `AdaptiveDialog` object found in `resource`, which in the EchoBot sample is `main.dialog`.
-
-This tells the resource explorer that the `resource` represents an `AdaptiveDialog` instance and to create the object from the file. This is comparable to statement `DialogManager = new DialogManager(Dialog);` used in non-declarative adaptive dialogs, except that the dialog is being read in and created from the declarative file instead of defined in code.
-
-**dialogManager.UseResourceExplorer(resourceExplorer);**
-
-This tells the `dialogManager` to use `resourceExplorer` as the resourceExplorer.
-
-**dialogManager.UseLanguageGeneration();**
-
-If you don't pass in the `LanguageGenerator` parameter in the `UseLanguageGeneration` method call, it defaults to "main.lg".  If "main.lg" does not exist, as is the case in the `EchoBot` sample, it creates a new LanguageGeneration template. In the EchoBot sample there is an in-line LG template used in the dialog. It is defined in `main.dialog':
+In this case, since no language generation (LG) template file is provided, and this project does not include a **main.lg** default LG file, the dialog manager will use the default language generator, without any predefined templates. However, the echo bot includes an in-line LG template used in the dialog. It is defined in **main.dialog**.
 
 [!code-json[main.dialog](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Dialogs/main.dialog?range=1-15&highlight=10)]
 
