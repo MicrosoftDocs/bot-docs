@@ -51,7 +51,7 @@ This sample, the Bot Framework Adaptive Dialog declarative Echo bot, demonstrate
 
 ## Create the declarative files
 
-Declarative dialog files are JSON files that declare the elements of a dialog. They typically have an extension of `.dialog`. The **EchoBot** sample only contains one adaptive dialog with a trigger to handle the `UnknownIntent` event, which when fires it sends a message to the user that echos what they said: _"You said '${turn.activity.text}'"_.
+Declarative dialog files are JSON files that declare the elements of a dialog. They typically have an extension of `.dialog`. The **EchoBot** sample only contains one adaptive dialog with a trigger to handle the `UnknownIntent` event, which when it fires it sends a message to the user that echos what they said: _"You said '${turn.activity.text}'"_.
 
 > [!TIP]
 > Declarative files are JSON files and are language-agnostic, meaning that they are the same regardless which language you use to create your bot.
