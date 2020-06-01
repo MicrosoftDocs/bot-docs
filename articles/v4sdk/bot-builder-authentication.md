@@ -324,7 +324,7 @@ After you have configured the authentication mechanism, you can perform the actu
 > [!NOTE]
 > You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using the Direct Line enhanced security that allows the setting up of *valid* domains that are allowed to be authenticated.
 >
-> See [Connect a bot to Direct Line](~/v4sdk/bot-service-channel-connect-directline#configure-settings) and [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
+> See [Connect a bot to Direct Line](~/v4sdk/bot-service-channel-connect-directline.md#configure-settings) and [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
 
 
 1. Run the bot sample locally on your machine.
