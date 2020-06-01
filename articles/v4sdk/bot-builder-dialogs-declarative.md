@@ -83,7 +83,7 @@ The declarative file ([C#][main.dialog] | [JavaScript][echo.dialog]) for the **E
 
 # [C#](#tab/csharp)
 
-Declarative only works with adaptive dialogs. To enable adaptive in your bot install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package, then create the following references in your code in `Startup.cs`:
+Declarative only works with adaptive dialogs. To enable adaptive in your bot install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package, then create the following references in your code in **Startup.cs**:
 
 [!code-CSharp[Startup.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=4-10&highlight=7-9)]
 
