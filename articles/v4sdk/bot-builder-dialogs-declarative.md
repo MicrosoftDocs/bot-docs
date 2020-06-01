@@ -100,7 +100,7 @@ using Microsoft.Bot.Builder.Dialogs.Declarative.Resources;
 
 # [JavaScript](#tab/javascript)
 
-Declarative only works with adaptive dialogs. To use adaptive dialogs, your project needs to install the **botbuilder-dialogs-adaptive** npm package. Once installed you can enable declarative by installing the **botbuilder-dialogs-declarative** NuGet package, then create the following references in your code in `index.js`:
+Declarative only works with adaptive dialogs. To use adaptive dialogs, your project needs to install the **botbuilder-dialogs-adaptive** npm package. Once installed you can enable declarative by creating the following references in your code in **index.js**:
 
 <!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=4-10&highlight=4-5)]-->
 
