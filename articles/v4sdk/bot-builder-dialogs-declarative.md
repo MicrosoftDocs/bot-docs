@@ -87,7 +87,7 @@ Declarative only works with adaptive dialogs. To enable adaptive in your bot ins
 
 [!code-CSharp[Startup.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=4-10&highlight=7-9)]
 
-Also in `EchoBot.cs`:
+Also in **EchoBot.cs**:
 
 [!code-CSharp[EchoBot.cs-Using-Statements](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/echoBot.cs?range=4-10&highlight=6-7)]
 
