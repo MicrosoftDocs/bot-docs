@@ -2,7 +2,7 @@
 title: Use QnA Maker to answer questions - Bot Service
 description: Learn how to use QnA maker in your bot.
 keywords: question and answer, QnA, FAQs, qna maker 
-author: ivorb
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
@@ -56,10 +56,10 @@ The user's input is sent to your knowledge base and the best returned answer is 
 1. Create a QnA Maker service.
 1. Create a knowledge base using the **smartLightFAQ.tsv** file located in the CognitiveModels folder of the sample project. Name your knowledge base `qna`,  and use the **smartLightFAQ.tsv** file to populate it.
 
-> [!TIP]
-> You can also use these steps to access your own QnA Maker knowledge bases.
+You can also use these steps to access your own QnA Maker knowledge bases.
 
-The QnA Maker documentation has instructions on how to [create the service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> [!NOTE]
+> The QnA Maker documentation has instructions on how to [create the service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 ## Obtain values to connect your bot to the knowledge base
 
@@ -70,7 +70,7 @@ The QnA Maker documentation has instructions on how to [create the service](http
    - Host: \<your-host-url>
    - Authorization: EndpointKey \<your-endpoint-key>
 
-Your _host URL_ will start with `https://` and end with `/qnamaker`, such as "https://<hostname>.azure.net/qnamaker". Your bot will need the knowledge base ID, host URL, and endpoint key to connect to your QnA Maker knowledge base.
+Your host URL will start with `https://` and end with `/qnamaker`, such as `https://<hostname>.azure.net/qnamaker`. Your bot will need the knowledge base ID, host URL, and endpoint key to connect to your QnA Maker knowledge base.
 
 ## Update the settings file
 
@@ -174,8 +174,6 @@ Start the emulator, connect to your bot, and send a message as shown below.
 
 ## Additional information
 
-### Multi-turn prompts
-
 The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), [**JavaScript**](https://aka.ms/js-qna-multiturn), [**Python**](https://aka.ms/py-qna-multiturn)) show how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
@@ -185,7 +183,7 @@ In version 4.6, the Bot Framework SDK added support for this feature.
   To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](https://aka.ms/qnamaker-multiturn-conversation).
 
 - QnA Maker also supports active learning suggestions, allowing the knowledge base to improve over time.
-The _QnA Maker dialog_ supports explicit feedback for the active learning feature.
+The QnA Maker dialog supports explicit feedback for the active learning feature.
 
   To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](https://aka.ms/qnamaker-active-learning).
 
