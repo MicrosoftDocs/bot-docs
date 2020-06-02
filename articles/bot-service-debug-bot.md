@@ -36,25 +36,13 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 
    ![Inspector panel on the Emulator](~/media/bot-service-debug-bot/emulator_inspector.png) -->
 
-::: moniker range="azure-bot-service-3.0"
+
+::: moniker range="azure-bot-service-4.0"
 
 ## [C#](#tab/csharp)
 
 [!INCLUDE [csharp vscode](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
-[!INCLUDE [csharp visual studio](../articles/includes/bot-service-debug-bot/csharp-vs.md)]
-[!INCLUDE [csharp consumption](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
 
-## [JavaScript](#tab/javascript)
-
-[!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/js-vscode.md)]
-
-:::moniker-end
-
----
-
-## [C#](#tab/csharp)
-
-[!INCLUDE [csharp vscode](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
 [!INCLUDE [csharp visual studio](../articles/includes/bot-service-debug-bot/csharp-vs.md)]
 
 ## [JavaScript](#tab/javascript)
@@ -66,6 +54,24 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 [!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/python-vscode.md)]
 
 ---
+:::moniker-end
+::: moniker range="azure-bot-service-3.0"
+
+## [C#](#tab/csharp)
+
+[!INCLUDE [csharp vscode](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
+
+[!INCLUDE [csharp visual studio](../articles/includes/bot-service-debug-bot/csharp-vs.md)]
+
+[!INCLUDE [csharp consumption](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
+
+## [JavaScript](#tab/javascript)
+
+[!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/js-vscode.md)]
+
+---
+
+:::moniker-end
 
 ## Additional resources
 
