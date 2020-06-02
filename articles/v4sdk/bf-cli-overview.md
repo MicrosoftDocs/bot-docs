@@ -11,15 +11,11 @@ ms.date: 11/01/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-<!--TODO:
-- [?] Add to TOC: Reference/Bot Framework CLI/Reference
-- [?] Add other topics to the same node for each of the command groups
--->
 # Bot Framework CLI overview
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Bot Framework Command-Line Interface (CLI) is a cross-platform tool that allows you to manage bots and related services. It replaces a collection of older standalone CLI tools by aggregating them into a single tool. 
+Bot Framework Command-Line Interface (CLI) is a cross-platform tool that allows you to manage bots and related services. It replaces a collection of older standalone CLI tools by aggregating them into a single tool.
 
 ## Prerequisites
 
@@ -29,24 +25,25 @@ Bot Framework Command-Line Interface (CLI) is a cross-platform tool that allows 
 
 Install the BF CLI from the command line.
 
-~~~cmd
+```cmd
 npm i -g @microsoft/botframework-cli
-~~~
+```
 
 ## Available commands
 
 The following commands are currently available.
 
-| Old tool | BF command set | Description |
-| :--- | :--- | :--- |
-| ChatDown | [`bf chatdown`](bf-cli-reference.md#bf-chatdown) | Commands for working with chat dialog (**.chat**) files. |
-| na | [`bf config`](bf-cli-reference.md#bf-config) | Configures various settings within the CLI. |
-| LuDown, LuisGen | [`bf luis`](bf-cli-reference.md#bf-luis) | Commands for working with LUIS resource files and managing LUIS models. |
-| QnAMaker | [`bf qnamaker`](bf-cli-reference.md#bf-qnamaker) | Commands for working with QnA Maker resource files and managing knowledge bases. |
+| Old tool | BF command set | Description
+| :--- | :--- | :---
+| ChatDown | [`bf chatdown`](https://github.com/microsoft/botframework-cli/tree/master/packages/cli#bf-chatdown) | Commands for working with chat dialog (**.chat**) files.
+| na | [`bf config`](https://github.com/microsoft/botframework-cli/tree/master/packages/cli#bf-config) | Configures various settings within the CLI.
+| LuDown, LuisGen | [`bf luis`](https://github.com/microsoft/botframework-cli/tree/master/packages/cli#bf-luis) | Commands for working with LUIS resource files and managing LUIS models.
+| QnAMaker | [`bf qnamaker`](https://github.com/microsoft/botframework-cli/tree/master/packages/cli#bf-qnamaker) | Commands for working with QnA Maker resource files and managing knowledge bases.
 
 The following tools will be ported in upcoming releases:
-- LUIS (API)
-- Dispatch
+
+* LUIS (API)
+* Dispatch
 
 See [Porting Map](https://github.com/microsoft/botframework-cli/blob/master/PortingMap.md) for a mapping reference between the old and new tools.
 
@@ -82,8 +79,10 @@ To modify data collection behavior, use the [`bf config`](bf-cli-reference.md#bf
 Please refer to [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) for more details.  
 
 ## Issues and feature requests
-- You can file issues and feature requests [here](https://github.com/microsoft/botframework-cli/issues).
-- You can find known issues [here](https://github.com/microsoft/botframework-cli/labels/known-issues).
+
+* You can file issues and feature requests [here](https://github.com/microsoft/botframework-cli/issues).
+* You can find known issues [here](https://github.com/microsoft/botframework-cli/labels/known-issues).
 
 ## Next steps
-- [BF cli reference](bf-cli-reference.md)
+
+* [BF cli reference](bf-cli-reference.md)
