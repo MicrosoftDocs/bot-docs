@@ -54,7 +54,9 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 [!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/python-vscode.md)]
 
 ---
+
 :::moniker-end
+
 ::: moniker range="azure-bot-service-3.0"
 
 ## [C#](#tab/csharp)
