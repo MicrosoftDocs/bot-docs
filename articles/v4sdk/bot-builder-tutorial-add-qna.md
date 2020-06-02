@@ -320,7 +320,7 @@ Update your initialization code to load the service information for your knowled
 
    ```python
    # Create the Bot
-   BOT = QnABot(CONFIG)
+   BOT = EchoBot(CONFIG)
    ```
 
 1. In the `bot.py` file import `QnAMaker` and `QnAMakerEndpoint`; also import `Config`, as shown below.
