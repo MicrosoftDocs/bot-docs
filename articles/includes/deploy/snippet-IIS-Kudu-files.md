@@ -28,7 +28,7 @@ The command generates two `web.config` file in your project folder. Node.js apps
 az bot prepare-deploy --code-dir "." --lang Typescript
 ```
 
-This command works similarly to JavaScript in that it generates two `web.config` files. One is in your project folder, and the other is in the **src** folder within your project folder.
+This command generates a `web.config` file in your project folder.
 
 <!-- **TPython bots** -->
 ##### [Python](#tab/Python)
