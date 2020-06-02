@@ -1,0 +1,493 @@
+<Type Name="LGFileLexer" FullName="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer">
+  <TypeSignature Language="C#" Value="public class LGFileLexer : Antlr4.Runtime.Lexer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LGFileLexer extends Antlr4.Runtime.Lexer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer" />
+  <TypeSignature Language="VB.NET" Value="Public Class LGFileLexer&#xA;Inherits Lexer" />
+  <TypeSignature Language="F#" Value="type LGFileLexer = class&#xA;    inherit Lexer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.Lexer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LGFileLexer (Antlr4.Runtime.ICharStream input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ICharStream input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.#ctor(Antlr4.Runtime.ICharStream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (input As ICharStream)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer : Antlr4.Runtime.ICharStream -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer" Usage="new Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer input" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="input" Type="Antlr4.Runtime.ICharStream" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_ATN">
+      <MemberSignature Language="C#" Value="public static readonly Antlr4.Runtime.Atn.ATN _ATN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Antlr4.Runtime.Atn.ATN _ATN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer._ATN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly _ATN As ATN " />
+      <MemberSignature Language="F#" Value=" staticval mutable _ATN : Antlr4.Runtime.Atn.ATN" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer._ATN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Atn.ATN</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_serializedATN">
+      <MemberSignature Language="C#" Value="public static readonly string _serializedATN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string _serializedATN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer._serializedATN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly _serializedATN As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable _serializedATN : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer._serializedATN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public override void Action (Antlr4.Runtime.RuleContext _localctx, int ruleIndex, int actionIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Action(class Antlr4.Runtime.RuleContext _localctx, int32 ruleIndex, int32 actionIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.Action(Antlr4.Runtime.RuleContext,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Action (_localctx As RuleContext, ruleIndex As Integer, actionIndex As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Action : Antlr4.Runtime.RuleContext * int * int -&gt; unit" Usage="lGFileLexer.Action (_localctx, ruleIndex, actionIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_localctx" Type="Antlr4.Runtime.RuleContext" />
+        <Parameter Name="ruleIndex" Type="System.Int32" />
+        <Parameter Name="actionIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_localctx">To be added.</param>
+        <param name="ruleIndex">To be added.</param>
+        <param name="actionIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COMMENT">
+      <MemberSignature Language="C#" Value="public const int COMMENT = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 COMMENT = (3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.COMMENT" />
+      <MemberSignature Language="VB.NET" Value="Public Const COMMENT As Integer  = 3" />
+      <MemberSignature Language="F#" Value="val mutable COMMENT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.COMMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultVocabulary">
+      <MemberSignature Language="C#" Value="public static readonly Antlr4.Runtime.IVocabulary DefaultVocabulary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Antlr4.Runtime.IVocabulary DefaultVocabulary" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.DefaultVocabulary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultVocabulary As IVocabulary " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultVocabulary : Antlr4.Runtime.IVocabulary" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.DefaultVocabulary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GrammarFileName">
+      <MemberSignature Language="C#" Value="public override string GrammarFileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GrammarFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.GrammarFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GrammarFileName As String" />
+      <MemberSignature Language="F#" Value="member this.GrammarFileName : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.GrammarFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IMPORT">
+      <MemberSignature Language="C#" Value="public const int IMPORT = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IMPORT = (4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.IMPORT" />
+      <MemberSignature Language="VB.NET" Value="Public Const IMPORT As Integer  = 4" />
+      <MemberSignature Language="F#" Value="val mutable IMPORT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.IMPORT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INVALID_LINE">
+      <MemberSignature Language="C#" Value="public const int INVALID_LINE = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_LINE = (7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INVALID_LINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const INVALID_LINE As Integer  = 7" />
+      <MemberSignature Language="F#" Value="val mutable INVALID_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INVALID_LINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="modeNames">
+      <MemberSignature Language="C#" Value="public static string[] modeNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string[] modeNames" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.modeNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared modeNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable modeNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.modeNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModeNames">
+      <MemberSignature Language="C#" Value="public override string[] ModeNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ModeNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ModeNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ModeNames As String()" />
+      <MemberSignature Language="F#" Value="member this.ModeNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ModeNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NEWLINE">
+      <MemberSignature Language="C#" Value="public const int NEWLINE = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.NEWLINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable NEWLINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.NEWLINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPTION">
+      <MemberSignature Language="C#" Value="public const int OPTION = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 OPTION = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.OPTION" />
+      <MemberSignature Language="VB.NET" Value="Public Const OPTION As Integer  = 2" />
+      <MemberSignature Language="F#" Value="val mutable OPTION : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.OPTION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ruleNames">
+      <MemberSignature Language="C#" Value="public static readonly string[] ruleNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] ruleNames" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ruleNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ruleNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable ruleNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ruleNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleNames">
+      <MemberSignature Language="C#" Value="public override string[] RuleNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] RuleNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.RuleNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleNames As String()" />
+      <MemberSignature Language="F#" Value="member this.RuleNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.RuleNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sempred">
+      <MemberSignature Language="C#" Value="public override bool Sempred (Antlr4.Runtime.RuleContext _localctx, int ruleIndex, int predIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Sempred(class Antlr4.Runtime.RuleContext _localctx, int32 ruleIndex, int32 predIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.Sempred(Antlr4.Runtime.RuleContext,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Sempred (_localctx As RuleContext, ruleIndex As Integer, predIndex As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Sempred : Antlr4.Runtime.RuleContext * int * int -&gt; bool" Usage="lGFileLexer.Sempred (_localctx, ruleIndex, predIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_localctx" Type="Antlr4.Runtime.RuleContext" />
+        <Parameter Name="ruleIndex" Type="System.Int32" />
+        <Parameter Name="predIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_localctx">To be added.</param>
+        <param name="ruleIndex">To be added.</param>
+        <param name="predIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializedAtn">
+      <MemberSignature Language="C#" Value="public override string SerializedAtn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerializedAtn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.SerializedAtn" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SerializedAtn As String" />
+      <MemberSignature Language="F#" Value="member this.SerializedAtn : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.SerializedAtn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEMPLATE_BODY_LINE">
+      <MemberSignature Language="C#" Value="public const int TEMPLATE_BODY_LINE = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE_BODY_LINE = (6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TEMPLATE_BODY_LINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE_BODY_LINE As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable TEMPLATE_BODY_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TEMPLATE_BODY_LINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEMPLATE_NAME_LINE">
+      <MemberSignature Language="C#" Value="public const int TEMPLATE_NAME_LINE = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE_NAME_LINE = (5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TEMPLATE_NAME_LINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE_NAME_LINE As Integer  = 5" />
+      <MemberSignature Language="F#" Value="val mutable TEMPLATE_NAME_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TEMPLATE_NAME_LINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tokenNames">
+      <MemberSignature Language="C#" Value="public static readonly string[] tokenNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] tokenNames" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.tokenNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly tokenNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable tokenNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.tokenNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use Vocabulary instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenNames">
+      <MemberSignature Language="C#" Value="public override string[] TokenNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] TokenNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TokenNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenNames As String()" />
+      <MemberSignature Language="F#" Value="member this.TokenNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TokenNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use IRecognizer.Vocabulary instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vocabulary">
+      <MemberSignature Language="C#" Value="public override Antlr4.Runtime.IVocabulary Vocabulary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Antlr4.Runtime.IVocabulary Vocabulary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.Vocabulary" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Vocabulary As IVocabulary" />
+      <MemberSignature Language="F#" Value="member this.Vocabulary : Antlr4.Runtime.IVocabulary" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.Vocabulary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

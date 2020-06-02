@@ -1,0 +1,180 @@
+<Type Name="AdalAuthenticator" FullName="Microsoft.Bot.Connector.Authentication.AdalAuthenticator">
+  <TypeSignature Language="C#" Value="public class AdalAuthenticator : Microsoft.Bot.Connector.Authentication.IAuthenticator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdalAuthenticator extends System.Object implements class Microsoft.Bot.Connector.Authentication.IAuthenticator" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.AdalAuthenticator" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdalAuthenticator&#xA;Implements IAuthenticator" />
+  <TypeSignature Language="F#" Value="type AdalAuthenticator = class&#xA;    interface IAuthenticator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.Authentication.IAuthenticator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdalAuthenticator (Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential, Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, System.Net.Http.HttpClient customHttpClient = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential, class Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, class System.Net.Http.HttpClient customHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientCredential As ClientCredential, configurationOAuth As OAuthConfiguration, Optional customHttpClient As HttpClient = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator : Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential * Microsoft.Bot.Connector.Authentication.OAuthConfiguration * System.Net.Http.HttpClient -&gt; Microsoft.Bot.Connector.Authentication.AdalAuthenticator" Usage="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator (clientCredential, configurationOAuth, customHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
+        <Parameter Name="configurationOAuth" Type="Microsoft.Bot.Connector.Authentication.OAuthConfiguration" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+      </Parameters>
+      <Docs>
+        <param name="clientCredential">To be added.</param>
+        <param name="configurationOAuth">To be added.</param>
+        <param name="customHttpClient">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdalAuthenticator (Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientCertificate, Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, System.Net.Http.HttpClient customHttpClient = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientCertificate, class Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientCertificate As ClientAssertionCertificate, configurationOAuth As OAuthConfiguration, Optional customHttpClient As HttpClient = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator : Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate * Microsoft.Bot.Connector.Authentication.OAuthConfiguration * System.Net.Http.HttpClient * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Connector.Authentication.AdalAuthenticator" Usage="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator (clientCertificate, configurationOAuth, customHttpClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientCertificate" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate" />
+        <Parameter Name="configurationOAuth" Type="Microsoft.Bot.Connector.Authentication.OAuthConfiguration" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="clientCertificate">To be added.</param>
+        <param name="configurationOAuth">To be added.</param>
+        <param name="customHttpClient">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdalAuthenticator (Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential, Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, System.Net.Http.HttpClient customHttpClient = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential clientCredential, class Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientCredential As ClientCredential, configurationOAuth As OAuthConfiguration, Optional customHttpClient As HttpClient = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator : Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential * Microsoft.Bot.Connector.Authentication.OAuthConfiguration * System.Net.Http.HttpClient * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Connector.Authentication.AdalAuthenticator" Usage="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator (clientCredential, configurationOAuth, customHttpClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
+        <Parameter Name="configurationOAuth" Type="Microsoft.Bot.Connector.Authentication.OAuthConfiguration" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="clientCredential">To be added.</param>
+        <param name="configurationOAuth">To be added.</param>
+        <param name="customHttpClient">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdalAuthenticator (Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientCertificate, bool sendX5c, Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, System.Net.Http.HttpClient customHttpClient = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientCertificate, bool sendX5c, class Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate,System.Boolean,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientCertificate As ClientAssertionCertificate, sendX5c As Boolean, configurationOAuth As OAuthConfiguration, Optional customHttpClient As HttpClient = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator : Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate * bool * Microsoft.Bot.Connector.Authentication.OAuthConfiguration * System.Net.Http.HttpClient * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Connector.Authentication.AdalAuthenticator" Usage="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator (clientCertificate, sendX5c, configurationOAuth, customHttpClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientCertificate" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate" />
+        <Parameter Name="sendX5c" Type="System.Boolean" />
+        <Parameter Name="configurationOAuth" Type="Microsoft.Bot.Connector.Authentication.OAuthConfiguration" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="clientCertificate">To be added.</param>
+        <param name="sendX5c">To be added.</param>
+        <param name="configurationOAuth">To be added.</param>
+        <param name="customHttpClient">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync (bool forceRefresh = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync(bool forceRefresh) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.GetTokenAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional forceRefresh As Boolean = false) As Task(Of AuthenticationResult)" />
+      <MemberSignature Language="F#" Value="member this.GetTokenAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;" Usage="adalAuthenticator.GetTokenAsync forceRefresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forceRefresh" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="forceRefresh">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticatorResult&gt; IAuthenticator.GetTokenAsync (bool forceRefresh);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.Authentication.AuthenticatorResult&gt; Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync(bool forceRefresh) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.Microsoft#Bot#Connector#Authentication#IAuthenticator#GetTokenAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Function GetTokenAsync (forceRefresh As Boolean) As Task(Of AuthenticatorResult) Implements IAuthenticator.GetTokenAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticatorResult&gt;&#xA;override this.Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticatorResult&gt;" Usage="adalAuthenticator.Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync forceRefresh" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Connector.Authentication.IAuthenticator.GetTokenAsync(System.Boolean)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticatorResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forceRefresh" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="forceRefresh">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

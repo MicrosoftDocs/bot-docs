@@ -1,0 +1,206 @@
+<Type Name="Extensions" FullName="Microsoft.Bot.Builder.LanguageGeneration.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for LG.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConvertToRange">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.LanguageGeneration.Range ConvertToRange (this Antlr4.Runtime.ParserRuleContext context, int lineOffset = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.LanguageGeneration.Range ConvertToRange(class Antlr4.Runtime.ParserRuleContext context, int32 lineOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.ConvertToRange(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ConvertToRange (context As ParserRuleContext, Optional lineOffset As Integer = 0) As Range" />
+      <MemberSignature Language="F#" Value="static member ConvertToRange : Antlr4.Runtime.ParserRuleContext * int -&gt; Microsoft.Bot.Builder.LanguageGeneration.Range" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.ConvertToRange (context, lineOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Range</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Antlr4.Runtime.ParserRuleContext" RefType="this" />
+        <Parameter Name="lineOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="context">Antlr parse context.</param>
+        <param name="lineOffset">Line offset.</param>
+        <summary>
+            Convert antlr parser into Range.
+            </summary>
+        <returns>Range object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape">
+      <MemberSignature Language="C#" Value="public static string Escape (this string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Escape(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.Escape(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Escape (text As String) As String" />
+      <MemberSignature Language="F#" Value="static member Escape : string -&gt; string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.Escape text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="text">Input text.</param>
+        <summary>
+            Escape \ from text.
+            </summary>
+        <returns>Escaped text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EscapeRegex">
+      <MemberSignature Language="C#" Value="public static readonly System.Text.RegularExpressions.Regex EscapeRegex;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Text.RegularExpressions.Regex EscapeRegex" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.Extensions.EscapeRegex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly EscapeRegex As Regex " />
+      <MemberSignature Language="F#" Value=" staticval mutable EscapeRegex : System.Text.RegularExpressions.Regex" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.EscapeRegex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrefixErrorMessage">
+      <MemberSignature Language="C#" Value="public static string GetPrefixErrorMessage (this Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPrefixErrorMessage(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalTemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.GetPrefixErrorMessage(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrefixErrorMessage (context As LGTemplateParser.NormalTemplateStringContext) As String" />
+      <MemberSignature Language="F#" Value="static member GetPrefixErrorMessage : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext -&gt; string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.GetPrefixErrorMessage context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="context">Normal template sting context.</param>
+        <summary>
+            Get prefix error message from normal template sting context.
+            </summary>
+        <returns>Prefix error message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPureExpression">
+      <MemberSignature Language="C#" Value="public static bool IsPureExpression (this Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext context, out string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPureExpression(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/KeyValueStructureValueContext context, [out] string&amp; expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsPureExpression (context As LGTemplateParser.KeyValueStructureValueContext, ByRef expression As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsPureExpression : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext * string -&gt; bool" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression (context, expression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureValueContext" RefType="this" />
+        <Parameter Name="expression" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="context">Key value structure value context.</param>
+        <param name="expression">String expression.</param>
+        <summary>
+            If a value is pure Expression.
+            </summary>
+        <returns>Is pure expression or not.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizePath">
+      <MemberSignature Language="C#" Value="public static string NormalizePath (this string ambigiousPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string NormalizePath(string ambigiousPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.NormalizePath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function NormalizePath (ambigiousPath As String) As String" />
+      <MemberSignature Language="F#" Value="static member NormalizePath : string -&gt; string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.NormalizePath ambigiousPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ambigiousPath" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="ambigiousPath">Authored path.</param>
+        <summary>
+            Normalize authored path to OS path.
+            </summary>
+        <returns>Path expressed as OS path.</returns>
+        <remarks>
+            path is from authored content which doesn't know what OS it is running on.
+            This method treats / and \ both as separators regardless of OS, for Windows that means / -&gt; \ and for Linux/Mac \ -&gt; /.
+            This allows author to use ../foo.lg or ..\foo.lg as equivalents for importing.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimExpression">
+      <MemberSignature Language="C#" Value="public static string TrimExpression (this string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrimExpression(string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.TrimExpression(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimExpression (expression As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrimExpression : string -&gt; string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.TrimExpression expression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="expression">Input expression string.</param>
+        <summary>
+            trim expression. ${abc} =&gt; abc,  ${a == {}} =&gt; a == {}.
+            </summary>
+        <returns>Pure expression string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

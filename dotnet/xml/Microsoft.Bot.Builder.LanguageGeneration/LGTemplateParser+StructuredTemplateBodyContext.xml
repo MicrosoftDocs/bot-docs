@@ -1,0 +1,314 @@
+<Type Name="LGTemplateParser+StructuredTemplateBodyContext" FullName="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredTemplateBodyContext">
+  <TypeSignature Language="C#" Value="public class LGTemplateParser.StructuredTemplateBodyContext : Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LGTemplateParser/StructuredTemplateBodyContext extends Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class LGTemplateParser.StructuredTemplateBodyContext&#xA;Inherits ParserRuleContext" />
+  <TypeSignature Language="F#" Value="type LGTemplateParser.StructuredTemplateBodyContext = class&#xA;    inherit ParserRuleContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StructuredTemplateBodyContext (Antlr4.Runtime.ParserRuleContext parent, int invokingState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ParserRuleContext parent, int32 invokingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ParserRuleContext, invokingState As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext : Antlr4.Runtime.ParserRuleContext * int -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext" Usage="new Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext (parent, invokingState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
+        <Parameter Name="invokingState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="invokingState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override TResult Accept&lt;TResult&gt; (Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Accept&lt;TResult&gt;(class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!!TResult&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.Accept``1(Antlr4.Runtime.Tree.IParseTreeVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResult) (visitor As IParseTreeVisitor(Of TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Accept : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;'Result&gt; -&gt; 'Result" Usage="structuredTemplateBodyContext.Accept visitor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterRule">
+      <MemberSignature Language="C#" Value="public override void EnterRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnterRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.EnterRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="structuredTemplateBodyContext.EnterRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorStructureLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ErrorStructureLineContext[] errorStructureLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ErrorStructureLineContext[] errorStructureLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.errorStructureLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function errorStructureLine () As LGTemplateParser.ErrorStructureLineContext()" />
+      <MemberSignature Language="F#" Value="member this.errorStructureLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ErrorStructureLineContext[]" Usage="structuredTemplateBodyContext.errorStructureLine " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorStructureLineContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorStructureLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ErrorStructureLineContext errorStructureLine (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ErrorStructureLineContext errorStructureLine(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.errorStructureLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function errorStructureLine (i As Integer) As LGTemplateParser.ErrorStructureLineContext" />
+      <MemberSignature Language="F#" Value="member this.errorStructureLine : int -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ErrorStructureLineContext" Usage="structuredTemplateBodyContext.errorStructureLine i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorStructureLineContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitRule">
+      <MemberSignature Language="C#" Value="public override void ExitRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExitRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.ExitRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="structuredTemplateBodyContext.ExitRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleIndex">
+      <MemberSignature Language="C#" Value="public override int RuleIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RuleIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.RuleIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RuleIndex : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.RuleIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRUCTURED_NEWLINE">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] STRUCTURED_NEWLINE ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] STRUCTURED_NEWLINE() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.STRUCTURED_NEWLINE" />
+      <MemberSignature Language="VB.NET" Value="Public Function STRUCTURED_NEWLINE () As ITerminalNode()" />
+      <MemberSignature Language="F#" Value="member this.STRUCTURED_NEWLINE : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="structuredTemplateBodyContext.STRUCTURED_NEWLINE " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRUCTURED_NEWLINE">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode STRUCTURED_NEWLINE (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode STRUCTURED_NEWLINE(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.STRUCTURED_NEWLINE(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function STRUCTURED_NEWLINE (i As Integer) As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.STRUCTURED_NEWLINE : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="structuredTemplateBodyContext.STRUCTURED_NEWLINE i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="structuredBodyContentLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContentLineContext[] structuredBodyContentLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/StructuredBodyContentLineContext[] structuredBodyContentLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.structuredBodyContentLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function structuredBodyContentLine () As LGTemplateParser.StructuredBodyContentLineContext()" />
+      <MemberSignature Language="F#" Value="member this.structuredBodyContentLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContentLineContext[]" Usage="structuredTemplateBodyContext.structuredBodyContentLine " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContentLineContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="structuredBodyContentLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContentLineContext structuredBodyContentLine (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/StructuredBodyContentLineContext structuredBodyContentLine(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.structuredBodyContentLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function structuredBodyContentLine (i As Integer) As LGTemplateParser.StructuredBodyContentLineContext" />
+      <MemberSignature Language="F#" Value="member this.structuredBodyContentLine : int -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContentLineContext" Usage="structuredTemplateBodyContext.structuredBodyContentLine i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContentLineContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="structuredBodyEndLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyEndLineContext structuredBodyEndLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/StructuredBodyEndLineContext structuredBodyEndLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.structuredBodyEndLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function structuredBodyEndLine () As LGTemplateParser.StructuredBodyEndLineContext" />
+      <MemberSignature Language="F#" Value="member this.structuredBodyEndLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyEndLineContext" Usage="structuredTemplateBodyContext.structuredBodyEndLine " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyEndLineContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="structuredBodyNameLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyNameLineContext structuredBodyNameLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/StructuredBodyNameLineContext structuredBodyNameLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext.structuredBodyNameLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function structuredBodyNameLine () As LGTemplateParser.StructuredBodyNameLineContext" />
+      <MemberSignature Language="F#" Value="member this.structuredBodyNameLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyNameLineContext" Usage="structuredTemplateBodyContext.structuredBodyNameLine " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyNameLineContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

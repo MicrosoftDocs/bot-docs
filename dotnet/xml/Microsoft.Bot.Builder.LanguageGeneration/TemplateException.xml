@@ -1,0 +1,78 @@
+<Type Name="TemplateException" FullName="Microsoft.Bot.Builder.LanguageGeneration.TemplateException">
+  <TypeSignature Language="C#" Value="public class TemplateException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TemplateException extends System.Exception implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.TemplateException" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type TemplateException = class&#xA;    inherit Exception&#xA;    interface ISerializable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Template Exception that contains diagnostics.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateException (string message, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; diagnostics);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; diagnostics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.TemplateException.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.LanguageGeneration.Diagnostic})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, diagnostics As IList(Of Diagnostic))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.TemplateException : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; -&gt; Microsoft.Bot.Builder.LanguageGeneration.TemplateException" Usage="new Microsoft.Bot.Builder.LanguageGeneration.TemplateException (message, diagnostics)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="diagnostics" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="diagnostics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagnostics">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; Diagnostics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; Diagnostics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.TemplateException.Diagnostics" />
+      <MemberSignature Language="VB.NET" Value="Public Property Diagnostics As IList(Of Diagnostic)" />
+      <MemberSignature Language="F#" Value="member this.Diagnostics : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.TemplateException.Diagnostics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets diagnostics.
+            </summary>
+        <value>
+            Diagnostics.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

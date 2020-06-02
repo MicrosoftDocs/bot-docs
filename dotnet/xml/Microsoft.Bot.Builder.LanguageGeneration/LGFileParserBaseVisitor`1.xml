@@ -1,0 +1,453 @@
+<Type Name="LGFileParserBaseVisitor&lt;Result&gt;" FullName="Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor&lt;Result&gt;">
+  <TypeSignature Language="C#" Value="public class LGFileParserBaseVisitor&lt;Result&gt; : Antlr4.Runtime.Tree.AbstractParseTreeVisitor&lt;Result&gt;, Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;, Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor&lt;Result&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LGFileParserBaseVisitor`1&lt;Result&gt; extends Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1&lt;!Result&gt; implements class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!Result&gt;, class Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1&lt;!Result&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class LGFileParserBaseVisitor(Of Result)&#xA;Inherits AbstractParseTreeVisitor(Of Result)&#xA;Implements ILGFileParserVisitor(Of Result), IParseTreeVisitor(Of Result)" />
+  <TypeSignature Language="F#" Value="type LGFileParserBaseVisitor&lt;'Result&gt; = class&#xA;    inherit AbstractParseTreeVisitor&lt;'Result&gt;&#xA;    interface ILGFileParserVisitor&lt;'Result&gt;&#xA;    interface IParseTreeVisitor&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Result" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.Tree.AbstractParseTreeVisitor&lt;Result&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Result</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="Result">The return type of the visit operation.</typeparam>
+    <summary>
+            This class provides an empty implementation of <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1" />,
+            which can be extended to create a visitor which only needs to handle a subset
+            of the available methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LGFileParserBaseVisitor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitCommentDefinition">
+      <MemberSignature Language="C#" Value="public virtual Result VisitCommentDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitCommentDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/CommentDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitCommentDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitCommentDefinition (context As LGFileParser.CommentDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitCommentDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext -&gt; 'Result&#xA;override this.VisitCommentDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitCommentDefinition context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitCommentDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+CommentDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.commentDefinition" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorDefinition">
+      <MemberSignature Language="C#" Value="public virtual Result VisitErrorDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ErrorDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitErrorDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitErrorDefinition (context As LGFileParser.ErrorDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext -&gt; 'Result&#xA;override this.VisitErrorDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitErrorDefinition context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitErrorDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ErrorDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.errorDefinition" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitFile">
+      <MemberSignature Language="C#" Value="public virtual Result VisitFile (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitFile(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitFile(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitFile (context As LGFileParser.FileContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitFile : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext -&gt; 'Result&#xA;override this.VisitFile : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitFile context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitFile(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.file" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitImportDefinition">
+      <MemberSignature Language="C#" Value="public virtual Result VisitImportDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitImportDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ImportDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitImportDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitImportDefinition (context As LGFileParser.ImportDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitImportDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext -&gt; 'Result&#xA;override this.VisitImportDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitImportDefinition context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitImportDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ImportDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.importDefinition" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitOptionDefinition">
+      <MemberSignature Language="C#" Value="public virtual Result VisitOptionDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitOptionDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/OptionDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitOptionDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitOptionDefinition (context As LGFileParser.OptionDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitOptionDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext -&gt; 'Result&#xA;override this.VisitOptionDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitOptionDefinition context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitOptionDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+OptionDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.optionDefinition" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitParagraph">
+      <MemberSignature Language="C#" Value="public virtual Result VisitParagraph (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitParagraph(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ParagraphContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitParagraph(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitParagraph (context As LGFileParser.ParagraphContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitParagraph : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext -&gt; 'Result&#xA;override this.VisitParagraph : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitParagraph context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitParagraph(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ParagraphContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.paragraph" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTemplateBody">
+      <MemberSignature Language="C#" Value="public virtual Result VisitTemplateBody (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTemplateBody(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitTemplateBody (context As LGFileParser.TemplateBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext -&gt; 'Result&#xA;override this.VisitTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBody" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTemplateBodyLine">
+      <MemberSignature Language="C#" Value="public virtual Result VisitTemplateBodyLine (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTemplateBodyLine(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitTemplateBodyLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitTemplateBodyLine (context As LGFileParser.TemplateBodyLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTemplateBodyLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext -&gt; 'Result&#xA;override this.VisitTemplateBodyLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitTemplateBodyLine context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitTemplateBodyLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBodyLine" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTemplateDefinition">
+      <MemberSignature Language="C#" Value="public virtual Result VisitTemplateDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTemplateDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitTemplateDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitTemplateDefinition (context As LGFileParser.TemplateDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTemplateDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext -&gt; 'Result&#xA;override this.VisitTemplateDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitTemplateDefinition context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitTemplateDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateDefinition" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTemplateNameLine">
+      <MemberSignature Language="C#" Value="public virtual Result VisitTemplateNameLine (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTemplateNameLine(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateNameLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParserBaseVisitor`1.VisitTemplateNameLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitTemplateNameLine (context As LGFileParser.TemplateNameLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTemplateNameLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext -&gt; 'Result&#xA;override this.VisitTemplateNameLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext -&gt; 'Result" Usage="lGFileParserBaseVisitor.VisitTemplateNameLine context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserVisitor`1.VisitTemplateNameLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateNameLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateNameLine" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

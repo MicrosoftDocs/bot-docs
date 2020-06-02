@@ -1,0 +1,155 @@
+<Type Name="TemplatesParser" FullName="Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser">
+  <TypeSignature Language="C#" Value="public static class TemplatesParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TemplatesParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplatesParser" />
+  <TypeSignature Language="F#" Value="type TemplatesParser = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Parser to turn lg content into a <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImportRegex">
+      <MemberSignature Language="C#" Value="public static readonly System.Text.RegularExpressions.Regex ImportRegex;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Text.RegularExpressions.Regex ImportRegex" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ImportRegex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImportRegex As Regex " />
+      <MemberSignature Language="F#" Value=" staticval mutable ImportRegex : System.Text.RegularExpressions.Regex" Usage="Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ImportRegex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Import regex.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionRegex">
+      <MemberSignature Language="C#" Value="public static readonly System.Text.RegularExpressions.Regex OptionRegex;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Text.RegularExpressions.Regex OptionRegex" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.OptionRegex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OptionRegex As Regex " />
+      <MemberSignature Language="F#" Value=" staticval mutable OptionRegex : System.Text.RegularExpressions.Regex" Usage="Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.OptionRegex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            option regex.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseFile">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.LanguageGeneration.Templates ParseFile (string filePath, Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver = default, AdaptiveExpressions.ExpressionParser expressionParser = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.LanguageGeneration.Templates ParseFile(string filePath, class Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver, class AdaptiveExpressions.ExpressionParser expressionParser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ParseFile(System.String,Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate,AdaptiveExpressions.ExpressionParser)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseFile (filePath As String, Optional importResolver As ImportResolverDelegate = null, Optional expressionParser As ExpressionParser = null) As Templates" />
+      <MemberSignature Language="F#" Value="static member ParseFile : string * Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate * AdaptiveExpressions.ExpressionParser -&gt; Microsoft.Bot.Builder.LanguageGeneration.Templates" Usage="Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ParseFile (filePath, importResolver, expressionParser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="importResolver" Type="Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate" />
+        <Parameter Name="expressionParser" Type="AdaptiveExpressions.ExpressionParser" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">Absolut path of a LG file.</param>
+        <param name="importResolver">Resolver to resolve LG import id to template text.</param>
+        <param name="expressionParser">Expression parser for parsing expressions.</param>
+        <summary>
+            Parser to turn lg content into a <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" />.
+            </summary>
+        <returns>new <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" /> entity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseText">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.LanguageGeneration.Templates ParseText (string content, string id = &quot;&quot;, Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver = default, AdaptiveExpressions.ExpressionParser expressionParser = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.LanguageGeneration.Templates ParseText(string content, string id, class Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver, class AdaptiveExpressions.ExpressionParser expressionParser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ParseText(System.String,System.String,Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate,AdaptiveExpressions.ExpressionParser)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseText (content As String, Optional id As String = &quot;&quot;, Optional importResolver As ImportResolverDelegate = null, Optional expressionParser As ExpressionParser = null) As Templates" />
+      <MemberSignature Language="F#" Value="static member ParseText : string * string * Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate * AdaptiveExpressions.ExpressionParser -&gt; Microsoft.Bot.Builder.LanguageGeneration.Templates" Usage="Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ParseText (content, id, importResolver, expressionParser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="importResolver" Type="Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate" />
+        <Parameter Name="expressionParser" Type="AdaptiveExpressions.ExpressionParser" />
+      </Parameters>
+      <Docs>
+        <param name="content">Text content contains lg templates.</param>
+        <param name="id">Id is the identifier of content. If importResolver is null, id must be a full path string. </param>
+        <param name="importResolver">Resolver to resolve LG import id to template text.</param>
+        <param name="expressionParser">Expression parser for parsing expressions.</param>
+        <summary>
+            Parser to turn lg content into a <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" />.
+            </summary>
+        <returns>New <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" /> entity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseTextWithRef">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.LanguageGeneration.Templates ParseTextWithRef (string content, Microsoft.Bot.Builder.LanguageGeneration.Templates lg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.LanguageGeneration.Templates ParseTextWithRef(string content, class Microsoft.Bot.Builder.LanguageGeneration.Templates lg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ParseTextWithRef(System.String,Microsoft.Bot.Builder.LanguageGeneration.Templates)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTextWithRef (content As String, lg As Templates) As Templates" />
+      <MemberSignature Language="F#" Value="static member ParseTextWithRef : string * Microsoft.Bot.Builder.LanguageGeneration.Templates -&gt; Microsoft.Bot.Builder.LanguageGeneration.Templates" Usage="Microsoft.Bot.Builder.LanguageGeneration.TemplatesParser.ParseTextWithRef (content, lg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="lg" Type="Microsoft.Bot.Builder.LanguageGeneration.Templates" />
+      </Parameters>
+      <Docs>
+        <param name="content">Text content contains lg templates.</param>
+        <param name="lg">Original LGFile.</param>
+        <summary>
+            Parser to turn lg content into a <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" /> based on the original LGFile.
+            </summary>
+        <returns>New <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" /> entity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

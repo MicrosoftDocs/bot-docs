@@ -1,0 +1,439 @@
+<Type Name="Expander" FullName="Microsoft.Bot.Builder.LanguageGeneration.Expander">
+  <TypeSignature Language="C#" Value="public class Expander : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParserBaseVisitor&lt;System.Collections.Generic.List&lt;object&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Expander extends Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParserBaseVisitor`1&lt;class System.Collections.Generic.List`1&lt;object&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.Expander" />
+  <TypeSignature Language="VB.NET" Value="Public Class Expander&#xA;Inherits LGTemplateParserBaseVisitor(Of List(Of Object))" />
+  <TypeSignature Language="F#" Value="type Expander = class&#xA;    inherit LGTemplateParserBaseVisitor&lt;List&lt;obj&gt;&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParserBaseVisitor&lt;System.Collections.Generic.List&lt;System.Object&gt;&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="Result">System.Collections.Generic.List&lt;System.Object&gt;</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            LG template expander.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Expander (System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; templates, AdaptiveExpressions.ExpressionParser expressionParser, Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Template&gt; templates, class AdaptiveExpressions.ExpressionParser expressionParser, class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.LanguageGeneration.Template},AdaptiveExpressions.ExpressionParser,Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (templates As List(Of Template), expressionParser As ExpressionParser, Optional opt As EvaluationOptions = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.Expander : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; * AdaptiveExpressions.ExpressionParser * Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions -&gt; Microsoft.Bot.Builder.LanguageGeneration.Expander" Usage="new Microsoft.Bot.Builder.LanguageGeneration.Expander (templates, expressionParser, opt)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="templates" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;" />
+        <Parameter Name="expressionParser" Type="AdaptiveExpressions.ExpressionParser" />
+        <Parameter Name="opt" Type="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="templates">Template list.</param>
+        <param name="expressionParser">Given expression parser.</param>
+        <param name="opt">Options for LG. including strictMode, replaceNull and lineBreakStyle.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Expander" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstructScope">
+      <MemberSignature Language="C#" Value="public object ConstructScope (string templateName, System.Collections.Generic.List&lt;object&gt; args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ConstructScope(string templateName, class System.Collections.Generic.List`1&lt;object&gt; args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.ConstructScope(System.String,System.Collections.Generic.List{System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConstructScope (templateName As String, args As List(Of Object)) As Object" />
+      <MemberSignature Language="F#" Value="member this.ConstructScope : string * System.Collections.Generic.List&lt;obj&gt; -&gt; obj" Usage="expander.ConstructScope (templateName, args)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="args" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluatorExpressionParser">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.ExpressionParser EvaluatorExpressionParser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.ExpressionParser EvaluatorExpressionParser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Expander.EvaluatorExpressionParser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatorExpressionParser As ExpressionParser" />
+      <MemberSignature Language="F#" Value="member this.EvaluatorExpressionParser : AdaptiveExpressions.ExpressionParser" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.EvaluatorExpressionParser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.ExpressionParser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets evaluator expression parser.
+            </summary>
+        <value>
+            Expression parser.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpanderExpressionParser">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.ExpressionParser ExpanderExpressionParser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.ExpressionParser ExpanderExpressionParser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Expander.ExpanderExpressionParser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpanderExpressionParser As ExpressionParser" />
+      <MemberSignature Language="F#" Value="member this.ExpanderExpressionParser : AdaptiveExpressions.ExpressionParser" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.ExpanderExpressionParser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.ExpressionParser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets expander expression parser.
+            </summary>
+        <value>
+            Expression parser.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandTemplate">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;object&gt; ExpandTemplate (string templateName, object scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;object&gt; ExpandTemplate(string templateName, object scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.ExpandTemplate(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExpandTemplate (templateName As String, scope As Object) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.ExpandTemplate : string * obj -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.ExpandTemplate (templateName, scope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="scope" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">Given template name.</param>
+        <param name="scope">Given scope.</param>
+        <summary>
+            Expand the results of a template with given name and scope.
+            </summary>
+        <returns>All possiable results.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionRecognizeRegex">
+      <MemberSignature Language="C#" Value="public static readonly System.Text.RegularExpressions.Regex ExpressionRecognizeRegex;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Text.RegularExpressions.Regex ExpressionRecognizeRegex" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.Expander.ExpressionRecognizeRegex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpressionRecognizeRegex As Regex " />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpressionRecognizeRegex : System.Text.RegularExpressions.Regex" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.ExpressionRecognizeRegex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LGType">
+      <MemberSignature Language="C#" Value="public const string LGType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LGType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.Expander.LGType" />
+      <MemberSignature Language="VB.NET" Value="Public Const LGType As String " />
+      <MemberSignature Language="F#" Value="val mutable LGType : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.LGType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegexString">
+      <MemberSignature Language="C#" Value="public static readonly string RegexString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string RegexString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.Expander.RegexString" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RegexString As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable RegexString : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.RegexString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateMap">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Builder.LanguageGeneration.Template&gt; TemplateMap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Builder.LanguageGeneration.Template&gt; TemplateMap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Expander.TemplateMap" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplateMap As Dictionary(Of String, Template)" />
+      <MemberSignature Language="F#" Value="member this.TemplateMap : System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Builder.LanguageGeneration.Template&gt;" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.TemplateMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.LanguageGeneration.Template&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets templateMap.
+            </summary>
+        <value>
+            TemplateMap.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Templates">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; Templates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Template&gt; Templates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Expander.Templates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Templates As List(Of Template)" />
+      <MemberSignature Language="F#" Value="member this.Templates : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;" Usage="Microsoft.Bot.Builder.LanguageGeneration.Expander.Templates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets templates.
+            </summary>
+        <value>
+            Templates.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIfElseBody">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.List&lt;object&gt; VisitIfElseBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IfElseBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.List`1&lt;object&gt; VisitIfElseBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/IfElseBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.VisitIfElseBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IfElseBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitIfElseBody (context As LGTemplateParser.IfElseBodyContext) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.VisitIfElseBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IfElseBodyContext -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.VisitIfElseBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfElseBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalBody">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.List&lt;object&gt; VisitNormalBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.List`1&lt;object&gt; VisitNormalBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.VisitNormalBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitNormalBody (context As LGTemplateParser.NormalBodyContext) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.VisitNormalBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalBodyContext -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.VisitNormalBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalTemplateBody">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.List&lt;object&gt; VisitNormalTemplateBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.List`1&lt;object&gt; VisitNormalTemplateBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.VisitNormalTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitNormalTemplateBody (context As LGTemplateParser.NormalTemplateBodyContext) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.VisitNormalTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateBodyContext -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.VisitNormalTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalTemplateString">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.List&lt;object&gt; VisitNormalTemplateString (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.List`1&lt;object&gt; VisitNormalTemplateString(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalTemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.VisitNormalTemplateString(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitNormalTemplateString (context As LGTemplateParser.NormalTemplateStringContext) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.VisitNormalTemplateString : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.VisitNormalTemplateString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredBody">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.List&lt;object&gt; VisitStructuredBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.List`1&lt;object&gt; VisitStructuredBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/StructuredBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.VisitStructuredBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitStructuredBody (context As LGTemplateParser.StructuredBodyContext) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.VisitStructuredBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContext -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.VisitStructuredBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSwitchCaseBody">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.List&lt;object&gt; VisitSwitchCaseBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SwitchCaseBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.List`1&lt;object&gt; VisitSwitchCaseBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/SwitchCaseBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Expander.VisitSwitchCaseBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SwitchCaseBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitSwitchCaseBody (context As LGTemplateParser.SwitchCaseBodyContext) As List(Of Object)" />
+      <MemberSignature Language="F#" Value="override this.VisitSwitchCaseBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SwitchCaseBodyContext -&gt; System.Collections.Generic.List&lt;obj&gt;" Usage="expander.VisitSwitchCaseBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
