@@ -59,7 +59,7 @@ The user's input is sent to your knowledge base and the best returned answer is 
 You can also use these steps to access your own QnA Maker knowledge bases.
 
 > [!NOTE]
-> The QnA Maker documentation has instructions on how to [create the service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> The QnA Maker documentation has instructions on how to [create a service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 ## Obtain values to connect your bot to the knowledge base
 
@@ -174,7 +174,7 @@ Start the emulator, connect to your bot, and send a message as shown below.
 
 ## Additional information
 
-The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), [**JavaScript**](https://aka.ms/js-qna-multiturn), [**Python**](https://aka.ms/py-qna-multiturn)) show how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
+The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), [**JavaScript**](https://aka.ms/js-qna-multiturn), [**Python**](https://aka.ms/py-qna-multiturn)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
 If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
