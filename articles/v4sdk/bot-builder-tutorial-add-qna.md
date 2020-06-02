@@ -319,8 +319,8 @@ Update your initialization code to load the service information for your knowled
    **app.py**
 
    ```python
-   # Create the main dialog
-   BOT = MyBot(APP.config)
+   # Create the Bot
+   BOT = QnABot(CONFIG)
    ```
 
 1. In the `bot.py` file import `QnAMaker` and `QnAMakerEndpoint`; also import `Config`, as shown below.
