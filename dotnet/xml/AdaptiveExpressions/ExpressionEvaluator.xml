@@ -1,0 +1,209 @@
+<Type Name="ExpressionEvaluator" FullName="AdaptiveExpressions.ExpressionEvaluator">
+  <TypeSignature Language="C#" Value="public class ExpressionEvaluator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionEvaluator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionEvaluator" />
+  <TypeSignature Language="F#" Value="type ExpressionEvaluator = class" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Information on how to evaluate an expression.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionEvaluator (string type, AdaptiveExpressions.EvaluateExpressionDelegate evaluator, AdaptiveExpressions.ReturnType returnType = AdaptiveExpressions.ReturnType.Object, AdaptiveExpressions.ValidateExpressionDelegate validator = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class AdaptiveExpressions.EvaluateExpressionDelegate evaluator, valuetype AdaptiveExpressions.ReturnType returnType, class AdaptiveExpressions.ValidateExpressionDelegate validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ExpressionEvaluator.#ctor(System.String,AdaptiveExpressions.EvaluateExpressionDelegate,AdaptiveExpressions.ReturnType,AdaptiveExpressions.ValidateExpressionDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, evaluator As EvaluateExpressionDelegate, Optional returnType As ReturnType = AdaptiveExpressions.ReturnType.Object, Optional validator As ValidateExpressionDelegate = null)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.ExpressionEvaluator : string * AdaptiveExpressions.EvaluateExpressionDelegate * AdaptiveExpressions.ReturnType * AdaptiveExpressions.ValidateExpressionDelegate -&gt; AdaptiveExpressions.ExpressionEvaluator" Usage="new AdaptiveExpressions.ExpressionEvaluator (type, evaluator, returnType, validator)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="evaluator" Type="AdaptiveExpressions.EvaluateExpressionDelegate" />
+        <Parameter Name="returnType" Type="AdaptiveExpressions.ReturnType" />
+        <Parameter Name="validator" Type="AdaptiveExpressions.ValidateExpressionDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="type">Expression type.</param>
+        <param name="evaluator">Delegate to evaluate an expression.</param>
+        <param name="returnType">Type expected from evaluation.</param>
+        <param name="validator">Static validation of expression.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.ExpressionEvaluator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negation">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.ExpressionEvaluator Negation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.ExpressionEvaluator Negation" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.ExpressionEvaluator.Negation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Negation As ExpressionEvaluator" />
+      <MemberSignature Language="F#" Value="member this.Negation : AdaptiveExpressions.ExpressionEvaluator with get, set" Usage="AdaptiveExpressions.ExpressionEvaluator.Negation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.ExpressionEvaluator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the evaluator that is a negation of this one.
+            </summary>
+        <value>
+            The evaluator that is a negation of this one.
+            </value>
+        <remarks>
+            When doing <see cref="M:AdaptiveExpressions.Extensions.PushDownNot(AdaptiveExpressions.Expression)" /> then negations will replace an expression and remove not parent.
+            By default no negation is defined and not parent will remain.
+            If a negation is defined then this is automatically set as its negation.
+            If an evaluator is its own negation, then the negation will be passed through to children.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.ReturnType ReturnType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype AdaptiveExpressions.ReturnType ReturnType" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.ExpressionEvaluator.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnType As ReturnType" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : AdaptiveExpressions.ReturnType with get, set" Usage="AdaptiveExpressions.ExpressionEvaluator.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.ReturnType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the expression return type.
+            </summary>
+        <value>
+            Type expected by evaluating the expression.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ExpressionEvaluator.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="expressionEvaluator.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEvaluate">
+      <MemberSignature Language="C#" Value="public (object,string) TryEvaluate (AdaptiveExpressions.Expression expression, AdaptiveExpressions.Memory.IMemory state, AdaptiveExpressions.Options options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ValueTuple`2&lt;object, string&gt; TryEvaluate(class AdaptiveExpressions.Expression expression, class AdaptiveExpressions.Memory.IMemory state, class AdaptiveExpressions.Options options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ExpressionEvaluator.TryEvaluate(AdaptiveExpressions.Expression,AdaptiveExpressions.Memory.IMemory,AdaptiveExpressions.Options)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEvaluate (expression As Expression, state As IMemory, options As Options) As ValueTuple(Of Object, String)" />
+      <MemberSignature Language="F#" Value="member this.TryEvaluate : AdaptiveExpressions.Expression * AdaptiveExpressions.Memory.IMemory * AdaptiveExpressions.Options -&gt; ValueTuple&lt;obj, string&gt;" Usage="expressionEvaluator.TryEvaluate (expression, state, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;System.Object,System.String&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "error" })</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
+        <Parameter Name="state" Type="AdaptiveExpressions.Memory.IMemory" />
+        <Parameter Name="options" Type="AdaptiveExpressions.Options" />
+      </Parameters>
+      <Docs>
+        <param name="expression">Expression to evaluate.</param>
+        <param name="state">Global state information.</param>
+        <param name="options">Options used in the evaluation. </param>
+        <summary>
+            Evaluate an expression.
+            </summary>
+        <returns>Value and error string that is non-null if there is an error.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.ExpressionEvaluator.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="AdaptiveExpressions.ExpressionEvaluator.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the expression type for evaluator.
+            </summary>
+        <value>
+            The type of expression from <see cref="T:AdaptiveExpressions.ExpressionType" /> for built-in functions or else a unique string for custom functions.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateExpression">
+      <MemberSignature Language="C#" Value="public void ValidateExpression (AdaptiveExpressions.Expression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateExpression(class AdaptiveExpressions.Expression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ExpressionEvaluator.ValidateExpression(AdaptiveExpressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateExpression (expression As Expression)" />
+      <MemberSignature Language="F#" Value="member this.ValidateExpression : AdaptiveExpressions.Expression -&gt; unit" Usage="expressionEvaluator.ValidateExpression expression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">Expression to validate.</param>
+        <summary>
+            Validate an expression.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
