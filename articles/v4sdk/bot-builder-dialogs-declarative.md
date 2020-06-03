@@ -21,6 +21,7 @@ This article shows how to create a bot that incorporates **Adaptive dialog** usi
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
 - Knowledge of [adaptive dialogs][concept-adaptive] and [declarative dialogs][concept-declarative].
+- Knowledge of the basic concepts of how to [Create a bot using adaptive dialogs][how-to-adaptive], this article builds on that knowledge.
 - A copy of the declarative **EchoBot** sample in either [**C#**][cs-sample] or [**JavaScript** preview][js-sample].
 
 ### Preliminary steps to add a declarative adaptive dialog to a bot
@@ -305,6 +306,7 @@ const handleResourceChange = (resources) => {
 [concept-dialogs]: bot-builder-concept-dialog.md
 [concept-adaptive]: bot-builder-adaptive-dialog-introduction.md
 [concept-declarative]: bot-builder-concept-declarative.md
+[how-to-adaptive]: bot-builder-dialogs-adaptive.md
 
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
