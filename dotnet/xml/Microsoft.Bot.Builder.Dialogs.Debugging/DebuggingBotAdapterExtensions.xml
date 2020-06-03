@@ -1,0 +1,65 @@
+<Type Name="DebuggingBotAdapterExtensions" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions">
+  <TypeSignature Language="C#" Value="public static class DebuggingBotAdapterExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DebuggingBotAdapterExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DebuggingBotAdapterExtensions" />
+  <TypeSignature Language="F#" Value="type DebuggingBotAdapterExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseDebugger">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.BotAdapter UseDebugger (this Microsoft.Bot.Builder.BotAdapter botAdapter, int port, Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap sourceMap = default, Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints breakpoints = default, Action terminate = default, Microsoft.Bot.Builder.Dialogs.Debugging.IEvents events = default, Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel codeModel = default, Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel dataModel = default, Microsoft.Extensions.Logging.ILogger logger = default, Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion coercion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.BotAdapter UseDebugger(class Microsoft.Bot.Builder.BotAdapter botAdapter, int32 port, class Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap sourceMap, class Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints breakpoints, class System.Action terminate, class Microsoft.Bot.Builder.Dialogs.Debugging.IEvents events, class Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel codeModel, class Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel dataModel, class Microsoft.Extensions.Logging.ILogger logger, class Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion coercion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions.UseDebugger(Microsoft.Bot.Builder.BotAdapter,System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap,Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints,System.Action,Microsoft.Bot.Builder.Dialogs.Debugging.IEvents,Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel,Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel,Microsoft.Extensions.Logging.ILogger,Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseDebugger (botAdapter As BotAdapter, port As Integer, Optional sourceMap As ISourceMap = null, Optional breakpoints As IBreakpoints = null, Optional terminate As Action = null, Optional events As IEvents = null, Optional codeModel As ICodeModel = null, Optional dataModel As IDataModel = null, Optional logger As ILogger = null, Optional coercion As ICoercion = null) As BotAdapter" />
+      <MemberSignature Language="F#" Value="static member UseDebugger : Microsoft.Bot.Builder.BotAdapter * int * Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap * Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints * Action * Microsoft.Bot.Builder.Dialogs.Debugging.IEvents * Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel * Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel * Microsoft.Extensions.Logging.ILogger * Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion -&gt; Microsoft.Bot.Builder.BotAdapter" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions.UseDebugger (botAdapter, port, sourceMap, breakpoints, terminate, events, codeModel, dataModel, logger, coercion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botAdapter" Type="Microsoft.Bot.Builder.BotAdapter" RefType="this" />
+        <Parameter Name="port" Type="System.Int32" />
+        <Parameter Name="sourceMap" Type="Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap" />
+        <Parameter Name="breakpoints" Type="Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints" />
+        <Parameter Name="terminate" Type="System.Action" />
+        <Parameter Name="events" Type="Microsoft.Bot.Builder.Dialogs.Debugging.IEvents" />
+        <Parameter Name="codeModel" Type="Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel" />
+        <Parameter Name="dataModel" Type="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+        <Parameter Name="coercion" Type="Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion" />
+      </Parameters>
+      <Docs>
+        <param name="botAdapter">The <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> to enable.</param>
+        <param name="port">port to listen on.</param>
+        <param name="sourceMap">ISourceMap to use (default will be SourceMap()).</param>
+        <param name="breakpoints">IBreakpoints to use (default will be SourceMap()).</param>
+        <param name="terminate">Termination function (Default is Environment.Exit().</param>
+        <param name="events">IEvents to use (Default is Events).</param>
+        <param name="codeModel">ICodeModel to use (default is internal implementation).</param>
+        <param name="dataModel">IDataModel to use (default is internal implementation).</param>
+        <param name="logger">ILogger to use (Default is NullLogger).</param>
+        <param name="coercion">ICoercion to use (default is internal implementation).</param>
+        <summary>
+            Enable Debug Adapter Protocol for the running adapter.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Builder.BotAdapter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

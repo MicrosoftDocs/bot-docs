@@ -1,0 +1,99 @@
+<Type Name="CodeModel" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel">
+  <TypeSignature Language="C#" Value="public sealed class CodeModel : Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeModel extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeModel&#xA;Implements ICodeModel" />
+  <TypeSignature Language="F#" Value="type CodeModel = class&#xA;    interface ICodeModel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeModel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor">
+      <MemberSignature Language="C#" Value="string ICodeModel.NameFor (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel.Microsoft#Bot#Builder#Dialogs#Debugging#ICodeModel#NameFor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function NameFor (item As Object) As String Implements ICodeModel.NameFor" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor : obj -&gt; string&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor : obj -&gt; string" Usage="codeModel.Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor item" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint&gt; ICodeModel.PointsFor (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object item, string more);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint&gt; Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object item, string more) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel.Microsoft#Bot#Builder#Dialogs#Debugging#ICodeModel#PointsFor(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function PointsFor (dialogContext As DialogContext, item As Object, more As String) As IReadOnlyList(Of ICodePoint) Implements ICodeModel.PointsFor" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * string -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint&gt;&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * string -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint&gt;" Usage="codeModel.Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor (dialogContext, item, more)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="more" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="more">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,57 @@
+<Type Name="Protocol+Scopes" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Scopes">
+  <TypeSignature Language="C#" Value="public class Protocol.Scopes" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Protocol/Scopes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes" />
+  <TypeSignature Language="VB.NET" Value="Public Class Protocol.Scopes" />
+  <TypeSignature Language="F#" Value="type Protocol.Scopes = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scopes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameId">
+      <MemberSignature Language="C#" Value="public ulong FrameId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 FrameId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes.FrameId" />
+      <MemberSignature Language="VB.NET" Value="Public Property FrameId As ULong" />
+      <MemberSignature Language="F#" Value="member this.FrameId : uint64 with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes.FrameId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

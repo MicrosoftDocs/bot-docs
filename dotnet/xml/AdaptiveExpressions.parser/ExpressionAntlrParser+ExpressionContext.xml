@@ -1,0 +1,102 @@
+<Type Name="ExpressionAntlrParser+ExpressionContext" FullName="AdaptiveExpressions.parser.ExpressionAntlrParser+ExpressionContext">
+  <TypeSignature Language="C#" Value="public class ExpressionAntlrParser.ExpressionContext : Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ExpressionAntlrParser/ExpressionContext extends Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionAntlrParser.ExpressionContext&#xA;Inherits ParserRuleContext" />
+  <TypeSignature Language="F#" Value="type ExpressionAntlrParser.ExpressionContext = class&#xA;    inherit ParserRuleContext" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionContext (Antlr4.Runtime.ParserRuleContext parent, int invokingState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ParserRuleContext parent, int32 invokingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ParserRuleContext, invokingState As Integer)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext : Antlr4.Runtime.ParserRuleContext * int -&gt; AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext" Usage="new AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext (parent, invokingState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
+        <Parameter Name="invokingState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="invokingState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFrom">
+      <MemberSignature Language="C#" Value="public virtual void CopyFrom (AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyFrom(class AdaptiveExpressions.parser.ExpressionAntlrParser/ExpressionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext.CopyFrom(AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyFrom (context As ExpressionAntlrParser.ExpressionContext)" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext -&gt; unit" Usage="expressionContext.CopyFrom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ExpressionContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleIndex">
+      <MemberSignature Language="C#" Value="public override int RuleIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RuleIndex" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext.RuleIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RuleIndex : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrParser.ExpressionContext.RuleIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

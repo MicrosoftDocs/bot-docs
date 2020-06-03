@@ -1,0 +1,169 @@
+<Type Name="DialogDebugAdapter+Phase" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase">
+  <TypeSignature Language="C#" Value="public enum DialogDebugAdapter.Phase" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed DialogDebugAdapter/Phase extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DialogDebugAdapter.Phase" />
+  <TypeSignature Language="F#" Value="type DialogDebugAdapter.Phase = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Thread debugging phases.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Breakpoint">
+      <MemberSignature Language="C#" Value="Breakpoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Breakpoint = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Breakpoint" />
+      <MemberSignature Language="VB.NET" Value="Breakpoint" />
+      <MemberSignature Language="F#" Value="Breakpoint = 4" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Breakpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            At breakpoint?
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Continue = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Continue" />
+      <MemberSignature Language="VB.NET" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 1" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Follows "Next".
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exited">
+      <MemberSignature Language="C#" Value="Exited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Exited = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Exited" />
+      <MemberSignature Language="VB.NET" Value="Exited" />
+      <MemberSignature Language="F#" Value="Exited = 6" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Exited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>
+            Thread exited.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="Next" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Next = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Next" />
+      <MemberSignature Language="VB.NET" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 2" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Next" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Signal to "Step" or to "Continue".
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="Pause" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Pause = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Pause" />
+      <MemberSignature Language="VB.NET" Value="Pause" />
+      <MemberSignature Language="F#" Value="Pause = 5" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Pause" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+            Thread paused.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Started">
+      <MemberSignature Language="C#" Value="Started" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Started = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Started" />
+      <MemberSignature Language="VB.NET" Value="Started" />
+      <MemberSignature Language="F#" Value="Started = 0" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Started" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            "Started" signals Visual Studio Code that there is a new thread.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Step">
+      <MemberSignature Language="C#" Value="Step" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase Step = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Step" />
+      <MemberSignature Language="VB.NET" Value="Step" />
+      <MemberSignature Language="F#" Value="Step = 3" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Step" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter+Phase</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Follows "Next".
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

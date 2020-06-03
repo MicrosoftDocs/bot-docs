@@ -1,0 +1,126 @@
+<Type Name="LRUCache&lt;TKey,TValue&gt;" FullName="AdaptiveExpressions.LRUCache&lt;TKey,TValue&gt;">
+  <TypeSignature Language="C#" Value="public sealed class LRUCache&lt;TKey,TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LRUCache`2&lt;TKey, TValue&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.LRUCache`2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LRUCache(Of TKey, TValue)" />
+  <TypeSignature Language="F#" Value="type LRUCache&lt;'Key, 'Value&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey" />
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TKey">The type of the key to the cached item.</typeparam>
+    <typeparam name="TValue">The type of the cached item.</typeparam>
+    <summary>
+            A least-recently-used cache stored like a dictionary.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LRUCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.LRUCache`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.LRUCache`2" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LRUCache (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.LRUCache`2.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.LRUCache&lt;'Key, 'Value&gt; : int -&gt; AdaptiveExpressions.LRUCache&lt;'Key, 'Value&gt;" Usage="new AdaptiveExpressions.LRUCache&lt;'Key, 'Value&gt; capacity" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">Maximum number of elements to cache.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.LRUCache`2" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public void Set (TKey key, TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.LRUCache`2.Set(`0,`1)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (key As TKey, value As TValue)" />
+      <MemberSignature Language="F#" Value="member this.Set : 'Key * 'Value -&gt; unit" Usage="lRUCache.Set (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to add.</param>
+        <param name="value">The value of the element to add.</param>
+        <summary>
+            Adds the specified key and value to the cache.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public bool TryGet (TKey key, out TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGet(!TKey key, [out] !TValue&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.LRUCache`2.TryGet(`0,`1@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGet (key As TKey, ByRef value As TValue) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGet : 'Key * 'Value -&gt; bool" Usage="lRUCache.TryGet (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the value to get.</param>
+        <param name="value">When this method returns, contains the value associated with
+            the specified key, if the key is found; otherwise, the default value for the 
+            type of the <paramref name="value" /> parameter.</param>
+        <summary>
+            Gets the value associated with the specified key.
+            </summary>
+        <returns>true if contains an element with the specified key; otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
