@@ -319,4 +319,4 @@ const handleResourceChange = (resources) => {
 
 [nodejs-modules]: https://nodejs.org/api/modules.html#modules_modules
 
-[intelliSense]: https://docs.microsoft.com/en-us/visualstudio/ide/using-intellisense
+[intelliSense]: https://aka.ms/intellisense-in-visual-studio
