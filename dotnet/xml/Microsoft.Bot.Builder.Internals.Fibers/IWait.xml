@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -28,6 +29,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -55,6 +57,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -79,6 +82,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Internals.Fibers.Need</ReturnType>
@@ -103,6 +107,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -127,6 +132,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -158,6 +164,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Delegate</ReturnType>

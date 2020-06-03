@@ -1,0 +1,106 @@
+<Type Name="RelationshipType" FullName="AdaptiveExpressions.TriggerTrees.RelationshipType">
+  <TypeSignature Language="C#" Value="public enum RelationshipType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelationshipType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.TriggerTrees.RelationshipType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RelationshipType" />
+  <TypeSignature Language="F#" Value="type RelationshipType = " />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Relationship between trigger expressions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equal">
+      <MemberSignature Language="C#" Value="Equal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Equal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.TriggerTrees.RelationshipType.Equal" />
+      <MemberSignature Language="VB.NET" Value="Equal" />
+      <MemberSignature Language="F#" Value="Equal = 1" Usage="AdaptiveExpressions.TriggerTrees.RelationshipType.Equal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            First and second argument are the same expression.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Generalizes">
+      <MemberSignature Language="C#" Value="Generalizes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Generalizes = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.TriggerTrees.RelationshipType.Generalizes" />
+      <MemberSignature Language="VB.NET" Value="Generalizes" />
+      <MemberSignature Language="F#" Value="Generalizes = 2" Usage="AdaptiveExpressions.TriggerTrees.RelationshipType.Generalizes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            First argument generalizes the second, i.e. applies to a superset of the states the second argument covers.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Incomparable">
+      <MemberSignature Language="C#" Value="Incomparable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Incomparable = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.TriggerTrees.RelationshipType.Incomparable" />
+      <MemberSignature Language="VB.NET" Value="Incomparable" />
+      <MemberSignature Language="F#" Value="Incomparable = 3" Usage="AdaptiveExpressions.TriggerTrees.RelationshipType.Incomparable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Cannot tell how the first and second arguments relate.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Specializes">
+      <MemberSignature Language="C#" Value="Specializes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Specializes = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.TriggerTrees.RelationshipType.Specializes" />
+      <MemberSignature Language="VB.NET" Value="Specializes" />
+      <MemberSignature Language="F#" Value="Specializes = 0" Usage="AdaptiveExpressions.TriggerTrees.RelationshipType.Specializes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            First argument specializes the second, i.e. applies to a subset of the states the second argument covers.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

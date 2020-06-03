@@ -1,0 +1,237 @@
+<Type Name="Protocol+Initialize" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Initialize">
+  <TypeSignature Language="C#" Value="public class Protocol.Initialize" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Protocol/Initialize extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize" />
+  <TypeSignature Language="VB.NET" Value="Public Class Protocol.Initialize" />
+  <TypeSignature Language="F#" Value="type Protocol.Initialize = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdapterID">
+      <MemberSignature Language="C#" Value="public string AdapterID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AdapterID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.AdapterID" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdapterID As String" />
+      <MemberSignature Language="F#" Value="member this.AdapterID : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.AdapterID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientID">
+      <MemberSignature Language="C#" Value="public string ClientID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ClientID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientID As String" />
+      <MemberSignature Language="F#" Value="member this.ClientID : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ClientID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientName">
+      <MemberSignature Language="C#" Value="public string ClientName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ClientName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientName As String" />
+      <MemberSignature Language="F#" Value="member this.ClientName : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ClientName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsStartAt1">
+      <MemberSignature Language="C#" Value="public bool ColumnsStartAt1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ColumnsStartAt1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ColumnsStartAt1" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnsStartAt1 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ColumnsStartAt1 : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ColumnsStartAt1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinesStartAt1">
+      <MemberSignature Language="C#" Value="public bool LinesStartAt1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LinesStartAt1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.LinesStartAt1" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinesStartAt1 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LinesStartAt1 : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.LinesStartAt1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathFormat">
+      <MemberSignature Language="C#" Value="public string PathFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PathFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.PathFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathFormat As String" />
+      <MemberSignature Language="F#" Value="member this.PathFormat : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.PathFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsRunInTerminalRequest">
+      <MemberSignature Language="C#" Value="public bool SupportsRunInTerminalRequest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsRunInTerminalRequest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsRunInTerminalRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportsRunInTerminalRequest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsRunInTerminalRequest : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsRunInTerminalRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsVariablePaging">
+      <MemberSignature Language="C#" Value="public bool SupportsVariablePaging { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsVariablePaging" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsVariablePaging" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportsVariablePaging As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsVariablePaging : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsVariablePaging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsVariableType">
+      <MemberSignature Language="C#" Value="public bool SupportsVariableType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsVariableType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsVariableType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportsVariableType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsVariableType : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsVariableType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

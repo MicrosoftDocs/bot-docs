@@ -1,0 +1,74 @@
+<Type Name="IPredicateComparer" FullName="AdaptiveExpressions.TriggerTrees.IPredicateComparer">
+  <TypeSignature Language="C#" Value="public interface IPredicateComparer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPredicateComparer" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.TriggerTrees.IPredicateComparer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPredicateComparer" />
+  <TypeSignature Language="F#" Value="type IPredicateComparer = interface" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Compare two predicates to identify the relationship between them.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Predicate">
+      <MemberSignature Language="C#" Value="public string Predicate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Predicate" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.TriggerTrees.IPredicateComparer.Predicate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Predicate As String" />
+      <MemberSignature Language="F#" Value="member this.Predicate : string" Usage="AdaptiveExpressions.TriggerTrees.IPredicateComparer.Predicate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets name of predicate.
+            </summary>
+        <value>
+            Name of predicate.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relationship">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.TriggerTrees.RelationshipType Relationship (AdaptiveExpressions.Expression predicate, AdaptiveExpressions.Expression other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Relationship(class AdaptiveExpressions.Expression predicate, class AdaptiveExpressions.Expression other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.TriggerTrees.IPredicateComparer.Relationship(AdaptiveExpressions.Expression,AdaptiveExpressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Relationship (predicate As Expression, other As Expression) As RelationshipType" />
+      <MemberSignature Language="F#" Value="abstract member Relationship : AdaptiveExpressions.Expression * AdaptiveExpressions.Expression -&gt; AdaptiveExpressions.TriggerTrees.RelationshipType" Usage="iPredicateComparer.Relationship (predicate, other)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="predicate" Type="AdaptiveExpressions.Expression" />
+        <Parameter Name="other" Type="AdaptiveExpressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="predicate">First predicate.</param>
+        <param name="other">Second predicate.</param>
+        <summary>
+            Identify the relationship between two predicates.
+            </summary>
+        <returns>Relationship between predicates.</returns>
+        <remarks>
+            This is useful for doing things like identifying that Range("size", 1, 5) is more specialized than Range("size", 1, 10).
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
