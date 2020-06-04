@@ -1,0 +1,692 @@
+<Type Name="ResourceExplorer" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer">
+  <TypeSignature Language="C#" Value="public class ResourceExplorer : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceExplorer extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceExplorer&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ResourceExplorer = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Class which gives standard access to content resources.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceExplorer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceExplorer (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; providers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; providers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providers As IEnumerable(Of ResourceProvider))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer : seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="new Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer providers" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="providers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="providers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddResourceProvider">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer AddResourceProvider (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider resourceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer AddResourceProvider(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider resourceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.AddResourceProvider(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddResourceProvider (resourceProvider As ResourceProvider) As ResourceExplorer" />
+      <MemberSignature Language="F#" Value="member this.AddResourceProvider : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="resourceExplorer.AddResourceProvider resourceProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceProvider" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="resourceProvider">resource provider.</param>
+        <summary>
+            Add a resource provider to the resources managed by the resource explorer.
+            </summary>
+        <returns>resource explorer so that you can fluently call multiple methods on the resource explorer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddResourceType">
+      <MemberSignature Language="C#" Value="public void AddResourceType (string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResourceType(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.AddResourceType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResourceType (type As String)" />
+      <MemberSignature Language="F#" Value="member this.AddResourceType : string -&gt; unit" Usage="resourceExplorer.AddResourceType type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">resource type.</param>
+        <summary>
+            Add a resource Type to resource list.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T BuildType&lt;T&gt; (string kind, Newtonsoft.Json.Linq.JToken obj, Newtonsoft.Json.JsonSerializer serializer) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T BuildType&lt;class T&gt;(string kind, class Newtonsoft.Json.Linq.JToken obj, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.BuildType``1(System.String,Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildType(Of T As Class) (kind As String, obj As JToken, serializer As JsonSerializer) As T" />
+      <MemberSignature Language="F#" Value="member this.BuildType : string * Newtonsoft.Json.Linq.JToken * Newtonsoft.Json.JsonSerializer -&gt; 'T (requires 'T : null)" Usage="resourceExplorer.BuildType (kind, obj, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="obj" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of object to create.</typeparam>
+        <param name="kind">$kind.</param>
+        <param name="obj">source object.</param>
+        <param name="serializer">serializer to user.</param>
+        <summary>
+            Build type for given $kind using the JToken/serializer as the source.
+            </summary>
+        <returns>instantiated object of type(T).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; Changed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; Changed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Changed As EventHandler(Of IEnumerable(Of Resource)) " />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler&lt;seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; " Usage="member this.Changed : System.EventHandler&lt;System.Collections.Generic.seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event which fires when a resource is changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="resourceExplorer.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Dispose of internal resources.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKindsForType">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; GetKindsForType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;string&gt; GetKindsForType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.GetKindsForType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKindsForType (type As Type) As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.GetKindsForType : Type -&gt; System.Collections.Generic.List&lt;string&gt;" Usage="resourceExplorer.GetKindsForType type" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">type.</param>
+        <summary>
+            Get the $kind for a type.
+            </summary>
+        <returns>$kind for the type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKindsForType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; GetKindsForType&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;string&gt; GetKindsForType&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.GetKindsForType``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKindsForType(Of T) () As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.GetKindsForType : unit -&gt; System.Collections.Generic.List&lt;string&gt;" Usage="resourceExplorer.GetKindsForType " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">type.</typeparam>
+        <summary>
+            Get the $kind for a type.
+            </summary>
+        <returns>$kind for the type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResource">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource GetResource (string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource GetResource(string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.GetResource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResource (id As String) As Resource" />
+      <MemberSignature Language="F#" Value="member this.GetResource : string -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource" Usage="resourceExplorer.GetResource id" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The resource id.</param>
+        <summary>
+            Get resource by id.
+            </summary>
+        <returns>The resource, or throws if not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResources">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt; GetResources (string fileExtension);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt; GetResources(string fileExtension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.GetResources(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Function GetResources (fileExtension As String) As IEnumerable(Of Resource)" />
+      <MemberSignature Language="F#" Value="member this.GetResources : string -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;" Usage="resourceExplorer.GetResources fileExtension" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer/&lt;GetResources&gt;d__25))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileExtension" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileExtension">File extension filter.</param>
+        <summary>
+            Get resources of a given type.
+            </summary>
+        <returns>The resources.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeForKind">
+      <MemberSignature Language="C#" Value="public Type GetTypeForKind (string kind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetTypeForKind(string kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.GetTypeForKind(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeForKind (kind As String) As Type" />
+      <MemberSignature Language="F#" Value="member this.GetTypeForKind : string -&gt; Type" Usage="resourceExplorer.GetTypeForKind kind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="kind">$kind.</param>
+        <summary>
+            Get the type for $kind.
+            </summary>
+        <returns>type of object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRef">
+      <MemberSignature Language="C#" Value="public bool IsRef (Newtonsoft.Json.Linq.JToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRef(class Newtonsoft.Json.Linq.JToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.IsRef(Newtonsoft.Json.Linq.JToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsRef (token As JToken) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRef : Newtonsoft.Json.Linq.JToken -&gt; bool" Usage="resourceExplorer.IsRef token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">jtoken.</param>
+        <summary>
+            Determine if token is a reference.
+            </summary>
+        <returns>true if it is string ref.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T LoadType&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T LoadType&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.LoadType``1(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadType(Of T) (resource As Resource) As T" />
+      <MemberSignature Language="F#" Value="member this.LoadType : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource -&gt; 'T" Usage="resourceExplorer.LoadType resource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resource" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type to create.</typeparam>
+        <param name="resource">resource to bind to.</param>
+        <summary>
+            Create Type from resource.
+            </summary>
+        <returns>created type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T LoadType&lt;T&gt; (string resourceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T LoadType&lt;T&gt;(string resourceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.LoadType``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadType(Of T) (resourceId As String) As T" />
+      <MemberSignature Language="F#" Value="member this.LoadType : string -&gt; 'T" Usage="resourceExplorer.LoadType resourceId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resourceId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type to create.</typeparam>
+        <param name="resourceId">resourceId to bind to.</param>
+        <summary>
+            Create Type from resource.
+            </summary>
+        <returns>created type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadTypeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; LoadTypeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; LoadTypeAsync&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.LoadTypeAsync``1(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadTypeAsync(Of T) (resource As Resource, Optional cancellationToken As CancellationToken = null) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="member this.LoadTypeAsync : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="resourceExplorer.LoadTypeAsync (resource, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resource" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type to create.</typeparam>
+        <param name="resource">resource to bind to.</param>
+        <param name="cancellationToken">the <see cref="T:System.Threading.CancellationToken" /> for the task.</param>
+        <summary>
+            Create Type from resource.
+            </summary>
+        <returns>task which will resolve to created type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnChanged (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[] resources);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChanged(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[] resources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.OnChanged(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChanged (resources As Resource())" />
+      <MemberSignature Language="F#" Value="abstract member OnChanged : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[] -&gt; unit&#xA;override this.OnChanged : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[] -&gt; unit" Usage="resourceExplorer.OnChanged resources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resources" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[]" />
+      </Parameters>
+      <Docs>
+        <param name="resources">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="resourceExplorer.Refresh " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Reload any cached data.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterType">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType (string kind, Type type, Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType(string kind, class System.Type type, class Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.RegisterType(System.String,System.Type,Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterType (kind As String, type As Type, Optional loader As ICustomDeserializer = null) As ResourceExplorer" />
+      <MemberSignature Language="F#" Value="member this.RegisterType : string * Type * Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="resourceExplorer.RegisterType (kind, type, loader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="loader" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer" />
+      </Parameters>
+      <Docs>
+        <param name="kind">the $kind name to map to this type.</param>
+        <param name="type">type of object to create.</param>
+        <param name="loader">optional custom deserializer.</param>
+        <summary>
+            Register a declarative type with the resource loader system.
+            </summary>
+        <returns>Resource explorer for fluent style multiple calls.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType&lt;T&gt; (string kind, Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType&lt;T&gt;(string kind, class Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.RegisterType``1(System.String,Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterType(Of T) (kind As String, Optional loader As ICustomDeserializer = null) As ResourceExplorer" />
+      <MemberSignature Language="F#" Value="member this.RegisterType : string * Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="resourceExplorer.RegisterType (kind, loader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="loader" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of object to create.</typeparam>
+        <param name="kind">the $kind name to map to this type.</param>
+        <param name="loader">optional custom deserializer.</param>
+        <summary>
+            Register a declarative type with the resource loader system.
+            </summary>
+        <returns>Resource explorer for fluent style multiple calls.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveRefAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt; ResolveRefAsync (Newtonsoft.Json.Linq.JToken refToken, Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JToken&gt; ResolveRefAsync(class Newtonsoft.Json.Linq.JToken refToken, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.ResolveRefAsync(Newtonsoft.Json.Linq.JToken,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveRefAsync (refToken As JToken, sourceContext As SourceContext, Optional cancellationToken As CancellationToken = null) As Task(Of JToken)" />
+      <MemberSignature Language="F#" Value="member this.ResolveRefAsync : Newtonsoft.Json.Linq.JToken * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt;" Usage="resourceExplorer.ResolveRefAsync (refToken, sourceContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="refToken" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="refToken">reference.</param>
+        <param name="sourceContext">source context to build debugger source map.</param>
+        <param name="cancellationToken">the <see cref="T:System.Threading.CancellationToken" /> for the task.</param>
+        <summary>
+            Resolves a ref to the actual object.
+            </summary>
+        <returns>resolved object the reference refers to.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; ResourceProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; ResourceProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.ResourceProviders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceProviders As IEnumerable(Of ResourceProvider)" />
+      <MemberSignature Language="F#" Value="member this.ResourceProviders : seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.ResourceProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the resource providers.
+            </summary>
+        <value>
+            The resource providers.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.HashSet&lt;string&gt; ResourceTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.HashSet`1&lt;string&gt; ResourceTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.ResourceTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceTypes As HashSet(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ResourceTypes : System.Collections.Generic.HashSet&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.ResourceTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the resource type id extensions that you want to manage.
+            </summary>
+        <value>
+            The extensions that you want the to manage.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetResource">
+      <MemberSignature Language="C#" Value="public bool TryGetResource (string id, out Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetResource(string id, [out] class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&amp; resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.TryGetResource(System.String,Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetResource (id As String, ByRef resource As Resource) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetResource : string * Resource -&gt; bool" Usage="resourceExplorer.TryGetResource (id, resource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="resource" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="id">The id.</param>
+        <param name="resource">resource that was found or null.</param>
+        <summary>
+            Try to get the resource by id.
+            </summary>
+        <returns>true if found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

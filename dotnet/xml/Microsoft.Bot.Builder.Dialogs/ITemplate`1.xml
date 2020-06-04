@@ -1,0 +1,56 @@
+<Type Name="ITemplate&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.ITemplate&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface ITemplate&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplate`1&lt;T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.ITemplate`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITemplate(Of T)" />
+  <TypeSignature Language="F#" Value="type ITemplate&lt;'T&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">Type to bind data to.</typeparam>
+    <summary>
+            Defines Template interface for binding data to T.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; BindAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object data = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!T&gt; BindAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.ITemplate`1.BindAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BindAsync (dialogContext As DialogContext, Optional data As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member BindAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="iTemplate.BindAsync (dialogContext, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">dialogContext.</param>
+        <param name="data">data to bind to. If Null, then dc.State will be used.</param>
+        <param name="cancellationToken">the <see cref="T:System.Threading.CancellationToken" /> for this task.</param>
+        <summary>
+            Given the turn context bind to the data to create the object of type T.
+            </summary>
+        <returns>instance of T.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,139 @@
+<Type Name="Clause" FullName="AdaptiveExpressions.TriggerTrees.Clause">
+  <TypeSignature Language="C#" Value="public class Clause : AdaptiveExpressions.Expression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Clause extends AdaptiveExpressions.Expression" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.TriggerTrees.Clause" />
+  <TypeSignature Language="VB.NET" Value="Public Class Clause&#xA;Inherits Expression" />
+  <TypeSignature Language="F#" Value="type Clause = class&#xA;    inherit Expression" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AdaptiveExpressions.Expression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnyBindings">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; AnyBindings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; AnyBindings" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.TriggerTrees.Clause.AnyBindings" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnyBindings As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.AnyBindings : System.Collections.Generic.Dictionary&lt;string, string&gt; with get, set" Usage="AdaptiveExpressions.TriggerTrees.Clause.AnyBindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public bool Matches (AdaptiveExpressions.TriggerTrees.Clause clause, object memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class AdaptiveExpressions.TriggerTrees.Clause clause, object memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.TriggerTrees.Clause.Matches(AdaptiveExpressions.TriggerTrees.Clause,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (clause As Clause, memory As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Matches : AdaptiveExpressions.TriggerTrees.Clause * obj -&gt; bool" Usage="clause.Matches (clause, memory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clause" Type="AdaptiveExpressions.TriggerTrees.Clause" />
+        <Parameter Name="memory" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="clause">To be added.</param>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relationship">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.TriggerTrees.RelationshipType Relationship (AdaptiveExpressions.TriggerTrees.Clause other, System.Collections.Generic.Dictionary&lt;string,AdaptiveExpressions.TriggerTrees.IPredicateComparer&gt; comparers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Relationship(class AdaptiveExpressions.TriggerTrees.Clause other, class System.Collections.Generic.Dictionary`2&lt;string, class AdaptiveExpressions.TriggerTrees.IPredicateComparer&gt; comparers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.TriggerTrees.Clause.Relationship(AdaptiveExpressions.TriggerTrees.Clause,System.Collections.Generic.Dictionary{System.String,AdaptiveExpressions.TriggerTrees.IPredicateComparer})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Relationship (other As Clause, comparers As Dictionary(Of String, IPredicateComparer)) As RelationshipType" />
+      <MemberSignature Language="F#" Value="member this.Relationship : AdaptiveExpressions.TriggerTrees.Clause * System.Collections.Generic.Dictionary&lt;string, AdaptiveExpressions.TriggerTrees.IPredicateComparer&gt; -&gt; AdaptiveExpressions.TriggerTrees.RelationshipType" Usage="clause.Relationship (other, comparers)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="AdaptiveExpressions.TriggerTrees.Clause" />
+        <Parameter Name="comparers" Type="System.Collections.Generic.Dictionary&lt;System.String,AdaptiveExpressions.TriggerTrees.IPredicateComparer&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <param name="comparers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.TriggerTrees.Clause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="clause.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public void ToString (System.Text.StringBuilder builder, int indent = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ToString(class System.Text.StringBuilder builder, int32 indent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.TriggerTrees.Clause.ToString(System.Text.StringBuilder,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ToString (builder As StringBuilder, Optional indent As Integer = 0)" />
+      <MemberSignature Language="F#" Value="override this.ToString : System.Text.StringBuilder * int -&gt; unit" Usage="clause.ToString (builder, indent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Text.StringBuilder" />
+        <Parameter Name="indent" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="indent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

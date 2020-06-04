@@ -1,0 +1,183 @@
+<Type Name="Protocol+Response" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Response">
+  <TypeSignature Language="C#" Value="public class Protocol.Response : Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Message" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Protocol/Response extends Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Message" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response" />
+  <TypeSignature Language="VB.NET" Value="Public Class Protocol.Response&#xA;Inherits Protocol.Message" />
+  <TypeSignature Language="F#" Value="type Protocol.Response = class&#xA;    inherit Protocol.Message" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Message</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Response (int seq, Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 seq, class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Request request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.#ctor(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (seq As Integer, request As Protocol.Request)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response : int * Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response" Usage="new Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response (seq, request)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Request" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public string Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Command" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Command" />
+      <MemberSignature Language="VB.NET" Value="Public Property Command As String" />
+      <MemberSignature Language="F#" Value="member this.Command : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fail">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response&lt;string&gt; Fail (int seq, Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request request, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Response`1&lt;string&gt; Fail(int32 seq, class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Request request, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Fail(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Fail (seq As Integer, request As Protocol.Request, message As String) As Protocol.Response(Of String)" />
+      <MemberSignature Language="F#" Value="static member Fail : int * Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request * string -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Fail (seq, request, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Response&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Request" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="seq">To be added.</param>
+        <param name="request">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From&lt;TBody&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response&lt;TBody&gt; From&lt;TBody&gt; (int seq, Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request request, TBody body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Response`1&lt;!!TBody&gt; From&lt;TBody&gt;(int32 seq, class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Request request, !!TBody body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.From``1(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function From(Of TBody) (seq As Integer, request As Protocol.Request, body As TBody) As Protocol.Response(Of TBody)" />
+      <MemberSignature Language="F#" Value="static member From : int * Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request * 'Body -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response&lt;'Body&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.From (seq, request, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Response&lt;TBody&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TBody" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Int32" />
+        <Parameter Name="request" Type="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Request" />
+        <Parameter Name="body" Type="TBody" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TBody">To be added.</typeparam>
+        <param name="seq">To be added.</param>
+        <param name="request">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request_seq">
+      <MemberSignature Language="C#" Value="public int Request_seq { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Request_seq" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Request_seq" />
+      <MemberSignature Language="VB.NET" Value="Public Property Request_seq As Integer" />
+      <MemberSignature Language="F#" Value="member this.Request_seq : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Request_seq" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="public bool Success { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Success" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Success" />
+      <MemberSignature Language="VB.NET" Value="Public Property Success As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Success : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Success" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

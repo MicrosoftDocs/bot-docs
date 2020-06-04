@@ -1,0 +1,181 @@
+<Type Name="AttachmentActionData" FullName="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData">
+  <TypeSignature Language="C#" Value="public class AttachmentActionData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachmentActionData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachmentActionData" />
+  <TypeSignature Language="F#" Value="type AttachmentActionData = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachmentActionData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Created">
+      <MemberSignature Language="C#" Value="public string Created { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Created" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Created" />
+      <MemberSignature Language="VB.NET" Value="Public Property Created As String" />
+      <MemberSignature Language="F#" Value="member this.Created : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Created" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the date and time the action was created.
+            </summary>
+        <value>
+            The date and time the action was created.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the unique identifier for the action.
+            </summary>
+        <value>
+            The unique identifier for the action.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; Inputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; Inputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Inputs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inputs As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Inputs : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Inputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the action's inputs.
+            </summary>
+        <value>
+            The action's inputs.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageId">
+      <MemberSignature Language="C#" Value="public string MessageId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.MessageId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageId As String" />
+      <MemberSignature Language="F#" Value="member this.MessageId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.MessageId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the parent message the attachment action was performed on.
+            </summary>
+        <value>
+            The parent message the attachment action was performed on.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersonId">
+      <MemberSignature Language="C#" Value="public string PersonId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PersonId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.PersonId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersonId As String" />
+      <MemberSignature Language="F#" Value="member this.PersonId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.PersonId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the ID of the person who performed the action.
+            </summary>
+        <value>
+            The ID of the person who performed the action.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of action performed.
+            </summary>
+        <value>
+            The type of action performed.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

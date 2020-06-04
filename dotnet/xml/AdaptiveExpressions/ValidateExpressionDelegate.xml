@@ -1,0 +1,29 @@
+<Type Name="ValidateExpressionDelegate" FullName="AdaptiveExpressions.ValidateExpressionDelegate">
+  <TypeSignature Language="C#" Value="public delegate void ValidateExpressionDelegate(Expression expression);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidateExpressionDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.ValidateExpressionDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ValidateExpressionDelegate(expression As Expression)" />
+  <TypeSignature Language="F#" Value="type ValidateExpressionDelegate = delegate of Expression -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="expression">Expression to check.</param>
+    <summary>
+            Delegate for doing static validation on an expression.
+            </summary>
+    <remarks>
+            Validators can and should throw exceptions if the expression is not valid.
+            </remarks>
+  </Docs>
+</Type>

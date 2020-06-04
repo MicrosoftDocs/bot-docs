@@ -1,0 +1,898 @@
+<Type Name="LGFileParser" FullName="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser">
+  <TypeSignature Language="C#" Value="public class LGFileParser : Antlr4.Runtime.Parser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LGFileParser extends Antlr4.Runtime.Parser" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class LGFileParser&#xA;Inherits Parser" />
+  <TypeSignature Language="F#" Value="type LGFileParser = class&#xA;    inherit Parser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.Parser</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LGFileParser (Antlr4.Runtime.ITokenStream input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ITokenStream input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.#ctor(Antlr4.Runtime.ITokenStream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (input As ITokenStream)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.LGFileParser : Antlr4.Runtime.ITokenStream -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser" Usage="new Microsoft.Bot.Builder.LanguageGeneration.LGFileParser input" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="input" Type="Antlr4.Runtime.ITokenStream" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_ATN">
+      <MemberSignature Language="C#" Value="public static readonly Antlr4.Runtime.Atn.ATN _ATN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Antlr4.Runtime.Atn.ATN _ATN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser._ATN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly _ATN As ATN " />
+      <MemberSignature Language="F#" Value=" staticval mutable _ATN : Antlr4.Runtime.Atn.ATN" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser._ATN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Atn.ATN</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_serializedATN">
+      <MemberSignature Language="C#" Value="public static readonly string _serializedATN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string _serializedATN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser._serializedATN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly _serializedATN As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable _serializedATN : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser._serializedATN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COMMENT">
+      <MemberSignature Language="C#" Value="public const int COMMENT = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 COMMENT = (3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.COMMENT" />
+      <MemberSignature Language="VB.NET" Value="Public Const COMMENT As Integer  = 3" />
+      <MemberSignature Language="F#" Value="val mutable COMMENT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.COMMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="commentDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext commentDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/CommentDefinitionContext commentDefinition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.commentDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Function commentDefinition () As LGFileParser.CommentDefinitionContext" />
+      <MemberSignature Language="F#" Value="member this.commentDefinition : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext" Usage="lGFileParser.commentDefinition " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+CommentDefinitionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultVocabulary">
+      <MemberSignature Language="C#" Value="public static readonly Antlr4.Runtime.IVocabulary DefaultVocabulary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Antlr4.Runtime.IVocabulary DefaultVocabulary" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.DefaultVocabulary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultVocabulary As IVocabulary " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultVocabulary : Antlr4.Runtime.IVocabulary" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.DefaultVocabulary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext errorDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ErrorDefinitionContext errorDefinition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.errorDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Function errorDefinition () As LGFileParser.ErrorDefinitionContext" />
+      <MemberSignature Language="F#" Value="member this.errorDefinition : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext" Usage="lGFileParser.errorDefinition " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ErrorDefinitionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="file">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext file ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/FileContext file() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.file" />
+      <MemberSignature Language="VB.NET" Value="Public Function file () As LGFileParser.FileContext" />
+      <MemberSignature Language="F#" Value="member this.file : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext" Usage="lGFileParser.file " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+FileContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GrammarFileName">
+      <MemberSignature Language="C#" Value="public override string GrammarFileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GrammarFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.GrammarFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GrammarFileName As String" />
+      <MemberSignature Language="F#" Value="member this.GrammarFileName : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.GrammarFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IMPORT">
+      <MemberSignature Language="C#" Value="public const int IMPORT = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IMPORT = (4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.IMPORT" />
+      <MemberSignature Language="VB.NET" Value="Public Const IMPORT As Integer  = 4" />
+      <MemberSignature Language="F#" Value="val mutable IMPORT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.IMPORT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="importDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext importDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ImportDefinitionContext importDefinition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.importDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Function importDefinition () As LGFileParser.ImportDefinitionContext" />
+      <MemberSignature Language="F#" Value="member this.importDefinition : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext" Usage="lGFileParser.importDefinition " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ImportDefinitionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INVALID_LINE">
+      <MemberSignature Language="C#" Value="public const int INVALID_LINE = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_LINE = (7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.INVALID_LINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const INVALID_LINE As Integer  = 7" />
+      <MemberSignature Language="F#" Value="val mutable INVALID_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.INVALID_LINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NEWLINE">
+      <MemberSignature Language="C#" Value="public const int NEWLINE = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.NEWLINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable NEWLINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.NEWLINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPTION">
+      <MemberSignature Language="C#" Value="public const int OPTION = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 OPTION = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OPTION" />
+      <MemberSignature Language="VB.NET" Value="Public Const OPTION As Integer  = 2" />
+      <MemberSignature Language="F#" Value="val mutable OPTION : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OPTION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="optionDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext optionDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/OptionDefinitionContext optionDefinition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.optionDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Function optionDefinition () As LGFileParser.OptionDefinitionContext" />
+      <MemberSignature Language="F#" Value="member this.optionDefinition : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext" Usage="lGFileParser.optionDefinition " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+OptionDefinitionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="paragraph">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext paragraph ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ParagraphContext paragraph() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.paragraph" />
+      <MemberSignature Language="VB.NET" Value="Public Function paragraph () As LGFileParser.ParagraphContext" />
+      <MemberSignature Language="F#" Value="member this.paragraph : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext" Usage="lGFileParser.paragraph " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ParagraphContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_commentDefinition">
+      <MemberSignature Language="C#" Value="public const int RULE_commentDefinition = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_commentDefinition = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_commentDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_commentDefinition As Integer  = 2" />
+      <MemberSignature Language="F#" Value="val mutable RULE_commentDefinition : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_commentDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_errorDefinition">
+      <MemberSignature Language="C#" Value="public const int RULE_errorDefinition = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_errorDefinition = (5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_errorDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_errorDefinition As Integer  = 5" />
+      <MemberSignature Language="F#" Value="val mutable RULE_errorDefinition : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_errorDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_file">
+      <MemberSignature Language="C#" Value="public const int RULE_file = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_file = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_file" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_file As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable RULE_file : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_file" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_importDefinition">
+      <MemberSignature Language="C#" Value="public const int RULE_importDefinition = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_importDefinition = (3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_importDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_importDefinition As Integer  = 3" />
+      <MemberSignature Language="F#" Value="val mutable RULE_importDefinition : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_importDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_optionDefinition">
+      <MemberSignature Language="C#" Value="public const int RULE_optionDefinition = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_optionDefinition = (4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_optionDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_optionDefinition As Integer  = 4" />
+      <MemberSignature Language="F#" Value="val mutable RULE_optionDefinition : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_optionDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_paragraph">
+      <MemberSignature Language="C#" Value="public const int RULE_paragraph = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_paragraph = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_paragraph" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_paragraph As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable RULE_paragraph : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_paragraph" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_templateBody">
+      <MemberSignature Language="C#" Value="public const int RULE_templateBody = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_templateBody = (8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateBody" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_templateBody As Integer  = 8" />
+      <MemberSignature Language="F#" Value="val mutable RULE_templateBody : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateBody" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_templateBodyLine">
+      <MemberSignature Language="C#" Value="public const int RULE_templateBodyLine = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_templateBodyLine = (9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateBodyLine" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_templateBodyLine As Integer  = 9" />
+      <MemberSignature Language="F#" Value="val mutable RULE_templateBodyLine : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateBodyLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_templateDefinition">
+      <MemberSignature Language="C#" Value="public const int RULE_templateDefinition = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_templateDefinition = (6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_templateDefinition As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable RULE_templateDefinition : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_templateNameLine">
+      <MemberSignature Language="C#" Value="public const int RULE_templateNameLine = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_templateNameLine = (7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateNameLine" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_templateNameLine As Integer  = 7" />
+      <MemberSignature Language="F#" Value="val mutable RULE_templateNameLine : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RULE_templateNameLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ruleNames">
+      <MemberSignature Language="C#" Value="public static readonly string[] ruleNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] ruleNames" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ruleNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ruleNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable ruleNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ruleNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleNames">
+      <MemberSignature Language="C#" Value="public override string[] RuleNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] RuleNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RuleNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleNames As String()" />
+      <MemberSignature Language="F#" Value="member this.RuleNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.RuleNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializedAtn">
+      <MemberSignature Language="C#" Value="public override string SerializedAtn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerializedAtn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.SerializedAtn" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SerializedAtn As String" />
+      <MemberSignature Language="F#" Value="member this.SerializedAtn : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.SerializedAtn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEMPLATE_BODY_LINE">
+      <MemberSignature Language="C#" Value="public const int TEMPLATE_BODY_LINE = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE_BODY_LINE = (6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TEMPLATE_BODY_LINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE_BODY_LINE As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable TEMPLATE_BODY_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TEMPLATE_BODY_LINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEMPLATE_NAME_LINE">
+      <MemberSignature Language="C#" Value="public const int TEMPLATE_NAME_LINE = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE_NAME_LINE = (5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TEMPLATE_NAME_LINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE_NAME_LINE As Integer  = 5" />
+      <MemberSignature Language="F#" Value="val mutable TEMPLATE_NAME_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TEMPLATE_NAME_LINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="templateBody">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext templateBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyContext templateBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBody" />
+      <MemberSignature Language="VB.NET" Value="Public Function templateBody () As LGFileParser.TemplateBodyContext" />
+      <MemberSignature Language="F#" Value="member this.templateBody : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext" Usage="lGFileParser.templateBody " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="templateBodyLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext templateBodyLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyLineContext templateBodyLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBodyLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function templateBodyLine () As LGFileParser.TemplateBodyLineContext" />
+      <MemberSignature Language="F#" Value="member this.templateBodyLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext" Usage="lGFileParser.templateBodyLine " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyLineContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="templateDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext templateDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateDefinitionContext templateDefinition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Function templateDefinition () As LGFileParser.TemplateDefinitionContext" />
+      <MemberSignature Language="F#" Value="member this.templateDefinition : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext" Usage="lGFileParser.templateDefinition " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateDefinitionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="templateNameLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext templateNameLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateNameLineContext templateNameLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateNameLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function templateNameLine () As LGFileParser.TemplateNameLineContext" />
+      <MemberSignature Language="F#" Value="member this.templateNameLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext" Usage="lGFileParser.templateNameLine " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateNameLineContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tokenNames">
+      <MemberSignature Language="C#" Value="public static readonly string[] tokenNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] tokenNames" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.tokenNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly tokenNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable tokenNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.tokenNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use Vocabulary instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenNames">
+      <MemberSignature Language="C#" Value="public override string[] TokenNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] TokenNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TokenNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenNames As String()" />
+      <MemberSignature Language="F#" Value="member this.TokenNames : string[]" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TokenNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use IRecognizer.Vocabulary instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vocabulary">
+      <MemberSignature Language="C#" Value="public override Antlr4.Runtime.IVocabulary Vocabulary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Antlr4.Runtime.IVocabulary Vocabulary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.Vocabulary" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Vocabulary As IVocabulary" />
+      <MemberSignature Language="F#" Value="member this.Vocabulary : Antlr4.Runtime.IVocabulary" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.Vocabulary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
