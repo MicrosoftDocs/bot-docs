@@ -15,7 +15,7 @@ ms.date: 04/27/2020
 The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
 
 > [!IMPORTANT]
-> Actions (_trigger actions_) are dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the bot framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
+> Actions (_trigger actions_) are dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the Bot Framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 * A familiarity with [Adaptive expressions][10].
 
 > [!TIP]
-> This syntax defined in the [Language Generation templates][9], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the bot framework SDK.
+> This syntax defined in the [Language Generation templates][9], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the Bot Framework SDK.
 
 ## Inputs
 
@@ -60,7 +60,7 @@ The adaptive dialogs library defines the following input types:
 
 ### InputDialog
 
-The input classes provided by the bot framework SDK all derive from the base _input dialog_, which derives from the _dialog_ class. All input dialogs have these common properties:
+The input classes provided by the Bot Framework SDK all derive from the base _input dialog_, which derives from the _dialog_ class. All input dialogs have these common properties:
 
 #### AllowInterruptions
 

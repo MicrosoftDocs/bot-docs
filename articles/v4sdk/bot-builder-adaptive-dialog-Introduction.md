@@ -12,7 +12,7 @@ ms.date: 04/24/2020
 
 # Introduction to adaptive dialogs
 
-Adaptive dialogs offer new A new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
+Adaptive dialogs offer new a new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
 
 > [!IMPORTANT]
 > Adaptive dialogs is currently available in the .Net version of the bot framework SDK. You can find Sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub, however the JavaScript version is now in [Preview][15].
@@ -111,7 +111,7 @@ Consider this scenario:
     ...
 ```
 
-The user not only did not answer the question, but they changed the subject entirely, which will require completely different code (Action) that exists in a different dialog to execute. Adaptive dialogs enables you to handle this scenario which is shown in the following diagram:
+The user not only did not answer the question, but they changed the subject entirely, which will require completely different code (Action) that exists in a different dialog to execute. Adaptive dialogs enable you to handle this scenario which is shown in the following diagram:
 
 <p align="center">
     <img alt="Adaptive_dialog_runtime_behavior" src="./media/adaptive-dialogs/adaptive-dialog-scenario-setup.png" style="max-width:700px;" />
@@ -120,8 +120,8 @@ The user not only did not answer the question, but they changed the subject enti
 This bot has the following three adaptive dialogs:
 
 1. The **rootDialog** that has its own 'LUIS' model and a set of triggers and actions, some of which will call a child dialog that is designed to handle specific user requests.
-2. The **bookFlightDialog** that has its own 'LUIS' model and a set of triggers and actions that handles conversations about booking flights.
-3. The **weatherDialog** that has its own 'LUIS' model and a set of triggers and actions that handles conversations about getting weather information.
+2. The **bookFlightDialog** that has its own 'LUIS' model and a set of triggers and actions that handle conversations about booking flights.
+3. The **weatherDialog** that has its own 'LUIS' model and a set of triggers and actions that handle conversations about getting weather information.
 
 Here's the flow when user says: _I'd like to book a flight_
 
@@ -141,7 +141,7 @@ Since the dialog `bookFlightDialog` has no `OnIntent` trigger to handle the user
 
 To summarize:
 
-Each dialog's _recognizer_ analyzes the user's input to determine the user intent. Once the intent is determined, the _recognizer_ emits an `IntentRecognized` event which the dialog handles using an `OnIntent` trigger. If there is no `OnIntent` trigger in the active dialog that can handle that intent, the bot will send it to the dialog's parent dialog. If the parent dialog does not have a trigger to handle the intent it bubbles up until it reached the root dialog. Once the trigger that handles that intent completes, it sends control back to the dialog that started this process where it can continue the conversational flow where it left off.
+Each dialog's _recognizer_ analyzes the user's input to determine the user intent. Once the intent is determined, the _recognizer_ emits an `IntentRecognized` event which the dialog handles using an `OnIntent` trigger. If there is no `OnIntent` trigger in the active dialog that can handle that intent, the bot will send it to the dialog's parent dialog. If the parent dialog does not have a trigger to handle the intent it bubbles up until it reaches the root dialog. Once the trigger that handles that intent completes, it sends control back to the dialog that started this process where it can continue the conversational flow where it left off.
 
 ## Additional information
 
