@@ -403,7 +403,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 [numberinput]: bot-builder-concept-adaptive-dialog-Inputs.md#numberinput
 [oauthinput]: bot-builder-concept-adaptive-dialog-Inputs.md#oauthinput
 [textinput]: bot-builder-concept-adaptive-dialog-Inputs.md#textinput
-[send-activity]: bot-builder-concept-adaptive-dialog-Inputs.md#send-activity
+[send-activity]: bot-builder-concept-adaptive-dialog-Actions.md#send-activity
 
 <!--  (Actions) Create a condition -->
 [ifcondition]: bot-builder-concept-adaptive-dialog-Actions.md#ifcondition

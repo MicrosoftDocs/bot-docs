@@ -217,7 +217,7 @@ You can optionally set the dialog to update with new settings anytime the underl
 // auto reload dialogs when file changes
 this.resourceExplorer.Changed += (e, resources) =>
 {
-    if (resources.Any(resource => resource.Id == ".dialog"))
+    if (resources.Any(resource => resource.Id.EndsWith == ".dialog"))
     {
         Task.Run(() => this.LoadRootDialogAsync());
     }
@@ -305,7 +305,7 @@ const handleResourceChange = (resources) => {
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 [concept-adaptive]: bot-builder-adaptive-dialog-introduction.md
-[concept-declarative]: bot-builder-concept-declarative.md
+[concept-declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [how-to-adaptive]: bot-builder-dialogs-adaptive.md
 
 [prompting]: bot-builder-prompts.md
