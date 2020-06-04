@@ -62,19 +62,91 @@ The elements of the `.dialog` file defined:
 
 Adaptive dialog declarative files that have the `.lg` extension are described in detail in the [.lg file format][lg-file-format] article.
 
-The components of declarative:
-- The declarative files are JSON files that describe all of the attributes of an adaptive dialog
-   - The attributes of adaptive dialogs provided by the Bot framework SDK are defined in schema files
-- The resource object 
-- is created from the declarative files (`.dialog`) and is passed to the type loader to create the declarative adaptive dialog that is passed to the dialog manager.
-- 
-
-
 ## The resource explorer
 
 The resource explorer provides the tools you need to import declarative adaptive dialog files into your bot and use them as if they were adaptive dialogs hard coded directly in your bots source code.
 
 With the resource explorer you can create resource objects that contain all of the relevant information about the declarative files required to create adaptive dialogs at run time, which is done using the resource explorer's type loader that imports files with the `.dialog` and `.lg` extensions.
+
+### The resource object
+
+The resource explorer's `GetResource` method reads the declarative file into a resource object.  The resource object contains the information about the declarative file and can be used by any process that needs to reference it, such as the type loader.
+
+# [C#](#tab/csharp)
+
+<!--This example could be improved-->
+```Csharp
+var resource = this.resourceExplorer.GetResource("main.dialog");
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+let rootDialogResource = resourceExplorer.getResource('echo.dialog');
+```
+
+---
+
+### The type loader
+
+Once the resource explorer's `GetResource` method reads the declarative file into a resource object, the `LoadType` method casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
+
+# [C#](#tab/csharp)
+
+<!--This example could be improved-->
+```Csharp
+dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+let dialogManager = new DialogManager(resourceExplorer.loadType(rootDialogResource));
+```
+
+---
+
+### Auto reload dialogs when file changes
+
+Any time a declarative file changes when your bot is running, a `changed` event fires. You can capture that event and reload your declarative files, that way when any adaptive dialog needs updated you do not need to update your code and recompile your source code or restart your bot. This can be especially useful in a production environment.
+
+# [C#](#tab/csharp)
+
+<!--This example could be improved-->
+```Csharp
+// auto reload the root dialog when it changes
+this.resourceExplorer.Changed += (e, resources) =>
+{
+    if (resources.Any(resource => resource.Id == "main.dialog"))
+    {
+        Task.Run(() => this.LoadRootDialogAsync());
+    }
+};
+
+private void LoadRootDialogAsync()
+{
+    var resource = this.resourceExplorer.GetResource("main.dialog");
+    dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));
+}
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+const handleResourceChange = (resources) => {
+    if (Array.isArray(resources)) {
+        if((resources || []).find(r => r.resourceId.endsWith('.dialog')) !== undefined) loadRootDialog();
+    } else {
+        if (resources.resourceId && resources.resourceId.endsWith('.dialog')) loadRootDialog()
+    }
+};
+
+// Add a resource change handler to resource explorer.
+resourceExplorer.emitter.on('changed', handleResourceChange);
+```
+
+---
+
 
 <!---
 - Create resource objects that contain all of the relevant information about your declarative files using the `GetResource()` method.
@@ -88,11 +160,7 @@ With the resource explorer you can create resource objects that contain all of t
 2. Use `dialogManager.UseResourceExplorer()` to register the resource explorer object for discovery by the various parts of the Bot Framework SDK. `.UseResourceExplorer()` is written the same way that any 3rd party component would need to be written in that it registers itself with the bot framework to load declarative resources such as .lg, .lu, .Dialog files, etc. It does this by adding itself to the dialogManagers Initial Turn State. This architectural design enables any 3rd party component to get authored content that may be coming from a radically different place (such as CMS system)
 -->
 
-## The type loader
-
-
-
-
+<!--
 > [!IMPORTANT]
 > ***FolderResourceProviderExtensions***
 > - **LoadProject:**
@@ -117,7 +185,7 @@ This tells the resource explorer that the `resource` represents an `AdaptiveDial
 **dialogManager.UseResourceExplorer(resourceExplorer);**
 
 This tells the `dialogManager` to use `resourceExplorer` as the resourceExplorer.
-
+-->
 ## Declarative assets
 
 The Bot framework SDK has various declarative assets available, each will be listed below. These assets can be used in your `.dialog` files as the `$kind` keyword.
@@ -130,7 +198,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 
 | `$kind` keyword          | Trigger Name                   | What this trigger does                                              |
 | ------------------------ | ------------------------------ | ------------------------------------------------------------------- |
-| `Microsoft.OnCondition`  | [OnCondition](#send-activity)  | The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
+| `Microsoft.OnCondition`  | [OnCondition][send-activity]  | The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
 
 #### Recognizer event triggers
 
@@ -152,7 +220,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 | Microsoft.OnRepromptDialog |OnRepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                                                                             |
 
 > [!TIP]
-> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message](#dialog-event-trigger-example-using-declarative) or a [prompt for user input][bot-builder-concept-adaptive-dialog-inputs.md].
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input][bot-builder-concept-adaptive-dialog-inputs.md].
 
 > [!IMPORTANT]
 > Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
@@ -222,80 +290,80 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 
 | `$kind` keyword          | Action Name                    | What this action does                                              |
 | ------------------------ | ------------------------------ | ------------------------------------------------------------------ |
-| `Microsoft.SendActivity` | [SendActivity](#send-activity) | Enables you send any type of activity such as responding to users. |
+| `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users. |
 
 #### Requesting user input
 
 | `$kind` keyword           | Input class                       | Description                                          | Returns                                      |
 | ------------------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
-| Microsoft.AttachmentInput |[AttachmentInput](attachmentinput)| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.          |
-| Microsoft.ChoiceInput     | [ChoiceInput](choiceinput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
-| Microsoft.ConfirmInput    | [ConfirmInput](confirminput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
-| Microsoft.DateTimeInput   | [DateTimeInput](datetimeinput)   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
-| Microsoft.InputDialog     | [InputDialog](inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Microsoft.NumberInput     | [NumberInput](numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
-| Microsoft.OAuthInput      | [OAuthInput](oauthinput)         | Used to enable your users to **sign into a secure site**.| A token response.                        |
-| Microsoft.TextInput       | [TextInput](textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
+| Microsoft.AttachmentInput |[AttachmentInput][attachmentinput]| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.          |
+| Microsoft.ChoiceInput     | [ChoiceInput][choiceinput]       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
+| Microsoft.ConfirmInput    | [ConfirmInput][confirminput]     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
+| Microsoft.DateTimeInput   | [DateTimeInput][datetimeinput]   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
+| Microsoft.InputDialog     | [InputDialog][inputdialog]       | This is the base class that all of the input classes derive from. It defines all shared properties. |
+| Microsoft.NumberInput     | [NumberInput][numberinput]       | Used to ask your users for a **number**.             | A numeric value.                             |
+| Microsoft.OAuthInput      | [OAuthInput][oauthinput]         | Used to enable your users to **sign into a secure site**.| A token response.                        |
+| Microsoft.TextInput       | [TextInput][textinput]           | Used to ask your users for a **word or sentence**.   | A string.                                    |
 
 #### Create a condition
 
 | Activity to accomplish | `$kind` keyword           | Action Name                | What this action does                                                                                |
 | ---------------------- | ------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Branch: if/else        | Microsoft.IfCondition     |[IfCondition](#ifcondition)| Used to create If and If-Else statements which are used to execute code only if a condition is true.  |
-| Branch: Switch (Multiple options) | Microsoft.SwitchCondition | [SwitchCondition](#switchcondition) | Used to build a multiple-choice menu.                                            |
-| Loop: for each item    | Microsoft.Foreach         | [ForEach](#foreach)        | Loop through a set of values stored in an array.                                                     |
-| Loop: for each page (multiple items) | Microsoft.ForeachPage | [ForEachPage](#foreachpage) | Loop through a large set of values stored in an array one page at a time.                 |
-| Exit a loop            | Microsoft.BreakLoop       | [BreakLoop](#break-loop)   | Break out of a loop.                                                                                 |
-| Continue a loop        | Microsoft.ContinueLoop    | [ContinueLoop](#continue-loop) | Continue the loop.                                                                               |
-| Goto a different Action| Microsoft.GotoAction      | [GotoAction](#goto-action) | Immediately goes to the specified action and continues execution. Determined by actionId.            |
+| Branch: if/else        | Microsoft.IfCondition     |[IfCondition][ifcondition]| Used to create If and If-Else statements which are used to execute code only if a condition is true.  |
+| Branch: Switch (Multiple options) | Microsoft.SwitchCondition | [SwitchCondition][switchcondition] | Used to build a multiple-choice menu.                                            |
+| Loop: for each item    | Microsoft.Foreach         | [ForEach][foreach]        | Loop through a set of values stored in an array.                                                     |
+| Loop: for each page (multiple items) | Microsoft.ForeachPage | [ForEachPage][foreachpage] | Loop through a large set of values stored in an array one page at a time.                 |
+| Exit a loop            | Microsoft.BreakLoop       | [BreakLoop][break-loop]   | Break out of a loop.                                                                                 |
+| Continue a loop        | Microsoft.ContinueLoop    | [ContinueLoop][continue-loop] | Continue the loop.                                                                               |
+| Goto a different Action| Microsoft.GotoAction      | [GotoAction][goto-action] | Immediately goes to the specified action and continues execution. Determined by actionId.            |
 
 ### Dialog management
 
 | `$kind` keyword        | Action Name                        | What this action does                                                                                                      |
 | ---------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.BeginDialog  | [BeginDialog](#begindialog)        | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.              |
+| Microsoft.BeginDialog  | [BeginDialog][begindialog]        | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.              |
 | Microsoft.CancelDialog | CancelDialog                       | Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.     |
-| Microsoft.CancelAllDialogs| [CancelAllDialogs](#cancelalldialog)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
-| Microsoft.EndDialog    | [EndDialog](#enddialog)            | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
-| Microsoft.EndTurn      | [EndTurn](#endturn)                | Ends the current turn of conversation without ending the dialog.                                                           |
-| Microsoft.RepeatDialog | [RepeatDialog](#repeatdialog)      | Used to restart the parent dialog.                                                                                         |
-| Microsoft.ReplaceDialog| [ReplaceDialog](#replacedialog)    | Replaces the current dialog with a new dialog                                                                              |
-| Microsoft.UpdateActivity| [UpdateActivity](#update-activity)| This enables you to update an activity that was sent.                                                                      |
-| Microsoft.DeleteActivity | [DeleteActivity](#delete-activity)| Enables you to delete an activity that was sent.                                                                          |
-| Microsoft.GetActivityMembers | [GetActivityMembers](#get-activity-members)| Enables you to get a list of activity members and save it to a property in [memory][memory-states].|
-| Microsoft.GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].|
-| Microsoft.EditActions  | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
+| Microsoft.CancelAllDialogs| [CancelAllDialogs][cancelalldialog]| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
+| Microsoft.EndDialog    | [EndDialog][enddialog]            | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
+| Microsoft.EndTurn      | [EndTurn][endturn]                | Ends the current turn of conversation without ending the dialog.                                                           |
+| Microsoft.RepeatDialog | [RepeatDialog][repeatdialog]      | Used to restart the parent dialog.                                                                                         |
+| Microsoft.ReplaceDialog| [ReplaceDialog][replacedialog]    | Replaces the current dialog with a new dialog                                                                              |
+| Microsoft.UpdateActivity| [UpdateActivity][update-activity]| This enables you to update an activity that was sent.                                                                      |
+| Microsoft.DeleteActivity | [DeleteActivity][delete-activity]| Enables you to delete an activity that was sent.                                                                          |
+| Microsoft.GetActivityMembers | [GetActivityMembers][get-activity-members]| Enables you to get a list of activity members and save it to a property in [memory][memory-states].|
+| Microsoft.GetConversationMembers| [GetConversationMembers][get-conversation-members] | Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].|
+| Microsoft.EditActions  | [EditActions][editactions] | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
 
 #### Manage properties
 
 |  `$kind` keyword           | Action Name                           | What this action does                                                     |
 | -------------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
-| Microsoft.EditArray        | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
-| Microsoft.DeleteProperty   | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from [memory][11].                  |
-| Microsoft.DeleteProperties | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Microsoft.SetProperty      | [SetProperty](#setproperty)           | This enables you to set a property's value in [memory][11].               |
-| Microsoft.SetProperties    | [SetProperties](#setproperties)      | This enables you to initialize one or more properties in a single action. |
+| Microsoft.EditArray        | [EditArray][editarray]               | This enables you to perform edit operations on an array.                  |
+| Microsoft.DeleteProperty   | [DeleteProperty][deleteproperty]     | This enables you to remove a property from [memory][11].                  |
+| Microsoft.DeleteProperties | [DeleteProperties][deleteproperties] | This enables you to delete more than one property in a single action.     |
+| Microsoft.SetProperty      | [SetProperty][setproperty]           | This enables you to set a property's value in [memory][11].               |
+| Microsoft.SetProperties    | [SetProperties][setproperties]      | This enables you to initialize one or more properties in a single action. |
 
 #### Access external resources
 
 | `$kind` keyword        | Action Name                  | What this action does                                                                                      |
 | ---------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Microsoft.BeginSkill   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                                              |
-| Microsoft.HttpRequest  | [HttpRequest](#httprequest)  | Enables you to make HTTP requests to any endpoint.                                                         |
-| Microsoft.EmitEvent    | [EmitEvent](#emitevent)      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][custom-trigger]. |
-| Microsoft.SignOutUser  | [SignOutUser](#sign-out-user)| Enables you to sign out the currently signed in user.                                                      |
+| Microsoft.BeginSkill   | [BeginSkill][beginskill]    | Use the adaptive skill dialog to run a skill.                                                              |
+| Microsoft.HttpRequest  | [HttpRequest][httprequest]  | Enables you to make HTTP requests to any endpoint.                                                         |
+| Microsoft.EmitEvent    | [EmitEvent][emitevent]      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][custom-trigger]. |
+| Microsoft.SignOutUser  | [SignOutUser][sign-out-user]| Enables you to sign out the currently signed in user.                                                      |
 
 #### Debugging options
 
 | `$kind` keyword        | Action Name                     | What this action does                                                       |
 | ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| Microsoft.LogAction    | [LogAction](#log-action)        | Writes to the console and optionally sends the message as a trace activity. |
-| Microsoft.TraceActivity| [TraceActivity](#traceactivity) | Sends a trace activity with whatever payload you specify.                   |
+| Microsoft.LogAction    | [LogAction][log-action]        | Writes to the console and optionally sends the message as a trace activity. |
+| Microsoft.TraceActivity| [TraceActivity][traceactivity] | Sends a trace activity with whatever payload you specify.                   |
 
 
 | `$kind` keyword          | Action Name                    | What this action does                                              |
 | ------------------------ | ------------------------------ | ------------------------------------------------------------------ |
-| `Microsoft.SendActivity` | [SendActivity](#send-activity) | Enables you send any type of activity such as responding to users. |
+| `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users. |
 
 
 [log-action]: bot-builder-concept-adaptive-dialog-Actions.md#log-action
@@ -335,6 +403,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 [numberinput]: bot-builder-concept-adaptive-dialog-Inputs.md#numberinput
 [oauthinput]: bot-builder-concept-adaptive-dialog-Inputs.md#oauthinput
 [textinput]: bot-builder-concept-adaptive-dialog-Inputs.md#textinput
+[send-activity]: bot-builder-concept-adaptive-dialog-Inputs.md#send-activity
 
 <!--  (Actions) Create a condition -->
 [ifcondition]: bot-builder-concept-adaptive-dialog-Actions.md#ifcondition
