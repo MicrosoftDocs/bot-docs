@@ -1,0 +1,65 @@
+<Type Name="ChoiceOutputFormat" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat">
+  <TypeSignature Language="C#" Value="public enum ChoiceOutputFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChoiceOutputFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChoiceOutputFormat" />
+  <TypeSignature Language="F#" Value="type ChoiceOutputFormat = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="Index" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat Index = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat.Index" />
+      <MemberSignature Language="VB.NET" Value="Index" />
+      <MemberSignature Language="F#" Value="Index = 1" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat.Index" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            return the index of the choice
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="Value" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat Value = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat.Value" />
+      <MemberSignature Language="VB.NET" Value="Value" />
+      <MemberSignature Language="F#" Value="Value = 0" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.ChoiceOutputFormat</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Return the value of the choice
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

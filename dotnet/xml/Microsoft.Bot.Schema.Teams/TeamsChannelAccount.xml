@@ -6,8 +6,8 @@
   <TypeSignature Language="F#" Value="type TeamsChannelAccount = class&#xA;    inherit ChannelAccount" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.7.0.0</AssemblyVersion>
-    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.ChannelAccount</BaseTypeName>
@@ -28,8 +28,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,8 +48,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -60,13 +60,51 @@
         <Parameter Name="userPrincipalName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">Channel id for the user or bot on this channel
+        <param name="id">Channel id for the user or bot on this channel.
             (Example: joe@smith.com, or @joesmith or 123456)</param>
-        <param name="name">Display friendly name</param>
+        <param name="name">Display friendly name.</param>
         <param name="givenName">Given name part of the user name.</param>
         <param name="surname">Surname part of the user name.</param>
         <param name="email">Email Id of the user.</param>
-        <param name="userPrincipalName">Unique user principal name</param>
+        <param name="userPrincipalName">Unique user principal name.</param>
+        <summary>
+            Initializes a new instance of the TeamsChannelAccount class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TeamsChannelAccount (string id = default, string name = default, string givenName = default, string surname = default, string email = default, string userPrincipalName = default, string tenantId = default, string userRole = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string givenName, string surname, string email, string userPrincipalName, string tenantId, string userRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional givenName As String = null, Optional surname As String = null, Optional email As String = null, Optional userPrincipalName As String = null, Optional tenantId As String = null, Optional userRole As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TeamsChannelAccount : string * string * string * string * string * string * string * string -&gt; Microsoft.Bot.Schema.Teams.TeamsChannelAccount" Usage="new Microsoft.Bot.Schema.Teams.TeamsChannelAccount (id, name, givenName, surname, email, userPrincipalName, tenantId, userRole)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="givenName" Type="System.String" />
+        <Parameter Name="surname" Type="System.String" />
+        <Parameter Name="email" Type="System.String" />
+        <Parameter Name="userPrincipalName" Type="System.String" />
+        <Parameter Name="tenantId" Type="System.String" />
+        <Parameter Name="userRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">Channel id for the user or bot on this channel.
+            (Example: joe@smith.com, or @joesmith or 123456)</param>
+        <param name="name">Display friendly name.</param>
+        <param name="givenName">Given name part of the user name.</param>
+        <param name="surname">Surname part of the user name.</param>
+        <param name="email">Email Id of the user.</param>
+        <param name="userPrincipalName">Unique user principal name.</param>
+        <param name="tenantId">TenantId of the user.</param>
+        <param name="userRole">UserRole of the user.</param>
         <summary>
             Initializes a new instance of the TeamsChannelAccount class.
             </summary>
@@ -82,8 +120,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -110,8 +148,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -138,8 +176,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -157,6 +195,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TenantId">
+      <MemberSignature Language="C#" Value="public string TenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TenantId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.TenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TenantId As String" />
+      <MemberSignature Language="F#" Value="member this.TenantId : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelAccount.TenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tenantId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the TenantId.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UserPrincipalName">
       <MemberSignature Language="C#" Value="public string UserPrincipalName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserPrincipalName" />
@@ -166,8 +232,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -179,7 +245,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets unique user principal name
+            Gets or sets unique user principal name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserRole">
+      <MemberSignature Language="C#" Value="public string UserRole { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserRole" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.TeamsChannelAccount.UserRole" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserRole As String" />
+      <MemberSignature Language="F#" Value="member this.UserRole : string with get, set" Usage="Microsoft.Bot.Schema.Teams.TeamsChannelAccount.UserRole" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="userRole")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the UserRole.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

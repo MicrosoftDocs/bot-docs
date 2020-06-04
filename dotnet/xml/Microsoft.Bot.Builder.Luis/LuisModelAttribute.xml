@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -51,6 +52,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="modelID" Type="System.String" />
@@ -83,6 +85,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisApiVersion</ReturnType>
@@ -110,6 +113,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -134,6 +138,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -161,6 +166,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -187,6 +193,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -213,6 +220,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -236,6 +244,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -263,6 +272,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -288,6 +298,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -313,6 +324,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -338,6 +350,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -363,6 +376,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
@@ -388,6 +402,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -410,6 +425,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -437,6 +453,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Luis.LuisRequest</ReturnType>
@@ -463,6 +480,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -487,6 +505,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -511,6 +530,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -535,6 +555,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -559,6 +580,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -583,6 +605,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -607,6 +630,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -635,6 +659,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

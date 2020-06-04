@@ -1,0 +1,74 @@
+<Type Name="Identifier" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Identifier">
+  <TypeSignature Language="C#" Value="public static class Identifier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Identifier extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier" />
+  <TypeSignature Language="VB.NET" Value="Public Class Identifier" />
+  <TypeSignature Language="F#" Value="type Identifier = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decode">
+      <MemberSignature Language="C#" Value="public static void Decode (ulong item, out ulong one, out ulong two);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Decode(unsigned int64 item, [out] unsigned int64&amp; one, [out] unsigned int64&amp; two) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier.Decode(System.UInt64,System.UInt64@,System.UInt64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Decode (item As ULong, ByRef one As ULong, ByRef two As ULong)" />
+      <MemberSignature Language="F#" Value="static member Decode : uint64 * uint64 * uint64 -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Identifier.Decode (item, one, two)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.UInt64" />
+        <Parameter Name="one" Type="System.UInt64" RefType="out" />
+        <Parameter Name="two" Type="System.UInt64" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="one">To be added.</param>
+        <param name="two">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public static ulong Encode (ulong one, ulong two);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Encode(unsigned int64 one, unsigned int64 two) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier.Encode(System.UInt64,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (one As ULong, two As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member Encode : uint64 * uint64 -&gt; uint64" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Identifier.Encode (one, two)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="one" Type="System.UInt64" />
+        <Parameter Name="two" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="one">To be added.</param>
+        <param name="two">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

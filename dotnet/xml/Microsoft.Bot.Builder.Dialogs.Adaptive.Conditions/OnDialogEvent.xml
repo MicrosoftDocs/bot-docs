@@ -1,0 +1,164 @@
+<Type Name="OnDialogEvent" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent">
+  <TypeSignature Language="C#" Value="public class OnDialogEvent : Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OnDialogEvent extends Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class OnDialogEvent&#xA;Inherits OnCondition" />
+  <TypeSignature Language="F#" Value="type OnDialogEvent = class&#xA;    inherit OnCondition" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Actions triggered when a dialog event is emitted.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OnDialogEvent (string event = default, System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions = default, string condition = default, string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string event, class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions, string condition, string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.#ctor(System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional event As String = null, Optional actions As List(Of Dialog) = null, Optional condition As String = null, Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent : string * System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; * string * string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent (event, actions, condition, callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="event" Type="System.String" />
+        <Parameter Name="actions" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="event">To be added.</param>
+        <param name="actions">To be added.</param>
+        <param name="condition">To be added.</param>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public string Event { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Event" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Property Event As String" />
+      <MemberSignature Language="F#" Value="member this.Event : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.Event" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the event to fire on.
+            </summary>
+        <value>
+            The event to fire on.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public override AdaptiveExpressions.Expression GetExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class AdaptiveExpressions.Expression GetExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.GetExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpression () As Expression" />
+      <MemberSignature Language="F#" Value="override this.GetExpression : unit -&gt; AdaptiveExpressions.Expression" Usage="onDialogEvent.GetExpression " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIdentity">
+      <MemberSignature Language="C#" Value="public override string GetIdentity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetIdentity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.GetIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIdentity () As String" />
+      <MemberSignature Language="F#" Value="override this.GetIdentity : unit -&gt; string" Usage="onDialogEvent.GetIdentity " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
