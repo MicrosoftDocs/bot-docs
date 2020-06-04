@@ -1,0 +1,139 @@
+<Type Name="TextInput" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput">
+  <TypeSignature Language="C#" Value="public class TextInput : Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextInput extends Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextInput&#xA;Inherits InputDialog" />
+  <TypeSignature Language="F#" Value="type TextInput = class&#xA;    inherit InputDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Declarative text input to gather text data from users.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextInput (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput (callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecognizeInputAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt; OnRecognizeInputAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt; OnRecognizeInputAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput.OnRecognizeInputAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRecognizeInputAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of InputState)" />
+      <MemberSignature Language="F#" Value="override this.OnRecognizeInputAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;" Usage="textInput.OnRecognizeInputAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputFormat">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression OutputFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression OutputFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput.OutputFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputFormat As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.OutputFormat : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.TextInput.OutputFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("outputFormat")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the expression to use to format the result.
+            </summary>
+        <value>an expression which resolves to a string.</value>
+        <remarks>The default output is a string, if this property is set then the output of the expression is the string returned by the dialog.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

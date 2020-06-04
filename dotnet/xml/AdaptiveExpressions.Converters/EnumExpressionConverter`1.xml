@@ -1,0 +1,131 @@
+<Type Name="EnumExpressionConverter&lt;T&gt;" FullName="AdaptiveExpressions.Converters.EnumExpressionConverter&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class EnumExpressionConverter&lt;T&gt; : Newtonsoft.Json.JsonConverter&lt;AdaptiveExpressions.Properties.EnumExpression&lt;T&gt;&gt; where T : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumExpressionConverter`1&lt;struct .ctor (class System.ValueType) T&gt; extends Newtonsoft.Json.JsonConverter`1&lt;class AdaptiveExpressions.Properties.EnumExpression`1&lt;!T&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.Converters.EnumExpressionConverter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class EnumExpressionConverter(Of T)&#xA;Inherits JsonConverter(Of EnumExpression(Of T))" />
+  <TypeSignature Language="F#" Value="type EnumExpressionConverter&lt;'T (requires 'T : struct)&gt; = class&#xA;    inherit JsonConverter&lt;EnumExpression&lt;'T&gt;&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Newtonsoft.Json.JsonConverter&lt;AdaptiveExpressions.Properties.EnumExpression&lt;T&gt;&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">AdaptiveExpressions.Properties.EnumExpression&lt;T&gt;</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The enum type to construct.</typeparam>
+    <summary>
+            Converter which allows json to be expression to object or static object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EnumExpressionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Converters.EnumExpressionConverter`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.Converters.EnumExpressionConverter`1.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="AdaptiveExpressions.Converters.EnumExpressionConverter&lt;'T (requires 'T : struct)&gt;.CanRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadJson">
+      <MemberSignature Language="C#" Value="public override AdaptiveExpressions.Properties.EnumExpression&lt;T&gt; ReadJson (Newtonsoft.Json.JsonReader reader, Type objectType, AdaptiveExpressions.Properties.EnumExpression&lt;T&gt; existingValue, bool hasExistingValue, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class AdaptiveExpressions.Properties.EnumExpression`1&lt;!T&gt; ReadJson(class Newtonsoft.Json.JsonReader reader, class System.Type objectType, class AdaptiveExpressions.Properties.EnumExpression`1&lt;!T&gt; existingValue, bool hasExistingValue, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Converters.EnumExpressionConverter`1.ReadJson(Newtonsoft.Json.JsonReader,System.Type,AdaptiveExpressions.Properties.EnumExpression{`0},System.Boolean,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadJson (reader As JsonReader, objectType As Type, existingValue As EnumExpression(Of T), hasExistingValue As Boolean, serializer As JsonSerializer) As EnumExpression(Of T)" />
+      <MemberSignature Language="F#" Value="override this.ReadJson : Newtonsoft.Json.JsonReader * Type * AdaptiveExpressions.Properties.EnumExpression&lt;'T (requires 'T : struct)&gt; * bool * Newtonsoft.Json.JsonSerializer -&gt; AdaptiveExpressions.Properties.EnumExpression&lt;'T (requires 'T : struct)&gt;" Usage="enumExpressionConverter.ReadJson (reader, objectType, existingValue, hasExistingValue, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.EnumExpression&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="Newtonsoft.Json.JsonReader" />
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="existingValue" Type="AdaptiveExpressions.Properties.EnumExpression&lt;T&gt;" />
+        <Parameter Name="hasExistingValue" Type="System.Boolean" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="existingValue">To be added.</param>
+        <param name="hasExistingValue">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteJson">
+      <MemberSignature Language="C#" Value="public override void WriteJson (Newtonsoft.Json.JsonWriter writer, AdaptiveExpressions.Properties.EnumExpression&lt;T&gt; value, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteJson(class Newtonsoft.Json.JsonWriter writer, class AdaptiveExpressions.Properties.EnumExpression`1&lt;!T&gt; value, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Converters.EnumExpressionConverter`1.WriteJson(Newtonsoft.Json.JsonWriter,AdaptiveExpressions.Properties.EnumExpression{`0},Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteJson (writer As JsonWriter, value As EnumExpression(Of T), serializer As JsonSerializer)" />
+      <MemberSignature Language="F#" Value="override this.WriteJson : Newtonsoft.Json.JsonWriter * AdaptiveExpressions.Properties.EnumExpression&lt;'T (requires 'T : struct)&gt; * Newtonsoft.Json.JsonSerializer -&gt; unit" Usage="enumExpressionConverter.WriteJson (writer, value, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="Newtonsoft.Json.JsonWriter" />
+        <Parameter Name="value" Type="AdaptiveExpressions.Properties.EnumExpression&lt;T&gt;" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

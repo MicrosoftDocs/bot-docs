@@ -1,0 +1,290 @@
+<Type Name="Analyzer" FullName="Microsoft.Bot.Builder.LanguageGeneration.Analyzer">
+  <TypeSignature Language="C#" Value="public class Analyzer : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParserBaseVisitor&lt;Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Analyzer extends Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParserBaseVisitor`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.Analyzer" />
+  <TypeSignature Language="VB.NET" Value="Public Class Analyzer&#xA;Inherits LGTemplateParserBaseVisitor(Of AnalyzerResult)" />
+  <TypeSignature Language="F#" Value="type Analyzer = class&#xA;    inherit LGTemplateParserBaseVisitor&lt;AnalyzerResult&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParserBaseVisitor&lt;Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="Result">Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            LG template analyzer.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Analyzer (System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; templates, AdaptiveExpressions.ExpressionParser expressionParser);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Template&gt; templates, class AdaptiveExpressions.ExpressionParser expressionParser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.LanguageGeneration.Template},AdaptiveExpressions.ExpressionParser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (templates As List(Of Template), expressionParser As ExpressionParser)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.Analyzer : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; * AdaptiveExpressions.ExpressionParser -&gt; Microsoft.Bot.Builder.LanguageGeneration.Analyzer" Usage="new Microsoft.Bot.Builder.LanguageGeneration.Analyzer (templates, expressionParser)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="templates" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;" />
+        <Parameter Name="expressionParser" Type="AdaptiveExpressions.ExpressionParser" />
+      </Parameters>
+      <Docs>
+        <param name="templates">Template list.</param>
+        <param name="expressionParser">Expression parser.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Analyzer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalyzeTemplate">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult AnalyzeTemplate (string templateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult AnalyzeTemplate(string templateName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.AnalyzeTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AnalyzeTemplate (templateName As String) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="member this.AnalyzeTemplate : string -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.AnalyzeTemplate templateName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">Template name.</param>
+        <summary>
+            Analyzer a template to get the static analyzer results.
+            </summary>
+        <returns>Analyze result including variables and template references.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Templates">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; Templates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Template&gt; Templates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.Templates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Templates As List(Of Template)" />
+      <MemberSignature Language="F#" Value="member this.Templates : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;" Usage="Microsoft.Bot.Builder.LanguageGeneration.Analyzer.Templates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets templates.
+            </summary>
+        <value>
+            Templates.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIfElseBody">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitIfElseBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IfElseBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitIfElseBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/IfElseBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.VisitIfElseBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IfElseBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitIfElseBody (context As LGTemplateParser.IfElseBodyContext) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="override this.VisitIfElseBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IfElseBodyContext -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.VisitIfElseBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfElseBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalBody">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitNormalBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitNormalBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.VisitNormalBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitNormalBody (context As LGTemplateParser.NormalBodyContext) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="override this.VisitNormalBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalBodyContext -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.VisitNormalBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalTemplateBody">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitNormalTemplateBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitNormalTemplateBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.VisitNormalTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitNormalTemplateBody (context As LGTemplateParser.NormalTemplateBodyContext) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="override this.VisitNormalTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateBodyContext -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.VisitNormalTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalTemplateString">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitNormalTemplateString (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitNormalTemplateString(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalTemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.VisitNormalTemplateString(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitNormalTemplateString (context As LGTemplateParser.NormalTemplateStringContext) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="override this.VisitNormalTemplateString : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.VisitNormalTemplateString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredTemplateBody">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitStructuredTemplateBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitStructuredTemplateBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/StructuredTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.VisitStructuredTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitStructuredTemplateBody (context As LGTemplateParser.StructuredTemplateBodyContext) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="override this.VisitStructuredTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredTemplateBodyContext -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.VisitStructuredTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSwitchCaseBody">
+      <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitSwitchCaseBody (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SwitchCaseBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult VisitSwitchCaseBody(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/SwitchCaseBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Analyzer.VisitSwitchCaseBody(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SwitchCaseBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VisitSwitchCaseBody (context As LGTemplateParser.SwitchCaseBodyContext) As AnalyzerResult" />
+      <MemberSignature Language="F#" Value="override this.VisitSwitchCaseBody : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SwitchCaseBodyContext -&gt; Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult" Usage="analyzer.VisitSwitchCaseBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

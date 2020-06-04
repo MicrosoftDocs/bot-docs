@@ -1,0 +1,156 @@
+<Type Name="StackedMemory" FullName="AdaptiveExpressions.Memory.StackedMemory">
+  <TypeSignature Language="C#" Value="public class StackedMemory : System.Collections.Generic.Stack&lt;AdaptiveExpressions.Memory.IMemory&gt;, AdaptiveExpressions.Memory.IMemory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StackedMemory extends System.Collections.Generic.Stack`1&lt;class AdaptiveExpressions.Memory.IMemory&gt; implements class AdaptiveExpressions.Memory.IMemory" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.Memory.StackedMemory" />
+  <TypeSignature Language="VB.NET" Value="Public Class StackedMemory&#xA;Inherits Stack(Of IMemory)&#xA;Implements IMemory" />
+  <TypeSignature Language="F#" Value="type StackedMemory = class&#xA;    inherit Stack&lt;IMemory&gt;&#xA;    interface IMemory" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.Stack&lt;AdaptiveExpressions.Memory.IMemory&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">AdaptiveExpressions.Memory.IMemory</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>AdaptiveExpressions.Memory.IMemory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stack implements of <see cref="T:AdaptiveExpressions.Memory.IMemory" />.
+            Memory variables have a hierarchical relationship.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackedMemory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Memory.StackedMemory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (string path, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(string path, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Memory.StackedMemory.SetValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (path As String, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : string * obj -&gt; unit&#xA;override this.SetValue : string * obj -&gt; unit" Usage="stackedMemory.SetValue (path, value)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:AdaptiveExpressions.Memory.IMemory.SetValue(System.String,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="path">Memory path.</param>
+        <param name="value">Value to set.</param>
+        <summary>
+            Set value to a given path.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (string path, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string path, [out] object&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Memory.StackedMemory.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (path As String, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string * obj -&gt; bool&#xA;override this.TryGetValue : string * obj -&gt; bool" Usage="stackedMemory.TryGetValue (path, value)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:AdaptiveExpressions.Memory.IMemory.TryGetValue(System.String,System.Object@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="path">Given path.</param>
+        <param name="value">Resolved value.</param>
+        <summary>
+            Try get value from a given path.
+            </summary>
+        <returns>True if the memory contains an element with the specified key; otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Version() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Memory.StackedMemory.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Function Version () As String" />
+      <MemberSignature Language="F#" Value="abstract member Version : unit -&gt; string&#xA;override this.Version : unit -&gt; string" Usage="stackedMemory.Version " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:AdaptiveExpressions.Memory.IMemory.Version</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrap">
+      <MemberSignature Language="C#" Value="public static AdaptiveExpressions.Memory.StackedMemory Wrap (AdaptiveExpressions.Memory.IMemory memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class AdaptiveExpressions.Memory.StackedMemory Wrap(class AdaptiveExpressions.Memory.IMemory memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Memory.StackedMemory.Wrap(AdaptiveExpressions.Memory.IMemory)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Wrap (memory As IMemory) As StackedMemory" />
+      <MemberSignature Language="F#" Value="static member Wrap : AdaptiveExpressions.Memory.IMemory -&gt; AdaptiveExpressions.Memory.StackedMemory" Usage="AdaptiveExpressions.Memory.StackedMemory.Wrap memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Memory.StackedMemory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="AdaptiveExpressions.Memory.IMemory" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

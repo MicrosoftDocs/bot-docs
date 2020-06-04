@@ -1,0 +1,93 @@
+<Type Name="OnMessageUpdateActivity" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity">
+  <TypeSignature Language="C#" Value="public class OnMessageUpdateActivity : Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OnMessageUpdateActivity extends Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Class OnMessageUpdateActivity&#xA;Inherits OnActivity" />
+  <TypeSignature Language="F#" Value="type OnMessageUpdateActivity = class&#xA;    inherit OnActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Actions triggered when a MessageUpdateActivity is received.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OnMessageUpdateActivity (System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions = default, string condition = default, string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions, string condition, string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional actions As List(Of Dialog) = null, Optional condition As String = null, Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; * string * string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity (actions, condition, callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="actions" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="actions">To be added.</param>
+        <param name="condition">To be added.</param>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnMessageUpdateActivity.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

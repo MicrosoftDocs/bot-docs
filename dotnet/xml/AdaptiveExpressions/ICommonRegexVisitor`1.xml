@@ -1,0 +1,928 @@
+<Type Name="ICommonRegexVisitor&lt;Result&gt;" FullName="AdaptiveExpressions.ICommonRegexVisitor&lt;Result&gt;">
+  <TypeSignature Language="C#" Value="public interface ICommonRegexVisitor&lt;Result&gt; : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICommonRegexVisitor`1&lt;Result&gt; implements class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!Result&gt;" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.ICommonRegexVisitor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICommonRegexVisitor(Of Result)&#xA;Implements IParseTreeVisitor(Of Result)" />
+  <TypeSignature Language="F#" Value="type ICommonRegexVisitor&lt;'Result&gt; = interface&#xA;    interface IParseTreeVisitor&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Result" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="Result">The return type of the visit operation.</typeparam>
+    <summary>
+            This interface defines a complete generic visitor for a parse tree produced
+            by <see cref="T:AdaptiveExpressions.CommonRegexParser" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="VisitAlpha_nums">
+      <MemberSignature Language="C#" Value="public Result VisitAlpha_nums (AdaptiveExpressions.CommonRegexParser.Alpha_numsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitAlpha_nums(class AdaptiveExpressions.CommonRegexParser/Alpha_numsContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitAlpha_nums(AdaptiveExpressions.CommonRegexParser.Alpha_numsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitAlpha_nums (context As CommonRegexParser.Alpha_numsContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitAlpha_nums : AdaptiveExpressions.CommonRegexParser.Alpha_numsContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitAlpha_nums context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Alpha_numsContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.alpha_nums" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitAlternation">
+      <MemberSignature Language="C#" Value="public Result VisitAlternation (AdaptiveExpressions.CommonRegexParser.AlternationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitAlternation(class AdaptiveExpressions.CommonRegexParser/AlternationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitAlternation(AdaptiveExpressions.CommonRegexParser.AlternationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitAlternation (context As CommonRegexParser.AlternationContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitAlternation : AdaptiveExpressions.CommonRegexParser.AlternationContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitAlternation context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+AlternationContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.alternation" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitAtom">
+      <MemberSignature Language="C#" Value="public Result VisitAtom (AdaptiveExpressions.CommonRegexParser.AtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitAtom(class AdaptiveExpressions.CommonRegexParser/AtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitAtom(AdaptiveExpressions.CommonRegexParser.AtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitAtom (context As CommonRegexParser.AtomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitAtom : AdaptiveExpressions.CommonRegexParser.AtomContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+AtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.atom" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitCapture">
+      <MemberSignature Language="C#" Value="public Result VisitCapture (AdaptiveExpressions.CommonRegexParser.CaptureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitCapture(class AdaptiveExpressions.CommonRegexParser/CaptureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitCapture(AdaptiveExpressions.CommonRegexParser.CaptureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitCapture (context As CommonRegexParser.CaptureContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitCapture : AdaptiveExpressions.CommonRegexParser.CaptureContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitCapture context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+CaptureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.capture" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitCc_atom">
+      <MemberSignature Language="C#" Value="public Result VisitCc_atom (AdaptiveExpressions.CommonRegexParser.Cc_atomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitCc_atom(class AdaptiveExpressions.CommonRegexParser/Cc_atomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitCc_atom(AdaptiveExpressions.CommonRegexParser.Cc_atomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitCc_atom (context As CommonRegexParser.Cc_atomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitCc_atom : AdaptiveExpressions.CommonRegexParser.Cc_atomContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitCc_atom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Cc_atomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.cc_atom" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitCc_literal">
+      <MemberSignature Language="C#" Value="public Result VisitCc_literal (AdaptiveExpressions.CommonRegexParser.Cc_literalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitCc_literal(class AdaptiveExpressions.CommonRegexParser/Cc_literalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitCc_literal(AdaptiveExpressions.CommonRegexParser.Cc_literalContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitCc_literal (context As CommonRegexParser.Cc_literalContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitCc_literal : AdaptiveExpressions.CommonRegexParser.Cc_literalContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitCc_literal context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Cc_literalContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.cc_literal" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitCharacter_class">
+      <MemberSignature Language="C#" Value="public Result VisitCharacter_class (AdaptiveExpressions.CommonRegexParser.Character_classContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitCharacter_class(class AdaptiveExpressions.CommonRegexParser/Character_classContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitCharacter_class(AdaptiveExpressions.CommonRegexParser.Character_classContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitCharacter_class (context As CommonRegexParser.Character_classContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitCharacter_class : AdaptiveExpressions.CommonRegexParser.Character_classContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitCharacter_class context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Character_classContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.character_class" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitDigit">
+      <MemberSignature Language="C#" Value="public Result VisitDigit (AdaptiveExpressions.CommonRegexParser.DigitContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitDigit(class AdaptiveExpressions.CommonRegexParser/DigitContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitDigit(AdaptiveExpressions.CommonRegexParser.DigitContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitDigit (context As CommonRegexParser.DigitContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitDigit : AdaptiveExpressions.CommonRegexParser.DigitContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitDigit context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+DigitContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.digit" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitDigits">
+      <MemberSignature Language="C#" Value="public Result VisitDigits (AdaptiveExpressions.CommonRegexParser.DigitsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitDigits(class AdaptiveExpressions.CommonRegexParser/DigitsContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitDigits(AdaptiveExpressions.CommonRegexParser.DigitsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitDigits (context As CommonRegexParser.DigitsContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitDigits : AdaptiveExpressions.CommonRegexParser.DigitsContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitDigits context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+DigitsContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.digits" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitElement">
+      <MemberSignature Language="C#" Value="public Result VisitElement (AdaptiveExpressions.CommonRegexParser.ElementContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitElement(class AdaptiveExpressions.CommonRegexParser/ElementContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitElement(AdaptiveExpressions.CommonRegexParser.ElementContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitElement (context As CommonRegexParser.ElementContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitElement : AdaptiveExpressions.CommonRegexParser.ElementContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitElement context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+ElementContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.element" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitExpr">
+      <MemberSignature Language="C#" Value="public Result VisitExpr (AdaptiveExpressions.CommonRegexParser.ExprContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitExpr(class AdaptiveExpressions.CommonRegexParser/ExprContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitExpr(AdaptiveExpressions.CommonRegexParser.ExprContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitExpr (context As CommonRegexParser.ExprContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitExpr : AdaptiveExpressions.CommonRegexParser.ExprContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitExpr context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+ExprContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.expr" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitLetter">
+      <MemberSignature Language="C#" Value="public Result VisitLetter (AdaptiveExpressions.CommonRegexParser.LetterContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitLetter(class AdaptiveExpressions.CommonRegexParser/LetterContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitLetter(AdaptiveExpressions.CommonRegexParser.LetterContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitLetter (context As CommonRegexParser.LetterContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitLetter : AdaptiveExpressions.CommonRegexParser.LetterContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitLetter context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+LetterContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.letter" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitLiteral">
+      <MemberSignature Language="C#" Value="public Result VisitLiteral (AdaptiveExpressions.CommonRegexParser.LiteralContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitLiteral(class AdaptiveExpressions.CommonRegexParser/LiteralContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitLiteral(AdaptiveExpressions.CommonRegexParser.LiteralContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitLiteral (context As CommonRegexParser.LiteralContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitLiteral : AdaptiveExpressions.CommonRegexParser.LiteralContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitLiteral context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+LiteralContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.literal" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitName">
+      <MemberSignature Language="C#" Value="public Result VisitName (AdaptiveExpressions.CommonRegexParser.NameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitName(class AdaptiveExpressions.CommonRegexParser/NameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitName(AdaptiveExpressions.CommonRegexParser.NameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitName (context As CommonRegexParser.NameContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitName : AdaptiveExpressions.CommonRegexParser.NameContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+NameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.name" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNon_capture">
+      <MemberSignature Language="C#" Value="public Result VisitNon_capture (AdaptiveExpressions.CommonRegexParser.Non_captureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNon_capture(class AdaptiveExpressions.CommonRegexParser/Non_captureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitNon_capture(AdaptiveExpressions.CommonRegexParser.Non_captureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNon_capture (context As CommonRegexParser.Non_captureContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNon_capture : AdaptiveExpressions.CommonRegexParser.Non_captureContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitNon_capture context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Non_captureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.non_capture" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNon_close_paren">
+      <MemberSignature Language="C#" Value="public Result VisitNon_close_paren (AdaptiveExpressions.CommonRegexParser.Non_close_parenContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNon_close_paren(class AdaptiveExpressions.CommonRegexParser/Non_close_parenContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitNon_close_paren(AdaptiveExpressions.CommonRegexParser.Non_close_parenContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNon_close_paren (context As CommonRegexParser.Non_close_parenContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNon_close_paren : AdaptiveExpressions.CommonRegexParser.Non_close_parenContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitNon_close_paren context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Non_close_parenContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.non_close_paren" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNon_close_parens">
+      <MemberSignature Language="C#" Value="public Result VisitNon_close_parens (AdaptiveExpressions.CommonRegexParser.Non_close_parensContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNon_close_parens(class AdaptiveExpressions.CommonRegexParser/Non_close_parensContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitNon_close_parens(AdaptiveExpressions.CommonRegexParser.Non_close_parensContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNon_close_parens (context As CommonRegexParser.Non_close_parensContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNon_close_parens : AdaptiveExpressions.CommonRegexParser.Non_close_parensContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitNon_close_parens context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Non_close_parensContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.non_close_parens" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNumber">
+      <MemberSignature Language="C#" Value="public Result VisitNumber (AdaptiveExpressions.CommonRegexParser.NumberContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNumber(class AdaptiveExpressions.CommonRegexParser/NumberContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitNumber(AdaptiveExpressions.CommonRegexParser.NumberContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNumber (context As CommonRegexParser.NumberContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNumber : AdaptiveExpressions.CommonRegexParser.NumberContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitNumber context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+NumberContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.number" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitOctal_char">
+      <MemberSignature Language="C#" Value="public Result VisitOctal_char (AdaptiveExpressions.CommonRegexParser.Octal_charContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitOctal_char(class AdaptiveExpressions.CommonRegexParser/Octal_charContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitOctal_char(AdaptiveExpressions.CommonRegexParser.Octal_charContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitOctal_char (context As CommonRegexParser.Octal_charContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitOctal_char : AdaptiveExpressions.CommonRegexParser.Octal_charContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitOctal_char context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Octal_charContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.octal_char" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitOctal_digit">
+      <MemberSignature Language="C#" Value="public Result VisitOctal_digit (AdaptiveExpressions.CommonRegexParser.Octal_digitContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitOctal_digit(class AdaptiveExpressions.CommonRegexParser/Octal_digitContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitOctal_digit(AdaptiveExpressions.CommonRegexParser.Octal_digitContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitOctal_digit (context As CommonRegexParser.Octal_digitContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitOctal_digit : AdaptiveExpressions.CommonRegexParser.Octal_digitContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitOctal_digit context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Octal_digitContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.octal_digit" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitOption">
+      <MemberSignature Language="C#" Value="public Result VisitOption (AdaptiveExpressions.CommonRegexParser.OptionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitOption(class AdaptiveExpressions.CommonRegexParser/OptionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitOption(AdaptiveExpressions.CommonRegexParser.OptionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitOption (context As CommonRegexParser.OptionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitOption : AdaptiveExpressions.CommonRegexParser.OptionContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitOption context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+OptionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.option" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitOption_flag">
+      <MemberSignature Language="C#" Value="public Result VisitOption_flag (AdaptiveExpressions.CommonRegexParser.Option_flagContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitOption_flag(class AdaptiveExpressions.CommonRegexParser/Option_flagContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitOption_flag(AdaptiveExpressions.CommonRegexParser.Option_flagContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitOption_flag (context As CommonRegexParser.Option_flagContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitOption_flag : AdaptiveExpressions.CommonRegexParser.Option_flagContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitOption_flag context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Option_flagContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.option_flag" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitParse">
+      <MemberSignature Language="C#" Value="public Result VisitParse (AdaptiveExpressions.CommonRegexParser.ParseContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitParse(class AdaptiveExpressions.CommonRegexParser/ParseContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitParse(AdaptiveExpressions.CommonRegexParser.ParseContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitParse (context As CommonRegexParser.ParseContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitParse : AdaptiveExpressions.CommonRegexParser.ParseContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitParse context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+ParseContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.parse" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQuantifier">
+      <MemberSignature Language="C#" Value="public Result VisitQuantifier (AdaptiveExpressions.CommonRegexParser.QuantifierContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQuantifier(class AdaptiveExpressions.CommonRegexParser/QuantifierContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitQuantifier(AdaptiveExpressions.CommonRegexParser.QuantifierContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQuantifier (context As CommonRegexParser.QuantifierContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQuantifier : AdaptiveExpressions.CommonRegexParser.QuantifierContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitQuantifier context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+QuantifierContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.quantifier" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQuantifier_type">
+      <MemberSignature Language="C#" Value="public Result VisitQuantifier_type (AdaptiveExpressions.CommonRegexParser.Quantifier_typeContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQuantifier_type(class AdaptiveExpressions.CommonRegexParser/Quantifier_typeContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitQuantifier_type(AdaptiveExpressions.CommonRegexParser.Quantifier_typeContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQuantifier_type (context As CommonRegexParser.Quantifier_typeContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQuantifier_type : AdaptiveExpressions.CommonRegexParser.Quantifier_typeContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitQuantifier_type context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Quantifier_typeContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.quantifier_type" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitShared_atom">
+      <MemberSignature Language="C#" Value="public Result VisitShared_atom (AdaptiveExpressions.CommonRegexParser.Shared_atomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitShared_atom(class AdaptiveExpressions.CommonRegexParser/Shared_atomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitShared_atom(AdaptiveExpressions.CommonRegexParser.Shared_atomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitShared_atom (context As CommonRegexParser.Shared_atomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitShared_atom : AdaptiveExpressions.CommonRegexParser.Shared_atomContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitShared_atom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Shared_atomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.shared_atom" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitShared_literal">
+      <MemberSignature Language="C#" Value="public Result VisitShared_literal (AdaptiveExpressions.CommonRegexParser.Shared_literalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitShared_literal(class AdaptiveExpressions.CommonRegexParser/Shared_literalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ICommonRegexVisitor`1.VisitShared_literal(AdaptiveExpressions.CommonRegexParser.Shared_literalContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitShared_literal (context As CommonRegexParser.Shared_literalContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitShared_literal : AdaptiveExpressions.CommonRegexParser.Shared_literalContext -&gt; 'Result" Usage="iCommonRegexVisitor.VisitShared_literal context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.CommonRegexParser+Shared_literalContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:AdaptiveExpressions.CommonRegexParser.shared_literal" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

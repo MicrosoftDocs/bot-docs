@@ -1,0 +1,49 @@
+<Type Name="DeclarativeType&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class DeclarativeType&lt;T&gt; : Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeclarativeType`1&lt;T&gt; extends Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeclarativeType(Of T)&#xA;Inherits DeclarativeType" />
+  <TypeSignature Language="F#" Value="type DeclarativeType&lt;'T&gt; = class&#xA;    inherit DeclarativeType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">type.</typeparam>
+    <summary>
+            TypeRegistration of Kind =&gt; type using generic.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeclarativeType (string kind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (kind As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&lt;'T&gt; : string -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&lt;'T&gt;" Usage="new Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&lt;'T&gt; kind" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="kind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="kind">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
