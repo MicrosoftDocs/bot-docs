@@ -88,9 +88,11 @@ Create the user and conversation state objects in **index.js** and consume them 
 Create the user and conversation state objects in **app.py** and consume them in the bot constructor.
 
 **app.py**
-[!code-python[app.py](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/app.py?range=67-73)]
+
+[!code-python[app.py](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/app.py?range=68-74)]
 
 **bots/custom_prompt_bot.py**
+
 [!code-python[constructor](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=29-41)]
 
 ---

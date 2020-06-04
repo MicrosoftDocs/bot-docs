@@ -1,0 +1,105 @@
+<Type Name="ActionScopeCommands" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands">
+  <TypeSignature Language="C#" Value="public class ActionScopeCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionScopeCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActionScopeCommands" />
+  <TypeSignature Language="F#" Value="type ActionScopeCommands = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActionScopeCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakLoop">
+      <MemberSignature Language="C#" Value="public const string BreakLoop;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string BreakLoop" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.BreakLoop" />
+      <MemberSignature Language="VB.NET" Value="Public Const BreakLoop As String " />
+      <MemberSignature Language="F#" Value="val mutable BreakLoop : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.BreakLoop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Break out of the current loop.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueLoop">
+      <MemberSignature Language="C#" Value="public const string ContinueLoop;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContinueLoop" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.ContinueLoop" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContinueLoop As String " />
+      <MemberSignature Language="F#" Value="val mutable ContinueLoop : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.ContinueLoop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Continue executing at the begining of the loop.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GotoAction">
+      <MemberSignature Language="C#" Value="public const string GotoAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GotoAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.GotoAction" />
+      <MemberSignature Language="VB.NET" Value="Public Const GotoAction As String " />
+      <MemberSignature Language="F#" Value="val mutable GotoAction : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScopeCommands.GotoAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Change execution order to the action by id.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

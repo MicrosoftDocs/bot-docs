@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;Newtonsoft.Json.Linq.JObject&gt;</BaseTypeName>
@@ -32,6 +33,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="builder" Type="Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson" />
@@ -56,6 +58,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Json.FormBuilderJson</ReturnType>
@@ -75,6 +78,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -101,6 +105,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
@@ -127,6 +132,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -151,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -175,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -198,6 +206,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -223,6 +232,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -246,6 +256,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.DescribeAttribute</ReturnType>
@@ -272,6 +283,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -295,6 +307,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -325,6 +338,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -348,6 +362,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -371,6 +386,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -394,6 +410,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -417,6 +434,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute</ReturnType>
@@ -443,6 +461,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -466,6 +485,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -489,6 +509,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -512,6 +533,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -537,6 +559,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -563,6 +586,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.FormFlow.Json</AssemblyName>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

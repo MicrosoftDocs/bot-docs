@@ -19,8 +19,8 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 
 > [!IMPORTANT]
 > Make sure that you are using the updated version of the Azure CLI.
-> For information about the latest release, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
-
+> For information about the latest release, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). \
+Also, do not mix Azure CLI deployment, shown in this article, with Azure portal deployment.
 
 ## Prerequisites
 

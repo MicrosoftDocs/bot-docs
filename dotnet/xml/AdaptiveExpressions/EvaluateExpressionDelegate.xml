@@ -1,0 +1,39 @@
+<Type Name="EvaluateExpressionDelegate" FullName="AdaptiveExpressions.EvaluateExpressionDelegate">
+  <TypeSignature Language="C#" Value="public delegate (object,string) EvaluateExpressionDelegate(Expression expression, IMemory state, Options options);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EvaluateExpressionDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.EvaluateExpressionDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function EvaluateExpressionDelegate(expression As Expression, state As IMemory, options As Options) As ValueTuple(Of Object, String) " />
+  <TypeSignature Language="F#" Value="type EvaluateExpressionDelegate = delegate of Expression * IMemory * Options -&gt; ValueTuple&lt;obj, string&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
+    <Parameter Name="state" Type="AdaptiveExpressions.Memory.IMemory" />
+    <Parameter Name="options" Type="AdaptiveExpressions.Options" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.ValueTuple&lt;System.Object,System.String&gt;</ReturnType>
+    <Attributes>
+      <Attribute>
+        <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "error" })</AttributeName>
+      </Attribute>
+    </Attributes>
+  </ReturnValue>
+  <Docs>
+    <param name="expression">Expression to evaluate.</param>
+    <param name="state">Global state information.</param>
+    <param name="options">Options for the evaluation.</param>
+    <summary>
+            Delegate to evaluate an expression.
+            </summary>
+    <returns>Value and error string that is non-null if there is an error.</returns>
+    <remarks>
+            Evaluators should verify runtime arguments when appropriate and return an error rather than throw exceptions if possible.
+            </remarks>
+  </Docs>
+</Type>

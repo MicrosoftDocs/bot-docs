@@ -1,0 +1,121 @@
+<Type Name="ValueExpressionConverter" FullName="AdaptiveExpressions.Converters.ValueExpressionConverter">
+  <TypeSignature Language="C#" Value="public class ValueExpressionConverter : Newtonsoft.Json.JsonConverter&lt;AdaptiveExpressions.Properties.ValueExpression&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValueExpressionConverter extends Newtonsoft.Json.JsonConverter`1&lt;class AdaptiveExpressions.Properties.ValueExpression&gt;" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.Converters.ValueExpressionConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValueExpressionConverter&#xA;Inherits JsonConverter(Of ValueExpression)" />
+  <TypeSignature Language="F#" Value="type ValueExpressionConverter = class&#xA;    inherit JsonConverter&lt;ValueExpression&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Newtonsoft.Json.JsonConverter&lt;AdaptiveExpressions.Properties.ValueExpression&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">AdaptiveExpressions.Properties.ValueExpression</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Converter which allows json to be expression to object or static object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueExpressionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Converters.ValueExpressionConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.Converters.ValueExpressionConverter.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="AdaptiveExpressions.Converters.ValueExpressionConverter.CanRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadJson">
+      <MemberSignature Language="C#" Value="public override AdaptiveExpressions.Properties.ValueExpression ReadJson (Newtonsoft.Json.JsonReader reader, Type objectType, AdaptiveExpressions.Properties.ValueExpression existingValue, bool hasExistingValue, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class AdaptiveExpressions.Properties.ValueExpression ReadJson(class Newtonsoft.Json.JsonReader reader, class System.Type objectType, class AdaptiveExpressions.Properties.ValueExpression existingValue, bool hasExistingValue, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Converters.ValueExpressionConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,AdaptiveExpressions.Properties.ValueExpression,System.Boolean,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadJson (reader As JsonReader, objectType As Type, existingValue As ValueExpression, hasExistingValue As Boolean, serializer As JsonSerializer) As ValueExpression" />
+      <MemberSignature Language="F#" Value="override this.ReadJson : Newtonsoft.Json.JsonReader * Type * AdaptiveExpressions.Properties.ValueExpression * bool * Newtonsoft.Json.JsonSerializer -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="valueExpressionConverter.ReadJson (reader, objectType, existingValue, hasExistingValue, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="Newtonsoft.Json.JsonReader" />
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="existingValue" Type="AdaptiveExpressions.Properties.ValueExpression" />
+        <Parameter Name="hasExistingValue" Type="System.Boolean" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="objectType">To be added.</param>
+        <param name="existingValue">To be added.</param>
+        <param name="hasExistingValue">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteJson">
+      <MemberSignature Language="C#" Value="public override void WriteJson (Newtonsoft.Json.JsonWriter writer, AdaptiveExpressions.Properties.ValueExpression value, Newtonsoft.Json.JsonSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteJson(class Newtonsoft.Json.JsonWriter writer, class AdaptiveExpressions.Properties.ValueExpression value, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Converters.ValueExpressionConverter.WriteJson(Newtonsoft.Json.JsonWriter,AdaptiveExpressions.Properties.ValueExpression,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteJson (writer As JsonWriter, value As ValueExpression, serializer As JsonSerializer)" />
+      <MemberSignature Language="F#" Value="override this.WriteJson : Newtonsoft.Json.JsonWriter * AdaptiveExpressions.Properties.ValueExpression * Newtonsoft.Json.JsonSerializer -&gt; unit" Usage="valueExpressionConverter.WriteJson (writer, value, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="Newtonsoft.Json.JsonWriter" />
+        <Parameter Name="value" Type="AdaptiveExpressions.Properties.ValueExpression" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
