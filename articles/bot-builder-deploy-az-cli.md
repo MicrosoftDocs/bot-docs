@@ -18,9 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 In this article we will show you how to deploy a basic bot to Azure. We will explain how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 > [!IMPORTANT]
-> Make sure that you are using the updated version of the Azure CLI.
-> For information about the latest release, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). \
-Also, do not mix Azure CLI deployment, shown in this article, with Azure portal deployment.
+> Make sure you are using the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest). Also, do not mix Azure CLI deployment, shown in this article, with Azure portal deployment.
 
 ## Prerequisites
 
