@@ -30,8 +30,8 @@ Adaptive dialog declarative files that have the .dialog extension contain the fo
 
  This schema file enables [IntelliSense][intellisense] to work for your declarative elements. If it cannot find the referenced file, it will not result in a warning or error. Everything except IntelliSense will work as expected. For information on how to create this file, see [Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file) in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
 - The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be "Microsoft.AdaptiveDialog". In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot framework SDK that is designed to work using the declarative approach.
-- The `"triggers"` keyword contains an array of one or more triggers. The type of trigger is declared using the `"$kind"` keyword. Each trigger contains an array of one or more actions.
-- The `"actions"` keyword contains an array of one or more actions, each action can have properties associated with it.
+- The `triggers` field contains an array of one or more triggers. The type of trigger is declared by its `$kind` field. Each trigger contains an array of one or more actions and can have additional properties associate with it.
+- Each `actions` field contains an array of one or more actions Its `$kind` field indicates the action type. Each action can have additional properties associated with it.
 
 An example of a simple `.dialog` file:
 
