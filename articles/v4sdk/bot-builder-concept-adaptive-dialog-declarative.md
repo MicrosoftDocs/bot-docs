@@ -20,20 +20,18 @@ This article explains the concepts behind declarative assets and bots that incor
 
 ## Declarative files
 
-Declarative files currently consist of `.dialog` files, a JSON based file that describe all of the attributes of an adaptive dialog and `.lg` files that consist of LG templates that define the [language generation (LG)](bot-builder-concept-adaptive-dialog-generators.md) aspects of your bot.
+Declarative files currently consist of _.dialog_ files, a JSON based file that describe all of the attributes of an adaptive dialog and _.lg_ files that consist of LG templates that define the [language generation (LG)](bot-builder-concept-adaptive-dialog-generators.md) aspects of your bot.
 
 ### .dialog files
 
 Adaptive dialog declarative files that have the .dialog extension contain the following elements:
 
-- The `$schema` field contains the URI of the JSON Schema definition for Bot Framework dialog schemas. In order to create a component for Bot Framework .dialog files, you need to create a schema file describing your configuration that meets this definition. This is described uses draft 7 of the JSON schema vocabulary.
+- The `$schema` value contains a URI pointing to the Schema that describes the format of this declarative file. That schema is a Bot Framework component schema, which adheres to [draft 7](http://json-schema.org/specification-links.html#draft-7) of the JSON schema vocabulary. This schema file enables [IntelliSense][intellisense] to work for your declarative elements. For information on how to create this file, see [Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file) in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
+- The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot framework SDK that is designed to work using the declarative approach.
+- The `triggers` value contains an array of one or more triggers. The type of trigger is declared using the `$kind` keyword. Each trigger contains an array of one or more actions.
+- The `actions` value contains an array of one or more actions, each action can have properties associated with it.
 
- This schema file enables [IntelliSense][intellisense] to work for your declarative elements. If it cannot find the referenced file, it will not result in a warning or error. Everything except IntelliSense will work as expected. For information on how to create this file, see [Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file) in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
-- The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be "Microsoft.AdaptiveDialog". In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot framework SDK that is designed to work using the declarative approach.
-- The `"triggers"` keyword contains an array of one or more triggers. The type of trigger is declared using the `"$kind"` keyword. Each trigger contains an array of one or more actions.
-- The `"actions"` keyword contains an array of one or more actions, each action can have properties associated with it.
-
-An example of a simple `.dialog` file:
+An example of a simple .dialog file:
 
 ```json
 {
@@ -53,28 +51,30 @@ An example of a simple `.dialog` file:
 }
 ```
 
-The elements of the `.dialog` file defined:
+> [!NOTE]
+> The `$schema` file is what enables IntelliSense to work. No warning or error will occur if `$schema` keyword is missing or the `$schema` value references a schema file that cannot be found and everything except IntelliSense will still work as expected.
+
+The elements of the .dialog file defined:
 
 > [!div class="mx-imgBorder"]
 > ![Create Get Weather Dialog](./media/adaptive-dialogs/dotdialogfile.png)
 
 ### .lg files
 
-Adaptive dialog declarative files that have the `.lg` extension are described in detail in the [.lg file format][lg-file-format] article.
+Adaptive dialog declarative files that have the .lg extension are described in detail in the [.lg file format][lg-file-format] article.
 
 ## The resource explorer
 
 The resource explorer provides the tools you need to import declarative adaptive dialog files into your bot and use them as if they were adaptive dialogs hard coded directly in your bots source code.
 
-With the resource explorer you can create resource objects that contain all of the relevant information about the declarative files required to create adaptive dialogs at run time, which is done using the resource explorer's type loader that imports files with the `.dialog` and `.lg` extensions.
+With the resource explorer, you can create resource objects that contain all of the relevant information about the declarative files required to create adaptive dialogs at run time, which is done using the resource explorer's type loader that imports files with the .dialog and .lg extensions.
 
 ### The resource object
 
-The resource explorer's `GetResource` method reads the declarative file into a resource object.  The resource object contains the information about the declarative file and can be used by any process that needs to reference it, such as the type loader.
+The resource explorer's _get resource_ method reads the declarative file into a resource object.  The resource object contains the information about the declarative file and can be used by any process that needs to reference it, such as the type loader.
 
 # [C#](#tab/csharp)
 
-<!--This example could be improved-->
 ```Csharp
 var resource = this.resourceExplorer.GetResource("main.dialog");
 ```
@@ -89,11 +89,10 @@ let rootDialogResource = resourceExplorer.getResource('echo.dialog');
 
 ### The type loader
 
-Once the resource explorer's `GetResource` method reads the declarative file into a resource object, the `LoadType` method casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
+Once the resource explorer's _get resource_ method reads the declarative file into a resource object, the _load type_method casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
 
 # [C#](#tab/csharp)
 
-<!--This example could be improved-->
 ```Csharp
 dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));
 ```
@@ -108,7 +107,7 @@ let dialogManager = new DialogManager(resourceExplorer.loadType(rootDialogResour
 
 ### Auto reload dialogs when file changes
 
-Any time a declarative file changes when your bot is running, a `changed` event fires. You can capture that event and reload your declarative files, that way when any adaptive dialog needs updated you do not need to update your code and recompile your source code or restart your bot. This can be especially useful in a production environment.
+Any time a declarative file changes when your bot is running, a _changed_ event fires. You can capture that event and reload your declarative files, that way when any adaptive dialog needs updated you do not need to update your code and recompile your source code or restart your bot. This can be especially useful in a production environment.
 
 # [C#](#tab/csharp)
 
@@ -147,48 +146,9 @@ resourceExplorer.emitter.on('changed', handleResourceChange);
 
 ---
 
-
-<!---
-- Create resource objects that contain all of the relevant information about your declarative files using the `GetResource()` method.
-- Automatically reload dialogs during run time from the declarative files anytime one of them changes, simply by setting the `Changed` property to `true`.
-- 
-
-1. Create a `ResourceExplorer` object.
-   - Use `resourceExplorer.Changed` to auto reload dialogs from the declarative files when any of them change.
-   - Use `resourceExplorer.GetResource()` to read the declarative file into a resource object.
-   - use `resourceExplorer.LoadType()` to dynamically create your adaptive dialog from the resource object that you previously loaded you declarative (`.dialog`) files into using `.GetResource()`.
-2. Use `dialogManager.UseResourceExplorer()` to register the resource explorer object for discovery by the various parts of the Bot Framework SDK. `.UseResourceExplorer()` is written the same way that any 3rd party component would need to be written in that it registers itself with the bot framework to load declarative resources such as .lg, .lu, .Dialog files, etc. It does this by adding itself to the dialogManagers Initial Turn State. This architectural design enables any 3rd party component to get authored content that may be coming from a radically different place (such as CMS system)
--->
-
-<!--
-> [!IMPORTANT]
-> ***FolderResourceProviderExtensions***
-> - **LoadProject:**
->   - https://github.com/microsoft/botbuilder-dotnet/blob/eca16a81eb2c8f442079bebd4191e5c6ddad5cd3/libraries/Microsoft.Bot.Builder.Dialogs.Declarative/Resources/FolderResourceProviderExtensions.cs#L65
->   - **add project references:**
->      - https://github.com/microsoft/botbuilder-dotnet/blob/eca16a81eb2c8f442079bebd4191e5c6ddad5cd3/libraries/Microsoft.Bot.Builder.Dialogs.Declarative/Resources/FolderResourceProviderExtensions.cs#L107
->   - **Adding NuGet package references:**
->      - https://github.com/microsoft/botbuilder-dotnet/blob/eca16a81eb2c8f442079bebd4191e5c6ddad5cd3/libraries/Microsoft.Bot.Builder.Dialogs.Declarative/Resources/FolderResourceProviderExtensions.cs#L132
-
-
-
-**var resource = this.resourceExplorer.GetResource("main.dialog");**
-
-The method `GetResource` reads the declarative file into a resource object and assigns it to `resource`.
-
-**dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));**
-
-The method `LoadType` returns the first top-level `AdaptiveDialog` object found in `resource`, which in the EchoBot sample is `main.dialog`.
-
-This tells the resource explorer that the `resource` represents an `AdaptiveDialog` instance and to create the object from the file. This is comparable to statement `DialogManager = new DialogManager(Dialog);` used in non-declarative adaptive dialogs, except that the dialog is being read in and created from the declarative file instead of defined in code.
-
-**dialogManager.UseResourceExplorer(resourceExplorer);**
-
-This tells the `dialogManager` to use `resourceExplorer` as the resourceExplorer.
--->
 ## Declarative assets
 
-The Bot framework SDK has various declarative assets available, each will be listed below. These assets can be used in your `.dialog` files as the `$kind` keyword.
+The Bot framework SDK has various declarative assets available, each will be listed below. These assets can be used in your .dialog files as the `$kind` value.
 
 ### Triggers
 
@@ -196,34 +156,34 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 
 #### Base trigger
 
-| `$kind` keyword          | Trigger Name                   | What this trigger does                                              |
-| ------------------------ | ------------------------------ | ------------------------------------------------------------------- |
-| `Microsoft.OnCondition`  | [OnCondition][send-activity]  | The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
+| `$kind` value          | Trigger Name                  | What this trigger does                                              |
+| ---------------------- | ----------------------------- | ------------------------------------------------------------------- |
+|`Microsoft.OnCondition`  | [OnCondition][send-activity] | The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
 
 #### Recognizer event triggers
 
-| `$kind` keyword         | Trigger name  | Description                                                                                                                                                   |
-| ----------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.OnChooseIntent| OnChooseIntent| This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][cross-trained-recognizer-set].|
-| Microsoft.OnIntent      | OnIntent      | Actions to perform when specified intent is recognized.                                                                                                       |
-| Microsoft.OnQnAMatch    | OnQnAMatch    | This trigger is run when the [QnAMakerRecognizer][qna-maker-recognizer] has returned a QnAMatch intent. The entity @answer will have the QnAMaker answer.     |
-|Microsoft.OnUnknownIntent|OnUnknownIntent| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers.                                                    |
+| `$kind` value            | Trigger name     | Description                                                                                                                                                   |
+| ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|`Microsoft.OnChooseIntent`| `OnChooseIntent` | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][cross-trained-recognizer-set].|
+|`Microsoft.OnIntent`      | `OnIntent`       | Actions to perform when specified intent is recognized.                                                                                                       |
+|`Microsoft.OnQnAMatch`    | `OnQnAMatch`     | This trigger is run when the [QnAMakerRecognizer][qna-maker-recognizer] has returned a `QnAMatch` intent. The entity @answer will have the `QnAMaker` answer. |
+|`Microsoft.OnUnknownIntent`|`OnUnknownIntent`| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers.                                                    |
 
 #### Dialog events
 
-| `$kind` keyword          | Trigger name   | Description                                                                                                                          |
-| ------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Microsoft.OnBeginDialog  | OnBeginDialog  | Actions to perform when this dialog begins. For use with child dialogs only.                                                         |
-| Microsoft.OnCancelDialog | OnCancelDialog | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a CancelAllDialogs action.  |
-| Microsoft.OnEndOfActions | OnEndOfActions | This event occurs once all actions and ambiguity events have been processed.                                                         |
-| Microsoft.OnError        | OnError        | Action to perform when an 'Error' dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
-| Microsoft.OnRepromptDialog |OnRepromptDialog| Actions to perform when 'RepromptDialog' event occurs.                                                                             |
-
-> [!TIP]
-> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input][bot-builder-concept-adaptive-dialog-inputs.md].
+| `$kind` value            | Trigger name     | Description                                                                                                                           |
+| ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------  |
+|`Microsoft.OnBeginDialog`  | `OnBeginDialog`  | Actions to perform when this dialog begins. For use with child dialogs only.                                                         |
+|`Microsoft.OnCancelDialog` | `OnCancelDialog` | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a CancelAllDialogs action.  |
+|`Microsoft.OnEndOfActions` | `OnEndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                         |
+|`Microsoft.OnError`        | `OnError`        | Action to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
+|`Microsoft.OnRepromptDialog` |`OnRepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                             |
 
 > [!IMPORTANT]
 > Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
+
+> [!TIP]
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input][bot-builder-concept-adaptive-dialog-inputs.md].
 
 ##### Dialog event trigger example using declarative
 
@@ -249,38 +209,38 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 
 Activity triggers enable you to associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][botframework-activity].
 
-| `$kind` keyword                        | Trigger name                 | Description                                                                       |
-| -------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------- |
-| Microsoft.OnConversationUpdateActivity | OnConversationUpdateActivity | Handle the events fired when a user begins a new conversation with the bot.       |
-| Microsoft.OnEndOfConversationActivity  | OnEndOfConversationActivity  | Actions to perform on receipt of an activity with type 'EndOfConversation'.       |
-| Microsoft.OnEventActivity              | OnEventActivity              | Actions to perform on receipt of an activity with type 'Event'.                   |
-| Microsoft.OnHandoffActivity            | OnHandoffActivity            | Actions to perform on receipt of an activity with type 'HandOff'.                 |
-| Microsoft.OnInvokeActivity             | OnInvokeActivity             | Actions to perform on receipt of an activity with type 'Invoke'.                  |
-| Microsoft.OnTypingActivity             | OnTypingActivity             | Actions to perform on receipt of an activity with type 'Typing'.                  |
+| `$kind` value                          | Trigger name                  | Description                                                                 |
+| -------------------------------------- | ----------------------------- | --------------------------------------------------------------------------- |
+|`Microsoft.OnConversationUpdateActivity`| `OnConversationUpdateActivity`| Handle the events fired when a user begins a new conversation with the bot. |
+|`Microsoft.OnEndOfConversationActivity` | `OnEndOfConversationActivity` | Actions to perform on receipt of an activity with type `EndOfConversation`. |
+|`Microsoft.OnEventActivity`             | `OnEventActivity`             | Actions to perform on receipt of an activity with type `Event`.             |
+|`Microsoft.OnHandoffActivity`           | `OnHandoffActivity`           | Actions to perform on receipt of an activity with type `HandOff`.           |
+|`Microsoft.OnInvokeActivity`            | `OnInvokeActivity`            | Actions to perform on receipt of an activity with type `Invoke`.            |
+|`Microsoft.OnTypingActivity`            | `OnTypingActivity`            | Actions to perform on receipt of an activity with type `Typing`.            |
 
 ### Message events
 
 **Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
 
-Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by ActivityType. The Base class that all message triggers derive from is `OnActivity`.
+Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by `ActivityType`. The Base class that all message triggers derive from is `OnActivity`.
 
-| `$kind` keyword                     |  Trigger name             | Description                                                               |
-| ----------------------------------- |  ------------------------ | ------------------------------------------------------------------------- |
-| Microsoft.OnMessageActivity         | OnMessageActivity         | Actions to perform on receipt of an activity with type 'MessageReceived'. |
-| Microsoft.OnMessageDeleteActivity   | OnMessageDeleteActivity   | Actions to perform on receipt of an activity with type 'MessageDelete'.   |
-| Microsoft.OnMessageReactionActivity | OnMessageReactionActivity | Actions to perform on receipt of an activity with type 'MessageReaction'. |
-| Microsoft.OnMessageUpdateActivity   | OnMessageUpdateActivity   | Actions to perform on receipt of an activity with type 'MessageUpdate'.   |
+| `$kind` value                        |  Trigger name               | Description                                                               |
+| ------------------------------------ |  -------------------------- | ------------------------------------------------------------------------- |
+|`Microsoft.OnMessageActivity`         | `OnMessageActivity`         | Actions to perform on receipt of an activity with type `MessageReceived`. |
+|`Microsoft.OnMessageDeleteActivity`   | `OnMessageDeleteActivity`   | Actions to perform on receipt of an activity with type `MessageDelete`.   |
+|`Microsoft.OnMessageReactionActivity` | `OnMessageReactionActivity` | Actions to perform on receipt of an activity with type `MessageReaction`. |
+|`Microsoft.OnMessageUpdateActivity`   | `OnMessageUpdateActivity`   | Actions to perform on receipt of an activity with type `MessageUpdate`.   |
 
 ### Custom events
 
-You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is the `OnDialogEvent` trigger that in effect becomes a custom trigger when you set the `Event` property to the same value as the EmitEvent's `EventName` property.
+You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is the `OnDialogEvent` trigger that in effect becomes a custom trigger when you set the `Event` property to the same value as the _emit event's_ `EventName` property.
 
 > [!TIP]
-> You can allow other dialogs in your bot to handle your custom event by setting the EmitEvent's `BubbleEvent` property to true.
+> You can allow other dialogs in your bot to handle your custom event by setting the _emit event's_ `BubbleEvent` property to true.
 
-| `$kind` keyword         | Trigger name  | Description                                                                                                                               |
-| ----------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.OnDialogEvent | OnDialogEvent | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
+| `$kind` value            | Trigger name    | Description                                                                                                                               |
+| ------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+|`Microsoft.OnDialogEvent` | `OnDialogEvent` | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
 
 ### Actions
 
@@ -288,81 +248,81 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 
 #### Send a response
 
-| `$kind` keyword          | Action Name                    | What this action does                                              |
-| ------------------------ | ------------------------------ | ------------------------------------------------------------------ |
-| `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users. |
+| `$kind` value            | Action Name                    | What this action does                                             |
+| ------------------------ | ------------------------------ | ----------------------------------------------------------------- |
+| `Microsoft.SendActivity` | [SendActivity][send-activity]  | Enables you send any type of activity such as responding to users.|
 
 #### Requesting user input
 
-| `$kind` keyword           | Input class                       | Description                                          | Returns                                      |
-| ------------------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
-| Microsoft.AttachmentInput |[AttachmentInput][attachmentinput]| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.          |
-| Microsoft.ChoiceInput     | [ChoiceInput][choiceinput]       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
-| Microsoft.ConfirmInput    | [ConfirmInput][confirminput]     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
-| Microsoft.DateTimeInput   | [DateTimeInput][datetimeinput]   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
-| Microsoft.InputDialog     | [InputDialog][inputdialog]       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Microsoft.NumberInput     | [NumberInput][numberinput]       | Used to ask your users for a **number**.             | A numeric value.                             |
-| Microsoft.OAuthInput      | [OAuthInput][oauthinput]         | Used to enable your users to **sign into a secure site**.| A token response.                        |
-| Microsoft.TextInput       | [TextInput][textinput]           | Used to ask your users for a **word or sentence**.   | A string.                                    |
+| `$kind` value              | Input class                      | Description                                          | Returns                                      |
+| -------------------------- | -------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
+|`Microsoft.AttachmentInput` |[AttachmentInput][attachmentinput]| Used to request/enable a user to **upload a file**.  | A collection of attachment objects.          |
+|`Microsoft.ChoiceInput`     | [ChoiceInput][choiceinput]       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
+|`Microsoft.ConfirmInput`    | [ConfirmInput][confirminput]     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
+|`Microsoft.DateTimeInput`   | [DateTimeInput][datetimeinput]   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
+|`Microsoft.InputDialog`     | [InputDialog][inputdialog]       | This is the base class that all of the input classes derive from. It defines all shared properties. |
+|`Microsoft.NumberInput`     | [NumberInput][numberinput]       | Used to ask your users for a **number**.             | A numeric value.                             |
+|`Microsoft.OAuthInput`      | [OAuthInput][oauthinput]         | Used to enable your users to **sign into a secure site**.| A token response.                        |
+|`Microsoft.TextInput`       | [TextInput][textinput]           | Used to ask your users for a **word or sentence**.   | A string.                                    |
 
 #### Create a condition
 
-| Activity to accomplish | `$kind` keyword           | Action Name                | What this action does                                                                                |
-| ---------------------- | ------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Branch: if/else        | Microsoft.IfCondition     |[IfCondition][ifcondition]| Used to create If and If-Else statements which are used to execute code only if a condition is true.  |
-| Branch: Switch (Multiple options) | Microsoft.SwitchCondition | [SwitchCondition][switchcondition] | Used to build a multiple-choice menu.                                            |
-| Loop: for each item    | Microsoft.Foreach         | [ForEach][foreach]        | Loop through a set of values stored in an array.                                                     |
-| Loop: for each page (multiple items) | Microsoft.ForeachPage | [ForEachPage][foreachpage] | Loop through a large set of values stored in an array one page at a time.                 |
-| Exit a loop            | Microsoft.BreakLoop       | [BreakLoop][break-loop]   | Break out of a loop.                                                                                 |
-| Continue a loop        | Microsoft.ContinueLoop    | [ContinueLoop][continue-loop] | Continue the loop.                                                                               |
-| Goto a different Action| Microsoft.GotoAction      | [GotoAction][goto-action] | Immediately goes to the specified action and continues execution. Determined by actionId.            |
+| Activity to accomplish | `$kind` value             | Action Name                | What this action does                                                                               |
+| ---------------------- | ------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------- |
+| Branch: if/else        |`Microsoft.IfCondition`    |[IfCondition][ifcondition]| Used to create If and If-Else statements which are used to execute code only if a condition is true.  |
+| Branch: Switch (Multiple options) |`Microsoft.SwitchCondition` | [SwitchCondition][switchcondition] | Used to build a multiple-choice menu.                                           |
+| Loop: for each item    |`Microsoft.Foreach`        | [ForEach][foreach]         | Loop through a set of values stored in an array.                                                    |
+| Loop: for each page (multiple items) |`Microsoft.ForeachPage` | [ForEachPage][foreachpage] | Loop through a large set of values stored in an array one page at a time.                |
+| Exit a loop            |`Microsoft.BreakLoop`      | [BreakLoop][break-loop]    | Break out of a loop.                                                                                |
+| Continue a loop        |`Microsoft.ContinueLoop`   | [ContinueLoop][continue-loop] | Continue the loop.                                                                               |
+| Goto a different Action|`Microsoft.GotoAction`     | [GotoAction][goto-action]   | Immediately goes to the specified action and continues execution. Determined by `actionId`.        |
 
 ### Dialog management
 
-| `$kind` keyword        | Action Name                        | What this action does                                                                                                      |
-| ---------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.BeginDialog  | [BeginDialog][begindialog]        | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.              |
-| Microsoft.CancelDialog | CancelDialog                       | Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.     |
-| Microsoft.CancelAllDialogs| [CancelAllDialogs][cancelalldialog]| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
-| Microsoft.EndDialog    | [EndDialog][enddialog]            | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
-| Microsoft.EndTurn      | [EndTurn][endturn]                | Ends the current turn of conversation without ending the dialog.                                                           |
-| Microsoft.RepeatDialog | [RepeatDialog][repeatdialog]      | Used to restart the parent dialog.                                                                                         |
-| Microsoft.ReplaceDialog| [ReplaceDialog][replacedialog]    | Replaces the current dialog with a new dialog                                                                              |
-| Microsoft.UpdateActivity| [UpdateActivity][update-activity]| This enables you to update an activity that was sent.                                                                      |
-| Microsoft.DeleteActivity | [DeleteActivity][delete-activity]| Enables you to delete an activity that was sent.                                                                          |
-| Microsoft.GetActivityMembers | [GetActivityMembers][get-activity-members]| Enables you to get a list of activity members and save it to a property in [memory][memory-states].|
-| Microsoft.GetConversationMembers| [GetConversationMembers][get-conversation-members] | Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].|
-| Microsoft.EditActions  | [EditActions][editactions] | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
+| `$kind` value           | Action Name                        | What this action does                                                                                                   |
+| ----------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+|`Microsoft.BeginDialog`  | [BeginDialog][begindialog]         | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.           |
+|`Microsoft.CancelDialog` | `CancelDialog`                     | Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.  |
+|`Microsoft.CancelAllDialogs`| [CancelAllDialogs][cancelalldialog]| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
+|`Microsoft.EndDialog`    | [EndDialog][enddialog]            | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
+|`Microsoft.EndTurn`      | [EndTurn][endturn]                | Ends the current turn of conversation without ending the dialog.                                                         |
+|`Microsoft.RepeatDialog` | [RepeatDialog][repeatdialog]      | Used to restart the parent dialog.                                                                                       |
+|`Microsoft.ReplaceDialog`| [ReplaceDialog][replacedialog]    | Replaces the current dialog with a new dialog                                                                            |
+|`Microsoft.UpdateActivity`| [UpdateActivity][update-activity]| This enables you to update an activity that was sent.                                                                    |
+|`Microsoft.DeleteActivity` | [DeleteActivity][delete-activity]| Enables you to delete an activity that was sent.                                                                        |
+|`Microsoft.GetActivityMembers` | [GetActivityMembers][get-activity-members]| Enables you to get a list of activity members and save it to a property in [memory][memory-states].        |
+|`Microsoft.GetConversationMembers`| [GetConversationMembers][get-conversation-members] | Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].|
+|`Microsoft.EditActions`  | [EditActions][editactions] | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
 
 #### Manage properties
 
-|  `$kind` keyword           | Action Name                           | What this action does                                                     |
-| -------------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
-| Microsoft.EditArray        | [EditArray][editarray]               | This enables you to perform edit operations on an array.                  |
-| Microsoft.DeleteProperty   | [DeleteProperty][deleteproperty]     | This enables you to remove a property from [memory][11].                  |
-| Microsoft.DeleteProperties | [DeleteProperties][deleteproperties] | This enables you to delete more than one property in a single action.     |
-| Microsoft.SetProperty      | [SetProperty][setproperty]           | This enables you to set a property's value in [memory][11].               |
-| Microsoft.SetProperties    | [SetProperties][setproperties]      | This enables you to initialize one or more properties in a single action. |
+|  `$kind` value              | Action Name                           | What this action does                                                    |
+| --------------------------- | ------------------------------------- | ------------------------------------------------------------------------ |
+|`Microsoft.EditArray`        | [EditArray][editarray]               | This enables you to perform edit operations on an array.                  |
+|`Microsoft.DeleteProperty`   | [DeleteProperty][deleteproperty]     | This enables you to remove a property from [memory][11].                  |
+|`Microsoft.DeleteProperties` | [DeleteProperties][deleteproperties] | This enables you to delete more than one property in a single action.     |
+|`Microsoft.SetProperty`      | [SetProperty][setproperty]           | This enables you to set a property's value in [memory][11].               |
+|`Microsoft.SetProperties`    | [SetProperties][setproperties]       | This enables you to initialize one or more properties in a single action. |
 
 #### Access external resources
 
-| `$kind` keyword        | Action Name                  | What this action does                                                                                      |
-| ---------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Microsoft.BeginSkill   | [BeginSkill][beginskill]    | Use the adaptive skill dialog to run a skill.                                                              |
-| Microsoft.HttpRequest  | [HttpRequest][httprequest]  | Enables you to make HTTP requests to any endpoint.                                                         |
-| Microsoft.EmitEvent    | [EmitEvent][emitevent]      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][custom-trigger]. |
-| Microsoft.SignOutUser  | [SignOutUser][sign-out-user]| Enables you to sign out the currently signed in user.                                                      |
+| `$kind` value          | Action Name                 | What this action does                                                                                      |
+| ---------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------- |
+|`Microsoft.BeginSkill`  | [BeginSkill][beginskill]    | Use the adaptive skill dialog to run a skill.                                                              |
+|`Microsoft.HttpRequest` | [HttpRequest][httprequest]  | Enables you to make HTTP requests to any endpoint.                                                         |
+|`Microsoft.EmitEvent`   | [EmitEvent][emitevent]      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][custom-trigger]. |
+|`Microsoft.SignOutUser` | [SignOutUser][sign-out-user]| Enables you to sign out the currently signed in user.                                                      |
 
 #### Debugging options
 
-| `$kind` keyword        | Action Name                     | What this action does                                                       |
-| ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| Microsoft.LogAction    | [LogAction][log-action]        | Writes to the console and optionally sends the message as a trace activity. |
-| Microsoft.TraceActivity| [TraceActivity][traceactivity] | Sends a trace activity with whatever payload you specify.                   |
+| `$kind` value           | Action Name                     | What this action does                                                      |
+| ----------------------- | ------------------------------- | -------------------------------------------------------------------------- |
+|`Microsoft.LogAction`    | [LogAction][log-action]        | Writes to the console and optionally sends the message as a trace activity. |
+|`Microsoft.TraceActivity`| [TraceActivity][traceactivity] | Sends a trace activity with whatever payload you specify.                   |
 
 
-| `$kind` keyword          | Action Name                    | What this action does                                              |
-| ------------------------ | ------------------------------ | ------------------------------------------------------------------ |
+| `$kind` value            | Action Name                    | What this action does                                             |
+| ------------------------ | ------------------------------ | ----------------------------------------------------------------- |
 | `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users. |
 
 
