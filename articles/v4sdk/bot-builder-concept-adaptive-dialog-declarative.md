@@ -12,7 +12,7 @@ ms.date: 05/31/2020
 
 # Using declarative assets in adaptive dialogs
 
-This article explains the concepts behind declarative assets and bots that incorporate an adaptive dialog using the declarative approach.  Declarative adaptive dialogs consist of JSON based files that describe all of the attributes of an adaptive dialog including its [triggers](bot-builder-concept-adaptive-dialog-triggers.md) and [actions](bot-builder-concept-adaptive-dialog-actions.md). These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
+This article explains the concepts behind declarative assets and bots that incorporate an adaptive dialog using the declarative approach.  Declarative adaptive dialogs consist of JSON-based files that describe all of the attributes of the adaptive dialogs, including their [triggers](bot-builder-concept-adaptive-dialog-triggers.md) and [actions](bot-builder-concept-adaptive-dialog-actions.md). These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ Adaptive dialog declarative files that have the .lg extension are described in d
 
 ## The resource explorer
 
-The resource explorer provides the tools you need to import declarative adaptive dialog files into your bot and use them as if they were adaptive dialogs hard coded directly in your bots source code.
+The resource explorer provides the tools you need to import declarative adaptive dialog files into your bot and use them as if they were adaptive dialogs defined directly in your bot source code.
 
 With the resource explorer, you can create resource objects that contain all of the relevant information about the declarative files required to create adaptive dialogs at run time, which is done using the resource explorer's type loader that imports files with the .dialog and .lg extensions.
 
@@ -233,14 +233,15 @@ Message events are a type of activity event and as such, all message events have
 
 ### Custom events
 
-You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is the `OnDialogEvent` trigger that in effect becomes a custom trigger when you set the `Event` property to the same value as the _emit event's_ `EventName` property.
+You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is a type of `OnDialogEvent` trigger, where its _event_ property to the same value as the emit event's _event name_ property.
 
 > [!TIP]
-> You can allow other dialogs in your bot to handle your custom event by setting the _emit event's_ `BubbleEvent` property to true.
+> You can allow other dialogs in your bot to handle your custom event by setting the emit event's _bubble event_ property to true.
 
-| `$kind` value            | Trigger name    | Description                                                                                                                               |
-| ------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-|`Microsoft.OnDialogEvent` | `OnDialogEvent` | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
+| `$kind` value | Trigger name  | Description                                                                                                                               |
+| ----------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft.OnDialogEvent | OnDialogEvent | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
+
 
 ### Actions
 
