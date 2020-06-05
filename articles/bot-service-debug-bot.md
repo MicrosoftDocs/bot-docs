@@ -7,8 +7,8 @@ keywords: Bot Framework SDK, debug bot, test bot, bot emulator, emulator
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/04/2019
-moniker range="azure-bot-service-4.0"
+ms.date: 06/04/2020
+monikerRange: "azure-bot-service-4.0"
 ---
 
 # Debug a bot
