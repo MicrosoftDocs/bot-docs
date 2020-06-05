@@ -120,7 +120,7 @@ The user not only did not answer the question, but they changed the subject enti
 This bot has the following three adaptive dialogs:
 
 1. The **rootDialog** that has its own 'LUIS' model and a set of triggers and actions, some of which will call a child dialog that is designed to handle specific user requests.
-2. The **bookFlightDialog** that has its own 'LUIS' model and a set of triggers and actions that handle conversations about booking flights.
+2. The **bookFlightDialog** that has its own 'LUIS' model and a set of triggers and actions that handles conversations about booking flights.
 3. The **weatherDialog** that has its own 'LUIS' model and a set of triggers and actions that handle conversations about getting weather information.
 
 Here's the flow when user says: _I'd like to book a flight_
