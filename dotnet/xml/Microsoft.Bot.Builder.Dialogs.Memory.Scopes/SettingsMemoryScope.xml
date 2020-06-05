@@ -1,0 +1,119 @@
+<Type Name="SettingsMemoryScope" FullName="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope">
+  <TypeSignature Language="C#" Value="public class SettingsMemoryScope : Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SettingsMemoryScope extends Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class SettingsMemoryScope&#xA;Inherits MemoryScope" />
+  <TypeSignature Language="F#" Value="type SettingsMemoryScope = class&#xA;    inherit MemoryScope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SettingsMemoryscope maps "settings" -&gt; IConfiguration.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SettingsMemoryScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemory">
+      <MemberSignature Language="C#" Value="public override object GetMemory (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetMemory(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope.GetMemory(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMemory (dc As DialogContext) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetMemory : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; obj" Usage="settingsMemoryScope.GetMemory dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSettings">
+      <MemberSignature Language="C#" Value="protected static System.Collections.Generic.Dictionary&lt;string,object&gt; LoadSettings (Microsoft.Extensions.Configuration.IConfiguration configuration);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Collections.Generic.Dictionary`2&lt;string, object&gt; LoadSettings(class Microsoft.Extensions.Configuration.IConfiguration configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope.LoadSettings(Microsoft.Extensions.Configuration.IConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function LoadSettings (configuration As IConfiguration) As Dictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="static member LoadSettings : Microsoft.Extensions.Configuration.IConfiguration -&gt; System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope.LoadSettings configuration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="configuration">IConfiguration that we are running with.</param>
+        <summary>
+            Build a dictionary view of configuration providers.
+            </summary>
+        <returns>projected dictionary for settings.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMemory">
+      <MemberSignature Language="C#" Value="public override void SetMemory (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetMemory(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.SettingsMemoryScope.SetMemory(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetMemory (dc As DialogContext, memory As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetMemory : Microsoft.Bot.Builder.Dialogs.DialogContext * obj -&gt; unit" Usage="settingsMemoryScope.SetMemory (dc, memory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="memory" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

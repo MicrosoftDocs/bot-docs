@@ -1,0 +1,67 @@
+<Type Name="LGLineBreakStyle" FullName="Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle">
+  <TypeSignature Language="C#" Value="public enum LGLineBreakStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LGLineBreakStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LGLineBreakStyle" />
+  <TypeSignature Language="F#" Value="type LGLineBreakStyle = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Options for LG rendering the line break in text.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Default mode.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Markdown">
+      <MemberSignature Language="C#" Value="Markdown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle Markdown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle.Markdown" />
+      <MemberSignature Language="VB.NET" Value="Markdown" />
+      <MemberSignature Language="F#" Value="Markdown = 1" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle.Markdown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Markdown mode.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

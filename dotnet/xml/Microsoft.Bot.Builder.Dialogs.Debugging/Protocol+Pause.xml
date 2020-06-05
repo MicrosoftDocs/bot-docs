@@ -1,0 +1,37 @@
+<Type Name="Protocol+Pause" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Pause">
+  <TypeSignature Language="C#" Value="public class Protocol.Pause : Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.PerThread" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Protocol/Pause extends Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/PerThread" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Pause" />
+  <TypeSignature Language="VB.NET" Value="Public Class Protocol.Pause&#xA;Inherits Protocol.PerThread" />
+  <TypeSignature Language="F#" Value="type Protocol.Pause = class&#xA;    inherit Protocol.PerThread" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+PerThread</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Pause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Pause.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

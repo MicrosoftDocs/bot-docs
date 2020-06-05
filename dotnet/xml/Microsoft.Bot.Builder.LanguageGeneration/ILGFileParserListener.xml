@@ -1,0 +1,674 @@
+<Type Name="ILGFileParserListener" FullName="Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener">
+  <TypeSignature Language="C#" Value="public interface ILGFileParserListener : Antlr4.Runtime.Tree.IParseTreeListener" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILGFileParserListener implements class Antlr4.Runtime.Tree.IParseTreeListener" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILGFileParserListener&#xA;Implements IParseTreeListener" />
+  <TypeSignature Language="F#" Value="type ILGFileParserListener = interface&#xA;    interface IParseTreeListener" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeListener</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This interface defines a complete listener for a parse tree produced by
+            <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnterCommentDefinition">
+      <MemberSignature Language="C#" Value="public void EnterCommentDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterCommentDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/CommentDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterCommentDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterCommentDefinition (context As LGFileParser.CommentDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterCommentDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext -&gt; unit" Usage="iLGFileParserListener.EnterCommentDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+CommentDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.commentDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterErrorDefinition">
+      <MemberSignature Language="C#" Value="public void EnterErrorDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterErrorDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ErrorDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterErrorDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterErrorDefinition (context As LGFileParser.ErrorDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterErrorDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext -&gt; unit" Usage="iLGFileParserListener.EnterErrorDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ErrorDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.errorDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterFile">
+      <MemberSignature Language="C#" Value="public void EnterFile (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterFile(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterFile(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterFile (context As LGFileParser.FileContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterFile : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext -&gt; unit" Usage="iLGFileParserListener.EnterFile context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.file" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterImportDefinition">
+      <MemberSignature Language="C#" Value="public void EnterImportDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterImportDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ImportDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterImportDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterImportDefinition (context As LGFileParser.ImportDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterImportDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext -&gt; unit" Usage="iLGFileParserListener.EnterImportDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ImportDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.importDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterOptionDefinition">
+      <MemberSignature Language="C#" Value="public void EnterOptionDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterOptionDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/OptionDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterOptionDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterOptionDefinition (context As LGFileParser.OptionDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterOptionDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext -&gt; unit" Usage="iLGFileParserListener.EnterOptionDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+OptionDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.optionDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterParagraph">
+      <MemberSignature Language="C#" Value="public void EnterParagraph (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterParagraph(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ParagraphContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterParagraph(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterParagraph (context As LGFileParser.ParagraphContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterParagraph : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext -&gt; unit" Usage="iLGFileParserListener.EnterParagraph context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ParagraphContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.paragraph" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTemplateBody">
+      <MemberSignature Language="C#" Value="public void EnterTemplateBody (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterTemplateBody(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTemplateBody (context As LGFileParser.TemplateBodyContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext -&gt; unit" Usage="iLGFileParserListener.EnterTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBody" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTemplateBodyLine">
+      <MemberSignature Language="C#" Value="public void EnterTemplateBodyLine (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterTemplateBodyLine(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterTemplateBodyLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTemplateBodyLine (context As LGFileParser.TemplateBodyLineContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterTemplateBodyLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext -&gt; unit" Usage="iLGFileParserListener.EnterTemplateBodyLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBodyLine" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTemplateDefinition">
+      <MemberSignature Language="C#" Value="public void EnterTemplateDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterTemplateDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterTemplateDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTemplateDefinition (context As LGFileParser.TemplateDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterTemplateDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext -&gt; unit" Usage="iLGFileParserListener.EnterTemplateDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTemplateNameLine">
+      <MemberSignature Language="C#" Value="public void EnterTemplateNameLine (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterTemplateNameLine(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateNameLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.EnterTemplateNameLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTemplateNameLine (context As LGFileParser.TemplateNameLineContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterTemplateNameLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext -&gt; unit" Usage="iLGFileParserListener.EnterTemplateNameLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateNameLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateNameLine" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitCommentDefinition">
+      <MemberSignature Language="C#" Value="public void ExitCommentDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitCommentDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/CommentDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitCommentDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitCommentDefinition (context As LGFileParser.CommentDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitCommentDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.CommentDefinitionContext -&gt; unit" Usage="iLGFileParserListener.ExitCommentDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+CommentDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.commentDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitErrorDefinition">
+      <MemberSignature Language="C#" Value="public void ExitErrorDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitErrorDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ErrorDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitErrorDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitErrorDefinition (context As LGFileParser.ErrorDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitErrorDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ErrorDefinitionContext -&gt; unit" Usage="iLGFileParserListener.ExitErrorDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ErrorDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.errorDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitFile">
+      <MemberSignature Language="C#" Value="public void ExitFile (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitFile(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitFile(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitFile (context As LGFileParser.FileContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitFile : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.FileContext -&gt; unit" Usage="iLGFileParserListener.ExitFile context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.file" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitImportDefinition">
+      <MemberSignature Language="C#" Value="public void ExitImportDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitImportDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ImportDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitImportDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitImportDefinition (context As LGFileParser.ImportDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitImportDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ImportDefinitionContext -&gt; unit" Usage="iLGFileParserListener.ExitImportDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ImportDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.importDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitOptionDefinition">
+      <MemberSignature Language="C#" Value="public void ExitOptionDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitOptionDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/OptionDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitOptionDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitOptionDefinition (context As LGFileParser.OptionDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitOptionDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.OptionDefinitionContext -&gt; unit" Usage="iLGFileParserListener.ExitOptionDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+OptionDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.optionDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitParagraph">
+      <MemberSignature Language="C#" Value="public void ExitParagraph (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitParagraph(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/ParagraphContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitParagraph(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitParagraph (context As LGFileParser.ParagraphContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitParagraph : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ParagraphContext -&gt; unit" Usage="iLGFileParserListener.ExitParagraph context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ParagraphContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.paragraph" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTemplateBody">
+      <MemberSignature Language="C#" Value="public void ExitTemplateBody (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitTemplateBody(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitTemplateBody(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTemplateBody (context As LGFileParser.TemplateBodyContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitTemplateBody : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyContext -&gt; unit" Usage="iLGFileParserListener.ExitTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBody" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTemplateBodyLine">
+      <MemberSignature Language="C#" Value="public void ExitTemplateBodyLine (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitTemplateBodyLine(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateBodyLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitTemplateBodyLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTemplateBodyLine (context As LGFileParser.TemplateBodyLineContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitTemplateBodyLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext -&gt; unit" Usage="iLGFileParserListener.ExitTemplateBodyLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateBodyLine" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTemplateDefinition">
+      <MemberSignature Language="C#" Value="public void ExitTemplateDefinition (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitTemplateDefinition(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitTemplateDefinition(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTemplateDefinition (context As LGFileParser.TemplateDefinitionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitTemplateDefinition : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateDefinitionContext -&gt; unit" Usage="iLGFileParserListener.ExitTemplateDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateDefinition" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTemplateNameLine">
+      <MemberSignature Language="C#" Value="public void ExitTemplateNameLine (Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitTemplateNameLine(class Microsoft.Bot.Builder.LanguageGeneration.LGFileParser/TemplateNameLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGFileParserListener.ExitTemplateNameLine(Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTemplateNameLine (context As LGFileParser.TemplateNameLineContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitTemplateNameLine : Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateNameLineContext -&gt; unit" Usage="iLGFileParserListener.ExitTemplateNameLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateNameLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.templateNameLine" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

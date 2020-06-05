@@ -1,0 +1,157 @@
+<Type Name="IBreakpoints" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints">
+  <TypeSignature Language="C#" Value="public interface IBreakpoints" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBreakpoints" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBreakpoints" />
+  <TypeSignature Language="F#" Value="type IBreakpoints = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyUpdates">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint&gt; ApplyUpdates ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Breakpoint&gt; ApplyUpdates() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.ApplyUpdates" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyUpdates () As IReadOnlyList(Of Protocol.Breakpoint)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyUpdates : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint&gt;" Usage="iBreakpoints.ApplyUpdates " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Breakpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="iBreakpoints.Clear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBreakPoint">
+      <MemberSignature Language="C#" Value="public bool IsBreakPoint (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsBreakPoint(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.IsBreakPoint(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsBreakPoint (item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsBreakPoint : obj -&gt; bool" Usage="iBreakpoints.IsBreakPoint item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemFor">
+      <MemberSignature Language="C#" Value="public object ItemFor (Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint breakpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ItemFor(class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Breakpoint breakpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.ItemFor(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ItemFor (breakpoint As Protocol.Breakpoint) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ItemFor : Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint -&gt; obj" Usage="iBreakpoints.ItemFor breakpoint" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpoint" Type="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Breakpoint" />
+      </Parameters>
+      <Docs>
+        <param name="breakpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBreakpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint&gt; SetBreakpoints (System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint&gt; functionBreakpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Breakpoint&gt; SetBreakpoints(class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/FunctionBreakpoint&gt; functionBreakpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.SetBreakpoints(System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBreakpoints (functionBreakpoints As IReadOnlyList(Of Protocol.FunctionBreakpoint)) As IReadOnlyList(Of Protocol.Breakpoint)" />
+      <MemberSignature Language="F#" Value="abstract member SetBreakpoints : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint&gt; -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint&gt;" Usage="iBreakpoints.SetBreakpoints functionBreakpoints" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Breakpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionBreakpoints" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+FunctionBreakpoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="functionBreakpoints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBreakpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint&gt; SetBreakpoints (Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source source, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint&gt; sourceBreakpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Breakpoint&gt; SetBreakpoints(class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Source source, class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/SourceBreakpoint&gt; sourceBreakpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.SetBreakpoints(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBreakpoints (source As Protocol.Source, sourceBreakpoints As IReadOnlyList(Of Protocol.SourceBreakpoint)) As IReadOnlyList(Of Protocol.Breakpoint)" />
+      <MemberSignature Language="F#" Value="abstract member SetBreakpoints : Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source * System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint&gt; -&gt; System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint&gt;" Usage="iBreakpoints.SetBreakpoints (source, sourceBreakpoints)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Breakpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+Source" />
+        <Parameter Name="sourceBreakpoints" Type="System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+SourceBreakpoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="sourceBreakpoints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
