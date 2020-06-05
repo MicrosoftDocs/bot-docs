@@ -129,34 +129,34 @@ Adaptive dialogs support the following recognizers:
 
 ### RegexRecognizer
 
-The _RegEx recognizer_ gives you the ability to extract intent and entity data from an utterance based on regular expression patterns. 
+The _RegEx recognizer_ gives you the ability to extract intent and entity data from an utterance based on regular expression patterns.
 
 `RegexRecognizer` consist primarily of:
 
 * `Intents`. The `Intents` object contains a list of `IntentPattern` objects and these `IntentPattern` objects consist of an `Intent` property which is the name of the intent, and a `Pattern` property that contains a regular expression used to parse the utterance to determine intent.
 * `Entities`. The `Entities` object contains a list of `EntityRecognizer` objects.  The Bot Framework SDK defines several `EntityRecognizer` classes to help you determine the entities contained in a users utterance:
-  * AgeEntityRecognizer
-  * ConfirmationEntityRecognizer
-  * CurrencyEntityRecognizer
-  * DateTimeEntityRecognizer
-  * DimensionEntityRecognizer
-  * EmailEntityRecognizer
-  * EntityRecognizer
-  * EntityRecognizerSet
-  * GuidEntityRecognizer
-  * HashtagEntityRecognizer
-  * IpEntityRecognizer
-  * MentionEntityRecognizer
-  * NumberEntityRecognizer
-  * NumberRangeEntityRecognizer
-  * OrdinalEntityRecognizer
-  * PercentageEntityRecognizer
-  * PhoneNumberEntityRecognizer
-  * RegExEntityRecognizer
-  * TemperatureEntityRecognizer
-  * TextEntity
-  * TextEntityRecognizer
-  * UrlEntityRecognizer
+  * `AgeEntityRecognizer`
+  * `ConfirmationEntityRecognizer`
+  * `CurrencyEntityRecognizer`
+  * `DateTimeEntityRecognizer`
+  * `DimensionEntityRecognizer`
+  * `EmailEntityRecognizer`
+  * `EntityRecognizer`
+  * `EntityRecognizerSet`
+  * `GuidEntityRecognizer`
+  * `HashtagEntityRecognizer`
+  * `IpEntityRecognizer`
+  * `MentionEntityRecognizer`
+  * `NumberEntityRecognizer`
+  * `NumberRangeEntityRecognizer`
+  * `OrdinalEntityRecognizer`
+  * `PercentageEntityRecognizer`
+  * `PhoneNumberEntityRecognizer`
+  * `RegExEntityRecognizer`
+  * `TemperatureEntityRecognizer`
+  * `TextEntity`
+  * `TextEntityRecognizer`
+  * `UrlEntityRecognizer`
 
 #### RegexRecognizer Code sample
 
@@ -195,8 +195,8 @@ var rootDialog = new AdaptiveDialog("rootDialog")
 
 > [!TIP]
 >
-> * RegexRecognizer will emit a 'None' intent when the input utterance does not match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
-> * RegexRecognizer is useful for testing and quick prototyping. For more sophisticated bots we recommend using the LUIS recognizer.
+> * `RegexRecognizer` will emit a 'None' intent when the input utterance does not match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
+> * `RegexRecognizer` is useful for testing and quick prototyping. For more sophisticated bots we recommend using the LUIS recognizer.
 > * You might find the regular expression language (RegEx) [Quick Reference][7] helpful.
 
 ### LUIS recognizer

@@ -42,8 +42,8 @@ Adaptive dialogs support the following actions:
 
 ### Send a response
 
-| Activity to accomplish                         | Action Name                   | What this action does                                              |
-| ---------------------------------------------- | ----------------------------- | ------------------------------------------------------------------ |
+| Activity to accomplish                         | Action Name                    | What this action does                                              |
+| ---------------------------------------------- | ------------------------------ | ------------------------------------------------------------------ |
 | Send any activity such as responding to a user.| [SendActivity](#send-activity) | Enables you send any type of activity such as responding to users. |
 
 For a code sample see [Send a response example](#send-a-response-example).
@@ -102,22 +102,22 @@ For code samples see [Dialog management examples](#dialog-management-examples).
 | Activity to accomplish | Action Name                           | What this action does                                                     |
 | ---------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
 | Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
-| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from [memory][11].                        |
+| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from [memory][11].                  |
 | Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Create or update a property | [SetProperty](#setproperty)      | This enables you to set a property's value in [memory][11].                     |
+| Create or update a property | [SetProperty](#setproperty)      | This enables you to set a property's value in [memory][11].               |
 | Create or update properties | [SetProperties](#setproperties)  | This enables you to initialize one or more properties in a single action. |
 
 For code samples see [Manage properties examples](#manage-properties-examples).
 
 ### Access external resources
 
-| Activity to accomplish | Action Name                | What this action does                                                                                       |
-| ---------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [BeginSkill](#beginskill) | Use the adaptive skill dialog to run a skill.                                              |
-| Send an HTTP request   | [HttpRequest](#httprequest)| Enables you to make HTTP requests to any endpoint.                                                          |
-| Emit a custom event    | [EmitEvent](#emitevent)    | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8].               |
-| Sign out a user        | [SignOutUser](#sign-out-user)| Enables you to sign out the currently signed in user.                                                       |
-| Call custom code       | [CodeAction](#codeaction)    | Enables you to call your own custom code.                                                                   |
+| Activity to accomplish | Action Name                  | What this action does                                                                         |
+| ---------------------- | ---------------------------- | --------------------------------------------------------------------------------------------- |
+| Begin a skill dialog   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                                 |
+| Send an HTTP request   | [HttpRequest](#httprequest)  | Enables you to make HTTP requests to any endpoint.                                            |
+| Emit a custom event    | [EmitEvent](#emitevent)      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8]. |
+| Sign out a user        | [SignOutUser](#sign-out-user)| Enables you to sign out the currently signed in user.                                         |
+| Call custom code       | [CodeAction](#codeaction)    | Enables you to call your own custom code.                                                     |
 
 For code samples see [Access external resource examples](#access-external-resource-examples).
 
@@ -125,7 +125,7 @@ For code samples see [Access external resource examples](#access-external-resour
 
 | Activity to accomplish | Action Name                     | What this action does                                                       |
 | ---------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| Log to console         | [LogAction](#log-action)           | Writes to the console and optionally sends the message as a trace activity. |
+| Log to console         | [LogAction](#log-action)        | Writes to the console and optionally sends the message as a trace activity. |
 | Emit a trace event     | [TraceActivity](#traceactivity) | Sends a trace activity with whatever payload you specify.                   |
 
 For code samples see [Debugging option examples](#debugging-option-examples).
@@ -460,9 +460,9 @@ var adaptiveDialog = new AdaptiveDialog()
 
 #### BeginDialog
 
-Starts a new dialog and pushes it onto the dialog stack. `BeginDialog` requires the name of the target dialog, which can be any type of dialog including Adaptive dialog or Waterfall dialog etc.
+Starts a new dialog and pushes it onto the dialog stack. The _begin dialog_ action requires the name of the target dialog, which can be any type of dialog including Adaptive dialog or Waterfall dialog etc.
 
-The `BeginDialog` action defines a property named `ResultProperty` that allows you to specify where to save the results when the dialog ends.
+The _begin dialog_ action defines a property named `ResultProperty` that allows you to specify where to save the results when the dialog ends.
 
 ``` C#
 new BeginDialog("BookFlightDialog")
@@ -479,7 +479,7 @@ new BeginDialog("BookFlightDialog")
 
 Ends the active dialog by popping it off the stack and returns an optional result to the dialog's parent.
 
-By default, adaptive dialogs have their `defaultResultProperty` set to `dialog.results` so anything that is set in that [memory scope][11] will automatically be returned to the caller in scenarios when the dialog auto ends itself. If you end the dialog using the `EndDialog` action you'll need to specify what is returned to the caller in the `value` property.
+By default, adaptive dialogs have their `defaultResultProperty` set to `dialog.results` so anything that is set in that [memory scope][11] will automatically be returned to the caller in scenarios when the dialog auto ends itself. If you end the dialog using the _end dialog_ action you'll need to specify what is returned to the caller in the `value` property.
 
 ``` C#
 new EndDialog()
@@ -689,7 +689,7 @@ new GetConversationMembers()
 
 #### EditActions
 
-Modifies the current sequence of actions. Specifically helpful when handling an interruption. You can use EditActions to insert or remove actions anywhere in the sequence, including adding actions to the beginning or end of the sequence.
+Modifies the current sequence of actions. Specifically helpful when handling an interruption. You can use `EditActions` to insert or remove actions anywhere in the sequence, including adding actions to the beginning or end of the sequence.
 
 ``` C#
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
