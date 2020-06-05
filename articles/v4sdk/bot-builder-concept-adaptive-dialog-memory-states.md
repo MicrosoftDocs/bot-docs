@@ -10,17 +10,15 @@ ms.service: bot-service
 ms.date: 05/08/2020
 ---
 
-# Managing state in Adaptive Dialogs
+# Managing state in adaptive dialogs
 
 The terms _Stateful_ and _stateless_ are adjectives that describe whether an application is designed to remember one or more preceding events in a given sequence of interactions with a user (or any other activity). Stateful means the application _does_ keep track of the state of its interactions, usually by saving values in memory in the form a properties. Stateless means the application does _not_ keep track of the state of its interactions, which means that there is no memory of any previous interactions and all incoming request must contain all relevant information that is required to perform the requested action. You can think of _state_ as the bot's current set of values or contents, such as the conversation ID or the active user's name.
 
 The Bot Framework SDK follows the same paradigms as modern web applications and does not actively manage state, however the Bot Framework SDK does provide some abstractions that make state management much easier to incorporate into your bot. This topic is covered in detail in the Bot Framework SDK [Managing state][3] article, it is recommended that you read and understand the information covered in that article before reading this article.
 
-<!--TODO P2: reword this so it doesn't sound like the contents of this article are a summary of the managing state article. -->
-
 ## Prerequisites
 
-* A general understanding of [how bots work][1].
+* A general understanding of [How bots work][1].
 * A general understanding of adaptive dialogs. For more information, see [Introduction to adaptive dialogs][2] and [Dialog libraries][8].
 * See the Bot Framework SDK [Managing state][3] article for an overview of state management.
 
@@ -177,11 +175,11 @@ Value = "=@fromCity.location"
 
 ## Settings scope
 
-This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you are developing your bot using C#, these settings will appear in the `appsettings.json` file, if you are developing your bot using JavaScript, these settings will appear in the `.env` file or the `config.py` file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope..
+This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you are developing your bot using C#, these settings will appear in the appsettings.json file, if you are developing your bot using JavaScript, these settings will appear in the .env file or the config.py file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope..
 
 ### Settings scope example
 <!--TODO P2: rewrite this with language tabs for C#/JS. -->
-This is an example of an appsettings.json that holds configuration settings for your bot:
+This is an example of an appsettings.json file that holds configuration settings for your bot:
 
 ```json
 {
@@ -195,7 +193,7 @@ This is an example of an appsettings.json that holds configuration settings for 
 }
 ```
 
-This is an example of how you would refer to the configuration settings that are stored in your `appsettings.json` file using the settings memory scope:
+This is an example of how you would refer to the configuration settings that are stored in your appsettings.json file using the settings memory scope:
 
 ```csharp
 var recognizer = new QnAMakerRecognizer()

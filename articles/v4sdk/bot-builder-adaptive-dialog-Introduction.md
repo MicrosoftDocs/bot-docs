@@ -15,7 +15,7 @@ ms.date: 04/24/2020
 Adaptive dialogs offer a new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
 
 > [!IMPORTANT]
-> Adaptive dialogs is currently available in the .Net version of the bot framework SDK. You can find Sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub, however the JavaScript version is now in [Preview][15].
+> Adaptive dialogs is currently available in the .Net version of the Bot Framework SDK. You can find Sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub, however the JavaScript version is now in [Preview][15].
 
 ## Prerequisites
 
@@ -55,13 +55,13 @@ _Triggers_ enable you to catch and respond to events. The broadest trigger is th
 
 _Actions_ define the conversation flow when a specific event is captured via a Trigger. Unlike a waterfall dialog where each step is a function, each action in an Adaptive dialog is in itself a dialog. This makes adaptive dialogs both powerful and flexible and enables adaptive dialogs to easily handle interruptions and branch conditionally based on context or current state.
 
-The bot framework SDK provides many built in actions to enable you to perform various actions such as memory manipulation, dialog management, and controlling the conversational flow of your bot. Since actions are in fact dialogs, they are extensible, making it possible to create your own custom actions.
+The Bot Framework SDK provides many built in actions to enable you to perform various actions such as memory manipulation, dialog management, and controlling the conversational flow of your bot. Since actions are in fact dialogs, they are extensible, making it possible to create your own custom actions.
 
 See the [_Actions in adaptive dialogs_][4] article for more information on _actions_ in adaptive dialogs.
 
 ### Inputs
 
-_Inputs_ are to adaptive dialogs what [prompts][14] are to the base dialog class. Inputs are specialized actions that you can use in an adaptive dialog to request and validate information from a user, then if the validation passes, accept the input into memory. All input classes in the bot framework SDK are designed to do the following:
+_Inputs_ are to adaptive dialogs what [prompts][14] are to the base dialog class. Inputs are specialized actions that you can use in an adaptive dialog to request and validate information from a user, then if the validation passes, accept the input into memory. All input classes in the Bot Framework SDK are designed to do the following:
 
 * Perform existential checks before prompting, to avoid prompting for information the bot already has.
 * Save the input to the specified property if it matches the type of entity expected.
