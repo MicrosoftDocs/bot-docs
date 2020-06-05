@@ -188,7 +188,7 @@ This tells the `dialogManager` to use `resourceExplorer` as the resourceExplorer
 -->
 ## Declarative assets
 
-The Bot framework SDK has various declarative assets available, each will be listed below. These assets can be used in your `.dialog` files as the `$kind` keyword.
+The Bot framework SDK has various declarative assets available. Use the `$kind` field to identify the asset type in your `.dialog` files.
 
 ### Triggers
 
