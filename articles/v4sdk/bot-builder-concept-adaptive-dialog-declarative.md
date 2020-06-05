@@ -288,7 +288,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 
 #### Send a response
 
-| `$kind` keyword          | Action Name                    | What this action does                                              |
+| `$kind` value | Action Name                    | What this action does                                              |
 | ------------------------ | ------------------------------ | ------------------------------------------------------------------ |
 | `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users. |
 
