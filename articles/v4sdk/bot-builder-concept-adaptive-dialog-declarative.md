@@ -276,7 +276,7 @@ Message events are a type of activity event and as such, all message events have
 You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is a type of `OnDialogEvent` trigger, where its _event_ property to the same value as the emit event's _event name_ property.
 
 > [!TIP]
-> You can allow other dialogs in your bot to handle your custom event by setting the EmitEvent's `BubbleEvent` property to true.
+> You can allow other dialogs in your bot to handle your custom event by setting the emit event's _bubble event_ property to true.
 
 | `$kind` keyword         | Trigger name  | Description                                                                                                                               |
 | ----------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
