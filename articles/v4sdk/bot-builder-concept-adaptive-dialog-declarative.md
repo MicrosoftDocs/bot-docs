@@ -278,7 +278,7 @@ You can emit your own events by adding the [EmitEvent][13] action to any trigger
 > [!TIP]
 > You can allow other dialogs in your bot to handle your custom event by setting the emit event's _bubble event_ property to true.
 
-| `$kind` keyword         | Trigger name  | Description                                                                                                                               |
+| `$kind` value | Trigger name  | Description                                                                                                                               |
 | ----------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft.OnDialogEvent | OnDialogEvent | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
 
