@@ -12,7 +12,7 @@ ms.date: 04/24/2020
 
 # Introduction to adaptive dialogs
 
-Adaptive dialogs offer new a new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
+Adaptive dialogs offer a new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
 
 > [!IMPORTANT]
 > Adaptive dialogs is currently available in the .Net version of the bot framework SDK. You can find Sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub, however the JavaScript version is now in [Preview][15].
