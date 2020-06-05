@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 06/04/2019
-moniker range="azure-bot-service-4.0"
+moniker range="azure-bot-service-3.0"
 ---
 
 # Debug a bot
@@ -43,13 +43,11 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 
 [!INCLUDE [csharp visual studio](../articles/includes/bot-service-debug-bot/csharp-vs.md)]
 
+[!INCLUDE [csharp consumption](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
+
 ## [JavaScript](#tab/javascript)
 
 [!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/js-vscode.md)]
-
-## [Python](#tab/python)
-
-[!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/python-vscode.md)]
 
 ---
 
