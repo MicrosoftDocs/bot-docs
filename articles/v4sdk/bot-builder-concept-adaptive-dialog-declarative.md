@@ -27,7 +27,7 @@ Declarative files currently consist of _.dialog_ files, a JSON based file that d
 Adaptive dialog declarative files that have the .dialog extension contain the following elements:
 
 - The `$schema` value contains a URI pointing to the Schema that describes the format of this declarative file. That schema is a Bot Framework component schema, which adheres to [draft 7](http://json-schema.org/specification-links.html#draft-7) of the JSON schema vocabulary. This schema file enables [IntelliSense][intellisense] to work for your declarative elements. For information on how to create this file, see [Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file) in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
-- The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot framework SDK that is designed to work using the declarative approach.
+- The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot Framework SDK that is designed to work using the declarative approach.
 - The `triggers` value contains an array of one or more triggers. The type of trigger is declared using the `$kind` keyword. Each trigger contains an array of one or more actions.
 - The `actions` value contains an array of one or more actions, each action can have properties associated with it.
 
@@ -148,7 +148,7 @@ resourceExplorer.emitter.on('changed', handleResourceChange);
 
 ## Declarative assets
 
-The Bot framework SDK has various declarative assets available, each will be listed below. These assets can be used in your .dialog files as the `$kind` value.
+The Bot Framework SDK has various declarative assets available, each will be listed below. These assets can be used in your .dialog files as the `$kind` value.
 
 ### Triggers
 
