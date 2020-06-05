@@ -1,0 +1,166 @@
+<Type Name="Range" FullName="Microsoft.Bot.Builder.LanguageGeneration.Range">
+  <TypeSignature Language="C#" Value="public class Range" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Range extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.Range" />
+  <TypeSignature Language="VB.NET" Value="Public Class Range" />
+  <TypeSignature Language="F#" Value="type Range = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A range represents an ordered pair of two positions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Range (Microsoft.Bot.Builder.LanguageGeneration.Position start, Microsoft.Bot.Builder.LanguageGeneration.Position end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.LanguageGeneration.Position start, class Microsoft.Bot.Builder.LanguageGeneration.Position end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Range.#ctor(Microsoft.Bot.Builder.LanguageGeneration.Position,Microsoft.Bot.Builder.LanguageGeneration.Position)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As Position, end As Position)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.Range : Microsoft.Bot.Builder.LanguageGeneration.Position * Microsoft.Bot.Builder.LanguageGeneration.Position -&gt; Microsoft.Bot.Builder.LanguageGeneration.Range" Usage="new Microsoft.Bot.Builder.LanguageGeneration.Range (start, end)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="start" Type="Microsoft.Bot.Builder.LanguageGeneration.Position" />
+        <Parameter Name="end" Type="Microsoft.Bot.Builder.LanguageGeneration.Position" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="end">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Range (int startLine, int startChar, int endLine, int endChar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 startLine, int32 startChar, int32 endLine, int32 endChar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Range.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (startLine As Integer, startChar As Integer, endLine As Integer, endChar As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.Range : int * int * int * int -&gt; Microsoft.Bot.Builder.LanguageGeneration.Range" Usage="new Microsoft.Bot.Builder.LanguageGeneration.Range (startLine, startChar, endLine, endChar)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startChar" Type="System.Int32" />
+        <Parameter Name="endLine" Type="System.Int32" />
+        <Parameter Name="endChar" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startLine">To be added.</param>
+        <param name="startChar">To be added.</param>
+        <param name="endLine">To be added.</param>
+        <param name="endChar">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRange">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Bot.Builder.LanguageGeneration.Range DefaultRange;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Bot.Builder.LanguageGeneration.Range DefaultRange" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.Range.DefaultRange" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultRange As Range " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultRange : Microsoft.Bot.Builder.LanguageGeneration.Range" Usage="Microsoft.Bot.Builder.LanguageGeneration.Range.DefaultRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.Position End { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.LanguageGeneration.Position End" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Range.End" />
+      <MemberSignature Language="VB.NET" Value="Public Property End As Position" />
+      <MemberSignature Language="F#" Value="member this.End : Microsoft.Bot.Builder.LanguageGeneration.Position with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.Range.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Position</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the end position. It is after or equal to <see cref="P:Microsoft.Bot.Builder.LanguageGeneration.Range.Start" />.
+            </summary>
+        <value>
+            The end position. It is after or equal to <see cref="P:Microsoft.Bot.Builder.LanguageGeneration.Range.Start" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.Position Start { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.LanguageGeneration.Position Start" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Range.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As Position" />
+      <MemberSignature Language="F#" Value="member this.Start : Microsoft.Bot.Builder.LanguageGeneration.Position with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.Range.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Position</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the start position. It is before or equal to <see cref="P:Microsoft.Bot.Builder.LanguageGeneration.Range.End" />.
+            </summary>
+        <value>
+            The start position. It is before or equal to <see cref="P:Microsoft.Bot.Builder.LanguageGeneration.Range.End" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Range.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="range.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

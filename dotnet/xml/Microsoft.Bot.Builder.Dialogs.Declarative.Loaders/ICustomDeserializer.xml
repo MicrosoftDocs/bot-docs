@@ -1,0 +1,48 @@
+<Type Name="ICustomDeserializer" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer">
+  <TypeSignature Language="C#" Value="public interface ICustomDeserializer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomDeserializer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICustomDeserializer" />
+  <TypeSignature Language="F#" Value="type ICustomDeserializer = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public object Load (Newtonsoft.Json.Linq.JToken obj, Newtonsoft.Json.JsonSerializer serializer, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(class Newtonsoft.Json.Linq.JToken obj, class Newtonsoft.Json.JsonSerializer serializer, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer.Load(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.JsonSerializer,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Load (obj As JToken, serializer As JsonSerializer, type As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Load : Newtonsoft.Json.Linq.JToken * Newtonsoft.Json.JsonSerializer * Type -&gt; obj" Usage="iCustomDeserializer.Load (obj, serializer, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="serializer">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.FormFlow.FormFlowAttribute</BaseTypeName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute" />
@@ -57,6 +59,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="patterns" Type="System.String[]">
@@ -87,6 +90,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.BoolDefault</ReturnType>
@@ -111,6 +115,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -138,6 +143,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -162,6 +168,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -186,6 +193,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -210,6 +218,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.BoolDefault</ReturnType>
@@ -234,6 +243,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -258,6 +268,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.ChoiceStyleOptions</ReturnType>
@@ -282,6 +293,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.FeedbackOptions</ReturnType>
@@ -306,6 +318,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>
@@ -330,6 +343,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -354,6 +368,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -379,6 +394,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -403,6 +419,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -427,6 +444,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.CaseNormalization</ReturnType>

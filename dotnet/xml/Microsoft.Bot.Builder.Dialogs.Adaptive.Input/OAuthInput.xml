@@ -1,0 +1,333 @@
+<Type Name="OAuthInput" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput">
+  <TypeSignature Language="C#" Value="public class OAuthInput : Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OAuthInput extends Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput" />
+  <TypeSignature Language="VB.NET" Value="Public Class OAuthInput&#xA;Inherits InputDialog" />
+  <TypeSignature Language="F#" Value="type OAuthInput = class&#xA;    inherit InputDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            OAuthInput prompts user to login.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OAuthInput ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="oAuthInput.BeginDialogAsync (dc, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">The dialog context for the current turn of the conversation.</param>
+        <param name="options">Optional, additional information to pass to the prompt being started.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog is pushed onto the dialog stack and is being activated.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the prompt is still
+            active after the turn has been processed by the prompt.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionName">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression ConnectionName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression ConnectionName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.ConnectionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionName As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.ConnectionName : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.ConnectionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("connectionName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the OAuth connection.
+            </summary>
+        <value>String or expression which evaluates to a string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueDialogAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="F#" Value="override this.ContinueDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="oAuthInput.ContinueDialogAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">The dialog context for the current turn of conversation.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a prompt dialog is the active dialog and the user replied with a new activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>If the task is successful, the result indicates whether the dialog is still
+            active after the turn has been processed by the dialog.
+            <para>The prompt generally continues to receive the user's replies until it accepts the
+            user's reply as valid input for the prompt.</para></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; GetUserTokenAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.GetUserTokenAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="F#" Value="member this.GetUserTokenAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="oAuthInput.GetUserTokenAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">DialogContext for the current turn of conversation with the user.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Attempts to get the user's token.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task is successful and user already has a token or the user successfully signs in,
+            the result contains the user's token.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRecognizeInputAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt; OnRecognizeInputAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt; OnRecognizeInputAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.OnRecognizeInputAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnRecognizeInputAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of InputState)" />
+      <MemberSignature Language="F#" Value="override this.OnRecognizeInputAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;" Usage="oAuthInput.OnRecognizeInputAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutUserAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SignOutUserAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SignOutUserAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.SignOutUserAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="member this.SignOutUserAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="oAuthInput.SignOutUserAsync (dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">DialogContext for the current turn of conversation with the user.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Signs out the user.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.Text : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets any additional text to include in the sign-in card.
+            </summary>
+        <value>String or expression which evaluates to a string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.IntExpression Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.IntExpression Timeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As IntExpression" />
+      <MemberSignature Language="F#" Value="member this.Timeout : AdaptiveExpressions.Properties.IntExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("timeout")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.IntExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the number of milliseconds the prompt waits for the user to authenticate.
+            Default is 900,000 (15 minutes).
+            </summary>
+        <value>Int or expression which evaluates to int.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.Title : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.OAuthInput.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("title")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the title of the sign-in card.
+            </summary>
+        <value>String or expression which evaluates to string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

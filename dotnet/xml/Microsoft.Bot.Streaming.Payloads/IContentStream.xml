@@ -6,8 +6,8 @@
   <TypeSignature Language="F#" Value="type IContentStream = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
-    <AssemblyVersion>4.7.0.0</AssemblyVersion>
-    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -26,8 +26,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -51,8 +51,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -76,8 +76,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -101,8 +101,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>

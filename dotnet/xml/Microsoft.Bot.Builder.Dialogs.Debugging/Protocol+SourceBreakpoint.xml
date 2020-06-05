@@ -1,0 +1,57 @@
+<Type Name="Protocol+SourceBreakpoint" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol+SourceBreakpoint">
+  <TypeSignature Language="C#" Value="public sealed class Protocol.SourceBreakpoint" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit Protocol/SourceBreakpoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Protocol.SourceBreakpoint" />
+  <TypeSignature Language="F#" Value="type Protocol.SourceBreakpoint = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SourceBreakpoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public int Line { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint.Line" />
+      <MemberSignature Language="VB.NET" Value="Public Property Line As Integer" />
+      <MemberSignature Language="F#" Value="member this.Line : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint.Line" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

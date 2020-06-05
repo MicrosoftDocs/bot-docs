@@ -1,0 +1,311 @@
+<Type Name="PropertySchema" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema">
+  <TypeSignature Language="C#" Value="public class PropertySchema" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertySchema extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertySchema" />
+  <TypeSignature Language="F#" Value="type PropertySchema = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a property found in a JSON schema.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertySchema (string path, Newtonsoft.Json.Linq.JObject schema, System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt; children = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class Newtonsoft.Json.Linq.JObject schema, class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt; children) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.#ctor(System.String,Newtonsoft.Json.Linq.JObject,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, schema As JObject, Optional children As List(Of PropertySchema) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema : string * Newtonsoft.Json.Linq.JObject * System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema (path, schema, children)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="schema" Type="Newtonsoft.Json.Linq.JObject" />
+        <Parameter Name="children" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="path">Path to this property.</param>
+        <param name="schema">JSON schema fragment for this property.</param>
+        <param name="children">Children properties if any.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt; Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt; Children" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Children" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As IReadOnlyList(Of PropertySchema)" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets child properties if there are any.
+            </summary>
+        <value>
+            Child properties if there are any.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entities">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; Entities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; Entities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entities As IReadOnlyList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Entities : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Entities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets mappings to possible entities for property.
+            </summary>
+        <value>List of entity names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpectedOnly">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;string&gt; ExpectedOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; ExpectedOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.ExpectedOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpectedOnly As IReadOnlyList(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ExpectedOnly : System.Collections.Generic.IReadOnlyList&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.ExpectedOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets list of entities that are only recognized for this property when expected.
+            </summary>
+        <value>List of expected only entity names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArray">
+      <MemberSignature Language="C#" Value="public bool IsArray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsArray" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.IsArray" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsArray As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsArray : bool" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.IsArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether type is an array.
+            </summary>
+        <value>True if array.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnum">
+      <MemberSignature Language="C#" Value="public bool IsEnum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.IsEnum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnum As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnum : bool" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.IsEnum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether property is an enum.
+            </summary>
+        <value>True if enum.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets name for this property.
+            </summary>
+        <value>
+            Name for this property.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As PropertySchema" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets parent schema.
+            </summary>
+        <value>Parent property schema if any.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets path to schema with [] for arrays and otherwise . for path accessors.
+            </summary>
+        <value>
+            Path to schema with [] for arrays and otherwise . for path accessors.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public Newtonsoft.Json.Linq.JObject Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.Linq.JObject Schema" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As JObject" />
+      <MemberSignature Language="F#" Value="member this.Schema : Newtonsoft.Json.Linq.JObject" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets JSON Schema object for this property.
+            </summary>
+        <value>
+            JSON Schema object for this property.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="propertySchema.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.PropertySchema.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the JSON Schema type for this property.
+            </summary>
+        <value>JSON Schema type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,117 @@
+<Type Name="LanguageGenerationComponentRegistration" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration">
+  <TypeSignature Language="C#" Value="public class LanguageGenerationComponentRegistration : Microsoft.Bot.Builder.ComponentRegistration, Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LanguageGenerationComponentRegistration extends Microsoft.Bot.Builder.ComponentRegistration implements class Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration" />
+  <TypeSignature Language="VB.NET" Value="Public Class LanguageGenerationComponentRegistration&#xA;Inherits ComponentRegistration&#xA;Implements IComponentDeclarativeTypes" />
+  <TypeSignature Language="F#" Value="type LanguageGenerationComponentRegistration = class&#xA;    inherit ComponentRegistration&#xA;    interface IComponentDeclarativeTypes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.ComponentRegistration</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            ComponentRegistration class for language generation resources.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LanguageGenerationComponentRegistration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConverters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Newtonsoft.Json.JsonConverter&gt; GetConverters (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Newtonsoft.Json.JsonConverter&gt; GetConverters(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration.GetConverters(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetConverters (resourceExplorer As ResourceExplorer, sourceContext As SourceContext) As IEnumerable(Of JsonConverter)" />
+      <MemberSignature Language="F#" Value="abstract member GetConverters : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext -&gt; seq&lt;Newtonsoft.Json.JsonConverter&gt;&#xA;override this.GetConverters : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext -&gt; seq&lt;Newtonsoft.Json.JsonConverter&gt;" Usage="languageGenerationComponentRegistration.GetConverters (resourceExplorer, sourceContext)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes.GetConverters(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration/&lt;GetConverters&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Newtonsoft.Json.JsonConverter&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+        <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
+      </Parameters>
+      <Docs>
+        <param name="resourceExplorer">resource explorer to use for resolving references.</param>
+        <param name="sourceContext">SourceContext to build debugger source map.</param>
+        <summary>
+            Return JsonConverters for LanguageGeneration resources.
+            </summary>
+        <returns>enumeration of jsonconverters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeclarativeTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt; GetDeclarativeTypes (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt; GetDeclarativeTypes(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration.GetDeclarativeTypes(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetDeclarativeTypes (resourceExplorer As ResourceExplorer) As IEnumerable(Of DeclarativeType)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclarativeTypes : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt;&#xA;override this.GetDeclarativeTypes : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt;" Usage="languageGenerationComponentRegistration.GetDeclarativeTypes resourceExplorer" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes.GetDeclarativeTypes(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerationComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+      </Parameters>
+      <Docs>
+        <param name="resourceExplorer">resource explorer to use for resolving references.</param>
+        <summary>
+            Return declarative types for Language Generation.
+            </summary>
+        <returns>DeclarativeTypes enumeration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

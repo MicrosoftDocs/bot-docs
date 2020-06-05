@@ -6,8 +6,8 @@
   <TypeSignature Language="F#" Value="type TaskModuleMessageResponse = class&#xA;    inherit TaskModuleResponseBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.7.0.0</AssemblyVersion>
-    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.TaskModuleResponseBase</BaseTypeName>
@@ -28,8 +28,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,8 +48,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
@@ -72,8 +72,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

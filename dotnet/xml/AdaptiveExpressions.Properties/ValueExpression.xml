@@ -1,0 +1,200 @@
+<Type Name="ValueExpression" FullName="AdaptiveExpressions.Properties.ValueExpression">
+  <TypeSignature Language="C#" Value="public class ValueExpression : AdaptiveExpressions.Properties.ExpressionProperty&lt;object&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValueExpression extends AdaptiveExpressions.Properties.ExpressionProperty`1&lt;object&gt;" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.Properties.ValueExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValueExpression&#xA;Inherits ExpressionProperty(Of Object)" />
+  <TypeSignature Language="F#" Value="type ValueExpression = class&#xA;    inherit ExpressionProperty&lt;obj&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AdaptiveExpressions.Properties.ExpressionProperty&lt;System.Object&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.Object</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(AdaptiveExpressions.Converters.ValueExpressionConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            ValueExpression - represents a property which is an object of any kind or a string expression.
+            </summary>
+    <remarks>
+            If the value is 
+            * a string with '=' prefix then the string is treated as an expression to resolve to a string. 
+            * a string without '=' then value is treated as string with string interpolation.
+            * any other type, then it is of that type (int, bool, object, etc.)
+            You can escape the '=' prefix by putting a backslash.  
+            Examples: 
+                prop = true ==&gt; true
+                prop = "Hello ${user.name}" =&gt; "Hello Joe"
+                prop = "=length(user.name)" =&gt; 3
+                prop = "=user.age" =&gt; 45.
+                prop = "\=user.age" =&gt; "=user.age".
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.Properties.ValueExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueExpression (Func&lt;object,object&gt; lambda);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, object&gt; lambda) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.#ctor(System.Func{System.Object,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (lambda As Func(Of Object, Object))" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.Properties.ValueExpression : Func&lt;obj, obj&gt; -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="new AdaptiveExpressions.Properties.ValueExpression lambda" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="lambda" Type="System.Func&lt;System.Object,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lambda">function (data) which evaluates to value.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.Properties.ValueExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueExpression (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.Properties.ValueExpression : obj -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="new AdaptiveExpressions.Properties.ValueExpression value" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">value to interpret as object or string expression.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.Properties.ValueExpression" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (AdaptiveExpressions.Expression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(class AdaptiveExpressions.Expression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(AdaptiveExpressions.Expression)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (expression As Expression) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : AdaptiveExpressions.Expression -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit expression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (Newtonsoft.Json.Linq.JToken valueOrExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(class Newtonsoft.Json.Linq.JToken valueOrExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(Newtonsoft.Json.Linq.JToken)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (valueOrExpression As JToken) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Newtonsoft.Json.Linq.JToken -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit valueOrExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="valueOrExpression" Type="Newtonsoft.Json.Linq.JToken" />
+      </Parameters>
+      <Docs>
+        <param name="valueOrExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (string valueOrExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(string valueOrExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.String)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (valueOrExpression As String) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit valueOrExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="valueOrExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="valueOrExpression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.SetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj -&gt; unit" Usage="valueExpression.SetValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,169 @@
+<Type Name="HealthResults" FullName="Microsoft.Bot.Schema.HealthResults">
+  <TypeSignature Language="C#" Value="public class HealthResults" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HealthResults extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.HealthResults" />
+  <TypeSignature Language="VB.NET" Value="Public Class HealthResults" />
+  <TypeSignature Language="F#" Value="type HealthResults = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HealthResults ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.HealthResults.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authorization">
+      <MemberSignature Language="C#" Value="public string Authorization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Authorization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.HealthResults.Authorization" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authorization As String" />
+      <MemberSignature Language="F#" Value="member this.Authorization : string with get, set" Usage="Microsoft.Bot.Schema.HealthResults.Authorization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="authorization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagnostics">
+      <MemberSignature Language="C#" Value="public object Diagnostics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Diagnostics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.HealthResults.Diagnostics" />
+      <MemberSignature Language="VB.NET" Value="Public Property Diagnostics As Object" />
+      <MemberSignature Language="F#" Value="member this.Diagnostics : obj with get, set" Usage="Microsoft.Bot.Schema.HealthResults.Diagnostics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diagnostics")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public string[] Messages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.HealthResults.Messages" />
+      <MemberSignature Language="VB.NET" Value="Public Property Messages As String()" />
+      <MemberSignature Language="F#" Value="member this.Messages : string[] with get, set" Usage="Microsoft.Bot.Schema.HealthResults.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="messages")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="public bool Success { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Success" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.HealthResults.Success" />
+      <MemberSignature Language="VB.NET" Value="Public Property Success As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Success : bool with get, set" Usage="Microsoft.Bot.Schema.HealthResults.Success" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="success")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAgent">
+      <MemberSignature Language="C#" Value="public string UserAgent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.HealthResults.UserAgent" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserAgent As String" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : string with get, set" Usage="Microsoft.Bot.Schema.HealthResults.UserAgent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="user-agent")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

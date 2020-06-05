@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -47,6 +48,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="field" Type="Microsoft.Bot.Builder.FormFlow.Advanced.IField&lt;T&gt;" />
@@ -71,6 +73,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -99,6 +102,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch</ReturnType>
@@ -125,6 +129,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -156,6 +161,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.FormFlow.DescribeAttribute</ReturnType>

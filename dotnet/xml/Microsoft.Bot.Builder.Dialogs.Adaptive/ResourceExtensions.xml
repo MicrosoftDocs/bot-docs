@@ -1,0 +1,51 @@
+<Type Name="ResourceExtensions" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.ResourceExtensions">
+  <TypeSignature Language="C#" Value="public static class ResourceExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourceExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ResourceExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ResourceExtensions" />
+  <TypeSignature Language="F#" Value="type ResourceExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseResourceExplorer">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.DialogManager UseResourceExplorer (this Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.DialogManager UseResourceExplorer(class Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.ResourceExtensions.UseResourceExplorer(Microsoft.Bot.Builder.Dialogs.DialogManager,Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseResourceExplorer (dialogManager As DialogManager, resourceExplorer As ResourceExplorer) As DialogManager" />
+      <MemberSignature Language="F#" Value="static member UseResourceExplorer : Microsoft.Bot.Builder.Dialogs.DialogManager * Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer -&gt; Microsoft.Bot.Builder.Dialogs.DialogManager" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.ResourceExtensions.UseResourceExplorer (dialogManager, resourceExplorer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogManager" Type="Microsoft.Bot.Builder.Dialogs.DialogManager" RefType="this" />
+        <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
+      </Parameters>
+      <Docs>
+        <param name="dialogManager">BotAdapter to add middleware to.</param>
+        <param name="resourceExplorer">resourceExplorer to use.</param>
+        <summary>
+            Register ResourceExplorer and optionally register more types.
+            </summary>
+        <returns>The bot adapter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

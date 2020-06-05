@@ -1,0 +1,184 @@
+<Type Name="ActivityTemplate" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate">
+  <TypeSignature Language="C#" Value="public class ActivityTemplate : Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityTemplate extends System.Object implements class Microsoft.Bot.Builder.Dialogs.ITemplate`1&lt;class Microsoft.Bot.Schema.Activity&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTemplate&#xA;Implements ITemplate(Of Activity)" />
+  <TypeSignature Language="F#" Value="type ActivityTemplate = class&#xA;    interface ITemplate&lt;Activity&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.ITemplate&lt;Microsoft.Bot.Schema.Activity&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.ActivityTemplateConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{Template}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Defines an activity Template where the template expression is local aka "inline" 
+            and processed through registered IActivityGenerator/ILanguageGenerator.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityTemplate (string template);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (template As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate : string -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate template" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="template" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="template">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt; BindAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object data = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Activity&gt; BindAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.BindAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindAsync (dialogContext As DialogContext, Optional data As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of Activity)" />
+      <MemberSignature Language="F#" Value="abstract member BindAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;&#xA;override this.BindAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;" Usage="activityTemplate.BindAsync (dialogContext, data, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.ITemplate`1.BindAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Template">
+      <MemberSignature Language="C#" Value="public string Template { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Template" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.Template" />
+      <MemberSignature Language="VB.NET" Value="Public Property Template As String" />
+      <MemberSignature Language="F#" Value="member this.Template : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.Template" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("template")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template to evaluate to create the activity.
+            </summary>
+        <value>
+            The template to evaluate to create the activity.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.ActivityTemplate.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activityTemplate.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,480 @@
+<Type Name="EntityInfo" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo">
+  <TypeSignature Language="C#" Value="public class EntityInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityInfo" />
+  <TypeSignature Language="F#" Value="type EntityInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extended information about an entity including $instance data.
+            </summary>
+    <remarks>This is surfaced as part of the entity ambiguity events.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alternative">
+      <MemberSignature Language="C#" Value="public bool Alternative (Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Alternative(class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Alternative(Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Alternative (entity As EntityInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Alternative : Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo -&gt; bool" Usage="entityInfo.Alternative entity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo" />
+      </Parameters>
+      <Docs>
+        <param name="entity">Entity to compare.</param>
+        <summary>
+            True if entities come from exactly the same text in the utterance.
+            </summary>
+        <returns>True if entities are from the same text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coverage">
+      <MemberSignature Language="C#" Value="public double Coverage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Coverage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Coverage" />
+      <MemberSignature Language="VB.NET" Value="Public Property Coverage As Double" />
+      <MemberSignature Language="F#" Value="member this.Coverage : double with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Coverage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("coverage")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets how much 0-1.0 of the original utterance is covered by entity.
+            </summary>
+        <value>Coverage of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Covers">
+      <MemberSignature Language="C#" Value="public bool Covers (Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Covers(class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Covers(Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Covers (entity As EntityInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Covers : Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo -&gt; bool" Usage="entityInfo.Covers entity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo" />
+      </Parameters>
+      <Docs>
+        <param name="entity">Entity to compare.</param>
+        <summary>
+            True if entity text completely includes another entity text.
+            </summary>
+        <returns>True if entity text completely covers other entity text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public int End { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 End" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.End" />
+      <MemberSignature Language="VB.NET" Value="Public Property End As Integer" />
+      <MemberSignature Language="F#" Value="member this.End : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("end")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets where entity ends in utterance.
+            </summary>
+        <value>End of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets name of entity.
+            </summary>
+        <value>Name of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operation">
+      <MemberSignature Language="C#" Value="public string Operation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Operation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Operation As String" />
+      <MemberSignature Language="F#" Value="member this.Operation : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Operation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("operation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets operation for entity.
+            </summary>
+        <value>Operation to apply to entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overlaps">
+      <MemberSignature Language="C#" Value="public bool Overlaps (Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Overlaps(class Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Overlaps(Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Overlaps (entity As EntityInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Overlaps : Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo -&gt; bool" Usage="entityInfo.Overlaps entity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo" />
+      </Parameters>
+      <Docs>
+        <param name="entity">Entity to compare.</param>
+        <summary>
+            True if entities share text in utterance.
+            </summary>
+        <returns>True if entities overlap.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("priority")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets relative priority of entity compared to other entities with 0 being highest priority.
+            </summary>
+        <value>Relative priority of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public string Role { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
+      <MemberSignature Language="F#" Value="member this.Role : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("role")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the role the entity played in utterance.
+            </summary>
+        <value>Role of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Score">
+      <MemberSignature Language="C#" Value="public double Score { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Score" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Score" />
+      <MemberSignature Language="VB.NET" Value="Public Property Score As Double" />
+      <MemberSignature Language="F#" Value="member this.Score : double with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Score" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("score")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets score 0-1.0 of entity.
+            </summary>
+        <value>Score of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public int Start { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Start" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As Integer" />
+      <MemberSignature Language="F#" Value="member this.Start : int with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("start")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets where entity starts in utterance.
+            </summary>
+        <value>Start of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets original text that led to entity.
+            </summary>
+        <value>Text of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityInfo.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of entity.
+            </summary>
+        <value>Type of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("value")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets value of entity.
+            </summary>
+        <value>Value of entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhenRecognized">
+      <MemberSignature Language="C#" Value="public uint WhenRecognized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 WhenRecognized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.WhenRecognized" />
+      <MemberSignature Language="VB.NET" Value="Public Property WhenRecognized As UInteger" />
+      <MemberSignature Language="F#" Value="member this.WhenRecognized : uint32 with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityInfo.WhenRecognized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("whenRecognized")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets event counter when entity was recognized.
+            </summary>
+        <value>Event counter when entity was recognized.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -189,6 +189,34 @@ You now have an Azure AD application configured.
 
 The next step is to register the Azure AD application that you just created with the bot.
 
+# [Azure AD v2](#tab/aadv2)
+
+#### Azure AD v2
+
+1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal][azure-portal].
+1. Click **Settings**.
+1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
+1. Fill in the form as follows:
+
+    1. For **Name**, enter a name for your connection. You'll use it in your bot code.
+    1. For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
+    1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
+    1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
+    1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
+
+        - When creating the Azure AD app if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+
+        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
+
+    1. For **Scopes**, enter the names of the permission you chose from application registration:
+       `Mail.Read Mail.Send openid profile User.Read User.ReadBasic.All`.
+
+        > [!NOTE]
+        > For Azure AD v2, **Scopes** field takes a case-sensitive, space-separated list of values.
+
+1. Click **Save**.
+
 # [Azure AD v1](#tab/aadv1)
 
 #### Azure AD v1
@@ -206,41 +234,13 @@ The next step is to register the Azure AD application that you just created with
     1. For **Login URL**, enter `https://login.microsoftonline.com`.
     1.For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign follow these criteria:
 
-        - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the Azure AD app.
-        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - When creating the Azure AD app if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
+        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
-       This will be the tenant associated with the users who can be authenticated.
+       This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
 
     1. For **Resource URL**, enter `https://graph.microsoft.com/`.
     1. Leave **Scopes** blank.
-
-1. Click **Save**.
-
-# [Azure AD v2](#tab/aadv2)
-
-#### Azure AD v2
-
-1. Navigate to your bot's Bot Channels Registration page on the [Azure Portal][azure-portal].
-1. Click **Settings**.
-1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
-1. Fill in the form as follows:
-
-    1. For **Name**, enter a name for your connection. You'll use it in your bot code.
-    1. For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
-    1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
-    1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
-    1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
-
-        - When creating the Azure AD app if you selected either *Accounts in this organizational directory only (Microsoft only - Single tenant)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
-        - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
-
-       This will be the tenant associated with the users who can be authenticated.
-
-    1. For **Scopes**, enter the names of the permission you chose from application registration:
-       `Mail.Read Mail.Send openid profile User.Read User.ReadBasic.All`.
-
-        > [!NOTE]
-        > For Azure AD v2, **Scopes** field takes a case-sensitive, space-separated list of values.
 
 1. Click **Save**.
 
@@ -320,6 +320,12 @@ as shown in [Configure the emulator for authentication](../bot-service-debug-emu
 ### Testing
 
 After you have configured the authentication mechanism, you can perform the actual bot sample testing.
+
+> [!NOTE]
+> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using the Direct Line enhanced security that allows the setting up of *valid* domains that are allowed to be authenticated.
+>
+> See [Connect a bot to Direct Line](~/bot-service-channel-connect-directline.md#configure-settings) and [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
+
 
 1. Run the bot sample locally on your machine.
 1. Start the emulator.
