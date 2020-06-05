@@ -70,7 +70,7 @@ With the resource explorer you can create resource objects that contain all of t
 
 ### The resource object
 
-The resource explorer's `GetResource` method reads the declarative file into a resource object.  The resource object contains the information about the declarative file and can be used by any process that needs to reference it, such as the type loader.
+The resource explorer's _get resource_ method reads the declarative file into a resource object.  The resource object contains the information about the declarative file and can be used by any process that needs to reference it, such as the type loader.
 
 # [C#](#tab/csharp)
 
