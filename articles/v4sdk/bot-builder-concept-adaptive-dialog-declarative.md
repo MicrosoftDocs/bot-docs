@@ -64,7 +64,7 @@ Adaptive dialog declarative files that have the `.lg` extension are described in
 
 ## The resource explorer
 
-The resource explorer provides the tools you need to import declarative adaptive dialog files into your bot and use them as if they were adaptive dialogs hard coded directly in your bots source code.
+The resource explorer provides the tools you need to import declarative adaptive dialog files into your bot and use them as if they were adaptive dialogs defined directly in your bot source code.
 
 With the resource explorer you can create resource objects that contain all of the relevant information about the declarative files required to create adaptive dialogs at run time, which is done using the resource explorer's type loader that imports files with the `.dialog` and `.lg` extensions.
 
