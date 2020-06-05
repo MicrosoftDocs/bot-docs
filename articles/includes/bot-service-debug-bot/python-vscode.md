@@ -1,4 +1,4 @@
-## Debug a Python  bot using breakpoints in Visual Studio Code
+### Debug a Python  bot using breakpoints in Visual Studio Code
 
 In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. See also [Create a bot with the Bot Framework SDK for Python](~/python/bot-builder-python-quickstart.md).
 
