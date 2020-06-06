@@ -123,9 +123,6 @@ Adaptive dialogs support the following recognizers:
 * [Multi-language recognizer](#multi-language-recognizer)
 * [CrossTrained recognizer set](#cross-trained-recognizer-set)
 * [RecognizerSet](#recognizer-set)
-<!--* [Value recognizer](#value-recognizer)-->
-
-<!--TODO P2: Post R9, refactor the linked content out of this article and into one or more reference-like articles.-->
 
 ### RegexRecognizer
 
