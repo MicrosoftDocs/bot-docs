@@ -11,14 +11,6 @@ ms.date: 06/08/2020
 
 # Background and availability
 
-- [Why did Microsoft develop the Bot Framework?](#Why-did-Microsoft-develop-the-Bot-Framework?)
-- [What is the v4 SDK?](#What-is-the-v4-SDK?)
-- [How to run a bot offline?](#How-to-run-a-bot-offline?)
-- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](#Bot-Framework-SDK-Version-3-Lifetime-Support-and-Deprecation-Notice)
-- [How can I migrate Azure Bot Service from one region to another?](#How-can-I-migrate-Azure-Bot-Service-from-one-region-to-another?)
-
----
-
 ## Why did Microsoft develop the Bot Framework?
 
 We created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.
