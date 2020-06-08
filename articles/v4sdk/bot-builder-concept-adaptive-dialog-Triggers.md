@@ -191,7 +191,7 @@ All activity events have a base event of `ActivityReceived` and are further refi
 
 ##### OnConversationUpdateActivity
 
-The `OnConversationUpdateActivity` trigger is one of the triggers that enable you to handle an _activity received_ event. The `OnConversationUpdateActivity` trigger will only fire when the following condition is met: _ActivityTypes.ConversationUpdate_.
+The `OnConversationUpdateActivity` trigger is one of the triggers that enable you to handle an _activity received_ event. The `OnConversationUpdateActivity` trigger will only fire when the following condition is met: _ActivityTypes.conversationUpdate_.
 
 The following code snippet demonstrates how you can create an `OnConversationUpdateActivity` trigger:
 
