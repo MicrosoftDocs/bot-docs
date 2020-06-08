@@ -91,7 +91,7 @@ If your template needs specific properties to be passed for resolution/expansion
 
 ## Multi-lingual generation and language fallback policy
 
-Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample) for an example of how to add multiple languages, also known as language fallback, to your bot.
+Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. See the **multi-turn prompt with language fallback** sample ([**C#**](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample)) for an example of how to add multiple languages, also known as language fallback, to your bot.
 
 <!--
 ## Grammar check and correction 

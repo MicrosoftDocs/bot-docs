@@ -13,6 +13,8 @@ monikerRange: "azure-bot-service-3.0"
 
 # Debug a bot
 
+[!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
+
 This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [Javascript](~/javascript/bot-builder-javascript-quickstart.md), or [Python](~/python/bot-builder-python-quickstart.md) bot created in the quickstart.
 
 > [!NOTE]
