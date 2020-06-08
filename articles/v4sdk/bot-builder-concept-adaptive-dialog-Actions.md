@@ -473,7 +473,7 @@ new BeginDialog("BookFlightDialog")
 ```
 
 > [!TIP]
-> Just like when invoking any dialog in the bot framework SDK, when calling `BeginDialog` to invoke an adaptive dialog, you can use the `options` parameter to pass input information for the dialog.
+> Just like when invoking any dialog in the Bot Framework SDK, when calling `BeginDialog` to invoke an adaptive dialog, you can use the `options` parameter to pass input information for the dialog.
 
 #### EndDialog
 

@@ -28,6 +28,9 @@ references:
 - uid: Antlr4.Runtime.Misc.NotNullAttribute
   fullName: Antlr4.Runtime.Misc.NotNullAttribute
   name: NotNullAttribute
+- uid: Antlr4.Runtime.Parser
+  fullName: Antlr4.Runtime.Parser
+  name: Parser
 - uid: Antlr4.Runtime.ParserRuleContext
   fullName: Antlr4.Runtime.ParserRuleContext
   name: ParserRuleContext
@@ -46,6 +49,9 @@ references:
 - uid: Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)
   fullName: Antlr4.Runtime.Tree.AbstractParseTreeVisitor<T>.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)
   name: VisitChildren(IRuleNode)
+- uid: Antlr4.Runtime.Tree.IParseTree
+  fullName: Antlr4.Runtime.Tree.IParseTree
+  name: IParseTree
 - uid: Antlr4.Runtime.Tree.IParseTreeListener
   fullName: Antlr4.Runtime.Tree.IParseTreeListener
   name: IParseTreeListener
