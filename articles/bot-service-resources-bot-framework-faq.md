@@ -15,7 +15,7 @@ This article contains answers to some frequently asked questions about the Bot F
 
 ## Background and availability
 
-> [!NOTE]
+> [!WARNING]
 > Moved to `bot-service-resources-faq-availability.md`
 
 ### Why did Microsoft develop the Bot Framework?
@@ -88,7 +88,7 @@ For more information please refer to the following references:
 Azure Bot Service does not support region move. It's a global service that is not tied to any specific region.
 
 
-> [!NOTE]
+> [!WARNING]
 > Move to `bot-service-resources-faq-channels.md`
 
 ## Channels
@@ -134,7 +134,7 @@ options.ChannelProvider = new ConfigurationChannelProvider();
 You can find more information concerning Govenment Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
 
 
-> [!NOTE]
+> [!WARNING]
 > Move to `bot-service-resources-faq-security.md`
 
 ## Security and Privacy
@@ -199,7 +199,7 @@ LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requir
 
 Note that these are outbound connections from the bot to the Internet. There is not a list of IP Addresses or DNS names that the Bot Framework Connector Service will use to talk to the bot. Inbound IP Address whitelisting is not supported.
 
-> [!NOTE]
+> [!WARNING]
 > Move to `bot-service-resources-faq-ratelimiting.md`
 
 ## Rate limiting
@@ -218,7 +218,7 @@ It can happen if:
 ### What are the rate limits?
 We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
 
-> [!NOTE]
+> [!WARNING]
 > Move to `bot-service-resources-faq-sdk.md`
 
 ## Bot Framework SDK
@@ -322,7 +322,7 @@ Direct Line is suitable for:
 * Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 * Service-to-service applications
 
-> [!NOTE]
+> [!WARNING]
 > Moved to `bot-service-resources-faq-registration.md`
 
 ## App Registration

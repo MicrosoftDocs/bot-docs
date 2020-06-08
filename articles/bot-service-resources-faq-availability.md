@@ -11,6 +11,14 @@ ms.date: 06/08/2020
 
 # Background and availability
 
+- [Why did Microsoft develop the Bot Framework?](#Why-did-Microsoft-develop-the-Bot-Framework?)
+- [What is the v4 SDK?](#What-is-the-v4-SDK?)
+- [How to run a bot offline?](#How-to-run-a-bot-offline?)
+- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](#Bot-Framework-SDK-Version-3-Lifetime-Support-and-Deprecation-Notice)
+- [How can I migrate Azure Bot Service from one region to another?](#How-can-I-migrate-Azure-Bot-Service-from-one-region-to-another?)
+
+---
+
 ## Why did Microsoft develop the Bot Framework?
 
 We created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.
@@ -18,7 +26,7 @@ We created the Bot Framework to make it easier for developers to build and conne
 ## What is the v4 SDK?
 Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
 
-## Running a bot offline
+## How to run a bot offline?
 
 <!-- WIP -->
 Before talking about the use of a bot offline, meaning a bot not deployed on Azure or on some other host services but on premises, let's clarify a few points.
@@ -42,6 +50,7 @@ For more information, see:
 - [Container support in Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support)
 
 ## Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice
+
 Microsoft Bot Framework SDK V4 was released in September 2018, and since then we have shipped a few dot-release improvements. As announced previously, the V3 SDK is being retired. Accordingly, there will be no more development in V3 repositories. **Existing V3 bot workloads will continue to run without interruption. We have no plans to disrupt any running workloads**.
 
 As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure Bot Service. Bot Builder SDK V3 will only be supported  for critical security bug fixes, connector, and protocol layer compatibility updates.
