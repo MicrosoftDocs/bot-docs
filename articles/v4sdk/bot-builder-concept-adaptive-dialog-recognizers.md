@@ -113,7 +113,7 @@ https://github.com/MicrosoftDocs/bot-docs-pr/pull/2123#discussion_r423237812
 
 ## Recognizer types
 
-The bot framework SDK provides over a half dozen different recognizers, and the ability to create your own.
+The Bot Framework SDK provides over a half dozen different recognizers, and the ability to create your own.
 
 Adaptive dialogs support the following recognizers:
 
@@ -134,7 +134,7 @@ The _RegEx recognizer_ gives you the ability to extract intent and entity data f
 `RegexRecognizer` consist primarily of:
 
 * `Intents`. The `Intents` object contains a list of `IntentPattern` objects and these `IntentPattern` objects consist of an `Intent` property which is the name of the intent, and a `Pattern` property that contains a regular expression used to parse the utterance to determine intent.
-* `Entities`. The `Entities` object contains a list of `EntityRecognizer` objects.  The bot framework SDK defines several `EntityRecognizer` classes to help you determine the entities contained in a users utterance:
+* `Entities`. The `Entities` object contains a list of `EntityRecognizer` objects.  The Bot Framework SDK defines several `EntityRecognizer` classes to help you determine the entities contained in a users utterance:
   * AgeEntityRecognizer
   * ConfirmationEntityRecognizer
   * CurrencyEntityRecognizer
