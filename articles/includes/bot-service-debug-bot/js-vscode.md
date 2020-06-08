@@ -1,4 +1,4 @@
-### Debug a JavaScript bot using breakpoints in Visual Studio Code
+### To set breakpoints in Visual Studio Code
 
 In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. To set breakpoints in VS Code, do the following:
 

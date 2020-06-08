@@ -1,4 +1,4 @@
-### Debug a C# bot using breakpoints in Visual Studio
+### To set breakpoints in Visual Studio
 
 In Visual Studio (VS), you can set breakpoints and run the bot in debug mode to step through your code. To set breakpoints in VS, do the following:
 
