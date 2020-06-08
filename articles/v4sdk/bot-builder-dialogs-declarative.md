@@ -118,7 +118,7 @@ This creates a file named App.Schema in the same directory that the command was 
 ---
 
 > [!TIP]
-> If the `"$schema` keyword is missing, or points to an invalid or non-existent file you will not get any warnings or errors and it will not impact the functionality of your bot when running, however a valid App.Schema file is required for [IntelliSense][intelliSense] to work with any of the declarative assets.
+> If the `"$schema` keyword is missing, or points to an invalid or non-existent file you will not get any warnings or errors and it will not impact the functionality of your bot when running, however a valid App.Schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
 
 ## Add references to declarative components
 
