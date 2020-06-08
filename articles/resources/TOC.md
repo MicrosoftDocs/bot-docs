@@ -6,7 +6,9 @@
 # WebChat
 ## [Overview](../v4sdk/bot-builder-webchat-overview.md)
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
-# [FAQ](../bot-service-resources-bot-framework-faq.md)
+# [FAQ]
+## [FAQ current](../bot-service-resources-bot-framework-faq.md)
+## [FAQ availability](../bot-service-resources-faq-availability.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Channel reference](../bot-service-channels-reference.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)

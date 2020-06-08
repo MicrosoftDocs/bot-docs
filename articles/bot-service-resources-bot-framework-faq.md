@@ -15,6 +15,9 @@ This article contains answers to some frequently asked questions about the Bot F
 
 ## Background and availability
 
+> [!NOTE]
+> Moved to `bot-service-resources-faq-availability.md`
+
 ### Why did Microsoft develop the Bot Framework?
 
 We created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.
@@ -28,7 +31,7 @@ Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Fra
 Before talking about the use of a bot offline, meaning a bot not deployed on Azure or on some other host services but on premises, let's clarify a few points.
 
 - A bot is a web service that does not have a UI, so the user must interact with it via other means, in the form of channels, which use the [Bot Framework Service](rest-api/bot-framework-rest-connector-concepts.md). The connector functions as a *proxy* to relay messages between a client and the bot.
-- The **connector** is a global application hosted on Azure nodes and spread geographically for availability and scalability. 
+- The **connector** is a global application hosted on Azure nodes and spread geographically for availability and scalability.
 - You use the [Bot Channel Registration](bot-service-quickstart-registration.md) to register the bot with the connector.
     >[!NOTE]
     > The bot must have its endpoint publicly reachable by the connector.
@@ -48,7 +51,7 @@ For more information, see:
 ## Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice
 Microsoft Bot Framework SDK V4 was released in September 2018, and since then we have shipped a few dot-release improvements. As announced previously, the V3 SDK is being retired. Accordingly, there will be no more development in V3 repositories. **Existing V3 bot workloads will continue to run without interruption. We have no plans to disrupt any running workloads**.
 
-As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure Bot Service. Bot Builder SDK V3 will only be supported  for critical security bug fixes, connector, and protocol layer compatibility updates.  
+As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure Bot Service. Bot Builder SDK V3 will only be supported  for critical security bug fixes, connector, and protocol layer compatibility updates.
 
 All new features and capabilities are developed exclusively on [Bot Framework SDK V4](https://github.com/microsoft/botframework-sdk).  Customers are encouraged to migrate their bots to V4 as soon as possible.
 
@@ -59,7 +62,7 @@ For more information please refer to the following references:
 * [Essential Migration Guidance](https://aka.ms/bf-migration-overview)
 * Primary V4 Repositories to develop Bot Framework bots
   * [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
-  * [Botbuilder for JS](https://github.com/microsoft/botbuilder-js) 
+  * [Botbuilder for JS](https://github.com/microsoft/botbuilder-js)
 * QnA Maker Libraries were replaced with the following V4 libraries:
   * [Libraries for dotnet](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.AI.QnA)
   * [Libraries for JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-ai/src/qnaMaker.ts)
@@ -70,24 +73,28 @@ For more information please refer to the following references:
 ### V3 Status Summary
 
 #### ABS Service
-1.    The ABS service side will continue to support running V3 bots with no planned end of life and any running bots will not be disrupted. 
+1.    The ABS service side will continue to support running V3 bots with no planned end of life and any running bots will not be disrupted.
 2.    Channels will remain compatible with V3 with no disruption or end of life plan.
 3.    Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
 
 #### SDK and Tools
 1.    We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
 2.    SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we're already "there").
-3.    We do not prevent anyone from running old tools to manage their V3 bots. 
+3.    We do not prevent anyone from running old tools to manage their V3 bots.
 
 
 ## How can I migrate Azure Bot Service from one region to another?
 
 Azure Bot Service does not support region move. It's a global service that is not tied to any specific region.
 
+
+> [!NOTE]
+> Move to `bot-service-resources-faq-channels.md`
+
 ## Channels
 ### When will you add more conversation experiences to the Bot Framework?
 
-We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.  
+We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.
 If you would like a specific channel added to the framework, [let us know][Support].
 
 ### I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?
@@ -107,7 +114,7 @@ There are 2 major steps required to create a bot that uses a US Government data 
 
 ```json
 {
-  "MicrosoftAppId": "", 
+  "MicrosoftAppId": "",
   "MicrosoftAppPassword": "",
   "ChannelService": "https://botframework.azure.us"
 }
@@ -116,7 +123,7 @@ There are 2 major steps required to create a bot that uses a US Government data 
 
 - For versions 4.3 and above, in your ConfigureServices method, you need to create a ConfigurationChannelProvider instance. When using the BotFrameworkHttpAdapter class, you inject this as singleton into the service collection like this:
 
-```csharp  
+```csharp
 services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
 ```
 - For versions prior to 4.3, in your ConfigureServices method, find the AddBot method. When setting the options, make sure you add:
@@ -125,6 +132,10 @@ services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
 options.ChannelProvider = new ConfigurationChannelProvider();
 ```
 You can find more information concerning Govenment Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
+
+
+> [!NOTE]
+> Move to `bot-service-resources-faq-security.md`
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
@@ -159,7 +170,7 @@ If you have an outbound firewall blocking traffic from your bot to the Internet,
 
 ### Can I block all traffic to my bot except traffic from the Bot Framework Service?
 Bot Framework Services are hosted in Azure datacenters world-wide and the list of Azure IPs is constantly changing. Whitelisting certain IP addresses may work one day and break the next as the Azure IP Addresses change.
- 
+
 ### Which RBAC role is required to create and deploy a bot?
 
 Creating a bot in the Azure portal requires Contributor access either in the subscription or in a specific resource group. A user with the *Contributor* role in a resource group can create a new bot in that specific resource group. A user in the *Contributor* role for a subscription can create a bot in a new or existing resource group.
@@ -176,7 +187,7 @@ Using the Azure CLI, a role-based access control approach can support custom rol
   "Microsoft.Insights/components/*"
 
 LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requires Search permissions. When creating a custom role, remember that any inherited *deny* permissions will supercede these *allow* permissions.
- 
+
 ### What keeps my bot secure from clients impersonating the Bot Framework Service?
 1. All authentic Bot Framework requests are accompanied by a JWT token whoes cryptographic signature can be verified by following the [authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#bot-to-connector) guide. The token is designed so attackers cannot impersonate trusted services.
 
@@ -188,12 +199,15 @@ LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requir
 
 Note that these are outbound connections from the bot to the Internet. There is not a list of IP Addresses or DNS names that the Bot Framework Connector Service will use to talk to the bot. Inbound IP Address whitelisting is not supported.
 
+> [!NOTE]
+> Move to `bot-service-resources-faq-ratelimiting.md`
+
 ## Rate limiting
 ### What is rate limiting?
 The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we've added rate limits (also known as throttling) to our endpoints. By enforcing a rate limit, we can restrict the frequency with which a client or bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period. Please note that the purpose of rate-limiting is not to cap the total volume for a bot. It is designed to prevent abuse of the conversational infrastructure that does not follow human conversation patterns. For example, flooding two conversations with more content than two human could ever consume.
 
 ### How will I know if I'm impacted?
-It is unlikely you'll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages. 
+It is unlikely you'll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages.
 
 ### How does rate limiting occur?
 It can happen if:
@@ -203,6 +217,9 @@ It can happen if:
 
 ### What are the rate limits?
 We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
+
+> [!NOTE]
+> Move to `bot-service-resources-faq-sdk.md`
 
 ## Bot Framework SDK
 ## Why doesn't the Typing activity do anything?
@@ -275,7 +292,7 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 * [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
 * [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
 * [LUIS documentation](/azure/cognitive-services/luis/)
-* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS) 
+* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)
 
 
 ## What are some community-authored dialogs?
@@ -305,6 +322,8 @@ Direct Line is suitable for:
 * Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 * Service-to-service applications
 
+> [!NOTE]
+> Moved to `bot-service-resources-faq-registration.md`
 
 ## App Registration
 
@@ -312,7 +331,7 @@ Direct Line is suitable for:
 
 Creating your own App Registration will be necessary for situations like the following:
 
-- You created your bot in the Bot Framework portal (such as https://dev.botframework.com/bots/new) 
+- You created your bot in the Bot Framework portal (such as https://dev.botframework.com/bots/new)
 - You are unable to make app registrations in your organization and need another party to create the App ID for the bot you're building
 - You otherwise need to manually create your own App ID (and password)
 
@@ -336,16 +355,16 @@ To create your own App ID, follow the steps below.
 
     ![application id](media/app-registration/app-id.png)
 
-If you're creating your bot through the Bot Framework portal, then you're done setting up your app registration; the secret will be generated automatically. 
+If you're creating your bot through the Bot Framework portal, then you're done setting up your app registration; the secret will be generated automatically.
 
-If you're making your bot in the Azure portal, you need to generate a secret for your app registration. 
+If you're making your bot in the Azure portal, you need to generate a secret for your app registration.
 
 1. Click on **Certificates & secrets** in the left navigation column of your app registration's blade.
-2. In that blade, click the **New client secret** button. In the dialog that pops up, enter an optional description for the secret and select **Never** from the Expires radio button group. 
+2. In that blade, click the **New client secret** button. In the dialog that pops up, enter an optional description for the secret and select **Never** from the Expires radio button group.
 
     ![new secret](media/app-registration/new-secret.png)
 
-3. Copy your secret's value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation. 
+3. Copy your secret's value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation.
 
     > [!NOTE]
     > The secret will only be visible while on this blade, and you won't be able to retreive it after you leave that page. Be sure to copy it somewhere safe.
