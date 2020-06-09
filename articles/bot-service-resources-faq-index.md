@@ -55,3 +55,7 @@ ms.date: 06/08/2020
 - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
 - [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)
 - [What keeps my bot secure from clients impersonating the Bot Framework Service?](bot-service-resources-faq-security.md#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)
+
+## Azure
+
+- [I need to manually create my App Registration. How do I create my own App Registration?](bot-service-resources-faq-azure.md#I-need-to-manually-create-my-app-registration.-how-do-i-create-my-own-app-registration)

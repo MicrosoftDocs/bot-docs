@@ -12,6 +12,7 @@
 ## [FAQ general](../bot-service-resources-faq-general.md)
 ## [FAQ ecosystem](../bot-service-resources-faq-ecosystem.md)
 ## [FAQ security](../bot-service-resources-faq-security.md)
+## [FAQ azure](../bot-service-resources-faq-azure.md)
 ## [FAQ current](../bot-service-resources-bot-framework-faq.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Channel reference](../bot-service-channels-reference.md)
