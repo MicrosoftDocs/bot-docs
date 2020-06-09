@@ -42,12 +42,13 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 
 ### 4. Create the bot application service
 
-When creating the bot application service, you can deploy your bot in a new or in an existing resource group. Choose the option that works best for you.
+When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
+
+* [Deploy via ARM template with new resource group](#deploy-via-arm-template-with-new-resource-group)
+* [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
 
 > [!IMPORTANT]
 > Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
-
-Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to `template-file`.
 
 #### **Deploy via ARM template (with **new** Resource Group)**
 
@@ -55,11 +56,10 @@ Make sure that you have the correct path to your bot project ARM deployment temp
 [!INCLUDE [ARM with new resource group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
 
 
-#### **Deploy via ARM template (with **existing**  Resource Group)**
+#### **Deploy via ARM template (with **existing** Resource Group)**
 
 [!INCLUDE [ARM with existing resource group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
 
----
 
 ### 5. Prepare your code for deployment
 
