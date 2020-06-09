@@ -18,3 +18,11 @@ ms.date: 06/08/2020
 - [How to run a bot offline?](bot-service-resources-faq-availability.md#how-to-run-a-bot-offline)
 - [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 - [How can I migrate Azure Bot Service from one region to another?](bot-service-resources-faq-availability.md#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
+
+
+## Channels
+
+- [When will you add more conversation experiences to the Bot Framework?](bot-service-resources-faq-channels.md#when-will-you-add-more-conversation-experiences-to-the-bot-framework)
+- [I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?](bot-service-resources-faq-channels.md#i-have-a-communication-channel-id-like-to-be-configurable-with-bot-framework-can-i-work-with-microsoft-to-do-that)
+- [If I want to create a bot for Microsoft Teams, what tools and services should I use?](bot-service-resources-faq-channels.md#if-i-want-to-create-a-bot-for-microsoft-teams-what-tools-and-services-should-i-use)
+- [How do I create a bot that uses the US Government data center?](bot-service-resources-faq-channels.md#how-do-i-create-a-bot-that-uses-the-us-government-data-center)
