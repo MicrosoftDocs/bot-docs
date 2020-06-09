@@ -8,10 +8,11 @@
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
 # FAQ
 ## [FAQ Index](../bot-service-resources-faq-index.md)
-## [FAQ current](../bot-service-resources-bot-framework-faq.md)
+## [FAQ general](../bot-service-resources-faq-general.md)
 ## [FAQ availability](../bot-service-resources-faq-availability.md)
 ## [FAQ channels](../bot-service-resources-faq-channels.md)
 ## [FAQ security](../bot-service-resources-faq-security.md)
+## [FAQ current](../bot-service-resources-bot-framework-faq.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Channel reference](../bot-service-channels-reference.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)

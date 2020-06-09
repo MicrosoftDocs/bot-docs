@@ -19,6 +19,29 @@ ms.date: 06/08/2020
 - [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 - [How can I migrate Azure Bot Service from one region to another?](bot-service-resources-faq-availability.md#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
 
+# Bot Framework general
+
+<!--
+
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+- [ ](bot-service-resources-faq-general.md#)
+
+-->
+
 ## Channels
 
 - [When will you add more conversation experiences to the Bot Framework?](bot-service-resources-faq-channels.md#when-will-you-add-more-conversation-experiences-to-the-bot-framework)

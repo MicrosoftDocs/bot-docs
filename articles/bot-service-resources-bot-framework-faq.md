@@ -136,7 +136,7 @@ You can find more information concerning Govenment Services [here](https://docs.
 
 
 > [!WARNING]
-> Move to `bot-service-resources-faq-security.md` :heavy_check_mark:
+> Moved to `bot-service-resources-faq-security.md` :heavy_check_mark:
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
@@ -220,10 +220,12 @@ It can happen if:
 We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
 
 > [!WARNING]
-> Move to `bot-service-resources-faq-sdk.md`
+> Moved to `bot-service-resources-faq-general.md` :heavy_check_mark:
 
 ## Bot Framework SDK
+
 ## Why doesn't the Typing activity do anything?
+
 Some channels do not support transient typing updates in their client.
 
 ## What is the difference between the Connector library and Builder library in the SDK?
