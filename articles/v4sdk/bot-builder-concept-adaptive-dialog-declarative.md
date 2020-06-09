@@ -220,7 +220,7 @@ Activity triggers enable you to associate actions to any incoming activity from 
 |`Microsoft.OnInvokeActivity`            | `OnInvokeActivity`            | Actions to perform on receipt of an activity with type `Invoke`.            |
 |`Microsoft.OnTypingActivity`            | `OnTypingActivity`            | Actions to perform on receipt of an activity with type `Typing`.            |
 
-### Message events
+#### Message events
 
 **Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
 
@@ -233,7 +233,7 @@ Message events are a type of activity event and as such, all message events have
 |`Microsoft.OnMessageReactionActivity` | `OnMessageReactionActivity` | Actions to perform on receipt of an activity with type `MessageReaction`. |
 |`Microsoft.OnMessageUpdateActivity`   | `OnMessageUpdateActivity`   | Actions to perform on receipt of an activity with type `MessageUpdate`.   |
 
-### Custom events
+#### Custom events
 
 You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is a type of `OnDialogEvent` trigger, where its _event_ property to the same value as the emit event's _event name_ property.
 
@@ -243,7 +243,6 @@ You can emit your own events by adding the [EmitEvent][13] action to any trigger
 | `$kind` value | Trigger name  | Description                                                                                                                               |
 | ----------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft.OnDialogEvent | OnDialogEvent | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
-
 
 ### Actions
 
@@ -280,7 +279,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 | Continue a loop        |`Microsoft.ContinueLoop`   | [ContinueLoop][continue-loop] | Continue the loop.                                                                               |
 | Goto a different Action|`Microsoft.GotoAction`     | [GotoAction][goto-action]   | Immediately goes to the specified action and continues execution. Determined by `actionId`.        |
 
-### Dialog management
+#### Dialog management
 
 | `$kind` value           | Action Name                        | What this action does                                                                                                   |
 | ----------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -336,6 +335,57 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 [codeaction]: bot-builder-concept-adaptive-dialog-Actions.md#codeaction
 [editactions]: bot-builder-concept-adaptive-dialog-Actions.md#editactions
 
+### Recognizers
+
+The bot framework SDK provides over a half dozen different recognizers, you specify which recognizer to use in the .dialog file, for example:
+
+```json
+{
+    "$schema": "../app.schema",
+    "$kind": "Microsoft.AdaptiveDialog",
+    "recognizer": {
+        "$kind": "Microsoft.RegexRecognizer",
+        "intents": [
+            {
+                "intent": "JokeIntent",
+                "pattern": "(?i)joke"
+            },
+            {
+                "intent": "FortuneTellerIntent",
+                "pattern": "(?i)fortune|future"
+            },
+            {
+                "intent": "CancelIntent",
+                "pattern": "(?i)cancel"
+            }
+        ]
+    },
+    ...
+}
+```
+
+Adaptive dialogs support the following recognizers:
+
+- [RegexRecognizer](bot-builder-concept-adaptive-dialog-recognizers.md#regexrecognizer)
+- [LUIS recognizer](bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer)
+- [QnA Maker recognizer](bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer)
+- [Multi-language recognizer](bot-builder-concept-adaptive-dialog-recognizers.md#multi-language-recognizer)
+- [CrossTrained recognizer set](bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set)
+- [RecognizerSet](bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-set)
+
+### Generators
+
+The [generator][generator] value contains a link to the .lg file associated with the adaptive dialog that this .dialog file defines. For example:
+
+```json
+{
+    "$schema": "../app.schema",
+    "$kind": "Microsoft.AdaptiveDialog",
+    "generator": "MyBotGeneratorFile.lg",
+    ...
+}
+```
+
 ## Additional information
 
 - How to [Create a bot using declarative adaptive dialogs](bot-builder-dialogs-declarative.md)
@@ -354,6 +404,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 [recognizer-type]: bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-type
 [intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [entity]: bot-builder-concept-adaptive-dialog-recognizers.md#entity
+[generator]: bot-builder-concept-adaptive-dialog-generators.md
 
 <!-- (Triggers) Recognizer event triggers  -->
 [cross-trained-recognizer-set]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
