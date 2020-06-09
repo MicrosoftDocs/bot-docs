@@ -1,6 +1,6 @@
 ---
-title: Bot Service Frequently Asked Questions Availability - Bot Service
-description: Frequently Asked Questions about Bot Framework and when availability.
+title: Bot Framework Frequently Asked Questions Availability - Bot Service
+description: Frequently Asked Questions about Bot Framework background and availability.
 author: kamrani
 ms.author: kamrani
 manager: kamrani

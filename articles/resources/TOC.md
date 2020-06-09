@@ -7,6 +7,7 @@
 ## [Overview](../v4sdk/bot-builder-webchat-overview.md)
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
 # FAQ
+## [FAQ Index](../bot-service-resources-faq-index.md)
 ## [FAQ current](../bot-service-resources-bot-framework-faq.md)
 ## [FAQ availability](../bot-service-resources-faq-availability.md)
 # [Get support](../bot-service-resources-links-help.md)
