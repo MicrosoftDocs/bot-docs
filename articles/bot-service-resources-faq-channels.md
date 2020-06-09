@@ -1,5 +1,5 @@
 ---
-title: Bot Framework Frequently Asked Questions Availability - Bot Service
+title: Bot Framework Frequently Asked Questions Channels - Bot Service
 description: Frequently Asked Questions about Bot Framework channels.
 author: kamrani
 ms.author: kamrani

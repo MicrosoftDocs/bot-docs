@@ -11,6 +11,7 @@
 ## [FAQ current](../bot-service-resources-bot-framework-faq.md)
 ## [FAQ availability](../bot-service-resources-faq-availability.md)
 ## [FAQ channels](../bot-service-resources-faq-channels.md)
+## [FAQ security](../bot-service-resources-faq-security.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Channel reference](../bot-service-channels-reference.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
