@@ -16,7 +16,7 @@ This article contains answers to some frequently asked questions about the Bot F
 ## Background and availability
 
 > [!WARNING]
-> Moved to `bot-service-resources-faq-availability.md`
+> Moved to `bot-service-resources-faq-availability.md` :heavy_check_mark:
 
 ### Why did Microsoft develop the Bot Framework?
 
@@ -89,9 +89,10 @@ Azure Bot Service does not support region move. It's a global service that is no
 
 
 > [!WARNING]
-> Move to `bot-service-resources-faq-channels.md`
+> Moved to `bot-service-resources-faq-channels.md` :heavy_check_mark:
 
 ## Channels
+
 ### When will you add more conversation experiences to the Bot Framework?
 
 We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.
