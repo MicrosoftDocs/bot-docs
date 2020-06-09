@@ -10,6 +10,7 @@
 ## [FAQ Index](../bot-service-resources-faq-index.md)
 ## [FAQ current](../bot-service-resources-bot-framework-faq.md)
 ## [FAQ availability](../bot-service-resources-faq-availability.md)
+## [FAQ channels](../articles\bot-service-resources-faq-channels.md)
 # [Get support](../bot-service-resources-links-help.md)
 # [Channel reference](../bot-service-channels-reference.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
