@@ -94,20 +94,22 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 
 * [ES6 BotBuilder](https://github.com/brene/botbuilder-es6-template) - ES6 Bot Builder template
 
-## Related Services
-### How does the Bot Framework relate to Cognitive Services?
+## What is rate limiting?
 
-Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
+The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we've added rate limits (also known as throttling) to our endpoints. By enforcing a rate limit, we can restrict the frequency with which a client or bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period. Please note that the purpose of rate-limiting is not to cap the total volume for a bot. It is designed to prevent abuse of the conversational infrastructure that does not follow human conversation patterns. For example, flooding two conversations with more content than two human could ever consume.
 
-### What is the Direct Line channel?
+## How will I know if I'm impacted?
 
-Direct Line is a REST API that allows you to add your bot into your service, mobile app, or webpage.
+It is unlikely you'll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages.
 
-You can write a client for the Direct Line API in any language. Simply code to the [Direct Line protocol][DirectLineAPI], generate a secret in the Direct Line configuration page, and talk to your bot from wherever your code lives.
+## How does rate limiting occur?
 
-Direct Line is suitable for:
+It can happen if:
 
-* Mobile apps on iOS, Android, and Windows Phone, and others
-* Desktop applications on Windows, OSX, and more
-* Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
-* Service-to-service applications
+* A bot sends messages too frequently
+* A client of a bot sends messages too frequently
+* Direct Line clients request a new Web Socket too frequently
+
+### What are the rate limits?
+
+We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).

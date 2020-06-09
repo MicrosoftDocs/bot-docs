@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Frequently Asked Questions Channels - Bot Service
-description: Frequently Asked Questions about Bot Framework channels.
+title: Bot Framework Frequently Asked Questions Ecosystem - Bot Service
+description: Frequently Asked Questions about Bot Framework ecosystem.
 author: kamrani
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 06/08/2020
 ---
 
-# Channels
+# Ecosystem
 
 ## When will you add more conversation experiences to the Bot Framework?
 
@@ -51,3 +51,21 @@ services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
 options.ChannelProvider = new ConfigurationChannelProvider();
 ```
 You can find more information concerning Govenment Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
+
+
+## How does the Bot Framework relate to Cognitive Services?
+
+Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
+
+## What is the Direct Line channel?
+
+Direct Line is a REST API that allows you to add your bot into your service, mobile app, or webpage.
+
+You can write a client for the Direct Line API in any language. Simply code to the [Direct Line protocol][DirectLineAPI], generate a secret in the Direct Line configuration page, and talk to your bot from wherever your code lives.
+
+Direct Line is suitable for:
+
+* Mobile apps on iOS, Android, and Windows Phone, and others
+* Desktop applications on Windows, OSX, and more
+* Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
+* Service-to-service applications

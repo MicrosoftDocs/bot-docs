@@ -89,7 +89,7 @@ Azure Bot Service does not support region move. It's a global service that is no
 
 
 > [!WARNING]
-> Moved to `bot-service-resources-faq-channels.md` :heavy_check_mark:
+> Moved to `bot-service-resources-faq-ecosystem.md` :heavy_check_mark:
 
 ## Channels
 
@@ -201,9 +201,10 @@ LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requir
 Note that these are outbound connections from the bot to the Internet. There is not a list of IP Addresses or DNS names that the Bot Framework Connector Service will use to talk to the bot. Inbound IP Address whitelisting is not supported.
 
 > [!WARNING]
-> Move to `bot-service-resources-faq-ratelimiting.md`
+> Move to `bot-service-resources-faq-ecosystem.md` :heavy_check_mark:
 
 ## Rate limiting
+
 ### What is rate limiting?
 The Bot Framework service must protect itself and its customers against abusive call patterns (e.g., denial of service attack), so that no single bot can adversely affect the performance of other bots. To achieve this kind of protection, we've added rate limits (also known as throttling) to our endpoints. By enforcing a rate limit, we can restrict the frequency with which a client or bot can make a specific call. For example: with rate limiting enabled, if a bot wanted to post a large number of activities, it would have to space them out over a time period. Please note that the purpose of rate-limiting is not to cap the total volume for a bot. It is designed to prevent abuse of the conversational infrastructure that does not follow human conversation patterns. For example, flooding two conversations with more content than two human could ever consume.
 
@@ -307,7 +308,12 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 
 * [ES6 BotBuilder](https://github.com/brene/botbuilder-es6-template) - ES6 Bot Builder template
 
+
+> [!WARNING]
+> Moved to `bot-service-resources-faq-ecosystem.md` :heavy_check_mark:
+
 ## Related Services
+
 ### How does the Bot Framework relate to Cognitive Services?
 
 Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
@@ -326,7 +332,7 @@ Direct Line is suitable for:
 * Service-to-service applications
 
 > [!WARNING]
-> Moved to `bot-service-resources-faq-registration.md`
+> Moved to `bot-service-resources-faq-azure.md`
 
 ## App Registration
 
