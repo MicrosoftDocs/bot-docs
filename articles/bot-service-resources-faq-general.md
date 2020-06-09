@@ -61,30 +61,6 @@ An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimisti
 
 The dialog stack and state are stored in bot data bags. For example, you might see the "Precondition Failed" ETag error if your bot is still processing a previous message when it receives a new message for that conversation.
 
-## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
-
-For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
-
-## How can I use more than the maximum number of LUIS intents?
-
-You might consider splitting up your model and calling the LUIS service in series or parallel.
-
-## How can I use more than one LUIS model?
-
-Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
-
-* Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
-* Using multiple LUIS models assumes the scores from different models are comparable, to select the "best matched intent" across multiple models.
-* Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models. You can avoid selecting the "none" intent in this situation; the Bot Framework SDK for Node.js will automatically scale down the score for "none" intents to avoid this issue.
-
-## Where can I get more help on LUIS?
-
-* [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-* [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
-* [LUIS documentation](/azure/cognitive-services/luis/)
-* [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)
-
-
 ## What are some community-authored dialogs?
 
 * [BotAuth](https://www.nuget.org/packages/BotAuth) - Azure Active Directory authentication

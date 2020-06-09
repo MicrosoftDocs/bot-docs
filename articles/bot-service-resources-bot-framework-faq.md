@@ -275,6 +275,9 @@ An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimisti
 
 The dialog stack and state are stored in bot data bags. For example, you might see the "Precondition Failed" ETag error if your bot is still processing a previous message when it receives a new message for that conversation.
 
+> [!WARNING]
+> Moved to `bot-service-resources-faq-ecosystem.md` :heavy_check_mark:
+
 ## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
 
 For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
@@ -308,9 +311,6 @@ Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET suppor
 
 * [ES6 BotBuilder](https://github.com/brene/botbuilder-es6-template) - ES6 Bot Builder template
 
-
-> [!WARNING]
-> Moved to `bot-service-resources-faq-ecosystem.md` :heavy_check_mark:
 
 ## Related Services
 

@@ -10,7 +10,7 @@
 ## [FAQ Index](../bot-service-resources-faq-index.md)
 ## [FAQ availability](../bot-service-resources-faq-availability.md)
 ## [FAQ general](../bot-service-resources-faq-general.md)
-## [FAQ channels](../bot-service-resources-faq-channels.md)
+## [FAQ ecosystem](../bot-service-resources-faq-ecosystem.md)
 ## [FAQ security](../bot-service-resources-faq-security.md)
 ## [FAQ current](../bot-service-resources-bot-framework-faq.md)
 # [Get support](../bot-service-resources-links-help.md)

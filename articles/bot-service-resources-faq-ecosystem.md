@@ -29,6 +29,7 @@ If you already have a great bot and would like to reach the Teams audience, your
 ## How do I create a bot that uses the US Government data center?
 
 There are 2 major steps required to create a bot that uses a US Government data center.
+
 1. Add a "channel provider" setting in your appsettings.json (or the App Service Settings). This needs to be specifically set to this name/value constant: ChannelService = "https://botframework.azure.us". An example using appsetting.json is shown below.
 
 ```json
@@ -38,24 +39,22 @@ There are 2 major steps required to create a bot that uses a US Government data 
   "ChannelService": "https://botframework.azure.us"
 }
 ```
-2. If you are using .NET core, you will need to add a ConfigurationChannelProvider in your startup.cs file. How you do this varies based on which version of the SDK you are using.
+
+1. If you are using .NET core, you will need to add a ConfigurationChannelProvider in your startup.cs file. How you do this varies based on which version of the SDK you are using.
 
 - For versions 4.3 and above, in your ConfigureServices method, you need to create a ConfigurationChannelProvider instance. When using the BotFrameworkHttpAdapter class, you inject this as singleton into the service collection like this:
 
 ```csharp
 services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
 ```
+
 - For versions prior to 4.3, in your ConfigureServices method, find the AddBot method. When setting the options, make sure you add:
 
 ```csharp
 options.ChannelProvider = new ConfigurationChannelProvider();
 ```
-You can find more information concerning Govenment Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
 
-
-## How does the Bot Framework relate to Cognitive Services?
-
-Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
+You can find more information concerning Government Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
 
 ## What is the Direct Line channel?
 
@@ -65,7 +64,34 @@ You can write a client for the Direct Line API in any language. Simply code to t
 
 Direct Line is suitable for:
 
-* Mobile apps on iOS, Android, and Windows Phone, and others
-* Desktop applications on Windows, OSX, and more
-* Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
-* Service-to-service applications
+- Mobile apps on iOS, Android, and Windows Phone, and others
+- Desktop applications on Windows, OSX, and more
+- Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
+- Service-to-service applications
+
+## How does the Bot Framework relate to Cognitive Services?
+
+Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
+
+## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
+
+For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
+
+## How can I use more than the maximum number of LUIS intents?
+
+You might consider splitting up your model and calling the LUIS service in series or parallel.
+
+## How can I use more than one LUIS model?
+
+Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
+
+* Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
+* Using multiple LUIS models assumes the scores from different models are comparable, to select the "best matched intent" across multiple models.
+* Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models. You can avoid selecting the "none" intent in this situation; the Bot Framework SDK for Node.js will automatically scale down the score for "none" intents to avoid this issue.
+
+## Where can I get more help on LUIS?
+
+- [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
+- [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
+- [LUIS documentation](/azure/cognitive-services/luis/)
+- [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)
