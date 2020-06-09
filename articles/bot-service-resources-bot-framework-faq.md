@@ -136,7 +136,7 @@ You can find more information concerning Govenment Services [here](https://docs.
 
 
 > [!WARNING]
-> Move to `bot-service-resources-faq-security.md`
+> Move to `bot-service-resources-faq-security.md` :heavy_check_mark:
 
 ## Security and Privacy
 ### Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
