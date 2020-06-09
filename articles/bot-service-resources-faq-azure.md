@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Frequently Asked Questions Ecosystem - Bot Service
-description: Frequently Asked Questions about Bot Framework ecosystem.
+title: Bot Framework Frequently Asked Questions Azure - Bot Service
+description: Frequently Asked Questions about Bot Framework Azure.
 author: kamrani
 ms.author: kamrani
 manager: kamrani
@@ -9,89 +9,53 @@ ms.service: bot-service
 ms.date: 06/08/2020
 ---
 
-# Ecosystem
+# Azure
 
-## When will you add more conversation experiences to the Bot Framework?
+## I need to manually create my App Registration. How do I create my own App Registration?
 
-We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.
-If you would like a specific channel added to the framework, [let us know][Support].
+Creating your own App Registration will be necessary for situations like the following:
 
-## I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?
+- You created your bot in the Bot Framework portal (such as https://dev.botframework.com/bots/new)
+- You are unable to make app registrations in your organization and need another party to create the App ID for the bot you're building
+- You otherwise need to manually create your own App ID (and password)
 
-We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI]. If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we'd love to hear from you][Support].
+To create your own App ID, follow the steps below.
 
-## If I want to create a bot for Microsoft Teams, what tools and services should I use?
+1. Sign into your [Azure account](https://portal.azure.com). If you don't have an Azure account, you can [sign up for a free account](https://azure.microsoft.com/free/).
+1. Go to [the app registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **New registration** in the action bar at the top.
 
-The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Teams and many other channels. The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences) as well as bot interactions which are Teams-specific such as rich audio and video experiences.
+    ![new registration](media/app-registration/new-registration.png)
 
-If you already have a great bot and would like to reach the Teams audience, your bot can easily be connected to Teams (or any supported channel) via the Bot Framework for REST API (provided it has an internet-accessible REST endpoint).
+1. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
-## How do I create a bot that uses the US Government data center?
+    > [!IMPORTANT]
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
-There are 2 major steps required to create a bot that uses a US Government data center.
+    ![registration details](media/app-registration/registration-details.png)
 
-1. Add a "channel provider" setting in your appsettings.json (or the App Service Settings). This needs to be specifically set to this name/value constant: ChannelService = "https://botframework.azure.us". An example using appsetting.json is shown below.
+1. Click **Register**
 
-```json
-{
-  "MicrosoftAppId": "",
-  "MicrosoftAppPassword": "",
-  "ChannelService": "https://botframework.azure.us"
-}
-```
+    After a few moments, the newly created app registration should open a blade. Copy the *Application (client) ID* in the Overview blade and paste it in to the App ID field.
 
-1. If you are using .NET core, you will need to add a ConfigurationChannelProvider in your startup.cs file. How you do this varies based on which version of the SDK you are using.
+    ![application id](media/app-registration/app-id.png)
 
-- For versions 4.3 and above, in your ConfigureServices method, you need to create a ConfigurationChannelProvider instance. When using the BotFrameworkHttpAdapter class, you inject this as singleton into the service collection like this:
+If you're creating your bot through the Bot Framework portal, then you're done setting up your app registration; the secret will be generated automatically.
 
-```csharp
-services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
-```
+If you're making your bot in the Azure portal, you need to generate a secret for your app registration.
 
-- For versions prior to 4.3, in your ConfigureServices method, find the AddBot method. When setting the options, make sure you add:
+1. Click on **Certificates & secrets** in the left navigation column of your app registration's blade.
+1. In that blade, click the **New client secret** button. In the dialog that pops up, enter an optional description for the secret and select **Never** from the Expires radio button group.
 
-```csharp
-options.ChannelProvider = new ConfigurationChannelProvider();
-```
+    ![new secret](media/app-registration/new-secret.png)
 
-You can find more information concerning Government Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
+1. Copy your secret's value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation.
 
-## What is the Direct Line channel?
+    > [!NOTE]
+    > The secret will only be visible while on this blade, and you won't be able to retreive it after you leave that page. Be sure to copy it somewhere safe.
 
-Direct Line is a REST API that allows you to add your bot into your service, mobile app, or webpage.
+    ![new app id](media/app-registration/create-app-id.png)
 
-You can write a client for the Direct Line API in any language. Simply code to the [Direct Line protocol][DirectLineAPI], generate a secret in the Direct Line configuration page, and talk to your bot from wherever your code lives.
 
-Direct Line is suitable for:
-
-- Mobile apps on iOS, Android, and Windows Phone, and others
-- Desktop applications on Windows, OSX, and more
-- Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
-- Service-to-service applications
-
-## How does the Bot Framework relate to Cognitive Services?
-
-Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
-
-## What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
-
-For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
-
-## How can I use more than the maximum number of LUIS intents?
-
-You might consider splitting up your model and calling the LUIS service in series or parallel.
-
-## How can I use more than one LUIS model?
-
-Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
-
-* Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
-* Using multiple LUIS models assumes the scores from different models are comparable, to select the "best matched intent" across multiple models.
-* Using multiple LUIS models means that if an intent matches one model, it will also strongly match the "none" intent of the other models. You can avoid selecting the "none" intent in this situation; the Bot Framework SDK for Node.js will automatically scale down the score for "none" intents to avoid this issue.
-
-## Where can I get more help on LUIS?
-
-- [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-- [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
-- [LUIS documentation](/azure/cognitive-services/luis/)
-- [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)
+[DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
+[Support]: bot-service-resources-links-help.md
+[WebChat]: bot-service-channel-connect-webchat.md
