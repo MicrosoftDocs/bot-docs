@@ -58,4 +58,4 @@ ms.date: 06/08/2020
 
 ## Azure
 
-- [I need to manually create my App Registration. How do I create my own App Registration?](bot-service-resources-faq-azure.md#I-need-to-manually-create-my-app-registration.-how-do-i-create-my-own-app-registration)
+- [I need to manually create my App Registration. How do I create my own App Registration?](bot-service-resources-faq-azure.md#i-need-to-manually-create-my-app-registration-how-do-i-create-my-own-app-registration)
