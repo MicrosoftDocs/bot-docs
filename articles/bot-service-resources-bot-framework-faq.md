@@ -12,7 +12,7 @@ ms.date: 02/19/2020
 # Bot Framework Frequently Asked Questions
 
 > [!WARNING]
-> This is the current FAQ article to be replaced by the new sub-articles, :heavy_check_mark: :eyes: :blac_nib:
+> This is the current FAQ article to be replaced by the new sub-articles, :heavy_check_mark: :eyes: :black_nib:
 
 This article contains answers to some frequently asked questions about the Bot Framework.
 
