@@ -19,28 +19,24 @@ ms.date: 06/08/2020
 - [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 - [How can I migrate Azure Bot Service from one region to another?](bot-service-resources-faq-availability.md#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
 
-# Bot Framework general
+## Bot Framework general
 
-<!--
-
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-- [ ](bot-service-resources-faq-general.md#)
-
--->
+- [Why doesn't the Typing activity do anything?](bot-service-resources-faq-general.md#why-doesnt-the-typing-activity-do-anything)
+- [What is the difference between the Connector library and Builder library in the SDK?](bot-service-resources-faq-general.md#what-is-the-difference-between-the-connector-library-and-builder-library-in-the-sdk)
+- [How do user messages relate to HTTPS method calls?](bot-service-resources-faq-general.md#how-do-user-messages-relate-to-https-method-calls)
+- [How can I intercept all messages between the user and my bot?](bot-service-resources-faq-general.md#how-can-i-intercept-all-messages-between-the-user-and-my-bot)
+- [What is the IDialogStack.Forward method in the Bot Framework SDK for .NET?](bot-service-resources-faq-general.md#what-is-the-idialogstackforward-method-in-the-bot-framework-sdk-for-net)
+- [What is the difference between "proactive" and "reactive"?](bot-service-resources-faq-general.md#what-is-the-difference-between-proactive-and-reactive)
+- [How can I send proactive messages to the user?](bot-service-resources-faq-general.md#how-can-i-send-proactive-messages-to-the-user)
+- [How can I reference non-serializable services from my C# dialogs in SDK v3?](bot-service-resources-faq-general.md#how-can-i-reference-non-serializable-services-from-my-c-dialogs-in-sdk-v3)
+- [What is an ETag? How does it relate to bot data bag storage?](bot-service-resources-faq-general.md#what-is-an-etag--how-does-it-relate-to-bot-data-bag-storage)
+- [What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?](bot-service-resources-faq-general.md#what-are-the-possible-machine-readable-resolutions-of-the-luis-built-in-date-time-duration-and-set-entities)
+- [How can I use more than the maximum number of LUIS intents?](bot-service-resources-faq-general.md#how-can-i-use-more-than-the-maximum-number-of-luis-intents)
+- [How can I use more than one LUIS model?](bot-service-resources-faq-general.md#how-can-i-use-more-than-one-luis-model)
+- [Where can I get more help on LUIS?](bot-service-resources-faq-general.md#where-can-i-get-more-help-on-luis)
+- [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
+- [What are some community-authored templates?](bot-service-resources-faq-general.md#what-are-some-community-authored-templates)
+- [Related Services](bot-service-resources-faq-general.md#related-services)
 
 ## Channels
 
