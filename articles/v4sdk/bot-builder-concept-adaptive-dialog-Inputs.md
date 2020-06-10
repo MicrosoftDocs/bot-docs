@@ -325,7 +325,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
     4. `List`: Add choices to prompt as a numbered list.
     5. `SuggestedAction`: Add choices to prompt as suggested actions.
     6. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
-6. `RecognizerOptions`: FindChoicesOptions or expression which evaluates to FindChoicesOptions. The FindChoicesOptions has these properties:
+6. `RecognizerOptions`: `FindChoicesOptions` or expression which evaluates to `FindChoicesOptions`. The `FindChoicesOptions` has these properties:
     1. `NoValue`: A Boolean value. `true` to search over each choice's _value_ property; otherwise, `false`. The default is `false`.
     2. `NoAction`: A Boolean value. `true` to search over the title of each choice's _action_ property; otherwise, `false`. The default is `false`.
     3. `RecognizeNumbers`: A Boolean value. `true` to allow the input fall-back on using a number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
@@ -404,7 +404,7 @@ Use to request an attachment from user as input.
 
 The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines this additional property:
 
-- `OutputFormat`: The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
+- `OutputFormat`: The `AttachmentOutputFormat` or an expression which evaluates to an `AttachmentOutputFormat`. Valid `AttachmentOutputFormat` values are:
     1. `All`: return all attachments as a List.
     2. `First`: return only the first attachment.
 
@@ -485,7 +485,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### Additional information related to OAuth
 
-The following links provide generalized information on the topic of authentication in the Microsoft bot framework. This information is not tailored or specific to adaptive dialogs.
+The following links provide generalized information on the topic of authentication in the Microsoft Bot Framework SDK. This information is not tailored or specific to adaptive dialogs.
 
 * [Bot authentication][5]
 * [Add authentication to a bot][6]
