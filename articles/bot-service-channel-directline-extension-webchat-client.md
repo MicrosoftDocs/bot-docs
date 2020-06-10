@@ -28,7 +28,7 @@ If you configure your own domain name you still must append the `/.bot/` path to
 
 1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) article. But, instead of obtaining a token at this location: `https://directline.botframework.com/v3/directline/tokens/generate`, you generate the token directly from your Direct Line App Service Extension at this location: `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.  
 
-1. The sample below includes a call to fetch a token from a token service similar to what is included in .[Web Chat Samples](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/i.protocol-direct-line-app-service-extension), you can update the webpage that uses Web Chat with these changes:
+1. The sample below includes a call to fetch a token from a token service similar to what is included in [Web Chat Samples](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/i.protocol-direct-line-app-service-extension), you can update the webpage that uses Web Chat with these changes:
 
 ```html
 <!DOCTYPE html>
