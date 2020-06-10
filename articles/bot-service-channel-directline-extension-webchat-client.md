@@ -12,15 +12,15 @@ ms.date: 07/25/2019
 
 # Use Web Chat with the direct line app service extension
 
-> .[!NOTE]
-> Web Chat version 4.9.1 or higher is required for native DirectLine App Service Extension support. 
+> [!NOTE]
+> Web Chat version 4.9.1 or higher is required for native Direct Line App Service Extension support. 
 
-This article describes how to use Web Chat with the direct line app service extension.
+This article describes how to use Web Chat with the Direct Line App Service Extension.
 
 ## Integrate Web Chat client
 
 > [!NOTE]
-> Adaptive Cards sent through the DirectLine App Service Extension do not undergo the same processing as those sent through other versions of the DirectLine channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the DirectLine App Service Extension will not have default values added by the channel if the fields are omitted by the bot when the card is created.
+> Adaptive Cards sent through the Direct Line App Service Extension do not undergo the same processing as those sent through other versions of the Direct Line channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the Direct Line App Service Extension will not have default values added by the channel if the fields are omitted by the bot when the card is created.
 
 Generally speaking, the approach is the same as before. With the exception that in version 4.9.1 or higher of **Web Chat** there is built in support for establishing a two-way **WebSocket**, which instead of connecting to [https://directline.botframework.com/](https://directline.botframework.com/) connects directly to your hosted bot.
 The direct line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, where the `/.bot/` extension is the Direct Line **endpoint** on your App Service.
