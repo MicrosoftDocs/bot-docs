@@ -12,7 +12,7 @@ ms.date: 05/31/2020
 
 # Using declarative assets in adaptive dialogs
 
-This article explains the concepts behind declarative assets and bots that incorporate adaptive dialogs using the declarative approach.  Declarative adaptive dialogs consist of JSON-based files that describe all of the attributes of adaptive dialogs, including their [triggers](bot-builder-concept-adaptive-dialog-triggers.md) and [actions](bot-builder-concept-adaptive-dialog-actions.md). These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
+This article explains the concepts behind declarative assets and bots that incorporate adaptive dialogs using the declarative approach.  Declarative adaptive dialogs consist of JSON-based files that describe all of the attributes of adaptive dialogs, including their [triggers][triggers] and [actions][actions]. These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Declarative files currently consist of _.dialog_ files, a JSON based file that d
 
 Adaptive dialog declarative files that have the .dialog extension contain the following elements:
 
-- The `$schema` value contains a URI pointing to the Schema that describes the format of this declarative file. That schema is a Bot Framework component schema, which adheres to [draft 7](http://json-schema.org/specification-links.html#draft-7) of the JSON schema vocabulary. This schema file enables [IntelliSense][intellisense] to work for your declarative elements. For information on how to create this file, see [Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file) in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
+- The `$schema` value contains a URI pointing to the Schema that describes the format of this declarative file. That schema is a Bot Framework component schema, which adheres to [draft 7](http://json-schema.org/specification-links.html#draft-7) of the JSON schema vocabulary. This schema file enables [IntelliSense][intellisense] to work for your declarative elements. For information on how to create this file, see [Creating the schema file][creating-the-schema-file] in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
 - The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot Framework SDK that is designed to work using the declarative approach.
 - The `recognizer` value contains a [recognizer type][recognizer-types] and an array of one or more [intents][intents] and optionally an array of one or more [entities][entity].
 - The `generator` value contains a link to the .lg file associated with the adaptive dialog that this .dialog file defines.
@@ -235,14 +235,14 @@ Message events are a type of activity event and as such, all message events have
 
 #### Custom events
 
-You can emit your own events by adding the [EmitEvent][13] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is a type of `OnDialogEvent` trigger, where its _event_ property to the same value as the emit event's _event name_ property.
+You can emit your own events by adding the [EmitEvent][emitevent] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is a type of `OnDialogEvent` trigger, where its _event_ property to the same value as the emit event's _event name_ property.
 
 > [!TIP]
 > You can allow other dialogs in your bot to handle your custom event by setting the emit event's _bubble event_ property to true.
 
 | `$kind` value | Trigger name  | Description                                                                                                                               |
 | ----------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.OnDialogEvent | OnDialogEvent | Actions to perform when a custom event is detected. Use [Emit a custom event][access-external-resources]' action to raise a custom event. |
+| Microsoft.OnDialogEvent | OnDialogEvent | Actions to perform when a custom event is detected. Use [Emit a custom event][emitevent]' action to raise a custom event. |
 
 ### Actions
 
@@ -301,9 +301,9 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 |  `$kind` value              | Action Name                          | What this action does                                                     |
 | --------------------------- | ------------------------------------ | ------------------------------------------------------------------------- |
 |`Microsoft.EditArray`        | [EditArray][editarray]               | This enables you to perform edit operations on an array.                  |
-|`Microsoft.DeleteProperty`   | [DeleteProperty][deleteproperty]     | This enables you to remove a property from [memory][11].                  |
+|`Microsoft.DeleteProperty`   | [DeleteProperty][deleteproperty]     | This enables you to remove a property from [memory][memory-states].                  |
 |`Microsoft.DeleteProperties` | [DeleteProperties][deleteproperties] | This enables you to delete more than one property in a single action.     |
-|`Microsoft.SetProperty`      | [SetProperty][setproperty]           | This enables you to set a property's value in [memory][11].               |
+|`Microsoft.SetProperty`      | [SetProperty][setproperty]           | This enables you to set a property's value in [memory][memory-states].               |
 |`Microsoft.SetProperties`    | [SetProperties][setproperties]       | This enables you to initialize one or more properties in a single action. |
 
 #### Access external resources
@@ -314,6 +314,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 |`Microsoft.HttpRequest` | [HttpRequest][httprequest]  | Enables you to make HTTP requests to any endpoint.                                                         |
 |`Microsoft.EmitEvent`   | [EmitEvent][emitevent]      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][custom-trigger]. |
 |`Microsoft.SignOutUser` | [SignOutUser][sign-out-user]| Enables you to sign out the currently signed in user.                                                      |
+<!-- NOTE: codeaction is not available via declarative. -->
 
 #### Debugging options
 
@@ -322,17 +323,10 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 |`Microsoft.LogAction`    | [LogAction][log-action]        | Writes to the console and optionally sends the message as a trace activity. |
 |`Microsoft.TraceActivity`| [TraceActivity][traceactivity] | Sends a trace activity with whatever payload you specify.                   |
 
-
-| `$kind` value            | Action Name                    | What this action does                                             |
-| ------------------------ | ------------------------------ | ----------------------------------------------------------------- |
-| `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users. |
-
-
 [log-action]: bot-builder-concept-adaptive-dialog-Actions.md#log-action
 [traceactivity]: bot-builder-concept-adaptive-dialog-Actions.md#traceactivity
 [emitevent]: bot-builder-concept-adaptive-dialog-Actions.md#emitevent
 [sign-out-user]: bot-builder-concept-adaptive-dialog-Actions.md#sign-out-user
-[codeaction]: bot-builder-concept-adaptive-dialog-Actions.md#codeaction
 [editactions]: bot-builder-concept-adaptive-dialog-Actions.md#editactions
 
 ### Recognizers
@@ -391,11 +385,14 @@ The [generator][generator] value contains a link to the .lg file associated with
 - How to [Create a bot using declarative adaptive dialogs](bot-builder-dialogs-declarative.md)
 
 <!-- Footnote-style links -->
+[triggers]: bot-builder-concept-adaptive-dialog-triggers.md
+[actions]: bot-builder-concept-adaptive-dialog-actions.md
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 [concept-adaptive]: bot-builder-adaptive-dialog-introduction.md
 [lg-file-format]: ../file-format/bot-builder-lg-file-format.md
+[creating-the-schema-file]: bot-builder-dialogs-declarative.md#creating-the-schema-file
 
 <!-- Declarative files section  -->
 [bf-cli]: https://aka.ms/bf-cli-overview
@@ -458,6 +455,7 @@ The [generator][generator] value contains a link to the .lg file associated with
 [emitevent]: bot-builder-concept-adaptive-dialog-Actions.md#emitevent
 [sign-out-user]: bot-builder-concept-adaptive-dialog-Actions.md#sign-out-user
 [custom-trigger]: bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+<!--[codeaction]: bot-builder-concept-adaptive-dialog-Actions.md#codeaction-->
 
 <!--  (Actions) Debugging options -->
 [log-action]: bot-builder-concept-adaptive-dialog-Actions.md#log-action
