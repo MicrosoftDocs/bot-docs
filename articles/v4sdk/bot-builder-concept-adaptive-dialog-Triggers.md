@@ -63,7 +63,7 @@ Triggers = new List<OnCondition>()
 | Choose Intent | `OnChooseIntent` |`ChooseIntent` | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][11].|
 | Intent recognized| `OnIntent` | `RecognizedIntent` | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|`OnQnAMatch`| `RecognizedIntent` |This trigger is run when the [QnAMakerRecognizer][12] has returned a `QnAMatch` intent. The entity `@answer` will have the `QnAMaker` answer.|
-|Unknown intent recognized| `OnUnknownIntent` | `UnknownIntent` | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to to enable you to preform any needed tasks when the dialog first starts. |
+|Unknown intent recognized| `OnUnknownIntent` | `UnknownIntent` | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to preform any needed tasks when the dialog first starts. |
 
 #### Recognizer trigger examples
 
@@ -71,8 +71,8 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 
 > [!NOTE]
 >
-> * The `OnIntent` trigger enables you to handle the `recognizedIntent` event. The `recognizedIntent` event is raised by the [recognizer][8]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
-> * Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event was not caught and handled by any of the other triggers. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
+> * The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by the [recognizer][8]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
+> * Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
 ``` C#
 // Create the root dialog as an Adaptive dialog.
@@ -174,7 +174,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 ### Activity events
 
-Activity triggers enable you to associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][3].
+Activity triggers lets you associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][3].
 
 All activity events have a base event of `ActivityReceived` and are further refined by their _activity type_. The Base class that all activity triggers derive from is `OnActivity`.
 
@@ -191,7 +191,7 @@ All activity events have a base event of `ActivityReceived` and are further refi
 
 ##### OnConversationUpdateActivity
 
-The `OnConversationUpdateActivity` trigger is one of the triggers that enable you to handle an _activity received_ event. The `OnConversationUpdateActivity` trigger will only fire when the following condition is met: _ActivityTypes.conversationUpdate_.
+The `OnConversationUpdateActivity` trigger is one of the triggers that let you handle an _activity received_ event. The `OnConversationUpdateActivity` trigger will only fire when the _ActivityTypes.conversationUpdate_ condition is met.
 
 The following code snippet demonstrates how you can create an `OnConversationUpdateActivity` trigger:
 
@@ -215,7 +215,7 @@ var myDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 **Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
 
-Message events are a type of activity event and as such, all message events have a base event of `ActivityReceived` and are further refined by _activity type_. The Base class that all message triggers derive from is `OnActivity`.
+Message events are a type of activity event and, as such, all message events have a base event of `ActivityReceived` and are further refined by _activity type_. The Base class that all message triggers derive from is `OnActivity`.
 
 | Event cause      | ActivityType      | Trigger name               | Description                                                               |
 | ---------------- | ----------------- | -------------------------- | ------------------------------------------------------------------------- |

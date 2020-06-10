@@ -87,8 +87,8 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
 | Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
 | Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
-| Update an activity     | [UpdateActivity](#update-activity)| This enables you to update an activity that was sent.                     |
-| DeleteActivity        | [DeleteActivity](#delete-activity) | Enables you to delete an activity that was sent.                          |
+| Update an activity     | [UpdateActivity](#update-activity)| This enables you to update an activity that was sent.                    |
+| DeleteActivity        | [DeleteActivity](#delete-activity) | Enables you to delete an activity that was sent.                         |
 | Get activity members | [GetActivityMembers](#get-activity-members)| Enables you to get a list of activity members and save it to a property in [memory][11].|
 | GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in [memory][11].|
 | EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
@@ -99,25 +99,25 @@ For code samples see [Dialog management examples](#dialog-management-examples).
 
 ### Manage properties
 
-| Activity to accomplish | Action Name                           | What this action does                                                     |
-| ---------------------- | ------------------------------------- | ------------------------------------------------------------------------- |
-| Edit an array          | [EditArray](#editarray)               | This enables you to perform edit operations on an array.                  |
-| Delete a property      | [DeleteProperty](#deleteproperty)     | This enables you to remove a property from [memory][11].                  |
-| Delete properties      | [DeleteProperties](#deleteproperties) | This enables you to delete more than one property in a single action.     |
-| Create or update a property | [SetProperty](#setproperty)      | This enables you to set a property's value in [memory][11].               |
-| Create or update properties | [SetProperties](#setproperties)  | This enables you to initialize one or more properties in a single action. |
+| Activity to accomplish | Action Name                           | What this action does                                 |
+| ---------------------- | ------------------------------------- | ----------------------------------------------------- |
+| Edit an array          | [EditArray](#editarray)               | Perform edit operations on an array.                  |
+| Delete a property      | [DeleteProperty](#deleteproperty)     | Remove a property from [memory][11].                  |
+| Delete properties      | [DeleteProperties](#deleteproperties) | Delete more than one property in a single action.     |
+| Create or update a property | [SetProperty](#setproperty)      | Set a property's value in [memory][11].               |
+| Create or update properties | [SetProperties](#setproperties)  | Initialize one or more properties in a single action. |
 
 For code samples see [Manage properties examples](#manage-properties-examples).
 
 ### Access external resources
 
-| Activity to accomplish | Action Name                  | What this action does                                                                         |
-| ---------------------- | ---------------------------- | --------------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                                 |
-| Send an HTTP request   | [HttpRequest](#httprequest)  | Enables you to make HTTP requests to any endpoint.                                            |
-| Emit a custom event    | [EmitEvent](#emitevent)      | Enables you to raise a custom event that your bot can respond to using a [custom trigger][8]. |
-| Sign out a user        | [SignOutUser](#sign-out-user)| Enables you to sign out the currently signed in user.                                         |
-| Call custom code       | [CodeAction](#codeaction)    | Enables you to call your own custom code.                                                     |
+| Activity to accomplish | Action Name                  | What this action does                                                                 |
+| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------- |
+| Begin a skill dialog   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                         |
+| Send an HTTP request   | [HttpRequest](#httprequest)  | Use to make HTTP requests to any endpoint.                                            |
+| Emit a custom event    | [EmitEvent](#emitevent)      | Use to raise a custom event that your bot can respond to using a [custom trigger][8]. |
+| Sign out a user        | [SignOutUser](#sign-out-user)| Sign out the currently signed in user.                                                |
+| Call custom code       | [CodeAction](#codeaction)    | Call your own custom code.                                                            |
 
 For code samples see [Access external resource examples](#access-external-resource-examples).
 
