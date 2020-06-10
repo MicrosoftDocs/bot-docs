@@ -12,7 +12,7 @@ ms.date: 05/31/2020
 
 # Using declarative assets in adaptive dialogs
 
-This article explains the concepts behind declarative assets and bots that incorporate an adaptive dialog using the declarative approach.  Declarative adaptive dialogs consist of JSON-based files that describe all of the attributes of the adaptive dialogs, including their [triggers](bot-builder-concept-adaptive-dialog-triggers.md) and [actions](bot-builder-concept-adaptive-dialog-actions.md). These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
+This article explains the concepts behind declarative assets and bots that incorporate adaptive dialogs using the declarative approach.  Declarative adaptive dialogs consist of JSON-based files that describe all of the attributes of adaptive dialogs, including their [triggers](bot-builder-concept-adaptive-dialog-triggers.md) and [actions](bot-builder-concept-adaptive-dialog-actions.md). These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
 
 ## Prerequisites
 
@@ -77,7 +77,7 @@ The resource explorer's _get resource_ method reads the declarative file into a 
 
 # [C#](#tab/csharp)
 
-```Csharp
+```csharp
 var resource = this.resourceExplorer.GetResource("main.dialog");
 ```
 
@@ -95,7 +95,7 @@ Once the resource explorer's _get resource_ method reads the declarative file in
 
 # [C#](#tab/csharp)
 
-```Csharp
+```csharp
 dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));
 ```
 
@@ -114,7 +114,7 @@ Any time a declarative file changes when your bot is running, a _changed_ event 
 # [C#](#tab/csharp)
 
 <!--This example could be improved-->
-```Csharp
+```csharp
 // auto reload the root dialog when it changes
 this.resourceExplorer.Changed += (e, resources) =>
 {
@@ -250,9 +250,9 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 
 #### Send a response
 
-| `$kind` value            | Action Name                    | What this action does                                             |
-| ------------------------ | ------------------------------ | ----------------------------------------------------------------- |
-| `Microsoft.SendActivity` | [SendActivity][send-activity]  | Enables you send any type of activity such as responding to users.|
+| `$kind` value            | Action Name                   | What this action does                                             |
+| ------------------------ | ----------------------------- | ----------------------------------------------------------------- |
+| `Microsoft.SendActivity` | [SendActivity][send-activity] | Enables you send any type of activity such as responding to users.|
 
 #### Requesting user input
 
@@ -298,8 +298,8 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 
 #### Manage properties
 
-|  `$kind` value              | Action Name                           | What this action does                                                    |
-| --------------------------- | ------------------------------------- | ------------------------------------------------------------------------ |
+|  `$kind` value              | Action Name                          | What this action does                                                     |
+| --------------------------- | ------------------------------------ | ------------------------------------------------------------------------- |
 |`Microsoft.EditArray`        | [EditArray][editarray]               | This enables you to perform edit operations on an array.                  |
 |`Microsoft.DeleteProperty`   | [DeleteProperty][deleteproperty]     | This enables you to remove a property from [memory][11].                  |
 |`Microsoft.DeleteProperties` | [DeleteProperties][deleteproperties] | This enables you to delete more than one property in a single action.     |
