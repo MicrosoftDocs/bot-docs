@@ -6,11 +6,8 @@
   <TypeSignature Language="F#" Value="type AdalAuthenticator = class&#xA;    interface IAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>4.3.2.0</AssemblyVersion>
-    <AssemblyVersion>4.4.0.0</AssemblyVersion>
-    <AssemblyVersion>4.5.0.0</AssemblyVersion>
-    <AssemblyVersion>4.7.0.0</AssemblyVersion>
-    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,11 +31,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
@@ -62,8 +56,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clientCertificate" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate" />
@@ -89,8 +83,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
@@ -107,6 +101,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdalAuthenticator (Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientCertificate, bool sendX5c, Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, System.Net.Http.HttpClient customHttpClient = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate clientCertificate, bool sendX5c, class Microsoft.Bot.Connector.Authentication.OAuthConfiguration configurationOAuth, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.AdalAuthenticator.#ctor(Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate,System.Boolean,Microsoft.Bot.Connector.Authentication.OAuthConfiguration,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientCertificate As ClientAssertionCertificate, sendX5c As Boolean, configurationOAuth As OAuthConfiguration, Optional customHttpClient As HttpClient = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator : Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate * bool * Microsoft.Bot.Connector.Authentication.OAuthConfiguration * System.Net.Http.HttpClient * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Connector.Authentication.AdalAuthenticator" Usage="new Microsoft.Bot.Connector.Authentication.AdalAuthenticator (clientCertificate, sendX5c, configurationOAuth, customHttpClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientCertificate" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientAssertionCertificate" />
+        <Parameter Name="sendX5c" Type="System.Boolean" />
+        <Parameter Name="configurationOAuth" Type="Microsoft.Bot.Connector.Authentication.OAuthConfiguration" />
+        <Parameter Name="customHttpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="clientCertificate">To be added.</param>
+        <param name="sendX5c">To be added.</param>
+        <param name="configurationOAuth">To be added.</param>
+        <param name="customHttpClient">To be added.</param>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTokenAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync (bool forceRefresh = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync(bool forceRefresh) cil managed" />
@@ -116,11 +139,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;</ReturnType>
@@ -147,7 +167,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticatorResult&gt;</ReturnType>

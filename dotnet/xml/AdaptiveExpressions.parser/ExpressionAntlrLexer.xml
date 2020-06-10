@@ -1,0 +1,1073 @@
+<Type Name="ExpressionAntlrLexer" FullName="AdaptiveExpressions.parser.ExpressionAntlrLexer">
+  <TypeSignature Language="C#" Value="public class ExpressionAntlrLexer : Antlr4.Runtime.Lexer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionAntlrLexer extends Antlr4.Runtime.Lexer" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.parser.ExpressionAntlrLexer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionAntlrLexer&#xA;Inherits Lexer" />
+  <TypeSignature Language="F#" Value="type ExpressionAntlrLexer = class&#xA;    inherit Lexer" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.Lexer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionAntlrLexer (Antlr4.Runtime.ICharStream input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ICharStream input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrLexer.#ctor(Antlr4.Runtime.ICharStream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (input As ICharStream)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.parser.ExpressionAntlrLexer : Antlr4.Runtime.ICharStream -&gt; AdaptiveExpressions.parser.ExpressionAntlrLexer" Usage="new AdaptiveExpressions.parser.ExpressionAntlrLexer input" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="input" Type="Antlr4.Runtime.ICharStream" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_ATN">
+      <MemberSignature Language="C#" Value="public static readonly Antlr4.Runtime.Atn.ATN _ATN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Antlr4.Runtime.Atn.ATN _ATN" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer._ATN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly _ATN As ATN " />
+      <MemberSignature Language="F#" Value=" staticval mutable _ATN : Antlr4.Runtime.Atn.ATN" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer._ATN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Atn.ATN</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_serializedATN">
+      <MemberSignature Language="C#" Value="public static readonly string _serializedATN;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string _serializedATN" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer._serializedATN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly _serializedATN As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable _serializedATN : string" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer._serializedATN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public override void Action (Antlr4.Runtime.RuleContext _localctx, int ruleIndex, int actionIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Action(class Antlr4.Runtime.RuleContext _localctx, int32 ruleIndex, int32 actionIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrLexer.Action(Antlr4.Runtime.RuleContext,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Action (_localctx As RuleContext, ruleIndex As Integer, actionIndex As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Action : Antlr4.Runtime.RuleContext * int * int -&gt; unit" Usage="expressionAntlrLexer.Action (_localctx, ruleIndex, actionIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_localctx" Type="Antlr4.Runtime.RuleContext" />
+        <Parameter Name="ruleIndex" Type="System.Int32" />
+        <Parameter Name="actionIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_localctx">To be added.</param>
+        <param name="ruleIndex">To be added.</param>
+        <param name="actionIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ASTERISK">
+      <MemberSignature Language="C#" Value="public const int ASTERISK = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ASTERISK = (6)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.ASTERISK" />
+      <MemberSignature Language="VB.NET" Value="Public Const ASTERISK As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable ASTERISK : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.ASTERISK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLOSE_BRACKET">
+      <MemberSignature Language="C#" Value="public const int CLOSE_BRACKET = 19;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CLOSE_BRACKET = (19)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.CLOSE_BRACKET" />
+      <MemberSignature Language="VB.NET" Value="Public Const CLOSE_BRACKET As Integer  = 19" />
+      <MemberSignature Language="F#" Value="val mutable CLOSE_BRACKET : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.CLOSE_BRACKET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLOSE_CURLY_BRACKET">
+      <MemberSignature Language="C#" Value="public const int CLOSE_CURLY_BRACKET = 24;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CLOSE_CURLY_BRACKET = (24)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.CLOSE_CURLY_BRACKET" />
+      <MemberSignature Language="VB.NET" Value="Public Const CLOSE_CURLY_BRACKET As Integer  = 24" />
+      <MemberSignature Language="F#" Value="val mutable CLOSE_CURLY_BRACKET : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.CLOSE_CURLY_BRACKET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLOSE_SQUARE_BRACKET">
+      <MemberSignature Language="C#" Value="public const int CLOSE_SQUARE_BRACKET = 22;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CLOSE_SQUARE_BRACKET = (22)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.CLOSE_SQUARE_BRACKET" />
+      <MemberSignature Language="VB.NET" Value="Public Const CLOSE_SQUARE_BRACKET As Integer  = 22" />
+      <MemberSignature Language="F#" Value="val mutable CLOSE_SQUARE_BRACKET : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.CLOSE_SQUARE_BRACKET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COLON">
+      <MemberSignature Language="C#" Value="public const int COLON = 26;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 COLON = (26)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.COLON" />
+      <MemberSignature Language="VB.NET" Value="Public Const COLON As Integer  = 26" />
+      <MemberSignature Language="F#" Value="val mutable COLON : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.COLON" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>26</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COMMA">
+      <MemberSignature Language="C#" Value="public const int COMMA = 25;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 COMMA = (25)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.COMMA" />
+      <MemberSignature Language="VB.NET" Value="Public Const COMMA As Integer  = 25" />
+      <MemberSignature Language="F#" Value="val mutable COMMA : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.COMMA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>25</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultVocabulary">
+      <MemberSignature Language="C#" Value="public static readonly Antlr4.Runtime.IVocabulary DefaultVocabulary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Antlr4.Runtime.IVocabulary DefaultVocabulary" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.DefaultVocabulary" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultVocabulary As IVocabulary " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultVocabulary : Antlr4.Runtime.IVocabulary" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.DefaultVocabulary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DOT">
+      <MemberSignature Language="C#" Value="public const int DOT = 20;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DOT = (20)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.DOT" />
+      <MemberSignature Language="VB.NET" Value="Public Const DOT As Integer  = 20" />
+      <MemberSignature Language="F#" Value="val mutable DOT : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.DOT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DOUBLE_AND">
+      <MemberSignature Language="C#" Value="public const int DOUBLE_AND = 12;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DOUBLE_AND = (12)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.DOUBLE_AND" />
+      <MemberSignature Language="VB.NET" Value="Public Const DOUBLE_AND As Integer  = 12" />
+      <MemberSignature Language="F#" Value="val mutable DOUBLE_AND : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.DOUBLE_AND" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DOUBLE_EQUAL">
+      <MemberSignature Language="C#" Value="public const int DOUBLE_EQUAL = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DOUBLE_EQUAL = (9)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.DOUBLE_EQUAL" />
+      <MemberSignature Language="VB.NET" Value="Public Const DOUBLE_EQUAL As Integer  = 9" />
+      <MemberSignature Language="F#" Value="val mutable DOUBLE_EQUAL : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.DOUBLE_EQUAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DOUBLE_VERTICAL_CYLINDER">
+      <MemberSignature Language="C#" Value="public const int DOUBLE_VERTICAL_CYLINDER = 13;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DOUBLE_VERTICAL_CYLINDER = (13)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.DOUBLE_VERTICAL_CYLINDER" />
+      <MemberSignature Language="VB.NET" Value="Public Const DOUBLE_VERTICAL_CYLINDER As Integer  = 13" />
+      <MemberSignature Language="F#" Value="val mutable DOUBLE_VERTICAL_CYLINDER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.DOUBLE_VERTICAL_CYLINDER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ESCAPE_CHARACTER">
+      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 34;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (34)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.ESCAPE_CHARACTER" />
+      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 34" />
+      <MemberSignature Language="F#" Value="val mutable ESCAPE_CHARACTER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.ESCAPE_CHARACTER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>34</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GrammarFileName">
+      <MemberSignature Language="C#" Value="public override string GrammarFileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GrammarFileName" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrLexer.GrammarFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GrammarFileName As String" />
+      <MemberSignature Language="F#" Value="member this.GrammarFileName : string" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.GrammarFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IDENTIFIER">
+      <MemberSignature Language="C#" Value="public const int IDENTIFIER = 29;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IDENTIFIER = (29)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.IDENTIFIER" />
+      <MemberSignature Language="VB.NET" Value="Public Const IDENTIFIER As Integer  = 29" />
+      <MemberSignature Language="F#" Value="val mutable IDENTIFIER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.IDENTIFIER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>29</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INVALID_TOKEN_DEFAULT_MODE">
+      <MemberSignature Language="C#" Value="public const int INVALID_TOKEN_DEFAULT_MODE = 32;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_TOKEN_DEFAULT_MODE = (32)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.INVALID_TOKEN_DEFAULT_MODE" />
+      <MemberSignature Language="VB.NET" Value="Public Const INVALID_TOKEN_DEFAULT_MODE As Integer  = 32" />
+      <MemberSignature Language="F#" Value="val mutable INVALID_TOKEN_DEFAULT_MODE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.INVALID_TOKEN_DEFAULT_MODE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LESS_OR_EQUAl">
+      <MemberSignature Language="C#" Value="public const int LESS_OR_EQUAl = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LESS_OR_EQUAl = (16)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.LESS_OR_EQUAl" />
+      <MemberSignature Language="VB.NET" Value="Public Const LESS_OR_EQUAl As Integer  = 16" />
+      <MemberSignature Language="F#" Value="val mutable LESS_OR_EQUAl : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.LESS_OR_EQUAl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LESS_THAN">
+      <MemberSignature Language="C#" Value="public const int LESS_THAN = 14;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LESS_THAN = (14)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.LESS_THAN" />
+      <MemberSignature Language="VB.NET" Value="Public Const LESS_THAN As Integer  = 14" />
+      <MemberSignature Language="F#" Value="val mutable LESS_THAN : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.LESS_THAN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="modeNames">
+      <MemberSignature Language="C#" Value="public static string[] modeNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string[] modeNames" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.modeNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared modeNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable modeNames : string[]" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.modeNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModeNames">
+      <MemberSignature Language="C#" Value="public override string[] ModeNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ModeNames" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrLexer.ModeNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ModeNames As String()" />
+      <MemberSignature Language="F#" Value="member this.ModeNames : string[]" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.ModeNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MORE_OR_EQUAL">
+      <MemberSignature Language="C#" Value="public const int MORE_OR_EQUAL = 17;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MORE_OR_EQUAL = (17)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.MORE_OR_EQUAL" />
+      <MemberSignature Language="VB.NET" Value="Public Const MORE_OR_EQUAL As Integer  = 17" />
+      <MemberSignature Language="F#" Value="val mutable MORE_OR_EQUAL : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.MORE_OR_EQUAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MORE_THAN">
+      <MemberSignature Language="C#" Value="public const int MORE_THAN = 15;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MORE_THAN = (15)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.MORE_THAN" />
+      <MemberSignature Language="VB.NET" Value="Public Const MORE_THAN As Integer  = 15" />
+      <MemberSignature Language="F#" Value="val mutable MORE_THAN : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.MORE_THAN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NEWLINE">
+      <MemberSignature Language="C#" Value="public const int NEWLINE = 30;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE = (30)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.NEWLINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE As Integer  = 30" />
+      <MemberSignature Language="F#" Value="val mutable NEWLINE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.NEWLINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NON">
+      <MemberSignature Language="C#" Value="public const int NON = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NON = (4)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.NON" />
+      <MemberSignature Language="VB.NET" Value="Public Const NON As Integer  = 4" />
+      <MemberSignature Language="F#" Value="val mutable NON : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.NON" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NOT_EQUAL">
+      <MemberSignature Language="C#" Value="public const int NOT_EQUAL = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NOT_EQUAL = (10)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.NOT_EQUAL" />
+      <MemberSignature Language="VB.NET" Value="Public Const NOT_EQUAL As Integer  = 10" />
+      <MemberSignature Language="F#" Value="val mutable NOT_EQUAL : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.NOT_EQUAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NUMBER">
+      <MemberSignature Language="C#" Value="public const int NUMBER = 27;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NUMBER = (27)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.NUMBER" />
+      <MemberSignature Language="VB.NET" Value="Public Const NUMBER As Integer  = 27" />
+      <MemberSignature Language="F#" Value="val mutable NUMBER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.NUMBER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPEN_BRACKET">
+      <MemberSignature Language="C#" Value="public const int OPEN_BRACKET = 18;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 OPEN_BRACKET = (18)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.OPEN_BRACKET" />
+      <MemberSignature Language="VB.NET" Value="Public Const OPEN_BRACKET As Integer  = 18" />
+      <MemberSignature Language="F#" Value="val mutable OPEN_BRACKET : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.OPEN_BRACKET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPEN_CURLY_BRACKET">
+      <MemberSignature Language="C#" Value="public const int OPEN_CURLY_BRACKET = 23;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 OPEN_CURLY_BRACKET = (23)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.OPEN_CURLY_BRACKET" />
+      <MemberSignature Language="VB.NET" Value="Public Const OPEN_CURLY_BRACKET As Integer  = 23" />
+      <MemberSignature Language="F#" Value="val mutable OPEN_CURLY_BRACKET : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.OPEN_CURLY_BRACKET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPEN_SQUARE_BRACKET">
+      <MemberSignature Language="C#" Value="public const int OPEN_SQUARE_BRACKET = 21;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 OPEN_SQUARE_BRACKET = (21)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.OPEN_SQUARE_BRACKET" />
+      <MemberSignature Language="VB.NET" Value="Public Const OPEN_SQUARE_BRACKET As Integer  = 21" />
+      <MemberSignature Language="F#" Value="val mutable OPEN_SQUARE_BRACKET : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.OPEN_SQUARE_BRACKET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PERCENT">
+      <MemberSignature Language="C#" Value="public const int PERCENT = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 PERCENT = (8)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.PERCENT" />
+      <MemberSignature Language="VB.NET" Value="Public Const PERCENT As Integer  = 8" />
+      <MemberSignature Language="F#" Value="val mutable PERCENT : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.PERCENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PLUS">
+      <MemberSignature Language="C#" Value="public const int PLUS = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 PLUS = (2)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.PLUS" />
+      <MemberSignature Language="VB.NET" Value="Public Const PLUS As Integer  = 2" />
+      <MemberSignature Language="F#" Value="val mutable PLUS : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.PLUS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ruleNames">
+      <MemberSignature Language="C#" Value="public static readonly string[] ruleNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] ruleNames" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.ruleNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ruleNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable ruleNames : string[]" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.ruleNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleNames">
+      <MemberSignature Language="C#" Value="public override string[] RuleNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] RuleNames" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrLexer.RuleNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleNames As String()" />
+      <MemberSignature Language="F#" Value="member this.RuleNames : string[]" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.RuleNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sempred">
+      <MemberSignature Language="C#" Value="public override bool Sempred (Antlr4.Runtime.RuleContext _localctx, int ruleIndex, int predIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Sempred(class Antlr4.Runtime.RuleContext _localctx, int32 ruleIndex, int32 predIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrLexer.Sempred(Antlr4.Runtime.RuleContext,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Sempred (_localctx As RuleContext, ruleIndex As Integer, predIndex As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Sempred : Antlr4.Runtime.RuleContext * int * int -&gt; bool" Usage="expressionAntlrLexer.Sempred (_localctx, ruleIndex, predIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_localctx" Type="Antlr4.Runtime.RuleContext" />
+        <Parameter Name="ruleIndex" Type="System.Int32" />
+        <Parameter Name="predIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_localctx">To be added.</param>
+        <param name="ruleIndex">To be added.</param>
+        <param name="predIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializedAtn">
+      <MemberSignature Language="C#" Value="public override string SerializedAtn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerializedAtn" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrLexer.SerializedAtn" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SerializedAtn As String" />
+      <MemberSignature Language="F#" Value="member this.SerializedAtn : string" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.SerializedAtn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SINGLE_AND">
+      <MemberSignature Language="C#" Value="public const int SINGLE_AND = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SINGLE_AND = (11)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.SINGLE_AND" />
+      <MemberSignature Language="VB.NET" Value="Public Const SINGLE_AND As Integer  = 11" />
+      <MemberSignature Language="F#" Value="val mutable SINGLE_AND : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.SINGLE_AND" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SLASH">
+      <MemberSignature Language="C#" Value="public const int SLASH = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SLASH = (7)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.SLASH" />
+      <MemberSignature Language="VB.NET" Value="Public Const SLASH As Integer  = 7" />
+      <MemberSignature Language="F#" Value="val mutable SLASH : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.SLASH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRING">
+      <MemberSignature Language="C#" Value="public const int STRING = 31;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRING = (31)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRING As Integer  = 31" />
+      <MemberSignature Language="F#" Value="val mutable STRING : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRING_INTERPOLATION_MODE">
+      <MemberSignature Language="C#" Value="public const int STRING_INTERPOLATION_MODE = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRING_INTERPOLATION_MODE = (1)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING_INTERPOLATION_MODE" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRING_INTERPOLATION_MODE As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable STRING_INTERPOLATION_MODE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING_INTERPOLATION_MODE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRING_INTERPOLATION_START">
+      <MemberSignature Language="C#" Value="public const int STRING_INTERPOLATION_START = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRING_INTERPOLATION_START = (1)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING_INTERPOLATION_START" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRING_INTERPOLATION_START As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable STRING_INTERPOLATION_START : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING_INTERPOLATION_START" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SUBSTRACT">
+      <MemberSignature Language="C#" Value="public const int SUBSTRACT = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SUBSTRACT = (3)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.SUBSTRACT" />
+      <MemberSignature Language="VB.NET" Value="Public Const SUBSTRACT As Integer  = 3" />
+      <MemberSignature Language="F#" Value="val mutable SUBSTRACT : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.SUBSTRACT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEMPLATE">
+      <MemberSignature Language="C#" Value="public const int TEMPLATE = 33;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE = (33)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.TEMPLATE" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE As Integer  = 33" />
+      <MemberSignature Language="F#" Value="val mutable TEMPLATE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.TEMPLATE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>33</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEXT_CONTENT">
+      <MemberSignature Language="C#" Value="public const int TEXT_CONTENT = 35;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_CONTENT = (35)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.TEXT_CONTENT" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEXT_CONTENT As Integer  = 35" />
+      <MemberSignature Language="F#" Value="val mutable TEXT_CONTENT : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.TEXT_CONTENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>35</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tokenNames">
+      <MemberSignature Language="C#" Value="public static readonly string[] tokenNames;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string[] tokenNames" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.tokenNames" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly tokenNames As String() " />
+      <MemberSignature Language="F#" Value=" staticval mutable tokenNames : string[]" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.tokenNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use Vocabulary instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenNames">
+      <MemberSignature Language="C#" Value="public override string[] TokenNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] TokenNames" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrLexer.TokenNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TokenNames As String()" />
+      <MemberSignature Language="F#" Value="member this.TokenNames : string[]" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.TokenNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use IRecognizer.Vocabulary instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vocabulary">
+      <MemberSignature Language="C#" Value="public override Antlr4.Runtime.IVocabulary Vocabulary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Antlr4.Runtime.IVocabulary Vocabulary" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.parser.ExpressionAntlrLexer.Vocabulary" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Vocabulary As IVocabulary" />
+      <MemberSignature Language="F#" Value="member this.Vocabulary : Antlr4.Runtime.IVocabulary" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.Vocabulary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WHITESPACE">
+      <MemberSignature Language="C#" Value="public const int WHITESPACE = 28;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WHITESPACE = (28)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.WHITESPACE" />
+      <MemberSignature Language="VB.NET" Value="Public Const WHITESPACE As Integer  = 28" />
+      <MemberSignature Language="F#" Value="val mutable WHITESPACE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.WHITESPACE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XOR">
+      <MemberSignature Language="C#" Value="public const int XOR = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 XOR = (5)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.XOR" />
+      <MemberSignature Language="VB.NET" Value="Public Const XOR As Integer  = 5" />
+      <MemberSignature Language="F#" Value="val mutable XOR : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.XOR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

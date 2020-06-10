@@ -29,27 +29,12 @@ This article describes how to use the Direct Line App Service Extension with an 
 
 1. Direct Line App Service Extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment’s subnet. The rule that required is as follows:
 
-|Source|Any|
+|Field|Value|
 |---|---|
+|Source|Any|
 |Source Port|*|
-|Destination|IP Addresses|
-|Destination IP addresses|20.38.80.64, 40.82.248.64|
+|Destination|Service Tag|
+|Destination Service Tag|AzureBotService|
 |Destination port ranges|443|
 |Protocol|Any|
 |Action|Allow|
-
-
-![Direct line extension architecture](./media/channels/direct-line-extension-vnet.png)
-
->[!NOTE]
-> The IP addresses provided are explicitly for the preview. We will be moving to a Service Tag for Azure Bot Service later in the year which will change this configuration.
-
-### Configure your bot’s App Service
-
-For the preview, you will need to change how your Direct line app service extension communicates with Azure. This can be done by adding a new **App Service Application Setting** to your application using the portal, or the `applicationsettings.json` file:
-
-- Property: DirectLineExtensionABSEndpoint
-- Value: https://st-directline.botframework.com/v3/extension
-
->[!NOTE]
-> This will only be required for the preview of Direct line app service extension.

@@ -1,0 +1,41 @@
+<Type Name="IComponentMemoryScopes" FullName="Microsoft.Bot.Builder.Dialogs.Memory.IComponentMemoryScopes">
+  <TypeSignature Language="C#" Value="public interface IComponentMemoryScopes" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentMemoryScopes" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.IComponentMemoryScopes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentMemoryScopes" />
+  <TypeSignature Language="F#" Value="type IComponentMemoryScopes = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMemoryScopes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope&gt; GetMemoryScopes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope&gt; GetMemoryScopes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.IComponentMemoryScopes.GetMemoryScopes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMemoryScopes () As IEnumerable(Of MemoryScope)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemoryScopes : unit -&gt; seq&lt;Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope&gt;" Usage="iComponentMemoryScopes.GetMemoryScopes " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

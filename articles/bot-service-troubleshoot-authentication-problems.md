@@ -199,10 +199,9 @@ To test your bot in the cloud with security enabled, complete the following step
 
 1. Ensure that your bot has been successfully deployed and is running. 
 2. Sign in to the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
-3. Click **My Bots**.
-4. Select the bot that you want to test.
-5. Click **Test** to open the bot in an embedded web chat control.
-6. To test connectivity to your bot, type some text into the web chat control and press Enter.
+3. Navigate to the **Bot Channels Registration** for your bot within the portal.
+4. Click **Test in Web Chat** in the **Bot management** pane on the left.
+5. To test connectivity to your bot, type some text into the web chat control and press Enter.
 
 If an error is indicated in the chat window, use the error message to determine the cause of the error. Common issues include: 
 

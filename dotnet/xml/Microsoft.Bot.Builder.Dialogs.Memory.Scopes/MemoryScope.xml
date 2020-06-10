@@ -1,0 +1,248 @@
+<Type Name="MemoryScope" FullName="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope">
+  <TypeSignature Language="C#" Value="public abstract class MemoryScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemoryScope extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemoryScope" />
+  <TypeSignature Language="F#" Value="type MemoryScope = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            MemoryScope represents a named memory scope abstract class.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MemoryScope (string name, bool includeInSnapshot = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, bool includeInSnapshot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional includeInSnapshot As Boolean = true)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope : string * bool -&gt; Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope" Usage="new Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope (name, includeInSnapshot)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="includeInSnapshot" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="includeInSnapshot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.DeleteAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (dialogContext As DialogContext, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="memoryScope.DeleteAsync (dialogContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">The dialog context object for this turn.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Deletes any state in storage and the cache for this <see cref="T:Microsoft.Bot.Builder.BotState" />.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemory">
+      <MemberSignature Language="C#" Value="public abstract object GetMemory (Microsoft.Bot.Builder.Dialogs.DialogContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetMemory(class Microsoft.Bot.Builder.Dialogs.DialogContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.GetMemory(Microsoft.Bot.Builder.Dialogs.DialogContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMemory (dc As DialogContext) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetMemory : Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; obj" Usage="memoryScope.GetMemory dc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">dc.</param>
+        <summary>
+            Get the backing memory for this scope.
+            </summary>
+        <returns>memory for the scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeInSnapshot">
+      <MemberSignature Language="C#" Value="public bool IncludeInSnapshot { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInSnapshot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.IncludeInSnapshot" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeInSnapshot As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeInSnapshot : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.IncludeInSnapshot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether this memory should be included in snapshot.
+            </summary>
+        <value>
+            True or false.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task LoadAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LoadAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.LoadAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAsync (dialogContext As DialogContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LoadAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.LoadAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="memoryScope.LoadAsync (dialogContext, force, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">The dialog context object for this turn.</param>
+        <param name="force">Optional, <c>true</c> to overwrite any existing state cache;
+            or <c>false</c> to load state from storage only if the cache doesn't already exist.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Populates the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" /> from the storage layer.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets name of the scope.
+            </summary>
+        <value>
+            Name of the scope.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveChangesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SaveChangesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SaveChangesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.SaveChangesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SaveChangesAsync (dialogContext As DialogContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="F#" Value="abstract member SaveChangesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SaveChangesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="memoryScope.SaveChangesAsync (dialogContext, force, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">The dialog context object for this turn.</param>
+        <param name="force">Optional, <c>true</c> to save the state cache to storage;
+            or <c>false</c> to save state to storage only if a property in the cache has changed.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Writes the state cache for this <see cref="T:Microsoft.Bot.Builder.BotState" /> to the storage layer.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMemory">
+      <MemberSignature Language="C#" Value="public abstract void SetMemory (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMemory(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope.SetMemory(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetMemory (dc As DialogContext, memory As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetMemory : Microsoft.Bot.Builder.Dialogs.DialogContext * obj -&gt; unit" Usage="memoryScope.SetMemory (dc, memory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="memory" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dc">dc.</param>
+        <param name="memory">memory.</param>
+        <summary>
+            Changes the backing object for the memory scope.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

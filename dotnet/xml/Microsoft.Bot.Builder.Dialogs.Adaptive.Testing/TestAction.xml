@@ -1,0 +1,88 @@
+<Type Name="TestAction" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction">
+  <TypeSignature Language="C#" Value="public abstract class TestAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TestAction extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TestAction" />
+  <TypeSignature Language="F#" Value="type TestAction = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TestAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task ExecuteAsync (Microsoft.Bot.Builder.Adapters.TestAdapter adapter, Microsoft.Bot.Builder.BotCallbackHandler callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ExecuteAsync(class Microsoft.Bot.Builder.Adapters.TestAdapter adapter, class Microsoft.Bot.Builder.BotCallbackHandler callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction.ExecuteAsync(Microsoft.Bot.Builder.Adapters.TestAdapter,Microsoft.Bot.Builder.BotCallbackHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ExecuteAsync (adapter As TestAdapter, callback As BotCallbackHandler) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAsync : Microsoft.Bot.Builder.Adapters.TestAdapter * Microsoft.Bot.Builder.BotCallbackHandler -&gt; System.Threading.Tasks.Task" Usage="testAction.ExecuteAsync (adapter, callback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
+        <Parameter Name="callback" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+      </Parameters>
+      <Docs>
+        <param name="adapter">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterSourcePath">
+      <MemberSignature Language="C#" Value="protected void RegisterSourcePath (string path, int line);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterSourcePath(string path, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction.RegisterSourcePath(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RegisterSourcePath (path As String, line As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RegisterSourcePath : string * int -&gt; unit" Usage="testAction.RegisterSourcePath (path, line)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="line">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

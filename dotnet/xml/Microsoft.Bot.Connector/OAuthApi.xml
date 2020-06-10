@@ -1,14 +1,15 @@
 <Type Name="OAuthApi" FullName="Microsoft.Bot.Connector.OAuthApi">
-  <TypeSignature Language="C#" Value="public class OAuthApi : Microsoft.Bot.Connector.IOAuthApi, Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.OAuthClient&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OAuthApi extends System.Object implements class Microsoft.Bot.Connector.IOAuthApi, class Microsoft.Rest.IServiceOperations`1&lt;class Microsoft.Bot.Connector.OAuthClient&gt;" />
+  <TypeSignature Language="C#" Value="public class OAuthApi : Microsoft.Bot.Connector.IOAuthApi, Microsoft.Bot.Connector.IOAuthApiEx, Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.OAuthClient&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OAuthApi extends System.Object implements class Microsoft.Bot.Connector.IOAuthApi, class Microsoft.Bot.Connector.IOAuthApiEx, class Microsoft.Rest.IServiceOperations`1&lt;class Microsoft.Bot.Connector.OAuthClient&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.OAuthApi" />
-  <TypeSignature Language="VB.NET" Value="Public Class OAuthApi&#xA;Implements IOAuthApi, IServiceOperations(Of OAuthClient)" />
-  <TypeSignature Language="F#" Value="type OAuthApi = class&#xA;    interface IServiceOperations&lt;OAuthClient&gt;&#xA;    interface IOAuthApi" />
+  <TypeSignature Language="VB.NET" Value="Public Class OAuthApi&#xA;Implements IOAuthApi, IOAuthApiEx, IServiceOperations(Of OAuthClient)" />
+  <TypeSignature Language="F#" Value="type OAuthApi = class&#xA;    interface IServiceOperations&lt;OAuthClient&gt;&#xA;    interface IOAuthApi&#xA;    interface IOAuthApiEx" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,6 +17,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Bot.Connector.IOAuthApi</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Connector.IOAuthApiEx</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Rest.IServiceOperations&lt;Microsoft.Bot.Connector.OAuthClient&gt;</InterfaceName>
@@ -38,6 +42,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.OAuthClient" />
@@ -60,6 +65,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.OAuthClient</ReturnType>
@@ -79,12 +85,14 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Connector.IOAuthApi.GetSignInLinkAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IOAuthApiEx.GetSignInLinkAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -118,7 +126,13 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
       </ReturnValue>
@@ -151,7 +165,13 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
       </ReturnValue>
@@ -171,6 +191,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetUserTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync (string channelId, string userId, string connectionName, string magicCode = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync(string channelId, string userId, string connectionName, string magicCode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.GetUserTokenAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (channelId As String, userId As String, connectionName As String, Optional magicCode As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetUserTokenAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;&#xA;override this.GetUserTokenAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;" Usage="oAuthApi.GetUserTokenAsync (channelId, userId, connectionName, magicCode, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IOAuthApiEx.GetUserTokenAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="magicCode" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
+        <param name="userId">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="magicCode">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SendEmulateOAuthCardsAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendEmulateOAuthCardsAsync (bool emulateOAuthCards);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SendEmulateOAuthCardsAsync(bool emulateOAuthCards) cil managed" />
@@ -180,12 +235,14 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Bot.Connector.IOAuthApi.SendEmulateOAuthCardsAsync(System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IOAuthApiEx.SendEmulateOAuthCardsAsync(System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -215,7 +272,13 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use IOAuthApiEx.SignOutUserAsync")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -225,6 +288,39 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
+        <param name="userId">To be added.</param>
+        <param name="connectionName">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutUserAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string channelId, string userId, string connectionName, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignOutUserAsync(string channelId, string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.SignOutUserAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (channelId As String, userId As String, connectionName As String, Optional cancellationToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SignOutUserAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.SignOutUserAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="oAuthApi.SignOutUserAsync (channelId, userId, connectionName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Connector.IOAuthApiEx.SignOutUserAsync(System.String,System.String,System.String,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="connectionName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">To be added.</param>
         <param name="userId">To be added.</param>
         <param name="connectionName">To be added.</param>
         <param name="cancellationToken">To be added.</param>

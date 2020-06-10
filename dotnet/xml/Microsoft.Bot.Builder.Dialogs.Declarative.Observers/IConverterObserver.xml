@@ -1,0 +1,100 @@
+<Type Name="IConverterObserver" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver">
+  <TypeSignature Language="C#" Value="public interface IConverterObserver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConverterObserver" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConverterObserver" />
+  <TypeSignature Language="F#" Value="type IConverterObserver = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Observer for <see cref="T:Newtonsoft.Json.JsonConverter" /> instances. Handles notifications around the 
+            object loading lifecycle, including the ability to intercept and provide alternate values
+            to be considered by the converters.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnAfterLoadToken&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool OnAfterLoadToken&lt;T&gt; (Newtonsoft.Json.Linq.JToken token, T obj, out T result) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnAfterLoadToken&lt;class T&gt;(class Newtonsoft.Json.Linq.JToken token, !!T obj, [out] !!T&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver.OnAfterLoadToken``1(Newtonsoft.Json.Linq.JToken,``0,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnAfterLoadToken(Of T As Class) (token As JToken, obj As T, ByRef result As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterLoadToken : Newtonsoft.Json.Linq.JToken * 'T * 'T -&gt; bool (requires 'T : null)" Usage="iConverterObserver.OnAfterLoadToken (token, obj, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="obj" Type="T" />
+        <Parameter Name="result" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of the concrete object that was built.</typeparam>
+        <param name="token">Token used to build the object.</param>
+        <param name="obj">Object that was built using the token.</param>
+        <param name="result">Output parameter for observer to provide its result to the converter.</param>
+        <summary>
+            Notifies <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" /> instances after type-loading a <see cref="T:Newtonsoft.Json.Linq.JToken" /> into the 
+            provided instance of <typeparamref name="T" />.
+            </summary>
+        <returns>True if the observer provides a result and False if not.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeforeLoadToken&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool OnBeforeLoadToken&lt;T&gt; (Newtonsoft.Json.Linq.JToken token, out T result) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnBeforeLoadToken&lt;class T&gt;(class Newtonsoft.Json.Linq.JToken token, [out] !!T&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver.OnBeforeLoadToken``1(Newtonsoft.Json.Linq.JToken,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnBeforeLoadToken(Of T As Class) (token As JToken, ByRef result As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeLoadToken : Newtonsoft.Json.Linq.JToken * 'T -&gt; bool (requires 'T : null)" Usage="iConverterObserver.OnBeforeLoadToken (token, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="result" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of the concrete object to be built.</typeparam>
+        <param name="token">Token to be used to build the object.</param>
+        <param name="result">Output parameter for observer to provide its result to the converter.</param>
+        <summary>
+            Notifies <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" /> instances before type-loading a <see cref="T:Newtonsoft.Json.Linq.JToken" />.
+            </summary>
+        <returns>True if the observer provides a result and False if not.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

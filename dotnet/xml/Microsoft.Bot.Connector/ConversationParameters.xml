@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,17 +40,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConversationParameters (bool? isGroup = default, Microsoft.Bot.Connector.ChannelAccount bot = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; members = default, string topicName = default, Microsoft.Bot.Connector.Activity activity = default, object channelData = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, class Microsoft.Bot.Connector.ChannelAccount bot, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; members, string topicName, class Microsoft.Bot.Connector.Activity activity, object channelData) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationParameters.#ctor(System.Nullable{System.Boolean},Microsoft.Bot.Connector.ChannelAccount,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,Microsoft.Bot.Connector.Activity,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional bot As ChannelAccount = null, Optional members As IList(Of ChannelAccount) = null, Optional topicName As String = null, Optional activity As Activity = null, Optional channelData As Object = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationParameters : Nullable&lt;bool&gt; * Microsoft.Bot.Connector.ChannelAccount * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * string * Microsoft.Bot.Connector.Activity * obj -&gt; Microsoft.Bot.Connector.ConversationParameters" Usage="new Microsoft.Bot.Connector.ConversationParameters (isGroup, bot, members, topicName, activity, channelData)" />
+      <MemberSignature Language="C#" Value="public ConversationParameters (bool? isGroup = default, Microsoft.Bot.Connector.ChannelAccount bot = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; members = default, string topicName = default, Microsoft.Bot.Connector.Activity activity = default, object channelData = default, string tenantId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, class Microsoft.Bot.Connector.ChannelAccount bot, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; members, string topicName, class Microsoft.Bot.Connector.Activity activity, object channelData, string tenantId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationParameters.#ctor(System.Nullable{System.Boolean},Microsoft.Bot.Connector.ChannelAccount,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.String,Microsoft.Bot.Connector.Activity,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional bot As ChannelAccount = null, Optional members As IList(Of ChannelAccount) = null, Optional topicName As String = null, Optional activity As Activity = null, Optional channelData As Object = null, Optional tenantId As String = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationParameters : Nullable&lt;bool&gt; * Microsoft.Bot.Connector.ChannelAccount * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * string * Microsoft.Bot.Connector.Activity * obj * string -&gt; Microsoft.Bot.Connector.ConversationParameters" Usage="new Microsoft.Bot.Connector.ConversationParameters (isGroup, bot, members, topicName, activity, channelData, tenantId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isGroup" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -57,6 +57,7 @@
         <Parameter Name="topicName" Type="System.String" />
         <Parameter Name="activity" Type="Microsoft.Bot.Connector.Activity" />
         <Parameter Name="channelData" Type="System.Object" />
+        <Parameter Name="tenantId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="isGroup">To be added.</param>
@@ -65,6 +66,7 @@
         <param name="topicName">To be added.</param>
         <param name="activity">To be added.</param>
         <param name="channelData">To be added.</param>
+        <param name="tenantId">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,6 +83,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -108,6 +111,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -135,6 +139,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -162,6 +167,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -189,6 +195,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -197,6 +204,31 @@
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TenantId">
+      <MemberSignature Language="C#" Value="public string TenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TenantId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Connector.ConversationParameters.TenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TenantId As String" />
+      <MemberSignature Language="F#" Value="member this.TenantId : string with get, set" Usage="Microsoft.Bot.Connector.ConversationParameters.TenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tenantId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -216,6 +248,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
