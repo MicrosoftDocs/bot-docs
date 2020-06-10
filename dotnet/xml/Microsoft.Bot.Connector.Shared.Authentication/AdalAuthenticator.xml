@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="clientCredential" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" />
@@ -40,25 +42,26 @@
       </Docs>
     </Member>
     <Member MemberName="GetTokenAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync (bool forceRefresh = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync(bool forceRefresh) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator.GetTokenAsync(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional forceRefresh As Boolean = false) As Task(Of AuthenticationResult)" />
-      <MemberSignature Language="F#" Value="member this.GetTokenAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;" Usage="adalAuthenticator.GetTokenAsync forceRefresh" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync (bool forceRefresh = false, string oauthScope = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync(bool forceRefresh, string oauthScope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator.GetTokenAsync(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional forceRefresh As Boolean = false, Optional oauthScope As String = null) As Task(Of AuthenticationResult)" />
+      <MemberSignature Language="F#" Value="member this.GetTokenAsync : bool * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;" Usage="adalAuthenticator.GetTokenAsync (forceRefresh, oauthScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="forceRefresh" Type="System.Boolean" />
+        <Parameter Name="oauthScope" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="forceRefresh">To be added.</param>
+        <param name="oauthScope">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

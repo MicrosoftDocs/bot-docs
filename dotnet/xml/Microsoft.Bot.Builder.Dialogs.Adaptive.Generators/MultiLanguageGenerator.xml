@@ -1,0 +1,129 @@
+<Type Name="MultiLanguageGenerator" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator">
+  <TypeSignature Language="C#" Value="public class MultiLanguageGenerator : Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGeneratorBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiLanguageGenerator extends Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGeneratorBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class MultiLanguageGenerator&#xA;Inherits MultiLanguageGeneratorBase" />
+  <TypeSignature Language="F#" Value="type MultiLanguageGenerator = class&#xA;    inherit MultiLanguageGeneratorBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGeneratorBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ILanguageGenerator which uses implements a map of locale-&gt;ILanguageGenerator for the locale and has a policy which controls fallback (try en-us -&gt; en -&gt; default).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiLanguageGenerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageGenerators">
+      <MemberSignature Language="C#" Value="public System.Collections.Concurrent.ConcurrentDictionary&lt;string,Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator&gt; LanguageGenerators { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Concurrent.ConcurrentDictionary`2&lt;string, class Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator&gt; LanguageGenerators" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator.LanguageGenerators" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageGenerators As ConcurrentDictionary(Of String, LanguageGenerator)" />
+      <MemberSignature Language="F#" Value="member this.LanguageGenerators : System.Collections.Concurrent.ConcurrentDictionary&lt;string, Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator.LanguageGenerators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("languageGenerators")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Concurrent.ConcurrentDictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the language generators for multiple languages.
+            </summary>
+        <value>
+            The language generators for multiple languages.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetGenerator">
+      <MemberSignature Language="C#" Value="public override bool TryGetGenerator (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string locale, out Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator languageGenerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetGenerator(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string locale, [out] class Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator&amp; languageGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.MultiLanguageGenerator.TryGetGenerator(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetGenerator (dialogContext As DialogContext, locale As String, ByRef languageGenerator As LanguageGenerator) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryGetGenerator : Microsoft.Bot.Builder.Dialogs.DialogContext * string * LanguageGenerator -&gt; bool" Usage="multiLanguageGenerator.TryGetGenerator (dialogContext, locale, languageGenerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="languageGenerator" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context for the current turn of conversation with the user.</param>
+        <param name="locale">locale.</param>
+        <param name="languageGenerator">generator to return.</param>
+        <summary>
+            Implementation of lookup by locale.  This uses internal dictionary to lookup.
+            </summary>
+        <returns>true if found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

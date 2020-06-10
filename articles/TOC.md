@@ -109,9 +109,7 @@
 ## [REST](rest-api/TOC.md)
 ## [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
 ## [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
-## BF CLI tool reference
-### [BF CLI overview](v4sdk/bf-cli-overview.md)
-### [BF CLI reference](v4sdk/bf-cli-reference.md)
+## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
