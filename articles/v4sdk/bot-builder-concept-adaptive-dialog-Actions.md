@@ -44,7 +44,7 @@ Adaptive dialogs support the following actions:
 
 | Activity to accomplish                         | Action Name                    | What this action does                                              |
 | ---------------------------------------------- | ------------------------------ | ------------------------------------------------------------------ |
-| Send any activity such as responding to a user.| [SendActivity](#send-activity) | Enables you send any type of activity such as responding to users. |
+| Send any activity such as responding to a user.| [SendActivity](#send-activity) | Send any type of activity such as responding to users. |
 
 For a code sample see [Send a response example](#send-a-response-example).
 
@@ -81,16 +81,15 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Activity to accomplish | Action Name                      | What this action does                                                     |
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.    |
-| Cancel a dialog        | CancelDialog<!--[CancelDialog](#canceldialog)-->| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.|
+| Cancel a dialog        | `CancelDialog`<!--[CancelDialog](#canceldialog)-->| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.|
 | Cancel all dialogs     | [CancelAllDialogs](#cancelalldialog)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 | End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
 | Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
 | Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
-| Update an activity     | [UpdateActivity](#update-activity)| This enables you to update an activity that was sent.                    |
-| DeleteActivity        | [DeleteActivity](#delete-activity) | Enables you to delete an activity that was sent.                         |
-| Get activity members | [GetActivityMembers](#get-activity-members)| Enables you to get a list of activity members and save it to a property in [memory][11].|
-| GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in [memory][11].|
+| Update an activity     | [UpdateActivity](#update-activity)| Update an activity that was sent.                    |
+| Get activity members | [GetActivityMembers](#get-activity-members)| Get a list of activity members and save it to a property in [memory][11].|
+| GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Get a list of the conversation members and save it to a property in [memory][11].|
 | EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
 
 For code samples see [Dialog management examples](#dialog-management-examples).
