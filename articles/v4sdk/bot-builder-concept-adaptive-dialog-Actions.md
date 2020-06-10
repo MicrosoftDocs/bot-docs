@@ -110,13 +110,13 @@ For code samples see [Manage properties examples](#manage-properties-examples).
 
 ### Access external resources
 
-| Activity to accomplish | Action Name                  | What this action does                                                                 |
-| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------- |
-| Begin a skill dialog   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                         |
-| Send an HTTP request   | [HttpRequest](#httprequest)  | Use to make HTTP requests to any endpoint.                                            |
-| Emit a custom event    | [EmitEvent](#emitevent)      | Use to raise a custom event that your bot can respond to using a [custom trigger][8]. |
-| Sign out a user        | [SignOutUser](#sign-out-user)| Sign out the currently signed in user.                                                |
-| Call custom code       | [CodeAction](#codeaction)    | Call your own custom code.                                                            |
+| Activity to accomplish | Action Name                  | What this action does                                                          |
+| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------ |
+| Begin a skill dialog   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                  |
+| Send an HTTP request   | [HttpRequest](#httprequest)  | Make HTTP requests to any endpoint.                                            |
+| Emit a custom event    | [EmitEvent](#emitevent)      | Raise a custom event that your bot can respond to using a [custom trigger][8]. |
+| Sign out a user        | [SignOutUser](#sign-out-user)| Sign out the currently signed in user.                                         |
+| Call custom code       | [CodeAction](#codeaction)    | Call your own custom code.                                                     |
 
 For code samples see [Access external resource examples](#access-external-resource-examples).
 
