@@ -20,7 +20,7 @@ This article explains the concepts behind declarative assets and bots that incor
 
 ## Declarative files
 
-Declarative files currently consist of _.dialog_ files, a JSON based file that describe all of the attributes of an adaptive dialog and _.lg_ files that consist of LG templates that define the [language generation (LG)](bot-builder-concept-adaptive-dialog-generators.md) aspects of your bot.
+Declarative files currently consist of _.dialog_ files that describe all of the attributes of an adaptive dialog and _.lg_ files that consist of LG templates that define the [language generation (LG)](bot-builder-concept-adaptive-dialog-generators.md) aspects of your bot.
 
 ### .dialog files
 
