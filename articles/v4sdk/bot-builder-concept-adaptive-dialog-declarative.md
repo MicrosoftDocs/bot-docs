@@ -30,8 +30,8 @@ Adaptive dialog declarative files that have the .dialog extension contain the fo
 - The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot Framework SDK that is designed to work using the declarative approach.
 - The `recognizer` value contains a [recognizer type][recognizer-types] and an array of one or more [intents][intents] and optionally an array of one or more [entities][entity].
 - The `generator` value contains a link to the .lg file associated with the adaptive dialog that this .dialog file defines.
-- The `triggers` value contains an array of one or more [triggers][bot-builder-concept-adaptive-dialog-triggers.md]. The type of trigger is declared using the `$kind` keyword. Each trigger contains an array of one or more actions.
-- The `actions` value contains an array of one or more [actions][bot-builder-concept-adaptive-dialog-actions.md], each action can have properties associated with it.
+- The `triggers` value contains an array of one or more [triggers](bot-builder-concept-adaptive-dialog-triggers.md). The type of trigger is declared using the `$kind` keyword. Each trigger contains an array of one or more actions.
+- The `actions` value contains an array of one or more [actions](bot-builder-concept-adaptive-dialog-actions.md), each action can have properties associated with it.
 
 An example of a simple .dialog file:
 
@@ -185,7 +185,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 > Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
 
 > [!TIP]
-> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input][bot-builder-concept-adaptive-dialog-inputs.md].
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input](bot-builder-concept-adaptive-dialog-inputs.md).
 
 ##### Dialog event trigger example using declarative
 
