@@ -11,7 +11,7 @@ ms.date: 06/09/2020
 
 # Deployment Frequently Asked Questions
 
-This article contains answers to some frequently asked questions about how to deploy a bot to Azure covered in [this article](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0). You will find the answers to the following questions: 
+This article contains answers to some frequently asked questions about how to deploy a bot to Azure covered in [this article](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0). You will find the answers to the following questions: 
 
 - [Deployment Frequently Asked Questions](#deployment-frequently-asked-questions)
   - [Zip up the code directory](#zip-up-the-code-directory)
@@ -30,7 +30,7 @@ This article contains answers to some frequently asked questions about how to de
 
 ### What files do we need to zip up?
 
-In the [zip up the code directory manually step](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually) of the [deploy a bot to Azure](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0) article, you will need to manually zip up the files.
+In the [zip up the code directory manually step](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually) of the [deploy a bot to Azure](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0) article, you will need to manually zip up the files.
 
 Please make sure that you select all the files and folders in your bot's project folder. Then, still in the bot's project folder, zip up all the selected files and folders. For example:
 
