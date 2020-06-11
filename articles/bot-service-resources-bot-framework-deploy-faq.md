@@ -74,8 +74,9 @@ The deprecated Azure CLI commands related to `az deployment` are the following:
 
 ### How do I know whether the Azure CLI commands are deprecated?
 
-To know whether Azure CLI commands are deprecated or not, you can add `-h` after the executed command to check. For example, if you have a newer version of Azure CLI but execute a deprecated command (with `-h`) such as `az deployment create -h`, you will see a prompt message such as "This command has been deprecated and will be removed in a future release. Use 'deployment sub create' instead." 
+To know whether Azure CLI commands are deprecated or not, you can add `-h` after the executed command to check. For example, if you have a newer version of Azure CLI but execute a deprecated command (with `-h`) such as `az deployment create -h`, you will see a prompt message such as "This command has been deprecated and will be removed in a future release. Use 'deployment sub create' instead."
 
+[cli help](./media/deploy-bot-cli/cli-help.png)
 
 ## Additional information
 
