@@ -35,12 +35,12 @@ In the [zip up the code directory manually step](https://docs.microsoft.com/en-u
 Please make sure that you select all the files and folders in your bot's project folder. Then, still in the bot's project folder, zip up all the selected files and folders. For example:
 
 > [!div class="mx-imgBorder"]
-> ![image](https://user-images.githubusercontent.com/32497439/83956487-98d28580-a813-11ea-92d0-21c7c2f1ead4.png)
+> ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
 
 Then you will have a `.zip` file (the name may differ) such as this one:
 
 > [!div class="mx-imgBorder"]
-> ![image](https://user-images.githubusercontent.com/32497439/83956512-c15a7f80-a813-11ea-9c72-7441e32e0c7b.png)
+> ![zip file](./media/deploy-bot-cli/zip-file.png)
 
 After that, you can run the command to deploy your bot. 
 
@@ -76,7 +76,7 @@ The deprecated Azure CLI commands related to `az deployment` are the following:
 
 To know whether Azure CLI commands are deprecated or not, you can add `-h` after the executed command to check. For example, if you have a newer version of Azure CLI but execute a deprecated command (with `-h`) such as `az deployment create -h`, you will see a prompt message such as "This command has been deprecated and will be removed in a future release. Use 'deployment sub create' instead."
 
-[cli help](./media/deploy-bot-cli/cli-help.png)
+![cli help](./media/deploy-bot-cli/cli-help.png)
 
 ## Additional information
 
