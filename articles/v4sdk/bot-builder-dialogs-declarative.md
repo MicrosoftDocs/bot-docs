@@ -308,6 +308,8 @@ const handleResourceChange = (resources) => {
 [concept-declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [how-to-adaptive]: bot-builder-dialogs-adaptive.md
 
+[bf-cli]: https://aka.ms/bf-cli-overview
+
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
