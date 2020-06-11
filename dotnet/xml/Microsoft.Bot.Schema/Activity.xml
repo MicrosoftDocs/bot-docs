@@ -6,13 +6,8 @@
   <TypeSignature Language="F#" Value="type Activity = class&#xA;    interface IActivity&#xA;    interface IConversationUpdateActivity&#xA;    interface IContactRelationUpdateActivity&#xA;    interface IInstallationUpdateActivity&#xA;    interface IMessageActivity&#xA;    interface IMessageUpdateActivity&#xA;    interface IMessageDeleteActivity&#xA;    interface IMessageReactionActivity&#xA;    interface ISuggestionActivity&#xA;    interface ITypingActivity&#xA;    interface IEndOfConversationActivity&#xA;    interface IEventActivity&#xA;    interface IInvokeActivity&#xA;    interface ITraceActivity&#xA;    interface IHandoffActivity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-    <AssemblyVersion>4.0.7.0</AssemblyVersion>
-    <AssemblyVersion>4.1.5.0</AssemblyVersion>
-    <AssemblyVersion>4.3.2.0</AssemblyVersion>
-    <AssemblyVersion>4.4.0.0</AssemblyVersion>
-    <AssemblyVersion>4.5.0.0</AssemblyVersion>
-    <AssemblyVersion>4.7.0.0</AssemblyVersion>
-    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -88,13 +83,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -113,11 +103,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -280,13 +267,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -318,13 +300,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -360,13 +337,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -392,13 +364,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -424,13 +391,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -456,13 +418,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -485,13 +442,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IHandoffActivity</ReturnType>
@@ -517,13 +469,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInstallationUpdateActivity</ReturnType>
@@ -549,13 +496,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -581,13 +523,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -613,13 +550,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageDeleteActivity</ReturnType>
@@ -645,13 +577,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageReactionActivity</ReturnType>
@@ -677,13 +604,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageUpdateActivity</ReturnType>
@@ -709,13 +631,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ISuggestionActivity</ReturnType>
@@ -738,13 +655,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -770,13 +682,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -802,13 +709,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -839,13 +741,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -872,9 +769,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -907,13 +803,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -943,13 +834,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -980,13 +866,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1016,13 +897,8 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1046,13 +922,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1079,13 +950,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IContactRelationUpdateActivity</ReturnType>
@@ -1108,13 +974,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IConversationUpdateActivity</ReturnType>
@@ -1137,13 +998,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEndOfConversationActivity</ReturnType>
@@ -1166,13 +1022,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -1195,13 +1046,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IHandoffActivity</ReturnType>
@@ -1224,13 +1070,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IInvokeActivity</ReturnType>
@@ -1253,13 +1094,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -1282,13 +1118,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -1316,13 +1147,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -1361,13 +1187,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITraceActivity</ReturnType>
@@ -1406,13 +1227,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ITypingActivity</ReturnType>
@@ -1438,13 +1254,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1477,13 +1288,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1513,13 +1319,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1550,13 +1351,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1586,13 +1382,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -1624,13 +1415,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -1642,7 +1428,6 @@
             </summary>
         <returns>A conversation reference for the conversation that contains this activity.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="GetMentions">
@@ -1657,13 +1442,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Mention[]</ReturnType>
@@ -1690,11 +1470,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -1709,7 +1486,6 @@
             </summary>
         <returns>A ConversationReference that can be stored and used later to delete or update the activity.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="HasContent">
@@ -1724,13 +1500,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1758,13 +1529,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1795,13 +1561,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1832,13 +1593,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1869,13 +1625,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1905,13 +1656,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1938,8 +1684,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1968,13 +1714,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2001,13 +1742,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2038,13 +1774,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2079,13 +1810,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2114,11 +1840,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2150,13 +1873,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2186,13 +1904,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2225,13 +1938,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2259,13 +1967,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2298,13 +2001,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2334,13 +2032,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2371,13 +2064,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2409,13 +2097,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2445,13 +2128,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2479,13 +2157,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2516,13 +2189,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2553,13 +2221,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2589,13 +2252,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2625,13 +2283,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2663,13 +2316,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2699,13 +2347,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2736,13 +2379,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2773,13 +2411,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2810,13 +2443,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2846,13 +2474,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2891,13 +2514,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2934,13 +2552,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2970,13 +2583,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

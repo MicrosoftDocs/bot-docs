@@ -1,0 +1,161 @@
+<Type Name="DebugTransport" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport">
+  <TypeSignature Language="C#" Value="public abstract class DebugTransport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DebugTransport extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DebugTransport" />
+  <TypeSignature Language="F#" Value="type DebugTransport = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DebugTransport (Microsoft.Extensions.Logging.ILogger logger);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.#ctor(Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (logger As ILogger)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport : Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport" Usage="new Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport logger" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="logger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptAsync">
+      <MemberSignature Language="C#" Value="protected abstract System.Threading.Tasks.Task AcceptAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task AcceptAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.AcceptAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function AcceptAsync (cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member AcceptAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="debugTransport.AcceptAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task ListenAsync (System.Net.IPEndPoint point, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task ListenAsync(class System.Net.IPEndPoint point, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.ListenAsync(System.Net.IPEndPoint,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ListenAsync (point As IPEndPoint, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.ListenAsync : System.Net.IPEndPoint * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="debugTransport.ListenAsync (point, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Net.IPEndPoint" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="point">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logger">
+      <MemberSignature Language="C#" Value="protected Microsoft.Extensions.Logging.ILogger Logger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Extensions.Logging.ILogger Logger" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.Logger" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Logger As ILogger" />
+      <MemberSignature Language="F#" Value="member this.Logger : Microsoft.Extensions.Logging.ILogger with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.Logger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Logging.ILogger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt; ReadAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JToken&gt; ReadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.ReadAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function ReadAsync (cancellationToken As CancellationToken) As Task(Of JToken)" />
+      <MemberSignature Language="F#" Value="member this.ReadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt;" Usage="debugTransport.ReadAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task SendAsync (Newtonsoft.Json.Linq.JToken token, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task SendAsync(class Newtonsoft.Json.Linq.JToken token, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.SendAsync(Newtonsoft.Json.Linq.JToken,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SendAsync (token As JToken, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : Newtonsoft.Json.Linq.JToken * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="debugTransport.SendAsync (token, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

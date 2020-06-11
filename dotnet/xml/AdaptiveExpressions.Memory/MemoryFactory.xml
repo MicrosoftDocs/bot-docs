@@ -1,0 +1,47 @@
+<Type Name="MemoryFactory" FullName="AdaptiveExpressions.Memory.MemoryFactory">
+  <TypeSignature Language="C#" Value="public static class MemoryFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MemoryFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.Memory.MemoryFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class MemoryFactory" />
+  <TypeSignature Language="F#" Value="type MemoryFactory = class" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static AdaptiveExpressions.Memory.IMemory Create (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class AdaptiveExpressions.Memory.IMemory Create(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Memory.MemoryFactory.Create(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (obj As Object) As IMemory" />
+      <MemberSignature Language="F#" Value="static member Create : obj -&gt; AdaptiveExpressions.Memory.IMemory" Usage="AdaptiveExpressions.Memory.MemoryFactory.Create obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Memory.IMemory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Common object.</param>
+        <summary>
+            Get an appropriate IMemory implementation for an object.
+            </summary>
+        <returns>IMemory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

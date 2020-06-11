@@ -1,0 +1,75 @@
+<Type Name="Case" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case">
+  <TypeSignature Language="C#" Value="public class Case : Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Case extends Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case" />
+  <TypeSignature Language="VB.NET" Value="Public Class Case&#xA;Inherits ActionScope" />
+  <TypeSignature Language="F#" Value="type Case = class&#xA;    inherit ActionScope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScope</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Case (string value = default, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Dialog&gt; actions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Dialogs.Dialog})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional value As String = null, Optional actions As IEnumerable(Of Dialog) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case : string * seq&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case (value, actions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="actions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="actions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.Case.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("value")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets constant to be compared against condition.
+            </summary>
+        <value>
+            Constant be compared against condition.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

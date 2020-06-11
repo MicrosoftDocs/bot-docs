@@ -1,0 +1,2619 @@
+<Type Name="ExpressionType" FullName="AdaptiveExpressions.ExpressionType">
+  <TypeSignature Language="C#" Value="public static class ExpressionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ExpressionType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.ExpressionType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionType" />
+  <TypeSignature Language="F#" Value="type ExpressionType = class" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Built-in expression types.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accessor">
+      <MemberSignature Language="C#" Value="public const string Accessor;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Accessor" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Accessor" />
+      <MemberSignature Language="VB.NET" Value="Public Const Accessor As String " />
+      <MemberSignature Language="F#" Value="val mutable Accessor : string" Usage="AdaptiveExpressions.ExpressionType.Accessor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public const string Add;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Add" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Add" />
+      <MemberSignature Language="VB.NET" Value="Public Const Add As String " />
+      <MemberSignature Language="F#" Value="val mutable Add : string" Usage="AdaptiveExpressions.ExpressionType.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDays">
+      <MemberSignature Language="C#" Value="public const string AddDays;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddDays" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddDays" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddDays As String " />
+      <MemberSignature Language="F#" Value="val mutable AddDays : string" Usage="AdaptiveExpressions.ExpressionType.AddDays" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHours">
+      <MemberSignature Language="C#" Value="public const string AddHours;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddHours" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddHours" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddHours As String " />
+      <MemberSignature Language="F#" Value="val mutable AddHours : string" Usage="AdaptiveExpressions.ExpressionType.AddHours" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMinutes">
+      <MemberSignature Language="C#" Value="public const string AddMinutes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddMinutes" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddMinutes As String " />
+      <MemberSignature Language="F#" Value="val mutable AddMinutes : string" Usage="AdaptiveExpressions.ExpressionType.AddMinutes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrdinal">
+      <MemberSignature Language="C#" Value="public const string AddOrdinal;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddOrdinal" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddOrdinal" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddOrdinal As String " />
+      <MemberSignature Language="F#" Value="val mutable AddOrdinal : string" Usage="AdaptiveExpressions.ExpressionType.AddOrdinal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProperty">
+      <MemberSignature Language="C#" Value="public const string AddProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddProperty" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddProperty As String " />
+      <MemberSignature Language="F#" Value="val mutable AddProperty : string" Usage="AdaptiveExpressions.ExpressionType.AddProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSeconds">
+      <MemberSignature Language="C#" Value="public const string AddSeconds;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddSeconds" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddSeconds As String " />
+      <MemberSignature Language="F#" Value="val mutable AddSeconds : string" Usage="AdaptiveExpressions.ExpressionType.AddSeconds" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToTime">
+      <MemberSignature Language="C#" Value="public const string AddToTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AddToTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.AddToTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const AddToTime As String " />
+      <MemberSignature Language="F#" Value="val mutable AddToTime : string" Usage="AdaptiveExpressions.ExpressionType.AddToTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="public const string And;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string And" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.And" />
+      <MemberSignature Language="VB.NET" Value="Public Const And As String " />
+      <MemberSignature Language="F#" Value="val mutable And : string" Usage="AdaptiveExpressions.ExpressionType.And" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Average">
+      <MemberSignature Language="C#" Value="public const string Average;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Average" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Average" />
+      <MemberSignature Language="VB.NET" Value="Public Const Average As String " />
+      <MemberSignature Language="F#" Value="val mutable Average : string" Usage="AdaptiveExpressions.ExpressionType.Average" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Base64">
+      <MemberSignature Language="C#" Value="public const string Base64;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Base64" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Base64" />
+      <MemberSignature Language="VB.NET" Value="Public Const Base64 As String " />
+      <MemberSignature Language="F#" Value="val mutable Base64 : string" Usage="AdaptiveExpressions.ExpressionType.Base64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Base64ToBinary">
+      <MemberSignature Language="C#" Value="public const string Base64ToBinary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Base64ToBinary" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Base64ToBinary" />
+      <MemberSignature Language="VB.NET" Value="Public Const Base64ToBinary As String " />
+      <MemberSignature Language="F#" Value="val mutable Base64ToBinary : string" Usage="AdaptiveExpressions.ExpressionType.Base64ToBinary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Base64ToString">
+      <MemberSignature Language="C#" Value="public const string Base64ToString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Base64ToString" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Base64ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Const Base64ToString As String " />
+      <MemberSignature Language="F#" Value="val mutable Base64ToString : string" Usage="AdaptiveExpressions.ExpressionType.Base64ToString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="public const string Binary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Binary" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Binary" />
+      <MemberSignature Language="VB.NET" Value="Public Const Binary As String " />
+      <MemberSignature Language="F#" Value="val mutable Binary : string" Usage="AdaptiveExpressions.ExpressionType.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bool">
+      <MemberSignature Language="C#" Value="public const string Bool;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Bool" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Bool" />
+      <MemberSignature Language="VB.NET" Value="Public Const Bool As String " />
+      <MemberSignature Language="F#" Value="val mutable Bool : string" Usage="AdaptiveExpressions.ExpressionType.Bool" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coalesce">
+      <MemberSignature Language="C#" Value="public const string Coalesce;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Coalesce" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Coalesce" />
+      <MemberSignature Language="VB.NET" Value="Public Const Coalesce As String " />
+      <MemberSignature Language="F#" Value="val mutable Coalesce : string" Usage="AdaptiveExpressions.ExpressionType.Coalesce" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Concat">
+      <MemberSignature Language="C#" Value="public const string Concat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Concat" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Concat" />
+      <MemberSignature Language="VB.NET" Value="Public Const Concat As String " />
+      <MemberSignature Language="F#" Value="val mutable Concat : string" Usage="AdaptiveExpressions.ExpressionType.Concat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Constant">
+      <MemberSignature Language="C#" Value="public const string Constant;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Constant" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Constant" />
+      <MemberSignature Language="VB.NET" Value="Public Const Constant As String " />
+      <MemberSignature Language="F#" Value="val mutable Constant : string" Usage="AdaptiveExpressions.ExpressionType.Constant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public const string Contains;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Contains" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Contains" />
+      <MemberSignature Language="VB.NET" Value="Public Const Contains As String " />
+      <MemberSignature Language="F#" Value="val mutable Contains : string" Usage="AdaptiveExpressions.ExpressionType.Contains" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFromUtc">
+      <MemberSignature Language="C#" Value="public const string ConvertFromUtc;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ConvertFromUtc" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.ConvertFromUtc" />
+      <MemberSignature Language="VB.NET" Value="Public Const ConvertFromUtc As String " />
+      <MemberSignature Language="F#" Value="val mutable ConvertFromUtc : string" Usage="AdaptiveExpressions.ExpressionType.ConvertFromUtc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToUtc">
+      <MemberSignature Language="C#" Value="public const string ConvertToUtc;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ConvertToUtc" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.ConvertToUtc" />
+      <MemberSignature Language="VB.NET" Value="Public Const ConvertToUtc As String " />
+      <MemberSignature Language="F#" Value="val mutable ConvertToUtc : string" Usage="AdaptiveExpressions.ExpressionType.ConvertToUtc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public const string Count;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Count" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Const Count As String " />
+      <MemberSignature Language="F#" Value="val mutable Count : string" Usage="AdaptiveExpressions.ExpressionType.Count" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountWord">
+      <MemberSignature Language="C#" Value="public const string CountWord;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CountWord" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.CountWord" />
+      <MemberSignature Language="VB.NET" Value="Public Const CountWord As String " />
+      <MemberSignature Language="F#" Value="val mutable CountWord : string" Usage="AdaptiveExpressions.ExpressionType.CountWord" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateArray">
+      <MemberSignature Language="C#" Value="public const string CreateArray;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CreateArray" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.CreateArray" />
+      <MemberSignature Language="VB.NET" Value="Public Const CreateArray As String " />
+      <MemberSignature Language="F#" Value="val mutable CreateArray : string" Usage="AdaptiveExpressions.ExpressionType.CreateArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataUri">
+      <MemberSignature Language="C#" Value="public const string DataUri;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DataUri" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DataUri" />
+      <MemberSignature Language="VB.NET" Value="Public Const DataUri As String " />
+      <MemberSignature Language="F#" Value="val mutable DataUri : string" Usage="AdaptiveExpressions.ExpressionType.DataUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataUriToBinary">
+      <MemberSignature Language="C#" Value="public const string DataUriToBinary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DataUriToBinary" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DataUriToBinary" />
+      <MemberSignature Language="VB.NET" Value="Public Const DataUriToBinary As String " />
+      <MemberSignature Language="F#" Value="val mutable DataUriToBinary : string" Usage="AdaptiveExpressions.ExpressionType.DataUriToBinary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataUriToString">
+      <MemberSignature Language="C#" Value="public const string DataUriToString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DataUriToString" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DataUriToString" />
+      <MemberSignature Language="VB.NET" Value="Public Const DataUriToString As String " />
+      <MemberSignature Language="F#" Value="val mutable DataUriToString : string" Usage="AdaptiveExpressions.ExpressionType.DataUriToString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="public const string Date;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Date" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Date" />
+      <MemberSignature Language="VB.NET" Value="Public Const Date As String " />
+      <MemberSignature Language="F#" Value="val mutable Date : string" Usage="AdaptiveExpressions.ExpressionType.Date" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateReadBack">
+      <MemberSignature Language="C#" Value="public const string DateReadBack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DateReadBack" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DateReadBack" />
+      <MemberSignature Language="VB.NET" Value="Public Const DateReadBack As String " />
+      <MemberSignature Language="F#" Value="val mutable DateReadBack : string" Usage="AdaptiveExpressions.ExpressionType.DateReadBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfMonth">
+      <MemberSignature Language="C#" Value="public const string DayOfMonth;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DayOfMonth" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DayOfMonth" />
+      <MemberSignature Language="VB.NET" Value="Public Const DayOfMonth As String " />
+      <MemberSignature Language="F#" Value="val mutable DayOfMonth : string" Usage="AdaptiveExpressions.ExpressionType.DayOfMonth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfWeek">
+      <MemberSignature Language="C#" Value="public const string DayOfWeek;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DayOfWeek" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="Public Const DayOfWeek As String " />
+      <MemberSignature Language="F#" Value="val mutable DayOfWeek : string" Usage="AdaptiveExpressions.ExpressionType.DayOfWeek" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfYear">
+      <MemberSignature Language="C#" Value="public const string DayOfYear;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DayOfYear" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.DayOfYear" />
+      <MemberSignature Language="VB.NET" Value="Public Const DayOfYear As String " />
+      <MemberSignature Language="F#" Value="val mutable DayOfYear : string" Usage="AdaptiveExpressions.ExpressionType.DayOfYear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="public const string Divide;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Divide" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Divide" />
+      <MemberSignature Language="VB.NET" Value="Public Const Divide As String " />
+      <MemberSignature Language="F#" Value="val mutable Divide : string" Usage="AdaptiveExpressions.ExpressionType.Divide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="public const string Element;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Element" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Element" />
+      <MemberSignature Language="VB.NET" Value="Public Const Element As String " />
+      <MemberSignature Language="F#" Value="val mutable Element : string" Usage="AdaptiveExpressions.ExpressionType.Element" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public const string Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Empty" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Const Empty As String " />
+      <MemberSignature Language="F#" Value="val mutable Empty : string" Usage="AdaptiveExpressions.ExpressionType.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndsWith">
+      <MemberSignature Language="C#" Value="public const string EndsWith;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EndsWith" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.EndsWith" />
+      <MemberSignature Language="VB.NET" Value="Public Const EndsWith As String " />
+      <MemberSignature Language="F#" Value="val mutable EndsWith : string" Usage="AdaptiveExpressions.ExpressionType.EndsWith" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equal">
+      <MemberSignature Language="C#" Value="public const string Equal;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Equal" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Equal" />
+      <MemberSignature Language="VB.NET" Value="Public Const Equal As String " />
+      <MemberSignature Language="F#" Value="val mutable Equal : string" Usage="AdaptiveExpressions.ExpressionType.Equal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists">
+      <MemberSignature Language="C#" Value="public const string Exists;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Exists" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Exists" />
+      <MemberSignature Language="VB.NET" Value="Public Const Exists As String " />
+      <MemberSignature Language="F#" Value="val mutable Exists : string" Usage="AdaptiveExpressions.ExpressionType.Exists" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="public const string First;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string First" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.First" />
+      <MemberSignature Language="VB.NET" Value="Public Const First As String " />
+      <MemberSignature Language="F#" Value="val mutable First : string" Usage="AdaptiveExpressions.ExpressionType.First" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flatten">
+      <MemberSignature Language="C#" Value="public const string Flatten;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Flatten" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Flatten" />
+      <MemberSignature Language="VB.NET" Value="Public Const Flatten As String " />
+      <MemberSignature Language="F#" Value="val mutable Flatten : string" Usage="AdaptiveExpressions.ExpressionType.Flatten" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Float">
+      <MemberSignature Language="C#" Value="public const string Float;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Float" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Float" />
+      <MemberSignature Language="VB.NET" Value="Public Const Float As String " />
+      <MemberSignature Language="F#" Value="val mutable Float : string" Usage="AdaptiveExpressions.ExpressionType.Float" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreach">
+      <MemberSignature Language="C#" Value="public const string Foreach;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Foreach" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Foreach" />
+      <MemberSignature Language="VB.NET" Value="Public Const Foreach As String " />
+      <MemberSignature Language="F#" Value="val mutable Foreach : string" Usage="AdaptiveExpressions.ExpressionType.Foreach" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDateTime">
+      <MemberSignature Language="C#" Value="public const string FormatDateTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string FormatDateTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.FormatDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const FormatDateTime As String " />
+      <MemberSignature Language="F#" Value="val mutable FormatDateTime : string" Usage="AdaptiveExpressions.ExpressionType.FormatDateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatEpoch">
+      <MemberSignature Language="C#" Value="public const string FormatEpoch;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string FormatEpoch" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.FormatEpoch" />
+      <MemberSignature Language="VB.NET" Value="Public Const FormatEpoch As String " />
+      <MemberSignature Language="F#" Value="val mutable FormatEpoch : string" Usage="AdaptiveExpressions.ExpressionType.FormatEpoch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatNumber">
+      <MemberSignature Language="C#" Value="public const string FormatNumber;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string FormatNumber" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.FormatNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Const FormatNumber As String " />
+      <MemberSignature Language="F#" Value="val mutable FormatNumber : string" Usage="AdaptiveExpressions.ExpressionType.FormatNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatTicks">
+      <MemberSignature Language="C#" Value="public const string FormatTicks;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string FormatTicks" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.FormatTicks" />
+      <MemberSignature Language="VB.NET" Value="Public Const FormatTicks As String " />
+      <MemberSignature Language="F#" Value="val mutable FormatTicks : string" Usage="AdaptiveExpressions.ExpressionType.FormatTicks" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFutureTime">
+      <MemberSignature Language="C#" Value="public const string GetFutureTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GetFutureTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.GetFutureTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const GetFutureTime As String " />
+      <MemberSignature Language="F#" Value="val mutable GetFutureTime : string" Usage="AdaptiveExpressions.ExpressionType.GetFutureTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPastTime">
+      <MemberSignature Language="C#" Value="public const string GetPastTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GetPastTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.GetPastTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const GetPastTime As String " />
+      <MemberSignature Language="F#" Value="val mutable GetPastTime : string" Usage="AdaptiveExpressions.ExpressionType.GetPastTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public const string GetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GetProperty" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.GetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Const GetProperty As String " />
+      <MemberSignature Language="F#" Value="val mutable GetProperty : string" Usage="AdaptiveExpressions.ExpressionType.GetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTimeOfDay">
+      <MemberSignature Language="C#" Value="public const string GetTimeOfDay;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GetTimeOfDay" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.GetTimeOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public Const GetTimeOfDay As String " />
+      <MemberSignature Language="F#" Value="val mutable GetTimeOfDay : string" Usage="AdaptiveExpressions.ExpressionType.GetTimeOfDay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="public const string GreaterThan;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GreaterThan" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.GreaterThan" />
+      <MemberSignature Language="VB.NET" Value="Public Const GreaterThan As String " />
+      <MemberSignature Language="F#" Value="val mutable GreaterThan : string" Usage="AdaptiveExpressions.ExpressionType.GreaterThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public const string GreaterThanOrEqual;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GreaterThanOrEqual" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.GreaterThanOrEqual" />
+      <MemberSignature Language="VB.NET" Value="Public Const GreaterThanOrEqual As String " />
+      <MemberSignature Language="F#" Value="val mutable GreaterThanOrEqual : string" Usage="AdaptiveExpressions.ExpressionType.GreaterThanOrEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="If">
+      <MemberSignature Language="C#" Value="public const string If;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string If" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.If" />
+      <MemberSignature Language="VB.NET" Value="Public Const If As String " />
+      <MemberSignature Language="F#" Value="val mutable If : string" Usage="AdaptiveExpressions.ExpressionType.If" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ignore">
+      <MemberSignature Language="C#" Value="public const string Ignore;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Ignore" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Public Const Ignore As String " />
+      <MemberSignature Language="F#" Value="val mutable Ignore : string" Usage="AdaptiveExpressions.ExpressionType.Ignore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Any predicate expression wrapped in this will be ignored for specialization.
+            </summary>
+        <remarks>
+            This is useful for when you need to add expression to the trigger that are part of rule mechanics rather than of intent.
+            For example, if you have a counter for how often a particular message is displayed, then that is part of the triggering condition, 
+            but all such rules would be incomparable because they counter is per-rule. 
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public const string IndexOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IndexOf" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IndexOf" />
+      <MemberSignature Language="VB.NET" Value="Public Const IndexOf As String " />
+      <MemberSignature Language="F#" Value="val mutable IndexOf : string" Usage="AdaptiveExpressions.ExpressionType.IndexOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndicesAndValues">
+      <MemberSignature Language="C#" Value="public const string IndicesAndValues;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IndicesAndValues" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IndicesAndValues" />
+      <MemberSignature Language="VB.NET" Value="Public Const IndicesAndValues As String " />
+      <MemberSignature Language="F#" Value="val mutable IndicesAndValues : string" Usage="AdaptiveExpressions.ExpressionType.IndicesAndValues" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Int">
+      <MemberSignature Language="C#" Value="public const string Int;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Int" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Int" />
+      <MemberSignature Language="VB.NET" Value="Public Const Int As String " />
+      <MemberSignature Language="F#" Value="val mutable Int : string" Usage="AdaptiveExpressions.ExpressionType.Int" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersection">
+      <MemberSignature Language="C#" Value="public const string Intersection;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Intersection" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Intersection" />
+      <MemberSignature Language="VB.NET" Value="Public Const Intersection As String " />
+      <MemberSignature Language="F#" Value="val mutable Intersection : string" Usage="AdaptiveExpressions.ExpressionType.Intersection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArray">
+      <MemberSignature Language="C#" Value="public const string IsArray;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsArray" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsArray" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsArray As String " />
+      <MemberSignature Language="F#" Value="val mutable IsArray : string" Usage="AdaptiveExpressions.ExpressionType.IsArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBoolean">
+      <MemberSignature Language="C#" Value="public const string IsBoolean;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsBoolean" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsBoolean" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsBoolean As String " />
+      <MemberSignature Language="F#" Value="val mutable IsBoolean : string" Usage="AdaptiveExpressions.ExpressionType.IsBoolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDate">
+      <MemberSignature Language="C#" Value="public const string IsDate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsDate" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsDate" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsDate As String " />
+      <MemberSignature Language="F#" Value="val mutable IsDate : string" Usage="AdaptiveExpressions.ExpressionType.IsDate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDateRange">
+      <MemberSignature Language="C#" Value="public const string IsDateRange;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsDateRange" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsDateRange" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsDateRange As String " />
+      <MemberSignature Language="F#" Value="val mutable IsDateRange : string" Usage="AdaptiveExpressions.ExpressionType.IsDateRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDateTime">
+      <MemberSignature Language="C#" Value="public const string IsDateTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsDateTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsDateTime As String " />
+      <MemberSignature Language="F#" Value="val mutable IsDateTime : string" Usage="AdaptiveExpressions.ExpressionType.IsDateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefinite">
+      <MemberSignature Language="C#" Value="public const string IsDefinite;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsDefinite" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsDefinite" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsDefinite As String " />
+      <MemberSignature Language="F#" Value="val mutable IsDefinite : string" Usage="AdaptiveExpressions.ExpressionType.IsDefinite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDuration">
+      <MemberSignature Language="C#" Value="public const string IsDuration;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsDuration" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsDuration As String " />
+      <MemberSignature Language="F#" Value="val mutable IsDuration : string" Usage="AdaptiveExpressions.ExpressionType.IsDuration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFloat">
+      <MemberSignature Language="C#" Value="public const string IsFloat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsFloat" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsFloat" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsFloat As String " />
+      <MemberSignature Language="F#" Value="val mutable IsFloat : string" Usage="AdaptiveExpressions.ExpressionType.IsFloat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInteger">
+      <MemberSignature Language="C#" Value="public const string IsInteger;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsInteger" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsInteger" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsInteger As String " />
+      <MemberSignature Language="F#" Value="val mutable IsInteger : string" Usage="AdaptiveExpressions.ExpressionType.IsInteger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMatch">
+      <MemberSignature Language="C#" Value="public const string IsMatch;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsMatch" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsMatch" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsMatch As String " />
+      <MemberSignature Language="F#" Value="val mutable IsMatch : string" Usage="AdaptiveExpressions.ExpressionType.IsMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObject">
+      <MemberSignature Language="C#" Value="public const string IsObject;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsObject" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsObject" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsObject As String " />
+      <MemberSignature Language="F#" Value="val mutable IsObject : string" Usage="AdaptiveExpressions.ExpressionType.IsObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public const string IsPresent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsPresent" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsPresent" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsPresent As String " />
+      <MemberSignature Language="F#" Value="val mutable IsPresent : string" Usage="AdaptiveExpressions.ExpressionType.IsPresent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsString">
+      <MemberSignature Language="C#" Value="public const string IsString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsString" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsString" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsString As String " />
+      <MemberSignature Language="F#" Value="val mutable IsString : string" Usage="AdaptiveExpressions.ExpressionType.IsString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTime">
+      <MemberSignature Language="C#" Value="public const string IsTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsTime As String " />
+      <MemberSignature Language="F#" Value="val mutable IsTime : string" Usage="AdaptiveExpressions.ExpressionType.IsTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTimeRange">
+      <MemberSignature Language="C#" Value="public const string IsTimeRange;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsTimeRange" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.IsTimeRange" />
+      <MemberSignature Language="VB.NET" Value="Public Const IsTimeRange As String " />
+      <MemberSignature Language="F#" Value="val mutable IsTimeRange : string" Usage="AdaptiveExpressions.ExpressionType.IsTimeRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public const string Join;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Join" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Join" />
+      <MemberSignature Language="VB.NET" Value="Public Const Join As String " />
+      <MemberSignature Language="F#" Value="val mutable Join : string" Usage="AdaptiveExpressions.ExpressionType.Join" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JPath">
+      <MemberSignature Language="C#" Value="public const string JPath;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string JPath" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.JPath" />
+      <MemberSignature Language="VB.NET" Value="Public Const JPath As String " />
+      <MemberSignature Language="F#" Value="val mutable JPath : string" Usage="AdaptiveExpressions.ExpressionType.JPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Json">
+      <MemberSignature Language="C#" Value="public const string Json;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Json" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Json" />
+      <MemberSignature Language="VB.NET" Value="Public Const Json As String " />
+      <MemberSignature Language="F#" Value="val mutable Json : string" Usage="AdaptiveExpressions.ExpressionType.Json" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lambda">
+      <MemberSignature Language="C#" Value="public const string Lambda;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Lambda" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Lambda" />
+      <MemberSignature Language="VB.NET" Value="Public Const Lambda As String " />
+      <MemberSignature Language="F#" Value="val mutable Lambda : string" Usage="AdaptiveExpressions.ExpressionType.Lambda" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="public const string Last;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Last" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Last" />
+      <MemberSignature Language="VB.NET" Value="Public Const Last As String " />
+      <MemberSignature Language="F#" Value="val mutable Last : string" Usage="AdaptiveExpressions.ExpressionType.Last" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastIndexOf">
+      <MemberSignature Language="C#" Value="public const string LastIndexOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LastIndexOf" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.LastIndexOf" />
+      <MemberSignature Language="VB.NET" Value="Public Const LastIndexOf As String " />
+      <MemberSignature Language="F#" Value="val mutable LastIndexOf : string" Usage="AdaptiveExpressions.ExpressionType.LastIndexOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public const string Length;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Length" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Const Length As String " />
+      <MemberSignature Language="F#" Value="val mutable Length : string" Usage="AdaptiveExpressions.ExpressionType.Length" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="public const string LessThan;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LessThan" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.LessThan" />
+      <MemberSignature Language="VB.NET" Value="Public Const LessThan As String " />
+      <MemberSignature Language="F#" Value="val mutable LessThan : string" Usage="AdaptiveExpressions.ExpressionType.LessThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public const string LessThanOrEqual;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LessThanOrEqual" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.LessThanOrEqual" />
+      <MemberSignature Language="VB.NET" Value="Public Const LessThanOrEqual As String " />
+      <MemberSignature Language="F#" Value="val mutable LessThanOrEqual : string" Usage="AdaptiveExpressions.ExpressionType.LessThanOrEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="public const string Max;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Max" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Max" />
+      <MemberSignature Language="VB.NET" Value="Public Const Max As String " />
+      <MemberSignature Language="F#" Value="val mutable Max : string" Usage="AdaptiveExpressions.ExpressionType.Max" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="public const string Min;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Min" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Min" />
+      <MemberSignature Language="VB.NET" Value="Public Const Min As String " />
+      <MemberSignature Language="F#" Value="val mutable Min : string" Usage="AdaptiveExpressions.ExpressionType.Min" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mod">
+      <MemberSignature Language="C#" Value="public const string Mod;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Mod" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Mod" />
+      <MemberSignature Language="VB.NET" Value="Public Const Mod As String " />
+      <MemberSignature Language="F#" Value="val mutable Mod : string" Usage="AdaptiveExpressions.ExpressionType.Mod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="public const string Month;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Month" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Month" />
+      <MemberSignature Language="VB.NET" Value="Public Const Month As String " />
+      <MemberSignature Language="F#" Value="val mutable Month : string" Usage="AdaptiveExpressions.ExpressionType.Month" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public const string Multiply;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Multiply" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Multiply" />
+      <MemberSignature Language="VB.NET" Value="Public Const Multiply As String " />
+      <MemberSignature Language="F#" Value="val mutable Multiply : string" Usage="AdaptiveExpressions.ExpressionType.Multiply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewGuid">
+      <MemberSignature Language="C#" Value="public const string NewGuid;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NewGuid" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.NewGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Const NewGuid As String " />
+      <MemberSignature Language="F#" Value="val mutable NewGuid : string" Usage="AdaptiveExpressions.ExpressionType.NewGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Not">
+      <MemberSignature Language="C#" Value="public const string Not;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Not" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Not" />
+      <MemberSignature Language="VB.NET" Value="Public Const Not As String " />
+      <MemberSignature Language="F#" Value="val mutable Not : string" Usage="AdaptiveExpressions.ExpressionType.Not" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqual">
+      <MemberSignature Language="C#" Value="public const string NotEqual;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NotEqual" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.NotEqual" />
+      <MemberSignature Language="VB.NET" Value="Public Const NotEqual As String " />
+      <MemberSignature Language="F#" Value="val mutable NotEqual : string" Usage="AdaptiveExpressions.ExpressionType.NotEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Optional">
+      <MemberSignature Language="C#" Value="public const string Optional;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Optional" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Optional" />
+      <MemberSignature Language="VB.NET" Value="Public Const Optional As String " />
+      <MemberSignature Language="F#" Value="val mutable Optional : string" Usage="AdaptiveExpressions.ExpressionType.Optional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Mark a sub-expression as optional.
+            </summary>
+        <remarks>
+            When an expression is being processed, optional creates a disjunction where the expression is both included and not
+            included with the rest of the expression.  This is a simple way to express this common relationship.  By generating
+            both clauses then matching the expression can be more specific when the optional expression is true.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="public const string Or;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Or" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Or" />
+      <MemberSignature Language="VB.NET" Value="Public Const Or As String " />
+      <MemberSignature Language="F#" Value="val mutable Or : string" Usage="AdaptiveExpressions.ExpressionType.Or" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Power">
+      <MemberSignature Language="C#" Value="public const string Power;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Power" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Power" />
+      <MemberSignature Language="VB.NET" Value="Public Const Power As String " />
+      <MemberSignature Language="F#" Value="val mutable Power : string" Usage="AdaptiveExpressions.ExpressionType.Power" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rand">
+      <MemberSignature Language="C#" Value="public const string Rand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Rand" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Rand" />
+      <MemberSignature Language="VB.NET" Value="Public Const Rand As String " />
+      <MemberSignature Language="F#" Value="val mutable Rand : string" Usage="AdaptiveExpressions.ExpressionType.Rand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public const string Range;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Range" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Range" />
+      <MemberSignature Language="VB.NET" Value="Public Const Range As String " />
+      <MemberSignature Language="F#" Value="val mutable Range : string" Usage="AdaptiveExpressions.ExpressionType.Range" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveProperty">
+      <MemberSignature Language="C#" Value="public const string RemoveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RemoveProperty" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.RemoveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Const RemoveProperty As String " />
+      <MemberSignature Language="F#" Value="val mutable RemoveProperty : string" Usage="AdaptiveExpressions.ExpressionType.RemoveProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public const string Replace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Replace" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Replace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Replace As String " />
+      <MemberSignature Language="F#" Value="val mutable Replace : string" Usage="AdaptiveExpressions.ExpressionType.Replace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceIgnoreCase">
+      <MemberSignature Language="C#" Value="public const string ReplaceIgnoreCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ReplaceIgnoreCase" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.ReplaceIgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="Public Const ReplaceIgnoreCase As String " />
+      <MemberSignature Language="F#" Value="val mutable ReplaceIgnoreCase : string" Usage="AdaptiveExpressions.ExpressionType.ReplaceIgnoreCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public const string Select;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Select" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Const Select As String " />
+      <MemberSignature Language="F#" Value="val mutable Select : string" Usage="AdaptiveExpressions.ExpressionType.Select" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPathToValue">
+      <MemberSignature Language="C#" Value="public const string SetPathToValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SetPathToValue" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.SetPathToValue" />
+      <MemberSignature Language="VB.NET" Value="Public Const SetPathToValue As String " />
+      <MemberSignature Language="F#" Value="val mutable SetPathToValue : string" Usage="AdaptiveExpressions.ExpressionType.SetPathToValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty">
+      <MemberSignature Language="C#" Value="public const string SetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SetProperty" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.SetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Const SetProperty As String " />
+      <MemberSignature Language="F#" Value="val mutable SetProperty : string" Usage="AdaptiveExpressions.ExpressionType.SetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="public const string Skip;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Skip" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Skip" />
+      <MemberSignature Language="VB.NET" Value="Public Const Skip As String " />
+      <MemberSignature Language="F#" Value="val mutable Skip : string" Usage="AdaptiveExpressions.ExpressionType.Skip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortBy">
+      <MemberSignature Language="C#" Value="public const string SortBy;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SortBy" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.SortBy" />
+      <MemberSignature Language="VB.NET" Value="Public Const SortBy As String " />
+      <MemberSignature Language="F#" Value="val mutable SortBy : string" Usage="AdaptiveExpressions.ExpressionType.SortBy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByDescending">
+      <MemberSignature Language="C#" Value="public const string SortByDescending;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SortByDescending" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.SortByDescending" />
+      <MemberSignature Language="VB.NET" Value="Public Const SortByDescending As String " />
+      <MemberSignature Language="F#" Value="val mutable SortByDescending : string" Usage="AdaptiveExpressions.ExpressionType.SortByDescending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Split">
+      <MemberSignature Language="C#" Value="public const string Split;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Split" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Split" />
+      <MemberSignature Language="VB.NET" Value="Public Const Split As String " />
+      <MemberSignature Language="F#" Value="val mutable Split : string" Usage="AdaptiveExpressions.ExpressionType.Split" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartOfDay">
+      <MemberSignature Language="C#" Value="public const string StartOfDay;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StartOfDay" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.StartOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public Const StartOfDay As String " />
+      <MemberSignature Language="F#" Value="val mutable StartOfDay : string" Usage="AdaptiveExpressions.ExpressionType.StartOfDay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartOfHour">
+      <MemberSignature Language="C#" Value="public const string StartOfHour;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StartOfHour" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.StartOfHour" />
+      <MemberSignature Language="VB.NET" Value="Public Const StartOfHour As String " />
+      <MemberSignature Language="F#" Value="val mutable StartOfHour : string" Usage="AdaptiveExpressions.ExpressionType.StartOfHour" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartOfMonth">
+      <MemberSignature Language="C#" Value="public const string StartOfMonth;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StartOfMonth" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.StartOfMonth" />
+      <MemberSignature Language="VB.NET" Value="Public Const StartOfMonth As String " />
+      <MemberSignature Language="F#" Value="val mutable StartOfMonth : string" Usage="AdaptiveExpressions.ExpressionType.StartOfMonth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartsWith">
+      <MemberSignature Language="C#" Value="public const string StartsWith;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StartsWith" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.StartsWith" />
+      <MemberSignature Language="VB.NET" Value="Public Const StartsWith As String " />
+      <MemberSignature Language="F#" Value="val mutable StartsWith : string" Usage="AdaptiveExpressions.ExpressionType.StartsWith" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="public const string String;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string String" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.String" />
+      <MemberSignature Language="VB.NET" Value="Public Const String As String " />
+      <MemberSignature Language="F#" Value="val mutable String : string" Usage="AdaptiveExpressions.ExpressionType.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubArray">
+      <MemberSignature Language="C#" Value="public const string SubArray;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SubArray" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.SubArray" />
+      <MemberSignature Language="VB.NET" Value="Public Const SubArray As String " />
+      <MemberSignature Language="F#" Value="val mutable SubArray : string" Usage="AdaptiveExpressions.ExpressionType.SubArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public const string Substring;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Substring" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Substring" />
+      <MemberSignature Language="VB.NET" Value="Public Const Substring As String " />
+      <MemberSignature Language="F#" Value="val mutable Substring : string" Usage="AdaptiveExpressions.ExpressionType.Substring" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public const string Subtract;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Subtract" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Subtract" />
+      <MemberSignature Language="VB.NET" Value="Public Const Subtract As String " />
+      <MemberSignature Language="F#" Value="val mutable Subtract : string" Usage="AdaptiveExpressions.ExpressionType.Subtract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubtractFromTime">
+      <MemberSignature Language="C#" Value="public const string SubtractFromTime;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SubtractFromTime" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.SubtractFromTime" />
+      <MemberSignature Language="VB.NET" Value="Public Const SubtractFromTime As String " />
+      <MemberSignature Language="F#" Value="val mutable SubtractFromTime : string" Usage="AdaptiveExpressions.ExpressionType.SubtractFromTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sum">
+      <MemberSignature Language="C#" Value="public const string Sum;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Sum" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Sum" />
+      <MemberSignature Language="VB.NET" Value="Public Const Sum As String " />
+      <MemberSignature Language="F#" Value="val mutable Sum : string" Usage="AdaptiveExpressions.ExpressionType.Sum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Take">
+      <MemberSignature Language="C#" Value="public const string Take;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Take" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Take" />
+      <MemberSignature Language="VB.NET" Value="Public Const Take As String " />
+      <MemberSignature Language="F#" Value="val mutable Take : string" Usage="AdaptiveExpressions.ExpressionType.Take" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ticks">
+      <MemberSignature Language="C#" Value="public const string Ticks;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Ticks" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Ticks" />
+      <MemberSignature Language="VB.NET" Value="Public Const Ticks As String " />
+      <MemberSignature Language="F#" Value="val mutable Ticks : string" Usage="AdaptiveExpressions.ExpressionType.Ticks" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLower">
+      <MemberSignature Language="C#" Value="public const string ToLower;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToLower" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.ToLower" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToLower As String " />
+      <MemberSignature Language="F#" Value="val mutable ToLower : string" Usage="AdaptiveExpressions.ExpressionType.ToLower" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUpper">
+      <MemberSignature Language="C#" Value="public const string ToUpper;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToUpper" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.ToUpper" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToUpper As String " />
+      <MemberSignature Language="F#" Value="val mutable ToUpper : string" Usage="AdaptiveExpressions.ExpressionType.ToUpper" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public const string Trim;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Trim" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Trim" />
+      <MemberSignature Language="VB.NET" Value="Public Const Trim As String " />
+      <MemberSignature Language="F#" Value="val mutable Trim : string" Usage="AdaptiveExpressions.ExpressionType.Trim" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public const string Union;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Union" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Union" />
+      <MemberSignature Language="VB.NET" Value="Public Const Union As String " />
+      <MemberSignature Language="F#" Value="val mutable Union : string" Usage="AdaptiveExpressions.ExpressionType.Union" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unique">
+      <MemberSignature Language="C#" Value="public const string Unique;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Unique" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Unique" />
+      <MemberSignature Language="VB.NET" Value="Public Const Unique As String " />
+      <MemberSignature Language="F#" Value="val mutable Unique : string" Usage="AdaptiveExpressions.ExpressionType.Unique" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriComponent">
+      <MemberSignature Language="C#" Value="public const string UriComponent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriComponent" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriComponent As String " />
+      <MemberSignature Language="F#" Value="val mutable UriComponent : string" Usage="AdaptiveExpressions.ExpressionType.UriComponent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriComponentToString">
+      <MemberSignature Language="C#" Value="public const string UriComponentToString;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriComponentToString" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriComponentToString" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriComponentToString As String " />
+      <MemberSignature Language="F#" Value="val mutable UriComponentToString : string" Usage="AdaptiveExpressions.ExpressionType.UriComponentToString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriHost">
+      <MemberSignature Language="C#" Value="public const string UriHost;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriHost" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriHost" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriHost As String " />
+      <MemberSignature Language="F#" Value="val mutable UriHost : string" Usage="AdaptiveExpressions.ExpressionType.UriHost" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriPath">
+      <MemberSignature Language="C#" Value="public const string UriPath;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriPath" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriPath" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriPath As String " />
+      <MemberSignature Language="F#" Value="val mutable UriPath : string" Usage="AdaptiveExpressions.ExpressionType.UriPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriPathAndQuery">
+      <MemberSignature Language="C#" Value="public const string UriPathAndQuery;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriPathAndQuery" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriPathAndQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriPathAndQuery As String " />
+      <MemberSignature Language="F#" Value="val mutable UriPathAndQuery : string" Usage="AdaptiveExpressions.ExpressionType.UriPathAndQuery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriPort">
+      <MemberSignature Language="C#" Value="public const string UriPort;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriPort" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriPort" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriPort As String " />
+      <MemberSignature Language="F#" Value="val mutable UriPort : string" Usage="AdaptiveExpressions.ExpressionType.UriPort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriQuery">
+      <MemberSignature Language="C#" Value="public const string UriQuery;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriQuery" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriQuery As String " />
+      <MemberSignature Language="F#" Value="val mutable UriQuery : string" Usage="AdaptiveExpressions.ExpressionType.UriQuery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriScheme">
+      <MemberSignature Language="C#" Value="public const string UriScheme;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UriScheme" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UriScheme" />
+      <MemberSignature Language="VB.NET" Value="Public Const UriScheme As String " />
+      <MemberSignature Language="F#" Value="val mutable UriScheme : string" Usage="AdaptiveExpressions.ExpressionType.UriScheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UtcNow">
+      <MemberSignature Language="C#" Value="public const string UtcNow;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UtcNow" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.UtcNow" />
+      <MemberSignature Language="VB.NET" Value="Public Const UtcNow As String " />
+      <MemberSignature Language="F#" Value="val mutable UtcNow : string" Usage="AdaptiveExpressions.ExpressionType.UtcNow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Where">
+      <MemberSignature Language="C#" Value="public const string Where;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Where" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Where" />
+      <MemberSignature Language="VB.NET" Value="Public Const Where As String " />
+      <MemberSignature Language="F#" Value="val mutable Where : string" Usage="AdaptiveExpressions.ExpressionType.Where" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="public const string Xml;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Xml" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Xml" />
+      <MemberSignature Language="VB.NET" Value="Public Const Xml As String " />
+      <MemberSignature Language="F#" Value="val mutable Xml : string" Usage="AdaptiveExpressions.ExpressionType.Xml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="public const string XPath;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string XPath" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.XPath" />
+      <MemberSignature Language="VB.NET" Value="Public Const XPath As String " />
+      <MemberSignature Language="F#" Value="val mutable XPath : string" Usage="AdaptiveExpressions.ExpressionType.XPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Year">
+      <MemberSignature Language="C#" Value="public const string Year;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Year" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.ExpressionType.Year" />
+      <MemberSignature Language="VB.NET" Value="Public Const Year As String " />
+      <MemberSignature Language="F#" Value="val mutable Year : string" Usage="AdaptiveExpressions.ExpressionType.Year" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

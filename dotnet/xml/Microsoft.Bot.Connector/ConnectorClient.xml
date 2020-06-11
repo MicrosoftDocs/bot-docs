@@ -6,16 +6,9 @@
   <TypeSignature Language="F#" Value="type ConnectorClient = class&#xA;    inherit ServiceClient&lt;ConnectorClient&gt;&#xA;    interface IConnectorClient&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-    <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-    <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-    <AssemblyVersion>3.20.1.42</AssemblyVersion>
-    <AssemblyVersion>4.0.7.0</AssemblyVersion>
-    <AssemblyVersion>4.1.5.0</AssemblyVersion>
-    <AssemblyVersion>4.3.2.0</AssemblyVersion>
-    <AssemblyVersion>4.4.0.0</AssemblyVersion>
-    <AssemblyVersion>4.5.0.0</AssemblyVersion>
-    <AssemblyVersion>4.7.0.0</AssemblyVersion>
-    <AssemblyVersion>4.8.0.0</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Bot.Connector.ConnectorClient&gt;</BaseTypeName>
@@ -72,16 +65,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
@@ -111,16 +97,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -157,15 +136,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -192,16 +165,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
@@ -235,16 +201,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -281,15 +240,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -323,16 +276,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -373,16 +319,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -423,16 +362,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -473,13 +405,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -514,9 +441,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
@@ -548,16 +473,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -602,16 +520,9 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -648,11 +559,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -689,9 +597,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-3.0" />
@@ -725,8 +631,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -763,11 +669,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" Index="0" FrameworkAlternate="botbuilder-dotnet-stable" />
@@ -806,10 +709,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -834,16 +735,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IAttachments</ReturnType>
@@ -868,16 +762,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -899,16 +786,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversations</ReturnType>
@@ -930,16 +810,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -961,16 +834,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -992,13 +858,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1019,13 +880,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1046,13 +902,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1084,13 +935,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1111,16 +957,9 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
-        <AssemblyVersion>3.16.1.38846</AssemblyVersion>
-        <AssemblyVersion>3.19.1.44133</AssemblyVersion>
-        <AssemblyVersion>3.20.1.42</AssemblyVersion>
-        <AssemblyVersion>4.0.7.0</AssemblyVersion>
-        <AssemblyVersion>4.1.5.0</AssemblyVersion>
-        <AssemblyVersion>4.3.2.0</AssemblyVersion>
-        <AssemblyVersion>4.4.0.0</AssemblyVersion>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>

@@ -1,0 +1,46 @@
+<Type Name="UserMemoryScope" FullName="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.UserMemoryScope">
+  <TypeSignature Language="C#" Value="public class UserMemoryScope : Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;Microsoft.Bot.Builder.UserState&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserMemoryScope extends Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1&lt;class Microsoft.Bot.Builder.UserState&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.UserMemoryScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserMemoryScope&#xA;Inherits BotStateMemoryScope(Of UserState)" />
+  <TypeSignature Language="F#" Value="type UserMemoryScope = class&#xA;    inherit BotStateMemoryScope&lt;UserState&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;Microsoft.Bot.Builder.UserState&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.Bot.Builder.UserState</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            UserMemoryScope represents User scoped memory.
+            </summary>
+    <remarks>This relies on the UserState object being accessible from turnContext.TurnState.Get&lt;UserState&gt;().</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserMemoryScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.UserMemoryScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.UserMemoryScope" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

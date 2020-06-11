@@ -1,0 +1,1229 @@
+<Type Name="CommonRegexParser+LetterContext" FullName="AdaptiveExpressions.CommonRegexParser+LetterContext">
+  <TypeSignature Language="C#" Value="public class CommonRegexParser.LetterContext : Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit CommonRegexParser/LetterContext extends Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.CommonRegexParser.LetterContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommonRegexParser.LetterContext&#xA;Inherits ParserRuleContext" />
+  <TypeSignature Language="F#" Value="type CommonRegexParser.LetterContext = class&#xA;    inherit ParserRuleContext" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LetterContext (Antlr4.Runtime.ParserRuleContext parent, int invokingState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ParserRuleContext parent, int32 invokingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ParserRuleContext, invokingState As Integer)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.CommonRegexParser.LetterContext : Antlr4.Runtime.ParserRuleContext * int -&gt; AdaptiveExpressions.CommonRegexParser.LetterContext" Usage="new AdaptiveExpressions.CommonRegexParser.LetterContext (parent, invokingState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
+        <Parameter Name="invokingState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="invokingState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override TResult Accept&lt;TResult&gt; (Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Accept&lt;TResult&gt;(class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!!TResult&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.Accept``1(Antlr4.Runtime.Tree.IParseTreeVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResult) (visitor As IParseTreeVisitor(Of TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Accept : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;'Result&gt; -&gt; 'Result" Usage="letterContext.Accept visitor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ALC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ALC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ALC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ALC" />
+      <MemberSignature Language="VB.NET" Value="Public Function ALC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ALC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.ALC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode AUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode AUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.AUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function AUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.AUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.AUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode BLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode BLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.BLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function BLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.BLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.BLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode BUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode BUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.BUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function BUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.BUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.BUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode CLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode CLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.CLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function CLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.CLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.CLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode CUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode CUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.CUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function CUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.CUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.CUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode DLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode DLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.DLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function DLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.DLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.DLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode DUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode DUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.DUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function DUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.DUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.DUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ELC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ELC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ELC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ELC" />
+      <MemberSignature Language="VB.NET" Value="Public Function ELC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ELC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.ELC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterRule">
+      <MemberSignature Language="C#" Value="public override void EnterRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnterRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.EnterRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="letterContext.EnterRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode EUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode EUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.EUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function EUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.EUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.EUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitRule">
+      <MemberSignature Language="C#" Value="public override void ExitRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExitRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.ExitRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="letterContext.ExitRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode FLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode FLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.FLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function FLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.FLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.FLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode FUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode FUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.FUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function FUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.FUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.FUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode GLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode GLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.GLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function GLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.GLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.GLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode GUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode GUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.GUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function GUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.GUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.GUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode HLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode HLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.HLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function HLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.HLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.HLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode HUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode HUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.HUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function HUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.HUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.HUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ILC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ILC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ILC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ILC" />
+      <MemberSignature Language="VB.NET" Value="Public Function ILC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ILC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.ILC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode IUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode IUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.IUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function IUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.IUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.IUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode JLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode JLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.JLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function JLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.JLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.JLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode JUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode JUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.JUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function JUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.JUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.JUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode KLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode KLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.KLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function KLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.KLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.KLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode KUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode KUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.KUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function KUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.KUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.KUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode LLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode LLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.LLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function LLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.LLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.LLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode LUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode LUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.LUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function LUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.LUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.LUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.MLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function MLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.MLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.MUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function MUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.MUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode NLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode NLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.NLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function NLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.NLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.NLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode NUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode NUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.NUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function NUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.NUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.NUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode OLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode OLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.OLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function OLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.OLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.OLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode OUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode OUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.OUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function OUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.OUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.OUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode PLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode PLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.PLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function PLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.PLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.PLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode PUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode PUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.PUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function PUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.PUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.PUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode QLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode QLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.QLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function QLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.QLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.QLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode QUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode QUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.QUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function QUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.QUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.QUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode RLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode RLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.RLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function RLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.RLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.RLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode RUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode RUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.RUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function RUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.RUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.RUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleIndex">
+      <MemberSignature Language="C#" Value="public override int RuleIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RuleIndex" />
+      <MemberSignature Language="DocId" Value="P:AdaptiveExpressions.CommonRegexParser.LetterContext.RuleIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RuleIndex : int" Usage="AdaptiveExpressions.CommonRegexParser.LetterContext.RuleIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode SLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode SLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.SLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function SLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.SLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.SLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode SUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode SUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.SUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function SUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.SUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.SUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode TLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode TLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.TLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function TLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.TLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.TLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode TUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode TUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.TUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function TUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.TUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.TUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ULC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ULC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ULC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ULC" />
+      <MemberSignature Language="VB.NET" Value="Public Function ULC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ULC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.ULC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode UUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode UUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.UUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function UUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.UUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.UUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode VLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode VLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.VLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function VLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.VLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.VLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode VUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode VUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.VUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function VUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.VUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.VUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode WLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode WLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.WLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function WLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.WLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.WLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode WUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode WUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.WUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function WUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.WUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.WUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode XLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode XLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.XLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function XLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.XLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.XLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode XUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode XUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.XUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function XUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.XUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.XUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode YLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode YLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.YLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function YLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.YLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.YLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode YUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode YUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.YUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function YUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.YUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.YUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZLC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ZLC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ZLC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ZLC" />
+      <MemberSignature Language="VB.NET" Value="Public Function ZLC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ZLC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.ZLC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZUC">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ZUC ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ZUC() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.CommonRegexParser.LetterContext.ZUC" />
+      <MemberSignature Language="VB.NET" Value="Public Function ZUC () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ZUC : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="letterContext.ZUC " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

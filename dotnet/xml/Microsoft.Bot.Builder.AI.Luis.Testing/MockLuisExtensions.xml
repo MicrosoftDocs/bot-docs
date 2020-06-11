@@ -1,0 +1,84 @@
+<Type Name="MockLuisExtensions" FullName="Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions">
+  <TypeSignature Language="C#" Value="public static class MockLuisExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MockLuisExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module MockLuisExtensions" />
+  <TypeSignature Language="F#" Value="type MockLuisExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StableHash">
+      <MemberSignature Language="C#" Value="public static uint StableHash (this string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 StableHash(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions.StableHash(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StableHash (source As String) As UInteger" />
+      <MemberSignature Language="F#" Value="static member StableHash : string -&gt; uint32" Usage="Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions.StableHash source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseMockLuisSettings">
+      <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Configuration.IConfigurationBuilder UseMockLuisSettings (this Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string directory, string userSecretId, string environment = default, string endpoint = &quot;https://westus.api.cognitive.microsoft.com&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Configuration.IConfigurationBuilder UseMockLuisSettings(class Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string directory, string userSecretId, string environment, string endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions.UseMockLuisSettings(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseMockLuisSettings (builder As IConfigurationBuilder, directory As String, userSecretId As String, Optional environment As String = null, Optional endpoint As String = &quot;https://westus.api.cognitive.microsoft.com&quot;) As IConfigurationBuilder" />
+      <MemberSignature Language="F#" Value="static member UseMockLuisSettings : Microsoft.Extensions.Configuration.IConfigurationBuilder * string * string * string * string -&gt; Microsoft.Extensions.Configuration.IConfigurationBuilder" Usage="Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions.UseMockLuisSettings (builder, directory, userSecretId, environment, endpoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Extensions.Configuration.IConfigurationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Extensions.Configuration.IConfigurationBuilder" RefType="this" />
+        <Parameter Name="directory" Type="System.String" />
+        <Parameter Name="userSecretId" Type="System.String" />
+        <Parameter Name="environment" Type="System.String" />
+        <Parameter Name="endpoint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="builder">Configuration builder to modify.</param>
+        <param name="directory">Directory with the setting file in it.</param>
+        <param name="userSecretId">The id for finding your user secrets.</param>
+        <param name="environment">Environment where LUIS models are deployed.</param>
+        <param name="endpoint">Endpoint to use with a default of westus.</param>
+        <summary>
+            Setup configuration to utilize the settings file generated by lubuild.
+            </summary>
+        <returns>Modified configuration builder.</returns>
+        <remarks>
+            This utilizes the user secrets store to pick up the LUIS endpoint key.  
+            To store it do: "dotnet user-secrets luis:endpointKey *LUISKEY* --id *UserSecretId*".
+            The *UserSecretId* should be passed in here.
+            LUIS responses will be in cachedResponse in <paramref name="directory" />.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
