@@ -171,7 +171,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 |`Microsoft.OnQnAMatch`    | `OnQnAMatch`     | This trigger is run when the [QnAMakerRecognizer][qna-maker-recognizer] has returned a `QnAMatch` intent. The entity @answer will have the `QnAMaker` answer. |
 |`Microsoft.OnUnknownIntent`|`OnUnknownIntent`| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers.                                                    |
 
-#### Dialog events
+#### Dialog event triggers
 
 | `$kind` value            | Trigger name     | Description                                                                                                                           |
 | ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------  |
@@ -207,7 +207,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 }
 ```
 
-#### Activity events
+#### Activity event triggers
 
 Activity triggers enable you to associate actions to any incoming activity from the client such as when a new user joins and the bot begins a new conversation. Additional information on activities can be found in [Bot Framework Activity schema][botframework-activity].
 
@@ -220,7 +220,7 @@ Activity triggers enable you to associate actions to any incoming activity from 
 |`Microsoft.OnInvokeActivity`            | `OnInvokeActivity`            | Actions to perform on receipt of an activity with type `Invoke`.            |
 |`Microsoft.OnTypingActivity`            | `OnTypingActivity`            | Actions to perform on receipt of an activity with type `Typing`.            |
 
-#### Message events
+#### Message event triggers
 
 **Message event** triggers allow you to react to any message event such as when a message is updated (`MessageUpdate`) or deleted (`MessageDeletion`) or when someone reacts (`MessageReaction`) to a message (for example, some of the common message reactions include a Like, Heart, Laugh, Surprised, Sad and Angry reactions).
 
@@ -233,7 +233,7 @@ Message events are a type of activity event and as such, all message events have
 |`Microsoft.OnMessageReactionActivity` | `OnMessageReactionActivity` | Actions to perform on receipt of an activity with type `MessageReaction`. |
 |`Microsoft.OnMessageUpdateActivity`   | `OnMessageUpdateActivity`   | Actions to perform on receipt of an activity with type `MessageUpdate`.   |
 
-#### Custom events
+#### Custom event triggers
 
 You can emit your own events by adding the [EmitEvent][emitevent] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is a type of `OnDialogEvent` trigger, where its _event_ property to the same value as the emit event's _event name_ property.
 
