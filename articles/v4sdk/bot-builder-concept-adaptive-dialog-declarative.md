@@ -31,7 +31,7 @@ Adaptive dialog declarative files that have the .dialog extension contain the fo
 - The `recognizer` value contains a [recognizer type][recognizer-types] and an array of one or more [intents][intents] and optionally an array of one or more [entities][entity].
 - The `generator` value contains a link to the .lg file associated with the adaptive dialog that this .dialog file defines.
 - The `triggers` value contains an array of one or more [triggers](bot-builder-concept-adaptive-dialog-triggers.md). The type of trigger is declared using the `$kind` keyword. Each trigger contains an array of one or more actions.
-- The `actions` value contains an array of one or more [actions][bot-builder-concept-adaptive-dialog-actions.md], each action can have properties associated with it.
+- The `actions` value contains an array of one or more [actions](bot-builder-concept-adaptive-dialog-actions.md), each action can have properties associated with it.
 
 An example of a simple .dialog file:
 
