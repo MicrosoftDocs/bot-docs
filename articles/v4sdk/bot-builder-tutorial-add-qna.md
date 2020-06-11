@@ -319,7 +319,7 @@ Update your initialization code to load the service information for your knowled
    **app.py**
 
    ```python
-   # Create the Bot
+   # Create the bot
    BOT = EchoBot(CONFIG)
    ```
 

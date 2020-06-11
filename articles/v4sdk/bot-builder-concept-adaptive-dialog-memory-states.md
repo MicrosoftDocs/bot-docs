@@ -245,13 +245,13 @@ new TextInput()
 
 There are few short-hand notations supported to access specific memory scopes.
 
-| Symbol | Usage         | Expansion                           | Notes                                                                                                                 |
-|--------|---------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------- |
-| $      | $userName     | dialog.userName                     | Short hand notation that represents the dialog scope.                                                                 |
-| #      | #intentName   | turn.recognized.intents.intentName  | Short hand used to denote a named intent returned by the recognizer.                                                  |
-| @      | @entityName   | turn.recognized.entities.entityName | @entityName returns the first and _only_ the first value found for the entity, immaterial of the value's cardinality. |
-| @@     | @@entityName  | turn.recognized.entities.entityName | @@entityName will return the actual value of the entity, preserving the value's cardinality.                          |
-| %      | %propertyName | class.propertyName                  | Used to refer to instance properties (e.g. MaxTurnCount, DefaultValue etc).                                           |
+| Symbol | Usage           | Expansion                             | Notes                                                                                                                   |
+|--------|-----------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------ |
+| $      | `$userName`     | `dialog.userName`                     | Short hand notation that represents the dialog scope.                                                                   |
+| #      | `#intentName`   | `turn.recognized.intents.intentName`  | Short hand used to denote a named intent returned by the recognizer.                                                    |
+| @      | `@entityName`   | `turn.recognized.entities.entityName` | `@entityName` returns the first and _only_ the first value found for the entity, immaterial of the value's cardinality. |
+| @@     | `@@entityName`  | `turn.recognized.entities.entityName` | `@@entityName` will return the actual value of the entity, preserving the value's cardinality.                          |
+| %      | `%propertyName` | `class.propertyName`                  | Used to refer to instance properties (e.g. `MaxTurnCount`, `DefaultValue` etc).                                         |
 
 [1]:bot-builder-basics.md
 [2]:bot-builder-adaptive-dialog-introduction.md
