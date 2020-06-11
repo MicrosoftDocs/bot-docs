@@ -39,6 +39,16 @@ An example of a simple .dialog file:
 {
   "$schema": "../app.schema",
   "$kind": "Microsoft.AdaptiveDialog",
+  "generator": "multiTurnPrompt.lg",
+  "recognizer": {
+      "$kind": "Microsoft.RegexRecognizer",
+      "intents": [
+          {
+              "intent": "CancelIntent",
+              "pattern": "(?i)cancel"
+          }
+      ]
+  },
   "triggers": [
     {
       "$kind": "Microsoft.OnUnknownIntent",
