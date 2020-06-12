@@ -1,7 +1,7 @@
 ---
-title: Adaptive dialogs managing state reference
-description: Describing the adaptive dialogs prebuilt memory states
-keywords: bot, memory states, adaptive dialogs
+title: Managing state in adaptive dialogs - reference guide
+description: Describing memory scopes in adaptive dialogs
+keywords: bot, managing state, memory scopes, user scope, conversation scope, dialog scope, settings scope, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
 manager: kamrani
@@ -11,9 +11,11 @@ ms.date: 06/12/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Adaptive dialogs managing state reference
+# Managing state in adaptive dialogs - reference guide
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+
+This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
 
 Memory scopes available in adaptive dialogs:
 

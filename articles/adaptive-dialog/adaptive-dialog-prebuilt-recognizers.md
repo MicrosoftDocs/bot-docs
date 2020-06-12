@@ -1,7 +1,7 @@
 ---
-title: Adaptive dialogs prebuilt triggers
-description: Describing the adaptive dialogs prebuilt triggers
-keywords: bot, triggers, adaptive dialogs
+title: Recognizers in adaptive dialogs - reference guide
+description: Describing the adaptive dialog prebuilt recognizers
+keywords: bot, recognizers, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
 manager: kamrani
@@ -11,7 +11,7 @@ ms.date: 06/12/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Adaptive dialogs prebuilt recognizers
+# Recognizers in adaptive dialogs - reference guide
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 

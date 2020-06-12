@@ -1,6 +1,6 @@
 ---
-title: Adaptive dialogs prebuilt triggers
-description: Describing the adaptive dialogs prebuilt triggers
+title: Events and triggers in adaptive dialogs - reference guide
+description: Describing the adaptive dialog prebuilt triggers
 keywords: bot, triggers, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
@@ -11,7 +11,7 @@ ms.date: 06/09/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Adaptive dialogs prebuilt triggers
+# Events and triggers in adaptive dialogs - reference guide
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 

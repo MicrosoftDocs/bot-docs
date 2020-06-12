@@ -1,6 +1,6 @@
 ---
-title: Adaptive dialogs prebuilt actions
-description: Describing the adaptive dialogs prebuilt actions
+title: Actions in adaptive dialogs - reference guide
+description: Describing the adaptive dialog prebuilt actions
 keywords: bot, actions, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
@@ -11,7 +11,7 @@ ms.date: 06/09/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Adaptive dialogs prebuilt actions
+# Actions in adaptive dialogs - reference guide
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
@@ -26,6 +26,7 @@ This article lists the available prebuilt actions grouped by their general purpo
 - [Debugging options](#debugging-options)
 
 >[!TIP]
+>
 > - For an introduction to this topic, see the [Actions in adaptive dialogs][1] concept article.
 > - For information on how you request user input, an important and very useful type of action, see [Asking for user input using adaptive dialogs][7].
 
