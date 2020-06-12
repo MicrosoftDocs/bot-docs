@@ -65,9 +65,10 @@ There are few short-hand notations supported to access specific memory scopes.
 
 ## Additional information
 
-* For more detailed information on managing state, including examples, see the [Adaptive dialogs managing state reference] article.
+* For more detailed information on managing state, including examples, see the [Managing state in adaptive dialogs - reference guide][managing-state-ref] article.
 
 <!-- Links to other articles-->
+[managing-state-ref]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md
 [bot-builder-basics]:bot-builder-basics.md
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [managing-state]:bot-builder-concept-state.md

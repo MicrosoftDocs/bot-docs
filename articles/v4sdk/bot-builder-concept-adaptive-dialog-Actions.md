@@ -125,7 +125,7 @@ For detailed information and examples, see the [Debugging options](../adaptive-d
 
 * To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][inputs] article.
 * To learn more about adaptive expressions see the [adaptive expressions][adaptive-expressions] article.
-* For detailed information and examples on all actions covered in this article, see the [Adaptive dialogs prebuilt actions](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md) reference article.
+* For detailed information and examples on all actions covered in this article, see the [Actions in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md) reference article.
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [triggers]:bot-builder-concept-adaptive-dialog-triggers.md

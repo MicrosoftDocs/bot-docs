@@ -387,7 +387,10 @@ var adaptiveDialog = new AdaptiveDialog()
 * [Extract data from utterance text with intents and entities][15]
 * [Add natural language understanding (LU) to your bot][16]
 * [Add natural language generation (LG) to your bot][4]
+* For more detailed information on recognizers in adaptive dialogs, including examples, see the [recognizers in adaptive dialogs - reference guide][recognizers-ref].
 
+<!-- Footnote-style links -->
+[recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [1]:bot-builder-basics.md
 [2]:bot-builder-adaptive-dialog-introduction.md
 [3]:bot-builder-concept-dialog.md

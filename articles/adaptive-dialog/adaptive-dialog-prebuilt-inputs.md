@@ -30,6 +30,8 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 
 <!--TODO P1: Add a general section on locales to show all Supported locales that can be used in the  `DefaultLocale` property.
 `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
+
+TODO P2: It might be worth noting that some of these can return an arbitrary type of value, based on whether the input type has an OutputFormat property.
 --->
 
 ## InputDialog

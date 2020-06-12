@@ -124,6 +124,7 @@ For detailed information and an example, see the [Custom event triggers][custom-
 * [Introduction to adaptive dialogs][introduction]
 * [Dialog libraries][concept-dialog]
 * [Actions in adaptive dialogs][actions]
+* For more detailed information on triggers in adaptive dialogs, including examples, see the [Triggers in adaptive dialogs - reference guide][triggers-ref].
 
 <!-- Adaptive dialog links-->
 [introduction]:bot-builder-adaptive-dialog-introduction.md
@@ -137,6 +138,7 @@ For detailed information and an example, see the [Custom event triggers][custom-
 [qna-maker-recognizer]:bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 
 <!-- Reference article links-->
+[triggers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md
 [base-trigger]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#base-trigger
 [recognizer-event-triggers]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#recognizer-event-triggers
 [dialog-event-triggers]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#dialog-event-triggers
