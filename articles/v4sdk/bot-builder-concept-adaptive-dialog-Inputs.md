@@ -46,14 +46,14 @@ Similar to [prompts][prompts], you can use _inputs_ in adaptive dialogs to ask f
 
 The adaptive dialogs library defines the following input types:
 
-* [The input base class](#inputdialog). The base class that all of the input classes derive from.
-* [Text](#textinput). To ask for any ***text based*** user input.
-* [Number](#numberinput). To ask for any ***numeric based*** user input.
-* [Confirmation](#confirminput). To request a ***confirmation*** from the user.
-* [Multiple choice](#multiple-choice). To request a selection from a ***set of options***.
-* [File or attachment](#attachmentinput). To request/enable a user to **upload a file**.
-* [Date or time](#datetimeinput). To request a ***date and or time*** from a user.
-* [Oauth login](#oauthinput). To enable your users to **sign into a secure site**.
+* [The input base class][inputdialog]. The base class that all of the input classes derive from.
+* [Text][textinput]. To ask for any ***text based*** user input.
+* [Number][numberinput]. To ask for any ***numeric based*** user input.
+* [Confirmation][confirminput]. To request a ***confirmation*** from the user.
+* [Multiple choice][multiple-choice]. To request a selection from a ***set of options***.
+* [File or attachment][attachmentinput]. To request/enable a user to **upload a file**.
+* [Date or time][datetimeinput]. To request a ***date and or time*** from a user.
+* [Oauth login][oauthinput]. To enable your users to **sign into a secure site**.
 
 ## Additional information
 
@@ -71,3 +71,11 @@ The adaptive dialogs library defines the following input types:
 [lg-templates]:bot-builder-concept-adaptive-dialog-generators.md
 [adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
 [prebuilt-inputs]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md
+[inputdialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#inputdialog
+[textinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#textinput
+[numberinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#numberinput
+[confirminput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#confirminput
+[multiple-choice]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#multiple-choice
+[attachmentinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#attachmentinput
+[datetimeinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#datetimeinput
+[oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
