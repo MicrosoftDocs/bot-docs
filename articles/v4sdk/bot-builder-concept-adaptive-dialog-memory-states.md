@@ -14,13 +14,13 @@ ms.date: 05/08/2020
 
 The terms _Stateful_ and _stateless_ are adjectives that describe whether an application is designed to remember one or more preceding events in a given sequence of interactions with a user (or any other activity). Stateful means the application _does_ keep track of the state of its interactions, usually by saving values in memory in the form a properties. Stateless means the application does _not_ keep track of the state of its interactions, which means that there is no memory of any previous interactions and all incoming request must contain all relevant information that is required to perform the requested action. You can think of _state_ as the bot's current set of values or contents, such as the conversation ID or the active user's name.
 
-The Bot Framework SDK follows the same paradigms as modern web applications and does not actively manage state, however the Bot Framework SDK does provide some abstractions that make state management much easier to incorporate into your bot. This topic is covered in detail in the Bot Framework SDK [Managing state][3] article, it is recommended that you read and understand the information covered in that article before reading this article.
+The Bot Framework SDK follows the same paradigms as modern web applications and does not actively manage state, however the Bot Framework SDK does provide some abstractions that make state management much easier to incorporate into your bot. This topic is covered in detail in the Bot Framework SDK [Managing state][managing-state] article, it is recommended that you read and understand the information covered in that article before reading this article.
 
 ## Prerequisites
 
-* A general understanding of [How bots work][1].
-* A general understanding of adaptive dialogs. For more information, see [Introduction to adaptive dialogs][2] and [Dialog libraries][8].
-* See the Bot Framework SDK [Managing state][3] article for an overview of state management.
+* A general understanding of [How bots work][bot-builder-basics].
+* A general understanding of adaptive dialogs. For more information, see [Introduction to adaptive dialogs][introduction] and [Dialog libraries][concept-dialog].
+* See the Bot Framework SDK [Managing state][managing-state] article for an overview of state management.
 
 ## Managing state
 
@@ -76,7 +76,7 @@ Examples:
     conversation.lastFemaleReference
     conversation.lastLocationReference
 
-In the following example demonstrates how you might use the conversation scope to gather input from the user, creating a new `PropertyAssignment` object for use in the `SetProperties` [action][7], getting the value from the conversation scope.
+In the following example demonstrates how you might use the conversation scope to gather input from the user, creating a new `PropertyAssignment` object for use in the `SetProperties` [action][setproperties-action], getting the value from the conversation scope.
 
 ```csharp
 new PropertyAssignment()
@@ -106,7 +106,7 @@ All options passed into `BeginDialog` when creating a new adaptive dialog become
 
 ### Dialog sub-scopes
 
-All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`. You can read more about the `Foreach` action in [Actions in adaptive dialogs][6].
+All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`. You can read more about the `Foreach` action in [Actions in adaptive dialogs][foreach-action].
 
 ## Turn scope
 
@@ -121,7 +121,7 @@ The turn scope contains _non-persistent_ data that is only scoped for the curren
 
 #### turn.activity
 
-Each incoming [activity][5] to the bot is available via `turn.activity` scope.
+Each incoming [activity][botframework-activity] to the bot is available via `turn.activity` scope.
 
 For example, you might have something like this defined in our .lg file to respond to a user that entered an invalid value when prompted for their age:
 
@@ -137,7 +137,7 @@ ItemsProperty = "turn.activity.membersAdded"
 
 #### turn.recognized
 
-All intents and entities returned from a [recognizer][4] on any given turn, are automatically set in the `turn.recognized` scope and remain available until the next turn occurs. the `turn.recognized` scope has three properties:
+All intents and entities returned from a [recognizer][recognizers] on any given turn, are automatically set in the `turn.recognized` scope and remain available until the next turn occurs. the `turn.recognized` scope has three properties:
 
 * `turn.recognized.intents.xxx`: A list of the top intents classified by the recognizer for that turn.
 * `turn.recognized.entities.xxx`: A list of entities recognized that turn.
@@ -253,11 +253,11 @@ There are few short-hand notations supported to access specific memory scopes.
 | @@     | `@@entityName`  | `turn.recognized.entities.entityName` | `@@entityName` will return the actual value of the entity, preserving the value's cardinality.                          |
 | %      | `%propertyName` | `class.propertyName`                  | Used to refer to instance properties (e.g. `MaxTurnCount`, `DefaultValue` etc).                                         |
 
-[1]:bot-builder-basics.md
-[2]:bot-builder-adaptive-dialog-introduction.md
-[3]:bot-builder-concept-state.md
-[4]:bot-builder-concept-adaptive-dialog-recognizers.md
-[5]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md
-[6]:bot-builder-concept-adaptive-dialog-actions.md#foreach
-[7]:bot-builder-concept-adaptive-dialog-actions.md#setproperties
-[8]:bot-builder-concept-dialog.md
+[bot-builder-basics]:bot-builder-basics.md
+[introduction]:bot-builder-adaptive-dialog-introduction.md
+[managing-state]:bot-builder-concept-state.md
+[recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
+[botframework-activity]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md
+[foreach-action]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#foreach
+[setproperties-action]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#setproperties
+[concept-dialog]:bot-builder-concept-dialog.md

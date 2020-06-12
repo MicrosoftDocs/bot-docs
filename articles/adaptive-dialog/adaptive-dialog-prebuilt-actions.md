@@ -1059,7 +1059,7 @@ new LogAction()
 [5]:../v4sdk/bot-builder-concept-dialog.md
 [6]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md#interruptions
 [7]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
-[8]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+[8]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md#custom-event-triggers
 [9]:../v4sdk/bot-builder-concept-adaptive-dialog-generators.md
 [10]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [11]:../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md

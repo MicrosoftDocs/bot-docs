@@ -94,7 +94,7 @@ All activity events have a base event of `ActivityReceived` and are further refi
 * **Conversation invoked**. Actions to perform on receipt of an activity with type `Invoke`.
 * **User is typing**. Actions to perform on receipt of an activity with type `Typing`.
 
-For detailed information and examples, see the [Activity events][activity-events] section in the Adaptive dialogs prebuilt triggers article.
+For detailed information and examples, see the [Activity event triggers][activity-event-triggers] section in the Adaptive dialogs prebuilt triggers article.
 
 ### Message event triggers
 
@@ -126,7 +126,7 @@ For more information and an example, see the [Custom events][custom-events] sect
 [actions]:bot-builder-concept-adaptive-dialog-actions.md
 [inputs]:bot-builder-concept-adaptive-dialog-inputs.md
 
-[action-emitevent]:bot-builder-concept-adaptive-dialog-actions.md#emitevent
+[action-emitevent]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
 [recognizer-intents]:bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
 [recognizer-cross-trained-recognizer-set]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
@@ -138,7 +138,7 @@ For more information and an example, see the [Custom events][custom-events] sect
 [dialog-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#dialog-events
 [activity-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#activity-events
 [message-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#message-events
-[custom-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#custom-events
+[custom-event-trigger]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#custom-event-trigger
 
 <!-- BF SDK links-->
 [botframework-activity]:https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md

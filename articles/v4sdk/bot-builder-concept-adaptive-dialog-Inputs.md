@@ -19,21 +19,21 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 
 ## Prerequisites
 
-* A general understanding of adaptive dialogs in the Bot Framework V4 SDK is helpful. For more information, see an [Introduction to adaptive dialogs][1].
-* A general understanding of [Events and triggers in adaptive dialogs][2].
-* A general understanding of [Actions in adaptive dialogs][3].
-* A general understanding of [Memory scopes and managing state in adaptive dialogs][7].
-* A familiarity with [Language Generation templates][9].
-* A familiarity with [Adaptive expressions][10].
+* [Introduction to adaptive dialogs][introduction]
+* [Events and triggers in adaptive dialogs][triggers]
+* [Actions in adaptive dialogs][actions]
+* [Memory scopes and managing state in adaptive dialogs][managing-state]
+* Familiarity with [Language Generation templates][lg-templates]
+* Familiarity with [Adaptive expressions][adaptive-expressions]
 
 > [!TIP]
-> This syntax defined in the [Language Generation templates][9], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the Bot Framework SDK.
+> This syntax defined in the [Language Generation templates][lg-templates], which includes [Adaptive expressions][adaptive-expressions], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the Bot Framework SDK.
 
 ## Inputs
 
-Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and collect input from a user, validate it, and accept it into memory. An input:
+Similar to [prompts][prompts], you can use _inputs_ in adaptive dialogs to ask for and collect input from a user, validate it, and accept it into memory. An input:
 
-* Binds the prompt result to a property in a [state management][7] scope.
+* Binds the prompt result to a property in a [state management][managing-state] scope.
 * Prompts the user only if the result property doesn't already have a value.
 * Saves the input to the specified property if the input from user matches the type of entity expected.
 * Accepts validation constraints such as min, max, and so on.
@@ -43,20 +43,14 @@ Similar to [prompts][4], you can use _inputs_ in adaptive dialogs to ask for and
 
 The adaptive dialogs library defines the following input types:
 
-| Input type       | Input class                       | Description                                          | Returns                                      |
-| ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
-| Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Text             | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
-| Number           | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
-| Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
-| Multiple choice  | [ChoiceInput](#choiceinput)       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
-| File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.| A collection of attachment objects.          |
-| Date or time     | [DateTimeInput](#datetimeinput)   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
-| Oauth login      | [OAuthInput](#oauthinput)              | Used to enable your users to **sign into a secure site**.| A token response.                        |
-
-<!--TODO P1: Add a general section on locales to show all Supported locales that can be used in the  `DefaultLocale` property.
-`DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
---->
+* [The input base class](#inputdialog). The base class that all of the input classes derive from.
+* [Text](#textinput). To ask for any ***text based*** user input.
+* [Number](#numberinput). To ask for any ***numeric based*** user input.
+* [Confirmation](#confirminput). To request a ***confirmation*** from the user.
+* [Multiple choice](#access-external-resources). To request a selection from a ***set of options***.
+* [File or attachment](#attachmentinput). To request/enable a user to **upload a file**.
+* [Date or time](#datetimeinput). To request a ***date and or time*** from a user.
+* [Oauth login](#oauthinput). To enable your users to **sign into a secure site**.
 
 ### InputDialog
 
@@ -145,7 +139,7 @@ UnrecognizedPrompt = new ActivityTemplate("Sorry, '{turn.activity.text}' did not
 
 #### Validations
 
-A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `this.value` to examine the user input in the validation expressions. Validations are expressed using [adaptive expressions][10]
+A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `this.value` to examine the user input in the validation expressions. Validations are expressed using [adaptive expressions][adaptive-expressions]
 
 #### Value
 
@@ -153,10 +147,10 @@ A string expression. The memory path of the property to get input from each turn
 
 Things to keep in mind regarding the `Value` property:
 
-* The `Value` property is an [adaptive expression][10].
+* The `Value` property is an [adaptive expression][adaptive-expressions].
 * If the expression returns null, the input dialog may attempt to pull data from the input directly.
 * If the expression is a value then it will be used as the input.
-* The `Value` property allows you to define a how data such as [Recognizer][8] results are bound to the input dialog.
+* The `Value` property allows you to define a how data such as [Recognizer][recognizers] results are bound to the input dialog.
 
  Examples:
 
@@ -172,7 +166,7 @@ Use _text input_ when you want to verbatim accept user input as a value for a sp
 
 The `TextInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines one additional property:
 
-* `OutputFormat`: Using [adaptive expressions][10] you can modify the string, for example, in the code example below the `OutputFormat` expression will capitalize the first letter of each word of the users name.
+* `OutputFormat`: Using [adaptive expressions][adaptive-expressions] you can modify the string, for example, in the code example below the `OutputFormat` expression will capitalize the first letter of each word of the users name.
 
 #### TextInput example
 
@@ -207,7 +201,7 @@ The `NumberInput` action inherits all of the properties defined in [InputDialog]
 <!--https://blog.botframework.com/2018/02/01/contributing-luis-microsoft-recognizers-text-part-2/-->
 
 1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: Using [adaptive expressions][10] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in Fahrenheit to its equivalent Celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
+2. `OutputFormat`: Using [adaptive expressions][adaptive-expressions] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in Fahrenheit to its equivalent Celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
 
 #### NumberInput example
 
@@ -252,10 +246,10 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 The `ConfirmInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these additional properties:
 
-1. `ChoiceOptions`: Used to format the presentation of the confirmation choices that are presented to the user, this is an [adaptive expression][10] that evaluates to a `ChoiceSet` object. This `ChoiceSet` object will only be used as a back up if the initial attempt at recognition of the `ConfirmInput` fails. When the `ConfirmInput` action executes, it first tries to evaluate the input as a Boolean value. If that fails, it makes a second attempt, this time using a choice recognizer evaluating against the ChoiceSet.
-2. `ConfirmChoices`: The choices or an [adaptive expression][10] that evaluates to the choices that will be presented to the user.
+1. `ChoiceOptions`: Used to format the presentation of the confirmation choices that are presented to the user, this is an [adaptive expression][adaptive-expressions] that evaluates to a `ChoiceSet` object. This `ChoiceSet` object will only be used as a back up if the initial attempt at recognition of the `ConfirmInput` fails. When the `ConfirmInput` action executes, it first tries to evaluate the input as a Boolean value. If that fails, it makes a second attempt, this time using a choice recognizer evaluating against the ChoiceSet.
+2. `ConfirmChoices`: The choices or an [adaptive expression][adaptive-expressions] that evaluates to the choices that will be presented to the user.
 3. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
-4. `OutputFormat`: The default output format for the `ConfirmInput` action is a boolean. You can override that using the `OutputFormat` property, an [adaptive expressions][10] which you can use to modify the return results if needed. For example you can use this to cause the  `ConfirmInput` action to return a number: `OutputFormat = "if(this.value == true, 1, 0)"`.
+4. `OutputFormat`: The default output format for the `ConfirmInput` action is a boolean. You can override that using the `OutputFormat` property, an [adaptive expressions][adaptive-expressions] which you can use to modify the return results if needed. For example you can use this to cause the  `ConfirmInput` action to return a number: `OutputFormat = "if(this.value == true, 1, 0)"`.
 If this property is set then the output of the expression is the value returned by the dialog.
 5. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
     1. `None`: Don't include any choices for prompt.
@@ -487,20 +481,20 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 The following links provide generalized information on the topic of authentication in the Microsoft Bot Framework SDK. This information is not tailored or specific to adaptive dialogs.
 
-* [Bot authentication][5]
-* [Add authentication to a bot][6]
+* [Bot authentication][authentication]
+* [Add authentication to a bot][add-authentication]
 
 ## Additional information
 
-* To learn more about expressions see the article [Adaptive expressions][10].
+* To learn more about expressions see the article [Adaptive expressions][adaptive-expressions].
 
-[1]:bot-builder-adaptive-dialog-introduction.md
-[2]:bot-builder-concept-adaptive-dialog-triggers.md
-[3]:bot-builder-concept-adaptive-dialog-actions.md
-[4]:https://aka.ms/bot-builder-concept-dialog#prompts
-[5]:https://aka.ms/azure-bot-authentication
-[6]:https://aka.ms/azure-bot-add-authentication
-[7]:bot-builder-concept-adaptive-dialog-memory-states.md
-[8]:bot-builder-concept-adaptive-dialog-recognizers.md
-[9]:bot-builder-concept-adaptive-dialog-generators.md
-[10]:bot-builder-concept-adaptive-expressions.md
+[introduction]:bot-builder-adaptive-dialog-introduction.md
+[triggers]:bot-builder-concept-adaptive-dialog-triggers.md
+[actions]:bot-builder-concept-adaptive-dialog-actions.md
+[prompts]:https://aka.ms/bot-builder-concept-dialog#prompts
+[authentication]:https://aka.ms/azure-bot-authentication
+[add-authentication]:https://aka.ms/azure-bot-add-authentication
+[managing-state]:bot-builder-concept-adaptive-dialog-memory-states.md
+[recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
+[lg-templates]:bot-builder-concept-adaptive-dialog-generators.md
+[adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
