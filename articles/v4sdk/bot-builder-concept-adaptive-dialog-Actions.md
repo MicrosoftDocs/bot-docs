@@ -132,7 +132,7 @@ For detailed information and examples, see the [Debugging options](../adaptive-d
 [www.qnamaker.ai]:https://www.qnamaker.ai/
 [oauthinput-inputs]:bot-builder-concept-adaptive-dialog-inputs.md#oauthinput
 [concept-dialog]:bot-builder-concept-dialog.md
-[interruptions-inputs]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
+[interruptions-inputs]:../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#interruptions
 [inputs]:bot-builder-concept-adaptive-dialog-inputs.md
 [custom-event-trigger]:bot-builder-concept-adaptive-dialog-triggers.md#custom-event-trigger
 [generators]:bot-builder-concept-adaptive-dialog-generators.md
