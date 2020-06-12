@@ -86,7 +86,7 @@ It is recommended that you use the most latest version of the [Azure CLI](https:
 
 You should upgrade to the most latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). For Azure CLI version [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020) or later, users should use `az deployment sub create` and `az deployment group create` instead of using `az deployment create` and `az group deployment create` respectively.
 
-### Change log of the Azure CLI commands used to deploy a bot to Azure
+**Change log of the Azure CLI commands used to deploy a bot to Azure**
 
 |Azure ClI version | Command1 | Command 2|
 |-------|-------|-------|
