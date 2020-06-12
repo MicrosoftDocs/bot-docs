@@ -75,7 +75,7 @@ The adaptive dialogs library defines the following input types:
 [textinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#textinput
 [numberinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#numberinput
 [confirminput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#confirminput
-[multiple-choice]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#multiple-choice
+[multiple-choice]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#choiceinput
 [attachmentinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#attachmentinput
 [datetimeinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#datetimeinput
 [oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
