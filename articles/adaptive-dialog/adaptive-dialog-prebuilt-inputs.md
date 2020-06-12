@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input. The adaptive dialog input types:
+The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
 
 | Input type       | Input class                       | Description                                          | Returns                                      |
 | ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
@@ -469,4 +469,3 @@ The following links provide generalized information on the topic of authenticati
 [add-authentication]:https://aka.ms/azure-bot-add-authentication
 [recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers        .md
 [adaptive-expressions]:../v4sdk/bot-builder-concept-adaptive-expressions.md
-
