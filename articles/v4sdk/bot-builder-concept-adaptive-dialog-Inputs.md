@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
+The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input. Input dialogs are a type of adaptive dialog action.
 
 > [!IMPORTANT]
 > Actions (_trigger actions_) are dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the Bot Framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
