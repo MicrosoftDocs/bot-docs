@@ -110,6 +110,13 @@
 ## [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
 ## [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
 ## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
+## Adaptive dialogs
+### [Events and triggers reference](adaptive-dialog/adaptive-dialog-prebuilt-triggers.md)
+### [Actions reference](adaptive-dialog/adaptive-dialog-prebuilt-actions.md)
+### [Inputs reference](adaptive-dialog/adaptive-dialog-prebuilt-inputs.md)
+### [Recognizers reference](adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md)
+### [Memory scopes and managing state reference](adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md)
+### [Declarative reference](adaptive-dialog/adaptive-dialog-prebuilt-declarative.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
