@@ -28,7 +28,6 @@ Memory scopes available in adaptive dialogs:
 * [Settings scope](#settings-scope)
 * [This scope](#this-scope)
 * [Class scope](#class-scope)
-* [Memory short-hand notations](#memory-short-hand-notations)
 
 > [!TIP]
 > All property paths are case-insensitive. For example, `user.name` is the same as `user.Name`. Also, if you do not have a property named `user.name` and you create a property named `user.name.first` the `user.name` object will automatically be created for you.
@@ -127,7 +126,7 @@ For example, a flight booking application might have a book flight intent with a
 Value = "=turn.recognized.entities.fromCity.location"
 ```
 
-There is another way to accomplish this using a [Memory short-hand notation](#memory-short-hand-notations)
+There is another way to accomplish this using a [Memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations)
 
 ```c#
 // Value is a property containing an expression. @entityName is shorthand to refer to the value of
@@ -222,5 +221,6 @@ new TextInput()
 ## Additional information
 
 * For an introduction to managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
+* [Memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
 
 [managing-state]: ../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
