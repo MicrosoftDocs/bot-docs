@@ -464,7 +464,7 @@ The [generator][generator] value contains a link to the .lg file associated with
 [httprequest]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#httprequest
 [emitevent]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
 [sign-out-user]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#sign-out-user
-[custom-trigger]: bot-builder-concept-adaptive-dialog-triggers.md#custom-events
+[custom-trigger]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#custom-event-triggers
 <!--[codeaction]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#codeaction-->
 
 <!--  (Actions) Debugging options -->

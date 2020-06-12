@@ -15,15 +15,15 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-Actions help to create and maintain the bots conversation flow once an event is captured by a [trigger][2]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to accomplish any set of actions needed, such as satisfying a user's request. In addition to creating and maintaining the bot's conversational flow, you can use actions to send messages, respond to user questions using a [knowledge base][3], make calculations, and perform any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in [memory][11], and make decisions based on user input.
+Actions help to create and maintain the bots conversation flow once an event is captured by a [trigger][triggers]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to accomplish any set of actions needed, such as satisfying a user's request. In addition to creating and maintaining the bot's conversational flow, you can use actions to send messages, respond to user questions using a [knowledge base][www.qnamaker.ai], make calculations, and perform any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in [memory][memory-states], and make decisions based on user input.
 
 > [!IMPORTANT]
 > Actions are dialogs and any dialog can be used as an action, so actions have all of the power and flexibility you need to create a fully functional and robust bot. While the actions included in the Bot Framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
 
 ## Prerequisites
 
-* [Introduction to adaptive dialogs][1]
-* [Events and triggers in adaptive dialogs][2]
+* [Introduction to adaptive dialogs][introduction]
+* [Events and triggers in adaptive dialogs][triggers]
 
 ## Actions
 
@@ -31,14 +31,14 @@ Actions that are included with the Bot Framework SDK provide the ability to perf
 
 * Branching and looping
 * Dialog management tasks such as starting a new dialog or cancelling, ending or repeating a dialog.
-* Memory management tasks such as creating, deleting or editing a property saved in [memory][11].
+* Memory management tasks such as creating, deleting or editing a property saved in [memory][memory-states].
 * Accessing external resources such as sending an [HTTP Request](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#httprequest).
-* Preforming an [OAuth login request][4] and many others.
+* Preforming an [OAuth login request][oauthinput-inputs] and many others.
 
 >[!TIP]
 > Unlike a waterfall dialog where each step is a function, each action in an adaptive dialog is a fully functional dialog with all of the power and flexibility that entails. This enables adaptive dialogs by design to:
 >
-> * Provide an easier way to handle interruptions. <!--TODO P1: [interruptions][6]-->
+> * Provide an easier way to handle interruptions. <!--TODO P1: [interruptions][interruptions-inputs]-->
 > * Branch conditionally based on context or state.
 
 Adaptive dialogs support the following actions:
@@ -50,7 +50,7 @@ Used to send any activity such as responding to a user.
 * **Send activity**. Send any activity such as responding to a user.
 * **Update an activity**. This enables you to update an activity that was sent.
 * **DeleteActivity**. Enables you to delete an activity that was sent.
-* **Get activity members**. Enables you to get a list of activity members and save it to a property in [memory][11].
+* **Get activity members**. Enables you to get a list of activity members and save it to a property in [memory][memory-states].
 
 For detailed information and examples, see the [Activities](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#activities) section in the Adaptive dialogs prebuilt actions article.
 
@@ -85,19 +85,19 @@ The dialog management actions are designed to give you control of any dialog rel
 * **End dialog turn**. Ends the current turn of conversation without ending the dialog.
 * **Repeat this dialog**. Used to restart the parent dialog.
 * **Replace this dialog**. Replaces the current dialog with a new dialog.
-* **GetConversationMembers**. Enables you to get a list of the conversation members and save it to a property in [memory][11].
+* **GetConversationMembers**. Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].
 * **EditActions**. Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions.
 
 For detailed information and examples, see the [Dialog management](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#dialog-management) section in the Adaptive dialogs prebuilt actions article.
 
 ### Manage properties
 
-The manage properties actions able you to create, update and delete a property.  For more information on properties, see the Bot Framework SDK [Managing state][bot-builder-concept-state.md] and the [Managing state in adaptive dialogs][11] articles.
+The manage properties actions able you to create, update and delete a property.  For more information on properties, see the Bot Framework SDK [Managing state][bot-builder-concept-state.md] and the [Managing state in adaptive dialogs][memory-states] articles.
 
 * **Edit an array**. This enables you to perform edit operations on an array.
-* **Delete a property**. This enables you to remove a property from [memory][11].
+* **Delete a property**. This enables you to remove a property from [memory][memory-states].
 * **Delete properties**. This enables you to delete more than one property in a single action.
-* **Create or update a property**. This enables you to set a property's value in [memory][11].
+* **Create or update a property**. This enables you to set a property's value in [memory][memory-states].
 * **Create or update properties**. This enables you to initialize one or more properties in a single action.
 
 For detailed information and examples, see the [Manage properties](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#manage-properties) section in the Adaptive dialogs prebuilt actions article.
@@ -108,7 +108,7 @@ These action enable you to access external resources, such as skills, sending an
 
 * **Begin a skill dialog**. Use the adaptive skill dialog to run a skill.
 * **Send an HTTP request**. Enables you to make HTTP requests to any endpoint.
-* **Emit a custom event**. Enables you to raise a custom event that your bot can respond to using a [custom trigger][8].
+* **Emit a custom event**. Enables you to raise a custom event that your bot can respond to using a [custom trigger][custom-event-trigger].
 * **Sign out a user**. Enables you to sign out the currently signed in user.
 * **Call custom code**. Enables you to call your own custom code.
 
@@ -123,20 +123,18 @@ For detailed information and examples, see the [Debugging options](../adaptive-d
 
 ## Additional Information
 
-* To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][7] article.
-* To learn more about adaptive expressions see the [adaptive expressions][10] article.
+* To learn about actions specific to gathering user input, see the [asking for user input using adaptive dialogs][inputs] article.
+* To learn more about adaptive expressions see the [adaptive expressions][adaptive-expressions] article.
 * For detailed information and examples on all actions covered in this article, see the [Adaptive dialogs prebuilt actions](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md) reference article.
 
-[1]:bot-builder-adaptive-dialog-introduction.md
-[2]:bot-builder-concept-adaptive-dialog-triggers.md
-[3]:https://www.qnamaker.ai/
-[4]:bot-builder-concept-adaptive-dialog-inputs.md#oauthinput
-[5]:bot-builder-concept-dialog.md
-[6]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
-[7]:bot-builder-concept-adaptive-dialog-inputs.md
-[8]:bot-builder-concept-adaptive-dialog-triggers.md#custom-events
-[9]:bot-builder-concept-adaptive-dialog-generators.md
-[10]:bot-builder-concept-adaptive-expressions.md
-[11]:bot-builder-concept-adaptive-dialog-memory-states.md
-[12]:https://www.qnamaker.ai/
-[13]:https://github.com/microsoft/botbuilder-samples
+[introduction]:bot-builder-adaptive-dialog-introduction.md
+[triggers]:bot-builder-concept-adaptive-dialog-triggers.md
+[www.qnamaker.ai]:https://www.qnamaker.ai/
+[oauthinput-inputs]:bot-builder-concept-adaptive-dialog-inputs.md#oauthinput
+[concept-dialog]:bot-builder-concept-dialog.md
+[interruptions-inputs]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
+[inputs]:bot-builder-concept-adaptive-dialog-inputs.md
+[custom-event-trigger]:bot-builder-concept-adaptive-dialog-triggers.md#custom-event-trigger
+[generators]:bot-builder-concept-adaptive-dialog-generators.md
+[adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
+[memory-states]:bot-builder-concept-adaptive-dialog-memory-states.md

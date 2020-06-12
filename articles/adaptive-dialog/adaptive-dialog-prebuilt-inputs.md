@@ -467,6 +467,6 @@ The following links provide generalized information on the topic of authenticati
 <!-- links -->
 [authentication]:https://aka.ms/azure-bot-authentication
 [add-authentication]:https://aka.ms/azure-bot-add-authentication
-[recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
-[adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
+[recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
+[adaptive-expressions]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 

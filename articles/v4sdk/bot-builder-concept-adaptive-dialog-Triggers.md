@@ -79,7 +79,7 @@ For the _dialog trigger_ to:
 * Take action when all actions and ambiguity events have been processed, use the `OnEndOfActions` trigger.
 * Handle an error condition, use the `OnError` trigger.
 
-For detailed information and examples, see the [Dialog events][dialog-events] section in the Adaptive dialogs prebuilt triggers article.
+For detailed information and examples, see the [Dialog events][dialog-event-triggers] section in the Adaptive dialogs prebuilt triggers article.
 
 ### Activity event triggers
 
@@ -107,13 +107,17 @@ Message events are a type of activity event and, as such, all message events hav
 * **Message reaction**. Actions to perform on receipt of an activity with type `MessageReaction`.
 * **Message updated**. Actions to perform on receipt of an activity with type `MessageUpdate`.
 
+For detailed information and examples, see the [Message event triggers][message-event-triggers] section in the Adaptive dialogs prebuilt triggers article.
+
 ### Custom event trigger
 
-You can emit your own events by adding the [EmitEvent][action-emitevent] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is the `OnDialogEvent` trigger that in effect becomes a custom trigger when you set the `Event` property to the same value as the EmitEvent's `EventName` property.
+You can emit your own events by adding the [EmitEvent][emitevent-action] action to any trigger, then you can handle that custom event in any trigger in any dialog in your bot by defining a _custom event_ trigger. A custom event trigger is the `OnDialogEvent` trigger that in effect becomes a custom trigger when you set the `Event` property to the same value as the EmitEvent's `EventName` property.
 
 > [!TIP]
 > You can allow other dialogs in your bot to handle your custom event by setting the EmitEvent's `BubbleEvent` property to true.
 For more information and an example, see the [Custom events][custom-events] section in the Adaptive dialogs prebuilt triggers article.
+
+For detailed information and an example, see the [Custom event triggers][custom-event-triggers] section in the Adaptive dialogs prebuilt triggers article.
 
 ## Additional Information
 
@@ -126,7 +130,7 @@ For more information and an example, see the [Custom events][custom-events] sect
 [actions]:bot-builder-concept-adaptive-dialog-actions.md
 [inputs]:bot-builder-concept-adaptive-dialog-inputs.md
 
-[action-emitevent]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
+[emitevent-action]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
 [recognizer-intents]:bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
 [recognizer-cross-trained-recognizer-set]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
@@ -135,9 +139,9 @@ For more information and an example, see the [Custom events][custom-events] sect
 <!-- Reference article links-->
 [base-trigger]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#base-trigger
 [recognizer-event-triggers]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#recognizer-event-triggers
-[dialog-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#dialog-events
-[activity-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#activity-events
-[message-events]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#message-events
+[dialog-event-triggers]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#dialog-event-triggers
+[activity-event-triggers]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#activity-event-triggers
+[message-event-triggers]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#message-event-triggers
 [custom-event-trigger]:../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#custom-event-trigger
 
 <!-- BF SDK links-->

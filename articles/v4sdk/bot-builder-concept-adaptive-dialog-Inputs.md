@@ -47,7 +47,7 @@ The adaptive dialogs library defines the following input types:
 * [Text](#textinput). To ask for any ***text based*** user input.
 * [Number](#numberinput). To ask for any ***numeric based*** user input.
 * [Confirmation](#confirminput). To request a ***confirmation*** from the user.
-* [Multiple choice](#access-external-resources). To request a selection from a ***set of options***.
+* [Multiple choice](#multiple-choice). To request a selection from a ***set of options***.
 * [File or attachment](#attachmentinput). To request/enable a user to **upload a file**.
 * [Date or time](#datetimeinput). To request a ***date and or time*** from a user.
 * [Oauth login](#oauthinput). To enable your users to **sign into a secure site**.
@@ -56,70 +56,14 @@ The adaptive dialogs library defines the following input types:
 
 The input classes provided by the Bot Framework SDK all derive from the base _input dialog_, which derives from the _dialog_ class. All input dialogs have these common properties:
 
-#### AllowInterruptions
-
-A Boolean expression. `true` to let the parent dialog interrupt the input dialog; otherwise, `false`.
-
-<!--TODO P0.5: Link to information on interruptions-->
-
-> [!NOTE]
-> The inputs parent dialog can also interrupt. This means that when `AllowInterruptions` is `true`, the recognizer in the inputs parent adaptive dialog will run and its triggers are evaluated.
-
-#### AlwaysPrompt
-
-A Boolean expression. If `true`, always prompt for input; if `false`, only prompt when the bound [property](#property) is null or empty.
-
-<!--TODO P1:
-This is true enough. I lost some sanity following the code down a rabbit hole. The full story is that the input dialog will run the property value (or the evaluation of the value value if _property is null) through all its recognition and validation logic. Thus, if it is null or empty or isn't recognized or doesn't validate, then the input dialog will prompt the user.
-This clarification is probably a low priority, but should happen at some point. Since this logic involves about 4 properties and is a little complex, it would be worth describing outside the list of properties.
---->
-
-#### DefaultValue
-
-An adaptive expression representing the default result for the input dialog. If the user input fails for [max turn count](#maxturncount) turns, the input dialog ends and sets the default value to this property.
-
-
-
-```csharp
-DefaultValue = "9"
-```
-
-#### DefaultValueResponse
-
-The response to send when the users input fails its [Validations](#validations) for [MaxTurnCount](#maxturncount) turns and a [DefaultValue](#defaultvalue) is specified.
-
-```csharp
-DefaultValueResponse = new ActivityTemplate("Sorry, we have reach the maximum number of attempts of '${%MaxTurnCount}' to get your input, so for now, we will go with a default value of: '${%DefaultValue}'")
-```
-
-#### InvalidPrompt
-
-The activity template with which to reprompt for input if the user input is recognized but fails validation. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)
-
->[!NOTE]
-> The `InvalidPrompt` property works only in conjunction with the [Validations](#validations) property.
-
-```csharp
-InvalidPrompt = new ActivityTemplate("Sorry, {this.value} does not work. Please enter a number between one and ten (1-10).")
-```
-
-#### MaxTurnCount
-
-An integer expression. The maximum number of times to ask for input. If this limit is exceeded, the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.
-
-```csharp
-MaxTurnCount = 2
-```
-
-#### Prompt
-
-The activity template with which to initially prompt for user input.
-
-```csharp
-Prompt = new ActivityTemplate("Hi, What is your name?")
-```
-
-#### Property
+* [AllowInterruptions][AllowInterruptions]. A Boolean expression. `true` to let the parent dialog interrupt the input dialog; otherwise, `false`.
+* [AlwaysPrompt][AlwaysPrompt]. A Boolean expression. If `true`, always prompt for input; if `false`, only prompt when the bound [property](#property) is null or empty.
+* [DefaultValue][DefaultValue]. An adaptive expression representing the default result for the input dialog. If the user input fails for [max turn count](#maxturncount) turns, the input dialog ends and sets the default value to this property.
+* [DefaultValueResponse][DefaultValueResponse]. The response to send when the users input fails its [Validations](#validations) for [MaxTurnCount](#maxturncount) turns and a [DefaultValue](#defaultvalue) is specified.
+* [InvalidPrompt][InvalidPrompt]. The activity template with which to reprompt for input if the user input is recognized but fails validation. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)
+* [MaxTurnCount][]. An integer expression. The maximum number of times to ask for input. If this limit is exceeded, the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.
+* [Prompt][]. The activity template with which to initially prompt for user input.
+* [Property
 
 The memory path, or an expression that evaluates to the memory path, of the property to bind the input dialog to. The memory path will be used to get the initial value for the input dialog. It will also be used to store the result of this dialog. Both the `Prompt` and the `Value` property go through recognition and validation steps, so an invalid initial value will result in a prompt.
 
