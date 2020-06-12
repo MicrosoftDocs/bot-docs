@@ -1056,13 +1056,14 @@ new LogAction()
 [1]:../v4sdk/bot-builder-concept-adaptive-dialog-Actions.md
 [2]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md
 [3]:https://www.qnamaker.ai/
-[4]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md#oauthinput
+[4]:../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
 [5]:../v4sdk/bot-builder-concept-dialog.md
-[6]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md#interruptions
-[7]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
-[8]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md#custom-event-triggers
+[6]:../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#interruptions
+[7]:../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md
+[8]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md#custom-event-trigger
 [9]:../v4sdk/bot-builder-concept-adaptive-dialog-generators.md
 [10]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [11]:../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
 [12]:https://www.qnamaker.ai/
 [13]:https://github.com/microsoft/botbuilder-samples
+[oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
