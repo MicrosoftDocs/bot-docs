@@ -1,28 +1,26 @@
 ---
 title: Bot Service Frequently Asked Questions - Bot Service
 description: A list of Frequently Asked Questions about deploy a bot to Azure.
-author: zxyanliu
+author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/09/2020
+ms.date: 06/12/2020
 ---
 
 # Deployment Frequently Asked Questions
 
 This article contains answers to some frequently asked questions about how to deploy a bot to Azure covered in [this article](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0). You will find the answers to the following questions: 
 
-- [Deployment Frequently Asked Questions](#deployment-frequently-asked-questions)
-  - [Zip up the code directory](#zip-up-the-code-directory)
-    - [What files do we need to zip up?](#what-files-do-we-need-to-zip-up)
-  - [Azure CLI command deprecation](#azure-cli-command-deprecation)
-    - [What Azure CLI version should I use to deploy a bot?](#what-azure-cli-version-should-i-use-to-deploy-a-bot)
-    - [What should I do when getting Azure CLI deprecation errors?](#what-should-i-do-when-getting-azure-cli-deprecation-errors)
-      - [Change log of the Azure CLI commands used to deploy a bot to Azure](#change-log-of-the-azure-cli-commands-used-to-deploy-a-bot-to-azure)
-    - [What are the deprecated commands related to `az deployment`?](#what-are-the-deprecated-commands-related-to-az-deployment)
-    - [How do I know whether the Azure CLI commands are deprecated?](#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
-  - [Additional information](#additional-information)
+- [Zip up the code directory](#zip-up-the-code-directory)
+  - [What files do we need to zip up?](#what-files-do-we-need-to-zip-up)
+- [Azure CLI command deprecation](#azure-cli-command-deprecation)
+  - [What Azure CLI version should I use to deploy a bot?](#what-azure-cli-version-should-i-use-to-deploy-a-bot)
+  - [What should I do when getting Azure CLI deprecation errors?](#what-should-i-do-when-getting-azure-cli-deprecation-errors)
+  - [What are the deprecated commands related to `az deployment`?](#what-are-the-deprecated-commands-related-to-az-deployment)
+  - [How do I know whether the Azure CLI commands are deprecated?](#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
+- [Additional information](#additional-information)
     - [Azure CLI Change Log](#azure-cli-change-log)
     - [ARM](#arm)
 
