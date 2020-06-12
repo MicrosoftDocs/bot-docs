@@ -11,6 +11,9 @@ ms.date: 06/08/2020
 
 # Bot Framework FAQ index
 
+> [!NOTE]
+> Questions can be posted at [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. New users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+
 ## Background and availability
 
 - [Why did Microsoft develop the Bot Framework?](bot-service-resources-faq-availability.md#why-did-microsoft-develop-the-bot-framework)
