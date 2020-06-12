@@ -48,7 +48,7 @@ Here are the different memory scopes available in adaptive dialogs, each with a 
 * [Dialog scope][dialog-scope] persists data for the life of the associated dialog, providing memory space for each dialog to have internal persistent bookkeeping.
 * [Turn scope][turn-scope] provides a place to share data for the lifetime of the current turn.
 * [Settings scope][settings-scope] represents any settings that are made available to the bot via the platform specific settings configuration system.
-* [This scope][this-scope]. The `this` scope pertains the active action's property bag. This is helpful for input actions since their life type typically lasts beyond a single turn of the conversation.
+* [This scope][this-scope] persists data for the life of the associated action. This is helpful for input actions since their life type typically lasts beyond a single turn of the conversation.
 * [Class scope][class-scope] holds the instance properties of the active dialog.
 
 ## Memory short-hand notations
