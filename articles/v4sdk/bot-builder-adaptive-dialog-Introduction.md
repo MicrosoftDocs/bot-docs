@@ -89,7 +89,7 @@ See the [_Memory scopes and managing state in adaptive dialogs_][7] article for 
 
 ### Declarative assets
 
-Adaptive dialogs enable you to define your dialog as a class by creating a new AdaptiveDialog object and defining your triggers and actions in the classes source file, but you can also create your dialog using a declarative approach where you define all the attributes of your dialog in a JSON file with a file extension of .dialog.  No source code is required to define your dialogs and you can have multiple dialogs using both approaches in the same bot. At runtime your bot will generate and execute the dialog code as defined in these declarative dialog files.
+Adaptive dialogs let you define your dialog as a class by creating a new `AdaptiveDialog` object and defining your triggers and actions in the classes source file. You can also create your dialog using a declarative approach where you define all the attributes of your dialog in a JSON file with a file extension of .dialog.  No source code is required to define your dialogs and you can have multiple dialogs using both approaches in the same bot. At runtime your bot will generate and execute the dialog code as defined in these declarative dialog files.
 
 <!--See the [_Using declarative assets_][9] article for more information on using _declarative assets_ in adaptive dialogs.-->
 
