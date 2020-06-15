@@ -105,12 +105,15 @@
 ## [Manage](manage/TOC.md)
 ## [Migrate](v4sdk/migration/TOC.md)
 # Reference
-## [.NET SDK v4](https://aka.ms/botframework-v4-cs-sdk)
-## [JavaScript SDK v4](https://aka.ms/bot-jssdk-v4)
-## [Python SDK v4](https://aka.ms/botframework-v4-python-sdk)
+## API SDK reference
+### v4
+#### [.NET SDK v4](https://aka.ms/botframework-v4-cs-sdk)
+#### [JavaScript SDK v4](https://aka.ms/bot-jssdk-v4)
+#### [Python SDK v4](https://aka.ms/botframework-v4-python-sdk)
+### v3
+#### [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
+#### [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
 ## [REST](rest-api/TOC.md)
-## [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
-## [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
 ## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
