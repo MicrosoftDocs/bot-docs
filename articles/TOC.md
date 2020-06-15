@@ -14,10 +14,11 @@
 # Samples
 ## [Bot Framework samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
 # Concepts
-## [How bots work](v4sdk/bot-builder-basics.md)
-## [Managing state](v4sdk/bot-builder-concept-state.md)
-## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
-## [Middleware](v4sdk/bot-builder-concept-middleware.md)
+## Bot
+### [How bots work](v4sdk/bot-builder-basics.md)
+### [Managing state](v4sdk/bot-builder-concept-state.md)
+### [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+### [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## Adaptive dialogs
 ### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
 ### [Events and triggers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md)
