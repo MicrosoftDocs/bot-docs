@@ -62,6 +62,6 @@ ms.date: 06/15/2020
 - [App ID and password](bot-service-troubleshoot-authentication-problems#app-id-and-password)
 - [Step 1: Disable security and test on localhost](bot-service-troubleshoot-authentication-problems#step-1-disable-security-and-test-on-localhost)
 - [Step 2: Verify your bot's app ID and password](bot-service-troubleshoot-authentication-problems#pr-en-us-2183#step-2)
-- [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problemsstep-3-enable-security-and-test-on-localhost-)
+- [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problems#step-3-enable-security-and-test-on-localhost-)
 - [Step 4: Test your bot in the cloud](bot-service-troubleshoot-authentication-problems#step-4-test-your-bot-in-the-cloud-)
 
