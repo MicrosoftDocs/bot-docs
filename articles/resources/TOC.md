@@ -7,15 +7,6 @@
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
 # [User-agent requests](../bot-service-resources-user-agent.md)
 # [Implement a skill for Power Virtual Agents](../v4sdk/skill-pva.md)
-<!-- VA -->
-# Virtual Assistant
-## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
-## [Template Introduction](../v4sdk/bot-builder-virtual-assistant-template.md)
-## [Virtual Assistant Skills](../v4sdk/bot-builder-skills-overview.md)
-<!-- Web Chat -->
-# WebChat
-## [Overview](../v4sdk/bot-builder-webchat-overview.md)
-## [Customization](../v4sdk/bot-builder-webchat-customization.md)
 <!-- FAQ -->
 # FAQ
 ## [Index](../bot-service-resources-faq-index.md)
@@ -37,3 +28,12 @@
 ## [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 ## [Bot Framework Card schema](https://aka.ms/botSpecs-cardSchema)
 ## [Bot Framework Transcript schema](https://aka.ms/botSpecs-transcripts)
+<!-- VA -->
+# Virtual Assistant
+## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
+## [Template Introduction](../v4sdk/bot-builder-virtual-assistant-template.md)
+## [Virtual Assistant Skills](../v4sdk/bot-builder-skills-overview.md)
+<!-- Web Chat -->
+# WebChat
+## [Overview](../v4sdk/bot-builder-webchat-overview.md)
+## [Customization](../v4sdk/bot-builder-webchat-customization.md)
