@@ -37,5 +37,3 @@
 ## [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
 ## [Bot Framework Card schema](https://aka.ms/botSpecs-cardSchema)
 ## [Bot Framework Transcript schema](https://aka.ms/botSpecs-transcripts)
-
-
