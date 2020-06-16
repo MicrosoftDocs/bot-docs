@@ -6,7 +6,7 @@
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
 # [User-agent requests](../bot-service-resources-user-agent.md)
 # FAQ
-## [Index](../bot-service-resources-faq-index.md)
+## [FAQ Index](../bot-service-resources-faq-index.md)
 ## [Availability](../bot-service-resources-faq-availability.md)
 ## [General](../bot-service-resources-faq-general.md)
 ## [Ecosystem](../bot-service-resources-faq-ecosystem.md)
@@ -14,7 +14,7 @@
 ## [Azure](../bot-service-resources-faq-azure.md)
 ## [FAQ old to replace](../bot-service-resources-bot-framework-faq.md)
 # Troubleshoot
-## [Index](../bot-service-troubleshoot-index.md)
+## [Troubleshoot Index](../bot-service-troubleshoot-index.md)
 ## [General](../bot-service-troubleshoot-general-problems.md)
 ## [Configuration](../bot-service-troubleshoot-bot-configuration.md)
 ## [HTTP 500 errors](../bot-service-troubleshoot-500-errors.md)
