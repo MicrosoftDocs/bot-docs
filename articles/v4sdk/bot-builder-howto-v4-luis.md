@@ -2,29 +2,32 @@
 title: Add natural language understanding to your bot - Bot Service
 description: Learn how to use LUIS for natural language understanding with the Bot Framework SDK.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
-author: ivorb
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/24/2020
+ms.date: 06/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Add natural language understanding to your bot
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
-The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. Language Understanding, called LUIS, enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow. This topic walks you through adding LUIS to a flight booking application to recognize different intents and entities contained within user input.
+
+The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. _Language Understanding (LUIS)_ is a cloud-based API service that enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow.
+
+This topic walks you through adding LUIS to a flight booking application to recognize different intents and entities contained within user input.
 
 ## Prerequisites
 
-- [LUIS](https://www.luis.ai) account
-- The code in this article is based on the **Core Bot** sample. You'll need a copy of the sample in **[C#](https://aka.ms/cs-core-sample)**, **[JavaScript](https://aka.ms/js-core-sample)**, or **[Python](https://aka.ms/python-core-sample)**.
+- A [LUIS](https://www.luis.ai) account.
+- A copy of the **Core Bot** sample in [**C#**](https://aka.ms/cs-core-sample), [**JavaScript**](https://aka.ms/js-core-sample), or [**Python**](https://aka.ms/python-core-sample).
 - Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
 
-This core bot coding sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
+This core bot sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
 
 # [C#](#tab/csharp)
 
@@ -75,17 +78,20 @@ The `on_message_activity` module runs the appropriate dialog through the `run_di
 
 ---
 
-For details on the other aspects of the sample like dialogs or state, see [Gather user input using a dialog prompt](bot-builder-prompts.md) or [Save user and conversation data](bot-builder-howto-v4-state.md).
+This article covers how to add LUIS to a bot. For information about using dialogs or state, see how to [gather user input using a dialog prompt](bot-builder-prompts.md) or [save user and conversation data](bot-builder-howto-v4-state.md), respectively.
 
 ## Create a LUIS app in the LUIS portal
 
-Sign in to the LUIS portal to create your own version of the sample LUIS app. You can create and manage your applications on **My Apps**.
-
-1. Select **Import new app**.
-1. Click **Choose App file (JSON format)...**
-1. Select `FlightBooking.json` file located in the `CognitiveModels` folder of the sample. In the **Optional Name**, enter **FlightBooking**. This file contains three intents: 'Book Flight', 'Cancel', and 'None'. We'll use these intents to understand what the user meant when they send a message to the bot.
-1. [Train](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-train) the app.
-1. [Publish](https://docs.microsoft.com/azure/cognitive-services/LUIS/publishapp) the app to *production* environment.
+1. Sign in to the [LUIS portal](https://www.luis.ai).
+    1. If you don't already have an account, create one.
+    1. If you don't already have an authoring resource, create one.
+    For more information, see the LUIS documentation on how to [sign in to the LUIS portal](/azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal).
+1. On the **My Apps** page, click **New app for conversation** and select **Import as JSON**.
+1. In the **Import new app** dialog:
+    1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample. (This file contains three intents: 'Book Flight', 'Cancel', and 'None'. LUIS will use these intents to understand what the user meant when they send a message to the bot.)
+    1. Enter `FlightBooking` as the optional name of the app, and click **Done**.
+1. Train and publish your app.
+    For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
 
 ### Why use entities
 
