@@ -73,6 +73,7 @@ The Bot Framework and many channels interpret text as if it were formatted with 
 This [sample](https://github.com/Microsoft/BotBuilder/issues/2258#issuecomment-280506334) shows how to configure the `Conversation.Container` with the right `MicrosoftAppCredentials` and use a simple `MultiCredentialProvider` to authenticate multiple App IDs and passwords.
 
 ## Identifiers
+___
 
 ## How do identifiers work in the Bot Framework?
 

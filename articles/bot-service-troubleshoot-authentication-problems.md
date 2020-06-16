@@ -16,7 +16,7 @@ This guide can help you to troubleshoot authentication issues with your bot by e
 > [!NOTE]
 > To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the [Azure Portal](https://portal.azure.com).
 
-## <a id="PW"></a> App ID and password
+## App ID and password
 
 Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service.
 
@@ -101,7 +101,7 @@ If one or more error(s) are indicated in the chat window, click the error(s) for
 
 ## <a id="step-2"></a> Step 2: Verify your bot's app ID and password
 
-In this step, you will verify that the app ID and password that your bot will use for authentication are valid. (If you do not know these values, [obtain them](#PW) now.) 
+In this step, you will verify that the app ID and password that your bot will use for authentication are valid. (If you do not know these values, [obtain them](#app-id-and-password) now.)
 
 > [!WARNING]
 > The following instructions disable SSL verification for `login.microsoftonline.com`. Only perform this procedure on a secure network and consider changing your application's password afterward.
@@ -119,7 +119,7 @@ To verify that your bot's app ID and password are valid, issue the following req
 curl -k -X POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token -d "grant_type=client_credentials&client_id=APP_ID&client_secret=APP_PASSWORD&scope=https%3A%2F%2Fapi.botframework.com%2F.default"
 ```
 
-This request attempts to exchange your bot's app ID and password for an access token. If the request is successful, you will receive a JSON payload that contains an `access_token` property, amongst others. 
+This request attempts to exchange your bot's app ID and password for an access token. If the request is successful, you will receive a JSON payload that contains an `access_token` property, amongst others.
 
 ```json
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAJKV1Q..."}
@@ -127,7 +127,7 @@ This request attempts to exchange your bot's app ID and password for an access t
 
 If the request is successful, you have verified that the app ID and password that you specified in the request are valid. Proceed to [Step 3](#step-3).
 
-If you receive an error in response to the request, examine the response to identify the cause of the error. If the response indicates that the app ID or the password is invalid, [obtain the correct values](#PW) from the Bot Framework Portal and re-issue the request with the new values to confirm that they are valid. 
+If you receive an error in response to the request, examine the response to identify the cause of the error. If the response indicates that the app ID or the password is invalid, [obtain the correct values](#app-id-and-password) from the Bot Framework Portal and re-issue the request with the new values to confirm that they are valid.
 
 ## Step 3: Enable security and test on localhost <a id="step-3"></a>
 
@@ -158,14 +158,14 @@ var connector = new builder.ChatConnector({
 > [!NOTE]
 > To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
-### Test your bot on localhost 
+### Test your bot on localhost
 
 Next, test your bot on localhost by using the Bot Framework Emulator.
 
 1. Start your bot on localhost.
 2. Start the Bot Framework Emulator.
 3. Connect to your bot using the emulator.
-    - Type `http://localhost:port-number/api/messages` into the emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running. 
+    - Type `http://localhost:port-number/api/messages` into the emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
     - Enter your bot's app ID into the **Microsoft App ID** field.
     - Enter your bot's password into the **Microsoft App Password** field.
     - Click **Connect**.
@@ -182,28 +182,28 @@ If one or more error(s) are indicated in the chat window, click the error(s) for
 
 ## Step 4: Test your bot in the cloud <a id="step-4"></a>
 
-At this point, you have verified that your bot is accessible and functional on localhost when security is disabled, confirmed that your bot's app ID and password are valid, and verified that your bot is accessible and functional on localhost when security is enabled. In this step, you will deploy your bot to the cloud and verify that it is accessible and functional there with security enabled. 
+At this point, you have verified that your bot is accessible and functional on localhost when security is disabled, confirmed that your bot's app ID and password are valid, and verified that your bot is accessible and functional on localhost when security is enabled. In this step, you will deploy your bot to the cloud and verify that it is accessible and functional there with security enabled.
 
 ### Deploy your bot to the cloud
 
 The Bot Framework requires that bots be accessible from the internet, so you must deploy your bot to a cloud hosting platform such as Azure. Be sure to enable security for your bot prior to deployment, as described in [Step 3](#step-3).
 
 > [!NOTE]
-> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.. 
+> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>..
 
 If you deploy your bot to Azure, SSL will automatically be configured for your application, thereby enabling the **HTTPS** endpoint that the Bot Framework requires. If you deploy to another cloud hosting provider, be sure to verify that your application is configured for SSL so that the bot will have an **HTTPS** endpoint.
 
-### Test your bot 
+### Test your bot
 
 To test your bot in the cloud with security enabled, complete the following steps.
 
-1. Ensure that your bot has been successfully deployed and is running. 
+1. Ensure that your bot has been successfully deployed and is running.
 2. Sign in to the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
 3. Navigate to the **Bot Channels Registration** for your bot within the portal.
 4. Click **Test in Web Chat** in the **Bot management** pane on the left.
 5. To test connectivity to your bot, type some text into the web chat control and press Enter.
 
-If an error is indicated in the chat window, use the error message to determine the cause of the error. Common issues include: 
+If an error is indicated in the chat window, use the error message to determine the cause of the error. Common issues include:
 
 * The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal is incorrect. Make sure you have included the proper path at the end of the URL (e.g., `/api/messages`).
 * The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal does not begin with `https` or is not trusted by the Bot Framework. Your bot must have a valid, chain-trusted certificate.
@@ -219,7 +219,7 @@ If you are still experiencing issues after completing the steps above, you can:
 * [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a> tunnelling software. *ngrok is not a Microsoft product.*
 * Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
 * Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
-* Solicit help from others by using the Bot Framework [support][Support] resources. 
+* Solicit help from others by using the Bot Framework [support][Support] resources.
 
 [BotConnectorAuthGuide]: ~/rest-api/bot-framework-rest-connector-authentication.md
 [Support]: bot-service-resources-links-help.md
