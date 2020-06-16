@@ -5,8 +5,8 @@
 # [Bot review guidelines](../bot-service-review-guidelines.md)
 # [Channel reference](../bot-service-channels-reference.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
-# [User-agent requests](../bot-service-resources-user-agent.md)
 # [Implement a skill for Power Virtual Agents](../v4sdk/skill-pva.md)
+# [User-agent requests](../bot-service-resources-user-agent.md)
 <!-- FAQ -->
 # FAQ
 ## [Index](../bot-service-resources-faq-index.md)
