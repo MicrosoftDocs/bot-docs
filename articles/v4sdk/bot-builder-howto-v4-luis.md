@@ -214,9 +214,9 @@ At this point the code bot logic will reset and you can continue to create addit
 
 For more about LUIS, see the LUIS documentation:
 
-- [What is Language Understanding (LUIS)?](azure/cognitive-services/luis/what-is-luis)
-- [Create a new LUIS app in the LUIS portal](azure/cognitive-services/luis/luis-how-to-start-new-app)
-- [Design with intent and entity models](azure/cognitive-services/luis/luis-concept-model)
+- [What is Language Understanding (LUIS)?](/azure/cognitive-services/luis/what-is-luis)
+- [Create a new LUIS app in the LUIS portal](/azure/cognitive-services/luis/luis-how-to-start-new-app)
+- [Design with intent and entity models](/azure/cognitive-services/luis/luis-concept-model)
 
 ## Next steps
 
