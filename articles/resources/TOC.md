@@ -22,6 +22,11 @@
 ## [Configuration](../bot-service-troubleshoot-bot-configuration.md)
 ## [HTTP 500 errors](../bot-service-troubleshoot-500-errors.md)
 ## [Authentication](../bot-service-troubleshoot-authentication-problems.md)
+<!-- Schemas -->
+# Schemas
+## [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+## [Bot Framework Card schema](https://aka.ms/botSpecs-cardSchema)
+## [Bot Framework Transcript schema](https://aka.ms/botSpecs-transcripts)
 <!-- VA -->
 # Virtual Assistant
 ## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)
@@ -32,8 +37,3 @@
 # WebChat
 ## [Overview](../v4sdk/bot-builder-webchat-overview.md)
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
-<!-- Schemas -->
-# Schemas
-## [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
-## [Bot Framework Card schema](https://aka.ms/botSpecs-cardSchema)
-## [Bot Framework Transcript schema](https://aka.ms/botSpecs-transcripts)
