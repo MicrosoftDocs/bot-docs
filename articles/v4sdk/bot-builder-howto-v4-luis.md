@@ -29,6 +29,8 @@ This topic walks you through adding LUIS to a flight booking application to reco
 
 This core bot sample shows an example of an airport flight booking application. It uses a LUIS service to recognize the user input and return the top recognized LUIS intent.
 
+The language model contains three intents: `Book Flight`, `Cancel`, and `None`. LUIS will use these intents to understand what the user meant when they send a message to the bot. The language model also defines entities that LUIS can extract from the user's input, such as the origin or destination airport.
+
 # [C#](#tab/csharp)
 
 After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
@@ -83,12 +85,12 @@ This article covers how to add LUIS to a bot. For information about using dialog
 ## Create a LUIS app in the LUIS portal
 
 1. Sign in to the [LUIS portal](https://www.luis.ai).
-    1. If you don't already have an account, create one.
-    1. If you don't already have an authoring resource, create one.
-    For more information, see the LUIS documentation on how to [sign in to the LUIS portal](/azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal).
+    - If you don't already have an account, create one.
+    - If you don't already have an authoring resource, create one.
+    - For more information, see the LUIS documentation on how to [sign in to the LUIS portal](/azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal).
 1. On the **My Apps** page, click **New app for conversation** and select **Import as JSON**.
 1. In the **Import new app** dialog:
-    1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample. (This file contains three intents: 'Book Flight', 'Cancel', and 'None'. LUIS will use these intents to understand what the user meant when they send a message to the bot.)
+    1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample.
     1. Enter `FlightBooking` as the optional name of the app, and click **Done**.
 1. Train and publish your app.
     For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
@@ -96,8 +98,6 @@ This article covers how to add LUIS to a bot. For information about using dialog
 ### Why use entities
 
 LUIS entities allow your bot to intelligently understand certain things or events that are different than the standard intents. This enables you to gather extra information from the user, which lets your bot respond more intelligently or possibly skip certain questions where it asks the user for that information. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None' the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
-
-For information on how entity information appears in a LUIS result, see [Extract data from utterance text with intents and entities](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-data-extraction).
 
 ## Obtain values to connect to your LUIS app
 
@@ -109,11 +109,12 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
-1. Select the **Application Information** tab on the left side. Record the value shown for _Application ID_ as <YOUR_APP_ID>.
+1. Select the **Settings** tab on the left side.
+    Record the value shown for _Application ID_ as \<YOUR_APP_ID>.
     ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-app-info.png)
-1. Select the **Azure Resources** tab on the left side. Record the value shown for:_Region_ as <YOUR_REGION> and _Primary key_ as <YOUR_AUTHORING_KEY>.
+1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group.
+    Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
     ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
-
 
 ### Update the settings file
 
@@ -208,6 +209,14 @@ If the top intent returned from LUIS resolves to "Book flight" your bot will ask
 ![LUIS booking result](./media/how-to-luis/luis-travel-result.png)
 
 At this point the code bot logic will reset and you can continue to create additional bookings.
+
+## Additional information
+
+For more about LUIS, see the LUIS documentation:
+
+- [What is Language Understanding (LUIS)?](azure/cognitive-services/luis/what-is-luis)
+- [Create a new LUIS app in the LUIS portal](azure/cognitive-services/luis/luis-how-to-start-new-app)
+- [Design with intent and entity models](azure/cognitive-services/luis/luis-concept-model)
 
 ## Next steps
 
