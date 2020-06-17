@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/24/2020
+ms.date: 06/17/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -29,7 +29,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the proactive messages sample in [**C#**](https://aka.ms/proactive-sample-cs) or [**JavaScript**](https://aka.ms/proactive-sample-js) or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
+- A copy of the **proactive messages** sample in [**C#**](https://aka.ms/proactive-sample-cs), [**JavaScript**](https://aka.ms/proactive-sample-js), or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -115,13 +115,13 @@ The server then uses the `_send_proactive_message` to send the proactive message
 
 ## Additional information
 
-Besides the sample used in this article, additional samples are available in C# and JS on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
+Besides the sample used in this article, additional samples are available on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
 
 ### Avoiding 401 "Unauthorized" Errors
 
-By default, the BotBuilder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
+By default, the Bot Builder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
 
-To avoid this, you must manually add the `serviceUrl` to the list of trusted host names by using:
+To avoid this, you must manually add the `serviceUrl` to the list of trusted host names.
 
 # [C#](#tab/csharp)
 
@@ -131,7 +131,7 @@ MicrosoftAppCredentials.TrustServiceUrl(serviceUrl);
 
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`.
 
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-cs), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
 
 # [JavaScript](#tab/javascript)
 
@@ -141,7 +141,7 @@ MicrosoftAppCredentials.trustServiceUrl(serviceUrl);
 
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
 
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-js), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
 
 # [Python](#tab/python)
 
