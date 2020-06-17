@@ -82,7 +82,7 @@ To know if an Azure CLI command is deprecated, execute the the command with the 
 
 Read more about [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
 
-### ARM
+### Azure Resource Management (ARM)
 
 Here is a list of a consolidation of the commands to better fit the current command design of Azure CLI: az {command group} {?sub-command-group} {operation} {parameters}.
 
