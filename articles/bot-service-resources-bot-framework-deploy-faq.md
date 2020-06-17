@@ -38,7 +38,7 @@ Please, make sure that you select all the files and folders in your bot's projec
 
 
 
-## Azure CLI command deprecation
+## Azure CLI deprecated commands
 
 ### What Azure CLI version should I use to deploy a bot?
 
