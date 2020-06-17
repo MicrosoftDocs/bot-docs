@@ -29,8 +29,40 @@ When your bot is already in production, the Bot Framework Emulator uses an insta
 * Install [ngrok](https://ngrok.com/).
 * A basic bot you developed in your local machine.
 
-## Create an Azure registration resource 
+## Create an Azure registration resource
 
+You will need to create a Bot Channels Registration to register your local bot with Azure so that your local bot can be connected to any supported channel.
+
+### Create a Bot Channels Registration
+
+1. Navigate to your [Azure portal](https://azure.microsoft.com) and select **+ Create a resource** on top of the menu.
+
+2. Enter **Bot Channels Registration** in the search box and press **Enter**.
+
+3. Select **Create** from the pop-up window and then fill in the creation form to create your **Bot Channels Registration**.
+
+### Get the App ID and password
+
+You will need to use the **App ID** and **password** generated during the previous process for application configuration. If you already have these values, you can skip to the next section to configure these values to your bot application. If you do not have these values, follow the steps: 
+
+1. Select the **Bot Channels Registration** you just created and then select **Settings** from the left panel. The **App ID** is displayed in the **Microsoft App ID (Manage)** section.
+    
+    > [!div class="mx-imgBorder"]
+    > ![app id and password](../media/debug-ngrok/bot-channels-registration-appid-password.png)
+
+2. Select **Manage** from **Microsoft App ID (Manage)** on the **Settings** page to generate a new **password**. 
+
+3. Select **+New client secret** from the **Certificate & secrets** page. Enter some description in the **Description** field (this is optional) and select an expiration time from the **Expires** list. Select **Add**. 
+
+    > [!div class="mx-imgBorder"]
+    > ![certificates and secrets](../media/debug-ngrok/certificates-secrets.png)
+
+4. Copy the value from the **Value** field of the displayed table. This is the generated **password** of your **Bot Channels Registration**.
+
+    > [!div class="mx-imgBorder"]
+    > ![bot channels registration password](../media/debug-ngrok/bot-channels-registration-password.png)
+
+For more information about creating a **Bot Channels Registration**, refer to the [Register a bot with Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0&viewFallbackFrom=azure-bot-service-4.0) article.
 
 
 
