@@ -84,7 +84,7 @@ Read more about [Azure CLI change log](https://github.com/MicrosoftDocs/azure-do
 
 ### Azure Resource Management (ARM)
 
-Here is a list of a consolidation of the commands to better fit the current command design of Azure CLI: az {command group} {?sub-command-group} {operation} {parameters}.
+The following is a consolidated list of the commands that fit the current Azure CLI design: az {command group} {?sub-command-group} {operation} {parameters}.
 
 * `az resource`: Improve the examples of the resource module
 * `az policy assignment list`: Support listing policy assignments at Management Group scope
