@@ -37,7 +37,6 @@ Please, make sure that you select all the files and folders in your bot's projec
 
 
 
-After that, you can run the command to deploy your bot. 
 
 ## Azure CLI command deprecation
 
