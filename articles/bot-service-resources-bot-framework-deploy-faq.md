@@ -36,7 +36,6 @@ Please, make sure that you select all the files and folders in your bot's projec
 > ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
 
 
-> [!div class="mx-imgBorder"]
 > ![zip file](./media/deploy-bot-cli/zip-file.png)
 
 After that, you can run the command to deploy your bot. 
