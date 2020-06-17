@@ -1,0 +1,187 @@
+<Type Name="EvaluationOptions" FullName="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions">
+  <TypeSignature Language="C#" Value="public class EvaluationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EvaluationOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class EvaluationOptions" />
+  <TypeSignature Language="F#" Value="type EvaluationOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Options for evaluation of LG template <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" /> class.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EvaluationOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EvaluationOptions (Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.#ctor(Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (opt As EvaluationOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions : Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions -&gt; Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" Usage="new Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="opt" Type="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="opt">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EvaluationOptions (System.Collections.Generic.IList&lt;string&gt; optionsList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; optionsList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.#ctor(System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (optionsList As IList(Of String))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions : System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" Usage="new Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions optionsList" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="optionsList" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="optionsList">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineBreakStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle? LineBreakStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle&gt; LineBreakStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.LineBreakStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineBreakStyle As Nullable(Of LGLineBreakStyle)" />
+      <MemberSignature Language="F#" Value="member this.LineBreakStyle : Nullable&lt;Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle&gt; with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.LineBreakStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the option of rendering new line characters.
+            </summary>
+        <value>
+            A string value represents the line break style in LG.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions Merge (Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions Merge(class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.Merge(Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Merge (opt As EvaluationOptions) As EvaluationOptions" />
+      <MemberSignature Language="F#" Value="member this.Merge : Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions -&gt; Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" Usage="evaluationOptions.Merge opt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opt" Type="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="opt">The incoming option for merging.</param>
+        <summary>
+            Merge a incoming option to current option. If a property in incoming option is not null while it is null in current
+            option, then the value of this property will be overwritten.
+            </summary>
+        <returns>The result after merging.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullSubstitution">
+      <MemberSignature Language="C#" Value="public Func&lt;string,object&gt; NullSubstitution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;string, object&gt; NullSubstitution" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.NullSubstitution" />
+      <MemberSignature Language="VB.NET" Value="Public Property NullSubstitution As Func(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.NullSubstitution : Func&lt;string, obj&gt; with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.NullSubstitution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the option of a function to replace a null value. If nullSubstitution is specified,
+            LG evaluator will not throw null exception even the strictMode is on. 
+            </summary>
+        <value>
+            A function.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrictMode">
+      <MemberSignature Language="C#" Value="public bool? StrictMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; StrictMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.StrictMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrictMode As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.StrictMode : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.StrictMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the option of whether throwing an error when evaluating a null reference.
+            </summary>
+        <value>
+            A boolean or null value.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,32 @@
+<Type Name="ExpressionFunctions+VerifyExpression" FullName="AdaptiveExpressions.ExpressionFunctions+VerifyExpression">
+  <TypeSignature Language="C#" Value="public delegate string ExpressionFunctions.VerifyExpression(object value, Expression expression, int child);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ExpressionFunctions/VerifyExpression extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.ExpressionFunctions.VerifyExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ExpressionFunctions.VerifyExpression(value As Object, expression As Expression, child As Integer) As String " />
+  <TypeSignature Language="F#" Value="type ExpressionFunctions.VerifyExpression = delegate of obj * Expression * int -&gt; string" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="value" Type="System.Object" />
+    <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
+    <Parameter Name="child" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.String</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="value">Value to verify.</param>
+    <param name="expression">Expression that produced value.</param>
+    <param name="child">Index of child expression.</param>
+    <summary>
+            Verify the result of an expression is of the appropriate type and return a string if not.
+            </summary>
+    <returns>Null if value if correct or error string otherwise.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,1457 @@
+<Type Name="WebexClientWrapper" FullName="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper">
+  <TypeSignature Language="C#" Value="public class WebexClientWrapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebexClientWrapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebexClientWrapper" />
+  <TypeSignature Language="F#" Value="type WebexClientWrapper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebexClientWrapper (Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As WebexAdapterOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper : Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper options" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">An object containing API credentials, a webhook verification token and other options.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" /> class.
+            Creates a Webex Client Wrapper. See <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" /> for a full definition of the allowed parameters.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; ActivateWebhookAsync (Thrzn41.WebexTeams.Version1.Webhook webhook, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; ActivateWebhookAsync(class Thrzn41.WebexTeams.Version1.Webhook webhook, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ActivateWebhookAsync(Thrzn41.WebexTeams.Version1.Webhook,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ActivateWebhookAsync (webhook As Webhook, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="abstract member ActivateWebhookAsync : Thrzn41.WebexTeams.Version1.Webhook * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;&#xA;override this.ActivateWebhookAsync : Thrzn41.WebexTeams.Version1.Webhook * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.ActivateWebhookAsync (webhook, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webhook" Type="Thrzn41.WebexTeams.Version1.Webhook" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="webhook">
+          <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" /> to be activated.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ActivateWebhookAsync method.
+            </summary>
+        <returns>The Activated <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAdaptiveCardsWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; CreateAdaptiveCardsWebhookAsync (string name, Uri targetUri, Thrzn41.WebexTeams.Version1.EventType type, string secret, string token, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; CreateAdaptiveCardsWebhookAsync(string name, class System.Uri targetUri, class Thrzn41.WebexTeams.Version1.EventType type, string secret, string token, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateAdaptiveCardsWebhookAsync(System.String,System.Uri,Thrzn41.WebexTeams.Version1.EventType,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateAdaptiveCardsWebhookAsync (name As String, targetUri As Uri, type As EventType, secret As String, token As String, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="abstract member CreateAdaptiveCardsWebhookAsync : string * Uri * Thrzn41.WebexTeams.Version1.EventType * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;&#xA;override this.CreateAdaptiveCardsWebhookAsync : string * Uri * Thrzn41.WebexTeams.Version1.EventType * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.CreateAdaptiveCardsWebhookAsync (name, targetUri, type, secret, token, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="targetUri" Type="System.Uri" />
+        <Parameter Name="type" Type="Thrzn41.WebexTeams.Version1.EventType" />
+        <Parameter Name="secret" Type="System.String" />
+        <Parameter Name="token" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name for the webhook.</param>
+        <param name="targetUri">Uri of the webhook.</param>
+        <param name="type">Event type associated with the webhook.</param>
+        <param name="secret">Secret used to validate the webhook.</param>
+        <param name="token">Access Token for authorization.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Creates a Webhook subscription to handle Adaptive cards messages.
+            </summary>
+        <returns>The created <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDirectMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; CreateDirectMessageAsync (string toPersonOrEmail, string text, System.Collections.Generic.IList&lt;Uri&gt; files = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; CreateDirectMessageAsync(string toPersonOrEmail, string text, class System.Collections.Generic.IList`1&lt;class System.Uri&gt; files, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateDirectMessageAsync(System.String,System.String,System.Collections.Generic.IList{System.Uri},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDirectMessageAsync (toPersonOrEmail As String, text As String, Optional files As IList(Of Uri) = null, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member CreateDirectMessageAsync : string * string * System.Collections.Generic.IList&lt;Uri&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.CreateDirectMessageAsync : string * string * System.Collections.Generic.IList&lt;Uri&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webexClientWrapper.CreateDirectMessageAsync (toPersonOrEmail, text, files, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toPersonOrEmail" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="files" Type="System.Collections.Generic.IList&lt;System.Uri&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="toPersonOrEmail">Id or email of message recipient.</param>
+        <param name="text">Text of the message.</param>
+        <param name="files">List of files attached to the message.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateDirectMessageAsync method.
+            </summary>
+        <returns>The created message id.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; CreateMessageAsync (string recipient, string text, System.Collections.Generic.IList&lt;Uri&gt; files = default, Thrzn41.WebexTeams.Version1.MessageTextType messageType = Thrzn41.WebexTeams.Version1.MessageTextType.Text, Thrzn41.WebexTeams.Version1.MessageTarget target = Thrzn41.WebexTeams.Version1.MessageTarget.PersonId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; CreateMessageAsync(string recipient, string text, class System.Collections.Generic.IList`1&lt;class System.Uri&gt; files, valuetype Thrzn41.WebexTeams.Version1.MessageTextType messageType, valuetype Thrzn41.WebexTeams.Version1.MessageTarget target, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateMessageAsync(System.String,System.String,System.Collections.Generic.IList{System.Uri},Thrzn41.WebexTeams.Version1.MessageTextType,Thrzn41.WebexTeams.Version1.MessageTarget,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateMessageAsync (recipient As String, text As String, Optional files As IList(Of Uri) = null, Optional messageType As MessageTextType = Thrzn41.WebexTeams.Version1.MessageTextType.Text, Optional target As MessageTarget = Thrzn41.WebexTeams.Version1.MessageTarget.PersonId, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageAsync : string * string * System.Collections.Generic.IList&lt;Uri&gt; * Thrzn41.WebexTeams.Version1.MessageTextType * Thrzn41.WebexTeams.Version1.MessageTarget * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.CreateMessageAsync : string * string * System.Collections.Generic.IList&lt;Uri&gt; * Thrzn41.WebexTeams.Version1.MessageTextType * Thrzn41.WebexTeams.Version1.MessageTarget * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webexClientWrapper.CreateMessageAsync (recipient, text, files, messageType, target, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recipient" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="files" Type="System.Collections.Generic.IList&lt;System.Uri&gt;" />
+        <Parameter Name="messageType" Type="Thrzn41.WebexTeams.Version1.MessageTextType" />
+        <Parameter Name="target" Type="Thrzn41.WebexTeams.Version1.MessageTarget" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="recipient">Target id of the message.</param>
+        <param name="text">Text of the message.</param>
+        <param name="files">List of files attached to the message.</param>
+        <param name="messageType">Type of message. It can be Text or Markdown.</param>
+        <param name="target">Target for the message.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateMessageAsync method.
+            </summary>
+        <returns>The created message id.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessageWithAttachmentsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; CreateMessageWithAttachmentsAsync (string recipient, string text, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, Thrzn41.WebexTeams.Version1.MessageTextType messageType = Thrzn41.WebexTeams.Version1.MessageTextType.Text, Thrzn41.WebexTeams.Version1.MessageTarget target = Thrzn41.WebexTeams.Version1.MessageTarget.PersonId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; CreateMessageWithAttachmentsAsync(string recipient, string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, valuetype Thrzn41.WebexTeams.Version1.MessageTextType messageType, valuetype Thrzn41.WebexTeams.Version1.MessageTarget target, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateMessageWithAttachmentsAsync(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},Thrzn41.WebexTeams.Version1.MessageTextType,Thrzn41.WebexTeams.Version1.MessageTarget,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateMessageWithAttachmentsAsync (recipient As String, text As String, attachments As IList(Of Attachment), Optional messageType As MessageTextType = Thrzn41.WebexTeams.Version1.MessageTextType.Text, Optional target As MessageTarget = Thrzn41.WebexTeams.Version1.MessageTarget.PersonId, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageWithAttachmentsAsync : string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; * Thrzn41.WebexTeams.Version1.MessageTextType * Thrzn41.WebexTeams.Version1.MessageTarget * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.CreateMessageWithAttachmentsAsync : string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt; * Thrzn41.WebexTeams.Version1.MessageTextType * Thrzn41.WebexTeams.Version1.MessageTarget * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webexClientWrapper.CreateMessageWithAttachmentsAsync (recipient, text, attachments, messageType, target, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recipient" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="attachments" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Attachment&gt;" />
+        <Parameter Name="messageType" Type="Thrzn41.WebexTeams.Version1.MessageTextType" />
+        <Parameter Name="target" Type="Thrzn41.WebexTeams.Version1.MessageTarget" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="recipient">PersonId, email or roomId of the message.</param>
+        <param name="text">Text of the message.</param>
+        <param name="attachments">List of attachments attached to the message.</param>
+        <param name="messageType">Type of the message. It can be Text or Markdown.</param>
+        <param name="target">Target for the message.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Creates a message with attachments.
+            </summary>
+        <returns>The created message id.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSpaceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt; CreateSpaceAsync (string title, string teamId = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Space&gt; CreateSpaceAsync(string title, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateSpaceAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSpaceAsync (title As String, Optional teamId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of Space)" />
+      <MemberSignature Language="F#" Value="abstract member CreateSpaceAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;&#xA;override this.CreateSpaceAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;" Usage="webexClientWrapper.CreateSpaceAsync (title, teamId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="title">Space title.</param>
+        <param name="teamId">The ID for the team with which this room is associated.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateSpaceAsync method.
+            </summary>
+        <returns>The space created.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSpaceMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt; CreateSpaceMembershipAsync (string spaceId, string personIdOrEmail, bool? isModerator = default, Thrzn41.WebexTeams.Version1.PersonIdType personIdType = Thrzn41.WebexTeams.Version1.PersonIdType.Detect, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.SpaceMembership&gt; CreateSpaceMembershipAsync(string spaceId, string personIdOrEmail, valuetype System.Nullable`1&lt;bool&gt; isModerator, valuetype Thrzn41.WebexTeams.Version1.PersonIdType personIdType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateSpaceMembershipAsync(System.String,System.String,System.Nullable{System.Boolean},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSpaceMembershipAsync (spaceId As String, personIdOrEmail As String, Optional isModerator As Nullable(Of Boolean) = null, Optional personIdType As PersonIdType = Thrzn41.WebexTeams.Version1.PersonIdType.Detect, Optional cancellationToken As CancellationToken = null) As Task(Of SpaceMembership)" />
+      <MemberSignature Language="F#" Value="abstract member CreateSpaceMembershipAsync : string * string * Nullable&lt;bool&gt; * Thrzn41.WebexTeams.Version1.PersonIdType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;&#xA;override this.CreateSpaceMembershipAsync : string * string * Nullable&lt;bool&gt; * Thrzn41.WebexTeams.Version1.PersonIdType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;" Usage="webexClientWrapper.CreateSpaceMembershipAsync (spaceId, personIdOrEmail, isModerator, personIdType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spaceId" Type="System.String" />
+        <Parameter Name="personIdOrEmail" Type="System.String" />
+        <Parameter Name="isModerator" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="personIdType" Type="Thrzn41.WebexTeams.Version1.PersonIdType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="spaceId">The space ID.</param>
+        <param name="personIdOrEmail">The person ID or Email.</param>
+        <param name="isModerator">True for moderator persons.</param>
+        <param name="personIdType">
+          <see cref="T:Thrzn41.WebexTeams.Version1.PersonIdType" /> for personIdOrEmail parameter.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateSpaceMembershipAsync method.
+            </summary>
+        <returns>The resulting space membership.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTeamAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt; CreateTeamAsync (string name, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Team&gt; CreateTeamAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateTeamAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTeamAsync (name As String, cancellationToken As CancellationToken) As Task(Of Team)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;&#xA;override this.CreateTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;" Usage="webexClientWrapper.CreateTeamAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">A user-friendly name for the team.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateTeamAsync method.
+            </summary>
+        <returns>The created team.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTeamMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt; CreateTeamMembershipAsync (string teamId, string personIdOrEmail, bool? isModerator = default, Thrzn41.WebexTeams.Version1.PersonIdType personIdType = Thrzn41.WebexTeams.Version1.PersonIdType.Detect, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.TeamMembership&gt; CreateTeamMembershipAsync(string teamId, string personIdOrEmail, valuetype System.Nullable`1&lt;bool&gt; isModerator, valuetype Thrzn41.WebexTeams.Version1.PersonIdType personIdType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateTeamMembershipAsync(System.String,System.String,System.Nullable{System.Boolean},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTeamMembershipAsync (teamId As String, personIdOrEmail As String, Optional isModerator As Nullable(Of Boolean) = null, Optional personIdType As PersonIdType = Thrzn41.WebexTeams.Version1.PersonIdType.Detect, Optional cancellationToken As CancellationToken = null) As Task(Of TeamMembership)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTeamMembershipAsync : string * string * Nullable&lt;bool&gt; * Thrzn41.WebexTeams.Version1.PersonIdType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;&#xA;override this.CreateTeamMembershipAsync : string * string * Nullable&lt;bool&gt; * Thrzn41.WebexTeams.Version1.PersonIdType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;" Usage="webexClientWrapper.CreateTeamMembershipAsync (teamId, personIdOrEmail, isModerator, personIdType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="personIdOrEmail" Type="System.String" />
+        <Parameter Name="isModerator" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="personIdType" Type="Thrzn41.WebexTeams.Version1.PersonIdType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamId">The team ID.</param>
+        <param name="personIdOrEmail">The person ID or Email.</param>
+        <param name="isModerator">Set to true to make the person a room moderator.</param>
+        <param name="personIdType">
+          <see cref="T:Thrzn41.WebexTeams.Version1.PersonIdType" /> for personIdOrEmail parameter.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateTeamMembershipAsync method.
+            </summary>
+        <returns>The team membership created.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; CreateWebhookAsync (string name, Uri targetUri, Thrzn41.WebexTeams.Version1.EventResource resource, Thrzn41.WebexTeams.Version1.EventType type, System.Collections.Generic.IEnumerable&lt;Thrzn41.WebexTeams.Version1.EventFilter&gt; filters, string secret, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; CreateWebhookAsync(string name, class System.Uri targetUri, class Thrzn41.WebexTeams.Version1.EventResource resource, class Thrzn41.WebexTeams.Version1.EventType type, class System.Collections.Generic.IEnumerable`1&lt;class Thrzn41.WebexTeams.Version1.EventFilter&gt; filters, string secret, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateWebhookAsync(System.String,System.Uri,Thrzn41.WebexTeams.Version1.EventResource,Thrzn41.WebexTeams.Version1.EventType,System.Collections.Generic.IEnumerable{Thrzn41.WebexTeams.Version1.EventFilter},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateWebhookAsync (name As String, targetUri As Uri, resource As EventResource, type As EventType, filters As IEnumerable(Of EventFilter), secret As String, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebhookAsync : string * Uri * Thrzn41.WebexTeams.Version1.EventResource * Thrzn41.WebexTeams.Version1.EventType * seq&lt;Thrzn41.WebexTeams.Version1.EventFilter&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;&#xA;override this.CreateWebhookAsync : string * Uri * Thrzn41.WebexTeams.Version1.EventResource * Thrzn41.WebexTeams.Version1.EventType * seq&lt;Thrzn41.WebexTeams.Version1.EventFilter&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.CreateWebhookAsync (name, targetUri, resource, type, filters, secret, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="targetUri" Type="System.Uri" />
+        <Parameter Name="resource" Type="Thrzn41.WebexTeams.Version1.EventResource" />
+        <Parameter Name="type" Type="Thrzn41.WebexTeams.Version1.EventType" />
+        <Parameter Name="filters" Type="System.Collections.Generic.IEnumerable&lt;Thrzn41.WebexTeams.Version1.EventFilter&gt;" />
+        <Parameter Name="secret" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name for the webhook.</param>
+        <param name="targetUri">Uri of the webhook.</param>
+        <param name="resource">Event resource associated with the webhook.</param>
+        <param name="type">Event type associated with the webhook.</param>
+        <param name="filters">Filters for the webhook.</param>
+        <param name="secret">Secret used to validate the webhook.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's CreateWebhookAsync method.
+            </summary>
+        <returns>The created <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteMessageAsync (string messageId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteMessageAsync(string messageId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteMessageAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteMessageAsync (messageId As String, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteMessageAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteMessageAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.DeleteMessageAsync (messageId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageId">The id of the message to be deleted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's DeleteMessageAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSpaceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteSpaceAsync (string spaceId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteSpaceAsync(string spaceId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteSpaceAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteSpaceAsync (spaceId As String, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteSpaceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteSpaceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.DeleteSpaceAsync (spaceId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spaceId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="spaceId">The id of the space to be deleted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's DeleteSpaceAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSpaceMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteSpaceMembershipAsync (string membershipId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteSpaceMembershipAsync(string membershipId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteSpaceMembershipAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteSpaceMembershipAsync (membershipId As String, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteSpaceMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteSpaceMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.DeleteSpaceMembershipAsync (membershipId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membershipId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membershipId">The id of the membership to be deleted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's DeleteSpaceMembershipAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTeamAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTeamAsync (string teamId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTeamAsync(string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteTeamAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteTeamAsync (teamId As String, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.DeleteTeamAsync (teamId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamId">Team id to be deleted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's DeleteTeamAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTeamMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteTeamMembershipAsync (string membershipId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTeamMembershipAsync(string membershipId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteTeamMembershipAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteTeamMembershipAsync (membershipId As String, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTeamMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTeamMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.DeleteTeamMembershipAsync (membershipId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membershipId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membershipId">Team Membership id to be deleted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's DeleteTeamMembershipAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteWebhookAsync (Thrzn41.WebexTeams.Version1.Webhook id, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteWebhookAsync(class Thrzn41.WebexTeams.Version1.Webhook id, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteWebhookAsync(Thrzn41.WebexTeams.Version1.Webhook,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteWebhookAsync (id As Webhook, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteWebhookAsync : Thrzn41.WebexTeams.Version1.Webhook * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteWebhookAsync : Thrzn41.WebexTeams.Version1.Webhook * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.DeleteWebhookAsync (id, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="Thrzn41.WebexTeams.Version1.Webhook" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="id">Id of the webhook to be deleted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's DeleteWebhookAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttachmentActionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt; GetAttachmentActionAsync (string actionId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Message&gt; GetAttachmentActionAsync(string actionId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetAttachmentActionAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAttachmentActionAsync (actionId As String, cancellationToken As CancellationToken) As Task(Of Message)" />
+      <MemberSignature Language="F#" Value="abstract member GetAttachmentActionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt;&#xA;override this.GetAttachmentActionAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt;" Usage="webexClientWrapper.GetAttachmentActionAsync (actionId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="actionId">An unique identifier for the attachment action.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Shows details for an attachment action, by ID.
+            </summary>
+        <returns>The attachment action details.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileDataAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileData&gt; GetFileDataAsync (Uri fileUri, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.TeamsFileData&gt; GetFileDataAsync(class System.Uri fileUri, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetFileDataAsync(System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileDataAsync (fileUri As Uri, cancellationToken As CancellationToken) As Task(Of TeamsFileData)" />
+      <MemberSignature Language="F#" Value="abstract member GetFileDataAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileData&gt;&#xA;override this.GetFileDataAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileData&gt;" Usage="webexClientWrapper.GetFileDataAsync (fileUri, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileUri" Type="System.Uri" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="fileUri">Uri of the file.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetFileDataAsync method.
+            </summary>
+        <returns>The teams file data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileInfoAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileInfo&gt; GetFileInfoAsync (Uri fileUri, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.TeamsFileInfo&gt; GetFileInfoAsync(class System.Uri fileUri, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetFileInfoAsync(System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileInfoAsync (fileUri As Uri, cancellationToken As CancellationToken) As Task(Of TeamsFileInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetFileInfoAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileInfo&gt;&#xA;override this.GetFileInfoAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileInfo&gt;" Usage="webexClientWrapper.GetFileInfoAsync (fileUri, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.TeamsFileInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileUri" Type="System.Uri" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="fileUri">Uri of the file.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetFileInfoAsync method.
+            </summary>
+        <returns>The teams file info.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Person&gt; GetMeAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Person&gt; GetMeAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMeAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMeAsync (cancellationToken As CancellationToken) As Task(Of Person)" />
+      <MemberSignature Language="F#" Value="abstract member GetMeAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Person&gt;&#xA;override this.GetMeAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Person&gt;" Usage="webexClientWrapper.GetMeAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Person&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetMeAsync method.
+            </summary>
+        <returns>The <see cref="T:Thrzn41.WebexTeams.Version1.Person" /> object associated with the bot.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMeFromCacheAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.CachedPerson&gt; GetMeFromCacheAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.CachedPerson&gt; GetMeFromCacheAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMeFromCacheAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMeFromCacheAsync (cancellationToken As CancellationToken) As Task(Of CachedPerson)" />
+      <MemberSignature Language="F#" Value="abstract member GetMeFromCacheAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.CachedPerson&gt;&#xA;override this.GetMeFromCacheAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.CachedPerson&gt;" Usage="webexClientWrapper.GetMeFromCacheAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.CachedPerson&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetMeFromCacheAsync method.
+            </summary>
+        <returns>The <see cref="T:Thrzn41.WebexTeams.Version1.Person" /> object associated with the bot, from cache.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt; GetMessageAsync (string messageId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Message&gt; GetMessageAsync(string messageId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMessageAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMessageAsync (messageId As String, cancellationToken As CancellationToken) As Task(Of Message)" />
+      <MemberSignature Language="F#" Value="abstract member GetMessageAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt;&#xA;override this.GetMessageAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt;" Usage="webexClientWrapper.GetMessageAsync (messageId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Message&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="messageId">Id of the message to be recovered.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetMessageAsync method.
+            </summary>
+        <returns>The message's data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpaceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt; GetSpaceAsync (string spaceId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Space&gt; GetSpaceAsync(string spaceId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetSpaceAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSpaceAsync (spaceId As String, cancellationToken As CancellationToken) As Task(Of Space)" />
+      <MemberSignature Language="F#" Value="abstract member GetSpaceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;&#xA;override this.GetSpaceAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;" Usage="webexClientWrapper.GetSpaceAsync (spaceId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spaceId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="spaceId">The id of the space to be gotten.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetSpaceAsync method.
+            </summary>
+        <returns>The space requested.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpaceMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt; GetSpaceMembershipAsync (string membershipId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.SpaceMembership&gt; GetSpaceMembershipAsync(string membershipId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetSpaceMembershipAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSpaceMembershipAsync (membershipId As String, cancellationToken As CancellationToken) As Task(Of SpaceMembership)" />
+      <MemberSignature Language="F#" Value="abstract member GetSpaceMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;&#xA;override this.GetSpaceMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;" Usage="webexClientWrapper.GetSpaceMembershipAsync (membershipId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membershipId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membershipId">The id of the membership to get.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetSpaceMembershipAsync method.
+            </summary>
+        <returns>The requested space membership.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTeamAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt; GetTeamAsync (string teamId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Team&gt; GetTeamAsync(string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetTeamAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamAsync (teamId As String, cancellationToken As CancellationToken) As Task(Of Team)" />
+      <MemberSignature Language="F#" Value="abstract member GetTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;&#xA;override this.GetTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;" Usage="webexClientWrapper.GetTeamAsync (teamId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamId">Team id that the detail info is gotten.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetTeamAsync method.
+            </summary>
+        <returns>The requested team.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTeamMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt; GetTeamMembershipAsync (string membershipId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.TeamMembership&gt; GetTeamMembershipAsync(string membershipId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetTeamMembershipAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTeamMembershipAsync (membershipId As String, cancellationToken As CancellationToken) As Task(Of TeamMembership)" />
+      <MemberSignature Language="F#" Value="abstract member GetTeamMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;&#xA;override this.GetTeamMembershipAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;" Usage="webexClientWrapper.GetTeamMembershipAsync (membershipId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membershipId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membershipId">Team Membership id that the detail info is gotten.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetTeamMembershipAsync method.
+            </summary>
+        <returns>The requested team membership.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; GetWebhookAsync (string webhookId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; GetWebhookAsync(string webhookId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetWebhookAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWebhookAsync (webhookId As String, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="abstract member GetWebhookAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;&#xA;override this.GetWebhookAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.GetWebhookAsync (webhookId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webhookId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="webhookId">The id of the Webhook to get.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's GetWebhookAsync method.
+            </summary>
+        <returns>The requested Webhook.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListMessagesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.MessageList&gt; ListMessagesAsync (string spaceId, string mentionedPeople = default, DateTime? before = default, string beforeMessage = default, int? max = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.MessageList&gt; ListMessagesAsync(string spaceId, string mentionedPeople, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; before, string beforeMessage, valuetype System.Nullable`1&lt;int32&gt; max, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListMessagesAsync(System.String,System.String,System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListMessagesAsync (spaceId As String, Optional mentionedPeople As String = null, Optional before As Nullable(Of DateTime) = null, Optional beforeMessage As String = null, Optional max As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of MessageList)" />
+      <MemberSignature Language="F#" Value="abstract member ListMessagesAsync : string * string * Nullable&lt;DateTime&gt; * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.MessageList&gt;&#xA;override this.ListMessagesAsync : string * string * Nullable&lt;DateTime&gt; * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.MessageList&gt;" Usage="webexClientWrapper.ListMessagesAsync (spaceId, mentionedPeople, before, beforeMessage, max, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.MessageList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spaceId" Type="System.String" />
+        <Parameter Name="mentionedPeople" Type="System.String" />
+        <Parameter Name="before" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="beforeMessage" Type="System.String" />
+        <Parameter Name="max" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="spaceId">List messages for a space, by ID.</param>
+        <param name="mentionedPeople">List messages where the caller is mentioned by specifying "me" or the caller personId.</param>
+        <param name="before">List messages sent before a date and time.</param>
+        <param name="beforeMessage">List messages sent before a message, by ID.</param>
+        <param name="max">Limit the maximum number of messages in the response.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListMessagesAsync method.
+            </summary>
+        <returns>A list of the messages.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPeopleAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.PersonList&gt; ListPeopleAsync (string email = default, string displayName = default, System.Collections.Generic.IEnumerable&lt;string&gt; ids = default, int? max = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.PersonList&gt; ListPeopleAsync(string email, string displayName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; ids, valuetype System.Nullable`1&lt;int32&gt; max, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListPeopleAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListPeopleAsync (Optional email As String = null, Optional displayName As String = null, Optional ids As IEnumerable(Of String) = null, Optional max As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of PersonList)" />
+      <MemberSignature Language="F#" Value="abstract member ListPeopleAsync : string * string * seq&lt;string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.PersonList&gt;&#xA;override this.ListPeopleAsync : string * string * seq&lt;string&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.PersonList&gt;" Usage="webexClientWrapper.ListPeopleAsync (email, displayName, ids, max, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.PersonList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="email" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="ids" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="max" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="email">List people with this email address. For non-admin requests, either this or displayName are required.</param>
+        <param name="displayName">List people whose name starts with this string. For non-admin requests, either this or email are required.</param>
+        <param name="ids">List people by ID. Accepts up to 85 person IDs.</param>
+        <param name="max">Limit the maximum number of people in the response.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListPeopleAsync method.
+            </summary>
+        <returns>A list with the requested people.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListSpaceMembershipsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembershipList&gt; ListSpaceMembershipsAsync (string spaceId = default, string personIdOrEmail = default, int? max = default, Thrzn41.WebexTeams.Version1.PersonIdType personIdType = Thrzn41.WebexTeams.Version1.PersonIdType.Detect, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.SpaceMembershipList&gt; ListSpaceMembershipsAsync(string spaceId, string personIdOrEmail, valuetype System.Nullable`1&lt;int32&gt; max, valuetype Thrzn41.WebexTeams.Version1.PersonIdType personIdType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListSpaceMembershipsAsync(System.String,System.String,System.Nullable{System.Int32},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListSpaceMembershipsAsync (Optional spaceId As String = null, Optional personIdOrEmail As String = null, Optional max As Nullable(Of Integer) = null, Optional personIdType As PersonIdType = Thrzn41.WebexTeams.Version1.PersonIdType.Detect, Optional cancellationToken As CancellationToken = null) As Task(Of SpaceMembershipList)" />
+      <MemberSignature Language="F#" Value="abstract member ListSpaceMembershipsAsync : string * string * Nullable&lt;int&gt; * Thrzn41.WebexTeams.Version1.PersonIdType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembershipList&gt;&#xA;override this.ListSpaceMembershipsAsync : string * string * Nullable&lt;int&gt; * Thrzn41.WebexTeams.Version1.PersonIdType * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembershipList&gt;" Usage="webexClientWrapper.ListSpaceMembershipsAsync (spaceId, personIdOrEmail, max, personIdType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembershipList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spaceId" Type="System.String" />
+        <Parameter Name="personIdOrEmail" Type="System.String" />
+        <Parameter Name="max" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="personIdType" Type="Thrzn41.WebexTeams.Version1.PersonIdType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="spaceId">Limit results to a specific space, by ID.</param>
+        <param name="personIdOrEmail">Limit results to a specific person, by ID or Email.</param>
+        <param name="max">Limit the maximum number of items in the response.</param>
+        <param name="personIdType">
+          <see cref="T:Thrzn41.WebexTeams.Version1.PersonIdType" /> for personIdOrEmail parameter.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListSpaceMembershipsAsync method.
+            </summary>
+        <returns>The space memberships list.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListSpacesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceList&gt; ListSpacesAsync (string teamId = default, Thrzn41.WebexTeams.Version1.SpaceType type = default, Thrzn41.WebexTeams.Version1.SpaceSortBy sortBy = default, int? max = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.SpaceList&gt; ListSpacesAsync(string teamId, class Thrzn41.WebexTeams.Version1.SpaceType type, class Thrzn41.WebexTeams.Version1.SpaceSortBy sortBy, valuetype System.Nullable`1&lt;int32&gt; max, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListSpacesAsync(System.String,Thrzn41.WebexTeams.Version1.SpaceType,Thrzn41.WebexTeams.Version1.SpaceSortBy,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListSpacesAsync (Optional teamId As String = null, Optional type As SpaceType = null, Optional sortBy As SpaceSortBy = null, Optional max As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of SpaceList)" />
+      <MemberSignature Language="F#" Value="abstract member ListSpacesAsync : string * Thrzn41.WebexTeams.Version1.SpaceType * Thrzn41.WebexTeams.Version1.SpaceSortBy * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceList&gt;&#xA;override this.ListSpacesAsync : string * Thrzn41.WebexTeams.Version1.SpaceType * Thrzn41.WebexTeams.Version1.SpaceSortBy * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceList&gt;" Usage="webexClientWrapper.ListSpacesAsync (teamId, type, sortBy, max, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="type" Type="Thrzn41.WebexTeams.Version1.SpaceType" />
+        <Parameter Name="sortBy" Type="Thrzn41.WebexTeams.Version1.SpaceSortBy" />
+        <Parameter Name="max" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamId">Limit the rooms to those associated with a team, by ID.</param>
+        <param name="type">
+          <see cref="F:Thrzn41.WebexTeams.Version1.SpaceType.Direct" /> returns all 1-to-1 rooms. <see cref="F:Thrzn41.WebexTeams.Version1.SpaceType.Group" /> returns all group rooms.If not specified or values are not matched, will return all room types.</param>
+        <param name="sortBy">Sort results by space ID(<see cref="F:Thrzn41.WebexTeams.Version1.SpaceSortBy.Id" />), most recent activity(<see cref="F:Thrzn41.WebexTeams.Version1.SpaceSortBy.LastActivity" />), or most recently created(<see cref="F:Thrzn41.WebexTeams.Version1.SpaceSortBy.Created" />).</param>
+        <param name="max">Limit the maximum number of messages in the response.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListSpacesAsync method.
+            </summary>
+        <returns>A list of the spaces.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListTeamMembershipsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembershipList&gt; ListTeamMembershipsAsync (string teamId, int? max = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.TeamMembershipList&gt; ListTeamMembershipsAsync(string teamId, valuetype System.Nullable`1&lt;int32&gt; max, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListTeamMembershipsAsync(System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListTeamMembershipsAsync (teamId As String, Optional max As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of TeamMembershipList)" />
+      <MemberSignature Language="F#" Value="abstract member ListTeamMembershipsAsync : string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembershipList&gt;&#xA;override this.ListTeamMembershipsAsync : string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembershipList&gt;" Usage="webexClientWrapper.ListTeamMembershipsAsync (teamId, max, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembershipList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="max" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamId">List team memberships for a team, by ID.</param>
+        <param name="max">Limit the maximum number of items in the response.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListTeamMembershipsAsync method.
+            </summary>
+        <returns>A list of team memberships.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListTeamsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamList&gt; ListTeamsAsync (int? max = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.TeamList&gt; ListTeamsAsync(valuetype System.Nullable`1&lt;int32&gt; max, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListTeamsAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListTeamsAsync (Optional max As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of TeamList)" />
+      <MemberSignature Language="F#" Value="abstract member ListTeamsAsync : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamList&gt;&#xA;override this.ListTeamsAsync : Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamList&gt;" Usage="webexClientWrapper.ListTeamsAsync (max, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="max" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="max">Limit the maximum number of teams in the response.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListTeamsAsync method.
+            </summary>
+        <returns>A list of the teams.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListWebhooksAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt; ListWebhooksAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.WebhookList&gt; ListWebhooksAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListWebhooksAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ListWebhooksAsync (cancellationToken As CancellationToken) As Task(Of WebhookList)" />
+      <MemberSignature Language="F#" Value="abstract member ListWebhooksAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt;&#xA;override this.ListWebhooksAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt;" Usage="webexClientWrapper.ListWebhooksAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's ListWebhooksAsync method.
+            </summary>
+        <returns>A list of Webhooks associated with the application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListWebhookSubscriptionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt; ListWebhookSubscriptionsAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.WebhookList&gt; ListWebhookSubscriptionsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListWebhookSubscriptionsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListWebhookSubscriptionsAsync (cancellationToken As CancellationToken) As Task(Of WebhookList)" />
+      <MemberSignature Language="F#" Value="member this.ListWebhookSubscriptionsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt;" Usage="webexClientWrapper.ListWebhookSubscriptionsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.WebhookList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Lists all webhook subscriptions currently associated with this application.
+            </summary>
+        <returns>A list of webhook subscriptions.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As WebexAdapterOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" Usage="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAdaptiveCardsWebhookSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; RegisterAdaptiveCardsWebhookSubscriptionAsync (string hookId, string webHookName, Uri webhookUrl, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; RegisterAdaptiveCardsWebhookSubscriptionAsync(string hookId, string webHookName, class System.Uri webhookUrl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterAdaptiveCardsWebhookSubscriptionAsync(System.String,System.String,System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterAdaptiveCardsWebhookSubscriptionAsync (hookId As String, webHookName As String, webhookUrl As Uri, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="member this.RegisterAdaptiveCardsWebhookSubscriptionAsync : string * string * Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.RegisterAdaptiveCardsWebhookSubscriptionAsync (hookId, webHookName, webhookUrl, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hookId" Type="System.String" />
+        <Parameter Name="webHookName" Type="System.String" />
+        <Parameter Name="webhookUrl" Type="System.Uri" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="hookId">The id of the webhook to be registered.</param>
+        <param name="webHookName">The name of the webhook to be registered.</param>
+        <param name="webhookUrl">The Uri of the webhook.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Register a webhook subscription with Webex Teams to start receiving events related to adaptive cards.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterWebhookSubscriptionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; RegisterWebhookSubscriptionAsync (string hookId, string webHookName, Uri webhookUrl, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; RegisterWebhookSubscriptionAsync(string hookId, string webHookName, class System.Uri webhookUrl, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterWebhookSubscriptionAsync(System.String,System.String,System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterWebhookSubscriptionAsync (hookId As String, webHookName As String, webhookUrl As Uri, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="member this.RegisterWebhookSubscriptionAsync : string * string * Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.RegisterWebhookSubscriptionAsync (hookId, webHookName, webhookUrl, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hookId" Type="System.String" />
+        <Parameter Name="webHookName" Type="System.String" />
+        <Parameter Name="webhookUrl" Type="System.Uri" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="hookId">The id of the webhook to be registered.</param>
+        <param name="webHookName">The name of the webhook to be registered.</param>
+        <param name="webhookUrl">The Uri of the webhook.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Register a webhook subscription with Webex Teams to start receiving message events.
+            </summary>
+        <returns>The registered <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterWebhookSubscriptionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook[]&gt; RegisterWebhookSubscriptionsAsync (string webhookPath = &quot;api/messages&quot;, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook[]&gt; RegisterWebhookSubscriptionsAsync(string webhookPath, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterWebhookSubscriptionsAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterWebhookSubscriptionsAsync (Optional webhookPath As String = &quot;api/messages&quot;, Optional cancellationToken As CancellationToken = null) As Task(Of Webhook())" />
+      <MemberSignature Language="F#" Value="member this.RegisterWebhookSubscriptionsAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook[]&gt;" Usage="webexClientWrapper.RegisterWebhookSubscriptionsAsync (webhookPath, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webhookPath" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="webhookPath">The path of the webhook endpoint like '/api/messages'.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Register webhook subscriptions to start receiving message events and adaptive cards events.
+            </summary>
+        <returns>An array of registered <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetWebhookSubscriptionsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ResetWebhookSubscriptionsAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ResetWebhookSubscriptionsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ResetWebhookSubscriptionsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResetWebhookSubscriptionsAsync (cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.ResetWebhookSubscriptionsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexClientWrapper.ResetWebhookSubscriptionsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Clears out and resets the list of webhook subscriptions.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAdaptiveCardsWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; UpdateAdaptiveCardsWebhookAsync (string webhookId, string name, Uri targetUri, string secret, string token, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; UpdateAdaptiveCardsWebhookAsync(string webhookId, string name, class System.Uri targetUri, string secret, string token, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateAdaptiveCardsWebhookAsync(System.String,System.String,System.Uri,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAdaptiveCardsWebhookAsync (webhookId As String, name As String, targetUri As Uri, secret As String, token As String, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAdaptiveCardsWebhookAsync : string * string * Uri * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;&#xA;override this.UpdateAdaptiveCardsWebhookAsync : string * string * Uri * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.UpdateAdaptiveCardsWebhookAsync (webhookId, name, targetUri, secret, token, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webhookId" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="targetUri" Type="System.Uri" />
+        <Parameter Name="secret" Type="System.String" />
+        <Parameter Name="token" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="webhookId">Id of the webhook to be updated.</param>
+        <param name="name">Name for the webhook.</param>
+        <param name="targetUri">Uri of the webhook.</param>
+        <param name="secret">Secret used to validate the webhook.</param>
+        <param name="token">Access Token for authorization.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Updates a Webhook subscription to handle Adaptive cards messages.
+            </summary>
+        <returns>The created <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSpaceAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt; UpdateSpaceAsync (string spaceId, string title, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Space&gt; UpdateSpaceAsync(string spaceId, string title, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateSpaceAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateSpaceAsync (spaceId As String, title As String, cancellationToken As CancellationToken) As Task(Of Space)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSpaceAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;&#xA;override this.UpdateSpaceAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;" Usage="webexClientWrapper.UpdateSpaceAsync (spaceId, title, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Space&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spaceId" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="spaceId">Space id to be updated.</param>
+        <param name="title">A user-friendly name for the space.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's UpdateSpaceAsync method.
+            </summary>
+        <returns>The updated space.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSpaceMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt; UpdateSpaceMembershipAsync (string membershipId, bool isModerator, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.SpaceMembership&gt; UpdateSpaceMembershipAsync(string membershipId, bool isModerator, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateSpaceMembershipAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateSpaceMembershipAsync (membershipId As String, isModerator As Boolean, cancellationToken As CancellationToken) As Task(Of SpaceMembership)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSpaceMembershipAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;&#xA;override this.UpdateSpaceMembershipAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;" Usage="webexClientWrapper.UpdateSpaceMembershipAsync (membershipId, isModerator, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.SpaceMembership&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membershipId" Type="System.String" />
+        <Parameter Name="isModerator" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membershipId">Membership id to be updated.</param>
+        <param name="isModerator">Set to true to make the person a space moderator.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's UpdateSpaceMembershipAsync method.
+            </summary>
+        <returns>The updated space membership.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTeamAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt; UpdateTeamAsync (string teamId, string name, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Team&gt; UpdateTeamAsync(string teamId, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateTeamAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateTeamAsync (teamId As String, name As String, cancellationToken As CancellationToken) As Task(Of Team)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTeamAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;&#xA;override this.UpdateTeamAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;" Usage="webexClientWrapper.UpdateTeamAsync (teamId, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Team&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="teamId" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="teamId">Team id to be updated.</param>
+        <param name="name">A user-friendly name for the team.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's UpdateTeamAsync method.
+            </summary>
+        <returns>The updated team.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTeamMembershipAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt; UpdateTeamMembershipAsync (string membershipId, bool isModerator, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.TeamMembership&gt; UpdateTeamMembershipAsync(string membershipId, bool isModerator, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateTeamMembershipAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateTeamMembershipAsync (membershipId As String, isModerator As Boolean, cancellationToken As CancellationToken) As Task(Of TeamMembership)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateTeamMembershipAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;&#xA;override this.UpdateTeamMembershipAsync : string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;" Usage="webexClientWrapper.UpdateTeamMembershipAsync (membershipId, isModerator, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.TeamMembership&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="membershipId" Type="System.String" />
+        <Parameter Name="isModerator" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="membershipId">Membership id to be updated.</param>
+        <param name="isModerator">Set to true to make the person a team moderator.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's UpdateTeamMembershipAsync method.
+            </summary>
+        <returns>The updated team membership.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateWebhookAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt; UpdateWebhookAsync (string webhookId, string name, Uri targetUri, string secret, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Thrzn41.WebexTeams.Version1.Webhook&gt; UpdateWebhookAsync(string webhookId, string name, class System.Uri targetUri, string secret, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateWebhookAsync(System.String,System.String,System.Uri,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateWebhookAsync (webhookId As String, name As String, targetUri As Uri, secret As String, cancellationToken As CancellationToken) As Task(Of Webhook)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateWebhookAsync : string * string * Uri * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;&#xA;override this.UpdateWebhookAsync : string * string * Uri * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;" Usage="webexClientWrapper.UpdateWebhookAsync (webhookId, name, targetUri, secret, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Thrzn41.WebexTeams.Version1.Webhook&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="webhookId" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="targetUri" Type="System.Uri" />
+        <Parameter Name="secret" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="webhookId">Id of the webhook to be updated.</param>
+        <param name="name">Name for the webhook.</param>
+        <param name="targetUri">Uri of the webhook.</param>
+        <param name="secret">Secret used to validate the webhook.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Webex API's UpdateWebhookAsync method.
+            </summary>
+        <returns>The updated <see cref="T:Thrzn41.WebexTeams.Version1.Webhook" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSignature">
+      <MemberSignature Language="C#" Value="public virtual bool ValidateSignature (Microsoft.AspNetCore.Http.HttpRequest request, string jsonPayload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ValidateSignature(class Microsoft.AspNetCore.Http.HttpRequest request, string jsonPayload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ValidateSignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValidateSignature (request As HttpRequest, jsonPayload As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ValidateSignature : Microsoft.AspNetCore.Http.HttpRequest * string -&gt; bool&#xA;override this.ValidateSignature : Microsoft.AspNetCore.Http.HttpRequest * string -&gt; bool" Usage="webexClientWrapper.ValidateSignature (request, jsonPayload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
+        <Parameter Name="jsonPayload" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:Microsoft.AspNetCore.Http.HttpRequest" /> with the signature.</param>
+        <param name="jsonPayload">The serialized payload to be use for comparison.</param>
+        <summary>
+            Validates the local secret against the one obtained from the request header.
+            </summary>
+        <returns>The result of the comparison between the signature in the request and hashed json.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

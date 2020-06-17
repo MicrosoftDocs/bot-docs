@@ -1,0 +1,193 @@
+<Type Name="AdaptiveEvents" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents">
+  <TypeSignature Language="C#" Value="public class AdaptiveEvents : Microsoft.Bot.Builder.Dialogs.DialogEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdaptiveEvents extends Microsoft.Bot.Builder.Dialogs.DialogEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdaptiveEvents&#xA;Inherits DialogEvents" />
+  <TypeSignature Language="F#" Value="type AdaptiveEvents = class&#xA;    inherit DialogEvents" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DialogEvents</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdaptiveEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignEntity">
+      <MemberSignature Language="C#" Value="public const string AssignEntity;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AssignEntity" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.AssignEntity" />
+      <MemberSignature Language="VB.NET" Value="Public Const AssignEntity As String " />
+      <MemberSignature Language="F#" Value="val mutable AssignEntity : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.AssignEntity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when an entity should be assigned to a property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChooseEntity">
+      <MemberSignature Language="C#" Value="public const string ChooseEntity;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChooseEntity" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.ChooseEntity" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChooseEntity As String " />
+      <MemberSignature Language="F#" Value="val mutable ChooseEntity : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.ChooseEntity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when there are multiple possible resolutions of an entity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChooseProperty">
+      <MemberSignature Language="C#" Value="public const string ChooseProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChooseProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.ChooseProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChooseProperty As String " />
+      <MemberSignature Language="F#" Value="val mutable ChooseProperty : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.ChooseProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when there are multiple possible entity to property mappings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfActions">
+      <MemberSignature Language="C#" Value="public const string EndOfActions;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EndOfActions" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.EndOfActions" />
+      <MemberSignature Language="VB.NET" Value="Public Const EndOfActions As String " />
+      <MemberSignature Language="F#" Value="val mutable EndOfActions : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.EndOfActions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when all actions and ambiguity events have been finished.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizedIntent">
+      <MemberSignature Language="C#" Value="public const string RecognizedIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RecognizedIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.RecognizedIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Const RecognizedIntent As String " />
+      <MemberSignature Language="F#" Value="val mutable RecognizedIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.RecognizedIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when intent is recognized from utterance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeUtterance">
+      <MemberSignature Language="C#" Value="public const string RecognizeUtterance;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RecognizeUtterance" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.RecognizeUtterance" />
+      <MemberSignature Language="VB.NET" Value="Public Const RecognizeUtterance As String " />
+      <MemberSignature Language="F#" Value="val mutable RecognizeUtterance : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.RecognizeUtterance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when utterance is recieved.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownIntent">
+      <MemberSignature Language="C#" Value="public const string UnknownIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UnknownIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.UnknownIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Const UnknownIntent As String " />
+      <MemberSignature Language="F#" Value="val mutable UnknownIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveEvents.UnknownIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised when no intent can be identified from utterance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

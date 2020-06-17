@@ -1,0 +1,47 @@
+<Type Name="ConversationMemoryScope" FullName="Microsoft.Bot.Builder.Dialogs.Memory.Scopes.ConversationMemoryScope">
+  <TypeSignature Language="C#" Value="public class ConversationMemoryScope : Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;Microsoft.Bot.Builder.ConversationState&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConversationMemoryScope extends Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope`1&lt;class Microsoft.Bot.Builder.ConversationState&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.ConversationMemoryScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConversationMemoryScope&#xA;Inherits BotStateMemoryScope(Of ConversationState)" />
+  <TypeSignature Language="F#" Value="type ConversationMemoryScope = class&#xA;    inherit BotStateMemoryScope&lt;ConversationState&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Memory.Scopes.BotStateMemoryScope&lt;Microsoft.Bot.Builder.ConversationState&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.Bot.Builder.ConversationState</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ConversationMemoryScope represents Conversation scoped memory. 
+            </summary>
+    <remarks>This relies on the ConversationState object being accessible from turnContext.TurnState.Get&lt;ConversationState&gt;().</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConversationMemoryScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.ConversationMemoryScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.ConversationMemoryScope" /> class.
+            Create new ConversationMemoryScope bound to ConversationState.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

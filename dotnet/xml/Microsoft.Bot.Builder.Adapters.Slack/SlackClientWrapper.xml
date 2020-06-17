@@ -1,0 +1,1618 @@
+<Type Name="SlackClientWrapper" FullName="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper">
+  <TypeSignature Language="C#" Value="public class SlackClientWrapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SlackClientWrapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class SlackClientWrapper" />
+  <TypeSignature Language="F#" Value="type SlackClientWrapper = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SlackClientWrapper (Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As SlackAdapterOptions)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper : Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions -&gt; Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" Usage="new Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper options" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">An object containing API credentials, a webhook verification token and other options.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" /> class.
+            Creates a Slack client by supplying the access token.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddReactionAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.ReactionAddedResponse&gt; AddReactionAsync (string name = default, string channel = default, string timestamp = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.ReactionAddedResponse&gt; AddReactionAsync(string name, string channel, string timestamp, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.AddReactionAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddReactionAsync (Optional name As String = null, Optional channel As String = null, Optional timestamp As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of ReactionAddedResponse)" />
+      <MemberSignature Language="F#" Value="abstract member AddReactionAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ReactionAddedResponse&gt;&#xA;override this.AddReactionAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ReactionAddedResponse&gt;" Usage="slackClientWrapper.AddReactionAsync (name, channel, timestamp, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.ReactionAddedResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="channel" Type="System.String" />
+        <Parameter Name="timestamp" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">The optional name.</param>
+        <param name="channel">The optional channel.</param>
+        <param name="timestamp">The optional timestamp.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's AddReactionAsync method.
+            </summary>
+        <returns>The <see cref="T:SlackAPI.ReactionAddedResponse" /> representing the response to the reaction added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApiRequestWithTokenAsync&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;TResult&gt; ApiRequestWithTokenAsync&lt;TResult&gt; (System.Threading.CancellationToken cancellationToken, params Tuple&lt;string,string&gt;[] postParameters) where TResult : SlackAPI.Response;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!TResult&gt; ApiRequestWithTokenAsync&lt;(class SlackAPI.Response) TResult&gt;(valuetype System.Threading.CancellationToken cancellationToken, class System.Tuple`2&lt;string, string&gt;[] postParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ApiRequestWithTokenAsync``1(System.Threading.CancellationToken,System.Tuple{System.String,System.String}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ApiRequestWithTokenAsync(Of TResult As Response) (cancellationToken As CancellationToken, ParamArray postParameters As Tuple(Of String, String)()) As Task(Of TResult)" />
+      <MemberSignature Language="F#" Value="abstract member ApiRequestWithTokenAsync : System.Threading.CancellationToken * string * string[] -&gt; System.Threading.Tasks.Task&lt;'Result (requires 'Result :&gt; SlackAPI.Response)&gt; (requires 'Result :&gt; SlackAPI.Response)&#xA;override this.ApiRequestWithTokenAsync : System.Threading.CancellationToken * string * string[] -&gt; System.Threading.Tasks.Task&lt;'Result (requires 'Result :&gt; SlackAPI.Response)&gt; (requires 'Result :&gt; SlackAPI.Response)" Usage="slackClientWrapper.ApiRequestWithTokenAsync (cancellationToken, postParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult">
+          <Constraints>
+            <BaseTypeName>SlackAPI.Response</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="postParameters" Type="System.Tuple&lt;System.String,System.String&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">The generic type for the return. Must be of type Response.</typeparam>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <param name="postParameters">The parameters to the POST request.</param>
+        <summary>
+            Wraps Slack API's APIRequestWithTokenAsync method.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> of type T representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelsCreateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.ChannelCreateResponse&gt; ChannelsCreateAsync (string name, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.ChannelCreateResponse&gt; ChannelsCreateAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelsCreateAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ChannelsCreateAsync (name As String, cancellationToken As CancellationToken) As Task(Of ChannelCreateResponse)" />
+      <MemberSignature Language="F#" Value="abstract member ChannelsCreateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelCreateResponse&gt;&#xA;override this.ChannelsCreateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelCreateResponse&gt;" Usage="slackClientWrapper.ChannelsCreateAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.ChannelCreateResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the channel to be created.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's ChannelsCreateAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.ChannelCreateResponse" /> representing the response from creating a channel.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelSetTopicAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.ChannelSetTopicResponse&gt; ChannelSetTopicAsync (string channelId, string newTopic, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.ChannelSetTopicResponse&gt; ChannelSetTopicAsync(string channelId, string newTopic, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelSetTopicAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ChannelSetTopicAsync (channelId As String, newTopic As String, cancellationToken As CancellationToken) As Task(Of ChannelSetTopicResponse)" />
+      <MemberSignature Language="F#" Value="abstract member ChannelSetTopicAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelSetTopicResponse&gt;&#xA;override this.ChannelSetTopicAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelSetTopicResponse&gt;" Usage="slackClientWrapper.ChannelSetTopicAsync (channelId, newTopic, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.ChannelSetTopicResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="newTopic" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel to set the topic to.</param>
+        <param name="newTopic">The new topic.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's ChannelSetTopicAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.ChannelSetTopicResponse" /> representing the response of setting the channel's topic.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelsInviteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.ChannelInviteResponse&gt; ChannelsInviteAsync (string userId, string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.ChannelInviteResponse&gt; ChannelsInviteAsync(string userId, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelsInviteAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ChannelsInviteAsync (userId As String, channelId As String, cancellationToken As CancellationToken) As Task(Of ChannelInviteResponse)" />
+      <MemberSignature Language="F#" Value="abstract member ChannelsInviteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelInviteResponse&gt;&#xA;override this.ChannelsInviteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelInviteResponse&gt;" Usage="slackClientWrapper.ChannelsInviteAsync (userId, channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.ChannelInviteResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The user to invite.</param>
+        <param name="channelId">The channel to invite the user to.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's ChannelsInviteAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.ChannelInviteResponse" /> representing the response to the invite.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt; ConnectAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.LoginResponse&gt; ConnectAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ConnectAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConnectAsync (cancellationToken As CancellationToken) As Task(Of LoginResponse)" />
+      <MemberSignature Language="F#" Value="abstract member ConnectAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt;&#xA;override this.ConnectAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt;" Usage="slackClientWrapper.ConnectAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's ConnectAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.LoginResponse" /> representing the login response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.DeletedResponse&gt; DeleteMessageAsync (string channelId, DateTime ts, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.DeletedResponse&gt; DeleteMessageAsync(string channelId, valuetype System.DateTime ts, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.DeleteMessageAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteMessageAsync (channelId As String, ts As DateTime, cancellationToken As CancellationToken) As Task(Of DeletedResponse)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteMessageAsync : string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.DeletedResponse&gt;&#xA;override this.DeleteMessageAsync : string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.DeletedResponse&gt;" Usage="slackClientWrapper.DeleteMessageAsync (channelId, ts, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.DeletedResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="ts" Type="System.DateTime" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel to delete the message from.</param>
+        <param name="ts">The timestamp of the message.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's DeleteMessageAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.DeletedResponse" /> representing the response to deleting the message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogOpenAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.DialogOpenResponse&gt; DialogOpenAsync (string triggerId, SlackAPI.Dialog dialog, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.RPCMessages.DialogOpenResponse&gt; DialogOpenAsync(string triggerId, class SlackAPI.Dialog dialog, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.DialogOpenAsync(System.String,SlackAPI.Dialog,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DialogOpenAsync (triggerId As String, dialog As Dialog, cancellationToken As CancellationToken) As Task(Of DialogOpenResponse)" />
+      <MemberSignature Language="F#" Value="abstract member DialogOpenAsync : string * SlackAPI.Dialog * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.DialogOpenResponse&gt;&#xA;override this.DialogOpenAsync : string * SlackAPI.Dialog * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.DialogOpenResponse&gt;" Usage="slackClientWrapper.DialogOpenAsync (triggerId, dialog, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.DialogOpenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="triggerId" Type="System.String" />
+        <Parameter Name="dialog" Type="SlackAPI.Dialog" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="triggerId">.</param>
+        <param name="dialog">The dialog to open.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's DialogOpenAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.RPCMessages.DialogOpenResponse" /> representing the response to the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitLoginAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt; EmitLoginAsync (string agent = &quot;Inumedia.SlackAPI&quot;, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.LoginResponse&gt; EmitLoginAsync(string agent, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.EmitLoginAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EmitLoginAsync (Optional agent As String = &quot;Inumedia.SlackAPI&quot;, Optional cancellationToken As CancellationToken = null) As Task(Of LoginResponse)" />
+      <MemberSignature Language="F#" Value="abstract member EmitLoginAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt;&#xA;override this.EmitLoginAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt;" Usage="slackClientWrapper.EmitLoginAsync (agent, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.LoginResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="agent" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="agent">The agent name.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's EmitLoginAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.LoginResponse" /> representing the response to the login operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitPresence">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.PresenceResponse&gt; EmitPresence (SlackAPI.Presence status, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.PresenceResponse&gt; EmitPresence(valuetype SlackAPI.Presence status, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.EmitPresence(SlackAPI.Presence,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EmitPresence (status As Presence, cancellationToken As CancellationToken) As Task(Of PresenceResponse)" />
+      <MemberSignature Language="F#" Value="abstract member EmitPresence : SlackAPI.Presence * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.PresenceResponse&gt;&#xA;override this.EmitPresence : SlackAPI.Presence * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.PresenceResponse&gt;" Usage="slackClientWrapper.EmitPresence (status, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.PresenceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="SlackAPI.Presence" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="status">The presence status.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's EmitPresence method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.PresenceResponse" /> representing the response of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBotUserByTeamAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetBotUserByTeamAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetBotUserByTeamAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetBotUserByTeamAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBotUserByTeamAsync (activity As Activity, cancellationToken As CancellationToken) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="member this.GetBotUserByTeamAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="slackClientWrapper.GetBotUserByTeamAsync (activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">An Activity.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Get the bot user id associated with the team on which an incoming activity originated. This is used internally by the SlackMessageTypeMiddleware to identify direct_mention and mention events.
+            In single-team mode, this will pull the information from the Slack API at launch.
+            In multi-team mode, this will use the `getBotUserByTeam` method passed to the constructor to pull the information from a developer-defined source.
+            </summary>
+        <returns>The identity of the bot's user.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChannelHistoryAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.ChannelMessageHistory&gt; GetChannelHistoryAsync (SlackAPI.Channel channelInfo, DateTime? latest = default, DateTime? oldest = default, int? count = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.ChannelMessageHistory&gt; GetChannelHistoryAsync(class SlackAPI.Channel channelInfo, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; latest, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; oldest, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetChannelHistoryAsync(SlackAPI.Channel,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChannelHistoryAsync (channelInfo As Channel, Optional latest As Nullable(Of DateTime) = null, Optional oldest As Nullable(Of DateTime) = null, Optional count As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of ChannelMessageHistory)" />
+      <MemberSignature Language="F#" Value="abstract member GetChannelHistoryAsync : SlackAPI.Channel * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelMessageHistory&gt;&#xA;override this.GetChannelHistoryAsync : SlackAPI.Channel * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelMessageHistory&gt;" Usage="slackClientWrapper.GetChannelHistoryAsync (channelInfo, latest, oldest, count, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.ChannelMessageHistory&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelInfo" Type="SlackAPI.Channel" />
+        <Parameter Name="latest" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="oldest" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelInfo">The channel info.</param>
+        <param name="latest">The date of the latest.</param>
+        <param name="oldest">The date of the oldest.</param>
+        <param name="count">The requested count.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetChannelHistoryAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.ChannelMessageHistory" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChannelListAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.ChannelListResponse&gt; GetChannelListAsync (bool excludeArchived = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.ChannelListResponse&gt; GetChannelListAsync(bool excludeArchived, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetChannelListAsync(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChannelListAsync (Optional excludeArchived As Boolean = true, Optional cancellationToken As CancellationToken = null) As Task(Of ChannelListResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetChannelListAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelListResponse&gt;&#xA;override this.GetChannelListAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.ChannelListResponse&gt;" Usage="slackClientWrapper.GetChannelListAsync (excludeArchived, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.ChannelListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="excludeArchived" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="excludeArchived">Flag to set if archived channels are to be listed.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetChannelListAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.ChannelListResponse" /> representing the response of listing the channel.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCountsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.UserCountsResponse&gt; GetCountsAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.UserCountsResponse&gt; GetCountsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetCountsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCountsAsync (cancellationToken As CancellationToken) As Task(Of UserCountsResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetCountsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UserCountsResponse&gt;&#xA;override this.GetCountsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UserCountsResponse&gt;" Usage="slackClientWrapper.GetCountsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.UserCountsResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetCountsAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.UserCountsResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectMessageHistoryAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.MessageHistory&gt; GetDirectMessageHistoryAsync (SlackAPI.DirectMessageConversation conversationInfo, DateTime? latest = default, DateTime? oldest = default, int? count = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.MessageHistory&gt; GetDirectMessageHistoryAsync(class SlackAPI.DirectMessageConversation conversationInfo, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; latest, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; oldest, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetDirectMessageHistoryAsync(SlackAPI.DirectMessageConversation,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDirectMessageHistoryAsync (conversationInfo As DirectMessageConversation, Optional latest As Nullable(Of DateTime) = null, Optional oldest As Nullable(Of DateTime) = null, Optional count As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of MessageHistory)" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectMessageHistoryAsync : SlackAPI.DirectMessageConversation * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.MessageHistory&gt;&#xA;override this.GetDirectMessageHistoryAsync : SlackAPI.DirectMessageConversation * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.MessageHistory&gt;" Usage="slackClientWrapper.GetDirectMessageHistoryAsync (conversationInfo, latest, oldest, count, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.MessageHistory&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conversationInfo" Type="SlackAPI.DirectMessageConversation" />
+        <Parameter Name="latest" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="oldest" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="conversationInfo">.</param>
+        <param name="latest">The date of the latest.</param>
+        <param name="oldest">The date of the oldest.</param>
+        <param name="count">The requested count.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetDirectMessageHistoryAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.MessageHistory" /> representing the retrieved message history.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectMessageListAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.DirectMessageConversationListResponse&gt; GetDirectMessageListAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.DirectMessageConversationListResponse&gt; GetDirectMessageListAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetDirectMessageListAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDirectMessageListAsync (cancellationToken As CancellationToken) As Task(Of DirectMessageConversationListResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetDirectMessageListAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.DirectMessageConversationListResponse&gt;&#xA;override this.GetDirectMessageListAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.DirectMessageConversationListResponse&gt;" Usage="slackClientWrapper.GetDirectMessageListAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.DirectMessageConversationListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetDirectMessageListAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.DirectMessageConversationListResponse" /> representing the response to listing the messages.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileInfoAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.FileInfoResponse&gt; GetFileInfoAsync (string fileId, int? page = default, int? count = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.FileInfoResponse&gt; GetFileInfoAsync(string fileId, valuetype System.Nullable`1&lt;int32&gt; page, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetFileInfoAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFileInfoAsync (fileId As String, Optional page As Nullable(Of Integer) = null, Optional count As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of FileInfoResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetFileInfoAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.FileInfoResponse&gt;&#xA;override this.GetFileInfoAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.FileInfoResponse&gt;" Usage="slackClientWrapper.GetFileInfoAsync (fileId, page, count, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.FileInfoResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileId" Type="System.String" />
+        <Parameter Name="page" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="fileId">The id of the file to retrieve the info from.</param>
+        <param name="page">The page number.</param>
+        <param name="count">The requested count.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetFileInfoAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.FileInfoResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.FileListResponse&gt; GetFilesAsync (string userId = default, DateTime? dateFrom = default, DateTime? dateTo = default, int? count = default, int? page = default, SlackAPI.FileTypes types = SlackAPI.FileTypes.all, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.FileListResponse&gt; GetFilesAsync(string userId, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateFrom, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; dateTo, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Nullable`1&lt;int32&gt; page, valuetype SlackAPI.FileTypes types, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetFilesAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},SlackAPI.FileTypes,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFilesAsync (Optional userId As String = null, Optional dateFrom As Nullable(Of DateTime) = null, Optional dateTo As Nullable(Of DateTime) = null, Optional count As Nullable(Of Integer) = null, Optional page As Nullable(Of Integer) = null, Optional types As FileTypes = SlackAPI.FileTypes.all, Optional cancellationToken As CancellationToken = null) As Task(Of FileListResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetFilesAsync : string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * SlackAPI.FileTypes * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.FileListResponse&gt;&#xA;override this.GetFilesAsync : string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * SlackAPI.FileTypes * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.FileListResponse&gt;" Usage="slackClientWrapper.GetFilesAsync (userId, dateFrom, dateTo, count, page, types, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.FileListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="dateFrom" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="dateTo" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="page" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="types" Type="SlackAPI.FileTypes" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The user id.</param>
+        <param name="dateFrom">The initial date.</param>
+        <param name="dateTo">The final date.</param>
+        <param name="count">The requested count.</param>
+        <param name="page">The page number.</param>
+        <param name="types">The type of files to retrieve.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetFilesAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.FileListResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupHistoryAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupMessageHistory&gt; GetGroupHistoryAsync (SlackAPI.Channel groupInfo, DateTime? latest = default, DateTime? oldest = default, int? count = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupMessageHistory&gt; GetGroupHistoryAsync(class SlackAPI.Channel groupInfo, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; latest, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; oldest, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetGroupHistoryAsync(SlackAPI.Channel,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGroupHistoryAsync (groupInfo As Channel, Optional latest As Nullable(Of DateTime) = null, Optional oldest As Nullable(Of DateTime) = null, Optional count As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of GroupMessageHistory)" />
+      <MemberSignature Language="F#" Value="abstract member GetGroupHistoryAsync : SlackAPI.Channel * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupMessageHistory&gt;&#xA;override this.GetGroupHistoryAsync : SlackAPI.Channel * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupMessageHistory&gt;" Usage="slackClientWrapper.GetGroupHistoryAsync (groupInfo, latest, oldest, count, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupMessageHistory&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupInfo" Type="SlackAPI.Channel" />
+        <Parameter Name="latest" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="oldest" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="groupInfo">Info about the channel.</param>
+        <param name="latest">The date of the latest.</param>
+        <param name="oldest">The date of the oldest.</param>
+        <param name="count">The requested count.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetGroupHistoryAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupMessageHistory" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupsListAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupListResponse&gt; GetGroupsListAsync (bool excludeArchived = true, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupListResponse&gt; GetGroupsListAsync(bool excludeArchived, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetGroupsListAsync(System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGroupsListAsync (Optional excludeArchived As Boolean = true, Optional cancellationToken As CancellationToken = null) As Task(Of GroupListResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetGroupsListAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupListResponse&gt;&#xA;override this.GetGroupsListAsync : bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupListResponse&gt;" Usage="slackClientWrapper.GetGroupsListAsync (excludeArchived, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="excludeArchived" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="excludeArchived">Flag setting if archived groups are to be excluded.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetGroupsListAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupListResponse" /> with the list of groups.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferencesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.UserPreferencesResponse&gt; GetPreferencesAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.UserPreferencesResponse&gt; GetPreferencesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetPreferencesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreferencesAsync (cancellationToken As CancellationToken) As Task(Of UserPreferencesResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetPreferencesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UserPreferencesResponse&gt;&#xA;override this.GetPreferencesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UserPreferencesResponse&gt;" Usage="slackClientWrapper.GetPreferencesAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.UserPreferencesResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetPreferencesAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.UserPreferencesResponse" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStarsAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.StarListResponse&gt; GetStarsAsync (string userId = default, int? count = default, int? page = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.StarListResponse&gt; GetStarsAsync(string userId, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Nullable`1&lt;int32&gt; page, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetStarsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStarsAsync (Optional userId As String = null, Optional count As Nullable(Of Integer) = null, Optional page As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of StarListResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetStarsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.StarListResponse&gt;&#xA;override this.GetStarsAsync : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.StarListResponse&gt;" Usage="slackClientWrapper.GetStarsAsync (userId, count, page, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.StarListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="page" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The user id.</param>
+        <param name="count">The count to retrieve.</param>
+        <param name="page">The page to retrieve from.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetStarsAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.StarListResponse" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserListAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.UserListResponse&gt; GetUserListAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.UserListResponse&gt; GetUserListAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetUserListAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetUserListAsync (cancellationToken As CancellationToken) As Task(Of UserListResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GetUserListAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UserListResponse&gt;&#xA;override this.GetUserListAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UserListResponse&gt;" Usage="slackClientWrapper.GetUserListAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.UserListResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GetUserListAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.UserListResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsArchiveAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupArchiveResponse&gt; GroupsArchiveAsync (string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupArchiveResponse&gt; GroupsArchiveAsync(string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsArchiveAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsArchiveAsync (channelId As String, cancellationToken As CancellationToken) As Task(Of GroupArchiveResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsArchiveAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupArchiveResponse&gt;&#xA;override this.GroupsArchiveAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupArchiveResponse&gt;" Usage="slackClientWrapper.GroupsArchiveAsync (channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupArchiveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsArchiveAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupArchiveResponse" /> representing the response to the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsCloseAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupCloseResponse&gt; GroupsCloseAsync (string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupCloseResponse&gt; GroupsCloseAsync(string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCloseAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsCloseAsync (channelId As String, cancellationToken As CancellationToken) As Task(Of GroupCloseResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsCloseAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupCloseResponse&gt;&#xA;override this.GroupsCloseAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupCloseResponse&gt;" Usage="slackClientWrapper.GroupsCloseAsync (channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupCloseResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsCloseAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupCloseResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsCreateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateResponse&gt; GroupsCreateAsync (string name, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupCreateResponse&gt; GroupsCreateAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCreateAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsCreateAsync (name As String, cancellationToken As CancellationToken) As Task(Of GroupCreateResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsCreateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateResponse&gt;&#xA;override this.GroupsCreateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateResponse&gt;" Usage="slackClientWrapper.GroupsCreateAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the group to create.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsCreateAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupCreateResponse" /> representing the response to the group creation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsCreateChildAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateChildResponse&gt; GroupsCreateChildAsync (string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupCreateChildResponse&gt; GroupsCreateChildAsync(string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCreateChildAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsCreateChildAsync (channelId As String, cancellationToken As CancellationToken) As Task(Of GroupCreateChildResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsCreateChildAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateChildResponse&gt;&#xA;override this.GroupsCreateChildAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateChildResponse&gt;" Usage="slackClientWrapper.GroupsCreateChildAsync (channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupCreateChildResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsCreateChildAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupCreateChildResponse" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsInviteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupInviteResponse&gt; GroupsInviteAsync (string userId, string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupInviteResponse&gt; GroupsInviteAsync(string userId, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsInviteAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsInviteAsync (userId As String, channelId As String, cancellationToken As CancellationToken) As Task(Of GroupInviteResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsInviteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupInviteResponse&gt;&#xA;override this.GroupsInviteAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupInviteResponse&gt;" Usage="slackClientWrapper.GroupsInviteAsync (userId, channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupInviteResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The id of the user to invite.</param>
+        <param name="channelId">The channel to invite the user to.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsInviteAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupInviteResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsKickAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupKickResponse&gt; GroupsKickAsync (string userId, string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupKickResponse&gt; GroupsKickAsync(string userId, string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsKickAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsKickAsync (userId As String, channelId As String, cancellationToken As CancellationToken) As Task(Of GroupKickResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsKickAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupKickResponse&gt;&#xA;override this.GroupsKickAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupKickResponse&gt;" Usage="slackClientWrapper.GroupsKickAsync (userId, channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupKickResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="userId">The id of the user to kick.</param>
+        <param name="channelId">The channel to kick the user from.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsKickAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupKickResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsLeaveAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupLeaveResponse&gt; GroupsLeaveAsync (string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupLeaveResponse&gt; GroupsLeaveAsync(string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsLeaveAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsLeaveAsync (channelId As String, cancellationToken As CancellationToken) As Task(Of GroupLeaveResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsLeaveAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupLeaveResponse&gt;&#xA;override this.GroupsLeaveAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupLeaveResponse&gt;" Usage="slackClientWrapper.GroupsLeaveAsync (channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupLeaveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsLeaveAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupLeaveResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsMarkAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupMarkResponse&gt; GroupsMarkAsync (string channelId, DateTime ts, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupMarkResponse&gt; GroupsMarkAsync(string channelId, valuetype System.DateTime ts, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsMarkAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsMarkAsync (channelId As String, ts As DateTime, cancellationToken As CancellationToken) As Task(Of GroupMarkResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsMarkAsync : string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupMarkResponse&gt;&#xA;override this.GroupsMarkAsync : string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupMarkResponse&gt;" Usage="slackClientWrapper.GroupsMarkAsync (channelId, ts, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupMarkResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="ts" Type="System.DateTime" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="ts">The timestamp.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsMarkAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupMarkResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsOpenAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupOpenResponse&gt; GroupsOpenAsync (string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupOpenResponse&gt; GroupsOpenAsync(string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsOpenAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsOpenAsync (channelId As String, cancellationToken As CancellationToken) As Task(Of GroupOpenResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsOpenAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupOpenResponse&gt;&#xA;override this.GroupsOpenAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupOpenResponse&gt;" Usage="slackClientWrapper.GroupsOpenAsync (channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupOpenResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsOpenAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupOpenResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsRenameAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupRenameResponse&gt; GroupsRenameAsync (string channelId, string name, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupRenameResponse&gt; GroupsRenameAsync(string channelId, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsRenameAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsRenameAsync (channelId As String, name As String, cancellationToken As CancellationToken) As Task(Of GroupRenameResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsRenameAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupRenameResponse&gt;&#xA;override this.GroupsRenameAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupRenameResponse&gt;" Usage="slackClientWrapper.GroupsRenameAsync (channelId, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupRenameResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="name">The new name to set to the group.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsRenameAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupRenameResponse" /> representing the response to the group renaming.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsSetPurposeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupSetPurposeResponse&gt; GroupsSetPurposeAsync (string channelId, string purpose, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupSetPurposeResponse&gt; GroupsSetPurposeAsync(string channelId, string purpose, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsSetPurposeAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsSetPurposeAsync (channelId As String, purpose As String, cancellationToken As CancellationToken) As Task(Of GroupSetPurposeResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsSetPurposeAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupSetPurposeResponse&gt;&#xA;override this.GroupsSetPurposeAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupSetPurposeResponse&gt;" Usage="slackClientWrapper.GroupsSetPurposeAsync (channelId, purpose, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupSetPurposeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="purpose" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="purpose">The new purpose.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsSetPurposeAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupSetPurposeResponse" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsSetTopicAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupSetTopicResponse&gt; GroupsSetTopicAsync (string channelId, string topic, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupSetTopicResponse&gt; GroupsSetTopicAsync(string channelId, string topic, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsSetTopicAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsSetTopicAsync (channelId As String, topic As String, cancellationToken As CancellationToken) As Task(Of GroupSetTopicResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsSetTopicAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupSetTopicResponse&gt;&#xA;override this.GroupsSetTopicAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupSetTopicResponse&gt;" Usage="slackClientWrapper.GroupsSetTopicAsync (channelId, topic, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupSetTopicResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="topic" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="topic">The new topic.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsSetTopicAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupSetTopicResponse" /> representing the response to setting the topic.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupsUnarchiveAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.GroupUnarchiveResponse&gt; GroupsUnarchiveAsync (string channelId, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.GroupUnarchiveResponse&gt; GroupsUnarchiveAsync(string channelId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsUnarchiveAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GroupsUnarchiveAsync (channelId As String, cancellationToken As CancellationToken) As Task(Of GroupUnarchiveResponse)" />
+      <MemberSignature Language="F#" Value="abstract member GroupsUnarchiveAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupUnarchiveResponse&gt;&#xA;override this.GroupsUnarchiveAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.GroupUnarchiveResponse&gt;" Usage="slackClientWrapper.GroupsUnarchiveAsync (channelId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.GroupUnarchiveResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's GroupsUnarchiveAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.GroupUnarchiveResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public string Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Identity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As String" />
+      <MemberSignature Language="F#" Value="member this.Identity : string" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the user identity.
+            </summary>
+        <value>
+            A string containing the user identity.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JoinDirectMessageChannelAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.JoinDirectMessageChannelResponse&gt; JoinDirectMessageChannelAsync (string user, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.JoinDirectMessageChannelResponse&gt; JoinDirectMessageChannelAsync(string user, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.JoinDirectMessageChannelAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function JoinDirectMessageChannelAsync (user As String, cancellationToken As CancellationToken) As Task(Of JoinDirectMessageChannelResponse)" />
+      <MemberSignature Language="F#" Value="abstract member JoinDirectMessageChannelAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.JoinDirectMessageChannelResponse&gt;&#xA;override this.JoinDirectMessageChannelAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.JoinDirectMessageChannelResponse&gt;" Usage="slackClientWrapper.JoinDirectMessageChannelAsync (user, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.JoinDirectMessageChannelResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="user">The user to join in.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's JoinDirectMessageChannelAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.JoinDirectMessageChannelResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginWithSlackAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LoginWithSlackAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task LoginWithSlackAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.LoginWithSlackAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginWithSlackAsync (cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.LoginWithSlackAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="slackClientWrapper.LoginWithSlackAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Manages the login to Slack with the given credentials.
+            </summary>
+        <returns>A Task representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkChannelAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.MarkResponse&gt; MarkChannelAsync (string channelId, DateTime ts, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.MarkResponse&gt; MarkChannelAsync(string channelId, valuetype System.DateTime ts, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.MarkChannelAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MarkChannelAsync (channelId As String, ts As DateTime, cancellationToken As CancellationToken) As Task(Of MarkResponse)" />
+      <MemberSignature Language="F#" Value="abstract member MarkChannelAsync : string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.MarkResponse&gt;&#xA;override this.MarkChannelAsync : string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.MarkResponse&gt;" Usage="slackClientWrapper.MarkChannelAsync (channelId, ts, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.MarkResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="ts" Type="System.DateTime" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="ts">The timestamp.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's MarkChannelAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.MarkResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Options" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Options As SlackAdapterOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the SlackAdapterOptions.
+            </summary>
+        <value>
+            An object containing API credentials, a webhook verification token and other options.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostEphemeralMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.PostEphemeralResponse&gt; PostEphemeralMessageAsync (string channelId, string text, string targetUser, string parse = default, bool linkNames = false, SlackAPI.Attachment[] attachments = default, bool asUser = false, string threadTs = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.RPCMessages.PostEphemeralResponse&gt; PostEphemeralMessageAsync(string channelId, string text, string targetUser, string parse, bool linkNames, class SlackAPI.Attachment[] attachments, bool asUser, string threadTs, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostEphemeralMessageAsync(System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.Attachment[],System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostEphemeralMessageAsync (channelId As String, text As String, targetUser As String, Optional parse As String = null, Optional linkNames As Boolean = false, Optional attachments As Attachment() = null, Optional asUser As Boolean = false, Optional threadTs As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of PostEphemeralResponse)" />
+      <MemberSignature Language="F#" Value="abstract member PostEphemeralMessageAsync : string * string * string * string * bool * SlackAPI.Attachment[] * bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.PostEphemeralResponse&gt;&#xA;override this.PostEphemeralMessageAsync : string * string * string * string * bool * SlackAPI.Attachment[] * bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.PostEphemeralResponse&gt;" Usage="slackClientWrapper.PostEphemeralMessageAsync (channelId, text, targetUser, parse, linkNames, attachments, asUser, threadTs, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.RPCMessages.PostEphemeralResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="targetUser" Type="System.String" />
+        <Parameter Name="parse" Type="System.String" />
+        <Parameter Name="linkNames" Type="System.Boolean" />
+        <Parameter Name="attachments" Type="SlackAPI.Attachment[]" />
+        <Parameter Name="asUser" Type="System.Boolean" />
+        <Parameter Name="threadTs" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="text">The text of the message.</param>
+        <param name="targetUser">The target user to the message.</param>
+        <param name="parse">Change how messages are treated.Defaults to 'none'. See https://api.slack.com/methods/chat.postMessage#formatting. </param>
+        <param name="linkNames">If to find and link channel names and username.</param>
+        <param name="attachments">The attachments, if any.</param>
+        <param name="asUser">If the message is being sent as user instead of as a bot.</param>
+        <param name="threadTs">Info about the message coming from a thread. CURRENTLY NOT USED.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's PostEphemeralMessageAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.RPCMessages.PostEphemeralResponse" /> representing the response to the message posting.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Adapters.Slack.SlackResponse&gt; PostMessageAsync (Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage message, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Adapters.Slack.SlackResponse&gt; PostMessageAsync(class Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostMessageAsync (message As NewSlackMessage, cancellationToken As CancellationToken) As Task(Of SlackResponse)" />
+      <MemberSignature Language="F#" Value="abstract member PostMessageAsync : Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Adapters.Slack.SlackResponse&gt;&#xA;override this.PostMessageAsync : Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Adapters.Slack.SlackResponse&gt;" Usage="slackClientWrapper.PostMessageAsync (message, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Adapters.Slack.SlackResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to be posted.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Posts a message to Slack.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse" /> to the posting operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostMessageAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.PostMessageResponse&gt; PostMessageAsync (string channelId, string text, string botName = default, string parse = default, bool linkNames = false, SlackAPI.IBlock[] blocks = default, SlackAPI.Attachment[] attachments = default, bool unfurlLinks = false, Uri iconUrl = default, string iconEmoji = default, bool asUser = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.PostMessageResponse&gt; PostMessageAsync(string channelId, string text, string botName, string parse, bool linkNames, class SlackAPI.IBlock[] blocks, class SlackAPI.Attachment[] attachments, bool unfurlLinks, class System.Uri iconUrl, string iconEmoji, bool asUser, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.IBlock[],SlackAPI.Attachment[],System.Boolean,System.Uri,System.String,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostMessageAsync (channelId As String, text As String, Optional botName As String = null, Optional parse As String = null, Optional linkNames As Boolean = false, Optional blocks As IBlock() = null, Optional attachments As Attachment() = null, Optional unfurlLinks As Boolean = false, Optional iconUrl As Uri = null, Optional iconEmoji As String = null, Optional asUser As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task(Of PostMessageResponse)" />
+      <MemberSignature Language="F#" Value="abstract member PostMessageAsync : string * string * string * string * bool * SlackAPI.IBlock[] * SlackAPI.Attachment[] * bool * Uri * string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.PostMessageResponse&gt;&#xA;override this.PostMessageAsync : string * string * string * string * bool * SlackAPI.IBlock[] * SlackAPI.Attachment[] * bool * Uri * string * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.PostMessageResponse&gt;" Usage="slackClientWrapper.PostMessageAsync (channelId, text, botName, parse, linkNames, blocks, attachments, unfurlLinks, iconUrl, iconEmoji, asUser, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.PostMessageResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="botName" Type="System.String" />
+        <Parameter Name="parse" Type="System.String" />
+        <Parameter Name="linkNames" Type="System.Boolean" />
+        <Parameter Name="blocks" Type="SlackAPI.IBlock[]" />
+        <Parameter Name="attachments" Type="SlackAPI.Attachment[]" />
+        <Parameter Name="unfurlLinks" Type="System.Boolean" />
+        <Parameter Name="iconUrl" Type="System.Uri" />
+        <Parameter Name="iconEmoji" Type="System.String" />
+        <Parameter Name="asUser" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">The channel id.</param>
+        <param name="text">The text of the message.</param>
+        <param name="botName">The bot name.</param>
+        <param name="parse">Change how messages are treated.Defaults to 'none'. See https://api.slack.com/methods/chat.postMessage#formatting .</param>
+        <param name="linkNames">If to find and link channel names and username.</param>
+        <param name="blocks">A JSON-based array of structured blocks, presented as a URL-encoded string.</param>
+        <param name="attachments">The attachments, if any.</param>
+        <param name="unfurlLinks">True to enable unfurling of primarily text-based content.</param>
+        <param name="iconUrl">The url of the icon with the message, if any.</param>
+        <param name="iconEmoji">The emoji icon, if any.</param>
+        <param name="asUser">If the message is being sent as user instead of as a bot.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's PostMessageAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.PostMessageResponse" /> representing the response to the message posting.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchAllAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseAll&gt; SearchAllAsync (string query, string sorting = default, SlackAPI.SearchSortDirection? direction = default, bool enableHighlights = false, int? count = default, int? page = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.SearchResponseAll&gt; SearchAllAsync(string query, string sorting, valuetype System.Nullable`1&lt;valuetype SlackAPI.SearchSortDirection&gt; direction, bool enableHighlights, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Nullable`1&lt;int32&gt; page, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchAllAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SearchAllAsync (query As String, Optional sorting As String = null, Optional direction As Nullable(Of SearchSortDirection) = null, Optional enableHighlights As Boolean = false, Optional count As Nullable(Of Integer) = null, Optional page As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of SearchResponseAll)" />
+      <MemberSignature Language="F#" Value="abstract member SearchAllAsync : string * string * Nullable&lt;SlackAPI.SearchSortDirection&gt; * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseAll&gt;&#xA;override this.SearchAllAsync : string * string * Nullable&lt;SlackAPI.SearchSortDirection&gt; * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseAll&gt;" Usage="slackClientWrapper.SearchAllAsync (query, sorting, direction, enableHighlights, count, page, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseAll&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="sorting" Type="System.String" />
+        <Parameter Name="direction" Type="System.Nullable&lt;SlackAPI.SearchSortDirection&gt;" />
+        <Parameter Name="enableHighlights" Type="System.Boolean" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="page" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query to search.</param>
+        <param name="sorting">The sorting.</param>
+        <param name="direction">The direction of the sorting.</param>
+        <param name="enableHighlights">Set if highlights are enabled.</param>
+        <param name="count">The count to return.</param>
+        <param name="page">The page to search from.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's SearchAllAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.SearchResponseAll" /> representing the response for the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchFilesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseFiles&gt; SearchFilesAsync (string query, string sorting = default, SlackAPI.SearchSortDirection? direction = default, bool enableHighlights = false, int? count = default, int? page = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.SearchResponseFiles&gt; SearchFilesAsync(string query, string sorting, valuetype System.Nullable`1&lt;valuetype SlackAPI.SearchSortDirection&gt; direction, bool enableHighlights, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Nullable`1&lt;int32&gt; page, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchFilesAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SearchFilesAsync (query As String, Optional sorting As String = null, Optional direction As Nullable(Of SearchSortDirection) = null, Optional enableHighlights As Boolean = false, Optional count As Nullable(Of Integer) = null, Optional page As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of SearchResponseFiles)" />
+      <MemberSignature Language="F#" Value="abstract member SearchFilesAsync : string * string * Nullable&lt;SlackAPI.SearchSortDirection&gt; * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseFiles&gt;&#xA;override this.SearchFilesAsync : string * string * Nullable&lt;SlackAPI.SearchSortDirection&gt; * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseFiles&gt;" Usage="slackClientWrapper.SearchFilesAsync (query, sorting, direction, enableHighlights, count, page, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseFiles&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="sorting" Type="System.String" />
+        <Parameter Name="direction" Type="System.Nullable&lt;SlackAPI.SearchSortDirection&gt;" />
+        <Parameter Name="enableHighlights" Type="System.Boolean" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="page" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query to search.</param>
+        <param name="sorting">The sorting.</param>
+        <param name="direction">The direction of the sorting.</param>
+        <param name="enableHighlights">Set if highlights are enabled.</param>
+        <param name="count">The count to return.</param>
+        <param name="page">The page to search from.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's SearchFilesAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.SearchResponseFiles" /> representing the response of the search operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchMessagesAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseMessages&gt; SearchMessagesAsync (string query, string sorting = default, SlackAPI.SearchSortDirection? direction = default, bool enableHighlights = false, int? count = default, int? page = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.SearchResponseMessages&gt; SearchMessagesAsync(string query, string sorting, valuetype System.Nullable`1&lt;valuetype SlackAPI.SearchSortDirection&gt; direction, bool enableHighlights, valuetype System.Nullable`1&lt;int32&gt; count, valuetype System.Nullable`1&lt;int32&gt; page, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchMessagesAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SearchMessagesAsync (query As String, Optional sorting As String = null, Optional direction As Nullable(Of SearchSortDirection) = null, Optional enableHighlights As Boolean = false, Optional count As Nullable(Of Integer) = null, Optional page As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of SearchResponseMessages)" />
+      <MemberSignature Language="F#" Value="abstract member SearchMessagesAsync : string * string * Nullable&lt;SlackAPI.SearchSortDirection&gt; * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseMessages&gt;&#xA;override this.SearchMessagesAsync : string * string * Nullable&lt;SlackAPI.SearchSortDirection&gt; * bool * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseMessages&gt;" Usage="slackClientWrapper.SearchMessagesAsync (query, sorting, direction, enableHighlights, count, page, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.SearchResponseMessages&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="sorting" Type="System.String" />
+        <Parameter Name="direction" Type="System.Nullable&lt;SlackAPI.SearchSortDirection&gt;" />
+        <Parameter Name="enableHighlights" Type="System.Boolean" />
+        <Parameter Name="count" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="page" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query to search.</param>
+        <param name="sorting">The sorting.</param>
+        <param name="direction">The direction of the sorting.</param>
+        <param name="enableHighlights">Set if highlights are enabled.</param>
+        <param name="count">The count to return.</param>
+        <param name="page">The page to search from.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's SearchMessagesAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.SearchResponseMessages" /> representing the response of the search operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestAuthAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; TestAuthAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; TestAuthAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.TestAuthAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TestAuthAsync (cancellationToken As CancellationToken) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member TestAuthAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.TestAuthAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="slackClientWrapper.TestAuthAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's TestAuthAsync method.
+            </summary>
+        <returns>The user Id.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.UpdateResponse&gt; UpdateAsync (string ts, string channelId, string text, string botName = default, string parse = default, bool linkNames = false, SlackAPI.Attachment[] attachments = default, bool asUser = false, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.UpdateResponse&gt; UpdateAsync(string ts, string channelId, string text, string botName, string parse, bool linkNames, class SlackAPI.Attachment[] attachments, bool asUser, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.UpdateAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.Attachment[],System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateAsync (ts As String, channelId As String, text As String, Optional botName As String = null, Optional parse As String = null, Optional linkNames As Boolean = false, Optional attachments As Attachment() = null, Optional asUser As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task(Of UpdateResponse)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateAsync : string * string * string * string * string * bool * SlackAPI.Attachment[] * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UpdateResponse&gt;&#xA;override this.UpdateAsync : string * string * string * string * string * bool * SlackAPI.Attachment[] * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.UpdateResponse&gt;" Usage="slackClientWrapper.UpdateAsync (ts, channelId, text, botName, parse, linkNames, attachments, asUser, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.UpdateResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ts" Type="System.String" />
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="botName" Type="System.String" />
+        <Parameter Name="parse" Type="System.String" />
+        <Parameter Name="linkNames" Type="System.Boolean" />
+        <Parameter Name="attachments" Type="SlackAPI.Attachment[]" />
+        <Parameter Name="asUser" Type="System.Boolean" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="ts">The timestamp of the message.</param>
+        <param name="channelId">The channel to delete the message from.</param>
+        <param name="text">The text to update with.</param>
+        <param name="botName">The optional bot name.</param>
+        <param name="parse">Change how messages are treated.Defaults to 'none'. See https://api.slack.com/methods/chat.postMessage#formatting. </param>
+        <param name="linkNames">If to find and link channel names and username.</param>
+        <param name="attachments">The attachments, if any.</param>
+        <param name="asUser">If the message is being sent as user instead of as a bot.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's UpdateAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.UpdateResponse" /> representing the response to the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFileAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;SlackAPI.FileUploadResponse&gt; UploadFileAsync (byte[] fileData, string fileName, string[] channelIds, string title = default, string initialComment = default, bool useAsync = false, string fileType = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class SlackAPI.FileUploadResponse&gt; UploadFileAsync(unsigned int8[] fileData, string fileName, string[] channelIds, string title, string initialComment, bool useAsync, string fileType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.UploadFileAsync(System.Byte[],System.String,System.String[],System.String,System.String,System.Boolean,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UploadFileAsync (fileData As Byte(), fileName As String, channelIds As String(), Optional title As String = null, Optional initialComment As String = null, Optional useAsync As Boolean = false, Optional fileType As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of FileUploadResponse)" />
+      <MemberSignature Language="F#" Value="abstract member UploadFileAsync : byte[] * string * string[] * string * string * bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.FileUploadResponse&gt;&#xA;override this.UploadFileAsync : byte[] * string * string[] * string * string * bool * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;SlackAPI.FileUploadResponse&gt;" Usage="slackClientWrapper.UploadFileAsync (fileData, fileName, channelIds, title, initialComment, useAsync, fileType, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;SlackAPI.FileUploadResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileData" Type="System.Byte[]" />
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="channelIds" Type="System.String[]" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="initialComment" Type="System.String" />
+        <Parameter Name="useAsync" Type="System.Boolean" />
+        <Parameter Name="fileType" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="fileData">The data of the file to be uploaded.</param>
+        <param name="fileName">The name of the file to be uploaded.</param>
+        <param name="channelIds">The channel ids.</param>
+        <param name="title">The title.</param>
+        <param name="initialComment">The optional message text introducing the file in specified channels.</param>
+        <param name="useAsync">Whether to use the async version of the upload.</param>
+        <param name="fileType">A file type identifier. See https://api.slack.com/types/file#file_types for the available types.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Wraps Slack API's UploadFileAsync method.
+            </summary>
+        <returns>A <see cref="T:SlackAPI.FileUploadResponse" /> representing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifySignature">
+      <MemberSignature Language="C#" Value="public virtual bool VerifySignature (Microsoft.AspNetCore.Http.HttpRequest request, string body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifySignature(class Microsoft.AspNetCore.Http.HttpRequest request, string body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifySignature (request As HttpRequest, body As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifySignature : Microsoft.AspNetCore.Http.HttpRequest * string -&gt; bool&#xA;override this.VerifySignature : Microsoft.AspNetCore.Http.HttpRequest * string -&gt; bool" Usage="slackClientWrapper.VerifySignature (request, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
+        <Parameter Name="body" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:Microsoft.AspNetCore.Http.HttpRequest" /> with the signature.</param>
+        <param name="body">The raw body of the request.</param>
+        <summary>
+            Validates the local secret against the one obtained from the request header.
+            </summary>
+        <returns>The result of the comparison between the signature in the request and hashed secret.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

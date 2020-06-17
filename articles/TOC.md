@@ -14,10 +14,11 @@
 # Samples
 ## [Bot Framework samples repo on GitHub](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)
 # Concepts
-## [How bots work](v4sdk/bot-builder-basics.md)
-## [Managing state](v4sdk/bot-builder-concept-state.md)
-## [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
-## [Middleware](v4sdk/bot-builder-concept-middleware.md)
+## Bot
+### [How bots work](v4sdk/bot-builder-basics.md)
+### [Managing state](v4sdk/bot-builder-concept-state.md)
+### [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+### [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## Adaptive dialogs
 ### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
 ### [Events and triggers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md)
@@ -26,6 +27,7 @@
 ### [Recognizers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md)
 ### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
+### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
 ## Authentication
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
@@ -69,6 +71,7 @@
 ### Adaptive dialogs
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 #### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
+#### [Create a bot using declarative adaptive dialogs](v4sdk/bot-builder-dialogs-declarative.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### Authentication
 #### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)
@@ -103,15 +106,16 @@
 ## [Manage](manage/TOC.md)
 ## [Migrate](v4sdk/migration/TOC.md)
 # Reference
-## [.NET SDK v4](https://aka.ms/botframework-v4-cs-sdk)
-## [JavaScript SDK v4](https://aka.ms/bot-jssdk-v4)
-## [Python SDK v4](https://aka.ms/botframework-v4-python-sdk)
+## API SDK reference
+### v4
+#### [.NET SDK v4](https://aka.ms/botframework-v4-cs-sdk)
+#### [JavaScript SDK v4](https://aka.ms/bot-jssdk-v4)
+#### [Python SDK v4](https://aka.ms/botframework-v4-python-sdk)
+### v3
+#### [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
+#### [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
 ## [REST](rest-api/TOC.md)
-## [.NET SDK v3](https://aka.ms/botframework-v3-cs-sdk)
-## [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
-## BF CLI tool reference
-### [BF CLI overview](v4sdk/bf-cli-overview.md)
-### [BF CLI reference](v4sdk/bf-cli-reference.md)
+## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
