@@ -35,7 +35,6 @@ Please, make sure that you select all the files and folders in your bot's projec
 > [!div class="mx-imgBorder"]
 > ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
 
-Then you will have a `.zip` file (the name may differ) such as this one:
 
 > [!div class="mx-imgBorder"]
 > ![zip file](./media/deploy-bot-cli/zip-file.png)
