@@ -12,17 +12,19 @@ ms.date: 06/12/2020
 # Deployment Frequently Asked Questions
 
 This article contains answers to frequently asked questions about Azure bot deployment that is described in the [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0).
-
-- [Zip up the code directory](#zip-up-the-code-directory)
-  - [What files do we need to zip up?](#what-files-do-we-need-to-zip-up)
-- [Azure CLI command deprecation](#azure-cli-command-deprecation)
-  - [What Azure CLI version should I use to deploy a bot?](#what-azure-cli-version-should-i-use-to-deploy-a-bot)
-  - [What should I do when getting Azure CLI deprecation errors?](#what-should-i-do-when-getting-azure-cli-deprecation-errors)
-  - [What are the deprecated commands related to `az deployment`?](#what-are-the-deprecated-commands-related-to-az-deployment)
-  - [How do I know whether the Azure CLI commands are deprecated?](#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
-- [Additional information](#additional-information)
+<!-- 
+- [Deployment Frequently Asked Questions](#deployment-frequently-asked-questions)
+  - [Zip up the code directory](#zip-up-the-code-directory)
+    - [What files do we need to zip up?](#what-files-do-we-need-to-zip-up)
+  - [Azure CLI deprecated commands](#azure-cli-deprecated-commands)
+    - [What Azure CLI version should I use to deploy a bot?](#what-azure-cli-version-should-i-use-to-deploy-a-bot)
+    - [What should I do if I get Azure CLI deprecation errors?](#what-should-i-do-if-i-get-azure-cli-deprecation-errors)
+      - [Change log of the Azure CLI commands used to deploy a bot to Azure](#change-log-of-the-azure-cli-commands-used-to-deploy-a-bot-to-azure)
+    - [What are the `az deployment` deprecated commands?](#what-are-the-az-deployment-deprecated-commands)
+    - [How do I know whether the Azure CLI commands are deprecated?](#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
+  - [Additional information](#additional-information)
     - [Azure CLI Change Log](#azure-cli-change-log)
-    - [ARM](#arm)
+    - [Azure Resource Management (ARM)](#azure-resource-management-arm)
 
 ## Zip up the code directory
 
@@ -36,16 +38,13 @@ Please, make sure that you select all the files and folders in your bot's projec
 > ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
 
 
-
-
 ## Azure CLI deprecated commands
 
 ### What Azure CLI version should I use to deploy a bot?
 
-It is recommended that you use the latest version of the Azure Command-Line Interface (CLI) otherwise you will get deprecated commands errors. See [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
+It is recommended that you use the latest version of the Azure Command-Line Interface (CLI) otherwise you will get deprecated commands errors. See [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
 
-
-### What should if I get Azure CLI deprecation errors?
+### What should I do if I get Azure CLI deprecation errors?
 
 You should upgrade to the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). For Azure CLI version [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020) or later, you must use `az deployment sub create` and `az deployment group create` instead of `az deployment create` and `az group deployment create` commands respectively.
 
@@ -61,6 +60,15 @@ Read more in the [Azure CLI change log](https://github.com/MicrosoftDocs/azure-d
 ### What are the `az deployment` deprecated commands?
 
 The following are the `az deployment` deprecated commands:
+
+> [!div class="mx-tdBreakAll"]
+> |Deprecated|Replaced By|
+> |-------------|----------|
+> |`az deployment <create/list show/delete/validate/export/cancel>`|`az deployment **sub** <create/list/show/delete/validate/export/cancel>`|
+>| `az deployment operation <list/show>` |`az deployment operation **sub** <list/show>`|
+>| `az group deployment <create/list/show/delete/validate/export/cancel>` | `az deployment **group** <create/list/show/delete/validate/export/cancel>` |
+> |`az group deployment operation <list/show>` |`az deployment operation **group** < list/show>` |
+
 
 1. `az deployment create/list/show/delete/validate/export/cancel` --> `az deployment sub create/list/show/delete/validate/export/cancel`
 2. `az deployment operation list/show` --> `az deployment operation sub list/show`
