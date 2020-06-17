@@ -57,7 +57,7 @@ Finally, if they answered yes, display the collected information; otherwise, tel
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package.
 
-The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAync` to run the dialog.
+The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAsync` to run the dialog.
 
 ![Root dialog](media/bot-builder-root-dialog-adaptive.png)
 
@@ -71,7 +71,6 @@ The created dialog is then added to the `DialogSet` and the name is saved in the
 The root dialog is a component dialog:
 
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21&highlight=1)]
-
 
 Notice also:
 
@@ -87,13 +86,11 @@ In `WelcomeUserSteps` method provides the actions to perform when the trigger fi
 
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=54-76&highlight=13-20)]
 
-
 The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The code below shows how the `Name` prompt is created.
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
 [!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-144&highlight=12-16,31-59)]
-
 
 # [JavaScript](#tab/javascript)
 
@@ -127,9 +124,7 @@ You register the adaptive dialogs in the `Startup` class, along with the other s
 
 [!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs?range=22-55&highlight=5-18)]
 
-
 # [JavaScript](#tab/javascript)
-
 
 **index.js**
 
@@ -169,7 +164,6 @@ The implementation shown can run any type of `Dialog`. The `ConversationState` i
 [!code-csharp[Dialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-40&highlight=20)]
 
 # [JavaScript](#tab/javascript)
-
 
 **bots/dialogBot.js**
 
