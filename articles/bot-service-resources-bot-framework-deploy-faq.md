@@ -11,7 +11,7 @@ ms.date: 06/12/2020
 
 # Deployment Frequently Asked Questions
 
-This article contains answers to some frequently asked questions about how to deploy a bot to Azure covered in [this article](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0). You will find the answers to the following questions: 
+This article contains answers to frequently asked questions about Azure bot deployment that is described in the [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0).
 
 - [Zip up the code directory](#zip-up-the-code-directory)
   - [What files do we need to zip up?](#what-files-do-we-need-to-zip-up)
