@@ -45,7 +45,7 @@ Please, make sure that you select all the files and folders in your bot's projec
 It is recommended that you use the latest version of the Azure Command-Line Interface (CLI) otherwise you will get deprecated commands errors. See [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 
 
-### What should I do when getting Azure CLI deprecation errors?
+### What should if I get Azure CLI deprecation errors?
 
 You should upgrade to the most latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). For Azure CLI version [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020) or later, users should use `az deployment sub create` and `az deployment group create` instead of using `az deployment create` and `az group deployment create` respectively.
 
