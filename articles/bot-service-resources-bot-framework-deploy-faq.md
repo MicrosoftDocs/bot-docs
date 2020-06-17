@@ -58,7 +58,7 @@ You should upgrade to the latest version of the [Azure CLI](https://docs.microso
 
 Read more in the [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
 
-### What are the deprecated commands related to `az deployment`?
+### What are the `az deployment` deprecated commands?
 
 The deprecated Azure CLI commands related to `az deployment` are the following:
 
