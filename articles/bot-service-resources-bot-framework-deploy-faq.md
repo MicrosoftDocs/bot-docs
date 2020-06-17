@@ -42,7 +42,8 @@ Please, make sure that you select all the files and folders in your bot's projec
 
 ### What Azure CLI version should I use to deploy a bot?
 
-It is recommended that you use the most latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) to complete the deployment process. If you are using older versions of Azure CLI, you will get deprecation errors in the process.
+It is recommended that you use the latest version of the Azure Command-Line Interface (CLI) otherwise you will get deprecated commands errors. See [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
+
 
 ### What should I do when getting Azure CLI deprecation errors?
 
