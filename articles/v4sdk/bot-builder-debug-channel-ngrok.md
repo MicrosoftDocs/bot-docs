@@ -31,7 +31,7 @@ When your bot is already in production, the Bot Framework Emulator uses an insta
 
 ## Create an Azure registration resource
 
-You will need to create a Bot Channels Registration to register your local bot with Azure so that your local bot can be connected to any supported channel.
+You will need to create a Bot Channels Registration to register your local bot with Azure so that your local bot can be connected to any supported channel. If you already have an Azure registration resource, you can skip to the [run ngrok](#run-ngrok) section. 
 
 ### Create a Bot Channels Registration
 
@@ -65,7 +65,6 @@ You will need to use the **App ID** and **password** generated during the previo
 For more information about creating a **Bot Channels Registration**, refer to the [Register a bot with Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0&viewFallbackFrom=azure-bot-service-4.0) article.
 
 
-
 ## Run ngrok
 
 [**ngrok**](https://ngrok.com/docs) is a cross-platform application that "allows you to expose a web server running on your local machine to the internet." Essentially, what we’ll be doing is using ngrok to forward messages from external channels on the web directly to our local machine to allow debugging, as opposed to the standard messaging endpoint configured in the Azure portal. 
@@ -90,9 +89,22 @@ For more information about creating a **Bot Channels Registration**, refer to th
 
 While **ngrok** is running, login to your Azure portal and view your bot settings to do some configuration.
 
+1. Select the **Bot Channels Registration** you just created and then select **Settings** on the left pane. 
 
+2. Scroll down to **Configuration**. Copy and paste the ngrok forwarding url in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
+   
+    ![scaleout diagram](../media/debug-ngrok/messaging-endpoint.png)
+
+    Question: should I check **Enable Streaming Endpoint**? 
+
+3. Scroll up and select **Save**.
 
 ## Test
+
+At this point, incoming messages from to your bot from external channels will now be sent to your local bot. The sample bot we’ll use to demonstrate this is already configured live for **Microsoft Teams**. Read [Connect a bot to Microsoft Teams](https://docs.microsoft.com/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0) about connecting a local bot with **Microsoft Teams** channel.
+
+Question: How to connect a local bot to Microsoft Teams?
+
 
 One of the key features available in Bot Framework is the ability to seamlessly connect your bot to multiple channels all from the same bot. You can read the [connect a bot to channels](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) article to learn more about currently supported channels and how to connect your bots to them. In this post, we’ll discuss how you can locally debug your bot from any channel your production bot is configured for, using ngrok.
 
