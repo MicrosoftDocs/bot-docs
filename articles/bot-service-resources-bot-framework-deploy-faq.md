@@ -11,7 +11,7 @@ ms.date: 06/12/2020
 
 # Deployment Frequently Asked Questions
 
-This article contains answers to frequently asked questions about Azure bot deployment that is described in the [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0).
+This article contains answers to frequently asked questions about Azure bot deployment that is described in the [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0) article.
 
 ## Zip up the code directory
 
