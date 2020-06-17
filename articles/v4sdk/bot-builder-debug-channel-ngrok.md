@@ -93,7 +93,7 @@ While **ngrok** is running, login to your Azure portal and view your bot setting
 
 2. Scroll down to **Configuration**. Copy and paste the ngrok forwarding url in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
    
-    ![scaleout diagram](../media/debug-ngrok/messaging-endpoint.png)
+    ![messaging endpoint](../media/debug-ngrok/messaging-endpoint.png)
 
     Question: should I check **Enable Streaming Endpoint**? 
 
@@ -103,13 +103,16 @@ While **ngrok** is running, login to your Azure portal and view your bot setting
 
 At this point, incoming messages from to your bot from external channels will now be sent to your local bot. The sample bot we’ll use to demonstrate this is already configured live for **Microsoft Teams**. Read [Connect a bot to Microsoft Teams](https://docs.microsoft.com/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0) about connecting a local bot with **Microsoft Teams** channel.
 
-Question: How to connect a local bot to Microsoft Teams?
+![teams channel](../media/debug-ngrok/teams-channel.png)
 
+Locally, you can set breakpoints in Visual Studio. Expanding the text property from the incoming activity object, you will see that the message you sent the bot from teams is being intercepted locally for you to debug.
+
+![set breakpoints](../media/debug-ngrok/breakpoint.png)
+
+From here you can debug normally, and run your code step by step. You can use this to debug your bot from any channel.
+
+![debug continue](../media/debug-ngrok/debug-continue.png)
+
+## Additional information
 
 One of the key features available in Bot Framework is the ability to seamlessly connect your bot to multiple channels all from the same bot. You can read the [connect a bot to channels](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) article to learn more about currently supported channels and how to connect your bots to them. In this post, we’ll discuss how you can locally debug your bot from any channel your production bot is configured for, using ngrok.
-
-
-
-
-
-
