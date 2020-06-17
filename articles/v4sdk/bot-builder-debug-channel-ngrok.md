@@ -27,6 +27,12 @@ When your bot is already in production, the Bot Framework Emulator uses an insta
 * A subscription to [Microsoft Azure](https://azure.microsoft.com/).
 * Install [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
 * Install [ngrok](https://ngrok.com/).
+* A basic bot you developed in your local machine.
+
+## Create an Azure registration resource 
+
+
+
 
 ## Run ngrok
 
@@ -44,13 +50,17 @@ When your bot is already in production, the Bot Framework Emulator uses an insta
     > [!NOTE]
     > Please note that the port specified is the port your bot is running on. You may use any localhost port you'd like.
 
-3. When **ngrok** starts, copy and save the publish forwarding URL for later.
+3. When **ngrok** starts, copy and save the public forwarding URL for later. 
    
+   ![scaleout diagram](../media/debug-ngrok/ngrok-forwarding-url.png)
 
-4. d 
+## Configure in Azure portal
+
+While **ngrok** is running, login to your Azure portal and view your bot settings to do some configuration.
 
 
-## 
+
+## Test
 
 One of the key features available in Bot Framework is the ability to seamlessly connect your bot to multiple channels all from the same bot. You can read the [connect a bot to channels](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) article to learn more about currently supported channels and how to connect your bots to them. In this post, we’ll discuss how you can locally debug your bot from any channel your production bot is configured for, using ngrok.
 
