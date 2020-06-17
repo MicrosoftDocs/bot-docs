@@ -60,7 +60,7 @@ Read more in the [Azure CLI change log](https://github.com/MicrosoftDocs/azure-d
 
 ### What are the `az deployment` deprecated commands?
 
-The deprecated Azure CLI commands related to `az deployment` are the following:
+The following are the `az deployment` deprecated commands:
 
 1. `az deployment create/list/show/delete/validate/export/cancel` --> `az deployment sub create/list/show/delete/validate/export/cancel`
 2. `az deployment operation list/show` --> `az deployment operation sub list/show`
