@@ -43,25 +43,25 @@ ms.date: 06/15/2020
 
 ## Configuration
 
-- [Test in Web Chat](bot-service-troubleshoot-bot-configuration#test-in-web-chat)
-- [Bot does not work in Web Chat](bot-service-troubleshoot-bot-configuration#bot-does-not-work-in-web-chat)
-- [Bot works in Web Chat but not in other channels](bot-service-troubleshoot-bot-configuration#bot-works-in-web-chat-but-not-in-other-channels)
-    - [Channel configuration issues](bot-service-troubleshoot-bot-configuration#channel-configuration-issues)
-    - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration#channel-specific-behavior)
-    - [Channel outage](bot-service-troubleshoot-bot-configuration#channel-outage)
+- [Test in Web Chat](bot-service-troubleshoot-bot-configuration.md#test-in-web-chat)
+- [Bot does not work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
+- [Bot works in Web Chat but not in other channels](bot-service-troubleshoot-bot-configuration.md#bot-works-in-web-chat-but-not-in-other-channels)
+    - [Channel configuration issues](bot-service-troubleshoot-bot-configuration.md#channel-configuration-issues)
+    - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration.md#channel-specific-behavior)
+    - [Channel outage](bot-service-troubleshoot-bot-configuration.md#channel-outage)
 
 ## HTTP 500 Errors
 
-- [Enable Application Insights on ASP.Net](bot-service-troubleshoot-500-errors#enable-application-insights-on-aspnet)
-- [Enable Application Insights on Node.js](bot-service-troubleshoot-500-errors#enable-application-insights-on-nodejs)
-- [Query for exceptions](bot-service-troubleshoot-500-errors#query-for-exceptions)
-- [No Application Insights events](bot-service-troubleshoot-500-errors#no-application-insights-events)
+- [Enable Application Insights on ASP.Net](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-aspnet)
+- [Enable Application Insights on Node.js](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-nodejs)
+- [Query for exceptions](bot-service-troubleshoot-500-errors.md#query-for-exceptions)
+- [No Application Insights events](bot-service-troubleshoot-500-errors.md#no-application-insights-events)
 
 ## Authentication
 
-- [App ID and password](bot-service-troubleshoot-authentication-problems#app-id-and-password)
-- [Step 1: Disable security and test on localhost](bot-service-troubleshoot-authentication-problems#step-1-disable-security-and-test-on-localhost)
-- [Step 2: Verify your bot's app ID and password](bot-service-troubleshoot-authentication-problems#pr-en-us-2183#step-2)
-- [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problems#step-3-enable-security-and-test-on-localhost-)
-- [Step 4: Test your bot in the cloud](bot-service-troubleshoot-authentication-problems#step-4-test-your-bot-in-the-cloud-)
+- [App ID and password](bot-service-troubleshoot-authentication-problems.md#app-id-and-password)
+- [Step 1: Disable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-1-disable-security-and-test-on-localhost)
+- [Step 2: Verify your bot's app ID and password](bot-service-troubleshoot-authentication-problems.md#pr-en-us-2183#step-2)
+- [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
+- [Step 4: Test your bot in the cloud](bot-service-troubleshoot-authentication-problem.mds#step-4-test-your-bot-in-the-cloud-)
 
