@@ -24,10 +24,10 @@
 ## [HTTP 500 errors](../bot-service-troubleshoot-500-errors.md)
 ## [Authentication](../bot-service-troubleshoot-authentication-problems.md)
 <!-- Schemas -->
-# Schemas
-## [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
-## [Bot Framework Card schema](https://aka.ms/botSpecs-cardSchema)
-## [Bot Framework Transcript schema](https://aka.ms/botSpecs-transcripts)
+# Bot Framework schemas
+## [Activity schema](https://aka.ms/botSpecs-activitySchema)
+## [Card schema](https://aka.ms/botSpecs-cardSchema)
+## [Transcript schema](https://aka.ms/botSpecs-transcripts)
 <!-- VA -->
 # Virtual Assistant
 ## [Overview](../v4sdk/bot-builder-virtual-assistant-introduction.md)

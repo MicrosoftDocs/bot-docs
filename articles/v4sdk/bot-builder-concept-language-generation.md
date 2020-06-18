@@ -57,6 +57,7 @@ Make sure you include the language Generation library [`botbuilder-lg`][15]. The
 ```typescript
      let lgTemplates = Templates.parseFile(filePath, importResolver?);
 ```
+
 ---
 
 When you need template expansion, use `Evaluate` and pass in the relevant template name.
@@ -72,6 +73,7 @@ When you need template expansion, use `Evaluate` and pass in the relevant templa
 ```typescript
     let lgOutput = lgTemplates.evaluate("<TemplateName>", evalData)
 ```
+
 ---
 
 If your template needs specific properties to be passed for resolution/expansion, you can pass them when calling  `Evaluate`.
@@ -87,21 +89,22 @@ If your template needs specific properties to be passed for resolution/expansion
 ```typescript
     let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
+
 ---
 
 ## Multi-lingual generation and language fallback policy
 
-Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. See the [05.a.multi-turn-prompt-with-language-fallback sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/csharp_dotnetcore/05.a.multi-turn-prompt-with-language-fallback) for an example of how to add multiple languages, also known as language fallback, to your bot.
+Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. For an example of how to add multiple languages, also known as language fallback, to your bot, see the multi-turn prompt with language fallback sample in [C#](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample) or [JavaScript](https://aka.ms/js-lg-multi-turn-prompt-language-fallback-sample).
 
 <!--
-## Grammar check and correction 
+## Grammar check and correction
 The current library does not include any capabilities for grammar check or correction-->
 
 ## Expand API
 
 To get all possible expansions of a template, you can use `ExpandTemplate`.
-# [C#](#tab/csharp)
 
+# [C#](#tab/csharp)
 
 ```c#
     var results = lgTemplates.ExpandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
@@ -139,12 +142,14 @@ For example, given this LG content:
 ```
 
 The call `ExpandTemplate("FinalGreeting")` results in four evaluations:
+
 - **Hi Morning**
 - **Hi Evening**
-- **Hello Morning** 
+- **Hello Morning**
 - **Hello Evening**
 
 The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` with scope, results in two expansions:
+
 - **Hi Evening**
 - **Hello Evening**
 
