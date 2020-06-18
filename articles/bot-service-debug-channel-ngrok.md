@@ -90,7 +90,8 @@ While **ngrok** is running, login to your Azure portal and view your bot setting
 
 2. Scroll down to **Configuration**. Copy and paste the **ngrok** forwarding URL in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
    
-    ![messaging endpoint](./media/debug-ngrok/messaging-endpoint.png)
+    > [!div class="mx-imgBorder"]
+    > ![messaging endpoint](./media/debug-ngrok/messaging-endpoint.png)
 
 3. Scroll up and select **Save**.
 
