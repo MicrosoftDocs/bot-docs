@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 When your bot is in development, you can [debug and your bot locally using an IDE](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) such as Visual Studio or Visual Studio Code. You can also [debug a bot using the Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) by chatting with your bot locally and inspect the messages your bot sends and receives. You can even make slight updates of your bot's code and enable the feature to [debug a bot with inspection middleware](https://docs.microsoft.com/azure/bot-service/bot-service-debug-inspection-middleware?view=azure-bot-service-4.0).
 
-When your bot is already in production, you can debug your bot from any [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) using **ngrok**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. In this article, we will show how you can locally debug your bot from any channel your production bot is configured for, using **ngrok**.
+When your bot is already in production, you can debug your bot from any [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) using **ngrok**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. In this article, we will show how you can locally debug your bot from any channel your production bot is configured for, using **ngrok**. We used an [EchoBot](https://github.com/microsoft/botbuilder-java/tree/master/samples/02.echo-bot) sample connected to [Microsoft Teams Channel](https://docs.microsoft.com/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0) throughout the article for instruction. 
 
 <!-- the Bot Framework Emulator uses an instance of the [Web Chat control](https://github.com/Microsoft/BotFramework-WebChat), which is only used in DirectLine, or embedded into web sites using a standard or custom configuration. Popular third party channels such as Slack, Facebook Messenger, Kik, etc. all implement their own chat channel user interfaces. In this article, we’ll discuss how you can locally debug your bot from any channel your production bot is configured for, using [ngrok](https://ngrok.com/docs). -->
 
@@ -24,7 +24,7 @@ When your bot is already in production, you can debug your bot from any [channel
 
 * A subscription to [Microsoft Azure](https://azure.microsoft.com/).
 * Install [ngrok](https://ngrok.com/).
-* A basic bot connected to any [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0).
+* A [basic bot](https://github.com/microsoft/botbuilder-java/tree/master/samples/02.echo-bot) connected to any [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0).
 
 <!-- ## Create an Azure registration resource
 
@@ -63,7 +63,7 @@ For more information about creating a **Bot Channels Registration**, refer to th
 
 ## Run ngrok
 
-[**ngrok**](https://ngrok.com/docs) is a cross-platform application that "allows you to expose a web server running on your local machine to the internet." Essentially, what we’ll be doing is using **ngrok** to forward messages from external channels on the web directly to our local machine to allow debugging, as opposed to the standard messaging endpoint configured in the Azure portal.
+[**Ngrok**](https://ngrok.com/docs) is a cross-platform application that "allows you to expose a web server running on your local machine to the internet." Essentially, what we’ll be doing is using **ngrok** to forward messages from external channels on the web directly to our local machine to allow debugging, as opposed to the standard messaging endpoint configured in the Azure portal.
 
 1. Open a terminal and navigate to the folder where your **ngrok** executable is.
 
@@ -88,7 +88,7 @@ While **ngrok** is running, login to your Azure portal and view your bot setting
 
 1. Select your **Bot Channels Registration** connected to your local bot.
 
-2. Scroll down to **Configuration**. Copy and paste the **ngrok** forwarding url in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
+2. Scroll down to **Configuration**. Copy and paste the **ngrok** forwarding URL in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
    
     ![messaging endpoint](./media/debug-ngrok/messaging-endpoint.png)
 
