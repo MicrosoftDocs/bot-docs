@@ -46,7 +46,7 @@ landingContent:
             url: https://docs.microsoft.com/azure/bot-service/python/bot-builder-python-quickstart
           - text: Create a bot using Azure Bot Service
             url: https://docs.microsoft.com/azure/bot-service/abs-quickstart
-  
+
   # Card
   - title: Step-by-Step Tutorials
     linkLists:
@@ -56,7 +56,7 @@ landingContent:
             url: https://docs.microsoft.com/bot-framework/bot-builder-tutorial-basic-deploy
           - text: Add QnA Maker and redeploy a bot
             url: https://docs.microsoft.com/bot-framework/bot-builder-tutorial-add-qna
-  
+
   # Card
   - title: Languages
     linkLists:
@@ -68,3 +68,53 @@ landingContent:
             url: https://docs.microsoft.com/javascript/api/botbuilder
           - text: Python
             url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
+  # Card
+  - title: Need Help?
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: FAQ
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq
+          - text: Get Support
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help
+          - text: Samples
+            url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
+
+  # Card
+  - title: Bot Framework Composer
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Composer
+            url: https://docs.microsoft.com/composer/
+            
+  # Card
+  - title: Microsoft Teams bots
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: How Microsoft Teams bots work
+            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams
+          - text: Connect a bot to Microsoft Teams
+            url: https://docs.microsoft.com/azure/bot-service/channel-connect-teams
+  # Card
+  - title: Deployment
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Deploy a bot to Azure
+            url: https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli
+          - text: Continuous deployment
+            url: https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli
+
+  # Card
+  - title: Authentication
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Bot authentication
+            url: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-authentication
+          - text: Add authentication to a bot
+            url: https://docs.microsoft.com/azure/bot-service/bot-builder-authentication
+          - text: Troubleshoot authentication
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-authentication-problems
