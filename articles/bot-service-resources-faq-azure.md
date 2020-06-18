@@ -9,6 +9,8 @@ ms.service: bot-service
 ms.date: 06/08/2020
 ---
 
+<!-- Replaced old article -->
+
 # Bot Framework FAQ index
 
 > [!NOTE]
