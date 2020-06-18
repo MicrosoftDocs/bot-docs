@@ -172,7 +172,7 @@ Next, test your bot on localhost by using the Bot Framework Emulator.
     - Click **Connect**.
 4. To test connectivity to your bot, type some text into the emulator and press Enter.
 
-If the bot responds to the input and there are no errors in the chat window, you have verified that your bot is accessible and functional on localhost when security is enabled.  Proceed to [Step 4](#step-test-your-bot-in-the-cloud).
+If the bot responds to the input and there are no errors in the chat window, you have verified that your bot is accessible and functional on localhost when security is enabled.  Proceed to [Step 4](#step-4-test-your-bot-in-the-cloud).
 
 If one or more error(s) are indicated in the chat window, click the error(s) for details. Common issues include:
 
