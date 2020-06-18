@@ -172,7 +172,7 @@ Next, test your bot on localhost by using the Bot Framework Emulator.
     - Click **Connect**.
 4. To test connectivity to your bot, type some text into the emulator and press Enter.
 
-If the bot responds to the input and there are no errors in the chat window, you have verified that your bot is accessible and functional on localhost when security is enabled.  Proceed to [Step 4](#step-4).
+If the bot responds to the input and there are no errors in the chat window, you have verified that your bot is accessible and functional on localhost when security is enabled.  Proceed to [Step 4](#step-test-your-bot-in-the-cloud).
 
 If one or more error(s) are indicated in the chat window, click the error(s) for details. Common issues include:
 
@@ -181,7 +181,7 @@ If one or more error(s) are indicated in the chat window, click the error(s) for
 * In the emulator settings, the **Microsoft App ID** field and/or the **Microsoft App Password** do not contain valid values. Both fields should be populated and each field should contain the corresponding value that you verified in [Step 2](#step-2).
 * Security has not been enabled for the bot. [Verify](#enable-security-localhost) that the bot configuration settings specify values for both app ID and password.
 
-## Step 4: Test your bot in the cloud <a id="step-4"></a>
+## Step 4: Test your bot in the cloud
 
 At this point, you have verified that your bot is accessible and functional on localhost when security is disabled, confirmed that your bot's app ID and password are valid, and verified that your bot is accessible and functional on localhost when security is enabled. In this step, you will deploy your bot to the cloud and verify that it is accessible and functional there with security enabled.
 
