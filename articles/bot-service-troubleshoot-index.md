@@ -14,7 +14,6 @@ ms.date: 06/15/2020
 > [!NOTE]
 > Questions can be posted at [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. New users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
 
-
 ## Troubleshoot general
 
 - [How can I troubleshoot issues with my bot?](bot-service-troubleshoot-general-problems.md#how-can-i-troubleshoot-issues-with-my-bot)
@@ -39,8 +38,6 @@ ms.date: 06/15/2020
 - [Why can't I migrate my bot?](bot-service-troubleshoot-general-problems.md#why-cant-i-migrate-my-bot)
 - [Where can I get more help?](bot-service-troubleshoot-general-problems.md#where-can-i-get-more-help)
 
-
-
 ## Configuration
 
 - [Test in Web Chat](bot-service-troubleshoot-bot-configuration.md#test-in-web-chat)
@@ -63,4 +60,4 @@ ms.date: 06/15/2020
 - [Step 1: Disable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-1-disable-security-and-test-on-localhost)
 - [Step 2: Verify your bot's app ID and password](bot-service-troubleshoot-authentication-problems.md#step-2)
 - [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
-- [Step 4: Test your bot in the cloud](bot-service-troubleshoot-authentication-problem.mds#step-4-test-your-bot-in-the-cloud)
+- [Step 4: Test your bot in the cloud](bot-service-troubleshoot-authentication-problem.mds#step-4-test-your-bot-in-the-cloud-)
