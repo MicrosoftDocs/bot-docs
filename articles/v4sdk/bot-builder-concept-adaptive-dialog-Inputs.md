@@ -15,7 +15,7 @@ ms.date: 04/27/2020
 The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
 
 > [!IMPORTANT]
-> Actions (_trigger actions_) are dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the bot framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
+> Actions (_trigger actions_) are dialogs, and as such have all of the power and flexibility you need to create a fully functional and robust conversation flow. While the actions included in the Bot Framework SDK are extensive, you can also create your own custom actions to perform virtually any specialized task or process you need.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 * A familiarity with [Adaptive expressions][10].
 
 > [!TIP]
-> This syntax defined in the [Language Generation templates][9], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the bot framework SDK.
+> This syntax defined in the [Language Generation templates][9], which includes [Adaptive expressions][10], is used in the `ActivityTemplate` object that is required for several parameters that are used in most of the input actions provided in the Bot Framework SDK.
 
 ## Inputs
 
@@ -60,7 +60,7 @@ The adaptive dialogs library defines the following input types:
 
 ### InputDialog
 
-The input classes provided by the bot framework SDK all derive from the base _input dialog_, which derives from the _dialog_ class. All input dialogs have these common properties:
+The input classes provided by the Bot Framework SDK all derive from the base _input dialog_, which derives from the _dialog_ class. All input dialogs have these common properties:
 
 #### AllowInterruptions
 
@@ -325,7 +325,7 @@ The `ChoiceInput` action inherits all of the properties defined in [InputDialog]
     4. `List`: Add choices to prompt as a numbered list.
     5. `SuggestedAction`: Add choices to prompt as suggested actions.
     6. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
-6. `RecognizerOptions`: FindChoicesOptions or expression which evaluates to FindChoicesOptions. The FindChoicesOptions has these properties:
+6. `RecognizerOptions`: `FindChoicesOptions` or expression which evaluates to `FindChoicesOptions`. The `FindChoicesOptions` has these properties:
     1. `NoValue`: A Boolean value. `true` to search over each choice's _value_ property; otherwise, `false`. The default is `false`.
     2. `NoAction`: A Boolean value. `true` to search over the title of each choice's _action_ property; otherwise, `false`. The default is `false`.
     3. `RecognizeNumbers`: A Boolean value. `true` to allow the input fall-back on using a number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
@@ -404,7 +404,7 @@ Use to request an attachment from user as input.
 
 The `AttachmentInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines this additional property:
 
-- `OutputFormat`: The AttachmentOutputFormat or an expression which evaluates to an AttachmentOutputFormat. Valid `AttachmentOutputFormat` values are:
+- `OutputFormat`: The `AttachmentOutputFormat` or an expression which evaluates to an `AttachmentOutputFormat`. Valid `AttachmentOutputFormat` values are:
     1. `All`: return all attachments as a List.
     2. `First`: return only the first attachment.
 
@@ -485,7 +485,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 #### Additional information related to OAuth
 
-The following links provide generalized information on the topic of authentication in the Microsoft bot framework. This information is not tailored or specific to adaptive dialogs.
+The following links provide generalized information on the topic of authentication in the Microsoft Bot Framework SDK. This information is not tailored or specific to adaptive dialogs.
 
 * [Bot authentication][5]
 * [Add authentication to a bot][6]
