@@ -15,7 +15,7 @@
 ## [Ecosystem](../bot-service-resources-faq-ecosystem.md)
 ## [Security](../bot-service-resources-faq-security.md)
 ## [Azure](../bot-service-resources-faq-azure.md)
-## [FAQ old to replace](../bot-service-resources-bot-framework-faq.md)
+## [FAQ Index 2](../bot-service-resources-bot-framework-faq.md)
 <!-- Troubleshoot -->
 # Troubleshoot
 ## [Index](../bot-service-troubleshoot-index.md)
