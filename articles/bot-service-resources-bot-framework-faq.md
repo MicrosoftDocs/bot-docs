@@ -61,7 +61,7 @@ ms.date: 06/08/2020
 
 ## Azure
 
-- [I need to manually create my App Registration. How do I create my own App Registration?](bot-service-resources-faq-azure.md#i-need-to-manually-create-my-app-registration-how-do-i-create-my-own-app-registration)
+- [How do I create my own App Registration?](bot-service-resources-faq-azure.md#how-do-i-create-my-own-app-registration)
 - [What files do I need to zip up for deployment?](bot-service-resources-faq-azure.md#what-files-do-i-need-to-zip-up-for-deployment)
 - [What version of Azure CLI should I use to deploy a bot?](bot-service-resources-faq-azure.md#what-version-of-azure-cli-should-i-use-to-deploy-a-bot)
 - [What should I do when getting Azure CLI deployment deprecation errors?](bot-service-resources-faq-azure.md#what-should-i-do-when-getting-azure-cli-deployment-deprecation-errors)

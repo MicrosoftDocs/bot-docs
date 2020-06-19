@@ -70,7 +70,7 @@ A manual registration is necessary for situations like:
 - You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
 - You need to manually create your own app ID (and password).
 
-See [FAQ - App Registration](../bot-service-resources-bot-framework-faq.md#i-need-to-manually-create-my-app-registration-how-do-i-create-my-own-app-registration).
+See [FAQ - App Registration](../bot-service-resources-bot-framework-faq.md#how-do-i-create-my-own-app-registration).
 
 
 ## Download code

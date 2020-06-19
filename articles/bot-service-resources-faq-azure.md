@@ -11,7 +11,7 @@ ms.date: 06/08/2020
 
 # Azure
 
-## I need to manually create my App Registration. How do I create my own App Registration?
+## How do I create my own App Registration?
 
 Creating your own App Registration will be necessary for situations like the following:
 
@@ -68,7 +68,7 @@ You must manually create a zip archive with all the files in the project, as des
 Please, make sure that you select all the files and folders in your bot's project folder. Then, while still in the project folder, zip up all the selected files and folders as shown in the picture below.
 
 > [!div class="mx-imgBorder"]
-> ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
+> ![select all and zip](./media/faq/select-all-zip.png)
 
 ## What Azure CLI version should I use to deploy a bot?
 
