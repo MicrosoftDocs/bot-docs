@@ -8,7 +8,29 @@ uses docXML
 
 ## JavaScript/TypeScript
 
-uses a mix of TypeDoc and jsdoc
+- [Syntax](#syntax)
+- [Tips and Tricks](#tips-and-tricks)
+
+
+The following recommendations are for developers and writers working on JavaScript/TypeScript reference comment content.
+
+### Syntax
+
+Use a combination of [TypeDoc](http://typedoc.org/guides/doccomments/) and [JsDoc](https://jsdoc.app/) syntax.
+
+
+
+### Tips and Tricks
+
+#### Invalid link example
+
+Invalid link warning: `<a href=""#add"">add()</a>`. The file `docs-ref-autogen/botbuilder-dialogs/DialogSet.yml` doesn't contain a bookmark named `add`.
+
+Replace the link to the `<a href=""#add"">add()</a>` with
+`[add()](xref:botbuilder-dialogs.DialogSet.add)`
+
+
+
 
 ## Python
 
