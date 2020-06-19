@@ -12,17 +12,77 @@ uses a mix of TypeDoc and jsdoc
 
 ## Python
 
-uses Sphinx
+\<include a mini toc>
 
-Here are recommendations for developers and writers working on Python reference comment content:
+Here are recommendations for developers and writers working on Python reference comment content.
 
-- Follow the syntax in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api).
-  Failing to do so will possibly result in malformed code comments.
-- When linking to methods, do not add () to the end of function names. Function names should be documented in the form:
-- Do not add `:param _x_:` without adding a `:type _x_:`
-- Do not add a list of `:param _x_:`, `:type _x_`:, `:return:`, or `:rtype:` blocks without descriptions. This will result in malformed method/class summaries.
+Follow the Sphinx syntax in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Failing to do so will possibly result in malformed code comments.
 
-Here's an example:
+### To reference functions
+
+To reference `sys.exc_info()`:
+~~~python
+    :param trace: the traceback information as returned by :func:`sys.exc_info`.
+~~~
+
+### To reference types
+
+#### To reference built-in types
+
+#### To reference SDK-defined types
+
+When referencing a type in the same package, you can leave off the package name:
+~~~python
+    :param storage: The storage layer this state management object will use to store and retrieve state
+    :type storage:  :class:`Storage`
+~~~
+
+When referencing a type in a different package, you need to include the package name:
+~~~python
+    :param storage: The storage layer this state management object will use to store and retrieve state
+    :type storage:  :class:`botbuilder.core.Storage`
+~~~
+
+### Common errors
+
+#### When linking to methods, do not add () to the end of function names within the `:func:` tag.
+
+**good**
+~~~python
+    :param start_time: the start time of the request. The value should look the
+    same as the one returned by :func:`datetime.isoformat` (defaults to: None)
+~~~
+
+**bad**
+~~~python
+    :param start_time: the start time of the request. The value should look the
+    same as the one returned by :func:`datetime.isoformat()` (defaults to: None)
+~~~
+
+#### Do not add `:param x:` without adding a `:type x:`
+
+**good**
+~~~python
+    :param name: The name for this request. All requests with the same name will be grouped together.
+    :type name: str
+    :param url: The actual URL for this request (to show in individual request instances).
+    :type url: str
+~~~
+**bad**
+~~~python
+    :param name: The name for this request. All requests with the same name will be grouped together.
+    :param url: The actual URL for this request (to show in individual request instances).
+~~~
+
+#### Do not add a list of `:param x:`, `:type x`:, `:return:`, or `:rtype:` blocks without descriptions.
+
+  This will result in malformed method/class summaries.
+
+### Samples
+
+See the OPS Onboarding Guide's **How to document a Python API** for a good sample of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master#fully-formatted-code-file).
+
+Here are a few more examples:
 
 ~~~python
 class BotState(PropertyManager):
