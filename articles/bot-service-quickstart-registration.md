@@ -15,7 +15,7 @@ This topic shows you how to create an **Azure Bot Service** resource to register
 
 This allows you to build, connect, and manage your bot to interact with users, wherever they are, via Cortana,  Messenger and many other services.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > You only need to register your bot if it is not hosted in Azure. If you [created a bot](v4sdk/abs-quickstart.md) through the Azure portal then it is already registered with the service.
 
 ## Create a registration resource
@@ -29,7 +29,7 @@ This allows you to build, connect, and manage your bot to interact with users, w
 1. In the right pane selection box enter *bot*. And in the drop-down list, select **Bot Channels Registration** or **Web App Bot** depending on your application.
 For the **Web Bot App**, follow the steps described in the article: [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md). You will create a bot in Azure that is automatically registered with the Azure Bot Service.
 1. Click the **Create** button to start the process.
-1. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  
+1. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.
 
    ![Create registration bot blade](media/azure-bot-quickstarts/registration-create-bot-service-blade.png)
 
@@ -79,7 +79,7 @@ A manual registration is necessary for situations like:
 - You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
 - You need to manually create your own app ID (and password).
 
-See [FAQ - App Registration](bot-service-resources-bot-framework-faq.md#app-registration).
+See [FAQ - App Registration](bot-service-resources-bot-framework-faq.md#i-need-to-manually-create-my-app-registration-how-do-i-create-my-own-app-registration).
 
 > [!IMPORTANT]
 > In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).

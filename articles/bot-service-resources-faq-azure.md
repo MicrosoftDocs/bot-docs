@@ -9,6 +9,8 @@ ms.service: bot-service
 ms.date: 06/08/2020
 ---
 
+# Azure
+
 ## I need to manually create my App Registration. How do I create my own App Registration?
 
 Creating your own App Registration will be necessary for situations like the following:
@@ -101,7 +103,7 @@ The following are the `az deployment` deprecated commands:
 
 To know whether Azure CLI commands are deprecated or not, you can add `-h` after the executed command to check. For example, if you have a newer version of Azure CLI but execute a deprecated command (with `-h`) such as `az deployment create -h`, you will see a prompt message such as "This command has been deprecated and will be removed in a future release. Use 'deployment sub create' instead."
 
-![cli help](./media/deploy-bot-cli/cli-help.png)
+![cli help](./media/faq/cli-help.png)
 
 ### Azure CLI Change Log
 

@@ -9,8 +9,6 @@ ms.service: bot-service
 ms.date: 06/08/2020
 ---
 
-<!-- Replaced old article -->
-
 # Bot Framework FAQ index
 
 > [!NOTE]
@@ -67,5 +65,5 @@ ms.date: 06/08/2020
 - [What files do I need to zip up for deployment?](bot-service-resources-faq-azure.md#what-files-do-i-need-to-zip-up-for-deployment)
 - [What version of Azure CLI should I use to deploy a bot?](bot-service-resources-faq-azure.md#what-version-of-azure-cli-should-i-use-to-deploy-a-bot)
 - [What should I do when getting Azure CLI deployment deprecation errors?](bot-service-resources-faq-azure.md#what-should-i-do-when-getting-azure-cli-deployment-deprecation-errors)
-- [What are the CLI deprecated commands related to az deployment?](bot-service-resources-faq-azure.md#what-are-the-cli-deprecated-commands-related-to-az-deployment)
-- [How do I know whether the Azure CLI commands are deprecated](bot-service-resources-faq-azure.md#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
+- [What are the CLI deprecated commands related to az deployment?](bot-service-resources-faq-azure.md#what-are-the-cli-deployment-deprecated-commands-related-to-az-deployment)
+- [How do I know whether the Azure CLI commands are deprecated?](bot-service-resources-faq-azure.md#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
