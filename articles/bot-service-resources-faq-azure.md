@@ -60,6 +60,7 @@ If you're making your bot in the Azure portal, you need to generate a secret for
 [Support]: bot-service-resources-links-help.md
 [WebChat]: bot-service-channel-connect-webchat.md
 
+<!-- Deployment is in a different article.
 
 ## What files do I need to zip up for deployment?
 
@@ -121,3 +122,4 @@ The following is a consolidated list of the commands that fit the current Azure 
 * Add `ad deployment tenant` and `az deployment operation tenant` for template deployment at tenant scope
 * az policy assignment create: Add a description to the `--location` parameter
 * `az group deployment create`: Add parameter `--aux-tenants` to support cross tenants.
+-->
