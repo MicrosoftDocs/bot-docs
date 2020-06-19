@@ -1,6 +1,6 @@
 ---
-title: Bot Framework Frequently Asked Questions Index - Bot Service
-description: Frequently Asked Questions Bot Framework Index.
+title: Bot Framework Frequently Asked Questions Azure - Bot Service
+description: Frequently Asked Questions Bot Framework Azure.
 author: kamrani
 ms.author: kamrani
 manager: kamrani
@@ -9,63 +9,113 @@ ms.service: bot-service
 ms.date: 06/08/2020
 ---
 
-<!-- Replaced old article -->
+## I need to manually create my App Registration. How do I create my own App Registration?
 
-# Bot Framework FAQ index
+Creating your own App Registration will be necessary for situations like the following:
 
-> [!NOTE]
-> Questions can be posted at [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. New users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+- You created your bot in the Bot Framework portal (such as https://dev.botframework.com/bots/new)
+- You are unable to make app registrations in your organization and need another party to create the App ID for the bot you're building
+- You otherwise need to manually create your own App ID (and password)
 
-## Background and availability
+To create your own App ID, follow the steps below.
 
-- [Why did Microsoft develop the Bot Framework?](bot-service-resources-faq-availability.md#why-did-microsoft-develop-the-bot-framework)
-- [What is the v4 SDK?](bot-service-resources-faq-availability.md#what-is-the-v4-sdk)
-- [How to run a bot offline?](bot-service-resources-faq-availability.md#how-to-run-a-bot-offline)
-- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
-- [How can I migrate Azure Bot Service from one region to another?](bot-service-resources-faq-availability.md#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
+1. Sign into your [Azure account](https://portal.azure.com). If you don't have an Azure account, you can [sign up for a free account](https://azure.microsoft.com/free/).
+2. Go to [the app registrations blade](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **New registration** in the action bar at the top.
 
-## Bot Framework general
+    ![new registration](media/app-registration/new-registration.png)
 
-- [Why doesn't the Typing activity do anything?](bot-service-resources-faq-general.md#why-doesnt-the-typing-activity-do-anything)
-- [What is the difference between the Connector library and Builder library in the SDK?](bot-service-resources-faq-general.md#what-is-the-difference-between-the-connector-library-and-builder-library-in-the-sdk)
-- [How do user messages relate to HTTPS method calls?](bot-service-resources-faq-general.md#how-do-user-messages-relate-to-https-method-calls)
-- [How can I intercept all messages between the user and my bot?](bot-service-resources-faq-general.md#how-can-i-intercept-all-messages-between-the-user-and-my-bot)
-- [What is the IDialogStack.Forward method in the Bot Framework SDK for .NET?](bot-service-resources-faq-general.md#what-is-the-idialogstackforward-method-in-the-bot-framework-sdk-for-net)
-- [What is the difference between "proactive" and "reactive"?](bot-service-resources-faq-general.md#what-is-the-difference-between-proactive-and-reactive)
-- [How can I send proactive messages to the user?](bot-service-resources-faq-general.md#how-can-i-send-proactive-messages-to-the-user)
-- [How can I reference non-serializable services from my C# dialogs in SDK v3?](bot-service-resources-faq-general.md#how-can-i-reference-non-serializable-services-from-my-c-dialogs-in-sdk-v3)
-- [What is an ETag? How does it relate to bot data bag storage?](bot-service-resources-faq-general.md#what-is-an-etag--how-does-it-relate-to-bot-data-bag-storage)
-- [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
-- [What are some community-authored templates?](bot-service-resources-faq-general.md#what-are-some-community-authored-templates)
+3. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
-## Ecosystem
+    > [!IMPORTANT]
+    > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
 
-- [When will you add more conversation experiences to the Bot Framework?](bot-service-resources-faq-ecosystem.md#when-will-you-add-more-conversation-experiences-to-the-bot-framework)
-- [I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?](bot-service-resources-faq-ecosystem.md#i-have-a-communication-channel-id-like-to-be-configurable-with-bot-framework-can-i-work-with-microsoft-to-do-that)
-- [If I want to create a bot for Microsoft Teams, what tools and services should I use?](bot-service-resources-faq-ecosystem.md#if-i-want-to-create-a-bot-for-microsoft-teams-what-tools-and-services-should-i-use)
-- [How do I create a bot that uses the US Government data center?](bot-service-resources-faq-ecosystem.md#how-do-i-create-a-bot-that-uses-the-us-government-data-center)
-- [What is the Direct Line channel?](bot-service-resources-faq-ecosystem.md#what-is-the-direct-line-channel)
-- [How does the Bot Framework relate to Cognitive Services?](bot-service-resources-faq-ecosystem.md#how-does-the-bot-framework-relate-to-cognitive-services)
-- [What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?](bot-service-resources-faq-ecosystem.md#what-are-the-possible-machine-readable-resolutions-of-the-luis-built-in-date-time-duration-and-set-entities)
-- [How can I use more than the maximum number of LUIS intents?](bot-service-resources-faq-ecosystem.md#how-can-i-use-more-than-the-maximum-number-of-luis-intents)
-- [How can I use more than one LUIS model?](bot-service-resources-faq-ecosystem.md#how-can-i-use-more-than-one-luis-model)
-- [Where can I get more help on LUIS?](bot-service-resources-faq-ecosystem.md#where-can-i-get-more-help-on-luis)
+    ![registration details](media/app-registration/registration-details.png)
 
-## Security and Privacy
+4. Click **Register**
 
-- [Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?](bot-service-resources-faq-security.md#do-the-bots-registered-with-the-bot-framework-collect-personal-information-if-yes-how-can-i-be-sure-the-data-is-safe-and-secure-what-about-privacy)
-- [Can I host my bot on my own servers?](bot-service-resources-faq-security.md#can-i-host-my-bot-on-my-own-servers)
-- [How do you ban or remove bots from the service?](bot-service-resources-faq-security.md#how-do-you-ban-or-remove-bots-from-the-service)
-- [Which specific URLs do I need to whitelist in my corporate firewall to access Bot Framework services?](bot-service-resources-faq-security.md#which-specific-urls-do-i-need-to-whitelist-in-my-corporate-firewall-to-access-bot-framework-services)
-- [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
-- [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)
-- [What keeps my bot secure from clients impersonating the Bot Framework Service?](bot-service-resources-faq-security.md#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)
+    After a few moments, the newly created app registration should open a blade. Copy the *Application (client) ID* in the Overview blade and paste it in to the App ID field.
 
-## Azure
+    ![application id](media/app-registration/app-id.png)
 
-- [I need to manually create my App Registration. How do I create my own App Registration?](bot-service-resources-faq-azure.md#i-need-to-manually-create-my-app-registration-how-do-i-create-my-own-app-registration)
-- [What files do I need to zip up for deployment?](bot-service-resources-faq-azure.md#what-files-do-i-need-to-zip-up-for-deployment)
-- [What version of Azure CLI should I use to deploy a bot?](bot-service-resources-faq-azure.md#what-version-of-azure-cli-should-i-use-to-deploy-a-bot)
-- [What should I do when getting Azure CLI deployment deprecation errors?](bot-service-resources-faq-azure.md#what-should-i-do-when-getting-azure-cli-deployment-deprecation-errors)
-- [What are the CLI deprecated commands related to az deployment?](bot-service-resources-faq-azure.md#what-are-the-cli-deprecated-commands-related-to-az-deployment)
-- [How do I know whether the Azure CLI commands are deprecated](bot-service-resources-faq-azure.md#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
+If you're creating your bot through the Bot Framework portal, then you're done setting up your app registration; the secret will be generated automatically.
+
+If you're making your bot in the Azure portal, you need to generate a secret for your app registration.
+
+1. Click on **Certificates & secrets** in the left navigation column of your app registration's blade.
+2. In that blade, click the **New client secret** button. In the dialog that pops up, enter an optional description for the secret and select **Never** from the Expires radio button group.
+
+    ![new secret](media/app-registration/new-secret.png)
+
+3. Copy your secret's value from the table under *Client secrets* and paste it into the *Password* field for your application, and click **OK** at the bottom of that blade. Then, proceed with the bot creation.
+
+    > [!NOTE]
+    > The secret will only be visible while on this blade, and you won't be able to retreive it after you leave that page. Be sure to copy it somewhere safe.
+
+    ![new app id](media/app-registration/create-app-id.png)
+
+
+[DirectLineAPI]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts
+[Support]: bot-service-resources-links-help.md
+[WebChat]: bot-service-channel-connect-webchat.md
+
+
+## What files do I need to zip up for deployment?
+
+You must manually create a zip archive with all the files in the project, as described in the step: [zip up the code directory manually step](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually).
+
+Please, make sure that you select all the files and folders in your bot's project folder. Then, while still in the project folder, zip up all the selected files and folders as shown in the picture below.
+
+> [!div class="mx-imgBorder"]
+> ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
+
+## What Azure CLI version should I use to deploy a bot?
+
+It is recommended that you use the most latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) to complete the deployment process. If you are using older versions of Azure CLI, you will get deprecation errors in the process.
+
+## What should I do when getting Azure CLI deployment deprecation errors?
+
+You should upgrade to the most latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). For Azure CLI version [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020) or later, users should use `az deployment sub create` and `az deployment group create` instead of using `az deployment create` and `az group deployment create` respectively.
+
+### Change log of the Azure CLI commands used to deploy a bot to Azure
+
+|Azure ClI version | Command1 | Command 2|
+|-------|-------|-------|
+|Azure CLI 2.2.0 and later versions | `az deployment group create` | `az deployment sub create` |
+|Azure CLI 2.1.0 and earlier versions | `az group deployment create` | `az deployment create` |
+
+Read more in the [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
+
+## What are the CLI deployment deprecated commands related to `az deployment`?
+
+The following are the `az deployment` deprecated commands:
+
+> [!div class="mx-tdBreakAll"]
+> |Deprecated|Replaced By|
+> |-------------|----------|
+> |`az deployment <create/list show/delete/validate/export/cancel>`|`az deployment **sub** <create/list/show/delete/validate/export/cancel>`|
+>| `az deployment operation <list/show>` |`az deployment operation **sub** <list/show>`|
+>| `az group deployment <create/list/show/delete/validate/export/cancel>` | `az deployment **group** <create/list/show/delete/validate/export/cancel>` |
+> |`az group deployment operation <list/show>` |`az deployment operation **group** < list/show>` |
+
+## How do I know whether the Azure CLI commands are deprecated?
+
+To know whether Azure CLI commands are deprecated or not, you can add `-h` after the executed command to check. For example, if you have a newer version of Azure CLI but execute a deprecated command (with `-h`) such as `az deployment create -h`, you will see a prompt message such as "This command has been deprecated and will be removed in a future release. Use 'deployment sub create' instead."
+
+![cli help](./media/deploy-bot-cli/cli-help.png)
+
+### Azure CLI Change Log
+
+Read more about [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
+
+### Azure Resource Management (ARM)
+
+The following is a consolidated list of the commands that fit the current Azure CLI design: `az {command group} {?sub-command-group} {operation} {parameters}`.
+
+* `az resource`: Improve the examples of the resource module
+* `az policy assignment list`: Support listing policy assignments at Management Group scope
+* Add `az deployment group` and `az deploymnent operation group` for template deployment at resource groups. This is a duplicate of `az group deployment` and `az group deployment operation`.
+* Add `az deployment sub` and `az deployment operation sub` for template deployment at subscription scope. This is a duplicate of `az deployment` and `az deployment operation`.
+* Add `az deployment mg` and `az deployment operation mg` for template deployment at management groups
+* Add `ad deployment tenant` and `az deployment operation tenant` for template deployment at tenant scope
+* az policy assignment create: Add a description to the `--location` parameter
+* `az group deployment create`: Add parameter `--aux-tenants` to support cross tenants.
