@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/12/2020
+ms.date: 06/22/2020
 ---
 
 # Deployment Frequently Asked Questions
