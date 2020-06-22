@@ -1,6 +1,13 @@
 # Reference documentation guidance
 
-Contains guidance for the SDK team when adding reference documentation to the code.
+Guidance for the SDK team when adding reference documentation to the code.
+
+| Language | Markup language
+|:--|:--
+| [C#](#c) | docXML
+| [Java](#java) | javaDoc
+| [JavaScript/TypeScript](#javascripttypescript) | A mix of jsdoc and typeDoc
+| [Python](#python) | Sphinx
 
 Please add a spell check for code comments to the check-in process.
 
@@ -10,19 +17,21 @@ Please add a spell check for code comments to the check-in process.
 [recommended docXML tags]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
 
 The C# projects use docXML for reference documentation.
-The [C# docXML guide][] and [recommended docXML tags][] describe how to use C# /// (docXML) comments.
+See the **Microsoft docs** [C# docXML guide][] and [recommended docXML tags][] for detailed information on how to use C# docXML comments.
 
 See the public **Microsoft style guide** [reference documentation](https://docs.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
 
-### Markdown within docXML
+### Style guidance
 
-You can use Markdown within docXML.
-
-- Don't use Markdown headings in docXML.
+- In general, keep summaries to 1-3 sentences. Put any additional guidance in the remarks section.
+- Document exceptions thrown directly from the member.
+- Don't document exceptions thrown as a result of calling other members.
 
 ### Markup guidance
 
 Use `///`-style comments (and not `/** */`-style comments)  for docXML markup.
+
+You can use Markdown within docXML; however, don't use Markdown headings or image links in docXML.
 
 [c]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code-inline
 [code]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code
@@ -37,7 +46,7 @@ Use `///`-style comments (and not `/** */`-style comments)  for docXML markup.
 [seealso]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/seealso
 [typeparamref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/typeparamref
 
-| Task | Resolution
+| Task | Guidance
 | :-- | :--
 | Add a code sample | Use one or more docXML [`<code>`][code] tags within an [`<example>`][example] tag within the [`<remarks>`][remarks] section.
 | Clone the documentation from an interface or base class | Use the [`<inheritdoc>`][inheritdoc] tag.
@@ -49,12 +58,6 @@ Use `///`-style comments (and not `/** */`-style comments)  for docXML markup.
 | Reference a parameter | Use a docXML [`<paramref>`][paramref] tag.
 | Reference a generic type parameter | Use a docXML [`<typeparamref>`][typeparamref] tag.
 | Style text as code | Use docXML [`<c>`][c] tags or Markdown in-line code styling interchangeably.
-
-### Style guidance
-
-- In general, keep summaries to 1-3 sentences. Put any additional guidance in the remarks section.
-- Document exceptions thrown directly from the member.
-- Don't document exceptions thrown as a result of calling other members.
 
 ## JavaScript/TypeScript
 
