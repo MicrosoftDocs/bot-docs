@@ -8,28 +8,71 @@ uses docXML
 
 ## JavaScript/TypeScript
 
-- [Syntax](#syntax)
+- [JSDoc](#jsdoc)
+- [TypeDoc](#typedoc)
+- [JavaScript API Browser](#[javaScript-api-browser])
 - [Tips and Tricks](#tips-and-tricks)
 
 
 The following recommendations are for developers and writers working on JavaScript/TypeScript reference comment content.
 
-### Syntax
+### JSDoc
 
-Use a combination of [TypeDoc](http://typedoc.org/guides/doccomments/) and [JsDoc](https://jsdoc.app/) syntax.
+Standard **JSDoc** conventions apply for **JavaScript** documentation. You can read more about them here: [JsDoc](https://jsdoc.app/).
+
+### TypeDoc
+
+**TypeDoc** conventions apply to **TypeScript** documentation (please, read [platform breakdown](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/concepts/platforms)). You can read more about them here: [TypeDoc](http://typedoc.org/guides/doccomments/).
+
+### JavaScript API Browser
+
+All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
+
+## Reference SDK-defined types
+
+To link to auto-generated API reference pages in the current documentation set or other documentation sets, use XRef links with the **unique ID** (UID) of the type or member. The following is the syntax to create a link:
+
+```xml
+<xref:UID>
+<xref:UID?displayProperty=nameWithType>
+```
+
+> [!NOTE]
+> By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
+
+
+To find the UDI for the API to link to is on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side of the browser. The following picture shows an example, where the UDIs are in the red box:
+
+![JS UDIs](../media/js-udis.PNG)
+
+
+### Examples
+
+> [!div class="mx-tdBreakAll"]
+> |Type|Example|Link|Comments|
+> |------|-----|------|-----|
+> |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/en-us/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=master)|
+> |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)| |
 
 
 
-### Tips and Tricks
+## Tips and Tricks
 
-#### Invalid link example
+### Errors
+> [!div class="mx-tdBreakAll"]
+> |Error Type|Error Example|Error Message|Solution|
+> |-------------|----------|---------|---------|
+> |Invalid link warning|`<a href=""#add"">add()</a>`|The file `docs-ref-autogen/botbuilder-dialogs/DialogSet.yml` doesn't contain a bookmark named `add`.|Replace the link `<a href=""#add"">add()</a>` with `[add()](xref:botbuilder-dialogs.DialogSet.add)`.|
+> | Add snippet code in comment|
 
-Invalid link warning: `<a href=""#add"">add()</a>`. The file `docs-ref-autogen/botbuilder-dialogs/DialogSet.yml` doesn't contain a bookmark named `add`.
+#### Good practices
 
-Replace the link to the `<a href=""#add"">add()</a>` with
-`[add()](xref:botbuilder-dialogs.DialogSet.add)`
+- Add snippet code in comment example.
 
-
+    \```JavaScript <br/>
+    const { ConversationState, MemoryStorage } = require('botbuilder'); <br/>
+    \```
+- Tbd
 
 
 ## Python
