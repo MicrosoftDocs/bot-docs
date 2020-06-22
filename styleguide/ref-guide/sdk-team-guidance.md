@@ -2,9 +2,59 @@
 
 Contains guidance for the SDK team when adding reference documentation to the code.
 
+Please add a spell check for code comments to the check-in process.
+
 ## C\#
 
-uses docXML
+[C# docXML guide]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/
+[recommended docXML tags]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
+
+The C# projects use docXML for reference documentation.
+The [C# docXML guide][] and [recommended docXML tags][] describe how to use C# /// (docXML) comments.
+
+See the public **Microsoft style guide** [reference documentation](https://docs.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
+
+### Markdown within docXML
+
+You can use Markdown within docXML.
+
+- Don't use Markdown headings in docXML.
+
+### Markup guidance
+
+Use `///`-style comments (and not `/** */`-style comments)  for docXML markup.
+
+[c]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code-inline
+[code]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code
+[cref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute
+[example]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/example
+[exception]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/exception
+[inheritdoc]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/inheritdoc
+[list]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/list
+[paramref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/paramref
+[remarks]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks
+[see]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/see
+[seealso]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/seealso
+[typeparamref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/typeparamref
+
+| Task | Resolution
+| :-- | :--
+| Add a code sample | Use one or more docXML [`<code>`][code] tags within an [`<example>`][example] tag within the [`<remarks>`][remarks] section.
+| Clone the documentation from an interface or base class | Use the [`<inheritdoc>`][inheritdoc] tag.
+| Create a list | Use a docXML [`<list>`][list] tag or Markdown-style list interchangeably.
+| Create a table | Use Markdown to create a table.
+| Document an exception | Use a docXML [`<exception>`][exception] tag for each different type of exception thrown directly by the member.
+| Link to other members | Use a docXML [`<see>`][see] or [`<seealso>`][seealso] tag to link to another member. The tag's [cref attribute][cref] identifies the link target. Links to targets within the SDK (and many within Microsoft) will render as hyperlinks. All other see- and seealso-links will render as plain text.
+| Link to other targets | Use Markdown links.
+| Reference a parameter | Use a docXML [`<paramref>`][paramref] tag.
+| Reference a generic type parameter | Use a docXML [`<typeparamref>`][typeparamref] tag.
+| Style text as code | Use docXML [`<c>`][c] tags or Markdown in-line code styling interchangeably.
+
+### Style guidance
+
+- In general, keep summaries to 1-3 sentences. Put any additional guidance in the remarks section.
+- Document exceptions thrown directly from the member.
+- Don't document exceptions thrown as a result of calling other members.
 
 ## JavaScript/TypeScript
 

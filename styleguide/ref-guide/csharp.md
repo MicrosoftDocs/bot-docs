@@ -9,7 +9,7 @@ In this article:
 
 ## Repos
 
-These repos are part of the JavaScript reference doc pipeline.
+These repos are part of the C# reference doc pipeline.
 
 | Repo | Role |
 | :--- | :--- |
