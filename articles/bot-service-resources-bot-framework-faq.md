@@ -62,10 +62,11 @@ ms.date: 06/08/2020
 ## Azure
 
 - [How do I create my own App Registration?](bot-service-resources-faq-azure.md#how-do-i-create-my-own-app-registration)
-<!-- Deployment is in a different article.
-- [What files do I need to zip up for deployment?](bot-service-resources-faq-azure.md#what-files-do-i-need-to-zip-up-for-deployment)
-- [What version of Azure CLI should I use to deploy a bot?](bot-service-resources-faq-azure.md#what-azure-cli-version-should-i-use-to-deploy-a-bot)
-- [What should I do when getting Azure CLI deployment deprecation errors?](bot-service-resources-faq-azure.md#what-should-i-do-when-getting-azure-cli-deployment-deprecation-errors)
-- [What are the CLI deprecated commands related to az deployment?](bot-service-resources-faq-azure.md#what-are-the-cli-deployment-deprecated-commands-related-to-az-deployment)
-- [How do I know whether the Azure CLI commands are deprecated?](bot-service-resources-faq-azure.md#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
--->
+
+## Deploy a bot
+
+- [What files do I need to zip up for deployment?](bot-service-resources-faq-deployment.md#what-files-do-i-need-to-zip-up-for-deployment)
+- [What version of Azure CLI should I use to deploy a bot?](bot-service-resources-faq-deployment.md#what-azure-cli-version-should-i-use-to-deploy-a-bot)
+- [What should I do when getting Azure CLI deployment deprecation errors?](bot-service-resources-faq-deployment.md#what-should-i-do-when-getting-azure-cli-deployment-deprecation-errors)
+- [What are the CLI deprecated commands related to az deployment?](bot-service-resources-faq-deployment.md#what-are-the-cli-deployment-deprecated-commands-related-to-az-deployment)
+- [How do I know whether the Azure CLI commands are deprecated?](bot-service-resources-faq-deployment.md#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
