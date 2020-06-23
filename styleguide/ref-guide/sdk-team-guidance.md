@@ -14,12 +14,13 @@ uses docXML
 - [TypeDoc](#typedoc)
 - [JavaScript API Browser](#[javascript-api-browser])
 - [Tags](#tags)
+
     - [@remarks](#remarks)
     - [@param](#param-name)
     - [@return](#return-name)
 
+- [Reference primitive types](#reference-primitive-types)
 - [Reference SDK-defined types](#reference-sdk-defined-types)
-
 
 
 The following recommendations are for developers and writers working on JavaScript/TypeScript reference comment content.
@@ -163,26 +164,6 @@ export interface DialogInstance<T = any> {
 }
 ```
 
-I do not remember why we did this:
-
-```javascript
- /**
-     * Gets or sets an error handler that can catch exceptions in the middleware or application.
-     *
-     * @remarks
-     * The error handler is called with these parameters:
-     *
-     * | Name | Type | Description |
-     * | :--- | :--- | :--- |
-     * | `context` | [TurnContext](xref:botbuilder-core.TurnContext) | The context object for the turn. |
-     * | `error` | `Error` | The Node.js error thrown. |
-     */
-    public get onTurnError(): (context: TurnContext, error: Error) => Promise<void> {
-        return this.turnError;
-    }
-
-```
-
 ### @ignore
 
 Keeps the subsequent from being documented.
@@ -209,10 +190,117 @@ private authenticateRequestInternal(request: Partial<Activity>, authHeader: stri
 
 ```
 
+I do not remember why we did this:
+
+```javascript
+ /**
+     * Gets or sets an error handler that can catch exceptions in the middleware or application.
+     *
+     * @remarks
+     * The error handler is called with these parameters:
+     *
+     * | Name | Type | Description |
+     * | :--- | :--- | :--- |
+     * | `context` | [TurnContext](xref:botbuilder-core.TurnContext) | The context object for the turn. |
+     * | `error` | `Error` | The Node.js error thrown. |
+     */
+    public get onTurnError(): (context: TurnContext, error: Error) => Promise<void> {
+        return this.turnError;
+    }
+
+```
+
+## Files
+
+A doc comment describing a file must be placed before any code in the file.
+It should be annotated with the `@packageDocumentation` tag so *TypeDoc* knows it is intended
+to be the documentation for the file itself.
+
+```javascript
+// file.ts
+/**
+ * This is the doc comment for file.ts
+ * @packageDocumentation
+ */
+
+```
+
+## Namespaces
+
+Namespaces (previously referred to as “modules”) can be commented like any other elements in *TypeScript*.
+Namespaces can be defined in multiple files, so TypeDoc selects the longest comment by default.
+One may override this behavior with the special `@preferred` comment tag.
+
+```javascript
+/**
+ * This the actual preferred namespace comment.
+ * @preferred
+ */
+namespace MyModule { }
+/**
+ * This is the dismissed namespace comment.
+ * This is the longer comment but will be dismissed in favor of the preferred comment.
+ */
+namespace MyModule { }
+
+```
+
 ## Reference primitive types
 
 You can find a list ot the TypeScript primitive types [here](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
+### boolean
+
+The following code sample shows how to refer to the primitive `boolean` type in the `@returns` comment tag.
+
+```javascript
+/**
+* Checks if the service url is for a trusted host or not.
+* @param  {string} serviceUrl The service url
+* @returns {boolean} True if the host of the service url is trusted; False otherwise.
+*/
+public static isTrustedServiceUrl(serviceUrl: string): boolean {
+    try {
+        const uri: url.Url = url.parse(serviceUrl);
+        if (uri.host) {
+            return AppCredentials.isTrustedUrl(uri.host);
+        }
+    } catch (e) {
+        // tslint:disable-next-line:no-console
+        console.error('Error in isTrustedServiceUrl', e);
+    }
+
+    return false;
+}
+
+```
+
+### string
+
+The following code sample shows how to refer to the primitive `string` type in the `@param` comment tag.
+
+```javascript
+/**
+ * Authenticate with username and password
+ * @param {string} username - Username
+ * @param {string} password - Password
+ * @param {function} callback - The callback to handle the error and result.
+ */
+exports.authenticateWithUsernamePassword = function (username, password, callback) {
+  var authorityUrl = authenticationParameters.authorityHostUrl + '/' + authenticationParameters.tenant;
+  var resource = 'https://management.core.windows.net/';
+  var context = new AuthenticationContext(authorityUrl);
+  context.acquireTokenWithUsernamePassword(resource, authenticationParameters.username,
+  authenticationParameters.password, authenticationParameters.clientId, function (err, tokenResponse) {
+    if (err) {
+      callback('Authentication failed. The error is: ' + util.inspect(err));
+    } else {
+      callback(null, tokenResponse);
+    }
+  });
+};
+
+```
 
 ## Reference SDK-defined types
 
