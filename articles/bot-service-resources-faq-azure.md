@@ -107,7 +107,6 @@ To know if an Azure CLI command is deprecated, execute the the command with the 
 
 ![cli help](./media/deploy-bot-cli/cli-help.png)
 
-## Additional information
 
 ### Azure CLI Change Log
 
