@@ -14,16 +14,15 @@ uses docXML
 - [TypeDoc](#typedoc)
 - [JavaScript API Browser](#[javascript-api-browser])
 - [Tags](#tags)
-
-    - [@remarks](#remarks)
-    - [@param](#param-name)
-    - [@return](#return-name)
-
+- [Files](#files)
+- [Namespaces](#namespaces)
 - [Reference primitive types](#reference-primitive-types)
 - [Reference SDK-defined types](#reference-sdk-defined-types)
+- [Additional information](additional-information)
 
+---
 
-The following recommendations are for developers and writers working on JavaScript/TypeScript reference comment content.
+The following recommendations are for developers and writers working on JavaScript/TypeScript reference (comment) documentation.
 
 ### JSDoc
 
@@ -41,8 +40,26 @@ All JavaScript and TypeScript API documentation on *docs.microsoft.com* is index
 
 Tags are special words in comment descriptions that start with `@`. For example, when describing a function,
 you must describe elements like parameters and return value in the comment section.
-You use tags for identifying each elements, for example:
+You use tags for identifying each elements.
 
+
+### @param \<name>
+
+Documents a method parameter specified by the name.
+
+```javascript
+/**
+* Creates a new property accessor for reading and writing an individual
+* property to the bot states storage object.
+* @param T (Optional) type of property to create. Defaults to `any` type.
+* @param name Name of the property to add.
+* @return prop Property accessor.
+*/
+public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
+    const prop: BotStatePropertyAccessor<T> = new BotStatePropertyAccessor<T>(this, name);
+    return prop;
+}
+```
 
 ### @remarks
 
@@ -63,24 +80,6 @@ Communicates important information about a type or a method.
  */
 export class BotState implements PropertyManager {
     ......
-}
-```
-
-### @param \<name>
-
-Documents a method parameter specified by the name.
-
-```javascript
-/**
-* Creates a new property accessor for reading and writing an individual
-* property to the bot states storage object.
-* @param T (Optional) type of property to create. Defaults to `any` type.
-* @param name Name of the property to add.
-* @return prop Property accessor.
-*/
-public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
-    const prop: BotStatePropertyAccessor<T> = new BotStatePropertyAccessor<T>(this, name);
-    return prop;
 }
 ```
 
@@ -190,6 +189,7 @@ private authenticateRequestInternal(request: Partial<Activity>, authHeader: stri
 
 ```
 
+<!--
 I do not remember why we did this:
 
 ```javascript
@@ -209,12 +209,13 @@ I do not remember why we did this:
     }
 
 ```
+-->
 
 ## Files
 
-A doc comment describing a file must be placed before any code in the file.
-It should be annotated with the `@packageDocumentation` tag so *TypeDoc* knows it is intended
-to be the documentation for the file itself.
+The comment describing a file must be placed before any code in the file.
+It should be annotated with the `@packageDocumentation` tag so *TypeDoc* knows it is
+the documentation for the file itself.
 
 ```javascript
 // file.ts
@@ -227,9 +228,9 @@ to be the documentation for the file itself.
 
 ## Namespaces
 
-Namespaces (previously referred to as “modules”) can be commented like any other elements in *TypeScript*.
-Namespaces can be defined in multiple files, so TypeDoc selects the longest comment by default.
-One may override this behavior with the special `@preferred` comment tag.
+Namespaces (previously referred to as *modules*) can be commented like any other elements in *TypeScript*.
+Namespaces can be defined in multiple files. TypeDoc selects the longest comment by default.
+You can override this behavior with the special `@preferred` comment tag.
 
 ```javascript
 /**
@@ -304,7 +305,9 @@ exports.authenticateWithUsernamePassword = function (username, password, callbac
 
 ## Reference SDK-defined types
 
-To link to auto-generated API reference pages in the current documentation set or other documentation sets, use XRef links with the **unique ID** (UID) of the type or member. The following is the syntax to create a link:
+The SDK-defined types are those defined in the Bot Framerk SDK libraries.
+To link to auto-generated API reference pages, use XRef links with the **unique ID** (UID) of the type or member.
+The following is the syntax to create a link:
 
 ```xml
 <xref:UID>
@@ -314,15 +317,15 @@ To link to auto-generated API reference pages in the current documentation set o
 > [!NOTE]
 > By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
 
-You can use a markdown style if you want to change the text oof the link itself as follows:
+You can use a markdown style if you want to change the text of the link itself as follows:
 
 ```markdown
 [link custom text](xref:UID)
 ```
 
-To find the UDI for the API is on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side of the browser. The following picture shows an example, where the UDIs are in the red box:
+To find the UID for the API on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side. The following picture shows an example, where the UIDs are in the red box:
 
-![JS UDIs](../media/js-udis.PNG)
+![JS UIDs](../media/js-udis.PNG)
 
 To test the UID is correct, enter the following in yor browser:
 
@@ -355,7 +358,7 @@ You get the documentation page for `getStorageKey(TurnContext)`.
 > |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/en-us/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=master)|
 > |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)| |
 > |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://docs.microsoft.com/javascript/api/botframework-schema/channelaccount)||
-> |Mwthod|`[getActivityMembers](xref:botbuilder.BotFrameworkAdapter.getActivityMembers)`|[BotFrameworkAdapter.getActivityMembers](https://docs.microsoft.com/javascript/api/botbuilder/botframeworkadapter#getactivitymembers-turncontext--string-)||
+> |Method|`[getActivityMembers](xref:botbuilder.BotFrameworkAdapter.getActivityMembers)`|[BotFrameworkAdapter.getActivityMembers](https://docs.microsoft.com/javascript/api/botbuilder/botframeworkadapter#getactivitymembers-turncontext--string-)||
 
 For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/en-us/help/contribute/links-how-to?branch=master#xref-cross-reference-links).
 
