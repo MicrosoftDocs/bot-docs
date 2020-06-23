@@ -13,7 +13,13 @@ uses docXML
 - [JSDoc](#jsdoc)
 - [TypeDoc](#typedoc)
 - [JavaScript API Browser](#[javaScript-api-browser])
+- [Tags](#tags)
+    - [@remarks](#remarks)
+    - [@param](#param)
+    - [@return](#return)
+
 - [Tips and Tricks](#tips-and-tricks)
+
 
 
 The following recommendations are for developers and writers working on JavaScript/TypeScript reference comment content.
@@ -30,7 +36,12 @@ Standard **JSDoc** conventions apply for **JavaScript** documentation. You can r
 
 All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
 
-## Supported tags
+## Tags
+
+Tags are special words in comment descriptions that start with `@`. For example, when describing a function,
+you must describe elements like parameters and return value in the comment section.
+You use tags for identifying each elements, for example:
+
 
 ### @remarks
 
@@ -61,10 +72,10 @@ Documents a method parameter specified by the name.
 ```javascript
 /**
 * Creates a new property accessor for reading and writing an individual
-* property to the bot
-* states storage object.
+* property to the bot states storage object.
 * @param T (Optional) type of property to create. Defaults to `any` type.
 * @param name Name of the property to add.
+* @return prop Property accessor.
 */
 public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
     const prop: BotStatePropertyAccessor<T> = new BotStatePropertyAccessor<T>(this, name);
@@ -72,7 +83,25 @@ public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
 }
 ```
 
-I do not remember why this:
+### @return \<name>
+
+Documents the object returned by the method.
+
+```javascript
+/**
+* Creates a new property accessor for reading and writing an individual
+* property to the bot states storage object.
+* @param T (Optional) type of property to create. Defaults to `any` type.
+* @param name Name of the property to add.
+* @return prop Property accessor.
+*/
+public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
+    const prop: BotStatePropertyAccessor<T> = new BotStatePropertyAccessor<T>(this, name);
+    return prop;
+}
+```
+
+I do not remember why we did this:
 
 ```javascript
  /**
@@ -91,6 +120,11 @@ I do not remember why this:
     }
 
 ```
+
+## Reference primitive types
+
+You can find a list ot the TypeScript primitive types [here](https://www.typescriptlang.org/docs/handbook/basic-types.html).
+
 
 ## Reference SDK-defined types
 
@@ -157,7 +191,7 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
 > |Invalid link warning|`<a href=""#add"">add()</a>`|The file `docs-ref-autogen/botbuilder-dialogs/DialogSet.yml` doesn't contain a bookmark named `add`.|Replace the link `<a href=""#add"">add()</a>` with `[add()](xref:botbuilder-dialogs.DialogSet.add)`.|
 > | Add snippet code in comment|
 
-#### Good practices
+### Good practices
 
 - Add snippet code in comment example.
 
