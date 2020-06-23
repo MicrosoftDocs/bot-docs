@@ -12,13 +12,13 @@ uses docXML
 
 - [JSDoc](#jsdoc)
 - [TypeDoc](#typedoc)
-- [JavaScript API Browser](#[javascript-api-browser])
+- [JavaScript API Browser](#javascript-api-browser)
 - [Tags](#tags)
 - [Files](#files)
 - [Namespaces](#namespaces)
 - [Reference primitive types](#reference-primitive-types)
 - [Reference SDK-defined types](#reference-sdk-defined-types)
-- [Additional information](additional-information)
+- [Additional information](#additional-information)
 
 ---
 
@@ -369,7 +369,7 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
 > [!div class="mx-tdBreakAll"]
 > |Error Type|Error Example|Error Message|Solution|
 > |-------------|----------|---------|---------|
-> |Invalid link warning|`<a href=""#add"">add()</a>`|The file `docs-ref-autogen/botbuilder-dialogs/DialogSet.yml` doesn't contain a bookmark named `add`.|Replace the link `<a href=""#add"">add()</a>` with `[add()](xref:botbuilder-dialogs.DialogSet.add)`.|
+> |Invalid link|`<a href=""#add"">add()</a>`|The file `docs-ref-autogen/botbuilder-dialogs/DialogSet.yml` doesn't contain a bookmark named `add`.|Replace the link `<a href=""#add"">add()</a>` with `[add()](xref:botbuilder-dialogs.DialogSet.add)`.|
 
 ### Good practices
 
