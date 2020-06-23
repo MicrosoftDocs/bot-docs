@@ -7,15 +7,15 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 04/24/2020
+ms.date: 06/24/2020
 ---
 
 # Introduction to adaptive dialogs
 
-Adaptive dialogs offer a new event based addition to the [Dialogs library][1] that enables you to start simple and quickly layer in sophisticated conversation management techniques like interruption handling, dispatching and more.
+Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] that enables you to easily layer in sophisticated conversation management techniques like interruption handling, dispatching, and more.
 
 > [!IMPORTANT]
-> Adaptive dialogs is currently available in the .Net version of the Bot Framework SDK. You can find Sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub, however the JavaScript version is now in [Preview][15].
+> Adaptive dialogs is currently only available in the .NET version of the bot framework SDK. You can find sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub.
 
 ## Prerequisites
 
@@ -24,15 +24,16 @@ Adaptive dialogs offer a new event based addition to the [Dialogs library][1] th
 
 ## Adaptive dialogs defined
 
-### Why adaptive dialog
+### Why adaptive dialogs
 <!--This needs work-->
 
-Because adaptive dialogs:
+Adaptive dialogs have many advantages to [WaterfallDialogs][17]. Primarily, they:
 
-* Provides the flexibility that enables you to model conversations as a sequence of steps while simultaneously allowing for rules that dynamically adjust to the context. This is especially useful when users do not provide the requested information in order or decide to start a new conversation in the middle of an active dialog.
-* Supports and sits on top of a rich event system for dialogs, so modeling interruptions, cancellation, and execution planning semantics are a lot easier to describe and manage.
-* Brings input recognition, event handling via rules, model of the conversation (dialog) and output generation into one cohesive, self-contained unit.
-* Supports extensibility points for recognition, event rules and machine learning.
+* Provide flexibility that enables you to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation.
+* Support and sit on top of a rich event system for dialogs, so modeling interruptions, cancellation, and execution planning semantics are a lot easier to describe and manage.
+* Bring input recognition and rule-based event handling
+* Combine the conversation model (dialog) and output generation into one cohesive, self-contained unit.
+* Support extensibility points for recognition, event rules and machine learning.
 * Was designed to be declarative from the start. This enables tooling including products like [Bot Framework Composer](https://aka.ms/bf-composer-docs-welcome-page) that provides a visual canvas to model conversations.
 
 ## Anatomy of an adaptive dialog  
@@ -55,13 +56,13 @@ _Triggers_ enable you to catch and respond to events. The broadest trigger is th
 
 _Actions_ define the conversation flow when a specific event is captured via a Trigger. Unlike a waterfall dialog where each step is a function, each action in an Adaptive dialog is in itself a dialog. This makes adaptive dialogs both powerful and flexible and enables adaptive dialogs to easily handle interruptions and branch conditionally based on context or current state.
 
-The Bot Framework SDK provides many built in actions to enable you to perform various actions such as memory manipulation, dialog management, and controlling the conversational flow of your bot. Since actions are in fact dialogs, they are extensible, making it possible to create your own custom actions.
+The bot framework SDK provides many built in actions to enable you to perform various actions such as memory manipulation, dialog management, and controlling the conversational flow of your bot. Since actions are in fact dialogs, they are extensible, making it possible to create your own custom actions.
 
 See the [_Actions in adaptive dialogs_][4] article for more information on _actions_ in adaptive dialogs.
 
 ### Inputs
 
-_Inputs_ are to adaptive dialogs what [prompts][14] are to the base dialog class. Inputs are specialized actions that you can use in an adaptive dialog to request and validate information from a user, then if the validation passes, accept the input into memory. All input classes in the Bot Framework SDK are designed to do the following:
+_Inputs_ are to adaptive dialogs what [prompts][14] are to the base dialog class. Inputs are specialized actions that you can use in an adaptive dialog to request and validate information from a user, then if the validation passes, accept the input into memory. All input classes in the bot framework SDK are designed to do the following:
 
 * Perform existential checks before prompting, to avoid prompting for information the bot already has.
 * Save the input to the specified property if it matches the type of entity expected.
@@ -89,7 +90,7 @@ See the [_Memory scopes and managing state in adaptive dialogs_][7] article for 
 
 ### Declarative assets
 
-Adaptive dialogs let you define your dialog as a class by creating a new `AdaptiveDialog` object and defining your triggers and actions in the classes source file. You can also create your dialog using a declarative approach where you define all the attributes of your dialog in a JSON file with a file extension of .dialog.  No source code is required to define your dialogs and you can have multiple dialogs using both approaches in the same bot. At runtime your bot will generate and execute the dialog code as defined in these declarative dialog files.
+Adaptive dialogs enable you to define your dialog as a class by creating a new AdaptiveDialog object and defining your triggers and actions in the classes source file, but you can also create your dialog using a declarative approach where you define all the attributes of your dialog in a JSON file with a file extension of .dialog.  No source code is required to define your dialogs and you can have multiple dialogs using both approaches in the same bot. At runtime your bot will generate and execute the dialog code as defined in these declarative dialog files.
 
 <!--See the [_Using declarative assets_][9] article for more information on using _declarative assets_ in adaptive dialogs.-->
 
@@ -111,7 +112,7 @@ Consider this scenario:
     ...
 ```
 
-The user not only did not answer the question, but they changed the subject entirely, which will require completely different code (Action) that exists in a different dialog to execute. Adaptive dialogs enable you to handle this scenario which is shown in the following diagram:
+The user not only did not answer the question, but they changed the subject entirely, which will require completely different code (Action) that exists in a different dialog to execute. Adaptive dialogs enables you to handle this scenario which is shown in the following diagram:
 
 <p align="center">
     <img alt="Adaptive_dialog_runtime_behavior" src="./media/adaptive-dialogs/adaptive-dialog-scenario-setup.png" style="max-width:700px;" />
@@ -141,7 +142,7 @@ Since the dialog `bookFlightDialog` has no `OnIntent` trigger to handle the user
 
 To summarize:
 
-Each dialog's _recognizer_ analyzes the user's input to determine the user intent. Once the intent is determined, the _recognizer_ emits an `IntentRecognized` event which the dialog handles using an `OnIntent` trigger. If there is no `OnIntent` trigger in the active dialog that can handle that intent, the bot will send it to the dialog's parent dialog. If the parent dialog does not have a trigger to handle the intent it bubbles up until it reaches the root dialog. Once the trigger that handles that intent completes, it sends control back to the dialog that started this process where it can continue the conversational flow where it left off.
+Each dialog's _recognizer_ analyzes the user's input to determine the user intent. Once the intent is determined, the _recognizer_ emits an `IntentRecognized` event which the dialog handles using an `OnIntent` trigger. If there is no `OnIntent` trigger in the active dialog that can handle that intent, the bot will send it to the dialog's parent dialog. If the parent dialog does not have a trigger to handle the intent it bubbles up until it reached the root dialog. Once the trigger that handles that intent completes, it sends control back to the dialog that started this process where it can continue the conversational flow where it left off.
 
 ## Additional information
 
@@ -176,3 +177,4 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [14]:https://aka.ms/bot-builder-concept-dialog#prompts
 [15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore
+[17]: https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0#waterfall-dialogs
