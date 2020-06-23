@@ -16,7 +16,6 @@
 ## [Ecosystem](../bot-service-resources-faq-ecosystem.md)
 ## [Security](../bot-service-resources-faq-security.md)
 ## [Azure](../bot-service-resources-faq-azure.md)
-## [Deployment](../bot-service-resources-faq-deployment.md)
 
 <!-- Troubleshoot -->
 # Troubleshoot
