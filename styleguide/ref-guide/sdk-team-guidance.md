@@ -89,15 +89,77 @@ Documents the object returned by the method.
 
 ```javascript
 /**
-* Creates a new property accessor for reading and writing an individual
-* property to the bot states storage object.
-* @param T (Optional) type of property to create. Defaults to `any` type.
-* @param name Name of the property to add.
-* @return prop Property accessor.
+* Asynchronously lists the members of the current conversation.
+*
+* @param context The context object for the turn.
+*
+* @returns An array of [ChannelAccount](xref:botframework-schema.ChannelAccount) objects for
+* all users currently involved in a conversation.
+*
+* @remarks
+* Returns an array of [ChannelAccount](xref:botframework-schema.ChannelAccount) objects for
+* all users currently involved in a conversation.
+*
+* This is different from [getActivityMembers](xref:botbuilder.BotFrameworkAdapter.getActivityMembers)
+* in that it will return all members of the conversation, not just those directly involved in a specific activity.
 */
-public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
-    const prop: BotStatePropertyAccessor<T> = new BotStatePropertyAccessor<T>(this, name);
-    return prop;
+public async getConversationMembers(context: TurnContext): Promise<ChannelAccount[]> {
+if (!context.activity.serviceUrl) { throw new Error(`BotFrameworkAdapter.getConversationMembers(): missing serviceUrl`); }
+if (!context.activity.conversation || !context.activity.conversation.id) {
+    throw new Error(`BotFrameworkAdapter.getConversationMembers(): missing conversation or conversation.id`);
+}
+const serviceUrl: string = context.activity.serviceUrl;
+const conversationId: string = context.activity.conversation.id;
+const client: ConnectorClient = this.getOrCreateConnectorClient(context, serviceUrl, this.credentials);
+
+return await client.conversations.getConversationMembers(conversationId);
+}
+```
+
+### @typeparam \<name>
+
+Documents a generic type parameter for the subsequent symbol specified by the param name.
+
+```javascript
+/**
+ * Contains state information for an instance of a dialog on the stack.
+ *
+ * @typeparam T Optional. The type that represents state information for the dialog.
+ *
+ * @remarks
+ * This contains information for a specific instance of a dialog on a dialog stack.
+ * The dialog stack is associated with a specific dialog context and dialog set.
+ * Information about the dialog stack as a whole is persisted to storage using a dialog state object.
+ *
+ * **See also**
+ * - [DialogState](xref:botbuilder-dialogs.DialogState)
+ * - [DialogContext](xref:botbuilder-dialogs.DialogContext)
+ * - [DialogSet](xref:botbuilder-dialogs.DialogSet)
+ * - [Dialog](xref:botbuilder-dialogs.Dialog)
+ */
+export interface DialogInstance<T = any> {
+    /**
+     * ID of this dialog
+     *
+     * @remarks
+     * Dialog state is associated with a specific dialog set.
+     * This ID is the the dialog's [id](xref:botbuilder-dialogs.Dialog.id) within that dialog set.
+     *
+     * **See also**
+     * - [DialogState](xref:botbuilder-dialogs.DialogState)
+     * - [DialogSet](xref:botbuilder-dialogs.DialogSet)
+     */
+    id: string;
+
+    /**
+     * The state information for this instance of this dialog.
+     */
+    state: T;
+
+    /**
+     * Hash code used to detect that a dialog has changed since the curent instance was started.
+     */
+    version?: string;
 }
 ```
 
@@ -118,6 +180,32 @@ I do not remember why we did this:
     public get onTurnError(): (context: TurnContext, error: Error) => Promise<void> {
         return this.turnError;
     }
+
+```
+
+### @ignore
+
+Keeps the subsequent from being documented.
+
+```javascript
+/**
+* @ignore
+* @private
+* Returns the actual ClaimsIdentity from the JwtTokenValidation.authenticateRequest() call.
+* @remarks
+* This method is used instead of authenticateRequest() in processActivity() to obtain the ClaimsIdentity for caching in the TurnContext.turnState.
+*
+* @param request Received request.
+* @param authHeader Received authentication header.
+*/
+private authenticateRequestInternal(request: Partial<Activity>, authHeader: string): Promise<ClaimsIdentity> {
+    return JwtTokenValidation.authenticateRequest(
+        request as Activity, authHeader,
+        this.credentialsProvider,
+        this.settings.channelService,
+        this.authConfiguration
+    );
+}
 
 ```
 
@@ -178,6 +266,8 @@ You get the documentation page for `getStorageKey(TurnContext)`.
 > |------|-----|------|-----|
 > |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/en-us/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=master)|
 > |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)| |
+> |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://docs.microsoft.com/javascript/api/botframework-schema/channelaccount)||
+> |Mwthod|`[getActivityMembers](xref:botbuilder.BotFrameworkAdapter.getActivityMembers)`|[BotFrameworkAdapter.getActivityMembers](https://docs.microsoft.com/javascript/api/botbuilder/botframeworkadapter#getactivitymembers-turncontext--string-)||
 
 For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/en-us/help/contribute/links-how-to?branch=master#xref-cross-reference-links).
 
