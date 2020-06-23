@@ -6,6 +6,8 @@ Contains guidance for the SDK team when adding reference documentation to the co
 
 uses docXML
 
+---
+
 ## JavaScript/TypeScript
 
 - [JSDoc](#jsdoc)
@@ -28,6 +30,68 @@ Standard **JSDoc** conventions apply for **JavaScript** documentation. You can r
 
 All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
 
+## Supported tags
+
+### @remarks
+
+Communicates important information about a type or a method.
+
+```javascript
+/**
+ * Base class for the frameworks state persistance scopes.
+ *
+ * @remarks
+ * This class will read and write state, to a provided storage provider,
+ * for each turn of conversation with a user. Derived classes, like `ConversationState`
+ * and `UserState`, provide a `StorageKeyFactory` which is  used to determine the key
+ * used to persist a given storage object.
+ *
+ * The state object thats loaded will be automatically cached on the context object for the
+ * lifetime of the turn and will only be written to storage if it has been modified.
+ */
+export class BotState implements PropertyManager {
+    ......
+}
+```
+
+### @param \<name>
+
+Documents a method parameter specified by the name.
+
+```javascript
+/**
+* Creates a new property accessor for reading and writing an individual
+* property to the bot
+* states storage object.
+* @param T (Optional) type of property to create. Defaults to `any` type.
+* @param name Name of the property to add.
+*/
+public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
+    const prop: BotStatePropertyAccessor<T> = new BotStatePropertyAccessor<T>(this, name);
+    return prop;
+}
+```
+
+I do not remember why this:
+
+```javascript
+ /**
+     * Gets or sets an error handler that can catch exceptions in the middleware or application.
+     *
+     * @remarks
+     * The error handler is called with these parameters:
+     *
+     * | Name | Type | Description |
+     * | :--- | :--- | :--- |
+     * | `context` | [TurnContext](xref:botbuilder-core.TurnContext) | The context object for the turn. |
+     * | `error` | `Error` | The Node.js error thrown. |
+     */
+    public get onTurnError(): (context: TurnContext, error: Error) => Promise<void> {
+        return this.turnError;
+    }
+
+```
+
 ## Reference SDK-defined types
 
 To link to auto-generated API reference pages in the current documentation set or other documentation sets, use XRef links with the **unique ID** (UID) of the type or member. The following is the syntax to create a link:
@@ -40,10 +104,37 @@ To link to auto-generated API reference pages in the current documentation set o
 > [!NOTE]
 > By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
 
+You can use a markdown style if you want to change the text oof the link itself as follows:
 
-To find the UDI for the API to link to is on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side of the browser. The following picture shows an example, where the UDIs are in the red box:
+```markdown
+[link custom text](xref:UID)
+```
+
+To find the UDI for the API is on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side of the browser. The following picture shows an example, where the UDIs are in the red box:
 
 ![JS UDIs](../media/js-udis.PNG)
+
+To test the UID is correct, enter the following in yor browser:
+
+```http
+    https://xref.docs.microsoft.com/query?uid=<UID to test>
+```
+
+If the UID is correct you will get a long string withe the `href ` of the reference documentation page. For example, if you enter this in your browser:
+
+https://xref.docs.microsoft.com/query?uid=botbuilder-core.ConversationState.getStorageKey
+
+You obtain this string:
+
+```json
+[{"uid":"botbuilder-core.ConversationState.getStorageKey","name":"getStorageKey(TurnContext)","href":"https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-","tags":["/javascript","public"]}]
+```
+
+And if you enter the `href` value in your browser:
+
+https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-
+
+You get the documentation page for `getStorageKey(TurnContext)`.
 
 
 ### Examples
@@ -54,9 +145,10 @@ To find the UDI for the API to link to is on `docs.microsoft.com`, type all or s
 > |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/en-us/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=master)|
 > |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)| |
 
+For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/en-us/help/contribute/links-how-to?branch=master#xref-cross-reference-links).
 
 
-## Tips and Tricks
+## Additional information
 
 ### Errors
 > [!div class="mx-tdBreakAll"]
@@ -72,8 +164,14 @@ To find the UDI for the API to link to is on `docs.microsoft.com`, type all or s
     \```JavaScript <br/>
     const { ConversationState, MemoryStorage } = require('botbuilder'); <br/>
     \```
-- Tbd
+- Do use `@remarks` tags.
+- Do use `[<link-text>](xref:<link-uid>)` links.
+- The UIDs are in the generated .yaml files.
+  Or, search for the target using the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api).
+- Don't use `[[ ]]` links. :stuck_out_tongue_closed_eyes:
+- Don't use `@see` tags.    :stuck_out_tongue_closed_eyes:
 
+---
 
 ## Python
 
