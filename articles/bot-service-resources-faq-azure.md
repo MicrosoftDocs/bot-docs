@@ -62,7 +62,7 @@ If you're making your bot in the Azure portal, you need to generate a secret for
 
 ## Deploy a bot
 
-### What files do I need to zip up for deployment?
+## What files do I need to zip up for deployment?
 
 You must manually create a zip archive with all the files in the project, as described in the step: [zip up the code directory manually step](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually).
 
@@ -71,15 +71,15 @@ Please, make sure that you select all the files and folders in your bot's projec
 > [!div class="mx-imgBorder"]
 > ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
 
-### What version of Azure CLI should I use to deploy a bot?
+## What version of Azure CLI should I use to deploy a bot?
 
 It is recommended that you use the latest version of the Azure Command-Line Interface (CLI) otherwise you will get deprecated commands errors. See [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
 
-### What should I do when getting Azure CLI deprecation errors?
+## What should I do when getting Azure CLI deprecation errors?
 
 You should upgrade to the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). For Azure CLI version [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020) or later, you must use `az deployment sub create` and `az deployment group create` instead of `az deployment create` and `az group deployment create` commands respectively.
 
-### Change log of the Azure CLI commands used to deploy a bot to Azure
+## Change log of the Azure CLI commands used to deploy a bot to Azure
 
 |Azure ClI version | Command1 | Command 2|
 |-------|-------|-------|
@@ -88,7 +88,7 @@ You should upgrade to the latest version of the [Azure CLI](https://docs.microso
 
 Read more in the [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
 
-### What are the CLI deprecated commands related to `az deployment`?
+## What are the CLI deprecated commands related to `az deployment`?
 
 The following are the `az deployment` deprecated commands:
 
@@ -101,19 +101,19 @@ The following are the `az deployment` deprecated commands:
 > |`az group deployment operation <list/show>` |`az deployment operation **group** < list/show>` |
 
 
-### How do I know whether the Azure CLI commands are deprecated?
+## How do I know whether the Azure CLI commands are deprecated?
 
 To know if an Azure CLI command is deprecated, execute the the command with the `-h` (help) option as shown in the picture below.  
 
 ![cli help](./media/deploy-bot-cli/cli-help.png)
 
-### Additional information
+## Additional information
 
-#### Azure CLI Change Log
+### Azure CLI Change Log
 
 Read more about [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
 
-#### Azure Resource Management (ARM)
+### Azure Resource Management (ARM)
 
 The following is a consolidated list of the commands that fit the current Azure CLI design: az {command group} {?sub-command-group} {operation} {parameters}.
 
