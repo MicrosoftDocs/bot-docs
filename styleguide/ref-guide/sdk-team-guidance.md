@@ -65,32 +65,73 @@ uses a mix of TypeDoc and jsdoc
 
 ## Python
 
-\<include a mini toc>
+Included in this section - how to reference:
 
-Here are recommendations for developers and writers working on Python reference comment content.
+- [Functions](#functions)
+- [Built-in types](#built-in-types)
+- [SDK-defined types](#sdk-defined-types)
 
-Follow the Sphinx syntax in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Failing to do so will possibly result in malformed code comments.
+Also included:
 
-### To reference functions
+- [Common errors](#common-errors) when documenting Python code
+- [Samples](#samples) of properly formatted Python code comments.
+
+### Syntax and reST reference documents
+
+Follow the reStructuredText (reST) syntax detailed in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Failing to do some may result in malformed code comments.
+
+For more information about reST and Sphinx (the tool used to generate the documentation) see the following:
+
+- [Sphinx reST documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+- [reST and Sphinx cheatsheet](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+- [reST user documentation](https://docutils.sourceforge.io/rst.html#user-documentation)
+
+### How to reference
+
+### Functions
 
 To reference `sys.exc_info()`:
+
 ~~~python
     :param trace: the traceback information as returned by :func:`sys.exc_info`.
 ~~~
 
-### To reference types
+### Types
 
-#### To reference built-in types
+#### Built-in types
 
-#### To reference SDK-defined types
+Use the [built-in function](https://docs.python.org/3/library/functions.html#func-str) associated with the type. Do not include the parentheses.
+
+**good**
+
+```python
+    :param url: The actual URL for this request (to show in individual request instances).
+    :type url: str
+```
+
+**bad**
+
+```python
+    :param url: The actual URL for this request (to show in individual request instances).
+    :type url: string
+```
+
+```python
+    :param url: The actual URL for this request (to show in individual request instances).
+    :type url: str()
+```
+
+#### SDK-defined types
 
 When referencing a type in the same package, you can leave off the package name:
+
 ~~~python
     :param storage: The storage layer this state management object will use to store and retrieve state
     :type storage:  :class:`Storage`
 ~~~
 
 When referencing a type in a different package, you need to include the package name:
+
 ~~~python
     :param storage: The storage layer this state management object will use to store and retrieve state
     :type storage:  :class:`botbuilder.core.Storage`
@@ -98,15 +139,17 @@ When referencing a type in a different package, you need to include the package 
 
 ### Common errors
 
-#### When linking to methods, do not add () to the end of function names within the `:func:` tag.
+#### When linking to methods, do not add () to the end of function names within the `:func:` tag
 
 **good**
+
 ~~~python
     :param start_time: the start time of the request. The value should look the
     same as the one returned by :func:`datetime.isoformat` (defaults to: None)
 ~~~
 
 **bad**
+
 ~~~python
     :param start_time: the start time of the request. The value should look the
     same as the one returned by :func:`datetime.isoformat()` (defaults to: None)
@@ -115,25 +158,63 @@ When referencing a type in a different package, you need to include the package 
 #### Do not add `:param x:` without adding a `:type x:`
 
 **good**
+
 ~~~python
     :param name: The name for this request. All requests with the same name will be grouped together.
     :type name: str
     :param url: The actual URL for this request (to show in individual request instances).
     :type url: str
 ~~~
+
 **bad**
+
 ~~~python
     :param name: The name for this request. All requests with the same name will be grouped together.
     :param url: The actual URL for this request (to show in individual request instances).
+
 ~~~
 
-#### Do not add a list of `:param x:`, `:type x`:, `:return:`, or `:rtype:` blocks without descriptions.
+#### Do not add a field list (a list of `:param x:`, `:type x`:, `:return:`, or `:rtype:` blocks) without descriptions
 
-  This will result in malformed method/class summaries.
+This will result in malformed method/class summaries.
+
+**good**
+
+```python
+    :param my_value: Description of the parameter
+    :type my_value: int
+    :return: A new other object
+    :rtype: my_other_module.MyOtherClass
+```
+
+**bad**
+
+```python
+    :param my_value:
+    :type my_value:
+    :return:
+    :rtype:
+```
+
+#### Do not mix syntax from other languages
+
+Only use the reStructuredText syntax detailed in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Do not use Google/Numpy, HTML/CSS, or any other syntax aside from Markdown in the comments. Mixing syntax may result in malformed code comments.
+
+**good**
+
+```python
+:param reference: A reference to the conversation to continue.
+```
+
+**bad**
+
+```python
+:param reference: A reference to the conversation to continue.</param>
+```
 
 ### Samples
 
-See the OPS Onboarding Guide's **How to document a Python API** for a good sample of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master#fully-formatted-code-file).
+See the OPS Onboarding Guide's **How to document a Python API** for a good example of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master#fully-formatted-code-file).
 
 Here are a few more examples:
 
@@ -150,13 +231,14 @@ class BotState(PropertyManager):
         You can define additional scopes for your bot.
     """
 ~~~
+
 ~~~python
     def __init__(self, storage: Storage, context_service_key: str):
         """
         Initializes a new instance of the :class:`BotState` class.
 
         :param storage: The storage layer this state management object will use to store and retrieve state
-        :type storage:  :class:`bptbuilder.core.Storage`
+        :type storage:  :class:`botbuilder.core.Storage`
         :param context_service_key: The key for the state cache for this :class:`BotState`
         :type context_service_key: str
 
@@ -171,6 +253,7 @@ class BotState(PropertyManager):
         self._storage = storage
         self._context_service_key = context_service_key
 ~~~
+
 ~~~python
     def create_property(self, name: str) -> StatePropertyAccessor:
         """
