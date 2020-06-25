@@ -459,9 +459,6 @@ The `@returns` tag breaks the link generation in the generated reference documen
 See the example shown below.
 
 - For `getSkillConversationReference` (without the `@returns` markup), the return type (Promise\<SkillConversationReference>) renders with an active link.
-- For `getConversationReference` (with the @returns markup), the return type (Promise\<ConversationReference>) renders without an active link.
-
-This is the actual code:
 
 ```Javascript
 /**
@@ -473,7 +470,15 @@ This is the actual code:
 public getConversationReference(skillConversationId: string): Promise<ConversationReference> {
     throw new Error('Not Implemented');
 }
+```
 
+Generated reference documentation:
+
+![type link correct](../media/type-link-correct.png)
+
+- For `getConversationReference` (with the @returns markup), the return type (Promise\<ConversationReference>) renders without an active link.
+
+```Javascript
 /**
  * Gets the SkillConversationReference created using createSkillConversationId() for a skillConversationId.
  * @param skillConversationId Gets the SkillConversationReference used during CreateSkillConversationIdAsync for a skillConversationId.
@@ -484,11 +489,9 @@ public getSkillConversationReference(skillConversationId: string): Promise<Skill
 
 ```
 
+Generated reference documentation:
 
-This is the generated reference documentation:
-
-![typescript error](../media/typescript-error.png)
-
+![type link incorrect](../media/type-link-incorrect.png)
 
 ---
 
