@@ -126,11 +126,9 @@
              </summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>If the task is successful, the result indicates whether the dialog is still
-             active after the turn has been processed by the dialog. The result may also contain a
-             return value.
-            
+             active after the turn has been processed by the dialog. The result may also contain a return value.            
              If this method is *not* overridden, the dialog automatically ends when the user replies.
-             </remarks>
+        </remarks>
         <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.ContinueDialogAsync(System.Threading.CancellationToken)" />
       </Docs>
     </Member>
