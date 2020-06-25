@@ -103,6 +103,9 @@ public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
 
 Communicates important information about a type or a method.
 
+> [!NOTE]
+> This `@rmarks` creates a **Remark** section in the generated reference documentation.  Put any additional information in this section, otherwise the publishing pipeline will include everything in the summary.
+
 ```javascript
 /**
  * Base class for the frameworks state persistance scopes.
@@ -204,6 +207,8 @@ export interface DialogInstance<T = any> {
 ### @ignore
 
 Keeps the subsequent from being documented.
+> [!NOTE]
+> You can use this tag but remember that the publishing pipeline does not render comments related to private elements.
 
 ```javascript
 /**
@@ -341,6 +346,10 @@ exports.authenticateWithUsernamePassword = function (username, password, callbac
 
 ```
 
+> [!NOTE]
+> The braced type annotation is ignored by the publishing pipeline. The type is obtained from the code definition.
+
+
 ## Reference SDK-defined types
 
 The SDK-defined types are found in the Bot Framerk SDK libraries.
@@ -414,6 +423,32 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
   Or, search for the target using the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api).
 - Don't use `[[ ]]` links. :stuck_out_tongue_closed_eyes:
 - Don't use `@see` tags.    :stuck_out_tongue_closed_eyes:
+
+
+### Open Issues
+
+Remove `TypeScript` comments. This is duplicated information because the publishing pipeline generated it also. See the example below.
+
+```Javascript
+/**
+ * Signature for an alternate word breaker that can be passed to `recognizeChoices()`,
+ * `findChoices()`, or `findValues()`.
+ *
+ * ```TypeScript
+ * type TokenizerFunction = (text: string, locale?: string) => Token[];
+ * ```
+ *
+ * @remarks
+ * The `defaultTokenizer()` is fairly simple and only breaks on spaces and punctuation.
+ * @param TokenizerFunction.text The text to be tokenized.
+ * @param TokenizerFunction.locale (Optional) locale of the text if known.
+ */
+export type TokenizerFunction = (text: string, locale?: string) => Token[];
+```
+
+It produces the following output:
+
+![typescript error](../media/typescript-error.png)
 
 ---
 
