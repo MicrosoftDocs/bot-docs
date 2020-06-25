@@ -427,6 +427,8 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
 
 ### Open Issues
 
+#### TypeScript comments
+
 Remove `TypeScript` comments. This is duplicated information because the publishing pipeline generated it also. See the example below.
 
 ```Javascript
@@ -449,6 +451,44 @@ export type TokenizerFunction = (text: string, locale?: string) => Token[];
 It produces the following output:
 
 ![typescript error](../media/typescript-error.png)
+
+
+#### Unresolved type link
+
+The `@returns` tag breaks the link generation in the generated reference documentation.
+See the example shown below.
+
+- For `getSkillConversationReference` (without the `@returns` markup), the return type (Promise\<SkillConversationReference>) renders with an active link.
+- For `getConversationReference` (with the @returns markup), the return type (Promise\<ConversationReference>) renders without an active link.
+
+This is the actual code:
+
+```Javascript
+/**
+ * Gets the ConversationReference created using createSkillConversationId() for a skillConversationId.
+ * @deprecated Method is deprecated, please use getSkillConversationReference() instead.
+ * @param skillConversationId >A skill conversationId created using createSkillConversationId().
+ * @returns The caller's ConversationReference for a skillConversationId. null if not found.
+ */
+public getConversationReference(skillConversationId: string): Promise<ConversationReference> {
+    throw new Error('Not Implemented');
+}
+
+/**
+ * Gets the SkillConversationReference created using createSkillConversationId() for a skillConversationId.
+ * @param skillConversationId Gets the SkillConversationReference used during CreateSkillConversationIdAsync for a skillConversationId.
+ */
+public getSkillConversationReference(skillConversationId: string): Promise<SkillConversationReference> {
+    throw new Error('Not Implemented');
+}
+
+```
+
+
+This is the generated reference documentation:
+
+![typescript error](../media/typescript-error.png)
+
 
 ---
 
