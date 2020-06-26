@@ -101,7 +101,7 @@ let rootDialogResource = resourceExplorer.getResource('echo.dialog');
 
 ### The type loader
 
-Once the resource explorer's _get resource_ method reads the declarative file into a resource object, the _load type_method casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
+Once the resource explorer's `_get resource_` method reads the declarative file into a resource object, the `_load type_method` casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
 
 # [C#](#tab/csharp)
 
