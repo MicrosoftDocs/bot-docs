@@ -76,7 +76,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
 6. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=70-73&highlight=73)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=70-73&highlight=4)]
 
     <!-- TODO: Comment out this code block once the code snippet link is validated.
     ```javascript
