@@ -68,6 +68,15 @@ landingContent:
             url: https://docs.microsoft.com/javascript/api/botbuilder
           - text: Python
             url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
+
+  # Card
+  - title: Bot Framework Composer
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Composer
+            url: https://docs.microsoft.com/composer/
+
   # Card
   - title: Need Help?
     linkLists:
@@ -79,14 +88,6 @@ landingContent:
             url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help
           - text: Samples
             url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
-
-  # Card
-  - title: Bot Framework Composer
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Composer
-            url: https://docs.microsoft.com/composer/
             
   # Card
   - title: Microsoft Teams bots
@@ -105,7 +106,9 @@ landingContent:
           - text: Deploy a bot to Azure
             url: https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli
           - text: Continuous deployment
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-build-continuous-deployment
+          - text: Azure FAQ
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-faq-azure
 
   # Card
   - title: Authentication
