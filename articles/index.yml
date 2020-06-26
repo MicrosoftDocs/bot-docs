@@ -70,12 +70,22 @@ landingContent:
             url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
 
   # Card
-  - title: Bot Framework Composer
+  - title: External Resources
     linkLists:
       - linkListType: concept
         links:
           - text: Composer
             url: https://docs.microsoft.com/composer/
+          - text: Composer tutorials
+            url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction
+      - linkListType: concept
+          - text: Power Virtual Agents
+            url: https://docs.microsoft.com/power-virtual-agents/
+      - linkListType: concept
+          - text: Microsoft Teams Overview
+            ur: https://docs.microsoft.com/microsoftteams/teams-overview
+          - text: How Microsoft Teams bots work
+            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams
 
   # Card
   - title: Need Help?
@@ -89,15 +99,6 @@ landingContent:
           - text: Samples
             url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
             
-  # Card
-  - title: Microsoft Teams bots
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: How Microsoft Teams bots work
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams
-          - text: Connect a bot to Microsoft Teams
-            url: https://docs.microsoft.com/azure/bot-service/channel-connect-teams
   # Card
   - title: Deployment
     linkLists:
