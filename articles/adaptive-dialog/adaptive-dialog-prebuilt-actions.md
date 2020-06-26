@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-This article lists the available prebuilt actions grouped by their general purpose:
+This article lists the actions defined in the Bot Framework SDK, grouped by their general purpose.
 
 - [Responding to users](#activities)
 <!-- - [Requesting user input](#requesting-user-input) -->
