@@ -666,7 +666,7 @@ getUserName.Triggers.Add(new OnIntent()
 });
 ```
 
-### Get conversation members
+#### Get conversation members
 
 Gets the members of the current conversation and saves the list to a property.
 
@@ -677,7 +677,7 @@ new GetConversationMembers()
 }
 ```
 
-### EditActions
+#### EditActions
 
 Modifies the current sequence of actions. Specifically helpful when handling an interruption. You can use EditActions to insert or remove actions anywhere in the sequence, including adding actions to the beginning or end of the sequence.
 
