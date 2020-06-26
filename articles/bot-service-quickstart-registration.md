@@ -38,7 +38,7 @@ For the **Web Bot App**, follow the steps described in the article: [Create a bo
    |**Bot name** <img width="300px">|Your bot's display name|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
    |**Subscription**|Your subscription|Select the Azure subscription you want to use.|
    |**Resource Group**|myResourceGroup|You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or choose from an existing one.|
-   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location closest to you. The location cannot be changed once the resource group is created.|
+   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|
    |**Pricing tier**|F0|Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-service/).|
    |**Messaging endpoint**|URL|Enter the URL for your bot's messaging endpoint.|
    |**Application Insights**|On| Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
