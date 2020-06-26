@@ -89,13 +89,13 @@ For code samples see [Dialog management examples](#dialog-management-examples).
 
 ## Manage properties
 
-| Activity to accomplish | Action Name                           | What this action does                                 |
-| ---------------------- | ------------------------------------- | ----------------------------------------------------- |
-| Edit an array          | [EditArray](#editarray)               | Perform edit operations on an array.                  |
-| Delete a property      | [DeleteProperty](#deleteproperty)     | Remove a property from [memory][11].                  |
-| Delete properties      | [DeleteProperties](#deleteproperties) | Delete more than one property in a single action.     |
-| Create or update a property | [SetProperty](#setproperty)      | Set a property's value in [memory][11].               |
-| Create or update properties | [SetProperties](#setproperties)  | Initialize one or more properties in a single action. |
+| Activity to accomplish | Action Name                           | What this action does                          |
+| ---------------------- | ------------------------------------- | ---------------------------------------------- |
+| Edit an array          | [EditArray](#editarray)               | Performs an operation on an array.             |
+| Delete a property      | [DeleteProperty](#deleteproperty)     | Removes a property from [memory][11].          |
+| Delete properties      | [DeleteProperties](#deleteproperties) | Removes multiple properties at once.           |
+| Create or update a property | [SetProperty](#setproperty)      | Sets a property's value in [memory][11].       |
+| Create or update properties | [SetProperties](#setproperties)  | Sets the value of multiple properties at once. |
 
 For code samples see [Manage properties examples](#manage-properties-examples).
 
