@@ -986,7 +986,7 @@ new SignOutUser()
 }
 ```
 
-### CodeAction
+#### CodeAction
 <!--TODO P1: We should create a separate article that describes how to migrate waterfall steps to code actions. There are a couple of gotchas. (https://github.com/MicrosoftDocs/bot-docs-pr/pull/2115#discussion_r425436817)-->
 As the name implies, this action enables you to call a custom piece of code.
 
