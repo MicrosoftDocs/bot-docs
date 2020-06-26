@@ -17,18 +17,17 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article lists the actions defined in the Bot Framework SDK, grouped by their general purpose.
 
+<!--
 - [Responding to users](#activities)
-<!-- - [Requesting user input](#requesting-user-input) -->
 - [Conditional statements](#conditional-statements)
 - [Dialog management](#dialog-management)
 - [Managing properties](#manage-properties)
 - [Accessing external resources](#access-external-resources)
 - [Debugging options](#debugging-options)
+-->
 
->[!TIP]
->
-> - For an introduction to this topic, see the [Actions in adaptive dialogs][1] concept article.
-> - For information on how you request user input, an important and very useful type of action, see [Asking for user input using adaptive dialogs][7].
+- For an introduction to this topic, see the [Actions in adaptive dialogs][1] concept article.
+- For information on how you request user input, an important and very useful type of action, see [Asking for user input using adaptive dialogs][7].
 
 ## Activities
 
