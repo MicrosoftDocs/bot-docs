@@ -91,12 +91,13 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=80-82)]
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated. --->
+    <!-- TODO: Comment out this code block once the code snippet link is validated.
     ```javascript
     // Enable the Application Insights middleware, which helps correlate all activity
     // based on the incoming request.
     server.use(restify.plugins.bodyParser());
     ```
+    --->
 
     > [!TIP]
     > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." See the [restify](http://restify.com) web site for more information.
