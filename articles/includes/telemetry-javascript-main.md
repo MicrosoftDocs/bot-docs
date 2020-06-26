@@ -78,13 +78,14 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=70-73&highlight=73)]
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated. --->
+    <!-- TODO: Comment out this code block once the code snippet link is validated.
     ```javascript
     // Create the main dialog.
     const bookingDialog = new BookingDialog();
     const dialog = new MainDialog(luisRecognizer, bookingDialog);
     dialog.telemetryClient = telemetryClient;
     ```
+    --->
 
 7. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
