@@ -34,7 +34,7 @@ One of the most significant challenges when it comes to NLP in your bot is the f
 The two primary components of NLP in adaptive dialogs are **recognizers** (language understanding) that processes and interprets _user input_ which is the focus of this article, and [**generators**][4] (language generation) that produces _bot responses_, it is the process of producing meaningful phrases and sentences in the form of natural language. Simply put, it is when your bot responds to a user with human readable language.
 
 > [!TIP]
-> While it is common for users to communicate with your bot by typing or speaking a message, the recognizer is the sub-system that you can use to process any form of user input whether it is spoken, typed, clicked (like when responding to [adaptive cards][21]), even other modalities such as a geolocation recognizer or a gaze recognizer can be used. The recognizer layer abstracts away the complexities of processing user input from triggers and actions. That way your triggers and actions do not need to interpret the various types of user inputs but instead let the recognizers do it.
+> While it is common for users to communicate with your bot by typing or speaking a message, the recognizer is the sub-system that you can use to process any form of user input whether it is spoken, typed, clicked (like when responding to [adaptive cards][15]), even other modalities such as a geolocation recognizer or a gaze recognizer can be used. The recognizer layer abstracts away the complexities of processing user input from triggers and actions. That way your triggers and actions do not need to interpret the various types of user inputs but instead let the recognizers do it.
 
 ## Language Understanding
 
@@ -68,7 +68,7 @@ Utterances (_trigger phrases_) are inputs from users and as such may contain a n
 
 Entities are a collection of objects, each consisting of data extracted from an utterance that add additional, clarifying information describing the intent such as places, times, and people. Entities and intents are both important pieces of data that are extracted from an utterance. Utterances will general include an intent and may include zero or more entities that provide important details related to the intent.
 
-Entities in the [.lu file format][12] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
+Entities in the [.lu file format][8] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
 
 ```dos
 # BookFlight
@@ -76,7 +76,7 @@ Entities in the [.lu file format][12] are defined in this format: `{<entityName>
 - book a flight from {fromCity=new york} to {toCity=seattle}
 ```
 
-The example above shows the definition of a `BookFlight` intent with two example utterances and two entity definitions: `toCity` and `fromCity`. When triggered, if your chosen recognizer is able to identify a destination city, the city name will be made available as `@toCity` within the triggered actions or a departure city with `@fromCity` as available entity values. The entity values can be used directly in expressions and LG templates, or stored into a property in [memory][14] for later use.
+The example above shows the definition of a `BookFlight` intent with two example utterances and two entity definitions: `toCity` and `fromCity`. When triggered, if your chosen recognizer is able to identify a destination city, the city name will be made available as `@toCity` within the triggered actions or a departure city with `@fromCity` as available entity values. The entity values can be used directly in expressions and LG templates, or stored into a property in [memory][10] for later use.
 
 <!--TODO P1:  Need to discuss recognizers in the context of recognition results. There is intent recognizer, entity recognizer, there can be other types of recognizers as well but a recognizer gets 3 property bags to fill in - intents[], entities[], properties[]. 
 https://github.com/MicrosoftDocs/bot-docs-pr/pull/2123#discussion_r423237812
@@ -131,219 +131,34 @@ The _RegEx recognizer_ gives you the ability to extract intent and entity data f
 `RegexRecognizer` consist primarily of:
 
 * `Intents`. The `Intents` object contains a list of `IntentPattern` objects and these `IntentPattern` objects consist of an `Intent` property which is the name of the intent, and a `Pattern` property that contains a regular expression used to parse the utterance to determine intent.
-* `Entities`. The `Entities` object contains a list of `EntityRecognizer` objects.  The Bot Framework SDK defines several `EntityRecognizer` classes to help you determine the entities contained in a users utterance:
-  * `AgeEntityRecognizer`
-  * `ConfirmationEntityRecognizer`
-  * `CurrencyEntityRecognizer`
-  * `DateTimeEntityRecognizer`
-  * `DimensionEntityRecognizer`
-  * `EmailEntityRecognizer`
-  * `EntityRecognizer`
-  * `EntityRecognizerSet`
-  * `GuidEntityRecognizer`
-  * `HashtagEntityRecognizer`
-  * `IpEntityRecognizer`
-  * `MentionEntityRecognizer`
-  * `NumberEntityRecognizer`
-  * `NumberRangeEntityRecognizer`
-  * `OrdinalEntityRecognizer`
-  * `PercentageEntityRecognizer`
-  * `PhoneNumberEntityRecognizer`
-  * `RegExEntityRecognizer`
-  * `TemperatureEntityRecognizer`
-  * `TextEntity`
-  * `TextEntityRecognizer`
-  * `UrlEntityRecognizer`
+* `Entities`. The `Entities` object contains a list of `EntityRecognizer` objects.  The Bot Framework SDK defines several `EntityRecognizer` classes to help you determine the entities contained in a users utterance.
 
-#### RegexRecognizer Code sample
-
-``` C#
-var rootDialog = new AdaptiveDialog("rootDialog")
-{
-    Recognizer = new RegexRecognizer()
-    {
-        Intents = new List<IntentPattern>()
-        {
-            new IntentPattern()
-            {
-                Intent = "AddIntent",
-                Pattern = "(?i)(?:add|create) .*(?:to-do|todo|task)(?: )?(?:named (?<title>.*))?"
-            },
-            new IntentPattern()
-            {
-                Intent = "HelpIntent",
-                Pattern = "(?i)help"
-            },
-            new IntentPattern()
-            {
-                Intent = "CancelIntent",
-                Pattern = "(?i)cancel|never mind"
-            }
-        },
-        Entities = new List<EntityRecognizer>()
-        {
-            new ConfirmationEntityRecognizer(),
-            new DateTimeEntityRecognizer(),
-            new NumberEntityRecognizer()
-        }
-    }
-}
-```
-
-> [!TIP]
->
-> * `RegexRecognizer` will emit a 'None' intent when the input utterance does not match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
-> * `RegexRecognizer` is useful for testing and quick prototyping. For more sophisticated bots we recommend using the LUIS recognizer.
-> * You might find the regular expression language (RegEx) [Quick Reference][7] helpful.
+For detailed information and examples, see the [RegexRecognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#regexrecognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
 ### LUIS recognizer
 
 Language Understanding Intelligent Service (LUIS) is a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information. The LUIS recognizer enables you to extract intents and entities from a users utterance based on the defined LUIS application, which you train in advance.
 
-To create a LUIS recognizer:
+For detailed information and an example how to create a LUIS recognizer, see the [LUIS recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#luis-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
-``` C#
-var rootDialog = new AdaptiveDialog("rootDialog")
-{
-    Recognizer = new LuisAdaptiveRecognizer()
-    {
-        ApplicationId = "<LUIS-APP-ID>",
-        EndpointKey = "<ENDPOINT-KEY>",
-        Endpoint = "<ENDPOINT-URI>"
-    }
-}
-```
-
-> [!TIP]
-> The following information will help you learn more about how to incorporate language understanding (LU) into your bot using LUIS:
->
-> * [LUIS.ai][9] is a machine learning-based service that enables you to build natural language capabilities into your bot.
-> * [What is LUIS][10]
-> * [Create a new LUIS app in the LUIS portal][17]
-> * [Language Understanding][11]
-> * [.lu file format][12]
-> * [Adaptive expressions][13]
 
 ### QnA Maker Recognizer
 
-[QnAMaker.ai][18] is one of the [Microsoft Cognitive Services][19] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][13] is one of the [Microsoft Cognitive Services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
-> [!NOTE]
-> QnA Maker Recognizer will emit a `QnAMatch`event which you can handle with an `OnQnAMatch` trigger.
-> The entire QnA Maker response will be available in the `answer` property.
-
-```C#
-var adaptiveDialog = new AdaptiveDialog()
-{
-    var recognizer = new QnAMakerRecognizer()
-    {
-        HostName = configuration["qna:hostname"],
-        EndpointKey = configuration["qna:endpointKey"],
-        KnowledgeBaseId = configuration["qna:KnowledgeBaseId"],
-    }
-
-    Triggers = new List<OnCondition>()
-    {
-        new OnConversationUpdateActivity()
-        {
-            Actions = WelcomeUserAction()
-        },
-
-        // With QnA Maker set as a recognizer on a dialog, you can use the OnQnAMatch trigger to render the answer.
-        new OnQnAMatch()
-        {
-            Actions = new List<Dialog>()
-            {
-                new SendActivity()
-                {
-                    Activity = new ActivityTemplate("Here's what I have from QnA Maker - ${@answer}"),
-                }
-            }
-        }
-    }
-
-    // Add adaptiveDialog to the DialogSet.
-    AddDialog(adaptiveDialog);
-};
-```
+For detailed information and an example how to create a QnA Maker recognizer, see the [QnA Maker recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
 ### Multi-language recognizer
 
-When building a sophisticated multi-lingual bot, you will typically have one recognizer tied to a specific language and locale. The Multi-language recognizer enables you to easily specify the recognizer to use based on the [locale][8] property on the incoming activity from a user.
+When building a sophisticated multi-lingual bot, you will typically have one recognizer tied to a specific language and locale. The Multi-language recognizer enables you to easily specify the recognizer to use based on the [locale][5] property on the incoming activity from a user.
 
-``` C#
-var rootDialog = new AdaptiveDialog("rootDialog")
-{
-    Recognizer = new MultiLanguageRecognizer()
-    {
-        Recognizers = new Dictionary<string, Recognizer>()
-        {
-            {
-                "en",
-                new RegexRecognizer()
-                {
-                    Intents = new List<IntentPattern>()
-                    {
-                        new IntentPattern()
-                        {
-                            Intent = "AddIntent",
-                            Pattern = "(?i)(?:add|create) .*(?:to-do|todo|task)(?: )?(?:named (?<title>.*))?"
-                        },
-                        new IntentPattern()
-                        {
-                            Intent = "HelpIntent",
-                            Pattern = "(?i)help"
-                        },
-                        new IntentPattern()
-                        {
-                            Intent = "CancelIntent",
-                            Pattern = "(?i)cancel|never mind"
-                        }
-                    },
-                    Entities = new List<EntityRecognizer>()
-                    {
-                        new ConfirmationEntityRecognizer(),
-                        new DateTimeEntityRecognizer(),
-                        new NumberEntityRecognizer()
-                    }
-                }
-            },
-            {
-                "fr",
-                new LuisAdaptiveRecognizer()
-                {
-                    ApplicationId = "<LUIS-APP-ID>",
-                    EndpointKey = "<ENDPOINT-KEY>",
-                    Endpoint = "<ENDPOINT-URI>"
-                }
-            }
-        }
-    }
-};
-```
+For detailed information and an example how to create a multi-language recognizer, see the [Multi-language recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#multi-language-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
 ### Recognizer set
 
 Sometimes you might need to run more than one recognizer on every turn of the conversation. The recognizer set does exactly that. All recognizers are run on each turn of the conversation and the result is a union of all recognition results.
 
-```C#
-var adaptiveDialog = new AdaptiveDialog()
-{
-    Recognizer = new RecognizerSet()
-    {
-        Recognizers = new List<Recognizer>()
-        {
-            new ValueRecognizer(),
-            new QnAMakerRecognizer()
-            {
-                KnowledgeBaseId = "<KBID>",
-                HostName = "<HostName>",
-                EndpointKey = "<Key>"
-            }
-        }
-    }
-};
-```
+For detailed information and an example how to create a Recognizer set, see the [Recognizer set](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#multi-language-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
 ### Cross-trained recognizer set
 
@@ -352,40 +167,16 @@ The cross-trained recognizer set compares recognition results from more than one
 * Promote the recognition result of one of the recognizer if all other recognizers defer recognition to a single recognizer. To defer recognition, a recognizer can return the `None` intent or an explicit `DeferToRecognizer_recognizerId` as intent.
 * Raises an `OnChooseIntent` event to allow your code to choose which recognition result to use. Each recognizer's results are returned via the `turn.recognized.candidates` property. This enables you to choose the most appropriate result.
 
-```C#
-var adaptiveDialog = new AdaptiveDialog()
-{
-    Recognizer = new CrossTrainedRecognizerSet()
-    {
-        Recognizers = new List<Recognizer>()
-        {
-            new LuisAdaptiveRecognizer()
-            {
-                Id = "Luis-main-dialog",
-                ApplicationId = "<LUIS-APP-ID>",
-                EndpointKey = "<ENDPOINT-KEY>",
-                Endpoint = "<ENDPOINT-URI>"
-            },
-            new QnAMakerRecognizer()
-            {
-                Id = "qna-main-dialog",
-                KnowledgeBaseId = "<KBID>",
-                HostName = "<HostName>",
-                EndpointKey = "<Key>"
-            }
-        }
-    }
-};
-```
+For detailed information and an example how to create a Cross-trained recognizer set, see the [Cross-trained recognizer set](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set) section in the Recognizers in adaptive dialogs - reference guide.
 
 ## Additional Information
 
-* [What is LUIS][10]
-* [Language Understanding][11]
-* [.lu file format][12]
-* [Adaptive expressions][13]
-* [Extract data from utterance text with intents and entities][15]
-* [Add natural language understanding (LU) to your bot][16]
+* [What is LUIS][6]
+* [Language Understanding][7]
+* [.lu file format][8]
+* [Adaptive expressions][9]
+* [Extract data from utterance text with intents and entities][11]
+* [Add natural language understanding (LU) to your bot][12]
 * [Add natural language generation (LG) to your bot][4]
 * For more detailed information on recognizers in adaptive dialogs, including examples, see the [recognizers in adaptive dialogs - reference guide][recognizers-ref].
 
@@ -395,19 +186,14 @@ var adaptiveDialog = new AdaptiveDialog()
 [2]:bot-builder-adaptive-dialog-introduction.md
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
-
-[7]:https://aka.ms/regular-expression-language-reference
-[8]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
-[9]:https://luis.ai
-[10]:https://aka.ms/luis-what-is-luis
-[11]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
-[12]:../file-format/bot-builder-lu-file-format.md
-[13]:bot-builder-concept-adaptive-expressions.md
-[14]:bot-builder-concept-adaptive-dialog-memory-states.md
-[15]:https://aka.ms/luis-concept-data-extraction?tabs=v2
-[16]:https://aka.ms/bot-service-add-luis-to-bot
-[17]:https://aka.ms/luis-create-new-app-in-luis-portal
-[18]:https://qnamaker.ai
-[19]:https://azure.microsoft.com/services/cognitive-services/
-[20]:https://adaptivecards.io
-[21]:https://aka.ms/adaptive-cards-overview
+[5]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
+[6]:https://aka.ms/luis-what-is-luis
+[7]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
+[8]:../file-format/bot-builder-lu-file-format.md
+[9]:bot-builder-concept-adaptive-expressions.md
+[10]:bot-builder-concept-adaptive-dialog-memory-states.md
+[11]:https://aka.ms/luis-concept-data-extraction?tabs=v2
+[12]:https://aka.ms/bot-service-add-luis-to-bot
+[13]:https://qnamaker.ai
+[14]:https://azure.microsoft.com/services/cognitive-services/
+[15]:https://aka.ms/adaptive-cards-overview
