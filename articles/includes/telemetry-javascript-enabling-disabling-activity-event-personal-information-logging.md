@@ -4,9 +4,9 @@ By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMi
 
 The following code snippet comes from sample `21.corebot-app-insights`, and shows the call to `TelemetryInitializerMiddleware`:
 
-[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=62-66&highlight=65)]
+[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=64-68)]
 
-The code snippet below shows the changed needed in sample `21.corebot-app-insights`, in the call to `TelemetryInitializerMiddleware` to disable activity logging:
+The code snippet below shows the change needed in sample `21.corebot-app-insights`, in the call to `TelemetryInitializerMiddleware` to disable activity logging:
 
 ```javascript
 // Add telemetry middleware to the adapter middleware pipeline
@@ -20,7 +20,7 @@ adapter.use(initializerMiddleware);
 
 When activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging by default as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by changing the `logPersonalInformation` parameter from `false` to `true` when registering the `TelemetryLoggerMiddleware` in **index.js**.
 
-[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=62-66&highlight=64)]
+[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=62-66&highlight=3)]
 
 <!--example of JavaScript sample Updated -->
 ```javascript
