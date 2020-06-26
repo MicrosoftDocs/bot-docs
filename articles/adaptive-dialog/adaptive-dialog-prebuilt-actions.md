@@ -1015,9 +1015,9 @@ var rootDialog = new AdaptiveDialog(rootDialogName) {
 };
 ```
 
-## Debugging option examples
+### Debugging option examples
 
-### TraceActivity
+#### TraceActivity
 
 Sends a trace activity with a payload you specify.
 
