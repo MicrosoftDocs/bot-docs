@@ -22,7 +22,7 @@ When activity logging is enabled, some properties on the incoming / outgoing act
 
 [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=64-68&highlight=3)]
 
-<!-- This is the code block that the code snippet link should point to:    -->
+<!-- This is the code block that the code snippet link should point to:
 ```javascript
 // Add telemetry middleware to the adapter middleware pipeline
 var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);
@@ -30,5 +30,6 @@ var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, t
 var initializerMiddleware = new TelemetryInitializerMiddleware(telemetryLoggerMiddleware);
 adapter.use(initializerMiddleware);
 ```
+-->
 
 Next we will see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
