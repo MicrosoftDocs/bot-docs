@@ -80,7 +80,7 @@ New CLI Tools were added for management of Adaptive Dialogs.
 
 LG is Generally Available (GA) on both the C# and JS Platforms. 
 
-[Language Generation (LG)](v4sdk/bot-builder-concept-language-generation.md) enables you to define multiple variations of a phrase, execute simple expressions based on context, and refer to conversational memory. At the core of language generation lies template expansion and entity substitution. You can provide one-off variation for expansion as well as conditionally expanding a template. The output from language generation can be a simple text string or multi-line response or a complex object payload that a layer above language generation will use to construct a complete activity. The Bot Framework Composer natively supports language generation to produce output activities using the LG templating system.
+[Language Generation (LG)](v4sdk/bot-builder-concept-language-generation.md) enables you to define multiple variations of a phrase, execute simple expressions based on context, and refer to conversational memory. At the core of language generation lies template expansion and entity substitution. You can provide one-of variation for expansion as well as conditionally expanding a template. The output from language generation can be a simple text string or multi-line response or a complex object payload that a layer above language generation will use to construct a complete activity. The Bot Framework Composer natively supports language generation to produce output activities using the LG templating system.
 
 You can use Language Generation to:
 * Achieve a coherent personality, tone of voice for your bot.
