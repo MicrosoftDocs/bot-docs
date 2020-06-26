@@ -1035,7 +1035,7 @@ new TraceActivity()
 }
 ```
 
-### Log action
+#### Log action
 
 Writes to the console and optionally sends the message as a trace activity.
 
