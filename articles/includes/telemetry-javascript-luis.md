@@ -8,43 +8,34 @@ To enable the telemetry client in your LUIS recognizer:
 
     [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=7)]
 
-    <!-- This is the code block that the code snippet link should point to:
+    <!-- This is the code block that the code snippet link should point to:   -->
     ```javascript
-
-    ```
         constructor(config, telemetryClient) {
-
     ```
-    -->
 
 3. Set the `telemetryClient` field of the `recognizerOptions` object to the `telemetryClient` property that is passed into the `FlightBookingRecognizer` constructor, once done your constructor will appear as follows:
 
-    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=7-19&highlight=1,8,11)]
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=9-15&highlight=14)]
 
-    <!-- This is the code block that the code snippet link should point to:
+    <!-- This is the code block that the code snippet link should point to: -->
     ```javascript
-        if (luisIsConfigured) {
+     if (luisIsConfigured) {
             // Set the recognizer options depending on which endpoint version you want to use e.g v2 or v3.
             // More details can be found in https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3
             const recognizerOptions = {
                 apiVersion: 'v3',
                 telemetryClient: telemetryClient
             };
-
-            this.recognizer = new LuisRecognizer(config, recognizerOptions);
-        }
     ```
-    -->
 
 4. And finally you need to include the `telemetryClient` when creating an instance of the `FlightBookingRecognizer` in `index.js`:
 
     [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=84)]
 
-    <!-- This is the code block that the code snippet link should point to:
+    <!-- This is the code block that the code snippet link should point to:    -->
     ```javascript
-    const luisRecognizer = new FlightBookingRecognizer(luisConfig, telemetryClient); 
+    const luisRecognizer = new FlightBookingRecognizer(luisConfig, telemetryClient);
     ```
-    -->
 
 That's it; you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages, and the next section describes how to review the telemetry results in Application Insights.
 

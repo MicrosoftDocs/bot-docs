@@ -1,4 +1,4 @@
-### Enabling or disabling Activity logging
+### Enable or disable activity logging
 
 By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends or receives activities. Activity logging creates custom event logs in your Application Insights resource.  If you wish, you can disable activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` when registering it in **index.js**.
 
@@ -20,13 +20,13 @@ adapter.use(initializerMiddleware);
 
 When activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging by default as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by changing the `logPersonalInformation` parameter from `false` to `true` when registering the `TelemetryLoggerMiddleware` in **index.js**.
 
-[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=62-66&highlight=3)]
+[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=64-68&highlight=3)]
 
-<!--example of JavaScript sample Updated -->
+<!-- This is the code block that the code snippet link should point to:    -->
 ```javascript
 // Add telemetry middleware to the adapter middleware pipeline
 var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);
-var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, true);
+var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, true);  //This line should be highlighted
 var initializerMiddleware = new TelemetryInitializerMiddleware(telemetryLoggerMiddleware);
 adapter.use(initializerMiddleware);
 ```

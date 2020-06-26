@@ -10,7 +10,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?range=1-6&highlight=6)]
 
-    <!-- This is the code block that the code snippet link should point to:
+    <!-- This is the code block that the code snippet link should point to:    -->
     ```json
     MicrosoftAppId=
     MicrosoftAppPassword=
@@ -19,7 +19,6 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     LuisAPIHostName=
     InstrumentationKey=
     ```
-    -->
 
     Note: Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
@@ -27,22 +26,21 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=10-12)]
 
-    <!-- This is the code block that the code snippet link should point to:
+    <!-- This is the code block that the code snippet link should point to:    -->
     ```javascript
     // Import required services for bot telemetry
     const { ApplicationInsightsTelemetryClient, TelemetryInitializerMiddleware } = require('botbuilder-applicationinsights');
     const { TelemetryLoggerMiddleware } = require('botbuilder-core');
     ```
-    -->
 
     > [!TIP]
     > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
 4. Create a new function at the end of `index.js` named `getTelemetryClient` that takes your instrumentation key as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
-    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=98-104)]
+    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=114-120)]
 
-    <!-- This is the code block that the code snippet link should point to:
+    <!-- This is the code block that the code snippet link should point to:    --->
     ```javascript
     // Creates a new TelemetryClient based on a instrumentation key
     function getTelemetryClient(instrumentationKey) {
@@ -52,7 +50,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
         return new NullTelemetryClient();
     }
     ```
-    --->
+
 
 5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
@@ -62,9 +60,9 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
         - 
     -->
 
-    [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=48-52)]
+    [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=64-68)]
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated.
+    <!-- TODO: Comment out this code block once the code snippet link is validated.--->
     ```javascript
     // Add telemetry middleware to the adapter middleware pipeline
     var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);
@@ -72,32 +70,31 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     var initializerMiddleware = new TelemetryInitializerMiddleware(telemetryLoggerMiddleware, true);
     adapter.use(initializerMiddleware);
     ```
-    --->
 
 6. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=70-73&highlight=4)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=86-91&highlight=6)]
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated.
+    <!-- TODO: Comment out this code block once the code snippet link is validated.--->
     ```javascript
     // Create the main dialog.
-    const bookingDialog = new BookingDialog();
+    const bookingDialog = new BookingDialog(BOOKING_DIALOG);
     const dialog = new MainDialog(luisRecognizer, bookingDialog);
-    dialog.telemetryClient = telemetryClient;
+    const bot = new DialogAndWelcomeBot(conversationState, userState, dialog);
+
+    dialog.telemetryClient = telemetryClient; //This should be highlighted
     ```
-    --->
 
 7. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=80-82)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=110-112)]
 
-    <!-- TODO: Comment out this code block once the code snippet link is validated.
+    <!-- TODO: Comment out this code block once the code snippet link is validated.--->
     ```javascript
     // Enable the Application Insights middleware, which helps correlate all activity
     // based on the incoming request.
     server.use(restify.plugins.bodyParser());
     ```
-    --->
 
     > [!TIP]
     > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." See the [restify](http://restify.com) web site for more information.
