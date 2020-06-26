@@ -90,7 +90,7 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 
 If your bot will use Slack-specific functionality such as buttons, follow these steps:
 
-1. Select the **Interactive Components** tab and click **Enable Interactive Components**.
+1. Select the **Interactivity & Shortcuts** tab and enable **Interactivity**.
 2. Enter `https://slack.botframework.com/api/Actions` as the **Request URL**.
 3. Click the **Save changes** button.
 
@@ -134,6 +134,9 @@ Follow these steps to get the replacement URL.
 3. Paste this URL from your clipboard into the HTML provided for the Slack button. This URL replaces the href value provided by Slack for this bot.
 
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
+
+> [!NOTE]
+> As of June 2020 Slack channel supports Slack V2 permission scopes which allow the bot to specify its capabilities and permissions in a more granular way. All newly configured Slack channels will use the V2 scopes. To switch your bot to the V2 scopes, delete and recreate the Slack channel configuration in the Channels blade. The link you pasted into the href value of the HTML contains scopes that can be refined as needed. Consult [https://api.slack.com/scopes](https://api.slack.com/scopes) for the full list of available scopes.
 
 ## [Slack adapter](#tab/adapter)
 ## Connect a bot to Slack using the Slack adapter
