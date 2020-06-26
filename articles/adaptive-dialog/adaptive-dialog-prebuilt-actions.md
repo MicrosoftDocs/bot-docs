@@ -974,7 +974,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
     };
 ```
 
-### Sign out user
+#### Sign out user
 
 Sign out current signed in user that's been signed in using an [`OAuth` Input][4].
 
