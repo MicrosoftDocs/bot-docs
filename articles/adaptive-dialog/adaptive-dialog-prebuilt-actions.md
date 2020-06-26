@@ -34,10 +34,10 @@ This article lists the actions defined in the Bot Framework SDK, grouped by thei
 
 | Activity to accomplish                         | Action Name                                | What this action does                                                    |
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------ |
-| Send any activity such as responding to a user.| [SendActivity](#send-activity)             | Use to send any type of activity such as responding to users.            |
-| Update an activity                             | [UpdateActivity](#update-activity)         | Update an activity that was sent.                                        |
-| DeleteActivity                                 | [DeleteActivity](#delete-activity)         | Delete an activity that was sent.                                        |
-| Get activity members                           | [GetActivityMembers](#get-activity-members)| Get a list of activity members and save it to a property in [memory][11].|
+| Send any activity such as responding to a user.| [SendActivity](#send-activity)             | Sends an activity, such as a response to a user.            |
+| Update an activity                             | [UpdateActivity](#update-activity)         | Updates an activity that was sent.                                        |
+| DeleteActivity                                 | [DeleteActivity](#delete-activity)         | Deletes an activity that was sent.                                        |
+| Get activity members                           | [GetActivityMembers](#get-activity-members)| Gets a list of activity members and saves it to a property in [memory][11].|
 
 For a code sample see [Activities examples](#activities-examples).
 <!--
