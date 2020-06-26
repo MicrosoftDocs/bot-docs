@@ -289,14 +289,14 @@ var adaptiveDialog = new AdaptiveDialog()
 * [Add natural language generation (LG) to your bot][1]
 
 <!-- Footnote-style links -->
-[1]:bot-builder-concept-adaptive-dialog-generators.md
+[1]:../v4sdk/bot-builder-concept-adaptive-dialog-generators.md
 [2]:https://aka.ms/regular-expression-language-reference
 [3]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [4]:https://luis.ai
 [5]:https://aka.ms/luis-what-is-luis
 [6]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [7]:../file-format/bot-builder-lu-file-format.md
-[8]:bot-builder-concept-adaptive-expressions.md
+[8]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [9]:https://aka.ms/luis-concept-data-extraction?tabs=v2
 [10]:https://aka.ms/bot-service-add-luis-to-bot
 [11]:https://aka.ms/luis-create-new-app-in-luis-portal

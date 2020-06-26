@@ -116,7 +116,6 @@
 ### [Inputs reference](adaptive-dialog/adaptive-dialog-prebuilt-inputs.md)
 ### [Recognizers reference](adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md)
 ### [Memory scopes and managing state reference](adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md)
-### [Declarative reference](adaptive-dialog/adaptive-dialog-prebuilt-declarative.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)

@@ -393,7 +393,6 @@ The [generator][generator] value contains a link to the .lg file associated with
 ## Additional information
 
 - How to [Create a bot using declarative adaptive dialogs](bot-builder-dialogs-declarative.md)
-- For more detailed information on using declarative assets in adaptive dialogs, see the [Using declarative assets in adaptive dialogs - reference guide][declarative-ref].
 
 <!-- Footnote-style links -->
 [declarative-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-declarative.md
