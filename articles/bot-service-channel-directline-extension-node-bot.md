@@ -30,7 +30,7 @@ This section describes how to enable the direct line app service extension using
 1. To update an existing bot using v4.x of the SDK
     1. In the root directory of your bot run `npm install --save botbuilder` to update to the latest packages.
 1. Allow your app to use the **Direct Line App Service Extension Named Pipe**:
-    - Update the bot's index.js (below the assignment of the adapter and bot) to include:
+    - Update the bot's index.js (below the assignment of the adapter and bot) to include the following code that pulls the App Service name from the environment and instructs the adapter to connect to the appropriate named pipe:
     
     ```Node.js
     
@@ -42,20 +42,24 @@ This section describes how to enable the direct line app service extension using
     ```   
 
 1. Save the `index.js` file.
-1. Update the default `Web.Config` file to add the `AspNetCore` handler needed by Direct Line App Service Extension to service requests:
-    - Locate the `Web.Config` file in the `wwwroot` directory of your bot and replace the default contents with:
+1. Update the `Web.Config` file to add the `AspNetCore` handler and rule needed by Direct Line App Service Extension to service requests:
+    - Locate the `Web.Config` file in the `wwwroot` directory of your bot and modify the contents to include the following entries to the `Handlers` and `Rules` sections:
     
     ```XML
-    
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <system.webServer>
-        <handlers>      
+    <handlers>      
           <add name="aspNetCore" path="*/.bot/*" verb="*" modules="AspNetCoreModule" resourceType="Unspecified" />
-          <add name="iisnode" path="*" verb="*" modules="iisnode" />
-        </handlers>
-       </system.webServer>
-    </configuration>
+    </handlers>
+    
+    <rewrite>
+      <rules>
+        <!-- Do not interfere with Direct Line App Service Extension requests. -->
+        <rule name ="DLASE" stopProcessing="true">
+          <conditions>
+            <add input="{REQUEST_URI}" pattern="^/.bot"/>
+          </conditions>
+        </rule>
+      </rules>
+    </rewrite>
     ```
     
 1. Open the `appsettings.json` file and enter the following values:
