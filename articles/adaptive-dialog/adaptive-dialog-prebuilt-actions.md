@@ -57,13 +57,13 @@ The remaining actions relate to looping statements which enable you to repeat th
 
 | Activity to accomplish | Action Name                    | What this action does                                                                                |
 | ---------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| Branch: if/else        | [IfCondition](#ifcondition)    | Used to create If and If-Else statements which are used to execute code only if a condition is true. |
-| Branch: Switch (Multiple options) | [SwitchCondition](#switchcondition) | Used to build a multiple-choice menu.                                            |
-| Loop: for each item    | [ForEach](#foreach)            | Loop through a set of values stored in an array.                                                     |
-| Loop: for each page (multiple items) | [ForEachPage](#foreachpage) | Loop through a large set of values stored in an array one page at a time.             |
-| Exit a loop            | [BreakLoop](#break-loop)       | Break out of a loop.                                                                                 |
-| Continue a loop        | [ContinueLoop](#continue-loop) | Continue the loop.                                                                               |
-| Goto a different Action| [GotoAction](#goto-action) | Immediately goes to the specified action and continues execution. Determined by actionId.            |
+| Branch: if/else        | [IfCondition](#ifcondition)    | Runs a set of actions based on a Boolean expression. |
+| Branch: Switch (Multiple options) | [SwitchCondition](#switchcondition) | Runs a set of actions based on a pattern match. |
+| Loop: for each item    | [ForEach](#foreach)            | Loops through a set of values stored in an array.                                                     |
+| Loop: for each page (multiple items) | [ForEachPage](#foreachpage) | Loops through a large set of values stored in an array, one page at a time.             |
+| Exit a loop            | [BreakLoop](#break-loop)       | Exits the enclosing loop. |
+| Continue a loop        | [ContinueLoop](#continue-loop) | Starts the next iteration of the enclosing loop. |
+| Goto a different Action| [GotoAction](#goto-action) | Transfers control to the specified action, identified by the action's ID. |
 
 For code samples see [Create a condition examples](#create-a-condition-examples).
 
