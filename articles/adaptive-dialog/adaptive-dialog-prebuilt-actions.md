@@ -192,9 +192,9 @@ new GetActivityMembers()
 
 See [language generation in adaptive dialogs][9] to learn more about using language generation instead of hard coding actual response text in the _send activity_ action.
 
-## Create a condition examples
+### Create a condition examples
 
-### IfCondition
+#### IfCondition
 
 Branches the conversational flow based on a specific condition. Conditions are expressed using [Adaptive expressions][10].
 
