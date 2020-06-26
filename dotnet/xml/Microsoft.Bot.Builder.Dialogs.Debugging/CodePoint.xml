@@ -1,0 +1,191 @@
+<Type Name="CodePoint" FullName="Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint">
+  <TypeSignature Language="C#" Value="public sealed class CodePoint : Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodePoint extends System.Object implements class Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodePoint&#xA;Implements ICodePoint" />
+  <TypeSignature Language="F#" Value="type CodePoint = class&#xA;    interface ICodePoint" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodePoint (Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel codeModel, Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object item, string more);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel codeModel, class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object item, string more) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel,Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (codeModel As ICodeModel, dialogContext As DialogContext, item As Object, more As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint : Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel * Microsoft.Bot.Builder.Dialogs.DialogContext * obj * string -&gt; Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint" Usage="new Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint (codeModel, dialogContext, item, more)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="codeModel" Type="Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel" />
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="more" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="codeModel">To be added.</param>
+        <param name="dialogContext">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="more">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public object Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Data" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Data" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As Object" />
+      <MemberSignature Language="F#" Value="member this.Data : obj" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Data" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Data</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Item" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Item</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate">
+      <MemberSignature Language="C#" Value="object ICodePoint.Evaluate (string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate(string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Microsoft#Bot#Builder#Dialogs#Debugging#ICodePoint#Evaluate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function Evaluate (expression As String) As Object Implements ICodePoint.Evaluate" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate : string -&gt; obj&#xA;override this.Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate : string -&gt; obj" Usage="codePoint.Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate expression" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="More">
+      <MemberSignature Language="C#" Value="public string More { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string More" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.More" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property More As String" />
+      <MemberSignature Language="F#" Value="member this.More : string" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.More" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.More</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Name" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Name</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="codePoint.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Debugging</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

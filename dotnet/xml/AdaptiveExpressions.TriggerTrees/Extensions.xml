@@ -1,0 +1,47 @@
+<Type Name="Extensions" FullName="AdaptiveExpressions.TriggerTrees.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.TriggerTrees.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension method to swap between <see cref="T:AdaptiveExpressions.TriggerTrees.RelationshipType" /> "Generalizes" and "Specializes".
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Swap">
+      <MemberSignature Language="C#" Value="public static AdaptiveExpressions.TriggerTrees.RelationshipType Swap (this AdaptiveExpressions.TriggerTrees.RelationshipType original);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype AdaptiveExpressions.TriggerTrees.RelationshipType Swap(valuetype AdaptiveExpressions.TriggerTrees.RelationshipType original) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.TriggerTrees.Extensions.Swap(AdaptiveExpressions.TriggerTrees.RelationshipType)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Swap (original As RelationshipType) As RelationshipType" />
+      <MemberSignature Language="F#" Value="static member Swap : AdaptiveExpressions.TriggerTrees.RelationshipType -&gt; AdaptiveExpressions.TriggerTrees.RelationshipType" Usage="AdaptiveExpressions.TriggerTrees.Extensions.Swap original" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="original" Type="AdaptiveExpressions.TriggerTrees.RelationshipType" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="original">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

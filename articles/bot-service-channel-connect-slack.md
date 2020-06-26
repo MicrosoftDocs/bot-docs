@@ -85,8 +85,8 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 
 > [!TIP]
 > Your bot handle is the name of your bot.
-> To find a bot's handle, visit [Azure portal][azure portal].
-> Select the bot app service you created, and record the name of the bot.
+>
+> To find a bot's handle, visit [Azure portal][azure portal] and go to the **Bot Channels Registration** for the bot. Click **Settings** under **Bot management** on the left to see the **Bot handle**.
 
 1. Select the **Event Subscriptions** tab.
 2. Click **Enable Events** to **On**.
@@ -290,7 +290,7 @@ public class SlackController : ControllerBase
     {
         // Delegate the processing of the HTTP POST to the adapter.
         // The adapter will invoke the bot.
-        await _adapter.ProcessAsync(Request, Response, _bot);
+        await _adapter.ProcessAsync(Request, Response, _bot, default);
     }
 }
 ```

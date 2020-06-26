@@ -73,7 +73,7 @@ Set up the inspection state in the **app.py** file by adding a middleware to the
 
 **app.py**
 
-[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=75-84)]
+[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=76-84)]
 
 Update the bot class in the **echo_bot.py** file.
 
@@ -111,13 +111,14 @@ python app.py
 
 3. Now open another emulator. This second emulator will work as a debugger. Follow the instructions as described in the previous step. Check **Open in debug mode** and then click **Connect**. 
 
-4. At this point you will see a UUID (`/INSPECT attach <identifier>`) in your debugging emulator. Copy the UUID and paste it to the chat box of the first emulator. 
+4. At this point you will see a command with a unique identifier (`/INSPECT attach <identifier>`) in your debugging emulator. Copy the whole command with the identifier from the debugging Emulator and paste it into the chat box of the first Emulator.
 
 > [!NOTE]
-> A universally unique identifier (UUID) is a unique ID for identifying information. A UUID is generated every time when the emulator is launched in debug mode after you add the inspection middleware in your bot's code. 
+> A unique identifier is generated every time when the emulator is launched in debug mode after you add the inspection middleware in your bot's code.
 
-5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will be able to see the state of your bot as follows: 
-![bot state](./media/bot-debug-inspection-middleware/bot-debug-bot-state.png)
+5. Now you can send messages in the chat box of your first emulator and inspect the messages in the debugging emulator. To inspect the state of the messages click **Bot State** in the debugging emulator and unfold **values** on the right **JSON** window. You will see the state of your bot in the debugging emulator:
+
+    ![bot state](./media/bot-debug-inspection-middleware/bot-debug-bot-state.png)
 
 ## Inspect the state of a bot configured in Azure 
 If you want to inspect the state of your bot configured in Azure and connected to channels (like Teams) you will need to install and run [ngrok](https://ngrok.com/).
@@ -131,27 +132,32 @@ To run your bot locally do the following:
 2. Run your bot locally. You will see your bot expose a port number like 3978. 
 
 3. Open another command prompt and navigate to your bot's project folder. Run the following command:
-```
-ngrok http 3978
-```
-4. ngrok is now connected to your locally running bot. Copy the public IP address. 
-![ngrok-success](./media/bot-debug-inspection-middleware/bot-debug-ngrok.png)
+    ```
+    ngrok http 3978
+    ```
+4. ngrok is now connected to your locally running bot. Copy the public IP address.
+
+    ![ngrok-success](./media/bot-debug-inspection-middleware/bot-debug-ngrok.png)
 
 ### Update channel registrations for your bot
 Now that your local bot is connected to ngrok you can configure your local bot to your Bot Channels Registration in Azure.
 
 1. Go to your Bot Channels Registration in Azure. Click **Settings** on the left menu and set the **Messaging endpoint** with your ngrok IP. If necessary add **/api/messages** after the IP address. (For example, https://e58549b6.ngrok.io/api/messages). Check **Enable Streaming Endpoint** and **Save**.
-![endpoint](./media/bot-debug-inspection-middleware/bot-debug-channels-setting-ngrok.png)
+
+    ![endpoint](./media/bot-debug-inspection-middleware/bot-debug-channels-setting-ngrok.png)
+
 > [!TIP]
 > If **Save** is not enabled, you can uncheck **Enable Streaming Endpoint** and click **Save**, then check **Enable Streaming Endpoint** and click **Save** again. You need to make sure that **Enable Streaming Endpoint** is checked and the configuration of the endpoint is saved. 
 
-2. Go to your bot's resource group, click **Deployment**, and select your Bot Channels Registration that previously deployed successfully. Click **Inputs** on the left side to get the **appId** and **appSecret**. Update your bot's **.env** file (or **appsettings.json** file if you have a C# bot) with the **appId** and **appSecret**. 
-![get-inputs](./media/bot-debug-inspection-middleware/bot-debug-get-inputs-id-secret.png)
+2. Go to your bot's resource group, click **Deployment**, and select your Bot Channels Registration that previously deployed successfully. Click **Inputs** on the left side to get the **appId** and **appSecret**. Update your bot's **.env** file (or **appsettings.json** file if you have a C# bot) with the **appId** and **appSecret**.
+
+    ![get-inputs](./media/bot-debug-inspection-middleware/bot-debug-get-inputs-id-secret.png)
 
 3. Start your emulator, click **Open Bot**, and put http://localhost:3978/api/messages in the **Bot URL**. Fill **Microsoft App ID** and **Microsoft App password** with the same **appId** and **appSecret** you added to our bot's **.env** (**appsettings.json**) file. Then click **Connect**. 
 
-4. Your running bot is now connected to your Bot Channels Registration in Azure. You can test the web chat by clicking **Test in Web Chat** and sending messages in the chat box. 
-![test-web-chat](./media/bot-debug-inspection-middleware/bot-debug-test-webchat.png)
+4. Your running bot is now connected to your Bot Channels Registration in Azure. You can test the web chat by clicking **Test in Web Chat** and sending messages in the chat box.
+
+    ![test-web-chat](./media/bot-debug-inspection-middleware/bot-debug-test-webchat.png)
 
 5. Now let's enable the debugging mode in the emulator. In your emulator select **Debug** -> **Start Debugging**. Fill the ngrok IP address (don't forget to add **/api/messages**) in the **Bot URL** (for example, https://e58549b6.ngrok.io/api/messages). Fill **Microsoft App ID** with **appId** and **Microsoft App password** with **appSecret**. Make sure **Open in debug mode** is checked as well. Click **Connect**. 
 

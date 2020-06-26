@@ -1,0 +1,111 @@
+<Type Name="InputState" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState">
+  <TypeSignature Language="C#" Value="public enum InputState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InputState" />
+  <TypeSignature Language="F#" Value="type InputState = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Condition of the input.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState Invalid = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 2" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Input not valid.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Missing">
+      <MemberSignature Language="C#" Value="Missing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState Missing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Missing" />
+      <MemberSignature Language="VB.NET" Value="Missing" />
+      <MemberSignature Language="F#" Value="Missing = 0" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Missing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Input missing.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unrecognized">
+      <MemberSignature Language="C#" Value="Unrecognized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState Unrecognized = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Unrecognized" />
+      <MemberSignature Language="VB.NET" Value="Unrecognized" />
+      <MemberSignature Language="F#" Value="Unrecognized = 1" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Unrecognized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Input not recognized.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Valid">
+      <MemberSignature Language="C#" Value="Valid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState Valid = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Valid" />
+      <MemberSignature Language="VB.NET" Value="Valid" />
+      <MemberSignature Language="F#" Value="Valid = 3" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState.Valid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+            Input valid.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

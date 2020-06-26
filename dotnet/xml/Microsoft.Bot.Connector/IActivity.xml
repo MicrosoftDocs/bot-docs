@@ -9,6 +9,7 @@
     <AssemblyVersion>3.16.1.38846</AssemblyVersion>
     <AssemblyVersion>3.19.1.44133</AssemblyVersion>
     <AssemblyVersion>3.20.1.42</AssemblyVersion>
+    <AssemblyVersion>3.30.0.1</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -28,6 +29,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IContactRelationUpdateActivity</ReturnType>
@@ -51,6 +53,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IConversationUpdateActivity</ReturnType>
@@ -74,6 +77,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEndOfConversationActivity</ReturnType>
@@ -97,6 +101,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IEventActivity</ReturnType>
@@ -120,6 +125,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInstallationUpdateActivity</ReturnType>
@@ -143,6 +149,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IInvokeActivity</ReturnType>
@@ -166,6 +173,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageActivity</ReturnType>
@@ -189,6 +197,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageDeleteActivity</ReturnType>
@@ -212,6 +221,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageReactionActivity</ReturnType>
@@ -235,6 +245,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.IMessageUpdateActivity</ReturnType>
@@ -258,6 +269,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ISuggestionActivity</ReturnType>
@@ -281,6 +293,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITraceActivity</ReturnType>
@@ -304,6 +317,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ITypingActivity</ReturnType>
@@ -327,6 +341,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -349,6 +364,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -371,6 +387,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConversationAccount</ReturnType>
@@ -393,6 +410,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt;</ReturnType>
@@ -415,6 +433,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
@@ -437,6 +456,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TypeT</ReturnType>
@@ -464,6 +484,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -486,6 +507,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -508,6 +530,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ChannelAccount</ReturnType>
@@ -530,6 +553,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -552,6 +576,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -574,6 +599,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -596,6 +622,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -626,6 +653,7 @@
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
         <AssemblyVersion>3.19.1.44133</AssemblyVersion>
         <AssemblyVersion>3.20.1.42</AssemblyVersion>
+        <AssemblyVersion>3.30.0.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

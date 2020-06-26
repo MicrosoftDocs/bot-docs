@@ -1,0 +1,91 @@
+<Type Name="TemperatureEntityRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TemperatureEntityRecognizer">
+  <TypeSignature Language="C#" Value="public class TemperatureEntityRecognizer : Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntityRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemperatureEntityRecognizer extends Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntityRecognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TemperatureEntityRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemperatureEntityRecognizer&#xA;Inherits TextEntityRecognizer" />
+  <TypeSignature Language="F#" Value="type TemperatureEntityRecognizer = class&#xA;    inherit TextEntityRecognizer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntityRecognizer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemperatureEntityRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TemperatureEntityRecognizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TemperatureEntityRecognizer.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TemperatureEntityRecognizer.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recognize">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;Microsoft.Recognizers.Text.ModelResult&gt; Recognize (string text, string culture);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class Microsoft.Recognizers.Text.ModelResult&gt; Recognize(string text, string culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TemperatureEntityRecognizer.Recognize(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Recognize (text As String, culture As String) As List(Of ModelResult)" />
+      <MemberSignature Language="F#" Value="override this.Recognize : string * string -&gt; System.Collections.Generic.List&lt;Microsoft.Recognizers.Text.ModelResult&gt;" Usage="temperatureEntityRecognizer.Recognize (text, culture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Recognizers.Text.ModelResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="culture" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">To be added.</param>
+        <param name="culture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

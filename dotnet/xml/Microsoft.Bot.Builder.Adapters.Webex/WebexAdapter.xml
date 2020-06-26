@@ -1,0 +1,272 @@
+<Type Name="WebexAdapter" FullName="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter">
+  <TypeSignature Language="C#" Value="public class WebexAdapter : Microsoft.Bot.Builder.BotAdapter, Microsoft.Bot.Builder.Integration.AspNet.Core.IBotFrameworkHttpAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebexAdapter extends Microsoft.Bot.Builder.BotAdapter implements class Microsoft.Bot.Builder.Integration.AspNet.Core.IBotFrameworkHttpAdapter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebexAdapter&#xA;Inherits BotAdapter&#xA;Implements IBotFrameworkHttpAdapter" />
+  <TypeSignature Language="F#" Value="type WebexAdapter = class&#xA;    inherit BotAdapter&#xA;    interface IBotFrameworkHttpAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.BotAdapter</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Integration.AspNet.Core.IBotFrameworkHttpAdapter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebexAdapter (Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper webexClient, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper webexClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (webexClient As WebexClientWrapper, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter : Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter (webexClient, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="webexClient" Type="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="webexClient">A Webex API interface.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" /> class.
+            Creates a Webex adapter.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebexAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional logger As ILogger = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter (configuration, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
+      </Parameters>
+      <Docs>
+        <param name="configuration">An <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> instance.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" /> class using configuration settings.
+            </summary>
+        <remarks>
+            The configuration keys are:
+            WebexAccessToken: An access token for the bot.
+            WebexPublicAddress: The root URL of the bot application.
+            WebexSecret: The secret used to validate incoming webhooks.
+            WebexWebhookName: A name for the webhook subscription.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueConversationAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ContinueConversationAsync (Microsoft.Bot.Schema.ConversationReference reference, Microsoft.Bot.Builder.BotCallbackHandler logic, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ContinueConversationAsync(class Microsoft.Bot.Schema.ConversationReference reference, class Microsoft.Bot.Builder.BotCallbackHandler logic, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContinueConversationAsync (reference As ConversationReference, logic As BotCallbackHandler, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.ContinueConversationAsync : Microsoft.Bot.Schema.ConversationReference * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexAdapter.ContinueConversationAsync (reference, logic, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="logic" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="reference">A <see cref="T:Microsoft.Bot.Schema.ConversationReference" /> to be applied to future messages.</param>
+        <param name="logic">A bot logic function that will perform continuing action.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Standard BotBuilder adapter method for continuing an existing conversation based on a conversation reference.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueConversationAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task ContinueConversationAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, Microsoft.Bot.Schema.ConversationReference reference, Microsoft.Bot.Builder.BotCallbackHandler callback, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task ContinueConversationAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, class Microsoft.Bot.Schema.ConversationReference reference, class Microsoft.Bot.Builder.BotCallbackHandler callback, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueConversationAsync (claimsIdentity As ClaimsIdentity, reference As ConversationReference, callback As BotCallbackHandler, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.ContinueConversationAsync : System.Security.Claims.ClaimsIdentity * Microsoft.Bot.Schema.ConversationReference * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexAdapter.ContinueConversationAsync (claimsIdentity, reference, callback, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="callback" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">A <see cref="T:System.Security.Claims.ClaimsIdentity" /> for the conversation.</param>
+        <param name="reference">A reference to the conversation to continue.</param>
+        <param name="callback">The method to call for the resulting bot turn.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Sends a proactive message from the bot to a conversation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>Call this method to proactively send a message to a conversation.
+            Most _channels require a user to initialize a conversation with a bot
+            before the bot can send activities to the user.
+            <para>This method registers the following services for the turn.<list type="bullet"><item><description><see cref="T:System.Security.Principal.IIdentity" /> (key = "BotIdentity"), a claims claimsIdentity for the bot.
+            </description></item></list></para></remarks>
+        <altmember cref="M:Microsoft.Bot.Builder.BotAdapter.RunPipelineAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteActivityAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task DeleteActivityAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.ConversationReference reference, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.ConversationReference reference, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteActivityAsync (turnContext As ITurnContext, reference As ConversationReference, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="override this.DeleteActivityAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.ConversationReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexAdapter.DeleteActivityAsync (turnContext, reference, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="reference" Type="Microsoft.Bot.Schema.ConversationReference" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">A <see cref="T:Microsoft.Bot.Builder.ITurnContext" /> representing the current incoming message and environment.</param>
+        <param name="reference">A <see cref="T:Microsoft.Bot.Schema.ConversationReference" /> object.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Standard BotBuilder adapter method to delete a previous message.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ProcessAsync (Microsoft.AspNetCore.Http.HttpRequest request, Microsoft.AspNetCore.Http.HttpResponse response, Microsoft.Bot.Builder.IBot bot, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ProcessAsync(class Microsoft.AspNetCore.Http.HttpRequest request, class Microsoft.AspNetCore.Http.HttpResponse response, class Microsoft.Bot.Builder.IBot bot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessAsync (request As HttpRequest, response As HttpResponse, bot As IBot, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ProcessAsync : Microsoft.AspNetCore.Http.HttpRequest * Microsoft.AspNetCore.Http.HttpResponse * Microsoft.Bot.Builder.IBot * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.ProcessAsync : Microsoft.AspNetCore.Http.HttpRequest * Microsoft.AspNetCore.Http.HttpResponse * Microsoft.Bot.Builder.IBot * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="webexAdapter.ProcessAsync (request, response, bot, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Integration.AspNet.Core.IBotFrameworkHttpAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
+        <Parameter Name="response" Type="Microsoft.AspNetCore.Http.HttpResponse" />
+        <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming <see cref="T:Microsoft.AspNetCore.Http.HttpRequest" />.</param>
+        <param name="response">When this method completes, the <see cref="T:Microsoft.AspNetCore.Http.HttpResponse" /> to send.</param>
+        <param name="bot">The bot that will handle the incoming activity.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Accept an incoming webhook <see cref="T:Microsoft.AspNetCore.Http.HttpRequest" /> and convert it into a <see cref="T:Microsoft.Bot.Builder.TurnContext" /> which can be processed by the bot's logic.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivitiesAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity[] activities, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity[] activities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SendActivitiesAsync (turnContext As ITurnContext, activities As Activity(), cancellationToken As CancellationToken) As Task(Of ResourceResponse())" />
+      <MemberSignature Language="F#" Value="override this.SendActivitiesAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;" Usage="webexAdapter.SendActivitiesAsync (turnContext, activities, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activities" Type="Microsoft.Bot.Schema.Activity[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">A TurnContext representing the current incoming message and environment.</param>
+        <param name="activities">An array of outgoing activities to be sent back to the messaging API.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Standard BotBuilder adapter method to send a message from the bot to the messaging API.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateActivityAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UpdateActivityAsync (turnContext As ITurnContext, activity As Activity, cancellationToken As CancellationToken) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="F#" Value="override this.UpdateActivityAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="webexAdapter.UpdateActivityAsync (turnContext, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">A TurnContext representing the current incoming message and environment.</param>
+        <param name="activity">An activity to be sent back to the messaging API.</param>
+        <param name="cancellationToken">A cancellation token for the task.</param>
+        <summary>
+            Standard BotBuilder adapter method to update a previous message.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
