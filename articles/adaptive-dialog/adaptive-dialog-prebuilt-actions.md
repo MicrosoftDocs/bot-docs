@@ -192,9 +192,9 @@ new GetActivityMembers()
 
 See [language generation in adaptive dialogs][9] to learn more about using language generation instead of hard coding actual response text in the _send activity_ action.
 
-## Create a condition examples
+### Create a condition examples
 
-### IfCondition
+#### IfCondition
 
 Branches the conversational flow based on a specific condition. Conditions are expressed using [Adaptive expressions][10].
 
@@ -233,7 +233,7 @@ addToDoDialog.Triggers.Add(new OnIntent()
 });
 ```
 
-### SwitchCondition
+#### SwitchCondition
 
 Branches a conversational flow based on the outcome of an expression evaluation. See [Adaptive expressions][10] for more information.
 
@@ -278,7 +278,7 @@ cardDialog.Triggers.Add(new OnIntent()
 }));
 ```
 
-### ForEach
+#### ForEach
 
 The Foreach loop is a convenient way to retrieve elements of an array or a collection. It is often used to perform action on each item in a collection.
 
@@ -316,7 +316,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-### ForEachPage
+#### ForEachPage
 
 Used to apply steps to items in a collection. Page size denotes how many items from the collection are selected at a time.
 
@@ -352,7 +352,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-### Break Loop
+#### Break Loop
 
 Breaks out of a loop or the current action sequence.
 
@@ -401,7 +401,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-### Continue Loop
+#### Continue Loop
 
 Continues the current loop or action sequence without processing the rest of the statements.
 
@@ -451,7 +451,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-### Goto action
+#### Goto action
 
 Jump to a labelled action within the current action scope.
 
@@ -480,9 +480,9 @@ var adaptiveDialog = new AdaptiveDialog()
 };
 ```
 
-## Dialog management examples
+### Dialog management examples
 
-### BeginDialog
+#### BeginDialog
 
 Starts a new dialog and pushes it onto the dialog stack. `BeginDialog` requires the name of the target dialog, which can be any type of dialog including Adaptive dialog or Waterfall dialog etc.
 
@@ -499,7 +499,7 @@ new BeginDialog("BookFlightDialog")
 > [!TIP]
 > Just like when invoking any dialog in the Bot Framework SDK, when calling `BeginDialog` to invoke an adaptive dialog, you can use the `options` parameter to pass input information for the dialog.
 
-### EndDialog
+#### EndDialog
 
 Ends the active dialog by popping it off the stack and returns an optional result to the dialog's parent.
 
@@ -516,7 +516,7 @@ new EndDialog()
 > [!TIP]
 > Adaptive dialogs will end automatically by default if the dialog has completed running all of its actions. To override this behavior, set the `AutoEndDialog` property on Adaptive Dialog to false.
 
-### CancelAllDialog
+#### CancelAllDialog
 
 Deletes all dialogs on the stack, including parent and child dialogs.
 
@@ -524,7 +524,7 @@ Deletes all dialogs on the stack, including parent and child dialogs.
 new CancelAllDialog()
 ```
 
-### EndTurn
+#### EndTurn
 
 Ends the current turn of conversation without ending the dialog.
 
@@ -532,7 +532,7 @@ Ends the current turn of conversation without ending the dialog.
 new EndTurn()
 ```
 
-### RepeatDialog
+#### RepeatDialog
 
 Restarts the parent dialog. This is particularly useful if you are trying to have a conversation where the bot is paging results to the user that they can navigate through.
 
@@ -598,7 +598,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-### ReplaceDialog
+#### ReplaceDialog
 
 Starts a new dialog and replaces on the stack the currently active dialog with the new one.
 
@@ -773,9 +773,9 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 };
 ```
 
-## Manage properties examples
+### Manage properties examples
 
-### SetProperty
+#### SetProperty
 
 Used to set a property's value in [memory][11]. The value can either be an explicit string or an expression. See [adaptive expressions][10] to learn more about expressions.
 
@@ -788,7 +788,7 @@ new SetProperty()
 },
 ```
 
-### SetProperties
+#### SetProperties
 
 Initialize one or more properties in a single action.
 
@@ -811,7 +811,7 @@ new SetProperties()
 }
 ```
 
-### DeleteProperty
+#### DeleteProperty
 
 Removes a property from [memory][11].
 
@@ -822,7 +822,7 @@ new DeleteProperty
 }
 ```
 
-### DeleteProperties
+#### DeleteProperties
 
 Delete more than one property in a single action.
 
@@ -837,7 +837,7 @@ new DeleteProperties()
 }
 ```
 
-### EditArray
+#### EditArray
 
 Used to perform edit operations on an array property.
 
@@ -866,15 +866,15 @@ addToDoDialog.Triggers.Add(new OnIntent()
 }));
 ```
 
-## Access external resource examples
+### Access external resource examples
 
-### BeginSkill
+#### BeginSkill
 
 The `BeginSkill` action starts the specified skill, manages the forwarding of activities to the skill and receiving activities from the skill, and processes the skill result if any when the skill ends.
 
 <!-- TODO--->
 
-### HttpRequest
+#### HttpRequest
 
 Use this to make HTTP requests to any endpoint.
 
