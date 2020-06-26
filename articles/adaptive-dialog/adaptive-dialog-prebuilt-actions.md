@@ -894,7 +894,7 @@ new HttpRequest()
 
 ```
 
-### EmitEvent
+#### EmitEvent
 
 Used to raise a custom event that your bot can respond to. You can control bubbling behavior on the event raised so it can be contained just to your own dialog or bubbled up the parent chain.
 
