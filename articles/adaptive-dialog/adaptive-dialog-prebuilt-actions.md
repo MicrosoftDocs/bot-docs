@@ -103,11 +103,11 @@ For code samples see [Manage properties examples](#manage-properties-examples).
 
 | Activity to accomplish | Action Name                  | What this action does                                                         |
 | ---------------------- | ---------------------------- | ----------------------------------------------------------------------------- |
-| Begin a skill dialog   | [BeginSkill](#beginskill)    | Use the adaptive skill dialog to run a skill.                                 |
-| Send an HTTP request   | [HttpRequest](#httprequest)  | Use to make HTTP requests to any endpoint.                                    |
-| Emit a custom event    | [EmitEvent](#emitevent)      | Raise a custom event that your bot can respond to using a [custom trigger][8].|
-| Sign out a user        | [SignOutUser](#sign-out-user)| Sign out the currently signed in user.                                        |
-| Call custom code       | [CodeAction](#codeaction)    | Use to call your own custom code.                                             |
+| Begin a skill dialog   | [BeginSkill](#beginskill)    | Begins a skill and forwards activities to the skill until the skill ends. |
+| Send an HTTP request   | [HttpRequest](#httprequest)  | Makes an HTTP request to an endpoint.                                    |
+| Emit a custom event    | [EmitEvent](#emitevent)      | Raises a custom event. Add a [custom trigger][8] to the adaptive dialog to react to the event. |
+| Sign out a user        | [SignOutUser](#sign-out-user)| Signs out the currently signed in user.                                        |
+| Call custom code       | [CodeAction](#codeaction)    | Calls custom code. The custom code must be asynchronous, take a dialog context and an object as parameters, and return a dialog turn result. |
 
 For code samples see [Access external resource examples](#access-external-resource-examples).
 
