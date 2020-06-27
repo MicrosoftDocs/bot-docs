@@ -32,7 +32,7 @@ Adaptive dialogs provide support for the following recognizers:
 
 The _RegEx recognizer_ gives you the ability to extract intent and entity data from an utterance based on regular expression patterns.
 
-`RegexRecognizer` consist primarily of:
+`RegexRecognizer` consists primarily of:
 
 * `Intents`. The `Intents` object contains a list of `IntentPattern` objects and these `IntentPattern` objects consist of an `Intent` property which is the name of the intent, and a `Pattern` property that contains a regular expression used to parse the utterance to determine intent.
 * `Entities`. The `Entities` object contains a list of `EntityRecognizer` objects.  The Bot Framework SDK defines several `EntityRecognizer` classes to help you determine the entities contained in a users utterance:
