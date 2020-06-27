@@ -66,7 +66,7 @@ When you have completed these steps, your bot will be successfully configured to
 As well as the channel available in the Azure Bot Service to connect your bot with Twilio, you can also use the Twilio adapter. In this article you will learn how to connect a bot to Twilio using the adapter.  This article will walk you through modifying the EchoBot sample to connect it to Twilio.
 
 > [!NOTE]
-> The instructions below cover the C# implementation of the Twilio adapter. For instructions on using the JS adapter, part of the BotKit libraries, [see the BotKit Twilio documentation](https://botkit.ai/docs/v4/platforms/twilio.html).
+> The instructions below cover the C# implementation of the Twilio adapter. For instructions on using the JS adapter, part of the BotKit libraries, [see the BotKit Twilio documentation](https://botkit.ai/docs/v4/platforms/twilio-sms.html).
 
 ### Prerequisites
 
