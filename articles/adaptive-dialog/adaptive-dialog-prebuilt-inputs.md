@@ -17,15 +17,15 @@ monikerRange: 'azure-bot-service-4.0'
 
 The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
 
-| Input type       | Input class                       | Description                                          | Returns                                      |
-| ---------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
+| Input type       | Input class                       | Description                                              | Returns                                  |
+| ---------------- | --------------------------------- | -------------------------------------------------------- | ---------------------------------------- |
 | Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
-| Text             | [TextInput](#textinput)           | Used to ask your users for a **word or sentence**.   | A string.                                    |
-| Number           | [NumberInput](#numberinput)       | Used to ask your users for a **number**.             | A numeric value.                             |
-| Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
-| Multiple choice  | [ChoiceInput](#choiceinput)       | Used to ask for a choice from a **set of options**.  | The value or index of the selection.         |
-| File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.| A collection of attachment objects.          |
-| Date or time     | [DateTimeInput](#datetimeinput)   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
+| Text             | [TextInput](#textinput)           | Used to ask your users for a **word** or **sentence**.   | A string.                                |
+| Number           | [NumberInput](#numberinput)       | Used to ask your users for a **number**.                 | A numeric value.                         |
+| Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.        | A Boolean value.                         |
+| Multiple choice  | [ChoiceInput](#choiceinput)       | Used to ask for a choice from a **set of options**.      | The value or index of the selection.     |
+| File or attachment |[AttachmentInput](#attachmentinput)| Used to request/enable a user to **upload a file**.    | A collection of attachment objects.      |
+| Date or time     | [DateTimeInput](#datetimeinput)   | Used to ask your users for a **date and or time**.       | A collection of date-time objects.       |
 | Oauth login      | [OAuthInput](#oauthinput)         | Used to enable your users to **sign into a secure site**.| A token response.                        |
 
 <!--TODO P1: Add a general section on locales to show all Supported locales that can be used in the  `DefaultLocale` property.
@@ -469,5 +469,5 @@ The following links provide generalized information on the topic of authenticati
 <!-- links -->
 [authentication]:https://aka.ms/azure-bot-authentication
 [add-authentication]:https://aka.ms/azure-bot-add-authentication
-[recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers        .md
+[recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
 [adaptive-expressions]:../v4sdk/bot-builder-concept-adaptive-expressions.md
