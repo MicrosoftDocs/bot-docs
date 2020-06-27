@@ -226,3 +226,5 @@ new TextInput()
 * [Memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
 
 [managing-state]: ../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
+[foreach-action]: ./adaptive-dialog-prebuilt-actions.md#foreach
+[botframework-activity]: https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
