@@ -17,6 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
 
+<!--
 Memory scopes available in adaptive dialogs:
 
 * [User scope](#user-scope)
@@ -28,6 +29,7 @@ Memory scopes available in adaptive dialogs:
 * [Settings scope](#settings-scope)
 * [This scope](#this-scope)
 * [Class scope](#class-scope)
+-->
 
 > [!TIP]
 > All property paths are case-insensitive. For example, `user.name` is the same as `user.Name`. Also, if you do not have a property named `user.name` and you create a property named `user.name.first` the `user.name` object will automatically be created for you.

@@ -15,14 +15,18 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-Adaptive dialogs support the following recognizers:
+Recognizers enable your bot to understand user input and an adaptive dialog can have one or more recognizers configured. For additional information on recognizers see the [Recognizers in adaptive dialogs](../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md) article.
+
+<!--
+Adaptive dialogs provide support for the following recognizers:
 
 * [RegexRecognizer](#regexrecognizer)
 * [LUIS recognizer](#luis-recognizer)
 * [QnA Maker recognizer](#qna-maker-recognizer)
 * [Multi-language recognizer](#multi-language-recognizer)
-* [CrossTrained recognizer set](#cross-trained-recognizer-set)
 * [RecognizerSet](#recognizer-set)
+* [Cross-Trained recognizer set](#cross-trained-recognizer-set)
+-->
 
 ## RegexRecognizer
 

@@ -15,14 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-This article lists the available prebuilt triggers grouped by their general purpose:
-
-- [Base trigger](#base-trigger)
-- [Recognizer event triggers](#recognizer-event-triggers)
-- [Dialog event triggers](#dialog-event-triggers)
-- [Activity events](#activity-event-triggers)
-- [Message events](#message-event-triggers)
-- [Custom event trigger](#custom-event-trigger)
+For an introduction to this topic, see the [Events and triggers in adaptive dialogs](../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md) concept article.
 
 ## Base trigger
 
