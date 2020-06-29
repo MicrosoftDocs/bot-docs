@@ -18,32 +18,40 @@ When you [create a bot](bot-service-quickstart.md) with the Framework Bot Servic
 
 ![Web chat sample](./media/bot-service-channel-webchat/create-a-bot.png)
 
-The Web Chat channel in the Bot Framework Portal contains everything you need to embed the web chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
+The Web Chat channel in the Bot Framework Portal contains everything you need to embed the Web Chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
 
-## Web Chat and Direct Line considerations
+## Web Chat security considerations
 
-> [!IMPORTANT]
-> Please, keep in mind these important [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. Please, refer to [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 
-## Get your bot secret key
+## Embed the Web Chat control in a web page
+
+The following picture shows the components involved when embedding the Web Chat control in a web page.
+
+![bot embed components](./media/bot-service-channel-webchat/webchat-iframe.png)
+
+> [!NOTE] This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
+
+
+### Get your bot secret key
 
 1. Open your bot in the [Azure Portal](https://portal.azure.com) and click **Channels** blade.
 
 2. Click **Edit** for the **Web Chat** channel.
-![Web chat channel](./media/bot-service-channel-webchat/bot-service-channel-list.png)
+
+    ![Web chat channel](./media/bot-service-channel-webchat/bot-service-channel-list.png)
 
 3. Under **Secret keys**, click **Show** for the first key.
-![Secret key](./media/bot-service-channel-webchat/secret-key.png)
+
+    ![Secret key](./media/bot-service-channel-webchat/secret-key.png)
 
 4. Copy the **Secret key** and the **Embed code**.
 
 5. Click **Done**.
 
-## Embed the web chat control in your website
+### Embedding options
 
-You can embed the web chat control in your website by using one of two options.
-
-### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
+#### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 Use this option if you can execute a server-to-server request to exchange your web chat secret for a temporary token,
 and if you want to make it difficult for other developers to embed your bot in their websites.
@@ -134,8 +142,9 @@ You may change the size of the web chat control by using the `style` attribute o
 <iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
 ```
 
-![Chat control Client](./media/chatwidget-client.png)
+![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
 
+<!-- ![Chat control Client](./media/chatwidget-client.png) -->
 ## Additional resources
 
 You can [download the source code](https://aka.ms/BotFramework-WebChat-V4) for the web chat control on GitHub.
