@@ -14,7 +14,7 @@ ms.date: 08/22/2019
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-When you [create a bot](bot-service-quickstart.md) with Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the web chat control, which provides the ability for users to interact with your bot directly in a web page.
+When you [create a bot](bot-service-quickstart.md) with the Framework Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat), which provides the ability for users to interact with the bot directly in a web page.
 
 ![Web chat sample](./media/bot-service-channel-webchat/create-a-bot.png)
 
@@ -29,10 +29,10 @@ The Web Chat channel in the Bot Framework Portal contains everything you need to
 
 1. Open your bot in the [Azure Portal](https://portal.azure.com) and click **Channels** blade.
 
-2. Click **Edit** for the **Web Chat** channel.  
+2. Click **Edit** for the **Web Chat** channel.
 ![Web chat channel](./media/bot-service-channel-webchat/bot-service-channel-list.png)
 
-3. Under **Secret keys**, click **Show** for the first key.  
+3. Under **Secret keys**, click **Show** for the first key.
 ![Secret key](./media/bot-service-channel-webchat/secret-key.png)
 
 4. Copy the **Secret key** and the **Embed code**.
@@ -46,8 +46,8 @@ You can embed the web chat control in your website by using one of two options.
 ### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 Use this option if you can execute a server-to-server request to exchange your web chat secret for a temporary token,
-and if you want to make it difficult for other developers to embed your bot in their websites. 
-Although using this option will not absolutely prevent other developers from embedding your bot in their websites, 
+and if you want to make it difficult for other developers to embed your bot in their websites.
+Although using this option will not absolutely prevent other developers from embedding your bot in their websites,
 it does make it difficult for them to do so.
 
 To exchange your secret for a token and generate the embed:
@@ -59,7 +59,7 @@ To exchange your secret for a token and generate the embed:
 3. Within the `iframe` **Embed code** that you copied from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above), change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
 
 > [!NOTE]
-> Tokens will automatically be renewed before they expire. 
+> Tokens will automatically be renewed before they expire.
 
 ##### Example request
 
@@ -68,7 +68,7 @@ requestGET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
 
-##### Example response 
+##### Example response
 
 ```response
 "IIbSpLnn8sA.dBB.MQBhAFMAZwBXAHoANgBQAGcAZABKAEcAMwB2ADQASABjAFMAegBuAHYANwA.bbguxyOv0gE.cccJjH-TFDs.ruXQyivVZIcgvosGaFs_4jRj1AyPnDt1wk1HMBb5Fuw"
@@ -108,10 +108,10 @@ Authorization: BotConnector YOUR_SECRET_HERE
 
 ### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
-Use this option if you want to allow other developers to easily embed your bot into their websites. 
+Use this option if you want to allow other developers to easily embed your bot into their websites.
 
 > [!WARNING]
-> If you use this option, other developers can embed your bot into their websites 
+> If you use this option, other developers can embed your bot into their websites
 > by simply copying your embed code.
 
 To embed your bot in your website by specifying the secret within the `iframe` tag:
