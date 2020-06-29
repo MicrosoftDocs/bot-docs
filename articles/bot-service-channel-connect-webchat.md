@@ -30,7 +30,8 @@ The following picture shows the components involved when embedding the Web Chat 
 
 ![bot embed components](./media/bot-service-channel-webchat/webchat-iframe.png)
 
-> [!NOTE] This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
+> [!NOTE]
+> This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
 
 
 ### Get your bot secret key
