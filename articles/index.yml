@@ -77,13 +77,9 @@ landingContent:
           - text: Composer
             url: https://docs.microsoft.com/composer/
           - text: Composer tutorials
-            url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction
-      - linkListType: concept
-        links:
+            url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction/
           - text: Power Virtual Agents
             url: https://docs.microsoft.com/power-virtual-agents/
-      - linkListType: concept
-        links:
           - text: Microsoft Teams Overview
             url: https://docs.microsoft.com/microsoftteams/teams-overview
           - text: How Microsoft Teams bots work
