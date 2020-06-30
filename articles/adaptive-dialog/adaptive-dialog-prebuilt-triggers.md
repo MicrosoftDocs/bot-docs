@@ -108,7 +108,7 @@ Dialog triggers handle dialog specific events that are related to the _lifecycle
 | `OnBeginDialog`    | `BeginDialog`  | Actions to perform when this dialog begins. For use with child dialogs only, not to be used in your root dialog, In root dialogs, use `OnUnknownIntent` to perform dialog initialization activities.|
 | `OnCancelDialog`   | `CancelDialog` | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a `CancelAllDialogs` action. |
 | `OnEndOfActions`   | `EndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                        |
-| `OnError`          | `Error`        | Actions to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
+| `OnError`          | `Error`        | Actions to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the adaptive dialog that contains this trigger from ending, in this case due to an error in a child dialog.|
 | `OnRepromptDialog` |`RepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                              |
 | `OnDialog` | `DialogEvents.VersionChanged` | |
 
@@ -120,7 +120,7 @@ Dialog triggers handle dialog specific events that are related to the _lifecycle
 This example demonstrates sending a welcome message to the user, using the `OnBeginDialog` trigger.
 
 ```cs
-var adaptiveDialog = new AdaptiveDialog()
+var welcomeDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 {
     Triggers = new List<OnCondition>()
     {
@@ -293,7 +293,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 [actions]:../v4sdk/bot-builder-concept-adaptive-dialog-actions.md
 [triggers]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md
 [inputs]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
-[recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
+[recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
 
 [declarative]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
 [auto-reload-dialogs-when-file-changes]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md#auto-reload-dialogs-when-file-changes
