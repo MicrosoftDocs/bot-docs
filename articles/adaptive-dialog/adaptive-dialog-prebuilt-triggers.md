@@ -144,11 +144,11 @@ All activity events have a base event of `ActivityReceived` and are further refi
 | Event cause         | ActivityType   | Trigger name                   | Description                                                                       |
 | ------------------- | -------------- | ------------------------------ | --------------------------------------------------------------------------------- |
 | Greeting            | `ConversationUpdate` | `OnConversationUpdateActivity` | Handle the events fired when a user begins a new conversation with the bot. |
-| Conversation ended  | `EndOfConversation` | `OnEndOfConversationActivity`  | Actions to perform on receipt of an activity with type `EndOfConversation`.  |
-| Event received      | `Event`        | `OnEventActivity`              | Actions to perform on receipt of an activity with type `Event`.                   |
-| Handover to human   | `Handoff`      | `OnHandoffActivity`            | Actions to perform on receipt of an activity with type `HandOff`.                 |
-| Conversation invoked| `Invoke`       | `OnInvokeActivity`             | Actions to perform on receipt of an activity with type `Invoke`.                  |
-| User is typing      | `Typing`       | `OnTypingActivity`             | Actions to perform on receipt of an activity with type `Typing`.                  |
+| Conversation ended  | `EndOfConversation` | `OnEndOfConversationActivity`  | Actions to perform on receipt of an `endOfConversation` activity.  |
+| Event received      | `Event`        | `OnEventActivity`              | Actions to perform on receipt of an `event` activity.                   |
+| Handover to human   | `Handoff`      | `OnHandoffActivity`            | Actions to perform on receipt of a `handOff` activity.   |
+| Conversation invoked| `Invoke`       | `OnInvokeActivity`             | Actions to perform on receipt of an `invoke` activity.                  |
+| User is typing      | `Typing`       | `OnTypingActivity`             | Actions to perform on receipt of a `typing` activity.                  |
 
 ### Activity event example
 
