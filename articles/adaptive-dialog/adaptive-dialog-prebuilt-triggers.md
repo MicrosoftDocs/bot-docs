@@ -108,7 +108,7 @@ Dialog triggers handle dialog specific events that are related to the _lifecycle
 | `OnBeginDialog`    | `BeginDialog`  | Actions to perform when this dialog begins. For use with child dialogs only, not to be used in your root dialog, In root dialogs, use `OnUnknownIntent` to perform dialog initialization activities.|
 | `OnCancelDialog`   | `CancelDialog` | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a `CancelAllDialogs` action. |
 | `OnEndOfActions`   | `EndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                        |
-| `OnError`          | `Error`        | Action to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
+| `OnError`          | `Error`        | Actions to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
 | `OnRepromptDialog` |`RepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                              |
 | `OnDialog` | `DialogEvents.VersionChanged` | |
 
