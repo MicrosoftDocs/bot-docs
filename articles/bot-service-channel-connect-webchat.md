@@ -115,7 +115,7 @@ Authorization: BotConnector YOUR_SECRET_HERE
 </html>
 ```
 
-### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
+#### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
 Use this option if you want to allow other developers to easily embed your bot into their websites.
 
@@ -135,7 +135,7 @@ To embed your bot in your website by specifying the secret within the `iframe` t
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
 
-## Style the web chat control
+#### Style the web chat control
 
 You may change the size of the web chat control by using the `style` attribute of the `iframe` to specify `height` and `width`.
 
