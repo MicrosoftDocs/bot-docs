@@ -52,7 +52,7 @@ Used to send any activity such as responding to a user.
 * **DeleteActivity**. Enables you to delete an activity that was sent.
 * **Get activity members**. Enables you to get a list of activity members and save it to a property in [memory][memory-states].
 
-For detailed information and examples, see the [Activities](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#activities) section in the Adaptive dialogs prebuilt actions article.
+For detailed information and examples, see the [Activities](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#activities) section in the __Actions in adaptive dialogs - reference guide__.
 
 ### Requesting user input
 
@@ -72,7 +72,7 @@ Conditional actions provided by the Bot Framework SDK include:
   * **Continue a loop**.Used to continue the loop.
 * **Goto**. Immediately goes to the specified action and continues execution. Determined by actionId.
 
-For detailed information and examples, see the [Conditional statements](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#conditional-statements) section in the Adaptive dialogs prebuilt actions article.
+For detailed information and examples, see the [Conditional statements](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#conditional-statements) section in the __Actions in adaptive dialogs - reference guide__.
 
 ### Dialog management
 
@@ -88,7 +88,7 @@ The dialog management actions are designed to give you control of any dialog rel
 * **GetConversationMembers**. Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].
 * **EditActions**. Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions.
 
-For detailed information and examples, see the [Dialog management](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#dialog-management) section in the Adaptive dialogs prebuilt actions article.
+For detailed information and examples, see the [Dialog management](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#dialog-management) section in the __Actions in adaptive dialogs - reference guide__.
 
 ### Manage properties
 
@@ -100,7 +100,7 @@ The manage properties actions able you to create, update and delete a property. 
 * **Create or update a property**. This enables you to set a property's value in [memory][memory-states].
 * **Create or update properties**. This enables you to initialize one or more properties in a single action.
 
-For detailed information and examples, see the [Manage properties](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#manage-properties) section in the Adaptive dialogs prebuilt actions article.
+For detailed information and examples, see the [Manage properties](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#manage-properties) section in the __Actions in adaptive dialogs - reference guide__.
 
 ### Access external resources
 
@@ -112,14 +112,14 @@ These action enable you to access external resources, such as skills, sending an
 * **Sign out a user**. Enables you to sign out the currently signed in user.
 * **Call custom code**. Enables you to call your own custom code.
 
-For detailed information and examples, see the [Access external resources](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#access-external-resources) section in the Adaptive dialogs prebuilt actions article.
+For detailed information and examples, see the [Access external resources](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#access-external-resources) section in the __Actions in adaptive dialogs - reference guide__.
 
 ### Debugging options
 
 * **Log to console**. Writes to the console and optionally sends the message as a trace activity.
 * **Emit a trace event**. Used to sends a trace activity with te specified payload.
 
-For detailed information and examples, see the [Debugging options](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#debugging-options) section in the Adaptive dialogs prebuilt actions article.
+For detailed information and examples, see the [Debugging options](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#debugging-options) section in the __Actions in adaptive dialogs - reference guide__.
 
 ## Additional Information
 

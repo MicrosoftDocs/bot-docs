@@ -110,6 +110,10 @@ Dialog triggers handle dialog specific events that are related to the "lifecycle
 | `OnEndOfActions`   | `EndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                        |
 | `OnError`          | `Error`        | Action to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
 | `OnRepromptDialog` |`RepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                              |
+| `OnDialog` | `DialogEvents.VersionChanged` | |
+
+> [!TIP]
+> If you are using the [declarative][declarative] approach to adaptive dialogs, your dialogs are defined as `.dialog` files that are used to create your dialogs at run-time. These dialogs can also be modified at run time by updating the `.dialog` file directly then handling the `resourceExplorer.Changed` event to reload the dialog. You can also capture the `DialogEvents.VersionChanged` event in a [trigger][triggers] to take any needed actions that may result from a dialog changing in the middle of a conversation with a user. For more information see [Auto reload dialogs when file changes][auto-reload-dialogs-when-file-changes] in the the [Using declarative assets in adaptive dialogs][declarative] article.
 
 ### Dialog event example
 
@@ -287,8 +291,12 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 [introduction]:../v4sdk/bot-builder-adaptive-dialog-introduction.md
 [actions]:../v4sdk/bot-builder-concept-adaptive-dialog-actions.md
+[triggers]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md
 [inputs]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
 [Recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
+[declarative]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
+[auto-reload-dialogs-when-file-changes]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md#auto-reload-dialogs-when-file-changes
+
 [bot-builder-concept-dialog]:../v4sdk/bot-builder-concept-dialog.md
 
 [recognizers-cross-trained-recognizer-set]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set

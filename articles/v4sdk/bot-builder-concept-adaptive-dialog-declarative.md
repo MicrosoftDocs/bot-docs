@@ -158,6 +158,41 @@ resourceExplorer.emitter.on('changed', handleResourceChange);
 
 ---
 
+### The `VersionChanged` event
+
+When your declarative assets have been reloaded to accommodate the changes made to a `.dialog` file, you may need to reevaluate the state of any current conversations to account of any changes to the logic of your dialog. The changes to your logic may be as simple as to clear your conversation stack and restart. More sophisticated logic would enable you to do things like restart a dialog keeping the data you have, allowing you to pick up new properties and or paths that didn't exist before.
+
+The `DialogEvents.VersionChanged` event is captured using the `OnDialogEvent` trigger.
+
+
+# [C#](#tab/csharp)
+
+<!--This example could be improved-->
+```csharp
+Triggers = new List<OnCondition>()
+{
+    new OnDialogEvent(DialogEvents.VersionChanged)
+    {
+        Actions = new List<Dialog>()
+        {
+            new SendActivity("The VersionChanged event fired.")
+        }
+    }
+}
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+triggers: [
+    new OnDialogEvent(DialogEvents.VersionChanged)[
+        new SendActivity("The VersionChanged event fired.")
+    ]
+]
+```
+
+---
+
 ## Declarative assets
 
 The Bot Framework SDK has various declarative assets available, each will be listed below. These assets can be used in your .dialog files as the `$kind` value.
