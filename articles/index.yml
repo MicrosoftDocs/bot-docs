@@ -70,6 +70,18 @@ landingContent:
             url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
 
   # Card
+  - title: Need Help?
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: FAQ
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq
+          - text: Get Support
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help
+          - text: Samples
+            url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
+
+  # Card
   - title: External Resources
     linkLists:
       - linkListType: concept
@@ -88,18 +100,6 @@ landingContent:
             url: https://docs.microsoft.com/microsoftteams/teams-overview
           - text: How Microsoft Teams bots work
             url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams
-
-  # Card
-  - title: Need Help?
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: FAQ
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq
-          - text: Get Support
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help
-          - text: Samples
-            url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
             
   # Card
   - title: Deployment
