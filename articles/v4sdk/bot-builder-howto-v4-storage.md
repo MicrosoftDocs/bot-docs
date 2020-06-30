@@ -316,7 +316,7 @@ Send a message to your bot. The bot will list the messages it has received.
 ## Using Cosmos DB
 
 >[!IMPORTANT]
-> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information. Also note that, unlike the legacy _Cosmos DB storage_, the _Cosmos DB partitioned storage_ does not automatically create a database within your Cosmos DB account, if one does not exist (a container within your database will still be created automatically).
+> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information. Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. When you create a new database, Cosmos DB creates a container within your database automatically.
 
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
@@ -448,7 +448,7 @@ pip install botbuilder-azure
 ### Implementation
 
 > [!NOTE]
-> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Also note that, unlike the legacy _Cosmos DB storage_, the _Cosmos DB partitioned storage_ does not automatically create a database within your Cosmos DB account, if one does not exist (a container within your database will still be created automatically).
+> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. When you create a new database, Cosmos DB creates a container within your database automatically.
 
 ### [C#](#tab/csharp)
 
