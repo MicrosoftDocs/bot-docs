@@ -43,7 +43,7 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 
 > [!NOTE]
 >
-> - The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by the [recognizer][8]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
+> - The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by the [recognizer][recognizers]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
 > - Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
 ``` C#
@@ -199,9 +199,9 @@ You can emit your own events by adding the [EmitEvent][emitevent] action to any 
 > [!TIP]
 > You can allow other dialogs in your bot to handle your custom event by setting the EmitEvent's `BubbleEvent` property to true.
 
-| Event cause  | Trigger name    | Base class    | Description                                                                                                        |
-| ------------ | --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Custom event | `OnDialogEvent` | `OnCondition` | Actions to perform when a custom event is detected. Use [Emit a custom event][emitevent]' action to raise a custom event. |
+| Event cause  | Trigger name    | Base class    | Description                                                                                                              |
+| ------------ | --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Custom event | `OnDialogEvent` | `OnCondition` | Actions to perform when a custom event is detected. Use [Emit a custom event][emitevent] action to raise a custom event. |
 
 <!--Was: OnCustomEvent-->
 
@@ -293,7 +293,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 [actions]:../v4sdk/bot-builder-concept-adaptive-dialog-actions.md
 [triggers]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md
 [inputs]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
-[Recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
+[recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
 [declarative]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
 [auto-reload-dialogs-when-file-changes]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md#auto-reload-dialogs-when-file-changes
 
