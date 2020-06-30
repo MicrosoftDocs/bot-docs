@@ -101,7 +101,7 @@ let rootDialogResource = resourceExplorer.getResource('echo.dialog');
 
 ### The type loader
 
-Once the resource explorer's _get resource_ method reads the declarative file into a resource object, the _load type_method casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
+Once the resource explorer's `_get resource_` method reads the declarative file into a resource object, the `_load type_method` casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
 
 # [C#](#tab/csharp)
 
@@ -195,7 +195,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 > Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
 
 > [!TIP]
-> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input](bot-builder-concept-adaptive-dialog-inputs.md).
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a welcome message or a [prompt for user input](bot-builder-concept-adaptive-dialog-inputs.md).
 
 ##### Dialog event trigger example using declarative
 
