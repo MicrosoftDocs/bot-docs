@@ -101,7 +101,7 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 Dialog triggers handle dialog specific events that are related to the _lifecycle_ of the dialog.  There are currently 6 dialog triggers in the Bot Framework SDK and they all derive from the `OnDialogEvent` class.
 
 > [!TIP]
-> These aren't like normal interruption event handlers where the a child's actions will continue running after the handlers actions complete. For all of the events below the bot will be running a new set of actions and will end the turn once those actions have finished.
+> These aren't like normal interruption event handlers where the child's actions will continue running after the handler's actions complete. For all of the events below, the bot will run a new set of actions and will end the turn once those actions have finished.
 
 | Trigger name     | Base event   | Description                                                                                                                         |
 | ---------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
