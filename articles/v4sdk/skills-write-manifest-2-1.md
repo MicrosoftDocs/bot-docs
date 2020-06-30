@@ -59,7 +59,7 @@ The following is the full schema for v2.1 of the Bot Framework skill manifest.
 | **Definitions**
 | definitions | object | Optional | An object containing subschemas for objects used in the manifest. |
 | **Dispatch models**
-| dispatchModels | [dispatchModels](#dispatch-models) object | Optional | Describes the language models and top-level intents supported by the skill. See  for the schema for this object. |
+| dispatchModels | [dispatchModels](#dispatch-models) object | Optional | Describes the language models and top-level intents supported by the skill. See [below](#dispatch-models) for the schema for this object. |
 
 ## Endpoints
 
