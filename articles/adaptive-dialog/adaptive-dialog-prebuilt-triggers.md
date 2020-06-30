@@ -101,14 +101,14 @@ rootDialog.Triggers.Add(unhandledIntentTrigger);
 Dialog triggers handle dialog specific events that are related to the _lifecycle_ of the dialog.  There are currently 6 dialog triggers in the Bot Framework SDK and they all derive from the `OnDialogEvent` class.
 
 > [!TIP]
-> These aren't like normal interruption event handlers where the a child's actions will continue running after the handlers actions complete. For all of the events below the bot will be running a new set of actions and will end the turn once those actions have finished.
+> These aren't like normal interruption event handlers where the child's actions will continue running after the handler's actions complete. For all of the events below, the bot will run a new set of actions and will end the turn once those actions have finished.
 
 | Trigger name     | Base event   | Description                                                                                                                         |
 | ---------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `OnBeginDialog`    | `BeginDialog`  | Actions to perform when this dialog begins. For use with child dialogs only, not to be used in your root dialog, In root dialogs, use `OnUnknownIntent` to perform dialog initialization activities.|
 | `OnCancelDialog`   | `CancelDialog` | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a `CancelAllDialogs` action. |
 | `OnEndOfActions`   | `EndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                        |
-| `OnError`          | `Error`        | Action to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
+| `OnError`          | `Error`        | Actions to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
 | `OnRepromptDialog` |`RepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                              |
 | `OnDialog` | `DialogEvents.VersionChanged` | |
 
@@ -143,7 +143,7 @@ All activity events have a base event of `ActivityReceived` and are further refi
 
 | Event cause         | ActivityType   | Trigger name                   | Description                                                                       |
 | ------------------- | -------------- | ------------------------------ | --------------------------------------------------------------------------------- |
-| Greeting            | `ConversationUpdate` | `OnConversationUpdateActivity` | Handle the events fired when a user begins a new conversation with the bot. |
+| Greeting            | `ConversationUpdate` | `OnConversationUpdateActivity` | Actions to perform on receipt of a `conversationUpdate` activity, when the bot or a user joins or leaves a conversation. |
 | Conversation ended  | `EndOfConversation` | `OnEndOfConversationActivity`  | Actions to perform on receipt of an `endOfConversation` activity.  |
 | Event received      | `Event`        | `OnEventActivity`              | Actions to perform on receipt of an `event` activity.                   |
 | Handover to human   | `Handoff`      | `OnHandoffActivity`            | Actions to perform on receipt of a `handOff` activity.   |
@@ -154,7 +154,7 @@ All activity events have a base event of `ActivityReceived` and are further refi
 
 #### OnConversationUpdateActivity
 
-The `OnConversationUpdateActivity` trigger is one of the triggers that let you handle an _activity received_ event. The `OnConversationUpdateActivity` trigger will only fire when the _ActivityTypes.conversationUpdate_ condition is met.
+The `OnConversationUpdateActivity` trigger lets you handle an _activity received_ event. The `OnConversationUpdateActivity` trigger will only fire when the activity received is a `conversationUpdate` activity.
 
 The following code snippet demonstrates how you can create an `OnConversationUpdateActivity` trigger:
 
