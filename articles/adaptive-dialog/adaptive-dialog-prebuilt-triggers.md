@@ -286,7 +286,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 ## Additional Information
 
 - [Introduction to adaptive dialogs][introduction]
-- [Dialog libraries][bot-builder-concept-dialog]
+- [Dialogs library][bot-builder-concept-dialog]
 - [Actions in adaptive dialogs][actions]
 
 [introduction]:../v4sdk/bot-builder-adaptive-dialog-introduction.md
