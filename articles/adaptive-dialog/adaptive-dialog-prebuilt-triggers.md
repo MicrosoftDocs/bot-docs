@@ -143,7 +143,7 @@ All activity events have a base event of `ActivityReceived` and are further refi
 
 | Event cause         | ActivityType   | Trigger name                   | Description                                                                       |
 | ------------------- | -------------- | ------------------------------ | --------------------------------------------------------------------------------- |
-| Greeting            | `ConversationUpdate` | `OnConversationUpdateActivity` | Handle the events fired when a user begins a new conversation with the bot. |
+| Greeting            | `ConversationUpdate` | `OnConversationUpdateActivity` | Actions to perform on receipt of a `conversationUpdate` activity, when the bot or a user joins or leaves a conversation. |
 | Conversation ended  | `EndOfConversation` | `OnEndOfConversationActivity`  | Actions to perform on receipt of an `endOfConversation` activity.  |
 | Event received      | `Event`        | `OnEventActivity`              | Actions to perform on receipt of an `event` activity.                   |
 | Handover to human   | `Handoff`      | `OnHandoffActivity`            | Actions to perform on receipt of a `handOff` activity.   |
