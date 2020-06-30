@@ -301,6 +301,6 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 
 [recognizers-cross-trained-recognizer-set]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [qna-maker-recognizer]:adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer
-[emitevent]:../v4sdk/bot-builder-concept-adaptive-dialog-actions.md#emitevent                           <!--[emitevent]:adaptive-dialog-prebuilt-actions.md#emitevent-->
+[emitevent]:../v4sdk/bot-builder-concept-adaptive-dialog-actions.md#emitevent
 
 [botframework-activity]:https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
