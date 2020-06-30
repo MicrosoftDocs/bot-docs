@@ -43,7 +43,7 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 
 > [!NOTE]
 >
-> - The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by the [recognizer][recognizers]. All of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
+> - The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by a [recognizer][recognizers]. With the exception of the [QnA Maker recognizer][qna-maker-recognizer], all of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
 > - Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
 ``` C#
@@ -294,6 +294,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 [triggers]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md
 [inputs]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
 [recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
+
 [declarative]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
 [auto-reload-dialogs-when-file-changes]:../v4sdk/bot-builder-concept-adaptive-dialog-declarative.md#auto-reload-dialogs-when-file-changes
 
