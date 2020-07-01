@@ -63,9 +63,6 @@ You can use Markdown within docXML; however, don't use Markdown headings or imag
 
 ## JavaScript/TypeScript
 
-- [JSDoc](#jsdoc)
-- [TypeDoc](#typedoc)
-- [JavaScript API Browser](#javascript-api-browser)
 - [Tags](#tags)
 - [Files](#files)
 - [Namespaces](#namespaces)
@@ -75,26 +72,14 @@ You can use Markdown within docXML; however, don't use Markdown headings or imag
 
 ---
 
-The following recommendations are for developers and writers working on JavaScript/TypeScript reference (comment) documentation.
+The JS projects use  [JsDoc](https://jsdoc.app/) and [TypeDoc](http://typedoc.org/guides/doccomments/) conventions  for reference documentation.
 
-### JSDoc
-
-Standard **JSDoc** conventions apply for **JavaScript** documentation. You can read more about them here: [JsDoc](https://jsdoc.app/).
-
-### TypeDoc
-
-**TypeDoc** conventions apply to **TypeScript** documentation (please, read [platform breakdown](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/concepts/platforms)). You can read more about them here: [TypeDoc](http://typedoc.org/guides/doccomments/).
-
-### JavaScript API Browser
-
-All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
+All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api/?branch=master). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
 
 ## Tags
 
-Tags are special words in comment descriptions that start with `@`. For example, when describing a function,
-you must describe elements like parameters and return value in the comment section.
+Tags are special words in comment descriptions that start with **@**. For example, when describing a function, you must describe elements like parameters and return value in the comment section.
 You use tags for identifying each elements.
-
 
 ### @param \<name>
 
@@ -117,6 +102,9 @@ public createProperty<T = any>(name: string): StatePropertyAccessor<T> {
 ### @remarks
 
 Communicates important information about a type or a method.
+
+> [!NOTE]
+> This `@rmarks` creates a **Remark** section in the generated reference documentation.  Put any additional information in this section, otherwise the publishing pipeline will include everything in the summary.
 
 ```javascript
 /**
@@ -219,6 +207,8 @@ export interface DialogInstance<T = any> {
 ### @ignore
 
 Keeps the subsequent from being documented.
+> [!NOTE]
+> You can use this tag but remember that the publishing pipeline does not render comments related to private elements.
 
 ```javascript
 /**
@@ -356,25 +346,21 @@ exports.authenticateWithUsernamePassword = function (username, password, callbac
 
 ```
 
+> [!NOTE]
+> The braced type annotation is ignored by the publishing pipeline. The type is obtained from the code definition.
+
+
 ## Reference SDK-defined types
 
-The SDK-defined types are those defined in the Bot Framerk SDK libraries.
-To link to auto-generated API reference pages, use XRef links with the **unique ID** (UID) of the type or member.
-The following is the syntax to create a link:
-
-```xml
-<xref:UID>
-<xref:UID?displayProperty=nameWithType>
-```
-
-> [!NOTE]
-> By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
-
-You can use a markdown style if you want to change the text of the link itself as follows:
+The SDK-defined types are found in the Bot Framerk SDK libraries.
+To link to the auto-generated API reference pages, use XRef links with the **unique ID** (UID) of the type or member as shown below/
 
 ```markdown
 [link custom text](xref:UID)
 ```
+
+> [!NOTE]
+> By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
 
 To find the UID for the API on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side. The following picture shows an example, where the UIDs are in the red box:
 
@@ -406,12 +392,12 @@ You get the documentation page for `getStorageKey(TurnContext)`.
 ### Examples
 
 > [!div class="mx-tdBreakAll"]
-> |Type|Example|Link|Comments|
-> |------|-----|------|-----|
+> |Type|Example|Link|
+> |------|-----|------|
 > |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/en-us/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=master)|
-> |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)| |
-> |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://docs.microsoft.com/javascript/api/botframework-schema/channelaccount)||
-> |Method|`[getActivityMembers](xref:botbuilder.BotFrameworkAdapter.getActivityMembers)`|[BotFrameworkAdapter.getActivityMembers](https://docs.microsoft.com/javascript/api/botbuilder/botframeworkadapter#getactivitymembers-turncontext--string-)||
+> |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)|
+> |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://docs.microsoft.com/javascript/api/botframework-schema/channelaccount)|
+
 
 For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/en-us/help/contribute/links-how-to?branch=master#xref-cross-reference-links).
 
@@ -437,6 +423,75 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
   Or, search for the target using the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api).
 - Don't use `[[ ]]` links. :stuck_out_tongue_closed_eyes:
 - Don't use `@see` tags.    :stuck_out_tongue_closed_eyes:
+
+
+### Open Issues
+
+#### TypeScript comments
+
+Remove `TypeScript` comments. This is duplicated information because the publishing pipeline generated it also. See the example below.
+
+```Javascript
+/**
+ * Signature for an alternate word breaker that can be passed to `recognizeChoices()`,
+ * `findChoices()`, or `findValues()`.
+ *
+ * ```TypeScript
+ * type TokenizerFunction = (text: string, locale?: string) => Token[];
+ * ```
+ *
+ * @remarks
+ * The `defaultTokenizer()` is fairly simple and only breaks on spaces and punctuation.
+ * @param TokenizerFunction.text The text to be tokenized.
+ * @param TokenizerFunction.locale (Optional) locale of the text if known.
+ */
+export type TokenizerFunction = (text: string, locale?: string) => Token[];
+```
+
+It produces the following output:
+
+![typescript error](../media/typescript-error.png)
+
+
+#### Unresolved type link
+
+The `@returns` tag breaks the link generation in the generated reference documentation.
+See the example shown below.
+
+- For `getSkillConversationReference` (without the `@returns` markup), the return type (Promise\<SkillConversationReference>) renders with an active link.
+
+```Javascript
+/**
+ * Gets the ConversationReference created using createSkillConversationId() for a skillConversationId.
+ * @deprecated Method is deprecated, please use getSkillConversationReference() instead.
+ * @param skillConversationId >A skill conversationId created using createSkillConversationId().
+ * @returns The caller's ConversationReference for a skillConversationId. null if not found.
+ */
+public getConversationReference(skillConversationId: string): Promise<ConversationReference> {
+    throw new Error('Not Implemented');
+}
+```
+
+Generated reference documentation:
+
+![type link correct](../media/type-link-correct.png)
+
+- For `getConversationReference` (with the @returns markup), the return type (Promise\<ConversationReference>) renders without an active link.
+
+```Javascript
+/**
+ * Gets the SkillConversationReference created using createSkillConversationId() for a skillConversationId.
+ * @param skillConversationId Gets the SkillConversationReference used during CreateSkillConversationIdAsync for a skillConversationId.
+ */
+public getSkillConversationReference(skillConversationId: string): Promise<SkillConversationReference> {
+    throw new Error('Not Implemented');
+}
+
+```
+
+Generated reference documentation:
+
+![type link incorrect](../media/type-link-incorrect.png)
 
 ---
 
