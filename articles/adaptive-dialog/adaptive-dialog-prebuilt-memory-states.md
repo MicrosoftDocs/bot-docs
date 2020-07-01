@@ -85,7 +85,7 @@ All options passed into `BeginDialog` when creating a new adaptive dialog become
 
 ### Dialog sub-scopes
 
-All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`. You can read more about the `Foreach` action in [Actions in adaptive dialogs][foreach-action].
+All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`. You can read more about the [`Foreach`][foreach-action] action in the **Actions in adaptive dialogs** topic.
 
 ## Turn scope
 
