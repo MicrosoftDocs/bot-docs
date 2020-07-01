@@ -203,9 +203,9 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 
 #### Base trigger
 
-| `$kind` value          | Trigger Name                  | What this trigger does                                              |
-| ---------------------- | ----------------------------- | ------------------------------------------------------------------- |
-|`Microsoft.OnCondition`  | [OnCondition][send-activity] | The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
+| `$kind` value          | Trigger Name | What this trigger does                                              |
+| ---------------------- | ------------ | ------------------------------------------------------------------- |
+|`Microsoft.OnCondition` | `OnCondition`| The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
 
 #### Recognizer event triggers
 
