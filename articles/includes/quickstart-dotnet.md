@@ -31,8 +31,6 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
-### Installation
-
 In a console window perform the steps shown below.
 
 1. Install [.NET Core SDK](https://dotnet.microsoft.com/download) version 3.1 or higher.
