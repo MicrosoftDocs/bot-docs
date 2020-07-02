@@ -11,7 +11,19 @@
 
 ### Azure AD v1
 
-test
+Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
+
+In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. Choose **AI Bots** from the project types to show only bot templates.
+
+> [!div class="mx-imgBorder"]
+> ![Visual Studio create a new project dialog](../media/azure-bot-quickstarts/bot-builder-dotnet-project-vs2019.png)
+
+Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
+
+> [!NOTE]
+> If you create a `Core` bot, you'll need a LUIS language model. (You can create a language model at [luis.ai](https://www.luis.ai)). After creating the model, update the configuration file.
+
+[!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
 # [Azure AD v2](#tab/adv2)
 
