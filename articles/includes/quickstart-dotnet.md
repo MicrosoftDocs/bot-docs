@@ -13,9 +13,9 @@
 
 test
 
-# [Azure AD v1](#tab/adv1)
+# [Azure AD v2](#tab/adv2)
 
-### Azure AD v1
+### Azure AD v2
 
 test
 
@@ -23,7 +23,7 @@ test
 
 # [VS templates](#tab/vs)
 
-## VS templates
+### VS templates
 
 The
 Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
@@ -42,7 +42,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 # [CL templates](#tab/cl)
 
-## CL templates
+### CL templates
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
