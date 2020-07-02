@@ -6,10 +6,11 @@
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
-# [Visual Studio](#tab/vs)
+# [VS templates](#tab/vs)
 
-## Create a bot
+## VS templates
 
+The
 Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
 
 In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. Choose **AI Bots** from the project types to show only bot templates.
@@ -24,10 +25,9 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
+# [CL templates](#tab/cl)
 
-# [Command Line](#tab/cl)
-
-## Create a bot
+## CL templates
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
@@ -41,6 +41,7 @@ In a console window perform the steps shown below.
    ```cmd
    dotnet --version
    ```
+
 1. Install Bot Framework CSharp 3 templates (echo, core, empty).
 
    ```cmd
