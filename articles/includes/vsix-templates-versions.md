@@ -1,5 +1,7 @@
 ### About templates
 
+<!-- Added templates info and link -->
+
 Templates let you quickly create bots using core capabilities. The following table is a quick overview of the kind of templates provided. For more information, see [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/dotnet-templates#net-core-sdk-templates)
 
 > [!div class="mx-tdBreakAll"]
