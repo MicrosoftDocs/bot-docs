@@ -28,7 +28,7 @@ When you use Azure Bot Service authentication with Web Chat there are some impor
 
 The following picture shows the components involved when embedding the Web Chat control in a web page.
 
-![bot embed components](./media/bot-service-channel-webchat/webchat-iframe.png)
+  ![bot embed components](./media/bot-service-channel-webchat/webchat-iframe.png)
 
 > [!NOTE]
 > This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
@@ -147,5 +147,12 @@ You may change the size of the web chat control by using the `style` attribute o
 
 <!-- ![Chat control Client](./media/chatwidget-client.png) -->
 ## Additional resources
+
+> [!div class="op_single_selector"]
+> - [Web Chat overview](./v4sdk/bot-builder-webchat-overview.md)
+> - [Web Chat customization](./v4sdk/bot-builder-webchat-customization.md)
+> - [Enable speech in Web Chat](bot-service-channel-connect-webchat-speech.md)
+> - [Use Web Chat with the direct line app service extension](bot-service-channel-directline-extension-webchat-client.md)
+> - [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md)
 
 You can [download the source code](https://aka.ms/BotFramework-WebChat-V4) for the web chat control on GitHub.
