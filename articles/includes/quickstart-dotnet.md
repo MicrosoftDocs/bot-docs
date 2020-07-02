@@ -21,11 +21,10 @@ test
 
 ---
 
-# [VS templates](#tab/vs)
+# [VS templates](#tab/vst)
 
-### VS templates
+### Visual Studio templates
 
-The
 Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
 
 In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. Choose **AI Bots** from the project types to show only bot templates.
@@ -40,9 +39,9 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [CL templates](#tab/cl)
+# [CL templates](#tab/clt)
 
-### CL templates
+### Command Line templates
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
