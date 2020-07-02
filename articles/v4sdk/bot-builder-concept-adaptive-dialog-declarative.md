@@ -376,7 +376,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 
 ### Recognizers
 
-The bot framework SDK provides over a half dozen different recognizers, you specify which recognizer to use in the .dialog file, for example:
+The Bot Framework SDK provides over a half dozen different recognizers, you specify which recognizer to use in the .dialog file, for example:
 
 ```json
 {
