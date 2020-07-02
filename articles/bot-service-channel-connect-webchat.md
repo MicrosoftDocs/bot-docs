@@ -148,11 +148,10 @@ You may change the size of the web chat control by using the `style` attribute o
 <!-- ![Chat control Client](./media/chatwidget-client.png) -->
 ## Additional resources
 
-> [!div class="op_single_selector"]
-> - [Web Chat overview](./v4sdk/bot-builder-webchat-overview.md)
-> - [Web Chat customization](./v4sdk/bot-builder-webchat-customization.md)
-> - [Enable speech in Web Chat](bot-service-channel-connect-webchat-speech.md)
-> - [Use Web Chat with the direct line app service extension](bot-service-channel-directline-extension-webchat-client.md)
-> - [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md)
+- [Web Chat overview](~/v4sdk/bot-builder-webchat-overview.md)
+- [Web Chat customization](~/v4sdk/bot-builder-webchat-customization.md)
+- [Enable speech in Web Chat](~/bot-service-channel-connect-webchat-speech.md)
+- [Use Web Chat with the direct line app service extension](~/bot-service-channel-directline-extension-webchat-client.md)
+- [Connect a bot to Direct Line Speech](~/bot-service-channel-connect-directlinespeech.md)
 
 You can [download the source code](https://aka.ms/BotFramework-WebChat-V4) for the web chat control on GitHub.
