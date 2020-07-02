@@ -2,8 +2,11 @@
 
 - [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
 - [Bot Framework SDK v4 template for C#](https://aka.ms/bot-vsix)
+- [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
+
+# [Visual Studio](#tab/vs)
 
 ## Create a bot
 
@@ -20,6 +23,44 @@ Thanks to the template, your project contains all the code that's necessary to c
 > If you create a `Core` bot, you'll need a LUIS language model. (You can create a language model at [luis.ai](https://www.luis.ai)). After creating the model, update the configuration file.
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
+
+
+# [Command Line](#tab/cl)
+
+## Create a bot
+
+.NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
+
+### Installation
+
+In a console window perform the steps shown below.
+
+1. Install [.NET Core SDK](https://dotnet.microsoft.com/download) version 3.1 or higher.
+1. Determine dotnet version.
+
+   ```cmd
+   dotnet --version
+   ```
+1. Install Bot Framework CSharp 3 templates (echo, core, empty).
+
+   ```cmd
+   dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot
+   dotnet new -i Microsoft.Bot.Framework.CSharp.CoreBot
+   dotnet new -i Microsoft.Bot.Framework.CSharp.EmptyBot
+   ```
+
+1. Verify the templates have been installed correctly.
+
+   ```cmd
+   dotnet new --list
+   ```
+
+> [!NOTE]
+> The above installation steps will install all three Bot Framework templates. If you prefer to install one template or a subset of the three templates, install them individually.
+
+ For more information, see [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/dotnet-templates#net-core-sdk-templates).
+
+---
 
 ## Start your bot in Visual Studio
 
