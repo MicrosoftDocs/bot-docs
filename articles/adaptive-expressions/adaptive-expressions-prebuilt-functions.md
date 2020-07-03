@@ -51,6 +51,8 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
+|[sentenseCase](#sentenseCase)|Capitalize the first letter of the first word in a heading and leaving other letter lowercase.|
+|[titleCase](#titleCase)|Capitalize the first letter of each word and leaving other letter lowercase.|
 
 ### Collection functions
 
@@ -4006,6 +4008,42 @@ startsWith('hello world', 'greeting')
 
 And returns the result `false`.
 
+<a name="sentenseCase"></a>
+
+### sentenseCase
+
+Capitalize the first letter of the first word in a heading and leave others letter lowercase.
+
+```
+sentenseCase('<text>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*text*> | Yes | string | The original string |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| result string | string | Returns the sentense case result |
+||||
+
+*Example*
+
+These examples take the given string and capitalize the first letter:
+
+```
+sentenceCase('a')
+sentenceCase('abc def')
+sentenceCase('aBC dEF')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc def**
+- **Abc def**
+
 <a name="string"></a>
 
 ### string
@@ -4279,6 +4317,42 @@ ticks('2018-01-01T08:00:00.000Z')
 ```
 
 And returns the result **636503904000000000**.
+
+<a name="titleCase"></a>
+
+### titleCase
+
+Capitalize the first letter of each word and leave other letters lowercase.
+
+```
+titleCase('<text>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*text*> | Yes | string | The original string |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| result string | string | Returns the title case result |
+||||
+
+*Example*
+
+These examples capitalize the first letter of each word in the string:
+
+```
+titleCase('a')
+titleCase('abc def')
+sentenceCase('aBC dEF')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc Def**
+- **Abc Def**
 
 <a name="toLower"></a>
 
