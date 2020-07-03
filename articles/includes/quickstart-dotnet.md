@@ -6,7 +6,10 @@
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
-# [Visual Studio templates](#tab/vst)
+
+## Templates
+
+# [Visual Studio](#tab/vst)
 
 ## Visual Studio templates
 
@@ -24,7 +27,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [Command line templates](#tab/clt)
+# [Command line](#tab/clt)
 
 ## Command line templates
 
@@ -58,15 +61,17 @@ In a console window perform the steps shown below.
 
 ---
 
-# [Visual Studio build](#tab/vsb)
+## Build and run the bot
 
-## Visual Studio build
+# [Visual Studio](#tab/vsb)
+
+## Visual Studio build nad run the bot
 
 Start your project in Visual Studio. This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page.
 
 At this point, your bot is running locally on port 3978.
 
-## Start the Emulator and connect to your bot
+### Start the Emulator and connect to your bot
 
 Next, start the emulator and then connect to your bot in the emulator:
 
@@ -91,9 +96,9 @@ Next, start the emulator and then connect to your bot in the emulator:
 > If you see that the message cannot be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
 -->
 
-# [Command line build](#tab/clb)
+# [Command line](#tab/clb)
 
-## Command line build
+## Command line build and run the bot
 
 Create a new bot project using one of the commands shown below.
 
@@ -121,7 +126,7 @@ dotnet new corebot -n MyCoreBotWithTests --include-tests
 dotnet new emptybot -n MyEmptyBot
 ```
 
-## Running the Bot locally
+### Running the Bot locally
 
 To run your bot locally, execute the commands shown below.
 
@@ -137,7 +142,7 @@ cd EchoBot
 dotnet run
 ```
 
-## Start the emulator and connect to the bot
+### Start the emulator and connect to the bot
 
 1. Launch Bot Framework Emulator
 1. File -> Open Bot
