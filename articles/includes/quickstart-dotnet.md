@@ -65,7 +65,7 @@ In a console window perform the steps shown below.
 
 # [Visual Studio](#tab/vsb)
 
-## Visual Studio build nad run the bot
+## Build nad run the bot in Visual Studio
 
 Start your project in Visual Studio. This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page.
 
@@ -98,7 +98,7 @@ Next, start the emulator and then connect to your bot in the emulator:
 
 # [Command line](#tab/clb)
 
-## Command line build and run the bot
+## Build and run the bot with command line
 
 Create a new bot project using one of the commands shown below.
 
@@ -126,7 +126,7 @@ dotnet new corebot -n MyCoreBotWithTests --include-tests
 dotnet new emptybot -n MyEmptyBot
 ```
 
-### Running the Bot locally
+### Run the Bot locally
 
 To run your bot locally, execute the commands shown below.
 
