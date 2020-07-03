@@ -7,9 +7,9 @@
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
 
-# [Azure AD v1](#tab/adv1)
+# [VS templates](#tab/vst)
 
-### Azure AD v1
+## Visual Studio templates
 
 Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
 
