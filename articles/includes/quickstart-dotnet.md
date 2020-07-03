@@ -65,7 +65,7 @@ In a console window perform the steps shown below.
 
 # [Visual Studio](#tab/vsb)
 
-## Build nad run the bot in Visual Studio
+## Build and run the bot in Visual Studio
 
 Start your project in Visual Studio. This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page.
 
@@ -95,6 +95,29 @@ Next, start the emulator and then connect to your bot in the emulator:
 > [!NOTE]
 > If you see that the message cannot be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
 -->
+
+# [Visual Studio Code](#tab/vcb)
+
+## Build and run the bot in Visual Studio Code
+
+In Visual Studio Code, you can run the bot nad step through your code.
+
+1. Launch VS Code and open your bot project folder.
+
+1. Set breakpoints as necessary.
+
+1. From the menu bar, click **Run**. Your bot will start running from the Terminal in Visual Studio Code.
+
+### Start the Emulator and connect to your bot
+
+Next, start the emulator and then connect to your bot in the emulator:
+
+1. Start the Bot Framework Emulator.
+
+2. Click **Open Bot** on the Emulator's **Welcome** tab.
+
+3. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
+
 
 # [Command line](#tab/clb)
 
