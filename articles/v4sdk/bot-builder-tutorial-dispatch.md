@@ -3,11 +3,11 @@ title: Use multiple LUIS and QnA models - Bot Service
 description: Learn how to use LUIS and QnA maker in your bot.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
 author: diberry
-ms.author: diberry
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/27/2020
+ms.date: 06/29/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,15 +19,15 @@ If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge base
 
 ## Prerequisites
 
-- Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
-- [Dispatch tool](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch)
-- A copy of the **NLP with Dispatch** from the [C# Sample][cs-sample], [JS Sample][js-sample], or [Python Sample][python-sample] code repository.
 - A [luis.ai](https://www.luis.ai/) account to publish LUIS apps.
 - A [QnA Maker](https://www.qnamaker.ai/) account to publish the QnA knowledge base.
+- A copy of the **NLP with Dispatch** sample in [C#][cs-sample], [JavaScript][js-sample], or [Python][python-sample].
+- Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
+- The command-line [Dispatch tool](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch)
 
 ## About this sample
 
-This sample is based on a predefined set of LUIS and QnA Maker Apps.
+This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [C#](#tab/cs)
 
@@ -73,29 +73,16 @@ Before you can create the dispatch model, you'll need to have your LUIS apps and
 | Weather | A LUIS app that recognizes weather-related intents with location data.|
 | QnAMaker  | A QnA Maker knowledge base that provides answers to simple questions about the bot. |
 
-### Create LUIS apps
+### Create the LUIS apps
 
-1. Log into the [LUIS web portal](https://www.luis.ai/). Under the _My apps_ section, select the Tab _Import new app_. The following Dialog Box will appear:
+1. Create a LUIS app from the _home automation_ JSON file in the _cognitive models_ directory of the sample.
+    1. Train and publish the app to the production environment.
+    1. Record the application ID, display name, authoring key, and location.
+1. Repeat these steps for the _weather_ JSON file.
 
-    ![Import LUIS json file](./media/tutorial-dispatch/import-new-luis-app.png)
+For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
 
-2. Select the button _Choose app file_, navigate to the CognitiveModel folder of your sample code and select the file 'HomeAutomation.json'. Leave the optional name field blank.
-
-3. Select _Done_.
-
-4. Once LUIS opens up your Home Automation app, select the _Train_ button. This will train your app using the set of utterances you just imported using the 'home-automation.json' file.
-
-5. When training is complete, select the _Publish_ button. The following Dialog Box will appear:
-
-    ![Publish LUIS app](./media/tutorial-dispatch/publish-luis-app.png)
-
-6. Choose the 'production' environment and then select the _Publish_ button.
-
-7. Once your new LUIS app has been published, select the _MANAGE_ Tab. From the 'Application Information' page, record the values `Application ID` as "_app-id-for-app_" and `Display name` as "_name-of-app_". From the 'Key and Endpoints' page, record the values `Authoring Key` as "_your-luis-authoring-key_" and `Region` as "_your-region_". These values will later be used within your 'appsetting.json' file.
-
-8. Once completed, _Train_ and _Publish_ both your LUIS **Home Automation** app and your LUIS **Weather** app by repeating the above steps for 'Weather.json' file.
-
-### Create QnA Maker knowledge base
+### Create the QnA Maker knowledge base
 
 The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found [here](https://aka.ms/create-qna-maker).
 
@@ -157,10 +144,12 @@ The dispatch tool needs authoring access to read the existing LUIS and QnA Maker
 
 The **authoring key** is only used for creating and editing the models. You need an ID and key for each of the two LUIS apps and the QnA Maker app.
 
-|App|Location of information|
-|--|--|
-|LUIS|**App ID** - found in the [LUIS portal](https://www.luis.ai) for each app, Manage -> Application Information<br>**Authoring Key** - found in the LUIS portal, top-right corner, select your own User, then Settings.|
-|QnA Maker| **App ID** - found in the [QnA Maker portal](https://http://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/<APP-ID>/generateAnswer`.<br>**Authoring Key** - found in the Azure portal, for the QnA Maker resource, under the **Keys**. You only need one of the keys.|
+- for LUIS
+  - The **App ID** is found in the [LUIS portal](https://www.luis.ai) for each app, Manage > Settings > Application Settings
+  - The **Authoring Key** is found in the LUIS portal, top-right corner, select your own User, then Settings.
+- for Qna Maker
+  - The **App ID** is found in the [QnA Maker portal](https://http://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/<APP-ID>/generateAnswer`.
+  - The **Authoring Key** is found in the Azure portal, for the QnA Maker resource, under the **Keys**. You only need one of the keys.
 
 The authoring key is not used to get a prediction score or confidence score from the published application. You need the endpoint keys for this action. The **[endpoint keys](#service-endpoint-keys)** are found and used later in this tutorial.
 
@@ -214,14 +203,12 @@ The bot needs information about the published services, so that it can access th
 
 ### Service endpoint keys
 
-The bot needs the query prediction endpoints for the three LUIS apps (dispatch, weather, and home automation) and the single QnA Maker knowledge base. Use the following table to find the endpoint keys:
+The bot needs the query prediction endpoints for the three LUIS apps (dispatch, weather, and home automation) and the single QnA Maker knowledge base. Find the endpoint keys in the LUIS and QnA Maker portals:
 
-|App|Query endpoint key location|
-|--|--|
-|LUIS|In the LUIS portal, for each LUIS app, in the Manage section, select **Keys and Endpoint settings** to find the keys associated with each app. If you are following this tutorial, the endpoint key is the same key as the `<your-luis-authoring-key>`. The authoring key allows for 1000 endpoint hits then expires.|
-|QnA Maker|In the QnA Maker portal, for the knowledge base, in the Manage settings, use the key value shows in the Postman settings for the **Authorization** header, without the text of `EndpointKey`.|
+- In the LUIS portal, for each LUIS app, in the Manage section, select **Keys and Endpoint settings** to find the keys associated with each app. If you are following this tutorial, the endpoint key is the same key as the `<your-luis-authoring-key>`. The authoring key allows for 1000 endpoint hits then expires.
+- In the QnA Maker portal, for the knowledge base, in the Manage settings, use the key value shows in the Postman settings for the **Authorization** header, without the text of `EndpointKey`.
 
-These values are used in the **appsettings.json** for C# and the **.env** file for javascript.
+These values are used in the sample's configuration file: **appsettings.json** (C#), **.env** (JavaScript), or **config.py** (Python).
 
 ## [C#](#tab/cs)
 

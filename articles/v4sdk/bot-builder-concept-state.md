@@ -40,7 +40,7 @@ The Bot Framework SDK includes some implementations for the storage layer:
 - **Azure Cosmos DB partitioned storage** connects to a partitioned Cosmos DB NoSQL database.
 
 >[!IMPORTANT]
-> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information. Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. When you create a new database, Cosmos DB creates a container within your database automatically.
 
 For instructions on how to connect to other storage options, see [write directly to storage](bot-builder-howto-v4-storage.md).
 
