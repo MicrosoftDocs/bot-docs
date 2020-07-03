@@ -77,16 +77,16 @@ Next, start the emulator and then connect to your bot in the emulator:
 
 1. Start the Bot Framework Emulator.
 
-2. Click **Open Bot** on the Emulator's **Welcome** tab.
+1. Click **Open Bot** on the Emulator's **Welcome** tab.
 
-3. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
+1. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
 
    <!--This is the same process in the Emulator for all three languages.-->
    ![open a bot screen](../media/python/quickstart/open-bot.png)
 
-4. Then click **Connect**.
+1. Then click **Connect**.
 
-   Send a message to your bot, and the bot will respond back with a message.
+   Send a message to your bot, and the bot will respond back.
 
    > [!div class="mx-imgBorder"]
    > ![Emulator running](../media/emulator-v4/cs-quickstart.png)
@@ -101,12 +101,21 @@ Next, start the emulator and then connect to your bot in the emulator:
 ## Build and run the bot in Visual Studio Code
 
 In Visual Studio Code, you can run the bot nad step through your code.
+Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is installed.
 
 1. Launch VS Code and open your bot project folder.
+1. From the menu bar, click **Run**.
+1. From the drop-down menu, select **Run Without Debugging**.
 
-1. Set breakpoints as necessary.
+   ![vsc run](../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-run.png)
 
-1. From the menu bar, click **Run**. Your bot will start running from the Terminal in Visual Studio Code.
+1. Select the **.Net Core** environment.
+
+   ![vsc run](../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-environment.png)
+
+This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page.
+
+At this point, your bot is running locally on port 3978.
 
 ### Start the Emulator and connect to your bot
 
@@ -114,10 +123,13 @@ Next, start the emulator and then connect to your bot in the emulator:
 
 1. Start the Bot Framework Emulator.
 
-2. Click **Open Bot** on the Emulator's **Welcome** tab.
+1. Click **Open Bot** on the Emulator's **Welcome** tab.
 
-3. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
+1. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
 
+1. Click **Connect**.
+
+   Send a message to your bot, and the bot will respond back.
 
 # [Command line](#tab/clb)
 
