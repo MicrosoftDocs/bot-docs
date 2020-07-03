@@ -6,7 +6,6 @@
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
-
 # [VS templates](#tab/vst)
 
 ## Visual Studio templates
@@ -25,35 +24,9 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [Azure AD v2](#tab/adv2)
+# [CL templates](#tab/clt)
 
-### Azure AD v2
-
-test
-
----
-
-# [VS templates](#tab/vst)
-
-### Visual Studio templates
-
-Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
-
-In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. Choose **AI Bots** from the project types to show only bot templates.
-
-> [!div class="mx-imgBorder"]
-> ![Visual Studio create a new project dialog](../media/azure-bot-quickstarts/bot-builder-dotnet-project-vs2019.png)
-
-Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
-
-> [!NOTE]
-> If you create a `Core` bot, you'll need a LUIS language model. (You can create a language model at [luis.ai](https://www.luis.ai)). After creating the model, update the configuration file.
-
-[!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
-
-# [CL templates](#tab/clt)
-
-### Command Line templates
+## Command Line templates
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
