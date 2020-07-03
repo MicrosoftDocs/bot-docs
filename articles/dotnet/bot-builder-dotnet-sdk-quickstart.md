@@ -24,7 +24,8 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 ## Additional resources
 
-See [tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for how to connect to a bot hosted remotely.
+- [Tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) how to connect to a bot hosted remotely
+- [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/dotnet-templates#net-core-sdk-templates)
 
 ## Next steps
 

@@ -6,7 +6,7 @@
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
-# [VS templates](#tab/vst)
+# [Visual Studio templates](#tab/vst)
 
 ## Visual Studio templates
 
@@ -24,7 +24,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [CL templates](#tab/clt)
+# [Command line templates](#tab/clt)
 
 ## Command line templates
 
@@ -58,7 +58,7 @@ In a console window perform the steps shown below.
 
 ---
 
-# [VS build](#tab/vsb)
+# [Visual Studio build](#tab/vsb)
 
 ## Visual Studio build
 
@@ -66,7 +66,7 @@ Start your project in Visual Studio. This will build the application, deploy it 
 
 At this point, your bot is running locally on port 3978.
 
-### Start the Emulator and connect to your bot
+## Start the Emulator and connect to your bot
 
 Next, start the emulator and then connect to your bot in the emulator:
 
@@ -91,7 +91,7 @@ Next, start the emulator and then connect to your bot in the emulator:
 > If you see that the message cannot be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
 -->
 
-# [CL build](#tab/clb)
+# [Command line build](#tab/clb)
 
 ## Command line build
 
@@ -121,7 +121,7 @@ dotnet new corebot -n MyCoreBotWithTests --include-tests
 dotnet new emptybot -n MyEmptyBot
 ```
 
-### Running Your Bot Locally
+## Running the Bot locally
 
 To run your bot locally, execute the commands shown below.
 
@@ -137,7 +137,7 @@ cd EchoBot
 dotnet run
 ```
 
-### Start the emulator and connect to your bot
+## Start the emulator and connect to the bot
 
 1. Launch Bot Framework Emulator
 1. File -> Open Bot
@@ -147,6 +147,3 @@ Once the emulator is connected, you can interact with and receive messages from 
 
 ---
 
-## Additional information
-
-[.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/dotnet-templates#net-core-sdk-templates)
