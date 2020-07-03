@@ -17,7 +17,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 Structured response templates let developers define a complex structure that supports the extensive functionality of [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md), like templating, composition, while leaving the interpretation of the structured response up to the caller of the LG library.
 
-For bot applications, the followng support is provided:
+For bot applications, the following support is provided:
+
 - activity definition
 - card definition
 
@@ -29,7 +30,7 @@ For bot applications, the followng support is provided:
 | Speak             | Spoken text used by the channel to render audibly                                                                                 |
 | Attachments       | List of attachments with their type. Used by channels to render as UI cards or other generic file attachment types.                |
 | SuggestedActions  | List of actions rendered as suggestions to user.                                                                                  |
-| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values inclue `accepting`, `expecting`, or `ignoring`.   |
+| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values include `accepting`, `expecting`, or `ignoring`.   |
 
 There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains unspecified. For example, the `Speak` property isn't automatically assigned to be the `Text` property if only the `Text` property is specified.
 
@@ -180,7 +181,7 @@ Use **\\** to escape |.
 > With '|' you are making attachments a list.
         Attachments = ${HeroCard()} |
 > You can use '\' as an escape character
-        Suggestions = 10 \\| cards | 20 \\| cards
+        Suggestions = 10 \| cards | 20 \| cards
 ]
 ```
 
@@ -310,6 +311,7 @@ You can also use attachments, seen below:
     content = ${json(fromFile('../../card.json'))}
 ]
 ```
+
 <!--
 ## Chatdown style content as structured activity template
 It is a natural extension to also define full [chatdown][1] style templates using the structured template definition capability. This helps eliminate the need to always define chatdown style cards in a multi-line definition
