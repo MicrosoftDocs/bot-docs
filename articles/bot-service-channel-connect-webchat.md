@@ -50,8 +50,6 @@ The following picture shows the components involved when embedding the Web Chat 
 
 5. Click **Done**.
 
-### Embedding options
-
 <!--
 #### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
@@ -115,15 +113,17 @@ Authorization: BotConnector YOUR_SECRET_HERE
   </script>
 </html>
 
-```
--->
+``` -->
+
+### Embedding options
 
 #### Option 1 - (To replace the old one) Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 This option does not expose the Web Chat channel secret key in the client web page, as it is required in a production environment.
 
-The client code must provide a token to talk to the bot. To learn about the differences between secrets and tokens
-and to understand the risks associated with using secrets, visit [Direct Line authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
+The client must provide a token to talk to the bot. To learn about the differences between secrets and tokens
+and to understand the risks associated with using secrets, visit [Direct Line authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
+The following client web page how to use a token with the Web Chat.
 
 ```html
 
