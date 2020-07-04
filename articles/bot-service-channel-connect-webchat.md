@@ -113,17 +113,24 @@ Authorization: BotConnector YOUR_SECRET_HERE
 
   </script>
 </html>
+
 ```
+
+#### Option 1 - (new) Keep your secret hidden, exchange your secret for a token, and generate the embed
+
+This option executes a server-to-server request to exchange the Web Chat secret key for a temporary token.
+
+> [!NOTE]
+> With this option, the Web Chat channel secret key is hidden and not exposed in the client web page. Use this option only in a production environment.
 
 #### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
 Use this option if you want to allow other developers to easily embed your bot into their websites.
 
 > [!WARNING]
-> If you use this option, other developers can embed your bot into their websites
-> by simply copying your embed code.
+> With this option, the Web Chat channel secret key is exposed in the client web page. Use this option only for development purposes and not in a production environment.
 
-To embed your bot in your website by specifying the secret within the `iframe` tag:
+To embed your bot in a web page by specifying the secret within the `iframe` tag, perform the steps described below.
 
 1. Copy the `iframe` **Embed code** from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above).
 
@@ -143,9 +150,10 @@ You may change the size of the web chat control by using the `style` attribute o
 <iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
 ```
 
-![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
+  ![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
 
 <!-- ![Chat control Client](./media/chatwidget-client.png) -->
+
 ## Additional resources
 
 - [Web Chat overview](~/v4sdk/bot-builder-webchat-overview.md)
