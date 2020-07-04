@@ -52,6 +52,7 @@ The following picture shows the components involved when embedding the Web Chat 
 
 ### Embedding options
 
+<!--
 #### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 Use this option if you can execute a server-to-server request to exchange your web chat secret for a temporary token,
@@ -115,13 +116,69 @@ Authorization: BotConnector YOUR_SECRET_HERE
 </html>
 
 ```
+-->
 
-#### Option 1 - (new) Keep your secret hidden, exchange your secret for a token, and generate the embed
+#### Option 1 - (To replace the old one) Keep your secret hidden, exchange your secret for a token, and generate the embed
 
-This option executes a server-to-server request to exchange the Web Chat secret key for a temporary token.
+This option does not expose the Web Chat channel secret key in the client web page, as it is required in a production environment.
 
-> [!NOTE]
-> With this option, the Web Chat channel secret key is hidden and not exposed in the client web page. Use this option only in a production environment.
+The client code must provide a token to talk to the bot. To learn about the differences between secrets and tokens
+and to understand the risks associated with using secrets, visit [Direct Line authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
+
+```html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  </head>
+  <body>
+    <h2>Web Chat bot client using Direct Line</h2>
+
+    <div id="webchat" role="main"></div>
+
+    <script>
+
+     // "styleSet" is a set of CSS rules which are generated from "styleOptions"
+     const styleSet = window.WebChat.createStyleSet({
+         bubbleBackground: 'rgba(0, 0, 255, .1)',
+         bubbleFromUserBackground: 'rgba(0, 255, 0, .1)',
+
+         botAvatarImage: './bot.PNG',
+         botAvatarInitials: 'BF',
+         userAvatarImage: './man.PNG',
+         userAvatarInitials: 'WC',
+         rootHeight: '100%',
+         rootWidth: '30%'
+      });
+
+      // After generated, you can modify the CSS rules
+      styleSet.textContent = {
+         ...styleSet.textContent,
+         fontFamily: "'Comic Sans MS', 'Arial', sans-serif",
+         fontWeight: 'bold'
+      };
+
+      const res = await fetch('https:YOUR_TOKEN_SERVER.NET/API', { method: 'POST' });
+      const { token } = await res.json();
+
+      window.WebChat.renderWebChat(
+        {
+          directLine: window.WebChat.createDirectLine({ token }),
+          userID: 'WebChat_UserId',
+          locale: 'en-US',
+          username: 'Web Chat User',
+          locale: 'en-US',
+          // Passing 'styleSet' when rendering Web Chat
+          styleSet
+        },
+        document.getElementById('webchat')
+      );
+    </script>
+  </body>
+</html>
+
+```
 
 #### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
