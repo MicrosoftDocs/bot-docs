@@ -50,7 +50,7 @@ The following picture shows the components involved when embedding the Web Chat 
 
 5. Click **Done**.
 
-### Embedding development options
+### Development embedding options
 
 #### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
@@ -148,7 +148,7 @@ You may change the size of the web chat control by using the `style` attribute o
 <!-- ![Chat control Client](./media/chatwidget-client.png) -->
 
 
-### Embedding production options
+### Production embedding  options
 
 #### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
