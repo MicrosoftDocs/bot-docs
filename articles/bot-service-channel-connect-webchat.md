@@ -50,7 +50,8 @@ The following picture shows the components involved when embedding the Web Chat 
 
 5. Click **Done**.
 
-<!--
+### Embedding development options
+
 #### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 Use this option if you can execute a server-to-server request to exchange your web chat secret for a temporary token,
@@ -113,17 +114,50 @@ Authorization: BotConnector YOUR_SECRET_HERE
   </script>
 </html>
 
-``` -->
+```
 
-### Embedding options
+#### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
-#### Option 1 - (To replace the old one) Keep your secret hidden, exchange your secret for a token, and generate the embed
+Use this option if you want to allow other developers to easily embed your bot into their websites.
+
+> [!WARNING]
+> With this option, the Web Chat channel secret key is exposed in the client web page. Use this option only for development purposes and not in a production environment.
+
+To embed your bot in a web page by specifying the secret within the `iframe` tag, perform the steps described below.
+
+1. Copy the `iframe` **Embed code** from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above).
+
+2. Within that **Embed code**, replace "YOUR_SECRET_HERE" with the **Secret key** value that you copied from the same page.
+
+##### Example iframe (using secret)
+
+```html
+<iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
+```
+
+#### Style the web chat control
+
+You may change the size of the web chat control by using the `style` attribute of the `iframe` to specify `height` and `width`.
+
+```html
+<iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
+```
+
+  ![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
+
+<!-- ![Chat control Client](./media/chatwidget-client.png) -->
+
+
+### Embedding production options
+
+#### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 This option does not expose the Web Chat channel secret key in the client web page, as it is required in a production environment.
 
 The client must provide a token to talk to the bot. To learn about the differences between secrets and tokens
 and to understand the risks associated with using secrets, visit [Direct Line authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
-The following client web page how to use a token with the Web Chat.
+
+The following client web page shows how to use a token with the Web Chat.
 
 ```html
 
@@ -180,36 +214,10 @@ The following client web page how to use a token with the Web Chat.
 
 ```
 
-#### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
+For complete examples on how to generate a token programmatically without exposing the secret key see:
 
-Use this option if you want to allow other developers to easily embed your bot into their websites.
-
-> [!WARNING]
-> With this option, the Web Chat channel secret key is exposed in the client web page. Use this option only for development purposes and not in a production environment.
-
-To embed your bot in a web page by specifying the secret within the `iframe` tag, perform the steps described below.
-
-1. Copy the `iframe` **Embed code** from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above).
-
-2. Within that **Embed code**, replace "YOUR_SECRET_HERE" with the **Secret key** value that you copied from the same page.
-
-##### Example iframe (using secret)
-
-```html
-<iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
-```
-
-#### Style the web chat control
-
-You may change the size of the web chat control by using the `style` attribute of the `iframe` to specify `height` and `width`.
-
-```html
-<iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
-```
-
-  ![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
-
-<!-- ![Chat control Client](./media/chatwidget-client.png) -->
+- [Single sign-on demo](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication)
+- [Direct Line token](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/DirectLineTokenSite)
 
 ## Additional resources
 
