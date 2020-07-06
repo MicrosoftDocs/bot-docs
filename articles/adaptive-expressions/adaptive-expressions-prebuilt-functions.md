@@ -4340,7 +4340,7 @@ titleCase('<text>')
 
 *Example*
 
-These examples capitalize the first letter of each word in the string:
+These examples capitalize the first letter of each word in a string:
 
 ```
 titleCase('a')
