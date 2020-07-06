@@ -819,7 +819,7 @@ They respectively return these results:
 
 ### concat
 
-Combine two or more strings, and return the combined string.
+Combine two or more objects, and return the combined objects.
 
 ```
 concat('<text1>', '<text2>', ...)
@@ -827,13 +827,17 @@ concat('<text1>', '<text2>', ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text1*>, <*text2*>, ... | Yes | string | At least two strings to combine |
+| <*text1*>, <*text2*>, ... | Yes | object | At least two objects |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*text1text2...*> | string | The string created from the combined input strings |
+| <*text1text2...*> | object| The combined objects. Null objects are not included. |
 ||||
+
+Expected return values:
+
+- If all items are lists, concat will return a list.
 
 *Example*
 
@@ -845,6 +849,36 @@ concat('Hello', 'World')
 
 And returns the result **HelloWorld**.
 
+*Example 2*
+
+This example combines the lists **[1,2]** and **[3,4]**:
+
+```
+concat([1,2],[3,4])
+```
+
+And returns the result **[1,2,3,4]**.
+
+*Example 3*
+
+These examples combine objects of different types:
+
+```
+concat('a', 'b', 1, 2)
+concat('a', [1,2])
+```
+And return the following results respectively:
+
+- The string **ab12**.
+- The object **aSystem.Collections.Generic.List 1[System.Object]**. This is undreadable and best to avoid.
+
+*Example 4*
+
+These example combine objects will `null`:
+
+```
+concat([1,2], null)
+concat()
 <a name="contains"></a>
 
 ### contains
