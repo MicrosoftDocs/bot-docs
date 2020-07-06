@@ -107,7 +107,7 @@ Authorization: BotConnector YOUR_SECRET_HERE
     function processRequest(e) {
       if (xhr.readyState == 4  && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
-        document.getElementById("chat").src="https://webchat.botframework.com/embed/lucas-direct-line?t="+response
+        document.getElementById("chat").src="https://webchat.botframework.com/embed/<botname>?t="+response
       }
     }
 
@@ -140,7 +140,7 @@ To embed your bot in a web page by specifying the secret within the `iframe` tag
 You may change the size of the web chat control by using the `style` attribute of the `iframe` to specify `height` and `width`.
 
 ```html
-<iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
+<iframe style="height:480px; width:402px" src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
 
   ![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
