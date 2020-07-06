@@ -27,22 +27,22 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [Visual Studio Code / Command line](#tab/vc+cl)
+# [Visual Studio Code / Command Line](#tab/vc+cl)
 
-## Command line templates
+## Visual Studio Code and Command Line templates
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
-In a console window perform the steps shown below.
+In a console window, perform the steps shown below.
 
 1. Install [.NET Core SDK](https://dotnet.microsoft.com/download) version 3.1 or higher.
-1. Determine dotnet version.
+1. You can use this command to determine which version of the .NET Core command-line interface you have installed.
 
    ```cmd
    dotnet --version
    ```
 
-1. Install Bot Framework CSharp 3 templates (echo, core, empty).
+1. Install the 3 Bot Framework C# templates: the echo, core, and empty bot templates.
 
    ```cmd
    dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot
@@ -57,7 +57,7 @@ In a console window perform the steps shown below.
    ```
 
 > [!NOTE]
-> The above installation steps will install all three Bot Framework templates. If you prefer to install one template or a subset of the three templates, install them individually.
+> The above installation steps will install all 3 Bot Framework templates. You do not need to install all 3 templates and can install just the ones you will use. This article makes use of the echo bot template.
 
 ---
 
@@ -126,7 +126,7 @@ At this point, your bot is running locally on port 3978.
 
    Send a message to your bot, and the bot will respond back.
 
-# [Command line](#tab/cl)
+# [Command Line](#tab/cl)
 
 ## Build and run the bot with command line
 
@@ -134,27 +134,27 @@ Create a new bot project using one of the commands shown below.
 
 1. Echo Bot
 
-```cmd
-dotnet new echobot -n MyEchoBot
-```
+   ```cmd
+      dotnet new echobot -n MyEchoBot
+   ```
 
 1. Core Bot
 
-```cmd
-dotnet new corebot -n MyCoreBot
-```
+   ```cmd
+      dotnet new corebot -n MyCoreBot
+   ```
 
 1. CoreBot with CoreBot.Test project
 
-```cmd
-dotnet new corebot -n MyCoreBotWithTests --include-tests
-```
+   ```cmd
+      dotnet new corebot -n MyCoreBotWithTests --include-tests
+   ```
 
 1. Empty Bot
 
-```cmd
-dotnet new emptybot -n MyEmptyBot
-```
+   ```cmd
+      dotnet new emptybot -n MyEmptyBot
+   ```
 
 ### Run the Bot locally
 
@@ -162,15 +162,15 @@ To run your bot locally, execute the commands shown below.
 
 1. Change into the project's folder (for example, EchoBot).
 
-```cmd
-cd EchoBot
-```
+   ```cmd
+      cd EchoBot
+   ```
 
 1. Run the bot.
 
-```cmd
-dotnet run
-```
+   ```cmd
+      dotnet run
+   ```
 
 ### Start the emulator and connect to the bot
 
