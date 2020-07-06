@@ -27,7 +27,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [Command line](#tab/clt)
+# [Command line / Visual Studio Code](#tab/clt+tab/vcb)
 
 ## Command line templates
 
