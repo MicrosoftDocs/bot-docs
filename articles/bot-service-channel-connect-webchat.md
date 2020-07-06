@@ -52,7 +52,7 @@ The following picture shows the components involved when embedding the Web Chat 
 
 ### Development embedding options
 
-#### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
+#### Option 1 - Exchange your secret for a token, and generate the embed
 
 Use this option if you can execute a server-to-server request to exchange your web chat secret for a temporary token,
 and if you want to make it difficult for other developers to embed your bot in their websites.
@@ -148,9 +148,9 @@ You may change the size of the web chat control by using the `style` attribute o
 <!-- ![Chat control Client](./media/chatwidget-client.png) -->
 
 
-### Production embedding  options
+### Production embedding  option
 
-#### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
+#### Keep your secret hidden, exchange your secret for a token, and generate the embed
 
 This option does not expose the Web Chat channel secret key in the client web page, as it is required in a production environment.
 
@@ -214,7 +214,7 @@ The following client web page shows how to use a token with the Web Chat.
 
 ```
 
-For complete examples on how to generate a token programmatically without exposing the secret key see:
+For complete examples on how to generate a token programmatically without exposing the secret key, see:
 
 - [Single sign-on demo](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication)
 - [Direct Line token](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/DirectLineTokenSite)
@@ -226,5 +226,3 @@ For complete examples on how to generate a token programmatically without exposi
 - [Enable speech in Web Chat](~/bot-service-channel-connect-webchat-speech.md)
 - [Use Web Chat with the direct line app service extension](~/bot-service-channel-directline-extension-webchat-client.md)
 - [Connect a bot to Direct Line Speech](~/bot-service-channel-connect-directlinespeech.md)
-
-You can [download the source code](https://aka.ms/BotFramework-WebChat-V4) for the web chat control on GitHub.
