@@ -799,7 +799,8 @@ coalesce(<object**1>, <object**2>, ...)
 | <*first-non-null-item*> | any | The first item or value that is not null. If all parameters are null, this function returns null. |
 ||||
 
-*Example*<br>
+*Example*
+
 These examples return the first non-null value from the specified values, or null when all the values are null.
 
 Here are some examples:
@@ -867,6 +868,7 @@ These examples combine objects of different types:
 concat('a', 'b', 1, 2)
 concat('a', [1,2])
 ```
+
 And return the following results respectively:
 
 - The string **ab12**.
@@ -879,6 +881,8 @@ These example combine objects will `null`:
 ```
 concat([1,2], null)
 concat()
+
+
 <a name="contains"></a>
 
 ### contains
