@@ -820,7 +820,7 @@ They respectively return these results:
 
 ### concat
 
-Combine two or more objects, and return the combined objects.
+Combine two or more objects, and return the combined objects in a list or string.
 
 ```
 concat('<text1>', '<text2>', ...)
@@ -828,17 +828,19 @@ concat('<text1>', '<text2>', ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text1*>, <*text2*>, ... | Yes | object | At least two objects |
+| <*object1*>, <*object2*>, ... | Yes | object | At least two objects |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*text1text2...*> | object| The combined objects. Null objects are not included. |
+| <*object1object2...*> | string or list | The combined string or list. Null values are skipped. |
 ||||
 
 Expected return values:
 
-- If all items are lists, concat will return a list.
+- If all items are lists, concat will use the list mode. A list will be returned.
+- If there exists an item that is not a list, concat will use the string mode. A string will be returned. 
+- If a value is null, it is skipped and not concatanated. 
 
 *Example*
 
@@ -872,7 +874,7 @@ concat('a', [1,2])
 And return the following results respectively:
 
 - The string **ab12**.
-- The object **aSystem.Collections.Generic.List 1[System.Object]**. This is undreadable and best to avoid.
+- The object **aSystem.Collections.Generic.List 1[System.Object]**. This is unreadable and best to avoid.
 
 *Example 4*
 
@@ -880,8 +882,13 @@ These example combine objects will `null`:
 
 ```
 concat([1,2], null)
-concat()
+concat('a', 1, null)
 ```
+
+And return the following results respectively:
+
+- The list **[1.2]**
+- The string **a1**
 
 <a name="contains"></a>
 
