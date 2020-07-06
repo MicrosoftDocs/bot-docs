@@ -51,7 +51,7 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
-|[sentenseCase](#sentenseCase)|Capitalize the first letter of the first word in a heading and leaving other letter lowercase.|
+|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a heading and leaving other letter lowercase.|
 |[titleCase](#titleCase)|Capitalize the first letter of each word and leaving other letter lowercase.|
 
 ### Collection functions
@@ -4046,14 +4046,14 @@ startsWith('hello world', 'greeting')
 
 And returns the result `false`.
 
-<a name="sentenseCase"></a>
+<a name="sentenceCase"></a>
 
-### sentenseCase
+### sentenceCase
 
 Capitalize the first letter of the first word in a heading and leave others letter lowercase.
 
 ```
-sentenseCase('<text>')
+sentenceCase('<text>')
 ```
 
 | Parameter | Required | Type | Description |
@@ -4063,7 +4063,7 @@ sentenseCase('<text>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| result string | string | Returns the sentense case result |
+| result string | string | Returns the sentence case result |
 ||||
 
 *Example*
