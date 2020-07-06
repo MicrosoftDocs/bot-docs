@@ -66,15 +66,19 @@ When the emulator connects to the bot, the bot receives two conversation update 
 
 Note: In a real-world scenario you would persist conversation references in a database instead of using an object in memory.
 
-The conversation reference has a _conversation_ property that describes the conversation in which the activity exists. The conversation has a _user_ property that lists the users participating in the conversation, and a _service URL_ property that channels use to denote the URL where replies to the current activity may be sent. A valid conversation reference is needed to send proactive messages to users.
+The conversation reference has a _conversation_ property that describes the conversation in which the activity exists. The conversation includes a _user_ property that lists the users participating in the conversation, and a _service URL_ property that indicates where replies to the current activity may be sent. A valid conversation reference is needed to send proactive messages to users.
+For the Teams channel, the service URL maps to a regionalized server.
 
 ## Send proactive message
 
-The second controller, the _notify_ controller, is responsible for sending the proactive message to the bot. Use the following steps to generate a proactive message.
+The second controller, the _notify_ controller, is responsible for sending the proactive message to the bot. It uses the following steps to generate a proactive message.
 
-1. Retrieve the reference for the conversation to which to send the proactive message.
-1. Call the adapter's _continue conversation_ method, providing the conversation reference and the turn handler delegate to use. The continue conversation method generates a turn context for the referenced conversation and then calls the specified turn handler delegate.
-1. In the delegate, use the turn context to send the proactive message.
+1. Retrieves the reference for the conversation to which to send the proactive message.
+1. Calls the adapter's _continue conversation_ method, providing the conversation reference and the turn handler delegate to use. (The continue conversation method generates a turn context for the referenced conversation and then calls the specified turn handler delegate.)
+1. In the delegate, uses the turn context to send the proactive message.
+
+> [!NOTE]
+> The service URL can change over time. If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user.
 
 # [C#](#tab/csharp)
 
