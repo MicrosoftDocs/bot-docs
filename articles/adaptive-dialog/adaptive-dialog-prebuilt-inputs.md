@@ -19,7 +19,7 @@ The Bot Framework SDK defines a variety of input dialogs for collecting and vali
 
 | Input type       | Input class                       | Description                                              | Returns                                  |
 | ---------------- | --------------------------------- | -------------------------------------------------------- | ---------------------------------------- |
-| Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. |
+| Base class       | [InputDialog](#inputdialog)       | This is the base class that all of the input classes derive from. It defines all shared properties. | An object. |
 | Text             | [TextInput](#textinput)           | Used to ask your users for a **word** or **sentence**.   | A string.                                |
 | Number           | [NumberInput](#numberinput)       | Used to ask your users for a **number**.                 | A numeric value.                         |
 | Confirmation     | [ConfirmInput](#confirminput)     | Used to request a **confirmation** from the user.        | A Boolean value.                         |
