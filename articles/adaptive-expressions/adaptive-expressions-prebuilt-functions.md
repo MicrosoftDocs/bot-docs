@@ -1691,13 +1691,14 @@ And return the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-This example generates a new collection:
+These are the same expression, but the latter is a lambda style expression which some may find more readable. These example generates a new collection:
 
 ```
 foreach(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
+foreach(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
 ```
 
-And returns the result **['name:jack', 'age:15']**.
+And return the result **['name:jack', 'age:15']**.
 
 <a name="formatDateTime"></a>
 
@@ -3645,13 +3646,15 @@ And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-This example generates a new collection from an instance:
+These are the same expression, but the latter is a lambda style expression, which some may find more readable. These example generates a new collection:
 
 ```
 select(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
+select(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
+
 ```
 
-And returns the result **['name:jack', 'age:15']**.
+And return the result **['name:jack', 'age:15']**.
 
 <a name="setPathToValue"></a>
 
@@ -4867,10 +4870,11 @@ And returns the result **[2, 3]**.
 
 *Example 2*
 
-This example generates a new object:
+These are the same expression, but the latter is a lambda style expression which some may find more readable. These example generates a new collection:
 
 ```
 where(json("{'name': 'jack', 'age': '15'}"), x, x.value == 'jack')
+where(json("{'name': 'jack', 'age': '15'}"), x=> x.value == 'jack')
 ```
 
 And returns the result **{'name': 'jack'}**.
