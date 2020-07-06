@@ -9,7 +9,7 @@
 
 ## Templates
 
-# [Visual Studio](#tab/vst)
+# [Visual Studio](#tab/vs)
 
 ## Visual Studio templates
 
@@ -27,7 +27,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-# [Command line / Visual Studio Code](#tab/clt+tab/vcb)
+# [Visual Studio Code / Command line](#tab/vc+cl)
 
 ## Command line templates
 
@@ -63,7 +63,7 @@ In a console window perform the steps shown below.
 
 ## Build and run the bot
 
-# [Visual Studio](#tab/vsb)
+# [Visual Studio](#tab/vs)
 
 ## Build and run the bot in Visual Studio
 
@@ -94,7 +94,7 @@ At this point, your bot is running locally on port 3978.
 > If you see that the message cannot be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
 -->
 
-# [Visual Studio Code](#tab/vcb)
+# [Visual Studio Code](#tab/vc)
 
 ## Build and run the bot in Visual Studio Code
 
@@ -126,7 +126,7 @@ At this point, your bot is running locally on port 3978.
 
    Send a message to your bot, and the bot will respond back.
 
-# [Command line](#tab/clb)
+# [Command line](#tab/cl)
 
 ## Build and run the bot with command line
 
