@@ -881,7 +881,7 @@ These example combine objects will `null`:
 ```
 concat([1,2], null)
 concat()
-
+```
 
 <a name="contains"></a>
 
