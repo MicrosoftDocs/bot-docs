@@ -64,10 +64,10 @@ When the emulator connects to the bot, the bot receives two conversation update 
 
 ---
 
-Note: In a real-world scenario you would persist conversation references in a database instead of using an object in memory.
+The conversation reference includes a _conversation_ property that describes the conversation in which the activity exists. The conversation includes a _user_ property that lists the users participating in the conversation, and a _service URL_ property that indicates where replies to the current activity may be sent. A valid conversation reference is needed to send proactive messages to users. (For the Teams channel, the service URL maps to a regionalized server.)
 
-The conversation reference has a _conversation_ property that describes the conversation in which the activity exists. The conversation includes a _user_ property that lists the users participating in the conversation, and a _service URL_ property that indicates where replies to the current activity may be sent. A valid conversation reference is needed to send proactive messages to users.
-For the Teams channel, the service URL maps to a regionalized server.
+> [!NOTE]
+> In a real-world scenario you would persist conversation references in a database instead of using an object in memory.
 
 ## Send proactive message
 
@@ -78,7 +78,7 @@ The second controller, the _notify_ controller, is responsible for sending the p
 1. In the delegate, uses the turn context to send the proactive message.
 
 > [!NOTE]
-> The service URL can change over time. If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user.
+> The service URL can change over time. If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user before it can send proactive messages again.
 
 # [C#](#tab/csharp)
 
