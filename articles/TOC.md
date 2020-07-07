@@ -118,9 +118,9 @@
 ## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
-### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
+### [API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
 ## LG
-### [API reference](language-generation/language-generation-API-reference.md)
+### [API reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
 ### [.lg file format](file-format/bot-builder-lg-file-format.md)
 ### [Structured response template](language-generation/language-generation-structured-response-template.md)
 ### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
