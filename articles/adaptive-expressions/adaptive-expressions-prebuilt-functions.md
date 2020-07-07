@@ -828,7 +828,7 @@ concat('<text1>', '<text2>', ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*object1*>, <*object2*>, ... | Yes | object | At least two objects |
+| <*object1*>, <*object2*>, ... | Yes | any | At least two objects to concat. |
 |||||
 
 | Return value | Type | Description |
@@ -838,8 +838,8 @@ concat('<text1>', '<text2>', ...)
 
 Expected return values:
 
-- If all items are lists, concat will use the list mode. A list will be returned.
-- If there exists an item that is not a list, concat will use the string mode. A string will be returned. 
+- If all items are lists, a list will be returned.
+- If there exists an item that is not a list, a string will be returned. 
 - If a value is null, it is skipped and not concatanated. 
 
 *Example*
@@ -887,8 +887,8 @@ concat('a', 1, null)
 
 And return the following results respectively:
 
-- The list **[1.2]**
-- The string **a1**
+- The list **[1.2]**.
+- The string **a1**.
 
 <a name="contains"></a>
 
@@ -1691,14 +1691,14 @@ And return the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-These are the same expression, but the latter is a lambda style expression which some may find more readable. These example generates a new collection:
+These example generate a new collection:
 
 ```
 foreach(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
 foreach(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
 ```
 
-And return the result **['name:jack', 'age:15']**.
+And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
 <a name="formatDateTime"></a>
 
@@ -3646,7 +3646,7 @@ And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-These are the same expression, but the latter is a lambda style expression, which some may find more readable. These example generates a new collection:
+These example generates a new collection:
 
 ```
 select(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
@@ -3654,7 +3654,7 @@ select(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
 
 ```
 
-And return the result **['name:jack', 'age:15']**.
+And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
 <a name="setPathToValue"></a>
 
@@ -4870,14 +4870,14 @@ And returns the result **[2, 3]**.
 
 *Example 2*
 
-These are the same expression, but the latter is a lambda style expression which some may find more readable. These example generates a new collection:
+These example generates a new collection:
 
 ```
 where(json("{'name': 'jack', 'age': '15'}"), x, x.value == 'jack')
 where(json("{'name': 'jack', 'age': '15'}"), x=> x.value == 'jack')
 ```
 
-And returns the result **{'name': 'jack'}**.
+And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
 <a name="xml"></a>
 
