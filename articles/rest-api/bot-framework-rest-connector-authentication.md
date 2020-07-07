@@ -189,9 +189,6 @@ The response body specifies the document in the [JWK format](https://tools.ietf.
 > [!TIP]
 > The list of keys is stable and may be cached, but new keys may be added at any time. To ensure your bot has an up-to-date copy of the document before these keys are used, all bot instances should **refresh their local cache** of the document **at least once every 24 hours**.
 
-
-The list of keys is relatively stable and may be cached for long periods of time (by default, 5 days within the Bot Framework SDK).
-
 The `endorsements` property within each key contains one or more endorsement strings which you can use to verify that the channel ID specified in the `channelId` property within the [Activity][] object of the incoming request is authentic. The list of channel IDs that require endorsements is configurable within each bot. By default, it will be the list of all published channel IDs, although bot developers may override selected channel ID values either way.
 
 ### Step 4: Verify the JWT token
