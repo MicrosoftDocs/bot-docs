@@ -57,20 +57,15 @@ Finally, if they answered yes, display the collected information; otherwise, tel
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package.
 
-The bot interacts with the user via the `RootDialog`. When the bot's `RootDialog` is created, the `AdaptiveDialog` is set as the main dialog. The bot then uses the `DialogManager.OnTurnAsync` to run the dialog.
+The bot interacts with the user via a root adaptive dialog. The bot then uses the `DialogManager.OnTurnAsync` to run the dialog.
 
 ![Root dialog](media/bot-builder-root-dialog-adaptive.png)
 
-**Dialogs/RootDialog.cs**
+**Bots\DialogBot.cs**
 
-The code begins by instantiating the `RootDialog` class which in turns creates an instance of the `AdaptiveDialog`. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog.
-The created dialog is then added to the `DialogSet` and the name is saved in the dialog state. Finally, the name of the initial dialog to run is assigned to `InitialDialogId`. Notice the `paths` definition referencing the `RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
+The code begins by instantiating the root adaptive dialog. At this time, the following `WelcomeUserSteps` and `OnBeginDialogSteps` are added to the dialog. Notice the `paths` definition referencing the `Dialogs\RootDialog.lg` file that contains the LG templates used in the creation of the adaptive dialog.
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21-52&highlight=6-25)]
-
-The root dialog is a component dialog:
-
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=21&highlight=1)]
+[!code-csharp[define dialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=41-62&highlight=4)]
 
 Notice also:
 
@@ -84,13 +79,13 @@ In `WelcomeUserSteps` method provides the actions to perform when the trigger fi
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
 > The code filters cases where the bot itself is the recipient of the message. For more information, see [Categorized activities by channel](https://docs.microsoft.com/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0#welcome).
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=54-76&highlight=13-20)]
+[!code-csharp[Welcome user](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=73-97)]
 
 The `OnBeginDialogSteps` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The code below shows how the `Name` prompt is created.
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
-[!code-csharp[RootDialog snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=80-144&highlight=12-16,31-59)]
+[!code-csharp[On begin dialog](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=99-163)]
 
 # [JavaScript](#tab/javascript)
 
@@ -118,11 +113,7 @@ To allow the use of the adaptive dialog, the start up code must register the dia
 
 # [C#](#tab/csharp)
 
-**Startup.cs**
-
-You register the adaptive dialogs in the `Startup` class, along with the other services.
-
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs?range=22-55&highlight=5-18)]
+The root adaptive dialog is created when the bot is created.
 
 # [JavaScript](#tab/javascript)
 
@@ -161,7 +152,7 @@ Listen for incoming requests and route the message to the bot's main handler.
 The `DialogManager.OnTurnAsync` runs the adaptive dialog with activities.
 The implementation shown can run any type of `Dialog`. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation. The `DialogManager.OnTurnAsync` method takes care of saving the state.
 
-[!code-csharp[Dialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=18-40&highlight=20)]
+[!code-csharp[Dialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=67-71&highlight=4)]
 
 # [JavaScript](#tab/javascript)
 

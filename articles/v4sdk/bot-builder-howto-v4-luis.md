@@ -109,12 +109,13 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
-1. Select the **Settings** tab on the left side.
-    Record the value shown for _Application ID_ as \<YOUR_APP_ID>.
-    ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-app-info.png)
+1. Select the **Settings** tab on the left side and record the value shown for _Application ID_ as \<YOUR_APP_ID>.
+    > [!div class="mx-imgBorder"]
+    > ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-app-info.png)
 1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group.
     Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
-    ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
+    > [!div class="mx-imgBorder"]
+    > ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
 
 ### Update the settings file
 
