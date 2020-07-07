@@ -121,21 +121,7 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
 
    ![vsc run](../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-environment.png)
 
-This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page.
-
-At this point, your bot is running locally on port 3978.
-
-### Start the Emulator and connect to your bot
-
-1. Start the Bot Framework Emulator.
-
-1. Click **Open Bot** on the Emulator's **Welcome** tab.
-
-1. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
-
-1. Click **Connect**.
-
-   Send a message to your bot, and the bot will respond back.
+This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
 # [Command Line](#tab/cl)
 
@@ -185,6 +171,8 @@ To run your bot locally, execute the commands shown below.
    ```cmd
       dotnet run
    ```
+
+This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
 ---
 
