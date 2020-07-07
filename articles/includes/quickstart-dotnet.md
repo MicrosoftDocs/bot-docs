@@ -80,7 +80,38 @@ Start the project. This will build the application, deploy it to localhost, and 
 
 Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is installed.
 
-1. Launch VS Code and open your bot project folder.
+### Create a new project
+
+1. In Visual Studio Code, open a new terminal windows.
+1. Create a new bot project using one of the commands shown below.
+
+   1. Echo Bot
+
+      ```cmd
+         dotnet new echobot -n MyEchoBot
+      ```
+
+   1. Core Bot
+
+      ```cmd
+         dotnet new corebot -n MyCoreBot
+      ```
+
+   1. CoreBot with CoreBot.Test project
+
+      ```cmd
+         dotnet new corebot -n MyCoreBotWithTests --include-tests
+      ```
+
+   1. Empty Bot
+
+      ```cmd
+         dotnet new emptybot -n MyEmptyBot
+      ```
+
+### Run the Bot locally
+
+1. Open your bot project folder.
 1. On the menu bar, click **Run**.
 1. In the drop-down menu, select **Run Without Debugging**.
 
@@ -110,31 +141,34 @@ At this point, your bot is running locally on port 3978.
 
 ## Build and run the bot with command line
 
-Create a new bot project using one of the commands shown below.
+### Create a new project
 
-1. Echo Bot
+1. Open a new terminal windows.
+1. Create a new bot project using one of the commands shown below.
 
-   ```cmd
-      dotnet new echobot -n MyEchoBot
-   ```
+   1. Echo Bot
 
-1. Core Bot
+      ```cmd
+         dotnet new echobot -n MyEchoBot
+      ```
 
-   ```cmd
-      dotnet new corebot -n MyCoreBot
-   ```
+   1. Core Bot
 
-1. CoreBot with CoreBot.Test project
+      ```cmd
+         dotnet new corebot -n MyCoreBot
+      ```
 
-   ```cmd
-      dotnet new corebot -n MyCoreBotWithTests --include-tests
-   ```
+   1. CoreBot with CoreBot.Test project
 
-1. Empty Bot
+      ```cmd
+         dotnet new corebot -n MyCoreBotWithTests --include-tests
+      ```
 
-   ```cmd
-      dotnet new emptybot -n MyEmptyBot
-   ```
+   1. Empty Bot
+
+      ```cmd
+         dotnet new emptybot -n MyEmptyBot
+      ```
 
 ### Run the Bot locally
 
