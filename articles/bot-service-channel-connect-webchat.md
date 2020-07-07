@@ -28,7 +28,7 @@ When you use Azure Bot Service authentication with Web Chat there are some impor
 
 The following picture shows the components involved when embedding the Web Chat control in a web page.
 
-  ![bot embed components](./media/bot-service-channel-webchat/webchat-iframe.png)
+  ![bot embed components](./media/bot-service-channel-webchat/webchat-control.png)
 
 > [!NOTE]
 > This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
@@ -178,9 +178,9 @@ The following client web page shows how to use a token with the Web Chat.
          bubbleBackground: 'rgba(0, 0, 255, .1)',
          bubbleFromUserBackground: 'rgba(0, 255, 0, .1)',
 
-         botAvatarImage: './bot.PNG',
+         botAvatarImage: '<your bot avatar URL>',
          botAvatarInitials: 'BF',
-         userAvatarImage: './man.PNG',
+         userAvatarImage: '<your user avatar URL>',
          userAvatarInitials: 'WC',
          rootHeight: '100%',
          rootWidth: '30%'
@@ -214,7 +214,7 @@ The following client web page shows how to use a token with the Web Chat.
 
 ```
 
-For complete examples on how to generate a token programmatically without exposing the secret key, see:
+For examples on how to generate a token without exposing the secret key, see:
 
 - [Single sign-on demo](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication)
 - [Direct Line token](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/DirectLineTokenSite)
