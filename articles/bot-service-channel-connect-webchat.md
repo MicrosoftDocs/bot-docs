@@ -132,14 +132,6 @@ To embed your bot in a web page by specifying the secret within the `iframe` tag
 ##### Example iframe (using secret)
 
 ```html
-<iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
-```
-
-#### Style the web chat control
-
-You may change the size of the web chat control by using the `style` attribute of the `iframe` to specify `height` and `width`.
-
-```html
 <iframe style="height:480px; width:402px" src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
 
@@ -193,7 +185,7 @@ The following client web page shows how to use a token with the Web Chat.
          fontWeight: 'bold'
       };
 
-      const res = await fetch('https:YOUR_TOKEN_SERVER.NET/API', { method: 'POST' });
+      const res = await fetch('https:<YOUR_TOKEN_SERVER/API>', { method: 'POST' });
       const { token } = await res.json();
 
       window.WebChat.renderWebChat(
@@ -214,7 +206,7 @@ The following client web page shows how to use a token with the Web Chat.
 
 ```
 
-For examples on how to generate a token without exposing the secret key, see:
+For examples on how to generate a token, see:
 
 - [Single sign-on demo](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication)
 - [Direct Line token](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/DirectLineTokenSite)
