@@ -15,7 +15,7 @@ Bots are more and more prevalent in key business areas like financial services, 
 
 Securing a bot can be complicated, even the most robust one could have **vulnerabilities** and be at risk for **threats**.
 
-However, there are security techniques that can be used to improve bot's security. They are similar to the ones used in any other software system that involves handling sensitive data.
+However, there are [security preventive measures](#security-preventive-measures) that can be taken to improve bot's security. They are similar to the ones used in any other software system handling sensitive data.
 
 ## Security issues in a nutshell
 
