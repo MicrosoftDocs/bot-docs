@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/19/2020
+ms.date: 07/08/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -175,7 +175,7 @@ Derive a claims validator from the `ClaimsValidator` class. It will throw an `Un
 
 **EchoSkillBot\Authentication\AllowedCallersClaimsValidator.cs**
 
-[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=17-58)]
+[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=17-59)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -215,7 +215,7 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 **echo-skill-bot/adapter_with_error_handler.py**
 
-[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=23-77&highlight=42-48)]
+[!code-python[Error handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/echo-skill-bot/adapter_with_error_handler.py?range=23-77&highlight=43-49)]
 
 ---
 
