@@ -2,12 +2,12 @@
 title: Add media to messages - Bot Service
 description: Learn how to add media to messages using the Bot Framework SDK.
 keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
-author: ivorb
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/03/2020
+ms.date: 07/08/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -56,13 +56,13 @@ Then, an uploaded attachment:
 
 **Bots/AttachmentsBot.cs**
 
-[!code-csharp[uploaded attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=181-214)]
+[!code-csharp[uploaded attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=181-215)]
 
 Lastly, an internet attachment:
 
 **Bots/AttachmentsBot.cs**
 
-[!code-csharp[online attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=217-226)]
+[!code-csharp[online attachment](~/../botbuilder-samples/samples/csharp_dotnetcore/15.handling-attachments/Bots/AttachmentsBot.cs?range=218-227)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -196,11 +196,11 @@ For examples of all the available cards, see the [C# cards sample](https://aka.m
 
 **Cards.cs**
 
-[!code-csharp[hero cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=27-40)]
+[!code-csharp[GetHeroCard](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=28-41)]
 
 **Cards.cs**
 
-[!code-csharp[cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=91-100)]
+[!code-csharp[GetSigninCard](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=92-101)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -208,11 +208,11 @@ For examples of all the available cards, see the [JS cards sample](https://aka.m
 
 **dialogs/mainDialog.js**
 
-[!code-javascript[hero cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=206-218)]
+[!code-javascript[createHeroCard](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=214-226)]
 
 **dialogs/mainDialog.js**
 
-[!code-javascript[sign in cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=259-265)]
+[!code-javascript[createOAuthCard](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=228-234)]
 
 ### [Python](#tab/python)
 
@@ -220,11 +220,11 @@ For examples of all the available cards, see the [Python cards sample](https://a
 
 **dialogs/main_dialog.py**
 
-[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=163-179)]
+[!code-python[create_hero_card](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=167-183)]
 
 **dialogs/main_dialog.py**
 
-[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=245-256)]
+[!code-python[create_oauth_card](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=185-197)]
 
 ---
 
@@ -236,9 +236,7 @@ First, only some channels support Adaptive Cards, and channels that do support i
 
 Second, Adaptive Card delivers messages in the card format, and the channel determines the layout of the card. The format of messages MessageFactory delivers depends on the channel, and is not necessarily in the card format unless Adaptive Card is part of the attachment.
 
-To find the latest information on Adaptive Card channel support, see the <a href="http://adaptivecards.io/designer/">Adaptive Cards Designer</a>.
-
-To use adaptive cards, be sure to add the `AdaptiveCards` NuGet package.
+To find the latest information on Adaptive Card channel support, see the [Adaptive Cards Designer](http://adaptivecards.io/designer/).
 
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
@@ -251,7 +249,9 @@ The source code shown here is based on the [Using cards](https://aka.ms/bot-card
 
 **Cards.cs**
 
-[!code-csharp[adaptive cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=13-25)]
+This example reads the Adaptive Card JSON from a file and adds it as an attachment.
+
+[!code-csharp[CreateAdaptiveCardAttachment](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Cards.cs?range=13-26&highlight=9-10)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -259,32 +259,25 @@ To use Adaptive Cards, be sure to add the `adaptivecards` npm package.
 
 The source code shown here is based on the [JS Using Cards](https://aka.ms/bot-cards-js-sample-code) sample.
 
-Here, the Adaptive card is stored in it's own file and included in our bot:
-
-**resources/adaptiveCard.json**
-
-[!code-json[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/resources/adaptiveCard.json)]
-
-The card is created as follows:
-
 **dialogs/mainDialog.js**
 
-[!code-javascript[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=6)]
-[!code-javascript[adaptive cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=170-172)]
+This example reads the Adaptive Card JSON from a file and creates a message activity with the card attached.
+
+[!code-javascript[import JSON file](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=6)]
+
+[!code-javascript[createAdaptiveCard](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=178-180)]
 
 ### [Python](#tab/python)
 
 The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
 
-**dialogs/resources/adaptive_card_example.py**
-
-[!code-python[adaptive cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/resources/adaptive_card_example.py)]
-
-The card is created as follows:
-
 **bots/main_dialog.py**
 
-[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=127-128)]
+This example reads the Adaptive Card JSON from a file and creates a message activity with the card attached.
+
+[!code-python[import JSON file](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=33)]
+
+[!code-python[create_adaptive_card](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=131-132)]
 
 ---
 
@@ -294,52 +287,52 @@ Messages can also include multiple attachments in a carousel layout, which place
 
 ### [C#](#tab/csharp)
 
-The source code shown here is based on the [Cards sample](https://aka.ms/bot-cards-sample-code).
+The source code shown here is based on the [cards sample](https://aka.ms/bot-cards-sample-code).
+
+**Dialogs/MainDialog.cs**
 
 First, create the reply and define the attachments as a list.
 
-**Dialogs/MainDialog.cs**
+[!code-csharp[ShowCardStepAsync excerpt](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=61-66)]
 
-[!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=61-66)]
+Then add the attachments and set the layout type to _carousel_.
+Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
 
-Then add the attachments. Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
-
-**Dialogs/MainDialog.cs**
-
-[!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=104-113)]
+[!code-csharp[ShowCardStepAsync excerpt](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=108-118)]
 
 Once the attachments are added, you can send the reply just like any other.
 
-**Dialogs/MainDialog.cs**
-
-[!code-csharp[carousel of cards](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=117-118)]
+[!code-csharp[ShowCardStepAsync excerpt](~/../botbuilder-samples/samples/csharp_dotnetcore/06.using-cards/Dialogs/MainDialog.cs?range=122-123)]
 
 ### [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [JS cards sample](https://aka.ms/bot-cards-js-sample-code).
-
-To send a carousel of cards, send a reply with the attachments as an array and the layout type defined as `Carousel`:
+The source code shown here is based on the [cards sample](https://aka.ms/bot-cards-js-sample-code).
 
 **dialogs/mainDialog.js**
-[!code-javascript[carousel of cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=97-108)]
 
-[!code-javascript[carousel of cards](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=113-116)]
+Add the attachments and set the layout type to _carousel_.
+Once the attachments are added, you can send the reply just like any other.
+
+[!code-javascript[showCardStep excerpt](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=100-113)]
 
 ### [Python](#tab/python)
 
-The source code shown here is based on [Python cards sample](https://aka.ms/bot-cards-python-sample-code).
-
-To send a carousel of cards, send a reply with the attachments as an array and the layout type defined as `Carousel`:
+The source code shown here is based on [cards sample](https://aka.ms/bot-cards-python-sample-code).
 
 **dialogs/main_dialog.py**
 
-[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=104-112)]
+First, create the reply and define the attachments as a list.
 
-Once the attachments are added, you can send the reply.
+[!code-python[show_card_step excerpt](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=85)]
 
-**dialogs/main_dialog.py**
+Then add the attachments and set the layout type to _carousel_.
+Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
 
-[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=114-115)]
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=107-116)]
+
+Once the attachments are added, you can send the reply just like any other.
+
+[!code-python[hero cards](~/../botbuilder-samples/samples/python/06.using-cards/dialogs/main_dialog.py?range=118-119)]
 
 ---
 
@@ -358,12 +351,11 @@ It extends the current sample 06.using-cards by validating the input received in
 We first added text input and button functionality to the existing adaptive card by adding the following code just before the final bracket of adaptiveCard.json, found in the resources folder:
 
 ```json
-...
-  "actions": [
-    {
-      "type": "Action.ShowCard",
-      "title": "Text",
-      "card": {
+"actions": [
+  {
+    "type": "Action.ShowCard",
+    "title": "Text",
+    "card": {
       "type": "AdaptiveCard",
       "body": [
         {
@@ -382,7 +374,6 @@ We first added text input and button functionality to the existing adaptive card
     }
   }
 ]
-
 ```
 
 Note that the input field is labeled "text" so our adaptive card will attach comment text data as Value.[text.]
