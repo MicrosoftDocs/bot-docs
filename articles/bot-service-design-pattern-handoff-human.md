@@ -77,7 +77,7 @@ or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
 
 - <a href="https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples" target="blank">Integration with Microsoft Dynamics Omnichannel for Customer Service</a> 
 
-- <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="blank">Integration with LiverPerson LiveEngage platform</a> 
+- <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="blank">Integration with LivePerson LiveEngage platform</a> 
 
 ::: moniker range="azure-bot-service-4.0"
 
