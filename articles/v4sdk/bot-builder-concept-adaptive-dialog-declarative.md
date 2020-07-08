@@ -101,7 +101,7 @@ let rootDialogResource = resourceExplorer.getResource('echo.dialog');
 
 ### The type loader
 
-Once the resource explorer's _get resource_ method reads the declarative file into a resource object, the _load type_method casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
+Once the resource explorer's `_get resource_` method reads the declarative file into a resource object, the `_load type_method` casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
 
 # [C#](#tab/csharp)
 
@@ -158,6 +158,41 @@ resourceExplorer.emitter.on('changed', handleResourceChange);
 
 ---
 
+### The `VersionChanged` event
+
+When your declarative assets have been reloaded to accommodate the changes made to a `.dialog` file, you may need to reevaluate the state of any current conversations to account of any changes to the logic of your dialog. The changes to your logic may be as simple as to clear your conversation stack and restart. More sophisticated logic would enable you to do things like restart a dialog keeping the data you have, allowing you to pick up new properties and or paths that didn't exist before.
+
+The `DialogEvents.VersionChanged` event is captured using the `OnDialogEvent` trigger.
+
+
+# [C#](#tab/csharp)
+
+<!--This example could be improved-->
+```csharp
+Triggers = new List<OnCondition>()
+{
+    new OnDialogEvent(DialogEvents.VersionChanged)
+    {
+        Actions = new List<Dialog>()
+        {
+            new SendActivity("The VersionChanged event fired.")
+        }
+    }
+}
+```
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+triggers: [
+    new OnDialogEvent(DialogEvents.VersionChanged)[
+        new SendActivity("The VersionChanged event fired.")
+    ]
+]
+```
+
+---
+
 ## Declarative assets
 
 The Bot Framework SDK has various declarative assets available, each will be listed below. These assets can be used in your .dialog files as the `$kind` value.
@@ -168,9 +203,9 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 
 #### Base trigger
 
-| `$kind` value          | Trigger Name                  | What this trigger does                                              |
-| ---------------------- | ----------------------------- | ------------------------------------------------------------------- |
-|`Microsoft.OnCondition`  | [OnCondition][send-activity] | The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
+| `$kind` value          | Trigger Name | What this trigger does                                              |
+| ---------------------- | ------------ | ------------------------------------------------------------------- |
+|`Microsoft.OnCondition` | `OnCondition`| The `OnCondition` trigger is the base trigger that all triggers derive from. When defining triggers in an adaptive dialog they are defined as a list of `OnCondition` triggers. |
 
 #### Recognizer event triggers
 
@@ -195,7 +230,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 > Do not use the `OnBeginDialog` trigger in your root dialog as it can potentially cause problems. You can instead use the `OnUnknownIntent` trigger which will fire when your root dialog runs.
 
 > [!TIP]
-> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a [welcome message][dialog-event-trigger-example-using-declarative] or a [prompt for user input](bot-builder-concept-adaptive-dialog-inputs.md).
+> Most child dialogs include an `OnBeginDialog` trigger that responds to the `BeginDialog` event. This trigger automatically fires when the dialog begins, which can allow the bot to respond immediately with a welcome message or a [prompt for user input](bot-builder-concept-adaptive-dialog-inputs.md).
 
 ##### Dialog event trigger example using declarative
 
@@ -333,15 +368,15 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 |`Microsoft.LogAction`    | [LogAction][log-action]        | Writes to the console and optionally sends the message as a trace activity. |
 |`Microsoft.TraceActivity`| [TraceActivity][traceactivity] | Sends a trace activity with whatever payload you specify.                   |
 
-[log-action]: bot-builder-concept-adaptive-dialog-Actions.md#log-action
-[traceactivity]: bot-builder-concept-adaptive-dialog-Actions.md#traceactivity
-[emitevent]: bot-builder-concept-adaptive-dialog-Actions.md#emitevent
-[sign-out-user]: bot-builder-concept-adaptive-dialog-Actions.md#sign-out-user
-[editactions]: bot-builder-concept-adaptive-dialog-Actions.md#editactions
+[log-action]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#log-action
+[traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
+[emitevent]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
+[sign-out-user]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#sign-out-user
+[editactions]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editactions
 
 ### Recognizers
 
-The bot framework SDK provides over a half dozen different recognizers, you specify which recognizer to use in the .dialog file, for example:
+The Bot Framework SDK provides over a half dozen different recognizers, you specify which recognizer to use in the .dialog file, for example:
 
 ```json
 {
@@ -395,6 +430,7 @@ The [generator][generator] value contains a link to the .lg file associated with
 - How to [Create a bot using declarative adaptive dialogs](bot-builder-dialogs-declarative.md)
 
 <!-- Footnote-style links -->
+[declarative-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-declarative.md
 [triggers]: bot-builder-concept-adaptive-dialog-triggers.md
 [actions]: bot-builder-concept-adaptive-dialog-actions.md
 [concept-basics]: bot-builder-basics.md
@@ -419,54 +455,54 @@ The [generator][generator] value contains a link to the .lg file associated with
 [botframework-activity]: https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 
 <!-- (Actions) Input  -->
-[attachmentinput]: bot-builder-concept-adaptive-dialog-Inputs.md#attachmentinput
-[choiceinput]: bot-builder-concept-adaptive-dialog-Inputs.md#choiceinput
-[confirminput]: bot-builder-concept-adaptive-dialog-Inputs.md#confirminput
-[datetimeinput]: bot-builder-concept-adaptive-dialog-Inputs.md#datetimeinput
-[inputdialog]: bot-builder-concept-adaptive-dialog-Inputs.md#inputdialog
-[numberinput]: bot-builder-concept-adaptive-dialog-Inputs.md#numberinput
-[oauthinput]: bot-builder-concept-adaptive-dialog-Inputs.md#oauthinput
-[textinput]: bot-builder-concept-adaptive-dialog-Inputs.md#textinput
-[send-activity]: bot-builder-concept-adaptive-dialog-Actions.md#send-activity
+[attachmentinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#attachmentinput
+[choiceinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#choiceinput
+[confirminput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#confirminput
+[datetimeinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#datetimeinput
+[inputdialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#inputdialog
+[numberinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#numberinput
+[oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
+[textinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#textinput
+[send-activity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#send-activity
 
 <!--  (Actions) Create a condition -->
-[ifcondition]: bot-builder-concept-adaptive-dialog-Actions.md#ifcondition
-[switchcondition]: bot-builder-concept-adaptive-dialog-Actions.md#switchcondition
-[foreach]: bot-builder-concept-adaptive-dialog-Actions.md#foreach
-[foreachpage]: bot-builder-concept-adaptive-dialog-Actions.md#foreachpage
-[break-loop]: bot-builder-concept-adaptive-dialog-Actions.md#break-loop
-[continue-loop]: bot-builder-concept-adaptive-dialog-Actions.md#continue-loop
-[goto-action]: bot-builder-concept-adaptive-dialog-Actions.md#goto-action
+[ifcondition]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#ifcondition
+[switchcondition]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#switchcondition
+[foreach]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#foreach
+[foreachpage]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#foreachpage
+[break-loop]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#break-loop
+[continue-loop]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#continue-loop
+[goto-action]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#goto-action
 
 <!--  (Actions) Dialog management -->
-[begindialog]: bot-builder-concept-adaptive-dialog-Actions.md#begindialog
-[cancelalldialog]: bot-builder-concept-adaptive-dialog-Actions.md#cancelalldialog
-[enddialog]: bot-builder-concept-adaptive-dialog-Actions.md#enddialog
-[endturn]: bot-builder-concept-adaptive-dialog-Actions.md#endturn
-[repeatdialog]: bot-builder-concept-adaptive-dialog-Actions.md#repeatdialog
-[replacedialog]: bot-builder-concept-adaptive-dialog-Actions.md#replacedialog
-[update-activity]: bot-builder-concept-adaptive-dialog-Actions.md#update-activity
-[delete-activity]: bot-builder-concept-adaptive-dialog-Actions.md#delete-activity
-[get-activity-members]: bot-builder-concept-adaptive-dialog-Actions.md#get-activity-members
-[get-conversation-members]: bot-builder-concept-adaptive-dialog-Actions.md#get-conversation-members
-[editactions]: bot-builder-concept-adaptive-dialog-Actions.md#editactions
+[begindialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#begindialog
+[cancelalldialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialog
+[enddialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#enddialog
+[endturn]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#endturn
+[repeatdialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#repeatdialog
+[replacedialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#replacedialog
+[update-activity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#update-activity
+[delete-activity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#delete-activity
+[get-activity-members]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#get-activity-members
+[get-conversation-members]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#get-conversation-members
+[editactions]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editactions
 [memory-states]:bot-builder-concept-adaptive-dialog-memory-states.md
 
 <!--  (Actions) Manage properties -->
-[editarray]: bot-builder-concept-adaptive-dialog-Actions.md#editarray
-[deleteproperty]: bot-builder-concept-adaptive-dialog-Actions.md#deleteproperty
-[deleteproperties]: bot-builder-concept-adaptive-dialog-Actions.md#deleteproperties
-[setproperty]: bot-builder-concept-adaptive-dialog-Actions.md#setproperty
-[setproperties]: bot-builder-concept-adaptive-dialog-Actions.md#setproperties
+[editarray]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editarray
+[deleteproperty]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#deleteproperty
+[deleteproperties]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#deleteproperties
+[setproperty]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#setproperty
+[setproperties]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#setproperties
 
 <!--  (Actions) Access external resources -->
-[beginskill]: bot-builder-concept-adaptive-dialog-Actions.md#beginskill
-[httprequest]: bot-builder-concept-adaptive-dialog-Actions.md#httprequest
-[emitevent]: bot-builder-concept-adaptive-dialog-Actions.md#emitevent
-[sign-out-user]: bot-builder-concept-adaptive-dialog-Actions.md#sign-out-user
-[custom-trigger]: bot-builder-concept-adaptive-dialog-triggers.md#custom-events
-<!--[codeaction]: bot-builder-concept-adaptive-dialog-Actions.md#codeaction-->
+[beginskill]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#beginskill
+[httprequest]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#httprequest
+[emitevent]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
+[sign-out-user]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#sign-out-user
+[custom-trigger]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#custom-event-trigger
+<!--[codeaction]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#codeaction-->
 
 <!--  (Actions) Debugging options -->
-[log-action]: bot-builder-concept-adaptive-dialog-Actions.md#log-action
-[traceactivity]: bot-builder-concept-adaptive-dialog-Actions.md#traceactivity
+[log-action]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#log-action
+[traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
