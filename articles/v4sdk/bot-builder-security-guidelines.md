@@ -11,7 +11,11 @@ ms.date: 07/07/2020
 
 # Bot Framework security guidelines
 
-Bots are more and more prevalent in key business areas like financial services, retail, travel and so on. The bots might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So it is important that a bot is not vulnerable to hacking exploitation.
+Bots are more and more prevalent in key business areas like financial services, retail, travel and so on. The bots might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So it is important that bots are **secure**.
+
+Securing a bot can be complicated, even the most robust one could have **vulnerabilities** and be at risk for **threats**.
+
+However, there are security techniques that can be used to improve bot's security. They are similar to the ones used in any other software system that involves handling sensitive data.
 
 ## Security issues in a nutshell
 
@@ -23,14 +27,14 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
 ## Security areas
 
-1. Encryption
+1. **Encryption**
 
-    Data can be tampered with during transmission. Protocols that provide encryption to address problems of misuse and tampering.
-    In this regard, companies must take measures to obfuscate and encrypt personal data, this allow bots to access only encrypted channels to communicate.
+    Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
+    In this regard, companies must take measures to obfuscate and encrypt sensitive data, and allow bots to access only encrypted channels to communicate.
 
 1. **Authentication and Authorization**.
 
-    A bot communicates with the Bot Connector service using HTTP over a secured channel (SSL/TLS). As a bot developer, you must implement the security procedures described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service.
+    A bot communicates with a Bot Connector service using HTTP over a secured channel (SSL/TLS). As a bot developer, you must implement the security procedures described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service.
 
 <!-- 1. Self-destructing Messages
 
@@ -38,6 +42,8 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 -->
 
 1. Data Storage
+
+    The best practice calls for storing information in a secure state for a certain amount of time and discard it later after it served its purpose.
 
 1. Web Chat
 
