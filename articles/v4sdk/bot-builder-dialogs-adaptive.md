@@ -72,14 +72,14 @@ Notice also:
 - The LG template generator is added to the adaptive dialog, to enable the use of the **LG templates**.
 - The two triggers are added, with their actions being provided by the two helper methods.
 
-In `WelcomeUserSteps` method provides the actions to perform when the trigger fires. The `Foreach` actions iterates through the `membersAdded` list to greets the user added to the conversation.
+The `WelcomeUserSteps` method provides the actions to perform when the trigger fires. The `Foreach` actions iterates through the `membersAdded` list to greets the user added to the conversation.
 
 > [!NOTE]
 > Within the context of adaptive dialogs and triggers, all dialogs are valid actions, and the action types (`Foreach`, `IfCondition`, `SendActivity`) are all dialogs.\
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
 > The code filters cases where the bot itself is the recipient of the message. For more information, see [Categorized activities by channel](https://docs.microsoft.com/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0#welcome).
 
-[!code-csharp[Welcome user](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=43-64)]
+[!code-csharp[Welcome user](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=40-64)]
 
 The `GatherUserInformation` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `RootDialog.lg` file. The code below shows how the `Name` prompt is created.
 
@@ -87,7 +87,7 @@ The `GatherUserInformation` implements the **steps** that the dialog uses. It de
 
 The `IfCondition` action uses an adaptive expression to either ask the user for their age or send an acknowledgement message, depending on their response to the previous question. Again it uses LG templates to format the prompts and messages.
 
-[!code-csharp[if condition](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=26-54)]
+[!code-csharp[if condition](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=91-119)]
 
 # [JavaScript](#tab/javascript)
 
