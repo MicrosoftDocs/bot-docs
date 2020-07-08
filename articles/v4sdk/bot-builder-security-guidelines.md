@@ -23,18 +23,38 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
 - **Threats**. They refer to different ways a bot can be compromised. They include spoofing, tampering, disclosing information, denial of service as so forth.
 
-- **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be cause by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security activities in the development and deployment process.
+- **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be caused by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security check points in the development and deployment process.
 
 ## Security preventive measures
+
+### Standard measures
 
 1. **Protocols and Encryption**
 
     Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
     In this regard, companies must take measures to allow bots to access only encrypted channels to communicate. This can prevent anyone other than the receiver and sender from seeing any part of the message or transaction.
 
-    Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt personal data.
+    Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
 
     To exchange data on the wire any secure system must use the **HTTPS** protocol. Data is transferred over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
+
+1. **Self-destructing messages**
+
+    This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
+
+1. **Education**
+
+    On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
+
+    Therefore, companies must assure that its developers understand that bot security is very important, like all aspects of website security that makes harder for hackers to compromise the site.
+
+    Despite security issues awareness, people can be the weakest link and users' errors can be a problem. This will require education on how digital technologies such as bots can be used securely, for example:
+
+    - A development strategy should include internal training on how to use the bot securely.
+
+    - Customers can be given guidelines detailing how to interact with the bot safely.
+
+### Bot Framework  measures
 
 1. **Authentication and Authorization**.
 
@@ -42,29 +62,9 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
     A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
 
-1. **Self-destructing messages**
 
-    This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
-
-<!--
-1. Personal Scan
--->
-
-1. Data Storage
+1. **Data storage**
 
     The best practice calls for storing information in a secure state for a certain amount of time and discard it later after it served its purpose.
 
 1. **Web Chat**
-
-1. **Education**
-
-    On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
-
-    Therefore companies must assure that its developers understand that bot security is of out outmost importance, like all aspects of website security. It is important to implement layers of website security that makes harder for hackers to compromise the site.
-
-    Despite security issues awareness, people can still be the weakest link and users' errors continue to be a problem. This will require education on how digital technologies such as bots can be used securely.
-
-    To mitigate this problem, a development strategy should include internal training on how to use the bot securely.
-
-    Even though customers cannot be trained as the internal personnel, they can be given guideline detailing how to interact with the bot safely.
-
