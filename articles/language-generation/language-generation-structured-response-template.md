@@ -402,9 +402,10 @@ Here's an example:
 ```
 
 [more test samples][4]
+--> 
 
 ## Additional Information
-- [Language generation API Reference](language-generation-API-reference.md)-->
+- [Language generation API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
 
 [1]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/
 [2]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md

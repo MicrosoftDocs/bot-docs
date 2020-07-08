@@ -403,7 +403,7 @@ Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exp
 
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
-[2]:../language-generation/language-generation-API-reference.md
+[2]:https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration
 [3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [4]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md
 [5]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join
