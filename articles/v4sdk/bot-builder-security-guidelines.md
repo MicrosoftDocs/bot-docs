@@ -27,7 +27,7 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
 1. **Authentication and Authorization**.
 
-    A bot communicates with the Bot Connector service using HTTP over a secured channel (SSL/TLS). As a bot developer, you must implement the security procedures described in the [Authentication](../rest-api\bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service.
+    A bot communicates with the Bot Connector service using HTTP over a secured channel (SSL/TLS). As a bot developer, you must implement the security procedures described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service.
 
 1. Self-destructing Messages
 
