@@ -96,25 +96,32 @@ At times it is necessary to transfer (hand off) a conversation from a bot to a h
 
 It is important to keep in mind that hand off are [event activities](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#event-activity) which communicate programmatic information from a client or channel to a bot. These events are used to handle the hand off between a bot and the agent hub and are also known as **handoff events**.
 
+
+When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a **handoff initiation event**. See [handoff protocol](~/bot-service-design-pattern-handoff-human.md#handoff-protocol) example.
+
 The Bot Framework SDK supports handoff to an agent, known as escalation. There a few **event types** for signaling handoff operations. The events are exchanged between a **bot** and an **agent hub**, also called engagement hub. This hub is defined as an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots. See [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library#handoff-library).
 
 You can select one of the following models for integration with the agent hubs:
 
-- [Bot as an agent](bot-service-design-pattern-handoff-human#bot-as-an-agent)
-- [Bot as a proxy](bot-service-design-pattern-handoff-human#bot-as-a-proxy)
+- [Bot as an agent](~/bot-service-design-pattern-handoff-human#bot-as-an-agent)
+- [Bot as a proxy](~/bot-service-design-pattern-handoff-human#bot-as-a-proxy)
 
-The handoff protocol is identical for both models, however the onboarding details differ between the models and the agent engagement hubs. See [Transition conversations from bot to human](~/bot-service-design-pattern-handoff-human.md#handoff-protocol)
+The handoff protocol is identical for both models, however the onboarding details differ between the models and the agent engagement hubs. The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot). For more information, see the [protocol](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library#protocol) of the **hand off library**.
 
-DirectLine channel supports handoff in the [bot as an agent](bot-service-design-pattern-handoff-human#bot-as-an-agent) scenario.  This is because there is an application that handles the handoff event.
+> [!NOTE]
+> DirectLine channel supports handoff in the [bot as an agent](~/bot-service-design-pattern-handoff-human#bot-as-an-agent) scenario.  This is because there is an application that handles the handoff event.
 
 In the case of channels that do not handle the handoff, the middleware is used to transforms the handoff event into API calls specific to the agent hub.
 
-> [!WARNING]
-> TBD
->
-> Do we need examples that show how to use the following for the handoff?
-> - [Integration with Microsoft Dynamics Omnichannel for Customer Service](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples)
-> - [Integration with LiverPerson LiveEngage platform](https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html)
->
-> The [PR 1786](https://github.com/MicrosoftDocs/bot-docs/issues/1786) says *We and customers have implemented connectors (middleware + adapter) for LivePerson proxy, ServiceNow, RingCentral and others.*
-> Do we need to refer to this: [HandoffMiddleware.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/handoff-library/csharp_dotnetcore/samples/LivePersonAgentBot/Middleware/HandoffMiddleware.cs)
+## ??Questions??
+
+1. The [Transition conversations from bot to human](~/bot-service-design-pattern-handoff-human.md#) article refers to the following:
+
+    - [Integration with Microsoft Dynamics Omnichannel for Customer Service](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples)
+    - [Integration with LiverPerson LiveEngage platform](https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html)
+
+    <span style="background-color:yellow">Q1: Do we need to show how to use them perhaps in a specific how to article?</span>
+
+1. The [PR 1786](https://github.com/MicrosoftDocs/bot-docs/issues/1786) says *We and customers have implemented connectors (middleware + adapter) for LivePerson proxy, ServiceNow, RingCentral and others.*
+
+    <span style="background-color:yellow">Q2: Do we need to refer to this: [HandoffMiddleware.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/handoff-library/csharp_dotnetcore/samples/LivePersonAgentBot/Middleware/HandoffMiddleware.cs).</span>
