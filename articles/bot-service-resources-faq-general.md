@@ -96,8 +96,7 @@ At times it is necessary to transfer (hand off) a conversation from a bot to a h
 
 It is important to keep in mind that hand off are [event activities](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#event-activity) which communicate programmatic information from a client or channel to a bot. These events are used to handle the hand off between a bot and the agent hub and are also known as **handoff events**.
 
-
-When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a **handoff initiation event**. See [handoff protocol](~/bot-service-design-pattern-handoff-human.md#handoff-protocol) example.
+When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a **handoff initiation event**. See this [handoff protocol](~/bot-service-design-pattern-handoff-human.md#handoff-protocol) example.
 
 The Bot Framework SDK supports handoff to an agent, known as escalation. There a few **event types** for signaling handoff operations. The events are exchanged between a **bot** and an **agent hub**, also called engagement hub. This hub is defined as an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots. See [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library#handoff-library).
 
@@ -111,7 +110,7 @@ The handoff protocol is identical for both models, however the onboarding detail
 > [!NOTE]
 > DirectLine channel supports handoff in the [bot as an agent](~/bot-service-design-pattern-handoff-human.md#bot-as-an-agent) scenario.  This is because there is an application that handles the handoff event.
 
-In the case of channels that do not handle the handoff, the middleware is used to transforms the handoff event into API calls specific to the agent hub.
+In the case of channels that do not handle the handoff, the middleware is used to transform the handoff event into API calls specific to the agent hub.
 
 ### ??Questions??
 
