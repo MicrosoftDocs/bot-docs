@@ -15,7 +15,7 @@ Bots are more and more prevalent in key business areas like financial services, 
 
 Securing a bot can be complicated, even the most robust one could have **vulnerabilities** and be at risk for **threats**.
 
-However, there are [security preventive measures](#security-preventive-measures) that can be taken to improve bot's security. They are similar to the ones used in any other software system handling sensitive data.
+However, there are security preventive measures that can be taken to improve bot's security. Some are standard measures similar to the ones used in any other software system others are specific to the Bot Framework.
 
 ## Security issues in a nutshell
 
@@ -40,6 +40,11 @@ To exchange data on the wire any secure system must use the **HTTPS** protocol. 
 
 This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
 
+### Data storage
+
+The best practice calls for storing information in a secure state for a certain amount of time and discard it later after it served its purpose.
+
+
 ### Education
 
 On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
@@ -61,7 +66,7 @@ Despite security issues awareness, people can be the weakest link and users' err
 The bot connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the bot connector service using HTTP over a secure channel (SSL/TLS).  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the bot connector and ultimately with the users.
 
 > [!WARNING]
-> If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps in this article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
+> If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
 
 #### User authentication
 
@@ -101,12 +106,4 @@ When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-ch
     See also
     - [Add authentication to your bot via Azure Bot Service](~/v4sdk/bot-builder-authentication.md)
     - [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features)
-
-
-
-### Data storage
-
-The best practice calls for storing information in a secure state for a certain amount of time and discard it later after it served its purpose.
-
-
 
