@@ -25,7 +25,7 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
 - **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be caused by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security check points in the development and deployment process.
 
-## Security preventive standard measures
+## Security standard measures
 
 ### Protocols and Encryption
 
@@ -57,18 +57,16 @@ Despite security issues awareness, people can be the weakest link and users' err
 
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
-## Bot Framework security preventive measure
+## Bot Framework security measure
 
-### Authentication and Authorization
-
-#### Bot connector
+### Bot connector authentication
 
 The bot connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the bot connector service using HTTP over a secure channel (SSL/TLS).  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the bot connector and ultimately with the users.
 
 > [!WARNING]
 > If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
 
-#### User authentication
+### User authentication
 
 **Azure Bot Service authentication** enables you to authenticate users to and get **access tokens** from a variety of identity providers such as *Azure Active Directory*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
 
@@ -77,7 +75,6 @@ The bot connector service assures that messages are exchanged securely between t
 1. Retrieve access tokens through **Azure Bot Service API**. A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
 
 For more information, see [Authentication](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) article
-
 
 ### Web Chat
 
