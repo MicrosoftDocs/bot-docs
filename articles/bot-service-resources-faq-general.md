@@ -98,7 +98,7 @@ At times it is necessary to transfer (handoff) a conversation from a bot to a hu
 
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a **handoff initiation event**. See this [handoff protocol](~/bot-service-design-pattern-handoff-human.md#handoff-protocol) example. -->
 
-The Bot Framework SDK supports handoff to a human. There a few **event types** for signaling handoff operations. The events are exchanged between a **bot** and an **agent hub**, also called engagement hub. This agent hub is defined as an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots.
+The Bot Framework SDK supports handoff to a human. There a few **event types** for signaling handoff operations. These events are exchanged between a **bot** and an **agent hub**, also called engagement hub. This agent hub is defined as an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots.
 
 For detailed information, see [Transition conversations from bot to human](~/bot-service-design-pattern-handoff-human.md) article.
 
