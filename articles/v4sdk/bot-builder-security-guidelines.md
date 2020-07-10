@@ -25,46 +25,88 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
 - **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be caused by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security check points in the development and deployment process.
 
-## Security preventive measures
+## Security preventive standard measures
 
-### Standard measures
+### Protocols and Encryption
 
-1. **Protocols and Encryption**
+Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
+In this regard, companies must take measures to allow bots to access only encrypted channels to communicate. This can prevent anyone other than the receiver and sender from seeing any part of the message or transaction.
 
-    Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
-    In this regard, companies must take measures to allow bots to access only encrypted channels to communicate. This can prevent anyone other than the receiver and sender from seeing any part of the message or transaction.
+Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
 
-    Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
+To exchange data on the wire any secure system must use the **HTTPS** protocol. Data is transferred over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
 
-    To exchange data on the wire any secure system must use the **HTTPS** protocol. Data is transferred over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
+### Self-destructing messages
 
-1. **Self-destructing messages**
+This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
 
-    This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
+### Education
 
-1. **Education**
+On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
 
-    On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
+Therefore, companies must assure that its developers understand that bot security is very important, like all aspects of website security that makes harder for hackers to compromise the site.
 
-    Therefore, companies must assure that its developers understand that bot security is very important, like all aspects of website security that makes harder for hackers to compromise the site.
+Despite security issues awareness, people can be the weakest link and users' errors can be a problem. This will require education on how digital technologies such as bots can be used securely, for example:
 
-    Despite security issues awareness, people can be the weakest link and users' errors can be a problem. This will require education on how digital technologies such as bots can be used securely, for example:
+- A development strategy should include internal training on how to use the bot securely.
 
-    - A development strategy should include internal training on how to use the bot securely.
+- Customers can be given guidelines detailing how to interact with the bot safely.
 
-    - Customers can be given guidelines detailing how to interact with the bot safely.
+## Bot Framework security preventive measure
 
-### Bot Framework  measures
+### Authentication and Authorization
 
-1. **Authentication and Authorization**.
+#### Bot connector
 
-    A bot communicates with a Bot Connector service using HTTP over a secured channel (SSL/TLS). As a bot developer, you must implement the security procedures described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service.
+The bot connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the bot connector service using HTTP over a secure channel (SSL/TLS).  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the bot connector and ultimately with the users.
 
-    A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
+> [!WARNING]
+> If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps in this article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
+
+#### User authentication
+
+**Azure Bot Service authentication** enables you to authenticate users to and get **access tokens** from a variety of identity providers such as *Azure Active Directory*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
+
+1. Statically configure `settings` on your bot that contains the details of your application registration with an identity provider.
+1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
+1. Retrieve access tokens through **Azure Bot Service API**. A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
+
+For more information, see [Authentication](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) article
 
 
-1. **Data storage**
+### Web Chat
 
-    The best practice calls for storing information in a secure state for a certain amount of time and discard it later after it served its purpose.
+When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-channel-connect-webchat.md) there are some important security considerations you must keep in mind.
 
-1. **Web Chat**
+1. **Impersonation**. Impersonation here means an attacker makes the bot thinks he is someone else. In Web Chat, an attacker can impersonate someone else by **changing the user ID** of his Web Chat instance. To prevent this, it is recommend to bot developers to make the **user ID unguessable**.
+
+    If you enable **enhanced authentication** options, Azure Bot Service can further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat with. Note that this feature requires the user ID starts with `dl_`.
+
+    > [!NOTE]
+    > When a *User.Id* is provided while exchanging a secret for a token, that *User.Id* is embedded in the token. DirectLine makes sure the messages sent to the bot have that id as the activity's *From.Id*. If a client sends a message to DirectLine having a different *From.Id*, it will be changed to the **Id in the token** before forwarding the message to the bot. So you cannot use another user id after a channel secret is initialized with a user id
+
+1. **User identities**. You must be aware that your are dealing with two user identities:
+
+    1. The user’s identity in a channel.
+    1. The user’s identity in an identity provider that the bot is interested in.
+
+    When a bot asks user A in a channel to sign-in to an identity provider P, the sign-in process must assure that user A is the one that signs into P.
+    If another user B is allowed to sign-in, then user A would have access to user B’s resource through the bot. In Web Chat we have 2 mechanisms for ensuring the right user signed in as described next.
+
+    1. At the end of sign-in, in the past, the user was presented with a randomly generated 6-digit code (aka magic code). The user must type this code in the conversation that initiated the sign-in to complete the sign-in process. This mechanism tends to result in a bad user experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
+
+    2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
+    To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
+
+    See also
+    - [Add authentication to your bot via Azure Bot Service](~/v4sdk/bot-builder-authentication.md)
+    - [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features)
+
+
+
+### Data storage
+
+The best practice calls for storing information in a secure state for a certain amount of time and discard it later after it served its purpose.
+
+
+
