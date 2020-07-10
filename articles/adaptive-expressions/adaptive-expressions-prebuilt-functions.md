@@ -113,6 +113,7 @@ You can also view the list in [alphabetical order](#add).
 |[uriComponent](#uriComponent)|Return the URI-encoded version for an input value by replacing URL-unsafe characters with escape characters.|
 |[uriComponentToString](#uriComponentToString)|Return the string version of a URI-encoded string.|
 |[xml](#xml)|C# only. Return the XML version of a string.|
+|[formatNumber](#formatNumber)|Format a value to the nearest number to the specified number of fractional digits and a specified locale.|
 
 ### Math functions
 
@@ -130,6 +131,9 @@ You can also view the list in [alphabetical order](#add).
 |[range](#range)|Return an integer array that starts from a specified integer.|
 |[exp](#exp)|Return exponentiation of one number to another.|
 |[average](#average)|Return the average number of an numeric array.|
+|[floor](#floor)|Return the largest integral value less than or equal to the specified number.|
+|[ceiling](#ceiling)|Return the smallest integral value greater than or equal to the specified number.|
+|[round](#round)|Round a value to the nearest integer or to the specified number of fractional digits.|
 
 ### Date and time functions
 
@@ -161,6 +165,10 @@ You can also view the list in [alphabetical order](#add).
 |[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp. |
 |[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp.|
 |[ticks](#ticks)   |Return the ticks property value of a specified timestamp.|
+|[ticksToDays](#ticksToDays)| Convert a ticks property value to the number of days. |
+|[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
+|[ticksToMinutes](#ticksToMinutes)| Convert a ticks property value to the number of minutes. |
+|[dateTimeDiff](#dateTimeDiff)| Return the difference in ticks between two timestamps. |
 
 ### Timex functions
 
@@ -781,6 +789,35 @@ And respectively returns these results:
 
 <a name="coalesce"></a>
 
+<a name="ceiling"></a>
+
+### ceiling
+
+Return the largest integral value less than or equal to the specified number.
+
+```
+ceiling('<number>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*integer-value*> | integer | The largest integral value greater than or equal to the input number |
+||||
+
+*Example*
+This example returns the largest integral value less than or equal to the number **10.333**:
+
+```
+ceiling(10.333)
+```
+
+And returns the string **11**.
+
 ### coalesce
 
 Return the first non-null value from one or more parameters. Empty strings, empty arrays, and empty objects are not null.
@@ -839,8 +876,8 @@ concat('<text1>', '<text2>', ...)
 Expected return values:
 
 - If all items are lists, a list will be returned.
-- If there exists an item that is not a list, a string will be returned. 
-- If a value is null, it is skipped and not concatanated. 
+- If there exists an item that is not a list, a string will be returned.
+- If a value is null, it is skipped and not concatanated.
 
 *Example*
 
@@ -1237,7 +1274,46 @@ dateReadBack('2018-03-15T13:00:00.000Z', '2018-03-16T13:00:00.000Z')
 
 Returns the result **tomorrow**.
 
-<a name="dayOfMonth"></a>
+<a name="dateTimeDiff"></a>
+
+### dateTimeDiff
+
+Return the difference in ticks between two timestamps.
+
+```
+dateTimeDiff('<timestamp1>', '<timestamp2>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*timestamp1*> | Yes | string | The first timestamp string to compare |
+| <*timestamp2*> | Yes | string | The second timestamp string to compare |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*ticks*> | number | The difference in ticks between two timestamps  |
+||||
+
+*Example 1*
+
+This example returns the difference in ticks between two timestamps:
+
+```
+dateTimeDiff('2019-01-01T08:00:00.000Z','2018-01-01T08:00:00.000Z')
+```
+
+And returns the number **315360000000000**.
+
+*Example 2*
+
+```
+dateTimeDiff('2018-01-01T08:00:00.000Z', '2019-01-01T08:00:00.000Z')
+```
+
+Returns the result **-315360000000000**.
+
+<a name="dayOfMonth"></a>	<a name="dayOfMonth"></a>
 
 ### dayOfMonth
 
