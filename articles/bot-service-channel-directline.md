@@ -16,7 +16,7 @@ ms.author: kamrani
 The Bot Framework Direct Line channel is an easy way to integrate your bot into your mobile app, webpage, or other application.
 Direct Line is available in three forms:
 - Direct Line service – a global, robust service for most developers
-- Direct Line App Service Extensions – dedicated Direct Line functionality for security and performance (available in public preview)
+- Direct Line App Service Extensions – dedicated Direct Line functionality for security and performance
 - Direct Line Speech – optimized for high-performance speech (GA)
 
 You can choose which offering of Direct Line is best for you by evaluating the features each offers and the needs of your solution. 
@@ -24,7 +24,7 @@ Over time these offerings will be simplified.
 
 |                            | Direct Line | Direct Line App Service Extension | Direct Line Speech |
 |----------------------------|-------------|-----------------------------------|--------------------|
-| Availability and Licensing    | General availability | Public preview, no SLA  | GA |
+| Availability and Licensing    | General availability | General availability  | GA |
 | Speech recognition and text-to-speech performance | Standard | Standard | High performance |
 | Supports legacy web browsers | Yes | At GA | Yes |
 | Bot Framework SDK support | All v3, v4 | v4.63+ required | v4.63+ required |
