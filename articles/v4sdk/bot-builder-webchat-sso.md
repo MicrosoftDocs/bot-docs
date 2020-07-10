@@ -11,11 +11,14 @@ ms.date: 07/10/2020
 
 # Add single sign on to Web Chat
 
-With signing on, the bot identifies the user who is part of a conversation to perform actions on the user's behalf against identity providers.
-For example, a bot can ask a user to sign on to Office 365 to check the user’s recent email or calendar.
+Single sign on (SSO) allows a client, such as Web Chat control to communicate with a bot or skill on behalf of the user. Currently, only the [Azure AD v2](~v4sdk/bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
-The Bot Framework currently support the following sign on options:
+A typical scenario is the one where a Web Chat is embedded into a website. When the user sign in the website, the Web Chat invokes a bot or a skill on behalf of the user. This is because the client’s user token, based on the user's credentials, is exchanged for a different token to be used with the same identity provider, but with a different application, the bot in this case. Hence, the term SSO, because the user does not have to sign on twice; the first time on the web site, and the second time nn the bot.
 
-1. Sharing the client’s user token directly with the bot via channel data.
-1. Using an OAuthCard to drive a sign on experience to any OAuth provider.
-1. Single sign on (SSO), where the client UI takes the client’s user token for the client application and exchanges it for a different token that can be used with the same identity provider, but with a different application and scope. It is possible to create a similar user experience using Web Chat by using technique 1 shown above.
+The following shows a normal and a fallback flow when using a Web Chat client.
+
+![bot sso webchat](~/v4sdk/media/concept-bot-authentication/bot-auth-sso-webchat-time-sequence.PNG)
+
+In the case of failure, SSO falls back to the existing behavior of showing the OAuth card. The failure may be caused for example if the user consent is required or if the token exchange fails.
+
+For more information, see [Single sign on](~/v4sdk/bot-builder-concept-sso.md)
