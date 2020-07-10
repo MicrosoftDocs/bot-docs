@@ -35,7 +35,7 @@ ms.date: 06/08/2020
 - [What is an ETag? How does it relate to bot data bag storage?](bot-service-resources-faq-general.md#what-is-an-etag--how-does-it-relate-to-bot-data-bag-storage)
 - [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
 - [What are some community-authored templates?](bot-service-resources-faq-general.md#what-are-some-community-authored-templates)
-- [How to implement human hand off?](bot-service-resources-faq-general.md#how-to-implement-human-hand-off)
+- [How to implement human handoff?](bot-service-resources-faq-general.md#how-to-implement-human-handoff)
 
 ## Ecosystem
 
