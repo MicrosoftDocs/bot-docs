@@ -57,7 +57,7 @@ Despite security issues awareness, people can be the weakest link and users' err
 
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
-## Bot Framework security measure
+## Bot Framework security measures
 
 ### Bot connector authentication
 
