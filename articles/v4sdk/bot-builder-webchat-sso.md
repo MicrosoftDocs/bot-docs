@@ -11,9 +11,9 @@ ms.date: 07/10/2020
 
 # Add single sign on to Web Chat
 
-As single sign on (SSO) allows a client, such as Web Chat control, to communicate with a bot or skill on behalf of the user. Currently, only the [Azure AD v2](~v4sdk/bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
+As single sign on (SSO) allows a client, such as a Web Chat control, to communicate with a bot or skill on behalf of the user. Currently, only the [Azure AD v2](~/v4sdk/bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
-Typically, a Web Chat is embedded into a website. When the user sign in the website, the Web Chat invokes a bot or a skill on behalf of the user. This is because the client’s user token, based on the user's credentials, is exchanged for a different token to be used with the same identity provider, but with a different application, the bot in this case. Hence, the term SSO, because the user does not have to sign on twice; the first time on the web site, and the second time on the bot.
+Typically, a Web Chat is embedded into a website. When the user sign on the website, the Web Chat invokes a bot or a skill on behalf of the user. This is because the client's token, based on the user's credentials, is exchanged for a different token to use with the same identity provider, but with a different application, the bot in this case. Hence, the term SSO, because the user does not have to sign on twice; the first time on the web site, and the second time on the bot.
 
 The following shows a normal and a fallback flow when using a Web Chat client.
 
