@@ -67,7 +67,7 @@ The adapter's **OnTurnError** handler creates the trace activity to include the 
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-51&highlight=33-34)]
+[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-54&highlight=36-37)]
 
 # [JavaScript](#tab/javascript)
 
