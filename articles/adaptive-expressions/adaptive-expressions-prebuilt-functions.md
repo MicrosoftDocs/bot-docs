@@ -1307,11 +1307,13 @@ And returns the number **315360000000000**.
 
 *Example 2*
 
+This example returns the difference in ticks between two timestamps:
+
 ```
 dateTimeDiff('2018-01-01T08:00:00.000Z', '2019-01-01T08:00:00.000Z')
 ```
 
-Returns the result **-315360000000000**.
+Returns the result **-315360000000000**. Note that the value is a negative number.
 
 <a name="dayOfMonth"></a>	<a name="dayOfMonth"></a>
 
