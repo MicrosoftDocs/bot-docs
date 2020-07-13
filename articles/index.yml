@@ -27,11 +27,11 @@ highlightedContent:
     # Card
     - title: Azure Bot Service documentation
       itemType: overview
-      url: index-bf-sdk.md
+      url: index-bf-sdk.yml
     # Card
     - title: Bot Framework SDK documentation
       itemType: overview
-      url: index-bf-sdk.md
+      url: index-bf-sdk.yml
     # Card
     - title: What's new in the Bot Framework SDK
       itemType: whats-new
