@@ -27,14 +27,9 @@ Let's look at a couple of typical website scenarios where the Web Chat is used.
 
 ## Website with secure access
 
-Many websites support authentication. Once a user has signed on to a website, a user token is typically stored in a cookie and/or in-memory in the user’s web browser. This token is most often included in the authorization header to API calls that the browser makes to backend services. It is best practice to use https protocol when making these calls and to verify the token authenticity on the backend service.
+Many websites support authentication. Once a user has signed on to a website, a user token is typically stored in a cookie and/or in-memory in the user’s web browser. This token is most often included in the authorization header to API calls that the browser makes to backend services.
 
-A similar approach applies to Web Chat and bots using the Bot Framework where messages sent from the Web Chat to the Bot can include the client’s user token in each message. The Web Chat sends messages using https to the Azure Bot Service, which then signs them and passes them to the bot.
-
-If you want your bot to use the same user token as the client website, then then the Web Chat can be set up to send the user's token with every message to the bot. This is preferable to sending the token once and having the bot cache the token for the following reasons:
-
-- The token could expire, and the bot cannot refresh it.
-- It takes a decent amount of work to securely cache and store user tokens.
+If you want your bot to use the same user token as the client website, then the Web Chat can be set up to send the user's token with every message to the bot. This is preferable to sending the token once and having the bot cache the token because the token could expire, and the bot cannot refresh it. Also it takes a decent amount of work to securely cache and store user tokens.
 
 To configure the Web Chat to send user tokens with each outgoing message, you can use the Web Chat [BackChannel](https://github.com/Microsoft/BotFramework-WebChat#the-backchannel) capability. This allows to intercept every outgoing activity and augment it with any extra information, including the user token.
 
@@ -43,7 +38,7 @@ To configure the Web Chat to send user tokens with each outgoing message, you ca
 
 ## Website with anonymous and secure access
 
-In some cases, websites use bots that allow anonymous access to get basic information that, for a bank, could be opening hours, the bank routing number, or branch address information. That same bot can perform secure tasks such as balance inquiries or transfer money, which require the user to be signed on.
+In some cases, websites use bots that allow anonymous access to get basic information that, for a bank for example, could be opening hours, bank routing number, branch address information and so on. That same bot can perform secure tasks such as balance inquiries or transfer money, which require user's sign on.
 
 In this case, it is often preferable to have the bot ask the website to prompt the user to sign on, and then have the resulting user token sent to the bot. In order for this to happen the bot must inform the website that it needs the user token. This can be done using a custom *EventActivity* from the bot to the Web Chat.
 
@@ -52,8 +47,7 @@ When the bot receives user's request to perform a secure task, it can send two r
 - A *MessageActivity* asking the user to sign on.
 - An *EventActivity* with a name such as *sign on request*.
 
-The Web Chat can be configured to listen for events and perform special processing when it receives this *sign on request* event. In this case, it prompts the user to sign on to the website using website controls. Once the user has signed on, the token can be returned to the bot as another *EventActivity* and in subsequent *MessageActivities*.
+The Web Chat can be configured to listen for events and perform special processing when it receives this *sign on request* event. In this case, it prompts the user to sign on to the website. Once the user has signed on, the token can be returned to the bot as another *EventActivity*.
 
 > [!WARNING]
 > ?? Example needed here ??
-> To configure WebChat to intercept incoming activities to ‘listen’ for the *sign on request* event, you can create your own instance of DirectLine and subscribe to the activity$ observable on the DirectLine object:
