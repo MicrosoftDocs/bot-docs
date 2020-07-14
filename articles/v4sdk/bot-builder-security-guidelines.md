@@ -25,7 +25,9 @@ This is a vast area that cannot be covered in a few paragraphs. In a nutshell, t
 
 - **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be caused by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security check points in the development and deployment process.
 
-## Security standard measures
+## Standard security guidelines
+
+The following not exhaustive guidelines describe standard best practice security measures.
 
 ### Protocols and Encryption
 
@@ -57,7 +59,9 @@ Despite security issues awareness, people can be the weakest link and users' err
 
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
-## Bot Framework security measures
+## Bot Framework security guidelines
+
+The following guidelines describe the Bot Framework best practice security measures. See also [Security and Privacy FAQs](~/v4sdk/bot-service-resources-faq-security.md).
 
 ### Bot connector authentication
 
@@ -100,7 +104,13 @@ When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-ch
     2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
     To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
 
-    See also
-    - [Add authentication to your bot via Azure Bot Service](~/v4sdk/bot-builder-authentication.md)
-    - [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features)
+
+## Additional information
+
+- [Bot authentication](~/v4sdk/bot-builder-concept-authentication.md)
+- [Add authentication to your bot via Azure Bot Service](~/v4sdk/bot-builder-authentication.md)
+- [Enable security and test on localhost](~/bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
+- [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens)
+- [Authentication technologies](~/rest-api/bot-framework-rest-connector-authentication.md#authentication-technologies)
+- [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features)
 
