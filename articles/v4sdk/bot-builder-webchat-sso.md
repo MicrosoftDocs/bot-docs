@@ -17,14 +17,52 @@ Typically, a Web Chat is embedded in a website page. When the user sign on the w
 
 The following diagram shows the SSO flow when using a Web Chat client.
 
+> [!NOTE]
+> Fix the diagram to include normal flow (status 200).
+
 ![bot sso webchat](~/v4sdk/media/concept-bot-authentication/bot-auth-sso-webchat-time-sequence.PNG)
 
-In the case of failure, SSO falls back to the existing behavior of showing the OAuth card. The failure may be caused for example if the user consent is required or if the token exchange fails.
+In the case of failure, SSO falls back to the existing behavior of showing the **OAuth** card. The failure may be caused for example if the user consent is required or if the token exchange fails.
 
-For more information, see [Single sign on](~/v4sdk/bot-builder-concept-sso.md)
+Let's analyze the flow.
 
-Let's look at a couple of typical website scenarios where the Web Chat is used.
+1. The client starts a conversation with the bot triggering an OAuth scenario.
+1. The bot sends back an OAuth Card to the client.
+1. The client intercepts the OAuth card before displaying it to the user and checks if it contains a `TokenExchangeResource` property.
+1. If the property exisists, the client sends a `TokenExchangeInvokeRequest` to the bot. The client must have an exchangeable token for the user, which must be an Azure AD v2 token and whose audience must be the same as `TokenExchangeResource.Uri` property.  The client sends an Invoke activity to the bot with the body shown below.
 
+    ```json
+    {
+        "type": "Invoke",
+        "name": "signin/tokenExchange",
+        "value": {
+            "id": "<any unique Id>",
+            "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
+            "token": "<exchangeable token>"
+        }
+    }
+    ```
+
+1. The bot processes the `TokenExchangeInvokeRequest` and returns a `TokenExchangeInvokeResponse` back to the client. The
+client should wait till it receives the `TokenExchangeInvokeResponse`.
+
+    ```json
+    {
+        "status": "<response code>",
+        "body": {
+            "id":"<unique Id>",
+            "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
+            "failureDetail": "<failure reason if status code is not 200, null otherwise>"
+        }
+    }
+    ```
+
+1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the client does not show the OAuth card. See the *normal flow* diagram. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the client shows the OAuth card to the user. See the *fallback flow* diagram. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
+
+> [!WARNING]
+> For an example on how to get the user's exchangeable token and more, please refer to [Web Chat samples (TBD)](https://linkrequired).
+
+<!--
 ## Website with secure access
 
 Many websites support authentication. Once a user has signed on to a website, a token is typically stored in a cookie and/or in-memory in the user’s web browser. This token is most often included in the authorization header to API calls that the browser makes to backend services.
@@ -51,3 +89,4 @@ The Web Chat can be configured to listen for events and perform special processi
 
 > [!WARNING]
 > ?? Example needed here ??
+-->
