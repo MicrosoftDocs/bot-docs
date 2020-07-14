@@ -316,9 +316,9 @@ Send a message to your bot. The bot will list the messages it has received.
 ## Using Cosmos DB
 
 >[!IMPORTANT]
-> The _Cosmos DB storage_ class has been deprecated. Containers created with CosmosDbStorage had no partition key set, so the default was '/_partitionKey'.
+> The _Cosmos DB storage_ class has been deprecated. Containers originally created with CosmosDbStorage had no partition key set, and were given the default partition key of '/_partitionKey'.
 > Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
-> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. When you create a new database, Cosmos DB creates a container within your database automatically.
+> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container; _CosmosDbPartitionedStorage_ will create the container for you.
 
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
@@ -450,7 +450,7 @@ pip install botbuilder-azure
 ### Implementation
 
 > [!NOTE]
-> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information. Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. When you create a new database, Cosmos DB creates a container within your database automatically.
+> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information. Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container; _CosmosDbPartitionedStorage_ will create the container for you.
 
 ### [C#](#tab/csharp)
 
