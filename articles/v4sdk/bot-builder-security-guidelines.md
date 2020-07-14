@@ -34,11 +34,11 @@ In this regard, companies must take measures to allow bots to access only encryp
 
 Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
 
-To exchange data on the wire any secure system must use the **HTTPS** protocol. Data is transferred over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
+To exchange data on the wire any secure system must use the **HTTPS** protocol, which transfers data over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
 
 ### Self-destructing messages
 
-This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
+Permanently delete any sensitive data as soon as it is no longer needed, usually after the message exchange ends, or after a certain amount of time. This can include personally-identifying information, IDs, PINs, passwords, security questions and answers, and so so.
 
 ### Data storage
 
@@ -47,7 +47,7 @@ The best practice calls for storing information in a secure state for a certain 
 
 ### Education
 
-On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
+On one hand, bots provide an innovative interaction tool between a company and its customers. On the other hand, they could potentially provide a backdoor entry for hackers to tamper with a company's website.
 
 Therefore, companies must assure that its developers understand that bot security is very important, like all aspects of website security that makes harder for hackers to compromise the site.
 
@@ -57,13 +57,15 @@ Despite security issues awareness, people can be the weakest link and users' err
 
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
-## Bot Framework security guidelines
+## Bot-specific security guidelines
 
-The following guidelines describe the Bot Framework best practice security measures. See also [Security and Privacy FAQs](~/v4sdk/bot-service-resources-faq-security.md).
+The following areas are covered by some standard security best practices Bot Framework applications.
 
-### Bot connector authentication
+For additional information, see the [Security and Privacy FAQ](~/v4sdk/bot-service-resources-faq-security.md).
 
-The bot connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the bot connector service using HTTP over a secure channel (SSL/TLS).  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the bot connector and ultimately with the users.
+### Bot Connector authentication
+
+The Bot Connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the channel using HTTPS.  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service and the users.
 
 > [!WARNING]
 > If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
