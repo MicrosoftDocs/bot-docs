@@ -27,7 +27,7 @@ Reducing your vulnerabilities is a good way to mitigate threats, and known way t
 
 ## Common security guidelines
 
-The following not exhaustive guidelines describe standard best practice security measures.
+The following areas are covered by some standard security best practices common to all applications.
 
 ### Protocols and Encryption
 
