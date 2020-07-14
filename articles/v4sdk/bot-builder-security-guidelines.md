@@ -32,7 +32,7 @@ The following not exhaustive guidelines describe standard best practice security
 ### Protocols and Encryption
 
 Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
-In this regard, companies must take measures to allow bots to access only encrypted channels to communicate. This can prevent anyone other than the receiver and sender from seeing any part of the message or transaction.
+In this regard, bots should communicate only over encrypted channels. This makes it hard for anyone other than the receiver and sender from seeing any part of the message or transaction.
 
 Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
 
