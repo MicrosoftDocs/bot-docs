@@ -59,8 +59,8 @@ client should wait till it receives the `TokenExchangeInvokeResponse`.
 
 1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the client does not show the OAuth card. See the *normal flow* diagram. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the client shows the OAuth card to the user. See the *fallback flow* diagram. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
 
-> [!WARNING]
-> For an example on how to get the user's exchangeable token and more, please refer to [Web Chat samples (TBD)](https://linkrequired).
+> [!NOTE]
+> For an example on how to get the user's exchangeable token and more, please refer to [Web Chat samples](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps).
 
 <!--
 ## Website with secure access
