@@ -17,11 +17,13 @@ You can take some standard preventative measures to improve your bot's security.
 
 ## Security issues in a nutshell
 
-This is a vast area that cannot be covered in a few paragraphs. In a nutshell, the security issues can be grouped as follows:
+This article groups security issues into 2 categories:
 
-- **Threats**. They refer to different ways a bot can be compromised. They include spoofing, tampering, disclosing information, denial of service as so forth.
+- **Threats**: The tactics someone might use to compromise your bot, such as spoofing, tampering, disclosing information, denial of service, and so on.
 
-- **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be caused by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security check points in the development and deployment process.
+- **Vulnerabilities**: The ways in which your bot or the management of your bot might be susceptible to such tactics, such as bugs, or lax security.
+
+Reducing your vulnerabilities is a good way to mitigate threats, and known way to reduce vulnerabilities is to implement security check points in the development and deployment process.
 
 ## Standard security guidelines
 
