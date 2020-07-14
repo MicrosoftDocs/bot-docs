@@ -113,4 +113,7 @@ When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-ch
 - [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens)
 - [Authentication technologies](~/rest-api/bot-framework-rest-connector-authentication.md#authentication-technologies)
 - [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features)
-
+- [Security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations)
+- [Threat protection in Azure Security Center](https://docs.microsoft.com/azure/security-center/threat-protection)
+- [Azure Security Center Data Security](https://docs.microsoft.com/azure/security-center/security-center-data-security)
+- [Container security in Security Center](https://docs.microsoft.com/azure/security-center/container-security)
