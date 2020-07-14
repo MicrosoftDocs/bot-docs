@@ -25,7 +25,7 @@ This article groups security issues into 2 categories:
 
 Reducing your vulnerabilities is a good way to mitigate threats, and known way to reduce vulnerabilities is to implement security check points in the development and deployment process.
 
-## Standard security guidelines
+## Common security guidelines
 
 The following not exhaustive guidelines describe standard best practice security measures.
 
