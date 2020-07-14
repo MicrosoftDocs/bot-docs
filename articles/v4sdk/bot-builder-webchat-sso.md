@@ -36,7 +36,7 @@ Let's analyze the flow.
         "name": "signin/tokenExchange",
         "value": {
             "id": "<any unique Id>",
-            "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
+            "connectionName": "<connection name on the bot (from the OAuth Card)>",
             "token": "<exchangeable token>"
         }
     }
@@ -51,7 +51,7 @@ Let's analyze the flow.
         "status": "<response code>",
         "body": {
             "id":"<unique Id>",
-            "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
+            "connectionName": "<connection Name on the bot (from the OAuth Card)>",
             "failureDetail": "<failure reason if status code is not 200, null otherwise>"
         }
     }
