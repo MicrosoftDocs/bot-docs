@@ -13,9 +13,9 @@ ms.date: 07/10/2020
 
 Single sign on (SSO) allows a client, such as a Web Chat control, to communicate with a bot or skill on behalf of the user. Currently, only the [Azure AD v2](~/v4sdk/bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
-Typically, a Web Chat is embedded in website page. When the user sign on the website, the Web Chat invokes a bot on behalf of the user. The website client's token, based on the user's credentials, is exchanged for a different one to access the bot. Hence, the term SSO, because the user does not have to sign on twice; the first time on the website, and the second time on the bot.
+Typically, a Web Chat is embedded in a website page. When the user sign on the website, the Web Chat invokes a bot on behalf of the user. The website client's token, based on the user's credentials, is exchanged for a different one to access the bot. In this way, the user does not have to sign on twice; the first time on the website, and the second time on the bot hence, the term SSO.
 
-The following shows the SSO flow when using a Web Chat client.
+The following diagram shows the SSO flow when using a Web Chat client.
 
 ![bot sso webchat](~/v4sdk/media/concept-bot-authentication/bot-auth-sso-webchat-time-sequence.PNG)
 
@@ -29,9 +29,9 @@ Let's look at a couple of typical website scenarios where the Web Chat is used.
 
 Many websites support authentication. Once a user has signed on to a website, a token is typically stored in a cookie and/or in-memory in the user’s web browser. This token is most often included in the authorization header to API calls that the browser makes to backend services.
 
-If you want your bot to use the same user's token as the client website, then the Web Chat can be set up to send the user's token with every message to the bot. This is preferable to sending the token once and having the bot cache it because the token could expire, and the bot cannot refresh it. Also it takes some work to securely cache and store user tokens.
+If you want your bot to use the same user's token as the client website, then the Web Chat can be configured to send the user's token with every message to the bot. This is preferable to sending the token once and having the bot cache it because the token could expire, and the bot cannot refresh it. Also, it takes a sizable amount of work to securely cache and store user tokens.
 
-To configure the Web Chat to send user tokens with each outgoing message, you can use the Web Chat [BackChannel](https://github.com/Microsoft/BotFramework-WebChat#the-backchannel) capability. This allows to intercept every outgoing activity and augment it with any extra information, including the user token.
+To configure the Web Chat to send user tokens with each outgoing message, you can use the Web Chat [BackChannel](https://github.com/Microsoft/BotFramework-WebChat#the-backchannel) capability. This allows to intercept every outgoing activity and augment it with any extra information, including the user token. (**Is this correct? Are we going to have an example?**)
 
 > [!WARNING]
 > ?? Example needed here ??
@@ -47,7 +47,7 @@ When the bot receives user's request to perform a secure task, it can send two r
 - A *MessageActivity* asking the user to sign on.
 - An *EventActivity* with a name such as *sign on request*.
 
-The Web Chat can be configured to listen for events and perform special processing when it receives this *sign on request* event. In this case, it prompts the user to sign on to the website. Once the user has signed on, the token can be returned to the bot as another *EventActivity*.
+The Web Chat can be configured to listen for events and perform special processing when it receives the *sign on request* event. In this case, it prompts the user to sign on to the website. Once the user has signed on, a token can be returned to the bot as another *EventActivity*.
 
 > [!WARNING]
 > ?? Example needed here ??
