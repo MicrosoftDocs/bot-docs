@@ -69,6 +69,14 @@ Direct Line is suitable for:
 - Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 - Service-to-service applications
 
+## What are the steps to configure Web Chat for Azure Government?
+
+The steps to configure Web Chat for Azure Government are identical from public Azure. What is required to run Web Chat on Azure Gov is to set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government url. The [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) is the public Azure, not Azure Government.
+
+
+## What are the steps to configure Direct Line for Azure Government? 
+
+
 ## How does the Bot Framework relate to Cognitive Services?
 
 Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
