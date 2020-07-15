@@ -28,8 +28,8 @@ Let's analyze the flow.
 1. The Web Chat starts a conversation with the bot via an OAuth trigger activity.
 1. The bot sends back an OAuth Card to the Web Chat.
 1. The Web Chat intercepts the OAuth card before displaying it to the user and checks if it contains a `TokenExchangeResource` property.
-1. If the property exists, the client sends a `TokenExchangeInvokeRequest` to the bot. The client must have an exchangeable token for the user, which must be an Azure AD v2 token and whose audience must be the same as `TokenExchangeResource.Uri` property.  The Web Chat sends an Invoke activity to the bot with the body shown below.
-
+1. If the property exists, the Web Chat must get an exchangeable token for the user, which must be an Azure AD v2 token.
+1. The Web Chat sends an Invoke activity to the bot with the body shown below.
     ```json
     {
         "type": "Invoke",
@@ -42,7 +42,9 @@ Let's analyze the flow.
     }
     ```
 
-1. The bot processes the `TokenExchangeInvokeRequest` by issuing a request to the Azure Bot Service to obtain an exchange token.
+1. The bot processes the `TokenExchangeInvokeRequest` by issuing a request to the Azure Bot Service to obtain an exchangeable token.
+
+1. The Azure Bot Service sends the token to the bot.
 
 1. The bot returns a `TokenExchangeInvokeResponse` back to the Web Chat. The Web Chat waits till it receives the `TokenExchangeInvokeResponse`.
 
