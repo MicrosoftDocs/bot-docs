@@ -2,8 +2,8 @@
 title: Expire conversation guidance - Bot Service
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
-author: erdahlva
-ms.author: kamrani
+author: ericdahlvang
+ms.author: ericdahlvang
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -83,20 +83,21 @@ public override async Task OnTurnAsync(ITurnContext turnContext, CancellationTok
     if ((DateTime.UtcNow - lastAccess) >= TimeSpan.FromSeconds(ExpireAfterSeconds))
     {
         // Notify the user that the conversation is being restarted.
-        await turnContext.SendActivityAsync("Welcome back!  Let's start over from the beginning.");
+        await turnContext.SendActivityAsync("Welcome back!  Let's start over from the beginning.").ConfigureAwait(false);
 
-        // Clear conversation state.
+        // Clear state.
+        await UserState.ClearStateAsync(turnContext, cancellationToken).ConfigureAwait(false);
         await ConversationState.ClearStateAsync(turnContext, cancellationToken).ConfigureAwait(false);
     }
 
-    await base.OnTurnAsync(turnContext, cancellationToken);
+    await base.OnTurnAsync(turnContext, cancellationToken).ConfigureAwait(false);
 
     // Set LastAccessedTime to the current time.
-    await LastAccessedTimeProperty.SetAsync(turnContext, DateTime.UtcNow, cancellationToken);
+    await LastAccessedTimeProperty.SetAsync(turnContext, DateTime.UtcNow, cancellationToken).ConfigureAwait(false);
 
     // Save any state changes that might have occurred during the turn.
-    await ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
-    await UserState.SaveChangesAsync(turnContext, false, cancellationToken);
+    await ConversationState.SaveChangesAsync(turnContext, false, cancellationToken).ConfigureAwait(false);
+    await UserState.SaveChangesAsync(turnContext, false, cancellationToken).ConfigureAwait(false);
 }
 ```
 
@@ -135,12 +136,13 @@ async run(context) {
     // Retrieve the property value, and compare it to the current time.
     const now = new Date();
     const lastAccess = new Date(await this.lastAccessedTimeProperty.get(context, now.toISOString()));
-    if (now.getTime() != lastAccess.getTime() && ((now.getTime() - lastAccess.getTime()) / 1000) >= this.expireAfterSeconds)
+    if (now != lastAccess && ((now.getTime() - lastAccess.getTime()) / 1000) >= this.expireAfterSeconds)
     {
         // Notify the user that the conversation is being restarted.
         await context.sendActivity("Welcome back!  Let's start over from the beginning.");
 
-        // Clear conversation state.
+        // Clear state.
+        await this.userState.clear(context);
         await this.conversationState.clear(context);
     }
 
@@ -190,16 +192,55 @@ def __init__(
     [existing code omitted]
 
     self.expire_after_seconds = expire_after_seconds
+    self.dialog_state_property = conversation_state.create_property("DialogState")
+    self.last_accessed_time_property = conversation_state.create_property("LastAccessedTime")
     self.conversation_state = conversation_state
     self.user_state = user_state
     self.dialog = dialog
 ```
 
+Change `on_message_activity` so it uses the `dialog_state_property`:
+
+```python
+async def on_message_activity(self, turn_context: TurnContext):
+    await DialogHelper.run_dialog(
+        self.dialog,
+        turn_context,
+        self.dialog_state_property,
+    )
+```
+
 Add code to `DialogBot`'s `on_turn` method:
 
-<!-- add python code for on_turn -->
 ```python
+async def on_turn(self, turn_context: TurnContext):
+    # Retrieve the property value, and compare it to the current time.
+    now_seconds = int(time.time())
+    last_access = int(
+        await self.last_accessed_time_property.get(turn_context, now_seconds)
+    )
+    if now_seconds != last_access and (
+        now_seconds - last_access >= self.expire_after_seconds
+    ):
+        # Notify the user that the conversation is being restarted.
+        await turn_context.send_activity(
+            "Welcome back!  Let's start over from the beginning."
+        )
 
+        # Clear state.
+        await self.user_state.clear_state(turn_context)
+        await self.conversation_state.clear_state(turn_context)
+        await self.conversation_state.save_changes(turn_context, True)
+        await self.user_state.save_changes(turn_context, True)
+
+    await super().on_turn(turn_context)
+
+    # Set LastAccessedTime to the current time.
+    await self.last_accessed_time_property.set(turn_context, now_seconds)
+
+    # Save any state changes that might have ocurred during the turn.
+    await self.conversation_state.save_changes(turn_context)
+    await self.user_state.save_changes(turn_context)
 ```
 
 Lastly, update `app.py` to send the `EXPIRE_AFTER_SECONDS` parameter to `DialogBot`:
