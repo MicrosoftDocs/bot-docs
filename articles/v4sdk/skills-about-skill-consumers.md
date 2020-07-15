@@ -36,7 +36,7 @@ Starting and letting a single skill run to completion is managed with a few addi
 A skill consumer implements at least two HTTP endpoints:
 
 - A _messaging endpoint_ receives activities from the user or channel. This is the usual messaging endpoint that all bots implement.
-- A _skill host endpoint_ for receiving activities from a skill. This acts as the service URL to which the skill replies. (The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.)
+- A _skill host endpoint_ for receiving activities from a skill. This acts as a callback URL, the service URL to which the skill replies. (The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.)
 
 ### Skill descriptions
 

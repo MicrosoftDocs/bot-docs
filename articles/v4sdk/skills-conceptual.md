@@ -53,7 +53,7 @@ A skill and skill consumer are separate bots, and you publish them independently
 
 - A skill consumer requires added logic for managing a skill, such as when to call or cancel the skill, and so on. In addition to the usual bot and adapter objects, the consumer includes a few skill-related objects, used to exchange activities with the skill. A skill consumer implements at least two HTTP endpoints:
   - A _messaging endpoint_ receives activities from the user or channel. This is the usual messaging endpoint that all bots implement.
-  - A _skill host endpoint_ for receiving activities from a skill. This acts as the service URL to which the skill replies. (The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.)
+  - A _skill host endpoint_ for receiving activities from a skill. This acts as a callback URL, the service URL to which the skill replies. (The skill consumer needs to pair code that receives the HTTP method request from the skill with a skill handler.)
 - A skill requires added logic to send an `endOfConversation` activity when it completes, so that the skill consumer knows when to stop forwarding activities to the skill.
 
 This diagram outlines the flow of activities from the user to the root bot to a skill and back again.
