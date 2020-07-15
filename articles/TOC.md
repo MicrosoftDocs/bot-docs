@@ -28,7 +28,8 @@
 ### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
 ### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
-## Authentication
+## Security
+### [Security guidelines](v4sdk/bot-builder-security-guidelines.md)
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
