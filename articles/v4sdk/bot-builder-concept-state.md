@@ -142,3 +142,4 @@ If you have some custom middleware that might update state after your turn handl
 - [Dialog state](bot-builder-concept-dialog.md#dialog-state)
 - [Write directly to storage](bot-builder-howto-v4-storage.md)
 - [Save conversation and user data](bot-builder-howto-v4-state.md)
+
