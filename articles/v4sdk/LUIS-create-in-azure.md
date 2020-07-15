@@ -1,10 +1,10 @@
-# Draft for how to Create LUIS resources in Azure portal
+# Section on using LUIS in the iterruption bot sample
 ## Create LUIS resources in Azure portal
 
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
 
-  ![Set Create options to Authoring](./media/adaptive-dialogs/create-options-authoring.png)
+   ![Set Create options to Authoring](./media/adaptive-dialogs/create-options-authoring.png)
 
 3. Enter values for each of the fields, then select the **Review + create** button.
 
