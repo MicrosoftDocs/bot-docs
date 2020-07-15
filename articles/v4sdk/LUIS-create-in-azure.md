@@ -1,5 +1,5 @@
-
-### Create LUIS resources in Azure portal
+# Draft for how to Create LUIS resources in Azure portal
+## Create LUIS resources in Azure portal
 
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
@@ -15,7 +15,7 @@
 
 4. Review the values to ensure they are correct, then select the **Create** button.
 
-#### Get your authoring key
+### Get your authoring key
 
 Now that you have created your LUIS resource in the Azure portal, you can get your authoring key.
 
@@ -34,7 +34,7 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
 
 With this new LUIS resources in Azure portal, you are now ready to connect your bot to it.
 
-### Using CLI to connect your bot to your LUIS resource in Azure
+## Using CLI to connect your bot to your LUIS resource in Azure
 
 This section explains how to use the Bot Framework CLI to connect your bot to your LUIS resources in Azure. This automates the various tasks required to create, update, train and publish LUIS applications for each .lu file for the bot. In order to use this, you first need Node.js and the Bot Framework CLI.
 
@@ -45,7 +45,7 @@ This section explains how to use the Bot Framework CLI to connect your bot to yo
     > npm i -g @microsoft/botframework-cli
     ```
 
-1. In a command prompt, navigate to `..\samples\csharp_dotnetcore\adaptive-dialog\05.interruptions-bot`.
+1. In a command prompt, navigate to the root directory of your interruption bot sample, generally `..\samples\csharp_dotnetcore\adaptive-dialog\05.interruptions-bot`.
 
 Now you are ready to connect your bot to your LUIS resources in Azure using the Bot Framework CLI. You do this by running the following command from a command prompt while in the root directory of your project source code.
 
@@ -63,7 +63,7 @@ bf luis:build --in Dialogs --out generated --log --botName InterruptionBotSample
 
 Running the `bf luis:build` command does several things. It uploads all of the information contained in all of your .lu files to your LUIS resource in Azure and then performs the required LUIS training and publishing.  All you need to do now is update your configuration file with the information generated as a result of the steps taken previously.
 
-### Update your configuration file
+## Update your configuration file
 
 # [C#](#tab/csharp)
 
