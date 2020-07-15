@@ -49,19 +49,16 @@ The best practice calls for storing information in a secure state for a certain 
 
 ### Education
 
-On one hand bots provide an innovative interaction tool between a company and its customers. On the other hand they could potentially provide a backdoor entry for hackers to tamper with a company's website.
-
-Therefore, companies must assure that its developers understand that bot security is very important, like all aspects of website security that makes harder for hackers to compromise the site.
+Bots provide an innovative interaction tool between a company and its customers. But hey could potentially provide a backdoor for tampering with a company's website. Therefore, companies must assure that its developers understand the importance of bot security as part of the website security.
 
 Despite security issues awareness, people can be the weakest link and users' errors can be a problem. This will require education on how digital technologies such as bots can be used securely, for example:
 
 - A development strategy should include internal training on how to use the bot securely.
-
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
 ## Bot Framework security guidelines
 
-The following guidelines describe the Bot Framework best practice security measures. See also [Security and Privacy FAQs](~/v4sdk/bot-service-resources-faq-security.md).
+The following guidelines describe the Bot Framework best practice security measures. See also [Security and Privacy FAQs](~/bot-service-resources-faq-security.md).
 
 ### Bot connector authentication
 
