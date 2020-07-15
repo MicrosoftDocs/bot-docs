@@ -17,9 +17,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  This article describes three methods for expiring a conversation:
 
-- Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. See [User Interaction Expiration](#User-Interaction-Expiration)
-- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user. See [Proactive Expiration](#Proactive-Expiration)
-- Use a storage layer feature, such as CosmosDb Time To Live, to automatically clear state after a preconfigured length of time.  See [Storage Expiration](#Storage-Expiration)
+- Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. See [User Interaction Expiration](#user-interaction-expiration)
+- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user. See [Proactive Expiration](#proactive-expiration)
+- Use a storage layer feature, such as CosmosDb Time To Live, to automatically clear state after a preconfigured length of time.  See [Storage Expiration](#storage-expiration)
 
 ## Prerequisites
 
