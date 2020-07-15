@@ -11,36 +11,36 @@ ms.date: 07/07/2020
 
 # Bot Framework security guidelines
 
-Bots are more and more prevalent in key business areas like financial services, retail, travel and so on. The bots might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So it is important that bots are **secure**.
+Bots are more and more prevalent in key business areas like financial services, retail, travel and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So it is important that bots are secure and protect against common threats and vulnerabilities.
 
-Securing a bot can be complicated, even the most robust one could have **vulnerabilities** and be at risk for **threats**.
-
-However, there are security preventive measures that can be taken to improve bot's security. Some are standard measures similar to the ones used in any other software system others are specific to the Bot Framework.
+You can take some standard preventative measures to improve your bot's security. Some security measures are similar to ones used in other software systems, while some are specific to the Bot Framework.
 
 ## Security issues in a nutshell
 
-This is a vast area that cannot be covered in a few paragraphs. In a nutshell, the security issues can be grouped as follows:
+This article groups security issues into 2 categories:
 
-- **Threats**. They refer to different ways a bot can be compromised. They include spoofing, tampering, disclosing information, denial of service as so forth.
+- **Threats**: The tactics someone might use to compromise your bot, such as spoofing, tampering, disclosing information, denial of service, and so on.
 
-- **Vulnerabilities**. They refer to ways a bot is compromised that cannot be identified and solved correctly and on time. Vulnerabilities might be caused by poor coding, *relaxed* security, or bugs. The most effective way to solve possible vulnerabilities is to implement security check points in the development and deployment process.
+- **Vulnerabilities**: The ways in which your bot or the management of your bot might be susceptible to such tactics, such as bugs, or lax security.
 
-## Standard security guidelines
+Reducing your vulnerabilities is a good way to mitigate threats, and known way to reduce vulnerabilities is to implement security check points in the development and deployment process.
 
-The following not exhaustive guidelines describe standard best practice security measures.
+## Common security guidelines
+
+The following areas are covered by some standard security best practices common to all applications.
 
 ### Protocols and Encryption
 
 Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
-In this regard, companies must take measures to allow bots to access only encrypted channels to communicate. This can prevent anyone other than the receiver and sender from seeing any part of the message or transaction.
+In this regard, bots should communicate only over encrypted channels. This makes it hard for anyone other than the receiver and sender from seeing any part of the message or transaction.
 
 Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
 
-To exchange data on the wire any secure system must use the **HTTPS** protocol. Data is transferred over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
+To exchange data on the wire any secure system must use the **HTTPS** protocol, which transfers data over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
 
 ### Self-destructing messages
 
-This measure can improve bot security. Usually, after the message exchange ends, or after a certain amount of time, messages and any sensitive data are erased forever.
+Permanently delete any sensitive data as soon as it is no longer needed, usually after the message exchange ends, or after a certain amount of time. This can include personally-identifying information, IDs, PINs, passwords, security questions and answers, and so so.
 
 ### Data storage
 
@@ -56,13 +56,15 @@ Despite security issues awareness, people can be the weakest link and users' err
 - A development strategy should include internal training on how to use the bot securely.
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
-## Bot Framework security guidelines
+## Bot-specific security guidelines
+
+The following areas are covered by some standard security best practices Bot Framework applications.
 
 The following guidelines describe the Bot Framework best practice security measures. See also [Security and Privacy FAQs](~/bot-service-resources-faq-security.md).
 
-### Bot connector authentication
+### Bot Connector authentication
 
-The bot connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the bot connector service using HTTP over a secure channel (SSL/TLS).  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the bot connector and ultimately with the users.
+The Bot Connector service assures that messages are exchanged securely between the bot and the channels (users). A bot communicates with the channel using HTTPS.  As a bot developer, you **must implement the security procedures** described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article to enable your bot to securely exchange messages with the Bot Connector service and the users.
 
 > [!WARNING]
 > If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
