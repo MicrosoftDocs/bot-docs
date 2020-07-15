@@ -82,8 +82,8 @@ Here is an example to add the domain to the Azure Government URL in an example `
       window.WebChat.renderWebChat(
         {
           directLine: window.WebChat.createDirectLine({
-            token: 'YOUR_TOKEN_SECRET', 
-			domain: 'https://webchat.botframework.azure.us/v3/directline'
+          token: 'YOUR_TOKEN_SECRET', 
+		  domain: 'https://webchat.botframework.azure.us/v3/directline'
           }),
           userID: 'YOUR_USER_ID',
           username: 'Web Chat User',
