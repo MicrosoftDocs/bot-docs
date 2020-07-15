@@ -81,7 +81,7 @@ The steps to configure Web Chat for Azure Government are identical from public A
         {
           directLine: window.WebChat.createDirectLine({
             token: 'YOUR_TOKEN_SECRET', 
-			      domain: 'https://webchat.botframework.azure.us/v3/directline'
+			domain: 'https://webchat.botframework.azure.us/v3/directline'
           }),
           userID: 'YOUR_USER_ID',
           username: 'Web Chat User',
@@ -97,6 +97,7 @@ The steps to configure Web Chat for Azure Government are identical from public A
 ```
 
 ## What are the steps to configure Direct Line for Azure Government? 
+
 
 
 ## How does the Bot Framework relate to Cognitive Services?
