@@ -76,6 +76,13 @@ To exchange your secret for a token and generate the embed:
 requestGET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
+> ![NOTE]
+> Please note that for Azure Government, the token exchange URL is different:
+
+> ```
+> requestGET https://webchat.botframework.azure.us/api/tokens
+> Authorization: BotConnector YOUR_SECRET_HERE
+> ```
 
 ##### Example response
 
@@ -88,6 +95,12 @@ Authorization: BotConnector YOUR_SECRET_HERE
 ```html
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 ```
+
+> ![NOTE]
+> Please note that for Azure Government, the example iframe looks like this: 
+> ```
+> <iframe src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
+> ```
 
 ##### Example html code
 ```html
