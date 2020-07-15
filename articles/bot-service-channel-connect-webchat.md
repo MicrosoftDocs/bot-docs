@@ -76,8 +76,8 @@ To exchange your secret for a token and generate the embed:
 requestGET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
-> ![NOTE]
-> Please note that for Azure Government, the token exchange URL is different:
+> [!NOTE]
+> Please note that for Azure Government, the token exchange URL is different. 
 
 > ```
 > requestGET https://webchat.botframework.azure.us/api/tokens
@@ -96,11 +96,12 @@ Authorization: BotConnector YOUR_SECRET_HERE
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 ```
 
-> ![NOTE]
-> Please note that for Azure Government, the example iframe looks like this: 
-> ```
-> <iframe src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
-> ```
+> [!NOTE]
+> Please note that for Azure Government, the example iframe looks different. 
+
+```html
+<iframe src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
+```
 
 ##### Example html code
 ```html
@@ -162,7 +163,7 @@ This option does not expose the Web Chat channel secret key in the client web pa
 The client must provide a token to talk to the bot. To learn about the differences between secrets and tokens
 and to understand the risks associated with using secrets, visit [Direct Line authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
 
-The following client web page shows how to use a token with the Web Chat.
+The following client web page shows how to use a token with the Web Chat. If you use Azure Gov, please adjust the URLs from public to government.
 
 ```html
 
