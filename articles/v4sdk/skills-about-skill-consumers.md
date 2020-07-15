@@ -87,3 +87,9 @@ If you are using the [dialogs library](bot-builder-concept-dialog.md), you can u
 - You can cancel or interrupt the skill dialog as you would any other dialog. See how to [handle user interruptions](bot-builder-howto-handle-user-interrupt.md) for an example.
 
 See how to [use a dialog to consume a skill](skill-use-skilldialog.md) for a consumer that uses a dialog to manage a skill.
+
+## Using DeliveryMode ExpectReplies
+
+Bots and skills use industry-standard REST and JSON over HTTPS for communication. Normal activity processing flow starts when the root bot receives a post from a channel at the MessagingEndpoint. The root bot then sends the activity on to the skill for processing. Replies from the skill are posted back to the root bot's SkillHostEndpoint, not the MessagingEndpoint. Finally, the replies are processed further or posted back to the channel by the root bot. This normal flow can be altered by changing the DeliveryMode of the Activity sent to the skill. If DeliveryMode is ExpectReplies, skills will not post back to the SkillHostEndpoint.  Instead, all reply activities are serialized into the body of the response.  The root bot then iterates over these activities, processing them similar to how they would have been processed by the SkillHostEndpoint.
+
+For information, see the [Delivery mode](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#delivery-mode) in the Activity specification.
