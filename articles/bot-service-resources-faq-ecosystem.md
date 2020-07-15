@@ -69,11 +69,11 @@ Direct Line is suitable for:
 - Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 - Service-to-service applications
 
-## What are the steps to configure Web Chat for Azure Government?
+## What are the steps to configure Web Chat and Direct Line for Azure Government?
 
-The steps to configure Web Chat for Azure Government are identical from public Azure. What is required to run Web Chat on Azure Government is to set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government url because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) is the public Azure, not Azure Government. Please also note that the public Azure url (`https://webchat.botframework.com/v3/directline`) is different from Azure Government url (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat configuration.  
+The steps to configure Web Chat and Direct Line for Azure Government are identical from public Azure. What is required to run them on Azure Government is to set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government url because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) is public Azure, not Azure Government. Please also note that the public Azure url (`https://webchat.botframework.com/v3/directline`) is different from Azure Government url (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.  
 
-For example: 
+Here is an example to add the domain of the Azure Government url in an example html file: 
 
 ```html
 <body>
@@ -97,9 +97,10 @@ For example:
   </body>
 
 ```
-
-## What are the steps to configure Direct Line for Azure Government? 
-
+Learn more from the following docs:
+* [Connect a bot to Web Chat](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0) 
+* [Connect a bot to Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0)
+* For programmatic approach to exchange your secret for a token, use the code snippet provided [here](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0#production-embedding--option) and adjust to your own situation. 
 
 
 ## How does the Bot Framework relate to Cognitive Services?
