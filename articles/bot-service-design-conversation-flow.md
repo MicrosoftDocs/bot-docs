@@ -134,6 +134,16 @@ How should your bot respond?
 
 There is no *right* answer to this question, as the best solution will depend upon the specifics of your scenario and how the user would reasonably expect the bot to respond. For more information see [Handle user interruption](v4sdk/bot-builder-howto-handle-user-interrupt.md).
 
+## Expire a conversation
+
+There are times when it is useful to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  Different methods for expiring a conversation include:
+
+- Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user.
+- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user.
+- Use a storage layer feature, such as CosmosDb Time To Live, to clear state after a preconfigured length of time.
+
+For more information see [How To: Expire a conversation](v4sdk/bot-builder-howto-expire-conversation.md)
+
 ## Next steps
 
 Managing the user's navigation across dialogs and designing conversation flow in a manner that enables
