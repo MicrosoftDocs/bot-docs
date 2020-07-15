@@ -76,7 +76,7 @@ These objects help manage skills and route skill traffic:
 - A _skill HTTP client_ sends activities to a skill.
 - A _skill handler_ receives activities from a skill.
 - The _skill conversation ID factory_ translates between the user-root conversation reference and the root-skill conversation reference.
-- The Bot Connector service provides both channel and bot-to-bot authentication. Using an _authentication configuration_ object, you can add claims validation to a  skill or skill consumer to limit which applications or users have access.
+- The Bot Connector service provides both channel and bot-to-bot authentication. Using an _authentication configuration_ object, you can add claims validation to a skill or skill consumer to limit which applications or users have access.
 
 The skill client and skill handler objects both use the _conversation ID factory_ to translate between the conversation the root bot uses to interact with the user and the conversation the root bot uses to interact with the skill.
 
