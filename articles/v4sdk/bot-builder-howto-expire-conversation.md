@@ -165,7 +165,6 @@ const bot = new DialogBot(process.env.ExpireAfterSeconds, conversationState, use
 
 ## [Python](#tab/python)
 
-
 First, add an `ExpireAfterSeconds` setting to config.py:
 
 ```python
@@ -257,7 +256,123 @@ BOT = DialogBot(CONFIG.EXPIRE_AFTER_SECONDS, CONVERSATION_STATE, USER_STATE, DIA
 
 ## Storage Expiration
 
-<!-- add CosmosDb TTL solution -->
+`CosmosDb` provides a Time To Live (TTL) feature which enables expiring records from the storage container.  This can be configured from within the Azure Portal, or during container creation using the language-specific CosmosDb SDKs.
+
+The Bot Builder SDK does not expose a TTL configuration setting.  However, container initialization can be overridden and the CosmosDb SDK can be used to configure TTL prior to Bot Builder storage initialization.
+
+# [C#](#tab/csharp)
+
+Starting with a fresh **multi-turn prompt** sample, update appsettings.json to include CosmosDb storage options:
+
+```json
+{
+  "MicrosoftAppId": "",
+  "MicrosoftAppPassword": "",
+
+  "CosmosDbTimeToLive": 30,
+  "CosmosDbEndpoint": "<endpoint-for-your-cosmosdb-instance>",
+  "CosmosDbAuthKey": "<your-cosmosdb-auth-key>",
+  "CosmosDbDatabaseId": "<your-database-id>",
+  "CosmosDbUserStateContainerId": "<no-ttl-container-id>",
+  "CosmosDbConversationStateContainerId": "<ttl-container-id>"
+}
+```
+
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
+
+Next, add the `Microsoft.Bot.Builder.Azure` nuget package to the project. Then, create a `CosmosDbStorageInitializerHostedService` class, which will create the container with the configured Time To Live:
+
+```csharp
+public class CosmosDbStorageInitializerHostedService : IHostedService
+{
+    readonly CosmosDbPartitionedStorageOptions _storageOptions;
+    readonly int _cosmosDbTimeToLive;
+
+    public CosmosDbStorageInitializerHostedService(IConfiguration config)
+    {
+        _storageOptions = new CosmosDbPartitionedStorageOptions()
+        {
+            CosmosDbEndpoint = config["CosmosDbEndpoint"],
+            AuthKey = config["CosmosDbAuthKey"],
+            DatabaseId = config["CosmosDbDatabaseId"],
+            ContainerId = config["CosmosDbConversationStateContainerId"]
+        };
+
+        _cosmosDbTimeToLive = config.GetValue<int>("CosmosDbTimeToLive");
+    }
+
+    public async Task StartAsync(CancellationToken cancellationToken)
+    {
+        using (var client = new CosmosClient(
+            _storageOptions.CosmosDbEndpoint,
+            _storageOptions.AuthKey,
+            _storageOptions.CosmosClientOptions ?? new CosmosClientOptions()))
+        {
+            var containerResponse = await client
+                .GetDatabase(_storageOptions.DatabaseId)
+                .DefineContainer(_storageOptions.ContainerId, "/id")
+                .WithDefaultTimeToLive(_cosmosDbTimeToLive)
+                .WithIndexingPolicy().WithAutomaticIndexing(false).Attach()
+                .CreateIfNotExistsAsync(_storageOptions.ContainerThroughput)
+                .ConfigureAwait(false);
+        }
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
+}
+```
+
+Lastly, update `Startup.cs` to use the storage initializer, and CosmosDb for state:
+
+```csharp
+
+[existing code omitted]
+
+// commented out MemoryStorage, since we are using CosmosDbPartitionedStorage instead
+// services.AddSingleton<IStorage, MemoryStorage>();
+
+// Add the Initializer as a HostedService (so it is called during the app service startup)
+services.AddHostedService<CosmosDbStorageInitializerHostedService>();
+
+// Create the storage options for User state
+var userStorageOptions = new CosmosDbPartitionedStorageOptions()
+{
+    CosmosDbEndpoint = Configuration["CosmosDbEndpoint"],
+    AuthKey = Configuration["CosmosDbAuthKey"],
+    DatabaseId = Configuration["CosmosDbDatabaseId"],
+    ContainerId = Configuration["CosmosDbUserStateContainerId"]
+};
+
+// Create the User state. (Used in this bot's Dialog implementation.)
+services.AddSingleton(new UserState(new CosmosDbPartitionedStorage(userStorageOptions)));
+
+// Create the storage options for Conversation state
+var conversationStorageOptions = new CosmosDbPartitionedStorageOptions()
+{
+    CosmosDbEndpoint = Configuration["CosmosDbEndpoint"],
+    AuthKey = Configuration["CosmosDbAuthKey"],
+    DatabaseId = Configuration["CosmosDbDatabaseId"],
+    ContainerId = Configuration["CosmosDbConversationStateContainerId"]
+};
+
+// Create the Conversation state. (Used by the Dialog system itself.)
+services.AddSingleton(new ConversationState(new CosmosDbPartitionedStorage(conversationStorageOptions)));
+
+[existing code omitted]
+```
+
+'ComosDb' will now automatically delete Conversation State records after 30 seconds of inactivity.
+
+# [JavaScript](#tab/javascript)
+
+
+## [Python](#tab/python)
+python example
+
+---
+
+
+For more information, see [Configure time to live in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-time-to-live)
 
 ## To test the bot
 
