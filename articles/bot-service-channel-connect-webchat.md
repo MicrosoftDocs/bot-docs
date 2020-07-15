@@ -79,10 +79,10 @@ Authorization: BotConnector YOUR_SECRET_HERE
 > [!NOTE]
 > Please note that for Azure Government, the token exchange URL is different. 
 
-> ```
-> requestGET https://webchat.botframework.azure.us/api/tokens
-> Authorization: BotConnector YOUR_SECRET_HERE
-> ```
+```
+requestGET https://webchat.botframework.azure.us/api/tokens
+Authorization: BotConnector YOUR_SECRET_HERE
+```
 
 ##### Example response
 
@@ -147,6 +147,12 @@ To embed your bot in a web page by specifying the secret within the `iframe` tag
 
 ```html
 <iframe style="height:480px; width:402px" src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
+```
+> [!NOTE]
+> Please note that for Azure Government, the example iframe looks different.
+
+```html
+<iframe style="height:480px; width:402px" src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
 
   ![Web Chat client](./media/bot-service-channel-webchat/web-chat-client.png)
