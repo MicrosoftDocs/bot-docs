@@ -71,7 +71,9 @@ Direct Line is suitable for:
 
 ## What are the steps to configure Web Chat for Azure Government?
 
-The steps to configure Web Chat for Azure Government are identical from public Azure. What is required to run Web Chat on Azure Government is to set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government url because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) is the public Azure, not Azure Government. Please also note that the default public Azure url (`https://webchat.botframework.com/v3/directline`) is different from Azure Government url (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat configuration.  
+The steps to configure Web Chat for Azure Government are identical from public Azure. What is required to run Web Chat on Azure Government is to set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government url because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) is the public Azure, not Azure Government. Please also note that the public Azure url (`https://webchat.botframework.com/v3/directline`) is different from Azure Government url (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat configuration.  
+
+For example: 
 
 ```html
 <body>
