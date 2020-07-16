@@ -113,7 +113,7 @@ You can also view the list in [alphabetical order](#add).
 |[uriComponent](#uriComponent)|Return the URI-encoded version for an input value by replacing URL-unsafe characters with escape characters.|
 |[uriComponentToString](#uriComponentToString)|Return the string version of a URI-encoded string.|
 |[xml](#xml)|C# only. Return the XML version of a string.|
-|[formatNumber](#formatNumber)|Format a value to the nearest number to the specified number of fractional digits and a specified locale.|
+|[formatNumber](#formatNumber)|Format a value to the nearest number to the specified number of fractional digits and an optional specified locale.|
 
 ### Math functions
 
@@ -1664,7 +1664,7 @@ And return these results respectively:
 * **h**
 * **0**
 
-<a name="flatten"/>
+<a name="flatten"></a>
 
 ### flatten
 
@@ -1727,13 +1727,44 @@ float('<value>')
 
 *Example*
 
-This example creates the string version of the following floating-point number:
+This example creates the float version of the following string:
 
 ```
 float('10.333')
 ```
 
-And returns the resulting string **10.333**.
+And returns the float **10.333**.
+
+
+<a name="floor"></a>
+
+### floor
+
+Return the largest integral value less than or equal to the specified number.
+
+```
+floor('<number>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*integer-value*> | integer | The largest integral value less than or equal to the input number |
+||||
+
+*Example*
+
+This example calculates the floor value of the number **10.333**:
+
+```
+floor(10.333)
+```
+
+And returns the resulting integer **10**.
 
 <a name="foreach"></a>
 
@@ -1842,6 +1873,47 @@ formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 
 And returns the result **2018-03-15T12:00:00.000Z**.
 
+<a name="formatNumber"></a>
+
+### formatNumber
+
+Format a value to the specified number of fractional digits and an option specified locale.
+
+```
+formatNumber('<number>', '<precision-digits>', '<locale>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+| <*precision-digits*> | Yes | integer | A specified number of fractional digits|
+| <*locale*> | No| string | An optional locale of culture infomation |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*return-value*> | number | The return value of the input formated at a specified number of fractional digits and a specified locale |
+||||
+
+*Example 1*
+
+This example formats ther number **10.333** to **2** fractional digits:
+
+```
+formatNumber(10.333, 2)
+```
+
+And returns the string **10.33**.
+
+*Example 2*
+
+This example formats ther number **10.333** to **4** fractional digits using the **fr-fr** formatting:
+
+```
+formatNumber(12000.3, 4, 'fr-fr')
+```
+
+And returns the string **"12 000,3000"**.
 
 <a name="formatTicks"></a>
 
@@ -3690,6 +3762,48 @@ replace('the old string', 'old', 'new')
 
 And returns the result **the new string**.
 
+<a name="round"></a>
+
+### round
+
+Round a value to the nearest integer or to the specified number of fractional digits.
+
+```
+round('<number>', '<precision-digits>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+| <*precision-digits*> | No | integer | A specified number of fractional digits. The default is 0. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*return-value*> | number | The return value of the input rounded at a specified number of fractional digits |
+||||
+
+*Example 1*
+
+This example rounds the number **10.333**:
+
+```
+round(10.333)
+```
+
+And returns the number **10**.
+
+*Example 2*
+
+This example rounds the number **10.3313** to **2** fractional digits:
+
+```
+round(10.3313, 2)
+```
+
+And returns the number **10.33**.
+
+
 <a name="select"></a>
 
 ### select
@@ -4443,6 +4557,96 @@ ticks('2018-01-01T08:00:00.000Z')
 ```
 
 And returns the result **636503904000000000**.
+
+<a name='ticksToDays'></a>
+
+### ticksToDays
+
+Convert a ticks property value to the number of days.
+
+```
+ticksToDays('ticks')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*ticks*>| Yes | integer | The ticks property value to convert |
+|||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*number-of-days*> | number | The number of days converted from the ticks property value |
+||||
+
+*Example*
+
+This example converts a ticks property value to a number of days:
+
+```
+ticksToDays(2193385800000000)
+```
+
+And returns the number **2538.64097222**.
+
+<a name='ticksToHours'></a>
+
+### ticksToHours
+
+Convert a ticks property value to the number of hours.
+
+```
+ticksToHours('ticks')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*ticks*>| Yes | Integer | The ticks property value to convert |
+|||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*number-of-hours*> | number | The number of hours converted from the ticks property value |
+||||
+
+*Example*
+
+This example converts a ticks property value to a number of hours:
+
+```
+ticksToHours(2193385800000000)
+```
+
+And returns the number **60927.383333333331**.
+
+<a name='ticksToMinutes'></a>
+
+### ticksToMinutes
+
+Convert a ticks property value to the number of hours.
+
+```
+ticksToMinutes('ticks')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*ticks*>| Yes | integer | The ticks property value to convert |
+|||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*number-of-minutes*> | number | The number of minutes converted from the ticks property value |
+||||
+
+*Example*
+
+This example converts a ticks property value to a number of minutes:
+
+```
+ticksToMinutes(2193385800000000)
+```
+
+And returns the number **3655643.0185**.
 
 <a name="titleCase"></a>
 
