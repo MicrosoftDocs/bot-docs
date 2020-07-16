@@ -70,12 +70,6 @@ productDirectory:
           text: Create and deploy a bot tutorial
         - url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-service-build-continuous-deployment
           text: Set up continuous deployment
-        - url: https://docs.microsoft.com/dotnet/api/?view=botbuilder-dotnet-stable
-          text: Bot Builder v4 .NET SDK
-        - url: https://docs.microsoft.com/javascript/api/botbuilder/?view=botbuilder-ts-latest
-          text: Bot Builder v4 JavaScript/TypeScript SDK
-        - url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
-          text: Bot Builder v4 Python SDK
     # Card
     - title: Bot Framework Emulator
       imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
@@ -115,3 +109,42 @@ tools:
     - title: Python
       imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
       url: https://aka.ms/botframework-v4-python-sdk
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: platforms # < 60 chars (optional)
+      summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: Power Virtual Agents
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+        - title: Virtual Assistant
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+    - title: related projects # < 60 chars (optional)
+      summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: LUIS
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+        - title: QnA Maker
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+        - title: Adaptive Cards
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+    - title: tools # < 60 chars (optional)
+      summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: BF CLI
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+        - title: Web Chat control
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
