@@ -15,11 +15,16 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  This article describes three methods for expiring a conversation:
+A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  This article describes two methods for expiring a conversation:
 
 - Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. See [User Interaction Expiration](#user-interaction-expiration)
-- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user. See [Proactive Expiration](#proactive-expiration)
 - Use a storage layer feature, such as CosmosDb Time To Live, to automatically clear state after a preconfigured length of time.  See [Storage Expiration](#storage-expiration)
+
+<!-- 
+NOTE: in the future, provide guidance on an azure function queue or time trigger
+
+- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user. See [Proactive Expiration](#proactive-expiration)
+-->
 
 ## Prerequisites
 
@@ -245,10 +250,6 @@ BOT = DialogBot(CONFIG.EXPIRE_AFTER_SECONDS, CONVERSATION_STATE, USER_STATE, DIA
 
 ---
 
-## Proactive Expiration
-
-<!-- add Azure Function with ConversationReference solution -->
-
 ## Storage Expiration
 
 `CosmosDb` provides a Time To Live (TTL) feature which enables expiring records from the storage container.  This can be configured from within the Azure Portal, or during container creation using the language-specific CosmosDb SDKs.
@@ -303,6 +304,7 @@ public class CosmosDbStorageInitializerHostedService : IHostedService
             _storageOptions.AuthKey,
             _storageOptions.CosmosClientOptions ?? new CosmosClientOptions()))
         {
+            // Create the contaier with the provided TTL
             var containerResponse = await client
                 .GetDatabase(_storageOptions.DatabaseId)
                 .DefineContainer(_storageOptions.ContainerId, "/id")
@@ -394,7 +396,7 @@ const { CosmosDbPartitionedStorage } = require('botbuilder-azure');
 const { CosmosClient } = require('@azure/cosmos');
 ```
 
-Finally, replace MemoryStorage, ConversationState and UserState creation with:
+Finally, replace `MemoryStorage`, `ConversationState` and `UserState` creation with:
 
 ```javascript
 // const memoryStorage = new MemoryStorage();
@@ -414,6 +416,7 @@ var cosmosClient = new CosmosClient({
     ...conversationStorageOptions.cosmosClientOptions,
 });
 
+// Create the contaier with the provided TTL
 Promise.resolve(cosmosClient
     .database(conversationStorageOptions.databaseId)
     .containers.createIfNotExists({
@@ -437,19 +440,78 @@ const conversationState = new ConversationState(new CosmosDbPartitionedStorage(c
 const userState = new UserState(new CosmosDbPartitionedStorage(userStorageOptions));
 ```
 
+<!--
 ## [Python](#tab/python)
-python example
+
+Starting with a fresh **multi-turn prompt** sample. Update `config.py` to include CosmosDb storage options:
+
+```python
+PORT = 3978
+APP_ID = os.environ.get("MicrosoftAppId", "")
+APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
+
+COSMOSDB_TTL = os.environ.get("CosmosDbTimeToLive", 30)
+COSMOSDB_ENDPOINT = os.environ.get("CosmosDbEndpoint", "<endpoint-for-your-cosmosdb-instance>")
+COSMOSDB_AUTH_KEY = os.environ.get("CosmosDbAuthKey", "<your-cosmosdb-auth-key>")
+COSMOSDB_DATABASE_ID = os.environ.get("CosmosDbDatabaseId", "<your-database-id>")
+COSMOSDB_USER_STATE_CONTAINER_ID = os.environ.get("CosmosDbUserStateContainerId", "<no-ttl-container-id>")
+COSMOSDB_CONVERSATION_STATE_CONTAINER_ID = os.environ.get("CosmosDbConversationStateContainerId", "<ttl-container-id>")
+```
+
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
+
+Next, add the `botbuilder-azure` package to requirements.txt and pip install:
+
+```txt
+botbuilder-integration-aiohttp>=4.10.0
+botbuilder-dialogs>=4.10.0
+botbuilder-ai>=4.10.0
+botbuilder-azure>=4.10.0
+```
+
+```cmd
+pip install -r requirements.txt
+```
+
+```python
+client = cosmos_client.CosmosClient(
+    CONFIG.COSMOSDB_ENDPOINT, {"masterKey": CONFIG.COSMOSDB_AUTH_KEY},
+)
+
+containers = list(client.QueryContainers("dbs/" + CONFIG.COSMOSDB_DATABASE_ID, {
+     "query": "SELECT * FROM r WHERE r.id=@id",
+        "parameters": [
+            {"name": "@id", "value": CONFIG.COSMOSDB_CONVERSATION_STATE_CONTAINER_ID}
+        ],
+    }))
+
+if len(containers) < 1:
+    new_container = client.CreateContainer(
+        "dbs/" + CONFIG.COSMOSDB_DATABASE_ID,
+        {
+            "default_ttl": CONFIG.COSMOSDB_TTL,
+            "id": CONFIG.COSMOSDB_CONVERSATION_STATE_CONTAINER_ID,
+            "partitionKey": {"paths": ["/id"], "kind": "Hash",},
+        },
+    )
+```
+-->
 
 ---
 
 'ComosDb' will now automatically delete Conversation State records after 30 seconds of inactivity.
 
+<!-- 
+## Proactive Expiration
+add Azure Function with ConversationReference solution 
+-->
 
-For more information, see [Configure time to live in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-time-to-live)
+
+For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl]
 
 ## To test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator][emulator-readme].
 1. Run the sample locally on your machine.
 1. Start the emulator, connect to your bot, and send a messsage to it.
 1. After one of the prompts, wait 30 seconds before responding.
@@ -468,3 +530,5 @@ For more information, see [Configure time to live in Azure Cosmos DB](https://do
 [js-sample]: https://aka.ms/js-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample
 
+[cosmos-ttl]: https://docs.microsoft.com/azure/cosmos-db/how-to-time-to-live
+[emulator-readme]: https://aka.ms/bot-framework-emulator-readme

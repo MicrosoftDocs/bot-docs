@@ -139,8 +139,12 @@ There is no *right* answer to this question, as the best solution will depend up
 There are times when it is useful to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  Different methods for expiring a conversation include:
 
 - Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user.
-- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user.
 - Use a storage layer feature, such as CosmosDb Time To Live, to clear state after a preconfigured length of time.
+<!--
+NOTE: in the future, provide guidance on an azure function queue or time trigger
+
+- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user.
+-->
 
 For more information see [How To: Expire a conversation](v4sdk/bot-builder-howto-expire-conversation.md)
 
