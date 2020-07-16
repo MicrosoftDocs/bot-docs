@@ -51,15 +51,12 @@ Some common security techniques are listed below.
 #### Database firewalls
 
 - Firewalls deny access to traffic by default. The only traffic allowed should originate from specific applications or web servers that need to access the data.
-
 - You should also deploy a web application firewall. This is because attacks such as SQL injection attacks directed at a web application can be used to filtrate or delete data from the database.
 
 #### Database hardening
 
 - Make sure that the database is still supported by the vendor, and you are running the latest version of the database with all the security patches installed to remove known vulnerabilities.
-
 - Uninstall or disable any features or services that you don't need and make sure you change the passwords of any default accounts from their default values; or better, delete any default accounts that you don't need.
-
 - Make sure that all the database security controls provided by the database are enabled unless there is a specific reason for any to be disabled.
 
 #### Minimize valuable information
