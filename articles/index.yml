@@ -61,8 +61,6 @@ productDirectory:
     - title: Azure Bot Service
       imageSrc: https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/images/composerIcon.svg
       links:
-        - url: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-authentication
-          text: Bot security
         - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview
           text: Manage a bot
         - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels
@@ -96,25 +94,27 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Tools # < 60 chars (optional)
-      items:
-        # Card
-        - title: Bot Framework CLI
-          url: file1.md
-        - title: Bot Framework Emulator
-          url: file1.md
-        - title: Web Chat
-          url: file1.md
     - title: Additional resources # < 60 chars (optional)
       items:
         # Card
-        - title: Power Virtual Agents
-          url: file1.md
-        - title: Virtual Assistant
-          url: file1.md
-        - title: LUIS
-          url: file1.md
-        - title: QnA Maker
-          url: file1.md
-        - title: Adaptive Cards
-          url: file1.md
+        - title: Tools
+          links:
+          - text: Bot Framework CLI
+            url: file1.md
+          - text: Bot Framework Emulator
+            url: file1.md
+          - text: Web Chat
+            url: file1.md
+        # Card
+        - title: Related technologies # < 60 chars (optional)
+          links:
+          - url: file1.md
+            text: Power Virtual Agents
+          - url: file1.md
+            text: Virtual Assistant
+          - url: file1.md
+            text: LUIS
+          - url: file1.md
+            text: QnA Maker
+          - url: file1.md
+            text: Adaptive Cards
