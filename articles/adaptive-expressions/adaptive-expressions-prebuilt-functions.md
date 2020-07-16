@@ -51,8 +51,8 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
-|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a heading and leaving other letter lowercase.|
-|[titleCase](#titleCase)|Capitalize the first letter of each word and leaving other letter lowercase.|
+|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a heading and leave other letters lowercase.|
+|[titleCase](#titleCase)|Capitalize the first letter of each word and leave other letters lowercase.|
 
 ### Collection functions
 
@@ -60,7 +60,7 @@ You can also view the list in [alphabetical order](#add).
 |-----------|-----------|
 |[contains](#contains)	|Works to find an item in a string, to find an item in an array, or to find a parameter in a complex object. <br> **Examples**: <br> contains('hello world', 'hello')<br> contains(createArray('1','2'), '1')<br> contains(json("{'foo':'bar'}"), 'foo')|
 |[first](#first)|Return the first item from the collection.|
-|[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter. join(collection, delimiter). <br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
+|[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter.<br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
 |[last](#last) |Return the last item from the collection.|
 |[count](#count)|Return the number of items in the collection.|
 |[foreach](#foreach)|Operate on each element and return the new collection.|
@@ -787,8 +787,6 @@ And respectively returns these results:
 * `true`
 * `false`
 
-<a name="coalesce"></a>
-
 <a name="ceiling"></a>
 
 ### ceiling
@@ -810,13 +808,16 @@ ceiling('<number>')
 ||||
 
 *Example*
+
 This example returns the largest integral value less than or equal to the number **10.333**:
 
 ```
 ceiling(10.333)
 ```
 
-And returns the string **11**.
+And returns the integer **11**.
+
+<a name="coalesce"></a>
 
 ### coalesce
 
@@ -924,7 +925,7 @@ concat('a', 1, null)
 
 And return the following results respectively:
 
-- The list **[1.2]**.
+- The list **[1,2]**.
 - The string **a1**.
 
 <a name="contains"></a>
@@ -1735,7 +1736,6 @@ float('10.333')
 
 And returns the float **10.333**.
 
-
 <a name="floor"></a>
 
 ### floor
@@ -1764,7 +1764,7 @@ This example calculates the floor value of the number **10.333**:
 floor(10.333)
 ```
 
-And returns the resulting integer **10**.
+And returns the integer **10**.
 
 <a name="foreach"></a>
 
@@ -1796,7 +1796,7 @@ This example generates a new collection:
 foreach(createArray(0, 1, 2, 3), x, x + 1)
 ```
 
-And return the result **[1, 2, 3, 4]**.
+And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
@@ -1877,7 +1877,7 @@ And returns the result **2018-03-15T12:00:00.000Z**.
 
 ### formatNumber
 
-Format a value to the specified number of fractional digits and an option specified locale.
+Format a value to the specified number of fractional digits and an optional specified locale.
 
 ```
 formatNumber('<number>', '<precision-digits>', '<locale>')
@@ -3817,7 +3817,7 @@ select([<collection/instance>], <iteratorName>, <function>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*collection/instance*> | Yes | array | The collection with the items |
-| <*iteratorName*> | Yes | iterator name | The key item of arrow function |
+| <*iteratorName*> | Yes | iterator name | The key item |
 | <*function*> | Yes | expression | Th function that can contains `iteratorName` |
 |||||
 
@@ -3828,7 +3828,7 @@ select([<collection/instance>], <iteratorName>, <function>)
 
 *Example 1*
 
-This example generates a new collections:
+This example generates a new collection:
 
 ```
 select(createArray(0, 1, 2, 3), x, x + 1)
@@ -4252,7 +4252,7 @@ And returns the result `false`.
 
 ### sentenceCase
 
-Capitalize the first letter of the first word in a heading and leave others letter lowercase.
+Capitalize the first letter of the first word in a heading and leave others letters lowercase.
 
 ```
 sentenceCase('<text>')
@@ -4665,7 +4665,7 @@ titleCase('<text>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| result string | string | Returns the title case result |
+| result string | string | The title case result |
 ||||
 
 *Example*
@@ -5131,7 +5131,7 @@ where([<collection/instance>], <iteratorName>, <function>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*collection/instance*> | Yes | array | The collection with the items |
-| <*iteratorName*> | Yes | iterater name | The key item of arrow function |
+| <*iteratorName*> | Yes | iterater name | The key item |
 | <*function*> | Yes | expression | Condition function used to filter items|
 |||||
 
@@ -5142,7 +5142,7 @@ where([<collection/instance>], <iteratorName>, <function>)
 
 *Example 1*
 
-This example generates a new collections:
+This example generates a new collection:
 
 ```
 where(createArray(0, 1, 2, 3), x, x > 1)
