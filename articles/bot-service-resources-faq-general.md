@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/09/2020
+ms.date: 07/10/2020
 ---
 
 # Bot Framework general
@@ -37,7 +37,6 @@ some processing before forwarding the message to an existing `LuisDialog`. Alter
 
 You would expect to find the forwarded item in the first `ResumeAfter` handler (e.g. `LuisDialog.MessageReceived`) that is scheduled by `StartAsync`.
 
-
 ## What is the difference between "proactive" and "reactive"?
 
 From the perspective of your bot, "reactive" means that the user initiates the conversation by sending a message to the bot, and the bot reacts by responding to that message. In contrast, "proactive" means that the bot initiates the conversation by sending the first message to the user. For example, a bot may send a proactive message to notify a user when a timer expires or an event occurs.
@@ -61,6 +60,7 @@ An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimisti
 
 The dialog stack and state are stored in bot data bags. For example, you might see the "Precondition Failed" ETag error if your bot is still processing a previous message when it receives a new message for that conversation.
 
+<!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
 ## What are some community-authored dialogs?
 
 * [BotAuth](https://www.nuget.org/packages/BotAuth) - Azure Active Directory authentication
@@ -69,6 +69,7 @@ The dialog stack and state are stored in bot data bags. For example, you might s
 ## What are some community-authored templates?
 
 * [ES6 BotBuilder](https://github.com/brene/botbuilder-es6-template) - ES6 Bot Builder template
+-->
 
 ## What is rate limiting?
 
