@@ -22,7 +22,7 @@ You may need to debug a skill or skill consumer bot where the one you want to de
 - A subscription to [Microsoft Azure](https://azure.microsoft.com/).
 - [ngrok](https://ngrok.com/) installed.
 - The [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started) installed.
-- Knowledge of [skills](skills-conceptual.md), how to [debug a bot](../bot-service-debug-bot.md), how to [debug a bot from any channel using ngrok](../bot-service-debug-channel-ngrok.md), how to [debug with the emulator](../bot-service-debug-emulator.md).
+- Knowledge of [skills](skills-conceptual.md), how to [debug a bot](../bot-service-debug-bot.md), how to [debug a bot from any channel using ngrok](../bot-service-debug-channel-ngrok.md), and how to [debug with the emulator](../bot-service-debug-emulator.md).
 - Registered skill and skill consumer bots.
 
 ## To debug a local skill consumer
