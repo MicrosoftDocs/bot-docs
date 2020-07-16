@@ -21,15 +21,11 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Bot Framework Composer documentation
+    - title: Use a graphical interface to create bots
       itemType: overview
       url: https://docs.microsoft.com/composer/
     # Card
-    - title: Azure Bot Service documentation
-      itemType: overview
-      url: index-bf-sdk.yml
-    # Card
-    - title: Bot Framework SDK documentation
+    - title: Write code to create bots
       itemType: overview
       url: index-bf-sdk.yml
     # Card
