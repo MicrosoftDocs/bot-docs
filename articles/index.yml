@@ -96,3 +96,22 @@ productDirectory:
       links:
         - url: https://docs.microsoft.com/en-us/adaptive-cards/
           text: Overview
+
+# tools section (optional)
+tools:
+  title: Languages # < 60 chars (optional)
+  summary: Bot Framework SDK language reference documentation # < 160 chars (optional)
+  items:
+    # Card
+    - title: C#
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      url: https://aka.ms/botframework-v4-cs-sdk
+    # Card
+    - title: JavaScript/TypeScript
+      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      url: https://aka.ms/bot-jssdk-v4
+    # Card
+    - title: Python
+      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      url: https://aka.ms/botframework-v4-python-sdk
