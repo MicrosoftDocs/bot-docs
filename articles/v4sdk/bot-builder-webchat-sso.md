@@ -61,4 +61,4 @@ Let's analyze the flow.
 
 1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the Web Chat does not show the OAuth card. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the Web Chat shows the OAuth card to the user. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
 
-For an implementation example, please refer to this [SSO sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentications).
+For an implementation example, please refer to this [SSO sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication).
