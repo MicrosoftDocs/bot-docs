@@ -33,6 +33,7 @@ ms.date: 07/10/2020
 - [How can I send proactive messages to the user?](bot-service-resources-faq-general.md#how-can-i-send-proactive-messages-to-the-user)
 - [How can I reference non-serializable services from my C# dialogs in SDK v3?](bot-service-resources-faq-general.md#how-can-i-reference-non-serializable-services-from-my-c-dialogs-in-sdk-v3)
 - [What is an ETag? How does it relate to bot data bag storage?](bot-service-resources-faq-general.md#what-is-an-etag--how-does-it-relate-to-bot-data-bag-storage)
+- [How to implement human handoff?](bot-service-resources-faq-general.md#how-to-implement-human-handoff)
 
 <!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
 - [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
