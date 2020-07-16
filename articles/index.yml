@@ -21,11 +21,11 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Create bots using a visual designer
+    - title: "Create bots using a visual designer: Bot Framework Composer"
       itemType: overview
       url: https://docs.microsoft.com/composer/
     # Card
-    - title: Create bots using code
+    - title: "Create bots using code: Bot Framework SDK"
       itemType: overview
       url: index-bf-sdk.yml
 
@@ -67,26 +67,6 @@ productDirectory:
           text: Manage a bot
         - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels
           text: Connect a bot to channels
-    # Card
-    - title: Bot Framework Emulator
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
-      links:
-        - url: https://github.com/microsoft/BotFramework-Emulator#readme
-          text: About
-    # Card
-    - title: Cognitive services
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
-      links:
-        - url: https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis
-          text: Language Understanding (LUIS) overview
-        - url: https://docs.microsoft.com/azure/cognitive-services/qnamaker/overview/overview
-          text: QnA Maker overview
-    # Card
-    - title: Adaptive Cards
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
-      links:
-        - url: https://docs.microsoft.com/en-us/adaptive-cards/
-          text: Overview
 
 # tools section (optional)
 tools:
@@ -106,45 +86,35 @@ tools:
     - title: Python
       imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
       url: https://aka.ms/botframework-v4-python-sdk
+    # Card
+    - title: Java (preview)
+      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      url: https://github.com/microsoft/botbuilder-java#readme
 
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: platforms # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
+    - title: Tools # < 60 chars (optional)
+      items:
+        # Card
+        - title: Bot Framework CLI
+          url: file1.md
+        - title: Bot Framework Emulator
+          url: file1.md
+        - title: Web Chat
+          url: file1.md
+    - title: Additional resources # < 60 chars (optional)
       items:
         # Card
         - title: Power Virtual Agents
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
+          url: file1.md
         - title: Virtual Assistant
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
-    - title: related projects # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
-      items:
-        # Card
+          url: file1.md
         - title: LUIS
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
+          url: file1.md
         - title: QnA Maker
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
+          url: file1.md
         - title: Adaptive Cards
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
-    - title: tools # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
-      items:
-        # Card
-        - title: BF CLI
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
-        - title: Bot Framework Emulator
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
-        - title: Web Chat
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
+          url: file1.md
