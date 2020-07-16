@@ -55,8 +55,6 @@ Here's an example of a basic text template:
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
-
-> this is a comment about this specific property
     Speak = ${GetAge()}
 ]
 
@@ -74,19 +72,18 @@ Here's an example of text with a suggested action. Use **|** to denote a list.
     Text = ${GetAge()}
     SuggestedActions = 10 | 20 | 30
 ]
-
 ```
 
 Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#hero-card) definition:
 
 ```.lg
-# HeroCard (params)
+# HeroCard
 [Herocard
-    title = ${params.title}
+    title = Hero Card Example
     subtitle = Microsoft Bot Framework
     text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
     images = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = Show more cards
+    buttons = Option 1| Option 2| Option 3
 ]
 ```
 
@@ -106,13 +103,13 @@ Below is the combination of the previous templates:
 - how old are you?
 - what is your age?
 
-# HeroCard (params)
+# HeroCard
 [Herocard
-    title = ${params.title}
+    title = Hero Card Example
     subtitle = Microsoft Bot Framework
     text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
     images = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = Show more cards
+    buttons = Option 1| Option 2| Option 3
 ]
 ```
 
@@ -169,7 +166,7 @@ Here's how to display a carousel of cards:
     subtitle = ${subtitle}
     text = ${text}
     images = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = Show more cards
+    buttons = Option 1| Option 2| Option 3
 ]
 ```
 
@@ -387,7 +384,7 @@ Here's an example:
     subtitle = Microsoft Bot Framework
     text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
     image = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = {CardAction('Show more cards')} | {CardAction('See our library', 'postBack', 'http://contoso.com/cards/all')}
+    buttons = {CardAction('Option 1| Option 2| Option 3')} | {CardAction('See our library', 'postBack', 'http://contoso.com/cards/all')}
 ]
 ```
 
