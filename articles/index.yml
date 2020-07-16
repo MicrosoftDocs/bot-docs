@@ -30,40 +30,46 @@ highlightedContent:
       url: index-bf-sdk.yml
 
 # productDirectory section (optional)
-productDirectory:
+conceptualContent:
   items:
     # Card
     - title: Bot Framework Composer
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/images/composerIcon.svg
       links:
         - url: https://docs.microsoft.com/composer/introduction
+          itemType: overview
           text: Overview
         - url: https://docs.microsoft.com/composer/quickstart-create-bot
+          itemType: quickstart
           text: Quickstart
         - url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction
+          itemType: tutorial
           text: Tutorials
         - url: https://docs.microsoft.com/composer/how-to-publish-bot
+          itemType: how-to-guide
           text: Publish to Azure
     # Card
     - title: Bot Framework SDK
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
       links:
         - url: https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction
+          itemType: overview
           text: Overview
         - url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
+          itemType: concept
           text: How bots work
         - url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
+          itemType: quickstart
           text: Quickstart
         - url: https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy
-          text: Create and deploy a bot tutorial
+          itemType: tutorial
+          text: Create and deploy a bot
     # Card
     - title: Azure Bot Service
-      imageSrc: https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/images/composerIcon.svg
       links:
         - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview
+          itemType: how-to-guide
           text: Manage a bot
         - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels
+          itemType: how-to-guide
           text: Connect a bot to channels
 
 # tools section (optional)
