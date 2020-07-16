@@ -50,25 +50,25 @@ conceptualContent:
     # Card
     - title: Bot Framework SDK
       links:
-        - url: https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction
+        - url: bot-service-overview-introduction.md
           itemType: overview
           text: Overview
-        - url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
+        - url: v4sdk/bot-builder-basics.md
           itemType: concept
           text: How bots work
-        - url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
+        - url: dotnet/bot-builder-dotnet-sdk-quickstart.md
           itemType: quickstart
           text: Quickstart
-        - url: https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy
+        - url: v4sdk/bot-builder-tutorial-basic-deploy.md
           itemType: tutorial
           text: Create and deploy a bot
     # Card
     - title: Azure Bot Service
       links:
-        - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview
+        - url: bot-service-manage-overview.md
           itemType: how-to-guide
           text: Manage a bot
-        - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels
+        - url: bot-service-manage-channels.md
           itemType: how-to-guide
           text: Connect a bot to channels
 
@@ -80,19 +80,19 @@ tools:
     # Card
     - title: C#
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      imageSrc: ./media/logos/logo-csharp.svg
       url: https://aka.ms/botframework-v4-cs-sdk
     # Card
     - title: JavaScript/TypeScript
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      imageSrc: ./media/logos/logo-js.svg
       url: https://aka.ms/bot-jssdk-v4
     # Card
     - title: Python
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      imageSrc: ./media/logos/logo-python.svg
       url: https://aka.ms/botframework-v4-python-sdk
     # Card
     - title: Java (preview)
-      imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
+      imageSrc: ./media/logos/logo-java.svg
       url: https://github.com/microsoft/botbuilder-java#readme
 
 # additionalContent section (optional)
@@ -106,21 +106,21 @@ additionalContent:
         - title: Tools
           links:
           - text: Bot Framework CLI
-            url: file1.md
+            url: https://github.com/microsoft/botframework-cli#readme
           - text: Bot Framework Emulator
-            url: file1.md
+            url: https://github.com/Microsoft/BotFramework-Emulator#readme
           - text: Web Chat
-            url: file1.md
+            url: https://github.com/Microsoft/BotFramework-WebChat#readme
         # Card
         - title: Related technologies # < 60 chars (optional)
           links:
-          - url: file1.md
-            text: Power Virtual Agents
-          - url: file1.md
-            text: Virtual Assistant
-          - url: file1.md
-            text: LUIS
-          - url: file1.md
-            text: QnA Maker
-          - url: file1.md
-            text: Adaptive Cards
+          - text: Power Virtual Agents
+            url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+          - text: Virtual Assistant
+            url: v4sdk/bot-builder-virtual-assistant-introduction.md
+          - text: LUIS
+            url: /azure/cognitive-services/luis/
+          - text: QnA Maker
+            url: /azure/cognitive-services/qnamaker/
+          - text: Adaptive Cards
+            url: /adaptive-cards/
