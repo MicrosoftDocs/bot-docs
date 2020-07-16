@@ -86,7 +86,6 @@ public override async Task OnTurnAsync(ITurnContext turnContext, CancellationTok
         await turnContext.SendActivityAsync("Welcome back!  Let's start over from the beginning.").ConfigureAwait(false);
 
         // Clear state.
-        await UserState.ClearStateAsync(turnContext, cancellationToken).ConfigureAwait(false);
         await ConversationState.ClearStateAsync(turnContext, cancellationToken).ConfigureAwait(false);
     }
 
@@ -136,13 +135,11 @@ async run(context) {
     // Retrieve the property value, and compare it to the current time.
     const now = new Date();
     const lastAccess = new Date(await this.lastAccessedTimeProperty.get(context, now.toISOString()));
-    if (now != lastAccess && ((now.getTime() - lastAccess.getTime()) / 1000) >= this.expireAfterSeconds)
-    {
+    if (now !== lastAccess && ((now.getTime() - lastAccess.getTime()) / 1000) >= this.expireAfterSeconds) {
         // Notify the user that the conversation is being restarted.
         await context.sendActivity("Welcome back!  Let's start over from the beginning.");
 
         // Clear state.
-        await this.userState.clear(context);
         await this.conversationState.clear(context);
     }
 
@@ -227,10 +224,8 @@ async def on_turn(self, turn_context: TurnContext):
         )
 
         # Clear state.
-        await self.user_state.clear_state(turn_context)
         await self.conversation_state.clear_state(turn_context)
         await self.conversation_state.save_changes(turn_context, True)
-        await self.user_state.save_changes(turn_context, True)
 
     await super().on_turn(turn_context)
 
@@ -361,15 +356,95 @@ services.AddSingleton(new ConversationState(new CosmosDbPartitionedStorage(conve
 [existing code omitted]
 ```
 
-'ComosDb' will now automatically delete Conversation State records after 30 seconds of inactivity.
-
 # [JavaScript](#tab/javascript)
 
+Starting with a fresh **multi-turn prompt** sample, update .env to include CosmosDb storage options:
+
+```json
+{
+MicrosoftAppId=
+MicrosoftAppPassword=
+
+CosmosDbTimeToLive=30
+CosmosDbEndpoint=<endpoint-for-your-cosmosdb-instance>
+CosmosDbAuthKey=<your-cosmosdb-auth-key>
+CosmosDbDatabaseId=<your-database-id>
+CosmosDbUserStateContainerId=<no-ttl-container-id>
+CosmosDbConversationStateContainerId=<ttl-container-id>
+}
+```
+
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
+
+Next, add the `botbuilder-azure` npm package to project.json and npm install. 
+
+```json
+"dependencies": {
+    "botbuilder": "~4.9.2",
+    "botbuilder-dialogs": "~4.9.2",
+    "botbuilder-azure": "~4.9.2",
+    "dotenv": "^8.2.0",
+    "path": "^0.12.7",
+    "restify": "~8.5.1"
+},
+```
+
+Add necessary requires to index.js:
+
+```javascript
+const { CosmosDbPartitionedStorage } = require('botbuilder-azure');
+const { CosmosClient } = require('@azure/cosmos');
+```
+
+Finally, replace MemoryStorage, ConversationState and UserState creation with:
+
+```javascript
+// const memoryStorage = new MemoryStorage();
+
+// Storage options for Conversation State
+const conversationStorageOptions = {
+    cosmosDbEndpoint: process.env.CosmosDbEndpoint,
+    authKey: process.env.CosmosDbAuthKey,
+    databaseId: process.env.CosmosDbDatabaseId,
+    containerId: process.env.CosmosDbConversationStateContainerId
+};
+
+// Create a cosmosClient, and set defaultTtl (with other properties)
+var cosmosClient = new CosmosClient({
+    endpoint: conversationStorageOptions.cosmosDbEndpoint,
+    key: conversationStorageOptions.authKey,
+    ...conversationStorageOptions.cosmosClientOptions,
+});
+
+Promise.resolve(cosmosClient
+    .database(conversationStorageOptions.databaseId)
+    .containers.createIfNotExists({
+        id: conversationStorageOptions.containerId,
+        partitionKey: {
+            paths: ['/id']
+        },
+        defaultTtl: parseInt(process.env.CosmosDbTimeToLive, 10)
+    }));
+
+// Storage options for User State
+const userStorageOptions = {
+    cosmosDbEndpoint: process.env.CosmosDbEndpoint,
+    authKey: process.env.CosmosDbAuthKey,
+    databaseId: process.env.CosmosDbDatabaseId,
+    containerId: process.env.CosmosDbUserStateContainerId
+};
+
+// Create state instances.
+const conversationState = new ConversationState(new CosmosDbPartitionedStorage(conversationStorageOptions));
+const userState = new UserState(new CosmosDbPartitionedStorage(userStorageOptions));
+```
 
 ## [Python](#tab/python)
 python example
 
 ---
+
+'ComosDb' will now automatically delete Conversation State records after 30 seconds of inactivity.
 
 
 For more information, see [Configure time to live in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-time-to-live)
