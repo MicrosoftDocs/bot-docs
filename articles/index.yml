@@ -61,12 +61,6 @@ conceptualContent:
         - url: v4sdk/bot-builder-tutorial-basic-deploy.md
           itemType: tutorial
           text: Create and deploy a bot
-    # Card
-    - title: Azure Bot Service
-      links:
-        - url: bot-service-manage-overview.md
-          itemType: how-to-guide
-          text: Manage a bot
         - url: bot-service-manage-channels.md
           itemType: how-to-guide
           text: Connect a bot to channels
