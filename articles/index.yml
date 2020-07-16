@@ -21,21 +21,16 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Use a graphical interface to create bots
+    - title: Create bots using a visual designer
       itemType: overview
       url: https://docs.microsoft.com/composer/
     # Card
-    - title: Write code to create bots
+    - title: Create bots using code
       itemType: overview
       url: index-bf-sdk.yml
-    # Card
-    - title: What's new in the Bot Framework SDK
-      itemType: whats-new
-      url: what-is-new.md
 
 # productDirectory section (optional)
 productDirectory:
-  title: Azure Bot Service # < 60 chars (optional)
   items:
     # Card
     - title: Bot Framework Composer
@@ -44,32 +39,34 @@ productDirectory:
       links:
         - url: https://docs.microsoft.com/composer/introduction
           text: Overview
-        - url: https://docs.microsoft.com/composer/onboarding
+        - url: https://docs.microsoft.com/composer/quickstart-create-bot
           text: Quickstart
         - url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction
           text: Tutorials
         - url: https://docs.microsoft.com/composer/how-to-publish-bot
           text: Publish to Azure
     # Card
-    - title: Azure Bot Service
-      imageSrc: https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/images/composerIcon.svg
-      links:
-        - url: https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction
-          text: Overview
-        - url: https://docs.microsoft.com/azure/bot-service/abs-quickstart
-          text: Create a bot
-        - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview
-          text: Manage a bot
-    # Card
     - title: Bot Framework SDK
       imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
       links:
+        - url: https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction
+          text: Overview
         - url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
           text: How bots work
+        - url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
+          text: Quickstart
         - url: https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy
           text: Create and deploy a bot tutorial
-        - url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-service-build-continuous-deployment
-          text: Set up continuous deployment
+    # Card
+    - title: Azure Bot Service
+      imageSrc: https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/images/composerIcon.svg
+      links:
+        - url: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-authentication
+          text: Bot security
+        - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview
+          text: Manage a bot
+        - url: https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels
+          text: Connect a bot to channels
     # Card
     - title: Bot Framework Emulator
       imageSrc: https://github.com/microsoft/botframework-sdk/blob/master/Common/badges/ic_bot_framework.svg
@@ -145,6 +142,9 @@ additionalContent:
         - title: BF CLI
           summary: cardsummary1
           url: file1.md OR https://docs.microsoft.com/file1
-        - title: Web Chat control
+        - title: Bot Framework Emulator
+          summary: cardsummary1
+          url: file1.md OR https://docs.microsoft.com/file1
+        - title: Web Chat
           summary: cardsummary1
           url: file1.md OR https://docs.microsoft.com/file1
