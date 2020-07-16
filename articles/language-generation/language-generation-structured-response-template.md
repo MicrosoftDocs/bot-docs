@@ -55,6 +55,8 @@ Here's an example of a basic text template:
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
+
+> this is a comment about this specific property
     Speak = ${GetAge()}
 ]
 
@@ -66,15 +68,13 @@ Here's an example of a basic text template:
 Here's an example of text with a suggested action. Use **|** to denote a list.
 
 ```.lg
+> With '|' you are making attachments a list.
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
     SuggestedActions = 10 | 20 | 30
 ]
 
-# GetAge
-- how old are you?
-- what is your age?
 ```
 
 Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#hero-card) definition:
@@ -243,7 +243,6 @@ With this content, a call to `evaluateTemplate('ST1')` will result in the follow
 [MyStruct
     Text = foo
     Speak = bar
-
 ]
 ```
 
