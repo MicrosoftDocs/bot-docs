@@ -361,7 +361,6 @@ services.AddSingleton(new ConversationState(new CosmosDbPartitionedStorage(conve
 Starting with a fresh **multi-turn prompt** sample, update .env to include CosmosDb storage options:
 
 ```json
-{
 MicrosoftAppId=
 MicrosoftAppPassword=
 
@@ -371,7 +370,6 @@ CosmosDbAuthKey=<your-cosmosdb-auth-key>
 CosmosDbDatabaseId=<your-database-id>
 CosmosDbUserStateContainerId=<no-ttl-container-id>
 CosmosDbConversationStateContainerId=<ttl-container-id>
-}
 ```
 
 Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
