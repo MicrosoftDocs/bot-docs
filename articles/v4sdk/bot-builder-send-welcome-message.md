@@ -88,10 +88,10 @@ The user state object is created at startup and dependency injected into the bot
 At startup, user state is defined in `index.js` and consumed by the bot constructor.
 
 **index.js**  
-[!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=51-55)]
+[!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=52-53)]
 
 **bots/welcomeBot.js**  
-[!code-javascript[consume state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomeBot.js?range=16-22)]
+[!code-javascript[consume state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomeBot.js?range=16-23)]
 
 ### [Python](#tab/python)
 
