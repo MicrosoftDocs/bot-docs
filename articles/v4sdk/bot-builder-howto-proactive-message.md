@@ -78,7 +78,9 @@ The second controller, the _notify_ controller, is responsible for sending the p
 1. In the delegate, uses the turn context to send the proactive message.
 
 > [!NOTE]
-> The service URL can change over time. If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user before it can send proactive messages again.
+> While each channel should use a stable service URL, the URL can change over time. For more information about the service URL, see the [Basic activity structure](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#basic-activity-structure) and [Service URL](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#service-url) sections of the Bot Framework Activity Schema.
+>
+> If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user before it can send proactive messages again.
 
 # [C#](#tab/csharp)
 
