@@ -2034,7 +2034,7 @@ It returns the result **02-26-18**.
 
 ### getProperty
 
-Retrieve the value of the specified property from the JSON object.
+Retrieve the value of the root property from a JSON object.
 
 ```
 getProperty(<JSONObject>, '<Property>')
@@ -2042,23 +2042,22 @@ getProperty(<JSONObject>, '<Property>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*JSONObject*> | Yes | object | The JSON Object contains the property and value you want to get |
-| <*property*> | Yes | string | The specified property you want to get from the JSON object |
+| <*JSONObject*> | Yes | object | The JSON Object containing the property and value you want to get |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | object | The value of the specified property you want to get in the JSON object|
+| value | string | The value of the root property you want to get in the JSON object|
 ||||
 
 *Example*
 
-This example gets properties from **item = {'name': 'myName', 'age': 18, 'state': ['single', 'junior', 'Grade A']}**:
+This example gets properties from **"a:b": "value"**:
 
 ```
-getProperty(item, 'state')
+getProperty('a:b')
 ```
 
-And returns the result **['single', 'junior', 'Grade A']**.
+And returns the string **value**.
 
 <a name="getTimeOfDay"></a>
 
