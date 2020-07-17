@@ -68,7 +68,7 @@ Some common security techniques are listed below.
 
 ### Education
 
-Bots provide an innovative interaction tool between a company and its customers. But hey could potentially provide a backdoor for tampering with a company's website. Therefore, companies must assure that its developers understand the importance of bot security as part of the website security. Moreover, users' errors can be a problem, too. This will require some education on how bots can be used securely, for example:
+Bots provide an innovative interaction tool between a company and its customers. But they could potentially provide a backdoor for tampering with a company's website. Therefore, a company must assure that its developers understand the importance of bot security as part of the website security. Moreover, users' errors can be a problem, too. This will require some education on how bots can be used securely, for example:
 
 - For the developers, a strategy should include internal training on how to use the bot securely.
 - Customers can be given guidelines detailing how to interact with the bot safely.
