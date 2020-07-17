@@ -68,7 +68,7 @@ _Inputs_ are to adaptive dialogs what [prompts][14] are to the base dialog class
 * Save the input to the specified property if it matches the type of entity expected.
 * Accept constraints - min, max, etc.
 
-See the [Asking for user input using adaptive dialogs][5] article for more information on _inputs_ in adaptive dialogs.
+See the [_Asking for user input using adaptive dialogs_][5] article for more information on _inputs_ in adaptive dialogs.
 
 ### Recognizers
 
@@ -86,13 +86,13 @@ See the [_Language Generation in adaptive dialogs_][7] article for more informat
 
 Adaptive dialogs provide a way to access and manage memory. All adaptive dialogs by default use this model so all components that consume or contribute to memory have a common method to read and write information in the appropriate scope. All properties in all scopes are property bags which gives you the ability to dynamically modify what properties are stored.
 
-See the [_Memory scopes and managing state in adaptive dialogs_][7] article for more information on _Memory scopes_ and _managing state_ in adaptive dialogs.
+See the [_Memory scopes and managing state in adaptive dialogs_][8] article for more information on _Memory scopes_ and _managing state_ in adaptive dialogs.
 
 ### Declarative assets
 
 Adaptive dialogs enable you to define your dialog as a class by creating a new AdaptiveDialog object and defining your triggers and actions in the classes source file, but you can also create your dialog using a declarative approach where you define all the attributes of your dialog in a JSON file with a file extension of .dialog.  No source code is required to define your dialogs and you can have multiple dialogs using both approaches in the same bot. At runtime your bot will generate and execute the dialog code as defined in these declarative dialog files.
 
-<!--See the [_Using declarative assets_][9] article for more information on using _declarative assets_ in adaptive dialogs.-->
+See the [_Using declarative assets_][9] article for more information on using _declarative assets_ in adaptive dialogs.
 
 ## Tying it all together
 
@@ -154,9 +154,9 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 * [Recognizers in adaptive dialogs][6]
 * [Language Generation in adaptive dialogs][7]
 * [Memory scopes and managing state in adaptive dialogs][8]
-<!--* [Using declarative assets][9]-->
+* [Using declarative assets][9]
 
-### How to develop a bot using adaptive dialogAdaptive
+### How to develop a bot using adaptive dialogs
 
 * [Create a bot using adaptive dialogs][10]
 <!--* [Create a bot using Declarative adaptive dialogs][11]--->
