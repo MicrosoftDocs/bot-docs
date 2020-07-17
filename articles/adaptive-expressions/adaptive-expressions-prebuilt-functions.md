@@ -2051,7 +2051,7 @@ getProperty(<JSONObject>, '<Property>')
 
 *Example*
 
-This example gets properties from **"a:b": "value"**:
+This example gets the root property from **{"a:b": "value"}**:
 
 ```
 getProperty('a:b')
