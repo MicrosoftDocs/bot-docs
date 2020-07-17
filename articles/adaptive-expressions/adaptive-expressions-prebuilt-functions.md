@@ -200,7 +200,7 @@ You can also view the list in [alphabetical order](#add).
 |[addProperty](#addProperty)   |Add a property and its value, or name-value pair, to a JSON object and return the updated object.|
 |[removeProperty](#removeProperty) |Remove a property from JSON object and return the updated object.|
 |[setProperty](#setProperty)   |Set the value of a JSON object's property and return the updated object.|
-|[getProperty](#getProperty)   |Return the value of the given property in a JSON object. |
+|[getProperty](#getProperty)   |Return the value of the root property in a JSON object. |
 |[coalesce](#coalesce) |Return the first non-null value from one or more parameters. |
 |[xPath](#xPath)   |C# only. Check XML for nodes or values that match an XPath (XML Path Language) expression, and return the matching nodes or values.|
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
