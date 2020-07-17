@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/24/2020
+ms.date: 06/17/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -29,7 +29,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the proactive messages sample in [**C#**](https://aka.ms/proactive-sample-cs) or [**JavaScript**](https://aka.ms/proactive-sample-js) or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
+- A copy of the **proactive messages** sample in [**C#**](https://aka.ms/proactive-sample-cs), [**JavaScript**](https://aka.ms/proactive-sample-js), or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -64,10 +64,10 @@ When the emulator connects to the bot, the bot receives two conversation update 
 
 ---
 
-Note: In a real-world scenario you would persist conversation references in a database instead of using an object in memory.
+The conversation reference includes a _conversation_ property that describes the conversation in which the activity exists. The conversation includes a _user_ property that lists the users participating in the conversation, and a _service URL_ property that indicates where replies to the current activity may be sent. A valid conversation reference is needed to send proactive messages to users. (For the Teams channel, the service URL maps to a regionalized server.)
 
-The conversation reference has a _conversation_ property that describes the conversation in which the activity exists. The conversation includes a _user_ property that lists the users participating in the conversation, and a _service URL_ property that indicates where replies to the current activity may be sent. A valid conversation reference is needed to send proactive messages to users.
-For the Teams channel, the service URL maps to a regionalized server.
+> [!NOTE]
+> In a real-world scenario you would persist conversation references in a database instead of using an object in memory.
 
 ## Send proactive message
 
@@ -78,7 +78,9 @@ The second controller, the _notify_ controller, is responsible for sending the p
 1. In the delegate, uses the turn context to send the proactive message.
 
 > [!NOTE]
-> The service URL can change over time. If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user.
+> While each channel should use a stable service URL, the URL can change over time. For more information about the service URL, see the [Basic activity structure](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#basic-activity-structure) and [Service URL](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#service-url) sections of the Bot Framework Activity Schema.
+>
+> If the service URL changes, previous conversation references will no longer be valid and calls to _continue conversation_ will generate an error or exception. In this case, your bot will need to acquire a new conversation reference for the user before it can send proactive messages again.
 
 # [C#](#tab/csharp)
 
@@ -119,13 +121,13 @@ The server then uses the `_send_proactive_message` to send the proactive message
 
 ## Additional information
 
-Besides the sample used in this article, additional samples are available in C# and JS on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
+Besides the sample used in this article, additional samples are available on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
 
 ### Avoiding 401 "Unauthorized" Errors
 
-By default, the BotBuilder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
+By default, the Bot Builder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
 
-To avoid this, you must manually add the `serviceUrl` to the list of trusted host names by using:
+To avoid this, you must manually add the `serviceUrl` to the list of trusted host names.
 
 # [C#](#tab/csharp)
 
@@ -135,7 +137,7 @@ MicrosoftAppCredentials.TrustServiceUrl(serviceUrl);
 
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`.
 
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-cs), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
 
 # [JavaScript](#tab/javascript)
 
@@ -145,7 +147,7 @@ MicrosoftAppCredentials.trustServiceUrl(serviceUrl);
 
 For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
 
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
+You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-js), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
 
 # [Python](#tab/python)
 
