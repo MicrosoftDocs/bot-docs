@@ -34,7 +34,8 @@ The following areas are covered by some standard security best practices common 
 Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
 In this regard, bots should communicate only over encrypted channels. This makes it hard for anyone other than the receiver and sender from seeing any part of the message or transaction.
 
-Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to de-identify and encrypt sensitive data.
+Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to
+depersonalize and encrypt sensitive data.
 
 To exchange data on the wire any secure system must use the **HTTPS** protocol, which transfers data over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
 
@@ -51,7 +52,7 @@ Some common security techniques are listed below.
 #### Database firewalls
 
 - Firewalls deny access to traffic by default. The only traffic allowed should originate from specific applications or web servers that need to access the data.
-- You should also deploy a web application firewall. This is because attacks such as SQL injection attacks directed at a web application can be used to filtrate or delete data from the database.
+- You should also deploy a web application firewall. This is because attacks such as SQL injection attacks directed at a web application can be used to exfiltrate or delete data from the database.
 
 #### Database hardening
 
@@ -67,11 +68,9 @@ Some common security techniques are listed below.
 
 ### Education
 
-Bots provide an innovative interaction tool between a company and its customers. But hey could potentially provide a backdoor for tampering with a company's website. Therefore, companies must assure that its developers understand the importance of bot security as part of the website security.
+Bots provide an innovative interaction tool between a company and its customers. But hey could potentially provide a backdoor for tampering with a company's website. Therefore, companies must assure that its developers understand the importance of bot security as part of the website security. Moreover, users' errors can be a problem, too. This will require some education on how bots can be used securely, for example:
 
-Despite security issues awareness, people can be the weakest link and users' errors can be a problem. This will require education on how digital technologies such as bots can be used securely, for example:
-
-- A development strategy should include internal training on how to use the bot securely.
+- For the developers, a strategy should include internal training on how to use the bot securely.
 - Customers can be given guidelines detailing how to interact with the bot safely.
 
 ## Bot-specific security guidelines
@@ -95,7 +94,7 @@ The Bot Connector service assures that messages are exchanged securely between t
 1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
 1. Retrieve access tokens through **Azure Bot Service API**. A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
 
-For more information, see [Authentication](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) article
+For more information, see the [Bot authentication](~/v4sdk/bot-builder-concept-authentication.md) article.
 
 ### Web Chat
 
