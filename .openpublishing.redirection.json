@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/v4sdk/bot-builder-custom-assistant-introduction.md",
+      "redirect_url": "https://microsoft.github.io/botframework-solutions/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/v4sdk/bot-builder-conversations.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-design-conversation-flow",
       "redirect_document_id": false
