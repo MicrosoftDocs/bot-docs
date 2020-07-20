@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 2/7/2020
+ms.date: 07/13/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -205,8 +205,9 @@ The bot uses the following criteria to validate input.
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.cs**  
-[!code-javascript[validation methods](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=120-190)]
+**bots/customPromptBot.cs**
+[!code-javascript[validation methods](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=120-191)]
+
 
 ## [Python](#tab/python)
 

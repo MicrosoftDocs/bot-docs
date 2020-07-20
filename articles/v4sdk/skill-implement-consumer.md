@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/19/2020
+ms.date: 07/15/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -71,7 +71,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 ## Application configuration
 
 1. Add the root bot's app ID and password.
-1. Add the endpoint URL to which the skills should reply to the skill consumer.
+1. Add the skill host endpoint (the service or callback URL) to which the skills should reply to the skill consumer.
 1. Add an entry for each skill the skill consumer will use. Each entry includes:
    - An ID the skill consumer will use to identify each skill.
    - The skill's app ID.
@@ -375,6 +375,12 @@ To send parameters to the skill, the skill consumer can set the _value_ property
 - If a skill is active, the root bot needs to determine which skill is active and forward the user's message to the correct skill.
 - If no skill is active, the root bot needs to determine which skill to start, if any, based on bot state and the user's input.
 - If you want to allow the user to switch between multiple concurrent skills, the root bot needs to determine which of the active skills the user is intending to interact with before forwarding the user's message.
+
+### To use DeliveryMode ExpectReplies
+
+- Change DeliveryMode to ExpectReplies before sending the activity from root bot to skill.
+- Read ExpectedReplies from the InvokeResponse body returned from the request response. (SkillDialog performs this step automatically.)
+- Process each activity, either within the root bot or by sending it on to the channel which initiated the original request. (SkillDialog performs this step automatically.)
 
 <!--
 ## Next steps
