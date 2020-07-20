@@ -233,7 +233,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## Additional information
 
-- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py)) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
+- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
 
 - You should send a default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
