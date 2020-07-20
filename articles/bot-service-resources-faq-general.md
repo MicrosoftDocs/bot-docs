@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/09/2020
+ms.date: 07/10/2020
 ---
 
 # Bot Framework general
@@ -37,7 +37,6 @@ some processing before forwarding the message to an existing `LuisDialog`. Alter
 
 You would expect to find the forwarded item in the first `ResumeAfter` handler (e.g. `LuisDialog.MessageReceived`) that is scheduled by `StartAsync`.
 
-
 ## What is the difference between "proactive" and "reactive"?
 
 From the perspective of your bot, "reactive" means that the user initiates the conversation by sending a message to the bot, and the bot reacts by responding to that message. In contrast, "proactive" means that the bot initiates the conversation by sending the first message to the user. For example, a bot may send a proactive message to notify a user when a timer expires or an event occurs.
@@ -61,6 +60,7 @@ An [ETag](https://en.wikipedia.org/wiki/HTTP_ETag) is a mechanism for [optimisti
 
 The dialog stack and state are stored in bot data bags. For example, you might see the "Precondition Failed" ETag error if your bot is still processing a previous message when it receives a new message for that conversation.
 
+<!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
 ## What are some community-authored dialogs?
 
 * [BotAuth](https://www.nuget.org/packages/BotAuth) - Azure Active Directory authentication
@@ -69,6 +69,7 @@ The dialog stack and state are stored in bot data bags. For example, you might s
 ## What are some community-authored templates?
 
 * [ES6 BotBuilder](https://github.com/brene/botbuilder-es6-template) - ES6 Bot Builder template
+-->
 
 ## What is rate limiting?
 
@@ -89,3 +90,45 @@ It can happen if:
 ### What are the rate limits?
 
 We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time. If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
+
+## How to implement human handoff?
+
+At times it is necessary to transfer (handoff) a conversation from a bot to a human being. This happens for example if the bot does not understand the user, or if the request cannot be automated. In these cases, the bot provides a transition to humans.
+
+<!-- Handoff are [event activities](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#event-activity) from bot to channels. These events are used for the handoff between a bot and the agent hub and are also known as **handoff events**.
+
+When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a **handoff initiation event**. See this [handoff protocol](~/bot-service-design-pattern-handoff-human.md#handoff-protocol) example. -->
+
+The Bot Framework SDK supports handoff to a human. There a few **event types** for signaling handoff operations. These events are exchanged between a **bot** and an **agent hub**, also called engagement hub. This agent hub is defined as an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots.
+
+For detailed information, see [Transition conversations from bot to human](~/bot-service-design-pattern-handoff-human.md) article.
+
+<!-- See [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library#handoff-library).
+
+You can select one of the following models for integration with the agent hubs:
+
+- [Bot as an agent](~/bot-service-design-pattern-handoff-human.md#bot-as-an-agent)
+- [Bot as a proxy](~/bot-service-design-pattern-handoff-human.md#bot-as-a-proxy)
+
+The handoff protocol is identical for both models, however the onboarding details differ between the models and the agent engagement hubs. The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot). For more information, see the [protocol](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library#protocol) of the **hand off library**.
+
+> [!NOTE]
+> DirectLine channel supports handoff in the [bot as an agent](~/bot-service-design-pattern-handoff-human.md#bot-as-an-agent) scenario.  This is because there is an application that handles the handoff event.
+
+In the case of channels that do not handle the handoff, the middleware is used to transform the handoff event into API calls specific to the agent hub.
+-->
+
+<!--
+### ??Questions??
+
+1. The [Transition conversations from bot to human](~/bot-service-design-pattern-handoff-human.md) article refers to the following:
+
+    - [Integration with Microsoft Dynamics Omnichannel for Customer Service](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples)
+    - [Integration with LiverPerson LiveEngage platform](https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html)
+
+    **Q1: Do we need to show how to use them perhaps in a specific how to article?**
+
+1. The [PR 1786](https://github.com/MicrosoftDocs/bot-docs/issues/1786) says *We and customers have implemented connectors (middleware + adapter) for LivePerson proxy, ServiceNow, RingCentral and others.*
+
+    **Q2: Do we need to refer to this?**: [HandoffMiddleware.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/handoff-library/csharp_dotnetcore/samples/LivePersonAgentBot/Middleware/HandoffMiddleware.cs).
+>

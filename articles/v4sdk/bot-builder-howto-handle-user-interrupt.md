@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/25/2020
+ms.date: 07/08/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,7 +20,7 @@ Handling interruptions is an important aspect of a robust bot. Users will not al
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [reuse dialogs][component-dialogs].
-- A copy of the core bot sample in either [**CSharp**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
+- A copy of the core bot sample in either [**C#**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
 
 ## About this sample
 
@@ -108,11 +108,11 @@ Once the interrupt handling class is implemented, review what happens when this 
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `BookingDialog` in the `MainDialog.ActStepAsync` method, with a call to `BeginDialogAsync` as shown below.
 
-[!code-csharp[ActStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=58-101&highlight=6,26)]
+[!code-csharp[ActStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=59-102&highlight=6,26)]
 
 Next, in the `FinalStepAsync` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or cancelled.
 
-[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=130-150)]
+[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=131-151)]
 
 The code in `BookingDialog` is not shown here as it is not directly related to interruption handling. It is used to prompt users for booking details. You can find that code in **Dialogs\BookingDialogs.cs**.
 
@@ -122,11 +122,11 @@ The code in `BookingDialog` is not shown here as it is not directly related to i
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `bookingDialog` in the `MainDialog.actStep` method, with a call to `beginDialog` as shown below.
 
-[!code-javascript[Act step](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=71-115&highlight=6,27)]
+[!code-javascript[Act step](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=73-117&highlight=6,27)]
 
 Next, in the `finalStep` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or cancelled.
 
-[!code-javascript[Final step](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=142-159)]
+[!code-javascript[Final step](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=144-161)]
 
 The code in `BookingDialog` is not shown here as it is not directly related to interruption handling. It is used to prompt users for booking details. You can find that code in **dialogs/bookingDialogs.js**.
 
@@ -136,7 +136,7 @@ The code in `BookingDialog` is not shown here as it is not directly related to i
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `bookingDialog` in the `MainDialog.act_step` method, with a call to `begin_dialog` as shown below.
 
-[!code-python[act step](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/main_dialog.py?range=63-100&highlight=4-5,20)]
+[!code-python[act step](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/main_dialog.py?range=63-100&highlight=4-6,20)]
 
 Next, in the `final_step` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or cancelled.
 
@@ -162,7 +162,7 @@ In our sample, the adapter's `OnTurnError` handler receives any exceptions throw
 
 In our sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
 
-[!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=37-59)]
+[!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=37-58)]
 
 ## [Python](#tab/python)
 
@@ -196,12 +196,14 @@ For reference, here are the class definitions that are used in the call to creat
 
 Finally, in `index.js`, the bot is created.
 
-[!code-javascript[Create bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=70-83)]
+[!code-javascript[Create bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=69-82)]
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
-[!code-javascript[MainDialog signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=11)]
+[!code-javascript[MainDialog signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=12)]
+
 [!code-javascript[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=8)]
+
 [!code-javascript[DialogBot signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/bots/dialogBot.js?range=6)]
 
 ## [Python](#tab/python)
@@ -231,7 +233,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## Additional information
 
-- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py)) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
+- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
 
 - You should send a default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 

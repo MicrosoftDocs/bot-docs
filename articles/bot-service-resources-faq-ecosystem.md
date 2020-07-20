@@ -69,6 +69,40 @@ Direct Line is suitable for:
 - Webpages where you need more customization than the [embeddable Web Chat channel][WebChat] offers
 - Service-to-service applications
 
+## What are the steps to configure Web Chat and Direct Line for Azure Government?
+
+The steps to configure Web Chat and Direct Line for Azure Government are similar to the those used for public Azure. In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to public Azure, not Azure Government. Please, also notice that the public Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.  
+
+The following example shows how to set the domain to the Azure Government URL: 
+
+```html
+<body>
+    <div id="webchat" role="main"></div>
+    <script>
+      window.WebChat.renderWebChat(
+        {
+          directLine: window.WebChat.createDirectLine({
+          token: 'YOUR_TOKEN_SECRET', 
+		  domain: 'https://webchat.botframework.azure.us/v3/directline'
+          }),
+          userID: 'YOUR_USER_ID',
+          username: 'Web Chat User',
+          locale: 'en-US',
+          botAvatarInitials: 'WC',
+          userAvatarInitials: 'WW'
+        },
+        document.getElementById('webchat')
+      );
+    </script>
+  </body>
+
+```
+Learn more from the following docs:
+* [Connect a bot to Web Chat](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0) 
+* [Connect a bot to Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0)
+* For programmatic approach to exchange your secret for a token, use the code snippet provided [here](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0#production-embedding--option) and adjust the URLs from public Azure to Azure Government.
+
+
 ## How does the Bot Framework relate to Cognitive Services?
 
 Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products. These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities, increase their speed of business and lead the industries in which they serve their customers.
