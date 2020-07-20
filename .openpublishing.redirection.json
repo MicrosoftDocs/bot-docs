@@ -11,6 +11,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/bot-service-resources-upgrade-to-v3.md",
+      "redirect_url": "articles/articles/v4sdk/migration/migration-overview.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/v4sdk/bot-builder-conversations.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-design-conversation-flow",
       "redirect_document_id": false
