@@ -12,7 +12,7 @@
     },
     {
       "source_path": "articles/bot-service-resources-upgrade-to-v3.md",
-      "redirect_url": "articles/articles/v4sdk/migration/migration-overview.md",
+      "redirect_url": "https://docs.microsoft.com/azure/bot-service/migration/migration-overview",
       "redirect_document_id": false
     },
     {
