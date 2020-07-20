@@ -15,11 +15,21 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
+Bots use adaptive expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md), and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md), and [Adaptive Cards templating](https://docs.microsoft.com/adaptive-cards/templating).
 
 An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md), or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
+
+## Variables
+
+Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty()](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
+
+There are two special variables. **[]** represents an empty list, and **{}** represents a empty object.
+
+## Explicit values
+
+Explicit values can be enclosed in either single quotes 'myExplicitValue' or double quotes "myExplicitValue".
 
 ## Operators
 
@@ -77,21 +87,12 @@ Adaptive expressions support the following operator types and expression syntax:
 |.            |Property selector. Example: myObject.Property1                                                    |N/A                                |
 |\            |Escape character for templates, expressions.                                               |N/A                                |
 
-## Variables
-
-Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty()](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
-
-There are two special variables. **[]** represents an empty list, and **{}** represents a empty object.
-
-## Explicit values
-
-Explicit values can be enclosed in either single quotes 'myExplicitValue' or double quotes "myExplicitValue".
-
 ## Additional resources
 
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
-- [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for Javascript
-- [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the Adaptive Expressions library
+- [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for JavaScript
+- [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the adaptive expressions library
+
 <!--
 - [API reference](../adaptive-expressions/adaptive-expressions-api-reference.md) for Adaptive Expressions
 - [Extend functions](./extend-functions.md)-->
