@@ -36,6 +36,28 @@ Use **\\** as an escape character.
 - You can say cheese and tomato \[toppings are optional\]
 ```
 
+## Arrays and objects
+
+### Create an array
+
+To create an array, use the **${[object1, object2, ...]}** syntax. For example, this  expression:
+
+```.lg
+${['a', 'b', 'c']}
+```
+
+Returns the array `['a', 'b', 'c']`.
+
+### Create an object
+
+To create an object, use the `${{key1:value1, key2:value2, ...}}` syntax. For example, this expression:
+
+```.lg
+${{user: "Wilson"}, {user: {age: 27}}}
+```
+
+Returns the object `{user: "Wilson"}, {user: {age: 27}}`.
+
 ## Templates
 
 **Templates** are the core concept of the language generation system. Each template has a name and one of the following:
@@ -86,9 +108,9 @@ Here is an example of a simple template that includes two variations.
 ### Conditional response template
 
 Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions][3].
- 
+
 > [!IMPORTANT]
-> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals. 
+> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals.
 
 #### If-else template
 
@@ -148,7 +170,7 @@ Here's a more complicated SWITCH CASE DEFAULT example:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
 
-Like conditional templates, switch templates also cannot be nested. 
+Like conditional templates, switch templates also cannot be nested.
 
 ### Structured response template
 
@@ -201,6 +223,7 @@ Hello, good evening
 When used directly within a one-of variation text, entity references are denoted by enclosing them in braces, such as  ${`entityName`}, or without braces when used as a parameter.
 
 Entities can be used as a parameter:
+
 - within a [prebuilt function][4]
 - within a condition in a [conditional response template](#conditional-response-template)
 - to [template resolution call](#parametrization-of-templates)
@@ -342,7 +365,7 @@ If name is null, the diagnostic would be **'name' evaluated to null. [welcome] E
 Developers can creat delegates to replace null values in evaluated expressions by using the **replaceNull** option:
 
 ```.lg
-> !# @replaceNull = ${path} is undefined 
+> !# @replaceNull = ${path} is undefined
 ```
 
 In the above example, the null input in the `path` variable would be replaced with **${path} is undefined**. The following input, where `user.name` is null:
@@ -379,7 +402,7 @@ The example below shows how to set the namespace option to `foo`:
 
 ### Exports option
 
-You can specify a list of LG templates to export. The exported templates can be called like prebuilt functions. 
+You can specify a list of LG templates to export. The exported templates can be called like prebuilt functions.
 
 The example below shows how to set the exports option to `template1, template2`:
 
