@@ -20,7 +20,7 @@ Handling interruptions is an important aspect of a robust bot. Users will not al
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [reuse dialogs][component-dialogs].
-- A copy of the core bot sample in either [**CSharp**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
+- A copy of the core bot sample in either [**C#**][cs-sample], [**JavaScript**][js-sample] or [**Python**][python-sample].
 
 ## About this sample
 
@@ -201,7 +201,9 @@ Finally, in `index.js`, the bot is created.
 For reference, here are the class definitions that are used in the call to create the bot above.
 
 [!code-javascript[MainDialog signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=12)]
+
 [!code-javascript[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=8)]
+
 [!code-javascript[DialogBot signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/bots/dialogBot.js?range=6)]
 
 ## [Python](#tab/python)
@@ -231,7 +233,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## Additional information
 
-- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py)) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
+- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
 
 - You should send a default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
