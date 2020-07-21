@@ -50,7 +50,7 @@ Returns the array `['a', 'b', 'c']`.
 
 ### Create an object
 
-To create an object, use the `${{key1:value1, key2:value2, ...}}` syntax. For example, this expression:
+To create an object, use the **${{key1:value1, key2:value2, ...}}** syntax. For example, this expression:
 
 ```.lg
 ${{user: "Wilson"}, {user: {age: 27}}}
