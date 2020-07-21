@@ -41,3 +41,4 @@
 # WebChat
 ## [Overview](../v4sdk/bot-builder-webchat-overview.md)
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
+## [Add single sign on to Web Chat](../v4sdk/bot-builder-webchat-sso.md)
