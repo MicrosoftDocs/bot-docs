@@ -228,3 +228,4 @@ new TextInput()
 [managing-state]: ../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
 [foreach-action]: ./adaptive-dialog-prebuilt-actions.md#foreach
 [botframework-activity]: https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
+[recognizers]: ../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
