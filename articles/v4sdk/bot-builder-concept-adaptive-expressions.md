@@ -19,17 +19,7 @@ Bots use adaptive expressions to evaluate the outcome of a condition based on ru
 
 Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md), and [Adaptive Cards templating](https://docs.microsoft.com/adaptive-cards/templating).
 
-An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md), or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
-
-## Variables
-
-Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty()](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
-
-There are two special variables. **[]** represents an empty list, and **{}** represents a empty object.
-
-## Explicit values
-
-Explicit values can be enclosed in either single quotes 'myExplicitValue' or double quotes "myExplicitValue".
+An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md), or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all language generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
 ## Operators
 
@@ -86,6 +76,42 @@ Adaptive expressions support the following operator types and expression syntax:
 |()            |Enforces precedence order and groups sub expressions into larger expressions. Example: (A+B)*C    |N/A                                |
 |.            |Property selector. Example: myObject.Property1                                                    |N/A                                |
 |\            |Escape character for templates, expressions.                                               |N/A                                |
+
+## Variables
+
+Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty()](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
+
+There are two special variables. **[]** represents an empty list, and **{}** represents a empty object.
+
+## Explicit values
+
+Explicit values can be enclosed in either single quotes 'myExplicitValue' or double quotes "myExplicitValue".
+
+## Examples
+
+The following are examples of how adaptive expressions can be used across different conversational AI components:
+
+### Language Generation
+
+Adaptive expressions are used by language generation (LG) to evaluate conditions described in LG templates. In the example below, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function is used to list all values in the `recentTasks` collection.
+
+```.lg
+# RecentTasks
+- IF: ${count(recentTasks) == 1}
+    - Your most recent task is ${recentTasks[0]}. You can let me know if you want to add or complete a task.
+- ELSEIF: ${count(recentTasks) == 2}
+    - Your most recent tasks are ${join(recentTasks, ', ', ' and ')}. You can let me know if you want to add or complete a task.
+- ELSEIF: ${count(recentTasks) > 2}
+    - Your most recent ${count(recentTasks)} tasks are ${join(recentTasks, ', ', ' and ')}. You can let me know if you want to add or complete a task.
+- ELSE:
+    - You don't have any tasks.
+```
+
+Read the [using prebuilt function in variations](../file-format/bot-builder-lg-file-format.md#using-prebuilt-functions-in-variations) section of the [.lg file format](../file-format/bot-builder-lg-file-format.md) article for more information.
+
+### Adaptive Cards templating
+
+### Bot Framework Composer
 
 ## Additional resources
 
