@@ -144,7 +144,7 @@ When your bot needs an answer from QnAMaker, call `GetAnswersAsync()` from your 
 
 **Bots/QnABot.cs**
 
-[!code-csharp[qna get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-52)]
+[!code-csharp[qna get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
 
 ## [JavaScript](#tab/js)
 
@@ -152,14 +152,14 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 
 **bots/QnABot.js**
 
-[!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=46-55)]
+[!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=45-54)]
 
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message *No QnA Maker answers were found.*
 
 **bots/qna_bot.py**
-[!code-python[get_answers](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=33-37)]
+[!code-python[get_answers](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=32-37)]
 
 ---
 
