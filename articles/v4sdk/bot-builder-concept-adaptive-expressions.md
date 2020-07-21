@@ -113,6 +113,12 @@ Read the [using prebuilt function in variations](../file-format/bot-builder-lg-f
 
 ### Bot Framework Composer
 
+Bot Framework Composer is an open-source visual authoring canvas for developers and multi-disciplinary teams to build bots. Composer uses adaptive expressions to calculate computed values, and properties in memory can be part of an expression. Adaptive expressions can be used in language generation templates definitions and as properties in the authoring canvas.
+
+For example, the expression `(dialog.orderTotal + dialog.orderTax) > 50` adds the values of the properties `dialog.orderTotal` and `dialog.orderTax`, and evaluates to `True` if the sum is greater than 50 or `False` if the sum is less than 50.
+
+Read [Conversation flow and memory](https://docs.microsoft.com/composer/concept-memory) for more information about how expressions are used in memory.
+
 ## Additional resources
 
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
