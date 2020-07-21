@@ -724,16 +724,6 @@
       "source_path": "articles/v4sdk/bot-builder-enterprise-template-customize.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-builder-virtual-assistant-template",
       "redirect_document_id": true   
-    },
-	{
-      "source_path": "articles/adaptive-expressions/adaptive-expressions-API-reference.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/api/adaptiveexpressions",
-      "redirect_document_id": false   
-    },
-	{
-      "source_path": "articles/language-generation/language-generation-API-reference.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration",
-      "redirect_document_id": false   
     }
   ]
 }
