@@ -7,7 +7,7 @@ ms.author: jameslew
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/20/2020
+ms.date: 07/21/2020
 ---
 
 
@@ -60,7 +60,7 @@ The following table lists the certifications supported by Azure Bot Service in A
 
 To find out the latest compliance certifications for Azure Bot Service, see the [Overview of Azure compliance](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942). 
 
-For more information about Microsoft certifications, see the [Azure Trust Center](https://azure.microsoft.com/en-us/overview/trusted-cloud/). 
+For more information about Microsoft certifications, see the [Azure Trust Center](https://azure.microsoft.com/overview/trusted-cloud/). 
 
  
 
