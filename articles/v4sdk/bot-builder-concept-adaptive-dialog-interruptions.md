@@ -162,7 +162,7 @@ Whenever an adaptive dialog begins, any options passed into the dialog via `Begi
 
 You can design your bot to use these values when present, and prompt the user when they are not. If you have a property associated with your input action, and s value for that property is passed in via `BeginDialog`, the user will not be prompted for it. There are situations when you may need to prompt the user for that information even when the property is not `null`. In these situations you can set `AlwaysPrompt` to `true`.
 
-_Flexible entity extraction_ enables you to take the first non-null value, using `coalesce`, a prebuilt function available as part of [Adaptive Expressions][adaptive-expresions].
+_Flexible entity extraction_ enables you to take the first non-null value, using `coalesce`, a prebuilt function available as part of [Adaptive Expressions][adaptive-expressions].
 
 ## Confirmation and correction
 
