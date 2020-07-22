@@ -1,6 +1,6 @@
 ---
 title: Transition conversations from bot to human - Bot Service
-description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human. 
+description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human.
 author: arturl
 ms.author: arturl
 manager: kamrani
@@ -14,28 +14,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to hand off the conversation to a human being. This can be necessary either because the bot does not understand the user (because of an AI limitation), or if the request cannot be automated and requires a human action. In such cases the bot should recognize when it needs to hand off and provide the user with a smooth transition.
 
-Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms. 
+Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms.
 
-## Handoff protocol
-
-When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
-
-```C#
-var activities = GetRecentActivities();
-var handoffContext = new { Skill = "credit cards" };
-var handoffEvent =
-    EventFactory.CreateHandoffInitiation(
-        turnContext, handoffContext, new Transcript(activities));
-await turnContext.SendActivityAsync(handoffEvent);
-```
-
-The event contains two components:
- 
- - The context of the handoff request that is necessary to route the conversation to the right agent.
- - The transcript of the conversation. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
 
 <!-- We don't own this aka link, and for v4, I think there is an updated pattern.
-You can read more about the Bot Framework handoff protocol <a href="https://aka.ms/bfhandoffprotocol" target="blank">here</a>. 
+You can read more about the Bot Framework handoff protocol <a href="https://aka.ms/bfhandoffprotocol" target="blank">here</a>.
 -->
 
 ## Handoff integration models
@@ -60,26 +43,166 @@ Flexibility and control are the main advantages of this model. The bot can suppo
 
 ## Natural language
 
-Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent. 
- 
-The bot analyzes the content of the user's messages 
-by using the <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a> 
-to infer sentiment 
-or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>. 
+Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent.
+
+The bot analyzes the content of the user's messages
+by using the <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
+to infer sentiment
+or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
 
 
 > [!TIP]
-> Natural language understanding may not always be the best method for determining when a bot 
-> should transfer conversation control to a human being. Bots, like humans, don't always guess 
-> correctly, and invalid responses will frustrate the user. If the user selects from a menu of 
-> valid choices, however, the bot will always respond appropriately to that input. 
+> Natural language understanding may not always be the best method for determining when a bot
+> should transfer conversation control to a human being. Bots, like humans, don't always guess
+> correctly, and invalid responses will frustrate the user. If the user selects from a menu of
+> valid choices, however, the bot will always respond appropriately to that input.
+
+## How handoff is achieved
+
+When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
+
+```C#
+var activities = GetRecentActivities();
+var handoffContext = new { Skill = "credit cards" };
+var handoffEvent =
+    EventFactory.CreateHandoffInitiation(
+        turnContext, handoffContext, new Transcript(activities));
+await turnContext.SendActivityAsync(handoffEvent);
+```
+
+The event contains two components:
+
+ - The **context of the handoff request** that is necessary to route the conversation to the right agent.
+ - The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
+
+## Handoff Library
+
+To support handoff the **Handoff Library** has been created to complement the Bot Framework v4 SDK.
+
+The goal of this library is not to offer a universal solution for integration with any customer's system, but rather to provide a **common language** and **best practices** for bot developers and system integrators building conversational AI systems with human in the loop.
+
+These are the main highlights:
+
+- Implements the additions to the Bot Framework SDK to support handoff to an agent (also known as *escalation*.
+- Contains definitions of three event types for signaling handoff operations.
+
+The events are exchanged between a bot and an *agent hub*, also known as engagement hub. An agent hub is an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots.
+
+> [!NOTE]
+> Integrations with specific agent hubs are not part of the library.
+> The library will be merged in a future release of the Bot Framework SDK.
+
+
+### Protocol details
+
+The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot).
+
+#### Handoff Initiation
+
+_Handoff Initiation_ event is created by the bot to initiate handoff. The event contains the payload as described below.
+
+##### Name
+
+The `name` is a REQUIRED field that is set to `"handoff.initiate"`.
+
+##### Value
+
+The `value` field is an object containing agent hub-specific JSON content, such as required agent skill etc. Example:
+```json
+{ "Skill" : "credit cards" }
+```
+`Value` field is OPTIONAL.
+
+##### Attachments
+
+The `attachments` is an OPTIONAL field containing the list of `Attachment` objects. Bot Framework defines the "Transcript" attachment type that is used to send conversation transcript to the agent hub if required. Attachments can be sent either inline (subject to a size limit) or offline by providing `ContentUrl`. Example:
+```C#
+handoffEvent.Attachments = new List<Attachment> {
+    new Attachment {
+        Content = transcript,
+        ContentType = "application/json",
+        Name = "Trasnscript",
+    }};
+```
+
+Agent hubs SHOULD ignore attachment types they don't understand.
+
+##### Conversation
+
+The `conversation` is a REQUIRED field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
+
+#### Handoff Status
+
+_Handoff Status_ event is sent to the bot by the agent hub. The event informs the bot about the status of the initiated handoff operation.
+
+Bots are NOT REQUIRED to handle the event, however they MUST NOT reject it.
+
+##### Name
+
+The `name` is a REQUIRED field that is set to `"handoff.status"`.
+
+##### Value
+
+The `value` is a REQUIRED field describing the current status of the handoff operation.
+It is a JSON object containing the REQUIRED field `state` and an optional field `message`, as defined below.
+
+The `state` has one of the following values:
+
+- "accepted": An agent has accepted the request and taken control of the conversation.
+- "failed": Handoff request has failed. The `message` might contain additional information relevant to the failure.
+- "completed": Handoff request has completed.
+
+The format and possible valued of the `message` field are unspecified.
+
+#### Example
+
+Successful handoff completion:
+
+```json
+{ "state" : "completed" }
+```
+
+Handoff operation failed due to a timeout:
+
+```json
+{ "state" : "failed", "message" : "Cannot find agent with requested skill" }
+```
+
+#### Conversation
+
+`Conversation`is a REQUIRED field of type `ConversationAccount` describing the conversation that has been accepted or rejected. The `Id` of the conversation MUST be the same as in the HandoffInitiation that initiated the handoff.
+
+## Example
+
+```C#
+protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+    if (turnContext.Activity.Text.Contains("human"))
+    {
+        await turnContext.SendActivityAsync($"You have requested transfer to an agent");
+
+        var transcript = GetTranscript(); // defined elsewhere
+        var context = new { Skill = "credit cards" };
+
+        var handoffEvent = EventFactory.CreateHandoffInitiation(turnContext, context, new Transcript(transcript));
+        await turnContext.SendActivityAsync(handoffEvent);
+
+        await turnContext.SendActivityAsync($"Agent transfer has been initiated");
+
+    }
+    else
+    {
+        // handle other utterances
+    }
+}
+```
 
 
 ## Additional resources
 
-- <a href="https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples" target="blank">Integration with Microsoft Dynamics Omnichannel for Customer Service</a> 
+- <a href="https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples" target="blank">Integration with Microsoft Dynamics Omnichannel for Customer Service</a>
 
-- <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="blank">Integration with LivePerson LiveEngage platform</a> 
+- <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="blank">Integration with LivePerson LiveEngage platform</a>
 
 - [Dialogs](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 - <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
