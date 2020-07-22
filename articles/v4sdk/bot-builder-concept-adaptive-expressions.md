@@ -30,7 +30,7 @@ Adaptive expressions support the following operator types and expression syntax:
 - [logical](#logical-operators)
 - [arithmetic](#other-operators-and-expression-syntax)
 
-### Arithmetic operators
+### [Arithmetic operators](#tab/arithmetic)
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
@@ -43,7 +43,7 @@ Adaptive expressions support the following operator types and expression syntax:
 |^            | Exponentiation. Example: A ^ B                                            |[exp][5]                           |
 |%            | Modulus. Example: A % B                                                    |[mod][6]                           |
 
-### Comparison operators
+### [Comparison operators](#tab/comparison)
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
@@ -54,7 +54,7 @@ Adaptive expressions support the following operator types and expression syntax:
 |>=         | Greater than or equal. Example: A >= B                                        |[greaterOrEquals][11]              |
 |<=            | Less than or equal. Example: A <= B                                            |[lessOrEquals][12]                 |
 
-### Logical operators
+### [Logical operators](#tab/logical)
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
@@ -62,8 +62,7 @@ Adaptive expressions support the following operator types and expression syntax:
 |\|\|        |Or. Example: exp1 \|\| exp2                                                    |[or][14]                           |
 |!            |Not. Example: !exp1                                                            |[not][8]                           |
 
-
-### Other operators and expression syntax
+### [Other operators and expression syntax](#tab/other)
 
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
@@ -77,6 +76,8 @@ Adaptive expressions support the following operator types and expression syntax:
 |.            |Property selector. Example: myObject.Property1                                                    |N/A                                |
 |\            |Escape character for templates, expressions.                                               |N/A                                |
 
+---
+
 ## Variables
 
 Variables are always referenced by their name in the format `${myVariable}`.  They can be referenced either by the property selector operator in the form of `myParent.myVariable`, using the item index selection operator like in `myParent.myList[0]`, or by the [getProperty()](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#getProperty) function.
@@ -89,11 +90,9 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 
 ## Examples
 
-The following are examples of how adaptive expressions can be used across different conversational AI components:
-
 ### Language Generation
 
-Adaptive expressions are used by language generation (LG) to evaluate conditions described in LG templates. In the example below, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function is used to list all values in the `recentTasks` collection.
+Adaptive expressions are used by language generation (LG) systems to evaluate conditions described in LG templates. In the example below, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function is used to list all values in the `recentTasks` collection.
 
 ```.lg
 # RecentTasks
@@ -110,6 +109,40 @@ Adaptive expressions are used by language generation (LG) to evaluate conditions
 Read the [using prebuilt function in variations](../file-format/bot-builder-lg-file-format.md#using-prebuilt-functions-in-variations) section of the [.lg file format](../file-format/bot-builder-lg-file-format.md) article for more information.
 
 ### Adaptive Cards templating
+
+[Adaptive cards templating](https://docs.microsoft.com/adaptive-cards/templating/) can be used by developers of bots and other technologies to separate data from the layout in an Adaptive Card. Developers can provide [data inline](https://docs.microsoft.com/adaptive-cards/templating/language#option-a-inline-data) with the `AdaptiveCard` payload, or the more common approach of [separating the data from the template](https://docs.microsoft.com/adaptive-cards/templating/language#option-b-separating-the-template-from-the-data).
+
+For example, say you have the following data:
+
+```json
+{
+    "id": "1291525457129548",
+    "status": 4,
+    "author": "Matt Hidinger",
+    "message": "{\"type\":\"Deployment\",\"buildId\":\"9542982\",\"releaseId\":\"129\",\"buildNumber\":\"20180504.3\",\"releaseName\":\"Release-104\",\"repoProvider\":\"GitHub\"}",
+    "start_time": "2018-05-04T18:05:33.3087147Z",
+    "end_time": "2018-05-04T18:05:33.3087147Z"
+}
+```
+The `message` property is a JSON-serialized string. To access the values within the string, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function can be called:
+
+```json
+{
+    "type": "TextBlock",
+    "text": "${json(message).releaseName}"
+}
+```
+
+And will result to the following object:
+
+```json
+{
+    "type": "TextBlock",
+    "text": "Release-104"
+}
+```
+
+For more information and examples see the [adaptive cards templating documentation](https://docs.microsoft.com/adaptive-cards/templating/).
 
 ### Bot Framework Composer
 
