@@ -155,7 +155,7 @@ The format and possible valued of the `message` field are unspecified.
     { "state" : "failed", "message" : "Cannot find agent with requested skill" }
     ```
 
-## Conversation
+### Conversation
 
 `Conversation`is a REQUIRED field of type `ConversationAccount` describing the conversation that has been accepted or rejected. The `Id` of the conversation MUST be the same as in the HandoffInitiation that initiated the handoff.
 
