@@ -18,7 +18,7 @@ ms.date: 11/15/2019
 
 [!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
-Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots, all in one place.
+The Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots, all in one place.
 The Bot Framework SDK is a modular and extensible framework for building bots.
 Through the Bot Framework SDK, tools, templates, and related AI services, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
