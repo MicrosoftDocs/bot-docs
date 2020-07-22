@@ -170,7 +170,8 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 
 ## Additional information
 
-- To learn more about expressions see the article [Adaptive expressions][adaptive-expressions].
+- [Adaptive expressions][adaptive-expressions].
+- [.lu file format](/file-format/bot-builder-lu-file-format.md)
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [inputs]: bot-builder-concept-adaptive-dialog-Inputs.md
