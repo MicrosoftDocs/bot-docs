@@ -41,23 +41,7 @@ Flexibility and control are the main advantages of this model. The bot can suppo
 
 ![Bot as a proxy scenario](~/media/designing-bots/patterns/bot-as-proxy.PNG)
 
-## Natural language
-
-Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent.
-
-The bot analyzes the content of the user's messages
-by using the <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
-to infer sentiment
-or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
-
-
-> [!TIP]
-> Natural language understanding may not always be the best method for determining when a bot
-> should transfer conversation control to a human being. Bots, like humans, don't always guess
-> correctly, and invalid responses will frustrate the user. If the user selects from a menu of
-> valid choices, however, the bot will always respond appropriately to that input.
-
-## How handoff is achieved
+## Handoff protocol
 
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
 
@@ -75,37 +59,30 @@ The event contains two components:
  - The **context of the handoff request** that is necessary to route the conversation to the right agent.
  - The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
 
-## Handoff Library
-
-To support handoff the **Handoff Library** has been created to complement the Bot Framework v4 SDK.
-
-The goal of this library is not to offer a universal solution for integration with any customer's system, but rather to provide a **common language** and **best practices** for bot developers and system integrators building conversational AI systems with human in the loop.
-
-These are the main highlights:
+The **Handoff Library** has been created to complement the Bot Framework v4 SDK in supporting handoff. The goal is not to offer a universal solution for integration with any customer's system, but rather to provide a **common language** and **best practices** for bot developers and system integrators building conversational AI systems with human in the loop. Specifically
 
 - Implements the additions to the Bot Framework SDK to support handoff to an agent (also known as *escalation*.
 - Contains definitions of three event types for signaling handoff operations.
 
-The events are exchanged between a bot and an *agent hub*, also known as engagement hub. An agent hub is an application or a system that allows agents, typically humans, to receive and handle requests from users, as well as escalation requests from bots.
 
 > [!NOTE]
 > Integrations with specific agent hubs are not part of the library.
 > The library will be merged in a future release of the Bot Framework SDK.
 
 
-### Protocol details
+## Protocol details
 
 The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot).
 
-#### Handoff Initiation
+### Handoff Initiation
 
 _Handoff Initiation_ event is created by the bot to initiate handoff. The event contains the payload as described below.
 
-##### Name
+#### Name
 
 The `name` is a REQUIRED field that is set to `"handoff.initiate"`.
 
-##### Value
+#### Value
 
 The `value` field is an object containing agent hub-specific JSON content, such as required agent skill etc. Example:
 ```json
@@ -113,7 +90,7 @@ The `value` field is an object containing agent hub-specific JSON content, such 
 ```
 `Value` field is OPTIONAL.
 
-##### Attachments
+#### Attachments
 
 The `attachments` is an OPTIONAL field containing the list of `Attachment` objects. Bot Framework defines the "Transcript" attachment type that is used to send conversation transcript to the agent hub if required. Attachments can be sent either inline (subject to a size limit) or offline by providing `ContentUrl`. Example:
 ```C#
@@ -127,21 +104,21 @@ handoffEvent.Attachments = new List<Attachment> {
 
 Agent hubs SHOULD ignore attachment types they don't understand.
 
-##### Conversation
+#### Conversation
 
 The `conversation` is a REQUIRED field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
 
-#### Handoff Status
+### Handoff Status
 
 _Handoff Status_ event is sent to the bot by the agent hub. The event informs the bot about the status of the initiated handoff operation.
 
 Bots are NOT REQUIRED to handle the event, however they MUST NOT reject it.
 
-##### Name
+#### Name
 
 The `name` is a REQUIRED field that is set to `"handoff.status"`.
 
-##### Value
+#### Value
 
 The `value` is a REQUIRED field describing the current status of the handoff operation.
 It is a JSON object containing the REQUIRED field `state` and an optional field `message`, as defined below.
@@ -154,7 +131,7 @@ The `state` has one of the following values:
 
 The format and possible valued of the `message` field are unspecified.
 
-#### Example
+### Example
 
 Successful handoff completion:
 
@@ -168,7 +145,7 @@ Handoff operation failed due to a timeout:
 { "state" : "failed", "message" : "Cannot find agent with requested skill" }
 ```
 
-#### Conversation
+### Conversation
 
 `Conversation`is a REQUIRED field of type `ConversationAccount` describing the conversation that has been accepted or rejected. The `Id` of the conversation MUST be the same as in the HandoffInitiation that initiated the handoff.
 
@@ -197,6 +174,21 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
+## Natural language
+
+Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent.
+
+The bot analyzes the content of the user's messages
+by using the <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
+to infer sentiment
+or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
+
+
+> [!TIP]
+> Natural language understanding may not always be the best method for determining when a bot
+> should transfer conversation control to a human being. Bots, like humans, don't always guess
+> correctly, and invalid responses will frustrate the user. If the user selects from a menu of
+> valid choices, however, the bot will always respond appropriately to that input.
 
 ## Additional resources
 
