@@ -175,8 +175,8 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [inputs]: bot-builder-concept-adaptive-dialog-Inputs.md
-[language-understanding]: bot-builder-concept-adaptive-dialog-recognizers#language-understanding
-[intents]: bot-builder-concept-adaptive-dialog-recognizers#intents
-[entities]: bot-builder-concept-adaptive-dialog-recognizers#entities
+[language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
+[intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
+[entities]: bot-builder-concept-adaptive-dialog-recognizers.md#entities
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
