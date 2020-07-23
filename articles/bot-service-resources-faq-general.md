@@ -11,6 +11,10 @@ ms.date: 07/10/2020
 
 # Bot Framework general
 
+<!-- Attention writers!!
+     1 - This article contains FAQs regarding Bot Framework generalities.
+     1 - When you create a new FAQ, please add the related link in the bot-service-resources-bot-framework-faq.md proper section. -->
+
 ## Why doesn't the Typing activity do anything?
 
 Some channels do not support transient typing updates in their client.

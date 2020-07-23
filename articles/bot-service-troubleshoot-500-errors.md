@@ -12,11 +12,15 @@ ms.date: 11/19/2019
 
 # Troubleshoot HTTP 500 errors
 
+<!-- Attention writers!!
+     When you create a new FAQ, please add the related link in the bot-service-troubleshoot-index.md proper section. -->
+
 The first step in troubleshooting 500 errors is enabling Application Insights.
 
-<!-- TODO: Add links back in once there's a fresh AppInsights sample.
-The luis-with-appinsights ([C# sample](https://aka.ms/cs-luis-with-appinsights-sample) / [JS sample](https://aka.ms/js-luis-with-appinsights-sample)) and qna-with-appinsights ([C# sample](https://aka.ms/qna-with-appinsights) / [JS sample](https://aka.ms/js-qna-with-appinsights-sample)) samples demonstrate bots that support Azure Application Insights.
--->
+For AppInsights samples, please see luis-with-appinsights [C# sample](https://aka.ms/cs-luis-with-appinsights-sample) and [JS sample](https://aka.ms/js-luis-with-appinsights-sample).
+
+ <!-- qna-with-appinsights ([C# sample](https://aka.ms/qna-with-appinsights) / [JS sample](https://aka.ms/js-qna-with-appinsights-sample)) samples demonstrate bots that support Azure Application Insights.-->
+
 See [conversation analytics telemetry](https://aka.ms/botframeworkanalytics) for information about how to add Application Insights to an existing bot.
 
 ## Enable Application Insights on ASP.Net

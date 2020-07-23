@@ -11,6 +11,10 @@ ms.date: 06/08/2020
 
 # Ecosystem
 
+<!-- Attention writers!!
+     1 - This article contains FAQs regarding Bot Framework ecosystem.
+     1 - When you create a new FAQ, please add the related link in the bot-service-resources-bot-framework-faq.md proper section. -->
+
 ## When will you add more conversation experiences to the Bot Framework?
 
 We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.
@@ -71,9 +75,9 @@ Direct Line is suitable for:
 
 ## What are the steps to configure Web Chat and Direct Line for Azure Government?
 
-The steps to configure Web Chat and Direct Line for Azure Government are similar to the those used for public Azure. In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to public Azure, not Azure Government. Please, also notice that the public Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.  
+The steps to configure Web Chat and Direct Line for Azure Government are similar to the those used for public Azure. In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to public Azure, not Azure Government. Please, also notice that the public Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.
 
-The following example shows how to set the domain to the Azure Government URL: 
+The following example shows how to set the domain to the Azure Government URL:
 
 ```html
 <body>
@@ -82,7 +86,7 @@ The following example shows how to set the domain to the Azure Government URL:
       window.WebChat.renderWebChat(
         {
           directLine: window.WebChat.createDirectLine({
-          token: 'YOUR_TOKEN_SECRET', 
+          token: 'YOUR_TOKEN_SECRET',
 		  domain: 'https://webchat.botframework.azure.us/v3/directline'
           }),
           userID: 'YOUR_USER_ID',
@@ -98,7 +102,7 @@ The following example shows how to set the domain to the Azure Government URL:
 
 ```
 Learn more from the following docs:
-* [Connect a bot to Web Chat](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0) 
+* [Connect a bot to Web Chat](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
 * [Connect a bot to Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0)
 * For programmatic approach to exchange your secret for a token, use the code snippet provided [here](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0#production-embedding--option) and adjust the URLs from public Azure to Azure Government.
 

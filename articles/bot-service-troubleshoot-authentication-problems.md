@@ -11,7 +11,9 @@ ms.date: 02/25/2020
 
 # Troubleshooting Bot Framework authentication
 
-<!-- Sync -->
+<!-- Attention writers!!
+     When you create a new FAQ, please add the related link in the bot-service-troubleshoot-index.md proper section. -->
+
 This guide can help you to troubleshoot authentication issues with your bot by evaluating a series of scenarios to determine where the problem exists.
 
 > [!NOTE]
