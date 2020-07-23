@@ -34,10 +34,24 @@ In addition to the dialog manager, the following classes enable the dialog syste
 
 | Class | Description
 | :--   | :--
-| *Dialog set* | Defines a set of dialogs that can reference each other.
+| *Dialog set* | Defines a collection of dialogs that can reference each other.
 | *Dialog context* | Contains information about all active dialogs.
 | *Dialog instance* | Contains information about one active dialog.
 | *Dialog turn result* | Contains status information from an active dialog. If the active  dialog ended, this contains its return value.
+
+<!-- **cut this**
+
+*Dialog set*: a collection of dialogs.
+Each dialog added to the set has a unique ID within the set. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that ID to specify which dialog to use. Both adaptive and component dialogs contain an inner dialog set.
+
+*Dialog instance*: the state of a dialog.
+While a dialog class represents a bit of conversation flow, and an instance of that class is what gets added to a dialog set. At run time, the state of the dialog--where in the conversation it is, what information it has collected, and so on--is represented by the *dialog instance* class.
+**argh!**
+
+A *dialog context* contains information pertaining to a dialog set, and is used within the framework to interact with those dialogs. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with its string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
+
+When a dialog ends, it can return a *dialog result* with some resulting information from the dialog. This is returned to let the calling method see what happened within the dialog and save the information to some persisted location, if desired.
+-->
 
 ## Dialog types
 
@@ -56,25 +70,9 @@ These are the basic dialog types defined in the dialogs library.
 | _skill dialog_ | Automates the management of one or more skill bots from a skill consumer.
 | _QnA Maker dialog_ | Automates access to a QnA Maker knowledge base.
 
-<div style="background: #999; padding: 0 1em;">
-
-**cut this**
-
-*Dialog set*: a collection of dialogs.
-Each dialog added to the set has a unique ID within the set. When your bot wants to start a certain dialog or prompt within the dialog set, it uses that ID to specify which dialog to use. Both adaptive and component dialogs contain an inner dialog set.
-
-*Dialog instance*: the state of a dialog.
-While a dialog class represents a bit of conversation flow, and an instance of that class is what gets added to a dialog set. At run time, the state of the dialog--where in the conversation it is, what information it has collected, and so on--is represented by the *dialog instance* class. <!--argh!-->
-
-A *dialog context* contains information pertaining to a dialog set, and is used within the framework to interact with those dialogs. The dialog context includes the current turn context, the parent dialog, and the [dialog state](#dialog-state), which provides a method for preserving information within the dialog. The dialog context allows you to start a dialog with its string ID or continue the current dialog (such as a waterfall dialog that has multiple steps).
-
-When a dialog ends, it can return a *dialog result* with some resulting information from the dialog. This is returned to let the calling method see what happened within the dialog and save the information to some persisted location, if desired.
-
-</div>
-
 ## Dialog state
 
-Dialogs are an approach to implementing a multi-turn conversation, and as such, they rely on persisted state across multiple turns. Without state in dialogs, your bot wouldn't know where it is in the conversation or what information it has already gathered. Again, a dialog manager automates many of these tasks for you.
+Dialogs are an approach to implementing a multi-turn conversation, and as such, they rely on persisted state across multiple turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered. The dialog manager automates many of these tasks for you.
 
 A dialog based bot can hold a dialog set collection as a member variable in its bot implementation. That dialog set is created with a handle to an object called an accessor that provides access to persisted state. For background on state within bots, see [managing state](bot-builder-concept-state.md). The dialog manager manages state for adaptive dialogs.
 
@@ -84,11 +82,27 @@ The creation of a dialog context requires state, which is accessed with the acce
 
 ## Container dialogs
 
+The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs. A container acts as individual dialog and can be part of a larger dialog set. However, each container has an inner dialog set that is managed separately.
+
+While the conceptual structure of the two are quite different, they can be used together.
+
+<!-- **random notes**
+
+The dialog manager creates a dialog set of one for the dialog it is tasked with running. That dialog can be a stand-alone dialog (a QnA Maker, skill, or some custom dialog) or a container dialog.
+
+**ID resolution**
+
+When one dialog tries to start another dialog, it does so by ID. The dialog context tries to resolve the ID based on the other dialogs in the immediate dialog set. If there is no match, it looks for a match in the containing dialog set, and so on. If no match is found, an exception is thrown.
+-->
+
 ### Component dialogs
+
+Component dialogs use a sequence model for conversations.
 
 ### Adaptive dialogs
 
-Adaptive dialogs use an event-driven model for conversations. They offer several built-in capabilities, including interruption handling, attaching a recognizer to each dialog, using the language generation system, and more. With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
+Adaptive dialogs use a flexible model for conversations.
+They offer several built-in capabilities, including interruption handling, attaching a recognizer to each dialog, using the language generation system, and more. With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
 
 An adaptive dialog is part of the dialogs library and works with all of the other dialog types.
 You can easily build a bot that uses many dialog types.
@@ -102,6 +116,8 @@ Consider using adaptive dialogs if your bot:
 
 The [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and its associated topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, and access to memory scopes.
 
+<!-- **cut this**
+
 ## Dialog types
 
 Dialogs come in a few different types as shown in this class hierarchy.
@@ -112,6 +128,9 @@ Prompt dialogs are designed to work with waterfall dialogs.
 Action and input dialogs are designed to work with adaptive dialogs.
 Component and adaptive dialogs manage a set of _child_ dialogs.
 The skill and QnA Maker dialogs wrap skill and QnA Maker features as dialogs.
+-->
+
+<!-- **move this to a component-waterfall-specific article**
 
 ### Prompts
 
@@ -209,7 +228,13 @@ Sometimes you want to write a reusable dialog that you want to use in different 
 
 The *component dialog* provides a strategy for creating independent dialogs to handle specific scenarios, breaking a large dialog set into more manageable pieces. Each of these pieces has its own dialog set, and avoids any name collisions with the dialog set that contains it. See the [component dialog how to](bot-builder-compositcontrol.md) for more on these.
 
+-->
+
 ## Using dialogs
+
+<!--
+
+_Replace all this with something simpler, based on use of the dialog manager, and point to component- or adaptive-specific guidance for anything beyond that._
 
 You can use the dialog context to begin, continue, replace, or end a dialog. You can also cancel all dialogs on the dialog stack.
 
@@ -270,6 +295,7 @@ The dialog context maintains the dialog stack and for each dialog on the stack, 
 A dialog can start a new dialog within the same dialog set by calling the dialog context's *begin dialog* method and providing the ID of the new dialog, which then makes the new dialog the currently active dialog. The original dialog is still on the stack, but calls to the dialog context's *continue dialog* method are only sent to the dialog that is on top of the stack, the *active dialog*. When a dialog is popped off the stack, the dialog context will resume with the next step of the waterfall on the stack where it left off of the original dialog.
 
 Therefore, you can create a branch within your conversation flow by including a step in one dialog that can conditionally choose a dialog to start out of a set of available dialogs.
+-->
 
 ## Additional information
 
