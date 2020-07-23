@@ -13,7 +13,7 @@ ms.date: 5/17/2020
 # Troubleshoot bot configuration issues
 
 <!-- Attention writers!!
-     When you create a new FAQ, please add the related link in the bot-service-troubleshoot-index.md proper section. -->
+     When you create a new FAQ, please add the related link to the proper section in the bot-service-troubleshoot-index.md. -->
 
 A bot can generate different types of errors, such as not being able to respond, throwing errors, or working in one channel but not in another. The first step in troubleshooting a bot is to test it in Web Chat. This will allow you to determine if the problem is specific to your bot (bot doesn't work in any channel) or to a particular channel (bot works in some channels but not others).
 

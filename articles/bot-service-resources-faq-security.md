@@ -13,7 +13,7 @@ ms.date: 06/09/2020
 
 <!-- Attention writers!!
      1 - This article contains FAQs regarding Bot Framework security and privacy.
-     1 - When you create a new FAQ, please add the related link in the bot-service-resources-bot-framework-faq.md proper section. -->
+     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
 
 ## Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?
 

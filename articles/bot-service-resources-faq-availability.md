@@ -13,7 +13,7 @@ ms.date: 06/08/2020
 
 <!-- Attention writers!!
      1 - This article contains FAQs regarding Bot Framework background and availability.
-     1 - When you create a new FAQ, please add the related link in the bot-service-resources-bot-framework-faq.md proper section. -->
+     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
 
 ## Why did Microsoft develop the Bot Framework?
 

@@ -14,8 +14,8 @@ ms.date: 07/10/2020
 
 <!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below. -->
 
-The following are some common questions that could help addressing problems that you might face.
-In case you do not find the answer you are looking for, you can post your questions on the [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you are a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+The following are some common questions that address problems you might face.
+In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
 
 ## Background and availability
 

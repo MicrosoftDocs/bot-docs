@@ -13,7 +13,7 @@ ms.date: 06/08/2020
 
 <!-- Attention writers!!
      1 - This article contains FAQs regarding Bot Framework ecosystem.
-     1 - When you create a new FAQ, please add the related link in the bot-service-resources-bot-framework-faq.md proper section. -->
+     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
 
 ## When will you add more conversation experiences to the Bot Framework?
 
@@ -75,7 +75,7 @@ Direct Line is suitable for:
 
 ## What are the steps to configure Web Chat and Direct Line for Azure Government?
 
-The steps to configure Web Chat and Direct Line for Azure Government are similar to the those used for public Azure. In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to public Azure, not Azure Government. Please, also notice that the public Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.
+The steps to configure Web Chat and Direct Line for Azure Government are similar to the those used for public Azure. In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to public Azure, not Azure Government. Note that the public Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.
 
 The following example shows how to set the domain to the Azure Government URL:
 
