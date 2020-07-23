@@ -92,7 +92,8 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for Javascript
 - [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the Adaptive Expressions library
-- [API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions) for Adaptive Expressions
+- [C #API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
+- [JavaScript API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)   
 <!--- [Extend functions](./extend-functions.md)-->
 
 [1]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add

@@ -157,8 +157,10 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
 
 - See [.lg file format][3] for more information about .lg files.
 - Read [structured response templates](../language-generation/language-generation-structured-response-template.md) to learn more about complex templates.
+- [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
 
-<!--- [Language generation API reference][2]
+<!---
 ## Change Log
 ### 4.8 PREVIEW
 - \[**BREAKING CHANGES**\]:
@@ -218,7 +220,6 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
 - Initial preview release
 -->
 [1]:https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md
-[2]:https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration
 [3]:../file-format/bot-builder-lg-file-format.md
 [6]:https://github.com/microsoft/botframework-cli/tree/master/packages/chatdown
 [7]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md

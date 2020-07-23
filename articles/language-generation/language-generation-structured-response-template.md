@@ -405,7 +405,8 @@ Here's an example:
 --> 
 
 ## Additional Information
-- [Language generation API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
 
 [1]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/
 [2]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
