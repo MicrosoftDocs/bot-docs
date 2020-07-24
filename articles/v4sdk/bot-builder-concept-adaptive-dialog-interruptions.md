@@ -136,7 +136,11 @@ You can handle interruptions locally by adding `OnIntent` triggers to match the 
 
 ### Handling interruptions globally
 
-Adaptive dialogs have a _consultation_ mechanism which enables a user input that cannot be handled by the active dialog to be passed up to that dialogs parent dialog and if the parent cannot handle the user input it gets passed up to the parents parent dialog all the way up to the root dialog until it reaches a dialog that has a trigger that fires. If no triggers fire using this consultation mechanism, the active action gets the user input back to decide what to do next. Consider this example:
+_Global interrupts_ are interruptions that are not handled by the active dialog. If there is no `OnIntent` trigger in the active dialog that can handle the intent, the bot will send it to the dialog's parent dialog, using adaptive dialogs _consultation_ mechanism. If the parent dialog does not have a trigger to handle the intent it continues to bubble up until it reaches the root dialog. Once the interrupt is handled, the conversation flow continues where it left off.
+
+Common uses for global interrupts include creating basic dialog management features such as Help & Cancel in the RootDialog that are then available to any of its child dialogs.
+
+Consider this example:
 
 > **User**: I'd like to order a coffee.
 >
