@@ -173,7 +173,7 @@ Now that you have created a Webex app and wired up the adapter in your bot proje
     1. **filter** - Leave it blank.
     1. **secret** - A secret of your choice to secure your webhook. Later you will add it to your bot's `appsettings.json`.
 
-    ![webhook form](~/media/bot-service-adapter-connect-webex/webex-webhook-form-2.png)
+    ![webhook form](~/media/bot-service-adapter-connect-webex/webex-webhook-form.png)
 
 5. Click **Run**, which should create your webhook and provide you with a success message.
 
