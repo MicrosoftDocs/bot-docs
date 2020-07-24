@@ -25,10 +25,10 @@ An adaptive expression can contain one or more explicit values, [prebuilt functi
 
 Adaptive expressions support the following operator types and expression syntax:
 
-- [arithmetic](#arithmetic-operators)
-- [comparison](#comparison-operators)
-- [logical](#logical-operators)
-- [arithmetic](#other-operators-and-expression-syntax)
+- arithmetic
+- comparison
+- logical
+- other operators and expressions syntax
 
 ### [Arithmetic operators](#tab/arithmetic)
 
@@ -90,6 +90,14 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 
 ## Examples
 
+### Bot Framework Composer
+
+Bot Framework Composer is an open-source visual authoring canvas for developers and multi-disciplinary teams to build bots. Composer uses adaptive expressions to calculate computed values, and properties in memory can be part of an expression. Adaptive expressions can be used in language generation templates definitions and as properties in the authoring canvas.
+
+For example, the expression `(dialog.orderTotal + dialog.orderTax) > 50` adds the values of the properties `dialog.orderTotal` and `dialog.orderTax`, and evaluates to `True` if the sum is greater than 50 or `False` if the sum is less than 50.
+
+Read [Conversation flow and memory](https://docs.microsoft.com/composer/concept-memory) for more information about how expressions are used in memory.
+
 ### Language Generation
 
 Adaptive expressions are used by language generation (LG) systems to evaluate conditions described in LG templates. In the example below, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function is used to list all values in the `recentTasks` collection.
@@ -143,14 +151,6 @@ And will result to the following object:
 ```
 
 For more information and examples see the [adaptive cards templating documentation](https://docs.microsoft.com/adaptive-cards/templating/).
-
-### Bot Framework Composer
-
-Bot Framework Composer is an open-source visual authoring canvas for developers and multi-disciplinary teams to build bots. Composer uses adaptive expressions to calculate computed values, and properties in memory can be part of an expression. Adaptive expressions can be used in language generation templates definitions and as properties in the authoring canvas.
-
-For example, the expression `(dialog.orderTotal + dialog.orderTax) > 50` adds the values of the properties `dialog.orderTotal` and `dialog.orderTax`, and evaluates to `True` if the sum is greater than 50 or `False` if the sum is less than 50.
-
-Read [Conversation flow and memory](https://docs.microsoft.com/composer/concept-memory) for more information about how expressions are used in memory.
 
 ## Additional resources
 
