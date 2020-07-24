@@ -82,11 +82,11 @@ landingContent:
             url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
 
   # Card
-  - title: External Resources
+  - title: Resources
     linkLists:
       - linkListType: concept
         links:
-          - text: Composer
+          - text: Bot Framework Composer
             url: https://docs.microsoft.com/composer/
           - text: Composer tutorial
             url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction/
