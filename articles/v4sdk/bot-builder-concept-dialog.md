@@ -11,6 +11,13 @@ ms.date: 05/14/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
+<!-- Working notes:
+  - [?] Pare down to generic dialog information and link off to "scenario-specific" topics.
+  - [ ] Pull component/waterfall specific content into a child article.
+  - [ ] Link off to the adaptive dialog concept article for that stuff.
+  - [ ] Fix all resulting broken link in article that refer to sections in this one.
+-->
+
 # Dialogs library
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
