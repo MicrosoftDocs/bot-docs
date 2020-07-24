@@ -330,7 +330,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 | ----------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 |`Microsoft.BeginDialog`  | [BeginDialog][begindialog]         | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.           |
 |`Microsoft.CancelDialog` | `CancelDialog`                     | Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.  |
-|`Microsoft.CancelAllDialogs`| [CancelAllDialogs][cancelalldialog]| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
+|`Microsoft.CancelAllDialogs`| [CancelAllDialogs][cancelalldialogs]| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 |`Microsoft.EndDialog`    | [EndDialog][enddialog]            | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 |`Microsoft.EndTurn`      | [EndTurn][endturn]                | Ends the current turn of conversation without ending the dialog.                                                         |
 |`Microsoft.RepeatDialog` | [RepeatDialog][repeatdialog]      | Used to restart the parent dialog.                                                                                       |
@@ -476,7 +476,7 @@ The [generator][generator] value contains a link to the .lg file associated with
 
 <!--  (Actions) Dialog management -->
 [begindialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#begindialog
-[cancelalldialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialog
+[cancelalldialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
 [enddialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#enddialog
 [endturn]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#endturn
 [repeatdialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#repeatdialog
