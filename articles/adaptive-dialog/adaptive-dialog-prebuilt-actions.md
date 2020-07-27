@@ -75,7 +75,7 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------- |
 | Begin a new dialog     | [BeginDialog](#begindialog)      | Begins executing another dialog. When that dialog finishes, the execution of the current trigger will resume.    |
 | Cancel a dialog        | `CancelDialog`<!--[CancelDialog](#canceldialog)-->| Cancels the active dialog. Use when you want the dialog to close immediately, even if that means stopping mid-process.|
-| Cancel all dialogs     | [CancelAllDialogs](#cancelalldialog)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
+| Cancel all dialogs     | [CancelAllDialogs](#cancelalldialogs)| Cancels all active dialogs including any active parent dialogs. Use this if you want to pop all dialogs off the stack, you can clear the dialog stack by calling the dialog context's cancel all dialogs method. Emits the `CancelAllDialogs` event.|
 | End this dialog        | [EndDialog](#enddialog)          | Ends the active dialog.  Use when you want the dialog to complete and return results before ending. Emits the `EndDialog` event.|
 | End dialog turn        | [EndTurn](#endturn)              | Ends the current turn of conversation without ending the dialog.          |
 | Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
@@ -516,12 +516,12 @@ new EndDialog()
 > [!TIP]
 > Adaptive dialogs will end automatically by default if the dialog has completed running all of its actions. To override this behavior, set the `AutoEndDialog` property on Adaptive Dialog to false.
 
-#### CancelAllDialog
+#### CancelAllDialogs
 
 Deletes all dialogs on the stack, including parent and child dialogs.
 
 ```csharp
-new CancelAllDialog()
+new CancelAllDialogs()
 ```
 
 #### EndTurn

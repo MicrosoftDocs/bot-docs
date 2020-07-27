@@ -6,7 +6,7 @@ ms.author: arturl
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 5/16/2019
+ms.date: 07/20/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -79,7 +79,7 @@ or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
 
 - <a href="https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples" target="blank">Integration with Microsoft Dynamics Omnichannel for Customer Service</a> 
 
-- <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="blank">Integration with LiverPerson LiveEngage platform</a> 
+- <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="blank">Integration with LivePerson LiveEngage platform</a> 
 
 - [Dialogs](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 - <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
