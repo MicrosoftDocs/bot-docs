@@ -62,7 +62,7 @@ If you haven't anticipated user interruptions, assuming some basic level of erro
 >
 > **Bot**:  What type of coffee would you like?
 
-The Bot Framework SDK provides an answer to this dilemma using _interruptions_. Interruptions is a technique available in the Bot Framework SDK that enables the bot to understand and respond to user input that does not directly pertain to the specific piece of input that was requested.
+Adaptive dialogs provide an answer to this dilemma using _interruptions_. Interruptions is a technique available in an adaptive dialog that enables the bot to understand and respond to user input that does not directly pertain to the specific piece of input that was requested.
 
 ### Examples of interruptions to a conversational flow
 
