@@ -41,23 +41,19 @@ Flexibility and control are the main advantages of this model. The bot can suppo
 
 ![Bot as a proxy scenario](~/media/designing-bots/patterns/bot-as-proxy-2.PNG)
 
-## Natural language
-
-Natural language understanding and sentiment analysis help the bot decide when to transfer control of the conversation to a human agent. This is particularly valuable when attempting to determine when the user is frustrated or wants to speak with a human agent.
-
-The bot analyzes the content of the user's messages
-by using the <a href="https://www.microsoft.com/cognitive-services/text-analytics-api" target="blank">Text Analytics API</a>
-to infer sentiment
-or by using the <a href="https://www.luis.ai" target="_blank">LUIS API</a>.
-
-
-> [!TIP]
-> Natural language understanding may not always be the best method for determining when a bot
-> should transfer conversation control to a human being. Bots, like humans, don't always guess
-> correctly, and invalid responses will frustrate the user. If the user selects from a menu of
-> valid choices, however, the bot will always respond appropriately to that input.
-
 ## Handoff protocol
+
+The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot).
+
+The event contains two components:
+
+- The **context of the handoff request** that is necessary to route the conversation to the right agent.
+- The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
+
+
+### Handoff Initiation
+
+_Handoff Initiation_ event is created by the bot to initiate handoff. The event contains the payload as described below.
 
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
 
@@ -70,19 +66,7 @@ var handoffEvent =
 await turnContext.SendActivityAsync(handoffEvent);
 ```
 
-The event contains two components:
-
-- The **context of the handoff request** that is necessary to route the conversation to the right agent.
-- The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
-
-The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot).
-
-### Handoff Initiation
-
-_Handoff Initiation_ event is created by the bot to initiate handoff. The event contains the payload as described below.
-
-- **Name** -
-    The `name` is a REQUIRED field that is set to `"handoff.initiate"`.
+- **Name** - The `name` is a REQUIRED field that is set to `"handoff.initiate"`.
 - **Value** - The `value` field is an object containing agent hub-specific JSON content, such as required agent skill and so on.  This field is **optional**.
 
     ```json
