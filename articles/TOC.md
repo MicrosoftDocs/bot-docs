@@ -117,7 +117,6 @@
 ## [REST](rest-api/TOC.md)
 ## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
 ## Adaptive expressions
-### [Operators](adaptive-expressions/adaptive-expressions-operators.md)
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
 ## LG
