@@ -21,4 +21,3 @@ Adaptive expressions are language-agnostic. API references are available for bot
 
 - [C#](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
 - [JavaScript](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
-
