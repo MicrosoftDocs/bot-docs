@@ -575,7 +575,7 @@ new SetProperty().configure(
 [recognizer-types]: bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-types
 
 [OnConversationUpdateActivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#onconversationupdateactivity
-[confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#confirminput
+[confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md##confirminput
 [cancel-all-dialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelclldialogs
 
 [lg]: ../file-format/bot-builder-lg-file-format.md
