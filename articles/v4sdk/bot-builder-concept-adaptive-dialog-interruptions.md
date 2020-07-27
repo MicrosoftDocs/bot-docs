@@ -94,13 +94,13 @@ By default adaptive dialogs do this in response to all user inputs:
    - If **true**, evaluate the triggers in the parent adaptive dialog and execute the actions of the first trigger that matches, then issue a re-prompt when the input action resumes.
    - If **false**, evaluate the _value_ property and assign its value to the property bound to the input. If null run the internal entity recognizer for that input action (e.g. number recognizer for number input etc) to resolve a value for that input action.
 
-### The AllowInterruptions property
+### The allow interruptions property
 
-`AllowInterruptions` is a property of the `InputDialog` class, which all inputs derive from, so it is available when [Asking for user input in adaptive dialogs][inputs]. The `AllowInterruptions` property is a `BoolExpression` which can be either a boolean (_true/false_) or an [adaptive expression][adaptive-expressions] which resolves to a boolean.
+_Allow interruptions_ is a property of the _input dialog_ class, which all inputs derive from, so it is available when [Asking for user input in adaptive dialogs][inputs]. The _allow interruptions_ property takes a _Boolean expression_, which can be either a boolean (_true/false_) or an [adaptive expression][adaptive-expressions] which resolves to a Boolean.
 
-The `AllowInterruptions` property is defined when you create your [inputs][inputs] and defaults to true. Some examples:
+The _allow interruptions_ property is defined when you create your [inputs][inputs] and defaults to true. Some examples:
 
-| `AllowInterruptions` property                       | Explanation                                                                                         |
+| _Allow interruptions_ value                       | Explanation                                                                                         |
 | --------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | "true"                           | Allow interruptions in this input.                                                                  |
 | "false"                          | Do not allow interruptions in this input.                                                           |
