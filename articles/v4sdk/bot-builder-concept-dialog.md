@@ -113,12 +113,18 @@ When one dialog tries to start another dialog, it does so by ID. The dialog cont
 
 ### Component dialogs
 
-Component dialogs use a sequence model for conversations.
+Component dialogs use a sequence model for conversations. Each dialog in the container is responsible for calling other dialogs in the container. When the component dialog's inner dialog stack is empty, the component ends.
+
+Consider using component and waterfall dialogs if your bot:
+
+- Uses a simple and consistent series of steps.
 
 ### Adaptive dialogs
 
 Adaptive dialogs use a flexible model for conversations.
-They offer several built-in capabilities, including interruption handling, attaching a recognizer to each dialog, using the language generation system, and more. With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
+An adaptive dialog can be designed to end or remain active when its inner dialog stack is empty.
+They offer several built-in capabilities, including interruption handling, attaching a recognizer to each dialog, using the language generation system, and more.
+With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
 
 An adaptive dialog is part of the dialogs library and works with all of the other dialog types.
 You can easily build a bot that uses many dialog types.
