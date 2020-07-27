@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-This article lists the available prebuilt functions ordered by their general purpose. For information about operators used in prebuilt functions and expression syntax, see [Operators](../v4sdk/bot-builder-concept-adaptive-expressions#operators).
+This article lists the available prebuilt functions ordered by their general purpose. For information about operators used in prebuilt functions and expression syntax, see [Operators](../v4sdk/bot-builder-concept-adaptive-expressions.md#operators).
 
 Prebuilt expressions are divided into the following function types:
 
