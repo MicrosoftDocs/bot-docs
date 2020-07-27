@@ -24,7 +24,7 @@ When you build a conversation flow that prompts for user input, you need to deci
 
 - [Introduction to adaptive dialogs][introduction]
 - [Asking for user input in adaptive dialogs][inputs]
-- A basic understanding of [Language Understanding][language-understanding] especially the [intent][intents] and [entity][entities] concepts.
+- A basic understanding of [Language Understanding][language-understanding], especially the [intent][intents] and [entity][entities] concepts.
 
 ## Building a conversational flow
 
