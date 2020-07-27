@@ -162,7 +162,7 @@ The _coffee types_ dialog responds to the users question and returns control bac
 
 ## Flexible entity extraction
 
-Whenever an adaptive dialog begins, any options passed into the dialog via `BeginDialog` become properties of that dialog and can be accessed as long as it is in [scope][dialog-scope]. You access these properties by name: `dialog.<propertyName>`.
+Whenever an adaptive dialog begins, any options passed into the dialog via _begin dialog_ become properties of that dialog and can be accessed as long as it is in [scope][dialog-scope]. You access these properties by name: `dialog.<propertyName>`.
 
 You can design your bot to use these values when present, and prompt the user when they are not. If you have a property associated with your input action, and s value for that property is passed in via `BeginDialog`, the user will not be prompted for it. There are situations when you may need to prompt the user for that information even when the property is not `null`. In these situations you can set `AlwaysPrompt` to `true`.
 
