@@ -9,10 +9,13 @@ ms.service: bot-service
 ms.date: 07/10/2020
 ---
 
+
 # Bot Framework FAQ index
 
-> [!NOTE]
-> Questions can be posted at [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. New users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+<!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below. -->
+
+The following are some common questions that address problems you might face.
+In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
 
 ## Background and availability
 

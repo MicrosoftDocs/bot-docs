@@ -159,18 +159,21 @@ Now that you have created a Webex app and wired up the adapter in your bot proje
 
 2. Navigate to [https://developer.webex.com/docs/api/v1/webhooks](https://developer.webex.com/docs/api/v1/webhooks).
 
-3. Click the link for the PUT method `https://api.ciscospark.com/v1/webhooks/{webhookId}` (with the description "Update a Webhook"). This will expand a form allowing you to send a request to the endpoint.
 
-    ![Set up bot](~/media/bot-service-adapter-connect-webex/webex-webhook-put-endpoint.png)
+3. Click the link for the **POST** method `https://webexapis.com/v1/webhooks` (with the description *Create a webhook*). This will display a form that allows you to send a request to the endpoint.
 
-4. Populate the form with the following details;
+    ![webhook endpoint](~/media/bot-service-adapter-connect-webex/webex-webhook-post-endpoint.png)
 
-    * Name (provide a name for your webhook, such as "Messages Webhook")
-    * Target URL (the full URL to your bot's Webex endpoint, such as `https://yourbotapp.azurewebsites.net/api/webex`)
-    * Secret (here you should provide a secret of your choice to secure your webhook)
-    * Status (leave this as the default setting of 'active')
+4. Populate the form with the following details:
 
-    ![Set up bot](~/media/bot-service-adapter-connect-webex/webex-webhook-form.png)
+    1. **Name** - The name for your webhook, for example *Messages Webhook*.
+    1. **TargetUrl** - The full URL to your bot's Webex endpoint, such as `https://yourbotapp.azurewebsites.net/api/webex`).
+    1. **Resource** - Messages.
+    1. **Event** - Created.
+    1. **filter** - Leave it blank.
+    1. **secret** - A secret of your choice to secure your webhook. Later you will add it to your bot's `appsettings.json`.
+
+    ![webhook form](~/media/bot-service-adapter-connect-webex/webex-webhook-form.png)
 
 5. Click **Run**, which should create your webhook and provide you with a success message.
 
@@ -184,7 +187,7 @@ Complete the remaining 3 settings in your bot's appsettings.json file (you alrea
 
 ## Re-deploy your bot in your Webex team
 
-Now that you have completed the configuration of your bot's settings in appsettings.json, you should re-deploy your bot (or restart your bot if you are tunnelling to a local endpoint using ngrok).  Configuration of you Webex app and bot are now complete.  
+Now that you have completed the configuration of your bot's settings in appsettings.json, you should re-deploy your bot (or restart your bot if you are tunnelling to a local endpoint using ngrok).  Configuration of you Webex app and bot are now complete.
 You can now login to your Webex team at [https://www.webex.com](https://www.webex.com) and chat with your bot by sending it a message, in the same way you would contact another person.
 
 ![Set up bot](~/media/bot-service-adapter-connect-webex/webex-contact-person.png)
