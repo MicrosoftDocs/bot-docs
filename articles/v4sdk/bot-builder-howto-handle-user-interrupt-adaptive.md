@@ -576,7 +576,7 @@ new SetProperty().configure(
 
 [OnConversationUpdateActivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#onconversationupdateactivity
 [confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md##confirminput
-[cancel-all-dialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelclldialogs
+[cancel-all-dialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
 
 [lg]: ../file-format/bot-builder-lg-file-format.md
 [language-generation]: bot-builder-concept-language-generation.md
