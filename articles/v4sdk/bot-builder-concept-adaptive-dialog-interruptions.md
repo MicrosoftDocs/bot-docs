@@ -89,10 +89,10 @@ Interruptions can be handled locally within a dialog as well as global by re-rou
 
 By default adaptive dialogs do this in response to all user inputs:
 
-- Run the recognizer configured on the adaptive dialog that contains the input action
-- Evaluate the `AllowInterruptions` expression.
-   - If **true**, evaluate the triggers in the parent adaptive dialog and execute the actions of any triggers that match, then issue a re-prompt when the input action resumes.
-   - If **false**, evaluate the value property and assign it as a value to the property. If null run the internal entity recognizer for that input action (e.g. number recognizer for number input etc) to resolve a value for that input action.
+- Run the recognizer configured on the adaptive dialog that contains the input action.
+- Evaluate the value of the _allow interruptions_ property.
+   - If **true**, evaluate the triggers in the parent adaptive dialog and execute the actions of the first trigger that matches, then issue a re-prompt when the input action resumes.
+   - If **false**, evaluate the _value_ property and assign its value to the property bound to the input. If null run the internal entity recognizer for that input action (e.g. number recognizer for number input etc) to resolve a value for that input action.
 
 ### The AllowInterruptions property
 
