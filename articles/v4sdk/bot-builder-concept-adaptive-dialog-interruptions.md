@@ -102,10 +102,10 @@ The `AllowInterruptions` property is defined when you create your [inputs][input
 
 | `AllowInterruptions` property                       | Explanation                                                                                         |
 | --------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| AllowInterruptions = true                           | Allow interruptions in this input.                                                                  |
-| AllowInterruptions = false                          | Do not allow interruptions in this input.                                                           |
-| AllowInterruptions = "turn.recognized.score <= 0.7" | Allow interruptions only if we do not have a high confidence classification of an intent.           |
-| AllowInterruptions = "turn.recognized.score >= 0.9 \|\| !@personName" | Allow interruptions only if you have a high confidence classification of an intent, or when you do not get a value for the `personName` entity.  |
+| "true"                           | Allow interruptions in this input.                                                                  |
+| "false"                          | Do not allow interruptions in this input.                                                           |
+| "turn.recognized.score <= 0.7" | Allow interruptions only if we do not have a high confidence classification of an intent.           |
+| "turn.recognized.score >= 0.9 \|\| !@personName" | Allow interruptions only if you have a high confidence classification of an intent, or when you do not get a value for the `personName` entity.  |
 
 > [!TIP]
 >
