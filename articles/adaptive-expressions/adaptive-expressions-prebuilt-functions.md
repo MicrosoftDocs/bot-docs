@@ -15,7 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-This article lists the available prebuilt functions ordered by their general purpose. Prebuilt expressions are divided into the following function types:
+This article lists the available prebuilt functions ordered by their general purpose. For information about operators used in prebuilt functions and expression syntax, see [Operators](../v4sdk/bot-builder-concept-adaptive-expressions#operators).
+
+Prebuilt expressions are divided into the following function types:
 
 - [String](#string-functions)
 - [Collection](#collection-functions)
@@ -29,7 +31,7 @@ This article lists the available prebuilt functions ordered by their general pur
 - [Regular expression](#regular-expression-functions)
 - [Type checking](#type-checking-functions)
 
-You can also view the list in [alphabetical order](#add).
+You can also view the list in [alphabetical order](#add). 
 
 ### String functions
 
