@@ -118,6 +118,10 @@ Add the following values to **appsettings.json**:
   }
 ```
 
+> [!NOTE]
+>
+> The generated file names may differ depending on your computers local settings, in the example used here the locale setting is `en_us`.
+
 - **GetUserProfileDialog_en_us_lu**: Get this value from the file named **luis.settings.\<youralias>.\<region>.json** that was generated as a part of running the `bf luis:build` command.
 
 - **RootDialog_en_us_lu**: Get this value from the file named **luis.settings.\<youralias>.\<region>.json** that was generated as a part of running the `bf luis:build` command.
@@ -446,7 +450,19 @@ Here is the LG Template in RootDialog.lg:
 
 ### GetUserProfileDialog
 
-The `userProfileDialog` dialog defined in **GetUserProfileDialog.cs** is the only child dialog in this bot, so all global interruptions will go directly to the root dialog. A quick search of the **GetUserProfileDialog.lu** file will show that there are no  _Help_ or _Cancel_ intents defined. Without the adaptive dialog consultation mechanism, handling these interruptions in `userProfileDialog` would be much more difficult, but because of the effort put into the Bot Framework SDK, these interruptions are easy to handle. Any actions defined in this dialog that has its `AllowInterruptions` property set or evaluate to `true` will enable these interruptions to be handled by its parent dialog, in this case the root dialog.
+The dialog defined in **GetUserProfileDialog** is named `userProfileDialog`. This dialog is called by the root dialog in response to the user entering an utterance, also know as a _trigger phrase_, that is associated with the `GetUserProfile` intent defined in **RootDialog.lu**.
+
+[!code-json[env](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lu?range=1-5)]
+
+```plaintext
+# GetUserProfile
+- Hi
+- My name is vishwac
+- I'm 36 years old
+- Profile
+```
+
+The `userProfileDialog` dialog is the only child dialog in this bot, so all global interruptions will go directly to the root dialog. A quick search of the **GetUserProfileDialog.lu** file will show that there are no  _Help_ or _Cancel_ intents defined. Without the adaptive dialog consultation mechanism, handling these interruptions in `userProfileDialog` would be much more difficult, but because of the effort put into the Bot Framework SDK, these interruptions are easy to handle. Any actions defined in this dialog that has its `AllowInterruptions` property set or evaluate to `true` will enable these interruptions to be handled by its parent dialog, in this case the root dialog.
 
 There are also two local interrupts defined, they are defined as `OnIntent` actions that handle the _Why_ and _NoValue_ intents. You can open the **GetUserProfileDialog.lu** file to view, add or update the utterances associated with these intents. These intents are not a part of the conversational flow, and as such and are handled as local interrupts. Once these interrupts complete, control is returned to the action that was interrupted to seamlessly continue the conversational flow where it left off.
 
@@ -454,9 +470,28 @@ There are also two local interrupts defined, they are defined as `OnIntent` acti
 
 Configuring its recognizer is the first thing that happens when `userProfileDialog` is created. Every dialog configures its own recognizer independent of all other dialogs, and each dialog can use the same type of recognizer, or each can use a different recognizer. Each dialog in your bot can use any type of recognizer defined in the Bot Framework SDK, regardless of what any other dialog is using. To learn more about the different types available, see the [recognizer types][recognizer-types] section of the recognizers concept article. <!---  Add ", or a custom recognizer" once there is an article that discusses this.  -->
 
-As mentioned previously, every adaptive dialog has its own recognizer, and the `.lu` file associated with it is exclusively tied to that dialog. In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialogs `.lu` file, the adaptive dialog consultation mechanism enables your bot to bubble up the user intent to the parent dialog to handle, if it can. In this case the _Help_ and _Cancel_ intents are defined in the root dialog, but your bot can still handle those user intents even when the userProfileDialog is the active dialog. This is explained in detail in the section titled [GetUserProfileDialog Triggers][#getuserprofiledialog-triggers] below.
+As mentioned previously, every adaptive dialog has its own recognizer, and the `.lu` file associated with it is exclusively tied to that dialog. In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialogs `.lu` file, the adaptive dialog consultation mechanism enables your bot to bubble up the user intent to the parent dialog to handle, if it can. In this case the _Help_ and _Cancel_ intents are defined in the root dialog, but your bot can still handle those user intents even when `userProfileDialog` is the active dialog. This is explained in detail in the section titled [GetUserProfileDialog Triggers][#getuserprofiledialog-triggers] below.
 
-The code used in GetUserProfileDialog used to define the recognizer is the same as the code used in the [root dialog](#rootdialog-recognizer), so will will not be explained in detail here.
+For the most part, the code in GetUserProfileDialog used to define the recognizer is the same as the code used in the [root dialog](#rootdialog-recognizer), the only difference is that you need to reference GetUserProfileDialog_en_us_lu for the `ApplicationId ` value as opposed to RootDialog_en_us_lu, in the `CreateLuisRecognizer` method. See the section [Files generated](#files-generated) for more information about the file being referenced.
+
+[!code-csharp[CreateLuisRecognizer](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=171-186&highlight=10)]
+
+```csharp
+        private static Recognizer CreateLuisRecognizer(IConfiguration configuration)
+        {
+            if (string.IsNullOrEmpty(configuration["luis:GetUserProfileDialog_en_us_lu"]) || string.IsNullOrEmpty(configuration["luis:LuisAPIKey"]) || string.IsNullOrEmpty(configuration["luis:LuisAPIHostName"]))
+            {
+                throw new Exception("NOTE: LUIS is not configured for RootDialog. To enable all capabilities, add 'LuisAppId-RootDialog', 'LuisAPIKey' and 'LuisAPIHostName' to the appsettings.json file.");
+            }
+
+            return new LuisAdaptiveRecognizer()
+            {
+                ApplicationId = configuration["luis:GetUserProfileDialog_en_us_lu"],     //  <------- This line should be highlighted in the above code snippet.
+                EndpointKey = configuration["luis:LuisAPIKey"],
+                Endpoint = configuration["luis:LuisAPIHostName"]
+            };
+        }
+```
 
 #### GetUserProfileDialog Generator
 
@@ -491,19 +526,12 @@ const dialog = new AdaptiveDialog(DIALOG_ID).configure({
 
 #### GetUserProfileDialog Triggers
 
-The dialog defined in **GetUserProfileDialog** is named `userProfileDialog`. This dialog is called by the root dialog in response to the user entering an utterance, also know as a _trigger phrase_, that is associated with the `GetUserProfile` intent defined in **RootDialog.lu**.
+Once called, the `OnBeginDialog` trigger executes:
 
-[!code-json[env](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lu?range=1-5)]
-
-```plaintext
-# GetUserProfile
-- Hi
-- My name is vishwac
-- I'm 36 years old
-- Profile
-```
-
-Once called, the `OnBeginDialog` trigger executes, which in turn executes the two `PropertyAssignment` actions that define two new properties: `user.profile.name` and `user.profile.age`.
+- Two `PropertyAssignment` actions execute defining two new properties: `user.profile.name` and `user.profile.age`.
+- These properties get populated if the entities are present, such as the _this dialog_ being triggered by the phrase, "Hi, I'm Vishwac". The `@Personname` entity would be _Vishwac_.
+- If either property is null, the bot will prompt the user for the missing information using _text input_ actions.
+- Both the input actions allow interrupts, using adaptive expressions.
 
 <!--# [C#](#tab/csharp)-->
 
@@ -551,6 +579,8 @@ new SetProperty().configure(
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
 1. Start the emulator, connect to your bot, and send messages as shown below.
+
+The screen shot shown below verifies that you can interrupt the conversational flow by requesting help even though the currently active adaptive dialog does not contain the corresponding trigger.
 
 ![test adaptive dialog interruption sample](./media/adaptive-dialogs/test-interruption-bot.png)
 
