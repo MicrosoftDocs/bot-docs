@@ -72,7 +72,7 @@ This section explains how to use the Bot Framework CLI to connect your bot to yo
 1. Using Node.js, install the Bot Framework CLI from the command line.
 
     ```bash
-    > npm i -g @microsoft/botframework-cli
+    npm i -g @microsoft/botframework-cli
     ```
 
 1. In a command prompt, navigate to the root directory of your interruption bot sample, generally `..\samples\csharp_dotnetcore\adaptive-dialog\05.interruptions-bot`.
