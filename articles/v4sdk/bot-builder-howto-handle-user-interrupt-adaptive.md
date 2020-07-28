@@ -160,7 +160,7 @@ The sample used in this article demonstrates how to create a bot that uses LUIS 
 
 ### RootDialog
 
-The RootDialog is the root or main dialog of this bot. It is the parent the only other dialog in this bot: [UserProfileDialog](#getuserprofiledialog).
+The RootDialog is the root or main dialog of this bot. It is the parent of the only other adaptive dialog in this bot: [UserProfileDialog](#getuserprofiledialog).
 
 #### RootDialog Recognizer
 
