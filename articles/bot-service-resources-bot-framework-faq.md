@@ -45,7 +45,7 @@ In case you don't find the answer you're looking for, you can post your question
 
 ## Ecosystem
 
-- [How do I enable the emulator to connect to localhost while behind a corporate proxy?](bot-service-resources-faq-ecosystem.md#how-do-i-enable-the-emulator-to-connect-to-localhost-while-behind-a-corporate-proxy?)
+- [How do I enable the emulator to connect to localhost while behind a corporate proxy?](bot-service-resources-faq-ecosystem.md#how-do-i-enable-the-emulator-to-connect-to-localhost-while-behind-a-corporate-proxy)
 - [When will you add more conversation experiences to the Bot Framework?](bot-service-resources-faq-ecosystem.md#when-will-you-add-more-conversation-experiences-to-the-bot-framework)
 - [I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?](bot-service-resources-faq-ecosystem.md#i-have-a-communication-channel-id-like-to-be-configurable-with-bot-framework-can-i-work-with-microsoft-to-do-that)
 - [If I want to create a bot for Microsoft Teams, what tools and services should I use?](bot-service-resources-faq-ecosystem.md#if-i-want-to-create-a-bot-for-microsoft-teams-what-tools-and-services-should-i-use)
