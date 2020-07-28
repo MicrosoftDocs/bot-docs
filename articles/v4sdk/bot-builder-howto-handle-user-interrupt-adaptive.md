@@ -26,9 +26,19 @@ Handling interruptions is an advanced bot development topic. To get the most fro
 - A working knowledge of how to [Create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md).
 - A copy of the `InterruptionsBot` sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample]. <!-- or [**Python**][python-sample].-->
 
-## Creating LUIS resources in the Azure portal and configuring your bot
+## Setting up LUIS to work in your bot
 
-This section details configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The InterruptionsBot sample](#the-interruptionsbot-sample).
+This section details how you create LUIS resources in the Azure portal, then configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The InterruptionsBot sample](#the-interruptionsbot-sample).
+
+What is covered in this section:
+
+1. [Create LUIS resources in the Azure portal](#create-luis-resources-in-the-azure-portal)
+1. [Get your authoring key](#get-your-authoring-key)
+1. [Use CLI to connect your bot to your LUIS resource in Azure](#use-cli-to-connect-your-bot-to-your-luis-resource-in-azure)
+1. [Update your configuration file](#update-your-configuration-file)
+
+
+### Create LUIS resources in the Azure portal
 
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
@@ -63,7 +73,7 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
 
 With this new LUIS resources in Azure portal, you are now ready to connect your bot to it.
 
-## Using CLI to connect your bot to your LUIS resource in Azure
+### Use CLI to connect your bot to your LUIS resource in Azure
 
 This section explains how to use the Bot Framework CLI to connect your bot to your LUIS resources in Azure. This automates the various tasks required to create, update, train and publish LUIS applications for each .lu file for the bot. In order to use this, you first need Node.js and the Bot Framework CLI.
 
@@ -97,13 +107,13 @@ The following are the **bf luis:build parameters:**
 
 Running the `bf luis:build` command does several things. It uploads all of the information contained in all of your .lu files to your LUIS resource in Azure and then performs the required LUIS training and publishing.  All you need to do now is update your configuration file with the information generated as a result of the steps taken previously.
 
-### Files generated
+#### Files generated
 
 There are two types of files generated during the `bf luis:build` process, the first is a `.json` file which contains information needed by your bot which you need to add to your [configuration file](#update-your-configuration-file). This file is named `luis.settings.<youralias>.<region>.json`.
 
 The second type of file generated are `.dialog` files, which are useful when using the declarative form of adaptive dialogs. You do not need the two generated .dialog files for this how-to article.
 
-## Update your configuration file
+### Update your configuration file
 
 <!--# [C#](#tab/csharp)-->
 
