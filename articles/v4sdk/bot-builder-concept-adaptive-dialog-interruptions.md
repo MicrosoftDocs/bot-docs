@@ -71,7 +71,7 @@ Unlike a form with a predefined set of fields that a user would fill in, a bot e
 - A bot that does flight bookings
    - being asked the temperature forecast for the destination in the middle of booking a flight.
    - The user requesting to add a car rental in the final flight booking confirmation.
-- Being asked what time the shop opens in the middle of ordering a coffee.
+- A bot being asked what time the shop opens in the middle of ordering a coffee.
 - Asking for a medical or legal definition, then returning to complete the series of questions.
 - A request for _help_ in the middle of any conversation.
 - A request to _cancel_ in the middle of any conversation.
