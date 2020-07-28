@@ -40,7 +40,7 @@ This section details configuring and setting up LUIS to work with this sample. I
    ![Set Create options to Authoring](./media/adaptive-dialogs/create-cognitive-services.png)
 
     > [!NOTE]
-    > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will will be part of your **Endpoint URL**.
+    > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
 
 4. Review the values to ensure they are correct, then select the **Create** button.
 
