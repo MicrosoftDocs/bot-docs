@@ -24,11 +24,11 @@ Handling interruptions is an advanced bot development topic. To get the most fro
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and [dialogs library][concept-dialogs] Bot Framework SDK concepts.
 - Understanding of the adaptive dialog concepts covered in the [Introduction to adaptive dialogs][adaptive-dialog-introduction], [Asking for user input in adaptive dialogs][adaptive-dialog-input] and [Handling interruptions in adaptive dialog][adaptive-dialog-interruptions] concept articles.
 - A working knowledge of how to [Create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md).
-- A copy of the interruption bot sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample]. <!-- or [**Python**][python-sample].-->
+- A copy of the `InterruptionsBot` sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample]. <!-- or [**Python**][python-sample].-->
 
 ## Creating LUIS resources in the Azure portal and configuring your bot
 
-This section details configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The Interruptions Bot sample](#the-interruptions-bot-sample).
+This section details configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The InterruptionsBot sample](#the-interruptionsbot-sample).
 
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
@@ -77,7 +77,7 @@ This section explains how to use the Bot Framework CLI to connect your bot to yo
     npm i -g @microsoft/botframework-cli
     ```
 
-1. In a command prompt, navigate to the root directory of your interruption bot sample, generally `..\samples\csharp_dotnetcore\adaptive-dialog\05.interruptions-bot`.
+1. In a command prompt, navigate to the root directory of your InterruptionBot sample, generally `..\samples\csharp_dotnetcore\adaptive-dialog\05.interruptions-bot`.
 
 Now you are ready to connect your bot to your LUIS resources in Azure using the Bot Framework CLI.
 
@@ -154,7 +154,7 @@ LuisAPIKey=
 -->
 You should now be able to use LUIS in your bot.
 
-## The Interruptions Bot sample
+## The InterruptionsBot sample
 
 The sample used in this article demonstrates how to create a bot that uses LUIS and adaptive dialogs to achieve advanced LU concepts, including interruption handling. At any time during the conversation with the bot, the user can issue _help_ or _cancel_ commands to interrupt the current conversational flow.
 
