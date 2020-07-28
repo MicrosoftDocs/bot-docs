@@ -62,7 +62,7 @@ If you haven't anticipated user interruptions, assuming some basic level of erro
 >
 > **Bot**:  What type of coffee would you like?
 
-Adaptive dialogs provide an answer to this dilemma using _interruptions_. Interruptions is a technique available in an adaptive dialog that enables the bot to understand and respond to user input that does not directly pertain to the specific piece of input that was requested.
+Adaptive dialogs provide an answer to this dilemma using _interruptions_. Interruptions is a technique available in an adaptive dialog that enables the bot to understand and respond to user input that does not directly pertain to the specific piece of information the bot is prompting the user for.
 
 ### Examples of interruptions to a conversational flow
 
@@ -79,7 +79,7 @@ Unlike a form with a predefined set of fields that a user would fill in, a bot e
 
 ## Interruptions
 
-Interruptions can be handled locally within a dialog as well as global by re-routing to another dialog. You can use interruption as a technique to:
+Interruptions can be handled locally within a dialog as well as globally by re-routing to another dialog. You can use interruption as a technique to:
 
 - Detect and handle user's response as a locally relevant intent within the scope of the active dialog, meaning the dialog that prompted the user for information.
 - Detect that a different dialog would be better suited to handle the user input and then using the adaptive dialog consultation mechanism to enable a different dialog handle the user input.
