@@ -28,7 +28,7 @@ Handling interruptions is an advanced bot development topic. To get the most fro
 
 ## Creating LUIS resources in the Azure portal and configuring your bot
 
-This section details configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The Interruptions Bot sample](#the-interruptions-bot-sample)
+This section details configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The Interruptions Bot sample](#the-interruptions-bot-sample).
 
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
