@@ -48,7 +48,7 @@ This section details configuring and setting up LUIS to work with this sample. I
 
 Now that you have created your LUIS resource in the Azure portal, you can get your authoring key.
 
-1. Once Azure is done creating your LUIS resources in the Azure portal, you will see a screen with ***Your deployment is complete***, select the **Go to resource** button.
+1. Once Azure is done creating your LUIS resources in the Azure portal, you will see a **Your deployment is complete** notification, click **Go to resource**.
 
    ![select the Go to resource button](./media/adaptive-dialogs/your-deployment-is-complete.png)
 
