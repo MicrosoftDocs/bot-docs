@@ -25,6 +25,8 @@ You can read more about the Bot Framework handoff protocol <a href="https://aka.
 
 Microsoft Bot Framework supports two models for integration with agent engagement platforms. The handoff protocol is identical for both models, however the onboarding details differ between the models and the agent engagement platforms.
 
+The goal is not to offer a universal solution for integration with any customer's system, but rather to provide a **common language** and **best practices** for bot developers and system integrators building conversational AI systems with human in the loop.
+
 ### Bot as an agent
 
 In the first model, known as "Bot as an agent", the bot joins the ranks of the live agents connected to the agent hub and responds to user requests as if the requests came from any other Bot Framework channel. The conversation between the user and the bot can be escalated to a human agent, at which point the bot disengages from the active conversation.
@@ -51,9 +53,9 @@ The event contains two components:
 - The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
 
 
-### Handoff Initiation
+### Handoff initiation
 
-_Handoff Initiation_ event is created by the bot to initiate handoff. The event contains the payload as described below.
+The *Handoff Initiation* event is created by the bot to initiate handoff. The event contains the payload as described below.
 
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
 
@@ -89,7 +91,7 @@ await turnContext.SendActivityAsync(handoffEvent);
 
 - **Conversation** - The `conversation` is a REQUIRED field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
 
-### Handoff Status
+### Handoff status
 
 The *Handoff Status* event is sent to the bot by the agent hub. The event informs the bot about the status of the initiated handoff operation.
 
@@ -122,34 +124,9 @@ The format and possible value of the `message` field are unspecified.
 
 - **Conversation** -`Conversation`is a **required** field of type `ConversationAccount` describing the conversation that has been accepted or rejected. The `Id` of the conversation MUST be the same as in the HandoffInitiation that initiated the handoff.
 
-### Example
+## Handoff library
 
-```C#
-protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-{
-    if (turnContext.Activity.Text.Contains("human"))
-    {
-        await turnContext.SendActivityAsync($"You have requested transfer to an agent");
-
-        var transcript = GetTranscript(); // defined elsewhere
-        var context = new { Skill = "credit cards" };
-
-        var handoffEvent = EventFactory.CreateHandoffInitiation(turnContext, context, new Transcript(transcript));
-        await turnContext.SendActivityAsync(handoffEvent);
-
-        await turnContext.SendActivityAsync($"Agent transfer has been initiated");
-
-    }
-    else
-    {
-        // handle other utterances
-    }
-}
-```
-
-## Handoff Library
-
-The **Handoff Library** has been created to complement the Bot Framework v4 SDK in supporting handoff. The goal is not to offer a universal solution for integration with any customer's system, but rather to provide a **common language** and **best practices** for bot developers and system integrators building conversational AI systems with human in the loop. Specifically
+The **Handoff Library** has been created to complement the Bot Framework v4 SDK in supporting handoff; specifically:
 
 - Implements the additions to the Bot Framework SDK to support handoff to an agent (also known as *escalation*.
 - Contains definitions of three event types for signaling handoff operations.
