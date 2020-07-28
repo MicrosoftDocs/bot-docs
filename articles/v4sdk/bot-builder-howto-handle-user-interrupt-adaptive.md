@@ -101,13 +101,7 @@ Running the `bf luis:build` command does several things. It uploads all of the i
 
 There are two types of files generated during the `bf luis:build` process, the first is a `.json` file which contains information needed by your bot which you need to add to your [configuration file](#update-your-configuration-file). This file is named `luis.settings.<youralias>.<region>.json`.
 
-The second type of file generated are `.dialog` files, which are useful when using the declarative form of adaptive dialogs. 
-
-There are two `.dialog` files generated for each `.lu` file found:
-
-1. The first is named `<lu-filename>.en-us.lu.dialog`
-
-2. The second is named `<lu-filename>.lu.dialog`
+The second type of file generated are `.dialog` files, which are useful when using the declarative form of adaptive dialogs. You do not need the two generated .dialog files for this how-to article.
 
 ## Update your configuration file
 
