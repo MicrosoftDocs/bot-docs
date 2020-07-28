@@ -282,7 +282,7 @@ Next are the options shown to the user with an explanation of what happens when 
 If selected:
 
 1. The `OnIntent` trigger containing _Intent = "GetUserProfile"_ fires
-1. The action `BeginDialog` executes, instantiating the `userProfileDialog` dialog, which in turn configures its own recognize and generator then executes its triggers and actions.
+1. It starts the `userProfileDialog` dialog, another adaptive dialog, which in turn configures its own recognizer and generator and executes its triggers and actions.
 1. The `userProfileDialog` dialog will be discussed in the [GetUserProfileDialog](#getuserprofiledialog) section below.
 
 Here is the code of the `OnIntent` trigger, in **RootDialog.cs**, that handles the _GetUserProfile_ intent:
