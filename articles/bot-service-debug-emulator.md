@@ -64,9 +64,11 @@ At this point, your bot should be running locally.
 
 ### Configure proxy settings
 
-When you are developing behind a corporate proxy, the emulator will use the configured environment variables `HTTP_PROXY` and `HTTPS_PROXY`, which specify the proxy URL route for HTTP and HTTPs requests respectively. This means that the emulator try to use the proxy to connect to `localhost`. Typically, the proxy will block the connection unless you perform the step described below.
+When you are developing behind a corporate proxy, the emulator will use the configured environment variables `HTTP_PROXY` and `HTTPS_PROXY`, which specify the proxy URL route for HTTP and HTTPs requests respectively.
 
-In order to bypass the `HTTP_PROXY` and `HTTPS_PROXY` settings and allow the emulator to connect to `localhost`, you must define the following environment variable on your local machine:
+If you are connecting to a bot running on `localhost`, the emulator will first try to route through the proxy before connecting to `localhost`. Typically, the proxy will block the connection unless you specify that it should be bypassed for `localhost`.
+
+In order to bypass the `HTTP_PROXY` and `HTTPS_PROXY` settings and allow the emulator to connect to `localhost`, on your local machine you must define the following environment variable :
 
 ```cmd
     NO_PROXY=localhost
