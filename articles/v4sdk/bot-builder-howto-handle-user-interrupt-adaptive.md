@@ -232,7 +232,7 @@ createLuisRecognizer() {
 
 #### RootDialog Generator
 
-The generator requires a valid [Language Generation][language-generation] (.lg) file that defines the language generation templates that will be used by that dialog. This file is given the same name as the filename containing the dialog, with the `.lg` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lg file will be _RootDialog.lg_. The .lg file is used exclusively by that dialog.
+The generator requires a valid [language generation][language-generation] (.lg) file that defines the language generation templates that will be used by that dialog. This file is given the same name as the filename containing the dialog, with the `.lg` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lg file will be _RootDialog.lg_. The .lg file is used exclusively by that dialog.
 
 <!--# [C#](#tab/csharp)-->
 
