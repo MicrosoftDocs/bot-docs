@@ -53,7 +53,7 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
    ![select the Go to resource button](./media/adaptive-dialogs/your-deployment-is-complete.png)
 
 2. In the left panel, select **Keys and Endpoint**.
-3. Copy the **KEY 1** value, this is your ***Authoring Key***. You need to enter this as the value for:
+3. Copy the **KEY 1** value, this is your *Authoring Key*. You need to enter this as the value for:
     -  `LuisAPIKey`: A setting in your configuration file.
     - `--authoringKey`: A property of the `bf luis:build` CLI command that is discussed in the following section.
 
