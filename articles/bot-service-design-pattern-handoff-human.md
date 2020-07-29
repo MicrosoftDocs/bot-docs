@@ -82,7 +82,8 @@ The following are the handoff initiation event fields:
 
 - **Conversation** - The `conversation` is a **required** field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
 
-When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
+When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event.
+In C# an higher level API `CreateHandoffInitiation` method can be used as demonstrated in the code snippet below.
 
 ```C#
 var activities = GetRecentActivities();
