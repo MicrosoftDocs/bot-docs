@@ -45,30 +45,21 @@ Flexibility and control are the main advantages of this model. The bot can suppo
 
 ## Handoff protocol
 
-The protocol is centered around events for initiation (sent by the bot to the channel) and status update (sent by the channel to the bot).
+The protocol is centered around events for initiation, sent by the bot to the channel, and status update, sent by the channel to the bot.
+
+
+### Handoff initiation
+
+The *Handoff Initiation* event is created by the bot to initiate handoff.
 
 The event contains two components:
 
 - The **context of the handoff request** that is necessary to route the conversation to the right agent.
 - The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
 
+The following are the handoff initiation event fields:
 
-### Handoff initiation
-
-The *Handoff Initiation* event is created by the bot to initiate handoff. The event contains the payload as described below.
-
-When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
-
-```C#
-var activities = GetRecentActivities();
-var handoffContext = new { Skill = "credit cards" };
-var handoffEvent =
-    EventFactory.CreateHandoffInitiation(
-        turnContext, handoffContext, new Transcript(activities));
-await turnContext.SendActivityAsync(handoffEvent);
-```
-
-- **Name** - The `name` is a REQUIRED field that is set to `"handoff.initiate"`.
+- **Name** - The `name` is a **required** field that is set to `"handoff.initiate"`.
 - **Value** - The `value` field is an object containing agent hub-specific JSON content, such as required agent skill and so on.  This field is **optional**.
 
     ```json
@@ -89,14 +80,27 @@ await turnContext.SendActivityAsync(handoffEvent);
     > [!NOTE]
     > Agent hubs **must ignore** attachment types they don't understand.
 
-- **Conversation** - The `conversation` is a REQUIRED field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
+- **Conversation** - The `conversation` is a **required** field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
+
+When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event, as demonstrated in the following C# code snippet.
+
+```C#
+var activities = GetRecentActivities();
+var handoffContext = new { Skill = "credit cards" };
+var handoffEvent =
+    EventFactory.CreateHandoffInitiation(
+        turnContext, handoffContext, new Transcript(activities));
+await turnContext.SendActivityAsync(handoffEvent);
+```
 
 ### Handoff status
 
 The *Handoff Status* event is sent to the bot by the agent hub. The event informs the bot about the status of the initiated handoff operation.
 
 > [!NOTE]
-> Bots are NOT REQUIRED to handle the event, however they MUST NOT reject it.
+> Bots are **not required** to handle the event, however they **must not** reject it.
+
+The following are the handoff status event fields:
 
 - **Name** - The `name` is a **required** field that is set to `"handoff.status"`.
 
