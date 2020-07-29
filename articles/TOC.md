@@ -125,9 +125,9 @@
 ### [Memory scopes](adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
-### [API reference](adaptive-expressions/adaptive-expressions-api-reference.md)
+### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)
 ## LG
-### [API reference](language-generation/language-generation-api-reference.md)
+### [API reference](language-generation/language-generation-API-reference.md)
 ### [.lg file format](file-format/bot-builder-lg-file-format.md)
 ### [Structured response template](language-generation/language-generation-structured-response-template.md)
 ### [Functions injected from LG](language-generation/functions-injected-from-language-generation.md)
