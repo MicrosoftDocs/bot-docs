@@ -43,7 +43,7 @@ The connection steps are different for each channel, see the related article for
 > [!div class="mx-tdBreakAll"]
 > |Channel|Description|
 > |-------------|----------|
-> |[Alexa](bot-service-channel-connect-alexa.md) <img width="300px"/>|Communicate with people using Alexa devices that support Custom Skills.|
+> |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with people using Alexa devices that support Custom Skills.|
 > |[Cortana](bot-service-channel-connect-cortana.md)|Cortana is a speech-enabled channel that can send and receive voice messages in addition to textual conversation.|
 > |[Direct Line](bot-service-channel-directline.md)|Direct Line allows the integration of a bot into a mobile app, web page, or other applications.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enables a bot to communicate with users via Office 365 email.|
@@ -57,7 +57,7 @@ The connection steps are different for each channel, see the related article for
 > |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with people through Telegram.|
 > |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with people using the Twilio cloud communication platform.|
 > |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with people using the WeChat platform.|
-> |[Web Chat](bot-service-adapter-connect-webchat.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
+> |[Web Chat](bot-service-channel-connect-webchat.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
 > |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with people using the Webex.|
 > |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://botkit.ai/docs/v4/platforms/)|
 
