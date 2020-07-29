@@ -50,16 +50,16 @@ The connection steps are different for each channel, see the related article for
 > |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
 > |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with people using the Kik messaging app.|
 > |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with people through the LINE app.|
-> |[Microsoft Teams](bot-service-channel-connect-teams.md)|Configure a bot to communicate with people through Microsoft Teams.|
+> |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with people through Microsoft Teams.|
 > |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with people through Skype.|
 > |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with people through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with people through Slack.|
 > |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with people through Telegram.|
 > |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with people using the Twilio cloud communication platform.|
 > |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with people using the WeChat platform.|
-> |[Web Chat](bot-service-channel-connect-webchat.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
-> |[Webex](bot-service-channel-connect-webex.md)|Configure a bot to communicate with people using the Webex.|
-> |[Additional channels](bot-service-channel-connect-additional-channels.md)|Additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://botkit.ai/docs/v4/platforms/)|
+> |[Web Chat](bot-service-adapter-connect-webex.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
+> |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with people using the Webex.|
+> |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://botkit.ai/docs/v4/platforms/)|
 
 
 ## Publish a bot
