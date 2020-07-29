@@ -120,7 +120,7 @@ Read the [using prebuilt function in variations](../file-format/bot-builder-lg-f
 
 ## Adaptive Cards templating
 
-[Adaptive cards templating](https://docs.microsoft.com/adaptive-cards/templating/) can be used by developers of bots and other technologies to separate data from the layout in an Adaptive Card. Developers can provide [data inline](https://docs.microsoft.com/adaptive-cards/templating/language#option-a-inline-data) with the `AdaptiveCard` payload, or the more common approach of [separating the data from the template](https://docs.microsoft.com/adaptive-cards/templating/language#option-b-separating-the-template-from-the-data).
+[Adaptive Cards templating](https://docs.microsoft.com/adaptive-cards/templating/) can be used by developers of bots and other technologies to separate data from the layout in an Adaptive Card. Developers can provide [data inline](https://docs.microsoft.com/adaptive-cards/templating/language#option-a-inline-data) with the `AdaptiveCard` payload, or the more common approach of [separating the data from the template](https://docs.microsoft.com/adaptive-cards/templating/language#option-b-separating-the-template-from-the-data).
 
 For example, say you have the following data:
 
