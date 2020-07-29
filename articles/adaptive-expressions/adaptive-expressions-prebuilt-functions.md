@@ -218,6 +218,7 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
+|[EOL](#EOL)| Return the end of line (EOL) sequence text.|
 |[isInteger](#isInteger)|Return true if  given input is an integer number|
 |[isFloat](#isFloat)|Return true if the given input is a float point number|
 |[isBoolean](#isBoolean)|Return true if the given input is a Boolean.|
@@ -1535,6 +1536,34 @@ endsWith('hello world', 'universe')
 ```
 
 And it returns the result `false`.
+
+<a name="EOL"></a>
+
+### EOL
+
+Return the end of line (EOL) sequence text.
+
+```
+EOL()
+```
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*IsOSPlatform*>| string | Return **\r\n** in Windows and **\n** in Mac and Linux. |
+||||
+
+*Example*
+
+This example checks the end of the line:
+
+```
+EOL()
+```
+
+And returns the following:
+
+- Windows: **\r\n**
+- Mac or Linux: **\n**
 
 <a name="equals"></a>
 
