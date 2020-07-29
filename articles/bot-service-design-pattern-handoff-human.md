@@ -131,14 +131,13 @@ The format and possible value of the `message` field are unspecified.
 
 ## Handoff library
 
-The **Handoff Library** has been created to complement the Bot Framework v4 SDK in supporting handoff; specifically:
+The [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library) has been created to complement the Bot Framework v4 SDK in supporting handoff; specifically:
 
 - Implements the additions to the Bot Framework SDK to support handoff to an agent (also known as *escalation*.
 - Contains definitions of three event types for signaling handoff operations.
 
 > [!NOTE]
 > Integrations with specific agent hubs are not part of the library.
-> The library will be merged in a future release of the Bot Framework SDK.
 
 ## Additional resources
 
