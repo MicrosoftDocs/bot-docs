@@ -31,7 +31,7 @@ Prebuilt expressions are divided into the following function types:
 - [Regular expression](#regular-expression-functions)
 - [Type checking](#type-checking-functions)
 
-You can also view the list in [alphabetical order](#add). 
+You can also view the list in [alphabetical order](#add).
 
 ### String functions
 
@@ -53,8 +53,8 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
-|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a heading and leave other letters lowercase.|
-|[titleCase](#titleCase)|Capitalize the first letter of each word and leave other letters lowercase.|
+|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string.|
+|[titleCase](#titleCase)|Capitalize the first letter of each word in a string.|
 
 ### Collection functions
 
@@ -842,16 +842,15 @@ coalesce(<object**1>, <object**2>, ...)
 
 *Example*
 
-These examples return the first non-null value from the specified values, or null when all the values are null.
+These examples return the first non-null value from the specified values, or null when all the values are null:
 
-Here are some examples:
 ```
 coalesce(null, true, false)
 coalesce(null, 'hello', 'world')
 coalesce(null, null, null)
 ```
 
-They respectively return these results:
+And respectively return:
 
 - `true`
 - **hello**
@@ -1554,13 +1553,13 @@ EOL()
 
 *Example*
 
-This example checks the end of the line:
+This example checks the end of the line sequence text:
 
 ```
 EOL()
 ```
 
-And returns the following:
+And returns the following strings:
 
 - Windows: **\r\n**
 - Mac or Linux: **\n**
@@ -1759,7 +1758,7 @@ float('<value>')
 
 *Example*
 
-This example creates the float version of the following string:
+This example converts the float version of a string:
 
 ```
 float('10.333')
@@ -4282,7 +4281,7 @@ And returns the result `false`.
 
 ### sentenceCase
 
-Capitalize the first letter of the first word in a heading and leave others letters lowercase.
+Capitalize the first letter of the first word in a string.
 
 ```
 sentenceCase('<text>')
@@ -4300,7 +4299,7 @@ sentenceCase('<text>')
 
 *Example*
 
-These examples take the given string and capitalize the first letter:
+These examples capitalize the first letter in a string:
 
 ```
 sentenceCase('a')
@@ -4652,7 +4651,7 @@ And returns the number **60927.383333333331**.
 
 ### ticksToMinutes
 
-Convert a ticks property value to the number of hours.
+Convert a ticks property value to the number of minutes.
 
 ```
 ticksToMinutes('ticks')
@@ -4682,7 +4681,7 @@ And returns the number **3655643.0185**.
 
 ### titleCase
 
-Capitalize the first letter of each word and leave other letters lowercase.
+Capitalize the first letter of each word in a string.
 
 ```
 titleCase('<text>')
