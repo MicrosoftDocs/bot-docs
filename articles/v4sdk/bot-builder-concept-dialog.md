@@ -47,6 +47,7 @@ At run time, the dialog state property includes information on where the dialog 
 ## Dialog infrastructure
 
 Along with various types of dialogs, the following classes are involved in the design and control of conversations.
+While you don't usually need to interact with these classes directly, being aware of them and their purpose is useful when designing dialogs for a bot.
 
 | Class | Description
 | :--   | :--

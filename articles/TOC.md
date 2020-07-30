@@ -18,6 +18,7 @@
 ### [How bots work](v4sdk/bot-builder-basics.md)
 ### [Managing state](v4sdk/bot-builder-concept-state.md)
 ### [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+### [Waterfall dialogs](v4sdk/bot-builder-concept-waterfall-dialogs.md)
 ### [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## Adaptive dialogs
 ### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
