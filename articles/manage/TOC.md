@@ -1,5 +1,5 @@
 # [Manage a bot](../bot-service-manage-overview.md)
-# [Bot channels registration](../bot-service-quickstart-registration.md)
+# [Register a bot with Azure](../bot-service-quickstart-registration.md)
 # [Bot analytics](../bot-service-manage-analytics.md)
 # [Migrate your bot to Azure](../bot-service-migrate-bot.md)
 # [Configure bot settings](../bot-service-manage-settings.md)
@@ -35,7 +35,11 @@
 ## [Web Chat](../bot-service-channel-connect-webchat.md)
 ## [Webex](../bot-service-adapter-connect-webex.md)
 ## [Additional channels](../bot-service-channel-additional-channels.md)
+
+<!--
+Moved up
 # [Configure bot settings](../bot-service-manage-settings.md)
 # [Configure speech priming](../bot-service-manage-speech-priming.md)
 # [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md)
 # [Migrate your bot](../bot-service-migrate-bot.md)
+-->
