@@ -130,35 +130,39 @@ You can handle interruptions locally by adding `OnIntent` triggers to match the 
 > Grande $3.65  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 > Venti	$4.15
 >
+> **Bot**: What size would you like?
+>
 > **User**: Grande.
 >
 > **Bot**: No problem, a Grande espresso will be ready in 5 minutes.
 
+In this example the bot started at its root dialog, when the user requested to order a coffee the root dialogs recognizer returned the `order` intent resulting in the _order_ dialog to begin execution to process the order.  When the user interrupted the order conversation flow with a question, the _order_ dialogs recognizer returned the `sizes` intent which was handled locally, meaning by the _order_ dialog.
+
+What happens in cases where the active dialog is unable to detect an intent from the users response? The consultation mechanism offers a solution by enabling your bot's dialog to send the response to the active adaptive dialogs parent, which is discussed next.
+
 ### Handling interruptions globally
 
-_Global interrupts_ are interruptions that are not handled by the active dialog. If there is no `OnIntent` trigger in the active dialog that can handle the intent, the bot will send it to the dialog's parent dialog, using adaptive dialogs _consultation_ mechanism. If the parent dialog does not have a trigger to handle the intent it continues to bubble up until it reaches the root dialog. Once the interrupt is handled, the conversation flow continues where it left off.
+_Global interrupts_ are interruptions that are not handled by the active adaptive dialog. If there is no `OnIntent` trigger in the active adaptive dialog that can handle the intent, the bot will send it to the dialog's parent dialog, using adaptive dialogs _consultation_ mechanism. If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog.
 
-Common uses for global interrupts include creating basic dialog management features such as Help & Cancel in the RootDialog that are then available to any of its child dialogs.
+Common uses for global interrupts include creating basic dialog management features such as Help & Cancel in the root dialog that are then available to any of its child dialogs.
 
-Consider this example:
+Once the interrupt is handled, the conversation flow continues where it left off, unless the interruption was a request to cancel, in which case you can use the [CancelAllDialogs][cancelalldialogs] action to end the conversational flow as well as the active adaptive dialog, as demonstrated in the following example:
+
+> **Bot**: Good morning, how can I help you?
+
+The bot starts in the _root_ dialog by welcoming the user.
 
 > **User**: I'd like to order a coffee.
->
-> **Bot**: What type of coffee would you like?
->
-> **User**: What types of coffee do you have?
 
-The _coffee order_ dialog is interrupted and the _coffee types_ dialog executes to respond to the users question.
-
-> **Bot**: We offer a variety of hot coffee drinks including Freshly Brewed Coffee, Caffe Latte, Caffe Mocha, White Chocolate Mocha, and flat white.
-
-The _coffee types_ dialog responds to the users question and returns control back to the _coffee order_ dialog to complete the order.
+The user utterance _I'd like to order a coffee._ is sent to the LUIS recognizer which returns the `order` intent, along with a `coffee`  entity. The trigger associated with `order` intent fires and calls the _order_ dialog to process the order.
 
 > **Bot**:  What type of coffee would you like?
 >
-> **User**: A large flat white, please.
+> **User**: Never mind, please cancel my order.
 >
-> **Bot**: No problem, a large flat white will be ready in 5 minutes.
+> **Bot**: No problem, have a great day!
+
+This ends the conversational flow between the bot and the user. In this case the `order` dialog is closed and control returns to the root dialog.
 
 ## Flexible entity extraction
 
@@ -188,4 +192,4 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
 [turn-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#turn-scope
-
+[cancelalldialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
