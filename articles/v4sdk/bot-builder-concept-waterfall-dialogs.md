@@ -125,24 +125,21 @@ The prompt recognizer result has the following properties:
 
 ## Using dialogs
 
-You can begin or continue a root dialog using the _run_ dialog extension method. (Internally, the run method creates a dialog context object for the dialog.)
-To replace or end the active dialog from your bot, or cancel all dialogs, you need to use a dialog context object directly.
-
 Dialogs can be thought of as a programmatic stack, which we call the *dialog stack*, with the turn handler as the one directing it and serving as the fallback if the stack is empty. The top-most item on that stack is considered the *active dialog*, and the dialog context directs all input to the active dialog.
 
 When a dialog begins, it is pushed onto the stack, and is now the active dialog. It remains the active dialog until it either ends, it is removed by the [replace dialog](#repeating-a-dialog) method, or another dialog is pushed onto the stack (by either the turn handler or active dialog itself) and becomes the active dialog. When that new dialog ends, it is popped off the stack and the next dialog down becomes the active dialog again. This allows for [repeating a dialog](#repeating-a-dialog) or [branching a conversation](#branch-a-conversation), discussed below.
 
-### Create the dialog context
+You can begin or continue a root dialog using the _run_ dialog extension method. From the bot code, calling the dialog run extension method either continues the existing dialog, or starts a new instance of the dialog if the stack is currently empty. Control and user input goes to the active dialog on the stack.
 
-To create your dialog context, call the *create context* method of your dialog set. Create context gets the dialog set's *dialog state* property and uses that to create the dialog context. The dialog context is then used to start, continue, or otherwise control the dialogs in the set.
+The run method requires a *state property accessor* to access the dialog state. The accessor is created and used the same way as other state accessors, but is created as it's own property based off of the conversation state. Details on managing state can be found in the [managing state topic](bot-builder-concept-state.md), and usage of dialog state is shown in the [sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md) how-to.
 
-The dialog set requires use of a *state property accessor* to access the dialog state. The accessor is created and used the same way as other state accessors, but is created as it's own property based off of the conversation state. Details on managing state can be found in the [managing state topic](bot-builder-concept-state.md), and usage of dialog state is shown in the [sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md) how-to.
+From within a dialog, you have access to the dialog context and can use it to start other dialogs, end the current dialog, and perform other operations.
 
 ### To start a dialog
 
-To start a dialog, pass the *dialog ID* you want to start into the dialog context's *begin dialog*, *prompt*, or *replace dialog* method.
+From within a waterfall dialog, pass the *dialog ID* you want to start into the dialog context's *begin dialog*, *prompt*, or *replace dialog* method.
 
-- The begin dialog method will push the dialog onto the top of the stack.
+- The prompt and begin dialog methods will push a new instance of the referenced dialog onto the top of the stack.
 - The replace dialog method will pop the current dialog off the stack and push the replacing dialog onto the stack. The replaced dialog is canceled and any information that instance contained is disposed of.
 
 Use the _options_ parameter to pass information to the new instance of the dialog.
@@ -151,15 +148,13 @@ See the [Create advanced conversation flow using branches and loops](bot-builder
 
 ### To continue a dialog
 
-To continue a dialog, call the *continue dialog* method. The continue method will always continue the topmost dialog on the stack (the active dialog), if there is one. If the continued dialog ends, control is passed to the parent context which continues within the same turn.
-
-Use the step context's *values* property to persist state between turns.
+Within a waterfall dialog, use the step context's *values* property to persist state between turns.
 Any value added to this collection in a previous turn is available in subsequent turns.
 See the [Create advanced conversation flow using branches and loops](bot-builder-dialog-manage-complex-conversation-flow.md) how-to for example code.
 
 ### To end a dialog
 
-The *end dialog* method ends a dialog by popping it off the stack and returns an optional result to the parent context (such as the dialog that called it, or the bot's turn handler). This is most often called from within the dialog to end the current instance of itself.
+Within a waterfall dialog, use the *end dialog* method to end a dialog by popping it off the stack. The _end dialog_ method can return an optional result to the parent context (such as the dialog that called it, or the bot's turn handler). This is most often called from within the dialog to end the current instance of itself.
 
 You can call the end dialog method from anywhere you have a dialog context, but it will appear to the bot that it was called from the current active dialog.
 
