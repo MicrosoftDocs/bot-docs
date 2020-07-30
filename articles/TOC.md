@@ -1,6 +1,6 @@
-# [Azure Bot Service Documentation](index.yml)
+# [Bot Framework SDK documentation](index-bf-sdk.yml)
 # Overview
-## [About Azure Bot Service](bot-service-overview-introduction.md)
+## [What is the Bot Framework SDK?](bot-service-overview-introduction.md)
 ## [What's new](what-is-new.md)
 # Quickstart
 ## [Create a bot using .NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)

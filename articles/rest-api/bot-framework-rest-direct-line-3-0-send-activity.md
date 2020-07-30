@@ -30,6 +30,7 @@ Content-Type: application/json
 
 ```json
 {
+    "locale": "en-EN",
     "type": "message",
     "from": {
         "id": "user1"
