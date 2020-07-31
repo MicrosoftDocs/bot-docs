@@ -1,16 +1,16 @@
 ### YamlMime:Landing
 
-title: Azure Bot Service documentation # < 60 chars
-summary: Azure Bot Service provides an integrated environment that is purpose-built for bot development. # < 160 chars
+title: Bot Framework SDK documentation # < 60 chars
+summary: The Bot Framework SDK allows you to create and develop bots for the Azure Bot Service. # < 160 chars
 
 metadata:
-  title: Azure Bot Service documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Azure Bot Service provides an integrated environment that is purpose-built for bot development. # Required; article description that is displayed in search results. < 160 chars.
+  title: Bot Framework SDK documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: The Bot Framework SDK allows you to create and develop bots for the Azure Bot Service. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: ivorb #Required; your GitHub user alias, with correct capitalization.
-  ms.author: ivorb #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/11/2019 #Required; mm/dd/yyyy format.
+  author: JonathanFingold #Required; your GitHub user alias, with correct capitalization.
+  ms.author: botcc #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/22/2020 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -18,20 +18,20 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Azure Bot Service
+  - title: About the Bot Framework SDK
     linkLists:
       - linkListType: whats-new
         links:
           - text: What's new?
-            url: https://docs.microsoft.com/azure/bot-service/what-is-new
+            url: what-is-new.md
       - linkListType: overview
         links:
-          - text: What is Azure Bot Service?
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
+          - text: What is the Bot Framework SDK?
+            url: bot-service-overview-introduction.md
       - linkListType: concept
         links:
           - text: How bots work
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
+            url: v4sdk/bot-builder-basics.md
 
   # Card
   - title: 5-Minute Quickstarts
@@ -82,11 +82,11 @@ landingContent:
             url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
 
   # Card
-  - title: External Resources
+  - title: Resources
     linkLists:
       - linkListType: concept
         links:
-          - text: Composer
+          - text: Bot Framework Composer
             url: https://docs.microsoft.com/composer/
           - text: Composer tutorial
             url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction/
