@@ -179,7 +179,7 @@ Here's a more complicated SWITCH CASE DEFAULT example:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
 > [!NOTE]
-> Like conditional templates, switch templates also cannot be nested.
+> Like conditional templates, switch templates cannot be nested.
 
 ### Structured response template
 
