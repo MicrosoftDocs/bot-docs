@@ -38,7 +38,7 @@ The sample code in this article begins with the structure of a multi-turn bot, a
 
 ## User Interaction Expiration
 
-This type of expiring conversation is accomplished by adding a `LastAccessedTime` property to `MultiTurnPromptBot`'s `DialogBot` implementation. This property value is then compared to the current time within the `ActivityHandler` before processing activities.
+This type of expiring conversation is accomplished by adding a _last accessed time_ property to the bot implementation. This property value is then compared to the current time within the _activity handler_ before processing activities.
 
 # [C#](#tab/csharp)
 
