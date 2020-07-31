@@ -29,7 +29,7 @@ Properly handling long operations is an important aspect of a robust bot. When t
 
 The sample code in this article begins with the structure of the multi-turn prompt sample bot, then extends that bot's functionality by adding additional code (provided later). This extended code performs a long running operation, and demonstrates how to respond to a user after the operation has completed. In the updated sample:
 
-- Bot sends the user choices, of which long operation to perform.
+- The bot asks the user which long operation to perform.
 - The bot receives an activity from the user, and determines which long operation to perform.
 - Bot notifies the user the operation will take some time.
 - Bot sends the operation off to an Azure Function.
