@@ -54,11 +54,11 @@ First, add an `ExpireAfterSeconds` setting to appsettings.json:
 }
 ```
 
-Next, add fields to `DialogBot` and update the constructor. Add local fields for `ExpireAfterSeconds`, `LastAccessedTimeProperty` and `DialogStateProperty`.
-
 **Bots\DialogBot.cs**
 
-Add `IConfiguration` as a parameter to the constructor, retrieve the `ExpireAfterSeconds` and create the required `IStatePropertyAccessor`s:
+Next, add `ExpireAfterSeconds`, `LastAccessedTimeProperty`, and `DialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add an `IConfiguration` parameter to the constructor to retrieve the `ExpireAfterSeconds` value.
+
+Note that instead of creating the dialog state property accessor inline in the `OnMessageActivityAsync` method, you are creating and recording it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
 
 ```csharp
 protected readonly int ExpireAfterSeconds;
