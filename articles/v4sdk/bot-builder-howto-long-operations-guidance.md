@@ -41,7 +41,7 @@ The sample code in this article begins with the structure of the multi-turn prom
 
 This example uses a `LongOperationPrompt`, derived from `ActivityPrompt`. When the `LongOperationPrompt` queues the Activity to be processed, it includes a choice from the user within the .Value property. This Activity is then used in the Azure Function, modifed, and wrapped in a different Event Activity before it is sent back to the bot using the Direct Line Client. Within the bot, the Event activity is used to resume the conversation by calling Adapter.ContinueConversation.  The dialog stack is then loaded, and the `LongOperationPrompt` completes.
 
-## Create an Azure Storage Account
+## Create an Azure Storage account
 
 Create an Azure Storage account, and retrieve the connection string.
 See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create) and [](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal)for more information.
