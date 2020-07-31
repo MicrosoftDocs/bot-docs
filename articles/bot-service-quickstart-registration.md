@@ -36,7 +36,7 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 > [!div class="mx-tdBreakAll"]
 >   |Setting |Suggested value|Description|
 >   |---|---|--|
->   |**Bot name** <img width="300px"/>|\<Your bot display name>|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
+>   |**Bot name** <img width="200px"/>|\<Your bot display name><img width="200px"/>|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
 >   |**Subscription**|\<Your subscription>|Select the Azure subscription you want to use.|
 >   |**Resource Group**|\<Your resource group name>|You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or select an existing one.|
 >   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|
