@@ -33,9 +33,9 @@ The sample code in this article begins with the structure of the multi-turn prom
 - The bot receives an activity from the user, and determines which long operation to perform.
 - Bot notifies the user the operation will take some time.
 - Bot sends the operation off to an Azure Function.
-- Bot saves state, indicating there is an operation in progress.
-- Bot responds to messages from the user, notifying them the operation is still in progress.
-- Azure Function executes the long running operation.
+- The bot saves state, indicating there is an operation in progress.
+- The bot responds to messages from the user, notifying them the operation is still in progress.
+- Azure Functions manages the long running operation.
 - Azure Functions sends an `event` activity to the bot, notifying it that the operation completed.
 - The bot resumes the conversation and sends a proactive message to notify the user that the operation completed. The bot then clears the operation state mentioned earlier.
 
