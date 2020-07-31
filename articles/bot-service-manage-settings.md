@@ -18,7 +18,7 @@ The bot settings, such as Display name, Icon, and Application Insights, can be v
 Below is the list of fields on the **Settings** blade:
 
 > [!div class="mx-tdBreakAll"]
-> | Field <img width="300px"| Description |
+> | Field <img width="300px"/>| Description |
 > | :---  | :---        |
 > | Icon | A custom icon to visually identify your bot in channels and as the icon for Cortana and other services. This icon must be in PNG format, and no larger than 30K in size. This value can be changed at any time. |
 > | Display name | The name of your bot in channels and directories. This value can be changed at any time. 35 character limit. |
