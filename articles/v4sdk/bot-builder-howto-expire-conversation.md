@@ -80,7 +80,7 @@ public DialogBot(IConfiguration configuration, ConversationState conversationSta
 }
 ```
 
-Finally, add code to `DialogBot`'s `OnTurnAsync` method:
+Finally, add code to `DialogBot`'s `OnTurnAsync` method to clear the dialog state if the conversation is too old.
 
 ```csharp
 public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
