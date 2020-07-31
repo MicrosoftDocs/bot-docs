@@ -53,10 +53,19 @@ Returns the array `['a', 'b', 'c']`.
 To create an object, use the **${{key1:value1, key2:value2, ...}}** syntax. For example, this expression:
 
 ```.lg
-${{user: "Wilson"}, {user: {age: 27}}}
+${{user: {name: "Wilson", age: 27}}}
 ```
 
-Returns the object `{user: "Wilson"}, {user: {age: 27}}`.
+Returns the following JSON object:
+
+```json
+{
+  "user": {
+    "name": "Wilson",
+    "age": 27
+  }
+}
+```
 
 ## Templates
 
