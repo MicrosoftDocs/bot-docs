@@ -178,8 +178,8 @@ Here's a more complicated SWITCH CASE DEFAULT example:
 -DEFAULT:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
-
-Like conditional templates, switch templates also cannot be nested.
+> [!NOTE]
+> Like conditional templates, switch templates also cannot be nested.
 
 ### Structured response template
 
@@ -371,7 +371,7 @@ If name is null, the diagnostic would be **'name' evaluated to null. [welcome] E
 
 ### replaceNull option
 
-Developers can creat delegates to replace null values in evaluated expressions by using the **replaceNull** option:
+Developers can create delegates to replace null values in evaluated expressions by using the **replaceNull** option:
 
 ```.lg
 > !# @replaceNull = ${path} is undefined
