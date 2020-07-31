@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 <!-- Working notes:
   - [x] Pare down to generic dialog information and link off to "scenario-specific" topics.
-  - [ ] Pull component/waterfall specific content into a child article.
+  - [x] Pull component/waterfall specific content into a child article.
   - [x] Link off to the adaptive dialog concept article for that stuff.
   - [ ] Fix all resulting broken links in articles that refer to removed/renamed sections in this one.
 -->
@@ -23,23 +23,23 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 *Dialogs* are a central concept in the SDK, providing ways to manage a long-running conversation with the user.
-A dialog performs a conversational task that can represent part of or a complete conversational thread.
+A dialog performs a task that can represent part of or a complete conversational thread.
 It can span just one turn or many, and can span a short or long period of time.
 
-Each dialog represents a conversational task that can run to completion and return collected information.
-Each one represents a basic unit of control flow: a dialog can begin, continue, and end; pause and resume; or be canceled.
-
-In general, you manage a dialog though its inputs and outputs. When the dialog starts, it receives a dialog option, an optional argument. Each turn, the dialog is passed the current turn context, which includes the current activity. When the dialog ends, it can return a value. In effect, a bot can give control to a dialog, and a dialog can give control to another dialog, and so on.
-
 This article describes the core classes and features of the dialog library.
-You should be familiar with [how bots work](bot-builder-basics.md) and [managing state](bot-builder-concept-state.md).
+You should be familiar with [how bots work](bot-builder-basics.md) (including [what a turn is](bot-builder-basics.md#defining-a-turn)) and [managing state](bot-builder-concept-state.md).
+
+Each dialog represents a conversational task that can run to completion and return collected information.
+Each dialog represents a basic unit of control flow: it can begin, continue, and end; pause and resume; or be canceled.
+
+You manage a dialog through its inputs and outputs. When the dialog starts, it receives a dialog option, as an optional argument. On each turn, the dialog is passed the current turn context, which includes the current activity. When the dialog ends, it can return a value. In effect, a bot can give control to a dialog, and a dialog can give control to another dialog, and so on.
 
 ## Dialog state
 
-Dialogs are an approach to implementing a multi-turn conversation, and as such, they rely on persisted state across turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered.
+Dialogs are a way of implementing a _multi-turn conversation_, and as such, they rely on _persisted state_ across turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered.
 
 <!--A bot is inherently stateless.-->
-To maintain a dialog's place in the conversation, dialog state must be retrieved from and saved to memory each turn. This is handled via a dialog state property accessor defined on the bot's conversation state. Dialog state collects information for all active dialogs and children of active dialogs.
+To retain a dialog's place in the conversation, the dialog's state must be retrieved from and saved to memory each turn. This is handled via a dialog state property accessor defined on the bot's conversation state. This dialog state collects information for all active dialogs, and children of active dialogs.
 This allows the bot to pick up where it left off last and to handle a variety of conversation models.
 
 At run time, the dialog state property includes information on where the dialog is in its logical process, including any internally collected information in the form of a _dialog instance_ object. Again, this needs to be read into the bot and saved out to memory each turn.
@@ -59,7 +59,8 @@ While you don't usually need to interact with these classes directly, being awar
 > [!NOTE]
 > As part of the introduction of adaptive dialogs, version 4.9 of the C# SDK introduced a _dialog manager_ class that automates many of the dialog management tasks for you.
 > (Adaptive dialogs are in preview in version 4.10 of the JavaScript SDK.)
-<!-- > You can use a dialog manager to run any type of dialog. -->
+> For more information, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
+<!-- You can use a dialog manager to run any type of dialog. -->
 
 ## Dialog types
 
@@ -69,9 +70,9 @@ The dialogs library provides a few types of dialogs to make your bot's conversat
 | :--  | :--
 | _dialog_ | The base class for all dialogs.
 | _container dialog_ | The base class for all _container_ dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit.
-| _component dialog_ | A general-purpose type of container dialog. When a component dialog starts, it starts a designated dialog in its collection. When the inner process completes, the component dialog ends.
+| _component dialog_ | A general-purpose type of container dialog. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends.
 | _waterfall dialog_ | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are designed to work within the context of a component dialog.
-| _prompt dialogs_ | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. These are designed to work with waterfall dialogs.
+| _prompt dialogs_ | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. They are designed to work with waterfall dialogs.
 | _adaptive dialog_ | A type of container dialog that allows for flexible conversation flow. It includes built-in support for language recognition, language generation, and memory scoping features. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager.
 | _action dialogs_ | Represent programmatic structures within an adaptive dialog. These let you design conversation flow much like expressions and statements in a traditional programming language let you design procedural flow in an application.
 | _input dialogs_ | Ask the user for input, much like prompt dialogs, but can interact with other structures in an adaptive dialog.
@@ -87,8 +88,8 @@ There are two main patterns for starting and managing dialogs from a bot.
 
 ### The dialog stack
 
-A dialog context contains information about all active dialogs.
-Part of the dialog context contains a dialog stack, which acts as a call stack for the active dialogs. Each container dialog has an inner set of dialogs that it is controlling, and so each active container dialog introduces an inner dialog stack as part of its state.
+A dialog context contains information about all active dialogs and includes a _dialog stack_, which acts as a _call stack_ for all the active dialogs.
+Each container dialog has an inner set of dialogs that it is controlling, and so each active container dialog introduces an inner dialog context and dialog stack as part of its state.
 
 While you will not access the stack directly, understanding that it exists and its function will help you understand how various aspects of the dialogs library work.
 
