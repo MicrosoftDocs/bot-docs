@@ -21,7 +21,7 @@ Properly handling long operations is an important aspect of a robust bot. When t
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
 - Familiarity with [Prompts](https://docs.microsoft.com/azure/bot-service/bot-builder-primitive-prompts)
-- Bot Framework Sample [Multi-Turn-Prompt](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt).
+- A copy of the **multi-turn prompt** sample in [**C#**](https://aka.ms/cs-multi-prompts-sample).
 - Familiarity with [Azure Storage Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction).
 - Familiarity with Azure Functions [C# script](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp).
 
