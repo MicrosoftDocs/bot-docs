@@ -107,6 +107,8 @@ public override async Task OnTurnAsync(ITurnContext turnContext, CancellationTok
 
 # [JavaScript](#tab/javascript)
 
+**.env**
+
 First, add an `ExpireAfterSeconds` setting to .env:
 
 ```json
