@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 12/13/2017
 ---
-# Configure bot settings
+# Configure bot registration settings
 
-The bot settings, such as Display name, Icon, and Application Insights, can be viewed and modified on its **Settings** blade.
+The bot registration settings, such as display name, icon, and application insights, can be viewed and modified in the **Settings** panel.
 
-![The bot settings blade](media/bot-service-portal-configure-settings/bot-service-settings.png)
+![bot registration settings](media/bot-service-portal-configure-settings/bot-service-settings.png)
 
-Below is the list of fields on the **Settings** blade:
+Below is the list the **Settings** fields:
 
 > [!div class="mx-tdBreakAll"]
 > | Field <img width="300px"/>| Description |
@@ -30,6 +30,35 @@ Below is the list of fields on the **Settings** blade:
 > | Application Insights Application ID | Unique key for bot analytics. Copy your Azure Insights Application ID Key to this field if you want to view analytics about your bot in the Dashboard. This value is optional. Bots created in the Azure Portal will have this key generated for them. For more details on this field, see [Application Insights keys](~/bot-service-resources-app-insights-keys.md). |
 
 After you have changed settings for your bot, click the **Save** button at the top of the blade to save your new bot settings.
+
+## Application ID and Password
+
+The registration application ID and password are assigned to the bot's variables `MicrosoftAppID` and `MicrosoftAppPassword` in the files `appsettings.json` (C#) and `.env` (Javascript).
+
+> [!NOTE]
+> The Bot Channels Registration has an application ID but because there is no app service associated with it, there is no password. You must generate one. To generate the password follow the steps described below.
+
+## Get the registration application password
+
+A registration application has an **application ID** (app ID) and a **password** associated with it.
+The Azure Bot Service assigns a unique application ID to the application. You can obtain the password following the steps described below.
+
+1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
+1. In the resource list, click on the registration application name.
+1. Im the right panel, in the *Bot Management* section, click  **Settings**. The registration application *Settings* page is displayed.
+1. Click the **Manage** link by *Microsoft App ID*.
+
+    ![bot registration settings password](media/azure-bot-quickstarts/bot-channels-registration-password.png)
+
+1. In the *Certificates & secrets* displayed page, click the **New client secret** button.
+
+    ![Create registration bot blade](media/azure-bot-quickstarts/bot-channels-registration-app-secrets.png)
+
+1. Add the description, select the expiration time, and click the **Add** button.
+
+    ![Create registration bot blade](media/azure-bot-quickstarts/bot-channels-registration-app-secrets-create.png)
+
+    This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later.
 
 ## Additional Information
 

@@ -17,7 +17,7 @@ This article shows how to register a bot with **Azure Bot Service**. This useful
 > You only need to register a bot if it is not hosted in Azure.
 If you created a bot using the Azure portal or the Command Line Interface (CLI) then the bot is already registered with the Azure Bot Service. For more information, see [Deploy your bot](bot-builder-deploy-az-cli.md) and [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md).
 
-## Create a registration resource
+## Create a registration application
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
 
@@ -36,12 +36,12 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 > [!div class="mx-tdBreakAll"]
 >   |Setting |Suggested value|Description|
 >   |---|---|--|
->   |**Bot name** <img width="300px"|\<Your bot display name>|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
+>   |**Bot name** <img width="300px"/>|\<Your bot display name>|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
 >   |**Subscription**|\<Your subscription>|Select the Azure subscription you want to use.|
 >   |**Resource Group**|\<Your resource group name>|You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or select an existing one.|
 >   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|
 >   |**Pricing tier**|F0|Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-service/).|
->   |**Messaging endpoint**|https://\<your bot name>.azurewebsites.net/api/messages|Enter the URL for your bot's messaging endpoint.|
+>   |**Messaging endpoint**|https://\<your bot name>.azurewebsites.net/api/messages|Enter the URL for your bot's messaging endpoint. You can leave this field empty, you will enter the required URL after deploying the bot.|
 >   |**Application Insights**|On| Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
 >   |**Microsoft App ID and password**| Auto create App ID and password |Use this option if you need to manually enter a Microsoft App ID and password. See the next section [Manual app registration](#manual-app-registration). Otherwise, a new Microsoft App ID and password will be created in the registration process. |
 
