@@ -27,7 +27,7 @@ Properly handling long operations is an important aspect of a robust bot. When t
 
 ## About this samples
 
-The sample code in this article begins with the structure of the `Multi Turn Prompt` sample bot, then extends that bot's functionality by adding additional code (provided below). This extended code performs a long running operation, and demonstrates how to respond to a user after the operation has completed.
+The sample code in this article begins with the structure of the multi-turn prompt sample bot, then extends that bot's functionality by adding additional code (provided later). This extended code performs a long running operation, and demonstrates how to respond to a user after the operation has completed. In the updated sample:
 
 - Bot sends the user choices, of which long operation to perform.
 - Bot receives an Activity from the user, and determines which long operation to perform.
