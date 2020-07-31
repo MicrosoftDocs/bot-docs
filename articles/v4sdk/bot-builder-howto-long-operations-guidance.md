@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Properly handling long operations is an important aspect of a robust bot. When the Azure Bot Service sends an activity to your bot from a channel, the bot is expected to process the activity quickly.  If the bot does not complete the operation within 10 to 15 seconds, depending on channel, the Azure Bot Service will timeout and report back to the client a `504:GatewayTimeout`. (See [How bots work][concept-basics]) The guidance in this topic is to have an external service execute the operation and notify the bot when it has completed. 
+Properly handling long operations is an important aspect of a robust bot. When the Azure Bot Service sends an activity to your bot from a channel, the bot is expected to process the activity quickly.  If the bot does not complete the operation within 10 to 15 seconds, depending on channel, the Azure Bot Service will timeout and report back to the client a `504:GatewayTimeout`, as described in [How bots work][concept-basics]. The guidance in this topic is to have an external service execute the operation and notify the bot when it has completed. 
 
 ## Prerequisites
 
