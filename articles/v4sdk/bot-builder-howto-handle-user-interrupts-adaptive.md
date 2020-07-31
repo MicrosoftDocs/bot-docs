@@ -1,7 +1,7 @@
 ---
 title: How to handle user interruptions in adaptive dialogs - Bot Service
 description: Learn how to handle user interruptions and direct conversation flow in adaptive dialog.
-keywords: interrupt, interruptions, switching topic, break, adaptive dialogs
+keywords: interrupt, interruptions, switching topic, adaptive dialogs
 author: WashingtonKayaker
 ms.author: kamrani
 manager: kamrani
