@@ -42,6 +42,8 @@ This type of expiring conversation is accomplished by adding a `LastAccessedTime
 
 # [C#](#tab/csharp)
 
+**appsettings.json**
+
 First, add an `ExpireAfterSeconds` setting to appsettings.json:
 
 ```json
