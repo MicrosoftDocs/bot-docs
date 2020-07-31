@@ -20,10 +20,10 @@ Properly handling long operations is an important aspect of a robust bot. When t
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
-- Familiarity with [Prompts](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-primitive-prompts)
+- Familiarity with [Prompts](https://docs.microsoft.com/azure/bot-service/bot-builder-primitive-prompts)
 - Bot Framework Sample [Multi-Turn-Prompt](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt).
-- Familiarity with [Azure Storage Queues](https://docs.microsoft.com/en-us/azure/storage/queues/storage-queues-introduction).
-- Familiarity with Azure Functions [C# script](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp).
+- Familiarity with [Azure Storage Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction).
+- Familiarity with Azure Functions [C# script](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp).
 
 ## About this samples
 
@@ -44,26 +44,26 @@ This example uses a `LongOperationPrompt`, derived from `ActivityPrompt`. When t
 ## Create an Azure Storage Account
 
 Create an Azure Storage account, and retrieve the connection string.
-See [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create) and [](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal)for more information.
+See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create) and [](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal)for more information.
 
 ## Create a Bot Channels Registration
 
-Before creating the registration, setup `ngrok` and retrieve a url to be used as the bot's `Messaging Endpoint` during local debugging. See [Debugging using Ngrok](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-channel-ngrok).
+Before creating the registration, setup `ngrok` and retrieve a url to be used as the bot's `Messaging Endpoint` during local debugging. See [Debugging using Ngrok](https://docs.microsoft.com/azure/bot-service/bot-service-debug-channel-ngrok).
 
 Create a Bot Channels Registration in the Azure Portal, or using the Az Cli. Set the Messaging Endpoint to the `ngrok` url, with `\api\messages` appended. After the bot registration is created, obtain the `MicrosoftAppId` and `MicrosoftAppPassword`, enable the `Direct Line` channel, and retrieve a `Direct Line` secret.  These will be added to the bot, and Azure Function respectively.  
 
 See:
-- [Register a bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration)
+- [Register a bot](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration)
 - [Find Your Azure Bot’s AppID and AppSecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret/)
-- [Connect a bot to Direct Line](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-directline)
+- [Connect a bot to Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directline)
 
 ## Create the Azure Function
 
-Create an Azure Function App based on the .Net Core runtime stack. [See Create Function App](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) Create  [Azure Functions C# script](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp).  
+Create an Azure Function App based on the .Net Core runtime stack. [See Create Function App](https://docs.microsoft.com/azure/azure-functions/functions-create-function-app-portal) Create  [Azure Functions C# script](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp).  
 
-Add a `DirectLineSecret` application setting to the Function App. See [Functioni App Settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
+Add a `DirectLineSecret` application setting to the Function App. See [Functioni App Settings](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
 
-Within the Function App, add a function based on the [Azure Queue Storage template](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue-trigger).  Set the desired queue name, and choose the `Azure Storage Account` created in an earlier step.  This queue name will also be placed in the bot's `appsettings.json`.
+Within the Function App, add a function based on the [Azure Queue Storage template](https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-queue-trigger).  Set the desired queue name, and choose the `Azure Storage Account` created in an earlier step.  This queue name will also be placed in the bot's `appsettings.json`.
 
 Add a `function.proj` file to the function.
 
@@ -129,7 +129,7 @@ public static async Task Run(string queueItem, ILogger log)
 
 ## Creating the Bot
 
-Starting with the [Multi-Turn-Prompt](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) sample, add the [Azure.Storage.Queues](https://www.nuget.org/packages/Azure.Storage.Queues/) package.  For more information, see [How to Use Queues](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues).
+Starting with the [Multi-Turn-Prompt](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) sample, add the [Azure.Storage.Queues](https://www.nuget.org/packages/Azure.Storage.Queues/) package.  For more information, see [How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues).
 
 Add the connection string for the `Azure Storage` account created earlier, and Storage Queue Name, to `appsettings.json`.  Ensure the queue name is the same as what was used to create the Queue Trigger Function earlier.  Also add the `MicrosoftAppId`  and `MicrosoftAppPassword` from the `Bot Channels Registration`.
 
