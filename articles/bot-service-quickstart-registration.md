@@ -49,8 +49,9 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 
     ![bot registration settings](media/azure-bot-quickstarts/bot-channels-registration-settings.png)
 
+### Get registration password
 
-### Create App ID and password
+The following steps allow you to create the registration application password and application ID to be used in your bot configuration files `appsettings.json` (.NET) and `.env` (Javascript).
 
 1. Click **Microsoft App ID and password**, highlighted in the figure above.
 1. Click **Create New**.
