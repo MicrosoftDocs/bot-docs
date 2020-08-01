@@ -33,49 +33,45 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 1. Click the **Create** button.
 1. In the **Bot Channels Registration** form, provide the requested information about your bot as specified in the table below.
 
-> [!div class="mx-tdBreakAll"]
->   |Setting |Suggested value|Description|
->   |---|---|--|
->   |**Bot name** <img width="200px"/>|\<Your bot display name><img width="200px"/>|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
->   |**Subscription**|\<Your subscription>|Select the Azure subscription you want to use.|
->   |**Resource Group**|\<Your resource group name>|You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or select an existing one.|
->   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|
->   |**Pricing tier**|F0|Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-service/).|
->   |**Messaging endpoint**|https://\<your bot name>.azurewebsites.net/api/messages|Enter the URL for your bot's messaging endpoint. You can leave this field empty, you will enter the required URL after deploying the bot.|
->   |**Application Insights**|On| Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
->   |**Microsoft App ID and password**| Auto create App ID and password |Use this option if you need to manually enter a Microsoft App ID and password. See the next section [Manual app registration](#manual-app-registration). Otherwise, a new Microsoft App ID and password will be created in the registration process. |
+    > [!div class="mx-tdBreakAll"]
+    >   |Setting |Suggested value|Description|
+    >   |---|---|--|
+    >   |**Bot name** <img width="200px"/>|\<Your bot display name><img width="200px"/>|The display name for the bot that appears in channels and directories. This name can be changed at anytime.|
+    >   |**Subscription**|\<Your subscription>|Select the Azure subscription you want to use.|
+    >   |**Resource Group**|\<Your resource group name>|You can create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or select an existing one.|
+    >   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|
+    >   |**Pricing tier**|F0|Select a pricing tier. You may update the pricing tier at any time. For more information, see [Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-service/).|
+    >   |**Messaging endpoint**|https://\<your bot name>.azurewebsites.net/api/messages|Enter the URL for your bot's messaging endpoint. You can leave this field empty, you will enter the required URL after deploying the bot.|
+    >   |**Application Insights**|On| Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
+    >   |**App ID and password**| Create App ID and password |Use this option if you need to manually enter a Microsoft App ID and password. See the next section [Manual app registration](#manual-app-registration). Otherwise, a new Microsoft app ID will be created in the registration process. |
 
-    > [!IMPORTANT]
-    > Do not forget to enter the URL for your bot's messaging endpoint.
-    > You can also set this later in the registration resource Settings page.
+1. Leave the *Messaging endpoint* box empty for now, you will enter the required URL after deploying the bot. The following picture shows an example of the registration settings:
 
+    ![bot registration settings](media/azure-bot-quickstarts/bot-channels-registration-settings.png)
+
+
+### Create App ID and password
+
+1. Click **Microsoft App ID and password**, highlighted in the figure above.
+1. Click **Create New**.
+1. Click **Create App ID in the App Registration Portal** link.
+1. In the displayed *App registration* window, in the upper left, click the **New registration** tab.
+1. Enter the name of the bot application you are registering.
+1. For the Supported account types select the type based on your requirements. See also [Use bot credentials](bot-service-debug-emulator.md#use-bot-credentials).
+1. Click the **Register** button. Once completed, Azure displays the overview page for the application.
+1. Copy and save to a file the **Application (client) ID** value.
+1. In the left panel, click **Certificate and secrets**.
+1. Under *Client secrets*, click **New client secret**.
+1. Add a description to identify this secret from others you might need to create for this app.
+1. Set **Expires** to your choosing.
+1. Click **Add**.
+1. Copy the client secret and save it to a file. Make sure to keep the file in a secure place.
+1. Go back to the Bot Channel Registration window and copy the App ID and the Client secret in the Microsoft App ID and Password boxes, respectively.
+1. Click **OK**.
 1. Click the **Create** button. Wait for the resource to be created. It will show in your resources list.
-The following figure shows an example:
 
-    ![bot channels registration form](media/azure-bot-quickstarts/bot-channels-registration-form.png)
-
-### Get registration password
-
-After the registration is completed, Azure Active Directory assigns a unique application ID to your registration, and you're taken to your application's *Overview* page.
-
-To obtain the password follow the steps described next.
-
-1. In resource list, click on the registration resource just created.
-1. Im the right panel, in the *Bot Management* section, click  **Settings**. The resource *Settings* page is displayed.
-1. In the Settings page copy the generated **Microsoft App ID** and save it to a file.
-1. Click the **Manage** link by *Microsoft App ID*.
-
-    ![bot registration settings password](media/azure-bot-quickstarts/bot-channels-registration-password.png)
-
-1. In the *Certificates & secrets* displayed page, click the **New client secret** button.
-
-    ![Create registration bot blade](media/azure-bot-quickstarts/bot-channels-registration-app-secrets.png)
-
-1. Add the description, select the expiration time, and click the **Add** button.
-
-    ![Create registration bot blade](media/azure-bot-quickstarts/bot-channels-registration-app-secrets-create.png)
-
-    This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later.
+> [!NOTE]
+> The registration application will show the Global region even though you selected a different one. This is expected.
 
 ## Manual app registration
 
