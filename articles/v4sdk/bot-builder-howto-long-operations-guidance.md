@@ -142,6 +142,71 @@ Add the connection string for the `Azure Storage` account created earlier, and S
 }
 ```
 
+**Bots\AzureQueuesService.cs**
+
+Add an IConfiguration parameter to `DialogBot.cs` in order to retrieve the `MicrsofotAppId`.  Also add an `OnEventActivityAsync` handler for the `LongOperationResponse` from the Azure Function.
+
+```csharp
+protected readonly IStatePropertyAccessor<DialogState> DialogState;
+protected readonly Dialog Dialog;
+protected readonly BotState ConversationState;
+protected readonly ILogger Logger;
+private readonly string _botId;
+
+/// <summary>
+/// Create an instance of <see cref="DialogBot{T}"/>.
+/// </summary>
+/// <param name="configuration"><see cref="IConfiguration"/> used to retrieve MicrosoftAppId
+/// which is used in ContinueConversationAsync.</param>
+/// <param name="conversationState"><see cref="ConversationState"/> used to store the DialogStack.</param>
+/// <param name="dialog">The RootDialog for this bot.</param>
+/// <param name="logger"><see cref="ILogger"/> to use.</param>
+public DialogBot(IConfiguration configuration, ConversationState conversationState, T dialog, ILogger<DialogBot<T>> logger)
+{
+    _botId = configuration["MicrosoftAppId"] ?? Guid.NewGuid().ToString();
+    ConversationState = conversationState;
+    Dialog = dialog;
+    Logger = logger;
+    DialogState = ConversationState.CreateProperty<DialogState>(nameof(DialogState));
+}
+
+public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
+{
+    await base.OnTurnAsync(turnContext, cancellationToken);
+
+    // Save any state changes that might have occurred during the turn.
+    await ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
+}
+
+protected override async Task OnEventActivityAsync(ITurnContext<IEventActivity> turnContext, CancellationToken cancellationToken)
+{
+    // The event from the Azure Function will have a name of 'LongOperationResponse' 
+    if (turnContext.Activity.ChannelId == Channels.Directline && turnContext.Activity.Name == "LongOperationResponse")
+    {
+        // The response will have the original conversation reference activity in the .Value
+        // This original activity was sent to the Azure Function via Azure.Storage.Queues in AzureQueuesService.cs.
+        var continueConversationActivity = (turnContext.Activity.Value as JObject)?.ToObject<Activity>();
+        await turnContext.Adapter.ContinueConversationAsync(_botId, continueConversationActivity.GetConversationReference(), async (context, cancellation) =>
+        {                    
+            Logger.LogInformation("Running dialog with Activity from LongOperationResponse.");
+
+            // ContinueConversationAsync resets the .Value of the event being continued to Null, 
+            //so change it back before running the dialog stack. (The .Value contains the response 
+            //from the Azure Function)
+            context.Activity.Value = continueConversationActivity.Value;
+            await Dialog.RunAsync(context, DialogState, cancellationToken);
+
+            // Save any state changes that might have occurred during the inner turn.
+            await ConversationState.SaveChangesAsync(context, false, cancellationToken);
+        }, cancellationToken);
+    }
+    else
+    {
+        await base.OnEventActivityAsync(turnContext, cancellationToken);
+    }
+}
+```
+
 **AzureQueuesService.cs**
 
 Create an Azure Queues service to queue activities which need to be processed.
