@@ -1,7 +1,7 @@
 # [Manage a bot](../bot-service-manage-overview.md)
 # [Register a bot with Azure](../bot-service-quickstart-registration.md)
 # [Bot analytics](../bot-service-manage-analytics.md)
-# [Migrate your bot to Azure](../bot-service-migrate-bot.md)
+<!-- # Obsolete [Migrate your bot to Azure](../bot-service-migrate-bot.md) -->
 # [Configure bot settings](../bot-service-manage-settings.md)
 # [Configure speech priming](../bot-service-manage-speech-priming.md)
 # Channels
