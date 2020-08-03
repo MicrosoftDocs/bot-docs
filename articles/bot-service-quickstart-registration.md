@@ -45,15 +45,13 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
     >   |**Application Insights**|On| Decide if you want to turn [Application Insights](bot-service-manage-analytics.md) **On** or **Off**. If you select **On**, you must also specify a regional location. |
     >   |**App ID and password**| Create App ID and password |Use this option if you need to manually enter a Microsoft App ID and password. See the next section [Manual app registration](#manual-app-registration). Otherwise, a new Microsoft app ID will be created in the registration process. |
 
-1. Leave the *Messaging endpoint* box empty for now, you will enter the required URL after deploying the bot. The following picture shows an example of the registration settings:
+1. Leave the *Messaging endpoint* box empty for now, you will enter the required URL after deploying the bot.
+
+1. The next steps allow you to create the registration application password and application ID to be used in your bot configuration files `appsettings.json` (.NET) and `.env` (Javascript).
+1. Click **Microsoft App ID and password**, highlighted in the figure below.
 
     ![bot registration settings](media/azure-bot-quickstarts/bot-channels-registration-settings.png)
 
-### Get registration password
-
-The following steps allow you to create the registration application password and application ID to be used in your bot configuration files `appsettings.json` (.NET) and `.env` (Javascript).
-
-1. Click **Microsoft App ID and password**, highlighted in the figure above.
 1. Click **Create New**.
 1. Click **Create App ID in the App Registration Portal** link.
 1. In the displayed *App registration* window, in the upper left, click the **New registration** tab.
