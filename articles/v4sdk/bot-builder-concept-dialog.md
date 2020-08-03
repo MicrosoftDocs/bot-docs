@@ -25,7 +25,11 @@ You should be familiar with [how bots work](bot-builder-basics.md) (including [w
 Each dialog represents a conversational task that can run to completion and return collected information.
 Each dialog represents a basic unit of control flow: it can begin, continue, and end; pause and resume; or be canceled.
 
+<!--
 You manage a dialog through its inputs and outputs. When the dialog starts, it receives a dialog option, as an optional argument. On each turn, the dialog is passed the current turn context, which includes the current activity. When the dialog ends, it can return a value. In effect, a bot can give control to a dialog, and a dialog can give control to another dialog, and so on.
+-->
+
+Dialogs are similar to a method or function in a programming language. You can pass in arguments or parameters when your start a dialog, and the dialog can later produce a return value when it ends.
 
 ## Dialog state
 
@@ -62,13 +66,13 @@ The dialogs library provides a few types of dialogs to make your bot's conversat
 | Type | Description
 | :--  | :--
 | _dialog_ | The base class for all dialogs.
-| _container dialog_ | The base class for all _container_ dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit.
-| _component dialog_ | A general-purpose type of container dialog. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends.
+| _container dialog_ | The base class for all _container_ dialogs, such as component and adaptive dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit.
+| _component dialog_ | A general-purpose type of container dialog that encapsulates a set of dialogs, allowing for the reuse of the set as a whole. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends.
 | _waterfall dialog_ | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are typically designed to work within the context of a component dialog.
 | _prompt dialogs_ | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. They are designed to work with waterfall dialogs.
 | _adaptive dialog_ | A type of container dialog that allows for flexible conversation flow. It includes built-in support for language recognition, language generation, and memory scoping features. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager.
-| _action dialogs_ | Represent programmatic structures within an adaptive dialog. These let you design conversation flow much like expressions and statements in a traditional programming language let you design procedural flow in an application.
-| _input dialogs_ | Ask the user for input, much like prompt dialogs, but can interact with other structures in an adaptive dialog.
+| _action dialogs_ | Represent programmatic structures. These let you design conversation flow much like expressions and statements in a traditional programming language let you design procedural flow in an application. These only work within an adaptive dialog.
+| _input dialogs_ | Ask the user for input, much like prompt dialogs, but can interact with other structures in an adaptive dialog. These only work within an adaptive dialog.
 | _skill dialog_ | Automates the management of one or more skill bots from a skill consumer.
 | _QnA Maker dialog_ | Automates access to a QnA Maker knowledge base.
 
@@ -88,11 +92,10 @@ While you will not access the stack directly, understanding that it exists and i
 
 ## Container dialogs
 
-A container dialog acts as individual dialog and can be part of a larger dialog set. However, each container has an inner dialog set that is managed separately.
+A container dialog <!--acts as individual dialog and--> can be part of a larger dialog set. Each container has an inner dialog set that is also managed.
 
 - Each dialog set creates a scope for resolving dialog IDs.
-- The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs.
-While the conceptual structure of the two are quite different, they can be used together.
+- The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs. While the conceptual structure of the two are quite different, they can be used together.
 
 ### Dialog IDs
 
@@ -104,19 +107,15 @@ When one dialog references another dialog at run time, it does so by the dialog'
 
 Component dialogs use a sequence model for conversations, and each dialog in the container is responsible for calling other dialogs in the container. When the component dialog's inner dialog stack is empty, the component ends.
 
-Consider using component and waterfall dialogs if your bot:
-
-- Has a relatively simple control flow.
-- Does not require a more flexible conversation model.
+Consider using component and waterfall dialogs if your bot has a relatively simple control flow that does not require more dynamic conversation flow.
 
 [About component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md)  describes component, waterfall, and prompt dialogs in more detail.
 
 ### Adaptive dialogs
 
-Adaptive dialogs use a flexible model for conversations.
+Adaptive dialogs use a flexible model for conversations to handle a wider range of user interaction.
 An adaptive dialog can be designed to end or remain active when its inner dialog stack is empty.
-They offer several built-in capabilities, including interruption handling, attaching a recognizer to each dialog, using the language generation system, and more.
-With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
+They offer several built-in capabilities, including interruption handling, language recognition, language generation, and more. With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
 
 An adaptive dialog is part of the dialogs library and works with all of the other dialog types.
 You can easily build a bot that uses many dialog types.
@@ -128,7 +127,7 @@ Consider using adaptive dialogs if your bot:
 - Needs context-specific language understanding models or needs to extract entity information from user input.
 - Would benefit from custom input processing or response generation.
 
-The [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and the other adaptive dialog topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, access to memory scopes, and so on.
+The [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and the other adaptive dialog topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, access to memory scopes, and so on. See how to [create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md) for more about using a dialog manager to run an adaptive dialog.
 
 ## Other dialogs
 

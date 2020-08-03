@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
 Dialogs come in a few different types. This article describes component, waterfall, and prompt dialogs.
-For information about dialogs in general in the Bot Framework SDK, see the [dialogs library](bot-builder-concept-dialog.md) article. For information about adaptive dialogs, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md).
+For information about dialogs in general, see the [dialogs library](bot-builder-concept-dialog.md) article. For information about adaptive dialogs, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md).
 
 A _waterfall dialog_ (or waterfall) defines a sequence of steps, allowing your bot to guide a user through a linear process.
 These are typically designed to work within the context of a _component dialog_.
@@ -169,7 +169,7 @@ If you want to pop all dialogs off the stack, you can clear the dialog stack by 
 ### Repeating a dialog
 
 You can replace a dialog with itself, creating a loop, by using the *replace dialog* method.
-This is a great way to handle [complex interactions](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and a good technique to manage menus.
+This is a great way to handle [complex interactions](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and one technique for managing menus.
 
 > [!NOTE]
 > If you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the *replace dialog* method, and then initialize the dialog appropriately.
