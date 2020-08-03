@@ -77,12 +77,10 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 A manual registration is necessary for situations like:
 
 - You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
-- You need to manually create your own app ID (and password).
-
-See [FAQ - App Registration](bot-service-resources-faq-azure.md#how-do-i-create-my-own-app-registration).
+- You need to manually create your own app ID and password.
 
 > [!IMPORTANT]
-> In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+> In the section *Supports account types*, you must choose one of the 2 multi-tenant types that is: *Accounts in any organizational directory (Any Azure AD - Multitenant)* or *Accounts in any organizational directory (Any Azure AD - Multitenant) and personal Microsoft accounts (e.g. Xbox, Outlook.com)*, when creating the app, otherwise the bot will not work. For more information, see [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal). See also [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
 ## Update the bot
 
@@ -98,7 +96,7 @@ If you're using the Bot Framework SDK for Node.js, set the following environment
 
 ## Test the bot
 
-Now that your bot service is created, [test it in Web Chat](v4sdk/abs-quickstart.md#test-the-bot). Enter a message and your bot should respond.
+Now that your bot service is created, [test it in Web Chat](v4sdk/abs-quickstart.md#test-the-bot).
 
 ## Next steps
 
