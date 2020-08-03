@@ -9,9 +9,9 @@ ms.date: 07/30/2020
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Register a bot with Azure
+# Bot channels registration
 
-This article shows how to register a bot with **Azure Bot Service**. This useful if the bot is hosted elsewhere and you want to make it available in Azure and connect it to the supported channels.
+This article shows how to register a bot with **Azure Bot Service**. If the bot is hosted elsewhere, this allows you to make it available in Azure and connect it to the supported channels.
 
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
