@@ -27,8 +27,8 @@ These clickable links displays panels, on the right, that provide general inform
 > | ---- | ---- |
 > |**Overview** <img width="300px"/>| The related panel contains high level information about the bot. For example, you can see your bot's **Subscription ID**, **Messaging endpoint** and so on.|
 > |**Activity log**| Platform logs provide detailed diagnostic and auditing information for Azure resources and the Azure platform they depend on. They are automatically generated although you need to configure certain platform logs to be forwarded to one or more destinations to be retained. For more information, see [Overview of Azure platform logs](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview).|
-> |**Access control (IAM)**| View the access a user or another security principal has to Azure resources. For more information, see [View the access a user has to Azure resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/check-access).|
-> |**Tags**|Apply tags to Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy. For more information, see [Use tags to organize your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources). |
+> |**Access control (IAM)**| View the access a user or another security principal has to Azure resources. For more information, see [View the access a user has to Azure resources](https://docs.microsoft.com/azure/role-based-access-control/check-access).|
+> |**Tags**|Apply tags to Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy. For more information, see [Use tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). |
 
 ### Bot management
 
