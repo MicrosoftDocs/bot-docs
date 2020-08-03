@@ -14,21 +14,21 @@ ms.date: 08/2/2020
 
 [!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
-In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/), then select your resource application such as a **Bot Channels Registration**. In the left panel, you  wil the sections described below.
+In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/), then select your resource application such as a **Bot Channels Registration**. In the left panel, you  will the sections described below.
 
 ### Bot settings overview
 
-These clickable links displays panels, on the right, that provide general information applicable to a resource (bot).
+These links display panels, on the right, that provide general information applicable to a bot.
 
 ![Bot settings overview](~/media/azure-manage-a-bot/overview.png)
 
 > [!div class="mx-tdBreakAll"]
 > | Option |  Description |
 > | ---- | ---- |
-> |**Overview** <img width="300px"/>| The related panel contains high level information about the bot. For example, you can see your bot's **Subscription ID**, **Messaging endpoint** and so on.|
-> |**Activity log**| Platform logs provide detailed diagnostic and auditing information for Azure resources and the Azure platform they depend on. They are automatically generated although you need to configure certain platform logs to be forwarded to one or more destinations to be retained. For more information, see [Overview of Azure platform logs](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview).|
+> |**Overview** <img width="200px"/>| The related panel contains high level information about the bot. You can see A bot's **Subscription ID**, **Messaging endpoint** and so on.|
+> |**Activity log**| Platform logs provide detailed diagnostic and auditing information for Azure resources and the Azure platform they depend on. For more information, see [Overview of Azure platform logs](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview).|
 > |**Access control (IAM)**| View the access a user or another security principal has to Azure resources. For more information, see [View the access a user has to Azure resources](https://docs.microsoft.com/azure/role-based-access-control/check-access).|
-> |**Tags**|Apply tags to Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy. For more information, see [Use tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). |
+> |**Tags**|Apply tags to Azure resources, resource groups, and subscriptions to logically organize them. For more information, see [Use tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). |
 
 ### Bot management
 
@@ -39,7 +39,7 @@ These clickable links displays panels, on the right, that provide general inform
 > [!div class="mx-tdBreakAll"]
 > | Option |  Description |
 > | ---- | ---- |
-> | **Build** <img width="300px"/>| The Build tab provides options for making changes to your bot. This option is not available for **Registration Only Bot**. |
+> | **Build** <img width="200px"/>| It provides options for making changes to your bot. Not available for **Registration Only Bot**. |
 > | **Test in Web Chat** | Use the integrated Web Chat control to help you quickly test your bot. |
 > | **Analytics** | If analytics is turned on for your bot, you can view the analytics data that Application Insights has collected for your bot. |
 > | **Channels** | Configure the channels your bot uses to communicate with users. |
@@ -49,13 +49,15 @@ These clickable links displays panels, on the right, that provide general inform
 
 ## Application service settings
 
-A bot application, also known as application service, has a set of configurable items that you can access through the Azure portal as described below.
+A bot application, also known as application service, has a set of **application settings** that you can access through the Azure portal as described below. These app settings are variables passed as environment variables to the application code. For more information, see [Configure an App Service app in the Azure portal](https://docs.microsoft.com/en-us/azure/app-service/configure-common).
 
-1. In your browser, navigate to the Azure portal
+1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/).
+1. Search for your bot app service. Click on its name.
+1. The bot app service is displayed.
 
-![App Service Settings](~/media/azure-manage-a-bot/app-service-settings.png)
+    ![App Service Settings](~/media/azure-manage-a-bot/app-service-settings.png)
 
-The **Application Settings** blade contains detailed information about your bot, such as the bot's environment, debug settings, and application settings keys.
+The **Application Settings** left panel contains detailed information about the bot, such as the bot's environment, debug settings, and application settings keys.
 
 ### MicrosoftAppID and MicrosoftAppPassword
 
