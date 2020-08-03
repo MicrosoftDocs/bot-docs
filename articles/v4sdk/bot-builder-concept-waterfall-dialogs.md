@@ -7,7 +7,7 @@ ms.author: botcc
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/29/2020
+ms.date: 08/03/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,10 +19,11 @@ Dialogs come in a few different types. This article describes component, waterfa
 For information about dialogs in general in the Bot Framework SDK, see the [dialogs library](bot-builder-concept-dialog.md) article. For information about adaptive dialogs, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md).
 
 A _waterfall dialog_ (or waterfall) defines a sequence of steps, allowing your bot to guide a user through a linear process.
-These are designed to work within the context of a _component dialog_.
+These are typically designed to work within the context of a _component dialog_.
 
-A component dialog is a type of container dialog that allows the waterfall to call on other dialogs, such as prompts.
+A component dialog is a type of container dialog that allows dialogs in the set to call other dialogs in the set, such as a waterfall dialog calling prompt dialogs or another waterfall dialog.
 Component dialogs manage a set of _child_ dialogs, such as waterfall dialogs, prompts, and so on.
+You can design a component dialog to handle specific tasks and reuse it, in the same bot or across multiple bots.
 
 _Prompt dialogs_ (prompts) are dialogs designed to ask the user for specific types of information, such as a number, a date, or a name, and so on.
 Prompts are designed to work with waterfall dialogs in a component dialog.
@@ -54,7 +55,7 @@ The waterfall step context contains the following:
 - *Values*: contains information you can add to the context, and is carried forward into subsequent steps.
 - *Result*: contains the result from the previous step.
 
-Additionally, the *next* method (**NextAsync** in C#, **next** in JS) continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
+Additionally, the *next* method (**NextAsync** in C#, **next** in JS and Python) continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
 
 ## Prompts
 

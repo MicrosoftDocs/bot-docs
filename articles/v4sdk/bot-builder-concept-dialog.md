@@ -7,16 +7,9 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/14/2020
+ms.date: 08/03/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
-
-<!-- Working notes:
-  - [x] Pare down to generic dialog information and link off to "scenario-specific" topics.
-  - [x] Pull component/waterfall specific content into a child article.
-  - [x] Link off to the adaptive dialog concept article for that stuff.
-  - [ ] Fix all resulting broken links in articles that refer to removed/renamed sections in this one.
--->
 
 # Dialogs library
 
@@ -71,7 +64,7 @@ The dialogs library provides a few types of dialogs to make your bot's conversat
 | _dialog_ | The base class for all dialogs.
 | _container dialog_ | The base class for all _container_ dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit.
 | _component dialog_ | A general-purpose type of container dialog. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends.
-| _waterfall dialog_ | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are designed to work within the context of a component dialog.
+| _waterfall dialog_ | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are typically designed to work within the context of a component dialog.
 | _prompt dialogs_ | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. They are designed to work with waterfall dialogs.
 | _adaptive dialog_ | A type of container dialog that allows for flexible conversation flow. It includes built-in support for language recognition, language generation, and memory scoping features. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager.
 | _action dialogs_ | Represent programmatic structures within an adaptive dialog. These let you design conversation flow much like expressions and statements in a traditional programming language let you design procedural flow in an application.
@@ -97,7 +90,8 @@ While you will not access the stack directly, understanding that it exists and i
 
 A container dialog acts as individual dialog and can be part of a larger dialog set. However, each container has an inner dialog set that is managed separately.
 
-The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs.
+- Each dialog set creates a scope for resolving dialog IDs.
+- The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs.
 While the conceptual structure of the two are quite different, they can be used together.
 
 ### Dialog IDs
