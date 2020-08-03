@@ -202,7 +202,7 @@ You can also view the list in [alphabetical order](#add).
 |[addProperty](#addProperty)   |Add a property and its value, or name-value pair, to a JSON object and return the updated object.|
 |[removeProperty](#removeProperty) |Remove a property from JSON object and return the updated object.|
 |[setProperty](#setProperty)   |Set the value of a JSON object's property and return the updated object.|
-|[getProperty](#getProperty)   |Return the value of the root property in a JSON object. |
+|[getProperty](#getProperty)   |Return the value of a specified property from a JSON object. |
 |[coalesce](#coalesce) |Return the first non-null value from one or more parameters. |
 |[xPath](#xPath)   |C# only. Check XML for nodes or values that match an XPath (XML Path Language) expression, and return the matching nodes or values.|
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
@@ -218,7 +218,7 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
-|[EOL](#EOL)| Return the end of line (EOL) sequence text.|
+|[EOL](#EOL)| C# only. Return the end of line (EOL) sequence text.|
 |[isInteger](#isInteger)|Return true if  given input is an integer number|
 |[isFloat](#isFloat)|Return true if the given input is a float point number|
 |[isBoolean](#isBoolean)|Return true if the given input is a Boolean.|
@@ -1540,7 +1540,7 @@ And it returns the result `false`.
 
 ### EOL
 
-Return the end of line (EOL) sequence text.
+C# only. Return the end of line (EOL) sequence text.
 
 ```
 EOL()
@@ -2064,7 +2064,7 @@ It returns the result **02-26-18**.
 
 ### getProperty
 
-Retrieve the value of the root property from a JSON object.
+Return the value of a specified property from a JSON object.
 
 ```
 getProperty(<JSONObject>, '<Property>')
@@ -2072,16 +2072,16 @@ getProperty(<JSONObject>, '<Property>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*JSONObject*> | Yes | object | The JSON Object containing the property and value you want to get |
+| <*JSONObject*> | Yes | object | The JSON object containing the property and value(s) |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | string | The value of the root property you want to get in the JSON object|
+| value | string | The value(s) of the specified property in the JSON object|
 ||||
 
 *Example*
 
-This example gets the root property from **{"a:b": "value"}**:
+This example gets the specified property from **{"a:b": "value"}**:
 
 ```
 getProperty('a:b')
