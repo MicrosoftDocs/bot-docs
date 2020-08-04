@@ -14,7 +14,7 @@ ms.date: 08/2/2020
 
 [!INCLUDE [applies-to-both](includes/applies-to-both.md)]
 
-In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/), then select your resource application such as a **Bot Channels Registration**. In the left panel, you  will the sections described below.
+In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/), then select your resource application such as a **Bot Channels Registration**. In the left panel, you  will see the sections described below.
 
 ### Bot settings overview
 
