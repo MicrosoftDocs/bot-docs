@@ -312,7 +312,7 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 ## Options
 
-Developer can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
+Developers can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
 
 > [!IMPORTANT]
 >
