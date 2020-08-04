@@ -49,7 +49,7 @@ These links display panels, on the right, that provide general information appli
 
 ## Application service settings
 
-A bot application, also known as application service, has a set of **application settings** that you can access through the Azure portal as described below. These app settings are variables passed as environment variables to the application code. For more information, see [Configure an App Service app in the Azure portal](https://docs.microsoft.com/en-us/azure/app-service/configure-common).
+A bot application, also known as application service, has a set of **application settings** that you can access through the Azure portal as described below. These app settings are variables passed as environment variables to the application code. For more information, see [Configure an App Service app in the Azure portal](https://docs.microsoft.com/azure/app-service/configure-common).
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/).
 1. Search for your bot app service. Click on its name.
@@ -64,10 +64,9 @@ The **Application Settings** left panel contains detailed information about the 
 The **MicrosoftAppID** and **MicrosoftAppPassword** are kept within the bot's settings file(`appsettings.json` or `.env`), or Azure Key Vault. To retrieve them, either download your bot's setting or config file (for older bots, if it exists), or access Azure Key Vault. It may be necessary for you to test locally with the ID and password.
 
 > [!NOTE]
-> The **Bot Channels Registration** bot service comes with a *MicrosoftAppID* but because there is no app service associated with this type of service, there is no **Application Settings** blade for you to look up the *MicrosoftAppPassword*. To get the password, you must go generate one. To generate the password for a **Bot Channels Registration**, see
-[Bot Channels Registration password](bot-service-manage-settings.md#get-registration-password)
+> The **Bot Channels Registration** bot service comes with a *MicrosoftAppID* but because there is no app service associated with this type of service, there is no **Application Settings** blade for you to look up the *MicrosoftAppPassword*. To get the password, you generate one. See [Bot Channels Registration password](bot-service-manage-settings.md#get-registration-password)
 
 ## Next steps
 Now that you have explored the Bot Service blade in the Azure portal, learn how to use the Online Code Editor to customize your bot.
 > [!div class="nextstepaction"]
-> [Use the Online Code Editor](bot-service-build-online-code-editor.md)
+> [How bots work](~/v4sdk/bot-builder-basics.md)
