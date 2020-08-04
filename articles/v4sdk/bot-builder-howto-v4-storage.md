@@ -316,7 +316,11 @@ Send a message to your bot. The bot will list the messages it has received.
 ## Using Cosmos DB
 
 >[!IMPORTANT]
-> The _Cosmos DB storage_ class has been deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289). Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+> The _Cosmos DB storage_ class has been deprecated. Containers originally created with CosmosDbStorage had no partition key set, and were given the default partition key of _\/_partitionKey_.
+>
+> Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+>
+> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
@@ -341,6 +345,9 @@ To use Cosmos DB in your bot, you'll need to create a database resource before g
 The account creation takes a few minutes. Wait for the portal to display the Congratulations! Your Azure Cosmos DB account was created page.
 
 ### Add a database
+
+>[!IMPORTANT]
+> Unlike the legacy _Cosmos DB storage_, which has now been deprecated, the _Cosmos DB partitioned storage_ does not automatically create a database within your Cosmos DB account.
 
 1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **Create Database** from the drop-down box next to the **Create Container** button. A panel will then open on the right hand side of the window, where you can enter the details for the new database.
 
@@ -445,7 +452,9 @@ pip install botbuilder-azure
 ### Implementation
 
 > [!NOTE]
-> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_ with the addition of the `compatibilityMode` [flag](https://aka.ms/azure-dotnet-cosmosdb-partitionedstorage#L289).
+> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+>
+> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 ### [C#](#tab/csharp)
 

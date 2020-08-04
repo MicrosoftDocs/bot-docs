@@ -64,7 +64,7 @@ If you configure your own domain name you still must append the `/.bot/` path to
     <div id="webchat" role="main"></div>
     <script>
       (async function() {
-        const res = await fetch('https://<your_app_service>.azurewebsites.net/api/token/directlinease', { method: 'POST' });
+        const res = await fetch('<URL of your Token Service as described in Steps 1 and 2 above.>', { method: 'POST' });
         const { token } = await res.json();
 
         window.WebChat.renderWebChat(

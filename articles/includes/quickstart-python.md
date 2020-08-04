@@ -2,7 +2,7 @@
 
 - Python [3.6](https://www.python.org/downloads/release/python-369/), [3.7](https://www.python.org/downloads/release/python-375/), or [3.8](https://www.python.org/downloads/release/python-383/)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
-- Knowledge of ansynchronous programming in Python
+- Knowledge of asynchronous programming in Python
 
 ## Create a bot
 
@@ -16,7 +16,7 @@
 - `pip install botbuilder-core`
 - `pip install asyncio`
 - `pip install aiohttp`
-- `pip install cookiecutter`
+- `pip install cookiecutter==1.7.0`
 
 The last package, cookiecutter, will be used to generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
 
