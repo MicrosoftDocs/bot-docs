@@ -100,7 +100,7 @@ For example, the expression `(dialog.orderTotal + dialog.orderTax) > 50` adds th
 
 Read [Conversation flow and memory](https://docs.microsoft.com/composer/concept-memory) for more information about how expressions are used in memory.
 
-## Language Generation
+## Language generation
 
 Adaptive expressions are used by language generation (LG) systems to evaluate conditions described in LG templates. In the example below, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function is used to list all values in the `recentTasks` collection.
 
@@ -159,6 +159,8 @@ For more information and examples see the [adaptive cards templating documentati
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for JavaScript
 - [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the adaptive expressions library
+- [C# API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
+- [JavaScript API reference](https://docs.microsoft.com/javascript/api/adaptive-expressions)
 
 <!--
 - [API reference](../adaptive-expressions/adaptive-expressions-api-reference.md) for Adaptive Expressions
