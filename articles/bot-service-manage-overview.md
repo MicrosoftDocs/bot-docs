@@ -18,7 +18,7 @@ In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/). S
 
 ### Bot settings overview
 
-These links display panels, on the right, that provide general information applicable to a bot.
+These links display panels on the right that provide general information applicable to a bot.
 
 ![Bot settings overview](~/media/azure-manage-a-bot/overview.png)
 
