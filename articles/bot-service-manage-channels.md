@@ -53,7 +53,7 @@ The connection steps are different for each channel. See the related article in 
 > |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
 > |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|
-> |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with people through Telegram.|
+> |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with users through Telegram.|
 > |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with people using the Twilio cloud communication platform.|
 > |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with people using the WeChat platform.|
 > |[Web Chat](bot-service-channel-connect-webchat.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
