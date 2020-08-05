@@ -39,7 +39,7 @@ These links display panels on the right that provide general information applica
 > [!div class="mx-tdBreakAll"]
 > | Option |  Description |
 > | ---- | ---- |
-> | **Build** <img width="200px"/>| It provides options for making changes to your bot. Not available for **Registration Only Bot**. |
+> | **Build** <img width="200px"/>| Provides options for making changes to your bot. Not available for **Registration Only Bot**. |
 > | **Test in Web Chat** | Use the integrated Web Chat control to help you quickly test your bot. |
 > | **Analytics** | If analytics is turned on for your bot, you can view the analytics data that Application Insights has collected for your bot. |
 > | **Channels** | Configure the channels your bot uses to communicate with users. |
