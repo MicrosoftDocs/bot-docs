@@ -51,7 +51,7 @@ The connection steps are different for each channel. See the related article in 
 > |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
 > |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
 > |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
-> |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with people through Skype for Busines.|
+> |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with people through Slack.|
 > |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with people through Telegram.|
 > |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with people using the Twilio cloud communication platform.|
