@@ -28,7 +28,7 @@ To change the list of LUIS apps used by Bing Speech with your bot, do the follow
 
 1. Click **Speech priming** on the bot service blade. The list of LUIS apps available to you will appear.
 1. Select the LUIS apps you want Bing Speech to use.
-    1. To select a LUIS app in the list, hover over the LUIS model until a checkbox appears, then check the checkbox.
+    1. To select a LUIS app in the list, hover over the LUIS model until a checkbox appears, and then check the checkbox.
     1. To select a LUIS app that is not on the list, scroll to the bottom and enter the LUIS Application ID GUID into the text box.
 1. Click **Save** to save the list of LUIS apps associated with Bing Speech for your bot.
 
