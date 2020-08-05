@@ -42,7 +42,7 @@ The connection steps are different for each channel. See the related article in 
 > [!div class="mx-tdBreakAll"]
 > |Channel|Description|
 > |-------------|----------|
-> |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with people using Alexa devices that support Custom Skills.|
+> |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
 > |[Cortana](bot-service-channel-connect-cortana.md)|Cortana is a speech-enabled channel that can send and receive voice messages in addition to textual conversation.|
 > |[Direct Line](bot-service-channel-directline.md)|Direct Line allows the integration of a bot into a mobile app, web page, or other applications.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enables a bot to communicate with users via Office 365 email.|
