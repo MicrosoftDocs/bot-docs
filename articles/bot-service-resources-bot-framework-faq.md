@@ -63,7 +63,7 @@ In case you don't find the answer you're looking for, you can post your question
 - [Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?](bot-service-resources-faq-security.md#do-the-bots-registered-with-the-bot-framework-collect-personal-information-if-yes-how-can-i-be-sure-the-data-is-safe-and-secure-what-about-privacy)
 - [Can I host my bot on my own servers?](bot-service-resources-faq-security.md#can-i-host-my-bot-on-my-own-servers)
 - [How do you ban or remove bots from the service?](bot-service-resources-faq-security.md#how-do-you-ban-or-remove-bots-from-the-service)
-- [Which specific URLs do I need to whitelist in my corporate firewall to access Bot Framework services?](bot-service-resources-faq-security.md#which-specific-urls-do-i-need-to-whitelist-in-my-corporate-firewall-to-access-bot-framework-services)
+- [Which specific URLs do I need to allow-list in my corporate firewall to access Bot Framework services?](bot-service-resources-faq-security.md#which-specific-urls-do-i-need-to-allow-list-in-my-corporate-firewall-to-access-bot-framework-services)
 - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
 - [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)
 - [What keeps my bot secure from clients impersonating the Bot Framework Service?](bot-service-resources-faq-security.md#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)
