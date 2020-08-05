@@ -49,7 +49,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 
 1. Click **Create New**.
 1. Click **Create App ID in the App Registration Portal** link.
-1. In the displayed *App registration* window, in the upper left, click the **New registration** tab.
+1. In the displayed *App registration* window, click the **New registration** tab in the upper left.
 1. Enter the name of the bot application you are registering.
 1. For the Supported account types select the type based on your requirements. See also [Use bot credentials](bot-service-debug-emulator.md#use-bot-credentials).
 1. Click the **Register** button. Once completed, Azure displays the overview page for the application.
