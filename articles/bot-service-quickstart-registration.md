@@ -62,7 +62,7 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 1. Copy the client secret and save it to a file. Make sure to keep the file in a secure place.
 1. Go back to the Bot Channel Registration window and copy the App ID and the Client secret in the Microsoft App ID and Password boxes, respectively.
 1. Click **OK**.
-1. Click the **Create** button. Wait for the resource to be created. It will show in your resources list.
+1. Click the **Create** button and wait for the resource to be created. It will show in your resources list.
 
 > [!NOTE]
 > The registration application will show the Global region even though you selected a different one. This is expected.
