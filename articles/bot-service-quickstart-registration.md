@@ -53,7 +53,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 1. Enter the name of the bot application you are registering.
 1. For the supported account types, select the type based on your requirements. See also [Use bot credentials](bot-service-debug-emulator.md#use-bot-credentials).
 1. Click the **Register** button. Once completed, Azure displays the overview page for the application.
-1. Copy and save to a file the **Application (client) ID** value.
+1. Copy the **Application (client) ID** value and save it in a file.
 1. In the left panel, click **Certificate and secrets**.
 1. Under *Client secrets*, click **New client secret**.
 1. Add a description to identify this secret from others you might need to create for this app.
