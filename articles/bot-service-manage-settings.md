@@ -36,7 +36,7 @@ After you have changed settings for your bot, click the **Save** button at the t
 The registration application ID and password are assigned to the bot's variables `MicrosoftAppID` and `MicrosoftAppPassword` in the files `appsettings.json` (.NET) and `.env` (Javascript).
 
 > [!NOTE]
-> The Bot Channels Registration has an application ID but because there is no app service associated with it, there is no password. You must generate one. To generate the password follow the steps described below.
+> The Bot Channels Registration has an application ID, but because there is no app service associated with it, there is no password. To generate the password follow the steps in the next section. 
 
 ### Get registration password
 
