@@ -37,7 +37,7 @@ After you've configured the channel, users on that channel can start using your 
 
 ## Connect a bot to a channel
 
-The connection steps are different for each channel, see the related article for details.
+The connection steps are different for each channel. See the related article in the table below more information. 
 
 > [!div class="mx-tdBreakAll"]
 > |Channel|Description|
