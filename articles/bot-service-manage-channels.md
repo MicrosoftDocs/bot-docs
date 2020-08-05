@@ -56,7 +56,7 @@ The connection steps are different for each channel. See the related article in 
 > |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with users through Telegram.|
 > |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with users through the Twilio cloud communication platform.|
 > |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with users using the WeChat platform.|
-> |[Web Chat](bot-service-channel-connect-webchat.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
+> |[Web Chat](bot-service-channel-connect-webchat.md)| Automatically configured for you when you create a bot with the Bot Framework Service.|
 > |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with people using the Webex.|
 > |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://botkit.ai/docs/v4/platforms/)|
 
