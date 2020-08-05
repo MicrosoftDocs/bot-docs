@@ -12,9 +12,9 @@ ms.date: 07/31/2019
 
 # Connect a bot to channels
 
-A channel is a connection between communication applications and a bot. A bot, registered  with Azure, uses the channels to facilitate the communication with the user.
+A channel is a connection between communication applications and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users.
 
-You can configure a bot to connect to any of the standard channels such as Alexa, Cortana, Facebook Messenger, Slack and so on. For more information, see [Bot channels registration](bot-service-quickstart-registration.md).
+You can configure a bot to connect to any of the standard channels such as Alexa, Cortana, Facebook Messenger, and Slack. For more information, see [Bot channels registration](bot-service-quickstart-registration.md).
 
 In addition to the provided channels, you can also connect a bot to your communication application using **Direct Line** as the channel.
 
@@ -26,7 +26,7 @@ The Bot Framework allows you to develop a bot in a channel-agnostic way by norma
 
 To configure a bot to connect to a channel, complete the following steps:
 
-1. Sign in to the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
+1. Sign in to the [Azure Portal](https://portal.azure.com).
 2. Select the bot that you want to configure.
 3. In the Bot Service blade, click **Channels** under **Bot Management**.
 4. Click the icon of the channel you want to add to your bot.
@@ -37,28 +37,28 @@ After you've configured the channel, users on that channel can start using your 
 
 ## Connect a bot to a channel
 
-The connection steps are different for each channel, see the related article for details.
+The connection steps are different for each channel. See the related article in the table below more information. 
 
 > [!div class="mx-tdBreakAll"]
 > |Channel|Description|
 > |-------------|----------|
-> |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with people using Alexa devices that support Custom Skills.|
-> |[Cortana](bot-service-channel-connect-cortana.md)|Cortana is a speech-enabled channel that can send and receive voice messages in addition to textual conversation.|
-> |[Direct Line](bot-service-channel-directline.md)|Direct Line allows the integration of a bot into a mobile app, web page, or other applications.|
-> |[Office 365 email](bot-service-channel-connect-email.md)|Enables a bot to communicate with users via Office 365 email.|
+> |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
+> |[Cortana](bot-service-channel-connect-cortana.md)| Send and receive voice messages in addition to textual conversation.|
+> |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
+> |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
 > |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
-> |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with people using the Kik messaging app.|
-> |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with people through the LINE app.|
-> |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with people through Microsoft Teams.|
-> |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with people through Skype.|
-> |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with people through Skype for Busines.|
-> |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with people through Slack.|
-> |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with people through Telegram.|
-> |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with people using the Twilio cloud communication platform.|
-> |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with people using the WeChat platform.|
-> |[Web Chat](bot-service-channel-connect-webchat.md)|When creating a bot with the Framework Bot Service, the Web Chat channel is automatically configured for you.|
-> |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with people using the Webex.|
-> |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://botkit.ai/docs/v4/platforms/)|
+> |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through the Kik messaging app.|
+> |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
+> |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
+> |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
+> |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Busines.|
+> |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|
+> |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with users through Telegram.|
+> |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with users through the Twilio cloud communication platform.|
+> |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with users using the WeChat platform.|
+> |[Web Chat](bot-service-channel-connect-webchat.md)| Automatically configured for you when you create a bot with the Bot Framework Service.|
+> |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with users using the Webex.|
+> |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit and [community repositories](https://botkit.ai/docs/v4/platforms/).|
 
 
 ## Publish a bot
