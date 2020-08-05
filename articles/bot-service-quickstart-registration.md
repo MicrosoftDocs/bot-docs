@@ -19,10 +19,7 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
 
 ## Create a registration application
 
-1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
-
-    > [!TIP]
-    > If you do not have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
+1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com). If you do not have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
 
 1. In the left panel, click **Create a resource**.
 1. In the right panel selection box enter *bot*. And in the drop-down list, select **Bot Channels Registration** or **Web App Bot** depending on your application.
@@ -46,9 +43,7 @@ If you created a bot using the Azure portal or the Command Line Interface (CLI) 
     >   |**App ID and password**| Create App ID and password |Use this option if you need to manually enter a Microsoft App ID and password. See the next section [Manual app registration](#manual-app-registration). Otherwise, a new Microsoft app ID will be created in the registration process. |
 
 1. Leave the *Messaging endpoint* box empty for now, you will enter the required URL after deploying the bot.
-
-1. The next steps allow you to create the registration application password and application ID to be used in your bot configuration files `appsettings.json` (.NET) and `.env` (Javascript).
-1. Click **Microsoft App ID and password**, highlighted in the figure below.
+1. Click **Microsoft App ID and password**, highlighted in the figure below.  The next steps allow you to create the registration application password and application ID to be used in your bot configuration files `appsettings.json` (.NET), `.env` (Javascript) and `config.py` (Python).
 
     ![bot registration settings](media/azure-bot-quickstarts/bot-channels-registration-settings.png)
 
@@ -84,15 +79,17 @@ A manual registration is necessary for situations like:
 
 ## Update the bot
 
-If you're using the Bot Framework SDK for .NET, set the following key values in the `appsettings.json` file:
+1. Bot Framework SDK for .NET. Set the following key values in the `appsettings.json` file:
+    - `MicrosoftAppId = <appId>`
+    - `MicrosoftAppPassword = <appSecret>`
 
-- `MicrosoftAppId = <appId>`
-- `MicrosoftAppPassword = <appSecret>`
+1. Bot Framework SDK for Node.js. Set the following environment variables in the `.env` file:
+    - `MICROSOFT_APP_ID = <appId>`
+    - `MICROSOFT_APP_PASSWORD = <appSecret>`
 
-If you're using the Bot Framework SDK for Node.js, set the following environment variables in the `.env` file:
-
-- `MICROSOFT_APP_ID = <appId>`
-- `MICROSOFT_APP_PASSWORD = <appSecret>`
+1. Bot Framework SDK for Python. Set the following environment variables in the `config.py` file:
+    - `APP_ID = os.environ.get("MicrosoftAppId", <appId>)`
+    - `APP_PASSWORD = os.environ.get("MicrosoftAppPassword", <appSecret>)`
 
 ## Test the bot
 

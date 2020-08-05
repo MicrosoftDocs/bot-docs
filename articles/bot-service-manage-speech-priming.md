@@ -18,11 +18,9 @@ For speech-enabled bots that use the [Web Chat](bot-service-channel-connect-wech
 
 Your bot may already be integrated with a LUIS app, or you can choose to create a LUIS app to associate with your bot for speech priming. The LUIS app contains examples of what you expect users to say to your bot. Important words that you want the bot to recognize should be labeled as entities. For example, in a chess bot you want to make sure that when the user says "Move knight", it isn’t interpreted as "Move night". The LUIS app should include examples in which "knight" is labeled as an entity.
 
-> [!NOTE]
-> To use speech priming with the Web Chat channel, you must use the Bing Speech service. See [Enable speech in the Web Chat channel](bot-service-channel-connect-webchat-speech.md) for an explanation of how to use the Bing Speech service.
-
 > [!IMPORTANT]
-> Speech priming only applies to bots configured for the Cortana channel or the Web Chat channel. Priming is not supported from non U.S. regional LUIS apps including: eu.luis.ai and au.luis.ai
+> - To use speech priming with the Web Chat channel, you must use the Bing Speech service. See [Enable speech in the Web Chat channel](bot-service-channel-connect-webchat-speech.md) for an explanation of how to use the Bing Speech service.
+> - Speech priming only applies to bots configured for the Cortana channel or the Web Chat channel. Priming is not supported from non U.S. regional LUIS apps including: eu.luis.ai and au.luis.ai
 
 ## Change the list of LUIS apps your bot uses
 
@@ -38,6 +36,6 @@ To change the list of LUIS apps used by Bing Speech with your bot, do the follow
 
 ## Additional Resources
 
-- [Enable speech in the Web Chat channel](~/bot-service-channel-connect-webchat-speech.md) - Learn about enabling speech in Web Chat.
-- [Speech Support in Bot Framework – Web Chat to Directline, to Cortana](https://blog.botframework.com/2017/06/26/Speech-To-Text/) - Learn about speech priming.
-- [Language Understanding Intelligent Service](https://www.luis.ai) - Learn about LUIS apps.
+- [Enable speech in the Web Chat channel](~/bot-service-channel-connect-webchat-speech.md)
+- [Speech Support in Bot Framework – Web Chat to Directline, to Cortana](https://blog.botframework.com/2017/06/26/Speech-To-Text/)
+- [Language Understanding Intelligent Service](https://www.luis.ai)
