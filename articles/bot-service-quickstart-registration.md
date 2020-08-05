@@ -15,7 +15,7 @@ This article shows how to register a bot with **Azure Bot Service**. If the bot 
 
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
-If you created a bot using the Azure portal or the Command Line Interface (CLI) then the bot is already registered with the Azure Bot Service. For more information, see [Deploy your bot](bot-builder-deploy-az-cli.md) and [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md).
+Bots created using the Azure portal or the Command Line Interface (CLI) are already registered with the Azure Bot Service. For more information, see [Deploy your bot](bot-builder-deploy-az-cli.md) and [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md).
 
 ## Create a registration application
 
