@@ -44,7 +44,7 @@ The connection steps are different for each channel. See the related article in 
 > |-------------|----------|
 > |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
 > |[Cortana](bot-service-channel-connect-cortana.md)| Send and receive voice messages in addition to textual conversation.|
-> |[Direct Line](bot-service-channel-directline.md)|Direct Line allows the integration of a bot into a mobile app, web page, or other applications.|
+> |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enables a bot to communicate with users via Office 365 email.|
 > |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
 > |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with people using the Kik messaging app.|
