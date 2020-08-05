@@ -50,7 +50,7 @@ The connection steps are different for each channel. See the related article in 
 > |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through the Kik messaging app.|
 > |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
 > |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
-> |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with people through Skype.|
+> |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
 > |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with people through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with people through Slack.|
 > |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with people through Telegram.|
