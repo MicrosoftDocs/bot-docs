@@ -47,7 +47,7 @@ The connection steps are different for each channel. See the related article in 
 > |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
 > |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
-> |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with people using the Kik messaging app.|
+> |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through the Kik messaging app.|
 > |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with people through the LINE app.|
 > |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with people through Microsoft Teams.|
 > |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with people through Skype.|
