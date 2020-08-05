@@ -58,7 +58,7 @@ The connection steps are different for each channel. See the related article in 
 > |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with users using the WeChat platform.|
 > |[Web Chat](bot-service-channel-connect-webchat.md)| Automatically configured for you when you create a bot with the Bot Framework Service.|
 > |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with users using the Webex.|
-> |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://botkit.ai/docs/v4/platforms/)|
+> |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit and [community repositories](https://botkit.ai/docs/v4/platforms/).|
 
 
 ## Publish a bot
