@@ -49,7 +49,7 @@ These links display panels on the right that provide general information applica
 
 ## Application service settings
 
-A bot application, also known as application service, has a set of **application settings** that you can access through the Azure portal as described below. These app settings are variables passed as environment variables to the application code. For more information, see [Configure an App Service app in the Azure portal](https://docs.microsoft.com/azure/app-service/configure-common).
+A bot application, also known as **application service**, has a set of **application settings** that you can access through the Azure portal as described below. These app settings are variables passed as environment variables to the application code. For more information, see [Configure an App Service app in the Azure portal](https://docs.microsoft.com/azure/app-service/configure-common).
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/).
 1. Search for your bot app service. Click on its name.
