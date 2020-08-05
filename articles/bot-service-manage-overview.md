@@ -41,7 +41,7 @@ These links display panels on the right that provide general information applica
 > | ---- | ---- |
 > | **Build** <img width="200px"/>| Provides options for making changes to your bot. Not available for **Registration Only Bot**. |
 > | **Test in Web Chat** | Use the integrated Web Chat control to quickly test your bot. |
-> | **Analytics** | If analytics is turned on for your bot, you can view the analytics data that Application Insights has collected for your bot. |
+> | **Analytics** | If analytics are activated, view the analytics data collected by Application Insights. |
 > | **Channels** | Configure the channels your bot uses to communicate with users. |
 > | **Settings** | Manage various bot profile settings such as display name, analytics, and messaging endpoint. |
 > | **Speech priming** | Manage the connections between your LUIS app and the Bing Speech service. |
