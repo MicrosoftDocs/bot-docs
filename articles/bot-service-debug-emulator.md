@@ -124,7 +124,7 @@ When creating an AD identity provider application, remember the following:
 - When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account, the emulator would issue the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect..*
 - In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Xbox)*.
 
-For more information, see [Create an Azure AD identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+For more information, see [Create an Azure AD identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
 ## View detailed Message Activity with the Inspector
 
