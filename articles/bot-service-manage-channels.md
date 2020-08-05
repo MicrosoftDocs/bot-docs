@@ -26,7 +26,7 @@ The Bot Framework allows you to develop a bot in a channel-agnostic way by norma
 
 To configure a bot to connect to a channel, complete the following steps:
 
-1. Sign in to the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
+1. Sign in to the [Azure Portal](https://portal.azure.com).
 2. Select the bot that you want to configure.
 3. In the Bot Service blade, click **Channels** under **Bot Management**.
 4. Click the icon of the channel you want to add to your bot.
