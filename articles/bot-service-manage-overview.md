@@ -64,7 +64,7 @@ The **Application Settings** left panel contains detailed information about the 
 The **MicrosoftAppID** and **MicrosoftAppPassword** are kept within the bot's settings file(`appsettings.json` or `.env`), or Azure Key Vault. To retrieve them, either download your bot's setting or config file (for older bots, if it exists), or access Azure Key Vault. It may be necessary for you to test locally with the ID and password.
 
 > [!NOTE]
-> The **Bot Channels Registration** bot service comes with a *MicrosoftAppID* but because there is no app service associated with this type of service, there is no **Application Settings** blade for you to look up the *MicrosoftAppPassword*. To get the password, you generate one. See [Bot Channels Registration password](bot-service-manage-settings.md#get-registration-password).
+> The **Bot Channels Registration** bot service comes with a *MicrosoftAppID*, but because there is no app service associated with this type of service there is also no **Application Settings** blade for you to look up the *MicrosoftAppPassword*. See [Bot Channels Registration password](bot-service-manage-settings.md#get-registration-password) to learn how to generate the password.
 
 ## Next steps
 Now that you have explored the Bot Service blade in the Azure portal, learn how to use the Online Code Editor to customize your bot.
