@@ -151,10 +151,10 @@ Other notes about the v4 code:
 ### Passing state between and within dialogs
 
 The
-[dialog state](../bot-builder-concept-dialog.md#dialog-state),
-[waterfall step context properties](../bot-builder-concept-dialog.md#waterfall-step-context-properties), and
-[using dialogs](../bot-builder-concept-dialog.md#using-dialogs)
-sections of the **dialogs library** article describe how to manage dialog state in v4.
+[dialog state](../bot-builder-concept-dialog.md#dialog-state) section of the **dialogs library** article and the
+[waterfall step context properties](../bot-builder-concept-waterfall-dialogs.md#waterfall-step-context-properties) and
+[using dialogs](../bot-builder-concept-waterfall-dialogs.md#using-dialogs)
+sections of the **about component and waterfall dialogs** article describe how to manage dialog state in v4.
 
 ### IAwaitable is gone
 
