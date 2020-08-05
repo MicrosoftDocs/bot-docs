@@ -25,7 +25,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 1. In the right panel selection box enter *bot*. From the drop-down list select **Bot Channels Registration** or **Web App Bot** depending on your application.
 
     > [!WARNING]
-    > For the **Web Bot App**, follow the steps described in the article: [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md), instead. You will create a bot in Azure that is automatically registered with the Azure Bot Service.
+    > If you picked **Web Bot App**, follow the steps described in the article [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md) . You will create a bot in Azure that is automatically registered with the Azure Bot Service.
 
 1. Click the **Create** button.
 1. In the **Bot Channels Registration** form, provide the requested information about your bot as specified in the table below.
