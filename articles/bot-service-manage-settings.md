@@ -45,7 +45,7 @@ The Azure Bot Service assigns a unique application ID to the application. You ca
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
 1. In the resource list, click on the registration application name.
-1. Im the right panel, in the *Bot Management* section, click  **Settings**. The registration application *Settings* page is displayed.
+1. In the right panel go to the *Bot Management* section and click **Settings**. The registration application *Settings* page will display.
 1. Click the **Manage** link by *Microsoft App ID*.
 
     ![bot registration settings password](media/azure-bot-quickstarts/bot-channels-registration-password.png)
