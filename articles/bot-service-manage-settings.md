@@ -15,7 +15,7 @@ The bot registration settings, such as display name, icon, and application insig
 
 ![bot registration settings](media/bot-service-portal-configure-settings/bot-service-settings.png)
 
-Below is the list the **Settings** fields:
+Below is the list of the **Settings** fields:
 
 > [!div class="mx-tdBreakAll"]
 > | Field <img width="400px"/>| Description |
