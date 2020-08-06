@@ -81,7 +81,7 @@ The Bot Framework service must protect itself and its customers against abusive 
 
 ## What are the rate limits?
 
-We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time.  Finally, if you are hosting your bot on an App Service, the bot is bound to the limitations of the App Service. For more information, see [SLA summary for Azure services](https://azure.microsoft.com/en-us/support/legal/sla/summary/) If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
+We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time.  Finally, if you are hosting your bot on an App Service, the bot is bound to the limitations of the App Service. For more information, see [SLA summary for Azure services](https://azure.microsoft.com/support/legal/sla/summary/) If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
 
 ## How will I know if I'm impacted by rate limiting?
 
