@@ -20,15 +20,15 @@ In some cases, a bot may need to send the user a message that is not directly re
 
 Proactive messages can be useful in a variety of scenarios. For example, if the user has previously asked the bot to monitor the price of a product, the bot can alert the user if the price of the product has dropped by 20%. Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. When the bot finishes compiling the response to the question, it will share that information with the user.
 
-### Other considerations
+## Requirements
 
 Before you can send a proactive message, your bot needs a _conversation reference_. Your bot can retrieve the conversation reference from any activity it has received from the user, but this typically requires the user to interact with the bot at least once before the bot can send a proactive message.
 
 Many channels prohibit a bot from messaging a user unless the user has messaged the bot at least once. Some channels allow exceptions. For instance, the Teams channel allows your bot to send a proactive (or 1-on-1) message to individuals in an already established group conversation that includes the bot.
 
-These resources contain more information about proactive messages in Teams:
+More information about proactive messages in Teams can be found in these resources:
 
-- <!--sample 57-->The **Teams conversation bot** sample in [**C#**](), [**JavaScript**](), or [**Python**]().
+- The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), or [**Python**](https://aka.ms/py-teams-conversations-sample).
 - Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages)
 
 ## Prerequisites
