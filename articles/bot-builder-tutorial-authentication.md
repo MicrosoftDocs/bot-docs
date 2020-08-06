@@ -225,7 +225,7 @@ The next step is to register with your bot the Azure AD application that you jus
     </appSettings>
     ```
 
-    To obtain the **Microsoft app ID** and **Microsoft app password** values, see: [bot-channels-registration-password](~/bot-service-manage-settings.md#get-registration-password).
+    To obtain the **Microsoft app ID** and **Microsoft app password** values, see [Get registration password](~/bot-service-manage-settings.md#get-registration-password).
 
     > [!NOTE]
     > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this tutorial. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
