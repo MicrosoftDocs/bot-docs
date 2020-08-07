@@ -35,7 +35,7 @@ Adaptive expressions support the following operator types and expression syntax:
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
 |+          | Addition. Example: A + B                                                    |[add][1]                           |
-|-            | Subtraction. Example: A – B                                                |[sub][2]                           |
+|-            | Subtraction. Example: A - B                                                |[sub][2]                           |
 |unary +    | Positive value. Example: +1, +A                                                    |N/A                                |
 |unary -    | Negative value. Example: -2, -B                                            |N/A                                |
 |\*            | Multiplication. Example: A \* B                                            |[mul][3]                           |
