@@ -131,7 +131,7 @@ You will need to set up appsettings.json before start up the bot, you can find w
 
 If you already have a service account and ready to deploy, then you can find **AppID** , **AppSecret** , **EncodingAESKey** and **Token** in the basic configurations on the left nav bar, like below.
 
-Don't forgot you need to set up the IP white list, otherwise WeChat won't accept your request.
+Don't forgot you need to set up the IP allow-list, otherwise WeChat won't accept your request.
 
  ![serviceaccount_console](./media/channels/wechat-serviceaccount-console.png)
 

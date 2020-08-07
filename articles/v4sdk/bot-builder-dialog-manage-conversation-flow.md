@@ -233,7 +233,7 @@ We register services for the bot in `Startup`. These services are available to o
 
 We register services for the bot in `index.js`.
 
-[!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-59)]
+[!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-60)]
 
 # [Python](#tab/python)
 

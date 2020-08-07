@@ -4191,7 +4191,7 @@ And returns the result using the optional *D* format: **Monday, January, 1, 2018
 Return the result from adding numbers in a list.
 
 ```
-add([<list of numbers>])
+sum([<list of numbers>])
 ```
 
 | Parameter | Required | Type | Description |
@@ -4209,7 +4209,7 @@ add([<list of numbers>])
 This example adds the specified numbers:
 
 ```
-add(createArray(1, 1.5))
+sum(createArray(1, 1.5))
 ```
 
 And returns the result **2.5**.

@@ -14,40 +14,49 @@ ms.date: 08/22/2019
 
 [!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
 
-When you [create a bot](bot-service-quickstart.md) with Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the web chat control, which provides the ability for users to interact with your bot directly in a web page.
+When you [create a bot](bot-service-quickstart.md) with the Framework Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat), which provides the ability for users to interact with the bot directly in a web page.
 
-![Web chat sample](./media/bot-service-channel-webchat/create-a-bot.png)
+![Web chat sample](~/media/bot-service-channel-webchat/create-a-bot.png)
 
-The Web Chat channel in the Bot Framework Portal contains everything you need to embed the web chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
+The Web Chat channel in the Bot Framework Portal contains everything you need to embed the Web Chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
 
-## Web Chat and Direct Line considerations
+## Web Chat security considerations
 
-> [!IMPORTANT]
-> Please, keep in mind these important [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. Please, refer to [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 
-## Get your bot secret key
+## Embed the Web Chat control in a web page
+
+The following picture shows the components involved when embedding the Web Chat control in a web page.
+
+  ![bot embed components](~/media/bot-service-channel-webchat/webchat-control.png)
+
+> [!NOTE]
+> This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp).
+
+
+### Get your bot secret key
 
 1. Open your bot in the [Azure Portal](https://portal.azure.com) and click **Channels** blade.
 
-2. Click **Edit** for the **Web Chat** channel.  
-![Web chat channel](./media/bot-service-channel-webchat/bot-service-channel-list.png)
+2. Click **Edit** for the **Web Chat** channel.
 
-3. Under **Secret keys**, click **Show** for the first key.  
-![Secret key](./media/bot-service-channel-webchat/secret-key.png)
+    ![Web chat channel](~/media/bot-service-channel-webchat/bot-service-channel-list.png)
+
+3. Under **Secret keys**, click **Show** for the first key.
+
+    ![Secret key](~/media/bot-service-channel-webchat/secret-key.png)
 
 4. Copy the **Secret key** and the **Embed code**.
 
 5. Click **Done**.
 
-## Embed the web chat control in your website
+### Development embedding options
 
-You can embed the web chat control in your website by using one of two options.
-
-### Option 1 - Keep your secret hidden, exchange your secret for a token, and generate the embed
+#### Option 1 - Exchange your secret for a token, and generate the embed
 
 Use this option if you can execute a server-to-server request to exchange your web chat secret for a temporary token,
-and if you want to make it difficult for other developers to embed your bot in their websites. 
-Although using this option will not absolutely prevent other developers from embedding your bot in their websites, 
+and if you want to make it difficult for other developers to embed your bot in their websites.
+Although using this option will not absolutely prevent other developers from embedding your bot in their websites,
 it does make it difficult for them to do so.
 
 To exchange your secret for a token and generate the embed:
@@ -59,7 +68,7 @@ To exchange your secret for a token and generate the embed:
 3. Within the `iframe` **Embed code** that you copied from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above), change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
 
 > [!NOTE]
-> Tokens will automatically be renewed before they expire. 
+> Tokens will automatically be renewed before they expire.
 
 ##### Example request
 
@@ -67,8 +76,15 @@ To exchange your secret for a token and generate the embed:
 requestGET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
+> [!NOTE]
+> Please note that for Azure Government, the token exchange URL is different.
 
-##### Example response 
+```
+requestGET https://webchat.botframework.azure.us/api/tokens
+Authorization: BotConnector YOUR_SECRET_HERE
+```
+
+##### Example response
 
 ```response
 "IIbSpLnn8sA.dBB.MQBhAFMAZwBXAHoANgBQAGcAZABKAEcAMwB2ADQASABjAFMAegBuAHYANwA.bbguxyOv0gE.cccJjH-TFDs.ruXQyivVZIcgvosGaFs_4jRj1AyPnDt1wk1HMBb5Fuw"
@@ -78,6 +94,13 @@ Authorization: BotConnector YOUR_SECRET_HERE
 
 ```html
 <iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
+```
+
+> [!NOTE]
+> Please note that for Azure Government, the example iframe looks different.
+
+```html
+<iframe src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?t=YOUR_TOKEN_HERE"></iframe>
 ```
 
 ##### Example html code
@@ -98,23 +121,23 @@ Authorization: BotConnector YOUR_SECRET_HERE
     function processRequest(e) {
       if (xhr.readyState == 4  && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
-        document.getElementById("chat").src="https://webchat.botframework.com/embed/lucas-direct-line?t="+response
+        document.getElementById("chat").src="https://webchat.botframework.com/embed/<botname>?t="+response
       }
     }
 
   </script>
 </html>
+
 ```
 
-### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
+#### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
 
-Use this option if you want to allow other developers to easily embed your bot into their websites. 
+Use this option if you want to allow other developers to easily embed your bot into their websites.
 
 > [!WARNING]
-> If you use this option, other developers can embed your bot into their websites 
-> by simply copying your embed code.
+> With this option, the Web Chat channel secret key is exposed in the client web page. Use this option only for development purposes and not in a production environment.
 
-To embed your bot in your website by specifying the secret within the `iframe` tag:
+To embed your bot in a web page by specifying the secret within the `iframe` tag, perform the steps described below.
 
 1. Copy the `iframe` **Embed code** from the Web Chat channel within the Bot Framework Portal (as described in [Get your bot secret key](#get-your-bot-secret-key) above).
 
@@ -123,19 +146,93 @@ To embed your bot in your website by specifying the secret within the `iframe` t
 ##### Example iframe (using secret)
 
 ```html
-<iframe src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
+<iframe style="height:480px; width:402px" src="https://webchat.botframework.com/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
-
-## Style the web chat control
-
-You may change the size of the web chat control by using the `style` attribute of the `iframe` to specify `height` and `width`.
+> [!NOTE]
+> Please note that for Azure Government, the example iframe looks different.
 
 ```html
-<iframe style="height:480px; width:402px" src="... SEE ABOVE ..."></iframe>
+<iframe style="height:480px; width:402px" src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
 
-![Chat control Client](./media/chatwidget-client.png)
+  ![Web Chat client](~/media/bot-service-channel-webchat/webchat-client.png)
+
+### Production embedding  option
+
+#### Keep your secret hidden, exchange your secret for a token, and generate the embed
+
+This option does not expose the Web Chat channel secret key in the client web page, as it is required in a production environment.
+
+The client must provide a token to talk to the bot. To learn about the differences between secrets and tokens
+and to understand the risks associated with using secrets, visit [Direct Line authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
+
+The following client web page shows how to use a token with the Web Chat. If you use Azure Gov, please adjust the URLs from public to government.
+
+```html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  </head>
+  <body>
+    <h2>Web Chat bot client using Direct Line</h2>
+
+    <div id="webchat" role="main"></div>
+
+    <script>
+
+     // "styleSet" is a set of CSS rules which are generated from "styleOptions"
+     const styleSet = window.WebChat.createStyleSet({
+         bubbleBackground: 'rgba(0, 0, 255, .1)',
+         bubbleFromUserBackground: 'rgba(0, 255, 0, .1)',
+
+         botAvatarImage: '<your bot avatar URL>',
+         botAvatarInitials: 'BF',
+         userAvatarImage: '<your user avatar URL>',
+         userAvatarInitials: 'WC',
+         rootHeight: '100%',
+         rootWidth: '30%'
+      });
+
+      // After generated, you can modify the CSS rules
+      styleSet.textContent = {
+         ...styleSet.textContent,
+         fontFamily: "'Comic Sans MS', 'Arial', sans-serif",
+         fontWeight: 'bold'
+      };
+
+      const res = await fetch('https:<YOUR_TOKEN_SERVER/API>', { method: 'POST' });
+      const { token } = await res.json();
+
+      window.WebChat.renderWebChat(
+        {
+          directLine: window.WebChat.createDirectLine({ token }),
+          userID: 'WebChat_UserId',
+          locale: 'en-US',
+          username: 'Web Chat User',
+          locale: 'en-US',
+          // Passing 'styleSet' when rendering Web Chat
+          styleSet
+        },
+        document.getElementById('webchat')
+      );
+    </script>
+  </body>
+</html>
+
+```
+
+For examples on how to generate a token, see:
+
+- [Single sign-on demo](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication)
+- [Direct Line token](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/DirectLineTokenSite)
 
 ## Additional resources
 
-You can [download the source code](https://aka.ms/BotFramework-WebChat-V4) for the web chat control on GitHub.
+- [Web Chat overview](~/v4sdk/bot-builder-webchat-overview.md)
+- [Web Chat customization](~/v4sdk/bot-builder-webchat-customization.md)
+- [Enable speech in Web Chat](~/bot-service-channel-connect-webchat-speech.md)
+- [Use Web Chat with the direct line app service extension](~/bot-service-channel-directline-extension-webchat-client.md)
+- [Connect a bot to Direct Line Speech](~/bot-service-channel-connect-directlinespeech.md)
+- [Add single sign on to Web Chat](~/v4sdk/bot-builder-webchat-sso.md)

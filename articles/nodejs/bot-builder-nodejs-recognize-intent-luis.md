@@ -6,7 +6,8 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/28/2018
+ms.date: 07/20/2020
+ROBOTS: NOINDEX 
 monikerRange: 'azure-bot-service-3.0'
 
 ---
