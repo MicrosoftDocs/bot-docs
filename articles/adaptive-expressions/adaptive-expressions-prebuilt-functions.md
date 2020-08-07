@@ -2077,7 +2077,7 @@ getProperty(<JSONObject>, '<propertyName>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | string | The value(s) of the root or specified property in the JSON object|
+| value | string | The value of the root or specified property in the JSON object|
 ||||
 
 *Example 1* 
