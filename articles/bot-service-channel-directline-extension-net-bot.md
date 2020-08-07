@@ -1,7 +1,7 @@
 ---
 title: .NET bot with direct line app service extension
 titleSuffix: Bot Service
-description: Enable .NET bot to work with direct line app service extension
+description: Learn how to configure .NET bots to work with named pipes. See how to enable direct line app service extensions and how to configure bots to use the extensions.
 services: bot-service
 manager: kamrani
 ms.service: bot-service
