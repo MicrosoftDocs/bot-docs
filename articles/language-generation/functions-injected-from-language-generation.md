@@ -108,6 +108,41 @@ It returns a `herocard`:
 }
 ```
 
+## expandText
+
+Evaluate the plain text in an object and return the expanded text data.
+
+```.lg
+expandText(<object>)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*object*> | Yes | object | The object with text to expand. |
+||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*evaluated-result*> | object | The expanded text data. |
+||||
+
+*Example*
+
+This example evaluates the plain text in a JSON object and returns the expanded text result.
+
+Say you have the following object:
+
+```json
+{
+	"@answer": "hello ${user.name}",
+	"user": {
+		"name": "vivian"
+	}
+}
+``` 
+
+Calling `expandText(@answer)` will result in the object **hello vivian**.
+
 ## template
 
 Return the evaluated result of given template name and scope.
@@ -127,7 +162,7 @@ template(<templateName>, '<param1>', '<param2>', ...)
 | <*evaluated-result*> | object | The result evaluated from the template as a function  |
 ||||
 
-*Example*:
+*Example*
 
 This example evaluates the result of calling the template as a function.
 
@@ -192,7 +227,7 @@ isTemplate(<templateName>)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*tempalteName*> | Yes | String  | A template name to check |
+| <*templateName*> | Yes | String  | A template name to check |
 |||||
 
 | Return value | Type | Description |
@@ -217,7 +252,6 @@ This example uses the `isTemplate()` function to check whether a given template 
 
 Calling `isTemplate("welcome")` would evaluate to `true`. Calling `isTemplate("delete-to-do")` would evaluate to `false`.
 
-<!--
 ## Additional Information
 
-- For more information about .lg templates read the [.lg file format](../file-format/bot-builder-lg-file-format.md) and [structured response template](language-generation-structured-response-template.md) reference articles.-->
+- For more information about .lg templates, see the [.lg file format](../file-format/bot-builder-lg-file-format.md) and [structured response template](language-generation-structured-response-template.md) reference articles.
