@@ -587,6 +587,31 @@ Note that any information explicitly passed in via CLI arguments will override i
 > !# @app.luis_schema_version = 3.2.0
 ```
 
+## URI reference
+
+Below are examples of how to make URI references:
+
+```.lu
+> URI to LU resource
+[import](http://.../foo.lu)
+
+# intent1
+> Ability to pull in specific utterances from an intent
+- [import](http://.../foo.lu#None)
+
+# intent2
+> Ability to pull in utterances or patterns or both from a specific intent 'None'
+- [import](http://..../foo.lu#None*utterances*)
+- [import](http://..../bar.lu#None*patterns*)
+- [import](http://..../taz.lu#None*utterancesandpatterns*)
+
+# intent3
+> Ability to pull in all utterances or patterns or both across all intents
+- [import](http://..../foo.lu#*utterances*)
+- [import](http://..../bar.lu#*patterns*)
+- [import](http://..../taz.lu#*utterancesandpatterns*)
+```
+
 ## External references
 
 References the .lu file. follow Markdown link syntax. Supported references include:
