@@ -2067,24 +2067,35 @@ It returns the result **02-26-18**.
 Return the value of a specified property from a JSON object.
 
 ```
-getProperty(<JSONObject>, '<Property>')
+getProperty(<JSONObject>, '<propertyName>')
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*JSONObject*> | Yes | object | The JSON object containing the property and value(s) |
+| <*JSONObject*> | Yes | object | The JSON object containing the property and values. |
+| <*propertyName*> | No | string | The name of the optional property to access values from. If not specified, the value of the root property is returned. |
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | string | The value(s) of the specified property in the JSON object|
+| value | string | The value(s) of the root or specified property in the JSON object|
 ||||
 
-*Example*
+*Example 1* 
 
-This example gets the specified property from **{"a:b": "value"}**:
+This example retrieves the root property from a JSON object:
 
 ```
-getProperty('a:b')
+getProperty({"a:b": "value"})
+```
+
+And returns the string **value**.
+
+*Example 2*
+
+This example retrieves a specified property from a JSON object:
+
+```
+getProperty({"a:b": "value"}, 'a:b')
 ```
 
 And returns the string **value**.
