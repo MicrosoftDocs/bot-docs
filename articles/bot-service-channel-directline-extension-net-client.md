@@ -23,7 +23,7 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
 1. Scroll to the Sites section. There is typically a Default Site unless you have deleted or renamed it.
-1. Click on the **Show link** to reveal one of the keys, then copy and save its value. You will use this value in the section [Create a C# Direct Line Client](#create-a-C#-direct-line-client).
+1. Click on the **Show link** to reveal one of the keys, then copy and save its value. You will use this value in the section [Create a C# Direct Line Client](#create-a-c-direct-line-client).
 
     ![App service extension keys](./media/channels/direct-line-extension-extension-keys-net-client.png)
 
@@ -58,8 +58,8 @@ Interactions with the direct line app service extension happen differently than 
 1. Create a client and generate a token using a secret. This step is the same as building any other C# Direct Line client except the endpoint you need use in your bot,appended with the **.bot/** path as shown next. Do not forget the ending **/**.
 
     ```csharp
-    string endpoint = "https://<YOUR_BOT_HOST>.azurewebsites.net/.bot/";
-    string secret = "<YOUR_BOT_DIRECT_LINE_SECRET_KEY>";
+    string endpoint = "https://<your_bot_name>.azurewebsites.net/.bot/";
+    string secret = "<your_bot_direct_line_secret_key>";
 
     var tokenClient = new DirectLineClient(
         new Uri(endpoint),
