@@ -19,20 +19,20 @@ This article describes how to update a bot to work with **named pipes**, and how
 
 ## Prerequisites
 
-In order to perform the steps described next, you must have **Azure App Service** resource and related **App Service** in Azure.
+To perform the steps described next, you must have the **Bot Channel Registration** resource and the related **Bot App Service** (your bot) in Azure.
 
-## Enable Direct Line App Service Extension
+## Enable Direct Line app service extension
 
-This section describes how to enable the direct line app service extension using keys from your bot’s channel configuration and the **Azure App Service** resource where your bot is hosted.
+This section describes how to enable the Direct Line app service extension using the app service extension key from your bot’s Direct Line channel configuration.
 
-## Update .NET Bot to use Direct Line App Service Extension
+### Update bot code
 
-> [!NOTE]	
-> `Microsoft.Bot.Builder.StreamingExtensions` preview packages have been deprecated. The SDK v4.8 now contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming). If a bot previously made use of the preview packages they must be removed before following the steps below. 
+> [!NOTE]
+> `Microsoft.Bot.Builder.StreamingExtensions` preview packages have been deprecated. The SDK v4.8 now contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming). If a bot previously made use of the preview packages they must be removed before following the steps below.
 
 1. In Visual Studio, open your bot project.
-2. Ensure the project is using version 4.8 or higher of the Bot Builder SDK.
-3. Allow your app to use the **Bot Framework NamedPipe**:
+1. Make sure the project uses version 4.8 or higher of the Bot Builder SDK. Also, make sure that the package [Microsoft.Bot.Connector.Directline](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine/3.0.3-Preview1) version v3.0.3-Preview1 or later is installed.
+1. Allow your app to use the **Bot Framework NamedPipe**:
     - Open the `Startup.cs` file.
     - In the ``Configure`` method, add code to ``UseNamedPipes``
 
@@ -59,16 +59,17 @@ This section describes how to enable the direct line app service extension using
     }
     ```
 
-4. Save the `Startup.cs` file.
-5. Open the `appsettings.json` file and enter the following values:
+1. Save the `Startup.cs` file.
+
+1. Open the `appsettings.json` file and enter the following values:
     1. `"MicrosoftAppId": "<secret Id>"`
     2. `"MicrosoftAppPassword": "<secret password>"`
 
-    The values are the **appid** and the **appSecret** associated with the service registration group.
+    The values are the **appid** and the **appSecret** associated with the bot channels registration.
 
-6. **Publish** the bot to your Azure App Service.
+1. **Publish** the bot to your Azure App Service.
 
-### Gather your Direct Line Extension keys
+### Enable bot Direct Line app service extension
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
 1. In the Azure portal, locate your **Azure Bot Service** resource
@@ -76,15 +77,13 @@ This section describes how to enable the direct line app service extension using
 1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
 1. Scroll down to the App Service Extension Keys section.
-1. Click on the **Show link** to reveal one of the keys, then copy ad save its value. You will use this value in the next section.
+1. Click on the **Show link** to reveal one of the keys, then copy ad save its value. You will use this value in the steps below.
 
-![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
+    ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
 
-### Enable the Direct Line App Service Extension
-
-1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
-1. In the Azure portal, locate the **Azure App Service** resource page for the Web App where your bot is or will be hosted
-1. Click on **Configuration**. Under the *Application settings* section, add the following new settings:
+1. In the Azure portal, locate the **bot app service** resource page.
+1. In the left panel, in the *Application settings* section, click the **Configuration** item.
+1. In the right panel, dd the following new settings:
 
     |Name|Value|
     |---|---|
@@ -96,7 +95,7 @@ This section describes how to enable the direct line app service extension using
 1. Within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
 1. Click on **Save** to save the settings. This restarts the Azure App Service.
 
-## Confirm Direct Line App Extension and the Bot are Initialized
+## Confirm Direct Line app extension and the bot are configured
 
 In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot.
 If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
