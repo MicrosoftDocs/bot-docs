@@ -43,7 +43,7 @@ This example uses a `LongOperationPrompt`, derived from `ActivityPrompt`. When t
 ## Create an Azure Storage account
 
 Create an Azure Storage account, and retrieve the connection string.
-(See [create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create) and [copy your credentials from the Azure portal](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal) for more information.)
+(See [create a storage account](/azure/storage/common/storage-account-create) and [copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal) for more information.)
 
 ## Create a Bot Channels Registration
 
