@@ -53,7 +53,7 @@ Before creating the registration, setup `ngrok` and retrieve a url to be used as
 Create a Bot Channels Registration in the Azure Portal, or using the Az Cli. Set the Messaging Endpoint to the `ngrok` url, with `\api\messages` appended. After the bot registration is created, obtain the `MicrosoftAppId` and `MicrosoftAppPassword`, enable the `Direct Line` channel, and retrieve a `Direct Line` secret.  These will be added to the bot, and Azure Function respectively.  
 
 See:
-- [Register a bot](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration)
+- [Register a bot](../bot-service-quickstart-registration.md)
 - [Find Your Azure Bot’s AppID and AppSecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret/)
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
 
