@@ -1,9 +1,12 @@
 # [Manage a bot](../bot-service-manage-overview.md)
+# [Bot channels registration](../bot-service-quickstart-registration.md)
 # [Bot analytics](../bot-service-manage-analytics.md)
+# [Configure bot settings](../bot-service-manage-settings.md)
+# [Configure speech priming](../bot-service-manage-speech-priming.md)
 # Channels
 ## [Connect a bot to channels](../bot-service-manage-channels.md)
 ## [Implement channel-specific functionality](../v4sdk/bot-builder-channeldata.md)
-## [Cortana](../bot-service-channel-connect-cortana.md) 
+## [Cortana](../bot-service-channel-connect-cortana.md)
 ## Direct Line
 ### [About Direct Line](../bot-service-channel-directline.md)
 ### [Connect to Direct Line](../bot-service-channel-connect-directline.md)
@@ -24,14 +27,18 @@
 ## [Microsoft Teams](../channel-connect-teams.md)
 ## [Skype](../bot-service-channel-connect-skype.md)
 ## [Skype for Business](../bot-service-channel-connect-skypeforbusiness.md)
-## [Slack](../bot-service-channel-connect-slack.md) 
-## [Telegram](../bot-service-channel-connect-telegram.md) 
+## [Slack](../bot-service-channel-connect-slack.md)
+## [Telegram](../bot-service-channel-connect-telegram.md)
 ## [Twilio](../bot-service-channel-connect-twilio.md)
 ## [WeChat](../bot-service-channel-connect-wechat.md)
 ## [Web Chat](../bot-service-channel-connect-webchat.md)
 ## [Webex](../bot-service-adapter-connect-webex.md)
 ## [Additional channels](../bot-service-channel-additional-channels.md)
+
+<!--
+Moved up
 # [Configure bot settings](../bot-service-manage-settings.md)
 # [Configure speech priming](../bot-service-manage-speech-priming.md)
 # [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md)
-# [Migrate your bot](../bot-service-migrate-bot.md)
+-->
+<!-- # Obsolete [Migrate your bot](../bot-service-migrate-bot.md) -->

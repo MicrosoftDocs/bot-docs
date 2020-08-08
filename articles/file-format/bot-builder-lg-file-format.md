@@ -43,8 +43,8 @@ Use **\\** as an escape character.
 - a list of one-of variation text values
 - a structured content definition
 - a collection of conditions, each with:
-    - an [adaptive expression][3]
-    - a list of one-of variation text values per condition
+  - an [adaptive expression][3]
+  - a list of one-of variation text values per condition
 
 Template names follow the Markdown header definition.
 
@@ -86,9 +86,9 @@ Here is an example of a simple template that includes two variations.
 ### Conditional response template
 
 Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions][3].
- 
+
 > [!IMPORTANT]
-> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals. 
+> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals.
 
 #### If-else template
 
@@ -148,7 +148,7 @@ Here's a more complicated SWITCH CASE DEFAULT example:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
 
-Like conditional templates, switch templates also cannot be nested. 
+Like conditional templates, switch templates also cannot be nested.
 
 ### Structured response template
 
@@ -165,7 +165,7 @@ Read about [structure response templates](../language-generation/language-genera
 
 ### References to templates
 
-Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as **${<TemplateName>()}**.
+Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as **${\<TemplateName>()}**.
 
 ```.lg
 > Example of a template that includes composition reference to another template.
@@ -201,6 +201,7 @@ Hello, good evening
 When used directly within a one-of variation text, entity references are denoted by enclosing them in braces, such as  ${`entityName`}, or without braces when used as a parameter.
 
 Entities can be used as a parameter:
+
 - within a [prebuilt function][4]
 - within a condition in a [conditional response template](#conditional-response-template)
 - to [template resolution call](#parametrization-of-templates)
@@ -301,7 +302,6 @@ You can split your language generation templates into separate files and referen
 
 All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced with `# \<namespace>.\<templatename>`) across files being pulled in.
 
-
 ```.lg
 [Shared](../shared/common.lg)
 ```
@@ -312,7 +312,7 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 ## Options
 
-Deverloper can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
+Developers can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
 
 > [!IMPORTANT]
 >
@@ -339,10 +339,10 @@ If name is null, the diagnostic would be **'name' evaluated to null. [welcome] E
 
 ### replaceNull option
 
-Developers can creat delegates to replace null values in evaluated expressions by using the **replaceNull** option:
+Developers can create delegates to replace null values in evaluated expressions by using the **replaceNull** option:
 
 ```.lg
-> !# @replaceNull = ${path} is undefined 
+> !# @replaceNull = ${path} is undefined
 ```
 
 In the above example, the null input in the `path` variable would be replaced with **${path} is undefined**. The following input, where `user.name` is null:
@@ -379,7 +379,7 @@ The example below shows how to set the namespace option to `foo`:
 
 ### Exports option
 
-You can specify a list of LG templates to export. The exported templates can be called like prebuilt functions. 
+You can specify a list of LG templates to export. The exported templates can be called like prebuilt functions.
 
 The example below shows how to set the exports option to `template1, template2`:
 
@@ -396,14 +396,12 @@ The example below shows how to set the exports option to `template1, template2`:
 
 Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exported templates.
 
-
 ## Additional Resources
 
-- [Language generation API reference][2]
-
+- [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
-[2]:../language-generation/language-generation-API-reference.md
 [3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [4]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md
 [5]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join
