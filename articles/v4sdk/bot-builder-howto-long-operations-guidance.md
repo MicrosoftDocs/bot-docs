@@ -34,9 +34,8 @@ The sample code in this article begins with the structure of the multi-turn prom
 - The bot notifies the user the operation will take some time.
 - The bot sends the operation off to a C# function.
 - The bot saves state, indicating there is an operation in progress.
-- The bot responds to messages from the user, notifying them the operation is still in progress.
-- Azure Functions manages the long running operation.
-- Azure Functions sends an `event` activity to the bot, notifying it that the operation completed.
+  - While the operation is running, the bot responds to messages from the user, notifying them the operation is still in progress.
+  - Azure Functions manages the long-running operation and sends an `event` activity to the bot, notifying it that the operation completed.
 - The bot resumes the conversation and sends a proactive message to notify the user that the operation completed. The bot then clears the operation state mentioned earlier.
 
 This example uses a `LongOperationPrompt`, derived from `ActivityPrompt`. When the `LongOperationPrompt` queues the activity to be processed, it includes a choice from the user within the activity's _value_ property. This activity is then consumed by Azure Functions, modified, and wrapped in a different `event` activity before it is sent back to the bot using a Direct Line client. Within the bot, the event activity is used to resume the conversation by calling the adapter's _continue conversation_ method.  The dialog stack is then loaded, and the `LongOperationPrompt` completes.
