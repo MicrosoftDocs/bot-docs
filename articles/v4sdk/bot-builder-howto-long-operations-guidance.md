@@ -32,7 +32,7 @@ The sample code in this article begins with the structure of the multi-turn prom
 - The bot asks the user which long-running operation to perform.
 - The bot receives an activity from the user, and determines which operation to perform.
 - The bot notifies the user the operation will take some time.
-- Bot sends the operation off to an Azure Function.
+- The bot sends the operation off to a C# function.
 - The bot saves state, indicating there is an operation in progress.
 - The bot responds to messages from the user, notifying them the operation is still in progress.
 - Azure Functions manages the long running operation.
