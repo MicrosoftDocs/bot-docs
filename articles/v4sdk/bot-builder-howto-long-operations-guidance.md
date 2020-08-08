@@ -101,11 +101,11 @@ public static async Task Run(string queueItem, ILogger log)
     // Perform long operation here....
     System.Threading.Thread.Sleep(TimeSpan.FromSeconds(15));
 
-    if(originalActivity.Value.ToString() == "option 1") 
+    if(originalActivity.Value.ToString().Equals("option 1", CompareOptions.OrdinalIgnoreCase))
     {
         originalActivity.Value = " (Result for long operation one!)";
     }
-    else if(originalActivity.Value.ToString() == "option 2") 
+    else if(originalActivity.Value.ToString().Equals("option 2", CompareOptions.OrdinalIgnoreCase)) 
     {
         originalActivity.Value = " (A different result for operation two!)";
     }
