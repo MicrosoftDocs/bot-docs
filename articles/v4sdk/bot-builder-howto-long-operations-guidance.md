@@ -20,7 +20,8 @@ Properly handling of long-running operations is an important aspect of a robust 
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
-- Familiarity with [Prompts](https://docs.microsoft.com/azure/bot-service/bot-builder-primitive-prompts)
+- Familiarity with [Bot Framework SDK Prompts](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog#prompts)
+- Familiarity with [Proactive Messaging](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-proactive-message)
 - A copy of the **multi-turn prompt** sample in [**C#**](https://aka.ms/cs-multi-prompts-sample).
 - Familiarity with [Azure Storage Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction).
 - Familiarity with [Azure Functions C# script](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp).
@@ -54,6 +55,7 @@ Create a Bot Channels Registration in the Azure Portal or with the Azure CLI. Se
 See:
 - [Register a bot](../bot-service-quickstart-registration.md)
 - [Find Your Azure Bot’s AppID and AppSecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret/)
+- [MicrosoftAppID and MicrosoftAppPassword](https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview#microsoftappid-and-microsoftapppassword)
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
 
 ## Create the C# function
