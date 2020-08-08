@@ -59,7 +59,7 @@ See:
 
 ## Create the Azure Function
 
-Create an Azure Function App based on the .Net Core runtime stack. [See Create Function App](https://docs.microsoft.com/azure/azure-functions/functions-create-function-app-portal) Create  [Azure Functions C# script](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp).  
+Create an Azure Functions app based on the .Net Core runtime stack. See how to [create a function app](https://docs.microsoft.com/azure/azure-functions/functions-create-function-app-portal) and the [Azure Functions C# script reference](https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp) for more information.
 
 Add a `DirectLineSecret` application setting to the Function App. See [Functioni App Settings](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
 
