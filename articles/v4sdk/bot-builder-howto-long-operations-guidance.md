@@ -55,7 +55,7 @@ Create a Bot Channels Registration in the Azure Portal, or using the Az Cli. Set
 See:
 - [Register a bot](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration)
 - [Find Your Azure Bot’s AppID and AppSecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret/)
-- [Connect a bot to Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directline)
+- [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
 
 ## Create the Azure Function
 
