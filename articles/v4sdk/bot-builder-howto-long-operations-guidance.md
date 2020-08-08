@@ -50,7 +50,7 @@ Create an Azure Storage account, and retrieve the connection string.
 
 Before creating the registration, setup `ngrok` and retrieve a url to be used as the bot's `Messaging Endpoint` during local debugging. See [Debugging using Ngrok](https://docs.microsoft.com/azure/bot-service/bot-service-debug-channel-ngrok).
 
-Create a Bot Channels Registration in the Azure Portal, or using the Az Cli. Set the Messaging Endpoint to the `ngrok` url, with `\api\messages` appended. After the bot registration is created, obtain the `MicrosoftAppId` and `MicrosoftAppPassword`, enable the `Direct Line` channel, and retrieve a `Direct Line` secret.  These will be added to the bot, and Azure Function respectively.  
+Create a Bot Channels Registration in the Azure Portal or with the Azure CLI. Set the bot's messaging endpoint to the `ngrok` URL you created earlier, with `\api\messages` appended. After the Bot Channels Registration resource is created, obtain the bot's Microsoft app ID and password. Enable the Direct Line channel, and retrieve a Direct Line secret. You will add these to your bot code and C# function.
 
 See:
 - [Register a bot](../bot-service-quickstart-registration.md)
