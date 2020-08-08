@@ -11,7 +11,7 @@ ms.date: 07/30/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Long operations guidance
+# Manage a long-running operation
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
