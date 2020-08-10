@@ -1830,7 +1830,7 @@ And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-These example generate a new collection:
+These examples generate a new collection:
 
 ```
 foreach(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
@@ -3878,7 +3878,7 @@ And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-These example generates a new collection:
+These examples generate a new collection:
 
 ```
 select(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
@@ -5192,7 +5192,7 @@ And returns the result **[2, 3]**.
 
 *Example 2*
 
-These example generates a new collection:
+These examples generate a new collection:
 
 ```
 where(json("{'name': 'jack', 'age': '15'}"), x, x.value == 'jack')
