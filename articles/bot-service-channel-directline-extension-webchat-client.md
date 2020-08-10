@@ -1,7 +1,7 @@
 ---
 title: Use Web Chat with the direct line app service extension
 titleSuffix: Bot Service
-description: Use Web Chat with the direct line app service extension
+description: Learn how to use Web Chat with a direct line app service extension. View code that shows how to set up a direct line URL for your bot and obtain a token.
 services: bot-service
 manager: kamrani
 ms.service: bot-service

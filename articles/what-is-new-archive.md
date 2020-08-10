@@ -1,6 +1,6 @@
 ---
 title: What's new (Archive) - Bot Service
-description: Learn what is new in Bot Framework.
+description: Learn about improvements and new features in various 2019 releases of the Bot Framework SDK, including new functionality in Skills, Teams, and other areas.
 keywords: bot framework, azure bot service
 author: kamrani
 ms.author: kamrani
