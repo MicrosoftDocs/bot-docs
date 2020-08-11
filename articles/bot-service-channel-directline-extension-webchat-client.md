@@ -26,7 +26,7 @@ Generally speaking, the approach is the same as before. With the exception that 
 The direct line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, where the `/.bot/` extension is the Direct Line **endpoint** on your App Service.
 If you configure your own domain name you still must append the `/.bot/` path to access the direct line REST APIs.
 
-1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) article. But, instead of obtaining a token at this location: `https://directline.botframework.com/v3/directline/tokens/generate`, you generate the token directly from your Direct Line App Service Extension at this location: `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.
+1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) article. Instead of obtaining a token at `https://directline.botframework.com/v3/directline/tokens/generate`, you generate the token directly from your Direct Line App Service Extension at  `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.
 
 1. For an example that shows how to fetch a token from the host service, see [Web Chat Samples](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/i.protocol-direct-line-app-service-extension). Modify the example webpage with the changes shown below.
 

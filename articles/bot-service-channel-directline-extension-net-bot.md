@@ -19,7 +19,7 @@ This article describes how to update a bot to work with **named pipes**, and how
 
 ## Prerequisites
 
-To perform the steps described next, you must have the **Bot Channel Registration** resource and the related **Bot App Service** (your bot) in Azure.
+To perform the steps described next, you need to have the **Bot Channel Registration** resource and the related **Bot App Service** (your bot) in Azure.
 
 ## Enable Direct Line app service extension
 
@@ -31,7 +31,7 @@ This section describes how to enable the Direct Line app service extension using
 > `Microsoft.Bot.Builder.StreamingExtensions` preview packages have been deprecated. The SDK v4.8 now contains the [streaming code](https://github.com/microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder/Streaming). If a bot previously made use of the preview packages they must be removed before following the steps below.
 
 1. In Visual Studio, open your bot project.
-1. Make sure the project uses version 4.8 or higher of the Bot Builder SDK. Also, make sure that the package [Microsoft.Bot.Connector.Directline](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine/3.0.3-Preview1) version v3.0.3-Preview1 or later is installed.
+1. Make sure the project uses version 4.8 or higher of the Bot Builder SDK. Also ensure that the package [Microsoft.Bot.Connector.Directline](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine/3.0.3-Preview1) version v3.0.3-Preview1 or later is installed.
 1. Allow your app to use the **Bot Framework NamedPipe**:
     - Open the `Startup.cs` file.
     - In the ``Configure`` method, add code to ``UseNamedPipes``
@@ -77,13 +77,13 @@ This section describes how to enable the Direct Line app service extension using
 1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
 1. Scroll down to the App Service Extension Keys section.
-1. Click on the **Show link** to reveal one of the keys, then copy ad save its value. You will use this value in the steps below.
+1. Click on the **Show** link to reveal one of the keys, then copy and save its value. You will use this value in the steps below.
 
     ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
 
 1. In the Azure portal, locate the **bot app service** resource page.
 1. In the left panel, in the *Application settings* section, click the **Configuration** item.
-1. In the right panel, dd the following new settings:
+1. In the right panel, add the following new settings:
 
     |Name|Value|
     |---|---|
