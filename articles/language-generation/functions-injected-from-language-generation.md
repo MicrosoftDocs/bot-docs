@@ -254,4 +254,5 @@ Calling `isTemplate("welcome")` would evaluate to `true`. Calling `isTemplate("d
 
 ## Additional Information
 
-- For more information about .lg templates, see the [.lg file format](../file-format/bot-builder-lg-file-format.md) and [structured response template](language-generation-structured-response-template.md) reference articles.
+- [.lg file format](../file-format/bot-builder-lg-file-format.md) 
+- [Structured response template](language-generation-structured-response-template.md) 
