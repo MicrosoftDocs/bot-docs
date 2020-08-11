@@ -202,7 +202,7 @@ You can also view the list in [alphabetical order](#add).
 |[addProperty](#addProperty)   |Add a property and its value, or name-value pair, to a JSON object and return the updated object.|
 |[removeProperty](#removeProperty) |Remove a property from JSON object and return the updated object.|
 |[setProperty](#setProperty)   |Set the value of a JSON object's property and return the updated object.|
-|[getProperty](#getProperty)   |Return the value of a specified property from a JSON object. |
+|[getProperty](#getProperty)   |Return the value of a specified property from a JSON object or return the root property from the memory scope. |
 |[coalesce](#coalesce) |Return the first non-null value from one or more parameters. |
 |[xPath](#xPath)   |C# only. Check XML for nodes or values that match an XPath (XML Path Language) expression, and return the matching nodes or values.|
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
@@ -2064,38 +2064,71 @@ It returns the result **02-26-18**.
 
 ### getProperty
 
-Return the value of a specified property from a JSON object.
+Return the value of a specified property from a JSON object or return the root property from the memory scope.
 
+To return the value of a specified property from a JSON object, use the syntax:
 ```
 getProperty(<JSONObject>, '<propertyName>')
 ```
 
+To return the root property from the memory scope, use the syntax:
+
+```
+getProperty('<propertyName>')
+```
+
+Specified property from a JSON object:
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*JSONObject*> | Yes | object | The JSON object containing the property and values. |
-| <*propertyName*> | No | string | The name of the optional property to access values from. If not specified, the value of the root property is returned. |
+| <*propertyName*> | No | string | The name of the optional property to access values from.|
+
+Root property from the memory scope:
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*propertyName*> | Yes | string | The name of the optional property to access values from the root memory scope. |
+
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | string | The value of the root or specified property in the JSON object|
+| value | string | The value of the specified property in the JSON object or root property from the memory scope. |
 ||||
 
-*Example 1* 
+*Examples*
 
-This example retrieves the root property from a JSON object:
+For the examples below the memory scope is:
+
+```json
+{
+   "a:b" : "value",
+   "c":  
+   {
+        "d": "dkey"
+    }
+}
 
 ```
-getProperty({"a:b": "value"})
-```
+*Example 1*
 
-And returns the string **value**.
-
-*Example 2*
-
-This example retrieves a specified property from a JSON object:
+These example retrieves a specified property from the above JSON object:
 
 ```
 getProperty({"a:b": "value"}, 'a:b')
+getProperty(c, 'd')
+```
+
+And return the following strings respectively:
+
+- **value** 
+- **dkey**
+
+*Example 2* 
+
+
+This example retrieves the root property from the above JSON object:
+
+```
+getProperty("a:b")
 ```
 
 And returns the string **value**.
