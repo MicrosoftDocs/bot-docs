@@ -2066,37 +2066,26 @@ It returns the result **02-26-18**.
 
 Return the value of a specified property from a JSON object or return the root property from the memory scope.
 
-To return the value of a specified property from a JSON object, use the syntax:
+#### Return the value of a specified property from a JSON object
+
 ```
 getProperty(<JSONObject>, '<propertyName>')
 ```
 
-To return the root property from the memory scope, use the syntax:
-
-```
-getProperty('<propertyName>')
-```
-
-Specified property from a JSON object:
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*JSONObject*> | Yes | object | The JSON object containing the property and values. |
 | <*propertyName*> | No | string | The name of the optional property to access values from.|
-
-Root property from the memory scope:
-| Parameter | Required | Type | Description |
-| --------- | -------- | ---- | ----------- |
-| <*propertyName*> | Yes | string | The name of the optional property to access values from the root memory scope. |
-
+|||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | value | string | The value of the specified property in the JSON object or root property from the memory scope. |
 ||||
 
-*Examples*
+*Example*
 
-For the examples below the memory scope is:
+Say you have the following JSON object:
 
 ```json
 {
@@ -2108,7 +2097,6 @@ For the examples below the memory scope is:
 }
 
 ```
-*Example 1*
 
 These example retrieves a specified property from the above JSON object:
 
@@ -2122,8 +2110,37 @@ And return the following strings respectively:
 - **value** 
 - **dkey**
 
-*Example 2* 
+#### Return the root property from the memory scope
 
+```
+getProperty('<propertyName>')
+```
+
+Root property from the memory scope:
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*propertyName*> | Yes | string | The name of the optional property to access values from the root memory scope. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| value | string | The value of the specified property in the JSON object or root property from the memory scope. |
+||||
+
+*Example*
+
+Say you have the following JSON object:
+
+```json
+{
+   "a:b" : "value",
+   "c":  
+   {
+        "d": "dkey"
+    }
+}
+
+```
 
 This example retrieves the root property from the above JSON object:
 
