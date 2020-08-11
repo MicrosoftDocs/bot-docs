@@ -659,7 +659,7 @@ Here's an example of the aforementioned references:
 > With the above statement, the parser will parse qna1.lu and extract out all questions from QnA pairs in that file and add them under 'None' intent as defined in this file.
 ```
 
-## URI reference
+## URI references
 
 Below are examples of how to make URI references:
 
