@@ -589,7 +589,7 @@ Note that any information explicitly passed in via CLI arguments will override i
 
 ## External references
 
-The sections below details how to make [local file](#local-file-references) and [URI](#uri-references) references.
+The sections below detail how to make [local file](#local-file-references) and [URI](#uri-references) references.
 
 ### Local file references
 
