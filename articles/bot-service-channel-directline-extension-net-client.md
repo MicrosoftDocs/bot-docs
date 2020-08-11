@@ -32,7 +32,7 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 line app service extension. You can create additional sites if you’d like and use
 those secret values as well.
 
-## Add the preview Nuget package source
+## Add the preview NuGet package source
 
 The preview NuGet packages needed to create a C# Direct line client can be found in a NuGet feed.
 
