@@ -543,7 +543,7 @@ const dialog = new AdaptiveDialog(DIALOG_ID).configure({
 Once called, the `OnBeginDialog` trigger executes:
 
 - Two `PropertyAssignment` actions execute defining two new properties: `user.profile.name` and `user.profile.age`.
-- These properties get populated if the entities are present, such as the _this dialog_ being triggered by the phrase, "Hi, I'm Vishwac". The `@Personname` entity would be _Vishwac_.
+- These properties get populated if the entities are present, such as when this dialog was triggered by the phrase, "Hi, I'm Vishwac". In this case, the `@Personname` entity would be _Vishwac_.
 - If either property is null, the bot will prompt the user for the missing information using _text input_ actions.
 - Both the input actions allow interrupts, using adaptive expressions.
 
