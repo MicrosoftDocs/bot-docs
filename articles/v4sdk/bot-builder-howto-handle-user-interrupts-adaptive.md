@@ -11,7 +11,7 @@ ms.date: 07/27/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Handling user interruptions in adaptive dialogs
+# Handle user interruptions in adaptive dialogs
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
