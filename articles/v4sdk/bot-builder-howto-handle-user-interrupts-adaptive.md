@@ -540,7 +540,7 @@ const dialog = new AdaptiveDialog(DIALOG_ID).configure({
 
 #### GetUserProfileDialog Triggers
 
-Once called, the `OnBeginDialog` trigger executes:
+When this dialog starts, its `OnBeginDialog` trigger executes:
 
 - Two `PropertyAssignment` actions execute defining two new properties: `user.profile.name` and `user.profile.age`.
 - These properties get populated if the entities are present, such as when this dialog was triggered by the phrase, "Hi, I'm Vishwac". In this case, the `@Personname` entity would be _Vishwac_.
