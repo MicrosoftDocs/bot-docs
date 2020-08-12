@@ -73,7 +73,7 @@
 ### Adaptive dialogs
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 #### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
-#### [Handling user interruptions in adaptive dialogs](v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md)
+#### [Handle user interruptions in adaptive dialogs](v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md)
 #### [Create a bot using declarative adaptive dialogs](v4sdk/bot-builder-dialogs-declarative.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### Authentication
