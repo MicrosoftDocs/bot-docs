@@ -23,7 +23,7 @@ highlightedContent:
     # Card
     - title: "Create bots using a visual designer: Bot Framework Composer"
       itemType: overview
-      url: https://docs.microsoft.com/composer/
+      url: /composer
     # Card
     - title: "Create bots using code: Bot Framework SDK"
       itemType: overview
@@ -108,9 +108,14 @@ additionalContent:
             url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
           - text: Virtual Assistant
             url: v4sdk/bot-builder-virtual-assistant-introduction.md
-          - text: LUIS
+            # or?: https://microsoft.github.io/botframework-solutions
+          - text: Microsoft Teams
+            url: /microsoftteams/platform
+          - text: Language Understanding (LUIS)
             url: /azure/cognitive-services/luis
           - text: QnA Maker
             url: /azure/cognitive-services/qnamaker
+          - text: Speech service
+            url: /azure/cognitive-services/speech-service
           - text: Adaptive Cards
             url: /adaptive-cards

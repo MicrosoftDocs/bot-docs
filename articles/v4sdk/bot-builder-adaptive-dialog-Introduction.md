@@ -142,7 +142,7 @@ Since the dialog `bookFlightDialog` has no `OnIntent` trigger to handle the user
 
 To summarize:
 
-Each dialog's _recognizer_ analyzes the user's input to determine the user intent. Once the intent is determined, the _recognizer_ emits an `IntentRecognized` event which the dialog handles using an `OnIntent` trigger. If there is no `OnIntent` trigger in the active dialog that can handle that intent, the bot will send it to the dialog's parent dialog. If the parent dialog does not have a trigger to handle the intent it bubbles up until it reached the root dialog. Once the trigger that handles that intent completes, it sends control back to the dialog that started this process where it can continue the conversational flow where it left off.
+Each dialog's _recognizer_ analyzes the user's input to determine the user intent. Once the intent is determined, the _recognizer_ emits an `IntentRecognized` event which the dialog handles using an `OnIntent` trigger. If there is no `OnIntent` trigger in the active dialog that can handle that intent, the bot will send it to the dialog's parent dialog. If the parent dialog does not have a trigger to handle the intent it bubbles up until it reaches the root dialog. Once the trigger that handles that intent completes, it sends control back to the dialog that started this process where it can continue the conversational flow where it left off.
 
 ## Additional information
 

@@ -221,7 +221,7 @@ In the **Dialogs/RootDialog.cs** file:
     [!code-csharp[PromptForOptionsAsync](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Dialogs/RootDialog.cs?range=51-65)]
 
 1. We can replace `OnOptionSelected` with the second step of our waterfall. We still start a child dialog based on the user's input.
-   - The choice prompt returns a `FoundChoice` value. This shows up in the step context's `Result` property. The dialog stack treats all return values as objects. If the return value is from one of your dialogs, then you know what type of value the object is. See [prompt types](../bot-builder-concept-dialog.md#prompt-types) for a list what each prompt type returns.
+   - The choice prompt returns a `FoundChoice` value. This shows up in the step context's `Result` property. The dialog stack treats all return values as objects. If the return value is from one of your dialogs, then you know what type of value the object is. See [prompt types](../bot-builder-concept-waterfall-dialogs.md#prompt-types) for a list what each prompt type returns.
    - Since the choice prompt won't throw an exception, we can remove the try-catch block.
    - We need to add a fall through so that this method always returns an appropriate value. This code should never get hit, but if it does it will allow the dialog to "fail gracefully".
 
