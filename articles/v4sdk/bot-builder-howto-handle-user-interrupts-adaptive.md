@@ -38,7 +38,7 @@ What is covered in this section:
 
 1. [Create LUIS resources in the Azure portal](#create-luis-resources-in-the-azure-portal)
 1. [Get your authoring key](#get-your-authoring-key)
-1. [Use CLI to connect your bot to your LUIS resource in Azure](#use-cli-to-connect-your-bot-to-your-luis-resource-in-azure)
+1. [Use the Bot Framework CLI to connect your bot to your LUIS resource in Azure](#use-cli-to-connect-your-bot-to-your-luis-resource-in-azure)
 1. [Update your configuration file](#update-your-configuration-file)
 
 
