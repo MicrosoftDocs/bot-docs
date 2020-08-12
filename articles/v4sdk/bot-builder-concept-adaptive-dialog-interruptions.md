@@ -173,9 +173,10 @@ Whenever an adaptive dialog begins, any options passed into the dialog via _begi
 > [!NOTE]
 > This same concept also applies to entities available in the [turn scope][turn-scope].
 
-You can design your bot to use these values when present, and prompt the user when they are not. If you have a property associated with your input action, and a value for that property is passed in via the _begin dialog_ action, the user will not be prompted for it. There are situations when you may need to prompt the user for that information even when the property is not `null`. In these situations you can set _always prompt_ to `true`.
+You can design your bot to use these values when present, and prompt the user when they are not.
+When your input dialog can accept input from multiple different sources, you can use the `coalesce` prebuilt function  to use the first non-null value. `coalesce` is available as part of [Adaptive Expressions][adaptive-expressions].
 
-_Flexible entity extraction_ enables you to take the first non-null value, using `coalesce`, a prebuilt function available as part of [Adaptive Expressions][adaptive-expressions].
+There are situations when you may need to prompt the user for that information even when the property is not `null`. In these situations you can set _always prompt_ to `true`.
 
 ## Confirmation and correction
 
