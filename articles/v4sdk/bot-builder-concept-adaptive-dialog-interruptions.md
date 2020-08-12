@@ -24,7 +24,7 @@ When you build a conversation flow that prompts for user input, you need to deci
 
 - [Introduction to adaptive dialogs][introduction]
 - [Asking for user input in adaptive dialogs][inputs]
-- A basic understanding of [Language Understanding][language-understanding], especially the [intent][intents] and [entity][entities] concepts.
+- A basic understanding of [language understanding][language-understanding] concepts, especially the [intent][intents] and [entity][entities] concepts.
 
 ## Building a conversational flow
 
@@ -79,19 +79,21 @@ Unlike a form with a predefined set of fields that a user would fill in, a bot e
 
 ## Interruptions
 
-Interruptions can be handled locally within a dialog as well as globally by re-routing to another dialog. You can use interruption as a technique to:
+Interruptions can be handled locally within a dialog as well as globally by re-routing to another dialog. You can use interruptions as a technique to:
 
-- Detect and handle user's response as a locally relevant intent within the scope of the active dialog, meaning the dialog that prompted the user for information.
+- Detect and handle a user's response as a locally relevant intent within the scope of the active dialog, meaning the adaptive dialog that contains the trigger which contains the input action that prompted the user, is the dialog that handles _local_ interruptions.
+
+
+  <!--the dialog that prompted the user for information.-->
 - Detect that a different dialog would be better suited to handle the user input and then using the adaptive dialog consultation mechanism to enable a different dialog handle the user input.
 
-> [!NOTE]
-> Need a concise definition for the Bot Framework SDK's consultation mechanism.
+<!--- Need a concise definition for the Bot Framework SDK's consultation mechanism.     -->
 
 By default adaptive dialogs do this in response to all user inputs:
 
 - Run the recognizer configured on the adaptive dialog that contains the input action.
 - Evaluate the value of the _allow interruptions_ property.
-   - If **true**, evaluate the triggers in the parent adaptive dialog and execute the actions of the first trigger that matches, then issue a re-prompt when the input action resumes.
+   - If **true**, evaluate the triggers in the parent adaptive dialog and execute the actions of the first trigger that matches, then issue a re-prompt when the input action resumes. If the parent does not allow interruptions, it is skipped and its parent dialog is then checked and so on up to the root dialog.
    - If **false**, evaluate the _value_ property and assign its value to the property bound to the input. If null run the internal entity recognizer for that input action (e.g. number recognizer for number input etc) to resolve a value for that input action.
 
 ### The allow interruptions property
@@ -146,7 +148,7 @@ _Global interrupts_ are interruptions that are not handled by the active adaptiv
 
 Common uses for global interrupts include creating basic dialog management features such as Help & Cancel in the root dialog that are then available to any of its child dialogs.
 
-Once the interrupt is handled, the conversation flow continues where it left off, unless the interruption was a request to cancel, in which case you can use the [CancelAllDialogs][cancelalldialogs] action to end the conversational flow as well as the active adaptive dialog, as demonstrated in the following example:
+Once the interrupt is handled, the conversation flow continues where it left off with two possible exceptions. The first exception occurs when you use the [EditActions][editactions] action to modify the sequence of actions. The second exception occurs when the interruption is a request to cancel, in which case you can use the [CancelAllDialogs][cancelalldialogs] action to end the conversational flow as well as the active adaptive dialog, as demonstrated in the following example:
 
 > **Bot**: Good morning, how can I help you?
 
@@ -193,3 +195,4 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 [dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
 [turn-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#turn-scope
 [cancelalldialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
+[editactions]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editactions

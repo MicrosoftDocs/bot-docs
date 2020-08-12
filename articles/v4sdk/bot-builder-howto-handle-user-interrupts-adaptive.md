@@ -190,6 +190,7 @@ The recognizer is set by calling the `CreateLuisRecognizer()` method and passing
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=31-34&highlight=4)]
 
+<!--
 ```cs
 // Create instance of adaptive dialog.
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -197,6 +198,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
     Recognizer = CreateLuisRecognizer(this.configuration),
     ...
 ```
+-->
 
 The `CreateLuisRecognizer()` method first verifies the required values exist in the configuration file (appsettings.json) and if so creates a new `LuisAdaptiveRecognizer` named `Recognizer`. Your LUIS recognizer is now ready.
 
