@@ -146,7 +146,7 @@ What happens in cases where the active dialog is unable to detect an intent from
 
 _Global interrupts_ are interruptions that are not handled by the active adaptive dialog. If there is no `OnIntent` trigger in the active adaptive dialog that can handle the intent, the bot will send it to the dialog's parent dialog, using adaptive dialogs _consultation_ mechanism. If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog.
 
-Common uses for global interrupts include creating basic dialog management features such as Help & Cancel in the root dialog that are then available to any of its child dialogs.
+Common uses for global interrupts include creating basic dialog management features such as _help_ or _cancel_ in the root dialog that are then available to any of its child dialogs.
 
 Once the interrupt is handled, the conversation flow continues where it left off with two possible exceptions. The first exception occurs when you use the [EditActions][editactions] action to modify the sequence of actions. The second exception occurs when the interruption is a request to cancel, in which case you can use the [CancelAllDialogs][cancelalldialogs] action to end the conversational flow as well as the active adaptive dialog, as demonstrated in the following example:
 
