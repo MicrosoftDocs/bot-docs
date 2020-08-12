@@ -444,7 +444,6 @@ const conversationState = new ConversationState(new CosmosDbPartitionedStorage(c
 const userState = new UserState(new CosmosDbPartitionedStorage(userStorageOptions));
 ```
 
-<!--
 ## [Python](#tab/python)
 
 Starting with a fresh **multi-turn prompt** sample. Update `config.py` to include CosmosDb storage options:
@@ -493,14 +492,12 @@ if len(containers) < 1:
     new_container = client.CreateContainer(
         "dbs/" + CONFIG.COSMOSDB_DATABASE_ID,
         {
-            "default_ttl": CONFIG.COSMOSDB_TTL,
+            "defaultTtl": CONFIG.COSMOSDB_TTL,
             "id": CONFIG.COSMOSDB_CONVERSATION_STATE_CONTAINER_ID,
             "partitionKey": {"paths": ["/id"], "kind": "Hash",},
         },
     )
 ```
--->
-
 ---
 
 'ComosDb' will now automatically delete Conversation State records after 30 seconds of inactivity.
