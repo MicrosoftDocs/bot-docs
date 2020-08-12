@@ -113,9 +113,12 @@ This section explains how to use the Bot Framework CLI to connect your bot to yo
 
 #### Files generated
 
-There are two types of files generated during the `bf luis:build` process, the first is a `.json` file which contains information needed by your bot which you need to add to your [configuration file](#update-your-configuration-file). This file is named `luis.settings.<youralias>.<region>.json`.
+There are two types of files generated during the `bf luis:build` process:
 
-The second type of file generated are `.dialog` files, which are useful when using the declarative form of adaptive dialogs. You do not need the two generated .dialog files for this how-to article.
+1. A `.json` file which contains information needed by your bot which you need to add to your [configuration file](#update-your-configuration-file). This file is named `luis.settings.<youralias>.<region>.json`.
+1. `.dialog` files, which are useful when using the declarative form of adaptive dialogs.
+
+You do not need the two generated .dialog files for this how-to article.
 
 ### Update your configuration file
 
