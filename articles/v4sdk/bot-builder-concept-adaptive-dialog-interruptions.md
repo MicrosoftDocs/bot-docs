@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 When you build a conversation flow that prompts for user input, you need to decide what should happen when a user responds in a way that takes the conversation in a different direction. It is natural in human conversations to temporarily discuss a different topic before returning to the original subject, and being able to seamlessly handle scenarios where the user interrupts your conversation flow is an important aspect of a robust bot.
 
 > [!IMPORTANT]
-> Handling interruptions in adaptive dialogs is made possible using the Bot Framework SDK's _consultation_ mechanism, which enables a dialog to consult its parent dialog. This consultation mechanism also enables [Flexible entity extraction](#flexible-entity-extraction) and [Confirmation and correction](#confirmation-and-correction), which are also discussed in this article.
+> Handling interruptions in adaptive dialogs is made possible using the Bot Framework SDK's _consultation_ mechanism, which enables a dialog to consult its parent dialog. This consultation mechanism also enables [Flexible entity extraction](#flexible-entity-extraction) and [Confirmation and correction](#confirmation-and-correction), discussed later in this article.
 
 ## Prerequisites
 
