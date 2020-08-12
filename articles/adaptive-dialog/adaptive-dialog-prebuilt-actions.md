@@ -1066,4 +1066,4 @@ new LogAction()
 [12]:https://www.qnamaker.ai/
 [13]:https://github.com/microsoft/botbuilder-samples
 [oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
-[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
+[interruptions]: ../v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md

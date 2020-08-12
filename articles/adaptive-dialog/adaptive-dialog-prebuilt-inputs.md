@@ -471,4 +471,4 @@ The following links provide generalized information on the topic of authenticati
 [add-authentication]:https://aka.ms/azure-bot-add-authentication
 [recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
 [adaptive-expressions]:../v4sdk/bot-builder-concept-adaptive-expressions.md
-[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
+[interruptions]: ../v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md
