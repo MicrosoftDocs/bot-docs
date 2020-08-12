@@ -11,6 +11,10 @@ ms.date: 06/08/2020
 
 # Background and availability
 
+<!-- Attention writers!!
+     1 - This article contains FAQs regarding Bot Framework background and availability.
+     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
+
 ## Why did Microsoft develop the Bot Framework?
 
 We created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse, including on Microsoft's premier channels.

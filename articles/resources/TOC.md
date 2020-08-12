@@ -1,7 +1,8 @@
 <!-- Miscellaneous -->
 # [Get support](../bot-service-resources-links-help.md)
 # [App Insights keys](../bot-service-resources-app-insights-keys.md)
-# [Bot Service Compliance](../v4sdk/bot-service-compliance.md)
+# [Bot Service Compliance](../bot-service-compliance.md)
+# [Bot Service Encryption](../bot-service-encryption.md)
 # [Bot review guidelines](../bot-service-review-guidelines.md)
 # [Channel reference](../bot-service-channels-reference.md)
 # [Guide to identifiers](../bot-service-resources-identifiers-guide.md)
@@ -41,3 +42,4 @@
 # WebChat
 ## [Overview](../v4sdk/bot-builder-webchat-overview.md)
 ## [Customization](../v4sdk/bot-builder-webchat-customization.md)
+## [Add single sign on to Web Chat](../v4sdk/bot-builder-webchat-sso.md)
