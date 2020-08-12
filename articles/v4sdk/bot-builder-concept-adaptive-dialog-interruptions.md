@@ -66,7 +66,7 @@ Adaptive dialogs provide an answer to this dilemma using _interruptions_. Interr
 
 ### Examples of interruptions to a conversational flow
 
-Unlike a form with a predefined set of fields that a user would fill in, a bot enables the user to enter anything into an input field and a robust bot will need to be able to figure out how to respond appropriately to a wide range of user inputs.  Interruptions is one tool that enables your bot to respond to unexpected user inputs, or input that do not fit directly with the conversational flow of a given dialog. Consider the following scenarios:
+Unlike a form with a predefined set of fields that a user would fill in, a bot enables the user to enter anything into an input field and a robust bot will need to be able to figure out how to respond appropriately to a wide range of user inputs.  Interruptions is one tool that enables your bot to respond to unexpected user inputs, or input that does not fit directly with the conversational flow of a given dialog. Scenarios that can benefit from handling interruptions might include:
 
 - A bot that does flight bookings
    - being asked the temperature forecast for the destination in the middle of booking a flight.
