@@ -465,7 +465,7 @@ public void ConfigureServices(IServiceCollection services)
 1. Start the emulator, connect to your bot, and send messages as shown below.
 
 
-![Bot Example](../../media/how-to-long-operations/long-operations-bot-example.png)
+![Bot Example](./media/how-to-long-operations/long-operations-bot-example.png)
 
 
 <!-- Footnote-style links -->
