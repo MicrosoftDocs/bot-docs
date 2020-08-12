@@ -28,7 +28,7 @@ Handling interruptions is an advanced bot development topic. To get the most fro
 
 > [!NOTE]
 >
-> The `InterruptionsBot` sample is currently available in [**C#**][cs-sample]. Samples written in JavaScript and Python will be available at a future date.
+> The `InterruptionsBot` sample is currently available only in [**C#**][cs-sample].
 
 ## Setting up LUIS to work in your bot
 
