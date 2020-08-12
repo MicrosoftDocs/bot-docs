@@ -98,7 +98,7 @@ By default adaptive dialogs do this in response to all user inputs:
 
 ### The allow interruptions property
 
-_Allow interruptions_ is a property of the _input dialog_ class, which all inputs derive from, so it is available when [Asking for user input in adaptive dialogs][inputs]. The _allow interruptions_ property takes a _Boolean expression_, which can be either a boolean (_true/false_) or an [adaptive expression][adaptive-expressions] which resolves to a Boolean.
+_Allow interruptions_ is a property of the _input dialog_ class, which all inputs derive from, so it is available when [Asking for user input in adaptive dialogs][inputs]. The _allow interruptions_ property takes a _Boolean expression_, which can be either a Boolean value (_true/false_) or an [adaptive expression][adaptive-expressions] which resolves to a Boolean.
 
 The _allow interruptions_ property is defined when you create your [inputs][inputs] and defaults to true. Some examples:
 
