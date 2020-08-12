@@ -40,6 +40,9 @@ The sample code in this article begins with the structure of a multi-turn bot, a
 
 This type of expiring conversation is accomplished by adding a _last accessed time_ property to the bot implementation. This property value is then compared to the current time within the _activity handler_ before processing activities.
 
+> [!NOTE]
+> This example uses a 30 second timeout for ease of testing this pattern.
+
 # [C#](#tab/csharp)
 
 **appsettings.json**
