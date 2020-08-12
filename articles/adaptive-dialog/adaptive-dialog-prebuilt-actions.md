@@ -81,7 +81,7 @@ There's a mix of concepts going on here. There's the action sequence, which are 
 | Repeat this dialog     | [RepeatDialog](#repeatdialog)    | Used to restart the parent dialog.                                        |
 | Replace this dialog    | [ReplaceDialog](#replacedialog)  | Replaces the current dialog with a new dialog                             |
 | GetConversationMembers| [GetConversationMembers](#get-conversation-members) | Enables you to get a list of the conversation members and save it to a property in [memory][11].|
-| EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
+| EditActions    | [EditActions](#editactions) | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling [interruptions][interruptions].  |
 
 For code samples see [Dialog management examples](#dialog-management-examples).
 
@@ -679,7 +679,7 @@ new GetConversationMembers()
 
 #### EditActions
 
-Modifies the current sequence of actions. Specifically helpful when handling an interruption. You can use EditActions to insert or remove actions anywhere in the sequence, including adding actions to the beginning or end of the sequence.
+Modifies the current sequence of actions. Specifically helpful when handling [interruptions][interruptions]. You can use EditActions to insert or remove actions anywhere in the sequence, including adding actions to the beginning or end of the sequence.
 
 ```csharp
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
@@ -1066,3 +1066,4 @@ new LogAction()
 [12]:https://www.qnamaker.ai/
 [13]:https://github.com/microsoft/botbuilder-samples
 [oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
+[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md

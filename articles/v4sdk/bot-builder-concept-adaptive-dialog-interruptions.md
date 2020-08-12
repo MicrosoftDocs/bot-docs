@@ -113,7 +113,7 @@ The _allow interruptions_ property is defined when you create your [inputs][inpu
 
 ### Handling interruptions locally
 
-You can handle interruptions locally by adding `OnIntent` triggers to match the possible intents. Consider this example:
+You can handle interruptions locally by adding triggers to match the possible intents. You can add any trigger that subscribes to a `recognition` event, such as `OnIntent` or `OnKBMatch`. Consider this example:
 
 > **User**: I'd like to order a coffee.
 >

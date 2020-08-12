@@ -23,8 +23,12 @@ Handling interruptions is an advanced bot development topic. To get the most fro
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and [dialogs library][concept-dialogs] Bot Framework SDK concepts.
 - Understanding of the adaptive dialog concepts covered in the [Introduction to adaptive dialogs][adaptive-dialog-introduction], [Asking for user input in adaptive dialogs][adaptive-dialog-input] and [Handling interruptions in adaptive dialog][adaptive-dialog-interruptions] concept articles.
-- A working knowledge of how to [Create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md).
-- A copy of the `InterruptionsBot` sample in either [**C#**][cs-sample] or [**JavaScript**][js-sample]. <!-- or [**Python**][python-sample].-->
+- A copy of the `InterruptionsBot` sample in [**C#**][cs-sample].  <!-- , [**JavaScript**][js-sample] or [**Python**][python-sample].-->
+- A working knowledge of how to [Create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md) would be helpful, however this article will explain the `InterruptionsBot` sample in detail.
+
+> [!NOTE]
+>
+> The `InterruptionsBot` sample is currently available in [**C#**][cs-sample]. Samples written in JavaScript and Python will be available at a future date.
 
 ## Setting up LUIS to work in your bot
 

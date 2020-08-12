@@ -28,6 +28,7 @@
 ### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
 ### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
+### [Handling interruptions in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md)
 ## Security
 ### [Security guidelines](v4sdk/bot-builder-security-guidelines.md)
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
@@ -73,6 +74,7 @@
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 #### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
 #### [Create a bot using declarative adaptive dialogs](v4sdk/bot-builder-dialogs-declarative.md)
+#### [Handling user interruptions in adaptive dialogs](v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### Authentication
 #### [Add authentication to a bot](v4sdk/bot-builder-authentication.md)

@@ -42,7 +42,7 @@ The input classes provided by the Bot Framework SDK all derive from the base _in
 
 A Boolean expression. `true` to let the parent dialog interrupt the input dialog; otherwise, `false`.
 
-<!--TODO P0.5: Link to information on interruptions-->
+For information on interruptions, see the concept article [Handling interruptions in adaptive dialogs][interruptions].
 
 > [!NOTE]
 > The inputs parent dialog can also interrupt. This means that when `AllowInterruptions` is `true`, the recognizer in the inputs parent adaptive dialog will run and its triggers are evaluated.
@@ -471,3 +471,4 @@ The following links provide generalized information on the topic of authenticati
 [add-authentication]:https://aka.ms/azure-bot-add-authentication
 [recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
 [adaptive-expressions]:../v4sdk/bot-builder-concept-adaptive-expressions.md
+[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
