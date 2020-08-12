@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow, often they will need to ask a question in the middle of or cancel the process. This article describes some common ways to handle user interruptions in your bot.
+Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow. Often, they will need to ask a question in the middle of or cancel the process. This article describes some common ways to handle user interruptions in your bot.
 
 ## Prerequisites
 
