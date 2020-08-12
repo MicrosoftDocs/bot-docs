@@ -77,7 +77,7 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
 
 With this new LUIS resources in Azure portal, you are now ready to connect your bot to it.
 
-### Use CLI to connect your bot to your LUIS resource in Azure
+### Use the Bot Framework CLI to connect your bot to your LUIS resource in Azure
 
 This section explains how to use the Bot Framework CLI to connect your bot to your LUIS resources in Azure. This automates the various tasks required to create, update, train and publish LUIS applications for each .lu file for the bot. In order to use this, you first need Node.js and the Bot Framework CLI.
 
