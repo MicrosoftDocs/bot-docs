@@ -1,5 +1,5 @@
 ---
-title: Expire conversation guidance - Bot Service
+title: Expire a conversation - Bot Service
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
 author: ericdahlvang
@@ -11,14 +11,14 @@ ms.date: 07/14/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Expiring a conversation
+# Expire a conversation
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
 A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  This article describes two methods for expiring a conversation:
 
-- Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. See [User Interaction Expiration](#user-interaction-expiration)
-- Use a storage layer feature, such as CosmosDb Time To Live, to automatically clear state after a preconfigured length of time.  See [Storage Expiration](#storage-expiration)
+- Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. For more information, see the [user interaction expiration](#user-interaction-expiration) section.
+- Use a storage layer feature, such as Cosmos DB Time To Live (TTL), to automatically clear state after a preconfigured length of time. For more information, see the [storage expiration](#storage-expiration) section.
 
 <!-- 
 NOTE: in the future, provide guidance on an azure function queue or time trigger
@@ -34,11 +34,11 @@ NOTE: in the future, provide guidance on an azure function queue or time trigger
 
 ## About this sample
 
-The sample code in this article begins with the structure of a multi-turn bot, and extends that bot's functionality by adding additional code (provided below). This extended code demonstrates how to clear conversation state after a certain time period has passed.
+The sample code in this article begins with the structure of a multi-turn bot, and extends that bot's functionality by adding additional code (provided in the following sections). This extended code demonstrates how to clear conversation state after a certain time period has passed.
 
 ## User Interaction Expiration
 
-This type of expiring conversation is accomplished by adding a _last accessed time_ property to the bot implementation. This property value is then compared to the current time within the _activity handler_ before processing activities.
+This type of expiring conversation is accomplished by adding a _last accessed time_ property to the bot's conversation state. This property value is then compared to the current time within the _activity handler_ before processing activities.
 
 > [!NOTE]
 > This example uses a 30 second timeout for ease of testing this pattern.
@@ -59,7 +59,7 @@ First, add an `ExpireAfterSeconds` setting to appsettings.json:
 
 **Bots\DialogBot.cs**
 
-Next, add `ExpireAfterSeconds`, `LastAccessedTimeProperty`, and `DialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add an `IConfiguration` parameter to the constructor to retrieve the `ExpireAfterSeconds` value.
+Next, add `ExpireAfterSeconds`, `LastAccessedTimeProperty`, and `DialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add an `IConfiguration` parameter to the constructor with which to retrieve the `ExpireAfterSeconds` value.
 
 Note that instead of creating the dialog state property accessor inline in the `OnMessageActivityAsync` method, you are creating and recording it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
 
@@ -68,7 +68,7 @@ protected readonly int ExpireAfterSeconds;
 protected readonly IStatePropertyAccessor<DateTime> LastAccessedTimeProperty;
 protected readonly IStatePropertyAccessor<DialogState> DialogStateProperty;
 
-[existing fields omitted]
+// Existing fields omitted...
 
 public DialogBot(IConfiguration configuration, ConversationState conversationState, UserState userState, T dialog, ILogger<DialogBot<T>> logger)
 {
@@ -83,7 +83,7 @@ public DialogBot(IConfiguration configuration, ConversationState conversationSta
 }
 ```
 
-Finally, add code to `DialogBot`'s `OnTurnAsync` method to clear the dialog state if the conversation is too old.
+Finally, add code to the bot's `OnTurnAsync` method to clear the dialog state if the conversation is too old.
 
 ```csharp
 public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
@@ -122,25 +122,25 @@ MicrosoftAppPassword=
 ExpireAfterSeconds=30
 ```
 
-Next, add fields to `DialogBot` and update the constructor. Add local fields for `expireAfterSeconds` and `lastAccessedTimeProperty`.
-
 **bots\dialogBot.js**
+
+Next, add fields to `DialogBot` and update the constructor. Add local fields for `expireAfterSeconds` and `lastAccessedTimeProperty`.
 
 Add `expireAfterSeconds` as a parameter to the constructor and create the required `StatePropertyAccessor`:
 
 ```javascript
 constructor(expireAfterSeconds, conversationState, userState, dialog) {
 
-    [existing code omitted]
+    // Existing code omitted...
 
     this.lastAccessedTimeProperty = this.conversationState.createProperty('LastAccessedTime');
     this.expireAfterSeconds = expireAfterSeconds;
 
-    [existing code omitted]
+    // Existing code omitted...
 }
 ```
 
-Add code to `DialogBot`'s `run` method:
+Add code to the bot's `run` method:
 
 ```javascript
 async run(context) {
@@ -166,6 +166,8 @@ async run(context) {
 }
 ```
 
+**index.js**
+
 Lastly, update `index.js` to send the `ExpireAfterSeconds` parameter to `DialogBot`:
 
 ```javascript
@@ -173,6 +175,8 @@ const bot = new DialogBot(process.env.ExpireAfterSeconds, conversationState, use
 ```
 
 ## [Python](#tab/python)
+
+**config.py**
 
 First, add an `ExpireAfterSeconds` setting to config.py:
 
@@ -183,9 +187,9 @@ APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
 EXPIRE_AFTER_SECONDS = os.environ.get("ExpireAfterSeconds", 30)
 ```
 
-Next, add fields to `DialogBot` and update the constructor. Add local fields for `expire_after_seconds` and `last_accessed_time_property`.
-
 **bots\dialog_bot.py**
+
+Next, add fields to `DialogBot` and update the constructor. Add local fields for `expire_after_seconds` and `last_accessed_time_property`.
 
 Add `expire_after_seconds` as a parameter to the constructor and create the required `StatePropertyAccessor`:
 
@@ -197,7 +201,7 @@ def __init__(
     user_state: UserState,
     dialog: Dialog,
 ):
-    [existing code omitted]
+    # Existing code omitted...
 
     self.expire_after_seconds = expire_after_seconds
     self.dialog_state_property = conversation_state.create_property("DialogState")
@@ -218,7 +222,7 @@ async def on_message_activity(self, turn_context: TurnContext):
     )
 ```
 
-Add code to `DialogBot`'s `on_turn` method:
+Add code to the bot's `on_turn` method:
 
 ```python
 async def on_turn(self, turn_context: TurnContext):
@@ -249,6 +253,8 @@ async def on_turn(self, turn_context: TurnContext):
     await self.user_state.save_changes(turn_context)
 ```
 
+**app.py**
+
 Lastly, update `app.py` to send the `EXPIRE_AFTER_SECONDS` parameter to `DialogBot`:
 
 ```python
@@ -259,13 +265,17 @@ BOT = DialogBot(CONFIG.EXPIRE_AFTER_SECONDS, CONVERSATION_STATE, USER_STATE, DIA
 
 ## Storage Expiration
 
-`CosmosDb` provides a Time To Live (TTL) feature which enables expiring records from the storage container.  This can be configured from within the Azure Portal, or during container creation using the language-specific CosmosDb SDKs.
+Cosmos DB provides a Time To Live (TTL) feature which allows you to delete items automatically from a container after a certain time period.  This can be configured from within the Azure portal or during container creation (using the language-specific Cosmos DB SDKs).
 
-The Bot Builder SDK does not expose a TTL configuration setting.  However, container initialization can be overridden and the CosmosDb SDK can be used to configure TTL prior to Bot Builder storage initialization.
+The Bot Framework SDK does not expose a TTL configuration setting.  However, container initialization can be overridden and the Cosmos DB SDK can be used to configure TTL prior to Bot Framework storage initialization.
 
 # [C#](#tab/csharp)
 
-Starting with a fresh **multi-turn prompt** sample, update appsettings.json to include CosmosDb storage options:
+Start with a fresh copy of the **multi-turn prompt** sample, and add the `Microsoft.Bot.Builder.Azure` NuGet package to the project.
+
+**appsettings.json**
+
+Update appsettings.json to include Cosmos DB storage options:
 
 ```json
 {
@@ -281,11 +291,15 @@ Starting with a fresh **multi-turn prompt** sample, update appsettings.json to i
 }
 ```
 
-Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not on `UserState`.
 
-Next, add the `Microsoft.Bot.Builder.Azure` nuget package to the project. Then, create a `CosmosDbStorageInitializerHostedService` class, which will create the container with the configured Time To Live:
+**CosmosDbStorageInitializerHostedService.cs**
+
+Next, create a `CosmosDbStorageInitializerHostedService` class, which will create the container with the configured Time To Live.
 
 ```csharp
+// Add required using statements...
+
 public class CosmosDbStorageInitializerHostedService : IHostedService
 {
     readonly CosmosDbPartitionedStorageOptions _storageOptions;
@@ -326,11 +340,12 @@ public class CosmosDbStorageInitializerHostedService : IHostedService
 }
 ```
 
-Lastly, update `Startup.cs` to use the storage initializer, and CosmosDb for state:
+**Startup.cs**
+
+Lastly, update `Startup.cs` to use the storage initializer, and Cosmos Db for state:
 
 ```csharp
-
-[existing code omitted]
+// Existing code omitted...
 
 // commented out MemoryStorage, since we are using CosmosDbPartitionedStorage instead
 // services.AddSingleton<IStorage, MemoryStorage>();
@@ -362,14 +377,18 @@ var conversationStorageOptions = new CosmosDbPartitionedStorageOptions()
 // Create the Conversation state. (Used by the Dialog system itself.)
 services.AddSingleton(new ConversationState(new CosmosDbPartitionedStorage(conversationStorageOptions)));
 
-[existing code omitted]
+// Existing code omitted...
 ```
 
 # [JavaScript](#tab/javascript)
 
-Starting with a fresh **multi-turn prompt** sample, update .env to include CosmosDb storage options:
+Start with a fresh copy of the **multi-turn prompt** sample.
 
-```json
+**.env**
+
+Update .env to include Cosmos DB storage options:
+
+```txt
 MicrosoftAppId=
 MicrosoftAppPassword=
 
@@ -383,7 +402,9 @@ CosmosDbConversationStateContainerId=<ttl-container-id>
 
 Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
 
-Next, add the `botbuilder-azure` npm package to project.json and npm install. 
+**project.json**
+
+Next, add the `botbuilder-azure` npm package to project.json.
 
 ```json
 "dependencies": {
@@ -396,14 +417,16 @@ Next, add the `botbuilder-azure` npm package to project.json and npm install.
 },
 ```
 
-Add necessary requires to index.js:
+**index.js**
+
+Add the necessary require statements to index.js:
 
 ```javascript
 const { CosmosDbPartitionedStorage } = require('botbuilder-azure');
 const { CosmosClient } = require('@azure/cosmos');
 ```
 
-Finally, replace `MemoryStorage`, `ConversationState` and `UserState` creation with:
+Replace `MemoryStorage`, `ConversationState` and `UserState` creation with:
 
 ```javascript
 // const memoryStorage = new MemoryStorage();
@@ -423,7 +446,7 @@ var cosmosClient = new CosmosClient({
     ...conversationStorageOptions.cosmosClientOptions,
 });
 
-// Create the contaier with the provided TTL
+// Create the container with the provided TTL.
 Promise.resolve(cosmosClient
     .database(conversationStorageOptions.databaseId)
     .containers.createIfNotExists({
@@ -447,9 +470,19 @@ const conversationState = new ConversationState(new CosmosDbPartitionedStorage(c
 const userState = new UserState(new CosmosDbPartitionedStorage(userStorageOptions));
 ```
 
+Finally, run npm install before starting your bot.
+
+```cmd
+npm install
+```
+
 ## [Python](#tab/python)
 
-Starting with a fresh **multi-turn prompt** sample. Update `config.py` to include CosmosDb storage options:
+Start with a fresh copy of the **multi-turn prompt** sample.
+
+**config.py**
+
+Update `config.py` to include Cosmos DB storage options:
 
 ```python
 PORT = 3978
@@ -466,7 +499,9 @@ COSMOSDB_CONVERSATION_STATE_CONTAINER_ID = os.environ.get("CosmosDbConversationS
 
 Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
 
-Next, add the `botbuilder-azure` package to requirements.txt and pip install:
+**requirements.txt**
+
+Next, add the `botbuilder-azure` package to requirements.txt.
 
 ```txt
 botbuilder-integration-aiohttp>=4.10.0
@@ -475,9 +510,13 @@ botbuilder-ai>=4.10.0
 botbuilder-azure>=4.10.0
 ```
 
+Then, run pip install:
+
 ```cmd
 pip install -r requirements.txt
 ```
+
+**app.py**
 
 ```python
 client = cosmos_client.CosmosClient(
@@ -501,15 +540,15 @@ if len(containers) < 1:
         },
     )
 ```
+
 ---
 
-'ComosDb' will now automatically delete Conversation State records after 30 seconds of inactivity.
+Cosmos DB will now automatically delete conversation state records after 30 seconds of inactivity.
 
 <!-- 
 ## Proactive Expiration
 add Azure Function with ConversationReference solution 
 -->
-
 
 For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl]
 
@@ -517,12 +556,8 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 1. If you have not done so already, install the [Bot Framework Emulator][emulator-readme].
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send a messsage to it.
+1. Start the emulator, connect to your bot, and send a message to it.
 1. After one of the prompts, wait 30 seconds before responding.
-
-
-
-
 
 <!-- Footnote-style links -->
 
