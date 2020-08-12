@@ -19,7 +19,7 @@ Handling interruptions is an important aspect of a robust bot. Users will not al
 
 ## Prerequisites
 
-Handling interruptions is an advanced bot development topic. To get the most from this article, you will need a good working knowledge of the basic concepts of the Bot Framework SDK and adaptive dialogs as well as a knowledge of how to develop a bot that incorporates adaptive dialogs.  It is recommended that you review the items mentioned in the first three bullet points listed below:
+Handling interruptions is an advanced bot development topic. To get the most from this article, you will need a good working knowledge of the basic concepts of the Bot Framework SDK and adaptive dialogs as well as a knowledge of how to develop a bot that incorporates adaptive dialogs.  Review the articles listed in the first two bullet points before continuing:
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and [dialogs library][concept-dialogs] Bot Framework SDK concepts.
 - Understanding of the adaptive dialog concepts covered in the [Introduction to adaptive dialogs][adaptive-dialog-introduction], [Asking for user input in adaptive dialogs][adaptive-dialog-input] and [Handling interruptions in adaptive dialog][adaptive-dialog-interruptions] concept articles.
