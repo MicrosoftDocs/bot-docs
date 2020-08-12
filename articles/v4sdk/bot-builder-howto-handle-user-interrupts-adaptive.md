@@ -32,7 +32,7 @@ Handling interruptions is an advanced bot development topic. To get the most fro
 
 ## Setting up LUIS to work in your bot
 
-This section details how you create LUIS resources in the Azure portal, then configuring and setting up LUIS to work with this sample. If you have already done this, you can skip ahead to [The InterruptionsBot sample](#the-interruptionsbot-sample).
+This section details how to create LUIS resources in the Azure portal, and then configure and sett up LUIS to work with this sample. If you have already done this, you can skip ahead to [The InterruptionsBot sample](#the-interruptionsbot-sample).
 
 What is covered in this section:
 
