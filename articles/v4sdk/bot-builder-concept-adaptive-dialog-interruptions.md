@@ -138,7 +138,7 @@ You can handle interruptions locally by adding triggers to match the possible in
 >
 > **Bot**: No problem, a Grande espresso will be ready in 5 minutes.
 
-In this example the bot started at its root dialog, when the user requested to order a coffee the root dialogs recognizer returned the `order` intent resulting in the _order_ dialog to begin execution to process the order.  When the user interrupted the order conversation flow with a question, the _order_ dialogs recognizer returned the `sizes` intent which was handled locally, meaning by the _order_ dialog.
+In this example the bot started at its root dialog. When the user requested to order a coffee, the root dialog's recognizer returned the `order` intent, causing it to start the _order_ dialog to start and process the order.  When the user interrupted the order conversation flow with a question, the _order_ dialog's recognizer returned the `sizes` intent which was handled locally, meaning by the _order_ dialog.
 
 What happens in cases where the active dialog is unable to detect an intent from the users response? The consultation mechanism offers a solution by enabling your bot's dialog to send the response to the active adaptive dialogs parent, which is discussed next.
 
