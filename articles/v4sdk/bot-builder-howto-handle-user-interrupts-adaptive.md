@@ -185,7 +185,7 @@ The first thing that happens when `rootDialog` is created is defining its recogn
 
 Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer will have a `.lu` file. This file is given the same name as the filename containing the dialog, with the `.lu` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog.
 
-In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialogs `.lu` file, that is when the adaptive dialogs consultation mechanism enables your bot to see if the parent dialog has defined the user intent, and if so allows it to handle it, and afterwards returns the user back to where the conversation left off.
+In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If an adaptive dialog does not define a trigger to handle a particular intent, but one of its parent adaptive dialogs does, then the consultation mechanism lets the parent dialog handle the utterance. Once that process is complete, the user is returned back to where the conversation was before the interruption.
 
 <!--# [C#](#tab/csharp)-->
 
