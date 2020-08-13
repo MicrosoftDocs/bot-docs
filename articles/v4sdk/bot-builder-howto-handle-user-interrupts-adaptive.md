@@ -332,9 +332,10 @@ new OnIntent()
 
 If selected:
 
-1. The bot fires an `intent` event with a value of "Help".
-1. The `OnIntent` trigger containing _Intent = "Help"_ fires, causing its actions to execute.
-1. The `SendActivity` action is called passing in `${RootHelp()}` as its parameter, this results in a message to the user similar to the one received when the conversation starts. See the above _Tip_ for a detailed explanation of how this works.
+1. This generates a "Help" utterance from the user.
+1. The root dialog's recognizer recognizes a "Help" intent.
+1. The root dialog's `OnIntent` trigger for that intent fires, causing its actions to execute.
+1. The `SendActivity` action is called passing in `${RootHelp()}` as its parameter. This results in a message to the user similar to the one received when the conversation starts. See the preceding _Tip_ for a detailed explanation of how this works.
 
 <!--# [C#](#tab/csharp)-->
 
