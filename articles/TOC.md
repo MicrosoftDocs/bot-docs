@@ -1,6 +1,6 @@
-# [Azure Bot Service Documentation](index.yml)
+# [Bot Framework SDK documentation](index-bf-sdk.yml)
 # Overview
-## [About Azure Bot Service](bot-service-overview-introduction.md)
+## [What is the Bot Framework SDK?](bot-service-overview-introduction.md)
 ## [What's new](what-is-new.md)
 # Quickstart
 ## [Create a bot using .NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
@@ -18,6 +18,7 @@
 ### [How bots work](v4sdk/bot-builder-basics.md)
 ### [Managing state](v4sdk/bot-builder-concept-state.md)
 ### [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+### [Waterfall dialogs](v4sdk/bot-builder-concept-waterfall-dialogs.md)
 ### [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## Adaptive dialogs
 ### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
@@ -28,7 +29,8 @@
 ### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
 ### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
-## Authentication
+## Security
+### [Security guidelines](v4sdk/bot-builder-security-guidelines.md)
 ### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
@@ -116,6 +118,12 @@
 #### [Node.js SDK v3](https://aka.ms/bot-jssdk-v3)
 ## [REST](rest-api/TOC.md)
 ## [Bot Framework CLI tool](v4sdk/bf-cli-overview.md)
+## Adaptive dialogs
+### [Events and triggers](adaptive-dialog/adaptive-dialog-prebuilt-triggers.md)
+### [Actions](adaptive-dialog/adaptive-dialog-prebuilt-actions.md)
+### [Inputs](adaptive-dialog/adaptive-dialog-prebuilt-inputs.md)
+### [Recognizers](adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md)
+### [Memory scopes](adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md)
 ## Adaptive expressions
 ### [Prebuilt functions](adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
 ### [API reference](adaptive-expressions/adaptive-expressions-API-reference.md)

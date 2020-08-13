@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 # Add authentication to your bot via Azure Bot Service
 
-[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]  
+[!INCLUDE [pre-release-label](includes/pre-release-label-v3.md)]
 
 This tutorial uses new bot authentication capabilities in Azure Bot Service, providing features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, and so on. These updates also take steps towards an improved user experience by eliminating the _magic code verification_ for some clients.
 
@@ -75,7 +75,7 @@ You need an Azure AD application that your bot can use as an identity provider t
 For this bot you can use Azure AD v1 or v2 endpoints.
 For information about the differences between the v1 and v2 endpoints, see the [v1-v2 comparison](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare) and the [Azure AD v2.0 endpoint overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
-#### Create an Azure AD identity provider application 
+#### Create an Azure AD identity provider application
 
 Use these steps to create a new Azure AD application. You can use the v1 or v2 endpoints with the app that you create.
 
@@ -99,9 +99,9 @@ Use these steps to create a new Azure AD application. You can use the v1 or v2 e
       - Once it is created, Azure displays the **Overview** page for the app.
       - Record the **Application (client) ID** value. You will use this value later as the _Client id_ when you register your Azure AD application with your bot.
       - Also record the **Directory (tenant) ID** value. You will also use this to register this application with your bot.
- 
+
     > [!NOTE]
-    > When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account, the emulator would issue the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect..* 
+> When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account the emulator will send the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect.*.
     > In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Xbox)*.
 
 1. In the navigation pane, click **Certificates & secrets** to create a secret for your application.
@@ -225,10 +225,7 @@ The next step is to register with your bot the Azure AD application that you jus
     </appSettings>
     ```
 
-    If you do not know how to get your **Microsoft app ID** and **Microsoft app password** values, you can either create a new password as described here:
-    [bot-channels-registration-password](bot-service-quickstart-registration.md#get-registration-password)
-    Or retrieve the **Microsoft app ID** and **Microsoft app password** provisioned with the **Bot Channels Registration** from the deployement described here:
-    [find-your-azure-bots-appid-and-appsecret](https://blog.botframework.com/2018/07/03/find-your-azure-bots-appid-and-appsecret)
+    To obtain the **Microsoft app ID** and **Microsoft app password** values, see [Get registration password](~/bot-service-manage-settings.md#get-registration-password).
 
     > [!NOTE]
     > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this tutorial. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure Portal.
@@ -248,11 +245,6 @@ You will need to install the [Bot Emulator](https://github.com/Microsoft/BotFram
 1. Once you've signed in, you don't need to provide your credentials again until you sign out.
 1. To sign out, and cancel your authentication, type `signout`.
 
-<!--To restart completely from scratch you also need to:
-1. Navigate to the **AppData** folder for your account.
-1. Go to the **Roaming/botframework-emulator** subfolder.
-1. Delete the **Cookies** and **Coolies-journal** files.
--->
 
 > [!NOTE]
 > Bot authentication requires use of the Bot Connector Service. The service accesses the bot channels registration information for your bot, which is why you need to set your bot's messaging endpoint on the portal. Authentication also requires the use of HTTPS, which is why you needed to create an HTTPS forwarding address for your bot running locally.

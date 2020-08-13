@@ -74,8 +74,8 @@ Returns the following JSON object:
 - a list of one-of variation text values
 - a structured content definition
 - a collection of conditions, each with:
-    - an [adaptive expression][3]
-    - a list of one-of variation text values per condition
+  - an [adaptive expression][3]
+  - a list of one-of variation text values per condition
 
 Template names follow the Markdown header definition.
 
@@ -178,6 +178,7 @@ Here's a more complicated SWITCH CASE DEFAULT example:
 -DEFAULT:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
+
 > [!NOTE]
 > Like conditional templates, switch templates cannot be nested.
 
@@ -196,7 +197,7 @@ Read about [structure response templates](../language-generation/language-genera
 
 ### References to templates
 
-Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as **${<TemplateName>()}**.
+Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as **${\<TemplateName>()}**.
 
 ```.lg
 > Example of a template that includes composition reference to another template.
@@ -333,7 +334,6 @@ You can split your language generation templates into separate files and referen
 
 All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced with `# \<namespace>.\<templatename>`) across files being pulled in.
 
-
 ```.lg
 [Shared](../shared/common.lg)
 ```
@@ -344,7 +344,7 @@ All templates defined in the target file will be pulled in. Ensure that your tem
 
 ## Options
 
-Deverloper can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
+Developers can set parser options to further customize how input is evaluated. Use the `> !#` notation to set parser options.
 
 > [!IMPORTANT]
 >
@@ -428,14 +428,12 @@ The example below shows how to set the exports option to `template1, template2`:
 
 Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exported templates.
 
-
 ## Additional Resources
 
-- [Language generation API reference][2]
-
+- [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
-[2]:../language-generation/language-generation-API-reference.md
 [3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [4]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md
 [5]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join
