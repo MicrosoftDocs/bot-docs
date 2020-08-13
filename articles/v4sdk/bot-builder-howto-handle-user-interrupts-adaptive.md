@@ -189,7 +189,7 @@ In the `.lu` file you define the [intents][intents], [utterances][utterances] an
 
 <!--# [C#](#tab/csharp)-->
 
-The recognizer is set by calling the `CreateLuisRecognizer()` method and passing in the bot's configuration settings that include the values stored in **appsettings.json** which contain the required LUIS settings.
+The recognizer is set by calling the `CreateLuisRecognizer()` method and passing in the bot's configuration settings that include the values stored in **appsettings.json**, which contain the required LUIS settings.
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=31-34&highlight=4)]
 
