@@ -143,10 +143,10 @@ For more information, see [create a storage account](/azure/storage/common/stora
 ## Create the bot
 
 1. Start with a copy of the C# [Multi-Turn-Prompt](https://aka.ms/cs-multi-prompts-sample) sample.
-1. Add the **Azure.Storage.Queues** NuGet package. <!--For more information, see [How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues).-->
-1. Add the connection string for the `Azure Storage` account created earlier, and Storage Queue Name, to your bot's configuration file.
+1. Add the **Azure.Storage.Queues** NuGet package to your project. <!--For more information, see [How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues).-->
+1. Add the connection string for the Azure Storage account you created earlier, and the Storage Queue Name, to your bot's configuration file.
 
-    Ensure the queue name is the same as what was used to create the Queue Trigger Function earlier. Also add the values for the `MicrosoftAppId` and `MicrosoftAppPassword` properties that you generated earlier when you created the Bot Channels Registration resource.
+    Ensure the queue name is the same as the one you used to create the Queue Trigger Function earlier. Also add the values for the `MicrosoftAppId` and `MicrosoftAppPassword` properties that you generated earlier when you created the Bot Channels Registration resource.
 
     **appsettings.json**
 
