@@ -2064,9 +2064,9 @@ It returns the result **02-26-18**.
 
 ### getProperty
 
-Return the value of a specified property from a JSON object or return the root property from the memory scope.
+Return the value of a specified property or the root property from a JSON object.
 
-#### Return the value of a specified property from a JSON object
+#### Return the value of a specified property
 
 ```
 getProperty(<JSONObject>, '<propertyName>')
@@ -2080,7 +2080,7 @@ getProperty(<JSONObject>, '<propertyName>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | string | The value of the specified property in the JSON object or root property from the memory scope. |
+| value | string | The value of the specified property in the JSON object. |
 ||||
 
 *Example*
@@ -2089,16 +2089,15 @@ Say you have the following JSON object:
 
 ```json
 {
-   "a:b" : "value",
-   "c":  
+   "a:b" : "a:b value",
+   "c":
    {
-        "d": "dkey"
+        "d": "d key"
     }
 }
-
 ```
 
-These example retrieves a specified property from the above JSON object:
+These example retrieve a specified property from the above JSON object:
 
 ```
 getProperty({"a:b": "value"}, 'a:b')
@@ -2107,10 +2106,10 @@ getProperty(c, 'd')
 
 And return the following strings respectively:
 
-- **value** 
-- **dkey**
+- **a:b value**
+- **d key**
 
-#### Return the root property from the memory scope
+#### Return the root property
 
 ```
 getProperty('<propertyName>')
@@ -2124,7 +2123,7 @@ Root property from the memory scope:
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | string | The value of the specified property in the JSON object or root property from the memory scope. |
+| value | string | The value of the root property in a JSON object. |
 ||||
 
 *Example*
@@ -2133,13 +2132,12 @@ Say you have the following JSON object:
 
 ```json
 {
-   "a:b" : "value",
-   "c":  
+   "a:b" : "a:b value",
+   "c":
    {
-        "d": "dkey"
+        "d": "d key"
     }
 }
-
 ```
 
 This example retrieves the root property from the above JSON object:
@@ -2148,7 +2146,7 @@ This example retrieves the root property from the above JSON object:
 getProperty("a:b")
 ```
 
-And returns the string **value**.
+And returns the string **a:b value**.
 
 <a name="getTimeOfDay"></a>
 
