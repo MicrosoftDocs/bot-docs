@@ -67,7 +67,7 @@ The adapter's **OnTurnError** handler creates the trace activity to include the 
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-51&highlight=33-34)]
+[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-54&highlight=36-37)]
 
 # [JavaScript](#tab/javascript)
 
@@ -75,7 +75,7 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 **index.js**
 
-[!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=36-58&highlight=8-14)]
+[!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=36-59&highlight=9-15)]
 
 # [Python](#tab/python)
 

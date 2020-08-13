@@ -1,126 +1,121 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
 title: Azure Bot Service documentation # < 60 chars
 summary: Azure Bot Service provides an integrated environment that is purpose-built for bot development. # < 160 chars
+# brand: azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: azure
 
 metadata:
   title: Azure Bot Service documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Azure Bot Service provides an integrated environment that is purpose-built for bot development. # Required; article description that is displayed in search results. < 160 chars.
+  services: service
   ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: landing-page # Required
-  author: ivorb #Required; your GitHub user alias, with correct capitalization.
-  ms.author: ivorb #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/11/2019 #Required; mm/dd/yyyy format.
+  ms.topic: hub-page # Required
+  author: JonathanFingold #Required; your GitHub user alias, with correct capitalization.
+  ms.author: botcc #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/13/2020 #Required; mm/dd/yyyy format.
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: "Create bots using a visual designer: Bot Framework Composer"
+      itemType: overview
+      url: /composer
+    # Card
+    - title: "Create bots using code: Bot Framework SDK"
+      itemType: overview
+      url: index-bf-sdk.yml
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: About Azure Bot Service
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: What's new?
-            url: https://docs.microsoft.com/azure/bot-service/what-is-new
-      - linkListType: overview
-        links:
-          - text: What is Azure Bot Service?
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
-      - linkListType: concept
-        links:
-          - text: How bots work
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics
+conceptualContent:
+  items:
+    # Card
+    - title: Bot Framework Composer
+      links:
+        - url: /composer/introduction
+          itemType: overview
+          text: Overview
+        - url: /composer/quickstart-create-bot
+          itemType: quickstart
+          text: Quickstart
+        - url: /composer/tutorial/tutorial-introduction
+          itemType: tutorial
+          text: Tutorials
+        - url: /composer/how-to-publish-bot
+          itemType: how-to-guide
+          text: Publish to Azure
+    # Card
+    - title: Bot Framework SDK
+      links:
+        - url: bot-service-overview-introduction.md
+          itemType: overview
+          text: Overview
+        - url: v4sdk/bot-builder-basics.md
+          itemType: concept
+          text: How bots work
+        - url: dotnet/bot-builder-dotnet-sdk-quickstart.md
+          itemType: quickstart
+          text: Quickstart
+        - url: v4sdk/bot-builder-tutorial-basic-deploy.md
+          itemType: tutorial
+          text: Create and deploy a bot
+        - url: bot-service-manage-channels.md
+          itemType: how-to-guide
+          text: Connect a bot to channels
 
-  # Card
-  - title: 5-Minute Quickstarts
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Create a bot using .NET
-            url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
-          - text: Create a bot using JavaScript
-            url: https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart
-          - text: Create a bot using Python
-            url: https://docs.microsoft.com/azure/bot-service/python/bot-builder-python-quickstart
-          - text: Create a bot using Azure Bot Service
-            url: https://docs.microsoft.com/azure/bot-service/abs-quickstart
+tools:
+  title: Languages # < 60 chars (optional)
+  summary: Bot Framework SDK language reference documentation # < 160 chars (optional)
+  items:
+    # Card
+    - title: C#
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/logos/logo-csharp.svg
+      url: https://aka.ms/botframework-v4-cs-sdk
+    # Card
+    - title: JavaScript/TypeScript
+      imageSrc: ./media/logos/logo-js.svg
+      url: https://aka.ms/bot-jssdk-v4
+    # Card
+    - title: Python
+      imageSrc: ./media/logos/logo-python.svg
+      url: https://aka.ms/botframework-v4-python-sdk
+    # Card
+    - title: Java (preview)
+      imageSrc: ./media/logos/logo-java.svg
+      url: https://github.com/microsoft/botbuilder-java#readme
 
-  # Card
-  - title: Step-by-Step Tutorials
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create and deploy a simple bot
-            url: https://docs.microsoft.com/bot-framework/bot-builder-tutorial-basic-deploy
-          - text: Add QnA Maker and redeploy a bot
-            url: https://docs.microsoft.com/bot-framework/bot-builder-tutorial-add-qna
-
-  # Card
-  - title: Languages
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: .NET
-            url: https://docs.microsoft.com/dotnet/api/?view=botbuilder-dotnet-stable
-          - text: JavaScript
-            url: https://docs.microsoft.com/javascript/api/botbuilder
-          - text: Python
-            url: https://docs.microsoft.com/python/api/?view=botbuilder-py-latest
-
-  # Card
-  - title: Need Help?
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: FAQ
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq
-          - text: Get Support
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help
-          - text: Samples
-            url: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
-
-  # Card
-  - title: External Resources
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Composer
-            url: https://docs.microsoft.com/composer/
-          - text: Composer tutorial
-            url: https://docs.microsoft.com/composer/tutorial/tutorial-introduction/
-      - linkListType: concept
-        links:
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Additional resources # < 60 chars (optional)
+      items:
+        # Card
+        - title: Tools
+          links:
+          - text: Bot Framework CLI
+            url: https://github.com/microsoft/botframework-cli#readme
+          - text: Bot Framework Emulator
+            url: https://github.com/Microsoft/BotFramework-Emulator#readme
+          - text: Web Chat
+            url: https://github.com/Microsoft/BotFramework-WebChat#readme
+        # Card
+        - title: Related technologies # < 60 chars (optional)
+          links:
           - text: Power Virtual Agents
-            url: https://docs.microsoft.com/power-virtual-agents/
-      - linkListType: concept
-        links:
-          - text: Microsoft Teams Overview
-            url: https://docs.microsoft.com/microsoftteams/teams-overview
-          - text: How Microsoft Teams bots work
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams
-            
-  # Card
-  - title: Deployment
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: Deploy a bot to Azure
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli
-          - text: Continuous deployment
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-build-continuous-deployment
-          - text: Azure FAQ
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-resources-faq-azure
-
-  # Card
-  - title: Authentication
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Bot authentication
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-authentication
-          - text: Add authentication to a bot
-            url: https://docs.microsoft.com/azure/bot-service/bot-builder-authentication
-          - text: Troubleshoot authentication
-            url: https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-authentication-problems
+            url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+          - text: Virtual Assistant
+            url: v4sdk/bot-builder-virtual-assistant-introduction.md
+            # or?: https://microsoft.github.io/botframework-solutions
+          - text: Microsoft Teams
+            url: /microsoftteams/platform
+          - text: Language Understanding (LUIS)
+            url: /azure/cognitive-services/luis
+          - text: QnA Maker
+            url: /azure/cognitive-services/qnamaker
+          - text: Speech service
+            url: /azure/cognitive-services/speech-service
+          - text: Adaptive Cards
+            url: /adaptive-cards

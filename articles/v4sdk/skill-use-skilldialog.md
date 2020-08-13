@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/02/2020
+ms.date: 07/15/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -67,7 +67,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 ## Application configuration
 
 1. Add the root bot's app ID and password.
-1. Add the endpoint URL to which the skills should reply to the skill consumer.
+1. Add the skill host endpoint (the service or callback URL) to which the skills should reply to the skill consumer.
 1. Add an entry for each skill the skill consumer will use. Each entry includes:
    - An ID the skill consumer will use to identify each skill.
    - The skill's app ID.
