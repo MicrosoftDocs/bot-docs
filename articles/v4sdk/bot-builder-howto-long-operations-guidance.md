@@ -51,44 +51,34 @@ This article touches on many different technologies. See the [additional resourc
 ## Create an Azure Storage account
 
 Create an Azure Storage account, and retrieve the connection string.
-<!--
-(See [create a storage account](/azure/storage/common/storage-account-create) and [copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal) for more information.)
--->
+
+For more information, see [create a storage account](/azure/storage/common/storage-account-create) and [copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal).
 
 ## Create a Bot Channels Registration
 
-Before creating the registration, setup ngrok and retrieve a URL to be used as the bot's _messaging endpoint_ during local debugging. The messaging endpoint will be the HTTPS forwarding URL with `/api/messages/` appended. Note that the default port for new bots is 3978.
+1. Before creating the registration, setup ngrok and retrieve a URL to be used as the bot's _messaging endpoint_ during local debugging. The messaging endpoint will be the HTTPS forwarding URL with `/api/messages/` appended. Note that the default port for new bots is 3978.
 
-<!--
-(See how to [debug a bot using ngrok](https://docs.microsoft.com/azure/bot-service/bot-service-debug-channel-ngrok) for more information.)
--->
+    For more information, see how to [debug a bot using ngrok](https://docs.microsoft.com/azure/bot-service/bot-service-debug-channel-ngrok).
 
-Create a Bot Channels Registration in the Azure portal or with the Azure CLI. Set the bot's messaging endpoint to the one you created with ngrok. After the Bot Channels Registration resource is created, obtain the bot's Microsoft app ID and password. Enable the Direct Line channel, and retrieve a Direct Line secret. You will add these to your bot code and C# function.
+1. Create a Bot Channels Registration in the Azure portal or with the Azure CLI. Set the bot's messaging endpoint to the one you created with ngrok. After the Bot Channels Registration resource is created, obtain the bot's Microsoft app ID and password. Enable the Direct Line channel, and retrieve a Direct Line secret. You will add these to your bot code and C# function.
 
-<!--
-For more information about the procedures to do so, see:
-
-- [Manage a bot](../bot-service-manage-overview.md) and [MicrosoftAppID and MicrosoftAppPassword](../bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword)
-- [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
--->
+    For more information, see how to [manage a bot](../bot-service-manage-overview.md) and how to [connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
 
 ## Create the C# function
 
 1. Create an Azure Functions app based on the .Net Core runtime stack.
 
-<!--
-See how to [create a function app](/azure/azure-functions/functions-create-function-app-portal) and the [Azure Functions C# script reference](/azure/azure-functions/functions-reference-csharp) for more information.
--->
+    For more information, see how to [create a function app](/azure/azure-functions/functions-create-function-app-portal) and the [Azure Functions C# script reference](/azure/azure-functions/functions-reference-csharp).
 
 1. Add a `DirectLineSecret` application setting to the Function App.
 
-<!--
-See [manage your function app](/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
--->
+    For more information, see how to [manage your function app](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
-1. Within the Function App, add a function based on the [Azure Queue Storage template](https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-queue-trigger). Set the desired queue name, and choose the `Azure Storage Account` created in an earlier step. This queue name will also be placed in the bot's `appsettings.json`.
+1. Within the Function App, add a function based on the [Azure Queue Storage template](/azure/azure-functions/functions-bindings-storage-queue-trigger).
 
-1. Add a `function.proj` file to the function.
+    Set the desired queue name, and choose the `Azure Storage Account` created in an earlier step. This queue name will also be placed in the bot's **appsettings.json** file.
+
+1. Add a **function.proj** file to the function.
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -103,7 +93,7 @@ See [manage your function app](/azure/azure-functions/functions-how-to-use-azure
     </Project>
     ```
 
-1. Update `run.csx` with the following code:
+1. Update **run.csx** with the following code:
 
     ```csharp
     #r "Newtonsoft.Json"
@@ -150,26 +140,26 @@ See [manage your function app](/azure/azure-functions/functions-how-to-use-azure
     }
     ```
 
-## Creating the Bot
+## Create the bot
 
-1. Start with a copy of the [Multi-Turn-Prompt](https://aka.ms/cs-multi-prompts-sample) sample.
+1. Start with a copy of the C# [Multi-Turn-Prompt](https://aka.ms/cs-multi-prompts-sample) sample.
 1. Add the **Azure.Storage.Queues** NuGet package. <!--For more information, see [How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues).-->
-1. Add the connection string for the `Azure Storage` account created earlier, and Storage Queue Name, to `appsettings.json`.
+1. Add the connection string for the `Azure Storage` account created earlier, and Storage Queue Name, to **appsettings.json**.
 
     **appsettings.json**
 
-    Ensure the queue name is the same as what was used to create the Queue Trigger Function earlier.  Also add the `MicrosoftAppId`  and `MicrosoftAppPassword` from the `Bot Channels Registration`.
+    Ensure the queue name is the same as what was used to create the Queue Trigger Function earlier. Also add the values for the `MicrosoftAppId` and `MicrosoftAppPassword` properties that you generated earlier when you created the Bot Channels Registration resource.
 
     ```json
     {
-      "MicrosoftAppId": "MyMicrosoftAppId",
-      "MicrosoftAppPassword": "MyMicrosoftAppPassword",
-      "StorageQueueName": "longprocessqueue",
+      "MicrosoftAppId": "<your-bot-app-id>",
+      "MicrosoftAppPassword": "<your-bot-app-password>",
+      "StorageQueueName": "<your-azure-storage-queue-name>",
       "QueueStorageConnection": "DefaultEndpointsProtocol=https;AccountName=myStorageAccountName;AccountKey=myAccountKey=="
     }
     ```
 
-1. Add an IConfiguration parameter to `DialogBot.cs` in order to retrieve the `MicrsofotAppId`.  Also add an `OnEventActivityAsync` handler for the `LongOperationResponse` from the Azure Function.
+1. Add an `IConfiguration` parameter to **DialogBot.cs** in order to retrieve the `MicrsofotAppId`. Also add an `OnEventActivityAsync` handler for the `LongOperationResponse` from the Azure Function.
 
     **Bots\DialogBot.cs**
 
@@ -300,163 +290,164 @@ See [manage your function app](/azure/azure-functions/functions-how-to-use-azure
 
 ## Dialogs
 
-Remove the `UserProfileDialog.cs` file, and add these classes to the Dialogs folder:
+1. Remove the **UserProfileDialog.cs** file.
+1. Add these classes to the **Dialogs** folder:
 
-**Dialogs\LongOperationPrompt.cs**
+    **Dialogs\LongOperationPrompt.cs**
 
-```csharp
-/// <summary>
-/// <see cref="ActivityPrompt"/> implementation which will queue an activity,
-/// along with the <see cref="LongOperationPromptOptions.LongOperationOption"/>,
-/// and wait for an <see cref="ActivityTypes.Event"/> with name of "ContinueConversation"
-/// and Value containing the text: "LongOperationComplete".
-///
-/// The result of this prompt will be the received Event Activity, which is sent by
-/// the Azure Function after it finishes the long operation.
-/// </summary>
-public class LongOperationPrompt : ActivityPrompt
-{
-    private readonly AzureQueuesService _queueService;
-
+    ```csharp
     /// <summary>
-    /// Create a new instance of <see cref="LongOperationPrompt"/>.
+    /// <see cref="ActivityPrompt"/> implementation which will queue an activity,
+    /// along with the <see cref="LongOperationPromptOptions.LongOperationOption"/>,
+    /// and wait for an <see cref="ActivityTypes.Event"/> with name of "ContinueConversation"
+    /// and Value containing the text: "LongOperationComplete".
+    ///
+    /// The result of this prompt will be the received Event Activity, which is sent by
+    /// the Azure Function after it finishes the long operation.
     /// </summary>
-    /// <param name="dialogId">Id of this <see cref="LongOperationPrompt"/>.</param>
-    /// <param name="validator">Validator to use for this prompt.</param>
-    /// <param name="queueService"><see cref="AzureQueuesService"/> to use for Enqueuing the activity to process.</param>
-    public LongOperationPrompt(string dialogId, PromptValidator<Activity> validator, AzureQueuesService queueService) 
-        : base(dialogId, validator)
+    public class LongOperationPrompt : ActivityPrompt
     {
-        _queueService = queueService;
-    }
+        private readonly AzureQueuesService _queueService;
 
-    public async override Task<DialogTurnResult> BeginDialogAsync(DialogContext dc, object options, CancellationToken cancellationToken = default)
-    {
-        // When the dialog begins, queue the option chosen within the Activity queued.
-        await _queueService.QueueActivityToProcess(dc.Context.Activity, (options as LongOperationPromptOptions).LongOperationOption, cancellationToken);
-
-        return await base.BeginDialogAsync(dc, options, cancellationToken);
-    }
-
-    protected override Task<PromptRecognizerResult<Activity>> OnRecognizeAsync(ITurnContext turnContext, IDictionary<string, object> state, PromptOptions options, CancellationToken cancellationToken = default)
-    {
-        var result = new PromptRecognizerResult<Activity>() { Succeeded = false };
-
-        if(turnContext.Activity.Type == ActivityTypes.Event
-            && turnContext.Activity.Name == "ContinueConversation"
-            && turnContext.Activity.Value != null
-            // Custom validation within LongOperationPrompt.  
-            // 'LongOperationComplete' is added to the Activity.Value in the Queue consumer (See: Azure Function)
-            && turnContext.Activity.Value.ToString().Contains("LongOperationComplete", System.StringComparison.InvariantCultureIgnoreCase))
+        /// <summary>
+        /// Create a new instance of <see cref="LongOperationPrompt"/>.
+        /// </summary>
+        /// <param name="dialogId">Id of this <see cref="LongOperationPrompt"/>.</param>
+        /// <param name="validator">Validator to use for this prompt.</param>
+        /// <param name="queueService"><see cref="AzureQueuesService"/> to use for Enqueuing the activity to process.</param>
+        public LongOperationPrompt(string dialogId, PromptValidator<Activity> validator, AzureQueuesService queueService) 
+            : base(dialogId, validator)
         {
-            result.Succeeded = true;
-            result.Value = turnContext.Activity;
+            _queueService = queueService;
         }
 
-        return Task.FromResult(result);
-    }
-}
-```
-
-**Dialogs\LongOperationPromptOptions.cs**
-
-```csharp
-/// <summary>
-/// Options sent to <see cref="LongOperationPrompt"/> demonstrating how a value
-/// can be passed along with the queued activity.
-/// </summary>
-public class LongOperationPromptOptions : PromptOptions
-{
-    /// <summary>
-    /// This is a property sent through the Queue, and is used
-    /// in the queue consumer (the Azure Function) to differentiate 
-    /// between long operations chosen by the user.
-    /// </summary>
-    public string LongOperationOption { get; set; }
-}
-```
-
-**Dialogs\LongOperationDialog.cs**
-
-```csharp
-/// <summary>
-/// This dialog demonstrates how to use the <see cref="LongOperationPrompt"/>.
-///
-/// The user is provided an option to perform any of three long operations.
-/// Their choice is then sent to the <see cref="LongOperationPrompt"/>.
-/// When the prompt completes, the result is received as an Activity in the
-/// final Waterfall step.
-/// </summary>
-public class LongOperationDialog : ComponentDialog
-{
-    public LongOperationDialog(AzureQueuesService queueService)
-        : base(nameof(LongOperationDialog))
-    {
-        // This array defines how the Waterfall will execute.
-        var waterfallSteps = new WaterfallStep[]
+        public async override Task<DialogTurnResult> BeginDialogAsync(DialogContext dc, object options, CancellationToken cancellationToken = default)
         {
-            OperationTimeStepAsync,
-            LongOperationStepAsync,
-            OperationCompleteStepAsync,
-        };
+            // When the dialog begins, queue the option chosen within the Activity queued.
+            await _queueService.QueueActivityToProcess(dc.Context.Activity, (options as LongOperationPromptOptions).LongOperationOption, cancellationToken);
 
-        // Add named dialogs to the DialogSet. These names are saved in the dialog state.
-        AddDialog(new WaterfallDialog(nameof(WaterfallDialog), waterfallSteps));
-        AddDialog(new LongOperationPrompt(nameof(LongOperationPrompt), (vContext, token) =>
+            return await base.BeginDialogAsync(dc, options, cancellationToken);
+        }
+
+        protected override Task<PromptRecognizerResult<Activity>> OnRecognizeAsync(ITurnContext turnContext, IDictionary<string, object> state, PromptOptions options, CancellationToken cancellationToken = default)
         {
-            return Task.FromResult(vContext.Recognized.Succeeded);
-        }, queueService));
-        AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
+            var result = new PromptRecognizerResult<Activity>() { Succeeded = false };
 
-        // The initial child Dialog to run.
-        InitialDialogId = nameof(WaterfallDialog);
-    }
-
-    private static async Task<DialogTurnResult> OperationTimeStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
-    {
-        // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
-        // Running a prompt here means the next WaterfallStep will be run when the user's response is received.
-        return await stepContext.PromptAsync(nameof(ChoicePrompt),
-            new PromptOptions
+            if(turnContext.Activity.Type == ActivityTypes.Event
+                && turnContext.Activity.Name == "ContinueConversation"
+                && turnContext.Activity.Value != null
+                // Custom validation within LongOperationPrompt.  
+                // 'LongOperationComplete' is added to the Activity.Value in the Queue consumer (See: Azure Function)
+                && turnContext.Activity.Value.ToString().Contains("LongOperationComplete", System.StringComparison.InvariantCultureIgnoreCase))
             {
-                Prompt = MessageFactory.Text("Please select a long operation test option."),
-                Choices = ChoiceFactory.ToChoices(new List<string> { "option 1", "option 2", "option 3" }),
-            }, cancellationToken);
-    }
+                result.Succeeded = true;
+                result.Value = turnContext.Activity;
+            }
 
-    private static async Task<DialogTurnResult> LongOperationStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+            return Task.FromResult(result);
+        }
+    }
+    ```
+
+    **Dialogs\LongOperationPromptOptions.cs**
+
+    ```csharp
+    /// <summary>
+    /// Options sent to <see cref="LongOperationPrompt"/> demonstrating how a value
+    /// can be passed along with the queued activity.
+    /// </summary>
+    public class LongOperationPromptOptions : PromptOptions
     {
-        var value = ((FoundChoice)stepContext.Result).Value;
-        stepContext.Values["longOperationOption"] = value;
-
-        var prompt = MessageFactory.Text("...one moment please....");
-        // The reprompt will be shown if the user messages the bot while the long operation is being performed.
-        var retryPrompt = MessageFactory.Text($"Still performing the long operation: {value} ... (is the Azure Function executing from the queue?)");
-        return await stepContext.PromptAsync(nameof(LongOperationPrompt),
-                                                    new LongOperationPromptOptions
-                                                    {
-                                                        Prompt = prompt,
-                                                        RetryPrompt = retryPrompt,
-                                                        LongOperationOption = value,
-                                                    }, cancellationToken);
+        /// <summary>
+        /// This is a property sent through the Queue, and is used
+        /// in the queue consumer (the Azure Function) to differentiate 
+        /// between long operations chosen by the user.
+        /// </summary>
+        public string LongOperationOption { get; set; }
     }
+    ```
 
-    private static async Task<DialogTurnResult> OperationCompleteStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+    **Dialogs\LongOperationDialog.cs**
+
+    ```csharp
+    /// <summary>
+    /// This dialog demonstrates how to use the <see cref="LongOperationPrompt"/>.
+    ///
+    /// The user is provided an option to perform any of three long operations.
+    /// Their choice is then sent to the <see cref="LongOperationPrompt"/>.
+    /// When the prompt completes, the result is received as an Activity in the
+    /// final Waterfall step.
+    /// </summary>
+    public class LongOperationDialog : ComponentDialog
     {
-        stepContext.Values["longOperationResult"] = stepContext.Result;
-        await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thanks for waiting. { (stepContext.Result as Activity).Value}"), cancellationToken);
+        public LongOperationDialog(AzureQueuesService queueService)
+            : base(nameof(LongOperationDialog))
+        {
+            // This array defines how the Waterfall will execute.
+            var waterfallSteps = new WaterfallStep[]
+            {
+                OperationTimeStepAsync,
+                LongOperationStepAsync,
+                OperationCompleteStepAsync,
+            };
 
-        // Start over by replacing the dialog with itself.
-        return await stepContext.ReplaceDialogAsync(nameof(WaterfallDialog), null, cancellationToken);
+            // Add named dialogs to the DialogSet. These names are saved in the dialog state.
+            AddDialog(new WaterfallDialog(nameof(WaterfallDialog), waterfallSteps));
+            AddDialog(new LongOperationPrompt(nameof(LongOperationPrompt), (vContext, token) =>
+            {
+                return Task.FromResult(vContext.Recognized.Succeeded);
+            }, queueService));
+            AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
+
+            // The initial child Dialog to run.
+            InitialDialogId = nameof(WaterfallDialog);
+        }
+
+        private static async Task<DialogTurnResult> OperationTimeStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        {
+            // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
+            // Running a prompt here means the next WaterfallStep will be run when the user's response is received.
+            return await stepContext.PromptAsync(nameof(ChoicePrompt),
+                new PromptOptions
+                {
+                    Prompt = MessageFactory.Text("Please select a long operation test option."),
+                    Choices = ChoiceFactory.ToChoices(new List<string> { "option 1", "option 2", "option 3" }),
+                }, cancellationToken);
+        }
+
+        private static async Task<DialogTurnResult> LongOperationStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        {
+            var value = ((FoundChoice)stepContext.Result).Value;
+            stepContext.Values["longOperationOption"] = value;
+
+            var prompt = MessageFactory.Text("...one moment please....");
+            // The reprompt will be shown if the user messages the bot while the long operation is being performed.
+            var retryPrompt = MessageFactory.Text($"Still performing the long operation: {value} ... (is the Azure Function executing from the queue?)");
+            return await stepContext.PromptAsync(nameof(LongOperationPrompt),
+                                                        new LongOperationPromptOptions
+                                                        {
+                                                            Prompt = prompt,
+                                                            RetryPrompt = retryPrompt,
+                                                            LongOperationOption = value,
+                                                        }, cancellationToken);
+        }
+
+        private static async Task<DialogTurnResult> OperationCompleteStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        {
+            stepContext.Values["longOperationResult"] = stepContext.Result;
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thanks for waiting. { (stepContext.Result as Activity).Value}"), cancellationToken);
+
+            // Start over by replacing the dialog with itself.
+            return await stepContext.ReplaceDialogAsync(nameof(WaterfallDialog), null, cancellationToken);
+        }
     }
-}
-```
+    ```
 
 ## Register services and Dialog
 
 **Startup.cs**
 
-Update `ConfigureServices`, registering the `LongOperationDialog` and adding the `AzureQueuesService`.
+In **Startup.cs**, update the `ConfigureServices` method to register the `LongOperationDialog` and add the `AzureQueuesService`.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -489,7 +480,7 @@ public void ConfigureServices(IServiceCollection services)
 1. Run the sample locally on your machine.
 1. Start the emulator, connect to your bot, and send messages as shown below.
 
-![Bot Example](./media/how-to-long-operations/long-operations-bot-example.png)
+    ![Bot Example](./media/how-to-long-operations/long-operations-bot-example.png)
 
 ## Additional resources
 
