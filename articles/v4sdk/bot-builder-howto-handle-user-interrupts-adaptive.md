@@ -354,7 +354,7 @@ new OnIntent()
 },
 ```
 
-Here is the [Structured response template][structured-response-template] in **RootDialog.lg** that is related to the "help" intent:
+Here is the [Structured response template][structured-response-template] in **RootDialog.lg** that is related to the "Help" intent:
 
 [!code-lg[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lg?range=4-8)]
 
