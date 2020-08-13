@@ -137,7 +137,7 @@ Add the following values to **appsettings.json**:
 
 > [!NOTE]
 >
-> The generated file names may differ depending on your computers local settings, in the example used here the locale setting is `en_us`.
+> The generated file names may differ depending on your computer's local settings. In the example used here, the locale setting is `en_us`.
 
 - **GetUserProfileDialog_en_us_lu**: Get this value from the file named **luis.settings.\<youralias>.\<region>.json** that was generated as a part of running the `bf luis:build` command.
 
