@@ -50,7 +50,7 @@ This article touches on many different technologies. See the [additional resourc
 
 ## Create an Azure Storage account
 
-Create an Azure Storage account, and retrieve the connection string.
+Create an Azure Storage account, and retrieve the connection string. You will need to add the connection string to your bot's configuration file.
 
 For more information, see [create a storage account](/azure/storage/common/storage-account-create) and [copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal).
 
@@ -144,18 +144,18 @@ For more information, see [create a storage account](/azure/storage/common/stora
 
 1. Start with a copy of the C# [Multi-Turn-Prompt](https://aka.ms/cs-multi-prompts-sample) sample.
 1. Add the **Azure.Storage.Queues** NuGet package. <!--For more information, see [How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues).-->
-1. Add the connection string for the `Azure Storage` account created earlier, and Storage Queue Name, to **appsettings.json**.
-
-    **appsettings.json**
+1. Add the connection string for the `Azure Storage` account created earlier, and Storage Queue Name, to your bot's configuration file.
 
     Ensure the queue name is the same as what was used to create the Queue Trigger Function earlier. Also add the values for the `MicrosoftAppId` and `MicrosoftAppPassword` properties that you generated earlier when you created the Bot Channels Registration resource.
+
+    **appsettings.json**
 
     ```json
     {
       "MicrosoftAppId": "<your-bot-app-id>",
       "MicrosoftAppPassword": "<your-bot-app-password>",
       "StorageQueueName": "<your-azure-storage-queue-name>",
-      "QueueStorageConnection": "DefaultEndpointsProtocol=https;AccountName=myStorageAccountName;AccountKey=myAccountKey=="
+      "QueueStorageConnection": "<your-storage-connection-string>"
     }
     ```
 
@@ -290,8 +290,10 @@ For more information, see [create a storage account](/azure/storage/common/stora
 
 ## Dialogs
 
+Remove the old dialog and replace it with new dialogs to support the operations.
+
 1. Remove the **UserProfileDialog.cs** file.
-1. Add these classes to the **Dialogs** folder:
+1. Add a custom prompt dialog that asks the user which operation to perform.
 
     **Dialogs\LongOperationPrompt.cs**
 
@@ -349,6 +351,8 @@ For more information, see [create a storage account](/azure/storage/common/stora
     }
     ```
 
+1. Add a prompt options class for the custom prompt.
+
     **Dialogs\LongOperationPromptOptions.cs**
 
     ```csharp
@@ -366,6 +370,8 @@ For more information, see [create a storage account](/azure/storage/common/stora
         public string LongOperationOption { get; set; }
     }
     ```
+
+1. Add the dialog that uses the custom prompt to get the user's choice and initiates the long-running operation.
 
     **Dialogs\LongOperationDialog.cs**
 
@@ -445,8 +451,6 @@ For more information, see [create a storage account](/azure/storage/common/stora
 
 ## Register services and Dialog
 
-**Startup.cs**
-
 In **Startup.cs**, update the `ConfigureServices` method to register the `LongOperationDialog` and add the `AzureQueuesService`.
 
 ```csharp
@@ -486,10 +490,10 @@ public void ConfigureServices(IServiceCollection services)
 
 | Tool or feature | Resources
 | :--- | :---
-| Azure Functions | [Create a function app](/azure/azure-functions/functions-create-function-app-portal), [Azure Functions C# script](/azure/azure-functions/functions-reference-csharp), [manage your function app](/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
-| Azure portal | [Manage a bot](../bot-service-manage-overview.md), [connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
-| Azure Storage | [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction), [create a storage account](/azure/storage/common/storage-account-create), [copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal), [How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues)
-| Bot basics | [How bots work][concept-basics], [prompts in waterfall dialogs](bot-builder-concept-waterfall-dialogs.md#prompts), [proactive messaging](bot-builder-howto-proactive-message.md)
+| Azure Functions | [Create a function app](/azure/azure-functions/functions-create-function-app-portal)<br/>[Azure Functions C# script](/azure/azure-functions/functions-reference-csharp)<br/>[Manage your function app](/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
+| Azure portal | [Manage a bot](../bot-service-manage-overview.md)<br/>[Connect a bot to Direct Line](../bot-service-channel-connect-directline.md)
+| Azure Storage | [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction)<br/>[Create a storage account](/azure/storage/common/storage-account-create)<br/>[Copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal)<br/>[How to Use Queues](https://docs.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues)
+| Bot basics | [How bots work][concept-basics]<br/>[Prompts in waterfall dialogs](bot-builder-concept-waterfall-dialogs.md#prompts)<br/>[Proactive messaging](bot-builder-howto-proactive-message.md)
 | ngrok | [Debug a bot using ngrok](https://docs.microsoft.com/azure/bot-service/bot-service-debug-channel-ngrok)
 
 <!-- Footnote-style links -->
