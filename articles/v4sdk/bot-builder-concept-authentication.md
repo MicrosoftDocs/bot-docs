@@ -11,9 +11,9 @@ ms.date: 05/31/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Bot authentication
+# User authentication
 
-There are times when a bot must access secured online resources on behalf of the user; to do that the bot must be authorized to do so. The authorization takes form of a bearer token. This is accomplished by a set of components that are part of the **Azure Bot Service** architecture described below.
+There are times when a bot must access secured online resources on behalf of the user; to do that the bot must be authorized to do so. The authorization takes form of a bearer token. This is accomplished using OAuth and by a set of components that are part of the **Azure Bot Service** architecture described below.
 
 1. **Bot Channels Registration application**. This is the mechanism to *integrate* a bot within the Azure infrastructure, which allows the user to communicate via channels with the bot.
 1. **Bot**. The bot can be hosted anywhere, including Azure.
