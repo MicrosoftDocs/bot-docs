@@ -83,18 +83,16 @@ Interruptions can be handled locally within a dialog as well as globally by re-r
 
 - Detect and handle a user's response as a locally relevant intent within the scope of the active dialog, meaning the adaptive dialog that contains the trigger which contains the input action that prompted the user, is the dialog that handles _local_ interruptions.
 
-
-  <!--the dialog that prompted the user for information.-->
 - Detect that a different dialog would be better suited to handle the user input and then using the adaptive dialog consultation mechanism to enable a different dialog handle the user input.
 
 <!--- Need a concise definition for the Bot Framework SDK's consultation mechanism.     -->
 
-By default adaptive dialogs do this in response to all user inputs:
+When an input action is active, adaptive dialogs do the following when receiving a response from the user:
 
 - Run the recognizer configured on the adaptive dialog that contains the input action.
 - Evaluate the value of the _allow interruptions_ property.
-   - If **true**, evaluate the triggers in the parent adaptive dialog and execute the actions of the first trigger that matches, then issue a re-prompt when the input action resumes. If the parent does not allow interruptions, it is skipped and its parent dialog is then checked and so on up to the root dialog.
-   - If **false**, evaluate the _value_ property and assign its value to the property bound to the input. If null run the internal entity recognizer for that input action (e.g. number recognizer for number input etc) to resolve a value for that input action.
+   - If **true**: Evaluate triggers on the adaptive dialog that contains the input action. If no triggers fire then the parent adaptive dialog is consulted and its recognizer executes, and then its triggers are evaluated. If no triggers fire then this process continues until the root adaptive dialog is reached.
+   - If **false**: Evaluate the _value_ property and assign its value to the property bound to the input. If _value_ evaluates to null run the internal entity recognizer for that input action to resolve a value for that input action. If the internal recognizer came back with no result, then issue a reprompt.
 
 ### The allow interruptions property
 
@@ -102,11 +100,11 @@ _Allow interruptions_ is a property of the _input dialog_ class, which all input
 
 The _allow interruptions_ property is defined when you create your [inputs][inputs] and defaults to true. Some examples:
 
-| _Allow interruptions_ value                       | Explanation                                                                                         |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| "true"                           | Allow interruptions in this input.                                                                  |
-| "false"                          | Do not allow interruptions in this input.                                                           |
-| "turn.recognized.score <= 0.7" | Allow interruptions only if we do not have a high confidence classification of an intent.           |
+| _Allow interruptions_ value                      | Explanation                                                                                                                                      |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| "true"                                           | Allow interruptions in this input.                                                                                                               |
+| "false"                                          | Do not allow interruptions in this input.                                                                                                        |
+| "turn.recognized.score <= 0.7"                   | Allow interruptions only if we do not have a high confidence classification of an intent.                                                        |
 | "turn.recognized.score >= 0.9 \|\| !@personName" | Allow interruptions only if you have a high confidence classification of an intent, or when you do not get a value for the `personName` entity.  |
 
 > [!TIP]
@@ -144,7 +142,7 @@ What happens in cases where the active dialog is unable to detect an intent from
 
 ### Handling interruptions globally
 
-_Global interrupts_ are interruptions that are not handled by the active adaptive dialog. If there is no `OnIntent` trigger in the active adaptive dialog that can handle the intent, the bot will send it to the dialog's parent dialog, using adaptive dialogs _consultation_ mechanism. If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog.
+_Global interrupts_ are interruptions that are not handled by the active adaptive dialog. If there are no triggers in the active adaptive dialog that can handle the intent, which includes any trigger that subscribes to a _recognition_ event such as the `OnIntent` or `OnQnAMatch` triggers, the bot will send it to the dialog's parent dialog, using adaptive dialogs _consultation_ mechanism. If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog.
 
 Common uses for global interrupts include creating basic dialog management features such as _help_ or _cancel_ in the root dialog that are then available to any of its child dialogs.
 
@@ -178,20 +176,49 @@ When your input dialog can accept input from multiple different sources, you can
 
 There are situations when you may need to prompt the user for that information even when the property is not `null`. In these situations you can set _always prompt_ to `true`.
 
+Another way that flexible entity extraction can be very useful is when the user responds to a request for information and in addition to answering your question, they also provide additional relevant information. For example, when registering a new user, you might prompt for the users first name and they respond with that, along with their age:
+
+> **Bot**:  what's your first name?
+>
+> **User**: my name is Vishwac and I'm 36 years old
+
+Or a travel bot asking for the users departure airport and the user responds with the departure city along with the destination city as well:
+
+> **Bot**:  what is your departure city?
+>
+> **User**: I need to fly from Detroit to Seattle
+
+Flexible entity extraction enables you to handle these situations gracefully. To do this you will need to define intents with specific utterances in your `.lu` files that you would expect a user to enter, for the first example above, the following template defines the `getUserProfile` intent with a list of possible utterances that assign the user entered values into the `@firstName` and `@userAge` variables:
+
+```.lu
+# getUserProfile
+    - {userName=vishwac}, {userAge=36}
+    - I'm {userName=vishwac} and I'm {userAge=36} years old
+    - call me {userName=vishwac}, I'm {userAge=36}.
+    - my name is {userName=vishwac} and I'm {userAge=36}
+    - {userName=vishwac} is my name and I'm {userAge=36} years of age.
+    - you can call me {userName=vishwac}, I'm {userAge=36}
+```
+
 ## Confirmation and correction
 
 _Confirmation and correction_ enables the scenario where you ask the user for confirmation, and they not only provide a confirmation, but they also include input that includes additional user intents in their confirmation response.
 
 ## Additional information
 
+- How to [Handle user interruptions in adaptive dialogs](bot-builder-howto-handle-user-interrupts-adaptive.md).
 - [Adaptive expressions][adaptive-expressions].
 - [.lu file format](/file-format/bot-builder-lu-file-format.md)
+- [Intents in your LUIS app](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-concept-intent)
+- [Understand what good utterances are for your LUIS app](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-concept-utterance)
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [inputs]: bot-builder-concept-adaptive-dialog-Inputs.md
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [entities]: bot-builder-concept-adaptive-dialog-recognizers.md#entities
+[entities-lu]: ../file-format/bot-builder-lu-file-format.md#list-entity
+[utterances-lu]: ../file-format/bot-builder-lu-file-format.md#utterances
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
 [turn-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#turn-scope

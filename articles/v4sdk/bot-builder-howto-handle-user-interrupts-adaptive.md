@@ -81,7 +81,7 @@ With this new LUIS resources in Azure portal, you are now ready to connect your 
 
 This section explains how to use the Bot Framework CLI to connect your bot to your LUIS resources in Azure. This automates the various tasks required to create, update, train and publish LUIS applications for each .lu file for the bot. In order to use this, you first need Node.js and the Bot Framework CLI.
 
-1. If you have **Node.js** installed, make sure you have version 10.14 or higher by running the following from a command prompt: `npm node.js –version`
+1. If you have **Node.js** installed, make sure you have version 10.14 or higher by running the following from a command prompt: `npm node.js –version`. You can get the latest version by running the following from a command prompt: `npm i -g npm`.
 
     If you do not have it installed, you can install it from the [Node.js download page](https://nodejs.org/download/).
 
@@ -181,9 +181,9 @@ The RootDialog is the root or main dialog of this bot. It is the parent of the o
 
 #### RootDialog Recognizer
 
-The first thing that happens when `rootDialog` is created is defining its recognizer. In this sample you will be using a LUIS adaptive recognizer. Instructions for getting your bot to work using the LUIS recognizer are detailed in the section [Creating LUIS resources in the Azure portal and configuring your bot](#setting-up-luis-to-work-in-your-bot).
+The first thing that happens when `rootDialog` is created is defining its recognizer. In this sample you will be using a LUIS adaptive recognizer. Instructions for getting your bot to work using the LUIS recognizer are detailed in the section [Setting up LUIS to work in your bot](#setting-up-luis-to-work-in-your-bot).
 
-Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer will have a `.lu` file. This file is given the same name as the filename containing the dialog, with the `.lu` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog.
+Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer can have one or more `.lu` files. This file is generally given the same name as the filename containing the dialog, with the `.lu` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog. For more
 
 In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If an adaptive dialog does not define a trigger to handle a particular intent, but one of its parent adaptive dialogs does, then the consultation mechanism lets the parent dialog handle the utterance. Once that process is complete, the user is returned back to where the conversation was before the interruption.
 
@@ -207,6 +207,7 @@ The `CreateLuisRecognizer()` method first verifies the required values exist in 
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=99-112)]
 
+<!--
 ```cs
 private static Recognizer CreateLuisRecognizer(IConfiguration configuration)
 {
@@ -223,6 +224,7 @@ private static Recognizer CreateLuisRecognizer(IConfiguration configuration)
     };
 }
 ```
+-->
 
 <!--# [JavaScript](#tab/javascript)
 
@@ -261,6 +263,7 @@ The generator requires a valid [language generation][language-generation] (.lg) 
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=29-35&highlight=1,7)]
 
+<!--
 ```cs
 _templates = Templates.ParseFile(Path.Combine(".", "Dialogs", "RootDialog", "RootDialog.lg"));
 
@@ -270,6 +273,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
     Recognizer = CreateLuisRecognizer(this.configuration),
     Generator = new TemplateEngineLanguageGenerator(_templates),
 ```
+-->
 
 <!--# [JavaScript](#tab/javascript)
 
@@ -308,12 +312,13 @@ If selected:
 1. The root dialog's recognizer recognizes a "GetUserProfile" intent.
 1. The root dialog's `OnIntent` trigger for that intent fires, which starts the `userProfileDialog` dialog, another adaptive dialog.
 
-    The user profile dialog has its own recognizer and generator and executes its own triggers and actions in response to user input, as discussed later in the [GetUserProfileDialog](#getuserprofiledialog) section.
+The user profile dialog has its own recognizer and generator and executes its own triggers and actions in response to user input, as discussed later in the [GetUserProfileDialog](#getuserprofiledialog) section.
 
 Here is the code of the `OnIntent` trigger, in **RootDialog.cs**, that handles the _GetUserProfile_ intent:
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=42-52)]
 
+<!--
 ```cs
 new OnIntent()
 {
@@ -327,6 +332,7 @@ new OnIntent()
     }
 },
 ```
+-->
 
 ##### Help
 
@@ -343,6 +349,7 @@ Here is the `OnIntent` trigger code that handles the _Help_ intent in RootDialog
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=53-60)]
 
+<!--
 ```cs
 new OnIntent()
 {
@@ -353,11 +360,13 @@ new OnIntent()
     }
 },
 ```
+-->
 
 Here is the [Structured response template][structured-response-template] in **RootDialog.lg** that is related to the "Help" intent:
 
 [!code-lg[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lg?range=4-8)]
 
+<!--
 ```plaintext
 # RootHelp
 [Activity
@@ -365,6 +374,7 @@ Here is the [Structured response template][structured-response-template] in **Ro
     SuggestedActions = Profile | Help | Cancel
 ]
 ```
+-->
 
 ##### Cancel
 
@@ -373,13 +383,14 @@ If selected:
 1. The `OnIntent` trigger containing _Intent = "Cancel"_ fires, causing its actions to execute.
 1. This results in the [ConfirmInput][confirm-input] action executing, which displays the message "Are you sure you want to cancel?"
 1. Next the `IfCondition` action executes in order to respond to the  `ConfirmInput` action.
-    - If the user responds affirmatively, `turn.confirm` is set to `true` and the `CancelReadBack` lg template executes, resulting in a message to the user: _Sure, cancelling all dialogs..._, then executes the [CancelAllDialogs][cancel-all-dialogs] action, closing all dialogs.
-    - If the user does not respond affirmatively, `turn.confirm` is set to `false` and the `Cancelcancelled` lg template executes, resulting in a message to the user: _No problem_.
+    1. If the user responds affirmatively, `turn.confirm` is set to `true` and the `CancelReadBack` lg template executes, resulting in a message to the user: _Sure, cancelling all dialogs..._, then executes the [CancelAllDialogs][cancel-all-dialogs] action, closing all dialogs.
+    1. If the user does not respond affirmatively, `turn.confirm` is set to `false` and the `Cancelcancelled` lg template executes, resulting in a message to the user: _No problem_, and the conversation then continues where it left off.
 
 Here is the `OnIntent` trigger code in RootDialog.cs:
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.cs?range=61-86)]
 
+<!--
 ```cs
 new OnIntent()
 {
@@ -408,11 +419,13 @@ new OnIntent()
     }
 }
 ```
+-->
 
 Here are the three language generation Templates in **RootDialog.lg** that are called from either the `ConfirmInput` or `IfCondition` actions as a result of the "cancel" intent:
 
 [!code-lg[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lg?range=16-23)]
 
+<!--
 ```plaintext
 # RootCancelConfirm
 - Are you sure you want to cancel?
@@ -423,6 +436,7 @@ Here are the three language generation Templates in **RootDialog.lg** that are c
 # Cancelcancelled
 - No problem.
 ```
+-->
 
 <!--# [JavaScript](#tab/javascript)
 new OnIntent()
@@ -476,6 +490,7 @@ The dialog defined in **GetUserProfileDialog** is named `userProfileDialog`. Thi
 
 [!code-json[env](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lu?range=1-5)]
 
+<!--
 ```plaintext
 # GetUserProfile
 - Hi
@@ -483,6 +498,7 @@ The dialog defined in **GetUserProfileDialog** is named `userProfileDialog`. Thi
 - I'm 36 years old
 - Profile
 ```
+-->
 
 The `userProfileDialog` dialog is the only child adaptive dialog in this bot, so all global interruptions will go directly to the root dialog. A quick search of the **GetUserProfileDialog.lu** file will show that there are no  _Help_ or _Cancel_ intents defined. Without the adaptive dialog consultation mechanism, handling these interruptions in `userProfileDialog` would be much more difficult, but because of the effort put into the Bot Framework SDK, these interruptions are easy to handle. Any actions defined in this dialog that has its `AllowInterruptions` property set or evaluate to `true` will enable these interruptions to be handled by any of its parent dialogs, in this case the root dialog.
 
@@ -498,6 +514,7 @@ For the most part, the code in GetUserProfileDialog used to define the recognize
 
 [!code-csharp[CreateLuisRecognizer](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=171-186&highlight=10)]
 
+<!--
 ```csharp
         private static Recognizer CreateLuisRecognizer(IConfiguration configuration)
         {
@@ -514,6 +531,7 @@ For the most part, the code in GetUserProfileDialog used to define the recognize
             };
         }
 ```
+-->
 
 #### GetUserProfileDialog Generator
 
@@ -523,6 +541,7 @@ The generator consists of your LG template file that is in the same directory as
 
 [!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=30-36&highlight=1,7)]
 
+<!--
 ```cs
 _templates = Templates.ParseFile(Path.Combine(".", "Dialogs", "GetUserProfileDialog", "GetUserProfileDialog.lg"));
 
@@ -532,6 +551,7 @@ var userProfileDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
     Recognizer = CreateLuisRecognizer(this.configuration),
     Generator = new TemplateEngineLanguageGenerator(_templates),
 ```
+-->
 
 <!--# [JavaScript](#tab/javascript)
 
@@ -557,7 +577,7 @@ When this dialog starts, its `OnBeginDialog` trigger executes:
 
 <!--# [C#](#tab/csharp)-->
 
-[!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=53-55,64-71)]
+[!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=51-55,64-78,82-86,90,95,97-103,105-110,113-114,116-117)]
 
 ```CS
 new SetProperties()
@@ -575,6 +595,34 @@ new SetProperties()
 			Value = "=coalesce(dialog.userAge, @age)"
 		}
 	}
+},
+new TextInput()
+{
+    Property = "user.profile.name",
+    Prompt = new ActivityTemplate("${AskFirstName()}"),
+    Validations = new List<BoolExpression>()
+    {
+        "count(this.value) >= 3",
+        "count(this.value) <= 50"
+    },
+    InvalidPrompt = new ActivityTemplate("${AskFirstName.Invalid()}"),
+
+    Value = "=@personName",
+    AllowInterruptions = "turn.recognized.score >= 0.3 || !@personName"
+},
+new TextInput()
+{
+    Property = "user.profile.age",
+    Prompt = new ActivityTemplate("${AskUserAage()}"),
+    Validations = new List<BoolExpression>()
+    {
+        "int(this.value) >= 1",
+        "int(this.value) <= 150"
+    },
+    InvalidPrompt = new ActivityTemplate("${AskUserAge.Invalid()}"),
+    UnrecognizedPrompt = new ActivityTemplate("${AskUserAge.Unrecognized()}"),
+    Value = "=coalesce(@age.number, @number)",
+    AllowInterruptions = "!@age && !@number"
 },
 ```
 
