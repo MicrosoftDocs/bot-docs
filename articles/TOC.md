@@ -62,6 +62,7 @@
 ### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md)
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
+### [Manage a long-running operation](v4sdk/bot-builder-howto-long-operations-guidance.md)
 ### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
