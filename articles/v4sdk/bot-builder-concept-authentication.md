@@ -98,12 +98,12 @@ Some channels such as Cortana, Microsoft Teams, Direct Line, and WebChat are abl
 > Please, keep in mind these important [Security considerations](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 > You can find additional information in this blog post: [Using WebChat with Azure Bot Service Authentication](https://blog.botframework.com/2018/09/01/using-webchat-with-azure-bot-services-authentication/).
 
-### Next steps
+## Next steps
 
-Now that you know the role that AD plays, let's take a look at how to authenticate a bot.
+Now that you know about user authentication, let's take a look at how to apply that to your bot.
 
 > [!div class="nextstepaction"]
-> [Add authentication to a bot](bot-builder-authentication.md).
+> [Add authentication to a bot](bot-builder-authentication.md)
 
 ## See also
 
