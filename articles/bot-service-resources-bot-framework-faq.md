@@ -36,6 +36,10 @@ In case you don't find the answer you're looking for, you can post your question
 - [How can I send proactive messages to the user?](bot-service-resources-faq-general.md#how-can-i-send-proactive-messages-to-the-user)
 - [How can I reference non-serializable services from my C# dialogs in SDK v3?](bot-service-resources-faq-general.md#how-can-i-reference-non-serializable-services-from-my-c-dialogs-in-sdk-v3)
 - [What is an ETag? How does it relate to bot data bag storage?](bot-service-resources-faq-general.md#what-is-an-etag--how-does-it-relate-to-bot-data-bag-storage)
+- [What is rate limiting?](bot-service-resources-faq-general.md#what-is-rate-limiting)
+- [How does rate limiting occur?](bot-service-resources-faq-general.md#how-does-rate-limiting-occur)
+- [What are the rate limits?](bot-service-resources-faq-general.md#what-are-the-rate-limits)
+- [How will I know if I'm impacted by rate limiting?](bot-service-resources-faq-general.md#how-will-i-know-if-im-impacted-by-rate-limiting)
 - [How to implement human handoff?](bot-service-resources-faq-general.md#how-to-implement-human-handoff)
 
 <!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
@@ -45,6 +49,7 @@ In case you don't find the answer you're looking for, you can post your question
 
 ## Ecosystem
 
+- [How do I enable the emulator to connect to localhost while behind a corporate proxy?](bot-service-resources-faq-ecosystem.md#how-do-i-enable-the-emulator-to-connect-to-localhost-while-behind-a-corporate-proxy)
 - [When will you add more conversation experiences to the Bot Framework?](bot-service-resources-faq-ecosystem.md#when-will-you-add-more-conversation-experiences-to-the-bot-framework)
 - [I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?](bot-service-resources-faq-ecosystem.md#i-have-a-communication-channel-id-like-to-be-configurable-with-bot-framework-can-i-work-with-microsoft-to-do-that)
 - [If I want to create a bot for Microsoft Teams, what tools and services should I use?](bot-service-resources-faq-ecosystem.md#if-i-want-to-create-a-bot-for-microsoft-teams-what-tools-and-services-should-i-use)
@@ -62,7 +67,7 @@ In case you don't find the answer you're looking for, you can post your question
 - [Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?](bot-service-resources-faq-security.md#do-the-bots-registered-with-the-bot-framework-collect-personal-information-if-yes-how-can-i-be-sure-the-data-is-safe-and-secure-what-about-privacy)
 - [Can I host my bot on my own servers?](bot-service-resources-faq-security.md#can-i-host-my-bot-on-my-own-servers)
 - [How do you ban or remove bots from the service?](bot-service-resources-faq-security.md#how-do-you-ban-or-remove-bots-from-the-service)
-- [Which specific URLs do I need to whitelist in my corporate firewall to access Bot Framework services?](bot-service-resources-faq-security.md#which-specific-urls-do-i-need-to-whitelist-in-my-corporate-firewall-to-access-bot-framework-services)
+- [Which specific URLs do I need to allow-list in my corporate firewall to access Bot Framework services?](bot-service-resources-faq-security.md#which-specific-urls-do-i-need-to-allow-list-in-my-corporate-firewall-to-access-bot-framework-services)
 - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
 - [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)
 - [What keeps my bot secure from clients impersonating the Bot Framework Service?](bot-service-resources-faq-security.md#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)

@@ -1,6 +1,6 @@
-# [Azure Bot Service Documentation](index.yml)
+# [Bot Framework SDK documentation](index-bf-sdk.yml)
 # Overview
-## [About Azure Bot Service](bot-service-overview-introduction.md)
+## [What is the Bot Framework SDK?](bot-service-overview-introduction.md)
 ## [What's new](what-is-new.md)
 # Quickstart
 ## [Create a bot using .NET](dotnet/bot-builder-dotnet-sdk-quickstart.md)
@@ -18,6 +18,7 @@
 ### [How bots work](v4sdk/bot-builder-basics.md)
 ### [Managing state](v4sdk/bot-builder-concept-state.md)
 ### [Dialogs library](v4sdk/bot-builder-concept-dialog.md)
+### [Waterfall dialogs](v4sdk/bot-builder-concept-waterfall-dialogs.md)
 ### [Middleware](v4sdk/bot-builder-concept-middleware.md)
 ## Adaptive dialogs
 ### [Introduction to adaptive dialogs](v4sdk/bot-builder-adaptive-dialog-Introduction.md)
@@ -62,6 +63,7 @@
 ### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md)
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
+### [Manage a long-running operation](v4sdk/bot-builder-howto-long-operations-guidance.md)
 ### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
@@ -70,6 +72,7 @@
 ### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
+### [Expire a conversation](v4sdk/bot-builder-howto-expire-conversation.md)
 ### Adaptive dialogs
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 #### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)

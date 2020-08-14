@@ -35,10 +35,10 @@ Adaptive expressions support the following operator types and expression syntax:
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
 |+          | Addition. Example: A + B                                                    |[add][1]                           |
-|-            | Subtraction. Example: A – B                                                |[sub][2]                           |
+|-            | Subtraction. Example: A - B                                                |[sub][2]                           |
 |unary +    | Positive value. Example: +1, +A                                                    |N/A                                |
-|unary -    | Negative value. Example: –2, -B                                            |N/A                                |
-|*            | Multiplication. Example: A * B                                            |[mul][3]                           |
+|unary -    | Negative value. Example: -2, -B                                            |N/A                                |
+|\*            | Multiplication. Example: A \* B                                            |[mul][3]                           |
 |/            | Division. Example: A / B                                                    |[div][4]                           |
 |^            | Exponentiation. Example: A ^ B                                            |[exp][5]                           |
 |%            | Modulus. Example: A % B                                                    |[mod][6]                           |
@@ -48,11 +48,11 @@ Adaptive expressions support the following operator types and expression syntax:
 | Operator    |                                  Functionality                                            |   Prebuilt function equivalent    |
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
 |==            | Equals. Example: A == B                                                    |[equals][7]                        |
-|!=            | Not equals. Example: A != B                                                |[not][8]([equals][7]())            |
-|>            | Greater than. Example: A > B                                                   |[greater][9]                       |
-|<            | Less than. Example: A < B                                                        |[less][10]                         |
-|>=         | Greater than or equal. Example: A >= B                                        |[greaterOrEquals][11]              |
-|<=            | Less than or equal. Example: A <= B                                            |[lessOrEquals][12]                 |
+|\!=            | Not equals. Example: A != B                                                |[not][8]([equals][7]())            |
+|\>            | Greater than. Example: A > B                                                   |[greater][9]                       |
+|\<            | Less than. Example: A < B                                                        |[less][10]                         |
+|\>=         | Greater than or equal. Example: A >= B                                        |[greaterOrEquals][11]              |
+|\<=            | Less than or equal. Example: A <= B                                            |[lessOrEquals][12]                 |
 
 ### Logical operators
 
@@ -60,7 +60,7 @@ Adaptive expressions support the following operator types and expression syntax:
 |-----------|-------------------------------------------------------------------------------------------|-----------------------------------|
 |&&            |And. Example: exp1 && exp2                                                    |[and][13]                          |
 |\|\|        |Or. Example: exp1 \|\| exp2                                                    |[or][14]                           |
-|!            |Not. Example: !exp1                                                            |[not][8]                           |
+|\!            |Not. Example: !exp1                                                            |[not][8]                           |
 
 
 ### Other operators and expression syntax
@@ -70,12 +70,12 @@ Adaptive expressions support the following operator types and expression syntax:
 |&, +            |Concatenation operators. Operands will always be cast to string. Examples: A & B, 'foo' + ' bar' => 'foo bar', 'foo' + 3 => 'foo3', 'foo' + (3 + 3) => 'foo6'                |N/A                                |
 |'            |Used to wrap a string literal. Example: 'myValue'                                                |N/A                                |
 |"            |Used to wrap a string literal. Example: "myValue"                                                |N/A                                |
-|[]            |Used to refer to an item in a list by its index. Example: A[0]                                    |N/A                                |
+|\[\]            |Used to refer to an item in a list by its index. Example: A[0]                                    |N/A                                |
 |${}        |Used to denote an expression. Example: ${A == B}.                                              |N/A                                |
 |${}        |Used to denote a variable in template expansion. Example: ${myVariable}                        |N/A                                |
-|()            |Enforces precedence order and groups sub expressions into larger expressions. Example: (A+B)*C    |N/A                                |
-|.            |Property selector. Example: myObject.Property1                                                    |N/A                                |
-|\            |Escape character for templates, expressions.                                               |N/A                                |
+|\(\)            |Enforces precedence order and groups sub expressions into larger expressions. Example: (A+B)\*C    |N/A                                |
+|\.            |Property selector. Example: myObject.Property1                                                    |N/A                                |
+|\\            |Escape character for templates, expressions.                                               |N/A                                |
 
 ## Variables
 
@@ -92,9 +92,9 @@ Explicit values can be enclosed in either single quotes 'myExplicitValue' or dou
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for Javascript
 - [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the Adaptive Expressions library
-<!--
-- [API reference](../adaptive-expressions/adaptive-expressions-api-reference.md) for Adaptive Expressions
-- [Extend functions](./extend-functions.md)-->
+- [C #API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
+- [JavaScript API reference](https://docs.microsoft.com/javascript/api/adaptive-expressions)   
+<!--- [Extend functions](./extend-functions.md)-->
 
 [1]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
 [2]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#sub
