@@ -11,13 +11,13 @@ ms.date: 08/13/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Bot Framework authentication
+# Authentication types
 
-The Bot Framework provides a few types of authentication as described below.
+The Bot Framework provides several authentication types as described below.
 
 ## Bot authentication
 
-A bot is identified by the `MicrosoftAppID` and `MicrosoftAppPassword` which are kept within the bot's settings file(`appsettings.json` (.NET), `.env` (JavaScript), `web.config` (Python)) , or Azure Key Vault. For more information, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+A bot is identified by the `MicrosoftAppID` and `MicrosoftAppPassword` which are kept within the bot's settings files: `appsettings.json` (.NET), `.env` (JavaScript), `web.config` (Python), or the [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview). For more information, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 When you register a bot with Azure, for example via the bot channels registration, an Active Directory registration application is created. This application has its own application ID (app ID) and client secret (password) needed to configure the bot for deployment. The app ID is also needed to secure the service to service communication between the bot and the Bot Framework Channel Services.
 
