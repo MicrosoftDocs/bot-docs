@@ -98,20 +98,6 @@ Some channels such as Cortana, Microsoft Teams, Direct Line, and WebChat are abl
 > Please, keep in mind these important [Security considerations](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 > You can find additional information in this blog post: [Using WebChat with Azure Bot Service Authentication](https://blog.botframework.com/2018/09/01/using-webchat-with-azure-bot-services-authentication/).
 
-
-## Azure Activity Directory in a bot
-
-Azure Active Directory plays a pivotal role when a bot is deployed to Azure as described below.
-
-### Bot registration
-
- When you register a bot with Azure, for example via the bot channels registration, an Active Directory registration application is created. This application has its own application ID (app ID) and client secret (password) needed to configure the bot for deployment. The app ID is also needed to secure the service to service communication between the bot and the Bot Framework Channel Services.
-
-### Bot authentication
-
-The Azure Active Directory is a cloud identity provider that allows to securely sign in users using industry standard protocols such as **OAuth2.0**. For more information, see [Azure Active Directory identity provider](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider).
-
-
 ### Next steps
 
 Now that you know the role that AD plays, let's take a look at how to authenticate a bot.
