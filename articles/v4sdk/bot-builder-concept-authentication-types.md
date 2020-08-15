@@ -27,14 +27,14 @@ A client can authenticate requests to Direct Line API 3.0 either by using a secr
 
 ## User authentication
 
-There are times when a bot must access secured online resources on behalf of the user; to do that the bot must be authorized.
-This is because to perform certain operations, such as checking email, checking on flight status, or placing an order, the bot will need to call an external service, such as the Microsoft Graph, GitHub, or a company's REST service. OAuth is used to authenticate the user and authorize the bot.
+There are times when a bot must access secured online resources on behalf of the user, and to do that the bot must be authorized. This is because to perform certain operations such as checking email, checking on flight status, or placing an order, the bot will need to call an external service such as Microsoft Graph, GitHub, or a company's REST service. OAuth is used to authenticate the user and authorize the bot.
+
 > [!NOTE]
-> Two macro-steps are involved for a bot to access user's resources.
+> Two macro-steps are involved for a bot to access a user's resources.
 >
 > 1. **Authentication**. The process of verifying the user's identity.
 > 1. **Authorization**. The process of verifying that the bot can access the user's resources.
 >
-> If the first step is successful, a token, based on the user's credentials, is issued. In the second step, the bot (bearer), uses the token to access the user's resources.
+> If the first step is successful then a token based on the user's credentials is issued. In the second step, the bot uses the token to access the user's resources.
 
 For more information, see [User authentication](bot-builder-concept-authentication.md).
