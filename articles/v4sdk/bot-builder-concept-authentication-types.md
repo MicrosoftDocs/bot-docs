@@ -1,5 +1,5 @@
 ---
-title: Bot authentication types in the Azure Bot Service - Bot Service
+title: Bot framework authentication types in the Azure Bot Service - Bot Service
 description: Learn about bot authentication types in the Azure Bot Service.
 keywords: azure bot service, authentication, bot framework token service
 author: kamrani
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/13/2020
+ms.date: 08/14/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
