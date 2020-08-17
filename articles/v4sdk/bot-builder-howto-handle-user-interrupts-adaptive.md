@@ -628,7 +628,7 @@ new TextInput()
 
 > [!TIP]
 >
-> The `AllowInterruptions` property is a `BoolExpression`. A Boolean Expression is an [AdaptiveExpressions][adaptive-expressions] property that is either a boolean or a string expression which resolves to a boolean.  `AllowInterruptions = "turn.recognized.score >= 0.3 || !@personName"` will set the `AllowInterruptions` property to true is the score returned from LUIS is greater than 30% or the [personName][person-name] entity is null, otherwise it will evaluate to false.
+> The `AllowInterruptions` property is a `BoolExpression`. A Boolean Expression is an [AdaptiveExpressions][adaptive-expressions] property that is either a boolean or a string expression which resolves to a boolean.  `AllowInterruptions = "turn.recognized.score >= 0.3 || !@personName"` will set the `AllowInterruptions` property to true if the [prediction score][prediction-score] returned from LUIS is greater than 30% or the [personName][person-name] entity is null, otherwise it will evaluate to false.
 
 <!--# [JavaScript](#tab/javascript)
 
@@ -687,6 +687,7 @@ The screen shot shown below verifies that you can interrupt the conversational f
 
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [person-name]: ../file-format/bot-builder-lu-file-format.md#machine-learned-entity
+[prediction-score]: https://aka.ms/luis-prediction-score 
 
 <!-- Setting up LUIS ----->
 [create-luis-resources-in-azure-portal]: https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-azure-subscription#create-luis-resources-in-azure-portal
