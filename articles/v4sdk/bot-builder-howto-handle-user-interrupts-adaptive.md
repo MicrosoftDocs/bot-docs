@@ -38,7 +38,7 @@ What is covered in this section:
 
 1. [Create LUIS resources in the Azure portal](#create-luis-resources-in-the-azure-portal)
 1. [Get your authoring key](#get-your-authoring-key)
-1. [Use the Bot Framework CLI to connect your bot to your LUIS resource in Azure](#use-cli-to-connect-your-bot-to-your-luis-resource-in-azure)
+1. [Use the Bot Framework CLI to connect your bot to your LUIS resource in Azure](#use-the-bot-framework-cli-to-connect-your-bot-to-your-luis-resource-in-azure)
 1. [Update your configuration file](#update-your-configuration-file)
 
 
@@ -573,7 +573,7 @@ When this dialog starts, its `OnBeginDialog` trigger executes:
 - Two `PropertyAssignment` actions execute defining two new properties: `user.profile.name` and `user.profile.age`.
 - These properties get populated if the entities are present, such as when this dialog was triggered by the phrase, "Hi, I'm Vishwac". In this case, the `@Personname` entity would be _Vishwac_.
 - If either property is null, the bot will prompt the user for the missing information using _text input_ actions.
-- Both the input actions allow interrupts, using adaptive expressions.
+- Both the input actions allow interrupts, using [adaptive expressions][adaptive-expressions].
 
 <!--# [C#](#tab/csharp)-->
 
@@ -625,6 +625,10 @@ new TextInput()
     AllowInterruptions = "!@age && !@number"
 },
 ```
+
+> [!TIP]
+>
+> The `AllowInterruptions` property is a `BoolExpression`. A Boolean Expression is an [AdaptiveExpressions][adaptive-expressions] property that is either a boolean or a string expression which resolves to a boolean.  `AllowInterruptions = "turn.recognized.score >= 0.3 || !@personName"` will set the `AllowInterruptions` property to true is the score returned from LUIS is greater than 30% or the [personName][person-name] entity is null, otherwise it will evaluate to false.
 
 <!--# [JavaScript](#tab/javascript)
 
@@ -680,6 +684,9 @@ The screen shot shown below verifies that you can interrupt the conversational f
 [lg]: ../file-format/bot-builder-lg-file-format.md
 [language-generation]: bot-builder-concept-language-generation.md
 [structured-response-template]: ../language-generation/language-generation-structured-response-template.md
+
+[adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
+[person-name]: ../file-format/bot-builder-lu-file-format.md#machine-learned-entity
 
 <!-- Setting up LUIS ----->
 [create-luis-resources-in-azure-portal]: https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-azure-subscription#create-luis-resources-in-azure-portal
