@@ -173,17 +173,17 @@ You should now be able to use LUIS in your bot.
 
 ## The InterruptionsBot sample
 
-The sample used in this article demonstrates how to create a bot that uses LUIS and adaptive dialogs to achieve advanced LU concepts, including interruption handling. At any time during the conversation with the bot, the user can issue _help_ or _cancel_ commands to interrupt the current conversational flow.
+The sample used in this article demonstrates how to create a bot that uses LUIS and adaptive dialogs to achieve advanced LU concepts, including interruption handling. At any time during the conversation with the bot, the user can issue _help_ or _cancel_ commands to interrupt the current conversational flow. The InterruptionsBot sample has two adaptive dialogs and each dialog includes interruption handling that is specific to their conversation flow.
 
 ### RootDialog
 
-The RootDialog is the root or main dialog of this bot. It is the parent of the only other adaptive dialog in this bot: [UserProfileDialog](#getuserprofiledialog).
+The RootDialog is the root adaptive dialog of this bot. It is the parent of the only other adaptive dialog in this bot: [UserProfileDialog](#getuserprofiledialog).
 
 #### RootDialog Recognizer
 
 The first thing that happens when `rootDialog` is created is defining its recognizer. In this sample you will be using a LUIS adaptive recognizer. Instructions for getting your bot to work using the LUIS recognizer are detailed in the section [Setting up LUIS to work in your bot](#setting-up-luis-to-work-in-your-bot).
 
-Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer can have one or more `.lu` files. This file is generally given the same name as the filename containing the dialog, with the `.lu` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog. For more
+Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer can have one or more `.lu` files. This file is generally given the same name as the filename containing the dialog, with the `.lu` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog. For more information on `.lu` files, see the article [.lu file format][lu].
 
 In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If an adaptive dialog does not define a trigger to handle a particular intent, but one of its parent adaptive dialogs does, then the consultation mechanism lets the parent dialog handle the utterance. Once that process is complete, the user is returned back to where the conversation was before the interruption.
 
@@ -506,7 +506,7 @@ There are also two local interrupts defined. They are defined as `OnIntent` acti
 
 #### GetUserProfileDialog Recognizer
 
-Configuring its recognizer is the first thing that happens when `userProfileDialog` is created. Every dialog configures its own recognizer independent of all other dialogs, and each dialog can use the same type of recognizer, or each can use a different recognizer. Each dialog in your bot can use any type of recognizer defined in the Bot Framework SDK, regardless of what any other dialog is using. To learn more about the different types available, see the [recognizer types][recognizer-types] section of the recognizers concept article. <!---  Add ", or a custom recognizer" once there is an article that discusses this.  -->
+Configuring its recognizer is the first thing that happens when `userProfileDialog` is created. Every dialog configures its own recognizer independent of all other dialogs, and each dialog can use the same type of recognizer, or each can use a different type of recognizer. Each dialog in your bot can use any type of recognizer defined in the Bot Framework SDK, regardless of what any other dialog is using. To learn more about the different types available, see the [recognizer types][recognizer-types] section of the recognizers concept article. <!---  Add ", or a custom recognizer" once there is an article that discusses this.  -->
 
 As mentioned previously, every adaptive dialog has its own recognizer, and the `.lu` file associated with it is exclusively tied to that dialog. In the `.lu` file, you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialog's `.lu` file, the adaptive dialog consultation mechanism enables your bot to bubble up the user intent to the parent dialog to handle, if it can. In this case, the _Help_ and _Cancel_ intents are defined in the root dialog, but your bot can still handle those user intents even when `userProfileDialog` is the active dialog. This is explained in detail in a later section, titled [GetUserProfileDialog Triggers](#getuserprofiledialog-triggers).
 
@@ -577,7 +577,7 @@ When this dialog starts, its `OnBeginDialog` trigger executes:
 
 <!--# [C#](#tab/csharp)-->
 
-[!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=51-55,64-78,82-86,90,95,97-103,105-110,113-114,116-117)]
+[!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=49-55,64-78,82-85,89,93-100,102-106,110,113-117)]
 
 ```CS
 new SetProperties()
@@ -676,6 +676,7 @@ The screen shot shown below verifies that you can interrupt the conversational f
 [confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md##confirminput
 [cancel-all-dialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
 
+[lu]: ../file-format/bot-builder-lu-file-format.md
 [lg]: ../file-format/bot-builder-lg-file-format.md
 [language-generation]: bot-builder-concept-language-generation.md
 [structured-response-template]: ../language-generation/language-generation-structured-response-template.md
