@@ -31,7 +31,8 @@
 ### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
 ## Security
 ### [Security guidelines](v4sdk/bot-builder-security-guidelines.md)
-### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
+### [Authentication types](v4sdk/bot-builder-concept-authentication-types.md)
+### [User authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
