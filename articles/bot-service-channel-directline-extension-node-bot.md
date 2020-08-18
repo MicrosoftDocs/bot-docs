@@ -59,12 +59,6 @@ This section describes how to enable the Direct Line app service extension using
       </rules>
     </rewrite>
     ```
-    
-1. Open the `appsettings.json` file and enter the following values:
-    1. `"MicrosoftAppId": "<secret Id>"`
-    1. `"MicrosoftAppPassword": "<secret password>"`
-
-    The values are the **appid** and the **appSecret** associated with the service registration group.
 
 1. **Publish** the bot to your Azure Web App Bot resource.
 
