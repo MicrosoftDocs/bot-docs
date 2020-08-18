@@ -425,6 +425,45 @@ The [generator][generator] value contains a link to the .lg file associated with
 }
 ```
 
+## The Bot Framework SDK CLI
+
+Several new [Bot Framework Command-Line Interface (BF CLI)][bf-cli] commands were added with the release of adaptive dialogs in the Bot Framework SDK. This includes two dialog related commands for working with `.schema` and `.dialog` files that are very useful when using the declarative approach to adaptive dialog development. The new `dialog` group has the following two commands: `merge` and `verify`.
+
+### Merge
+
+Every consumer that uses declarative files needs the `dialog:merge` command to pull together all of the definitions. You will need to run this command anytime you add a new package or create or modify your own component.
+
+This creates a file named **App.Schema** in the current directory unless specified otherwise using the `-o` parameter. A valid App.Schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
+
+To use the merge command, enter the following at the command prompt, while in the root directory of your project: `bf dialog:merge <filename.csproj>`
+
+> [!TIP]
+>
+> For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, `.lu`, `.lg`, and `.qna` files will be copied into `generated/<package>` so you can easily include them in your project output.
+
+### Verify
+
+The `dialog:verify` command will check `.dialog` files to verify that they are compatible with the schema.
+
+To use the `verify` command, enter the following at the command prompt, while in the root directory of your project: `bf dialog:verify <filename.csproj>`
+
+> [!NOTE]
+>
+> If you are creating the `.dialog` files using [Composer][composer], which is driven by the merged `.schema` and `.uischema` files, you do not need this command but if you are creating them by hand it is very useful.
+
+### Download the BF CLI
+
+To use these commands you need the [BF CLI][bf-cli] . If you do not already have this installed, you can install the BF CLI from the command line:
+
+```cmd
+npm i -g @microsoft/botframework-cli
+```
+
+### Relevant information
+
+- [BF CLI dialog readme][dialog-readme]
+- [Dialog Commands readme][dialog-commands]
+
 ## Additional information
 
 - How to [Create a bot using declarative adaptive dialogs](bot-builder-dialogs-declarative.md)
@@ -506,3 +545,8 @@ The [generator][generator] value contains a link to the .lg file associated with
 <!--  (Actions) Debugging options -->
 [log-action]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#log-action
 [traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
+
+[intelliSense]: https://aka.ms/intellisense-in-visual-studio
+[composer]: https://docs.microsoft.com/composer
+[dialog-readme]: https://github.com/microsoft/botframework-cli/blob/master/packages/dialog/README.md
+[dialog-commands]: https://github.com/microsoft/botframework-cli/tree/master/packages/dialog/docs/readme.md
