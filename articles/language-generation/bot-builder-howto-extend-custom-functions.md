@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Developers can use both prebuilt functions supported by adaptive expressions and custom functions in language generation (LG). This article will show you how to define a custom function in your bot and use that function in an LG template.
+Developers can use both [prebuilt functions](../articles/adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by adaptive expressions and custom functions in language generation (LG). This article will show you how to define a custom function in your bot and use that function in an LG template.
 
 ## Prerequisites
 
@@ -24,7 +24,18 @@ Developers can use both prebuilt functions supported by adaptive expressions and
 
 ## About the sample
 
-This LG custom functions sample
+This LG custom functions sample bot returns the square root of the user's input. The function that computes the square root, `contoso.sqrt`, is defined in the bot logic and added to adaptive expressions. The expression is used in the LG templates the way any other adaptive expression, prebuilt or otherwise, would be. 
+
+## Define and custom function to adaptive expressions
+
+- add string constant w/ function name
+- add expression
+- regular LG calls - templates
+
+## Call custom function in code logic
+
+- add lines that show where called (on-message-async)
+
 
 ## Additional Information
 
