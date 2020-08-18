@@ -50,7 +50,7 @@ This section describes how to enable the Direct Line app service extension using
     
     <rewrite>
       <rules>
-        <!-- Do not interfere with Direct Line App Service Extension requests. -->
+        <!-- Do not interfere with Direct Line App Service Extension requests. (This rule should be as high in the rules section as possible to avoid conflicts.) -->
         <rule name ="DLASE" stopProcessing="true">
           <conditions>
             <add input="{REQUEST_URI}" pattern="^/.bot"/>
