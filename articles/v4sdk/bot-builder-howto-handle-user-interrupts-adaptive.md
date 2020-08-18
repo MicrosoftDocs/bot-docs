@@ -577,7 +577,7 @@ When this dialog starts, its `OnBeginDialog` trigger executes:
 
 <!--# [C#](#tab/csharp)-->
 
-[!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=49-55,64-78,82-85,89,93-100,102-106,110,113-117)]
+[!code-csharp[PropertyAssignment](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=49-55,64-78,82-85,89,93-100,102-106,110,113-114)]
 
 ```CS
 new SetProperties()
