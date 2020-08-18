@@ -47,8 +47,8 @@ This article references two samples. One shows how to obtain an authentication t
 This article covers how to:
 
 - [Create the Azure bot registration](#create-the-azure-bot-registration)
-- [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
-- [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
+- [Create the Azure AD identity provider](#create-the-azure-ad-identity-provider)
+- [Register the Azure AD identity provider with the bot](#register-the-azure-ad-identity-provider-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
 Once you finish this article, you will have a bot that can respond to a few simple tasks. In the case of the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
