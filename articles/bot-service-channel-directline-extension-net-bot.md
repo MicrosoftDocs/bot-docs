@@ -113,7 +113,7 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
 
-- If you are receiving "HTTP Error 500.34 - ANCM Mixed Hosting" it is due to your bot attempting to use the *InProcess* Hosting Model. This is remedied by explicitly setting the bot to run *OutOfProcess* instead. See [Out of Process Hosting Model.](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#out-of-process-hosting-model)
+- If you are receiving "HTTP Error 500.34 - ANCM Mixed Hosting" it is due to your bot attempting to use the *InProcess* Hosting Model. This is remedied by explicitly setting the bot to run *OutOfProcess* instead. See [Out of Process Hosting Model.](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#out-of-process-hosting-model)
 
 - If the *initialized* value of the **.bot endpoint** is false it means the Direct Line app service extension is unable to validate the **App Service Extension Key** added to the bot's *Application Settings* above. 
     1. Confirm the value was correctly entered.
