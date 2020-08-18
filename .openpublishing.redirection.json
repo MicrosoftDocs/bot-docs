@@ -363,7 +363,7 @@
     {
       "source_path": "articles/portal-bot-review-guidelines.md",
       "redirect_url": "/azure/bot-service/index",
-      "redirect_document_id": true 
+      "redirect_document_id": false
     }, 
     {
       "source_path": "articles/portal-channel-inspector.md",
