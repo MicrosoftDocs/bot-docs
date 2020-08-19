@@ -204,11 +204,11 @@
             </summary>
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
-        <para>Not all channels support this operation. For channels that don\'t, this call may throw an exception.</para>
         <altmember cref="M:Microsoft.Bot.Builder.DelegatingTurnContext`1.OnDeleteActivity(Microsoft.Bot.Builder.DeleteActivityHandler)" />
         <altmember cref="M:Microsoft.Bot.Builder.DelegatingTurnContext`1.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
         <altmember cref="M:Microsoft.Bot.Builder.DelegatingTurnContext`1.SendActivitiesAsync(Microsoft.Bot.Schema.IActivity[],System.Threading.CancellationToken)" />
         <altmember cref="M:Microsoft.Bot.Builder.DelegatingTurnContext`1.UpdateActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
+        <para>Not all channels support this operation. For channels that don\'t, this call may throw an exception.</para>
       </Docs>
     </Member>
     <Member MemberName="Microsoft.Bot.Builder.ITurnContext&lt;T&gt;.Activity">
