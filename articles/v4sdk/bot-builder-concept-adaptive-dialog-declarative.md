@@ -427,15 +427,25 @@ The [generator][generator] value contains a link to the .lg file associated with
 
 ## The Bot Framework SDK CLI
 
-Several new [Bot Framework Command-Line Interface (BF CLI)][bf-cli] commands were added with the release of adaptive dialogs in the Bot Framework SDK. This includes two dialog related commands for working with `.schema` and `.dialog` files that are very useful when using the declarative approach to adaptive dialog development. The new `dialog` group has the following two commands: `merge` and `verify`.
+Several new [Bot Framework Command-Line Interface (BF CLI)][bf-cli] commands were added with the release of adaptive dialogs in the Bot Framework SDK. This includes two dialog related commands for working with `.schema` and `.dialog` files that are very useful when using the declarative approach to adaptive dialog development.
+
+The new `dialog` group has the following two commands: `merge` and `verify`.
 
 ### Merge
 
-Every consumer, including [Composer][composer], that uses declarative files needs the `dialog:merge` command to pull together all of the definitions. You will need to run this command anytime you add a new package or create or modify your own component.
+Every consumer, including [Composer][composer], that uses declarative files needs the `dialog:merge` command to pull together all of the definitions. You will need to run this command anytime you add a new package or create or modify your own components.
 
-This creates a file named **App.Schema** in the current directory unless specified otherwise using the `-o` parameter. A valid App.Schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
+This creates a file named **App.Schema** in the current directory, unless specified otherwise using the `-o` parameter. This file is referenced by the `"$schema` keyword in each of the `.dialog` files in your project.
 
-To use the merge command, enter the following at the command prompt, while in the root directory of your project: `bf dialog:merge <filename.csproj>`
+> [!NOTE]
+>
+> A valid App.Schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
+
+To use the merge command, enter the following at the command prompt, while in the root directory of your project:
+
+```cli
+bf dialog:merge <filename.csproj>
+```
 
 > [!TIP]
 >
@@ -445,7 +455,11 @@ To use the merge command, enter the following at the command prompt, while in th
 
 The `dialog:verify` command will check `.dialog` files to verify that they are compatible with the schema.
 
-To use the `verify` command, enter the following at the command prompt, while in the root directory of your project: `bf dialog:verify <filename.csproj>`
+To use the `verify` command, enter the following at the command prompt, while in the root directory of your project:
+
+```cli
+bf dialog:verify <filename.csproj>
+```
 
 > [!NOTE]
 >
