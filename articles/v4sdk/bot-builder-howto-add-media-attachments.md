@@ -1,6 +1,6 @@
 ---
 title: Add media to messages - Bot Service
-description: Learn how to add media to messages using the Bot Framework SDK.
+description: Learn how to add images, video, audio, files, and other media attachments to messages. View code for sending media attachments, hero cards, and Adaptive Cards.
 keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
 author: JonathanFingold
 ms.author: kamrani
