@@ -94,7 +94,7 @@ An adaptive expression has one or more functions. For more information about fun
 
 ## Bot Framework Composer
 
-Bot Framework Composer is an open-source visual authoring canvas for developers and multidisciplinary teams to build bots. Composer uses adaptive expressions to create, calculate, and modify values. Adaptive expressions can be used in language generation template definitions and as properties in the authoring canvas. As seen in the example below, properties in memory can be used in an adaptive expression. 
+Bot Framework Composer is an open-source visual authoring canvas for developers and multidisciplinary teams to build bots. Composer uses adaptive expressions to create, calculate, and modify values. Adaptive expressions can be used in language generation template definitions and as properties in the authoring canvas. As seen in the example below, properties in memory can also be used in an adaptive expression. 
 
 The expression `(dialog.orderTotal + dialog.orderTax) > 50` adds the values of the properties `dialog.orderTotal` and `dialog.orderTax`, and evaluates to `True` if the sum is greater than 50 or `False` if the sum is less than 50.
 
