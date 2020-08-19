@@ -431,7 +431,7 @@ Several new [Bot Framework Command-Line Interface (BF CLI)][bf-cli] commands wer
 
 ### Merge
 
-Every consumer that uses declarative files needs the `dialog:merge` command to pull together all of the definitions. You will need to run this command anytime you add a new package or create or modify your own component.
+Every consumer, including [Composer][composer], that uses declarative files needs the `dialog:merge` command to pull together all of the definitions. You will need to run this command anytime you add a new package or create or modify your own component.
 
 This creates a file named **App.Schema** in the current directory unless specified otherwise using the `-o` parameter. A valid App.Schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
 
