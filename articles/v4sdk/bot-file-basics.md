@@ -1,6 +1,6 @@
 ---
 title: Manage bot resources - Bot Service
-description: Describes the purpose and use of bot file.
+description: Learn how to read configuration files so that bots can connect to resources. See how to migrate settings from .bot files to appsettings.json or .env files.
 keywords: bot file, .bot, .bot file, msbot, bot resources, manage bot resources
 author: ivorb
 ms.author: kamrani
