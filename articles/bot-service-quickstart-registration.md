@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 This article shows how to register a bot with **Azure Bot Service**. If the bot is hosted elsewhere, this allows you to make it available in Azure and connect it to the supported channels.
 
-Please, notice that there are 2 ways to register a bot with Azure:
+There are 2 ways to register a bot with Azure:
 
 1. When you create a bot, as described in the article [Create a bot with Azure Bot Service](~/v4sdk/abs-quickstart.md), the bot is registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
 1. If you do not develop or you do not host the bot in Azure, you use the steps described in  this article. You supply a web address where your bot is hosted. It could still be hosted in Azure, of course.
@@ -27,11 +27,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com). If you do not have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
 
 1. In the left panel, click **Create a resource**.
-1. In the right panel selection box enter *bot*. From the drop-down list select **Bot Channels Registration** or **Web App Bot** depending on your application.
-
-    > [!WARNING]
-    > If you picked **Web Bot App**, follow the steps described in the article [Create a bot with Azure Bot Service](v4sdk/abs-quickstart.md). You will create a bot in Azure that is automatically registered with the Azure Bot Service.
-
+1. In the right panel selection box enter *bot*. From the drop-down list select **Bot Channels Registration**.
 1. Click the **Create** button.
 1. In the **Bot Channels Registration** form, provide the requested information about your bot as specified in the table below.
 
