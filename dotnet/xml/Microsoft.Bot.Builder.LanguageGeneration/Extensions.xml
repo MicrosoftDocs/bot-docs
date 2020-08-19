@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -60,6 +61,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -87,12 +89,15 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Regular expression for matching escaped characters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,6 +112,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -124,27 +130,24 @@
       </Docs>
     </Member>
     <Member MemberName="IsPureExpression">
-      <MemberSignature Language="C#" Value="public static bool IsPureExpression (this Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext context, out string expression);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPureExpression(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/KeyValueStructureValueContext context, [out] string&amp; expression) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext,System.String@)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsPureExpression (context As LGTemplateParser.KeyValueStructureValueContext, ByRef expression As String) As Boolean" />
-      <MemberSignature Language="F#" Value="static member IsPureExpression : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext * string -&gt; bool" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression (context, expression)" />
+      <MemberSignature Language="C#" Value="public static bool IsPureExpression (this Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPureExpression(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/KeyValueStructureValueContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsPureExpression (context As LGTemplateParser.KeyValueStructureValueContext) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsPureExpression : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext -&gt; bool" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureValueContext" RefType="this" />
-        <Parameter Name="expression" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">Key value structure value context.</param>
-        <param name="expression">String expression.</param>
         <summary>
             If a value is pure Expression.
             </summary>
@@ -163,6 +166,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -194,6 +198,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

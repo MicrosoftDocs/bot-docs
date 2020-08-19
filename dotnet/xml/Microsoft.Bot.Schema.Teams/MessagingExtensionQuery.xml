@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +45,14 @@
       <MemberSignature Language="C#" Value="public MessagingExtensionQuery (string commandId = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; parameters = default, Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions queryOptions = default, string state = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandId, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; parameters, class Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions queryOptions, string state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionQuery.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessagingExtensionParameter},Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional commandId As String = null, Optional parameters As IList(Of MessagingExtensionParameter) = null, Optional queryOptions As MessagingExtensionQueryOptions = null, Optional state As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional commandId As String = Nothing, Optional parameters As IList(Of MessagingExtensionParameter) = Nothing, Optional queryOptions As MessagingExtensionQueryOptions = Nothing, Optional state As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionQuery : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionParameter&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionQueryOptions * string -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionQuery" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionQuery (commandId, parameters, queryOptions, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="commandId" Type="System.String" />
@@ -58,11 +61,10 @@
         <Parameter Name="state" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="queryOptions">To be added.</param>
         <param name="commandId">Id of the command assigned by Bot</param>
         <param name="parameters">Parameters for the query</param>
-        <param name="state">State parameter passed back to the bot after
-            authentication/configuration flow</param>
+        <param name="queryOptions">The query options.</param>
+        <param name="state">State parameter passed back to the bot after authentication/configuration flow</param>
         <summary>
             Initializes a new instance of the MessagingExtensionQuery class.
             </summary>
@@ -80,10 +82,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="commandId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="commandId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="commandId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,10 +112,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameters")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -136,10 +142,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="queryOptions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="queryOptions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="queryOptions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,10 +170,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -15,6 +15,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -44,6 +45,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -69,6 +71,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Choices.TokenizerFunction</ReturnType>
@@ -85,7 +88,7 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt; DefaultTokenizerImpl (string text, string locale = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Choices.Token&gt; DefaultTokenizerImpl(string text, string locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.DefaultTokenizerImpl(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultTokenizerImpl (text As String, Optional locale As String = null) As List(Of Token)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultTokenizerImpl (text As String, Optional locale As String = Nothing) As List(Of Token)" />
       <MemberSignature Language="F#" Value="static member DefaultTokenizerImpl : string * string -&gt; System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Choices.Tokenizer.DefaultTokenizerImpl (text, locale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -99,6 +102,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Choices.Token&gt;</ReturnType>

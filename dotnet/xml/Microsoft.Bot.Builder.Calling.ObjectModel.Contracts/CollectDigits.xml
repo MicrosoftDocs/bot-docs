@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptOut)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -54,7 +55,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -81,7 +83,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(Required=Newtonsoft.Json.Required.Default)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

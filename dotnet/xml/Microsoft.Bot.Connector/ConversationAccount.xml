@@ -47,7 +47,7 @@
       <MemberSignature Language="C#" Value="public ConversationAccount (bool? isGroup = default, string id = default, string name = default, string conversationType = default, string role = default, string aadObjectId = default, string tenantId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; isGroup, string id, string name, string conversationType, string role, string aadObjectId, string tenantId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationAccount.#ctor(System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = null, Optional id As String = null, Optional name As String = null, Optional conversationType As String = null, Optional role As String = null, Optional aadObjectId As String = null, Optional tenantId As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional isGroup As Nullable(Of Boolean) = Nothing, Optional id As String = Nothing, Optional name As String = Nothing, Optional conversationType As String = Nothing, Optional role As String = Nothing, Optional aadObjectId As String = Nothing, Optional tenantId As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationAccount : Nullable&lt;bool&gt; * string * string * string * string * string * string -&gt; Microsoft.Bot.Connector.ConversationAccount" Usage="new Microsoft.Bot.Connector.ConversationAccount (isGroup, id, name, conversationType, role, aadObjectId, tenantId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -90,7 +90,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="aadObjectId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="aadObjectId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="aadObjectId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversationType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="conversationType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="conversationType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -227,7 +229,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,7 +258,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isGroup")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="isGroup")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="isGroup")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -283,7 +287,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -311,7 +316,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -339,7 +345,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="role")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="role")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="role")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -364,7 +371,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tenantId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tenantId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tenantId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

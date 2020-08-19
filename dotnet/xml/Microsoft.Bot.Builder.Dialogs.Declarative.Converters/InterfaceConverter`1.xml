@@ -1,13 +1,14 @@
 <Type Name="InterfaceConverter&lt;T&gt;" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class InterfaceConverter&lt;T&gt; : Newtonsoft.Json.JsonConverter, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter where T : class" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InterfaceConverter`1&lt;class T&gt; extends Newtonsoft.Json.JsonConverter implements class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter" />
+  <TypeSignature Language="C#" Value="public class InterfaceConverter&lt;T&gt; : Newtonsoft.Json.JsonConverter, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InterfaceConverter`1&lt;class T&gt; extends Newtonsoft.Json.JsonConverter implements class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter, class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1" />
-  <TypeSignature Language="VB.NET" Value="Public Class InterfaceConverter(Of T)&#xA;Inherits JsonConverter&#xA;Implements IObservableConverter" />
-  <TypeSignature Language="F#" Value="type InterfaceConverter&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit JsonConverter&#xA;    interface IObservableConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class InterfaceConverter(Of T)&#xA;Inherits JsonConverter&#xA;Implements IObservableConverter, IObservableJsonConverter" />
+  <TypeSignature Language="F#" Value="type InterfaceConverter&lt;'T (requires 'T : null)&gt; = class&#xA;    inherit JsonConverter&#xA;    interface IObservableConverter&#xA;    interface IObservableJsonConverter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -23,10 +24,15 @@
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The object type.</typeparam>
+    <summary>
+            Converts an object to and from JSON.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,15 +47,18 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
         <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
       </Parameters>
       <Docs>
-        <param name="resourceExplorer">To be added.</param>
-        <param name="sourceContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceExplorer">A ResourceExplorer object to initialize the current instance.</param>
+        <param name="sourceContext">A SourceContext object to initialize the current instance.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,6 +73,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -72,9 +82,13 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectType">Type of the object.</param>
+        <summary>
+            Determines whether this instance can convert the specified object type.
+            </summary>
+        <returns>
+          <c>true</c> if this instance can convert the specified object type; otherwise, <c>false</c>.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,13 +103,17 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether this <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1" /> can read JSON.
+            </summary>
+        <value>
+          <c>true</c> if this <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1" /> can read JSON; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,6 +128,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -121,12 +140,14 @@
         <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <param name="existingValue">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:Newtonsoft.Json.JsonReader" /> to read from.</param>
+        <param name="objectType">Type of the object.</param>
+        <param name="existingValue">The existing value of object being read.</param>
+        <param name="serializer">The calling serializer.</param>
+        <summary>
+            Reads the JSON representation of the object.
+            </summary>
+        <returns>The object value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +165,14 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Deprecated in favor of IJsonLoadObserver registration.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Deprecated in favor of IJsonLoadObserver registration.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -152,10 +180,40 @@
         <Parameter Name="observer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="observer">The observer to be registered.</param>
+        <summary>
+            Registers a <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" /> to receive notifications on converter events.
+            </summary>
         <remarks>To be added.</remarks>
         <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterObserver">
+      <MemberSignature Language="C#" Value="public void RegisterObserver (Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterObserver(class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Converters.InterfaceConverter`1.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObserver (observer As IJsonLoadObserver)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver -&gt; unit&#xA;override this.RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver -&gt; unit" Usage="interfaceConverter.RegisterObserver observer" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver" />
+      </Parameters>
+      <Docs>
+        <param name="observer">The observer to be registered.</param>
+        <summary>
+            Registers a <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver" /> to receive notifications on converter events.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveUnknownObject">
@@ -169,6 +227,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -177,9 +236,11 @@
         <Parameter Name="jToken" Type="Newtonsoft.Json.Linq.JToken" />
       </Parameters>
       <Docs>
-        <param name="jToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="jToken">The unknown object to resolve.</param>
+        <summary>
+            Performs an action on an unknown object.
+            </summary>
+        <returns>An object value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,6 +255,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -204,10 +266,12 @@
         <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:Newtonsoft.Json.JsonWriter" /> to write to.</param>
+        <param name="value">The value.</param>
+        <param name="serializer">The calling serializer.</param>
+        <summary>
+            Writes the JSON representation of the object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

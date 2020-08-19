@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PaymentDetails (Microsoft.Bot.Connector.PaymentItem total = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt; displayItems = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt; shippingOptions = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt; modifiers = default, string error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.PaymentItem total, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentItem&gt; displayItems, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentShippingOption&gt; shippingOptions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentDetailsModifier&gt; modifiers, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentDetails.#ctor(Microsoft.Bot.Connector.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentShippingOption},System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentDetailsModifier},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional total As PaymentItem = null, Optional displayItems As IList(Of PaymentItem) = null, Optional shippingOptions As IList(Of PaymentShippingOption) = null, Optional modifiers As IList(Of PaymentDetailsModifier) = null, Optional error As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional total As PaymentItem = Nothing, Optional displayItems As IList(Of PaymentItem) = Nothing, Optional shippingOptions As IList(Of PaymentShippingOption) = Nothing, Optional modifiers As IList(Of PaymentDetailsModifier) = Nothing, Optional error As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentDetails : Microsoft.Bot.Connector.PaymentItem * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentShippingOption&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentDetailsModifier&gt; * string -&gt; Microsoft.Bot.Connector.PaymentDetails" Usage="new Microsoft.Bot.Connector.PaymentDetails (total, displayItems, shippingOptions, modifiers, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -86,7 +86,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="displayItems")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="displayItems")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="displayItems")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,7 +115,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="error")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,7 +144,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="modifiers")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="modifiers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="modifiers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,7 +173,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,7 +202,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="total")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="total")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="total")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

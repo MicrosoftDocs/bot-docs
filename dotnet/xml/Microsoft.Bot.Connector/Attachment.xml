@@ -47,7 +47,7 @@
       <MemberSignature Language="C#" Value="public Attachment (string contentType = default, string contentUrl = default, object content = default, string name = default, string thumbnailUrl = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string contentUrl, object content, string name, string thumbnailUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Attachment.#ctor(System.String,System.String,System.Object,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = null, Optional contentUrl As String = null, Optional content As Object = null, Optional name As String = null, Optional thumbnailUrl As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = Nothing, Optional contentUrl As String = Nothing, Optional content As Object = Nothing, Optional name As String = Nothing, Optional thumbnailUrl As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Attachment : string * string * obj * string * string -&gt; Microsoft.Bot.Connector.Attachment" Usage="new Microsoft.Bot.Connector.Attachment (contentType, contentUrl, content, name, thumbnailUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -90,7 +90,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="content")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="content")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="content")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contentType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="contentType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="contentType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,7 +148,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contentUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="contentUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="contentUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,7 +258,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -283,7 +287,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -311,7 +316,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="thumbnailUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="thumbnailUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="thumbnailUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

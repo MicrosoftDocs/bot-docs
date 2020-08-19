@@ -8,13 +8,16 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A JWT token processing class that gets identity information and performs security token validation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -62,6 +66,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -97,6 +102,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -106,10 +112,12 @@
         <Parameter Name="channelId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="authorizationHeader">To be added.</param>
-        <param name="channelId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authorizationHeader">The raw HTTP header in the format: "Bearer [longString]".</param>
+        <param name="channelId">The Id of the channel being validated in the original request.</param>
+        <summary>
+            Gets the claims identity associated with a request.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +132,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -134,11 +143,13 @@
         <Parameter Name="channelId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="scheme">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="channelId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="scheme">The associated scheme.</param>
+        <param name="parameter">The token.</param>
+        <param name="channelId">The Id of the channel being validated in the original request.</param>
+        <summary>
+            Gets the claims identity associated with a request.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,6 +164,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -163,11 +175,13 @@
         <Parameter Name="requiredEndorsements" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="authorizationHeader">To be added.</param>
-        <param name="channelId">To be added.</param>
-        <param name="requiredEndorsements">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authorizationHeader">The raw HTTP header in the format: "Bearer [longString]".</param>
+        <param name="channelId">The Id of the channel being validated in the original request.</param>
+        <param name="requiredEndorsements">The required JWT endorsements.</param>
+        <summary>
+            Gets the claims identity associated with a request.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,6 +196,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -193,12 +208,14 @@
         <Parameter Name="requiredEndorsements" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="scheme">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="channelId">To be added.</param>
-        <param name="requiredEndorsements">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="scheme">The associated scheme.</param>
+        <param name="parameter">The token.</param>
+        <param name="channelId">The Id of the channel being validated in the original request.</param>
+        <param name="requiredEndorsements">The required JWT endorsements.</param>
+        <summary>
+            Gets the claims identity associated with a request.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

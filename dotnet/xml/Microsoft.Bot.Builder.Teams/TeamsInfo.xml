@@ -10,13 +10,17 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The TeamsInfo
+            provides utility methods for the events and interactions that occur within Microsoft Teams.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +28,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; GetMemberAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string userId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; GetMemberAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetMemberAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMemberAsync (turnContext As ITurnContext, userId As String, Optional cancellationToken As CancellationToken = null) As Task(Of TeamsChannelAccount)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMemberAsync (turnContext As ITurnContext, userId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamsChannelAccount)" />
       <MemberSignature Language="F#" Value="static member GetMemberAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetMemberAsync (turnContext, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -32,6 +36,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;</ReturnType>
@@ -42,11 +47,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="userId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="userId"> ID of the user in question. </param>
+        <param name="cancellationToken"> cancellation token. </param>
+        <summary>
+            Gets the account of a single conversation member. 
+            This works in one-on-one, group, and teams scoped conversations.
+            </summary>
+        <returns>Team Details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +62,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt; GetMembersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt; GetMembersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMembersAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of TeamsChannelAccount))" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMembersAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of TeamsChannelAccount))" />
       <MemberSignature Language="F#" Value="static member GetMembersAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetMembersAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -63,6 +71,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt;</ReturnType>
@@ -72,10 +81,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="cancellationToken"> Cancellation token. </param>
+        <summary>
+            Gets the conversation members of a one-on-one or group chat.
+            </summary>
+        <returns>TeamsChannelAccount.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +94,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt; GetPagedMembersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, int? pageSize = default, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt; GetPagedMembersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetPagedMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPagedMembersAsync (turnContext As ITurnContext, Optional pageSize As Nullable(Of Integer) = null, Optional continuationToken As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TeamsPagedMembersResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPagedMembersAsync (turnContext As ITurnContext, Optional pageSize As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamsPagedMembersResult)" />
       <MemberSignature Language="F#" Value="static member GetPagedMembersAsync : Microsoft.Bot.Builder.ITurnContext * Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetPagedMembersAsync (turnContext, pageSize, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -91,6 +102,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt;</ReturnType>
@@ -102,12 +114,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="pageSize">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="pageSize"> Suggested number of entries on a page. </param>
+        <param name="continuationToken"> ContinuationToken token. </param>
+        <param name="cancellationToken"> Cancellation token. </param>
+        <summary>
+            Gets a pagined list of members of one-on-one, group, or team conversation.
+            </summary>
+        <returns>TeamsPagedMembersResult.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +129,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt; GetPagedTeamMembersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string teamId = default, string continuationToken = default, int? pageSize = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt; GetPagedTeamMembersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string teamId, string continuationToken, valuetype System.Nullable`1&lt;int32&gt; pageSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetPagedTeamMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPagedTeamMembersAsync (turnContext As ITurnContext, Optional teamId As String = null, Optional continuationToken As String = null, Optional pageSize As Nullable(Of Integer) = null, Optional cancellationToken As CancellationToken = null) As Task(Of TeamsPagedMembersResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPagedTeamMembersAsync (turnContext As ITurnContext, Optional teamId As String = Nothing, Optional continuationToken As String = Nothing, Optional pageSize As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamsPagedMembersResult)" />
       <MemberSignature Language="F#" Value="static member GetPagedTeamMembersAsync : Microsoft.Bot.Builder.ITurnContext * string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetPagedTeamMembersAsync (turnContext, teamId, continuationToken, pageSize, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -123,6 +137,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsPagedMembersResult&gt;</ReturnType>
@@ -135,13 +150,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="teamId">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <param name="pageSize">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="teamId"> ID of the Teams team. </param>
+        <param name="continuationToken"> continuationToken token. </param>
+        <param name="pageSize"> number of entries on the page. </param>
+        <param name="cancellationToken"> cancellation token. </param>
+        <summary>
+            Gets a paginated list of members of a team. 
+            This only works in teams scoped conversations.
+            </summary>
+        <returns>TeamsPagedMembersResult.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +167,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt;&gt; GetTeamChannelsAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string teamId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.ChannelInfo&gt;&gt; GetTeamChannelsAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamChannelsAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamChannelsAsync (turnContext As ITurnContext, Optional teamId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of ChannelInfo))" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamChannelsAsync (turnContext As ITurnContext, Optional teamId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of ChannelInfo))" />
       <MemberSignature Language="F#" Value="static member GetTeamChannelsAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt;&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamChannelsAsync (turnContext, teamId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -158,6 +176,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.ChannelInfo&gt;&gt;</ReturnType>
@@ -168,11 +187,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="teamId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="teamId"> ID of the Teams team. </param>
+        <param name="cancellationToken"> cancellation token. </param>
+        <summary>
+            Returns a list of channels in a Team. 
+            This only works in teams scoped conversations.
+            </summary>
+        <returns>Team Details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +202,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamDetails&gt; GetTeamDetailsAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string teamId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TeamDetails&gt; GetTeamDetailsAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamDetailsAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamDetailsAsync (turnContext As ITurnContext, Optional teamId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TeamDetails)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamDetailsAsync (turnContext As ITurnContext, Optional teamId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamDetails)" />
       <MemberSignature Language="F#" Value="static member GetTeamDetailsAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamDetails&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamDetailsAsync (turnContext, teamId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -189,6 +211,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamDetails&gt;</ReturnType>
@@ -199,11 +222,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="teamId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="teamId"> The id of the Teams team. </param>
+        <param name="cancellationToken"> Cancellation token. </param>
+        <summary>
+            Gets the details for the given team id. This only works in teams scoped conversations. 
+            </summary>
+        <returns>Team Details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +236,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; GetTeamMemberAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string userId, string teamId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt; GetTeamMemberAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string userId, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamMemberAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamMemberAsync (turnContext As ITurnContext, userId As String, Optional teamId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TeamsChannelAccount)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamMemberAsync (turnContext As ITurnContext, userId As String, Optional teamId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamsChannelAccount)" />
       <MemberSignature Language="F#" Value="static member GetTeamMemberAsync : Microsoft.Bot.Builder.ITurnContext * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamMemberAsync (turnContext, userId, teamId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -219,6 +244,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;</ReturnType>
@@ -230,12 +256,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="userId">To be added.</param>
-        <param name="teamId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="userId"> user id. </param>
+        <param name="teamId"> ID of the Teams team. </param>
+        <param name="cancellationToken"> cancellation token. </param>
+        <summary>
+            Gets the list of members in a teams scoped conversation.
+            </summary>
+        <returns>Team Details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +271,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt; GetTeamMembersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string teamId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt; GetTeamMembersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamMembersAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamMembersAsync (turnContext As ITurnContext, Optional teamId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of TeamsChannelAccount))" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTeamMembersAsync (turnContext As ITurnContext, Optional teamId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of TeamsChannelAccount))" />
       <MemberSignature Language="F#" Value="static member GetTeamMembersAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.GetTeamMembersAsync (turnContext, teamId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -252,6 +280,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Teams.TeamsChannelAccount&gt;&gt;</ReturnType>
@@ -262,11 +291,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="teamId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="teamId"> ID of the Teams team. </param>
+        <param name="cancellationToken"> cancellation token. </param>
+        <summary>
+            Gets the list of TeamsChannelAccounts within a team. 
+            This only works in teams scoped conversations.
+            </summary>
+        <returns>TeamsChannelAccount.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +306,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Tuple&lt;Microsoft.Bot.Schema.ConversationReference,string&gt;&gt; SendMessageToTeamsChannelAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.IActivity activity, string teamsChannelId, Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Tuple`2&lt;class Microsoft.Bot.Schema.ConversationReference, string&gt;&gt; SendMessageToTeamsChannelAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.IActivity activity, string teamsChannelId, class Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsInfo.SendMessageToTeamsChannelAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.IActivity,System.String,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SendMessageToTeamsChannelAsync (turnContext As ITurnContext, activity As IActivity, teamsChannelId As String, credentials As MicrosoftAppCredentials, Optional cancellationToken As CancellationToken = null) As Task(Of Tuple(Of ConversationReference, String))" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendMessageToTeamsChannelAsync (turnContext As ITurnContext, activity As IActivity, teamsChannelId As String, credentials As MicrosoftAppCredentials, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Tuple(Of ConversationReference, String))" />
       <MemberSignature Language="F#" Value="static member SendMessageToTeamsChannelAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.IActivity * string * Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationReference * string&gt;" Usage="Microsoft.Bot.Builder.Teams.TeamsInfo.SendMessageToTeamsChannelAsync (turnContext, activity, teamsChannelId, credentials, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -282,6 +314,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Tuple&lt;Microsoft.Bot.Schema.ConversationReference,System.String&gt;&gt;</ReturnType>
@@ -294,13 +327,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="teamsChannelId">To be added.</param>
-        <param name="credentials">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext"> Turn context. </param>
+        <param name="activity"> ID of the Teams team. </param>
+        <param name="teamsChannelId"> cancellation token. </param>
+        <param name="credentials"> Microsoft app credentials. </param>
+        <param name="cancellationToken"> The cancellation token. </param>
+        <summary>
+            Creates a new thread in a team chat and sends an activity to that new thread.
+            </summary>
+        <returns>Team Details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

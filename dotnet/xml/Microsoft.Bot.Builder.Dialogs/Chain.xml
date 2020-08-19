@@ -687,7 +687,8 @@
         <Parameter Name="cases" Type="Microsoft.Bot.Builder.Dialogs.ICase&lt;T,R&gt;[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

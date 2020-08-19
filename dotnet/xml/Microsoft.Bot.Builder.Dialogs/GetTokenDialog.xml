@@ -21,7 +21,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,7 +43,7 @@
       <MemberSignature Language="C#" Value="public GetTokenDialog (string connectionName, string signInMessage, string buttonLabel, int retries = 0, string retryMessage = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionName, string signInMessage, string buttonLabel, int32 retries, string retryMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.GetTokenDialog.#ctor(System.String,System.String,System.String,System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionName As String, signInMessage As String, buttonLabel As String, Optional retries As Integer = 0, Optional retryMessage As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionName As String, signInMessage As String, buttonLabel As String, Optional retries As Integer = 0, Optional retryMessage As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.GetTokenDialog : string * string * string * int * string -&gt; Microsoft.Bot.Builder.Dialogs.GetTokenDialog" Usage="new Microsoft.Bot.Builder.Dialogs.GetTokenDialog (connectionName, signInMessage, buttonLabel, retries, retryMessage)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

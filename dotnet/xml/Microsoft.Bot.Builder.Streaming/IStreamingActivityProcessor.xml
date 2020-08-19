@@ -10,11 +10,12 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>
-            Processes streaming activities.
+            Interface for classes that process streaming activities.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -23,7 +24,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; ProcessStreamingActivityAsync (Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.BotCallbackHandler botCallbackHandler, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; ProcessStreamingActivityAsync(class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.BotCallbackHandler botCallbackHandler, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor.ProcessStreamingActivityAsync(Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ProcessStreamingActivityAsync (activity As Activity, botCallbackHandler As BotCallbackHandler, Optional cancellationToken As CancellationToken = null) As Task(Of InvokeResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessStreamingActivityAsync (activity As Activity, botCallbackHandler As BotCallbackHandler, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InvokeResponse)" />
       <MemberSignature Language="F#" Value="abstract member ProcessStreamingActivityAsync : Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="iStreamingActivityProcessor.ProcessStreamingActivityAsync (activity, botCallbackHandler, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -42,11 +44,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="botCallbackHandler">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The <see cref="T:Microsoft.Bot.Schema.Activity" /> to process.</param>
+        <param name="botCallbackHandler">The <see cref="T:Microsoft.Bot.Builder.BotCallbackHandler" /> that will handle the activity.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Defines the contract for processing streaming activities.
+            </summary>
+        <returns>A task returning an <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

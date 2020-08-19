@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
@@ -20,12 +21,13 @@
     <ReturnType>System.ValueTuple&lt;System.String,System.String&gt;</ReturnType>
     <Attributes>
       <Attribute>
-        <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "content", "id" })</AttributeName>
+        <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "content", "id" })]</AttributeName>
+        <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "content", "id" })&gt;]</AttributeName>
       </Attribute>
     </Attributes>
   </ReturnValue>
   <Docs>
-    <param name="sourceId">The id or path of source file.</param>
+    <param name="sourceId">Id or path of source file.</param>
     <param name="resourceId">Resource id to resolve.</param>
     <summary>
             Delegate for resolving resource id of imported lg file.
