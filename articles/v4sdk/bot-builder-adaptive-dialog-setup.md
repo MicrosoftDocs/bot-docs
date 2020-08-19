@@ -21,7 +21,7 @@ This article shows how to create a C# bot project to which you can add adaptive 
 
 ## Prerequisites
 
-## Create an empty bot
+## Create a bot project
 
 1. Update your copy of the Bot Framework templates (VSIX or .NET Core) to the latest version.
 1. Create a new project based on the **empty bot** template.
@@ -90,6 +90,7 @@ About adaptive dialogs
 - Templates
 - Memory scopes and paths
 - Declarative dialogs and type converters
+  - App schema files ([Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file))
 - Custom components: actions, triggers, dialogs, recognizers, and so on.
 
 ## Next steps
