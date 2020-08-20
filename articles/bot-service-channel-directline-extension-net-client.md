@@ -1,7 +1,7 @@
 ---
 title: Create .NET client for direct line app service extension
 titleSuffix: Bot Service
-description: Learn how to create .NET clients that connect to direct line app service extensions. See how to set up C# clients that communicate with bots over WebSockets.
+description: "Learn how to create .NET clients that connect to direct line app service extensions. See how to set up C# clients that communicate with bots over WebSockets."
 services: bot-service
 manager: kamrani
 ms.service: bot-service

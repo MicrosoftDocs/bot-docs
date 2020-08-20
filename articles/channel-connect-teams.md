@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Microsoft Teams - Bot Service
-description: Learn how to connect a bot to Microsoft Teams. See how to set up the bot as a contact that you can exchanges messages with in Teams.
+description: Learn how to connect a bot to Microsoft Teams. See how to set up the bot as a contact that you can exchange messages with in Teams.
 keywords: Teams, bot channel, configure Teams
 author: kamrani
 ms.author: kamrani
