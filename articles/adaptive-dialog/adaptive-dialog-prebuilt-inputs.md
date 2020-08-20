@@ -425,38 +425,134 @@ The `OAuthInput` action also defines two new methods:
 1. `GetUserTokenAsync`: This method attempts to retrieve the user's token.
 2. `SignOutUserAsync`: This method signs out the user.
 
+The `OAuthInput` action returns a `TokenResponse` object which contains values for `ChannelId`, `ConnectionName`, `Token`, `Expiration`. In the example below, the return value is placed into the `turn` memory scope: `turn.oauth`. You can access values from this as demonstrated in the `LoginSteps()` method: `new SendActivity("Here is your token '${turn.oauth.token}'.")`.
 
-### OAuth example
+### OAuthInput example
 
 ```C#
-var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
+public class RootDialog : AdaptiveDialog
 {
-    Generator = new TemplateEngineLanguageGenerator(_templateEngine),
-    Triggers = new List<OnCondition>()
+    private OAuthInput MyOAuthInput { get; }
+
+    public RootDialog(IConfiguration configuration) : base(nameof(RootDialog))
     {
-        new OnUnknownIntent()
+        MyOAuthInput = new OAuthInput
         {
-            Actions = new List<Dialog>()
+            // The name of the connection configured on Azure Bot Service for the OAuth connection.
+            ConnectionName = configuration["ConnectionName"],
+
+            // The title of the sign in card.
+            Title = "Please log in",
+
+            // The text displayed in sign in card.
+            Text = "This will give you access!",
+
+            // Title of the sign in card.
+            InvalidPrompt = new ActivityTemplate("Login was not successful please try again."),
+
+            // The number of milliseconds the prompt waits for the user to authenticate.
+            Timeout = 300000,
+
+            // The maximum number of times to ask the user for this value before the dialog gives up.
+            MaxTurnCount = 3,
+
+            // Property path to store the value (a TokenResponse object) that is returned by the OAuthInput action.
+            // Since the token can be short-lived, you should validate
+            Property = "turn.oauth",
+        };
+
+
+        string[] paths = { ".", "Dialogs", $"RootDialog.lg" };
+        string fullPath = Path.Combine(paths);
+
+        // These steps are executed when this Adaptive Dialog begins
+        Triggers = new List<OnCondition>
             {
-                new OAuthInput()
+                // Add a rule to welcome user
+                new OnConversationUpdateActivity
                 {
-                    // Name of the connection configured on Azure Bot Service for the OAuth connection.
-                    ConnectionName = "GitHub",
-
-                    // Title of the sign in card.
-                    Title = "Sign in",
-
-                    // Text displayed in sign in card.
-                    Text = "Please sign in to your GitHub account.",
-
-                    // Property path to store the authorization token.
-                    TokenProperty = "user.authToken"
+                    Actions = WelcomeUserSteps(),
                 },
-                new SendActivity("You are signed in with token = ${user.authToken}")
-            }
-        }
+
+                // Respond to user on message activity
+                new OnUnknownIntent
+                {
+                    Actions = LoginSteps(),
+                },
+            };
+        Generator = new TemplateEngineLanguageGenerator(Templates.ParseFile(fullPath));
     }
-};
+
+    private static List<Dialog> WelcomeUserSteps()
+    {
+        return new List<Dialog>
+        {
+            // Iterate through membersAdded list and greet user added to the conversation.
+            new Foreach()
+            {
+                ItemsProperty = "turn.activity.membersAdded",
+                Actions =
+                {
+                    // Note: Some channels send two conversation update events - one for the Bot added to the conversation and another for user.
+                    // Filter cases where the bot itself is the recipient of the message. 
+                    new IfCondition()
+                    {
+                        Condition = "$foreach.value.name != turn.activity.recipient.name",
+                        Actions =
+                        {
+                            new SendActivity("Hello, I'm the multi-turn prompt bot. Please send a message to get started!")
+                        }
+                    }
+                }
+            }
+        };
+    }
+
+    private List<Dialog> LoginSteps()
+    {
+        return new List<Dialog>
+        {
+            MyOAuthInput,
+            new IfCondition
+            {
+                Condition = "turn.oauth.token && length(turn.oauth.token)",
+                Actions = LoginSuccessSteps(),
+                ElseActions =
+                {
+                    new SendActivity("Sorry, we were unable to log you in."),
+                },
+            },
+            new EndDialog(),
+        };
+    }
+
+    private List<Dialog> LoginSuccessSteps()
+    {
+        return new List<Dialog>
+        {
+            new SendActivity("You are now logged in."),
+            new ConfirmInput
+            {
+                Prompt = new ActivityTemplate("Would you like to view your token?"),
+                InvalidPrompt = new ActivityTemplate("Oops, I didn't understand. Would you like to view your token?"),
+                MaxTurnCount = 3,
+            },
+            new IfCondition
+            {
+                Condition = "turn.lastResult == true",
+                ElseActions =
+                {
+                    new SendActivity("Great. Type anything to continue."),
+                },
+                Actions =
+                {
+                    MyOAuthInput,
+                    new SendActivity("Here is your token `${turn.oauth.token}`."),
+                },
+            },
+        };
+    }
+}
 ```
 
 ### Additional information related to OAuth
