@@ -93,12 +93,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "botbuilder-python",
-      "url": "https://github.com/microsoft/BotBuilder-Samples",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "botframework-sdk",
       "url": "https://github.com/microsoft/botframework-sdk",
       "branch": "master",
