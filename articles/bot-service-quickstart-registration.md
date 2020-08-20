@@ -6,7 +6,6 @@ manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 07/30/2020
-monikerRange: 'azure-bot-service-3.0'
 ---
 
 # Bot channels registration
