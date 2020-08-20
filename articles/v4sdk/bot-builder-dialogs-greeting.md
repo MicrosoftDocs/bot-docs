@@ -1,6 +1,6 @@
 ---
 title: Implement a greeting dialog - Bot Service
-description: Learn how to use a dialog to welcome a user to a conversation. View sample code, and see how to use the Bot Framework Emulator to test welcome messages.
+description: Learn how to use dialogs to welcome users to conversations. View sample code, and see how to use the Bot Framework Emulator to test welcome messages.
 keywords: greeting, dialogs, conversation flow, dialog set
 author: JonathanFingold
 ms.author: kamrani
