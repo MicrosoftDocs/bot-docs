@@ -1,6 +1,6 @@
 ---
 title: Enterprise Productivity bot scenario - Bot Service
-description: Learn about the Enterprise Productivity bot scenario. See how this bot can boost productivity by accessing Office 365 calendar and Dynamics CRM.
+description: Learn about the Enterprise Productivity bot scenario. See how this bot can boost productivity by accessing Microsoft 365 calendar and Dynamics CRM.
 author: BrianRandell
 ms.author: kamrani
 manager: kamrani
