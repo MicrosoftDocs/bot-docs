@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Facebook Messenger - Bot Service
-description: Learn how to connect a bot to Facebook Messenger and Facebook Workplace. See how to connect a bot to Facebook by using the Facebook adapter.
+description: Learn how to connect bots to Facebook Messenger and Facebook Workplace. See how to connect bots to Facebook by using the Facebook adapter.
 keywords: Facebook Messenger, bot channel, Facebook App, App ID, App Secret, Facebook bot, credentials
 manager: kamrani
 ms.topic: article
