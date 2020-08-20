@@ -1,6 +1,6 @@
 ---
 title: Send welcome message to users - Bot Service
-description: Find out how to engage users in meaningful conversations with your bot by learning about welcome messages. See code samples that detect and greet new users.
+description: Find out how to engage users in meaningful conversations with bots by learning about welcome messages. See code samples that detect and greet new users.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting
 author: DanDev33
 ms.author: kamrani
