@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to LINE - Bot Service
-description:  Learn how to connect bots to LINE. See how to set up a bot to communicate with people through the LINE app, and view troubleshooting tips.
+description:  Learn how to connect bots to LINE. See how to configure bots to communicate with people through the LINE app. View troubleshooting tips.
 keywords: connect a bot, bot channel, LINE bot, credentials, configure, phone
 author: ivorb
 ms.author: kamrani
