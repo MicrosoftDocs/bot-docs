@@ -112,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            If true an interruption has occured.
+            If true an interruption has occurred.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
