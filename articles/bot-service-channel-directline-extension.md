@@ -1,7 +1,7 @@
 ---
 title: Direct line app service extension
 titleSuffix: Bot Service
-description: Direct line app service extension features
+description: Become familiar with direct line app service extensions. See how to use streaming extensions to connect directly to hosted bots. View additional resources.
 services: bot-service
 manager: kamrani
 ms.service: bot-service
