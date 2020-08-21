@@ -38,7 +38,7 @@ Actions that are included with the Bot Framework SDK provide the ability to perf
 >[!TIP]
 > Unlike a waterfall dialog where each step is a function, each action in an adaptive dialog is a fully functional dialog with all of the power and flexibility that entails. This enables adaptive dialogs by design to:
 >
-> * Provide an easier way to handle interruptions. <!--TODO P1: [interruptions][interruptions-inputs]-->
+> * Provide an easier way to handle [interruptions][interruptions]. 
 > * Branch conditionally based on context or state.
 
 Adaptive dialogs support the following actions:
@@ -86,7 +86,7 @@ The dialog management actions are designed to give you control of any dialog rel
 * **Repeat this dialog**. Used to restart the parent dialog.
 * **Replace this dialog**. Replaces the current dialog with a new dialog.
 * **GetConversationMembers**. Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].
-* **EditActions**. Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions.
+* **EditActions**. Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling [interruptions][interruptions].
 
 For detailed information and examples, see the [Dialog management](../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#dialog-management) section in the __Actions in adaptive dialogs - reference guide__.
 
@@ -138,3 +138,4 @@ For detailed information and examples, see the [Debugging options](../adaptive-d
 [generators]:bot-builder-concept-adaptive-dialog-generators.md
 [adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
 [memory-states]:bot-builder-concept-adaptive-dialog-memory-states.md
+[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
