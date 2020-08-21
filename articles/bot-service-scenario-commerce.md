@@ -1,6 +1,6 @@
 ---
 title: Commerce bot scenario - Bot Service
-description: Explore the Commerce bot scenario with the Bot Framework.
+description: Learn about the Commerce bot scenario. See how this bot uses Cognitive Services to handle interactions that people typically have with hotel concierge services.
 author: BrianRandell
 ms.author: kamrani
 manager: kamrani
