@@ -1,7 +1,7 @@
 ---
 title: Create .NET client for direct line app service extension
 titleSuffix: Bot Service
-description: .NET client C# to connect to direct line app service extension
+description: "Learn how to create .NET clients that connect to direct line app service extensions. See how to set up C# clients that communicate with bots over WebSockets."
 services: bot-service
 manager: kamrani
 ms.service: bot-service
@@ -15,7 +15,7 @@ ms.date: 07/25/2019
 This article describes how to create a .NET client in C# which connects to the direct line app service extension.
 Please, also read this companion article [Configure .NET bot for extension](bot-service-channel-directline-extension-net-bot.md).
 
-## Gather your Direct Line Extension keys
+## Get Direct Line secret key
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
 1. In the Azure portal, locate your **Azure Bot Service** resource
@@ -23,7 +23,7 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
 1. Scroll to the Sites section. There is typically a Default Site unless you have deleted or renamed it.
-1. Click on the **Show link** to reveal one of the keys, then copy and save its value. You will use this value in the next section.
+1. Click on the **Show link** to reveal one of the keys, then copy and save its value. You will use this value in the section [Create a C# Direct Line Client](#create-a-c-direct-line-client).
 
     ![App service extension keys](./media/channels/direct-line-extension-extension-keys-net-client.png)
 
@@ -32,7 +32,7 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 line app service extension. You can create additional sites if you’d like and use
 those secret values as well.
 
-## Add the Preview Nuget Package Source
+## Add the preview NuGet package source
 
 The preview NuGet packages needed to create a C# Direct line client can be found in a NuGet feed.
 
@@ -44,22 +44,22 @@ The preview NuGet packages needed to create a C# Direct line client can be found
 1. Click on the **Update** button to save the values.
 1. Click **OK** to exit the Package Sources configuration.
 
-## Create a C# Direct Line Client
+## Create a C# Direct Line client
 
 Interactions with the direct line app service extension happen differently than traditional Direct Line because most communication happens over a *WebSocket*. The updated direct line client includes helper classes for opening and closing a *WebSocket*, sending commands through the WebSocket, and receiving Activities back from the bot. This section describes how to create a simple C# client to interact with a bot.
 
-1. Create a new .NET Core 2.2 console application project in Visual Studio.
+1. In Visual Studio, create a new .NET Core 2.2 console application project.
 1. Add the **DirectLine client NuGet** to your project
     - Click on Dependencies in the Solution tree
     - Select **Manage Nuget Packages...**
-    - Change the Package source to the one you defined from above (DL ASE Preview)
-    - Find the package *Microsoft.Bot.Connector.Directline* version v3.0.3-Preview1 or later.
+    - Change the Package source to `DL ASE Preview` (see the section [Add the preview Nuget package source](#add-the-preview-nuget-package-source))
+    - Find the package [Microsoft.Bot.Connector.Directline](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine/3.0.3-Preview1) version v3.0.3-Preview1 or later.
     - Click on **Install Package**.
 1. Create a client and generate a token using a secret. This step is the same as building any other C# Direct Line client except the endpoint you need use in your bot,appended with the **.bot/** path as shown next. Do not forget the ending **/**.
 
     ```csharp
-    string endpoint = "https://<YOUR_BOT_HOST>.azurewebsites.net/.bot/";
-    string secret = "<YOUR_BOT_SECRET>";
+    string endpoint = "https://<your_bot_name>.azurewebsites.net/.bot/";
+    string secret = "<your_bot_direct_line_secret_key>";
 
     var tokenClient = new DirectLineClient(
         new Uri(endpoint),
