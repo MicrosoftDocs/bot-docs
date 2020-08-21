@@ -21,6 +21,8 @@ This article shows how to create a C# bot project to which you can add adaptive 
 
 ## Prerequisites
 
+- A copy of the adaptive **multi-turn prompt** sample in [**C#**]().
+
 ## Create a bot project
 
 1. Update your copy of the Bot Framework templates (VSIX or .NET Core) to the latest version.
@@ -45,8 +47,6 @@ For more about language understanding in adaptive dialogs, see [recognizers in a
 
 To support customization, the adaptive dialogs library uses component registration to discover all components, declarative types, memory scopes, path resolvers, and type converters.
 
-**startup.cs**
-
 Register adaptive and declarative components as necessary for your project.
 
 | Component registration | Required | Description
@@ -62,9 +62,11 @@ Register adaptive and declarative components as necessary for your project.
 
 If your project does not register a component that is required by another part of your bot, you can add it later, but you may get an initialization-time or run-time error.
 
+**startup.cs**
+
 ## Add state
 
-- define conversation and user state (register in startup)
+- define storage and user and conversation state (register in startup)
 - add these to the turn context in your adapter
 
 ## Add an adaptive dialog
