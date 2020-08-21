@@ -1,6 +1,6 @@
 ---
 title: Debug your bot using transcript files - Bot Service
-description: Understand how use a transcript file to help debug your bot.
+description: Learn how to use transcript files to debug bots. See how to create and retrieve these files, which provide detailed sets of user interactions and bot responses.
 keywords: debugging, faq, transcript file, emulator
 author: DanDev33
 ms.author: kamrani
