@@ -17,8 +17,8 @@ Azure Bot Service provides the core components for creating bots, including the 
 
 There are 2 ways to register a bot with Azure:
 
-1. When you create a bot, as described in this article, the bot is registered with Azure and a Web application is created to host it. You use this approach if you develop and host a bot in Azure.
-1. If you do not develop or you do not host the bot in Azure, you use the steps described in  the article: [Register a bot with Azure Bot Service](~/bot-service-quickstart-registration.md). You supply a web address where your bot is hosted. It could still be hosted in Azure, of course.
+1. Following the steps in this article, the bot is created on and registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
+1. To create and develop your bot locally, follow the steps in the [Register a bot with Azure Bot Service](~/bot-service-quickstart-registration.md) article. When you register your bot, you supply the web address where your bot is hosted. You can still host it in Azure.
 
 [!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
 

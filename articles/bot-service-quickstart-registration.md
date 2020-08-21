@@ -11,10 +11,10 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Bot channels registration
 
-This article shows how to register a bot with **Azure Bot Service**. If the bot is hosted elsewhere, this allows you to make it available in Azure and connect it to the supported channels. There are 2 ways to register a bot with Azure:
+This article shows how to register a bot with the **Azure Bot Service**. If the bot is hosted elsewhere, you can also make it available in Azure and connect it to the supported channels. There are 2 ways to register a bot with Azure:
 
-1. When you create a bot, as described in the article [Create a bot with Azure Bot Service](~/v4sdk/abs-quickstart.md), the bot is registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
-1. If you do not develop or you do not host the bot in Azure, you use the steps described in  this article. You supply a web address where your bot is hosted. It could still be hosted in Azure, of course.
+1. Following the steps in the article [Create a bot with Azure Bot Service](~/v4sdk/abs-quickstart.md), the bot is created on and registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
+1. To create and develop your bot locally, follow the steps in this article. When you register your bot, you supply the web address where your bot is hosted. You can still host it in Azure.
 
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
