@@ -1,6 +1,6 @@
 ---
 title: Middleware - Bot Service
-description: Learn about middleware, the layer between adapters and bots. See what type of functionality to implement in middleware and how to avoid short circuiting.
+description: Learn about middleware, the layer between adapters and bots. See what type of functionality to implement in middleware and learn about short circuiting.
 keywords: middleware, middleware pipeline, short circuit, middleware uses
 author: ivorb
 ms.author: kamrani
