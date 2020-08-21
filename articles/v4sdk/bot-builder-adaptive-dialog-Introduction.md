@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 
 # Introduction to adaptive dialogs
 
-Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] that enables you to easily layer in sophisticated conversation management techniques like interruption handling, dispatching, and more.
+Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] that enables you to easily layer in sophisticated conversation management techniques like handling [interruptions][interruptions], dispatching, and more.
 
 > [!IMPORTANT]
 > Adaptive dialogs is currently only available in the .NET version of the Bot Framework SDK. You can find sample bots built using adaptive dialogs in [the BotBuilder-Samples repository][16] on GitHub.
@@ -29,8 +29,8 @@ Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] th
 
 Adaptive dialogs have many advantages to [WaterfallDialogs][17]. Primarily, they:
 
-* Provide flexibility that enables you to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation.
-* Support and sit on top of a rich event system for dialogs, so modeling interruptions, cancellation, and execution planning semantics are a lot easier to describe and manage.
+* Provide flexibility that enables you to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and [interruptions][interruptions] in the middle of a conversation.
+* Support and sit on top of a rich event system for dialogs, so modeling [interruptions][interruptions], cancellation, and execution planning semantics are a lot easier to describe and manage.
 * Bring input recognition and rule-based event handling
 * Combine the conversation model (dialog) and output generation into one cohesive, self-contained unit.
 * Support extensibility points for recognition, event rules and machine learning.
@@ -54,7 +54,7 @@ _Triggers_ enable you to catch and respond to events. The broadest trigger is th
 
 ### Actions
 
-_Actions_ define the conversation flow when a specific event is captured via a Trigger. Unlike a waterfall dialog where each step is a function, each action in an Adaptive dialog is in itself a dialog. This makes adaptive dialogs both powerful and flexible and enables adaptive dialogs to easily handle interruptions and branch conditionally based on context or current state.
+_Actions_ define the conversation flow when a specific event is captured via a Trigger. Unlike a waterfall dialog where each step is a function, each action in an Adaptive dialog is in itself a dialog. This makes adaptive dialogs both powerful and flexible and enables adaptive dialogs to easily handle [interruptions][interruptions] and branch conditionally based on context or current state.
 
 The Bot Framework SDK provides many built in actions to enable you to perform various actions such as memory manipulation, dialog management, and controlling the conversational flow of your bot. Since actions are in fact dialogs, they are extensible, making it possible to create your own custom actions.
 
@@ -178,3 +178,4 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore
 [17]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0#waterfall-dialogs
+[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
