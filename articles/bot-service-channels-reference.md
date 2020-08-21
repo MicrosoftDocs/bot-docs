@@ -1,6 +1,6 @@
 ---
 title: Channels reference
-description: Bot Framework Channels reference
+description: View reference information on bot channels. See which channels generate which events and support which cards. See the number of actions that channels support.
 keywords: channels reference, bot builder channels, bot framework channels
 author: ivorb
 ms.author: kamrani
