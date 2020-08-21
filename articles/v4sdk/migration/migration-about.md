@@ -1,6 +1,6 @@
 ---
 title: Differences between the v3 and v4 SDK - Bot Service
-description: Describes the differences between the v3 and v4 SDK.
+description: Find out how versions 3 and 4 of the Bot Framework SDK differ. Learn about changes in activity processing, state management, dialogs, and ASP.NET Core support.
 keywords: bot migration, formflow, dialogs, state
 author: JonathanFingold
 ms.author: kamrani
