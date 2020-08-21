@@ -1,6 +1,6 @@
 ---
 title:  Web Chat overview - Bot Service
-description: Learn how to configure Bot Framework Web Chat.
+description: Become familiar with the Bot Framework Web Chat component. Learn how to use and customize this component. View available properties and other information.
 keywords: bot framework, webchat, chat, samples, react, reference
 author: ivorb
 ms.author: kamrani

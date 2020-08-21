@@ -1,6 +1,6 @@
 ---
 title: Create a Bot Channels Registration with Bot Service - Bot Service
-description: Learn how to register an existing bot with Bot Service.
+description: Learn how to register bots with the Bot Service. See how to connect bots to Azure Bot Service channels so that they can interact with users.
 ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
