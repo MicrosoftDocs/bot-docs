@@ -1,6 +1,6 @@
 ---
 title:  Web Chat customization - Bot Service
-description: Learn how to customize the Bot Framework Web Chat.
+description: Learn how to customize the Bot Framework Web Chat. View code that adds attachments and modifies the font, color, container size, and bot avatar.
 keywords: bot framework, webchat, chat, samples, react, reference
 author: ivorb
 ms.author: kamrani

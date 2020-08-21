@@ -1,6 +1,6 @@
 ---
 title: Use QnA Maker to answer questions - Bot Service
-description: Learn how to use QnA maker in your bot.
+description: Learn how bots can answer questions from users without parsing or interpreting the questions. See how to use QnA Maker for this task.
 keywords: question and answer, QnA, FAQs, qna maker 
 author: JonathanFingold
 ms.author: kamrani
