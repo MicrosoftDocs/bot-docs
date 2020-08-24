@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Newtonsoft.Json.JsonConverter&lt;AdaptiveExpressions.Properties.NumberExpression&gt;</BaseTypeName>
@@ -31,10 +32,13 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.Converters.NumberExpressionConverter" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,13 +52,16 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether this Converter can read JSON.
+            </summary>
+        <value>true if this Converter can read JSON; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.NumberExpression</ReturnType>
@@ -80,13 +88,15 @@
         <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <param name="existingValue">To be added.</param>
-        <param name="hasExistingValue">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The Newtonsoft.Json.JsonReader to read from.</param>
+        <param name="objectType">Type of the object.</param>
+        <param name="existingValue">The existing value of object being read.</param>
+        <param name="hasExistingValue">A boolean value indicating whether there is an existing value of object to be read.</param>
+        <param name="serializer">The calling serializer.</param>
+        <summary>
+            Reads the JSON representation of the object.
+            </summary>
+        <returns>A NumberExpression instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,6 +110,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -110,10 +121,12 @@
         <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The Newtonsoft.Json.JsonWriter to write to.</param>
+        <param name="value">The value.</param>
+        <param name="serializer">The calling serializer.</param>
+        <summary>
+            Writes the JSON representation of the object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

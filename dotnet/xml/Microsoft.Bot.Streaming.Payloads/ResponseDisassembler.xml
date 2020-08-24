@@ -8,13 +8,16 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Streaming.Payloads.PayloadDisassembler</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler" /> used for <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> payloads.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sender" Type="Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender" />
@@ -36,10 +40,12 @@
         <Parameter Name="response" Type="Microsoft.Bot.Streaming.StreamingResponse" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadSender" /> to send the disassembled data to.</param>
+        <param name="id">The ID of this disassembler.</param>
+        <param name="response">The response to be disassembled.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.Payloads.ResponseDisassembler" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,6 +60,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.Payloads.StreamWrapper&gt;</ReturnType>
@@ -63,6 +70,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Response">
@@ -76,13 +84,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.StreamingResponse</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> to be disassembled.
+            </summary>
+        <value>
+            The <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> to be disassembled.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,6 +110,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
@@ -105,6 +119,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

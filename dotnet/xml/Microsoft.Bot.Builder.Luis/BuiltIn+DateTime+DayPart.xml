@@ -35,7 +35,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("afternoon")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("afternoon")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("afternoon")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -62,7 +63,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("evening")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("evening")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("evening")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("midday")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("midday")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("midday")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -116,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("morning")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("morning")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("morning")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,7 +147,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("night")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("night")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("night")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

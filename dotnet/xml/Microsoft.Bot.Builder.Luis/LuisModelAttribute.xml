@@ -27,10 +27,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true)</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,7 +46,7 @@
       <MemberSignature Language="C#" Value="public LuisModelAttribute (string modelID, string subscriptionKey, Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, string domain = default, double threshold = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string modelID, string subscriptionKey, valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain, float64 threshold) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.#ctor(System.String,System.String,Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String,System.Double)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (modelID As String, subscriptionKey As String, Optional apiVersion As LuisApiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, Optional domain As String = null, Optional threshold As Double = 0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (modelID As String, subscriptionKey As String, Optional apiVersion As LuisApiVersion = Microsoft.Bot.Builder.Luis.LuisApiVersion.V2, Optional domain As String = Nothing, Optional threshold As Double = 0)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.LuisModelAttribute : string * string * Microsoft.Bot.Builder.Luis.LuisApiVersion * string * double -&gt; Microsoft.Bot.Builder.Luis.LuisModelAttribute" Usage="new Microsoft.Bot.Builder.Luis.LuisModelAttribute (modelID, subscriptionKey, apiVersion, domain, threshold)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -105,9 +107,6 @@
       <MemberSignature Language="VB.NET" Value="Public Property BingSpellCheckSubscriptionKey As String" />
       <MemberSignature Language="F#" Value="member this.BingSpellCheckSubscriptionKey : string with get, set" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.BingSpellCheckSubscriptionKey" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.Bot.Builder.Luis.ILuisOptions.BingSpellCheckSubscriptionKey</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>3.16.1.38846</AssemblyVersion>
@@ -622,7 +621,7 @@
       <MemberSignature Language="C#" Value="public static Uri UriFor (Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri UriFor(valuetype Microsoft.Bot.Builder.Luis.LuisApiVersion apiVersion, string domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriFor(Microsoft.Bot.Builder.Luis.LuisApiVersion,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function UriFor (apiVersion As LuisApiVersion, Optional domain As String = null) As Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UriFor (apiVersion As LuisApiVersion, Optional domain As String = Nothing) As Uri" />
       <MemberSignature Language="F#" Value="static member UriFor : Microsoft.Bot.Builder.Luis.LuisApiVersion * string -&gt; Uri" Usage="Microsoft.Bot.Builder.Luis.LuisModelAttribute.UriFor (apiVersion, domain)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
