@@ -40,7 +40,7 @@ For information on how to create a bot project, see the [C# quickstart](../dotne
     - For LUIS language understanding, add the **Microsoft.Bot.Builder.AI.LUIS** package.
     - For QnA Maker language understanding, add the **Microsoft.Bot.Builder.AI.QnA** package.
 
-   If your bot consumes custom components, it may require additional packages. The author of each custom component should clearly state which packages are required.
+If your bot consumes custom components, it may require additional packages. The author of each custom component should clearly state which packages are required.
 
 ## Register components
 
@@ -61,6 +61,9 @@ Register adaptive and declarative components as necessary for your project.
 
 If your project does not register a component that is required by another part of your bot, you can add it later, but you may get an initialization-time or run-time error.
 
+> [!NOTE]
+> If your bot consumes custom components, you will need to register those components, too. The author of each custom component should clearly state which method to use to register their components.
+
 **startup.cs**
 
 For example, the adaptive multi-turn prompts sample registers these components.
@@ -75,7 +78,7 @@ You will use the dialog manager to run your adaptive dialogs, and it will need r
 
 **startup.cs**
 
-The sample registers a storage layer object and state management objects.
+Register storage layer and state management objects.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="39-46":::
 
@@ -91,13 +94,13 @@ Create the root dialog your bot will use.
 
 **Dialogs\\RootDialog.cs**
 
-The sample defines the root adaptive dialog it will use.
+The sample defines a `RootDialog` to use.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs" range="15-18":::
 
 **startup.cs**
 
-And then it registers the root dialog.
+The sample registers the root dialog in the startup file.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="48-49":::
 
@@ -115,7 +118,7 @@ The sample defines the bot and adds code to create and use a dialog manager to r
 
 **startup.cs**
 
-And then it registers the bot.
+The sample registers the bot object in the startup file.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="51-52":::
 
