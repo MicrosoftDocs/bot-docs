@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PaymentRequest (string id = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentMethodData&gt; methodData = default, Microsoft.Bot.Connector.PaymentDetails details = default, Microsoft.Bot.Connector.PaymentOptions options = default, string expires = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.PaymentMethodData&gt; methodData, class Microsoft.Bot.Connector.PaymentDetails details, class Microsoft.Bot.Connector.PaymentOptions options, string expires) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequest.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.PaymentMethodData},Microsoft.Bot.Connector.PaymentDetails,Microsoft.Bot.Connector.PaymentOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional methodData As IList(Of PaymentMethodData) = null, Optional details As PaymentDetails = null, Optional options As PaymentOptions = null, Optional expires As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional methodData As IList(Of PaymentMethodData) = Nothing, Optional details As PaymentDetails = Nothing, Optional options As PaymentOptions = Nothing, Optional expires As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentRequest : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.PaymentMethodData&gt; * Microsoft.Bot.Connector.PaymentDetails * Microsoft.Bot.Connector.PaymentOptions * string -&gt; Microsoft.Bot.Connector.PaymentRequest" Usage="new Microsoft.Bot.Connector.PaymentRequest (id, methodData, details, options, expires)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -86,7 +86,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="details")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="details")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,7 +115,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expires")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="expires")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="expires")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,7 +144,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,7 +173,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="methodData")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="methodData")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="methodData")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,7 +202,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="options")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="options")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="options")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

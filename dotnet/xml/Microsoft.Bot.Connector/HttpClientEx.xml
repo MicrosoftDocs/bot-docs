@@ -24,7 +24,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AddAPIAuthorization (this System.Net.Http.HttpClient client, string appId = default, string password = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AddAPIAuthorization(class System.Net.Http.HttpClient client, string appId, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.HttpClientEx.AddAPIAuthorization(System.Net.Http.HttpClient,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddAPIAuthorization (client As HttpClient, Optional appId As String = null, Optional password As String = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddAPIAuthorization (client As HttpClient, Optional appId As String = Nothing, Optional password As String = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member AddAPIAuthorization : System.Net.Http.HttpClient * string * string -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Connector.HttpClientEx.AddAPIAuthorization (client, appId, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Helper extensions for mocking luis.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -35,9 +39,11 @@
         <Parameter Name="source" Type="System.String" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The string to be hashed.</param>
+        <summary>
+            Creates a hash based on a given string.
+            </summary>
+        <returns>Unsigned int hash.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,12 +51,13 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Extensions.Configuration.IConfigurationBuilder UseMockLuisSettings (this Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string directory, string userSecretId, string environment = default, string endpoint = &quot;https://westus.api.cognitive.microsoft.com&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.Configuration.IConfigurationBuilder UseMockLuisSettings(class Microsoft.Extensions.Configuration.IConfigurationBuilder builder, string directory, string userSecretId, string environment, string endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions.UseMockLuisSettings(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseMockLuisSettings (builder As IConfigurationBuilder, directory As String, userSecretId As String, Optional environment As String = null, Optional endpoint As String = &quot;https://westus.api.cognitive.microsoft.com&quot;) As IConfigurationBuilder" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseMockLuisSettings (builder As IConfigurationBuilder, directory As String, userSecretId As String, Optional environment As String = Nothing, Optional endpoint As String = &quot;https://westus.api.cognitive.microsoft.com&quot;) As IConfigurationBuilder" />
       <MemberSignature Language="F#" Value="static member UseMockLuisSettings : Microsoft.Extensions.Configuration.IConfigurationBuilder * string * string * string * string -&gt; Microsoft.Extensions.Configuration.IConfigurationBuilder" Usage="Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisExtensions.UseMockLuisSettings (builder, directory, userSecretId, environment, endpoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Configuration.IConfigurationBuilder</ReturnType>

@@ -8,13 +8,16 @@
     <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Services collection extension methods for use when configuring Application Insights at startup.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
@@ -56,6 +60,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
@@ -78,13 +83,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Bot.Builder.IBotTelemetryClient botTelemetryClient, string instrumentationKey = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, class Microsoft.Bot.Builder.IBotTelemetryClient botTelemetryClient, string instrumentationKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Bot.Builder.IBotTelemetryClient,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotApplicationInsights (services As IServiceCollection, botTelemetryClient As IBotTelemetryClient, Optional instrumentationKey As String = null) As IServiceCollection" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotApplicationInsights (services As IServiceCollection, botTelemetryClient As IBotTelemetryClient, Optional instrumentationKey As String = Nothing) As IServiceCollection" />
       <MemberSignature Language="F#" Value="static member AddBotApplicationInsights : Microsoft.Extensions.DependencyInjection.IServiceCollection * Microsoft.Bot.Builder.IBotTelemetryClient * string -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights (services, botTelemetryClient, instrumentationKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
@@ -109,13 +115,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights (this Microsoft.Extensions.DependencyInjection.IServiceCollection services, Microsoft.Bot.Configuration.BotConfiguration botConfiguration, string appInsightsServiceInstanceName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Extensions.DependencyInjection.IServiceCollection AddBotApplicationInsights(class Microsoft.Extensions.DependencyInjection.IServiceCollection services, class Microsoft.Bot.Configuration.BotConfiguration botConfiguration, string appInsightsServiceInstanceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Bot.Configuration.BotConfiguration,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotApplicationInsights (services As IServiceCollection, botConfiguration As BotConfiguration, Optional appInsightsServiceInstanceName As String = null) As IServiceCollection" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddBotApplicationInsights (services As IServiceCollection, botConfiguration As BotConfiguration, Optional appInsightsServiceInstanceName As String = Nothing) As IServiceCollection" />
       <MemberSignature Language="F#" Value="static member AddBotApplicationInsights : Microsoft.Extensions.DependencyInjection.IServiceCollection * Microsoft.Bot.Configuration.BotConfiguration * string -&gt; Microsoft.Extensions.DependencyInjection.IServiceCollection" Usage="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.ServiceCollectionExtensions.AddBotApplicationInsights (services, botConfiguration, appInsightsServiceInstanceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>

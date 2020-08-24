@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,22 +46,23 @@
       <MemberSignature Language="C#" Value="public MessagingExtensionActionResponse (Microsoft.Bot.Schema.Teams.TaskModuleResponseBase task = default, Microsoft.Bot.Schema.Teams.MessagingExtensionResult composeExtension = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.TaskModuleResponseBase task, class Microsoft.Bot.Schema.Teams.MessagingExtensionResult composeExtension) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse.#ctor(Microsoft.Bot.Schema.Teams.TaskModuleResponseBase,Microsoft.Bot.Schema.Teams.MessagingExtensionResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional task As TaskModuleResponseBase = null, Optional composeExtension As MessagingExtensionResult = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional task As TaskModuleResponseBase = Nothing, Optional composeExtension As MessagingExtensionResult = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse : Microsoft.Bot.Schema.Teams.TaskModuleResponseBase * Microsoft.Bot.Schema.Teams.MessagingExtensionResult -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionActionResponse (task, composeExtension)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="task" Type="Microsoft.Bot.Schema.Teams.TaskModuleResponseBase" />
         <Parameter Name="composeExtension" Type="Microsoft.Bot.Schema.Teams.MessagingExtensionResult" />
       </Parameters>
       <Docs>
-        <param name="composeExtension">To be added.</param>
         <param name="task">The JSON for the Adaptive card to appear in the
             task module.</param>
+        <param name="composeExtension">A <see cref="T:Microsoft.Bot.Schema.Teams.MessagingExtensionResult" /> that initializes the current object's ComposeExension property.</param>
         <summary>
             Initializes a new instance of the MessagingExtensionActionResponse
             class.
@@ -78,17 +81,21 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="composeExtension")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="composeExtension")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="composeExtension")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Teams.MessagingExtensionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            The compose extension result.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,10 +111,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="task")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="task")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="task")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

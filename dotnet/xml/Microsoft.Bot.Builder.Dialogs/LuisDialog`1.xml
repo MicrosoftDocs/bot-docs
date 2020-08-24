@@ -24,7 +24,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +54,8 @@
         <Parameter Name="services" Type="Microsoft.Bot.Builder.Luis.ILuisService[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -345,7 +347,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Action binding in LUIS should be replaced with code.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Action binding in LUIS should be replaced with code.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

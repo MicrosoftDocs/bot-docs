@@ -10,6 +10,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +27,7 @@
       <MemberSignature Language="C#" Value="public ChannelServiceHandler (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfiguration, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfiguration, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, authConfiguration As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, authConfiguration As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ChannelServiceHandler : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider -&gt; Microsoft.Bot.Builder.ChannelServiceHandler" Usage="new Microsoft.Bot.Builder.ChannelServiceHandler (credentialProvider, authConfiguration, channelProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -35,6 +36,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -65,13 +67,18 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.IChannelProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the channel provider that implements <see cref="T:Microsoft.Bot.Connector.Authentication.IChannelProvider" />.
+            </summary>
+        <value>
+            The channel provider that implements <see cref="T:Microsoft.Bot.Connector.Authentication.IChannelProvider" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +86,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt; HandleCreateConversationAsync (string authHeader, Microsoft.Bot.Schema.ConversationParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationResourceResponse&gt; HandleCreateConversationAsync(string authHeader, class Microsoft.Bot.Schema.ConversationParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleCreateConversationAsync(System.String,Microsoft.Bot.Schema.ConversationParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleCreateConversationAsync (authHeader As String, parameters As ConversationParameters, Optional cancellationToken As CancellationToken = null) As Task(Of ConversationResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleCreateConversationAsync (authHeader As String, parameters As ConversationParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConversationResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.HandleCreateConversationAsync : string * Microsoft.Bot.Schema.ConversationParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;" Usage="channelServiceHandler.HandleCreateConversationAsync (authHeader, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -88,6 +95,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
@@ -98,11 +106,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="parameters">Parameters to create the conversation from.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Create a new Conversation.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +120,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task HandleDeleteActivityAsync (string authHeader, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task HandleDeleteActivityAsync(string authHeader, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleDeleteActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleDeleteActivityAsync (authHeader As String, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleDeleteActivityAsync (authHeader As String, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.HandleDeleteActivityAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="channelServiceHandler.HandleDeleteActivityAsync (authHeader, conversationId, activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -119,6 +129,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -130,12 +141,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="activityId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="activityId">The activity Id.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Deletes an existing activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +156,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task HandleDeleteConversationMemberAsync (string authHeader, string conversationId, string memberId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task HandleDeleteConversationMemberAsync(string authHeader, string conversationId, string memberId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleDeleteConversationMemberAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleDeleteConversationMemberAsync (authHeader As String, conversationId As String, memberId As String, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleDeleteConversationMemberAsync (authHeader As String, conversationId As String, memberId As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.HandleDeleteConversationMemberAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="channelServiceHandler.HandleDeleteConversationMemberAsync (authHeader, conversationId, memberId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -152,6 +165,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -163,12 +177,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="memberId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="memberId">Id of the member to delete from this conversation.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Deletes a member from a conversation.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +192,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; HandleGetActivityMembersAsync (string authHeader, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; HandleGetActivityMembersAsync(string authHeader, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleGetActivityMembersAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleGetActivityMembersAsync (authHeader As String, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of ChannelAccount))" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleGetActivityMembersAsync (authHeader As String, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of ChannelAccount))" />
       <MemberSignature Language="F#" Value="member this.HandleGetActivityMembersAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="channelServiceHandler.HandleGetActivityMembersAsync (authHeader, conversationId, activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -185,6 +201,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -196,12 +213,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="activityId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="activityId">The activity Id.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Enumerates the members of an activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +228,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; HandleGetConversationMembersAsync (string authHeader, string conversationId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; HandleGetConversationMembersAsync(string authHeader, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleGetConversationMembersAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleGetConversationMembersAsync (authHeader As String, conversationId As String, Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of ChannelAccount))" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleGetConversationMembersAsync (authHeader As String, conversationId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of ChannelAccount))" />
       <MemberSignature Language="F#" Value="member this.HandleGetConversationMembersAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="channelServiceHandler.HandleGetConversationMembersAsync (authHeader, conversationId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -218,6 +237,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -228,11 +248,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Enumerates the members of a conversation.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +262,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt; HandleGetConversationPagedMembersAsync (string authHeader, string conversationId, int? pageSize = default, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.PagedMembersResult&gt; HandleGetConversationPagedMembersAsync(string authHeader, string conversationId, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleGetConversationPagedMembersAsync(System.String,System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleGetConversationPagedMembersAsync (authHeader As String, conversationId As String, Optional pageSize As Nullable(Of Integer) = null, Optional continuationToken As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of PagedMembersResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleGetConversationPagedMembersAsync (authHeader As String, conversationId As String, Optional pageSize As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PagedMembersResult)" />
       <MemberSignature Language="F#" Value="member this.HandleGetConversationPagedMembersAsync : string * string * Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;" Usage="channelServiceHandler.HandleGetConversationPagedMembersAsync (authHeader, conversationId, pageSize, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -249,6 +271,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;</ReturnType>
@@ -261,13 +284,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="pageSize">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="pageSize">Suggested page size.</param>
+        <param name="continuationToken">A continuation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Enumerates the members of a conversation one page at a time.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +300,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt; HandleGetConversationsAsync (string authHeader, string conversationId, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationsResult&gt; HandleGetConversationsAsync(string authHeader, string conversationId, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleGetConversationsAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleGetConversationsAsync (authHeader As String, conversationId As String, Optional continuationToken As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of ConversationsResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleGetConversationsAsync (authHeader As String, conversationId As String, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConversationsResult)" />
       <MemberSignature Language="F#" Value="member this.HandleGetConversationsAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;" Usage="channelServiceHandler.HandleGetConversationsAsync (authHeader, conversationId, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -284,6 +309,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
@@ -295,12 +321,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="continuationToken">A skip or continuation token.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Lists the Conversations in which the bot has participated.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,7 +336,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; HandleReplyToActivityAsync (string authHeader, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; HandleReplyToActivityAsync(string authHeader, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleReplyToActivityAsync(System.String,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleReplyToActivityAsync (authHeader As String, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleReplyToActivityAsync (authHeader As String, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.HandleReplyToActivityAsync : string * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.HandleReplyToActivityAsync (authHeader, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -317,6 +345,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -329,13 +358,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="activityId">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="activityId">The activity Id the reply is to.</param>
+        <param name="activity">The activity to send.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Sends a reply to an activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,7 +375,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; HandleSendConversationHistoryAsync (string authHeader, string conversationId, Microsoft.Bot.Schema.Transcript transcript, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; HandleSendConversationHistoryAsync(string authHeader, string conversationId, class Microsoft.Bot.Schema.Transcript transcript, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleSendConversationHistoryAsync(System.String,System.String,Microsoft.Bot.Schema.Transcript,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleSendConversationHistoryAsync (authHeader As String, conversationId As String, transcript As Transcript, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleSendConversationHistoryAsync (authHeader As String, conversationId As String, transcript As Transcript, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.HandleSendConversationHistoryAsync : string * string * Microsoft.Bot.Schema.Transcript * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.HandleSendConversationHistoryAsync (authHeader, conversationId, transcript, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -352,6 +384,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -363,12 +396,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="transcript">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="transcript">Transcript of activities.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Uploads the historic activities of the conversation.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,7 +411,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; HandleSendToConversationAsync (string authHeader, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; HandleSendToConversationAsync(string authHeader, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleSendToConversationAsync(System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleSendToConversationAsync (authHeader As String, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleSendToConversationAsync (authHeader As String, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.HandleSendToConversationAsync : string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.HandleSendToConversationAsync (authHeader, conversationId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -385,6 +420,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -396,12 +432,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="activity">The activity to send.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Sends an activity to the end of a conversation.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,7 +448,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; HandleUpdateActivityAsync (string authHeader, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; HandleUpdateActivityAsync(string authHeader, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleUpdateActivityAsync(System.String,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleUpdateActivityAsync (authHeader As String, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleUpdateActivityAsync (authHeader As String, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.HandleUpdateActivityAsync : string * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.HandleUpdateActivityAsync (authHeader, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -418,6 +457,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -430,13 +470,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="activityId">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="activityId">The activity Id to update.</param>
+        <param name="activity">The replacement activity.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Edits a previously sent existing activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,7 +486,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; HandleUploadAttachmentAsync (string authHeader, string conversationId, Microsoft.Bot.Schema.AttachmentData attachmentUpload, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; HandleUploadAttachmentAsync(string authHeader, string conversationId, class Microsoft.Bot.Schema.AttachmentData attachmentUpload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.HandleUploadAttachmentAsync(System.String,System.String,Microsoft.Bot.Schema.AttachmentData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function HandleUploadAttachmentAsync (authHeader As String, conversationId As String, attachmentUpload As AttachmentData, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HandleUploadAttachmentAsync (authHeader As String, conversationId As String, attachmentUpload As AttachmentData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.HandleUploadAttachmentAsync : string * string * Microsoft.Bot.Schema.AttachmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.HandleUploadAttachmentAsync (authHeader, conversationId, attachmentUpload, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -453,6 +495,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -464,12 +507,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="authHeader">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="attachmentUpload">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="authHeader">The authentication header.</param>
+        <param name="conversationId">The conversation Id.</param>
+        <param name="attachmentUpload">Attachment data.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Stores data in a compliant store when dealing with enterprises.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,7 +522,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt; OnCreateConversationAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, Microsoft.Bot.Schema.ConversationParameters parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationResourceResponse&gt; OnCreateConversationAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, class Microsoft.Bot.Schema.ConversationParameters parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnCreateConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationParameters,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnCreateConversationAsync (claimsIdentity As ClaimsIdentity, parameters As ConversationParameters, Optional cancellationToken As CancellationToken = null) As Task(Of ConversationResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnCreateConversationAsync (claimsIdentity As ClaimsIdentity, parameters As ConversationParameters, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConversationResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member OnCreateConversationAsync : System.Security.Claims.ClaimsIdentity * Microsoft.Bot.Schema.ConversationParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;&#xA;override this.OnCreateConversationAsync : System.Security.Claims.ClaimsIdentity * Microsoft.Bot.Schema.ConversationParameters * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;" Usage="channelServiceHandler.OnCreateConversationAsync (claimsIdentity, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -486,6 +531,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;</ReturnType>
@@ -532,7 +578,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnDeleteActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnDeleteActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnDeleteActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeleteActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeleteActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnDeleteActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnDeleteActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="channelServiceHandler.OnDeleteActivityAsync (claimsIdentity, conversationId, activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -541,6 +587,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -572,7 +619,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnDeleteConversationMemberAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string memberId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnDeleteConversationMemberAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string memberId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnDeleteConversationMemberAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeleteConversationMemberAsync (claimsIdentity As ClaimsIdentity, conversationId As String, memberId As String, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeleteConversationMemberAsync (claimsIdentity As ClaimsIdentity, conversationId As String, memberId As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnDeleteConversationMemberAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnDeleteConversationMemberAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="channelServiceHandler.OnDeleteConversationMemberAsync (claimsIdentity, conversationId, memberId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -581,6 +628,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -614,7 +662,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; OnGetActivityMembersAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; OnGetActivityMembersAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnGetActivityMembersAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetActivityMembersAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of ChannelAccount))" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetActivityMembersAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of ChannelAccount))" />
       <MemberSignature Language="F#" Value="abstract member OnGetActivityMembersAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&#xA;override this.OnGetActivityMembersAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="channelServiceHandler.OnGetActivityMembersAsync (claimsIdentity, conversationId, activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -623,6 +671,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -655,7 +704,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt; OnGetConversationMembersAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ChannelAccount&gt;&gt; OnGetConversationMembersAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnGetConversationMembersAsync(System.Security.Claims.ClaimsIdentity,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetConversationMembersAsync (claimsIdentity As ClaimsIdentity, conversationId As String, Optional cancellationToken As CancellationToken = null) As Task(Of IList(Of ChannelAccount))" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetConversationMembersAsync (claimsIdentity As ClaimsIdentity, conversationId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of ChannelAccount))" />
       <MemberSignature Language="F#" Value="abstract member OnGetConversationMembersAsync : System.Security.Claims.ClaimsIdentity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;&#xA;override this.OnGetConversationMembersAsync : System.Security.Claims.ClaimsIdentity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;" Usage="channelServiceHandler.OnGetConversationMembersAsync (claimsIdentity, conversationId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -664,6 +713,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -693,7 +743,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt; OnGetConversationPagedMembersAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, int? pageSize = default, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.PagedMembersResult&gt; OnGetConversationPagedMembersAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, valuetype System.Nullable`1&lt;int32&gt; pageSize, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnGetConversationPagedMembersAsync(System.Security.Claims.ClaimsIdentity,System.String,System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetConversationPagedMembersAsync (claimsIdentity As ClaimsIdentity, conversationId As String, Optional pageSize As Nullable(Of Integer) = null, Optional continuationToken As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of PagedMembersResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetConversationPagedMembersAsync (claimsIdentity As ClaimsIdentity, conversationId As String, Optional pageSize As Nullable(Of Integer) = Nothing, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of PagedMembersResult)" />
       <MemberSignature Language="F#" Value="abstract member OnGetConversationPagedMembersAsync : System.Security.Claims.ClaimsIdentity * string * Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;&#xA;override this.OnGetConversationPagedMembersAsync : System.Security.Claims.ClaimsIdentity * string * Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;" Usage="channelServiceHandler.OnGetConversationPagedMembersAsync (claimsIdentity, conversationId, pageSize, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -702,6 +752,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.PagedMembersResult&gt;</ReturnType>
@@ -748,7 +799,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt; OnGetConversationsAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string continuationToken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ConversationsResult&gt; OnGetConversationsAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnGetConversationsAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetConversationsAsync (claimsIdentity As ClaimsIdentity, conversationId As String, Optional continuationToken As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of ConversationsResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetConversationsAsync (claimsIdentity As ClaimsIdentity, conversationId As String, Optional continuationToken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConversationsResult)" />
       <MemberSignature Language="F#" Value="abstract member OnGetConversationsAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;&#xA;override this.OnGetConversationsAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;" Usage="channelServiceHandler.OnGetConversationsAsync (claimsIdentity, conversationId, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -757,6 +808,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ConversationsResult&gt;</ReturnType>
@@ -795,7 +847,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnReplyToActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnReplyToActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnReplyToActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member OnReplyToActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.OnReplyToActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.OnReplyToActivityAsync (claimsIdentity, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -804,6 +856,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -846,7 +899,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnSendConversationHistoryAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, Microsoft.Bot.Schema.Transcript transcript, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnSendConversationHistoryAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, class Microsoft.Bot.Schema.Transcript transcript, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnSendConversationHistoryAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.Transcript,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnSendConversationHistoryAsync (claimsIdentity As ClaimsIdentity, conversationId As String, transcript As Transcript, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnSendConversationHistoryAsync (claimsIdentity As ClaimsIdentity, conversationId As String, transcript As Transcript, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member OnSendConversationHistoryAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.Transcript * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.OnSendConversationHistoryAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.Transcript * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.OnSendConversationHistoryAsync (claimsIdentity, conversationId, transcript, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -855,6 +908,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -888,7 +942,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnSendToConversationAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnSendToConversationAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnSendToConversationAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnSendToConversationAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnSendToConversationAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member OnSendToConversationAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.OnSendToConversationAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.OnSendToConversationAsync (claimsIdentity, conversationId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -897,6 +951,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -937,7 +992,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnUpdateActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnUpdateActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnUpdateActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUpdateActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUpdateActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member OnUpdateActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.OnUpdateActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.OnUpdateActivityAsync (claimsIdentity, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -946,6 +1001,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -982,7 +1038,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnUploadAttachmentAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, Microsoft.Bot.Schema.AttachmentData attachmentUpload, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnUploadAttachmentAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, class Microsoft.Bot.Schema.AttachmentData attachmentUpload, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ChannelServiceHandler.OnUploadAttachmentAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.AttachmentData,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUploadAttachmentAsync (claimsIdentity As ClaimsIdentity, conversationId As String, attachmentUpload As AttachmentData, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnUploadAttachmentAsync (claimsIdentity As ClaimsIdentity, conversationId As String, attachmentUpload As AttachmentData, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member OnUploadAttachmentAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.AttachmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.OnUploadAttachmentAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.AttachmentData * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="channelServiceHandler.OnUploadAttachmentAsync (claimsIdentity, conversationId, attachmentUpload, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -991,6 +1047,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1012,7 +1069,7 @@
         <returns>task with result.</returns>
         <remarks>
             
-            Override this method to this is useful because it allows you to store data in a compliant store when dealing with enterprises.
+            Override this method to store data in a compliant store when dealing with enterprises.
             
             The response is a ResourceResponse which contains an AttachmentId which is
             suitable for using with the attachments API.

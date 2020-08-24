@@ -9,6 +9,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,19 +41,22 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callerPath" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="callerLine" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -64,17 +68,65 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ChooseIntent">
+      <MemberSignature Language="C#" Value="public const string ChooseIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ChooseIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Recognizer.ChooseIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Const ChooseIntent As String " />
+      <MemberSignature Language="F#" Value="val mutable ChooseIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Recognizer.ChooseIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Intent name that will be produced by this recognizer if the child recognizers do not have consensus for intents.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChooseIntentResult">
+      <MemberSignature Language="C#" Value="protected static Microsoft.Bot.Builder.RecognizerResult CreateChooseIntentResult (System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Builder.RecognizerResult&gt; recognizerResults);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class Microsoft.Bot.Builder.RecognizerResult CreateChooseIntentResult(class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Builder.RecognizerResult&gt; recognizerResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.CreateChooseIntentResult(System.Collections.Generic.Dictionary{System.String,Microsoft.Bot.Builder.RecognizerResult})" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateChooseIntentResult (recognizerResults As Dictionary(Of String, RecognizerResult)) As RecognizerResult" />
+      <MemberSignature Language="F#" Value="static member CreateChooseIntentResult : System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Builder.RecognizerResult&gt; -&gt; Microsoft.Bot.Builder.RecognizerResult" Usage="Microsoft.Bot.Builder.Dialogs.Recognizer.CreateChooseIntentResult recognizerResults" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.RecognizerResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recognizerResults" Type="System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.RecognizerResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="recognizerResults">recognizer Id =&gt; recognizer results map.</param>
+        <summary>
+            CreateChooseIntentResult - returns ChooseIntent between multiple recognizer results.
+            </summary>
+        <returns>recognizerResult which is ChooseIntent.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FillRecognizerResultTelemetryProperties">
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.Dictionary&lt;string,string&gt; FillRecognizerResultTelemetryProperties (Microsoft.Bot.Builder.RecognizerResult recognizerResult, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; FillRecognizerResultTelemetryProperties(class Microsoft.Bot.Builder.RecognizerResult recognizerResult, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.FillRecognizerResultTelemetryProperties(Microsoft.Bot.Builder.RecognizerResult,System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.Bot.Builder.Dialogs.DialogContext)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FillRecognizerResultTelemetryProperties (recognizerResult As RecognizerResult, telemetryProperties As Dictionary(Of String, String), Optional dialogContext As DialogContext = null) As Dictionary(Of String, String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FillRecognizerResultTelemetryProperties (recognizerResult As RecognizerResult, telemetryProperties As Dictionary(Of String, String), Optional dialogContext As DialogContext = Nothing) As Dictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="abstract member FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;&#xA;override this.FillRecognizerResultTelemetryProperties : Microsoft.Bot.Builder.RecognizerResult * System.Collections.Generic.Dictionary&lt;string, string&gt; * Microsoft.Bot.Builder.Dialogs.DialogContext -&gt; System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="recognizer.FillRecognizerResultTelemetryProperties (recognizerResult, telemetryProperties, dialogContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -107,10 +159,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -124,11 +178,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NoneIntent">
+      <MemberSignature Language="C#" Value="public const string NoneIntent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NoneIntent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Recognizer.NoneIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Const NoneIntent As String " />
+      <MemberSignature Language="F#" Value="val mutable NoneIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Recognizer.NoneIntent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Standard none intent that means none of the recognizers recognize the intent.
+            </summary>
+        <remarks>
+            If each recognizer returns no intents or None intents, then this recognizer will return None intent.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RecognizeAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = null, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = Nothing, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of RecognizerResult)" />
       <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="recognizer.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -136,6 +213,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -164,7 +242,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Recognizer.RecognizeAsync``1(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = null, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = Nothing, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="recognizer.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -172,6 +250,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -217,10 +296,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -245,6 +326,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

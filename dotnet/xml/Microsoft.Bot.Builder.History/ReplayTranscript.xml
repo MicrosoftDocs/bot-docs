@@ -26,7 +26,7 @@
       <MemberSignature Language="C#" Value="public ReplayTranscript (Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, Func&lt;Microsoft.Bot.Connector.IActivity,string&gt; header = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser botToUser, class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, string&gt; header) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.ReplayTranscript.#ctor(Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser,System.Func{Microsoft.Bot.Connector.IActivity,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (botToUser As IBotToUser, Optional header As Func(Of IActivity, String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (botToUser As IBotToUser, Optional header As Func(Of IActivity, String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.History.ReplayTranscript : Microsoft.Bot.Builder.Dialogs.Internals.IBotToUser * Func&lt;Microsoft.Bot.Connector.IActivity, string&gt; -&gt; Microsoft.Bot.Builder.History.ReplayTranscript" Usage="new Microsoft.Bot.Builder.History.ReplayTranscript (botToUser, header)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

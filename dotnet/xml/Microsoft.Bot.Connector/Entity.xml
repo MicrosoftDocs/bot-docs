@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public Entity (string type = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Entity.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Entity : string -&gt; Microsoft.Bot.Connector.Entity" Usage="new Microsoft.Bot.Connector.Entity type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -106,7 +106,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -164,7 +165,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

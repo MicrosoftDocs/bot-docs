@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public ThumbnailCard (string title = default, string subtitle = default, string text = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardImage&gt; images = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = default, Microsoft.Bot.Connector.CardAction tap = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardImage&gt; images, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons, class Microsoft.Bot.Connector.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ThumbnailCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction},Microsoft.Bot.Connector.CardAction)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional images As IList(Of CardImage) = null, Optional buttons As IList(Of CardAction) = null, Optional tap As CardAction = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = Nothing, Optional subtitle As String = Nothing, Optional text As String = Nothing, Optional images As IList(Of CardImage) = Nothing, Optional buttons As IList(Of CardAction) = Nothing, Optional tap As CardAction = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ThumbnailCard : string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardImage&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; * Microsoft.Bot.Connector.CardAction -&gt; Microsoft.Bot.Connector.ThumbnailCard" Usage="new Microsoft.Bot.Connector.ThumbnailCard (title, subtitle, text, images, buttons, tap)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -88,7 +88,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="buttons")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="buttons")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,7 +139,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="images")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="images")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="images")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,7 +168,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subtitle")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="subtitle")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="subtitle")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,7 +197,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tap")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tap")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,7 +226,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -250,7 +255,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="title")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="title")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

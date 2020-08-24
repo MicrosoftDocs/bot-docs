@@ -748,7 +748,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;T&gt; AddDescription (object value, string description, string image = default, string message = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.FormFlow.Advanced.Field`1&lt;!T&gt; AddDescription(object value, string description, string image, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Field`1.AddDescription(System.Object,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function AddDescription (value As Object, description As String, Optional image As String = null, Optional message As String = null) As Field(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDescription (value As Object, description As String, Optional image As String = Nothing, Optional message As String = Nothing) As Field(Of T)" />
       <MemberSignature Language="F#" Value="member this.AddDescription : obj * string * string * string -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.Field&lt;'T (requires 'T : null)&gt;" Usage="field.AddDescription (value, description, image, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -854,7 +854,8 @@
         <Parameter Name="terms" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1664,7 +1665,8 @@
         <Parameter Name="dependencies" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1753,7 +1755,8 @@
         <Parameter Name="terms" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
