@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot bot HTTP 500 errors - Bot Service
-description: How to troubleshoot HTTP 500 errors in a deployed bot.
+description: Learn how to troubleshoot HTTP 500 errors. See how to enable Application Insights, retrieve information on exceptions, and check logs and configuration files.
 keywords: troubleshoot, HTTP 500, problems.
 author: jonathanFingold
 ms.author: kamrani

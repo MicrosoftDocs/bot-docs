@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Slack - Bot Service
-description: Learn how to configure a bot's connection to Slack.
+description: Learn how to connect bots to Slack. Use either the Azure Bot Service or the Slack adapter to configure bots to respond to Slack messages and channel activity.
 keywords: connect a bot, bot channel, Slack bot, Slack messaging app, slack adapter
 author: arturl
 ms.author: arturl

@@ -28,10 +28,12 @@
 ### [Recognizers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md)
 ### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
+### [Handling interruptions in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md)
 ### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
 ## Security
 ### [Security guidelines](v4sdk/bot-builder-security-guidelines.md)
-### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
+### [Authentication types](v4sdk/bot-builder-concept-authentication-types.md)
+### [User authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
@@ -75,6 +77,7 @@
 ### Adaptive dialogs
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 #### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
+#### [Handle user interruptions in adaptive dialogs](v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md)
 #### [Create a bot using declarative adaptive dialogs](v4sdk/bot-builder-dialogs-declarative.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### Authentication
