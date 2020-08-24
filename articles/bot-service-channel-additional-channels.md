@@ -1,6 +1,6 @@
 ---
 title:  Additional channels - Bot Service
-description: Learn how to configure additional channels for your bot.
+description: Learn how to connect bots to Webex Teams, Websocket, Webhooks, Google Hangouts, Google Assistant, and Amazon Alexa. Compare the use of adapters and channels.
 keywords: bot channels, hangouts, Twilio, facebook, azure portal
 author: ivorb
 ms.author: kamrani

@@ -1,6 +1,6 @@
 ---
 title: Activity processing - Bot Service
-description: Understand activity processing in the bot SDK.
+description: Understand how bots and users interact. Learn about activities, turns, context objects, authentication, adapters, middleware, and response handlers.
 keywords: bot adapter, custom middleware, short circuit, fallback, event handlers
 author: jonathanfingold
 ms.author: kamrani
