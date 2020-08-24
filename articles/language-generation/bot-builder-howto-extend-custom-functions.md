@@ -26,13 +26,13 @@ Developers can use both [prebuilt functions](../adaptive-expressions/adaptive-ex
 
 This LG custom functions sample is an example of how to add a simple custom function to adaptive expressions and then use that expression in an LG template definition. The bot asks the user for a number, and if the input is valid returns the square root. The function that computes the square root, `contoso.sqrt`, is defined in the bot logic, and is used in the LG template that generates bot responses.
 
-This article uses a bottom up approach to adding and using custom functions in LG templates. You will learn about:
+This article uses a bottom up approach to adding and using custom functions in LG templates. You will learn about how to:
 
-- the packages you need to use adaptive expressions and LG in your bot
-- how to add a custom function to adaptive expressions in your bot's logic
-- how to use your custom function in an LG template
-- how to load and call your template in your bot logic
-- test your bot
+- add [packages](#packages) you need to use adaptive expressions and LG in your bot
+- [add a custom function to adaptive expressions](#add-a-custom-function-to-adaptive-expressions) in your bot's logic
+- [use your custom function in an LG template](#use-your-custom-function-inan-lg-template)
+- [load and use your template in your bot](#load-and-use-your-lg-template-in-your-bot)
+- [test your bot](#test-your-bot)
 
 ## Packages
 
@@ -75,7 +75,7 @@ Now you can define the logic for your function in your bot constructor and add i
 
 The snippet below shows how to add a function, defined as `mySqrtFnName`, to adaptive expressions. This function returns the square root of a single argument, `args`, if valid, and `null` if not not:
 
-[!code-csharp[add-to-adaptive-expressions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=28-41)]
+[!code-csharp[add-function](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=28-41)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -94,7 +94,7 @@ Now you can define the logic for your function in your bot constructor and add i
 
 The snippet below shows how to add a function, defined as `mySqrtFnName`, to adaptive expressions. This function returns the square root of a single argument, `args`, if valid, and `null` if not not:
 
-[!code-javascript[function-name](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=19-30)]
+[!code-javascript[add-function](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=19-30)]
 
 ---
 
@@ -108,15 +108,15 @@ There are two template definitions in the LG. The first is the [simple response 
 
 **Resources/main.lg**
 
-[!code-csharp[add-to-adaptive-expressions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=4-5)]
+[!code-csharp[sqrtReadBack](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=4-5)]
 
 This template generates a response that contains the user input, `${text}` and the result of the second conditional [if-else template](../file-format/bot-builder-lg-file-format.md#if-else-template) `sqrtTemplate`:
 
-[!code-csharp[add-to-adaptive-expressions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=9-13)]
+[!code-csharp[sqrtTemplate](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=9-13)]
 
 In this template, the result of `contoso.sqrt(text)` is used to determine the response:
 
-- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-function.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `Nan` if it is null.
+- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-function.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `NaN` if it is null.
 - If the result is **null**, the line under the `ELSE` block is used in `sqrtReadBack`.
 
 ### [JavaScript](#tab/javascript)
@@ -125,32 +125,79 @@ There are two template definitions in the LG. The first is the [simple response 
 
 **resources/main.lg**
 
-[!code-csharp[add-to-adaptive-expressions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=4-5)]
+[!code-javascript[sqrtReadBack](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=4-5)]
 
 This template generates a response that contains the user input, `${text}` and the result of the second conditional [if-else template](../file-format/bot-builder-lg-file-format.md#if-else-template) `sqrtTemplate`:
 
-[!code-csharp[add-to-adaptive-expressions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Resources/main.lg?range=9-13)]
+[!code-javascript[sqrtTemplate](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/resources/main.lg?range=19-30)]
 
 In this template, the result of `contoso.sqrt(text)` is used to determine the response:
 
-- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-function.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `Nan` if it is null.
+- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-function.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `NaN` if it is null.
 - If the result is **null**, the line under the `ELSE` block is used in `sqrtReadBack`.
 
 ---
 
-## Load packages and the LG template
+## Load and use your LG template in your bot
 
+Now that you've created your bot's response template `sqrtReadBack` in **main.lg**, you can use the template in your bot's logic.
 
-After loading the packages create a private `Templates` object called `_templates`:
+### [C#](#tab/cs)
 
-[!code-csharp[load-packages](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=19)]
+To start, create a private `Templates` object called `_templates`.
+
+**Bots/CustomFunctionBot.js**
+
+[!code-csharp[create-_templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=19)]
 
 The `_templates` object is used to reference templates in your .lg files.
 
-Combine the path for cross-platform support and parse the path that contains `main.lg` by adding the following to your code:
+Then combine the path for cross-platform support. Make sure to include **main.lg** by adding the following:
 
-[!code-csharp[load-packages](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=19)]
+[!code-csharp[cross-path](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=23)]
 
+Now you can parse the files in `lgFilePath` and load your LG templates.
+
+[!code-csharp[load-templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=43)]
+
+By default [`Templates.ParseFile()`](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration.templates.parsefile) uses `Expression.Function`, which includes the custom function you added earlier.
+
+Your templates are now loaded and you can reference them by name in your bot. In this sample, the result of evaluating `sqrtReadBack` is used as the `replyText` sent to the user.
+
+[!code-csharp[use-template-in-code](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=47-51)]
+
+You're now ready to test your bot.
+
+### [JavaScript](#tab/javascript)
+
+To start, combine the path for cross-platform support. Make sure to include the path to **./resources/main.lg**, seen below:
+
+**bot.js**
+
+[!code-javascript[cross-path](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=16)]
+
+Now you can parse the files in `lgFilePath` and load your LG templates.
+
+[!code-javascript[load-templates](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=33)]
+
+By default [`Templates.parsefile()`](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration.templates.parsefile) uses `Expression.functions`, which includes the custom function you added earlier.
+
+Your templates are now loaded and you can reference them by name in your bot. In this sample, the result of evaluating `sqrtReadBack` is used as the `replyText` sent to the user.
+
+[!code-javascript[use-template-in-code](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=36-43)]
+
+You're now ready to test your bot.
+
+---
+
+## Test the bot
+
+Download and install the latest version of the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+
+1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C#](https://aka.ms/dotnet-lg-20-custom-function-sample)or [Javascript](https://aka.ms/js-lg-20-custom-functions-sample) sample.
+1. In the emulator, type anything. You will notice that the emulator will return the square root of numbers entered and `NaN` for all other input.
+
+![test the bot](../v4sdk/media/language-generation/botbuilder-howto-custom-functions/test-bot.png)
 
 ## Additional Information
 
