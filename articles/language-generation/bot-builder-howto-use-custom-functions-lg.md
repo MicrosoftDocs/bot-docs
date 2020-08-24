@@ -30,9 +30,9 @@ This article uses a bottom up approach to adding and using custom functions in L
 
 - add [packages](#packages) you need to use adaptive expressions and LG in your bot
 - [add a custom function to adaptive expressions](#add-a-custom-function-to-adaptive-expressions) in your bot's logic
-- [use your custom function in an LG template](#use-your-custom-function-inan-lg-template)
+- [use your custom function in an LG template](#use-your-custom-function-in-an-lg-template)
 - [load and use your template in your bot](#load-and-use-your-lg-template-in-your-bot)
-- [test your bot](#test-your-bot)
+- [test the bot](#test-the-bot)
 
 ## Packages
 
@@ -116,7 +116,7 @@ This template generates a response that contains the user input, `${text}` and t
 
 In this template, the result of `contoso.sqrt(text)` is used to determine the response:
 
-- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-function.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `NaN` if it is null.
+- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `NaN` if it is null.
 - If the result is **null**, the line under the `ELSE` block is used in `sqrtReadBack`.
 
 ### [JavaScript](#tab/javascript)
@@ -133,7 +133,7 @@ This template generates a response that contains the user input, `${text}` and t
 
 In this template, the result of `contoso.sqrt(text)` is used to determine the response:
 
-- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-function.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `NaN` if it is null.
+- If the result is not **null**, the line under the `IF` block is used in `sqrtReadBack`. Note that this line uses an inline expression, `${coalesce(contoso.sqrt(text), 'NaN)}`. The prebuilt function [coalesce](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#coalesce) returns the result of `contoso.sqrt(text)` if it is not null and `NaN` if it is null.
 - If the result is **null**, the line under the `ELSE` block is used in `sqrtReadBack`.
 
 ---
