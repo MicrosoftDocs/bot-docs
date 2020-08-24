@@ -21,15 +21,15 @@ This article shows how to create a C# bot project to which you can add adaptive 
 
 ## Prerequisites
 
-- A general understanding of [adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
-- A copy of the adaptive **multi-turn prompt** sample in [**C#**](https://aka.ms/cs-adaptive-multi-turn-sample).
+- A conceptual understanding of [adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
+- This article uses the adaptive **multi-turn prompt** sample in [**C#**](https://aka.ms/cs-adaptive-multi-turn-sample) as a sample adaptive dialog bot.
 
-## Create a bot project
+## Create the project
+
+For information on how to create a bot project, see the [C# quickstart](../dotnet/bot-builder-dotnet-sdk-quickstart.md#templates).
 
 1. Update your copy of the Bot Framework templates (VSIX or .NET Core) to the latest version.
 1. Create a new project based on the **empty bot** template.
-
-For more about these steps, see the [C# quickstart](../dotnet/bot-builder-dotnet-sdk-quickstart.md#templates).
 
 ## Add NuGet packages
 
@@ -39,10 +39,8 @@ For more about these steps, see the [C# quickstart](../dotnet/bot-builder-dotnet
     - For adaptive dialog unit testing, add the **Microsoft.Bot.Builder.Dialogs.Adaptive.Testing** package.
     - For LUIS language understanding, add the **Microsoft.Bot.Builder.AI.LUIS** package.
     - For QnA Maker language understanding, add the **Microsoft.Bot.Builder.AI.QnA** package.
-    - If your bot consumes custom components, it may require additional packages.
-      The author of each custom component should clearly state which packages are required.
 
-For more about language understanding in adaptive dialogs, see [recognizers in adaptive dialogs](bot-builder-concept-adaptive-dialog-recognizers.md).
+   If your bot consumes custom components, it may require additional packages. The author of each custom component should clearly state which packages are required.
 
 ## Register components
 
@@ -50,16 +48,16 @@ To support customization, the adaptive dialogs library uses component registrati
 
 Register adaptive and declarative components as necessary for your project.
 
-| Component registration | Required | Description
+| Required | Description | Component registration
 | :--- | :--- | :---
-| `ComponentRegistration.Add(new AdaptiveComponentRegistration());` | Required | Registers components common to all adaptive dialogs.
-| `ComponentRegistration.Add(new DialogsComponentRegistration());` | Required | Defines common memory scopes and path resolvers.
-| `ComponentRegistration.Add(new AdaptiveTestingComponentRegistration());` | Optional | Registers components used to unit test adaptive dialogs.
-| `ComponentRegistration.Add(new DeclarativeComponentRegistration());` | Optional | Registers components used to consume declarative dialogs.
-| `ComponentRegistration.Add(new LanguageGenerationComponentRegistration());` | Optional | Registers components used for language generation features.
-| `ComponentRegistration.Add(new LuisComponentRegistration());` | Optional | Registers components used for LUIS (language understanding) features.
-| `ComponentRegistration.Add(new QnAMakerComponentRegistration());` | Optional | Registers components used for QnA Maker (language understanding) features.
-| `ComponentRegistration.Add(new TeamsComponentRegistration());` | Optional | Registers components specific to the Teams channel.
+| Required | Components common to all adaptive dialogs. | `ComponentRegistration.Add(new AdaptiveComponentRegistration());`
+| Required | Common memory scopes and path resolvers. | `ComponentRegistration.Add(new DialogsComponentRegistration());`
+| Optional | Components used to unit test adaptive dialogs. | `ComponentRegistration.Add(new AdaptiveTestingComponentRegistration());`
+| Optional | Components used to consume declarative dialogs. | `ComponentRegistration.Add(new DeclarativeComponentRegistration());`
+| Optional | Components used for language generation features.| `ComponentRegistration.Add(new LanguageGenerationComponentRegistration());`
+| Optional | Components used for LUIS (language understanding) features. | `ComponentRegistration.Add(new LuisComponentRegistration());`
+| Optional | Components used for QnA Maker (language understanding) features. | `ComponentRegistration.Add(new QnAMakerComponentRegistration());`
+| Optional | Components specific to the Teams channel. | `ComponentRegistration.Add(new TeamsComponentRegistration());`
 
 If your project does not register a component that is required by another part of your bot, you can add it later, but you may get an initialization-time or run-time error.
 
@@ -73,7 +71,7 @@ For example, the adaptive multi-turn prompts sample registers these components.
 
 As with other bots, you still need to create the storage layer and state management objects.
 
-You will use the dialog manager to run your adaptive dialogs. In order for the dialog manager to set up memory scopes, it needs references to the storage layer and user and conversation state objects. While you can add these directly to the dialog manager, the dialog manager will discover these if they are registered properly on the turn context.
+You will use the dialog manager to run your adaptive dialogs, and it will need references to the storage layer and user and conversation state objects. (It needs these to set up memory scopes.) While you can add these directly to the dialog manager, the dialog manager will discover these if they are registered properly on the turn context.
 
 **startup.cs**
 
@@ -89,7 +87,7 @@ In C#, you can use the adapter's `Use` methods to add references to these object
 
 ## Add an adaptive dialog
 
-- create a vestigial root dialog for now (register in startup)
+Create the root dialog your bot will use.
 
 **Dialogs\\RootDialog.cs**
 
@@ -109,9 +107,11 @@ And then it registers the root dialog.
 - modify bot registration in startup
 - create and use a dialog manager to run the root dialog
 
+In the adaptive mutli-turn prompts sample, the root dialog is an adaptive dialog. The dialog manager can be used to run any type dialog, but it is required if the root dialog or any of its children are adaptive dialogs.
+
 **Bots\\DialogBot.cs**
 
-The sample defines the bot and adds code to create and use a dialog manager to run the root dialog.
+The sample defines the bot and adds code to create and use a dialog manager to run the root dialog each turn. The dialog manager will forward all activities to the dialog.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs" range="17-36":::
 
@@ -123,20 +123,22 @@ And then it registers the bot.
 
 ## Additional information
 
-About adaptive dialogs
+Adaptive dialogs are a powerful tool and have many ways in which they can be customized and extended. See the following articles for more information.
 
-- Adaptive expressions
-- Triggers
-- Actions and inputs
-- Recognizers
-  - About LUIS
-  - About QnA Maker
-- Templates
-- Memory scopes and paths
-- Declarative dialogs and type converters
-  - App schema files ([Creating the schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file))
-- Custom components: actions, triggers, dialogs, recognizers, and so on.
+- [Adaptive expressions](bot-builder-concept-adaptive-expressions.md)
+- [Language generation](bot-builder-concept-language-generation.md) and [generators](bot-builder-concept-adaptive-dialog-generators.md)
+- [Events and triggers](bot-builder-concept-adaptive-dialog-Triggers.md)
+- [Actions](bot-builder-concept-adaptive-dialog-actions.md) and [inputs](bot-builder-concept-adaptive-dialog-inputs.md)
+- [Recognizers](bot-builder-concept-adaptive-dialog-recognizers.md)
+  - [What is LUIS](/azure/cognitive-services/luis/what-is-luis)
+  - [What is QnA Maker](/azure/cognitive-services/qnamaker/overview/overview)
+- [Memory scopes and paths](bot-builder-concept-adaptive-dialog-memory-states.md)
+- [Declarative dialogs](bot-builder-concept-adaptive-dialog-declarative.md) and type converters
+  - [Creating a schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file)
+
+<!-- Add Custom components: actions, triggers, dialogs, recognizers, and so on to the list, once they are available.-->
 
 ## Next steps
 
-- create an adaptive dialog
+> [!div class="nextstepaction"]
+> [Create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md)
