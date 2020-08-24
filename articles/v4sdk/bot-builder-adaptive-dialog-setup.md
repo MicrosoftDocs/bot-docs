@@ -81,7 +81,7 @@ The sample registers a storage layer object and state management objects.
 
 **AdapterWithErrorHandler.cs**
 
-In C#, you can use the adapter's `Use` methods to add references to these objects to the turn context each turn.
+In C#, you can use the adapter's `UseStorage` and `UseBotState` methods to add references to these objects to the turn context each turn.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/AdapterWithErrorHandler.cs" range="17-25":::
 
@@ -103,9 +103,7 @@ And then it registers the root dialog.
 
 ## Add a dialog manager
 
-- modify bot code to expect a root dialog
-- modify bot registration in startup
-- create and use a dialog manager to run the root dialog
+Much as you would with other dialog-based bots, design the bot class to take a dialog as a constructor parameter. However, create and use a dialog manager to run the root dialog.
 
 In the adaptive mutli-turn prompts sample, the root dialog is an adaptive dialog. The dialog manager can be used to run any type dialog, but it is required if the root dialog or any of its children are adaptive dialogs.
 
