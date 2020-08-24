@@ -1,6 +1,6 @@
 ---
 title: Authentication - Bot Service
-description: Learn how to authenticate API requests in Direct Line API v3.0.
+description: Become familiar with authentication in Direct Line API 3.0. See how to use secrets and tokens. Learn about Azure Bot Service authentication.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
