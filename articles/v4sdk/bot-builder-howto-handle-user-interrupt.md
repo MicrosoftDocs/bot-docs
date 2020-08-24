@@ -1,6 +1,6 @@
 ---
 title: Handle user interruptions - Bot Service
-description: Learn how to handle user interrupt and direct conversation flow.
+description: Learn how bots handle user interruptions. See how to implement help and cancel interruptions, how to create and test bots, and how to handle unexpected errors.
 keywords: interrupt, interruptions, switching topic, break
 author: ivorb
 ms.author: kamrani

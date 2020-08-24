@@ -1,6 +1,6 @@
 ---
 title: Cortana Skills bot scenario - Bot Service
-description: Explore the Cortana Skills bot scenario with the Bot Framework.
+description: "Learn about the Cortana Skills bot scenario. See how this bot uses Cortana to access a user's calendar and location and then schedule an appointment."
 author: BrianRandell
 ms.author: kamrani
 manager: kamrani

@@ -1,6 +1,6 @@
 ---
 title: Create a bot using Bot Framework SDK for JavaScript - Bot Service
-description: Quickly create a bot using the Bot Framework SDK for JavaScript.
+description: Learn how to use the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript to build bots. See how to test bots with the Bot Framework Emulator.
 keywords: quickstart, bot framework sdk, getting started
 author: jonathanfingold
 ms.author: kamrani
