@@ -15,16 +15,16 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-Developers can use both [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by adaptive expressions and custom functions in [language generation (LG) templates](../file-format/bot-builder-lg-file-format.md). This article shows you how to define a custom function in your bot to adaptive expressions and use the function in an LG template.
+Developers can use both [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by adaptive expressions and custom functions in [language generation (LG) templates](../file-format/bot-builder-lg-file-format.md). This article shows you how to add a custom function in your bot to adaptive expressions and use the function in an LG template.
 
 ## Prerequisites
 
 - Knowledge of [bot basics](../v4sdk/bot-builder-basics.md), [adaptive expressions](../v4sdk/bot-builder-concept-adaptive-expressions.md), [language generation](../v4sdk/bot-builder-concept-language-generation.md), and the [.lg file format](../file-format/bot-builder-lg-file-format.md). Familiarity with [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) is also helpful.
-- A copy of the 20.custom-functions sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions) or[JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/20.custom-functions)
+- A copy of the 20.custom-functions sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions) or[JavaScript] (https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/20.custom-functions)
 
 ## About the sample
 
-This LG custom functions sample is an example of how to add a simple custom function to adaptive expressions and then use that expression in an LG template definition. The bot asks the user for a number, and if the input is valid returns the square root. The function that computes the square root, `contoso.sqrt`, is defined in the bot logic, and is used in the LG template that generates bot responses.
+This LG custom functions sample is an example of how to add a simple custom function to adaptive expressions and then use that expression in an LG template. The bot asks the user for a number, and if the input is valid returns the square root. The function that computes the square root, `contoso.sqrt`, is defined in the bot logic, and is used in the LG template that generates bot responses.
 
 This article uses a bottom up approach to adding and using custom functions in LG templates. You will learn about how to:
 
@@ -38,7 +38,7 @@ This article uses a bottom up approach to adding and using custom functions in L
 
 ### [C#](#tab/cs)
 
-To use adaptive expressions and LG, install the **Microsoft.Bot.Builder.LanguageGeneration** and **AdaptiveExpressions** packages. Add the following snippet your main bot file:
+To use adaptive expressions and LG, install the **Microsoft.Bot.Builder.LanguageGeneration** and **AdaptiveExpressions** packages. Add the following snippet to your main bot file.
 
 **Bots/CustomFunctionBot.cs**
 
@@ -46,7 +46,7 @@ To use adaptive expressions and LG, install the **Microsoft.Bot.Builder.Language
 
 ### [JavaScript](#tab/javascript)
 
-To use adaptive expressions and LG, install the **botbuilder-lg** and **adaptive-expressions** packages installed. Add the following snippet to your main bot file:
+To use adaptive expressions and LG, install the **botbuilder-lg** and **adaptive-expressions** packages installed. Add the following snippet to your main bot file.
 
 **bot.js**
 
@@ -56,7 +56,7 @@ To use adaptive expressions and LG, install the **botbuilder-lg** and **adaptive
 
 ## Add a custom function to adaptive expressions
 
-To use custom function in your bot you need to add them to adaptive expressions. This section shows how to add a custom function name `contoso.sqrt`, which returns the square root, to adaptive expressions.
+To use custom functions in your bot, you need to add them to adaptive expressions. This section shows how to add a custom function named `contoso.sqrt` to adaptive expressions.
 
 ### [C#](#tab/cs)
 
@@ -66,12 +66,12 @@ Start by adding a string constant with the name of your custom function. The nam
 
 [!code-csharp[function-name](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=26)]
 
-> [! IMPORTANT]
+> [!IMPORTANT]
 > Prefix your functions to avoid namespace collisions.
 
 In the function name `contoso` is the prefix and `sqrt` is short hand for square root, which the function returns.
 
-Now you can define the logic for your function in your bot constructor and add it to adaptive expressions using the `Expression.Functions.Add()` function. Adding your custom function to adaptive expression makes it possible to use your function across LG templates just like you would be able to with any of the prebuilt functions.
+Now you can define the logic for your function in your bot constructor and add it to adaptive expressions using the `Expression.Functions.Add()` function. Adding your custom function to adaptive expression makes it possible to use your function across LG templates, just as you can with any of the prebuilt functions.
 
 The snippet below shows how to add a function, defined as `mySqrtFnName`, to adaptive expressions. This function returns the square root of a single argument, `args`, if valid, and `null` if not not:
 
@@ -85,12 +85,12 @@ Start by adding a string constant with the name of your custom function. The nam
 
 [!code-javascript[function-name](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=6-7)]
 
-> [! IMPORTANT]
+> [!IMPORTANT]
 > Prefix your functions to avoid namespace collisions.
 
 In the function name `contoso` is the prefix and `sqrt` is short hand for square root, which the function returns.
 
-Now you can define the logic for your function in your bot constructor and add it to adaptive expressions using the `Expression.functions.add()` function. Adding your custom function to adaptive expression makes it possible to use your function across LG templates just like you would be able to with any of the prebuilt functions.
+Now you can define the logic for your function in your bot constructor and add it to adaptive expressions using the `Expression.functions.add()` function. Adding your custom function to adaptive expression makes it possible to use your function across LG templates, just as you can with any of the prebuilt functions.
 
 The snippet below shows how to add a function, defined as `mySqrtFnName`, to adaptive expressions. This function returns the square root of a single argument, `args`, if valid, and `null` if not not:
 
@@ -104,7 +104,7 @@ After adding your custom function to adaptive expressions you can use it in LG t
 
 ### [C#](#tab/cs)
 
-There are two template definitions in the LG. The first is the [simple response template](../file-format/bot-builder-lg-file-format.md#simple-response-template) `sqrtReadBack`:
+There are two template definitions in **main.lg**: the [simple response template](../file-format/bot-builder-lg-file-format.md#simple-response-template) `sqrtReadBack` and the [conditional response template](../file-format/bot-builder-lg-file-format.md#conditional-response-template) `sqrtTemplate`:
 
 **Resources/main.lg**
 
@@ -129,7 +129,7 @@ There are two template definitions in the LG. The first is the [simple response 
 
 This template generates a response that contains the user input, `${text}` and the result of the second conditional [if-else template](../file-format/bot-builder-lg-file-format.md#if-else-template) `sqrtTemplate`:
 
-[!code-javascript[sqrtTemplate](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/resources/main.lg?range=19-30)]
+[!code-javascript[sqrtTemplate](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/resources/main.lg?range=9-13)]
 
 In this template, the result of `contoso.sqrt(text)` is used to determine the response:
 
@@ -158,7 +158,7 @@ Then combine the path for cross-platform support. Make sure to include **main.lg
 
 Now you can parse the files in `lgFilePath` and load your LG templates.
 
-[!code-csharp[load-templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=43)]
+[!code-csharp[load-templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=44)]
 
 By default [`Templates.ParseFile()`](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration.templates.parsefile) uses `Expression.Function`, which includes the custom function you added earlier.
 
@@ -194,7 +194,7 @@ You're now ready to test your bot.
 
 Download and install the latest version of the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 
-1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C#](https://aka.ms/dotnet-lg-20-custom-function-sample)or [Javascript](https://aka.ms/js-lg-20-custom-functions-sample) sample.
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for the [C#](https://aka.ms/dotnet-lg-20-custom-function-sample)or [Javascript](https://aka.ms/js-lg-20-custom-functions-sample) sample.
 1. In the emulator, type anything. You will notice that the emulator will return the square root of numbers entered and `NaN` for all other input.
 
 ![test the bot](../v4sdk/media/language-generation/botbuilder-howto-custom-functions/test-bot.png)
