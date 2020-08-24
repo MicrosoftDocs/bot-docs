@@ -21,7 +21,8 @@ This article shows how to create a C# bot project to which you can add adaptive 
 
 ## Prerequisites
 
-- A copy of the adaptive **multi-turn prompt** sample in [**C#**]().
+- A general understanding of [adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
+- A copy of the adaptive **multi-turn prompt** sample in [**C#**](https://aka.ms/cs-adaptive-multi-turn-sample).
 
 ## Create a bot project
 
@@ -64,20 +65,61 @@ If your project does not register a component that is required by another part o
 
 **startup.cs**
 
+For example, the adaptive multi-turn prompts sample registers these components.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="24-31":::
+
 ## Add state
 
-- define storage and user and conversation state (register in startup)
-- add these to the turn context in your adapter
+As with other bots, you still need to create the storage layer and state management objects.
+
+You will use the dialog manager to run your adaptive dialogs. In order for the dialog manager to set up memory scopes, it needs references to the storage layer and user and conversation state objects. While you can add these directly to the dialog manager, the dialog manager will discover these if they are registered properly on the turn context.
+
+**startup.cs**
+
+The sample registers a storage layer object and state management objects.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="39-46":::
+
+**AdapterWithErrorHandler.cs**
+
+In C#, you can use the adapter's `Use` methods to add references to these objects to the turn context each turn.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/AdapterWithErrorHandler.cs" range="17-25":::
 
 ## Add an adaptive dialog
 
 - create a vestigial root dialog for now (register in startup)
+
+**Dialogs\\RootDialog.cs**
+
+The sample defines the root adaptive dialog it will use.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs" range="15-18":::
+
+**startup.cs**
+
+And then it registers the root dialog.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="48-49":::
 
 ## Add a dialog manager
 
 - modify bot code to expect a root dialog
 - modify bot registration in startup
 - create and use a dialog manager to run the root dialog
+
+**Bots\\DialogBot.cs**
+
+The sample defines the bot and adds code to create and use a dialog manager to run the root dialog.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs" range="17-36":::
+
+**startup.cs**
+
+And then it registers the bot.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Startup.cs" range="51-52":::
 
 ## Additional information
 
