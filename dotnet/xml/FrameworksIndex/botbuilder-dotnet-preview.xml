@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-preview">
   <Assemblies>
+    <Assembly Name="Microsoft.Bot.Builder.AI.Orchestrator" Version="4.10.0.0" />
     <Assembly Name="Microsoft.Bot.Builder.Azure.Queues" Version="4.10.0.0" />
     <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.10.0.0" />
     <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.10.0.0" />
@@ -21,6 +22,36 @@
     <Type Name="Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer" Id="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer">
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer.#ctor(Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.AI.Orchestrator">
+    <Type Name="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer" Id="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer">
+      <Member Id="F:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.Kind" />
+      <Member Id="F:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.ResultProperty" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.#ctor(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.#ctor(System.String,System.String,Microsoft.BotFramework.Orchestrator.ILabelResolver)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.DetectAmbiguousIntents" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.DisambiguationScoreThreshold" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.EntityRecognizers" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.ModelPath" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.SnapshotPath" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration" Id="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration">
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration.GetConverters(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration.GetDeclarativeTypes(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer" Id="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer">
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DetectAmbiguousIntents" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DisambiguationScoreThreshold" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.EntityRecognizers" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.ModelPath" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.SnapshotPath" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Azure.Queues">
