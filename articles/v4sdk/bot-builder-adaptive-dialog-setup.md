@@ -1,5 +1,5 @@
 ---
-title: Create a bot project for adaptive dialogs
+title: Create a bot project for adaptive dialogs - Bot Service
 description: Learn how to create a project to which you can add adaptive dialogs in the Bot Framework SDK.
 keywords: declarative, adaptive
 author: JonathanFingold
