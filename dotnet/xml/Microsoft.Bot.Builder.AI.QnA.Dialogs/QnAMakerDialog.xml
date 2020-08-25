@@ -10,6 +10,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.WaterfallDialog</BaseTypeName>
@@ -36,24 +37,28 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="sourceFilePath" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="sourceLineNumber" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -74,7 +79,7 @@
       <MemberSignature Language="C#" Value="public QnAMakerDialog (string knowledgeBaseId, string endpointKey, string hostName, Microsoft.Bot.Schema.Activity noAnswer = default, float threshold = 0.3, string activeLearningCardTitle = &quot;Did you mean:&quot;, string cardNoMatchText = &quot;None of the above.&quot;, int top = 3, Microsoft.Bot.Schema.Activity cardNoMatchResponse = default, Microsoft.Bot.Builder.AI.QnA.Metadata[] strictFilters = default, System.Net.Http.HttpClient httpClient = default, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string knowledgeBaseId, string endpointKey, string hostName, class Microsoft.Bot.Schema.Activity noAnswer, float32 threshold, string activeLearningCardTitle, string cardNoMatchText, int32 top, class Microsoft.Bot.Schema.Activity cardNoMatchResponse, class Microsoft.Bot.Builder.AI.QnA.Metadata[] strictFilters, class System.Net.Http.HttpClient httpClient, string sourceFilePath, int32 sourceLineNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.#ctor(System.String,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Single,System.String,System.String,System.Int32,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.QnA.Metadata[],System.Net.Http.HttpClient,System.String,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (knowledgeBaseId As String, endpointKey As String, hostName As String, Optional noAnswer As Activity = null, Optional threshold As Single = 0.3, Optional activeLearningCardTitle As String = &quot;Did you mean:&quot;, Optional cardNoMatchText As String = &quot;None of the above.&quot;, Optional top As Integer = 3, Optional cardNoMatchResponse As Activity = null, Optional strictFilters As Metadata() = null, Optional httpClient As HttpClient = null, Optional sourceFilePath As String = &quot;&quot;, Optional sourceLineNumber As Integer = 0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (knowledgeBaseId As String, endpointKey As String, hostName As String, Optional noAnswer As Activity = Nothing, Optional threshold As Single = 0.3, Optional activeLearningCardTitle As String = &quot;Did you mean:&quot;, Optional cardNoMatchText As String = &quot;None of the above.&quot;, Optional top As Integer = 3, Optional cardNoMatchResponse As Activity = Nothing, Optional strictFilters As Metadata() = Nothing, Optional httpClient As HttpClient = Nothing, Optional sourceFilePath As String = &quot;&quot;, Optional sourceLineNumber As Integer = 0)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog : string * string * string * Microsoft.Bot.Schema.Activity * single * string * string * int * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.QnA.Metadata[] * System.Net.Http.HttpClient * string * int -&gt; Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" Usage="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog (knowledgeBaseId, endpointKey, hostName, noAnswer, threshold, activeLearningCardTitle, cardNoMatchText, top, cardNoMatchResponse, strictFilters, httpClient, sourceFilePath, sourceLineNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -83,6 +88,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="knowledgeBaseId" Type="System.String" />
@@ -99,19 +105,91 @@
         <Parameter Name="sourceFilePath" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="sourceLineNumber" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
+        <param name="knowledgeBaseId">The ID of the QnA Maker knowledge base to query.</param>
+        <param name="endpointKey">The QnA Maker endpoint key to use to query the knowledge base.</param>
+        <param name="hostName">The QnA Maker host URL for the knowledge base, starting with "https://" and
+            ending with "/qnamaker".</param>
+        <param name="noAnswer">The activity to send the user when QnA Maker does not find an answer.</param>
+        <param name="threshold">The threshold for answers returned, based on score.</param>
+        <param name="activeLearningCardTitle">The card title to use when showing active learning options
+            to the user, if active learning is enabled.</param>
+        <param name="cardNoMatchText">The button text to use with active learning options,
+            allowing a user to indicate none of the options are applicable.</param>
+        <param name="top">The maximum number of answers to return from the knowledge base.</param>
+        <param name="cardNoMatchResponse">The activity to send the user if they select the no match option
+            on an active learning card.</param>
+        <param name="strictFilters">QnA Maker metadata with which to filter or boost queries to the
+            knowledge base; or null to apply none.</param>
+        <param name="httpClient">An HTTP client to use for requests to the QnA Maker Service;
+            or `null` to use a default client.</param>
+        <param name="sourceFilePath">The source file path, for debugging. Defaults to the full path
+            of the source file that contains the caller.</param>
+        <param name="sourceLineNumber">The line number, for debugging. Defaults to the line number
+            in the source file at which the method is called.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QnAMakerDialog (string dialogId, string knowledgeBaseId, string endpointKey, string hostName, Microsoft.Bot.Schema.Activity noAnswer = default, float threshold = 0.3, string activeLearningCardTitle = &quot;Did you mean:&quot;, string cardNoMatchText = &quot;None of the above.&quot;, int top = 3, Microsoft.Bot.Schema.Activity cardNoMatchResponse = default, Microsoft.Bot.Builder.AI.QnA.Metadata[] strictFilters = default, System.Net.Http.HttpClient httpClient = default, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogId, string knowledgeBaseId, string endpointKey, string hostName, class Microsoft.Bot.Schema.Activity noAnswer, float32 threshold, string activeLearningCardTitle, string cardNoMatchText, int32 top, class Microsoft.Bot.Schema.Activity cardNoMatchResponse, class Microsoft.Bot.Builder.AI.QnA.Metadata[] strictFilters, class System.Net.Http.HttpClient httpClient, string sourceFilePath, int32 sourceLineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.#ctor(System.String,System.String,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Single,System.String,System.String,System.Int32,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.QnA.Metadata[],System.Net.Http.HttpClient,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogId As String, knowledgeBaseId As String, endpointKey As String, hostName As String, Optional noAnswer As Activity = Nothing, Optional threshold As Single = 0.3, Optional activeLearningCardTitle As String = &quot;Did you mean:&quot;, Optional cardNoMatchText As String = &quot;None of the above.&quot;, Optional top As Integer = 3, Optional cardNoMatchResponse As Activity = Nothing, Optional strictFilters As Metadata() = Nothing, Optional httpClient As HttpClient = Nothing, Optional sourceFilePath As String = &quot;&quot;, Optional sourceLineNumber As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog : string * string * string * string * Microsoft.Bot.Schema.Activity * single * string * string * int * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.QnA.Metadata[] * System.Net.Http.HttpClient * string * int -&gt; Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog" Usage="new Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog (dialogId, knowledgeBaseId, endpointKey, hostName, noAnswer, threshold, activeLearningCardTitle, cardNoMatchText, top, cardNoMatchResponse, strictFilters, httpClient, sourceFilePath, sourceLineNumber)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogId" Type="System.String" />
+        <Parameter Name="knowledgeBaseId" Type="System.String" />
+        <Parameter Name="endpointKey" Type="System.String" />
+        <Parameter Name="hostName" Type="System.String" />
+        <Parameter Name="noAnswer" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="threshold" Type="System.Single" />
+        <Parameter Name="activeLearningCardTitle" Type="System.String" />
+        <Parameter Name="cardNoMatchText" Type="System.String" />
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="cardNoMatchResponse" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="strictFilters" Type="Microsoft.Bot.Builder.AI.QnA.Metadata[]" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="sourceFilePath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="sourceLineNumber" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="dialogId">The ID of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" />.</param>
         <param name="knowledgeBaseId">The ID of the QnA Maker knowledge base to query.</param>
         <param name="endpointKey">The QnA Maker endpoint key to use to query the knowledge base.</param>
         <param name="hostName">The QnA Maker host URL for the knowledge base, starting with "https://" and
@@ -150,10 +228,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("activeLearningCardTitle")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("activeLearningCardTitle")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("activeLearningCardTitle")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,7 +255,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="qnAMakerDialog.BeginDialogAsync (dc, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -184,6 +264,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -222,10 +303,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("cardNoMatchResponse")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("cardNoMatchResponse")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("cardNoMatchResponse")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -253,10 +336,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("cardNoMatchText")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("cardNoMatchText")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("cardNoMatchText")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -278,13 +363,14 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Dialogs.QnAMakerDialog.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueDialogAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueDialogAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.ContinueDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="qnAMakerDialog.ContinueDialogAsync (dc, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -299,6 +385,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="DefaultThreshold">
@@ -314,6 +401,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
@@ -339,6 +427,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -362,10 +451,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("endpointKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("endpointKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("endpointKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -394,6 +485,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt;</ReturnType>
@@ -423,6 +515,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions&gt;</ReturnType>
@@ -452,6 +545,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QnADialogResponseOptions&gt;</ReturnType>
@@ -479,10 +573,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("hostname")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("hostname")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("hostname")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -511,10 +607,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -539,10 +637,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("isTest")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("isTest")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("isTest")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -569,10 +669,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -596,10 +698,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("knowledgeBaseId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("knowledgeBaseId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("knowledgeBaseId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -626,10 +730,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("logPersonalInformation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("logPersonalInformation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("logPersonalInformation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -656,10 +762,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("noAnswer")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("noAnswer")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("noAnswer")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -686,6 +794,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -702,6 +811,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -717,6 +827,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -744,6 +855,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -770,6 +882,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -794,10 +907,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("rankerType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("rankerType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("rankerType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -825,10 +940,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("strictFilters")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("strictFilters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("strictFilters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -857,10 +974,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("threshold")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("threshold")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("threshold")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -887,10 +1006,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("top")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("top")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("top")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

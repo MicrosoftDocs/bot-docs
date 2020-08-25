@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -15,10 +16,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,6 +42,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -47,7 +51,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ArgsListContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -70,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -78,7 +84,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ArrayCreationExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -102,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -110,7 +118,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+BinaryOpExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -134,6 +143,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -142,7 +152,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ExpressionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -165,6 +176,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -173,7 +185,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+FileContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -196,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -204,7 +218,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+FuncInvokeExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -228,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -236,7 +252,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+IdAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -260,6 +277,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -268,7 +286,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+IndexAccessExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -292,6 +311,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -300,7 +320,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+JsonCreationExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -324,6 +345,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -332,7 +354,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+KeyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -355,6 +378,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -363,7 +387,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+KeyValuePairContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -386,6 +411,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -394,7 +420,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+KeyValuePairListContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -403,6 +430,38 @@
         <param name="context">The parse tree.</param>
         <summary>
             Enter a parse tree produced by <see cref="M:AdaptiveExpressions.parser.ExpressionAntlrParser.keyValuePairList" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLambda">
+      <MemberSignature Language="C#" Value="public void EnterLambda (AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterLambda(class AdaptiveExpressions.parser.ExpressionAntlrParser/LambdaContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.IExpressionAntlrParserListener.EnterLambda(AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterLambda (context As ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterLambda : AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterLambda context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+LambdaContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:AdaptiveExpressions.parser.ExpressionAntlrParser.lambda" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -417,6 +476,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -425,7 +485,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+MemberAccessExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -449,6 +510,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -457,7 +519,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+NumericAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -481,6 +544,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -489,7 +553,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ParenthesisExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -513,6 +578,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -521,7 +587,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+PrimaryExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -545,6 +612,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -553,7 +621,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+PrimaryExpressionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -576,6 +645,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -584,7 +654,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+StringAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -608,6 +679,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -616,7 +688,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+StringInterpolationContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -639,6 +712,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -647,7 +721,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+StringInterpolationAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -671,6 +746,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -679,7 +755,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+TextContentContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -702,6 +779,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -710,7 +788,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+UnaryOpExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -734,6 +813,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -742,7 +822,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ArgsListContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -765,6 +846,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -773,7 +855,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ArrayCreationExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -797,6 +880,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -805,7 +889,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+BinaryOpExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -829,6 +914,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -837,7 +923,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ExpressionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -860,6 +947,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -868,7 +956,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+FileContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -891,6 +980,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -899,7 +989,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+FuncInvokeExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -923,6 +1014,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -931,7 +1023,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+IdAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -955,6 +1048,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -963,7 +1057,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+IndexAccessExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -987,6 +1082,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -995,7 +1091,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+JsonCreationExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1019,6 +1116,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1027,7 +1125,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+KeyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1050,6 +1149,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1058,7 +1158,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+KeyValuePairContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1081,6 +1182,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1089,7 +1191,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+KeyValuePairListContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1098,6 +1201,38 @@
         <param name="context">The parse tree.</param>
         <summary>
             Exit a parse tree produced by <see cref="M:AdaptiveExpressions.parser.ExpressionAntlrParser.keyValuePairList" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitLambda">
+      <MemberSignature Language="C#" Value="public void ExitLambda (AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitLambda(class AdaptiveExpressions.parser.ExpressionAntlrParser/LambdaContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.IExpressionAntlrParserListener.ExitLambda(AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitLambda (context As ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitLambda : AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitLambda context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+LambdaContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:AdaptiveExpressions.parser.ExpressionAntlrParser.lambda" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,6 +1247,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1120,7 +1256,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+MemberAccessExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1144,6 +1281,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1152,7 +1290,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+NumericAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1176,6 +1315,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1184,7 +1324,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+ParenthesisExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1208,6 +1349,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1216,7 +1358,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+PrimaryExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1240,6 +1383,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1248,7 +1392,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+PrimaryExpressionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1271,6 +1416,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1279,7 +1425,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+StringAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1303,6 +1450,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1311,7 +1459,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+StringInterpolationContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1334,6 +1483,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1342,7 +1492,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+StringInterpolationAtomContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1366,6 +1517,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1374,7 +1526,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+TextContentContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1397,6 +1550,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1405,7 +1559,8 @@
         <Parameter Name="context" Type="AdaptiveExpressions.parser.ExpressionAntlrParser+UnaryOpExpContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
@@ -52,6 +54,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -81,6 +84,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -105,6 +109,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
@@ -127,6 +132,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
@@ -152,6 +158,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -165,20 +172,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EXPRESSION_IN_STRUCTURE_BODY">
-      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] EXPRESSION_IN_STRUCTURE_BODY ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] EXPRESSION_IN_STRUCTURE_BODY() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext.EXPRESSION_IN_STRUCTURE_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Function EXPRESSION_IN_STRUCTURE_BODY () As ITerminalNode()" />
-      <MemberSignature Language="F#" Value="member this.EXPRESSION_IN_STRUCTURE_BODY : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="keyValueStructureValueContext.EXPRESSION_IN_STRUCTURE_BODY " />
+    <Member MemberName="expressionInStructure">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext[] expressionInStructure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionInStructureContext[] expressionInStructure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext.expressionInStructure" />
+      <MemberSignature Language="VB.NET" Value="Public Function expressionInStructure () As LGTemplateParser.ExpressionInStructureContext()" />
+      <MemberSignature Language="F#" Value="member this.expressionInStructure : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext[]" Usage="keyValueStructureValueContext.expressionInStructure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionInStructureContext[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -187,20 +193,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EXPRESSION_IN_STRUCTURE_BODY">
-      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode EXPRESSION_IN_STRUCTURE_BODY (int i);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode EXPRESSION_IN_STRUCTURE_BODY(int32 i) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext.EXPRESSION_IN_STRUCTURE_BODY(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Function EXPRESSION_IN_STRUCTURE_BODY (i As Integer) As ITerminalNode" />
-      <MemberSignature Language="F#" Value="member this.EXPRESSION_IN_STRUCTURE_BODY : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="keyValueStructureValueContext.EXPRESSION_IN_STRUCTURE_BODY i" />
+    <Member MemberName="expressionInStructure">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext expressionInStructure (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionInStructureContext expressionInStructure(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext.expressionInStructure(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function expressionInStructure (i As Integer) As LGTemplateParser.ExpressionInStructureContext" />
+      <MemberSignature Language="F#" Value="member this.expressionInStructure : int -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext" Usage="keyValueStructureValueContext.expressionInStructure i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionInStructureContext</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="i" Type="System.Int32" />
@@ -223,6 +228,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -244,6 +250,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
@@ -266,6 +273,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>

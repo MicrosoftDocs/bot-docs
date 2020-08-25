@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,12 +28,13 @@
       <MemberSignature Language="C#" Value="public ExpressionParser (AdaptiveExpressions.EvaluatorLookup lookup = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class AdaptiveExpressions.EvaluatorLookup lookup) cil managed" />
       <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ExpressionParser.#ctor(AdaptiveExpressions.EvaluatorLookup)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional lookup As EvaluatorLookup = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional lookup As EvaluatorLookup = Nothing)" />
       <MemberSignature Language="F#" Value="new AdaptiveExpressions.ExpressionParser : AdaptiveExpressions.EvaluatorLookup -&gt; AdaptiveExpressions.ExpressionParser" Usage="new AdaptiveExpressions.ExpressionParser lookup" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lookup" Type="AdaptiveExpressions.EvaluatorLookup" />
@@ -56,6 +58,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.IParseTree</ReturnType>
@@ -64,9 +67,11 @@
         <Parameter Name="expression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The input string expression.</param>
+        <summary>
+            Parse the expression to ANTLR lexer and parser.
+            </summary>
+        <returns>A ParseTree.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.EvaluatorLookup</ReturnType>
@@ -107,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Expression</ReturnType>
