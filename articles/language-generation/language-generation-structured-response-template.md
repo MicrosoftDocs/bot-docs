@@ -91,7 +91,7 @@ Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/pla
 >
 > LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://aka.ms/botSpecs-cardSchema). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
 >
->The values defined in all of the `image` and `images` field in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
+>The values defined in all of the `image` and `images` fields in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
 
 Below is the combination of the previous templates:
 
