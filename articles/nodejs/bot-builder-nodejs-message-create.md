@@ -1,6 +1,6 @@
 ---
 title: Create messages - Bot Service
-description: Learn how create messages with the Bot Framework SDK for Node.js.
+description: Learn how bots can send, receive, and customize messages. See how to use the Bot Framework SDK for Node.js to exchange messages between bots and users.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
