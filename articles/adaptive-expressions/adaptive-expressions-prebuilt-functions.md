@@ -101,7 +101,7 @@ You can also view the list in [alphabetical order](#add).
 |-----------|-----------|
 |[float](#float)|Return the floating point representation of the specified string or the string itself if conversion isn't possible.|
 |[int](#int)|Return the integer representation of the specified string or the string itself if conversion isn't possible.|
-|[string](#string)|Return the string version of the specified value in an optional locale.|
+|[string](#string)|Return the string version of the specified value in an optional locale format.|
 |[bool](#bool)|Return the Boolean representation of the specified string.|
 |[createArray](#createArray)|Create an array from multiple inputs.|
 |[json](#json) |Return the JavaScript Object Notation (JSON) type value or object of a string or XML.|
@@ -4652,15 +4652,16 @@ And return the following results respectively:
 
 ### string
 
-Return the string version of a value.
+Return the string version of a value in an optional locale format.
 
 ```
-string(<value>)
+string(<value>, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*value*> | Yes | any | The value to convert |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -4687,6 +4688,14 @@ string( { "name": "Sophie Owen" } )
 ```
 
 And returns the result **{ \\"name\\": \\"Sophie Owen\\" }**
+
+This example creates a string version of the number **10** in the **fr-FR** format:
+
+```
+string(10, 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
 
 <a name="sub"></a>
 
