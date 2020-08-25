@@ -1,6 +1,6 @@
 ---
 title: Send an activity the bot - Bot Service
-description: Learn how to send activity information to bots. See how to use the Direct Line 3.0 protocol to send information about message, typing, and custom activities. 
+description: Learn how to send activity information to bots. See how to use version 3.0 of the Direct Line API to send Activity objects with optional attachments.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

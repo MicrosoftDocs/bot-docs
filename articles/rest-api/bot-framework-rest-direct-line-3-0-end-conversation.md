@@ -1,6 +1,6 @@
 ---
 title: End a conversation - Bot Service
-description: Learn how to use Direct Line API v3.0 to end conversations with bots. See how to use an endOfConversation event to end a conversation with a Cortana channel. 
+description: Learn how to use version 3.0 of the Direct Line API to end conversations between bots and Cortana channels. See how to set up and send endOfConversation events. 
 author: RobStand
 ms.author: kamrani
 manager: kamrani
