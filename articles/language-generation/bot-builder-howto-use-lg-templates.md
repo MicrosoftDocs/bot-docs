@@ -176,7 +176,6 @@ Finally the `WelcomeCard` calls the `AdaptiveCard` template to return the Adapti
 
 For more information about the `ActivityAttachment()` function, read [inject functions from the LG library](functions-injected-from-language-generation.md)
 
----
 
 ## Add LUIS to your bot
 
