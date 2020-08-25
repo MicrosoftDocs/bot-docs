@@ -2088,10 +2088,10 @@ And returns the result **<add answer here>**.
 
 ### getFutureTime
 
-Return the current timestamp plus the specified time units.
+Return the current timestamp in an optional locale plus the specified time units.
 
 ```
-getFutureTime(<interval>, <timeUnit>, '<format>'?)
+getFutureTime(<interval>, <timeUnit>, '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -2099,6 +2099,7 @@ getFutureTime(<interval>, <timeUnit>, '<format>'?)
 | <*interval*> | Yes | integer | The number of specific time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year".|
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -2124,7 +2125,17 @@ Suppose the current timestamp is **2018-03-01T00:00:00.000Z**. The example below
 getFutureTime(5, 'Day', 'MM-DD-YY')
 ```
 
-It returns the result **03-06-18**.
+And returns the result **03-06-18**.
+
+*Example 3*
+
+Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **fr-FR**. The example below adds three months to the timestamp and converts the result to **MM-DD-YY** format:
+
+```
+getFutureTime(3, 'Day', 'MM-DD-YY', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
 
 <a name="getNextViableDate"></a>
 
@@ -2224,7 +2235,7 @@ getPastTime(<interval>, <timeUnit>, '<format>'?)
 
 *Example 1*
 
-Suppose the current timestamp is **2018-02-01T00:00:00.000Z**. This example adds five days to that timestamp:
+Suppose the current timestamp is **2018-02-01T00:00:00.000Z**. This example subtracts five days from that timestamp:
 
 ```
 getPastTime(5, 'Day')
@@ -2234,13 +2245,23 @@ And returns the result **2019-01-27T00:00:00.000Z**.
 
 *Example 2*
 
-Suppose the current timestamp is **2018-03-01T00:00:00.000Z**. This example adds five days to the timestamp, converts the result to **MM-DD-YY** format:
+Suppose the current timestamp is **2018-03-01T00:00:00.000Z**. This example subtracts five days to the timestamp in the **MM-DD-YY** format:
 
 ```
 getPastTime(5, 'Day', 'MM-DD-YY')
 ```
 
-It returns the result **02-26-18**.
+And returns the result **02-26-18**.
+
+*Example 3*
+
+Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **fr-FR**. The example below subtracts three months to the timestamp in the result to **MM-DD-YY** format:
+
+```
+getPastTime(3, 'Day', 'MM-DD-YY', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
 
 <a name="getPreviousViableDate"></a>
 
