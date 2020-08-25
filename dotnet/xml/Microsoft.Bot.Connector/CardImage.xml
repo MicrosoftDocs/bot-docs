@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public CardImage (string url = default, string alt = default, Microsoft.Bot.Connector.CardAction tap = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string alt, class Microsoft.Bot.Connector.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.CardImage.#ctor(System.String,System.String,Microsoft.Bot.Connector.CardAction)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = null, Optional alt As String = null, Optional tap As CardAction = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional url As String = Nothing, Optional alt As String = Nothing, Optional tap As CardAction = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.CardImage : string * string * Microsoft.Bot.Connector.CardAction -&gt; Microsoft.Bot.Connector.CardImage" Usage="new Microsoft.Bot.Connector.CardImage (url, alt, tap)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -82,7 +82,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="alt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="alt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="alt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -110,7 +111,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tap")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tap")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,7 +140,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="url")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="url")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="url")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

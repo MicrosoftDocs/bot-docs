@@ -589,6 +589,10 @@ Note that any information explicitly passed in via CLI arguments will override i
 
 ## External references
 
+The sections below detail how to make [local file](#local-file-references) and [URI](#uri-references) references.
+
+### Local file references
+
 References the .lu file. follow Markdown link syntax. Supported references include:
 
 - Reference to another .lu file via `[link name](<.lu file name>)`. Reference can be an absolute path or a relative path from the containing .lu file.
@@ -653,6 +657,31 @@ Here's an example of the aforementioned references:
 - [QnA questions](./qna1.qna#?)
 
 > With the above statement, the parser will parse qna1.lu and extract out all questions from QnA pairs in that file and add them under 'None' intent as defined in this file.
+```
+
+### URI references
+
+Below are examples of how to make URI references:
+
+```.lu
+> URI to LU resource
+[import](http://.../foo.lu)
+
+# intent1
+> Ability to pull in specific utterances from an intent
+- [import](http://.../foo.lu#None)
+
+# intent2
+> Ability to pull in utterances or patterns or both from a specific intent 'None'
+- [import](http://..../foo.lu#None*utterances*)
+- [import](http://..../bar.lu#None*patterns*)
+- [import](http://..../taz.lu#None*utterancesandpatterns*)
+
+# intent3
+> Ability to pull in all utterances or patterns or both across all intents
+- [import](http://..../foo.lu#*utterances*)
+- [import](http://..../bar.lu#*patterns*)
+- [import](http://..../taz.lu#*utterancesandpatterns*)
 ```
 
 ## Additional Information:

@@ -36,6 +36,37 @@ Use **\\** as an escape character.
 - You can say cheese and tomato \[toppings are optional\]
 ```
 
+## Arrays and objects
+
+### Create an array
+
+To create an array, use the **${[object1, object2, ...]}** syntax. For example, this  expression:
+
+```.lg
+${['a', 'b', 'c']}
+```
+
+Returns the array `['a', 'b', 'c']`.
+
+### Create an object
+
+To create an object, use the **${{key1:value1, key2:value2, ...}}** syntax. For example, this expression:
+
+```.lg
+${{user: {name: "Wilson", age: 27}}}
+```
+
+Returns the following JSON object:
+
+```json
+{
+  "user": {
+    "name": "Wilson",
+    "age": 27
+  }
+}
+```
+
 ## Templates
 
 **Templates** are the core concept of the language generation system. Each template has a name and one of the following:
@@ -148,7 +179,8 @@ Here's a more complicated SWITCH CASE DEFAULT example:
     - ${apology-phrase()}, ${defaultResponseTemplate()}
 ```
 
-Like conditional templates, switch templates also cannot be nested.
+> [!NOTE]
+> Like conditional templates, switch templates cannot be nested.
 
 ### Structured response template
 

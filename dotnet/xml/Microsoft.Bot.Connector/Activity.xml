@@ -89,7 +89,7 @@
       <MemberSignature Language="C#" Value="public Activity (string type = default, string id = default, DateTimeOffset? timestamp = default, DateTimeOffset? localTimestamp = default, string serviceUrl = default, string channelId = default, Microsoft.Bot.Connector.ChannelAccount from = default, Microsoft.Bot.Connector.ConversationAccount conversation = default, Microsoft.Bot.Connector.ChannelAccount recipient = default, string textFormat = default, string attachmentLayout = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved = default, string topicName = default, bool? historyDisclosed = default, string locale = default, string text = default, string speak = default, string inputHint = default, string summary = default, Microsoft.Bot.Connector.SuggestedActions suggestedActions = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; attachments = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; entities = default, object channelData = default, string action = default, string replyToId = default, string label = default, string valueType = default, object value = default, string name = default, Microsoft.Bot.Connector.ConversationReference relatesTo = default, string code = default, DateTimeOffset? expiration = default, string importance = default, string deliveryMode = default, System.Collections.Generic.IList&lt;string&gt; listenFor = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; textHighlights = default, Microsoft.Bot.Connector.SemanticAction semanticAction = default, string localTimezone = default, string callerId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string id, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; timestamp, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; localTimestamp, string serviceUrl, string channelId, class Microsoft.Bot.Connector.ChannelAccount from, class Microsoft.Bot.Connector.ConversationAccount conversation, class Microsoft.Bot.Connector.ChannelAccount recipient, string textFormat, string attachmentLayout, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; membersRemoved, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsAdded, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.MessageReaction&gt; reactionsRemoved, string topicName, valuetype System.Nullable`1&lt;bool&gt; historyDisclosed, string locale, string text, string speak, string inputHint, string summary, class Microsoft.Bot.Connector.SuggestedActions suggestedActions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Attachment&gt; attachments, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Entity&gt; entities, object channelData, string action, string replyToId, string label, string valueType, object value, string name, class Microsoft.Bot.Connector.ConversationReference relatesTo, string code, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; expiration, string importance, string deliveryMode, class System.Collections.Generic.IList`1&lt;string&gt; listenFor, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.TextHighlight&gt; textHighlights, class Microsoft.Bot.Connector.SemanticAction semanticAction, string localTimezone, string callerId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.#ctor(System.String,System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.String,System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,Microsoft.Bot.Connector.ChannelAccount,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.Collections.Generic.IList{Microsoft.Bot.Connector.MessageReaction},System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,Microsoft.Bot.Connector.SuggestedActions,System.Collections.Generic.IList{Microsoft.Bot.Connector.Attachment},System.Collections.Generic.IList{Microsoft.Bot.Connector.Entity},System.Object,System.String,System.String,System.String,System.String,System.Object,System.String,Microsoft.Bot.Connector.ConversationReference,System.String,System.Nullable{System.DateTimeOffset},System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Bot.Connector.TextHighlight},Microsoft.Bot.Connector.SemanticAction,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional id As String = null, Optional timestamp As Nullable(Of DateTimeOffset) = null, Optional localTimestamp As Nullable(Of DateTimeOffset) = null, Optional serviceUrl As String = null, Optional channelId As String = null, Optional from As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional recipient As ChannelAccount = null, Optional textFormat As String = null, Optional attachmentLayout As String = null, Optional membersAdded As IList(Of ChannelAccount) = null, Optional membersRemoved As IList(Of ChannelAccount) = null, Optional reactionsAdded As IList(Of MessageReaction) = null, Optional reactionsRemoved As IList(Of MessageReaction) = null, Optional topicName As String = null, Optional historyDisclosed As Nullable(Of Boolean) = null, Optional locale As String = null, Optional text As String = null, Optional speak As String = null, Optional inputHint As String = null, Optional summary As String = null, Optional suggestedActions As SuggestedActions = null, Optional attachments As IList(Of Attachment) = null, Optional entities As IList(Of Entity) = null, Optional channelData As Object = null, Optional action As String = null, Optional replyToId As String = null, Optional label As String = null, Optional valueType As String = null, Optional value As Object = null, Optional name As String = null, Optional relatesTo As ConversationReference = null, Optional code As String = null, Optional expiration As Nullable(Of DateTimeOffset) = null, Optional importance As String = null, Optional deliveryMode As String = null, Optional listenFor As IList(Of String) = null, Optional textHighlights As IList(Of TextHighlight) = null, Optional semanticAction As SemanticAction = null, Optional localTimezone As String = null, Optional callerId As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = Nothing, Optional id As String = Nothing, Optional timestamp As Nullable(Of DateTimeOffset) = Nothing, Optional localTimestamp As Nullable(Of DateTimeOffset) = Nothing, Optional serviceUrl As String = Nothing, Optional channelId As String = Nothing, Optional from As ChannelAccount = Nothing, Optional conversation As ConversationAccount = Nothing, Optional recipient As ChannelAccount = Nothing, Optional textFormat As String = Nothing, Optional attachmentLayout As String = Nothing, Optional membersAdded As IList(Of ChannelAccount) = Nothing, Optional membersRemoved As IList(Of ChannelAccount) = Nothing, Optional reactionsAdded As IList(Of MessageReaction) = Nothing, Optional reactionsRemoved As IList(Of MessageReaction) = Nothing, Optional topicName As String = Nothing, Optional historyDisclosed As Nullable(Of Boolean) = Nothing, Optional locale As String = Nothing, Optional text As String = Nothing, Optional speak As String = Nothing, Optional inputHint As String = Nothing, Optional summary As String = Nothing, Optional suggestedActions As SuggestedActions = Nothing, Optional attachments As IList(Of Attachment) = Nothing, Optional entities As IList(Of Entity) = Nothing, Optional channelData As Object = Nothing, Optional action As String = Nothing, Optional replyToId As String = Nothing, Optional label As String = Nothing, Optional valueType As String = Nothing, Optional value As Object = Nothing, Optional name As String = Nothing, Optional relatesTo As ConversationReference = Nothing, Optional code As String = Nothing, Optional expiration As Nullable(Of DateTimeOffset) = Nothing, Optional importance As String = Nothing, Optional deliveryMode As String = Nothing, Optional listenFor As IList(Of String) = Nothing, Optional textHighlights As IList(Of TextHighlight) = Nothing, Optional semanticAction As SemanticAction = Nothing, Optional localTimezone As String = Nothing, Optional callerId As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.Activity : string * string * Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * string * string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * Microsoft.Bot.Connector.ChannelAccount * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.MessageReaction&gt; * string * Nullable&lt;bool&gt; * string * string * string * string * string * Microsoft.Bot.Connector.SuggestedActions * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Attachment&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Entity&gt; * obj * string * string * string * string * obj * string * Microsoft.Bot.Connector.ConversationReference * string * Nullable&lt;DateTimeOffset&gt; * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.TextHighlight&gt; * Microsoft.Bot.Connector.SemanticAction * string * string -&gt; Microsoft.Bot.Connector.Activity" Usage="new Microsoft.Bot.Connector.Activity (type, id, timestamp, localTimestamp, serviceUrl, channelId, from, conversation, recipient, textFormat, attachmentLayout, membersAdded, membersRemoved, reactionsAdded, reactionsRemoved, topicName, historyDisclosed, locale, text, speak, inputHint, summary, suggestedActions, attachments, entities, channelData, action, replyToId, label, valueType, value, name, relatesTo, code, expiration, importance, deliveryMode, listenFor, textHighlights, semanticAction, localTimezone, callerId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -207,7 +207,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="action")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="action")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="action")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -589,7 +590,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -620,7 +622,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="attachments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="attachments")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -645,7 +648,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="callerId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="callerId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="callerId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -676,7 +680,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelData")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="channelData")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="channelData")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -707,7 +712,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="channelId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="channelId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -738,7 +744,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="code")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="code")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -791,7 +798,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="conversation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="conversation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -975,7 +983,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Connector.Activity CreateReply (string text = default, string locale = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Connector.Activity CreateReply(string text, string locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateReply(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function CreateReply (Optional text As String = null, Optional locale As String = null) As Activity" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReply (Optional text As String = Nothing, Optional locale As String = Nothing) As Activity" />
       <MemberSignature Language="F#" Value="member this.CreateReply : string * string -&gt; Microsoft.Bot.Connector.Activity" Usage="activity.CreateReply (text, locale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1004,7 +1012,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Connector.ITraceActivity CreateTraceActivityReply (Microsoft.Bot.Connector.Activity activity, string name, string valueType = default, object value = default, string label = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Connector.ITraceActivity CreateTraceActivityReply(class Microsoft.Bot.Connector.Activity activity, string name, string valueType, object value, string label) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Activity.CreateTraceActivityReply(Microsoft.Bot.Connector.Activity,System.String,System.String,System.Object,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTraceActivityReply (activity As Activity, name As String, Optional valueType As String = null, Optional value As Object = null, Optional label As String = null) As ITraceActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTraceActivityReply (activity As Activity, name As String, Optional valueType As String = Nothing, Optional value As Object = Nothing, Optional label As String = Nothing) As ITraceActivity" />
       <MemberSignature Language="F#" Value="static member CreateTraceActivityReply : Microsoft.Bot.Connector.Activity * string * string * obj * string -&gt; Microsoft.Bot.Connector.ITraceActivity" Usage="Microsoft.Bot.Connector.Activity.CreateTraceActivityReply (activity, name, valueType, value, label)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1025,7 +1033,8 @@
         <Parameter Name="label" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1084,7 +1093,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="deliveryMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="deliveryMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="deliveryMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1117,7 +1127,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entities")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="entities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="entities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1148,7 +1159,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expiration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="expiration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="expiration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1179,7 +1191,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="from")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="from")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="from")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1322,7 +1335,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="historyDisclosed")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="historyDisclosed")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="historyDisclosed")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1353,7 +1367,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1384,7 +1399,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="importance")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="importance")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="importance")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1415,7 +1431,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="inputHint")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="inputHint")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="inputHint")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1473,7 +1490,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="label")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="label")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="label")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1501,7 +1519,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="listenFor")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="listenFor")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="listenFor")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1532,7 +1551,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="locale")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="locale")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="locale")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1563,7 +1583,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="localTimestamp")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="localTimestamp")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="localTimestamp")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1590,7 +1611,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="localTimezone")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="localTimezone")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="localTimezone")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1621,7 +1643,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="membersAdded")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="membersAdded")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="membersAdded")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1652,7 +1675,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="membersRemoved")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="membersRemoved")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="membersRemoved")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1685,7 +1709,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1713,7 +1738,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1744,7 +1770,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionsAdded")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="reactionsAdded")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="reactionsAdded")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1775,7 +1802,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="reactionsRemoved")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="reactionsRemoved")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="reactionsRemoved")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1806,7 +1834,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="recipient")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="recipient")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1839,7 +1868,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="relatesTo")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="relatesTo")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="relatesTo")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1870,7 +1900,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="replyToId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="replyToId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="replyToId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1898,7 +1929,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="semanticAction")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="semanticAction")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="semanticAction")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1929,7 +1961,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1960,7 +1993,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="speak")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="speak")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="speak")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1991,7 +2025,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2022,7 +2057,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="summary")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="summary")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="summary")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2054,7 +2090,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2085,7 +2122,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="textFormat")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="textFormat")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="textFormat")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2116,7 +2154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="textHighlights")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="textHighlights")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="textHighlights")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2147,7 +2186,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timestamp")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="timestamp")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="timestamp")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2178,7 +2218,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="topicName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="topicName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="topicName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2243,7 +2284,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2277,7 +2319,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="value")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2308,7 +2351,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="valueType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="valueType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="valueType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

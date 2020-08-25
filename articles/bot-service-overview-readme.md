@@ -1,6 +1,6 @@
 ---
 title: How Bot Service works - Bot Service
-description: Learn about the features and capabilities of Bot Service.
+description: Become familiar with Bot Service. Learn about hosting plans and templates. See how to use this service to develop and deploy bots.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

@@ -1,0 +1,71 @@
+<Type Name="StringTransformEvaluator" FullName="AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator">
+  <TypeSignature Language="C#" Value="public class StringTransformEvaluator : AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringTransformEvaluator extends AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringTransformEvaluator&#xA;Inherits ExpressionEvaluator" />
+  <TypeSignature Language="F#" Value="type StringTransformEvaluator = class&#xA;    inherit ExpressionEvaluator" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AdaptiveExpressions.ExpressionEvaluator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Evaluator that transforms a string to another string.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringTransformEvaluator (string type, Func&lt;System.Collections.Generic.IReadOnlyList&lt;object&gt;,AdaptiveExpressions.Options,ValueTuple&lt;object,string&gt;&gt; function);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class System.Func`3&lt;class System.Collections.Generic.IReadOnlyList`1&lt;object&gt;, class AdaptiveExpressions.Options, valuetype System.ValueTuple`2&lt;object, string&gt;&gt; function) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.Object},AdaptiveExpressions.Options,System.ValueTuple{System.Object,System.String}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, function As Func(Of IReadOnlyList(Of Object), Options, ValueTuple(Of Object, String)))" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator : string * Func&lt;System.Collections.Generic.IReadOnlyList&lt;obj&gt;, AdaptiveExpressions.Options, ValueTuple&lt;obj, string&gt;&gt; -&gt; AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator" Usage="new AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator (type, function)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="function" Type="System.Func&lt;System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;,AdaptiveExpressions.Options,System.ValueTuple&lt;System.Object,System.String&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">Name of the built-in function.</param>
+        <param name="function">The string transformation function, it takes a list of objects, an <see cref="T:AdaptiveExpressions.Options" /> instance and returns a (object, string) tuple.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringTransformEvaluator (string type, Func&lt;System.Collections.Generic.IReadOnlyList&lt;object&gt;,object&gt; function);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class System.Func`2&lt;class System.Collections.Generic.IReadOnlyList`1&lt;object&gt;, object&gt; function) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.Object},System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, function As Func(Of IReadOnlyList(Of Object), Object))" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator : string * Func&lt;System.Collections.Generic.IReadOnlyList&lt;obj&gt;, obj&gt; -&gt; AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator" Usage="new AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator (type, function)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="function" Type="System.Func&lt;System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">Name of the built-in function.</param>
+        <param name="function">The string transformation function, it takes a list of objects and returns an object.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.BuiltinFunctions.StringTransformEvaluator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

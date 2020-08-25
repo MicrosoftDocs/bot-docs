@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
@@ -57,13 +59,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer AddFolders (this Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer explorer, string folder, string[] ignoreFolders = default, bool monitorChanges = true);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer AddFolders(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer explorer, string folder, string[] ignoreFolders, bool monitorChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProviderExtensions.AddFolders(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,System.String,System.String[],System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddFolders (explorer As ResourceExplorer, folder As String, Optional ignoreFolders As String() = null, Optional monitorChanges As Boolean = true) As ResourceExplorer" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AddFolders (explorer As ResourceExplorer, folder As String, Optional ignoreFolders As String() = Nothing, Optional monitorChanges As Boolean = true) As ResourceExplorer" />
       <MemberSignature Language="F#" Value="static member AddFolders : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * string * string[] * bool -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProviderExtensions.AddFolders (explorer, folder, ignoreFolders, monitorChanges)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
@@ -90,13 +93,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer LoadProject (this Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, string projectFile, string[] ignoreFolders = default, bool monitorChanges = true);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer LoadProject(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer resourceExplorer, string projectFile, string[] ignoreFolders, bool monitorChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProviderExtensions.LoadProject(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,System.String,System.String[],System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LoadProject (resourceExplorer As ResourceExplorer, projectFile As String, Optional ignoreFolders As String() = null, Optional monitorChanges As Boolean = true) As ResourceExplorer" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LoadProject (resourceExplorer As ResourceExplorer, projectFile As String, Optional ignoreFolders As String() = Nothing, Optional monitorChanges As Boolean = true) As ResourceExplorer" />
       <MemberSignature Language="F#" Value="static member LoadProject : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer * string * string[] * bool -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProviderExtensions.LoadProject (resourceExplorer, projectFile, ignoreFolders, monitorChanges)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>

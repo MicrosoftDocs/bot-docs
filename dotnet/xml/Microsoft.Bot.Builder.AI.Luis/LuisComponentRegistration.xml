@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.ComponentRegistration</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,10 +57,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.AI.Luis.LuisComponentRegistration/&lt;GetConverters&gt;d__1))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.AI.Luis.LuisComponentRegistration/&lt;GetConverters&gt;d__1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.AI.Luis.LuisComponentRegistration/&lt;GetConverters&gt;d__1))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -69,10 +73,12 @@
         <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
       </Parameters>
       <Docs>
-        <param name="resourceExplorer">To be added.</param>
-        <param name="sourceContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resourceExplorer">An instance of <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.</param>
+        <param name="sourceContext">An instance of <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />.</param>
+        <summary>
+            Gets a list of <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer" /> declarative type objects.
+            </summary>
+        <returns>A collection of <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType" /> of <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +96,12 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.AI.Luis.LuisComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.AI.Luis.LuisComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.AI.Luis.LuisComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,9 +111,11 @@
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
       </Parameters>
       <Docs>
-        <param name="resourceExplorer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resourceExplorer">An instance of <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.</param>
+        <summary>
+            Gets a list of <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer" /> declarative type objects.
+            </summary>
+        <returns>A collection of <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType" /> of <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

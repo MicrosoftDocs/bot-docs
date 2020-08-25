@@ -23,7 +23,7 @@
       <MemberSignature Language="C#" Value="public WebexAdapterOptions (string webexAccessToken, Uri webexPublicAddress, string webexSecret, string webexWebhookName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string webexAccessToken, class System.Uri webexPublicAddress, string webexSecret, string webexWebhookName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.#ctor(System.String,System.Uri,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (webexAccessToken As String, webexPublicAddress As Uri, webexSecret As String, Optional webexWebhookName As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (webexAccessToken As String, webexPublicAddress As Uri, webexSecret As String, Optional webexWebhookName As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions : string * Uri * string * string -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions (webexAccessToken, webexPublicAddress, webexSecret, webexWebhookName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

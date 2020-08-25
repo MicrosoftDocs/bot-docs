@@ -1,6 +1,6 @@
 ---
 title: Send a message the bot - Bot Service
-description: Learn how to send a message to the bot using Direct Line API v1.1. 
+description: Find out how to use version 1.1 of the Direct Line API to send messages to bots. Learn how to create and send messages and attachments. See expected responses.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

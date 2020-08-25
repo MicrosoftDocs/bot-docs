@@ -69,7 +69,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; AddRemainingFields (System.Collections.Generic.IEnumerable&lt;string&gt; exclude = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; AddRemainingFields(class System.Collections.Generic.IEnumerable`1&lt;string&gt; exclude) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.AddRemainingFields(System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function AddRemainingFields (Optional exclude As IEnumerable(Of String) = null) As IFormBuilder(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AddRemainingFields (Optional exclude As IEnumerable(Of String) = Nothing) As IFormBuilder(Of T)" />
       <MemberSignature Language="F#" Value="override this.AddRemainingFields : seq&lt;string&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;'T (requires 'T : null)&gt;" Usage="formBuilder.AddRemainingFields exclude" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -96,7 +96,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; Build (System.Reflection.Assembly resourceAssembly = default, string resourceName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; Build(class System.Reflection.Assembly resourceAssembly, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Build(System.Reflection.Assembly,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Build (Optional resourceAssembly As Assembly = null, Optional resourceName As String = null) As IForm(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Build (Optional resourceAssembly As Assembly = Nothing, Optional resourceName As String = Nothing) As IForm(Of T)" />
       <MemberSignature Language="F#" Value="override this.Build : System.Reflection.Assembly * string -&gt; Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt;" Usage="formBuilder.Build (resourceAssembly, resourceName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -125,7 +125,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = default, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, Optional active As ActiveDelegate(Of T) = Nothing, Optional validate As ValidateAsyncDelegate(Of T) = Nothing) As IFormBuilder(Of T)" />
       <MemberSignature Language="F#" Value="override this.Field : string * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;'T (requires 'T : null)&gt;" Usage="formBuilder.Field (name, active, validate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -156,7 +156,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = default, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, class Microsoft.Bot.Builder.FormFlow.PromptAttribute prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Field(System.String,Microsoft.Bot.Builder.FormFlow.PromptAttribute,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As PromptAttribute, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As PromptAttribute, Optional active As ActiveDelegate(Of T) = Nothing, Optional validate As ValidateAsyncDelegate(Of T) = Nothing) As IFormBuilder(Of T)" />
       <MemberSignature Language="F#" Value="override this.Field : string * Microsoft.Bot.Builder.FormFlow.PromptAttribute * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;'T (requires 'T : null)&gt;" Usage="formBuilder.Field (name, prompt, active, validate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -189,7 +189,7 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;T&gt; Field (string name, string prompt, Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;T&gt; active = default, Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;T&gt; validate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Bot.Builder.FormFlow.IFormBuilder`1&lt;!T&gt; Field(string name, string prompt, class Microsoft.Bot.Builder.FormFlow.ActiveDelegate`1&lt;!T&gt; active, class Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate`1&lt;!T&gt; validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormBuilder`1.Field(System.String,System.String,Microsoft.Bot.Builder.FormFlow.ActiveDelegate{`0},Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As String, Optional active As ActiveDelegate(Of T) = null, Optional validate As ValidateAsyncDelegate(Of T) = null) As IFormBuilder(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Field (name As String, prompt As String, Optional active As ActiveDelegate(Of T) = Nothing, Optional validate As ValidateAsyncDelegate(Of T) = Nothing) As IFormBuilder(Of T)" />
       <MemberSignature Language="F#" Value="override this.Field : string * string * Microsoft.Bot.Builder.FormFlow.ActiveDelegate&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.ValidateAsyncDelegate&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.IFormBuilder&lt;'T (requires 'T : null)&gt;" Usage="formBuilder.Field (name, prompt, active, validate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

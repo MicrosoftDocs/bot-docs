@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public SemanticAction (string id = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Connector.Entity&gt; entities = default, string state = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Connector.Entity&gt; entities, string state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SemanticAction.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,Microsoft.Bot.Connector.Entity},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional entities As IDictionary(Of String, Entity) = null, Optional state As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional entities As IDictionary(Of String, Entity) = Nothing, Optional state As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.SemanticAction : string * System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Connector.Entity&gt; * string -&gt; Microsoft.Bot.Connector.SemanticAction" Usage="new Microsoft.Bot.Connector.SemanticAction (id, entities, state)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -79,7 +79,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entities")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="entities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="entities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -107,7 +108,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +134,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

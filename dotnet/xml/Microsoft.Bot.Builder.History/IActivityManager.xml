@@ -23,7 +23,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteBeforeAsync (DateTime oldest, System.Threading.CancellationToken cancel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteBeforeAsync(valuetype System.DateTime oldest, valuetype System.Threading.CancellationToken cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.IActivityManager.DeleteBeforeAsync(System.DateTime,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteBeforeAsync (oldest As DateTime, Optional cancel As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteBeforeAsync (oldest As DateTime, Optional cancel As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteBeforeAsync : DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iActivityManager.DeleteBeforeAsync (oldest, cancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -54,7 +54,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteConversationAsync (string channelId, string conversationId, System.Threading.CancellationToken cancel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteConversationAsync(string channelId, string conversationId, valuetype System.Threading.CancellationToken cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.IActivityManager.DeleteConversationAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteConversationAsync (channelId As String, conversationId As String, Optional cancel As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteConversationAsync (channelId As String, conversationId As String, Optional cancel As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteConversationAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iActivityManager.DeleteConversationAsync (channelId, conversationId, cancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -87,7 +87,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteUserActivitiesAsync (string userId, System.Threading.CancellationToken cancel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteUserActivitiesAsync(string userId, valuetype System.Threading.CancellationToken cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.IActivityManager.DeleteUserActivitiesAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteUserActivitiesAsync (userId As String, Optional cancel As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteUserActivitiesAsync (userId As String, Optional cancel As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteUserActivitiesAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iActivityManager.DeleteUserActivitiesAsync (userId, cancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

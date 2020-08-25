@@ -17,10 +17,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Enum | System.AttributeTargets.Field | System.AttributeTargets.Property)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Enum | System.AttributeTargets.Field | System.AttributeTargets.Property)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Enum | System.AttributeTargets.Field | System.AttributeTargets.Property)</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,7 +36,7 @@
       <MemberSignature Language="C#" Value="public DescribeAttribute (string description = default, string image = default, string message = default, string title = default, string subTitle = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, string image, string message, string title, string subTitle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.DescribeAttribute.#ctor(System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = null, Optional image As String = null, Optional message As String = null, Optional title As String = null, Optional subTitle As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = Nothing, Optional image As String = Nothing, Optional message As String = Nothing, Optional title As String = Nothing, Optional subTitle As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.DescribeAttribute : string * string * string * string * string -&gt; Microsoft.Bot.Builder.FormFlow.DescribeAttribute" Usage="new Microsoft.Bot.Builder.FormFlow.DescribeAttribute (description, image, message, title, subTitle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

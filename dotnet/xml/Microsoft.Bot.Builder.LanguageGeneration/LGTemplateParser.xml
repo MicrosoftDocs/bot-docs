@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.Parser</BaseTypeName>
@@ -15,10 +16,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,6 +40,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="input" Type="Antlr4.Runtime.ITokenStream" />
@@ -58,6 +62,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Atn.ATN</ReturnType>
@@ -78,6 +83,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -98,10 +104,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,21 +123,22 @@
       </Docs>
     </Member>
     <Member MemberName="CASE">
-      <MemberSignature Language="C#" Value="public const int CASE = 16;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CASE = (16)" />
+      <MemberSignature Language="C#" Value="public const int CASE = 14;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CASE = (14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.CASE" />
-      <MemberSignature Language="VB.NET" Value="Public Const CASE As Integer  = 16" />
+      <MemberSignature Language="VB.NET" Value="Public Const CASE As Integer  = 14" />
       <MemberSignature Language="F#" Value="val mutable CASE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.CASE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>16</MemberValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -146,6 +155,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -167,10 +177,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,6 +206,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -205,21 +218,22 @@
       </Docs>
     </Member>
     <Member MemberName="DEFAULT">
-      <MemberSignature Language="C#" Value="public const int DEFAULT = 17;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DEFAULT = (17)" />
+      <MemberSignature Language="C#" Value="public const int DEFAULT = 15;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DEFAULT = (15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.DEFAULT" />
-      <MemberSignature Language="VB.NET" Value="Public Const DEFAULT As Integer  = 17" />
+      <MemberSignature Language="VB.NET" Value="Public Const DEFAULT As Integer  = 15" />
       <MemberSignature Language="F#" Value="val mutable DEFAULT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.DEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>17</MemberValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -236,6 +250,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
@@ -246,42 +261,44 @@
       </Docs>
     </Member>
     <Member MemberName="ELSE">
-      <MemberSignature Language="C#" Value="public const int ELSE = 14;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ELSE = (14)" />
+      <MemberSignature Language="C#" Value="public const int ELSE = 12;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ELSE = (12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ELSE" />
-      <MemberSignature Language="VB.NET" Value="Public Const ELSE As Integer  = 14" />
+      <MemberSignature Language="VB.NET" Value="Public Const ELSE As Integer  = 12" />
       <MemberSignature Language="F#" Value="val mutable ELSE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ELSE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>14</MemberValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ELSEIF">
-      <MemberSignature Language="C#" Value="public const int ELSEIF = 13;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ELSEIF = (13)" />
+      <MemberSignature Language="C#" Value="public const int ELSEIF = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ELSEIF = (11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ELSEIF" />
-      <MemberSignature Language="VB.NET" Value="Public Const ELSEIF As Integer  = 13" />
+      <MemberSignature Language="VB.NET" Value="Public Const ELSEIF As Integer  = 11" />
       <MemberSignature Language="F#" Value="val mutable ELSEIF : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ELSEIF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>13</MemberValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -298,10 +315,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -325,10 +344,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -352,10 +373,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -369,107 +392,144 @@
       </Docs>
     </Member>
     <Member MemberName="ESCAPE_CHARACTER">
-      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 18;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (18)" />
+      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ESCAPE_CHARACTER" />
-      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 18" />
+      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 16" />
       <MemberSignature Language="F#" Value="val mutable ESCAPE_CHARACTER : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ESCAPE_CHARACTER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>18</MemberValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ESCAPE_CHARACTER_IN_STRUCTURE_BODY">
-      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER_IN_STRUCTURE_BODY = 33;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER_IN_STRUCTURE_BODY = (33)" />
+      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER_IN_STRUCTURE_BODY = 31;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER_IN_STRUCTURE_BODY = (31)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ESCAPE_CHARACTER_IN_STRUCTURE_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER_IN_STRUCTURE_BODY As Integer  = 33" />
+      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER_IN_STRUCTURE_BODY As Integer  = 31" />
       <MemberSignature Language="F#" Value="val mutable ESCAPE_CHARACTER_IN_STRUCTURE_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ESCAPE_CHARACTER_IN_STRUCTURE_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>33</MemberValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="expression">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext expression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionContext expression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.expression" />
+      <MemberSignature Language="VB.NET" Value="Public Function expression () As LGTemplateParser.ExpressionContext" />
+      <MemberSignature Language="F#" Value="member this.expression : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext" Usage="lGTemplateParser.expression " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EXPRESSION">
-      <MemberSignature Language="C#" Value="public const int EXPRESSION = 19;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EXPRESSION = (19)" />
+      <MemberSignature Language="C#" Value="public const int EXPRESSION = 17;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EXPRESSION = (17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.EXPRESSION" />
-      <MemberSignature Language="VB.NET" Value="Public Const EXPRESSION As Integer  = 19" />
+      <MemberSignature Language="VB.NET" Value="Public Const EXPRESSION As Integer  = 17" />
       <MemberSignature Language="F#" Value="val mutable EXPRESSION : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.EXPRESSION" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>19</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EXPRESSION_FRAGMENT">
-      <MemberSignature Language="C#" Value="public const int EXPRESSION_FRAGMENT = 6;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EXPRESSION_FRAGMENT = (6)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.EXPRESSION_FRAGMENT" />
-      <MemberSignature Language="VB.NET" Value="Public Const EXPRESSION_FRAGMENT As Integer  = 6" />
-      <MemberSignature Language="F#" Value="val mutable EXPRESSION_FRAGMENT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.EXPRESSION_FRAGMENT" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>6</MemberValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EXPRESSION_IN_STRUCTURE_BODY">
-      <MemberSignature Language="C#" Value="public const int EXPRESSION_IN_STRUCTURE_BODY = 34;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EXPRESSION_IN_STRUCTURE_BODY = (34)" />
+      <MemberSignature Language="C#" Value="public const int EXPRESSION_IN_STRUCTURE_BODY = 32;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EXPRESSION_IN_STRUCTURE_BODY = (32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.EXPRESSION_IN_STRUCTURE_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const EXPRESSION_IN_STRUCTURE_BODY As Integer  = 34" />
+      <MemberSignature Language="VB.NET" Value="Public Const EXPRESSION_IN_STRUCTURE_BODY As Integer  = 32" />
       <MemberSignature Language="F#" Value="val mutable EXPRESSION_IN_STRUCTURE_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.EXPRESSION_IN_STRUCTURE_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>34</MemberValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="expressionInStructure">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext expressionInStructure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionInStructureContext expressionInStructure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.expressionInStructure" />
+      <MemberSignature Language="VB.NET" Value="Public Function expressionInStructure () As LGTemplateParser.ExpressionInStructureContext" />
+      <MemberSignature Language="F#" Value="member this.expressionInStructure : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext" Usage="lGTemplateParser.expressionInStructure " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionInStructureContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,6 +544,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -495,21 +556,22 @@
       </Docs>
     </Member>
     <Member MemberName="IF">
-      <MemberSignature Language="C#" Value="public const int IF = 12;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IF = (12)" />
+      <MemberSignature Language="C#" Value="public const int IF = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IF = (10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IF" />
-      <MemberSignature Language="VB.NET" Value="Public Const IF As Integer  = 12" />
+      <MemberSignature Language="VB.NET" Value="Public Const IF As Integer  = 10" />
       <MemberSignature Language="F#" Value="val mutable IF : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.IF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>12</MemberValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -526,10 +588,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -553,10 +617,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -580,10 +646,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -597,21 +665,22 @@
       </Docs>
     </Member>
     <Member MemberName="INVALID_TOKEN">
-      <MemberSignature Language="C#" Value="public const int INVALID_TOKEN = 8;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_TOKEN = (8)" />
+      <MemberSignature Language="C#" Value="public const int INVALID_TOKEN = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_TOKEN = (6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.INVALID_TOKEN" />
-      <MemberSignature Language="VB.NET" Value="Public Const INVALID_TOKEN As Integer  = 8" />
+      <MemberSignature Language="VB.NET" Value="Public Const INVALID_TOKEN As Integer  = 6" />
       <MemberSignature Language="F#" Value="val mutable INVALID_TOKEN : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.INVALID_TOKEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>8</MemberValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -628,10 +697,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -655,10 +726,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -672,63 +745,66 @@
       </Docs>
     </Member>
     <Member MemberName="LEFT_SQUARE_BRACKET">
-      <MemberSignature Language="C#" Value="public const int LEFT_SQUARE_BRACKET = 7;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LEFT_SQUARE_BRACKET = (7)" />
+      <MemberSignature Language="C#" Value="public const int LEFT_SQUARE_BRACKET = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LEFT_SQUARE_BRACKET = (5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.LEFT_SQUARE_BRACKET" />
-      <MemberSignature Language="VB.NET" Value="Public Const LEFT_SQUARE_BRACKET As Integer  = 7" />
+      <MemberSignature Language="VB.NET" Value="Public Const LEFT_SQUARE_BRACKET As Integer  = 5" />
       <MemberSignature Language="F#" Value="val mutable LEFT_SQUARE_BRACKET : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.LEFT_SQUARE_BRACKET" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>7</MemberValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MULTILINE_PREFIX">
-      <MemberSignature Language="C#" Value="public const int MULTILINE_PREFIX = 10;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_PREFIX = (10)" />
+      <MemberSignature Language="C#" Value="public const int MULTILINE_PREFIX = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_PREFIX = (8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.MULTILINE_PREFIX" />
-      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_PREFIX As Integer  = 10" />
+      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_PREFIX As Integer  = 8" />
       <MemberSignature Language="F#" Value="val mutable MULTILINE_PREFIX : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.MULTILINE_PREFIX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>10</MemberValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MULTILINE_SUFFIX">
-      <MemberSignature Language="C#" Value="public const int MULTILINE_SUFFIX = 21;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_SUFFIX = (21)" />
+      <MemberSignature Language="C#" Value="public const int MULTILINE_SUFFIX = 19;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_SUFFIX = (19)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.MULTILINE_SUFFIX" />
-      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_SUFFIX As Integer  = 21" />
+      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_SUFFIX As Integer  = 19" />
       <MemberSignature Language="F#" Value="val mutable MULTILINE_SUFFIX : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.MULTILINE_SUFFIX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>21</MemberValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -745,6 +821,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -756,42 +833,44 @@
       </Docs>
     </Member>
     <Member MemberName="NEWLINE_IN_BODY">
-      <MemberSignature Language="C#" Value="public const int NEWLINE_IN_BODY = 11;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE_IN_BODY = (11)" />
+      <MemberSignature Language="C#" Value="public const int NEWLINE_IN_BODY = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE_IN_BODY = (9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NEWLINE_IN_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE_IN_BODY As Integer  = 11" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE_IN_BODY As Integer  = 9" />
       <MemberSignature Language="F#" Value="val mutable NEWLINE_IN_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NEWLINE_IN_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>11</MemberValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NEWLINE_IN_STRUCTURE_NAME">
-      <MemberSignature Language="C#" Value="public const int NEWLINE_IN_STRUCTURE_NAME = 23;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE_IN_STRUCTURE_NAME = (23)" />
+      <MemberSignature Language="C#" Value="public const int NEWLINE_IN_STRUCTURE_NAME = 21;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE_IN_STRUCTURE_NAME = (21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NEWLINE_IN_STRUCTURE_NAME" />
-      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE_IN_STRUCTURE_NAME As Integer  = 23" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE_IN_STRUCTURE_NAME As Integer  = 21" />
       <MemberSignature Language="F#" Value="val mutable NEWLINE_IN_STRUCTURE_NAME : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NEWLINE_IN_STRUCTURE_NAME" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>23</MemberValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -808,10 +887,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -835,62 +916,16 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OBJECT_DEFINITION">
-      <MemberSignature Language="C#" Value="public const int OBJECT_DEFINITION = 5;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 OBJECT_DEFINITION = (5)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.OBJECT_DEFINITION" />
-      <MemberSignature Language="VB.NET" Value="Public Const OBJECT_DEFINITION As Integer  = 5" />
-      <MemberSignature Language="F#" Value="val mutable OBJECT_DEFINITION : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.OBJECT_DEFINITION" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>5</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="objectStructureLine">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext objectStructureLine ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ObjectStructureLineContext objectStructureLine() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.objectStructureLine" />
-      <MemberSignature Language="VB.NET" Value="Public Function objectStructureLine () As LGTemplateParser.ObjectStructureLineContext" />
-      <MemberSignature Language="F#" Value="member this.objectStructureLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext" Usage="lGTemplateParser.objectStructureLine " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ObjectStructureLineContext</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -910,6 +945,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -931,6 +967,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -952,6 +989,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -973,6 +1011,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -984,58 +1023,79 @@
       </Docs>
     </Member>
     <Member MemberName="RULE_errorTemplateString">
-      <MemberSignature Language="C#" Value="public const int RULE_errorTemplateString = 14;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_errorTemplateString = (14)" />
+      <MemberSignature Language="C#" Value="public const int RULE_errorTemplateString = 13;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_errorTemplateString = (13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_errorTemplateString" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_errorTemplateString As Integer  = 14" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_errorTemplateString As Integer  = 13" />
       <MemberSignature Language="F#" Value="val mutable RULE_errorTemplateString : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_errorTemplateString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>14</MemberValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_expression">
+      <MemberSignature Language="C#" Value="public const int RULE_expression = 20;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_expression = (20)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_expression" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_expression As Integer  = 20" />
+      <MemberSignature Language="F#" Value="val mutable RULE_expression : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_expression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_expressionInStructure">
+      <MemberSignature Language="C#" Value="public const int RULE_expressionInStructure = 21;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_expressionInStructure = (21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_expressionInStructure" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_expressionInStructure As Integer  = 21" />
+      <MemberSignature Language="F#" Value="val mutable RULE_expressionInStructure : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_expressionInStructure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RULE_ifCondition">
-      <MemberSignature Language="C#" Value="public const int RULE_ifCondition = 17;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_ifCondition = (17)" />
+      <MemberSignature Language="C#" Value="public const int RULE_ifCondition = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_ifCondition = (16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifCondition" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_ifCondition As Integer  = 17" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_ifCondition As Integer  = 16" />
       <MemberSignature Language="F#" Value="val mutable RULE_ifCondition : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifCondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>17</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RULE_ifConditionRule">
-      <MemberSignature Language="C#" Value="public const int RULE_ifConditionRule = 16;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_ifConditionRule = (16)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifConditionRule" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_ifConditionRule As Integer  = 16" />
-      <MemberSignature Language="F#" Value="val mutable RULE_ifConditionRule : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifConditionRule" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1046,22 +1106,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RULE_ifConditionRule">
+      <MemberSignature Language="C#" Value="public const int RULE_ifConditionRule = 15;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_ifConditionRule = (15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifConditionRule" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_ifConditionRule As Integer  = 15" />
+      <MemberSignature Language="F#" Value="val mutable RULE_ifConditionRule : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifConditionRule" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RULE_ifElseTemplateBody">
-      <MemberSignature Language="C#" Value="public const int RULE_ifElseTemplateBody = 15;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_ifElseTemplateBody = (15)" />
+      <MemberSignature Language="C#" Value="public const int RULE_ifElseTemplateBody = 14;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_ifElseTemplateBody = (14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifElseTemplateBody" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_ifElseTemplateBody As Integer  = 15" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_ifElseTemplateBody As Integer  = 14" />
       <MemberSignature Language="F#" Value="val mutable RULE_ifElseTemplateBody : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_ifElseTemplateBody" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>15</MemberValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1078,6 +1161,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1099,6 +1183,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1110,63 +1195,44 @@
       </Docs>
     </Member>
     <Member MemberName="RULE_normalTemplateBody">
-      <MemberSignature Language="C#" Value="public const int RULE_normalTemplateBody = 11;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_normalTemplateBody = (11)" />
+      <MemberSignature Language="C#" Value="public const int RULE_normalTemplateBody = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_normalTemplateBody = (10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_normalTemplateBody" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_normalTemplateBody As Integer  = 11" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_normalTemplateBody As Integer  = 10" />
       <MemberSignature Language="F#" Value="val mutable RULE_normalTemplateBody : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_normalTemplateBody" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>11</MemberValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RULE_normalTemplateString">
-      <MemberSignature Language="C#" Value="public const int RULE_normalTemplateString = 13;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_normalTemplateString = (13)" />
+      <MemberSignature Language="C#" Value="public const int RULE_normalTemplateString = 12;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_normalTemplateString = (12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_normalTemplateString" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_normalTemplateString As Integer  = 13" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_normalTemplateString As Integer  = 12" />
       <MemberSignature Language="F#" Value="val mutable RULE_normalTemplateString : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_normalTemplateString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>13</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RULE_objectStructureLine">
-      <MemberSignature Language="C#" Value="public const int RULE_objectStructureLine = 9;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_objectStructureLine = (9)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_objectStructureLine" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_objectStructureLine As Integer  = 9" />
-      <MemberSignature Language="F#" Value="val mutable RULE_objectStructureLine : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_objectStructureLine" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>9</MemberValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1183,6 +1249,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1194,21 +1261,22 @@
       </Docs>
     </Member>
     <Member MemberName="RULE_structuredBodyEndLine">
-      <MemberSignature Language="C#" Value="public const int RULE_structuredBodyEndLine = 10;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_structuredBodyEndLine = (10)" />
+      <MemberSignature Language="C#" Value="public const int RULE_structuredBodyEndLine = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_structuredBodyEndLine = (9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_structuredBodyEndLine" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_structuredBodyEndLine As Integer  = 10" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_structuredBodyEndLine As Integer  = 9" />
       <MemberSignature Language="F#" Value="val mutable RULE_structuredBodyEndLine : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_structuredBodyEndLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>10</MemberValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1225,6 +1293,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1246,6 +1315,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1257,58 +1327,17 @@
       </Docs>
     </Member>
     <Member MemberName="RULE_switchCaseRule">
-      <MemberSignature Language="C#" Value="public const int RULE_switchCaseRule = 19;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_switchCaseRule = (19)" />
+      <MemberSignature Language="C#" Value="public const int RULE_switchCaseRule = 18;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_switchCaseRule = (18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseRule" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_switchCaseRule As Integer  = 19" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_switchCaseRule As Integer  = 18" />
       <MemberSignature Language="F#" Value="val mutable RULE_switchCaseRule : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseRule" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>19</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RULE_switchCaseStat">
-      <MemberSignature Language="C#" Value="public const int RULE_switchCaseStat = 20;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_switchCaseStat = (20)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseStat" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_switchCaseStat As Integer  = 20" />
-      <MemberSignature Language="F#" Value="val mutable RULE_switchCaseStat : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseStat" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>20</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RULE_switchCaseTemplateBody">
-      <MemberSignature Language="C#" Value="public const int RULE_switchCaseTemplateBody = 18;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_switchCaseTemplateBody = (18)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseTemplateBody" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_switchCaseTemplateBody As Integer  = 18" />
-      <MemberSignature Language="F#" Value="val mutable RULE_switchCaseTemplateBody : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseTemplateBody" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1319,22 +1348,67 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RULE_switchCaseStat">
+      <MemberSignature Language="C#" Value="public const int RULE_switchCaseStat = 19;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_switchCaseStat = (19)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseStat" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_switchCaseStat As Integer  = 19" />
+      <MemberSignature Language="F#" Value="val mutable RULE_switchCaseStat : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseStat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RULE_switchCaseTemplateBody">
+      <MemberSignature Language="C#" Value="public const int RULE_switchCaseTemplateBody = 17;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_switchCaseTemplateBody = (17)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseTemplateBody" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_switchCaseTemplateBody As Integer  = 17" />
+      <MemberSignature Language="F#" Value="val mutable RULE_switchCaseTemplateBody : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_switchCaseTemplateBody" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RULE_templateString">
-      <MemberSignature Language="C#" Value="public const int RULE_templateString = 12;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_templateString = (12)" />
+      <MemberSignature Language="C#" Value="public const int RULE_templateString = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RULE_templateString = (11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_templateString" />
-      <MemberSignature Language="VB.NET" Value="Public Const RULE_templateString As Integer  = 12" />
+      <MemberSignature Language="VB.NET" Value="Public Const RULE_templateString As Integer  = 11" />
       <MemberSignature Language="F#" Value="val mutable RULE_templateString : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.RULE_templateString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>12</MemberValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1351,6 +1425,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -1371,6 +1446,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -1392,6 +1468,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1403,100 +1480,17 @@
       </Docs>
     </Member>
     <Member MemberName="STRUCTURE_EQUALS">
-      <MemberSignature Language="C#" Value="public const int STRUCTURE_EQUALS = 31;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_EQUALS = (31)" />
+      <MemberSignature Language="C#" Value="public const int STRUCTURE_EQUALS = 29;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_EQUALS = (29)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_EQUALS" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_EQUALS As Integer  = 31" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_EQUALS As Integer  = 29" />
       <MemberSignature Language="F#" Value="val mutable STRUCTURE_EQUALS : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_EQUALS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>31</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="STRUCTURE_IDENTIFIER">
-      <MemberSignature Language="C#" Value="public const int STRUCTURE_IDENTIFIER = 30;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_IDENTIFIER = (30)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_IDENTIFIER" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_IDENTIFIER As Integer  = 30" />
-      <MemberSignature Language="F#" Value="val mutable STRUCTURE_IDENTIFIER : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_IDENTIFIER" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>30</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="STRUCTURE_NAME">
-      <MemberSignature Language="C#" Value="public const int STRUCTURE_NAME = 24;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_NAME = (24)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_NAME" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_NAME As Integer  = 24" />
-      <MemberSignature Language="F#" Value="val mutable STRUCTURE_NAME : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_NAME" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>24</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="STRUCTURE_OR_MARK">
-      <MemberSignature Language="C#" Value="public const int STRUCTURE_OR_MARK = 32;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_OR_MARK = (32)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_OR_MARK" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_OR_MARK As Integer  = 32" />
-      <MemberSignature Language="F#" Value="val mutable STRUCTURE_OR_MARK : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_OR_MARK" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <MemberValue>32</MemberValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="STRUCTURED_BODY_END">
-      <MemberSignature Language="C#" Value="public const int STRUCTURED_BODY_END = 29;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURED_BODY_END = (29)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_BODY_END" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURED_BODY_END As Integer  = 29" />
-      <MemberSignature Language="F#" Value="val mutable STRUCTURED_BODY_END : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_BODY_END" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1507,43 +1501,133 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="STRUCTURE_IDENTIFIER">
+      <MemberSignature Language="C#" Value="public const int STRUCTURE_IDENTIFIER = 28;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_IDENTIFIER = (28)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_IDENTIFIER" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_IDENTIFIER As Integer  = 28" />
+      <MemberSignature Language="F#" Value="val mutable STRUCTURE_IDENTIFIER : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_IDENTIFIER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRUCTURE_NAME">
+      <MemberSignature Language="C#" Value="public const int STRUCTURE_NAME = 22;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_NAME = (22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_NAME" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_NAME As Integer  = 22" />
+      <MemberSignature Language="F#" Value="val mutable STRUCTURE_NAME : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_NAME" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRUCTURE_OR_MARK">
+      <MemberSignature Language="C#" Value="public const int STRUCTURE_OR_MARK = 30;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURE_OR_MARK = (30)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_OR_MARK" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURE_OR_MARK As Integer  = 30" />
+      <MemberSignature Language="F#" Value="val mutable STRUCTURE_OR_MARK : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURE_OR_MARK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STRUCTURED_BODY_END">
+      <MemberSignature Language="C#" Value="public const int STRUCTURED_BODY_END = 27;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURED_BODY_END = (27)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_BODY_END" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURED_BODY_END As Integer  = 27" />
+      <MemberSignature Language="F#" Value="val mutable STRUCTURED_BODY_END : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_BODY_END" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="STRUCTURED_COMMENTS">
-      <MemberSignature Language="C#" Value="public const int STRUCTURED_COMMENTS = 26;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURED_COMMENTS = (26)" />
+      <MemberSignature Language="C#" Value="public const int STRUCTURED_COMMENTS = 24;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURED_COMMENTS = (24)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_COMMENTS" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURED_COMMENTS As Integer  = 26" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURED_COMMENTS As Integer  = 24" />
       <MemberSignature Language="F#" Value="val mutable STRUCTURED_COMMENTS : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_COMMENTS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>26</MemberValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="STRUCTURED_NEWLINE">
-      <MemberSignature Language="C#" Value="public const int STRUCTURED_NEWLINE = 28;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURED_NEWLINE = (28)" />
+      <MemberSignature Language="C#" Value="public const int STRUCTURED_NEWLINE = 26;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRUCTURED_NEWLINE = (26)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_NEWLINE" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURED_NEWLINE As Integer  = 28" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRUCTURED_NEWLINE As Integer  = 26" />
       <MemberSignature Language="F#" Value="val mutable STRUCTURED_NEWLINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.STRUCTURED_NEWLINE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>28</MemberValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1560,10 +1644,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1587,10 +1673,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1614,10 +1702,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1641,10 +1731,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1658,21 +1750,22 @@
       </Docs>
     </Member>
     <Member MemberName="SWITCH">
-      <MemberSignature Language="C#" Value="public const int SWITCH = 15;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SWITCH = (15)" />
+      <MemberSignature Language="C#" Value="public const int SWITCH = 13;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SWITCH = (13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SWITCH" />
-      <MemberSignature Language="VB.NET" Value="Public Const SWITCH As Integer  = 15" />
+      <MemberSignature Language="VB.NET" Value="Public Const SWITCH As Integer  = 13" />
       <MemberSignature Language="F#" Value="val mutable SWITCH : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.SWITCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>15</MemberValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1689,10 +1782,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1716,10 +1811,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1743,10 +1840,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1770,10 +1869,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.RuleVersion(0)</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.RuleVersion(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.RuleVersion(0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1787,63 +1888,66 @@
       </Docs>
     </Member>
     <Member MemberName="TEXT">
-      <MemberSignature Language="C#" Value="public const int TEXT = 20;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT = (20)" />
+      <MemberSignature Language="C#" Value="public const int TEXT = 18;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT = (18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.TEXT" />
-      <MemberSignature Language="VB.NET" Value="Public Const TEXT As Integer  = 20" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEXT As Integer  = 18" />
       <MemberSignature Language="F#" Value="val mutable TEXT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.TEXT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>20</MemberValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TEXT_IN_STRUCTURE_BODY">
-      <MemberSignature Language="C#" Value="public const int TEXT_IN_STRUCTURE_BODY = 35;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_IN_STRUCTURE_BODY = (35)" />
+      <MemberSignature Language="C#" Value="public const int TEXT_IN_STRUCTURE_BODY = 33;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_IN_STRUCTURE_BODY = (33)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.TEXT_IN_STRUCTURE_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const TEXT_IN_STRUCTURE_BODY As Integer  = 35" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEXT_IN_STRUCTURE_BODY As Integer  = 33" />
       <MemberSignature Language="F#" Value="val mutable TEXT_IN_STRUCTURE_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.TEXT_IN_STRUCTURE_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>35</MemberValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TEXT_IN_STRUCTURE_NAME">
-      <MemberSignature Language="C#" Value="public const int TEXT_IN_STRUCTURE_NAME = 25;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_IN_STRUCTURE_NAME = (25)" />
+      <MemberSignature Language="C#" Value="public const int TEXT_IN_STRUCTURE_NAME = 23;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_IN_STRUCTURE_NAME = (23)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.TEXT_IN_STRUCTURE_NAME" />
-      <MemberSignature Language="VB.NET" Value="Public Const TEXT_IN_STRUCTURE_NAME As Integer  = 25" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEXT_IN_STRUCTURE_NAME As Integer  = 23" />
       <MemberSignature Language="F#" Value="val mutable TEXT_IN_STRUCTURE_NAME : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.TEXT_IN_STRUCTURE_NAME" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>25</MemberValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1860,10 +1964,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use Vocabulary instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use Vocabulary instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use Vocabulary instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1885,10 +1991,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use IRecognizer.Vocabulary instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use IRecognizer.Vocabulary instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use IRecognizer.Vocabulary instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1911,10 +2019,12 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1937,6 +2047,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1948,63 +2059,66 @@
       </Docs>
     </Member>
     <Member MemberName="WS_IN_BODY">
-      <MemberSignature Language="C#" Value="public const int WS_IN_BODY = 9;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WS_IN_BODY = (9)" />
+      <MemberSignature Language="C#" Value="public const int WS_IN_BODY = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WS_IN_BODY = (7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.WS_IN_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const WS_IN_BODY As Integer  = 9" />
+      <MemberSignature Language="VB.NET" Value="Public Const WS_IN_BODY As Integer  = 7" />
       <MemberSignature Language="F#" Value="val mutable WS_IN_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.WS_IN_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>9</MemberValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WS_IN_STRUCTURE_BODY">
-      <MemberSignature Language="C#" Value="public const int WS_IN_STRUCTURE_BODY = 27;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WS_IN_STRUCTURE_BODY = (27)" />
+      <MemberSignature Language="C#" Value="public const int WS_IN_STRUCTURE_BODY = 25;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WS_IN_STRUCTURE_BODY = (25)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.WS_IN_STRUCTURE_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const WS_IN_STRUCTURE_BODY As Integer  = 27" />
+      <MemberSignature Language="VB.NET" Value="Public Const WS_IN_STRUCTURE_BODY As Integer  = 25" />
       <MemberSignature Language="F#" Value="val mutable WS_IN_STRUCTURE_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.WS_IN_STRUCTURE_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>27</MemberValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WS_IN_STRUCTURE_NAME">
-      <MemberSignature Language="C#" Value="public const int WS_IN_STRUCTURE_NAME = 22;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WS_IN_STRUCTURE_NAME = (22)" />
+      <MemberSignature Language="C#" Value="public const int WS_IN_STRUCTURE_NAME = 20;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WS_IN_STRUCTURE_NAME = (20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.WS_IN_STRUCTURE_NAME" />
-      <MemberSignature Language="VB.NET" Value="Public Const WS_IN_STRUCTURE_NAME As Integer  = 22" />
+      <MemberSignature Language="VB.NET" Value="Public Const WS_IN_STRUCTURE_NAME As Integer  = 20" />
       <MemberSignature Language="F#" Value="val mutable WS_IN_STRUCTURE_NAME : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.WS_IN_STRUCTURE_NAME" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>22</MemberValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>

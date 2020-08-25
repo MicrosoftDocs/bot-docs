@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,12 +24,13 @@
       <MemberSignature Language="C#" Value="public ExpressionEvaluator (string type, AdaptiveExpressions.EvaluateExpressionDelegate evaluator, AdaptiveExpressions.ReturnType returnType = AdaptiveExpressions.ReturnType.Object, AdaptiveExpressions.ValidateExpressionDelegate validator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class AdaptiveExpressions.EvaluateExpressionDelegate evaluator, valuetype AdaptiveExpressions.ReturnType returnType, class AdaptiveExpressions.ValidateExpressionDelegate validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ExpressionEvaluator.#ctor(System.String,AdaptiveExpressions.EvaluateExpressionDelegate,AdaptiveExpressions.ReturnType,AdaptiveExpressions.ValidateExpressionDelegate)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, evaluator As EvaluateExpressionDelegate, Optional returnType As ReturnType = AdaptiveExpressions.ReturnType.Object, Optional validator As ValidateExpressionDelegate = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, evaluator As EvaluateExpressionDelegate, Optional returnType As ReturnType = AdaptiveExpressions.ReturnType.Object, Optional validator As ValidateExpressionDelegate = Nothing)" />
       <MemberSignature Language="F#" Value="new AdaptiveExpressions.ExpressionEvaluator : string * AdaptiveExpressions.EvaluateExpressionDelegate * AdaptiveExpressions.ReturnType * AdaptiveExpressions.ValidateExpressionDelegate -&gt; AdaptiveExpressions.ExpressionEvaluator" Usage="new AdaptiveExpressions.ExpressionEvaluator (type, evaluator, returnType, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.ExpressionEvaluator</ReturnType>
@@ -86,6 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.ReturnType</ReturnType>
@@ -110,14 +114,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>String value represents the function signature. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,12 +138,14 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.Object,System.String&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "error" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "error" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "value", "error" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
@@ -166,6 +175,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -190,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
