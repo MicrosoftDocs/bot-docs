@@ -83,7 +83,7 @@ Start by adding a string constant with the name of your custom function. The nam
 
 **bot.js**
 
-[!code-javascript[function-name](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=6-7)]
+[!code-javascript[function-name](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=10)]
 
 > [!IMPORTANT]
 > Prefix your functions to avoid namespace collisions.
