@@ -176,7 +176,6 @@ Finally the `WelcomeCard` calls the `AdaptiveCard` template to return the Adapti
 
 For more information about the `ActivityAttachment()` function, read [inject functions from the LG library](functions-injected-from-language-generation.md)
 
----
 
 ## Add LUIS to your bot
 
@@ -188,7 +187,7 @@ After updating your bot logic and LG templates you are ready to add LUIS to your
 
 ## Test the bot
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 
 1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://aka.ms/cs-core-sample), [JS Sample](https://aka.ms/js-core-sample) or [Python Sample](https://aka.ms/python-core-sample).
 
