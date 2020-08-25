@@ -22,7 +22,7 @@ For bot applications, the following support is provided:
 - activity definition
 - card definition
 
-[Bot Framework activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md) includes several customizable fields. The properties shown below are the most used and are configurable via an Activity template definition:
+The [Bot Framework activity](https://aka.ms/botSpecs-activitySchema) template includes several customizable fields. The following properties are the most commonly used and are configurable via an activity template definition:
 
 | Property          | Use case                                                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -89,9 +89,9 @@ Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/pla
 
 > [!NOTE]
 >
-> LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-protocol/botframework-channel.json#L1493). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
+> LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://aka.ms/botSpecs-cardSchema). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
 >
->The values defined in either the `image` or `images` field in HeroCards and thumbnail cards are converted to an images list. For the other types of cards, the last defined value will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0), or array in the format using **|**.
+>The values defined in all of the `image` and `images` field in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
 
 Below is the combination of the previous templates:
 
@@ -406,7 +406,7 @@ Here's an example:
 ```
 
 [more test samples][4]
-
+-->
 ## Additional Information
 - [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
 - [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
