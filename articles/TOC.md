@@ -79,7 +79,7 @@
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Language Generation
 #### [Use language generation templates in your bot](language-generation/bot-builder-howto-use-lg-templates.md)
-#### [Use custom functions in language generation](language-generation/bot-builder-howto-use-custom-functions-lg.md)
+#### [Use custom functions in language generation](language-generation/bot-builder-howto-lg-use-custom-functions.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
 #### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)

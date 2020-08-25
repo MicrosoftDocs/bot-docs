@@ -38,7 +38,7 @@ This article uses a bottom up approach to adding and using custom functions in L
 
 ### [C#](#tab/cs)
 
-To use adaptive expressions and LG, install the **Microsoft.Bot.Builder.LanguageGeneration** and **AdaptiveExpressions** packages. Add the following snippet to your main bot file.
+To use adaptive expressions and LG, install the **Microsoft.Bot.Builder.LanguageGeneration** and **AdaptiveExpressions** packages. The sample already has the packaged installed. Then add the following snippet to your main bot file.
 
 **Bots/CustomFunctionBot.cs**
 
@@ -46,7 +46,7 @@ To use adaptive expressions and LG, install the **Microsoft.Bot.Builder.Language
 
 ### [JavaScript](#tab/javascript)
 
-To use adaptive expressions and LG, install the **botbuilder-lg** and **adaptive-expressions** packages installed. Add the following snippet to your main bot file.
+To use adaptive expressions and LG, install the **botbuilder-lg** and **adaptive-expressions** packages installed. The sample already has the packaged installed. Then add the following snippet to your main bot file.
 
 **bot.js**
 
@@ -60,7 +60,7 @@ To use custom functions in your bot, you need to add them to adaptive expression
 
 ### [C#](#tab/cs)
 
-Start by adding a string constant with the name of your custom function. The name of your function should be short but recognizable. In this sample, the custom function is named `contoso.sqrt`:
+Start by adding a string constant with the name of your custom function to your bot constructor. The name of your function should be short but recognizable. In this sample, the custom function is named `contoso.sqrt`:
 
 **Bots/CustomFunctionBot.cs**
 
@@ -156,11 +156,9 @@ Then combine the path for cross-platform support. Make sure to include **main.lg
 
 [!code-csharp[cross-path](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=23)]
 
-Now you can parse the files in `lgFilePath` and load your LG templates.
+Now you can parse the files in `lgFilePath` and load your LG templates, as shown below. By default this uses `Expression.Function`, which includes your custom function.
 
 [!code-csharp[load-templates](~/../BotBuilder-Samples/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions/Bots/CustomFunctionBot.cs?range=44)]
-
-By default [`Templates.ParseFile()`](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration.templates.parsefile) uses `Expression.Function`, which includes the custom function you added earlier.
 
 Your templates are now loaded and you can reference them by name in your bot. In this sample, the result of evaluating `sqrtReadBack` is used as the `replyText` sent to the user.
 
@@ -176,11 +174,9 @@ To start, combine the path for cross-platform support. Make sure to include the 
 
 [!code-javascript[cross-path](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=16)]
 
-Now you can parse the files in `lgFilePath` and load your LG templates.
+Now you can parse the files in `lgFilePath` and load your LG templates. By default this uses `Expression.functions`, which includes your custom function:
 
 [!code-javascript[load-templates](~/../BotBuilder-Samples/samples/javascript_nodejs/language-generation/20.custom-functions/bot.js?range=33)]
-
-By default [`Templates.parsefile()`](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration.templates.parsefile) uses `Expression.functions`, which includes the custom function you added earlier.
 
 Your templates are now loaded and you can reference them by name in your bot. In this sample, the result of evaluating `sqrtReadBack` is used as the `replyText` sent to the user.
 
