@@ -91,7 +91,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
 7. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=110-112)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=111-113)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
