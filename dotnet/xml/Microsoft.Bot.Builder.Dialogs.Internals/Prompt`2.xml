@@ -25,7 +25,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -62,7 +63,7 @@
       <MemberSignature Language="C#" Value="protected virtual Microsoft.Bot.Connector.IMessageActivity MakePrompt (Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, System.Collections.Generic.IReadOnlyList&lt;U&gt; options = default, System.Collections.Generic.IReadOnlyList&lt;string&gt; descriptions = default, string speak = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Bot.Connector.IMessageActivity MakePrompt(class Microsoft.Bot.Builder.Dialogs.IDialogContext context, string prompt, class System.Collections.Generic.IReadOnlyList`1&lt;!U&gt; options, class System.Collections.Generic.IReadOnlyList`1&lt;string&gt; descriptions, string speak) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Prompt`2.MakePrompt(Microsoft.Bot.Builder.Dialogs.IDialogContext,System.String,System.Collections.Generic.IReadOnlyList{`1},System.Collections.Generic.IReadOnlyList{System.String},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakePrompt (context As IDialogContext, prompt As String, Optional options As IReadOnlyList(Of U) = null, Optional descriptions As IReadOnlyList(Of String) = null, Optional speak As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function MakePrompt (context As IDialogContext, prompt As String, Optional options As IReadOnlyList(Of U) = Nothing, Optional descriptions As IReadOnlyList(Of String) = Nothing, Optional speak As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="abstract member MakePrompt : Microsoft.Bot.Builder.Dialogs.IDialogContext * string * System.Collections.Generic.IReadOnlyList&lt;'U&gt; * System.Collections.Generic.IReadOnlyList&lt;string&gt; * string -&gt; Microsoft.Bot.Connector.IMessageActivity&#xA;override this.MakePrompt : Microsoft.Bot.Builder.Dialogs.IDialogContext * string * System.Collections.Generic.IReadOnlyList&lt;'U&gt; * System.Collections.Generic.IReadOnlyList&lt;string&gt; * string -&gt; Microsoft.Bot.Connector.IMessageActivity" Usage="prompt.MakePrompt (context, prompt, options, descriptions, speak)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

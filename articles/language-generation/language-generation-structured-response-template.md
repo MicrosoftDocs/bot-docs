@@ -17,11 +17,12 @@ monikerRange: 'azure-bot-service-4.0'
 
 Structured response templates let developers define a complex structure that supports the extensive functionality of [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md), like templating, composition, while leaving the interpretation of the structured response up to the caller of the LG library.
 
-For bot applications, the followng support is provided:
-- activity definition
-- card definition
+For bot applications, the following support is provided:
 
-[Bot Framework activity][2] includes several customizable fields. The properties shown below are the most used and are configurable via an Activity template definition:
+- [activity](https://aka.ms/botSpecs-activitySchema) definition
+- [card](https://aka.ms/botSpecs-cardSchema) definition
+
+The [Bot Framework activity](https://aka.ms/botSpecs-activitySchema) template includes several customizable fields. The following properties are the most commonly used and are configurable via an activity template definition:
 
 | Property          | Use case                                                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -29,7 +30,7 @@ For bot applications, the followng support is provided:
 | Speak             | Spoken text used by the channel to render audibly                                                                                 |
 | Attachments       | List of attachments with their type. Used by channels to render as UI cards or other generic file attachment types.                |
 | SuggestedActions  | List of actions rendered as suggestions to user.                                                                                  |
-| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values inclue `accepting`, `expecting`, or `ignoring`.   |
+| InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values include `accepting`, `expecting`, or `ignoring`.   |
 
 There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains unspecified. For example, the `Speak` property isn't automatically assigned to be the `Text` property if only the `Text` property is specified.
 
@@ -65,29 +66,32 @@ Here's an example of a basic text template:
 Here's an example of text with a suggested action. Use **|** to denote a list.
 
 ```.lg
+> With '|' you are making attachments a list.
 # AskForAge.prompt
 [Activity
     Text = ${GetAge()}
     SuggestedActions = 10 | 20 | 30
 ]
-
-# GetAge
-- how old are you?
-- what is your age?
 ```
 
 Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#hero-card) definition:
 
 ```.lg
-# HeroCard (params)
+# HeroCard
 [Herocard
-    title = ${params.title}
+    title = Hero Card Example
     subtitle = Microsoft Bot Framework
     text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
     images = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = Show more cards
+    buttons = Option 1| Option 2| Option 3
 ]
 ```
+
+> [!NOTE]
+>
+> LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://aka.ms/botSpecs-cardSchema). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
+>
+>The values defined in all of the `image` and `images` fields in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
 
 Below is the combination of the previous templates:
 
@@ -105,13 +109,13 @@ Below is the combination of the previous templates:
 - how old are you?
 - what is your age?
 
-# HeroCard (params)
+# HeroCard
 [Herocard
-    title = ${params.title}
+    title = Hero Card Example
     subtitle = Microsoft Bot Framework
     text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
     images = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = Show more cards
+    buttons = Option 1| Option 2| Option 3
 ]
 ```
 
@@ -168,19 +172,19 @@ Here's how to display a carousel of cards:
     subtitle = ${subtitle}
     text = ${text}
     images = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = Show more cards
+    buttons = Option 1| Option 2| Option 3
 ]
 ```
 
-Use **\\** to escape |.
+Use **\\**  as an escape character.
 
 ```.lg
+> You can use '\' as an escape character
+> \${GetAge()} would not be evaluated as expression, would be parsed as '${getAge()}' string
 # AskForAge.prompt
 [Activity
-> With '|' you are making attachments a list.
-        Attachments = ${HeroCard()} |
-> You can use '\' as an escape character
-        Suggestions = 10 \\| cards | 20 \\| cards
+        Text = \${GetAge()}
+        SuggestedActions = 10 \| cards | 20 \| cards
 ]
 ```
 
@@ -242,7 +246,6 @@ With this content, a call to `evaluateTemplate('ST1')` will result in the follow
 [MyStruct
     Text = foo
     Speak = bar
-
 ]
 ```
 
@@ -310,6 +313,7 @@ You can also use attachments, seen below:
     content = ${json(fromFile('../../card.json'))}
 ]
 ```
+
 <!--
 ## Chatdown style content as structured activity template
 It is a natural extension to also define full [chatdown][1] style templates using the structured template definition capability. This helps eliminate the need to always define chatdown style cards in a multi-line definition
@@ -386,7 +390,7 @@ Here's an example:
     subtitle = Microsoft Bot Framework
     text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
     image = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = {CardAction('Show more cards')} | {CardAction('See our library', 'postBack', 'http://contoso.com/cards/all')}
+    buttons = {CardAction('Option 1| Option 2| Option 3')} | {CardAction('See our library', 'postBack', 'http://contoso.com/cards/all')}
 ]
 ```
 
@@ -402,8 +406,7 @@ Here's an example:
 ```
 
 [more test samples][4]
---> 
-
+-->
 ## Additional Information
 - [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
 - [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)

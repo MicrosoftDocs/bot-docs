@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PaymentRequestUpdateResult (Microsoft.Bot.Connector.PaymentDetails details = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.PaymentDetails details) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestUpdateResult.#ctor(Microsoft.Bot.Connector.PaymentDetails)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional details As PaymentDetails = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional details As PaymentDetails = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentRequestUpdateResult : Microsoft.Bot.Connector.PaymentDetails -&gt; Microsoft.Bot.Connector.PaymentRequestUpdateResult" Usage="new Microsoft.Bot.Connector.PaymentRequestUpdateResult details" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -78,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="details")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="details")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

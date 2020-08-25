@@ -17,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +54,7 @@
       <MemberSignature Language="C#" Value="public EntityRecommendation (string type, string role = default, string entity = default, int? startIndex = default, int? endIndex = default, double? score = default, System.Collections.Generic.IDictionary&lt;string,object&gt; resolution = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string role, string entity, valuetype System.Nullable`1&lt;int32&gt; startIndex, valuetype System.Nullable`1&lt;int32&gt; endIndex, valuetype System.Nullable`1&lt;float64&gt; score, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.EntityRecommendation.#ctor(System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, Optional role As String = null, Optional entity As String = null, Optional startIndex As Nullable(Of Integer) = null, Optional endIndex As Nullable(Of Integer) = null, Optional score As Nullable(Of Double) = null, Optional resolution As IDictionary(Of String, Object) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, Optional role As String = Nothing, Optional entity As String = Nothing, Optional startIndex As Nullable(Of Integer) = Nothing, Optional endIndex As Nullable(Of Integer) = Nothing, Optional score As Nullable(Of Double) = Nothing, Optional resolution As IDictionary(Of String, Object) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.Models.EntityRecommendation : string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;double&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; Microsoft.Bot.Builder.Luis.Models.EntityRecommendation" Usage="new Microsoft.Bot.Builder.Luis.Models.EntityRecommendation (type, role, entity, startIndex, endIndex, score, resolution)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -102,7 +103,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="endIndex")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="endIndex")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="endIndex")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +134,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entity")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="entity")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="entity")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,7 +165,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(ItemConverterType=typeof(Microsoft.Bot.Builder.Luis.Models.EntityRecommendation/ResolutionConverter), PropertyName="resolution")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(ItemConverterType=typeof(Microsoft.Bot.Builder.Luis.Models.EntityRecommendation/ResolutionConverter), PropertyName="resolution")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(ItemConverterType=typeof(Microsoft.Bot.Builder.Luis.Models.EntityRecommendation/ResolutionConverter), PropertyName="resolution")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -195,7 +199,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="role")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="role")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="role")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -225,7 +230,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="score")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="score")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="score")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,7 +261,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startIndex")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startIndex")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startIndex")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,7 +292,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

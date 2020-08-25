@@ -65,7 +65,7 @@
       <MemberSignature Language="C#" Value="public static T MaxBy&lt;T,R&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; items, Func&lt;T,R&gt; selectRank, System.Collections.Generic.IComparer&lt;R&gt; comparer = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T MaxBy&lt;T, R&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; items, class System.Func`2&lt;!!T, !!R&gt; selectRank, class System.Collections.Generic.IComparer`1&lt;!!R&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Internals.Extensions.MaxBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MaxBy(Of T, R) (items As IEnumerable(Of T), selectRank As Func(Of T, R), Optional comparer As IComparer(Of R) = null) As T" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MaxBy(Of T, R) (items As IEnumerable(Of T), selectRank As Func(Of T, R), Optional comparer As IComparer(Of R) = Nothing) As T" />
       <MemberSignature Language="F#" Value="static member MaxBy : seq&lt;'T&gt; * Func&lt;'T, 'R&gt; * System.Collections.Generic.IComparer&lt;'R&gt; -&gt; 'T" Usage="Microsoft.Bot.Builder.Dialogs.Internals.Extensions.MaxBy (items, selectRank, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

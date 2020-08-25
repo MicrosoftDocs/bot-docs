@@ -43,12 +43,12 @@ For an overview of how the Bot Framework handles this kind of authentication, se
 > [!NOTE]
 > Authentication also works with BotBuilder v3. However, this article covers just the v4 sample code.
 
-This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how access [Microsoft Graph](https://developer.microsoft.com/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
+This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how to access [Microsoft Graph](https://developer.microsoft.com/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
 This article covers how to:
 
 - [Create the Azure bot registration](#create-the-azure-bot-registration)
-- [Create the Azure AD identity application](#create-the-azure-ad-identity-application)
-- [Register the Azure AD OAuth application with the bot](#register-the-azure-ad-oauth-application-with-the-bot)
+- [Create the Azure AD identity provider](#create-the-azure-ad-identity-provider)
+- [Register the Azure AD identity provider with the bot](#register-the-azure-ad-identity-provider-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
 Once you finish this article, you will have a bot that can respond to a few simple tasks. In the case of the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
@@ -113,10 +113,13 @@ This section shows how to register a bot resource with Azure to host the bot cod
     1. Copy the your new client secret and save it to a file.
         > [!WARNING]
         > Record the secret just long enough to get the bot set up.
-        > Do not keep a copy of it around unless you have a good reason, in this case, keep it in safe place.
+        > Do not keep a copy of it around unless you have a good reason, in this case, keep it in a safe place.
 1. Go back to the *Bot Channel Registration* window and copy the **App ID** and the **Client secret** in the **Microsoft App ID** and **Password** boxes, respectively.
 1. Click **OK**.
 1. Finally, click **Create**.
+
+> [!NOTE]
+> You will assign the **Application (client) ID** and the **Client secret**, you saved in a file, to the bot configuration variables: `MicrosoftAppId` and `MicrosoftAppPassword`. See the [Prepare the bot code](#prepare-the-bot-code) section.
 
 After Azure has completed the registration, the bot channels registration and the bot app service will be included in the resource group you selected.
 
@@ -132,9 +135,9 @@ For more information, see the [Azure Active Directory for developers (v1.0) over
 
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
 
-### Create the Azure AD identity application
+### Create the Azure AD identity provider
 
-This section shows how to create an Azure AD identity application that uses OAuth2 to authenticate the bot. You can use Azure AD v1 or Azure AD v2 endpoints.
+This section shows how to create an Azure AD identity provider that uses OAuth2 to authenticate the bot. You can use Azure AD v1 or Azure AD v2 endpoints.
 
 > [!TIP]
 > You will need to create and register the Azure AD application in a tenant
@@ -154,8 +157,8 @@ This section shows how to create an Azure AD identity application that uses OAut
    1. Click **Register**.
 
       - Once it is created, Azure displays the **Overview** page for the app.
-      - Record the **Application (client) ID** value. You will use this value later as the _Client id_ when you register your Azure AD application with your bot.
-      - Also record the **Directory (tenant) ID** value. You will also use this to register this application with your bot.
+      - Record the **Application (client) ID** value. You will use this value later as the _Client id_ when you create the connection string and register the Azure AD provider with the bot registration.
+      - Also record the **Directory (tenant) ID** value. You will also use this to register this provider application with your bot.
 
 1. In the navigation pane, click **Certificates & secrets** to create a secret for your application.
 
@@ -185,7 +188,10 @@ This section shows how to create an Azure AD identity application that uses OAut
 
 You now have an Azure AD application configured.
 
-### Register the Azure AD OAuth application with the bot
+> [!NOTE]
+> You will assign the **Application (client) ID** and the **Client secret**, when you create the connection string and register the identity provider with the bot registration. See next section.
+
+### Register the Azure AD identity provider with the bot
 
 The next step is to register the Azure AD application that you just created with the bot.
 
@@ -198,19 +204,20 @@ The next step is to register the Azure AD application that you just created with
 1. Under **OAuth Connection Settings** near the bottom of the page, click **Add Setting**.
 1. Fill in the form as follows:
 
-    1. For **Name**, enter a name for your connection. You'll use it in your bot code.
-    1. For **Service Provider**, select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
-    1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
-    1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
-    1. For **Tenant ID**, enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
+    1. **Name**. Enter a name for your connection. You'll use it in your bot code.
+    1. **Service Provider**. Select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
+    1. **Client id**. Enter the application (client) ID you recorded for your Azure AD v2 identity provider.
+    1. **Client secret**. Enter the secret you recorded for your Azure AD v2 identity provider.
+    1. **Token Exchange URL**. Leave it blank because it is used for SSO in Azure AD v2 only.
+    1. **Tenant ID**. Enter the **directory (tenant) ID** that your recorded earlier for your AAD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign follow these criteria:
 
         - When creating the Azure AD app if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
         - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
         This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-    1. For **Scopes**, enter the names of the permission you chose from application registration:
-       `Mail.Read Mail.Send openid profile User.Read User.ReadBasic.All`.
+    1. For **Scopes**, enter the names of the permission you chose from the application registration. For testing purposes, you can just enter:
+       `openid profile`.
 
         > [!NOTE]
         > For Azure AD v2, **Scopes** field takes a case-sensitive, space-separated list of values.

@@ -13,7 +13,8 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt;))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Builder.Calling.ObjectModel.Misc.StringEnumConverterWithDefault`1&lt;Microsoft.Bot.Builder.Calling.ObjectModel.Misc.Culture&gt;))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -36,7 +37,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="en-US")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="en-US")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="en-US")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

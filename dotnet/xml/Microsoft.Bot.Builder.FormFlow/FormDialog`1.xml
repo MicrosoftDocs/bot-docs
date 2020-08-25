@@ -34,7 +34,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +54,7 @@
       <MemberSignature Language="C#" Value="public FormDialog (T state, Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;T&gt; buildForm = default, Microsoft.Bot.Builder.FormFlow.FormOptions options = Microsoft.Bot.Builder.FormFlow.FormOptions.None, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities = default, System.Globalization.CultureInfo cultureInfo = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T state, class Microsoft.Bot.Builder.FormFlow.BuildFormDelegate`1&lt;!T&gt; buildForm, valuetype Microsoft.Bot.Builder.FormFlow.FormOptions options, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.FormDialog`1.#ctor(`0,Microsoft.Bot.Builder.FormFlow.BuildFormDelegate{`0},Microsoft.Bot.Builder.FormFlow.FormOptions,System.Collections.Generic.IEnumerable{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},System.Globalization.CultureInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (state As T, Optional buildForm As BuildFormDelegate(Of T) = null, Optional options As FormOptions = Microsoft.Bot.Builder.FormFlow.FormOptions.None, Optional entities As IEnumerable(Of EntityRecommendation) = null, Optional cultureInfo As CultureInfo = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As T, Optional buildForm As BuildFormDelegate(Of T) = Nothing, Optional options As FormOptions = Microsoft.Bot.Builder.FormFlow.FormOptions.None, Optional entities As IEnumerable(Of EntityRecommendation) = Nothing, Optional cultureInfo As CultureInfo = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt; : 'T * Microsoft.Bot.Builder.FormFlow.BuildFormDelegate&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.FormOptions * seq&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; * System.Globalization.CultureInfo -&gt; Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.FormDialog&lt;'T (requires 'T : null)&gt; (state, buildForm, options, entities, cultureInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

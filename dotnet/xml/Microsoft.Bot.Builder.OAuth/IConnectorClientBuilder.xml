@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -21,13 +22,14 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IConnectorClient&gt; CreateConnectorClientAsync (string serviceUrl, System.Security.Claims.ClaimsIdentity claimsIdentity, string audience, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.IConnectorClient&gt; CreateConnectorClientAsync(string serviceUrl, class System.Security.Claims.ClaimsIdentity claimsIdentity, string audience, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.OAuth.IConnectorClientBuilder.CreateConnectorClientAsync(System.String,System.Security.Claims.ClaimsIdentity,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function CreateConnectorClientAsync (serviceUrl As String, claimsIdentity As ClaimsIdentity, audience As String, Optional cancellationToken As CancellationToken = null) As Task(Of IConnectorClient)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateConnectorClientAsync (serviceUrl As String, claimsIdentity As ClaimsIdentity, audience As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IConnectorClient)" />
       <MemberSignature Language="F#" Value="abstract member CreateConnectorClientAsync : string * System.Security.Claims.ClaimsIdentity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IConnectorClient&gt;" Usage="iConnectorClientBuilder.CreateConnectorClientAsync (serviceUrl, claimsIdentity, audience, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.IConnectorClient&gt;</ReturnType>

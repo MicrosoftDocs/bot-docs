@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.TaskModuleRequest</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +45,14 @@
       <MemberSignature Language="C#" Value="public MessagingExtensionAction (object data = default, Microsoft.Bot.Schema.Teams.TaskModuleRequestContext context = default, string commandId = default, string commandContext = default, string botMessagePreviewAction = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; botActivityPreview = default, Microsoft.Bot.Schema.Teams.MessageActionsPayload messagePayload = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object data, class Microsoft.Bot.Schema.Teams.TaskModuleRequestContext context, string commandId, string commandContext, string botMessagePreviewAction, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Activity&gt; botActivityPreview, class Microsoft.Bot.Schema.Teams.MessageActionsPayload messagePayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionAction.#ctor(System.Object,Microsoft.Bot.Schema.Teams.TaskModuleRequestContext,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Activity},Microsoft.Bot.Schema.Teams.MessageActionsPayload)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional data As Object = null, Optional context As TaskModuleRequestContext = null, Optional commandId As String = null, Optional commandContext As String = null, Optional botMessagePreviewAction As String = null, Optional botActivityPreview As IList(Of Activity) = null, Optional messagePayload As MessageActionsPayload = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional data As Object = Nothing, Optional context As TaskModuleRequestContext = Nothing, Optional commandId As String = Nothing, Optional commandContext As String = Nothing, Optional botMessagePreviewAction As String = Nothing, Optional botActivityPreview As IList(Of Activity) = Nothing, Optional messagePayload As MessageActionsPayload = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionAction : obj * Microsoft.Bot.Schema.Teams.TaskModuleRequestContext * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; * Microsoft.Bot.Schema.Teams.MessageActionsPayload -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionAction" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionAction (data, context, commandId, commandContext, botMessagePreviewAction, botActivityPreview, messagePayload)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="data" Type="System.Object" />
@@ -61,7 +64,6 @@
         <Parameter Name="messagePayload" Type="Microsoft.Bot.Schema.Teams.MessageActionsPayload" />
       </Parameters>
       <Docs>
-        <param name="botActivityPreview">To be added.</param>
         <param name="data">User input data. Free payload with key-value
             pairs.</param>
         <param name="context">Current user context, i.e., the current
@@ -72,6 +74,7 @@
             'commandbox'</param>
         <param name="botMessagePreviewAction">Bot message preview action
             taken by user. Possible values include: 'edit', 'send'</param>
+        <param name="botActivityPreview">A collection of bot activities.</param>
         <param name="messagePayload">Message content sent as part of the
             command request.</param>
         <summary>
@@ -91,10 +94,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="botActivityPreview")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="botActivityPreview")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="botActivityPreview")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,10 +122,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="botMessagePreviewAction")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="botMessagePreviewAction")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="botMessagePreviewAction")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,10 +153,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="commandContext")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="commandContext")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="commandContext")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,10 +184,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="commandId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="commandId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="commandId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -203,10 +214,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="messagePayload")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="messagePayload")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="messagePayload")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

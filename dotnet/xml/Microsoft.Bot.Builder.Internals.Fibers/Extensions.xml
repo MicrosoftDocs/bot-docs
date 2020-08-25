@@ -189,7 +189,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;Enumerate&gt;d__7))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;Enumerate&gt;d__7))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;Enumerate&gt;d__7))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -555,7 +556,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;SortedMerge&gt;d__10`1))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;SortedMerge&gt;d__10`1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.Extensions/&lt;SortedMerge&gt;d__10`1))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
