@@ -19,8 +19,8 @@ Structured response templates let developers define a complex structure that sup
 
 For bot applications, the following support is provided:
 
-- activity definition
-- card definition
+- [activity](https://aka.ms/botSpecs-activitySchema) definition
+- [card](https://aka.ms/botSpecs-cardSchema) definition
 
 The [Bot Framework activity](https://aka.ms/botSpecs-activitySchema) template includes several customizable fields. The following properties are the most commonly used and are configurable via an activity template definition:
 
