@@ -429,13 +429,25 @@ The `OAuthInput` action returns a `TokenResponse` object which contains values f
 
 ### OAuthInput example
 
+In this example the `TokenResponse` object returned by the `OAuthInput` action is saved in the `MyOAuthInput` variable. This will enable you to:
+
+* Call the OAuthInput dialog on any turn in which the bot will need the token.
+* Set up the OAuthInput to write the token response to the turn memory scope.
+* Read the token response from the turn memory scope and consume it as appropriate for the API you are using it with. For example, you add it as a bearer token for the Graph API.
+
+
 ```C#
 public class RootDialog : AdaptiveDialog
 {
+    this.configuration = configuration;
+    _templates = Templates.ParseFile(Path.Combine(".", "Dialogs", "RootDialog", "RootDialog.lg"));
     private OAuthInput MyOAuthInput { get; }
 
     public RootDialog(IConfiguration configuration) : base(nameof(RootDialog))
     {
+        Recognizer = CreateLuisRecognizer(this.configuration),
+        Generator = new TemplateEngineLanguageGenerator(_Templates);
+
         MyOAuthInput = new OAuthInput
         {
             // The name of the connection configured on Azure Bot Service for the OAuth connection.
@@ -451,19 +463,22 @@ public class RootDialog : AdaptiveDialog
             InvalidPrompt = new ActivityTemplate("Login was not successful please try again."),
 
             // The number of milliseconds the prompt waits for the user to authenticate.
-            Timeout = 300000,
+            // Tip: For an easy way to set the timeout to a specific number of minutes,
+            // you can multiple the number of minutes by 60,000.  5 * 60000 = 5 minutes.
+            Timeout = 5 * 60000,
 
             // The maximum number of times to ask the user for this value before the dialog gives up.
             MaxTurnCount = 3,
 
             // Property path to store the value (a TokenResponse object) that is returned by the OAuthInput action.
-            // Since the token can be short-lived, you should validate
+            // Since the token can be short-lived, you should call the OAuthInput on any turn in which your bot
+            // needs to access associated resources on behalf of the user. If the token is still valid, the sign-in
+            // card will not be displayed, if it is not still active the user will be prompted to sign in again.
             Property = "turn.oauth",
         };
-
-
-        string[] paths = { ".", "Dialogs", $"RootDialog.lg" };
-        string fullPath = Path.Combine(paths);
+        // Save the MyOAuthInput dialog instance in the adaptive dialog's dialog set.
+        // This will enable consultation, logging telemetry data etc.
+        Dialogs.Add(MyOAuthInput);
 
         // These steps are executed when this Adaptive Dialog begins
         Triggers = new List<OnCondition>
@@ -479,8 +494,20 @@ public class RootDialog : AdaptiveDialog
                 {
                     Actions = LoginSteps(),
                 },
+
+                // Allow the use to sign out.
+                new OnIntent("logout")
+                {
+                    Actions =
+                    {
+                        new CodeAction(async (dc, opt) =>
+                        {
+                            await MyOAuthInput.SignOutUserAsync(dc);
+                            return new DialogTurnResult(DialogTurnStatus.Complete);
+                        }),
+                    }
+                },
             };
-        Generator = new TemplateEngineLanguageGenerator(Templates.ParseFile(fullPath));
     }
 
     private static List<Dialog> WelcomeUserSteps()
