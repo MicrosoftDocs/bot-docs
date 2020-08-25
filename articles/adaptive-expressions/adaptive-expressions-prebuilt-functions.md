@@ -171,10 +171,10 @@ You can also view the list in [alphabetical order](#add).
 |[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
 |[ticksToMinutes](#ticksToMinutes)| Convert a ticks property value to the number of minutes. |
 |[dateTimeDiff](#dateTimeDiff)| Return the difference in ticks between two timestamps. |
-| [getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a timex expression based on a current date and an optionally specified timezone.  |
-| [getNextViableDate](#getNextViableDate) | Return the next viable date of a timex expression based on a date and an optionally specified timezone. |
-| [getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on a date and an optionally specified timezone. |
-| [getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on a date and an optionally specified timezone. |
+| [getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a timex expression based on the current date and an optionally specified timezone.  |
+| [getNextViableDate](#getNextViableDate) | Return the next viable date of a timex expression based on the current date and an optionally specified timezone. |
+| [getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
+| [getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
 
 ### Timex functions
 
@@ -2026,39 +2026,75 @@ It returns the result **03-06-18**.
 
 ### getNextViableDate
 
-Return the next viable date of a timex expression based on a date and an optionally specified timezone.
+Return the next viable date of a timex expression based on the current date and an optionally specified timezone.
+
+```
+getNextViableDate(<timexString>, <timezone>?)
+```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
+| <*timexString*> | Yes | string | The timex string of the date to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
 |||||
-
+	
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| | string | |
+| <*nextViableTime*> | string | The next viable date. |
 ||||
 
-*Example*
+*Examples*
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate the timex string for the next viable date based on the above date and time:
+
+```
+getPreviousViableDate("XXXX-12-20", "America/Los_Angeles")
+getPreviousViableDate("XXXX-02-29")
+```
+
+And return the following strings respectively:
+
+- **2020-12-20**
+- **2024-02-29**
 
 <a name="getNextViableTime"></a>
 
 ### getNextViableTime
 
-Return the next viable time of a timex expression based on a date and an optionally specified timezone.
+Return the next viable time of a timex expression based on the current time and an optionally specified timezone.
+
+```
+getNextViableTime(<timexString>, <timezone>?)
+```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
+| <*timexString*> | Yes | string | The timex string of the time to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
 |||||
-
+	
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| | string | |
+| <*nextViableTime*> | string | The next viable time. |
 ||||
 
-*Example*
+*Examples*
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate a timex string for the next viable time based on the above date and time:
+
+```
+getNextViableTime("TXX:12:14", "Asia/Tokyo")
+getNextViableTime("TXX:52:14") 
+```
+
+And return the following strings repsectively:
+
+- **T16:12:14**
+- **T15:52:14**
 
 <a name="getPastTime"></a>
 
@@ -2106,7 +2142,7 @@ It returns the result **02-26-18**.
 
 ### getPreviousViableDate
 
-Return the previous viable date of a timex expression based on a date and an optionally specified timezone.
+Return the previous viable date of a timex expression based on the current date and an optionally specified timezone.
 
 ```
 getPreviousViableDate(<timexString>, <timezone>?)
@@ -2115,39 +2151,66 @@ getPreviousViableDate(<timexString>, <timezone>?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timexString*> | Yes | string | The timex string of the date to evaluate. |
-| <*timezone*> | No | string | The optional timezone to specify for the date. |
+| <*timezone*> | No | string | The optional timezone. |
 |||||
-
-
+	
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*previousViableDate*> | string | The previous viable date. |
 ||||
 
-*Example*
+*Examples*
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate a timex string for the previous viable date based on the above date and time:
+
+```
+getPreviousViableDate("XXXX-12-20", "Eastern Standard Time")
+getPreviousViableDate("XXXX-02-29") 
+```
+
+And return the following strings repsectively:
+
+- **2019-12-20**
+- **2020-02-29**
 
 <a name="getPreviousViableTime"></a>
 
 ### getPreviousViableTime
 
-Return the previous viable time of a timex expression based on the date and an optionally specified timezone.
+Return the previous viable time of a timex expression based on the current date and an optionally specified timezone.
+
+```
+getPreviousViableTime(<timexString>, <timezone>?)
+```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| | | | |
+| <*timexString*> | Yes | string | The timex string of the time to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
 |||||
-
-
+	
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| | string | |
+| <*previousViableTime*> | string | The previous viable time. |
 ||||
 
-*Example*
+*Examples*
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate a timex string for the previous viable time based on the above date and time:
+
+```
+getPreviousViableTime("TXX:52:14")
+getPreviousViableTime("TXX:12:14", 'Europe/London') 
+```
+
+And return the following strings repsectively:
+
+- **T14:52:14**
+- **T15:12:14**
 
 <a name="getProperty"></a>
 
