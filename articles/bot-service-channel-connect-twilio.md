@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Twilio - Bot Service
-description: Learn how to configure a bot's connection to Twilio.
+description: Learn how to configure bots to use Twilio to communicate with people. See how to connect bots to Twilio through a Twilio adapter or a TwiML application.
 keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
 author: RobStand
 ms.author: kamrani
