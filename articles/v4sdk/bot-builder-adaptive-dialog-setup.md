@@ -115,13 +115,14 @@ Create a root dialog class. The sample defines a `RootDialog` to use.
 At this point the dialog won't yet respond to the user. You can add a trigger to the dialog (in the constructor) to let it respond. Here is a sample trigger.
 
 ```csharp
-Triggers = new List<OnCondition>{
+Triggers = new List<OnCondition>
+{
     new OnUnknownIntent
     {
         Actions =
-            {
-                new SendActivity("Hi, we are up and running!!"),
-            }
+        {
+            new SendActivity("Hi, we are up and running!!"),
+        }
     },
 };
 ```
