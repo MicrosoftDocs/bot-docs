@@ -92,11 +92,15 @@ Also register the storage layer and state management objects your bot will use i
 
 **AdapterWithErrorHandler.cs**
 
-In C#, you can use the adapter's `UseStorage` and `UseBotState` methods to add references to these objects to the turn context each turn.
+In C#, you can use the adapter's `UseStorage` and `UseBotState` methods to add references to the storage and state management objects to the turn context each turn.
 
-Modify the parameter list for the existing adapter constructor and add the calls to the UseStorage and UseBotState methods before setting the adapter's OnTurnError property.
+Modify the signature for the existing adapter constructor.
 
-:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/AdapterWithErrorHandler.cs" range="17-25":::
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/AdapterWithErrorHandler.cs" range="17-19":::
+
+Add the calls to the UseStorage and UseBotState methods before setting the adapter's OnTurnError property.
+
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/AdapterWithErrorHandler.cs" range="21-25":::
 
 ## Add an adaptive dialog
 
@@ -107,6 +111,20 @@ Create the root dialog your bot will use.
 Create a root dialog class. The sample defines a `RootDialog` to use.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs" range="15-18,38,134":::
+
+At this point the dialog won't yet respond to the user. You can add the following trigger to the dialog to let it respond.
+
+```csharp
+Triggers = new List<OnCondition>{
+    new OnUnknownIntent
+    {
+        Actions =
+            {
+                new SendActivity("Hi, we are up and running!!"),
+            }
+        },
+    };
+```
 
 **startup.cs**
 
@@ -130,20 +148,6 @@ Replace the existing class definition with this code. (If you do not include the
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs" range="8-9,17-36":::
 
-At this point the dialog doesn't yet respond to the user. You can add the following trigger to the dialog to let it respond.
-
-```csharp
-Triggers = new List<OnCondition>{
-    new OnUnknownIntent
-    {
-        Actions =
-            {
-                new SendActivity("Hi, we are up and running!!"),
-            }
-        },
-    };
-```
-
 **startup.cs**
 
 The sample registers the bot object in the startup file in `ConfigureServices`.
@@ -152,7 +156,7 @@ The sample registers the bot object in the startup file in `ConfigureServices`.
 
 ## Compile and test
 
-At this point your bot should compile and run. You can test it in the Emulator, but since the root adaptive dialog doesn't define any triggers or actions yet, the bot will not reply to input, but you should get HTTP 200 status responses back from the bot.
+At this point your bot should compile and run. You can test it in the Emulator. If your root adaptive dialog doesn't define any triggers or actions, the bot will not reply to input, but you should get HTTP 200 status responses back from the bot.
 
 ## Additional information
 
