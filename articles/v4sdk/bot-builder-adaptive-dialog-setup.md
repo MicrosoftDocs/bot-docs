@@ -112,7 +112,7 @@ Create a root dialog class. The sample defines a `RootDialog` to use.
 
 :::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs" range="15-18,38,134":::
 
-At this point the dialog won't yet respond to the user. You can add the following trigger to the dialog to let it respond.
+At this point the dialog won't yet respond to the user. You can add a trigger to the dialog (in the constructor) to let it respond. Here is a sample trigger.
 
 ```csharp
 Triggers = new List<OnCondition>{
