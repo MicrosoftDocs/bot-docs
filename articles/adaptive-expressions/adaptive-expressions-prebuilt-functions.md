@@ -1998,7 +1998,7 @@ This example converts a Unix timestamp in the **fr-FR** locale to the specified 
 formatEpoch(1521118800, 'yyyy-MM-dd', 'fr-FR')
 ```
 
-And returns the result **add answer here**.
+And returns the result **<add answer here>**.
 
 <a name="formatNumber"></a>
 
@@ -2040,7 +2040,7 @@ This example formats ther number **10.333** to **4** fractional digits using the
 formatNumber(12000.3, 4, 'fr-FR')
 ```
 
-And returns the string **"12 000,3000"**.
+And returns the string **12,000.3000**.
 
 <a name="formatTicks"></a>
 
