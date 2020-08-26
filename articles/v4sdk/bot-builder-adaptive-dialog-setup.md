@@ -122,8 +122,8 @@ Triggers = new List<OnCondition>{
             {
                 new SendActivity("Hi, we are up and running!!"),
             }
-        },
-    };
+    },
+};
 ```
 
 **startup.cs**
