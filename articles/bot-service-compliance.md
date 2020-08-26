@@ -1,6 +1,6 @@
 ---
 title: Compliance in Azure Bot Service - Bot Service
-description: Azure Bot Service compliance
+description: Learn how the Azure Bot Service helps customers meet compliance obligations. See which certifications the service possesses in various industries and areas.
 keywords: bot service, compliance
 author: Kaiqb
 ms.author: jameslew

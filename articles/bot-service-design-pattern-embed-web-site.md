@@ -1,6 +1,6 @@
 ---
 title: Embed a bot in a website - Bot Service
-description: Learn how to design a bot that will be embedded within a website.
+description: Learn how to embed bots in websites by using a web control. See how the backchannel mechanism facilitates private communication between web pages and bots.
 author: matvelloso
 ms.author: mateusv
 manager: kamrani

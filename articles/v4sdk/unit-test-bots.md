@@ -1,6 +1,6 @@
 ---
 title: Unit test bots - Bot Service
-description: Describes how to unit test bots using testing frameworks.
+description: Learn how to unit test bots. See how to check activities and results returned by dialogs, create data-driven tests, and create mock objects to use in testing.
 keywords: bot, testing bots, bot testing framework
 author: gabog
 ms.author: ggilaber
