@@ -42,8 +42,8 @@ You can also view the list in [alphabetical order](#add).
 |[replaceIgnoreCase](#replaceIgnoreCase)|	Replace a substring with the specified string, and return the updated string. This function is case-insensitive.|
 |[split](#split)	|Return an array that contains substrings based on the delimiter specified.|
 |[substring](#substring)|Return characters from a string. substring(sourceString, startPos, endPos). startPos cannot be less than 0. endPos greater than the length of the source string will be taken as the max length of the string.|
-|[toLower](#toLower)|Convert a string to all lowercase characters in an optional locale.|
-|[toUpper](#toUpper)|Convert a string to all uppercase characters in an optional locale.|
+|[toLower](#toLower)|Return a string in lowercase in an optional locale format.|
+|[toUpper](#toUpper)|Return a string in uppercase in an optional locale format.|
 |[trim](#trim)|Remove leading and trailing white spaces from a string.|
 |[addOrdinal](#addOrdinal)|Return the ordinal number of the input number.|
 |[endsWith](#endsWith)|Check whether a string ends with a specific substring. Return `true` if the substring is found, or return `false` if not found. This function is case-insensitive.|
@@ -53,8 +53,8 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
-|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string.|
-|[titleCase](#titleCase)|Capitalize the first letter of each word in a string in an optional locale.|
+|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string in an optional local format.|
+|[titleCase](#titleCase)|Capitalize the first letter of each word in a string in an optional locale format.|
 
 ### Collection functions
 
@@ -171,10 +171,10 @@ You can also view the list in [alphabetical order](#add).
 |[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
 |[ticksToMinutes](#ticksToMinutes)| Convert a ticks property value to the number of minutes. |
 |[dateTimeDiff](#dateTimeDiff)| Return the difference in ticks between two timestamps. |
-| [getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a timex expression based on the current date and an optionally specified timezone. |
-| [getNextViableDate](#getNextViableDate) | Return the next viable date of a timex expression based on the current date and an optionally specified timezone. |
-| [getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
-| [getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
+|[getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a timex expression based on the current date and an optionally specified timezone. |
+|[getNextViableDate](#getNextViableDate) | Return the next viable date of a timex expression based on the current date and an optionally specified timezone. |
+|[getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
+|[getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
 
 ### Timex functions
 
@@ -4212,6 +4212,53 @@ select(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
 
 And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
+<a name="sentenceCase"></a>
+
+### sentenceCase
+
+Capitalize the first letter of the first word in a string in an optional locale format.
+
+```
+sentenceCase('<text>', '<locale>'?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*text*> | Yes | string | The original string |
+| <*locale*> | No | string | An optional locale of culture infomation | 
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| result string | string | Returns the sentence case result |
+||||
+
+*Example 1*
+
+These examples capitalize the first letter in a string:
+
+```
+sentenceCase('a')
+sentenceCase('abc def')
+sentenceCase('aBC dEF')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc def**
+- **Abc def**
+
+*Example 2*
+
+This example capitalizes the first letter in a string in the **fr-FR** format:
+
+```
+sentenceCase('abc def', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
+
 <a name="setPathToValue"></a>
 
 ### setPathToValue
@@ -4482,16 +4529,17 @@ And returns the following arrays as the result repsectively:
 
 ### startOfDay
 
-Return the start of the day for a timestamp.
+Return the start of the day for a timestamp in an optional locale.
 
 ```
-startOfDay('<timestamp>', '<format>'?)
+startOfDay('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -4499,7 +4547,7 @@ startOfDay('<timestamp>', '<format>'?)
 | '<*updated-timestamp*>'| string | The specified timestamp starting at the zero-hour mark for the day |
 ||||
 
-*Example*
+*Example 1*
 
 This example finds the start of the day:
 
@@ -4509,20 +4557,31 @@ startOfDay('2018-03-15T13:30:30.000Z')
 
 And returns the result **2018-03-15T00:00:00.000Z**.
 
+*Example 2*
+
+This example finds the start of the day with the locale **fr-FR**:
+
+```
+startOfDay('2018-03-15T13:30:30.000Z', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
+
 <a name="startOfHour"></a>
 
 ### startOfHour
 
-Return the start of the hour for a timestamp.
+Return the start of the hour for a timestamp in an optional locale.
 
 ```
-startOfHour('<timestamp>', '<format>'?)
+startOfHour('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -4530,7 +4589,7 @@ startOfHour('<timestamp>', '<format>'?)
 | '<*updated-timestamp*>'| string | The specified timestamp starting at the zero-minute mark for the day |
 ||||
 
-*Example*
+*Example 1*
 
 This example finds the start of the hour:
 
@@ -4540,20 +4599,31 @@ startOfHour('2018-03-15T13:30:30.000Z')
 
 And returns the result **2018-03-15T13:00:00.000Z**.
 
+*Example 2*
+
+This example finds the start of the hour with the locale **fr-FR**:
+
+```
+startOfHour('2018-03-15T13:30:30.000Z', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
+
 <a name="startOfMonth"></a>
 
 ### startOfMonth
 
-Return the start of the month for a timestamp.
+Return the start of the month for a timestamp in an optional locale.
 
 ```
-startOfDay('<timestamp>', '<format>'?)
+startOfMonth('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -4561,15 +4631,25 @@ startOfDay('<timestamp>', '<format>'?)
 | '<*updated-timestamp*>'| string | The specified timestamp starting on the first day of the month at the zero-hour mark |
 ||||
 
-*Example*
+*Example 1*
 
 This example finds the start of the month:
 
 ```
-startOfDay('2018-03-15T13:30:30.000Z')
+startOfMonth('2018-03-15T13:30:30.000Z')
 ```
 
 And returns the result **2018-03-01T00:00:00.000Z**.
+
+*Example 2*
+
+This example finds the start of the month with the locale **fr-FR**:
+
+```
+startOfMonth('2018-03-15T13:30:30.000Z', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
 
 <a name="startsWith"></a>
 
@@ -4611,42 +4691,6 @@ startsWith('hello world', 'greeting')
 ```
 
 And returns the result `false`.
-
-<a name="sentenceCase"></a>
-
-### sentenceCase
-
-Capitalize the first letter of the first word in a string.
-
-```
-sentenceCase('<text>')
-```
-
-| Parameter | Required | Type | Description |
-| --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The original string |
-|||||
-
-| Return value | Type | Description |
-| ------------ | ---- | ----------- |
-| result string | string | Returns the sentence case result |
-||||
-
-*Example*
-
-These examples capitalize the first letter in a string:
-
-```
-sentenceCase('a')
-sentenceCase('abc def')
-sentenceCase('aBC dEF')
-```
-
-And return the following results respectively:
-
-- **A**
-- **Abc def**
-- **Abc def**
 
 <a name="string"></a>
 
@@ -4796,10 +4840,10 @@ And returns the result **world**.
 
 ### subtractFromTime
 
-Subtract a number of time units from a timestamp. See also [getPastTime()](#getPastTime).
+Subtract a number of time units from a timestamp in an optional locale . See also [getPastTime()](#getPastTime).
 
 ```
-subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
+subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -4808,6 +4852,7 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 | <*interval*> | Yes | integer | The number of specified time units to subtract |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -4817,7 +4862,7 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 
 *Example 1*
 
-This example subtracts one day from the following timestamp:
+This example subtracts one day from a following timestamp:
 
 ```
 subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day')
@@ -4827,13 +4872,23 @@ And returns the result **2018-01-01T00:00:00.000Z**.
 
 *Example 2*
 
-This example subtracts one day from the following timestamp:
+This example subtracts one day from a timestamp using the **D** format:
 
 ```
 subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day', 'D')
 ```
 
-And returns the result using the optional *D* format: **Monday, January, 1, 2018**.
+And returns the result **Monday, January, 1, 2018**.
+
+*Example 3*
+
+This example subtracts one day from a following timestamp in the **fr-FR** locale:
+
+```
+subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day', 'D', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
 
 <a name="sum"></a>
 
@@ -5025,15 +5080,16 @@ And returns the number **3655643.0185**.
 
 ### titleCase
 
-Capitalize the first letter of each word in a string.
+Capitalize the first letter of each word in a string in an optional local format.
 
 ```
-titleCase('<text>')
+titleCase('<text>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The original string |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -5041,7 +5097,7 @@ titleCase('<text>')
 | result string | string | The title case result |
 ||||
 
-*Example*
+*Example 1*
 
 These examples capitalize the first letter of each word in a string:
 
@@ -5057,19 +5113,30 @@ And return the following results respectively:
 - **Abc Def**
 - **Abc Def**
 
+*Example 2*
+
+This example capitalizes the first letter in a string in the **fr-FR** format:
+
+```
+sentenceCase('abc def', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
+
 <a name="toLower"></a>
 
 ### toLower
 
-Return a string in lowercase format. If a character in the string doesn't have a lowercase version, that character stays unchanged in the returned string.
+Return a string in lowercase in an optional locale format. If a character in the string doesn't have a lowercase version, that character stays unchanged in the returned string.
 
 ```
-toLower('<text>')
+toLower('<text>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in lowercase format |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -5077,7 +5144,7 @@ toLower('<text>')
 | <*lowercase-text*> | string | The original string in lowercase format |
 ||||
 
-*Example*
+*Example 1*
 
 This example converts a string to lowercase:
 
@@ -5087,19 +5154,30 @@ toLower('Hello World')
 
 And returns the result **hello world**.
 
+*Example 2*
+
+This example converts a string to lowercase in the **fr-FR** format:
+
+```
+toUpper('Hello World', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
+
 <a name="toUpper"></a>
 
 ### toUpper
 
-Return a string in uppercase format. If a character in the string doesn't have an uppercase version, that character stays unchanged in the returned string.
+Return a string in uppercase in an optional locale format.. If a character in the string doesn't have an uppercase version, that character stays unchanged in the returned string.
 
 ```
-toUpper('<text>')
+toUpper('<text>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in uppercase format |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -5107,7 +5185,7 @@ toUpper('<text>')
 | <*uppercase-text*> | string | The original string in uppercase format |
 ||||
 
-*Example*
+*Example 1*
 
 This example converts a string to uppercase:
 
@@ -5116,6 +5194,16 @@ toUpper('Hello World')
 ```
 
 And returns the result **HELLO WORLD**.
+
+*Example 2*
+
+This example converts a string to uppercase in the **fr-FR** format:
+
+```
+toUpper('Hello World', 'fr-FR')
+```
+
+And returns the result **<add answer here>**.
 
 <a name="trim"></a>
 
@@ -5452,10 +5540,10 @@ And returns the result **http**.
 
 ### utcNow
 
-Return the current timestamp.
+Return the current timestamp in an optional locale as a string.
 
 ```
-utcNow('<format>')
+utcNow('<format>', '<locale>'?)
 ```
 
 Optionally, you can specify a different format with the <*format*> parameter.
@@ -5464,6 +5552,7 @@ Optionally, you can specify a different format with the <*format*> parameter.
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation | 
 |||||
 
 | Return value | Type | Description |
@@ -5483,13 +5572,23 @@ And returns the result **2018-04-15T13:00:00.000Z**.
 
 *Example 2*
 
-Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the optional *D* format:
+Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the optional **D** format:
 
 ```
 utcNow('D')
 ```
 
 And returns the result **Sunday, April 15, 2018**.
+
+*Example 3*
+
+Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the optional **D** format and **fr-FR** locale:
+
+```
+utcNow('D', 'fr-FR')
+```
+
+And returns the result **<add answe here>**.
 
 <a name="where"></a>
 
