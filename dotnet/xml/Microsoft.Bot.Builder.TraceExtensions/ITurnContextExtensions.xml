@@ -15,6 +15,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,7 +32,7 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivityAsync (this Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value = default, string valueType = default, string label = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; TraceActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string name, object value, string valueType, string label, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivityAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TraceActivityAsync (turnContext As ITurnContext, name As String, Optional value As Object = null, Optional valueType As String = null, Optional label As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TraceActivityAsync (turnContext As ITurnContext, name As String, Optional value As Object = Nothing, Optional valueType As String = Nothing, Optional label As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="static member TraceActivityAsync : Microsoft.Bot.Builder.ITurnContext * string * obj * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="Microsoft.Bot.Builder.TraceExtensions.ITurnContextExtensions.TraceActivityAsync (turnContext, name, value, valueType, label, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -57,7 +59,8 @@
         <Parameter Name="label" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerMemberName</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

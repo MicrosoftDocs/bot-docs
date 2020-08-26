@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Skype for Business - Bot Service
-description: Learn how to connect a bot with the Skype for Business tenant.
+description: Find out how to configure bots for instant messaging, phone, and video calls. Learn about Teams, an alternative to the deprecated Skype for Business channel.
 keywords: skype for business, bot channels
 author: RobStand
 ms.author: kamrani

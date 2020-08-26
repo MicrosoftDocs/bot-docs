@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +45,14 @@
       <MemberSignature Language="C#" Value="public ConversationsResult (string continuationToken = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ConversationMembers&gt; conversations = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string continuationToken, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ConversationMembers&gt; conversations) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ConversationsResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.ConversationMembers})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional continuationToken As String = null, Optional conversations As IList(Of ConversationMembers) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional continuationToken As String = Nothing, Optional conversations As IList(Of ConversationMembers) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ConversationsResult : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ConversationMembers&gt; -&gt; Microsoft.Bot.Schema.ConversationsResult" Usage="new Microsoft.Bot.Schema.ConversationsResult (continuationToken, conversations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="continuationToken" Type="System.String" />
@@ -75,10 +78,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,10 +108,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversations")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="conversations")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="conversations")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to GroupMe - Bot Service
-description: Learn how to configure a bot's connection to GroupMe.
+description: Learn how to configure bots to use the GroupMe group messaging app to communicate with people. See how to connect bots to GroupMe.
 keywords: bot channel, GroupMe, create GroupMe, credentials
 author: RobStand
 ms.author: kamrani

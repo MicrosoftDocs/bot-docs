@@ -9,6 +9,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,38 +34,11 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CheckLGResult">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; CheckLGResult (object lgResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; CheckLGResult(object lgResult) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityFactory.CheckLGResult(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckLGResult (lgResult As Object) As IList(Of String)" />
-      <MemberSignature Language="F#" Value="static member CheckLGResult : obj -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Bot.Builder.ActivityFactory.CheckLGResult lgResult" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="lgResult" Type="System.Object" />
-      </Parameters>
-      <Docs>
-        <param name="lgResult">lg output.</param>
-        <summary>
-            check the LG result before generate an Activity.
-            </summary>
-        <returns>Diagnostic list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,6 +54,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>

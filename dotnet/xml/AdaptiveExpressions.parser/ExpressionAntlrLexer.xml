@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.Lexer</BaseTypeName>
@@ -14,10 +15,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="input" Type="Antlr4.Runtime.ICharStream" />
@@ -55,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Atn.ATN</ReturnType>
@@ -74,6 +79,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -93,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -110,6 +117,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ARROW">
+      <MemberSignature Language="C#" Value="public const int ARROW = 27;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ARROW = (27)" />
+      <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.ARROW" />
+      <MemberSignature Language="VB.NET" Value="Public Const ARROW As Integer  = 27" />
+      <MemberSignature Language="F#" Value="val mutable ARROW : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.ARROW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ASTERISK">
       <MemberSignature Language="C#" Value="public const int ASTERISK = 6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 ASTERISK = (6)" />
@@ -120,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -140,6 +168,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -160,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -180,6 +210,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -200,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -220,6 +252,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -240,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
@@ -259,6 +293,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -279,6 +314,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -299,6 +335,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -319,6 +356,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -330,20 +368,21 @@
       </Docs>
     </Member>
     <Member MemberName="ESCAPE_CHARACTER">
-      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 34;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (34)" />
+      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 35;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (35)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.ESCAPE_CHARACTER" />
-      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 34" />
+      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 35" />
       <MemberSignature Language="F#" Value="val mutable ESCAPE_CHARACTER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.ESCAPE_CHARACTER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>34</MemberValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -359,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -370,40 +410,42 @@
       </Docs>
     </Member>
     <Member MemberName="IDENTIFIER">
-      <MemberSignature Language="C#" Value="public const int IDENTIFIER = 29;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IDENTIFIER = (29)" />
+      <MemberSignature Language="C#" Value="public const int IDENTIFIER = 30;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 IDENTIFIER = (30)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.IDENTIFIER" />
-      <MemberSignature Language="VB.NET" Value="Public Const IDENTIFIER As Integer  = 29" />
+      <MemberSignature Language="VB.NET" Value="Public Const IDENTIFIER As Integer  = 30" />
       <MemberSignature Language="F#" Value="val mutable IDENTIFIER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.IDENTIFIER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>29</MemberValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="INVALID_TOKEN_DEFAULT_MODE">
-      <MemberSignature Language="C#" Value="public const int INVALID_TOKEN_DEFAULT_MODE = 32;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_TOKEN_DEFAULT_MODE = (32)" />
+      <MemberSignature Language="C#" Value="public const int INVALID_TOKEN_DEFAULT_MODE = 33;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_TOKEN_DEFAULT_MODE = (33)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.INVALID_TOKEN_DEFAULT_MODE" />
-      <MemberSignature Language="VB.NET" Value="Public Const INVALID_TOKEN_DEFAULT_MODE As Integer  = 32" />
+      <MemberSignature Language="VB.NET" Value="Public Const INVALID_TOKEN_DEFAULT_MODE As Integer  = 33" />
       <MemberSignature Language="F#" Value="val mutable INVALID_TOKEN_DEFAULT_MODE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.INVALID_TOKEN_DEFAULT_MODE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>32</MemberValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -419,6 +461,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -439,6 +482,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -459,6 +503,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -478,6 +523,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -498,6 +544,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -518,6 +565,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -529,20 +577,21 @@
       </Docs>
     </Member>
     <Member MemberName="NEWLINE">
-      <MemberSignature Language="C#" Value="public const int NEWLINE = 30;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE = (30)" />
+      <MemberSignature Language="C#" Value="public const int NEWLINE = 31;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NEWLINE = (31)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.NEWLINE" />
-      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE As Integer  = 30" />
+      <MemberSignature Language="VB.NET" Value="Public Const NEWLINE As Integer  = 31" />
       <MemberSignature Language="F#" Value="val mutable NEWLINE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.NEWLINE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>30</MemberValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -558,6 +607,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -578,6 +628,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -589,20 +640,21 @@
       </Docs>
     </Member>
     <Member MemberName="NUMBER">
-      <MemberSignature Language="C#" Value="public const int NUMBER = 27;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NUMBER = (27)" />
+      <MemberSignature Language="C#" Value="public const int NUMBER = 28;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NUMBER = (28)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.NUMBER" />
-      <MemberSignature Language="VB.NET" Value="Public Const NUMBER As Integer  = 27" />
+      <MemberSignature Language="VB.NET" Value="Public Const NUMBER As Integer  = 28" />
       <MemberSignature Language="F#" Value="val mutable NUMBER : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.NUMBER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>27</MemberValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -618,6 +670,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -638,6 +691,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -658,6 +712,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -678,6 +733,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -698,6 +754,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -718,6 +775,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -737,6 +795,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -757,6 +816,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -785,6 +845,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -805,6 +866,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -825,6 +887,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -836,20 +899,21 @@
       </Docs>
     </Member>
     <Member MemberName="STRING">
-      <MemberSignature Language="C#" Value="public const int STRING = 31;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRING = (31)" />
+      <MemberSignature Language="C#" Value="public const int STRING = 32;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STRING = (32)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING" />
-      <MemberSignature Language="VB.NET" Value="Public Const STRING As Integer  = 31" />
+      <MemberSignature Language="VB.NET" Value="Public Const STRING As Integer  = 32" />
       <MemberSignature Language="F#" Value="val mutable STRING : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.STRING" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>31</MemberValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -865,6 +929,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -885,6 +950,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -905,6 +971,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -916,40 +983,42 @@
       </Docs>
     </Member>
     <Member MemberName="TEMPLATE">
-      <MemberSignature Language="C#" Value="public const int TEMPLATE = 33;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE = (33)" />
+      <MemberSignature Language="C#" Value="public const int TEMPLATE = 34;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE = (34)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.TEMPLATE" />
-      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE As Integer  = 33" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE As Integer  = 34" />
       <MemberSignature Language="F#" Value="val mutable TEMPLATE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.TEMPLATE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>33</MemberValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TEXT_CONTENT">
-      <MemberSignature Language="C#" Value="public const int TEXT_CONTENT = 35;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_CONTENT = (35)" />
+      <MemberSignature Language="C#" Value="public const int TEXT_CONTENT = 36;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEXT_CONTENT = (36)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.TEXT_CONTENT" />
-      <MemberSignature Language="VB.NET" Value="Public Const TEXT_CONTENT As Integer  = 35" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEXT_CONTENT As Integer  = 36" />
       <MemberSignature Language="F#" Value="val mutable TEXT_CONTENT : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.TEXT_CONTENT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>35</MemberValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -965,10 +1034,12 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use Vocabulary instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use Vocabulary instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use Vocabulary instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -989,10 +1060,12 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use IRecognizer.Vocabulary instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use IRecognizer.Vocabulary instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use IRecognizer.Vocabulary instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1014,10 +1087,12 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+          <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+          <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1030,20 +1105,21 @@
       </Docs>
     </Member>
     <Member MemberName="WHITESPACE">
-      <MemberSignature Language="C#" Value="public const int WHITESPACE = 28;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WHITESPACE = (28)" />
+      <MemberSignature Language="C#" Value="public const int WHITESPACE = 29;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 WHITESPACE = (29)" />
       <MemberSignature Language="DocId" Value="F:AdaptiveExpressions.parser.ExpressionAntlrLexer.WHITESPACE" />
-      <MemberSignature Language="VB.NET" Value="Public Const WHITESPACE As Integer  = 28" />
+      <MemberSignature Language="VB.NET" Value="Public Const WHITESPACE As Integer  = 29" />
       <MemberSignature Language="F#" Value="val mutable WHITESPACE : int" Usage="AdaptiveExpressions.parser.ExpressionAntlrLexer.WHITESPACE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>28</MemberValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -1059,6 +1135,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

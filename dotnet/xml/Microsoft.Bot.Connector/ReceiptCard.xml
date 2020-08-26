@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public ReceiptCard (string title = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; items = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; facts = default, Microsoft.Bot.Connector.CardAction tap = default, string total = default, string tax = default, string vat = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ReceiptItem&gt; items, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.Fact&gt; facts, class Microsoft.Bot.Connector.CardAction tap, string total, string tax, string vat, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ReceiptCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ReceiptItem},System.Collections.Generic.IList{Microsoft.Bot.Connector.Fact},Microsoft.Bot.Connector.CardAction,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional items As IList(Of ReceiptItem) = null, Optional facts As IList(Of Fact) = null, Optional tap As CardAction = null, Optional total As String = null, Optional tax As String = null, Optional vat As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = Nothing, Optional items As IList(Of ReceiptItem) = Nothing, Optional facts As IList(Of Fact) = Nothing, Optional tap As CardAction = Nothing, Optional total As String = Nothing, Optional tax As String = Nothing, Optional vat As String = Nothing, Optional buttons As IList(Of CardAction) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ReceiptCard : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ReceiptItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.Fact&gt; * Microsoft.Bot.Connector.CardAction * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.ReceiptCard" Usage="new Microsoft.Bot.Connector.ReceiptCard (title, items, facts, tap, total, tax, vat, buttons)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -92,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="buttons")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="buttons")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,7 +143,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="facts")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="facts")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="facts")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,7 +172,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="items")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="items")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="items")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,7 +201,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tap")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tap")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,7 +230,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tax")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tax")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tax")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -254,7 +259,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="title")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="title")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -282,7 +288,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="total")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="total")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="total")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,7 +317,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vat")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="vat")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="vat")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -8,13 +8,29 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The 48-byte, fixed size, header prefaces every payload. The header must always have the
+            same shape, regardless of if its payload is a request, response, or content. It is a
+            period-delimited ASCII-encoded string terminated with a newline. All headers must have
+            these segments, and all values must be zero padded to fill the correct number of bytes:
+            |Title           Size        Description
+            |Type            1 byte      ASCII-encoded char. Describes the format of the payload (request, response, stream, etc.)
+            |Delimiter       1 byte      ASCII period character
+            |Length          6 bytes     ASCII-encoded decimal. Size in bytes of this payload in ASCII decimal, not including the header. Zero padded.
+            |Delimiter       1 byte      ASCII period character
+            |ID              36 bytes    ASCII-encoded hex. GUID (Request ID, Stream ID, etc.)
+            |Delimiter       1 byte      ASCII period character
+            |End             1 byte      ASCII ‘0’ or ‘1’. Signals the end of a payload or multi-part payload
+            |Terminator      1 byte      Hardcoded to \n
+            ex: A.000168.68e999ca-a651-40f4-ad8f-3aaf781862b4.1\n end example.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,13 +45,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <MemberValue>46</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            ASCII period character.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,6 +69,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Payloads.Header</ReturnType>
@@ -60,11 +80,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">The array containing bytes to be read.</param>
+        <param name="offset">Deprecated offset of header's starting location within the byte array.</param>
+        <param name="count">The length of the byte array.</param>
+        <summary>
+            Deserialize the passed in byte array into the returned <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" />.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" /> deserialized from the byte array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,13 +101,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <MemberValue>49</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            ASCII ‘1’. Signals the end of a payload or multi-part payload.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,13 +125,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>46</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the End section.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,13 +149,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>45</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the ID delimiter.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,13 +173,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>36</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The length in bytes of the ID section.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,13 +197,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the Id section.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,13 +221,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the Length delimiter.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,13 +245,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The length in bytes of the Length value.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,13 +269,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the Length section.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,13 +293,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <MemberValue>48</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            ASCII ‘0’. Signals this is not the end of a payload or multi-part payload.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,6 +317,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -278,11 +328,13 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="header">The <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" /> to serialize.</param>
+        <param name="buffer">The byte array to store the serialized header in.</param>
+        <param name="offset">Deprecated offset used to begin writing to the buffer at a location other than 0.</param>
+        <summary>
+            Serializes the passed in header into the passed in byte array.
+            </summary>
+        <returns>An int representing the maximum supported header length.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,13 +349,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Hardcoded to \n .
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,13 +373,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>47</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the Terminator section.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,13 +397,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the Type delimiter.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,13 +421,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The offset from the first character in the header to the Type section.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -45,7 +45,7 @@
       <MemberSignature Language="C#" Value="public LuisResult (string query, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, Microsoft.Bot.Builder.Luis.Models.IntentRecommendation topScoringIntent = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; intents = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; compositeEntities = default, Microsoft.Bot.Builder.Luis.Models.DialogResponse dialog = default, string alteredQuery = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string query, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; entities, class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation topScoringIntent, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; intents, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; compositeEntities, class Microsoft.Bot.Builder.Luis.Models.DialogResponse dialog, string alteredQuery) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.LuisResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.EntityRecommendation},Microsoft.Bot.Builder.Luis.Models.IntentRecommendation,System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.IntentRecommendation},System.Collections.Generic.IList{Microsoft.Bot.Builder.Luis.Models.CompositeEntity},Microsoft.Bot.Builder.Luis.Models.DialogResponse,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String, entities As IList(Of EntityRecommendation), Optional topScoringIntent As IntentRecommendation = null, Optional intents As IList(Of IntentRecommendation) = null, Optional compositeEntities As IList(Of CompositeEntity) = null, Optional dialog As DialogResponse = null, Optional alteredQuery As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (query As String, entities As IList(Of EntityRecommendation), Optional topScoringIntent As IntentRecommendation = Nothing, Optional intents As IList(Of IntentRecommendation) = Nothing, Optional compositeEntities As IList(Of CompositeEntity) = Nothing, Optional dialog As DialogResponse = Nothing, Optional alteredQuery As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.Models.LuisResult : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.EntityRecommendation&gt; * Microsoft.Bot.Builder.Luis.Models.IntentRecommendation * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.IntentRecommendation&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Luis.Models.CompositeEntity&gt; * Microsoft.Bot.Builder.Luis.Models.DialogResponse * string -&gt; Microsoft.Bot.Builder.Luis.Models.LuisResult" Usage="new Microsoft.Bot.Builder.Luis.Models.LuisResult (query, entities, topScoringIntent, intents, compositeEntities, dialog, alteredQuery)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -94,7 +94,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="alteredQuery")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="alteredQuery")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="alteredQuery")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -126,7 +127,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="compositeEntities")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="compositeEntities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="compositeEntities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -156,7 +158,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="dialog")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="dialog")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="dialog")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -184,7 +187,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="entities")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="entities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="entities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -214,7 +218,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="intents")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="intents")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="intents")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -244,7 +249,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="query")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="query")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="query")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -272,7 +278,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sentimentAnalysis")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sentimentAnalysis")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sentimentAnalysis")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -304,7 +311,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="topScoringIntent")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="topScoringIntent")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="topScoringIntent")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -15,7 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-This article lists the available prebuilt functions ordered by their general purpose. Prebuilt expressions are divided into the following function types:
+This article lists the available prebuilt functions ordered by their general purpose. For information about operators used in prebuilt functions and expression syntax, see [Operators](../v4sdk/bot-builder-concept-adaptive-expressions.md#operators).
+
+Prebuilt expressions are divided into the following function types:
 
 - [String](#string-functions)
 - [Collection](#collection-functions)
@@ -51,6 +53,8 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
+|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string.|
+|[titleCase](#titleCase)|Capitalize the first letter of each word in a string.|
 
 ### Collection functions
 
@@ -58,7 +62,7 @@ You can also view the list in [alphabetical order](#add).
 |-----------|-----------|
 |[contains](#contains)	|Works to find an item in a string, to find an item in an array, or to find a parameter in a complex object. <br> **Examples**: <br> contains('hello world', 'hello')<br> contains(createArray('1','2'), '1')<br> contains(json("{'foo':'bar'}"), 'foo')|
 |[first](#first)|Return the first item from the collection.|
-|[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter. join(collection, delimiter). <br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
+|[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter.<br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
 |[last](#last) |Return the last item from the collection.|
 |[count](#count)|Return the number of items in the collection.|
 |[foreach](#foreach)|Operate on each element and return the new collection.|
@@ -111,6 +115,7 @@ You can also view the list in [alphabetical order](#add).
 |[uriComponent](#uriComponent)|Return the URI-encoded version for an input value by replacing URL-unsafe characters with escape characters.|
 |[uriComponentToString](#uriComponentToString)|Return the string version of a URI-encoded string.|
 |[xml](#xml)|C# only. Return the XML version of a string.|
+|[formatNumber](#formatNumber)|Format a value to the nearest number to the specified number of fractional digits and an optional specified locale.|
 
 ### Math functions
 
@@ -128,6 +133,9 @@ You can also view the list in [alphabetical order](#add).
 |[range](#range)|Return an integer array that starts from a specified integer.|
 |[exp](#exp)|Return exponentiation of one number to another.|
 |[average](#average)|Return the average number of an numeric array.|
+|[floor](#floor)|Return the largest integral value less than or equal to the specified number.|
+|[ceiling](#ceiling)|Return the smallest integral value greater than or equal to the specified number.|
+|[round](#round)|Round a value to the nearest integer or to the specified number of fractional digits.|
 
 ### Date and time functions
 
@@ -159,6 +167,10 @@ You can also view the list in [alphabetical order](#add).
 |[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp. |
 |[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp.|
 |[ticks](#ticks)   |Return the ticks property value of a specified timestamp.|
+|[ticksToDays](#ticksToDays)| Convert a ticks property value to the number of days. |
+|[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
+|[ticksToMinutes](#ticksToMinutes)| Convert a ticks property value to the number of minutes. |
+|[dateTimeDiff](#dateTimeDiff)| Return the difference in ticks between two timestamps. |
 
 ### Timex functions
 
@@ -190,7 +202,7 @@ You can also view the list in [alphabetical order](#add).
 |[addProperty](#addProperty)   |Add a property and its value, or name-value pair, to a JSON object and return the updated object.|
 |[removeProperty](#removeProperty) |Remove a property from JSON object and return the updated object.|
 |[setProperty](#setProperty)   |Set the value of a JSON object's property and return the updated object.|
-|[getProperty](#getProperty)   |Return the value of the given property in a JSON object. |
+|[getProperty](#getProperty)   |Return the value of a specified property or root property from a JSON object. |
 |[coalesce](#coalesce) |Return the first non-null value from one or more parameters. |
 |[xPath](#xPath)   |C# only. Check XML for nodes or values that match an XPath (XML Path Language) expression, and return the matching nodes or values.|
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
@@ -206,6 +218,7 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
+|[EOL](#EOL)| C# only. Return the end of line (EOL) sequence text.|
 |[isInteger](#isInteger)|Return true if  given input is an integer number|
 |[isFloat](#isFloat)|Return true if the given input is a float point number|
 |[isBoolean](#isBoolean)|Return true if the given input is a Boolean.|
@@ -777,6 +790,36 @@ And respectively returns these results:
 * `true`
 * `false`
 
+<a name="ceiling"></a>
+
+### ceiling
+
+Return the largest integral value less than or equal to the specified number.
+
+```
+ceiling('<number>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*integer-value*> | integer | The largest integral value greater than or equal to the input number |
+||||
+
+*Example*
+
+This example returns the largest integral value less than or equal to the number **10.333**:
+
+```
+ceiling(10.333)
+```
+
+And returns the integer **11**.
+
 <a name="coalesce"></a>
 
 ### coalesce
@@ -797,17 +840,17 @@ coalesce(<object**1>, <object**2>, ...)
 | <*first-non-null-item*> | any | The first item or value that is not null. If all parameters are null, this function returns null. |
 ||||
 
-*Example*<br>
-These examples return the first non-null value from the specified values, or null when all the values are null.
+*Example*
 
-Here are some examples:
+These examples return the first non-null value from the specified values, or null when all the values are null:
+
 ```
 coalesce(null, true, false)
 coalesce(null, 'hello', 'world')
 coalesce(null, null, null)
 ```
 
-They respectively return these results:
+And respectively return:
 
 - `true`
 - **hello**
@@ -817,7 +860,7 @@ They respectively return these results:
 
 ### concat
 
-Combine two or more strings, and return the combined string.
+Combine two or more objects, and return the combined objects in a list or string.
 
 ```
 concat('<text1>', '<text2>', ...)
@@ -825,13 +868,19 @@ concat('<text1>', '<text2>', ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*text1*>, <*text2*>, ... | Yes | string | At least two strings to combine |
+| <*object1*>, <*object2*>, ... | Yes | any | At least two objects to concat. |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*text1text2...*> | string | The string created from the combined input strings |
+| <*object1object2...*> | string or list | The combined string or list. Null values are skipped. |
 ||||
+
+Expected return values:
+
+- If all items are lists, a list will be returned.
+- If there exists an item that is not a list, a string will be returned.
+- If a value is null, it is skipped and not concatanated.
 
 *Example*
 
@@ -842,6 +891,44 @@ concat('Hello', 'World')
 ```
 
 And returns the result **HelloWorld**.
+
+*Example 2*
+
+This example combines the lists **[1,2]** and **[3,4]**:
+
+```
+concat([1,2],[3,4])
+```
+
+And returns the result **[1,2,3,4]**.
+
+*Example 3*
+
+These examples combine objects of different types:
+
+```
+concat('a', 'b', 1, 2)
+concat('a', [1,2])
+```
+
+And return the following results respectively:
+
+- The string **ab12**.
+- The object **aSystem.Collections.Generic.List 1[System.Object]**. This is unreadable and best to avoid.
+
+*Example 4*
+
+These example combine objects will `null`:
+
+```
+concat([1,2], null)
+concat('a', 1, null)
+```
+
+And return the following results respectively:
+
+- The list **[1,2]**.
+- The string **a1**.
 
 <a name="contains"></a>
 
@@ -1190,7 +1277,48 @@ dateReadBack('2018-03-15T13:00:00.000Z', '2018-03-16T13:00:00.000Z')
 
 Returns the result **tomorrow**.
 
-<a name="dayOfMonth"></a>
+<a name="dateTimeDiff"></a>
+
+### dateTimeDiff
+
+Return the difference in ticks between two timestamps.
+
+```
+dateTimeDiff('<timestamp1>', '<timestamp2>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*timestamp1*> | Yes | string | The first timestamp string to compare |
+| <*timestamp2*> | Yes | string | The second timestamp string to compare |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*ticks*> | number | The difference in ticks between two timestamps  |
+||||
+
+*Example 1*
+
+This example returns the difference in ticks between two timestamps:
+
+```
+dateTimeDiff('2019-01-01T08:00:00.000Z','2018-01-01T08:00:00.000Z')
+```
+
+And returns the number **315360000000000**.
+
+*Example 2*
+
+This example returns the difference in ticks between two timestamps:
+
+```
+dateTimeDiff('2018-01-01T08:00:00.000Z', '2019-01-01T08:00:00.000Z')
+```
+
+Returns the result **-315360000000000**. Note that the value is a negative number.
+
+<a name="dayOfMonth"></a>	<a name="dayOfMonth"></a>
 
 ### dayOfMonth
 
@@ -1408,6 +1536,34 @@ endsWith('hello world', 'universe')
 
 And it returns the result `false`.
 
+<a name="EOL"></a>
+
+### EOL
+
+C# only. Return the end of line (EOL) sequence text.
+
+```
+EOL()
+```
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*IsOSPlatform*>| string | Return **\r\n** in Windows and **\n** in Mac and Linux. |
+||||
+
+*Example*
+
+This example checks the end of the line sequence text:
+
+```
+EOL()
+```
+
+And returns the following strings:
+
+- Windows: **\r\n**
+- Mac or Linux: **\n**
+
 <a name="equals"></a>
 
 ### equals
@@ -1539,7 +1695,7 @@ And return these results respectively:
 * **h**
 * **0**
 
-<a name="flatten"/>
+<a name="flatten"></a>
 
 ### flatten
 
@@ -1602,13 +1758,43 @@ float('<value>')
 
 *Example*
 
-This example creates the string version of the following floating-point number:
+This example converts the float version of a string:
 
 ```
 float('10.333')
 ```
 
-And returns the resulting string **10.333**.
+And returns the float **10.333**.
+
+<a name="floor"></a>
+
+### floor
+
+Return the largest integral value less than or equal to the specified number.
+
+```
+floor('<number>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*integer-value*> | integer | The largest integral value less than or equal to the input number |
+||||
+
+*Example*
+
+This example calculates the floor value of the number **10.333**:
+
+```
+floor(10.333)
+```
+
+And returns the integer **10**.
 
 <a name="foreach"></a>
 
@@ -1640,17 +1826,18 @@ This example generates a new collection:
 foreach(createArray(0, 1, 2, 3), x, x + 1)
 ```
 
-And return the result **[1, 2, 3, 4]**.
+And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-This example generates a new collection:
+These examples generate a new collection:
 
 ```
 foreach(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
+foreach(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
 ```
 
-And returns the result **['name:jack', 'age:15']**.
+And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
 <a name="formatDateTime"></a>
 
@@ -1716,6 +1903,47 @@ formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 
 And returns the result **2018-03-15T12:00:00.000Z**.
 
+<a name="formatNumber"></a>
+
+### formatNumber
+
+Format a value to the specified number of fractional digits and an optional specified locale.
+
+```
+formatNumber('<number>', '<precision-digits>', '<locale>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+| <*precision-digits*> | Yes | integer | A specified number of fractional digits|
+| <*locale*> | No| string | An optional locale of culture infomation |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*return-value*> | number | The return value of the input formated at a specified number of fractional digits and a specified locale |
+||||
+
+*Example 1*
+
+This example formats ther number **10.333** to **2** fractional digits:
+
+```
+formatNumber(10.333, 2)
+```
+
+And returns the string **10.33**.
+
+*Example 2*
+
+This example formats ther number **10.333** to **4** fractional digits using the **fr-fr** formatting:
+
+```
+formatNumber(12000.3, 4, 'fr-fr')
+```
+
+And returns the string **"12 000,3000"**.
 
 <a name="formatTicks"></a>
 
@@ -1836,31 +2064,88 @@ It returns the result **02-26-18**.
 
 ### getProperty
 
-Retrieve the value of the specified property from the JSON object.
+Return the value of a specified property or the root property from a JSON object.
+
+#### Return the value of a specified property
 
 ```
-getProperty(<JSONObject>, '<Property>')
+getProperty(<JSONObject>, '<propertyName>')
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*JSONObject*> | Yes | object | The JSON Object contains the property and value you want to get |
-| <*property*> | Yes | string | The specified property you want to get from the JSON object |
+| <*JSONObject*> | Yes | object | The JSON object containing the property and values. |
+| <*propertyName*> | No | string | The name of the optional property to access values from.|
+|||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| value | object | The value of the specified property you want to get in the JSON object|
+| value | string | The value of the specified property in the JSON object. |
 ||||
 
 *Example*
 
-This example gets properties from **item = {'name': 'myName', 'age': 18, 'state': ['single', 'junior', 'Grade A']}**:
+Say you have the following JSON object:
+
+```json
+{
+   "a:b" : "a:b value",
+   "c":
+   {
+        "d": "d key"
+    }
+}
+```
+
+These example retrieve a specified property from the above JSON object:
 
 ```
-getProperty(item, 'state')
+getProperty({"a:b": "value"}, 'a:b')
+getProperty(c, 'd')
 ```
 
-And returns the result **['single', 'junior', 'Grade A']**.
+And return the following strings respectively:
+
+- **a:b value**
+- **d key**
+
+#### Return the root property
+
+```
+getProperty('<propertyName>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*propertyName*> | Yes | string | The name of the optional property to access values from the root memory scope. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| value | string | The value of the root property in a JSON object. |
+||||
+
+*Example*
+
+Say you have the following JSON object:
+
+```json
+{
+   "a:b" : "a:b value",
+   "c":
+   {
+        "d": "d key"
+    }
+}
+```
+
+This example retrieves the root property from the above JSON object:
+
+```
+getProperty("a:b")
+```
+
+And returns the string **a:b value**.
 
 <a name="getTimeOfDay"></a>
 
@@ -3564,6 +3849,48 @@ replace('the old string', 'old', 'new')
 
 And returns the result **the new string**.
 
+<a name="round"></a>
+
+### round
+
+Round a value to the nearest integer or to the specified number of fractional digits.
+
+```
+round('<number>', '<precision-digits>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*number*> | Yes | number | An input number |
+| <*precision-digits*> | No | integer | A specified number of fractional digits. The default is 0. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*return-value*> | number | The return value of the input rounded at a specified number of fractional digits |
+||||
+
+*Example 1*
+
+This example rounds the number **10.333**:
+
+```
+round(10.333)
+```
+
+And returns the number **10**.
+
+*Example 2*
+
+This example rounds the number **10.3313** to **2** fractional digits:
+
+```
+round(10.3313, 2)
+```
+
+And returns the number **10.33**.
+
+
 <a name="select"></a>
 
 ### select
@@ -3577,7 +3904,7 @@ select([<collection/instance>], <iteratorName>, <function>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*collection/instance*> | Yes | array | The collection with the items |
-| <*iteratorName*> | Yes | iterator name | The key item of arrow function |
+| <*iteratorName*> | Yes | iterator name | The key item |
 | <*function*> | Yes | expression | Th function that can contains `iteratorName` |
 |||||
 
@@ -3588,7 +3915,7 @@ select([<collection/instance>], <iteratorName>, <function>)
 
 *Example 1*
 
-This example generates a new collections:
+This example generates a new collection:
 
 ```
 select(createArray(0, 1, 2, 3), x, x + 1)
@@ -3598,13 +3925,15 @@ And returns the result **[1, 2, 3, 4]**.
 
 *Example 2*
 
-This example generates a new collection from an instance:
+These examples generate a new collection:
 
 ```
 select(json("{'name': 'jack', 'age': '15'}"), x, concat(x.key, ':', x.value))
+select(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
+
 ```
 
-And returns the result **['name:jack', 'age:15']**.
+And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
 <a name="setPathToValue"></a>
 
@@ -4006,6 +4335,42 @@ startsWith('hello world', 'greeting')
 
 And returns the result `false`.
 
+<a name="sentenceCase"></a>
+
+### sentenceCase
+
+Capitalize the first letter of the first word in a string.
+
+```
+sentenceCase('<text>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*text*> | Yes | string | The original string |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| result string | string | Returns the sentence case result |
+||||
+
+*Example*
+
+These examples capitalize the first letter in a string:
+
+```
+sentenceCase('a')
+sentenceCase('abc def')
+sentenceCase('aBC dEF')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc def**
+- **Abc def**
+
 <a name="string"></a>
 
 ### string
@@ -4279,6 +4644,132 @@ ticks('2018-01-01T08:00:00.000Z')
 ```
 
 And returns the result **636503904000000000**.
+
+<a name='ticksToDays'></a>
+
+### ticksToDays
+
+Convert a ticks property value to the number of days.
+
+```
+ticksToDays('ticks')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*ticks*>| Yes | integer | The ticks property value to convert |
+|||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*number-of-days*> | number | The number of days converted from the ticks property value |
+||||
+
+*Example*
+
+This example converts a ticks property value to a number of days:
+
+```
+ticksToDays(2193385800000000)
+```
+
+And returns the number **2538.64097222**.
+
+<a name='ticksToHours'></a>
+
+### ticksToHours
+
+Convert a ticks property value to the number of hours.
+
+```
+ticksToHours('ticks')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*ticks*>| Yes | Integer | The ticks property value to convert |
+|||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*number-of-hours*> | number | The number of hours converted from the ticks property value |
+||||
+
+*Example*
+
+This example converts a ticks property value to a number of hours:
+
+```
+ticksToHours(2193385800000000)
+```
+
+And returns the number **60927.383333333331**.
+
+<a name='ticksToMinutes'></a>
+
+### ticksToMinutes
+
+Convert a ticks property value to the number of minutes.
+
+```
+ticksToMinutes('ticks')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*ticks*>| Yes | integer | The ticks property value to convert |
+|||||
+
+| Return value | Type | Description |
+| ------------ | -----| ----------- |
+| <*number-of-minutes*> | number | The number of minutes converted from the ticks property value |
+||||
+
+*Example*
+
+This example converts a ticks property value to a number of minutes:
+
+```
+ticksToMinutes(2193385800000000)
+```
+
+And returns the number **3655643.0185**.
+
+<a name="titleCase"></a>
+
+### titleCase
+
+Capitalize the first letter of each word in a string.
+
+```
+titleCase('<text>')
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*text*> | Yes | string | The original string |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| result string | string | The title case result |
+||||
+
+*Example*
+
+These examples capitalize the first letter of each word in a string:
+
+```
+titleCase('a')
+titleCase('abc def')
+sentenceCase('aBC dEF')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc Def**
+- **Abc Def**
 
 <a name="toLower"></a>
 
@@ -4727,7 +5218,7 @@ where([<collection/instance>], <iteratorName>, <function>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*collection/instance*> | Yes | array | The collection with the items |
-| <*iteratorName*> | Yes | iterater name | The key item of arrow function |
+| <*iteratorName*> | Yes | iterater name | The key item |
 | <*function*> | Yes | expression | Condition function used to filter items|
 |||||
 
@@ -4738,7 +5229,7 @@ where([<collection/instance>], <iteratorName>, <function>)
 
 *Example 1*
 
-This example generates a new collections:
+This example generates a new collection:
 
 ```
 where(createArray(0, 1, 2, 3), x, x > 1)
@@ -4748,13 +5239,14 @@ And returns the result **[2, 3]**.
 
 *Example 2*
 
-This example generates a new object:
+These examples generate a new collection:
 
 ```
 where(json("{'name': 'jack', 'age': '15'}"), x, x.value == 'jack')
+where(json("{'name': 'jack', 'age': '15'}"), x=> x.value == 'jack')
 ```
 
-And returns the result **{'name': 'jack'}**.
+And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
 <a name="xml"></a>
 

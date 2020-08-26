@@ -12,13 +12,16 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.InterceptionMiddleware</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Middleware to enable debugging the state of a bot.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +29,7 @@
       <MemberSignature Language="C#" Value="public InspectionMiddleware (Microsoft.Bot.Builder.InspectionState inspectionState, Microsoft.Bot.Builder.UserState userState = default, Microsoft.Bot.Builder.ConversationState conversationState = default, Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials = default, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.InspectionMiddleware&gt; logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.InspectionState inspectionState, class Microsoft.Bot.Builder.UserState userState, class Microsoft.Bot.Builder.ConversationState conversationState, class Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials credentials, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.InspectionMiddleware&gt; logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.#ctor(Microsoft.Bot.Builder.InspectionState,Microsoft.Bot.Builder.UserState,Microsoft.Bot.Builder.ConversationState,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.InspectionMiddleware})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (inspectionState As InspectionState, Optional userState As UserState = null, Optional conversationState As ConversationState = null, Optional credentials As MicrosoftAppCredentials = null, Optional logger As ILogger(Of InspectionMiddleware) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inspectionState As InspectionState, Optional userState As UserState = Nothing, Optional conversationState As ConversationState = Nothing, Optional credentials As MicrosoftAppCredentials = Nothing, Optional logger As ILogger(Of InspectionMiddleware) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.InspectionMiddleware : Microsoft.Bot.Builder.InspectionState * Microsoft.Bot.Builder.UserState * Microsoft.Bot.Builder.ConversationState * Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.InspectionMiddleware&gt; -&gt; Microsoft.Bot.Builder.InspectionMiddleware" Usage="new Microsoft.Bot.Builder.InspectionMiddleware (inspectionState, userState, conversationState, credentials, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -37,6 +40,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="inspectionState" Type="Microsoft.Bot.Builder.InspectionState" />
@@ -46,12 +50,14 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.InspectionMiddleware&gt;" />
       </Parameters>
       <Docs>
-        <param name="inspectionState">To be added.</param>
-        <param name="userState">To be added.</param>
-        <param name="conversationState">To be added.</param>
-        <param name="credentials">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="inspectionState">A state management object for inspection state.</param>
+        <param name="userState">A state management object for user state.</param>
+        <param name="conversationState">A state management object for conversation state.</param>
+        <param name="credentials">The authentication credentials.</param>
+        <param name="logger">A logger.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.InspectionMiddleware" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,14 +76,17 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets the HTTP client for the current object.
+            </summary>
+        <returns>The HTTP client for the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +105,14 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ValueTuple&lt;System.Boolean,System.Boolean&gt;&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "shouldForwardToApplication", "shouldIntercept" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "shouldForwardToApplication", "shouldIntercept" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "shouldForwardToApplication", "shouldIntercept" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
@@ -111,11 +122,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="traceActivity">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The turn context.</param>
+        <param name="traceActivity">The trace activity.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Processes inbound activities.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,6 +147,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -144,11 +158,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="traceActivities">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The turn context.</param>
+        <param name="traceActivities">A collection of trace activities.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Processes outbound activities.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +172,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ProcessCommandAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; ProcessCommandAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.InspectionMiddleware.ProcessCommandAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ProcessCommandAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessCommandAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ProcessCommandAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="inspectionMiddleware.ProcessCommandAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -167,6 +183,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -176,10 +193,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The turn context.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Indentifies open and attach commands and calls the appropriate method.
+            </summary>
+        <returns>true if the command is open or attach, otherwise false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,6 +217,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -207,10 +227,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The turn context.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Processes the state management object.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
