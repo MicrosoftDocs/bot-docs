@@ -542,7 +542,7 @@ LUIS instrumentation stores its data in the following Custom Dimensions fields.
 
 ### Custom Dimensions: QnAMaker
 
-QnAMaker instrumentation stores its data in the following Custom Dimensions fields.
+QnAMaker instrumentation stores its data in the following Custom Dimensions fields. To enable logging of personal information like questions/answers, the [logPersonalInformation](https://docs.microsoft.com/en-us/javascript/api/botbuilder-ai/qnamaker?view=botbuilder-ts-latest#logpersonalinformation) parameter should be set to true in the constructor of the [QnAMakerClass](https://docs.microsoft.com/en-us/javascript/api/botbuilder-ai/qnamaker?view=botbuilder-ts-latest#qnamaker-qnamakerendpoint--qnamakeroptions--bottelemetryclient--boolean-)
 
 | **Field**       | **Description**            | **Sample Values**                                            |
 | --------------- | -------------------------- | ------------------------------------------------------------ |
