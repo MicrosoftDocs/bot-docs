@@ -1,6 +1,6 @@
 ---
 title: Add speech to messages - Bot Service
-description: Learn how to add speech to messages using the Bot Connector service.
+description: Learn how to add speech to bot messages. See how to specify and format the text that bots use on speech-enabled channels and how to include input hints.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

@@ -46,7 +46,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="message_id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="message_id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="message_id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -73,7 +74,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient_id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="recipient_id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="recipient_id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

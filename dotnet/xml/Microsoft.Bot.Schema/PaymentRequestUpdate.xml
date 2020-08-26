@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Bot Framework no longer supports payments.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Bot Framework no longer supports payments.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Bot Framework no longer supports payments.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +37,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,13 +51,14 @@
       <MemberSignature Language="C#" Value="public PaymentRequestUpdate (string id = default, Microsoft.Bot.Schema.PaymentDetails details = default, Microsoft.Bot.Schema.PaymentAddress shippingAddress = default, string shippingOption = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, class Microsoft.Bot.Schema.PaymentDetails details, class Microsoft.Bot.Schema.PaymentAddress shippingAddress, string shippingOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.PaymentRequestUpdate.#ctor(System.String,Microsoft.Bot.Schema.PaymentDetails,Microsoft.Bot.Schema.PaymentAddress,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional details As PaymentDetails = null, Optional shippingAddress As PaymentAddress = null, Optional shippingOption As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional details As PaymentDetails = Nothing, Optional shippingAddress As PaymentAddress = Nothing, Optional shippingOption As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.PaymentRequestUpdate : string * Microsoft.Bot.Schema.PaymentDetails * Microsoft.Bot.Schema.PaymentAddress * string -&gt; Microsoft.Bot.Schema.PaymentRequestUpdate" Usage="new Microsoft.Bot.Schema.PaymentRequestUpdate (id, details, shippingAddress, shippingOption)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -84,10 +88,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="details")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="details")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,10 +118,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,10 +148,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,10 +178,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

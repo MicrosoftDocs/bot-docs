@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -18,7 +19,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Used to write raw data to the wire, via a given transport.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,6 +36,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -43,11 +47,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">A buffer of data to write to the wire transport.</param>
+        <param name="offset">The location within the buffer to begin reading.</param>
+        <param name="count">The amount of bytes to write to the wire transport.</param>
+        <summary>
+            Called to send data to the wire transport.
+            </summary>
+        <returns>The number of bytes written to the wire transport.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

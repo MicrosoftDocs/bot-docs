@@ -10,6 +10,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -74,10 +77,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.Activity instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.Activity instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -101,6 +106,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -125,10 +131,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.ActivityProcessed instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.ActivityProcessed instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,13 +160,14 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The current dialog event (set during event processings).
+            The current dialog event (set during event processing).
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,10 +185,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.DialogEvent instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.DialogEvent instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -204,6 +215,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -231,6 +243,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -255,10 +268,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.Interrupted instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.Interrupted instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -282,6 +297,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -306,10 +322,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.LastResult instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.LastResult instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -333,6 +351,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -357,10 +376,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.Recognized instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.Recognized instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -384,6 +405,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -407,10 +429,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.RecognizedEntities instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.RecognizedEntities instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -434,6 +458,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -458,10 +483,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.RepeatedIds instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.RepeatedIds instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -485,6 +512,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -508,10 +536,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.Text instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.Text instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,6 +565,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -559,10 +590,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.TopIntent instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.TopIntent instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -586,6 +619,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -610,10 +644,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.TopScore instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.TopScore instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -637,6 +673,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -660,10 +697,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is deprecated, use TurnPath.UnrecognizedText instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is deprecated, use TurnPath.UnrecognizedText instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

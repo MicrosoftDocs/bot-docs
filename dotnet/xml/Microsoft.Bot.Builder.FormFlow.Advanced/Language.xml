@@ -359,7 +359,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;OptionalPlurals&gt;d__10))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;OptionalPlurals&gt;d__10))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;OptionalPlurals&gt;d__10))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -419,7 +420,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;WordBreak&gt;d__8))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;WordBreak&gt;d__8))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.Language/&lt;WordBreak&gt;d__8))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

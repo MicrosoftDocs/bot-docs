@@ -1,0 +1,307 @@
+<Type Name="ContinueConversationLater" FullName="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater">
+  <TypeSignature Language="C#" Value="public class ContinueConversationLater : Microsoft.Bot.Builder.Dialogs.Dialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContinueConversationLater extends Microsoft.Bot.Builder.Dialogs.Dialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContinueConversationLater&#xA;Inherits Dialog" />
+  <TypeSignature Language="F#" Value="type ContinueConversationLater = class&#xA;    inherit Dialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Action which schedules a conversation to be continued later by writing a EventActivity(Name=ContinueConversation) to a Azure Storage queue.
+            </summary>
+    <remarks>
+            This class works by writing an EventActivity(Name=ConversationUpdate) to an azure storage queue with visibility policy to 
+            make it visible at a future point in time. 
+            
+            The queue needs a process (such as a webjob/azure function) monitoring incoming activities and processing them by either:
+              - posting the activity back to the bot itself via BotFrameworkHttpClient.PostActivityAsync(botId, botEndpoint, activity).
+            OR
+              - processing the activity directly via adapter.ProcessActivity(activity, ...); 
+                NOTE: adapter.ProcessActivity() understands that EventActivity(Name=ConversationUpdate) should be processed as ContinueConversation() pipeline.
+            
+            This dialog returns the receipt information for the queued activity as the result of the dialog.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContinueConversationLater (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater : string * int -&gt; Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater" Usage="new Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater (callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="callerPath">The full path of the source file that contains this called.</param>
+        <param name="callerLine">The line within the source file that contains this caller.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="continueConversationLater.BeginDialogAsync (dc, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("connectionString")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("connectionString")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the connectionString for the azure storage queue to use.
+            </summary>
+        <value>
+            The connectionString for the azure storage queue to use.
+            </value>
+        <remarks>To be added.</remarks>
+        <example>'=settings.ConnectionString'.</example>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression Date { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression Date" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Date" />
+      <MemberSignature Language="VB.NET" Value="Public Property Date As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.Date : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Date" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("date")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("date")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the expression which resolves to the date/time to continue the conversation.
+            </summary>
+        <value>date/time string in ISO 8601 format to continue conversation.</value>
+        <remarks>To be added.</remarks>
+        <example>=addHour(utcNow(), 1).</example>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.BoolExpression Disabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.BoolExpression Disabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Disabled As BoolExpression" />
+      <MemberSignature Language="F#" Value="member this.Disabled : AdaptiveExpressions.Properties.BoolExpression with get, set" Usage="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Disabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("disabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("disabled")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.BoolExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an optional expression which if is true will disable this action.
+            </summary>
+        <value>
+            A boolean expression. 
+            </value>
+        <remarks>To be added.</remarks>
+        <example>
+            "user.age &gt; 18".
+            </example>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The Kind name for this dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnComputeId">
+      <MemberSignature Language="C#" Value="protected override string OnComputeId ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string OnComputeId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.OnComputeId" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnComputeId () As String" />
+      <MemberSignature Language="F#" Value="override this.OnComputeId : unit -&gt; string" Usage="continueConversationLater.OnComputeId " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="QueueName">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression QueueName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression QueueName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueueName As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.QueueName : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.QueueName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("queueName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("queueName")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the queue to use. 
+            </summary>
+        <value>default is 'activities'.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.ValueExpression Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.ValueExpression Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As ValueExpression" />
+      <MemberSignature Language="F#" Value="member this.Value : AdaptiveExpressions.Properties.ValueExpression with get, set" Usage="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Queues</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("value")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value to pass in the EventActivity.Value payload. 
+            </summary>
+        <value>
+            The value to use for the EventActivity.Value payload.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

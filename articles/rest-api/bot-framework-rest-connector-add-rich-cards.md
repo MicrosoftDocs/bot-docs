@@ -1,6 +1,6 @@
 ---
 title: Add rich card attachments to messages - Bot Service
-description: Learn how to add rich cards to messages using the Bot Connector service.
+description: Find out how to add images, videos, audio, and files to bot messages. Learn about different types of rich cards and events that bots can process in cards.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

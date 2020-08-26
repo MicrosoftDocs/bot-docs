@@ -1,13 +1,14 @@
 <Type Name="DialogExpressionConverter" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter">
-  <TypeSignature Language="C#" Value="public class DialogExpressionConverter : Newtonsoft.Json.JsonConverter&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt;, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogExpressionConverter extends Newtonsoft.Json.JsonConverter`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt; implements class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter" />
+  <TypeSignature Language="C#" Value="public class DialogExpressionConverter : Newtonsoft.Json.JsonConverter&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt;, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter, Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogExpressionConverter extends Newtonsoft.Json.JsonConverter`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt; implements class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter, class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter" />
-  <TypeSignature Language="VB.NET" Value="Public Class DialogExpressionConverter&#xA;Inherits JsonConverter(Of DialogExpression)&#xA;Implements IObservableConverter" />
-  <TypeSignature Language="F#" Value="type DialogExpressionConverter = class&#xA;    inherit JsonConverter&lt;DialogExpression&gt;&#xA;    interface IObservableConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogExpressionConverter&#xA;Inherits JsonConverter(Of DialogExpression)&#xA;Implements IObservableConverter, IObservableJsonConverter" />
+  <TypeSignature Language="F#" Value="type DialogExpressionConverter = class&#xA;    inherit JsonConverter&lt;DialogExpression&gt;&#xA;    interface IObservableConverter&#xA;    interface IObservableJsonConverter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Newtonsoft.Json.JsonConverter&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt;</BaseTypeName>
@@ -18,6 +19,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableConverter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -38,6 +42,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
@@ -63,6 +68,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -84,6 +90,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
@@ -120,7 +127,14 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Deprecated in favor of IJsonLoadObserver registration.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Deprecated in favor of IJsonLoadObserver registration.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -134,6 +148,32 @@
         <inheritdoc />
       </Docs>
     </Member>
+    <Member MemberName="RegisterObserver">
+      <MemberSignature Language="C#" Value="public void RegisterObserver (Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterObserver(class Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Converters.DialogExpressionConverter.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterObserver (observer As IJsonLoadObserver)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver -&gt; unit&#xA;override this.RegisterObserver : Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver -&gt; unit" Usage="dialogExpressionConverter.RegisterObserver observer" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IObservableJsonConverter.RegisterObserver(Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteJson">
       <MemberSignature Language="C#" Value="public override void WriteJson (Newtonsoft.Json.JsonWriter writer, Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression value, Newtonsoft.Json.JsonSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteJson(class Newtonsoft.Json.JsonWriter writer, class Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression value, class Newtonsoft.Json.JsonSerializer serializer) cil managed" />
@@ -145,6 +185,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

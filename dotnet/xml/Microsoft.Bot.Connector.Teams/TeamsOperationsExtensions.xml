@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,13 +25,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.ConversationList&gt; FetchChannelListAsync (this Microsoft.Bot.Connector.Teams.ITeamsOperations operations, string teamId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.ConversationList&gt; FetchChannelListAsync(class Microsoft.Bot.Connector.Teams.ITeamsOperations operations, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Teams.TeamsOperationsExtensions.FetchChannelListAsync(Microsoft.Bot.Connector.Teams.ITeamsOperations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FetchChannelListAsync (operations As ITeamsOperations, teamId As String, Optional cancellationToken As CancellationToken = null) As Task(Of ConversationList)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FetchChannelListAsync (operations As ITeamsOperations, teamId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ConversationList)" />
       <MemberSignature Language="F#" Value="static member FetchChannelListAsync : Microsoft.Bot.Connector.Teams.ITeamsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.ConversationList&gt;" Usage="Microsoft.Bot.Connector.Teams.TeamsOperationsExtensions.FetchChannelListAsync (operations, teamId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.ConversationList&gt;</ReturnType>
@@ -63,13 +65,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamDetails&gt; FetchTeamDetailsAsync (this Microsoft.Bot.Connector.Teams.ITeamsOperations operations, string teamId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.Teams.TeamDetails&gt; FetchTeamDetailsAsync(class Microsoft.Bot.Connector.Teams.ITeamsOperations operations, string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Teams.TeamsOperationsExtensions.FetchTeamDetailsAsync(Microsoft.Bot.Connector.Teams.ITeamsOperations,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FetchTeamDetailsAsync (operations As ITeamsOperations, teamId As String, Optional cancellationToken As CancellationToken = null) As Task(Of TeamDetails)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FetchTeamDetailsAsync (operations As ITeamsOperations, teamId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TeamDetails)" />
       <MemberSignature Language="F#" Value="static member FetchTeamDetailsAsync : Microsoft.Bot.Connector.Teams.ITeamsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamDetails&gt;" Usage="Microsoft.Bot.Connector.Teams.TeamsOperationsExtensions.FetchTeamDetailsAsync (operations, teamId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.Teams.TeamDetails&gt;</ReturnType>

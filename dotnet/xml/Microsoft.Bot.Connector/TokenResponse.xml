@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public TokenResponse (string connectionName = default, string token = default, string expiration = default, string channelId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionName, string token, string expiration, string channelId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.TokenResponse.#ctor(System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional connectionName As String = null, Optional token As String = null, Optional expiration As String = null, Optional channelId As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional connectionName As String = Nothing, Optional token As String = Nothing, Optional expiration As String = Nothing, Optional channelId As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.TokenResponse : string * string * string * string -&gt; Microsoft.Bot.Connector.TokenResponse" Usage="new Microsoft.Bot.Connector.TokenResponse (connectionName, token, expiration, channelId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -78,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="channelId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="channelId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +107,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="connectionName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="connectionName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="connectionName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,7 +136,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expiration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="expiration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="expiration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,7 +165,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="token")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="token")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="token")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

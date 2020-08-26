@@ -47,7 +47,7 @@
       <MemberSignature Language="C#" Value="public DialogResponse (string prompt = default, string parameterName = default, string parameterType = default, string contextId = default, string status = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string parameterName, string parameterType, string contextId, string status) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.DialogResponse.#ctor(System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional prompt As String = null, Optional parameterName As String = null, Optional parameterType As String = null, Optional contextId As String = null, Optional status As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional prompt As String = Nothing, Optional parameterName As String = Nothing, Optional parameterType As String = Nothing, Optional contextId As String = Nothing, Optional status As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.Models.DialogResponse : string * string * string * string * string -&gt; Microsoft.Bot.Builder.Luis.Models.DialogResponse" Usage="new Microsoft.Bot.Builder.Luis.Models.DialogResponse (prompt, parameterName, parameterType, contextId, status)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -92,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="contextId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="contextId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="contextId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,7 +123,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameterName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameterName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameterName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,7 +154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameterType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameterType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameterType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,7 +185,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="prompt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="prompt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="prompt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -212,7 +216,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

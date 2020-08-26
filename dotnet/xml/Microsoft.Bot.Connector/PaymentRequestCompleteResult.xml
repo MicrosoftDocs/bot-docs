@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PaymentRequestCompleteResult (string result = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentRequestCompleteResult.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional result As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional result As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentRequestCompleteResult : string -&gt; Microsoft.Bot.Connector.PaymentRequestCompleteResult" Usage="new Microsoft.Bot.Connector.PaymentRequestCompleteResult result" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -78,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="result")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="result")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="result")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

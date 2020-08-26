@@ -8,8 +8,15 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("Deprecated in favor of IJsonLoadObserver.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Deprecated in favor of IJsonLoadObserver.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Observer for <see cref="T:Newtonsoft.Json.JsonConverter" /> instances. Handles notifications around the 
@@ -30,6 +37,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -70,6 +78,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

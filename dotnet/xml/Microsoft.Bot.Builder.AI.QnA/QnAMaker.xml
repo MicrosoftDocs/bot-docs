@@ -15,6 +15,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,7 +39,7 @@
       <MemberSignature Language="C#" Value="public QnAMaker (Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint endpoint, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options = default, System.Net.Http.HttpClient httpClient = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint endpoint, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, class System.Net.Http.HttpClient httpClient) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.#ctor(Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As QnAMakerEndpoint, Optional options As QnAMakerOptions = null, Optional httpClient As HttpClient = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpoint As QnAMakerEndpoint, Optional options As QnAMakerOptions = Nothing, Optional httpClient As HttpClient = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.QnAMaker : Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Net.Http.HttpClient -&gt; Microsoft.Bot.Builder.AI.QnA.QnAMaker" Usage="new Microsoft.Bot.Builder.AI.QnA.QnAMaker (endpoint, options, httpClient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -52,6 +53,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -73,7 +75,7 @@
       <MemberSignature Language="C#" Value="public QnAMaker (Microsoft.Bot.Configuration.QnAMakerService service, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options = default, System.Net.Http.HttpClient httpClient = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Configuration.QnAMakerService service, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, class System.Net.Http.HttpClient httpClient) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.#ctor(Microsoft.Bot.Configuration.QnAMakerService,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Net.Http.HttpClient)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (service As QnAMakerService, Optional options As QnAMakerOptions = null, Optional httpClient As HttpClient = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (service As QnAMakerService, Optional options As QnAMakerOptions = Nothing, Optional httpClient As HttpClient = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.QnA.QnAMaker : Microsoft.Bot.Configuration.QnAMakerService * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Net.Http.HttpClient -&gt; Microsoft.Bot.Builder.AI.QnA.QnAMaker" Usage="new Microsoft.Bot.Builder.AI.QnA.QnAMaker (service, options, httpClient)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -86,7 +88,14 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Constructor is deprecated, please use QnAMaker(QnAMakerEndpoint endpoint, QnAMakerOptions options, HttpClient httpClient).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Constructor is deprecated, please use QnAMaker(QnAMakerEndpoint endpoint, QnAMakerOptions options, HttpClient httpClient).")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
         <Parameter Name="options" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" />
@@ -118,6 +127,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpoint" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerEndpoint" />
@@ -154,7 +164,14 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Constructor is deprecated, please use QnAMaker(QnAMakerEndpoint endpoint, QnAMakerOptions options, HttpClient httpClient).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Constructor is deprecated, please use QnAMaker(QnAMakerEndpoint endpoint, QnAMakerOptions options, HttpClient httpClient).")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="service" Type="Microsoft.Bot.Configuration.QnAMakerService" />
         <Parameter Name="options" Type="Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" />
@@ -192,6 +209,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -223,13 +241,18 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the <see cref="T:System.Net.Http.HttpClient" /> to be used when calling the QnA Maker API.
+            </summary>
+        <value>
+            A instance of <see cref="T:System.Net.Http.HttpClient" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +260,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;ValueTuple&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;,System.Collections.Generic.Dictionary&lt;string,double&gt;&gt;&gt; FillQnAEventAsync (Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResults, Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;valuetype System.ValueTuple`2&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt;&gt;&gt; FillQnAEventAsync(class Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResults, class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.FillQnAEventAsync(Microsoft.Bot.Builder.AI.QnA.QueryResult[],Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function FillQnAEventAsync (queryResults As QueryResult(), turnContext As ITurnContext, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null, Optional cancellationToken As CancellationToken = null) As Task(Of ValueTuple(Of Dictionary(Of String, String), Dictionary(Of String, Double)))" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillQnAEventAsync (queryResults As QueryResult(), turnContext As ITurnContext, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ValueTuple(Of Dictionary(Of String, String), Dictionary(Of String, Double)))" />
       <MemberSignature Language="F#" Value="member this.FillQnAEventAsync : Microsoft.Bot.Builder.AI.QnA.QueryResult[] * Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;ValueTuple&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;, System.Collections.Generic.Dictionary&lt;string, double&gt;&gt;&gt;" Usage="qnAMaker.FillQnAEventAsync (queryResults, turnContext, telemetryProperties, telemetryMetrics, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -248,12 +271,14 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.ValueTuple&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;,System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;&gt;&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Properties", "Metrics" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Properties", "Metrics" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Properties", "Metrics" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
@@ -282,7 +307,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext, Optional options As QnAMakerOptions = null) As Task(Of QueryResult())" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext, Optional options As QnAMakerOptions = Nothing) As Task(Of QueryResult())" />
       <MemberSignature Language="F#" Value="member this.GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswersAsync (turnContext, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -294,6 +319,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -316,7 +342,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt; GetAnswersAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext, options As QnAMakerOptions, telemetryProperties As Dictionary(Of String, String), Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of QueryResult())" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersAsync (turnContext As ITurnContext, options As QnAMakerOptions, telemetryProperties As Dictionary(Of String, String), Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of QueryResult())" />
       <MemberSignature Language="F#" Value="abstract member GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;&#xA;override this.GetAnswersAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;" Usage="qnAMaker.GetAnswersAsync (turnContext, options, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -331,6 +357,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult[]&gt;</ReturnType>
@@ -357,7 +384,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt; GetAnswersRawAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.AI.QnA.QueryResults&gt; GetAnswersRawAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions options, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.GetAnswersRawAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersRawAsync (turnContext As ITurnContext, options As QnAMakerOptions, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of QueryResults)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnswersRawAsync (turnContext As ITurnContext, options As QnAMakerOptions, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of QueryResults)" />
       <MemberSignature Language="F#" Value="abstract member GetAnswersRawAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt;&#xA;override this.GetAnswersRawAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt;" Usage="qnAMaker.GetAnswersRawAsync (turnContext, options, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -369,6 +396,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.QueryResults&gt;</ReturnType>
@@ -408,6 +436,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AI.QnA.QueryResult[]</ReturnType>
@@ -442,6 +471,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -458,7 +488,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task OnQnaResultsAsync (Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResults, Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task OnQnaResultsAsync(class Microsoft.Bot.Builder.AI.QnA.QueryResult[] queryResults, class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.QnAMaker.OnQnaResultsAsync(Microsoft.Bot.Builder.AI.QnA.QueryResult[],Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnQnaResultsAsync (queryResults As QueryResult(), turnContext As ITurnContext, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnQnaResultsAsync (queryResults As QueryResult(), turnContext As ITurnContext, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member OnQnaResultsAsync : Microsoft.Bot.Builder.AI.QnA.QueryResult[] * Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.OnQnaResultsAsync : Microsoft.Bot.Builder.AI.QnA.QueryResult[] * Microsoft.Bot.Builder.ITurnContext * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="qnAMaker.OnQnaResultsAsync (queryResults, turnContext, telemetryProperties, telemetryMetrics, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -469,6 +499,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -481,13 +512,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="queryResults">To be added.</param>
-        <param name="turnContext">To be added.</param>
-        <param name="telemetryProperties">To be added.</param>
-        <param name="telemetryMetrics">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="queryResults">An array of <see cref="T:Microsoft.Bot.Builder.AI.QnA.QueryResult" />.</param>
+        <param name="turnContext">The <see cref="T:Microsoft.Bot.Builder.TurnContext" />.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Executed when a result is returned from QnA Maker.
+            </summary>
+        <returns>A Task representing the work to be executed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,12 +540,15 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The name of the QnAMaker class. 
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,12 +570,15 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The label used when logging QnA Maker trace.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,12 +600,15 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The type used when logging QnA Maker trace.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,10 +630,12 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

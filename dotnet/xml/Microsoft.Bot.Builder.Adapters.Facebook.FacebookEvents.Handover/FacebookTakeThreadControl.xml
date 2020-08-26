@@ -46,7 +46,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("previous_owner_app_id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("previous_owner_app_id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("previous_owner_app_id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

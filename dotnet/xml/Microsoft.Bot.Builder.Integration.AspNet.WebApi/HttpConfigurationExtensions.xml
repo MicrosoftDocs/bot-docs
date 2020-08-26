@@ -15,13 +15,16 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension methods for <see cref="T:System.Web.Http.HttpConfiguration" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +32,7 @@
       <MemberSignature Language="C#" Value="public static System.Web.Http.HttpConfiguration MapBotFramework (this System.Web.Http.HttpConfiguration httpConfiguration, Action&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder&gt; configurer = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Http.HttpConfiguration MapBotFramework(class System.Web.Http.HttpConfiguration httpConfiguration, class System.Action`1&lt;class Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder&gt; configurer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.HttpConfigurationExtensions.MapBotFramework(System.Web.Http.HttpConfiguration,System.Action{Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder})" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MapBotFramework (httpConfiguration As HttpConfiguration, Optional configurer As Action(Of BotFrameworkConfigurationBuilder) = null) As HttpConfiguration" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function MapBotFramework (httpConfiguration As HttpConfiguration, Optional configurer As Action(Of BotFrameworkConfigurationBuilder) = Nothing) As HttpConfiguration" />
       <MemberSignature Language="F#" Value="static member MapBotFramework : System.Web.Http.HttpConfiguration * Action&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkConfigurationBuilder&gt; -&gt; System.Web.Http.HttpConfiguration" Usage="Microsoft.Bot.Builder.Integration.AspNet.WebApi.HttpConfigurationExtensions.MapBotFramework (httpConfiguration, configurer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -43,6 +46,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Http.HttpConfiguration</ReturnType>

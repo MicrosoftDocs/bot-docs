@@ -10,6 +10,7 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,7 +36,7 @@
       <MemberSignature Language="C#" Value="public FileTranscriptLogger (string folder = default, bool unitTestMode = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string folder, bool unitTestMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FileTranscriptLogger.#ctor(System.String,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional folder As String = null, Optional unitTestMode As Boolean = true)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional folder As String = Nothing, Optional unitTestMode As Boolean = true)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FileTranscriptLogger : string * bool -&gt; Microsoft.Bot.Builder.FileTranscriptLogger" Usage="new Microsoft.Bot.Builder.FileTranscriptLogger (folder, unitTestMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -44,6 +45,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="folder" Type="System.String" />
@@ -74,6 +76,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -83,10 +86,12 @@
         <Parameter Name="conversationId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="channelId">The ID of the channel the conversation is in.</param>
+        <param name="conversationId">The ID of the conversation to delete.</param>
+        <summary>
+            Deletes conversation data from the store.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +99,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt; GetTranscriptActivitiesAsync (string channelId, string conversationId, string continuationToken = default, DateTimeOffset startDate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.PagedResult`1&lt;class Microsoft.Bot.Schema.IActivity&gt;&gt; GetTranscriptActivitiesAsync(string channelId, string conversationId, string continuationToken, valuetype System.DateTimeOffset startDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FileTranscriptLogger.GetTranscriptActivitiesAsync(System.String,System.String,System.String,System.DateTimeOffset)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetTranscriptActivitiesAsync (channelId As String, conversationId As String, Optional continuationToken As String = null, Optional startDate As DateTimeOffset = null) As Task(Of PagedResult(Of IActivity))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTranscriptActivitiesAsync (channelId As String, conversationId As String, Optional continuationToken As String = Nothing, Optional startDate As DateTimeOffset = Nothing) As Task(Of PagedResult(Of IActivity))" />
       <MemberSignature Language="F#" Value="abstract member GetTranscriptActivitiesAsync : string * string * string * DateTimeOffset -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;&#xA;override this.GetTranscriptActivitiesAsync : string * string * string * DateTimeOffset -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;" Usage="fileTranscriptLogger.GetTranscriptActivitiesAsync (channelId, conversationId, continuationToken, startDate)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -106,6 +111,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;</ReturnType>
@@ -117,20 +123,22 @@
         <Parameter Name="startDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <param name="conversationId">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <param name="startDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="channelId">The ID of the channel the conversation is in.</param>
+        <param name="conversationId">The ID of the conversation.</param>
+        <param name="continuationToken">The continuation token (if available).</param>
+        <param name="startDate">A cutoff date. Activities older than this date are not included.</param>
+        <summary>
+            Gets from the store activities that match a set of criteria.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>If the task completes successfully, the result contains the matching activities.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTranscriptsAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt; ListTranscriptsAsync (string channelId, string continuationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.PagedResult`1&lt;class Microsoft.Bot.Builder.TranscriptInfo&gt;&gt; ListTranscriptsAsync(string channelId, string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FileTranscriptLogger.ListTranscriptsAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ListTranscriptsAsync (channelId As String, Optional continuationToken As String = null) As Task(Of PagedResult(Of TranscriptInfo))" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListTranscriptsAsync (channelId As String, Optional continuationToken As String = Nothing) As Task(Of PagedResult(Of TranscriptInfo))" />
       <MemberSignature Language="F#" Value="abstract member ListTranscriptsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;&#xA;override this.ListTranscriptsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;" Usage="fileTranscriptLogger.ListTranscriptsAsync (channelId, continuationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -142,6 +150,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;</ReturnType>
@@ -151,11 +160,13 @@
         <Parameter Name="continuationToken" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="channelId">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="channelId">The ID of the channel.</param>
+        <param name="continuationToken">Continuation token (if available).</param>
+        <summary>
+            Gets the conversations on a channel from the store.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
+        <remarks>List all transcripts for given ChannelID.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LogActivityAsync">
@@ -174,6 +185,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

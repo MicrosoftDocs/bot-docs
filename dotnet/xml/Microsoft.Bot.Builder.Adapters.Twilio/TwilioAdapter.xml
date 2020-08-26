@@ -27,7 +27,7 @@
       <MemberSignature Language="C#" Value="public TwilioAdapter (Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper twilioClient, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper twilioClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (twilioClient As TwilioClientWrapper, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (twilioClient As TwilioClientWrapper, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter : Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter (twilioClient, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -51,7 +51,7 @@
       <MemberSignature Language="C#" Value="public TwilioAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter (configuration, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
