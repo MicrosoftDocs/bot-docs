@@ -2,12 +2,12 @@
 title: Write directly to storage - Bot Service
 description: Learn how to use the Bot Framework SDK for .NET to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
-author: DeniseMak
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/01/2019
+ms.date: 08/27/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -609,12 +609,12 @@ We will use key1 _Connection string_ as the value "your-blob-storage-account-str
 
 #### Installing packages
 
-If not previously installed to use Cosmos DB, install the following packages.
+If not previously installed, install the following packages.
 
 ### [C#](#tab/csharp)
 
 ```powershell
-Install-Package Microsoft.Bot.Builder.Azure
+Install-Package Microsoft.Bot.Builder.Azure.Blobs
 ```
 
 ### [JavaScript](#tab/javascript)
@@ -772,13 +772,13 @@ The following code connects transcript storage pointer `_myTranscripts` to your 
 **echoBot.cs**
 
 ```csharp
-using Microsoft.Bot.Builder.Azure;
+using Microsoft.Bot.Builder.Azure.Blobs;
 
 public class EchoBot : ActivityHandler
 {
    ...
 
-   private readonly AzureBlobTranscriptStore _myTranscripts = new AzureBlobTranscriptStore("<your-blob-transcript-storage-account-string>", "<your-blob-transcript-container-name>");
+   private readonly AzureBlobsTranscriptStore _myTranscripts = new AzureBlobsTranscriptStore("<your-azure-storage-connection-string>", "<your-blob-transcript-container-name>");
 
    ...
 }
