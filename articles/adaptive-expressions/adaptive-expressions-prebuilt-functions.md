@@ -317,13 +317,13 @@ And returns the result **2018-03-10T00:00:00.000Z**.
 
 *Example 3*
 
-This examples subtracts three days from the specified timestamp in the **fr-FR** locale:
+This examples adds **1** day to the specified timestamp in the **de-DE** locale:
 
 ```
-addDays('2018-03-15T00:00:00.000Z', -3, 'fr-FR')
+addDays('2018-03-15T13:00:00.000Z', 1, '', 'de-dE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **16.03.18 13:00:00**.
 
 <a name="addHours"></a>
 
@@ -370,13 +370,13 @@ And returns the result **2018-03-15T10:00:00.000Z**.
 
 *Example 3*
 
-This examples subtracts three hours from the specified timestamp in the **fr-FR** locale:
+This examples adds **2** hours to the specified timestamp in the **de-DE** locale:
 
 ```
-addDays('2018-03-15T00:00:00.000Z', -3, 'fr-FR')
+addHours('2018-03-15T13:00:00.000Z', 2, '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15.03.18 15:00:00**.
 
 <a name="addMinutes"></a>
 
@@ -423,13 +423,13 @@ And returns the result **2018-03-15T00:15:00.000Z**.
 
 *Example 3*
 
-This examples subtracts three minutes from the specified timestamp in the **fr-FR** locale:
+This examples adds **30** minutes to the specified timestamp in the **de-DE** locale:
 
 ```
-addDays('2018-03-15T00:00:00.000Z', -3, 'fr-FR')
+addMinutes('2018-03-15T00:00:00.000Z', 30, '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15.03.18 13:30:00**.
 
 <a name="addOrdinal"></a>
 
@@ -584,16 +584,6 @@ addToTime('2018-01-01T00:00:00.000Z', 2, 'Week', 'MM-DD-YY')
 
 And returns the result in the 'MM-DD-YY' format as **01-15-18**.
 
-*Example 3*
-
-This examples subtracts three months from the specified timestamp in the **fr-FR** locale:
-
-```
-addDays('2018-03-15T00:00:00.000Z', -3, 'Month' 'fr-FR')
-```
-
-And returns the result **<add answer here>**.
-
 <a name="and"></a>
 
 ### and
@@ -626,9 +616,9 @@ and(false, false)
 
 And respectively returns these results:
 
-* Both expressions are true, so the functions returns `true`.
-* One expression is false, so the functions returns `false`.
-* Both expressions are false, so the function returns `false`.
+- Both expressions are true, so the functions returns `true`.
+- One expression is false, so the functions returns `false`.
+- Both expressions are false, so the function returns `false`.
 
 *Example 2*
 
@@ -1129,13 +1119,13 @@ And respectively return these results:
 
 *Example 2*
 
-This example converts a timestamp in the **fr-FR** locale from UTC to Pacific Standard Time:
+This example converts a timestamp in the **de-DE** locale from UTC to Pacific Standard Time:
 
 ```
-convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time', 'MM-DD-YY', 'fr-FR')
+convertFromUTC('2018-01-02T02:00:00.000Z', 'Pacific Standard Time', '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **01.01.18 18:00:00**.
 
 <a name="convertToUTC"></a>
 
@@ -1172,13 +1162,13 @@ And returns the result **2018-01-01T08:00:00.000Z**.
 
 *Example 2*
 
-This example converts a timestamp in the **fr-FR** locale to UTC to Pacific Standard Time:
+This example converts a timestamp in the **de-DE** locale to UTC from Pacific Standard Time:
 
 ```
-convertToUTC('01/01/2018 00:00:00', 'Pacific Standard Time', 'fr-FR')
+convertToUTC('01/01/2018 00:00:00', 'Pacific Standard Time', '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **01.01.18 08:00:00**.
 
 <a name="createArray"></a>
 
@@ -1950,13 +1940,13 @@ And returns the result **2018-03-15T12:00:00**.
 
 *Example 2*
 
-This example converts a timestamp in the **fr-FR** locale to the specified format:
+This example converts a timestamp in the **de-DE** locale:
 
 ```
-formatDateTime('03/15/2018 12:00:00', 'yyyy-MM-dd')
+formatDateTime('2018-03-15', '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15.03.18 00:00:00**.
 
 <a name="formatEpoch"></a>
 
@@ -1992,13 +1982,13 @@ And returns the result **2018-03-15T12:00:00.000Z**.
 
 *Example*
 
-This example converts a Unix timestamp in the **fr-FR** locale to the specified format:
+This example converts a Unix timestamp in the **de-DE** locale:
 
 ```
-formatEpoch(1521118800, 'yyyy-MM-dd', 'fr-FR')
+formatEpoch(1521118800, '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15.03.18 13:00:00**.
 
 <a name="formatNumber"></a>
 
@@ -2034,13 +2024,20 @@ And returns the string **10.33**.
 
 *Example 2*
 
-This example formats ther number **10.333** to **4** fractional digits using the **fr-FR** formatting:
+These examples format numbers to a specified number of digits in the **en-US** locale:
 
 ```
-formatNumber(12000.3, 4, 'fr-FR')
+formatNumber(12.123, 4, 'en-US')
+formatNumber(1.551, 2, 'en-US')
+formatNumber(12.123, 4, 'en-US')
 ```
 
-And returns the string **12,000.3000**.
+And returns the following results respectively:
+
+- **12.12**
+- **1.55**
+-**12.1230**
+
 
 <a name="formatTicks"></a>
 
@@ -2078,13 +2075,13 @@ And returns the result **2020-05-06T11:47:00.000Z**.
 
 *Example 2*
 
-This example converts ticks to the specified format in the **fr-FR** locale:
+This example converts ticks to the specified format in the **de-DE** locale:
 
 ```
-formatTicks(637243624200000000, 'yyyy-MM-dd', `fr-FR')
+formatTicks(637243624200000000, '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **06.05.20 11:47:00**.
 
 ### getFutureTime
 
@@ -4251,13 +4248,19 @@ And return the following results respectively:
 
 *Example 2*
 
-This example capitalizes the first letter in a string in the **fr-FR** format:
+These examples capitalizes the first letter in a string in the specified locale format:
 
 ```
-sentenceCase('abc def', 'fr-FR')
+sentenceCase('a', 'fr-FR')
+sentenceCase('abc', 'en-US')
+sentenceCase('aBC', 'fr-FR')
 ```
 
-And returns the result **<add answer here>**.
+And return the following results respectively:
+
+- **A**
+- **Abc**
+- **Abc**
 
 <a name="setPathToValue"></a>
 
@@ -4562,10 +4565,10 @@ And returns the result **2018-03-15T00:00:00.000Z**.
 This example finds the start of the day with the locale **fr-FR**:
 
 ```
-startOfDay('2018-03-15T13:30:30.000Z', 'fr-FR')
+startOfDay('2018-03-15T13:30:30.000Z', '', 'fr-FR')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15/03/2018 00:00:00**.
 
 <a name="startOfHour"></a>
 
@@ -4604,10 +4607,10 @@ And returns the result **2018-03-15T13:00:00.000Z**.
 This example finds the start of the hour with the locale **fr-FR**:
 
 ```
-startOfHour('2018-03-15T13:30:30.000Z', 'fr-FR')
+startOfHour('2018-03-15T13:30:30.000Z', '', 'fr-FR')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15/03/2018 13:00:00**.
 
 <a name="startOfMonth"></a>
 
@@ -4646,10 +4649,10 @@ And returns the result **2018-03-01T00:00:00.000Z**.
 This example finds the start of the month with the locale **fr-FR**:
 
 ```
-startOfMonth('2018-03-15T13:30:30.000Z', 'fr-FR')
+startOfMonth('2018-03-15T13:30:30.000Z', '', 'fr-FR')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **01/03/2018 00:00:00**.
 
 <a name="startsWith"></a>
 
@@ -4733,13 +4736,19 @@ string( { "name": "Sophie Owen" } )
 
 And returns the result **{ \\"name\\": \\"Sophie Owen\\" }**
 
-This example creates a string version of the number **10** in the **fr-FR** format:
+*Example 3*
+
+These example creates a string version of the number **10** in a specific locale:
 
 ```
-string(10, 'fr-FR')
+string(100.1, 'fr-FR')
+string(100.1, 'en-US')
 ```
 
-And returns the result **<add answer here>**.
+And returns the following strings respectively:
+
+- **100,1**
+- **100.1*
 
 <a name="sub"></a>
 
@@ -4882,13 +4891,13 @@ And returns the result **Monday, January, 1, 2018**.
 
 *Example 3*
 
-This example subtracts one day from a following timestamp in the **fr-FR** locale:
+This example subtracts **1** hour from a following timestamp in the **de-DE** locale:
 
 ```
-subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day', 'D', 'fr-FR')
+subtractFromTime('2018-03-15T13:00:00.000Z', 1, 'Hour', '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **15.03.18 12:00:00**.
 
 <a name="sum"></a>
 
@@ -5104,7 +5113,7 @@ These examples capitalize the first letter of each word in a string:
 ```
 titleCase('a')
 titleCase('abc def')
-sentenceCase('aBC dEF')
+titleCase('aBC dEF')
 ```
 
 And return the following results respectively:
@@ -5115,13 +5124,17 @@ And return the following results respectively:
 
 *Example 2*
 
-This example capitalizes the first letter in a string in the **fr-FR** format:
+These examples capitalize the first letter in a string in the **en-US** format:
 
 ```
-sentenceCase('abc def', 'fr-FR')
+titleCase('a', 'en-US')
+titleCase('aBC dEF', 'en-US')
 ```
 
-And returns the result **<add answer here>**.
+And return the following results respectively:
+
+- **A**
+- **Abc Def**
 
 <a name="toLower"></a>
 
@@ -5162,7 +5175,7 @@ This example converts a string to lowercase in the **fr-FR** format:
 toUpper('Hello World', 'fr-FR')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **hello world**.
 
 <a name="toUpper"></a>
 
@@ -5203,7 +5216,7 @@ This example converts a string to uppercase in the **fr-FR** format:
 toUpper('Hello World', 'fr-FR')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **HELLO WORLD**.
 
 <a name="trim"></a>
 
