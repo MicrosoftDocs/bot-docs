@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Skype - Bot Service
-description: Learn how to configure a bot for access through the Skype interface. View information on changes in the Skype channel and the limitations that result.
+description: Learn how to make a bot available in Skype. See how to configure Skype settings so that users can interact with the bot through the Skype interface.
 keywords: skype, bot channels, configure skype, publish, connect to channels
 author: v-ducvo
 ms.author: kamrani

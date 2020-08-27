@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Bot Framework Authentication - Bot Service
-description: Learn how to troubleshoot bot authentication errors such as connectivity issues and problems with app IDs and passwords. View additional resources.
+description: Learn how to troubleshoot bot authentication errors, such as connectivity issues and problems with app IDs and passwords. View additional resources.
 author: DeniseMak
 ms.author: kamrani
 manager: kamrani
