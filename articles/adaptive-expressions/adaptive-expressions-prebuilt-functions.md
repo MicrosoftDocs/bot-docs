@@ -2032,7 +2032,7 @@ formatNumber(1.551, 2, 'en-US')
 formatNumber(12.123, 4, 'en-US')
 ```
 
-And returns the following results respectively:
+And return the following results respectively:
 
 - **12.12**
 - **1.55**
@@ -2071,8 +2071,6 @@ formatTicks(637243624200000000, 'yyyy-MM-ddTHH:mm:ss.fffZ')
 
 And returns the result **2020-05-06T11:47:00.000Z**.
 
-<a name="getFutureTime"></a>
-
 *Example 2*
 
 This example converts ticks to the specified format in the **de-DE** locale:
@@ -2082,6 +2080,8 @@ formatTicks(637243624200000000, '', 'de-DE')
 ```
 
 And returns the result **06.05.20 11:47:00**.
+
+<a name="getFutureTime"></a>
 
 ### getFutureTime
 
@@ -2126,13 +2126,13 @@ And returns the result **03-06-18**.
 
 *Example 3*
 
-Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **fr-FR**. The example below adds three months to the timestamp and converts the result to **MM-DD-YY** format:
+Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **de-DE**. The example below adds **1** day to the timestamp:
 
 ```
-getFutureTime(3, 'Day', 'MM-DD-YY', 'fr-FR')
+getPastTime(1,'Day', '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **02.05.20 00:00:00**.
 
 <a name="getNextViableDate"></a>
 
@@ -2252,13 +2252,13 @@ And returns the result **02-26-18**.
 
 *Example 3*
 
-Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **fr-FR**. The example below subtracts three months to the timestamp in the result to **MM-DD-YY** format:
+Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **de-DE**. The example below subtracts **1** day from the timestamp:
 
 ```
-getPastTime(3, 'Day', 'MM-DD-YY', 'fr-FR')
+getPastTime(1,'Day', '', 'de-DE')
 ```
 
-And returns the result **<add answer here>**.
+And returns the result **31.04.20 00:00:00**.
 
 <a name="getPreviousViableDate"></a>
 
@@ -4891,7 +4891,7 @@ And returns the result **Monday, January, 1, 2018**.
 
 *Example 3*
 
-This example subtracts **1** hour from a following timestamp in the **de-DE** locale:
+This example subtracts **1** hour from a timestamp in the **de-DE** locale:
 
 ```
 subtractFromTime('2018-03-15T13:00:00.000Z', 1, 'Hour', '', 'de-DE')
@@ -5595,13 +5595,13 @@ And returns the result **Sunday, April 15, 2018**.
 
 *Example 3*
 
-Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the optional **D** format and **fr-FR** locale:
+Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the **de-DE** locale:
 
 ```
-utcNow('D', 'fr-FR')
+utcNow('', 'de-DE')
 ```
 
-And returns the result **<add answe here>**.
+And returns the result **15.04.18 13:00:00**.
 
 <a name="where"></a>
 
