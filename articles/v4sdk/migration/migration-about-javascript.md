@@ -1,6 +1,6 @@
 ---
 title: Differences between the v3 and v4 NodeJS SDK - Bot Service
-description: Describes the differences between the v3 and v4 NodeJS SDK.
+description: Find out how versions 3 and 4 of the Bot Framework JavaScript SDK differ. Learn about changes in activity processing, state management, and dialogs.
 keywords: bot migration, dialogs, state
 author: mmiele
 ms.author: v-mimiel
