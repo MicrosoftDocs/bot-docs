@@ -141,31 +141,31 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
-|[addDays](#addDays)|Add a number of specified days to a given timestamp in an optional locale.|
-|[addHours](#addHours)|Add a specified number of hours to a given timestamp in an optional locale.|
-|[addMinutes](#addMinutes)|Add a specified number of minutes to a given timestamp in an optional locale.|
+|[addDays](#addDays)|Add a number of specified days to a given timestamp in an optional locale format.|
+|[addHours](#addHours)|Add a specified number of hours to a given timestamp in an optional locale format.|
+|[addMinutes](#addMinutes)|Add a specified number of minutes to a given timestamp in an optional locale format.|
 |[addSeconds](#addSeconds)|Add a specified number of seconds to a given timestamp.|
 |[dayOfMonth](#dayOfMonth)|Return the day of a month for a given timestamp or Timex expression.|
 |[dayOfWeek](#dayOfWeek)|Return the day of the week for a given timestamp.|
 |[dayOfYear](#dayOfYear)|Return the day of the year for a given timestamp.|
-|[formatDateTime](#formatDateTime)|Return a timestamp in an optional locale in the specified format.|
-|[formatEpoch](#formatEpoch)|Return a timestamp in an optional locale from UNIX Epoch time (Unix time, POSIX time).|
-|[formatTicks](#formatTicks)|Return a timestamp in an optional locale from ticks.|
-|[subtractFromTime](#subtractFromTime)|Subtract a number of time units from a timestamp in an optional locale.|
-|[utcNow](#utcNow)|Return the current timestamp in an optional locale as a string.|
+|[formatDateTime](#formatDateTime)|Return a timestamp in an optional locale format.|
+|[formatEpoch](#formatEpoch)|Return a timestamp in an optional locale format from UNIX Epoch time (Unix time, POSIX time).|
+|[formatTicks](#formatTicks)|Return a timestamp in an optional locale format from ticks.|
+|[subtractFromTime](#subtractFromTime)|Subtract a number of time units from a timestamp in an optional locale format.|
+|[utcNow](#utcNow)|Return the current timestamp in an optional locale format as a string.|
 |[dateReadBack](#dateReadBack)|Use the date-time library to provide a date readback.|
 |[month](#month)|Return the month of given timestamp.|
 |[date](#date)|Return the date for a given timestamp.|
 |[year](#year)|Return the year for the given timestamp.|
 |[getTimeOfDay](#getTimeOfDay)|Return the time of day for a given timestamp. |
-|[getFutureTime](#getFutureTime)|Return the current timestamp in an optional locale plus the specified time units.   |
-|[getPastTime](#getPastTime)|Return the current timestamp in an optional locale minus the specified time units.  |
-|[addToTime](#addToTime)   |Add a number of time units to a timestamp in an optional locale.   |
-|[convertFromUTC](#convertFromUTC) |Convert a timestamp in an optional locale from Universal Time Coordinated(UTC). |
-|[convertToUTC](#convertToUTC) |Convert a timestamp  in an optional locale to Universal Time Coordinated (UTC).  |
-|[startOfDay](#startOfDay) |Return the start of the day for a timestamp in an optional locale.|
-|[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp in an optional locale. |
-|[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp in an optional locale.|
+|[getFutureTime](#getFutureTime)|Return the current timestamp in an optional locale format plus the specified time units.   |
+|[getPastTime](#getPastTime)|Return the current timestamp in an optional locale format minus the specified time units.  |
+|[addToTime](#addToTime)   |Add a number of time units to a timestamp in an optional locale format.   |
+|[convertFromUTC](#convertFromUTC) |Convert a timestamp in an optional locale format from Universal Time Coordinated(UTC). |
+|[convertToUTC](#convertToUTC) |Convert a timestamp  in an optional locale format to Universal Time Coordinated (UTC).  |
+|[startOfDay](#startOfDay) |Return the start of the day for a timestamp in an optional locale format.|
+|[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp in an optional locale format. |
+|[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp in an optional locale format.|
 |[ticks](#ticks)   |Return the ticks property value of a specified timestamp.|
 |[ticksToDays](#ticksToDays)| Convert a ticks property value to the number of days. |
 |[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
@@ -276,7 +276,7 @@ And returns the results
 
 ### addDays
 
-Add a number of days to a timestamp in an optional locale.
+Add a number of days to a timestamp in an optional locale format.
 
 ```
 addDays('<timestamp>', <days>, '<format>'?, '<locale>'?)
@@ -329,7 +329,7 @@ And returns the result **16.03.18 13:00:00**.
 
 ### addHours
 
-Add a number of hours to a timestamp in an optional locale.
+Add a number of hours to a timestamp in an optional locale format.
 
 ```
 addHours('<timestamp>', <hours>, '<format>'?, '<locale>'?)
@@ -382,7 +382,7 @@ And returns the result **15.03.18 15:00:00**.
 
 ### addMinutes
 
-Add a number of minutes to a timestamp in an optional locale.
+Add a number of minutes to a timestamp in an optional locale format.
 
 ```
 addMinutes('<timestamp>', <minutes>, '<format>'?, '<locale>'?)
@@ -544,7 +544,7 @@ And returns the result **2018-03-15T00:00:25.000Z**.
 
 ### addToTime
 
-Add a number of time units to a timestamp in an optional locale. See also [getFutureTime()](#getFutureTime).
+Add a number of time units to a timestamp in an optional locale format. See also [getFutureTime()](#getFutureTime).
 
 ```
 addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?, '<locale>'?)
@@ -1084,7 +1084,7 @@ And it returns the result **2**.
 
 ### convertFromUTC
 
-Convert a timestamp in an optional locale from Universal Time Coordinated (UTC) to a target time zone.
+Convert a timestamp in an optional locale format from Universal Time Coordinated (UTC) to a target time zone.
 
 ```
 convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?, '<locale>'?)
@@ -1131,7 +1131,7 @@ And returns the result **01.01.18 18:00:00**.
 
 ### convertToUTC
 
-Convert a timestamp in an optional locale to Universal Time Coordinated (UTC) from the source time zone.
+Convert a timestamp in an optional locale format to Universal Time Coordinated (UTC) from the source time zone.
 
 ```
 convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?, '<locale>'?)
@@ -1909,7 +1909,7 @@ And return the result **['name:jack', 'age:15']**. Note that the second expressi
 
 ### formatDateTime
 
-Return a timestamp in an optional locale in the specified format.
+Return a timestamp in an optional locale format.
 
 ```
 formatDateTime('<timestamp>', '<format>'?, '<locale>'?)
@@ -1952,7 +1952,7 @@ And returns the result **15.03.18 00:00:00**.
 
 ### formatEpoch
 
-Return a timestamp in an optional locale  in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
+Return a timestamp in an optional locale format  in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
 
 ```
 formatEpoch('<epoch>', '<format>'?, '<locale>'?)
@@ -2043,7 +2043,7 @@ And return the following results respectively:
 
 ### formatTicks
 
-Return a timestamp in an optional locale in the specified format from ticks.
+Return a timestamp in an optional locale format in the specified format from ticks.
 
 ```
 formatTicks('<ticks>', '<format>'?, '<locale>'?)
@@ -2085,7 +2085,7 @@ And returns the result **06.05.20 11:47:00**.
 
 ### getFutureTime
 
-Return the current timestamp in an optional locale plus the specified time units.
+Return the current timestamp in an optional locale format plus the specified time units.
 
 ```
 getFutureTime(<interval>, <timeUnit>, '<format>'?, '<locale>'?)
@@ -4532,7 +4532,7 @@ And returns the following arrays as the result repsectively:
 
 ### startOfDay
 
-Return the start of the day for a timestamp in an optional locale.
+Return the start of the day for a timestamp in an optional locale format.
 
 ```
 startOfDay('<timestamp>', '<format>'?, '<locale>'?)
@@ -4574,7 +4574,7 @@ And returns the result **15/03/2018 00:00:00**.
 
 ### startOfHour
 
-Return the start of the hour for a timestamp in an optional locale.
+Return the start of the hour for a timestamp in an optional locale format.
 
 ```
 startOfHour('<timestamp>', '<format>'?, '<locale>'?)
@@ -4616,7 +4616,7 @@ And returns the result **15/03/2018 13:00:00**.
 
 ### startOfMonth
 
-Return the start of the month for a timestamp in an optional locale.
+Return the start of the month for a timestamp in an optional locale format.
 
 ```
 startOfMonth('<timestamp>', '<format>'?, '<locale>'?)
@@ -4849,7 +4849,7 @@ And returns the result **world**.
 
 ### subtractFromTime
 
-Subtract a number of time units from a timestamp in an optional locale . See also [getPastTime()](#getPastTime).
+Subtract a number of time units from a timestamp in an optional locale format . See also [getPastTime()](#getPastTime).
 
 ```
 subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?, '<locale>'?)
@@ -5553,7 +5553,7 @@ And returns the result **http**.
 
 ### utcNow
 
-Return the current timestamp in an optional locale as a string.
+Return the current timestamp in an optional locale format as a string.
 
 ```
 utcNow('<format>', '<locale>'?)
