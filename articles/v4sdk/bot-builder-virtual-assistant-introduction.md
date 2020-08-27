@@ -1,6 +1,6 @@
 ---
 title: Virtual Assistant Overview - Bot Service
-description: Learn about creating your own Virtual Assistant
+description: Become familiar with the Bot Framework Virtual Assistant Template. Learn about features, understand design principles, and view example scenarios.
 author: darrenj
 ms.author: darrenj
 manager: kamrani

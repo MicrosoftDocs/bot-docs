@@ -1,6 +1,6 @@
 ---
 title: Use multiple LUIS and QnA models - Bot Service
-description: Learn how to use LUIS and QnA maker in your bot.
+description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Dispatch tools to route user input to the correct model.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
 author: diberry
 ms.author: kamrani

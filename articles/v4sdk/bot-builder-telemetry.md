@@ -1,6 +1,6 @@
 ---
 title: Add telemetry to your bot - Bot Service
-description: Learn how to integrate your bot with the new telemetry features.
+description: Learn how to view information on bot availability, performance, usage, and behavior. See how to turn on telemetry tracking for Application Insights.
 keywords: telemetry, appinsights, monitor bot
 author: WashingtonKayaker
 ms.author: kamrani
