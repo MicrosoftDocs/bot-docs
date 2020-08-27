@@ -649,7 +649,7 @@ pip install botbuilder-azure
 **EchoBot.cs**
 
 ```csharp
-using Microsoft.Bot.Builder.Azure;
+using Microsoft.Bot.Builder.Azure.Blobs;
 ```
 
 Update the line of code that points "_myStorage_" to your existing Blob Storage account.
@@ -657,7 +657,7 @@ Update the line of code that points "_myStorage_" to your existing Blob Storage 
 **EchoBot.cs**
 
 ```csharp
-private static readonly AzureBlobStorage _myStorage = new AzureBlobStorage("<your-blob-storage-account-string>", "<your-blob-storage-container-name>");
+private static readonly BlobsStorage _myStorage = new BlobsStorage("<your-azure-storage-connection-string>", "<your-blob-storage-container-name>");
 ```
 
 ### [JavaScript](#tab/javascript)
@@ -767,7 +767,7 @@ Azure blob transcript storage can use the same blob storage account created foll
 
 ### Implementation
 
-The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, <your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
+The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
 
 **echoBot.cs**
 
@@ -778,7 +778,7 @@ public class EchoBot : ActivityHandler
 {
    ...
 
-   private readonly AzureBlobsTranscriptStore _myTranscripts = new AzureBlobsTranscriptStore("<your-azure-storage-connection-string>", "<your-blob-transcript-container-name>");
+   private readonly BlobsTranscriptStore _myTranscripts = new BlobsTranscriptStore("<your-azure-storage-connection-string>", "<your-blob-transcript-container-name>");
 
    ...
 }
