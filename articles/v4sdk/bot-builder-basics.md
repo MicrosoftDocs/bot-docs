@@ -1,6 +1,6 @@
 ---
 title: How bots work - Bot Service
-description: Describes how activity and http work within the Bot Framework SDK.
+description: Become familiar with the Bot Framework SDK. Understand how bots communicate with users. Learn about activities, channels, HTTP POST requests, and other topics.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
 ms.author: johtaylo

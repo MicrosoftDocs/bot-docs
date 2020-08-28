@@ -1,6 +1,6 @@
 ---
 title: Virtual Assistant Skills Overview - Bot Service
-description: Learn more about Virtual Assistant Skills
+description: Become familiar with Virtual Assistant Skills. Learn about the Bot Framework Skills that are available for use in bots, such as calendar and email skills.
 author: darrenj
 ms.author: darrenj
 manager: kamrani
