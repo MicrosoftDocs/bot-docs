@@ -63,7 +63,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ### 5. Prepare your code for deployment
 
-#### 5.1 Retrieve or create necessary IIS/Kudu files
+#### 5.1 Retrieve or create necessary files
 
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
 
