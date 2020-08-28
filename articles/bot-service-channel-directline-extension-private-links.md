@@ -44,11 +44,11 @@ To perform the steps described next, you need to have the **Bot Channel Registra
     ![Create a Private Link](./media/private-links/private-endpoint-create.png)
 1. Supply details of your **Subscription** and **Resource Group** then supply a name for your **Private Link** and be sure to select a **region** from the list in the **Limitations** section above.
 
-    ![Configure Basic Private Link](./media/private-links/private-link-basic.png)
+    ![Configure Basic Private Link](./media/private-links/private-link-basic.PNG)
 1. For **Connection Method** select to **Connect to an Azure resource by resource ID or alias**.
 1. Provide the **Resource ID** and **Sub-Resource** from the table provided in the **Limitations** section above.
 
-    ![Configure Rousource for Private Link](./media/private-links/private-link-resource.png)
+    ![Configure Rousource for Private Link](./media/private-links/private-link-resource.PNG)
 1. Finish configuration and deployment of your **Private Link** as normal.
 1. If after deployment your Private Link reports a status of "***approval pending***" it will require a manual sign off from the Azure Bot Service team. This is normally completed within 1 work day.
 
