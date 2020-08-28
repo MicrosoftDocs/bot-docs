@@ -1,5 +1,5 @@
 
-You need to prepare your project files before you can deploy your C#, Javascript, or Typescript bot. See the Python section for information about when you need to prepare project files before deploying your Python bot.  
+You need to prepare your project files before you can deploy your C#, Javascript, or Typescript bot. See the Python information if you need to prepare the project files before deploying your Python bot.  
 
 <!-- **C# bots** -->
 ##### [C#](#tab/csharp)
