@@ -197,29 +197,29 @@ For additional information on using this command, see [bf luis:generate:ts][bf-l
 --------------------------------------------------------------------------------------------------------------------------->
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-[cognitive-services-overview]: https://docs.microsoft.com/azure/cognitive-services/Welcome
+[cognitive-services-overview]: /azure/cognitive-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
-[luis-how-to-azure-subscription]: https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-azure-subscription
+[luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
 [bf-cli-overview]: bf-cli-overview.md
 
-[bf-luisapplicationimport]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luisapplicationimport
-[bf-luisapplicationcreate]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luisapplicationcreate
-[bf-luisapplicationshow]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luisapplicationshow
-[bf-luistrainrun]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luistrainrun
-[luisapplicationpublish]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luisapplicationpublish
-[bf-luisgeneratecs]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luisgeneratecs
-[bf-luisgeneratets]: https://github.com/microsoft/botframework-cli/blob/main/packages/luis/README.md#bf-luisgeneratets
+[bf-luisapplicationimport]: https://aka.ms/botframework-cli#bf-luisapplicationimport
+[bf-luisapplicationcreate]: https://aka.ms/botframework-cli#bf-luisapplicationcreate
+[bf-luisapplicationshow]: https://aka.ms/botframework-cli#bf-luisapplicationshow
+[bf-luistrainrun]: https://aka.ms/botframework-cli#bf-luistrainrun
+[luisapplicationpublish]: https://aka.ms/botframework-cli#bf-luisapplicationpublish
+[bf-luisgeneratecs]: https://aka.ms/botframework-cli#bf-luisgeneratecs
+[bf-luisgeneratets]: https://aka.ms/botframework-cli#bf-luisgeneratets
 
-[luis-how-to-add-intents]: https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-how-to-add-intents
-[luis-how-to-start-new-app]: https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-start-new-app
-[luis-how-to-train]: https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-train
-[luis-concept-test]: https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-concept-test
-[test-an-utterance]: https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-interactive-test#test-an-utterance
-[luis-interactive-test]: https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-interactive-test
-[luis-how-to-publish-app]: https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-how-to-publish-app
+[luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents
+[luis-how-to-start-new-app]: /azure/cognitive-services/LUIS/luis-how-to-start-new-app
+[luis-how-to-train]: /azure/cognitive-services/LUIS/luis-how-to-train
+[luis-concept-test]: /azure/cognitive-services/LUIS/luis-concept-test
+[test-an-utterance]: /azure/cognitive-services/LUIS/luis-interactive-test#test-an-utterance
+[luis-interactive-test]: /azure/cognitive-services/LUIS/luis-interactive-test
+[luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
 
 <!----------------------------------------------------------------------------------------------------------------------------->
