@@ -1,0 +1,277 @@
+- name: Bot Framework SDK documentation
+  href: index-bf-sdk.yml
+- name: Overview
+  items:
+  - name: What is the Bot Framework SDK?
+    href: bot-service-overview-introduction.md
+  - name: What's new
+    href: what-is-new.md
+- name: Quickstart
+  items:
+  - name: Create a bot using .NET
+    href: dotnet/bot-builder-dotnet-sdk-quickstart.md
+  - name: Create a bot using JavaScript
+    href: javascript/bot-builder-javascript-quickstart.md
+  - name: Create a bot using Python
+    href: python/bot-builder-python-quickstart.md
+  - name: Create a bot using Azure Bot Service
+    href: v4sdk/abs-quickstart.md
+- name: Tutorials
+  items:
+  - name: 1. Create and deploy a basic bot
+    href: v4sdk/bot-builder-tutorial-basic-deploy.md
+  - name: 2. Add QnA Maker and redeploy a bot
+    href: v4sdk/bot-builder-tutorial-add-qna.md
+  - name: Add authentication to your bot
+    href: bot-builder-tutorial-authentication.md
+- name: Samples
+  items:
+  - name: Bot Framework samples repo on GitHub
+    href: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
+- name: Concepts
+  items:
+  - name: Bot
+    items:
+    - name: How bots work
+      href: v4sdk/bot-builder-basics.md
+    - name: Managing state
+      href: v4sdk/bot-builder-concept-state.md
+    - name: Dialogs library
+      href: v4sdk/bot-builder-concept-dialog.md
+    - name: Waterfall dialogs
+      href: v4sdk/bot-builder-concept-waterfall-dialogs.md
+    - name: Middleware
+      href: v4sdk/bot-builder-concept-middleware.md
+  - name: Adaptive dialogs
+    items:
+    - name: Introduction to adaptive dialogs
+      href: v4sdk/bot-builder-adaptive-dialog-Introduction.md
+    - name: Events and triggers in adaptive dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md
+    - name: Actions in Adaptive Dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-Actions.md
+    - name: 'Asking for user input using adaptive dialogs '
+      href: v4sdk/bot-builder-concept-adaptive-dialog-Inputs.md
+    - name: Recognizers in adaptive dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
+    - name: Language Generation in adaptive dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-generators.md
+    - name: Memory scopes and managing state in adaptive dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
+    - name: Handling interruptions in adaptive dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md
+    - name: Using declarative assets in adaptive dialogs
+      href: v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
+  - name: Security
+    items:
+    - name: Security guidelines
+      href: v4sdk/bot-builder-security-guidelines.md
+    - name: Authentication types
+      href: v4sdk/bot-builder-concept-authentication-types.md
+    - name: User authentication
+      href: v4sdk/bot-builder-concept-authentication.md
+    - name: Identity providers
+      href: v4sdk/bot-builder-concept-identity-providers.md
+    - name: Single sign on
+      href: v4sdk/bot-builder-concept-sso.md
+  - name: Manage bot resources
+    href: v4sdk/bot-file-basics.md
+  - name: How bots for Microsoft Teams work
+    href: v4sdk/bot-builder-basics-teams.md
+  - name: Skills
+    items:
+    - name: About skills
+      href: v4sdk/skills-conceptual.md
+    - name: About skill bots
+      href: v4sdk/skills-about-skill-bots.md
+    - name: About skill consumers
+      href: v4sdk/skills-about-skill-consumers.md
+  - name: Adaptive expressions
+    href: v4sdk/bot-builder-concept-adaptive-expressions.md
+  - name: Language Generation
+    href: v4sdk/bot-builder-concept-language-generation.md
+  - name: Bot Service templates
+    href: bot-service-concept-templates.md
+  - name: Cognitive Services
+    href: bot-service-concept-intelligence.md
+  - name: Key scenarios for bots
+    href: bot-service-scenario-overview.md
+    items:
+    - name: Commerce bot
+      href: bot-service-scenario-commerce.md
+    - name: Cortana Skill bot
+      href: bot-service-scenario-cortana-skill.md
+    - name: Enterprise Productivity bot
+      href: bot-service-scenario-enterprise-productivity.md
+    - name: Information bot
+      href: bot-service-scenario-informational.md
+    - name: Internet of Things bot
+      href: bot-service-scenario-internet-things.md
+- name: How-To
+  items:
+  - name: Design
+    href: design/TOC.yml
+  - name: Develop
+    items:
+    - name: Send and receive text message
+      href: v4sdk/bot-builder-howto-send-messages.md
+    - name: Add media to messages
+      href: v4sdk/bot-builder-howto-add-media-attachments.md
+    - name: Add buttons to guide user action
+      href: v4sdk/bot-builder-howto-add-suggested-actions.md
+    - name: Save user and conversation data
+      href: v4sdk/bot-builder-howto-v4-state.md
+    - name: Prompt users for input
+      href: v4sdk/bot-builder-primitive-prompts.md
+    - name: Send welcome message to users
+      href: v4sdk/bot-builder-send-welcome-message.md
+    - name: Send proactive notifications to users
+      href: v4sdk/bot-builder-howto-proactive-message.md
+    - name: Manage a long-running operation
+      href: v4sdk/bot-builder-howto-long-operations-guidance.md
+    - name: Implement sequential conversation flow
+      href: v4sdk/bot-builder-dialog-manage-conversation-flow.md
+    - name: Add natural language understanding to your bot
+      href: v4sdk/bot-builder-howto-v4-luis.md
+    - name: Answer user's questions using QnA Maker
+      href: v4sdk/bot-builder-howto-qna.md
+    - name: Use multiple LUIS and QnA models
+      href: v4sdk/bot-builder-tutorial-dispatch.md
+    - name: Manage dialog complexity
+      href: v4sdk/bot-builder-compositcontrol.md
+    - name: Create advanced conversation flow using branches and loops
+      href: v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md
+    - name: Handle user interruptions
+      href: v4sdk/bot-builder-howto-handle-user-interrupt.md
+    - name: Expire a conversation
+      href: v4sdk/bot-builder-howto-expire-conversation.md
+    - name: Adaptive dialogs
+      items:
+      - name: Create a bot using adaptive dialogs
+        href: v4sdk\bot-builder-dialogs-adaptive.md
+      - name: Create a bot using adaptive, component, waterfall, and custom dialogs
+        href: v4sdk/bot-builder-mixed-dialogs.md
+      - name: Handle user interruptions in adaptive dialogs
+        href: v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md
+      - name: Create a bot using declarative adaptive dialogs
+        href: v4sdk/bot-builder-dialogs-declarative.md
+    - name: Write directly to storage
+      href: v4sdk/bot-builder-howto-v4-storage.md
+    - name: Authentication
+      items:
+      - name: Add authentication to a bot
+        href: v4sdk/bot-builder-authentication.md
+      - name: Add single sign on to a bot
+        href: v4sdk/bot-builder-authentication-sso.md
+    - name: Implement custom storage for your bot
+      href: v4sdk/bot-builder-custom-storage.md
+    - name: Language Generation
+      items:
+      - name: Use language generation templates in your bot
+        href: language-generation/bot-builder-howto-use-lg-templates.md
+      - name: Use custom functions in language generation
+        href: language-generation/bot-builder-howto-use-lg-custom-functions.md
+    - name: Skills
+      items:
+      - name: Implement a skill
+        href: v4sdk/skill-implement-skill.md
+      - name: Write a v2.1 skill manifest
+        href: v4sdk/skills-write-manifest-2-1.md
+      - name: Write a v2.0 skill manifest
+        href: v4sdk/skills-write-manifest-2-0.md
+      - name: Use dialogs within a skill
+        href: v4sdk/skill-actions-in-dialogs.md
+      - name: Implement a skill consumer
+        href: v4sdk/skill-implement-consumer.md
+      - name: Use a dialog to consume a skill
+        href: v4sdk/skill-use-skilldialog.md
+    - name: Add telemetry to your bot
+      href: v4sdk/bot-builder-telemetry.md
+    - name: Add telemetry to your QnA bot
+      href: v4sdk/bot-builder-telemetry-QnAMaker.md
+    - name: Analyze your bot's telemetry data
+      href: v4sdk/bot-builder-telemetry-analytics-queries.md
+    - name: Use Direct Line Speech in your bot
+      href: directline-speech-bot.md
+    - name: .NET
+      href: dotnet/TOC.yml
+    - name: Node.js
+      href: nodejs/TOC.yml
+  - name: Test
+    items:
+    - name: Unit testing bots
+      href: v4sdk/unit-test-bots.md
+    - name: Add trace activities to your bot
+      href: v4sdk/using-trace-activities.md
+  - name: Debug
+    href: debug/TOC.yml
+  - name: Deploy
+    items:
+    - name: Deploy your bot to Azure
+      href: bot-builder-deploy-az-cli.md
+    - name: Set up continuous deployment
+      href: bot-service-build-continuous-deployment.md
+  - name: Manage
+    href: manage/TOC.yml
+  - name: Migrate
+    href: v4sdk/migration/TOC.yml
+- name: Reference
+  items:
+  - name: API SDK reference
+    items:
+    - name: v4
+      items:
+      - name: .NET SDK v4
+        href: https://aka.ms/botframework-v4-cs-sdk
+      - name: JavaScript SDK v4
+        href: https://aka.ms/bot-jssdk-v4
+      - name: Python SDK v4
+        href: https://aka.ms/botframework-v4-python-sdk
+    - name: v3
+      items:
+      - name: .NET SDK v3
+        href: https://aka.ms/botframework-v3-cs-sdk
+      - name: Node.js SDK v3
+        href: https://aka.ms/bot-jssdk-v3
+  - name: REST
+    href: rest-api/TOC.yml
+  - name: Bot Framework CLI tool
+    href: v4sdk/bf-cli-overview.md
+  - name: Adaptive dialogs
+    items:
+    - name: Events and triggers
+      href: adaptive-dialog/adaptive-dialog-prebuilt-triggers.md
+    - name: Actions
+      href: adaptive-dialog/adaptive-dialog-prebuilt-actions.md
+    - name: Inputs
+      href: adaptive-dialog/adaptive-dialog-prebuilt-inputs.md
+    - name: Recognizers
+      href: adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
+    - name: Memory scopes
+      href: adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md
+  - name: Adaptive expressions
+    items:
+    - name: Prebuilt functions
+      href: adaptive-expressions/adaptive-expressions-prebuilt-functions.md
+    - name: API reference
+      href: adaptive-expressions/adaptive-expressions-API-reference.md
+  - name: LG
+    items:
+    - name: API reference
+      href: language-generation/language-generation-API-reference.md
+    - name: .lg file format
+      href: file-format/bot-builder-lg-file-format.md
+    - name: Structured response template
+      href: language-generation/language-generation-structured-response-template.md
+    - name: Functions injected from LG
+      href: language-generation/functions-injected-from-language-generation.md
+  - name: File formats
+    items:
+    - name: .lu file format
+      href: file-format/bot-builder-lu-file-format.md
+    - name: .qna file format
+      href: file-format/bot-builder-qna-file-format.md
+  - name: Entities and activity types
+    href: bot-service-activities-entities.md
+- name: Resources
+  href: resources/TOC.yml
