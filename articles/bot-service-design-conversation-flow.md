@@ -1,6 +1,6 @@
 ---
 title: Design and control conversation flow - Bot Service
-description: Learn how to design and control conversation flow in your bot to provide a good user experience.
+description: Learn how to provide a good user experience with bots. Understand procedural conversation flow, interruption handling, and other design concepts.
 keywords: design, control, conversation flow, handle interruptions, overview
 author: v-ducvo
 ms.author: kamrani
