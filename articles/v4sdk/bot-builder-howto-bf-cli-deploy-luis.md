@@ -39,7 +39,7 @@ This article describes how to perform some common tasks using the Bot Framework 
 1. [Publish your LUIS Application](#publish-your-luis-application)
 1. [Generate source code](#generate-source-code)
 
-Once your bot projects language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
+Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
 
 ## Create your LUIS Authoring Resource in Azure
 
