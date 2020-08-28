@@ -67,7 +67,7 @@ The following steps produce a local doc build structure. `.rst` files that conta
     ```
 
 > [!NOTE]
-> If you get this sphinx error: 'could not import extension docfx_yaml.extension' you must (re)install the **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML by running this command: `pip install sphinx-docfx-yaml`. See [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
+> If you get this sphinx error: `could not import extension docfx_yaml.extension` you must (re)install **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML. Execute this command: `pip install sphinx-docfx-yaml`. For more information, see [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
 
 1. You will be asked some questions. Answer as follows:
 
