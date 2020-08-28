@@ -1,6 +1,6 @@
 ---
 title: Send proactive notifications to users - Bot Service
-description: Understand how to send notification messages
+description: Learn how bots send notification messages. See how to retrieve conversation references and test proactive messages. View code samples and design considerations.
 keywords: proactive message, notification message, bot notification, 
 author: JonathanFingold
 ms.author: kamrani

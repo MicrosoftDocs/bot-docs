@@ -15,8 +15,10 @@ ms.date: 01/09/2020
 
 Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Framework SDK v4.
 
->[!NOTE]
-> The bot you create is automatically registered with the Azure Bot Service. If you already have a bot hosted elsewhere and you want to register it, see the article: [Register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+There are 2 ways to register a bot with Azure:
+
+1. Following the steps in this article, the bot is created on and registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
+1. To create and develop your bot locally, follow the steps in the [Register a bot with Azure Bot Service](~/bot-service-quickstart-registration.md) article. When you register your bot, you supply the web address where your bot is hosted. You can still host it in Azure.
 
 [!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
 

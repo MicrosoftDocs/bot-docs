@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,15 +32,18 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="range" Type="Microsoft.Bot.Builder.LanguageGeneration.Range" />
         <Parameter Name="source" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="range">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="range">Range of the block.</param>
+        <param name="source">Source, used as the lg file path.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.SourceRange" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,6 +58,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parseTree" Type="Antlr4.Runtime.ParserRuleContext" />
@@ -61,35 +66,12 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parseTree">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ParseTree">
-      <MemberSignature Language="C#" Value="public Antlr4.Runtime.ParserRuleContext ParseTree { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Antlr4.Runtime.ParserRuleContext ParseTree" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.SourceRange.ParseTree" />
-      <MemberSignature Language="VB.NET" Value="Public Property ParseTree As ParserRuleContext" />
-      <MemberSignature Language="F#" Value="member this.ParseTree : Antlr4.Runtime.ParserRuleContext with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.SourceRange.ParseTree" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Antlr4.Runtime.ParserRuleContext</ReturnType>
-      </ReturnValue>
-      <Docs>
+        <param name="parseTree">Rule invocation record for parsing.</param>
+        <param name="source">Source, used as the lg file path.</param>
+        <param name="offset">Offset in the parse tree.</param>
         <summary>
-            Gets or sets content parse tree form LGFileParser.g4.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.SourceRange" /> class.
             </summary>
-        <value>
-            Content parse tree form LGFileParser.g4.
-            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,6 +86,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Range</ReturnType>
@@ -129,6 +112,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

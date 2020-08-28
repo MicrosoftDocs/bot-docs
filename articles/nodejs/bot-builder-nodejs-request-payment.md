@@ -1,6 +1,6 @@
 ---
 title: Request payment (v3 JS) - Bot Service
-description: Learn how to send a payment request using the Bot Framework SDK for Node.js.
+description: Learn how to use bots to send payment requests. See code samples that use the Bot Framework SDK for Node.js to add rich cards to messages and process payments.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani

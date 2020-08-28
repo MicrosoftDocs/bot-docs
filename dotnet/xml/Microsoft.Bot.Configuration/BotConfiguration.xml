@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -36,6 +38,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +57,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -77,6 +81,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,6 +109,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -130,10 +136,12 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("description")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -158,6 +166,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -184,6 +193,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Configuration.ConnectedService</ReturnType>
@@ -212,6 +222,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -248,6 +259,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -274,6 +286,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Configuration.ConnectedService</ReturnType>
@@ -301,6 +314,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Configuration.ConnectedService</ReturnType>
@@ -328,6 +342,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -363,6 +378,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -380,13 +396,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Configuration.BotConfiguration Load (string file, string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Configuration.BotConfiguration Load(string file, string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.Load(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (file As String, Optional secret As String = null) As BotConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (file As String, Optional secret As String = Nothing) As BotConfiguration" />
       <MemberSignature Language="F#" Value="static member Load : string * string -&gt; Microsoft.Bot.Configuration.BotConfiguration" Usage="Microsoft.Bot.Configuration.BotConfiguration.Load (file, secret)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Configuration.BotConfiguration</ReturnType>
@@ -410,13 +427,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt; LoadAsync (string file, string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Configuration.BotConfiguration&gt; LoadAsync(string file, string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.LoadAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadAsync (file As String, Optional secret As String = null) As Task(Of BotConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadAsync (file As String, Optional secret As String = Nothing) As Task(Of BotConfiguration)" />
       <MemberSignature Language="F#" Value="static member LoadAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;" Usage="Microsoft.Bot.Configuration.BotConfiguration.LoadAsync (file, secret)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;</ReturnType>
@@ -440,13 +458,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Configuration.BotConfiguration LoadFromFolder (string folder, string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Configuration.BotConfiguration LoadFromFolder(string folder, string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolder(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromFolder (folder As String, Optional secret As String = null) As BotConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromFolder (folder As String, Optional secret As String = Nothing) As BotConfiguration" />
       <MemberSignature Language="F#" Value="static member LoadFromFolder : string * string -&gt; Microsoft.Bot.Configuration.BotConfiguration" Usage="Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolder (folder, secret)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Configuration.BotConfiguration</ReturnType>
@@ -470,13 +489,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt; LoadFromFolderAsync (string folder, string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Configuration.BotConfiguration&gt; LoadFromFolderAsync(string folder, string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolderAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromFolderAsync (folder As String, Optional secret As String = null) As Task(Of BotConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromFolderAsync (folder As String, Optional secret As String = Nothing) As Task(Of BotConfiguration)" />
       <MemberSignature Language="F#" Value="static member LoadFromFolderAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;" Usage="Microsoft.Bot.Configuration.BotConfiguration.LoadFromFolderAsync (folder, secret)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Configuration.BotConfiguration&gt;</ReturnType>
@@ -507,6 +527,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -530,10 +551,12 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -558,10 +581,12 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("padlock")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("padlock")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("padlock")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -586,10 +611,12 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonExtensionData(ReadData=true, WriteData=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -609,13 +636,14 @@
       <MemberSignature Language="C#" Value="public void Save (string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.Save(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Save (Optional secret As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (Optional secret As String = Nothing)" />
       <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="botConfiguration.Save secret" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -635,13 +663,14 @@
       <MemberSignature Language="C#" Value="public void SaveAs (string path, string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string path, string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAs(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (path As String, Optional secret As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (path As String, Optional secret As String = Nothing)" />
       <MemberSignature Language="F#" Value="member this.SaveAs : string * string -&gt; unit" Usage="botConfiguration.SaveAs (path, secret)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -663,13 +692,14 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsAsync (string path = default, string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsAsync(string path, string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAsAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SaveAsAsync (Optional path As String = null, Optional secret As String = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveAsAsync (Optional path As String = Nothing, Optional secret As String = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.SaveAsAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="botConfiguration.SaveAsAsync (path, secret)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -692,13 +722,14 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (string secret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(string secret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Configuration.BotConfiguration.SaveAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SaveAsync (Optional secret As String = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function SaveAsync (Optional secret As String = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.SaveAsync : string -&gt; System.Threading.Tasks.Task" Usage="botConfiguration.SaveAsync secret" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -727,13 +758,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Configuration.BotConfiguration/BotServiceConverter))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Configuration.BotConfiguration/BotServiceConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.Bot.Configuration.BotConfiguration/BotServiceConverter))&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("services")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("services")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("services")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -758,6 +792,7 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -784,10 +819,12 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("version")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("version")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("version")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

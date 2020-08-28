@@ -1,6 +1,6 @@
 ---
 title: Create a bot for Telegram - Bot Service
-description: Learn how to configure a bot's connection to Telegram.
+description: Learn how to configure bots to use the Telegram messaging app to communicate with people. See how to connect bots to Telegram.
 keywords: configure bot, Telegram, bot channel, Telegram bot, access token
 author: RobStand
 ms.author: kamrani

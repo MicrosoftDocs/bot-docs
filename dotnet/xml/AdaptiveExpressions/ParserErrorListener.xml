@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.BaseErrorListener</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,12 +47,15 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.ParserErrorListener</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A ParserErrorListener instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -72,14 +78,16 @@
         <Parameter Name="recognizer" Type="Antlr4.Runtime.IRecognizer">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="offendingSymbol" Type="Antlr4.Runtime.IToken">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.Nullable</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.Nullable]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.Nullable&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -88,26 +96,30 @@
         <Parameter Name="msg" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="e" Type="Antlr4.Runtime.RecognitionException">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.Nullable</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.Nullable]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.Nullable&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="recognizer">To be added.</param>
-        <param name="offendingSymbol">To be added.</param>
-        <param name="line">To be added.</param>
-        <param name="charPositionInLine">To be added.</param>
-        <param name="msg">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="recognizer">An Antlr4 runtime recognizer.</param>
+        <param name="offendingSymbol">The token violate the lexer rules.</param>
+        <param name="line">The line number where the error occurred.</param>
+        <param name="charPositionInLine">The position of character in the line where the error occurred.</param>
+        <param name="msg">The error message.</param>
+        <param name="e">The RecognitionException.</param>
+        <summary>
+            Throw a syntax error based one current context.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

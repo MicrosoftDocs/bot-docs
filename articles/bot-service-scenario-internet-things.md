@@ -1,6 +1,6 @@
 ---
 title: Internet of Things bot scenario - Bot Service
-description: Explore the Internet of Things bot scenario with the Bot Framework.
+description: Learn about the Internet of Things (IoT) bot scenario. See how this bot uses voice or interactive chat commands with IFTTT applets to control devices in homes.
 author: BrianRandell
 ms.author: kamrani
 manager: kamrani

@@ -57,7 +57,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("luisModel")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("luisModel")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("luisModel")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,7 +88,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("luisOptions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("luisOptions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("luisOptions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("luisResult")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("luisResult")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("luisResult")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

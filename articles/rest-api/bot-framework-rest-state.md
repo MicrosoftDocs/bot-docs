@@ -1,6 +1,6 @@
 ---
 title: Manage state data - Bot Service
-description: Learn how to store and retrieve state data using the Bot State service. 
+description: Learn about alternatives to the deprecated Bot State service. See how to keep track of information about users and conversations without using this service.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

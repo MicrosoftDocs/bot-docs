@@ -47,7 +47,7 @@
       <MemberSignature Language="C#" Value="public ConversationReference (string activityId = default, Microsoft.Bot.Connector.ChannelAccount user = default, Microsoft.Bot.Connector.ChannelAccount bot = default, Microsoft.Bot.Connector.ConversationAccount conversation = default, string channelId = default, string serviceUrl = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string activityId, class Microsoft.Bot.Connector.ChannelAccount user, class Microsoft.Bot.Connector.ChannelAccount bot, class Microsoft.Bot.Connector.ConversationAccount conversation, string channelId, string serviceUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationReference.#ctor(System.String,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ChannelAccount,Microsoft.Bot.Connector.ConversationAccount,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activityId As String = null, Optional user As ChannelAccount = null, Optional bot As ChannelAccount = null, Optional conversation As ConversationAccount = null, Optional channelId As String = null, Optional serviceUrl As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activityId As String = Nothing, Optional user As ChannelAccount = Nothing, Optional bot As ChannelAccount = Nothing, Optional conversation As ConversationAccount = Nothing, Optional channelId As String = Nothing, Optional serviceUrl As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationReference : string * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ChannelAccount * Microsoft.Bot.Connector.ConversationAccount * string * string -&gt; Microsoft.Bot.Connector.ConversationReference" Usage="new Microsoft.Bot.Connector.ConversationReference (activityId, user, bot, conversation, channelId, serviceUrl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -92,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activityId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="activityId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="activityId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,7 +121,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bot")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="bot")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="bot")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,7 +150,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channelId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="channelId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="channelId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -176,7 +179,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="conversation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="conversation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -333,7 +337,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="serviceUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -361,7 +366,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="user")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="user")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="user")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

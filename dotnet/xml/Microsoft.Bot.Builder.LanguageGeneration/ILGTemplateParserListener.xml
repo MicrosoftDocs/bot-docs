@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -16,10 +17,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,6 +44,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -49,7 +53,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+BodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -73,6 +78,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -81,7 +87,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ContextContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -105,6 +112,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -113,7 +121,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorStructuredNameContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -137,6 +146,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -145,7 +155,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorStructureLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -169,6 +180,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -177,7 +189,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorTemplateStringContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -186,6 +199,70 @@
         <param name="context">The parse tree.</param>
         <summary>
             Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.errorTemplateString" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterExpression">
+      <MemberSignature Language="C#" Value="public void EnterExpression (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterExpression(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGTemplateParserListener.EnterExpression(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterExpression (context As LGTemplateParser.ExpressionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterExpression : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext -&gt; unit" Usage="iLGTemplateParserListener.EnterExpression context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterExpressionInStructure">
+      <MemberSignature Language="C#" Value="public void EnterExpressionInStructure (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterExpressionInStructure(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionInStructureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGTemplateParserListener.EnterExpressionInStructure(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterExpressionInStructure (context As LGTemplateParser.ExpressionInStructureContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterExpressionInStructure : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext -&gt; unit" Usage="iLGTemplateParserListener.EnterExpressionInStructure context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionInStructureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.expressionInStructure" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,6 +278,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -209,7 +287,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfConditionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -233,6 +312,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -241,7 +321,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfConditionRuleContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -265,6 +346,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -273,7 +355,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfElseBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -298,6 +381,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -306,7 +390,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfElseTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -330,6 +415,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -338,7 +424,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -362,6 +449,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -370,7 +458,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureValueContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -394,6 +483,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -402,7 +492,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -427,6 +518,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -435,7 +527,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -459,6 +552,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -467,7 +561,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -476,38 +571,6 @@
         <param name="context">The parse tree.</param>
         <summary>
             Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.normalTemplateString" />.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnterObjectStructureLine">
-      <MemberSignature Language="C#" Value="public void EnterObjectStructureLine (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterObjectStructureLine(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ObjectStructureLineContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGTemplateParserListener.EnterObjectStructureLine(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub EnterObjectStructureLine (context As LGTemplateParser.ObjectStructureLineContext)" />
-      <MemberSignature Language="F#" Value="abstract member EnterObjectStructureLine : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext -&gt; unit" Usage="iLGTemplateParserListener.EnterObjectStructureLine context" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ObjectStructureLineContext">
-          <Attributes>
-            <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="context">The parse tree.</param>
-        <summary>
-            Enter a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.objectStructureLine" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -523,6 +586,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -531,7 +595,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -556,6 +621,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -564,7 +630,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContentLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -588,6 +655,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -596,7 +664,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyEndLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -620,6 +689,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -628,7 +698,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyNameLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -652,6 +723,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -660,7 +732,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -684,6 +757,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -692,7 +766,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -717,6 +792,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -725,7 +801,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseRuleContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -749,6 +826,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -757,7 +835,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseStatContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -781,6 +860,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -789,7 +869,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -813,6 +894,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -821,7 +903,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+TemplateStringContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -845,6 +928,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -853,7 +937,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+BodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -877,6 +962,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -885,7 +971,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ContextContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -909,6 +996,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -917,7 +1005,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorStructuredNameContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -941,6 +1030,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -949,7 +1039,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorStructureLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -973,6 +1064,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -981,7 +1073,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ErrorTemplateStringContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -990,6 +1083,70 @@
         <param name="context">The parse tree.</param>
         <summary>
             Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.errorTemplateString" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitExpression">
+      <MemberSignature Language="C#" Value="public void ExitExpression (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitExpression(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGTemplateParserListener.ExitExpression(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitExpression (context As LGTemplateParser.ExpressionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitExpression : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionContext -&gt; unit" Usage="iLGTemplateParserListener.ExitExpression context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitExpressionInStructure">
+      <MemberSignature Language="C#" Value="public void ExitExpressionInStructure (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitExpressionInStructure(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionInStructureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGTemplateParserListener.ExitExpressionInStructure(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitExpressionInStructure (context As LGTemplateParser.ExpressionInStructureContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitExpressionInStructure : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext -&gt; unit" Usage="iLGTemplateParserListener.ExitExpressionInStructure context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionInStructureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.expressionInStructure" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1005,6 +1162,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1013,7 +1171,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfConditionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1037,6 +1196,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1045,7 +1205,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfConditionRuleContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1069,6 +1230,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1077,7 +1239,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfElseBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1102,6 +1265,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1110,7 +1274,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+IfElseTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1134,6 +1299,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1142,7 +1308,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1166,6 +1333,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1174,7 +1342,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureValueContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1198,6 +1367,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1206,7 +1376,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1231,6 +1402,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1239,7 +1411,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1263,6 +1436,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1271,7 +1445,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1280,38 +1455,6 @@
         <param name="context">The parse tree.</param>
         <summary>
             Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.normalTemplateString" />.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExitObjectStructureLine">
-      <MemberSignature Language="C#" Value="public void ExitObjectStructureLine (Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitObjectStructureLine(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ObjectStructureLineContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ILGTemplateParserListener.ExitObjectStructureLine(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub ExitObjectStructureLine (context As LGTemplateParser.ObjectStructureLineContext)" />
-      <MemberSignature Language="F#" Value="abstract member ExitObjectStructureLine : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext -&gt; unit" Usage="iLGTemplateParserListener.ExitObjectStructureLine context" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ObjectStructureLineContext">
-          <Attributes>
-            <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="context">The parse tree.</param>
-        <summary>
-            Exit a parse tree produced by <see cref="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.objectStructureLine" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1327,6 +1470,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1335,7 +1479,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1360,6 +1505,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1368,7 +1514,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyContentLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1392,6 +1539,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1400,7 +1548,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyEndLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1424,6 +1573,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1432,7 +1582,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredBodyNameLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1456,6 +1607,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1464,7 +1616,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+StructuredTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1488,6 +1641,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1496,7 +1650,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1521,6 +1676,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1529,7 +1685,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseRuleContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1553,6 +1710,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1561,7 +1719,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseStatContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1585,6 +1744,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1593,7 +1753,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+SwitchCaseTemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -1617,6 +1778,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1625,7 +1787,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+TemplateStringContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

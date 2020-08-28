@@ -1,6 +1,6 @@
 ---
 title: How bots work - Bot Service
-description: Describes how activity and http work within the Bot Framework SDK.
+description: Become familiar with the Bot Framework SDK. Understand how bots communicate with users. Learn about activities, channels, HTTP POST requests, and other topics.
 keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
 ms.author: johtaylo
@@ -32,6 +32,9 @@ In this example, the bot created and sent a message activity in response to the 
 Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn, is acknowledged with a 200 HTTP status code.
 
 The protocol doesn’t specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the diagram above. Since there are two distinct HTTP connections back to back, the security model must provide for both.
+
+> [!NOTE]
+> The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot does not respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
 
 ### Defining a turn
 

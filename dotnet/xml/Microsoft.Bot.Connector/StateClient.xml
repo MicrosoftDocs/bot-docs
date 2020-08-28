@@ -27,7 +27,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +54,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -83,7 +85,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -138,7 +141,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -169,7 +173,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -197,7 +202,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -206,7 +212,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -265,7 +272,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -298,7 +306,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -331,7 +340,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -360,7 +370,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -370,7 +381,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -405,7 +417,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -423,7 +436,7 @@
       <MemberSignature Language="C#" Value="public StateClient (Uri baseUri, string microsoftAppId = default, string microsoftAppPassword = default, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUri, string microsoftAppId, string microsoftAppPassword, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.StateClient.#ctor(System.Uri,System.String,System.String,System.Net.Http.DelegatingHandler[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, Optional microsoftAppId As String = null, Optional microsoftAppPassword As String = null, ParamArray handlers As DelegatingHandler())" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, Optional microsoftAppId As String = Nothing, Optional microsoftAppPassword As String = Nothing, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.StateClient : Uri * string * string * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Bot.Connector.StateClient" Usage="new Microsoft.Bot.Connector.StateClient (baseUri, microsoftAppId, microsoftAppPassword, handlers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -435,7 +448,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The StateAPI is being deprecated.  Please refer to https://aka.ms/yr235k for details on how to replace with your own storage.", false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -445,7 +459,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

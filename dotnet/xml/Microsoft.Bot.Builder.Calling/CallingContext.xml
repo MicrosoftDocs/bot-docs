@@ -71,7 +71,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults (System.Net.HttpStatusCode statusCode, string content = default, System.Threading.Tasks.Task&lt;System.IO.Stream&gt; additionalData = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Calling.ParsedCallingRequest GenerateParsedResults(valuetype System.Net.HttpStatusCode statusCode, string content, class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; additionalData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Calling.CallingContext.GenerateParsedResults(System.Net.HttpStatusCode,System.String,System.Threading.Tasks.Task{System.IO.Stream})" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateParsedResults (statusCode As HttpStatusCode, Optional content As String = null, Optional additionalData As Task(Of Stream) = null) As ParsedCallingRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateParsedResults (statusCode As HttpStatusCode, Optional content As String = Nothing, Optional additionalData As Task(Of Stream) = Nothing) As ParsedCallingRequest" />
       <MemberSignature Language="F#" Value="static member GenerateParsedResults : System.Net.HttpStatusCode * string * System.Threading.Tasks.Task&lt;System.IO.Stream&gt; -&gt; Microsoft.Bot.Builder.Calling.ParsedCallingRequest" Usage="Microsoft.Bot.Builder.Calling.CallingContext.GenerateParsedResults (statusCode, content, additionalData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -1,0 +1,83 @@
+<Type Name="IActivityExtensions" FullName="Microsoft.Bot.Schema.IActivityExtensions">
+  <TypeSignature Language="C#" Value="public static class IActivityExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IActivityExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.IActivityExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IActivityExtensions" />
+  <TypeSignature Language="F#" Value="type IActivityExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides additional methods to work with <see cref="T:Microsoft.Bot.Schema.IActivity" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLocale">
+      <MemberSignature Language="C#" Value="public static string GetLocale (this Microsoft.Bot.Schema.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetLocale(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.IActivityExtensions.GetLocale(Microsoft.Bot.Schema.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLocale (activity As IActivity) As String" />
+      <MemberSignature Language="F#" Value="static member GetLocale : Microsoft.Bot.Schema.IActivity -&gt; string" Usage="Microsoft.Bot.Schema.IActivityExtensions.GetLocale activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:Microsoft.Bot.Schema.Activity" /> instance.</param>
+        <summary>
+            Gets the locale for the activity.
+            </summary>
+        <returns>The locale for the activity.</returns>
+        <remarks>
+            The locale name is a combination of an ISO 639 two- or three-letter
+            culture code associated with a language
+            and an ISO 3166 two-letter subculture code associated with a
+            country or region.
+            The locale name can also correspond to a valid BCP-47 language tag.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLocale">
+      <MemberSignature Language="C#" Value="public static void SetLocale (this Microsoft.Bot.Schema.IActivity activity, string locale);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLocale(class Microsoft.Bot.Schema.IActivity activity, string locale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.IActivityExtensions.SetLocale(Microsoft.Bot.Schema.IActivity,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetLocale (activity As IActivity, locale As String)" />
+      <MemberSignature Language="F#" Value="static member SetLocale : Microsoft.Bot.Schema.IActivity * string -&gt; unit" Usage="Microsoft.Bot.Schema.IActivityExtensions.SetLocale (activity, locale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" RefType="this" />
+        <Parameter Name="locale" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:Microsoft.Bot.Schema.Activity" /> instance.</param>
+        <param name="locale">The locale for the activity specified as a combination of an ISO 639 two- or three-letter
+            culture code associated with a language.</param>
+        <summary>
+            Sets the locale for the activity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -44,13 +45,16 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="templates" Type="Microsoft.Bot.Builder.TemplateManager.LanguageTemplateDictionary" />
       </Parameters>
       <Docs>
-        <param name="templates">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="templates">The language template dictionary to use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.TemplateManager.DictionaryRenderer" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,6 +72,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
@@ -79,12 +84,14 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="language">To be added.</param>
-        <param name="templateId">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The turn context.</param>
+        <param name="language">The language to render.</param>
+        <param name="templateId">The template to render.</param>
+        <param name="data">The data object to use to render.</param>
+        <summary>
+            Renders a template to an activity or string.
+            </summary>
+        <returns>Task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

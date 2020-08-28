@@ -46,7 +46,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("metadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

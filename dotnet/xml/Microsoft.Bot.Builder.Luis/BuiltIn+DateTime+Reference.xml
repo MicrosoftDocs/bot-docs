@@ -35,7 +35,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("future")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("future")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("future")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -62,7 +63,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("past")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("past")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("past")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Description("present")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Description("present")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Description("present")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

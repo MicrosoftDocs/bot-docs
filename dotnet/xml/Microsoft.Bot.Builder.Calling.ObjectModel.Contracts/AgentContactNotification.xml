@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -54,7 +55,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="action", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="action", Required=Newtonsoft.Json.Required.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="action", Required=Newtonsoft.Json.Required.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -98,7 +100,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientCountry", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientCountry", Required=Newtonsoft.Json.Required.Default)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientCountry", Required=Newtonsoft.Json.Required.Default)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,7 +145,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientUiLanguage", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientUiLanguage", Required=Newtonsoft.Json.Required.Default)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientUiLanguage", Required=Newtonsoft.Json.Required.Default)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,7 +190,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientVersion", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientVersion", Required=Newtonsoft.Json.Required.Default)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore, PropertyName="clientVersion", Required=Newtonsoft.Json.Required.Default)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -268,7 +273,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fromUserDisplayName", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="fromUserDisplayName", Required=Newtonsoft.Json.Required.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="fromUserDisplayName", Required=Newtonsoft.Json.Required.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -293,7 +299,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fromUserLcid", Required=Newtonsoft.Json.Required.Default)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="fromUserLcid", Required=Newtonsoft.Json.Required.Default)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="fromUserLcid", Required=Newtonsoft.Json.Required.Default)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,6 +1,6 @@
 ---
 title: Azure Bot Service tutorial to have a bot answer questions - Bot Service
-description: Tutorial to use QnA Maker in your bot to answer questions.
+description: Learn how to add question-and-answer support to bots. See how to use QnA Maker and a knowledge base with a bot so that the bot can answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
 ms.author: kamrani

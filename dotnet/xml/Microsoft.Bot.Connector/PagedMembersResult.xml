@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PagedMembersResult (string continuationToken = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; members = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string continuationToken, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ChannelAccount&gt; members) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PagedMembersResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ChannelAccount})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional continuationToken As String = null, Optional members As IList(Of ChannelAccount) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional continuationToken As String = Nothing, Optional members As IList(Of ChannelAccount) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PagedMembersResult : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt; -&gt; Microsoft.Bot.Connector.PagedMembersResult" Usage="new Microsoft.Bot.Connector.PagedMembersResult (continuationToken, members)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -80,7 +80,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,7 +109,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="members")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="members")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="members")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

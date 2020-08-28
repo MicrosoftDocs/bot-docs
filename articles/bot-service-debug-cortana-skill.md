@@ -1,6 +1,6 @@
 ---
 title: Test a Cortana skill - Bot Service
-description: Learn how to test a Cortana bot by invoking a Cortana skill.
+description: Learn how to test Cortana skill bots. See how to test Bot Framework SDK bots that implement Cortana skills by invoking the bots from Cortana.
 keywords: Bot Framework SDK, register your bot, cortana
 author: v-ducvo
 ms.author: kamrani

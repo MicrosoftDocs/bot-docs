@@ -28,10 +28,12 @@
 ### [Recognizers in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md)
 ### [Language Generation in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-generators.md)
 ### [Memory scopes and managing state in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md)
+### [Handling interruptions in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md)
 ### [Using declarative assets in adaptive dialogs](v4sdk/bot-builder-concept-adaptive-dialog-declarative.md)
 ## Security
 ### [Security guidelines](v4sdk/bot-builder-security-guidelines.md)
-### [Bot authentication](v4sdk/bot-builder-concept-authentication.md)
+### [Authentication types](v4sdk/bot-builder-concept-authentication-types.md)
+### [User authentication](v4sdk/bot-builder-concept-authentication.md)
 ### [Identity providers](v4sdk/bot-builder-concept-identity-providers.md)
 ### [Single sign on](v4sdk/bot-builder-concept-sso.md)
 ## [Manage bot resources](v4sdk/bot-file-basics.md)
@@ -62,6 +64,7 @@
 ### [Prompt users for input](v4sdk/bot-builder-primitive-prompts.md)
 ### [Send welcome message to users](v4sdk/bot-builder-send-welcome-message.md)
 ### [Send proactive notifications to users](v4sdk/bot-builder-howto-proactive-message.md)
+### [Manage a long-running operation](v4sdk/bot-builder-howto-long-operations-guidance.md)
 ### [Implement sequential conversation flow](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 ### [Add natural language understanding to your bot](v4sdk/bot-builder-howto-v4-luis.md)
 ### [Answer user's questions using QnA Maker](v4sdk/bot-builder-howto-qna.md)
@@ -70,9 +73,11 @@
 ### [Create advanced conversation flow using branches and loops](v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md)
 <!--#### [Implement a greeting dialog](v4sdk/bot-builder-dialogs-greeting.md)--TODO: Add once there's a sample.-->
 ### [Handle user interruptions](v4sdk/bot-builder-howto-handle-user-interrupt.md)
+### [Expire a conversation](v4sdk/bot-builder-howto-expire-conversation.md)
 ### Adaptive dialogs
 #### [Create a bot using adaptive dialogs](v4sdk\bot-builder-dialogs-adaptive.md)
 #### [Create a bot using adaptive, component, waterfall, and custom dialogs](v4sdk/bot-builder-mixed-dialogs.md)
+#### [Handle user interruptions in adaptive dialogs](v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md)
 #### [Create a bot using declarative adaptive dialogs](v4sdk/bot-builder-dialogs-declarative.md)
 ### [Write directly to storage](v4sdk/bot-builder-howto-v4-storage.md)
 ### Authentication
@@ -81,6 +86,7 @@
 ### [Implement custom storage for your bot](v4sdk/bot-builder-custom-storage.md)
 ### Language Generation
 #### [Use language generation templates in your bot](language-generation/bot-builder-howto-use-lg-templates.md)
+#### [Use custom functions in language generation](language-generation/bot-builder-howto-use-lg-custom-functions.md)
 ### Skills
 #### [Implement a skill](v4sdk/skill-implement-skill.md)
 #### [Write a v2.1 skill manifest](v4sdk/skills-write-manifest-2-1.md)
