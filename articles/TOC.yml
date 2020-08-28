@@ -50,7 +50,7 @@
       href: v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md
     - name: Actions in Adaptive Dialogs
       href: v4sdk/bot-builder-concept-adaptive-dialog-Actions.md
-    - name: 'Asking for user input using adaptive dialogs '
+    - name: Asking for user input using adaptive dialogs
       href: v4sdk/bot-builder-concept-adaptive-dialog-Inputs.md
     - name: Recognizers in adaptive dialogs
       href: v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
