@@ -117,8 +117,10 @@ sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-
         sphinx-build source build
     ```
 
-    Once the build completes, you should have the `YML` files in `build/docfx_yaml`.
+    Once the build completes, you should have the `YML` files in `build/docfx_yaml` folder.
 
+    > [!NOTE
+    > If encounter this error: `contents.rst not found`, add the following entry to the `config.py` file: `master_doc = 'index'`. See also [Sphinx error: master file [..]/checkouts/latest/contents.rst not found #2569](https://github.com/readthedocs/readthedocs.org/issues/2569).
 
 ## Documentation preview
 
