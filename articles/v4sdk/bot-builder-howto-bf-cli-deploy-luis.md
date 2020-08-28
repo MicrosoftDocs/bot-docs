@@ -61,7 +61,7 @@ The LUIS Authoring Resource is an [Azure Cognitive Services][cognitive-services-
 
 The LUIS Authoring Resource consists of:
 
-- **Keys**. These are called ***subscriptionKeys***, sometimes referred to as ***authoringKeys*** when referring to keys in the LUIS Authoring Resource. These are auto generated. You will need this key when referencing your LUIS Authoring Resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the key in the _Keys and endpoint_ blade in your LUIS Authoring Resource.
+- **Keys**. These are called ***subscriptionKeys***, sometimes referred to as ***authoringKeys*** when referring to keys in the LUIS Authoring resource. These are auto generated. You will need an authoring key when referencing your LUIS Authoring resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the keys in the _Keys and endpoint_ blade in your LUIS Authoring resource.
 - **Endpoint**. This is auto-generated using the LUIS Authoring Resource name that you provide when creating it. It has the following format: `https://<LUIS_RESOURCE_NAME>.cognitiveservices.azure.com/`. when referencing your LUIS Authoring Resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the key in the _Keys and endpoint_ blade in your LUIS Authoring Resource.
 - **Location**.   This is the Azure Region that contains your LUIS Authoring Resource. You select this when creating the LUIS Authoring Resource.
 
