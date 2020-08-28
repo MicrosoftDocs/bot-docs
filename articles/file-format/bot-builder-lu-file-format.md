@@ -43,7 +43,7 @@ Here's an .lu file that captures a simple `Greeting` intent with a list of examp
 - Good evening
 ```
 
-`#\<intent-name\>` describes a new intent definition section. Each line after the intent definition are example utterances that describe that intent. You can add together multiple intent definitions in a single file like in the example below:
+`#<intent-name>` describes a new intent definition section. Each line after the intent definition are example utterances that describe that intent. You can add together multiple intent definitions in a single file like in the example below:
 
 ```.lu
 # Greeting
@@ -58,7 +58,7 @@ Here's an .lu file that captures a simple `Greeting` intent with a list of examp
 - please help
 ```
 
-Each section is identified by `#\<intent name\>` notation. Blank lines are skipped when parsing the file.
+Each section is identified by `#<intent name>` notation. Blank lines are skipped when parsing the file.
 
 ## Entity
 
@@ -278,7 +278,7 @@ Shown below are the variety of ways you can explicitly define entities and their
 You can refer to implicitly defined roles directly in patterns and labeled utterances using the following format:
 
 ```.lu
-{@\<entityName\>:\<roleName\>}
+{@<entityName\>:<roleName\>}
 ```
 
 You can see in the example below how the roles `userName:firstName` and `userName:lastName` are implicitly defined:
@@ -295,7 +295,7 @@ You can see in the example below how the roles `userName:firstName` and `userNam
 > @ ml userName hasRoles lastName, firstName
 ```
 
-In patterns, you can use roles using the `{\<entityName\>:\<roleName\>}` notation. Here's an example:
+In patterns, you can use roles using the `{<entityName\>:<roleName\>}` notation. Here's an example:
 
 ```.lu
 # getUserName
@@ -352,9 +352,9 @@ A [phrase list][11] is a list of words, phrases, numbers or other characters tha
 You can describe phrase list entities using the following notation:
 
 ```.lu
-@ phraselist \<Name\>
-    - \<synonym1\>
-    - \<synonym2\>
+@ phraselist <Name\>
+    - <synonym1\>
+    - <synonym2\>
 ```
 
 Here's an example of a phrase list definition:
@@ -597,19 +597,19 @@ References the .lu file. follow Markdown link syntax. Supported references inclu
 
 - Reference to another .lu file via `[link name](<.lu file name>)`. Reference can be an absolute path or a relative path from the containing .lu file.
 - Reference to a folder with other .lu files is supported through:
-	- `[link name](<.lu file path>/*)` looks for .lu files under the specified absolute or relative path
-	- `[link name](<.lu file path>/**)` recursively looks for .lu files under the specified absolute or relative path, including subfolders.
+	- `[link name](<.lu file path>*)` looks for .lu files under the specified absolute or relative path
+	- `[link name](<.lu file path>**)` recursively looks for .lu files under the specified absolute or relative path, including subfolders.
 - You can also add references to utterances defined in a specific file under an intent section or as QnA pairs.
 	- `[link name](<.lu file path>#<INTENT-NAME>)` finds all utterances under <INTENT-NAME> in the .lu file and adds them to the list of utterances where the reference is specified.
     - `[link name](<.lu file path>#<INTENT-NAME>*utterances*)` finds all utterances (not patterns) under <INTENT-NAME> in the .lu file and adds them to the list of utterances where the reference is specified.
     - `[link name](<.lu file path>#<INTENT-NAME>*patterns*)` finds all patterns (not utterances) under <INTENT-NAME> in the .lu file and adds them to the list of patterns where the reference is specified.
-	- `[link name](\<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of utterances where the reference is specified.
-    - `[link name](\<.lu file path>#*patterns*)` finds all patterns in the .lu file and adds them to the list of utterances where the reference is specified.
-	- `[link name](\<.lu file path>#*utterancesAndPatterns*)` finds all utterances and patterns in the .lu file and adds them to the list of utterances where the reference is specified.
-    - `[link name](\<.qna file path>#$name?)` finds all alterations from the specific alteration definition in the .qna content and adds them to the list of utterances where the reference is specified.
-    - `[link name](\<.qna file path>#*alterations*?)` finds all alterations from the .qna content and adds them to the list of utterances where the reference is specified.
-    - `[link name](\<.qna file path>#?question-to-find?)` finds all variation questions from the specific question and adds them to the list of utterances where the reference is specified. Note that any spaces in your question will need to be replaced with the **-** character.
-    - `[link name](\<.qna file path>#*answers*?)` finds all answers and adds them to the list of utterances where the reference is specified.
+	- `[link name](<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of utterances where the reference is specified.
+    - `[link name](<.lu file path>#*patterns*)` finds all patterns in the .lu file and adds them to the list of utterances where the reference is specified.
+	- `[link name](<.lu file path>#*utterancesAndPatterns*)` finds all utterances and patterns in the .lu file and adds them to the list of utterances where the reference is specified.
+    - `[link name](<.qna file path>#$name?)` finds all alterations from the specific alteration definition in the .qna content and adds them to the list of utterances where the reference is specified.
+    - `[link name](<.qna file path>#*alterations*?)` finds all alterations from the .qna content and adds them to the list of utterances where the reference is specified.
+    - `[link name](<.qna file path>#?question-to-find?)` finds all variation questions from the specific question and adds them to the list of utterances where the reference is specified. Note that any spaces in your question will need to be replaced with the **-** character.
+    - `[link name](<.qna file path>#*answers*?)` finds all answers and adds them to the list of utterances where the reference is specified.
 
 Here's an example of the aforementioned references:
 
