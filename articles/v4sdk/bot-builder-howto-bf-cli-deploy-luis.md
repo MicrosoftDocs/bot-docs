@@ -30,7 +30,7 @@ The Bot Framework SDK Command Line Interface (CLI) lets you automate the managem
 
 This article describes how to perform some common tasks using the Bot Framework CLI.
 
-1. [Create your LUIS Authoring Resource in Azure](#create-your-luis-authoring-resource-in-azure)
+1. [Create your LUIS authoring resource in Azure](#create-your-luis-authoring-resource-in-azure)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
 1. [Create your LUIS Model](#create-your-luis-model)
 1. [Create your LUIS Application](#create-your-luis-application)
@@ -41,9 +41,9 @@ This article describes how to perform some common tasks using the Bot Framework 
 
 Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
 
-## Create your LUIS Authoring Resource in Azure
+## Create your LUIS authoring resource in Azure
 
-The LUIS Authoring Resource is an [Azure Cognitive Services][cognitive-services-overview] resource that you create using Azure's [Create Cognitive Services][create-cognitive-services] page. You can think of this as a container for your LUIS applications and the model, or models that those LUIS applications are comprised of. The LUIS Authoring resource provides a secure way to author your LUIS resources.  You need this to be able to perform the activities involved, such as create, update, train, and publish a LUIS app. The Bot Framework CLI LUIS group provides the commands you need to accomplish these tasks.
+The LUIS authoring resource is an [Azure Cognitive Services][cognitive-services-overview] resource that you create using Azure's [Create Cognitive Services][create-cognitive-services] page. You can think of this as a container for your LUIS applications and the model, or models that those LUIS applications are comprised of. The LUIS authoring resource provides a secure way to author your LUIS resources.  You need this to be able to perform the activities involved, such as create, update, train, and publish a LUIS app. The Bot Framework CLI LUIS group provides the commands you need to accomplish these tasks.
 
 1. Go to the Azure [Create Cognitive Services][create-cognitive-services] page.  
 2. In the **Create options** section, select **Authoring** to create a LUIS authoring resource.
@@ -59,11 +59,11 @@ The LUIS Authoring Resource is an [Azure Cognitive Services][cognitive-services-
 
 4. Review the values to ensure they are correct, then select the **Create** button.
 
-The LUIS Authoring Resource consists of:
+The LUIS authoring resource consists of:
 
-- **Keys**. These are called ***subscriptionKeys***, sometimes referred to as ***authoringKeys*** when referring to keys in the LUIS Authoring resource. These are auto generated. You will need an authoring key when referencing your LUIS Authoring resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the keys in the _Keys and endpoint_ blade in your LUIS Authoring resource.
-- **Endpoint**. This is auto-generated using the LUIS Authoring resource name that you provide when creating it. It has the following format: `https://<LUIS_RESOURCE_NAME>.cognitiveservices.azure.com/`. When referencing your LUIS Authoring resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the key in the _Keys and endpoint_ blade in your LUIS Authoring resource.
-- **Location**.   This is the Azure Region that contains your LUIS Authoring Resource. You select this when creating the LUIS Authoring Resource.
+- **Keys**. These are called ***subscriptionKeys***, sometimes referred to as ***authoringKeys*** when referring to keys in the LUIS authoring resource. These are auto generated. You will need an authoring key when referencing your LUIS authoring resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the keys in the _Keys and endpoint_ blade in your LUIS authoring resource.
+- **Endpoint**. This is auto-generated using the LUIS authoring resource name that you provide when creating it. It has the following format: `https://<LUIS_RESOURCE_NAME>.cognitiveservices.azure.com/`. When referencing your LUIS authoring resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the key in the _Keys and endpoint_ blade in your LUIS authoring resource.
+- **Location**.   This is the Azure region that contains your LUIS authoring resource. You select this when creating the LUIS authoring resource.
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-example.png)
 
@@ -93,7 +93,7 @@ For more information see [Bot Framework CLI tool][bf-cli-overview].
 
 ## Create your LUIS Model
 
-Once you have created all the individual `.lu` files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS Authoring Resource_ you created previously.
+Once you have created all the individual `.lu` files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
 
 In the example below, the command is run in a command line while in the root directory of your project. It will search for all `.lu` files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named LUISModel.json in the _output_ directory.
 
@@ -103,7 +103,7 @@ bf luis:convert -i dialogs -o .\output\LUISModel.json -r
 
 ## Create your LUIS Application
 
-The _LUIS Authoring Resource_ you perviously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS Authoring Resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects `.lu` files.
+The _LUIS authoring resource_ you perviously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS authoring resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects `.lu` files.
 
 To create your LUIS app:
 
