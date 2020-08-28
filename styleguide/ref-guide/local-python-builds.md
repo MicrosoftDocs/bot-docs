@@ -66,16 +66,19 @@ The following steps produce a local doc build structure. `.rst` files that conta
     sphinx-quickstart
     ```
 
+> [!NOTE]
+> If you get this sphinx error: 'could not import extension docfx_yaml.extension' you must (re)install the **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML by running this command: `pip install sphinx-docfx-yaml`. See [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
+
 1. You will be asked some questions. Answer as follows:
 
     1. Root path accept the current directory: Accept default (simply enter).
     1. Separate source and build directories (y/n) [n]: y.
     1. Accept the default hyphen prefix for the other directories to be created (simply enter).
-	1. Project name: `API Reference` or whatever name you decide.
-	1. Author name(s): your alias
-	1. Project version: 1.0
-	1. Project release: 1.0.0
-	1. For all the requested values accept the defaults by just clicking enter.
+    1. Project name: `API Reference` or whatever name you decide.
+    1. Author name(s): your alias
+    1. Project version: 1.0
+    1. Project release: 1.0.0
+    1. For all the requested values accept the defaults by just clicking enter.
 
     After done entering the above values the following directory structure is created in the source folder.
 
