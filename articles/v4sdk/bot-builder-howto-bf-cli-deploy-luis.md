@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework SDK Command Line Interface (CLI) defines a variety of commands to enable automating the process of creating, updating and deleting LUIS properties.
+The Bot Framework SDK Command Line Interface (CLI) lets you automate the management of LUIS apps. It lets you create, update, and delete LUIS properties from the command line or a script.
 
 ## Prerequisites
 
