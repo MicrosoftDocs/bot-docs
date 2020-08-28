@@ -43,7 +43,7 @@ Once your bot project's language understanding resources have been created, you 
 
 ## Create your LUIS Authoring Resource in Azure
 
-The LUIS Authoring Resource is an [Azure Cognitive Services][cognitive-services-overview] Resource that you create using Azure's [Create Cognitive Services][create-cognitive-services] page. You can think of this as a container for your LUIS applications and the model, or models that those LUIS applications are comprised of. the LUIS Authoring Resource provides a secure way to author your LUIS resources.  This includes all of the activities involved, such as create, update, train, and publish. The Bot Framework CLI LUIS group provides the commands you need to accomplish these tasks.
+The LUIS Authoring Resource is an [Azure Cognitive Services][cognitive-services-overview] resource that you create using Azure's [Create Cognitive Services][create-cognitive-services] page. You can think of this as a container for your LUIS applications and the model, or models that those LUIS applications are comprised of. The LUIS Authoring resource provides a secure way to author your LUIS resources.  You need this to be able to perform the activities involved, such as create, update, train, and publish a LUIS app. The Bot Framework CLI LUIS group provides the commands you need to accomplish these tasks.
 
 1. Go to the Azure [Create Cognitive Services][create-cognitive-services] page.  
 2. In the **Create options** section, select **Authoring** to create a LUIS authoring resource.
