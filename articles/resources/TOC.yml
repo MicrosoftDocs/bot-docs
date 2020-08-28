@@ -1,0 +1,68 @@
+- name: Get support
+  href: ../bot-service-resources-links-help.md
+- name: App Insights keys
+  href: ../bot-service-resources-app-insights-keys.md
+- name: Bot Service Compliance
+  href: ../bot-service-compliance.md
+- name: Bot Service Encryption
+  href: ../bot-service-encryption.md
+- name: Bot review guidelines
+  href: ../bot-service-review-guidelines.md
+- name: Channel reference
+  href: ../bot-service-channels-reference.md
+- name: Guide to identifiers
+  href: ../bot-service-resources-identifiers-guide.md
+- name: Implement a skill for Power Virtual Agents
+  href: ../v4sdk/skill-pva.md
+- name: User-agent requests
+  href: ../bot-service-resources-user-agent.md
+- name: FAQ
+  items:
+  - name: Index
+    href: ../bot-service-resources-bot-framework-faq.md
+  - name: Availability
+    href: ../bot-service-resources-faq-availability.md
+  - name: General
+    href: ../bot-service-resources-faq-general.md
+  - name: Ecosystem
+    href: ../bot-service-resources-faq-ecosystem.md
+  - name: Security
+    href: ../bot-service-resources-faq-security.md
+  - name: Azure
+    href: ../bot-service-resources-faq-azure.md
+- name: Troubleshoot
+  items:
+  - name: Index
+    href: ../bot-service-troubleshoot-index.md
+  - name: General
+    href: ../bot-service-troubleshoot-general-problems.md
+  - name: Configuration
+    href: ../bot-service-troubleshoot-bot-configuration.md
+  - name: HTTP 500 errors
+    href: ../bot-service-troubleshoot-500-errors.md
+  - name: Authentication
+    href: ../bot-service-troubleshoot-authentication-problems.md
+- name: Bot Framework schemas
+  items:
+  - name: Activity schema
+    href: https://aka.ms/botSpecs-activitySchema
+  - name: Card schema
+    href: https://aka.ms/botSpecs-cardSchema
+  - name: Transcript schema
+    href: https://aka.ms/botSpecs-transcripts
+- name: Virtual Assistant
+  items:
+  - name: Overview
+    href: ../v4sdk/bot-builder-virtual-assistant-introduction.md
+  - name: Template Introduction
+    href: ../v4sdk/bot-builder-virtual-assistant-template.md
+  - name: Virtual Assistant Skills
+    href: ../v4sdk/bot-builder-skills-overview.md
+- name: WebChat
+  items:
+  - name: Overview
+    href: ../v4sdk/bot-builder-webchat-overview.md
+  - name: Customization
+    href: ../v4sdk/bot-builder-webchat-customization.md
+  - name: Add single sign on to Web Chat
+    href: ../v4sdk/bot-builder-webchat-sso.md
