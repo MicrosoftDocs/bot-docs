@@ -35,6 +35,7 @@ The direct line app service extension is pre-installed on all instances of Azure
 |[Create .NET client with Extension](bot-service-channel-directline-extension-net-client.md)|Create a .NET client in C# which connects to the direct line app service extension|
 |[Use extension with WebChat](bot-service-channel-directline-extension-webchat-client.md)|Use WebChat with the direct line app service extension|
 |[Use extension within VNET](bot-service-channel-directline-extension-vnet.md)|Use the direct line app service extension with an Azure Virtual Network (VNET)|
+|[Use extension with Private Links](bot-service-channel-directline-extension-private-links.md)|Use the Direct Line app service extension with Private Links|
 
 ## Additional resources
 
