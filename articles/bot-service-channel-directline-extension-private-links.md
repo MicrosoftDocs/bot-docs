@@ -39,7 +39,7 @@ To perform the steps described next, you need to have the **Bot Channel Registra
 ## Create a Private Link
 
 1. From the **Azure** portal click ***Create a Resource*** and begin the process of creating a **Private Link**.
-1. When presented with the option to ***Create a Private Endpoint*** or ***Create a Private Link Service***, select **Create a Private Link**.
+1. When presented with the option to ***Create a Private Endpoint*** or ***Create a Private Link Service***, select **Create a Private Endpoint**.
 
     ![Create a Private Link](./media/private-links/private-endpoint-create.png)
 1. Supply details of your **Subscription** and **Resource Group** then supply a name for your **Private Link** and be sure to select a **region** from the list in the **Limitations** section above.
