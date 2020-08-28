@@ -28,6 +28,8 @@ The Bot Framework SDK Command Line Interface (CLI) defines a variety of commands
 
 ## Using the LUIS CLI commands to enable LUIS in your bot
 
+This article describes how to perform some common tasks using the Bot Framework CLI.
+
 1. [Create your LUIS Authoring Resource in Azure](#create-your-luis-authoring-resource-in-azure)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
 1. [Create your LUIS Model](#create-your-luis-model)
