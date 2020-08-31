@@ -162,10 +162,14 @@ sphinx-build source build
 ```
 
 1. Perform a preliminary test using the HTML output files. Navigate to the `build` directory and click on the `index.html` file. YOu should be able to navigate to the documentation file you are analyzing and check what kind of errors it contains. This should give you a clue on how to fix them.
-    ![sphinx libraries dir structure](../media/sphinx-index-html.PNG)
+
+    ![sphinx local build html](../media/sphinx-index-html.PNG)
+
 1. The following picture shows an example of errors.
-    ![sphinx libraries dir structure](../media/sphinx-errors.PNG)
-Fix the errors and redo the previous steps. Then perform the steps below, to see how the documentation looks in the actual build.
+
+    ![sphinx doc errors](../media/sphinx-errors.PNG)
+
+    **Fix the errors** and **redo the previous steps**. Then perform the steps below, to see how the documentation looks in the actual build.
 1. Copy the `YML` files previously generated in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
 1. Build the site (on line docs) locally and display the documentation by running this command:
@@ -175,3 +179,7 @@ Fix the errors and redo the previous steps. Then perform the steps below, to see
     "<path to DocFX folder>\docfx.exe" --serve
 
     ```
+
+    The following is an example of the local build:
+
+    ![docfx local build](../media/sphinx-docfx.PNG)
