@@ -184,7 +184,7 @@ bf luis:generate:cs -i <luis-model-file> -o <output-file-name> --className <clas
 
 For additional information on using this command, see [bf luis:generate:cs][bf-luisgeneratecs] in the BF CLI LUIS readme.
 
-### Generate typescript source code
+### Generate a TypeScript type for the model results
 
 The `luis:generate:ts` command can be used to generate a strongly typed typescript source code from a LUIS model (JSON).
 
