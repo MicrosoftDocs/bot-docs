@@ -91,7 +91,7 @@ The Bot Framework CLI requires [Node.js](https://nodejs.org/en/).
 
 For more information see [Bot Framework CLI tool][bf-cli-overview].
 
-## Create your LUIS Model
+## Create your LUIS model
 
 Once you have created all the individual `.lu` files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
 
