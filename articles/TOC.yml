@@ -139,7 +139,7 @@
       href: v4sdk/bot-builder-howto-handle-user-interrupt.md
     - name: Expire a conversation
       href: v4sdk/bot-builder-howto-expire-conversation.md
-    - name: Language Understanding
+    - name: Language understanding
       items:
       - name: Add natural language understanding to your bot
         href: v4sdk/bot-builder-howto-v4-luis.md
