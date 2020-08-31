@@ -105,7 +105,7 @@ In the example below, the command is run in a command line while in the root dir
 bf luis:convert -i dialogs -o .\output\LUISModel.json -r
 ```
 
-## Create your LUIS Application
+## Create your LUIS application
 
 The _LUIS authoring resource_ you perviously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS authoring resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects `.lu` files.
 
