@@ -145,7 +145,7 @@ Training is the process of teaching your LUIS app to improve its natural languag
 To train your LUIS app, use the `luis:train:run` command:
 
 ```cli
-bf luis:train:run --appId <APPLICATION_ID> --versionId <VERSION_ID> --endpoint <ENDPOINT> --subscriptionKey <SUBSCRIPTION_KEY>
+bf luis:train:run --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
 This enables you to automate what you would normally do in the LUIS site:
