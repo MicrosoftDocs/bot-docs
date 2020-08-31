@@ -95,6 +95,10 @@ For more information see [Bot Framework CLI tool][bf-cli-overview].
 
 Once you have created all the individual `.lu` files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
 
+``` cli
+bf luis:convert -i <input-folder-name> -o <output-file-name> -r
+```
+
 In the example below, the command is run in a command line while in the root directory of your project. It will search for all `.lu` files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named LUISModel.json in the _output_ directory.
 
 ``` cli
