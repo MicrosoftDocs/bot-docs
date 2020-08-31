@@ -227,6 +227,8 @@
         href: https://aka.ms/botframework-v4-cs-sdk
       - name: JavaScript SDK v4
         href: https://aka.ms/bot-jssdk-v4
+      - name: Java SDK v4 (preview)
+        href: https://aka.ms/botframework-v4-java-sdk
       - name: Python SDK v4
         href: https://aka.ms/botframework-v4-python-sdk
     - name: v3
