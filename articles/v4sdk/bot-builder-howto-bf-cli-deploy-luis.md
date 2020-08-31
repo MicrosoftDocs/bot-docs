@@ -22,7 +22,7 @@ The Bot Framework SDK Command Line Interface (CLI) lets you automate the managem
 - Knowledge of [LU templates][lu-templates].
 - Have a bot project with `.lu` files.
 - If working with adaptive dialogs, you should have an understanding of:
-    - [Natural Language Processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
+    - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
     - [Language Understanding in adaptive dialogs][language-understanding].
     - how the [LUIS recognizer][luis-recognizer] is used.
 
