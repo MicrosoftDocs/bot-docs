@@ -52,7 +52,7 @@ The following is a an example of how the library directory looks like:
     ![sphinx libraries dir structure](../media/sphinx-libraries.PNG)
 
 1. Once done copying, make sure that each library folder (and sub-folders) contain an `__init__.py` file. These **files must be empty**; delete whatever code they contain.
-1. Now, we are ready to `rock and roll`.
+1. This step takes some doing. To avoid a lot of unresolved links errors, you can delete the actual code in a `filename.py` and just leave the comments.
 
 
 ## Create Sphinx content
@@ -149,9 +149,9 @@ This creates a new `docfx_project` folder.
 
 When you rebuild the documentation because comments have changed or for whatever other reasons, you do not have to start from scratch. Instead, perform the steps described below.
 
-1. In the `source` folder, delete the `.rst` files, excluding the `index.rst` file.
+1. In the `source` folder, delete the `.rst` files. **Do not delete the `index.rst` file**. Perform this step only if you have changed the library content.
 1. Delete the content of the `build` folder.
-1. Delete the content of the `docfx_project/api` folder, excluding the `index.md` file.
+1. Delete the content of the `docfx_project/api` folder. **Do not delete the `index.md` file**.
 1. in the directory `<local path>\APIReference` execute the commands:
 
 ```cmd
@@ -161,6 +161,11 @@ sphinx-build source build
 
 ```
 
+1. Perform a preliminary test using the HTML output files. Navigate to the `build` directory and click on the `index.html` file. YOu should be able to navigate to the documentation file you are analyzing and check what kind of errors it contains. This should give you a clue on how to fix them.
+    ![sphinx libraries dir structure](../media/sphinx-index-html.PNG)
+1. The following picture shows an example of errors.
+    ![sphinx libraries dir structure](../media/sphinx-errors.PNG)
+Fix the errors and redo the previous steps. Then perform the steps below, to see how the documentation looks in the actual build.
 1. Copy the `YML` files previously generated in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
 1. Build the site (on line docs) locally and display the documentation by running this command:
