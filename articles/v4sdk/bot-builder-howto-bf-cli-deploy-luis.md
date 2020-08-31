@@ -163,7 +163,7 @@ For additional information on using this command, see [bf luis:train:run][bf-lui
 When you finish building, training, and testing your active LUIS app, make it available to your client application by publishing it to the endpoint. You can do that using the `luis:application:publish` command
 
 ```cli
-bf luis:application:publish --appId <APPLICATION_ID> --versionId <VERSION_ID> --endpoint <ENDPOINT> --subscriptionKey <SUBSCRIPTION_KEY>
+bf luis:application:publish --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
 For additional information on using this command, see [bf luis:application:publish][luisapplicationpublish] in the BF CLI LUIS readme.
