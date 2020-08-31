@@ -191,7 +191,7 @@ The `luis:generate:ts` command can be used to generate a strongly typed typescri
 Run the following command to create a .ts representation of your LUIS model:
 
 ```cli
-bf luis:generate:ts -i <LUIS_MODEL_FILE> -o <OUTPUT_FILENAME> --className <CLASS_NAME>
+bf luis:generate:ts -i <luis-model-file> -o <output-file-name> --className <class-name>
 ```
 
 For additional information on using this command, see [bf luis:generate:ts][bf-luisgeneratets] in the BF CLI LUIS readme.
