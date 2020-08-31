@@ -172,7 +172,7 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 ## Generate source code
 
-### Generate C# class
+### Generate a C# class for the model results
 
 The `luis:generate:cs` command can be used to generate a strongly typed C# source code from a LUIS model (JSON).
 
