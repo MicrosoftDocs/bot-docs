@@ -49,7 +49,7 @@ We suggest to perform the steps below to facilitate the creation of a local refe
 1. From your cloned SDK copy into the `libraries` the folders that contain the actual code (with related sub-folders). For examples from `\botbuilder-python\libraries\botbuilder-core\botbuilder\core` copy the `core` folder. From `botbuilder-python\libraries\botbuilder-dialogs\botbuilder\dialogs` copy the `dialogs` folder.
 The following is a an example of how the library directory looks like:
 
-    ![sphinx libraries dir structure](../media/sphinx-libraries.PNG)
+    ![sphinx libraries dir structure](../media/sphinx-libraries.png)
 
 1. Once done copying, make sure that each library folder (and sub-folders) contain an `__init__.py` file. These **files must be empty**; delete whatever code they contain.
 1. This step takes some doing. To avoid a lot of unresolved links errors, you can delete the actual code in a `filename.py` and just leave the comments.
@@ -82,7 +82,7 @@ The following steps produce a local doc build structure. `.rst` files that conta
 
     After done entering the above values the following directory structure is created in the source folder.
 
-    ![sphinx dir structure](../media/sphinx-dir-structure.PNG)
+    ![sphinx dir structure](../media/sphinx-dir-structure.png)
 
 1. Open the `conf.py` file and add the following directive:
 
@@ -105,7 +105,7 @@ The following steps produce a local doc build structure. `.rst` files that conta
     ```
 1. Edit the `index.rst` file by adding the `modules` line as shown below. Make sure the alignment is correct
 
-    ![sphinx dir structure](../media/sphinx-index-rst.PNG)
+    ![sphinx dir structure](../media/sphinx-index-rst.png)
 
 <!--
 sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-headings --no-toc --implicit-namespaces
@@ -163,11 +163,11 @@ sphinx-build source build
 
 1. Perform a preliminary test using the HTML output files. Navigate to the `build` directory and click on the `index.html` file. YOu should be able to navigate to the documentation file you are analyzing and check what kind of errors it contains. This should give you a clue on how to fix them.
 
-    ![sphinx local build html](../media/sphinx-index-html.PNG)
+    ![sphinx local build html](../media/sphinx-index-html.png)
 
 1. The following picture shows an example of errors.
 
-    ![sphinx doc errors](../media/sphinx-errors.PNG)
+    ![sphinx doc errors](../media/sphinx-errors.png)
 
     **Fix the errors** and **redo the previous steps**. Then perform the steps below, to see how the documentation looks in the actual build.
 1. Copy the `YML` files previously generated in `build/docfx_yaml`. into the `docfx_project/api` folder.
@@ -182,4 +182,4 @@ sphinx-build source build
 
     The following is an example of the local build:
 
-    ![docfx local build](../media/sphinx-docfx.PNG)
+    ![docfx local build](../media/sphinx-docfx.png)
