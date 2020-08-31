@@ -75,13 +75,13 @@ For more information on see [Create LUIS resources][luis-how-to-azure-subscripti
 
 ## Install the Bot Framework SDK CLI
 
-1. If you have **Node.js** installed, make sure you have the latest version by running the following from a command prompt:
+The Bot Framework CLI requires [Node.js](https://nodejs.org/en/).
 
-    ```bash
+1. Make sure you have the latest version of npm installed:
+
+    ~~~bash
     npm i -g npm
-    ```
-
-1. If you do not have **Node.js** installed, you can install it from the [Node.js download page](https://nodejs.org/download/).
+    ~~~
 
 1. Using Node.js, install the latest version of the Bot Framework CLI from the command line.
 
