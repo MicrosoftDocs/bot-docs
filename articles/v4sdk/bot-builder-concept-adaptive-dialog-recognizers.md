@@ -141,7 +141,7 @@ Language Understanding Intelligent Service (LUIS) is a cloud-based API service t
 
 For detailed information and an example how to create a LUIS recognizer, see the [LUIS recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#luis-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
-For detailed steps on how to create you LUIS application and deploy your LUIS models using the Bot Framework CLI, see [How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands][how-to-deploy-using-luis-cli].
+For detailed steps on how to create your LUIS application and deploy your LUIS models using the Bot Framework CLI, see [How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands][how-to-deploy-using-luis-cli].
 
 
 ### QnA Maker Recognizer
