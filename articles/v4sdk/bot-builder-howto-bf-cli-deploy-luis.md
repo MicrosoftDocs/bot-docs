@@ -130,7 +130,7 @@ In the above image, you would use the following command to create your LUIS app,
 > The keys in the image above are not valid keys. They are shown here for demonstration purposes only.
 > These authoring keys offer you a secure way to access your LUIS authoring resources. Do not share your keys.
 
-## Get appId from your LUIS app
+## Get the appId from your LUIS app
 
 You will need the `appId` that is returned when the `luis:application:import` command successfully completes, you will also need the `versionId` that you supplied when creating the LUIS application. In scenarios where you do not have this information, or if you are creating scripts to automate this process, you can use the [luis:application:show][bf-luisapplicationshow] command to get this information.
 
