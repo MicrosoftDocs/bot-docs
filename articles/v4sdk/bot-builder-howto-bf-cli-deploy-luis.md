@@ -1,5 +1,5 @@
 ---
-title: How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands
+title: How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands - Bot Service
 description: Describing how to automate the process of deploying LUIS models using the Bot Framework SDK LUIS CLI commands
 keywords: LUIS, bot, inputs, adaptive dialogs, LUIS applications, LUIS Models, 
 author: WashingtonKayaker
