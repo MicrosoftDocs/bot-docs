@@ -131,12 +131,6 @@
       href: v4sdk/bot-builder-howto-long-operations-guidance.md
     - name: Implement sequential conversation flow
       href: v4sdk/bot-builder-dialog-manage-conversation-flow.md
-    - name: Add natural language understanding to your bot
-      href: v4sdk/bot-builder-howto-v4-luis.md
-    - name: Answer user's questions using QnA Maker
-      href: v4sdk/bot-builder-howto-qna.md
-    - name: Use multiple LUIS and QnA models
-      href: v4sdk/bot-builder-tutorial-dispatch.md
     - name: Manage dialog complexity
       href: v4sdk/bot-builder-compositcontrol.md
     - name: Create advanced conversation flow using branches and loops
@@ -145,6 +139,16 @@
       href: v4sdk/bot-builder-howto-handle-user-interrupt.md
     - name: Expire a conversation
       href: v4sdk/bot-builder-howto-expire-conversation.md
+    - name: Language Understanding
+      items:
+      - name: Add natural language understanding to your bot
+        href: v4sdk/bot-builder-howto-v4-luis.md
+      - name: Answer user's questions using QnA Maker
+        href: v4sdk/bot-builder-howto-qna.md
+      - name: Use multiple LUIS and QnA models
+        href: v4sdk/bot-builder-tutorial-dispatch.md
+      - name: How to deploy LUIS applications using the Bot Framework SDK LUIS CLI commands
+        href: v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
     - name: Adaptive dialogs
       items:
       - name: Create a bot using adaptive dialogs

@@ -1,5 +1,5 @@
 ---
-title: How to Deploy LUIS models using the Bot Framework SDK LUIS CLI commands
+title: How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands
 description: Describing how to automate the process of deploying LUIS models using the Bot Framework SDK LUIS CLI commands
 keywords: LUIS, bot, inputs, adaptive dialogs, LUIS applications, LUIS Models, 
 author: WashingtonKayaker
@@ -11,11 +11,11 @@ ms.date: 08/28/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to Deploy LUIS models using the Bot Framework SDK LUIS CLI commands
+# How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework SDK Command Line Interface (CLI) lets you automate the management of LUIS apps. It lets you create, update, and delete LUIS properties from the command line or a script.
+The Bot Framework SDK Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). It lets you create, update, and delete LUIS properties from the command line or a script. This article explains how to deploy a LUIS app and models to a LUIS authoring resource in Azure.
 
 ## Prerequisites
 

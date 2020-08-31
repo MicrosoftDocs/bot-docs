@@ -141,6 +141,8 @@ Language Understanding Intelligent Service (LUIS) is a cloud-based API service t
 
 For detailed information and an example how to create a LUIS recognizer, see the [LUIS recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#luis-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
+For detailed steps on how to create you LUIS application and deploy your LUIS models using the BOt Framework CLI, see [How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands][how-to-deploy-using-luis-cli].
+
 
 ### QnA Maker Recognizer
 
@@ -197,3 +199,4 @@ For detailed information and an example how to create a Cross-trained recognizer
 [13]:https://qnamaker.ai
 [14]:https://azure.microsoft.com/services/cognitive-services/
 [15]:https://aka.ms/adaptive-cards-overview
+[how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
