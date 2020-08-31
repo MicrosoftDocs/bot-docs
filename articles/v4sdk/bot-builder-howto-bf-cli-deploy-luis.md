@@ -179,7 +179,7 @@ The `luis:generate:cs` command can be used to generate a strongly typed C# sourc
 Run the following command to create a .cs representation of your LUIS model:
 
 ```cli
-bf luis:generate:ts -i <LUIS_MODEL_FILE> -o <OUTPUT_FILENAME> --className <CLASS_NAME>
+bf luis:generate:cs -i <luis-model-file> -o <output-file-name> --className <class-name>
 ```
 
 For additional information on using this command, see [bf luis:generate:cs][bf-luisgeneratecs] in the BF CLI LUIS readme.
