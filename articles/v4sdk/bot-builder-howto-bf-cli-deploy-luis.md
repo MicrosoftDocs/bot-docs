@@ -123,7 +123,7 @@ To create a LUIS application without including a LUIS model see the [bf luis:app
 
 In the above image, you would use the following command to create your LUIS app, assuming your LUIS model JSON file is in a sub-directory named _output_:
 
-`luis:application:import --in .\output\LUISModel.json --endpoint https://LUIS-Authoring-Resource.cognitiveservices.azure.com/ --subscriptionKey b670ae7d04d54b19a7a1f3bece2f5e82 --name LUISApplication --versionId 0.1`
+`luis:application:import --in .\output\LUISModel.json --endpoint https://LUIS-Authoring-Resource.cognitiveservices.azure.com/ --subscriptionKey 00000000000000000000000000000000 --name LUISApplication --versionId 0.1`
 
 > [!NOTE]
 >
