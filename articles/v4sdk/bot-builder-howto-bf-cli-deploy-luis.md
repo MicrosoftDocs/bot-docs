@@ -112,7 +112,7 @@ The _LUIS authoring resource_ you perviously created consists of your authoring 
 To create your LUIS app:
 
 ``` cli
-luis:application:import --in <LUIS_MODEL_JSON_FILE> --endpoint <ENDPOINT> --subscriptionKey <SUBSCRIPTION_KEY> --name <NAME> --versionId <INITIAL_VERSION_ID>
+luis:application:import --in <luis-model-json-file> --endpoint <endpoint> --subscriptionKey <subscription-key> --name <name> --versionId <initial-version-id>
 ```
 
 The example above shows the `luis:application:import` command with its required options. For more details and to see all options available for this command see the [bf luis:application:import][bf-luisapplicationimport] section of the LUIS CLI readme.
