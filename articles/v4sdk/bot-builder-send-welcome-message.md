@@ -135,8 +135,8 @@ This sample creates a conversation state property accessor, `user_state_accessor
 
 It uses the property accessor in the `on_message_activity` handler and overrides the `on_turn` handler to save state before the end of the turn.
 
-[!code-python[Get state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=80-83)]
-[!code-python[save state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=39-43)]
+[!code-python[Get state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=88-91)]
+[!code-python[save state](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=54-58)]
 
 ---
 
@@ -155,14 +155,14 @@ In **WelcomeUserBot**, we check for an activity update using `OnMembersAddedAsyn
 This JavaScript code sends initial welcome messages when a user is added. This is done by checking the conversation activity and verifying that a new member was added to the conversation.
 
 **bots/welcomeBot.js**
-[!code-javascript[onMembersAdded](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=63-86)]
+[!code-javascript[onMembersAdded](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=63-90)]
 
 ### [Python](#tab/python)
 
 The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a *welcome message*, an *information message* and a *pattern message*.
 
 **bots/welcome-user-bot.py**
-[!code-python[on_members_added_activity](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=45-74)]
+[!code-python[on_members_added_activity](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=63-82)]
 
 ---
 
@@ -189,7 +189,7 @@ It is also important to consider when your user's input might actually contain u
 It is also important to consider when the user's input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and does not process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
 
 **bots/welcome-user-bot.py**
-[!code-python[DidBotWelcomeUser](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=85-95)]
+[!code-python[DidBotWelcomeUser](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=93-103)]
 
 ---
 
@@ -216,7 +216,7 @@ An input of 'intro' or 'help' uses CardFactory to present the user with an Intro
 An user's input of *intro* or *help* causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
 
 **bots/welcome-user-bot.py**
-[!code-python[SwitchOnUtterance](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=101-106&highlight=97-106)]
+[!code-python[SwitchOnUtterance](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=109-114&highlight=97-106)]
 
 ---
 
@@ -237,7 +237,7 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 ### [Python](#tab/python)
 
 **bots/welcome-user-bot.py**
-[!code-python[SendIntroCard](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=108-143)]
+[!code-python[SendIntroCard](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=116-151)]
 
 ---
 
