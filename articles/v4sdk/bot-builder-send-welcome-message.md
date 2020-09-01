@@ -81,14 +81,14 @@ The user state object is created at startup and dependency injected into the bot
 [!code-csharp[define state](~/../botBuilder-samples/samples/csharp_dotnetcore/03.welcome-user/Startup.cs?range=23-27)]
 
 **Bots\WelcomeUserBot.cs**
-[!code-csharp[consume state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=41-47)]
+[!code-csharp[consume state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=46-52)]
 
 ### [JavaScript](#tab/javascript)
 
 At startup, user state is defined in `index.js` and consumed by the bot constructor.
 
 **index.js**
-[!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=52-53)]
+[!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=53-54)]
 
 **bots/welcomeBot.js**
 [!code-javascript[consume state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomeBot.js?range=16-23)]
@@ -124,7 +124,7 @@ We now create a property accessor that provides us a handle to welcomedUserPrope
 
 **bots/welcomeBot.js**
 [!code-javascript[Get state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-27)]
-[!code-javascript[Save state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=89-97)]
+[!code-javascript[Save state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=93-101)]
 
 ### [Python](#tab/python)
 
@@ -232,7 +232,7 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 ### [JavaScript](#tab/javascript)
 
 **bots/welcomeBot.js**
-[!code-javascript[SendIntroCard](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=99-124)]
+[!code-javascript[SendIntroCard](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=103-128)]
 
 ### [Python](#tab/python)
 
