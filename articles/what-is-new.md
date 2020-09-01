@@ -21,7 +21,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 |   | C#  | JS  | Python |  Java
 |---|:---:|:---:|:------:|:-----:
-|Release |[4.10.0 (GA)][1] | [4.10.0 (GA)][2] | [4.10.0 (GA)][3] | [4.6 Preview][3a]
+|Release |[4.10 (GA)][1] | [4.10 (GA)][2] | [4.10 (GA)][3] | [4.6 Preview][3a]
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] |
 
 Welcome to the August 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
