@@ -41,7 +41,7 @@ You can also view the list in [alphabetical order](#add).
 |[replace](#replace)|Replace a substring with the specified string and return the updated string. This function is case-sensitive.|
 |[replaceIgnoreCase](#replaceIgnoreCase)|	Replace a substring with the specified string, and return the updated string. This function is case-insensitive.|
 |[split](#split)	|Return an array that contains substrings based on the delimiter specified.|
-|[substring](#substring)|Return characters from a string. substring(sourceString, startPos, endPos). startPos cannot be less than 0. endPos greater than the length of the source string will be taken as the max length of the string.|
+|[substring](#substring)|Return characters from a string.|
 |[toLower](#toLower)|Return a string in lowercase in an optional locale format.|
 |[toUpper](#toUpper)|Return a string in uppercase in an optional locale format.|
 |[trim](#trim)|Remove leading and trailing white spaces from a string.|
@@ -2129,7 +2129,7 @@ And returns the result **03-06-18**.
 Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **de-DE**. The example below adds **1** day to the timestamp:
 
 ```
-getPastTime(1,'Day', '', 'de-DE')
+getFutureTime(1,'Day', '', 'de-DE')
 ```
 
 And returns the result **02.05.20 00:00:00**.
