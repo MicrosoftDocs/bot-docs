@@ -33,9 +33,9 @@ This article describes the following steps used to update your existing LUIS aut
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
 1. [Get settings from your LUIS app](#get-settings-from-your-luis-app)
 1. [Create your LUIS Model](#create-your-luis-model)
-1. [Delete backup version if exists](#delete-backup-version-if-exists)
-1. [Save current version as backup][#save-current-version-as-backup]
-1. [Import new version of LUIS model][#import-new-version-of-luis-model]
+1. [Delete backup version if it exists](#delete-backup-version)
+1. [Save current version as backup](#save-current-version-as-backup)
+1. [Import new version of LUIS model](#import-new-version-of-luis-model)
 1. [Train your LUIS Application](#train-your-luis-application)
 1. [Publish your LUIS Application](#publish-your-luis-application)
 1. [Generate source code](#generate-source-code)
@@ -62,16 +62,15 @@ For more information see [Bot Framework CLI tool][bf-cli-overview].
 
 ## Get settings from your LUIS app
 
-You will need the `appId` that is returned when the `luis:application:import` command successfully completed when you first created your LUIS app. You will also need the current `versionId`. If you do not have this information, you can use the [luis:application:list][bf-luisapplicationlist] command to get it. This command will list all LUIS apps that have been created in the specified LUIS authoring resource.
+You will need the `appId` that is returned when the `luis:application:import` command successfully completed when you first created your LUIS app, if you created it using the BF CLI command. You will also need the `versionId` of the active version. If you do not have this information, you can use the [luis:application:list][bf-luisapplicationlist] command to get it. This command will list all LUIS apps that have been created in the specified LUIS authoring resource.
 
 ``` cli
 bf luis:application:list --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-In the results returned from running the `luis:application:list` command will include a value `id` that you will use as the value for the `appId` option and `activeVersion` that you will use later when you make a backup of the current version before creating the new version of your LUIS model. For additional information on using this command, see [bf luis:application:list][bf-luisapplicationlist] in the BF CLI LUIS readme.
+The results returned by the `luis:application:list` command include an `id` that you will use as the value for the `appId` option when executing the `luis:application:show` command as well as `activeVersion` that you will use later when making a backup of your active version before creating the new version of your LUIS model. For additional information on using this command, see [bf luis:application:list][bf-luisapplicationlist] in the BF CLI LUIS readme.
 
-
-If you know your `appId`, but need to get the active version, you can use the `luis:application:show` command. This will only return information for the specified LUIS app, and can be used when automating this process using a scripting language.
+If you know your `appId`, but need to get the active version, you can also use the `luis:application:show` command. This will only return information for the specified LUIS app, and can be used when automating this process using a scripting language.
 
 ``` cli
 bf luis:application:show --appId <application-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
@@ -101,9 +100,9 @@ bf luis:convert -i dialogs -o .\output\LUISModel.json -r --name LUISModel.json
 >
 > The `name` option is not required, however if you do not include this option you will need to manually update your LUIS model JSON before you import it or you will get an error: `Failed to import app version: Error: Application name cannot be null or empty.`
 
-## Delete backup version if exists
+## Delete backup version
 
-Before creating a new version of your LUIS model, you can create a backup of the existing LUIS model first. The next time you create a new update of your LUIS model you may want to delete the old backup before creating your new backup. Use the `luis:version:delete` command.
+Before creating a new version of your LUIS model, you can create a backup of the active version. The next time you create a new update of your LUIS model you may want to delete the old backup before creating your new backup. Use the `luis:version:delete` command to do this.
 
 ``` cli
 bf luis:version:delete --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
@@ -117,7 +116,7 @@ For additional information on using this command, see [bf luis:version:delete][b
 
 ## Save current version as backup
 
-Before you import the new version of your LUIS model, you can backup your active version. You can do this using the `luis:version:rename` command.
+Before you import the new version of your LUIS model, you can backup your active version. You can do this using the `luis:version:rename` command. You will need the `versionId` of the active version that you got from the previous section [Get settings from your LUIS app](#get-settings-from-your-luis-app), and you can set the `newVersionId` value to "backup" to specify that it is your backup version.
 
 ``` cli
 bf luis:version:rename --appId <application-id> --versionId <version-id> --newVersionId <new-version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
@@ -159,7 +158,7 @@ For additional information on using this command, see [bf luis:train:run][bf-lui
 
 ## Publish your LUIS Application
 
-When you finish building, training, and testing your active LUIS app, make it available to your client application by publishing it to the endpoint. You can do that using the `luis:application:publish` command
+When you finish building, training, and testing your active LUIS app, make it available to your client application by publishing it to the endpoint. You can do that using the `luis:application:publish` command.
 
 ```cli
 bf luis:application:publish --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
@@ -195,9 +194,7 @@ bf luis:generate:ts -i <luis-model-file> -o <output-file-name> --className <clas
 
 For additional information on using this command, see [bf luis:generate:ts][bf-luisgeneratets] in the BF CLI LUIS readme.
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-[cognitive-services-overview]: /azure/cognitive-services/Welcome
-[create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
+<!-------------------------------------------------------------------------------------------------->
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
@@ -226,4 +223,4 @@ For additional information on using this command, see [bf luis:generate:ts][bf-l
 [luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
 
 [how-to-deploy-using-luis-cli]: bot-builder-howto-bf-cli-deploy-luis.md
-<!----------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
