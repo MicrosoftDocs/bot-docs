@@ -147,6 +147,8 @@
       href: v4sdk/bot-builder-howto-expire-conversation.md
     - name: Adaptive dialogs
       items:
+      - name: Create a bot project for adaptive dialogs
+        href: v4sdk/bot-builder-adaptive-dialog-setup.md
       - name: Create a bot using adaptive dialogs
         href: v4sdk\bot-builder-dialogs-adaptive.md
       - name: Create a bot using adaptive, component, waterfall, and custom dialogs
@@ -225,6 +227,8 @@
         href: https://aka.ms/botframework-v4-cs-sdk
       - name: JavaScript SDK v4
         href: https://aka.ms/bot-jssdk-v4
+      - name: Java SDK v4 (preview)
+        href: https://aka.ms/botframework-v4-java-sdk
       - name: Python SDK v4
         href: https://aka.ms/botframework-v4-python-sdk
     - name: v3
