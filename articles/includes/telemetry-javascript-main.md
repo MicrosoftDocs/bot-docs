@@ -25,7 +25,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
 3. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `index.js`, just after the code to import required packages:
 
-    [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=10-12)]
+    [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=16-17)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
@@ -40,7 +40,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
 4. Create a new function at the end of `index.js` named `getTelemetryClient` that takes your instrumentation key as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
-    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=114-120)]
+    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=116-122)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
@@ -62,7 +62,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
         - 
     -->
 
-    [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=64-68)]
+    [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=66-70)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
@@ -76,7 +76,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
 6. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=86-91&highlight=6)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=88-93&highlight=6)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
@@ -91,7 +91,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
 7. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=111-113)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=112-114)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript

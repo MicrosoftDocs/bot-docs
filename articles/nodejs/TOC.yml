@@ -1,0 +1,66 @@
+- name: Bot Framework SDK for Node.js
+  href: bot-builder-nodejs-overview.md
+- name: Key concepts
+  href: bot-builder-nodejs-concepts.md
+- name: Dialogs
+  items:
+  - name: Dialogs overview
+    href: bot-builder-nodejs-dialog-overview.md
+  - name: Define conversation steps
+    href: bot-builder-nodejs-dialog-waterfall.md
+  - name: Prompt for user input
+    href: bot-builder-nodejs-dialog-prompt.md
+  - name: Manage conversation flow
+    href: bot-builder-nodejs-dialog-manage-conversation-flow.md
+  - name: Replace dialogs
+    href: bot-builder-nodejs-dialog-replace.md
+  - name: Handle user actions
+    href: bot-builder-nodejs-dialog-actions.md
+- name: Messages
+  items:
+  - name: Create messages
+    href: bot-builder-nodejs-message-create.md
+  - name: Send and receive attachments
+    href: bot-builder-nodejs-send-receive-attachments.md
+  - name: Send proactive messages
+    href: bot-builder-nodejs-proactive-messages.md
+  - name: Add rich cards to messages
+    href: bot-builder-nodejs-send-rich-cards.md
+  - name: Add speech to messages
+    href: bot-builder-nodejs-text-to-speech.md
+  - name: Add input hints to messages
+    href: bot-builder-nodejs-send-input-hints.md
+  - name: Add suggested actions to messages
+    href: bot-builder-nodejs-send-suggested-actions.md
+  - name: Send a typing indicator
+    href: bot-builder-nodejs-send-typing-indicator.md
+  - name: Intercept messages
+    href: bot-builder-nodejs-intercept-messages.md
+- name: Channels
+  items:
+  - name: Build a Cortana skill
+    href: bot-builder-nodejs-cortana-skill.md
+  - name: Conduct Skype calls
+    href: bot-builder-nodejs-conduct-audio-calls.md
+- name: State Data
+  items:
+  - name: Manage state data
+    href: bot-builder-nodejs-state.md
+  - name: Manage state data with Cosmos DB
+    href: bot-builder-nodejs-state-azure-cosmosdb.md
+  - name: Manage state data with Table storage
+    href: bot-builder-nodejs-state-azure-table-storage.md
+- name: Recognize intent from message content
+  href: bot-builder-nodejs-recognize-intent-messages.md
+- name: Recognize intent with LUIS
+  href: bot-builder-nodejs-recognize-intent-luis.md
+- name: Handle user and conversation events
+  href: bot-builder-nodejs-handle-conversation-events.md
+- name: Support localization
+  href: bot-builder-nodejs-localization.md
+- name: Use backchannel mechanism
+  href: bot-builder-nodejs-backchannel.md
+- name: Request payment
+  href: bot-builder-nodejs-request-payment.md
+- name: Add Azure Search
+  href: bot-builder-nodejs-search-azure.md
