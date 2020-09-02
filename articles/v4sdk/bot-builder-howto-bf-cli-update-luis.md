@@ -48,21 +48,23 @@ This article describes the following steps used to update your existing LUIS aut
 
 ## Get settings from your LUIS app
 
-You will need the `appId` that is returned when the `luis:application:import` command successfully completed when you first created your LUIS app, if you created it using the BF CLI command. You will also need the `versionId` of the active version. If you do not have this information, you can use the [luis:application:list][bf-luisapplicationlist] command to get it. This command will list all LUIS apps that have been created in the specified LUIS authoring resource.
+You will need your _LUIS application id_ and _active version id_ in order to complete the process of updating your LUIS resources. There are two ways you can get this information. This section will explain both and when you would use each.
 
-``` cli
-bf luis:application:list --endpoint <endpoint> --subscriptionKey <subscription-key>
-```
-
-The results returned by the `luis:application:list` command include an `id` that you will use as the value for the `appId` option when executing the `luis:application:show` command as well as `activeVersion` that you will use later when making a backup of your active version before creating the new version of your LUIS model. For additional information on using this command, see [bf luis:application:list][bf-luisapplicationlist] in the BF CLI LUIS readme.
-
-If you know your `appId`, but need to get the active version, you can also use the `luis:application:show` command. This will only return information for the specified LUIS app, and can be used when automating this process using a scripting language.
+If you know what your LUIS application id is, but need to get the active version id, you can use the `luis:application:show` command. This will only return information for the specified LUIS application.
 
 ``` cli
 bf luis:application:show --appId <application-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
 For additional information on using this command, see [bf luis:application:show][bf-luisapplicationshow] in the BF CLI LUIS readme.
+
+If you do not know your LUIS application id, you can use the [luis:application:list][bf-luisapplicationlist] command to get it, along with the active version id. This command will list all LUIS apps that have been created in the specified LUIS authoring resource. The LUIS application id is returned as `id` and the active version id is returned as `activeVersion`.
+
+``` cli
+bf luis:application:list --endpoint <endpoint> --subscriptionKey <subscription-key>
+```
+
+For additional information on using this command, see [bf luis:application:list][bf-luisapplicationlist] in the BF CLI LUIS readme.
 
 ## Create your LUIS Model
 
