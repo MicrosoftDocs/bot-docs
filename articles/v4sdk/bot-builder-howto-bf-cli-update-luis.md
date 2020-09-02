@@ -112,7 +112,7 @@ bf luis:version:delete --appId <application-id> --versionId <version-id> --endpo
 
 For additional information on using this command, see [bf luis:version:delete][bf-luisversiondelete] in the BF CLI LUIS readme.
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > Be careful not to mistake the `luis:application:delete` command with the `luis:version:delete` command. The `luis:application:delete` command will permanently delete the LUIS application, along with all versions of all LUIS models associated with it. The `luis:version:delete` command will only delete the specified version. This command will delete a version, without warning, even if it is the only version of the model.
 
