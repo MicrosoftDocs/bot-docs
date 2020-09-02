@@ -1,5 +1,5 @@
 ---
-title: How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands - Bot Service
+title: Deploy LUIS resources using the Bot Framework LUIS CLI commands - Bot Service
 description: Describing how to automate the process of deploying LUIS models using the Bot Framework SDK LUIS CLI commands
 keywords: LUIS, bot, inputs, adaptive dialogs, LUIS applications, LUIS Models, 
 author: WashingtonKayaker
@@ -11,11 +11,13 @@ ms.date: 08/28/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands
+# Deploy LUIS resources using the Bot Framework LUIS CLI commands
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework SDK Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). It lets you create, update, and delete LUIS properties from the command line or a script. This article explains how to deploy a LUIS app and models to a LUIS authoring resource in Azure.
+The Bot Framework Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). From a command line or a script, you can create, update, and delete LUIS properties.
+
+This article explains how to deploy a LUIS resource. For information on how to update an existing LUIS resource using BF CLI, see how to [update LUIS resources using the Bot Framework LUIS CLI commands][how-to-update-using-luis-cli].
 
 ## Prerequisites
 
@@ -227,5 +229,7 @@ For additional information on using this command, see [bf luis:generate:ts][bf-l
 [test-an-utterance]: /azure/cognitive-services/LUIS/luis-interactive-test#test-an-utterance
 [luis-interactive-test]: /azure/cognitive-services/LUIS/luis-interactive-test
 [luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
+
+[how-to-update-using-luis-cli]: bot-builder-howto-bf-cli-update-luis.md
 
 <!----------------------------------------------------------------------------------------------------------------------------->
