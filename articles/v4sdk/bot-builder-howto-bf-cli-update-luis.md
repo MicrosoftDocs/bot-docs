@@ -15,7 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework SDK Command Line Interface (BF CLI) lets you automate the management of LUIS resources. It lets you create, update, and delete LUIS properties from the command line or a script. This article explains how to update an existing LUIS resource. For information on getting started, and how to deploy your LUIS resources using BF CLI, see [How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands][how-to-deploy-using-luis-cli].
+The Bot Framework Command Line Interface (BF CLI) lets you automate the management of LUIS resources. From a command line or a script, you can create, update, and delete LUIS properties.
+
+This article explains how to update an existing LUIS resource. For information on getting started, and how to deploy your LUIS resources using BF CLI, see how to [deploy LUIS resources using the Bot Framework LUIS CLI commands][how-to-deploy-using-luis-cli].
 
 ## Prerequisites
 
