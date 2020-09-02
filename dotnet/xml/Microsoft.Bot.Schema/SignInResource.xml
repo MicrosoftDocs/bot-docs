@@ -8,13 +8,16 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A type containing information for single sign-on.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,13 +45,14 @@
       <MemberSignature Language="C#" Value="public SignInResource (string signInLink = default, Microsoft.Bot.Schema.TokenExchangeResource tokenExchangeResource = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string signInLink, class Microsoft.Bot.Schema.TokenExchangeResource tokenExchangeResource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.SignInResource.#ctor(System.String,Microsoft.Bot.Schema.TokenExchangeResource)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional signInLink As String = null, Optional tokenExchangeResource As TokenExchangeResource = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional signInLink As String = Nothing, Optional tokenExchangeResource As TokenExchangeResource = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.SignInResource : string * Microsoft.Bot.Schema.TokenExchangeResource -&gt; Microsoft.Bot.Schema.SignInResource" Usage="new Microsoft.Bot.Schema.SignInResource (signInLink, tokenExchangeResource)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signInLink" Type="System.String" />
@@ -73,10 +78,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="signInLink")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="signInLink")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="signInLink")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -101,10 +108,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tokenExchangeResource")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tokenExchangeResource")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tokenExchangeResource")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

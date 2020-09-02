@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Attachment</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,13 +46,14 @@
       <MemberSignature Language="C#" Value="public MessagingExtensionAttachment (string contentType = default, string contentUrl = default, object content = default, string name = default, string thumbnailUrl = default, Microsoft.Bot.Schema.Attachment preview = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType, string contentUrl, object content, string name, string thumbnailUrl, class Microsoft.Bot.Schema.Attachment preview) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment.#ctor(System.String,System.String,System.Object,System.String,System.String,Microsoft.Bot.Schema.Attachment)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = null, Optional contentUrl As String = null, Optional content As Object = null, Optional name As String = null, Optional thumbnailUrl As String = null, Optional preview As Attachment = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional contentType As String = Nothing, Optional contentUrl As String = Nothing, Optional content As Object = Nothing, Optional name As String = Nothing, Optional thumbnailUrl As String = Nothing, Optional preview As Attachment = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment : string * string * obj * string * string * Microsoft.Bot.Schema.Attachment -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment (contentType, contentUrl, content, name, thumbnailUrl, preview)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contentType" Type="System.String" />
@@ -61,13 +64,12 @@
         <Parameter Name="preview" Type="Microsoft.Bot.Schema.Attachment" />
       </Parameters>
       <Docs>
-        <param name="preview">To be added.</param>
         <param name="contentType">mimetype/Contenttype for the file</param>
         <param name="contentUrl">Content Url</param>
         <param name="content">Embedded content</param>
         <param name="name">(OPTIONAL) The name of the attachment</param>
-        <param name="thumbnailUrl">(OPTIONAL) Thumbnail associated with
-            attachment</param>
+        <param name="thumbnailUrl">(OPTIONAL) Thumbnail associated with attachment</param>
+        <param name="preview">A preview attachment.</param>
         <summary>
             Initializes a new instance of the MessagingExtensionAttachment
             class.
@@ -86,10 +88,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="preview")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="preview")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="preview")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

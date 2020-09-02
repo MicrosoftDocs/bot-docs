@@ -1,6 +1,6 @@
 ---
 title: .NET v3 to v4 migration quick reference - Bot Service
-description: An outline of the major differences in the v3 and v4 .NET Bot Framework SDK.
+description: View code samples that illustrate how to work with messages, dialogs, events, and services in versions 3 and 4 of the .NET Bot Framework SDK.
 keywords: .net, bot migration, dialogs, v3 bot
 author: JonathanFingold
 ms.author: kamrani

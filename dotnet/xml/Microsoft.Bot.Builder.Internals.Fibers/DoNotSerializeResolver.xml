@@ -99,7 +99,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver/&lt;Services&gt;d__3))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver/&lt;Services&gt;d__3))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Internals.Fibers.DoNotSerializeResolver/&lt;Services&gt;d__3))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

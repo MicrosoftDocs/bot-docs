@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,13 +33,14 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="templatesPerLocale" Type="System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.LanguageGeneration.Templates&gt;" />
         <Parameter Name="defaultLanguage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="templatesPerLocale">A dictionary of LG file templates per locale.</param>
+        <param name="templatesPerLocale">Dictionary of LG file templates per locale.</param>
         <param name="defaultLanguage">Default language.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.MultiLanguageLG" /> class.
@@ -57,13 +59,14 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filePerLocale" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="defaultLanguage" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filePerLocale">A dictionary of locale and LG file.</param>
+        <param name="filePerLocale">Dictionary of locale and LG file.</param>
         <param name="defaultLanguage">Default language.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.MultiLanguageLG" /> class.
@@ -72,16 +75,17 @@
       </Docs>
     </Member>
     <Member MemberName="Generate">
-      <MemberSignature Language="C#" Value="public object Generate (string template, object data, string locale);" />
+      <MemberSignature Language="C#" Value="public object Generate (string template, object data = default, string locale = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Generate(string template, object data, string locale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.MultiLanguageLG.Generate(System.String,System.Object,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Generate (template As String, data As Object, locale As String) As Object" />
+      <MemberSignature Language="VB.NET" Value="Public Function Generate (template As String, Optional data As Object = Nothing, Optional locale As String = &quot;&quot;) As Object" />
       <MemberSignature Language="F#" Value="member this.Generate : string * obj * string -&gt; obj" Usage="multiLanguageLG.Generate (template, data, locale)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

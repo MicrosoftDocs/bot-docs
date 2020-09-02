@@ -218,6 +218,8 @@ For more about LUIS, see the LUIS documentation:
 - [What is Language Understanding (LUIS)?](/azure/cognitive-services/LUIS/what-is-luis)
 - [Create a new LUIS app in the LUIS portal](/azure/cognitive-services/LUIS/luis-how-to-start-new-app)
 - [Design with intent and entity models](/azure/cognitive-services/LUIS/luis-concept-model)
+- [Migrate to V3 Authoring APIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring-entities)
+- [Migrate to V3 Prediction APIs](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3)
 
 ## Next steps
 

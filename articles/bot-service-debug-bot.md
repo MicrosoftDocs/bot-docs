@@ -1,6 +1,6 @@
 ---
 title: Debug a bot - Bot Service
-description: Learn how to debug a bot built using Bot Service.
+description: Learn how to use the Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
 author: v-ducvo
 ms.author: kamrani
 keywords: Bot Framework SDK, debug bot, test bot, bot emulator, emulator

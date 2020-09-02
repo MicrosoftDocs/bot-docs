@@ -1,6 +1,6 @@
 ---
 title: Debugging guidelines - Bot Service
-description: Understand how to debug your bot.
+description: View bot debugging tips, such as using the emulator and transcripts to inspect behavior. Understand potential middleware, state, and activity handler errors.
 keywords: debugging bots, botframework debugging
 author: ivorb
 ms.author: kamrani

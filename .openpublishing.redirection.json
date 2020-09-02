@@ -108,17 +108,17 @@
     {
       "source_path": "articles/bot-builder-reference-overview.md",
       "redirect_url": "https://aka.ms/botframework-v3-cs-sdk",
-      "redirect_document_id": true 
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/bot-builder-samples.md",
       "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     },
     {
       "source_path": "articles/python/bot-builder-python-samples.md",
       "redirect_url": "https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     },
     {
       "source_path": "articles/bot-builder-sdk-download.md",
@@ -203,7 +203,7 @@
     {
       "source_path": "articles/channel-connect-bing.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-bing",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     },           
     {
       "source_path": "articles/channel-connect-cortana.md",
@@ -363,7 +363,7 @@
     {
       "source_path": "articles/portal-bot-review-guidelines.md",
       "redirect_url": "/azure/bot-service/index",
-      "redirect_document_id": true 
+      "redirect_document_id": false
     }, 
     {
       "source_path": "articles/portal-channel-inspector.md",
@@ -418,7 +418,7 @@
     {
       "source_path": "articles/resources-identifiers-guide.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-servicebot-service-resources-identifiers-guide",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     }, 
     {
       "source_path": "articles/resources-links-help.md",
@@ -493,7 +493,7 @@
     {
       "source_path": "articles/bot-service-activity-spec.md",
       "redirect_url": "https://github.com/Microsoft/BotBuilder/tree/master/specs/botframework-activity",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     },
     {
       "source_path": "articles/bot-service-build-download-source-code.md",
@@ -668,7 +668,7 @@
     {
       "source_path": "articles/v4sdk/bot-builder-howto-v4-luisgen.md",
       "redirect_url": "https://github.com/Microsoft/botbuilder-tools/blob/master/packages/LUISGen/src/npm/readme.md",
-      "redirect_document_id": true 
+      "redirect_document_id": false 
     },
     {
       "source_path": "articles/v4sdk/bot-builder-prompts.md",

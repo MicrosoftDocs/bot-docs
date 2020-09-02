@@ -1,6 +1,6 @@
 ---
 title: Develop DirectLine Speech Bot - Bot Service
-description: Develop DirectLine Speech Bot
+description: Learn how to use Direct Line Speech with bots. See how bots can use a streaming capability based on WebSockets to exchange messages with this channel.
 keywords: develop Direct Line speech bot, speech bot
 author: ivorb
 ms.author: kamrani

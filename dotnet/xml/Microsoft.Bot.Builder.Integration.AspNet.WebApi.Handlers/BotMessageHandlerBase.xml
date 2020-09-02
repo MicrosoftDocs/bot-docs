@@ -15,13 +15,16 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.Http.HttpMessageHandler</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Abstract base class for a bot message handler.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,13 +45,16 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Integration.IAdapterIntegration" />
       </Parameters>
       <Docs>
-        <param name="adapter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="adapter">An instance of <see cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.WebApi.Handlers.BotMessageHandlerBase" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,12 +76,15 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.Formatting.MediaTypeFormatter[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A <see cref="T:System.Net.Http.Formatting.JsonMediaTypeFormatter" /> defining the support media types for bot messages.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,6 +105,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -107,12 +117,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="adapter">To be added.</param>
-        <param name="botCallbackHandler">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:System.Net.Http.HttpRequestMessage" />.</param>
+        <param name="adapter">An instance of <see cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" />.</param>
+        <param name="botCallbackHandler">An instance of <see cref="T:Microsoft.Bot.Builder.BotCallbackHandler" />.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Abstract method to process the incoming request using the instance of <see cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" />
+            and to return an <see cref="T:Microsoft.Bot.Builder.InvokeResponse" />.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> returned from the adapter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,6 +147,7 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>
@@ -143,10 +157,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">An instance of <see cref="T:System.Net.Http.HttpRequestMessage" />.</param>
+        <param name="cancellationToken">An instance of <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Processes the incoming request using the adapter and returns a response.
+            </summary>
+        <returns>A <see cref="T:System.Net.Http.HttpResponseMessage" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

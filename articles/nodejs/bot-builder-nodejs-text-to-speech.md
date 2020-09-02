@@ -1,6 +1,6 @@
 ---
 title: Add speech to messages (v3 JS) - Bot Service
-description: Learn how to add speech to messages using the Bot Framework SDK for Node.js.
+description: Learn how to add speech to bot messages. See how to use the Bot Framework SDK for Node.js to format and specify text that bots use on speech-enabled channels.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -44,6 +46,34 @@
         <param name="queue">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceJTokenRecursively">
+      <MemberSignature Language="C#" Value="public static Newtonsoft.Json.Linq.JToken ReplaceJTokenRecursively (this Newtonsoft.Json.Linq.JToken token, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Newtonsoft.Json.Linq.JToken ReplaceJTokenRecursively(class Newtonsoft.Json.Linq.JToken token, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.JsonExtensions.ReplaceJTokenRecursively(Newtonsoft.Json.Linq.JToken,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReplaceJTokenRecursively (token As JToken, state As Object) As JToken" />
+      <MemberSignature Language="F#" Value="static member ReplaceJTokenRecursively : Newtonsoft.Json.Linq.JToken * obj -&gt; Newtonsoft.Json.Linq.JToken" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.JsonExtensions.ReplaceJTokenRecursively (token, state)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Newtonsoft.Json.Linq.JToken" RefType="this" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="token">A JSON Token value which may have some binding paths.</param>
+        <param name="state">A scope for looking up variables.</param>
+        <summary>
+            Replaces the binding paths in a JSON Token value with the evaluated results recursively. Returns the final JSON Token value.
+            </summary>
+        <returns>Deep data binding result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

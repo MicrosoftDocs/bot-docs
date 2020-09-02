@@ -8,21 +8,64 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A custom exception for invoke response errors.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeResponseException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeResponseException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException : string -&gt; Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" Usage="new Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException message" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that explains the reason for the exception, or an empty string.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvokeResponseException (System.Net.HttpStatusCode statusCode, object body = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.HttpStatusCode statusCode, object body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException.#ctor(System.Net.HttpStatusCode,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As HttpStatusCode, Optional body As Object = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (statusCode As HttpStatusCode, Optional body As Object = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException : System.Net.HttpStatusCode * obj -&gt; Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" Usage="new Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException (statusCode, body)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -30,15 +73,42 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="statusCode" Type="System.Net.HttpStatusCode" />
         <Parameter Name="body" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="statusCode">To be added.</param>
-        <param name="body">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="statusCode">The Http status code of the error.</param>
+        <param name="body">The body of the exception. Default is null.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeResponseException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException : string * Exception -&gt; Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" Usage="new Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException (message, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that explains the reason for the exception, or an empty string.</param>
+        <param name="innerException">Gets the System.Exception instance that caused the current exception.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.ActivityHandler.InvokeResponseException" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,14 +124,17 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.InvokeResponse</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            A factory method that creates a new <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> object with the status code and body of the current object..
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

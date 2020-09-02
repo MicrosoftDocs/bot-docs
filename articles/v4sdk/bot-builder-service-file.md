@@ -1,6 +1,6 @@
 ---
 title: Create a bot using Bot Framework SDK for JavaScript - File - Bot Service
-description: Quickly create a bot using the Bot Framework SDK for JavaScript.
+description: View a sample .bot file that a bot could use to manage a resource it uses, such as Language Understanding (LUIS).
 keywords: quickstart, bot framework sdk, getting started
 author: jonathanfingold
 ms.author: kamrani

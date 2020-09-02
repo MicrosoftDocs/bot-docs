@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;</BaseTypeName>
@@ -30,13 +31,14 @@
       <MemberSignature Language="C#" Value="public Templates (System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; templates = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.TemplateImport&gt; imports = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; diagnostics = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Templates&gt; references = default, string content = default, string id = default, AdaptiveExpressions.ExpressionParser expressionParser = default, Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver = default, System.Collections.Generic.IList&lt;string&gt; options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Template&gt; templates, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.TemplateImport&gt; imports, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; diagnostics, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.Templates&gt; references, string content, string id, class AdaptiveExpressions.ExpressionParser expressionParser, class Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver, class System.Collections.Generic.IList`1&lt;string&gt; options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Templates.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Builder.LanguageGeneration.Template},System.Collections.Generic.IList{Microsoft.Bot.Builder.LanguageGeneration.TemplateImport},System.Collections.Generic.IList{Microsoft.Bot.Builder.LanguageGeneration.Diagnostic},System.Collections.Generic.IList{Microsoft.Bot.Builder.LanguageGeneration.Templates},System.String,System.String,AdaptiveExpressions.ExpressionParser,Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate,System.Collections.Generic.IList{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional templates As IList(Of Template) = null, Optional imports As IList(Of TemplateImport) = null, Optional diagnostics As IList(Of Diagnostic) = null, Optional references As IList(Of Templates) = null, Optional content As String = null, Optional id As String = null, Optional expressionParser As ExpressionParser = null, Optional importResolver As ImportResolverDelegate = null, Optional options As IList(Of String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional templates As IList(Of Template) = Nothing, Optional imports As IList(Of TemplateImport) = Nothing, Optional diagnostics As IList(Of Diagnostic) = Nothing, Optional references As IList(Of Templates) = Nothing, Optional content As String = Nothing, Optional id As String = Nothing, Optional expressionParser As ExpressionParser = Nothing, Optional importResolver As ImportResolverDelegate = Nothing, Optional options As IList(Of String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.Templates : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.TemplateImport&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Templates&gt; * string * string * AdaptiveExpressions.ExpressionParser * Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Bot.Builder.LanguageGeneration.Templates" Usage="new Microsoft.Bot.Builder.LanguageGeneration.Templates (templates, imports, diagnostics, references, content, id, expressionParser, importResolver, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="templates" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;" />
@@ -50,16 +52,18 @@
         <Parameter Name="options" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="templates">To be added.</param>
-        <param name="imports">To be added.</param>
-        <param name="diagnostics">To be added.</param>
-        <param name="references">To be added.</param>
-        <param name="content">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="expressionParser">To be added.</param>
-        <param name="importResolver">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="templates">List of Template instances.</param>
+        <param name="imports">List of TemplateImport instances.</param>
+        <param name="diagnostics">List of Diagnostic instances.</param>
+        <param name="references">List of Templates instances.</param>
+        <param name="content">Content of the current Templates instance.</param>
+        <param name="id">Id of the current Templates instance.</param>
+        <param name="expressionParser">ExpressionParser to parse the expressions in the conent.</param>
+        <param name="importResolver">Resolver to resolve LG import id to template text.</param>
+        <param name="options">List of strings representing the options during evaluating the templates.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.Templates" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,6 +78,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
@@ -86,9 +91,9 @@
       <Docs>
         <param name="templateName">New template name.</param>
         <param name="parameters">New params.</param>
-        <param name="templateBody">New  template body.</param>
+        <param name="templateBody">New template body.</param>
         <summary>
-            Add a new template and return LG File.
+            Adds a new template and returns the updated Templates instance.
             </summary>
         <returns>Updated LG file.</returns>
         <remarks>To be added.</remarks>
@@ -105,6 +110,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt;</ReturnType>
@@ -130,6 +136,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Template&gt;</ReturnType>
@@ -155,6 +162,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.AnalyzerResult</ReturnType>
@@ -166,7 +174,7 @@
         <param name="templateName">Template name to be evaluated.</param>
         <summary>
             (experimental)
-            Analyze a template to get the static analyzer results including variables and template references.
+            Analyzes a template to get the static analyzer results including variables and template references.
             </summary>
         <returns>Analyzer result.</returns>
         <remarks>To be added.</remarks>
@@ -183,6 +191,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -208,6 +217,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
@@ -218,7 +228,7 @@
       <Docs>
         <param name="templateName">Which template should delete.</param>
         <summary>
-            Delete an exist template.
+            Removes an existing template in current Templates instances.
             </summary>
         <returns>Updated LG file.</returns>
         <remarks>To be added.</remarks>
@@ -235,6 +245,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt;</ReturnType>
@@ -260,6 +271,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -272,19 +284,21 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
       <MemberSignature Language="C#" Value="public object Evaluate (string templateName, object scope = default, Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Evaluate(string templateName, object scope, class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Templates.Evaluate(System.String,System.Object,Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (templateName As String, Optional scope As Object = null, Optional opt As EvaluationOptions = null) As Object" />
+      <MemberSignature Language="VB.NET" Value="Public Function Evaluate (templateName As String, Optional scope As Object = Nothing, Optional opt As EvaluationOptions = Nothing) As Object" />
       <MemberSignature Language="F#" Value="member this.Evaluate : string * obj * Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions -&gt; obj" Usage="templates.Evaluate (templateName, scope, opt)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -296,10 +310,10 @@
       </Parameters>
       <Docs>
         <param name="templateName">Template name to be evaluated.</param>
-        <param name="scope">The state visible in the evaluation.</param>
-        <param name="opt">The EvaluationOptions in evaluating a template.</param>
+        <param name="scope">State visible in the evaluation.</param>
+        <param name="opt">EvaluationOptions in evaluating a template.</param>
         <summary>
-            Evaluate a template with given name and scope.
+            Evaluates a template with given name and scope.
             </summary>
         <returns>Evaluate result.</returns>
         <remarks>To be added.</remarks>
@@ -309,13 +323,14 @@
       <MemberSignature Language="C#" Value="public object EvaluateText (string text, object scope = default, Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EvaluateText(string text, object scope, class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Templates.EvaluateText(System.String,System.Object,Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function EvaluateText (text As String, Optional scope As Object = null, Optional opt As EvaluationOptions = null) As Object" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateText (text As String, Optional scope As Object = Nothing, Optional opt As EvaluationOptions = Nothing) As Object" />
       <MemberSignature Language="F#" Value="member this.EvaluateText : string * obj * Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions -&gt; obj" Usage="templates.EvaluateText (text, scope, opt)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -328,11 +343,11 @@
       <Docs>
         <param name="text">Inline string which will be evaluated.</param>
         <param name="scope">Scope object or JToken.</param>
-        <param name="opt">The EvaluationOptions in evaluating a template.</param>
+        <param name="opt">EvaluationOptions in evaluating a template.</param>
         <summary>
-            Use to evaluate an inline template str.
+            Evaluates an inline template string.
             </summary>
-        <returns>Evaluate result.</returns>
+        <returns>Evaluated result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,13 +355,14 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; ExpandTemplate (string templateName, object scope = default, Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;object&gt; ExpandTemplate(string templateName, object scope, class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions opt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Templates.ExpandTemplate(System.String,System.Object,Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ExpandTemplate (templateName As String, Optional scope As Object = null, Optional opt As EvaluationOptions = null) As IList(Of Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExpandTemplate (templateName As String, Optional scope As Object = Nothing, Optional opt As EvaluationOptions = Nothing) As IList(Of Object)" />
       <MemberSignature Language="F#" Value="member this.ExpandTemplate : string * obj * Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions -&gt; System.Collections.Generic.IList&lt;obj&gt;" Usage="templates.ExpandTemplate (templateName, scope, opt)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
@@ -358,13 +374,13 @@
       </Parameters>
       <Docs>
         <param name="templateName">Template name to be evaluated.</param>
-        <param name="scope">The state visible in the evaluation.</param>
-        <param name="opt">The evaluation option for current expander.</param>
+        <param name="scope">State visible in the evaluation.</param>
+        <param name="opt">EvaluationOptions in expanding a template.</param>
         <summary>
-            Expand a template with given name and scope.
+            Expands a template with given name and scope.
             Return all possible responses instead of random one.
             </summary>
-        <returns>Expand result.</returns>
+        <returns>Expanded result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,6 +395,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.ExpressionParser</ReturnType>
@@ -404,6 +421,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -413,6 +431,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -426,6 +445,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -451,6 +471,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate</ReturnType>
@@ -476,6 +497,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.TemplateImport&gt;</ReturnType>
@@ -490,6 +512,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InlineTemplateIdPrefix">
+      <MemberSignature Language="C#" Value="public const string InlineTemplateIdPrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string InlineTemplateIdPrefix" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.Templates.InlineTemplateIdPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Const InlineTemplateIdPrefix As String " />
+      <MemberSignature Language="F#" Value="val mutable InlineTemplateIdPrefix : string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Templates.InlineTemplateIdPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Temp Template ID prefix for inline content.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LgOptions">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions LgOptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions LgOptions" />
@@ -501,6 +544,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions</ReturnType>
@@ -526,6 +570,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -551,6 +596,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
@@ -569,13 +615,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.LanguageGeneration.Templates ParseFile (string filePath, Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver = default, AdaptiveExpressions.ExpressionParser expressionParser = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.LanguageGeneration.Templates ParseFile(string filePath, class Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver, class AdaptiveExpressions.ExpressionParser expressionParser) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Templates.ParseFile(System.String,Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate,AdaptiveExpressions.ExpressionParser)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseFile (filePath As String, Optional importResolver As ImportResolverDelegate = null, Optional expressionParser As ExpressionParser = null) As Templates" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseFile (filePath As String, Optional importResolver As ImportResolverDelegate = Nothing, Optional expressionParser As ExpressionParser = Nothing) As Templates" />
       <MemberSignature Language="F#" Value="static member ParseFile : string * Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate * AdaptiveExpressions.ExpressionParser -&gt; Microsoft.Bot.Builder.LanguageGeneration.Templates" Usage="Microsoft.Bot.Builder.LanguageGeneration.Templates.ParseFile (filePath, importResolver, expressionParser)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
@@ -600,13 +647,14 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.LanguageGeneration.Templates ParseText (string content, string id = &quot;&quot;, Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver = default, AdaptiveExpressions.ExpressionParser expressionParser = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.LanguageGeneration.Templates ParseText(string content, string id, class Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate importResolver, class AdaptiveExpressions.ExpressionParser expressionParser) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Templates.ParseText(System.String,System.String,Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate,AdaptiveExpressions.ExpressionParser)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseText (content As String, Optional id As String = &quot;&quot;, Optional importResolver As ImportResolverDelegate = null, Optional expressionParser As ExpressionParser = null) As Templates" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseText (content As String, Optional id As String = &quot;&quot;, Optional importResolver As ImportResolverDelegate = Nothing, Optional expressionParser As ExpressionParser = Nothing) As Templates" />
       <MemberSignature Language="F#" Value="static member ParseText : string * string * Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate * AdaptiveExpressions.ExpressionParser -&gt; Microsoft.Bot.Builder.LanguageGeneration.Templates" Usage="Microsoft.Bot.Builder.LanguageGeneration.Templates.ParseText (content, id, importResolver, expressionParser)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
@@ -640,6 +688,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Templates&gt;</ReturnType>
@@ -668,6 +717,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -677,6 +727,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UpdateTemplate">
@@ -690,6 +741,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Templates</ReturnType>
@@ -706,7 +758,7 @@
         <param name="parameters">New params.</param>
         <param name="templateBody">New template body.</param>
         <summary>
-            Update an existing template.
+            Updates an existing template in current Templates instance.
             </summary>
         <returns>Updated LG file.</returns>
         <remarks>To be added.</remarks>

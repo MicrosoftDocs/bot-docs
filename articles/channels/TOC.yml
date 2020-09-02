@@ -1,0 +1,16 @@
+- name: Implement channel-specific functionality
+  href: ../dotnet/bot-builder-dotnet-channeldata.md
+- name: Build a Cortana skill
+  href: ../dotnet/bot-builder-dotnet-cortana-skill.md
+- name: Conduct audio calls with Skype
+  href: ../dotnet/bot-builder-dotnet-audio-calls.md
+- name: Conduct real-time media calls with Skype
+  items:
+  - name: Real-time media calling concepts
+    href: ../dotnet/bot-builder-dotnet-real-time-media-concepts.md
+  - name: Requirements for real-time media bots
+    href: ../dotnet/bot-builder-dotnet-real-time-media-requirements.md
+  - name: Build a real-time media bot
+    href: ../dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md
+  - name: Deploy a real-time media bot
+    href: ../dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md

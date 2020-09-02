@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public OAuthCard (string text = default, string connectionName = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string connectionName, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthCard.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional connectionName As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = Nothing, Optional connectionName As String = Nothing, Optional buttons As IList(Of CardAction) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.OAuthCard : string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.OAuthCard" Usage="new Microsoft.Bot.Connector.OAuthCard (text, connectionName, buttons)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -82,7 +82,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="buttons")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="buttons")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -110,7 +111,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="connectionName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="connectionName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="connectionName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -160,7 +162,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
