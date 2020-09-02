@@ -11,7 +11,7 @@ ms.date: 08/31/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to update LUIS resources using the Bot Framework SDK LUIS CLI commands
+# Update LUIS resources using the Bot Framework LUIS CLI commands
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
