@@ -155,7 +155,7 @@
         href: v4sdk/bot-builder-tutorial-dispatch.md
       - name: How to deploy LUIS applications using the Bot Framework SDK LUIS CLI commands
         href: v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
-      - name: How to update LUIS resources using the Bot Framework SDK LUIS CLI commands
+      - name: Update LUIS resources using the Bot Framework LUIS CLI commands
         href: v4sdk/bot-builder-howto-bf-cli-update-luis.md
     - name: Adaptive dialogs
       items:
