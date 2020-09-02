@@ -53,7 +53,7 @@ Interactions with the direct line app service extension happen differently than 
     - Click on Dependencies in the Solution tree
     - Select **Manage Nuget Packages...**
     - Change the Package source to `DL ASE Preview` (see the section [Add the preview Nuget package source](#add-the-preview-nuget-package-source))
-    - Find the package [Microsoft.Bot.Connector.Directline](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine/3.0.3-Preview1) version v3.0.3-Preview1 or later.
+    - Find the package [Microsoft.Bot.Connector.Directline](https://botbuilder.myget.org/feed/experimental/package/nuget/Microsoft.Bot.Connector.DirectLine) version v3.0.3-Preview1 or later.
     - Click on **Install Package**.
 1. Create a client and generate a token using a secret. This step is the same as building any other C# Direct Line client except the endpoint you need use in your bot,appended with the **.bot/** path as shown next. Do not forget the ending **/**.
 

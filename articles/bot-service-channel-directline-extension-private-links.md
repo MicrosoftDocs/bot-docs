@@ -35,8 +35,9 @@ To perform the steps described next, you need to have the **Bot Channel Registra
     |---|---|---|
     |WestUS|/subscriptions/ac2864c6-a747-49d0-a51c-35aff431c78f/resourceGroups/Intercom-directline-westus2/providers/Microsoft.Network/applicationGateways/bc-l7st-westus2|bc-l7st-westus2|
     |NorthEurope2|/subscriptions/ac2864c6-a747-49d0-a51c-35aff431c78f/resourceGroups/Intercom-directline-northeurope2/providers/Microsoft.Network/applicationGateways/bc-l7st-northeurope2|bc-l7st-northeurope2|
+    |USGov Virginia|placeholder|placeholder|
 
-## Create a Private Link
+## Create a Private Link via the Azure Portal
 
 1. From the **Azure** portal click ***Create a Resource*** and begin the process of creating a **Private Link**.
 1. When presented with the option to ***Create a Private Endpoint*** or ***Create a Private Link Service***, select **Create a Private Endpoint**.
@@ -52,6 +53,10 @@ To perform the steps described next, you need to have the **Bot Channel Registra
 1. Finish configuration and deployment of your **Private Link** as normal.
 1. If after deployment your Private Link reports a status of "***approval pending***" it will require a manual sign off from the Azure Bot Service team. This is normally completed within 1 work day.
 
+## Configure DNS
+1. Once your **Private Endpoint** has been approved you will need to configure your **VNET** internal DNS to resolve the appropriate domain names to the IP of your **Private Endpoint**.
+1. From the **Azure** portal click **Create a Resource** and begin the process of creating a [Private DNS Zone](https://docs.microsoft.com/en-us/azure/dns/private-dns-privatednszone).
+1. The name of your **Private DNS Zone** must match the URL the **DL-ASE** uses to contact the service, in commercial Azure this value is **botframework.com**, in **USGov** clouds **botframework.us**.
 
 
 ## Next steps
