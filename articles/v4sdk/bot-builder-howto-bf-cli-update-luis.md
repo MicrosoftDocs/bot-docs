@@ -42,9 +42,9 @@ This article describes the following steps used to update your existing LUIS aut
 1. [Publish your LUIS application](#publish-your-luis-application)
 1. [Generate source code](#generate-source-code)
 
-## Install the Bot Framework SDK CLI
+## Install the Bot Framework CLI
 
-If you already have already installed the Bot Framework SDK CLI, you can skip to [Get settings from your LUIS app](#get-settings-from-your-luis-app).
+If you already have already installed the Bot Framework CLI, you can skip to [Get settings from your LUIS app](#get-settings-from-your-luis-app).
 
 1. If you have **Node.js** installed, make sure you have the latest version by running the following from a command prompt:
 
