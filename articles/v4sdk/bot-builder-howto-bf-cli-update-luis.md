@@ -112,7 +112,7 @@ bf luis:version:delete --appId <application-id> --versionId <version-id> --endpo
 
 For additional information on using this command, see [bf luis:version:delete][bf-luisversiondelete] in the BF CLI LUIS readme.
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > Be careful not to mistake the `luis:application:delete` command with the `luis:version:delete` command. The `luis:application:delete` command will permanently delete the LUIS application, along with all versions of all LUIS models associated with it. The `luis:version:delete` command will only delete the specified version. This command will delete a version, without warning, even if it is the only version of the model.
 
@@ -156,7 +156,7 @@ For additional information on using this command, see [bf luis:train:run][bf-lui
 
 > [!TIP]
 >
-> After training your LUIS app, you should [test][luis-concept-test] it with sample utterances to see if the intents and entities are recognized correctly. If they're not, make updates to the LUIS app, train, and test again. This testing can be done manually in the LUIS site, for more information see the article [Test an utterance][test-an-utterance].
+> After training your LUIS app, you should [test][luis-concept-test] it with sample utterances to see if the intents and entities are recognized correctly. If they're not, make updates to the LUIS app, import, train, and test again. This testing can be done manually in the LUIS site, for more information see the article [Test an utterance][test-an-utterance].
 
 ## Publish your LUIS Application
 
