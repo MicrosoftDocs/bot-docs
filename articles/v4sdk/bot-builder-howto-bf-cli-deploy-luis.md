@@ -212,13 +212,13 @@ For additional information on using this command, see [bf luis:generate:ts][bf-l
 [luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
 [bf-cli-overview]: bf-cli-overview.md
 
-[bf-luisapplicationimport]: https://aka.ms/botframework-cli#bf-luisapplicationimport
-[bf-luisapplicationcreate]: https://aka.ms/botframework-cli#bf-luisapplicationcreate
-[bf-luisapplicationshow]: https://aka.ms/botframework-cli#bf-luisapplicationshow
-[bf-luistrainrun]: https://aka.ms/botframework-cli#bf-luistrainrun
-[luisapplicationpublish]: https://aka.ms/botframework-cli#bf-luisapplicationpublish
-[bf-luisgeneratecs]: https://aka.ms/botframework-cli#bf-luisgeneratecs
-[bf-luisgeneratets]: https://aka.ms/botframework-cli#bf-luisgeneratets
+[bf-luisapplicationimport]: https://aka.ms/botframework-cli-luis#bf-luisapplicationimport
+[bf-luisapplicationcreate]: https://aka.ms/botframework-cli-luis#bf-luisapplicationcreate
+[bf-luisapplicationshow]: https://aka.ms/botframework-cli-luis#bf-luisapplicationshow
+[bf-luistrainrun]: https://aka.ms/botframework-cli-luis#bf-luistrainrun
+[luisapplicationpublish]: https://aka.ms/botframework-cli-luis#bf-luisapplicationpublish
+[bf-luisgeneratecs]: https://aka.ms/botframework-cli-luis#bf-luisgeneratecs
+[bf-luisgeneratets]: https://aka.ms/botframework-cli-luis#bf-luisgeneratets
 
 [luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents
 [luis-how-to-start-new-app]: /azure/cognitive-services/LUIS/luis-how-to-start-new-app
