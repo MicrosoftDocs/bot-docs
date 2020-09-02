@@ -32,17 +32,17 @@ This article explains how to update an existing LUIS resource. For information o
 
 This article describes the following steps used to update your existing LUIS authoring resources in Azure using the Bot Framework CLI.
 
-1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
+1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
 1. [Get settings from your LUIS app](#get-settings-from-your-luis-app)
-1. [Create your LUIS Model](#create-your-luis-model)
+1. [Create your LUIS model](#create-your-luis-model)
 1. [Delete backup version if it exists](#delete-backup-version)
 1. [Save current version as backup](#save-current-version-as-backup)
 1. [Import new version of LUIS model](#import-new-version-of-luis-model)
-1. [Train your LUIS Application](#train-your-luis-application)
-1. [Publish your LUIS Application](#publish-your-luis-application)
+1. [Train your LUIS application](#train-your-luis-application)
+1. [Publish your LUIS application](#publish-your-luis-application)
 1. [Generate source code](#generate-source-code)
 
-## Install the Bot Framework SDK CLI
+## Install the Bot Framework CLI
 
 [!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
