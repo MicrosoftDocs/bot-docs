@@ -30,7 +30,7 @@ This article explains how to update an existing LUIS resource. For information o
 
 ## Using the LUIS CLI commands to update the LUIS resources used in your bot
 
-This article describes the following steps used to update your existing LUIS authoring resources in Azure using the Bot Framework CLI.
+This article describes the following steps used to update your existing LUIS authoring resources in Azure using the Bot Framework CLI. These instructions explain how to use LUIS application versions to backup your active LUIS application version before creating a new active version.
 
 1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
 1. [Get settings from your LUIS app](#get-settings-from-your-luis-app)
