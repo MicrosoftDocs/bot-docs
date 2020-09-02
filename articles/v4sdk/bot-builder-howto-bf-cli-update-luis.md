@@ -156,29 +156,7 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 ## Generate source code
 
-### Generate a C# class for the model results
-
-The `luis:generate:cs` command can be used to generate a strongly typed C# source code from a LUIS model (JSON).
-
-Run the following command to create a .cs representation of your LUIS model:
-
-```cli
-bf luis:generate:cs -i <luis-model-file> -o <output-file-name> --className <class-name>
-```
-
-For additional information on using this command, see [bf luis:generate:cs][bf-luisgeneratecs] in the BF CLI LUIS readme.
-
-### Generate a TypeScript type for the model results
-
-The `luis:generate:ts` command can be used to generate a strongly typed typescript source code from a LUIS model (JSON).
-
-Run the following command to create a .ts representation of your LUIS model:
-
-```cli
-bf luis:generate:ts -i <luis-model-file> -o <output-file-name> --className <class-name>
-```
-
-For additional information on using this command, see [bf luis:generate:ts][bf-luisgeneratets] in the BF CLI LUIS readme.
+[!INCLUDE [applies-to-v4](../includes/generate-source-code-luis-cli.md)]
 
 <!-------------------------------------------------------------------------------------------------->
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
