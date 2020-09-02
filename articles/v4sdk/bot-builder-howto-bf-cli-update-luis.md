@@ -44,23 +44,7 @@ This article describes the following steps used to update your existing LUIS aut
 
 ## Install the Bot Framework SDK CLI
 
-If you already have already installed the Bot Framework SDK CLI, you can skip to [Get settings from your LUIS app](#get-settings-from-your-luis-app).
-
-1. If you have **Node.js** installed, make sure you have the latest version by running the following from a command prompt:
-
-    ```bash
-    npm i -g npm
-    ```
-
-1. If you do not have **Node.js** installed, you can install it from the [Node.js download page](https://nodejs.org/download/).
-
-1. Using Node.js, install the latest version of the Bot Framework CLI from the command line.
-
-    ```bash
-    npm i -g @microsoft/botframework-cli
-    ```
-
-For more information see [Bot Framework CLI tool][bf-cli-overview].
+[!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
 ## Get settings from your LUIS app
 
