@@ -1,5 +1,5 @@
 ---
-title: How to update LUIS resources using the Bot Framework SDK LUIS CLI commands - Bot Service
+title: Update LUIS resources using the Bot Framework LUIS CLI commands - Bot Service
 description: Describing how to automate the process of updating an existing LUIS application using the Bot Framework SDK LUIS CLI commands
 keywords: LUIS, bot, inputs, adaptive dialogs, LUIS applications, LUIS Models, 
 author: WashingtonKayaker
