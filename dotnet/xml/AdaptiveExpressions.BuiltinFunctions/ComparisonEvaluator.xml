@@ -1,0 +1,52 @@
+<Type Name="ComparisonEvaluator" FullName="AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator">
+  <TypeSignature Language="C#" Value="public class ComparisonEvaluator : AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComparisonEvaluator extends AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComparisonEvaluator&#xA;Inherits ExpressionEvaluator" />
+  <TypeSignature Language="F#" Value="type ComparisonEvaluator = class&#xA;    inherit ExpressionEvaluator" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AdaptiveExpressions.ExpressionEvaluator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Comparison operators.
+            A comparison operator returns false if the comparison is false, or there is an error.  This prevents errors from short-circuiting boolean expressions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComparisonEvaluator (string type, Func&lt;System.Collections.Generic.IReadOnlyList&lt;object&gt;,bool&gt; function, AdaptiveExpressions.ValidateExpressionDelegate validator, AdaptiveExpressions.FunctionUtils.VerifyExpression verify = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class System.Func`2&lt;class System.Collections.Generic.IReadOnlyList`1&lt;object&gt;, bool&gt; function, class AdaptiveExpressions.ValidateExpressionDelegate validator, class AdaptiveExpressions.FunctionUtils/VerifyExpression verify) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.Object},System.Boolean},AdaptiveExpressions.ValidateExpressionDelegate,AdaptiveExpressions.FunctionUtils.VerifyExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, function As Func(Of IReadOnlyList(Of Object), Boolean), validator As ValidateExpressionDelegate, Optional verify As FunctionUtils.VerifyExpression = Nothing)" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator : string * Func&lt;System.Collections.Generic.IReadOnlyList&lt;obj&gt;, bool&gt; * AdaptiveExpressions.ValidateExpressionDelegate * AdaptiveExpressions.FunctionUtils.VerifyExpression -&gt; AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator" Usage="new AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator (type, function, validator, verify)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="function" Type="System.Func&lt;System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;,System.Boolean&gt;" />
+        <Parameter Name="validator" Type="AdaptiveExpressions.ValidateExpressionDelegate" />
+        <Parameter Name="verify" Type="AdaptiveExpressions.FunctionUtils+VerifyExpression" />
+      </Parameters>
+      <Docs>
+        <param name="type">Name of the built-in function.</param>
+        <param name="function">The comparison function, it takes a list of objects and returns a boolean.</param>
+        <param name="validator">Validator of input arguments.</param>
+        <param name="verify">Optional function to verify each child's result.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

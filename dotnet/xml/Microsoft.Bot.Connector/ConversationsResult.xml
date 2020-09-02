@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public ConversationsResult (string continuationToken = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ConversationMembers&gt; conversations = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string continuationToken, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.ConversationMembers&gt; conversations) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.ConversationsResult.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.ConversationMembers})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional continuationToken As String = null, Optional conversations As IList(Of ConversationMembers) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional continuationToken As String = Nothing, Optional conversations As IList(Of ConversationMembers) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.ConversationsResult : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ConversationMembers&gt; -&gt; Microsoft.Bot.Connector.ConversationsResult" Usage="new Microsoft.Bot.Connector.ConversationsResult (continuationToken, conversations)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -80,7 +80,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="continuationToken")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,7 +109,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversations")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="conversations")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="conversations")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

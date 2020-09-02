@@ -150,7 +150,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches (Microsoft.Bot.Connector.IMessageActivity input, object defaultValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable Function Matches (input As IMessageActivity, Optional defaultValue As Object = null) As IEnumerable(Of TermMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable Function Matches (input As IMessageActivity, Optional defaultValue As Object = Nothing) As IEnumerable(Of TermMatch)" />
       <MemberSignature Language="F#" Value="abstract member Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;&#xA;override this.Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;" Usage="recognizePrimitive.Matches (input, defaultValue)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -165,7 +165,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1/&lt;Matches&gt;d__3))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1/&lt;Matches&gt;d__3))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.FormFlow.Advanced.RecognizePrimitive`1/&lt;Matches&gt;d__3))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

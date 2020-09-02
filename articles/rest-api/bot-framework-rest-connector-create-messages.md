@@ -1,6 +1,6 @@
 ---
 title: Create messages with the Bot Connector API  - Bot Service
-description: Learn about commonly-used message properties within the Bot Connector API. 
+description: Become familiar with the messages that bots use to communicate with users. Learn about properties used to format text, attach files, and specify other behavior.
 author: RobStand
 ms.author: kamrani
 manager: kamrani

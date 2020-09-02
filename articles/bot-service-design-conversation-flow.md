@@ -1,6 +1,6 @@
 ---
 title: Design and control conversation flow - Bot Service
-description: Learn how to design and control conversation flow in your bot to provide a good user experience.
+description: Learn how to provide a good user experience with bots. Understand procedural conversation flow, interruption handling, and other design concepts.
 keywords: design, control, conversation flow, handle interruptions, overview
 author: v-ducvo
 ms.author: kamrani
@@ -133,6 +133,20 @@ How should your bot respond?
 - Attempt to answer the user's question and then return to that yes/no question and try to resume from there.
 
 There is no *right* answer to this question, as the best solution will depend upon the specifics of your scenario and how the user would reasonably expect the bot to respond. For more information see [Handle user interruption](v4sdk/bot-builder-howto-handle-user-interrupt.md).
+
+## Expire a conversation
+
+There are times when it is useful to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  Different methods for expiring a conversation include:
+
+- Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user.
+- Use a storage layer feature, such as CosmosDb Time To Live, to clear state after a preconfigured length of time.
+<!--
+NOTE: in the future, provide guidance on an azure function queue or time trigger
+
+- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user.
+-->
+
+For more information see [How To: Expire a conversation](v4sdk/bot-builder-howto-expire-conversation.md)
 
 ## Next steps
 

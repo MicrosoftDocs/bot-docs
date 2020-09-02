@@ -45,7 +45,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync (bool forceRefresh = false, string oauthScope = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt; GetTokenAsync(bool forceRefresh, string oauthScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Shared.Authentication.AdalAuthenticator.GetTokenAsync(System.Boolean,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional forceRefresh As Boolean = false, Optional oauthScope As String = null) As Task(Of AuthenticationResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional forceRefresh As Boolean = false, Optional oauthScope As String = Nothing) As Task(Of AuthenticationResult)" />
       <MemberSignature Language="F#" Value="member this.GetTokenAsync : bool * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult&gt;" Usage="adalAuthenticator.GetTokenAsync (forceRefresh, oauthScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

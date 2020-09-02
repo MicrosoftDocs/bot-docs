@@ -23,7 +23,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Connector.IActivity&gt; Activities (string channelId, string conversationId, DateTime oldest = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Connector.IActivity&gt; Activities(string channelId, string conversationId, valuetype System.DateTime oldest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.IActivitySource.Activities(System.String,System.String,System.DateTime)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Activities (channelId As String, conversationId As String, Optional oldest As DateTime = null) As IEnumerable(Of IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activities (channelId As String, conversationId As String, Optional oldest As DateTime = Nothing) As IEnumerable(Of IActivity)" />
       <MemberSignature Language="F#" Value="abstract member Activities : string * string * DateTime -&gt; seq&lt;Microsoft.Bot.Connector.IActivity&gt;" Usage="iActivitySource.Activities (channelId, conversationId, oldest)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -56,7 +56,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WalkActivitiesAsync (Func&lt;Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task&gt; function, string channelId = default, string conversationId = default, DateTime oldest = default, System.Threading.CancellationToken cancel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WalkActivitiesAsync(class System.Func`2&lt;class Microsoft.Bot.Connector.IActivity, class System.Threading.Tasks.Task&gt; function, string channelId, string conversationId, valuetype System.DateTime oldest, valuetype System.Threading.CancellationToken cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.History.IActivitySource.WalkActivitiesAsync(System.Func{Microsoft.Bot.Connector.IActivity,System.Threading.Tasks.Task},System.String,System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function WalkActivitiesAsync (function As Func(Of IActivity, Task), Optional channelId As String = null, Optional conversationId As String = null, Optional oldest As DateTime = null, Optional cancel As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function WalkActivitiesAsync (function As Func(Of IActivity, Task), Optional channelId As String = Nothing, Optional conversationId As String = Nothing, Optional oldest As DateTime = Nothing, Optional cancel As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member WalkActivitiesAsync : Func&lt;Microsoft.Bot.Connector.IActivity, System.Threading.Tasks.Task&gt; * string * string * DateTime * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="iActivitySource.WalkActivitiesAsync (function, channelId, conversationId, oldest, cancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

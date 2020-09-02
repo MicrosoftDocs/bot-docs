@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            PayloadDisassemblers take data payloads and break them into chunks to be sent out over the transport and reassembled on the receiving side.
+            This allows for payload multiplexing and avoids a single large payload from blocking the transport.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,15 +33,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sender" Type="Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender" />
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadSender" /> used to send the disassembled payload chunks.</param>
+        <param name="id">The ID of this disassembler.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,13 +52,14 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DisassembleAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DisassembleAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler.DisassembleAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DisassembleAsync (Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DisassembleAsync (Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DisassembleAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="payloadDisassembler.DisassembleAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -60,9 +68,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">A cancellation token. Not currently used.</param>
+        <summary>
+            Begins the process of disassembling a payload and sending the resulting chunks to the <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadSender" /> to dispatch over the transport.
+            </summary>
+        <returns>A task representing the state of the disassembly.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,14 +87,17 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.Payloads.StreamWrapper&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets the stream this disassembler is operating on.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,6 +112,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Payloads.StreamDescription</ReturnType>
@@ -107,9 +121,11 @@
         <Parameter Name="stream" Type="Microsoft.Bot.Streaming.Payloads.ResponseMessageStream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream to create a <see cref="T:Microsoft.Bot.Streaming.Payloads.StreamDescription" /> for.</param>
+        <summary>
+            Creates and returns the <see cref="T:Microsoft.Bot.Streaming.Payloads.StreamDescription" /> of the passed <see cref="T:Microsoft.Bot.Streaming.Payloads.ResponseMessageStream" />.
+            </summary>
+        <returns>The <see cref="T:Microsoft.Bot.Streaming.Payloads.StreamDescription" /> of the passed in <see cref="T:Microsoft.Bot.Streaming.Payloads.ResponseMessageStream" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +140,7 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -137,11 +154,13 @@
         <Parameter Name="length" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item">To be added.</param>
-        <param name="stream">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the item to be serialized.</typeparam>
+        <param name="item">The item to be serialized.</param>
+        <param name="stream">The <see cref="T:System.IO.MemoryStream" /> to write the serialized data to.</param>
+        <param name="length">The length of the <see cref="T:System.IO.MemoryStream" /> after the item has been serialized and the resulting data has been written to the stream.</param>
+        <summary>
+            Serializes the item into the <see cref="T:System.IO.MemoryStream" /> and exposes the length of the result.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,13 +175,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the <see cref="T:Newtonsoft.Json.JsonSerializer" /> for use by this disassembler. Used to set custom <see cref="T:Microsoft.Bot.Streaming.SerializationSettings" />.
+            </summary>
+        <value>
+            The <see cref="T:Newtonsoft.Json.JsonSerializer" /> for use by this disassembler. Used to set custom <see cref="T:Microsoft.Bot.Streaming.SerializationSettings" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,13 +201,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the one character type of the payload this disassembler is operating on. <see cref="T:Microsoft.Bot.Streaming.Transport.TransportConstants" />.
+            </summary>
+        <value>
+            The one character type of the payload this disassembler is operating on. <see cref="T:Microsoft.Bot.Streaming.Transport.TransportConstants" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

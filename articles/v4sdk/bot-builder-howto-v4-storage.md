@@ -1,6 +1,6 @@
 ---
 title: Write directly to storage - Bot Service
-description: Learn how to write directly to storage with the Bot Framework SDK for .NET.
+description: Learn how to use the Bot Framework SDK for .NET to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
 author: DeniseMak
 ms.author: kamrani

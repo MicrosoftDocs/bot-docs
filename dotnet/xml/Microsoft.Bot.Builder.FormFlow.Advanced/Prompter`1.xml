@@ -36,7 +36,7 @@
       <MemberSignature Language="C#" Value="public Prompter (Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute annotation, Microsoft.Bot.Builder.FormFlow.IForm&lt;T&gt; form, Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;T&gt; recognizer, Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;T&gt; fields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute annotation, class Microsoft.Bot.Builder.FormFlow.IForm`1&lt;!T&gt; form, class Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize`1&lt;!T&gt; recognizer, class Microsoft.Bot.Builder.FormFlow.Advanced.IFields`1&lt;!T&gt; fields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.Prompter`1.#ctor(Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute,Microsoft.Bot.Builder.FormFlow.IForm{`0},Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize{`0},Microsoft.Bot.Builder.FormFlow.Advanced.IFields{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (annotation As TemplateBaseAttribute, form As IForm(Of T), recognizer As IRecognize(Of T), Optional fields As IFields(Of T) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (annotation As TemplateBaseAttribute, form As IForm(Of T), recognizer As IRecognize(Of T), Optional fields As IFields(Of T) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt; : Microsoft.Bot.Builder.FormFlow.Advanced.TemplateBaseAttribute * Microsoft.Bot.Builder.FormFlow.IForm&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.Advanced.IRecognize&lt;'T (requires 'T : null)&gt; * Microsoft.Bot.Builder.FormFlow.Advanced.IFields&lt;'T (requires 'T : null)&gt; -&gt; Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt;" Usage="new Microsoft.Bot.Builder.FormFlow.Advanced.Prompter&lt;'T (requires 'T : null)&gt; (annotation, form, recognizer, fields)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -115,7 +115,8 @@
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

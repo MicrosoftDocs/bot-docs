@@ -80,7 +80,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetSignInLinkAsync (Microsoft.Bot.Connector.IActivity activity, string connectionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetSignInLinkAsync(class Microsoft.Bot.Connector.IActivity activity, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.GetSignInLinkAsync(Microsoft.Bot.Connector.IActivity,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSignInLinkAsync (activity As IActivity, connectionName As String, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignInLinkAsync (activity As IActivity, connectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member GetSignInLinkAsync : Microsoft.Bot.Connector.IActivity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetSignInLinkAsync : Microsoft.Bot.Connector.IActivity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="oAuthApi.GetSignInLinkAsync (activity, connectionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -115,7 +115,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync(string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.GetUserTokenAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (userId As String, connectionName As String, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (userId As String, connectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetUserTokenAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;&#xA;override this.GetUserTokenAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;" Usage="oAuthApi.GetUserTokenAsync (userId, connectionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -130,7 +130,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -154,7 +155,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync (string userId, string connectionName, string magicCode, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync(string userId, string connectionName, string magicCode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.GetUserTokenAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (userId As String, connectionName As String, magicCode As String, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (userId As String, connectionName As String, magicCode As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetUserTokenAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;&#xA;override this.GetUserTokenAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;" Usage="oAuthApi.GetUserTokenAsync (userId, connectionName, magicCode, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -169,7 +170,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use IOAuthApiEx.GetUserTokenAsync")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -195,7 +197,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync (string channelId, string userId, string connectionName, string magicCode = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.TokenResponse&gt; GetUserTokenAsync(string channelId, string userId, string connectionName, string magicCode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.GetUserTokenAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (channelId As String, userId As String, connectionName As String, Optional magicCode As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserTokenAsync (channelId As String, userId As String, connectionName As String, Optional magicCode As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenResponse)" />
       <MemberSignature Language="F#" Value="abstract member GetUserTokenAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;&#xA;override this.GetUserTokenAsync : string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.TokenResponse&gt;" Usage="oAuthApi.GetUserTokenAsync (channelId, userId, connectionName, magicCode, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -261,7 +263,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string userId, string connectionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignOutUserAsync(string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.SignOutUserAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (userId As String, connectionName As String, Optional cancellationToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (userId As String, connectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SignOutUserAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.SignOutUserAsync : string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="oAuthApi.SignOutUserAsync (userId, connectionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -276,7 +278,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use IOAuthApiEx.SignOutUserAsync")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Use IOAuthApiEx.SignOutUserAsync")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Use IOAuthApiEx.SignOutUserAsync")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -300,7 +303,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; SignOutUserAsync (string channelId, string userId, string connectionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SignOutUserAsync(string channelId, string userId, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.OAuthApi.SignOutUserAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (channelId As String, userId As String, connectionName As String, Optional cancellationToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutUserAsync (channelId As String, userId As String, connectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member SignOutUserAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.SignOutUserAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="oAuthApi.SignOutUserAsync (channelId, userId, connectionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>

@@ -1,6 +1,6 @@
 ---
 title: Overview of the Virtual Assistant Template - Bot Service
-description: Learn more about the Virtual Assistant Template
+description: Become familiar with the Bot Framework Virtual Assistant Template. Understand how the template works, and learn about features, telemetry, and other components.
 author: darrenj
 ms.author: darrenj
 manager: kamrani

@@ -8,13 +8,16 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Retries asynchronous operations. In case of errors, it collects and returns exceptions in an AggregateException object.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -41,11 +45,13 @@
         <Parameter Name="retryExceptionHandler" Type="System.Func&lt;System.Exception,System.Int32,Microsoft.Bot.Connector.Authentication.RetryParams&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="task">To be added.</param>
-        <param name="retryExceptionHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TResult">The result expected from the action performed.</typeparam>
+        <param name="task">A reference to the action to retry.</param>
+        <param name="retryExceptionHandler">A reference to the method that handles exceptions.</param>
+        <summary>
+            Starts the retry of the action requested.
+            </summary>
+        <returns>A result object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

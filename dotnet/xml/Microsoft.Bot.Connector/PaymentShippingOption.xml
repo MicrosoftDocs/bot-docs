@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PaymentShippingOption (string id = default, string label = default, Microsoft.Bot.Connector.PaymentCurrencyAmount amount = default, bool? selected = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string label, class Microsoft.Bot.Connector.PaymentCurrencyAmount amount, valuetype System.Nullable`1&lt;bool&gt; selected) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentShippingOption.#ctor(System.String,System.String,Microsoft.Bot.Connector.PaymentCurrencyAmount,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional label As String = null, Optional amount As PaymentCurrencyAmount = null, Optional selected As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional label As String = Nothing, Optional amount As PaymentCurrencyAmount = Nothing, Optional selected As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentShippingOption : string * string * Microsoft.Bot.Connector.PaymentCurrencyAmount * Nullable&lt;bool&gt; -&gt; Microsoft.Bot.Connector.PaymentShippingOption" Usage="new Microsoft.Bot.Connector.PaymentShippingOption (id, label, amount, selected)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -84,7 +84,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="amount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="amount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="amount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,7 +113,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,7 +142,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="label")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="label")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="label")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,7 +171,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="selected")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="selected")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="selected")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

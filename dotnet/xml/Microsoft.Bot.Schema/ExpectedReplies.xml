@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,13 +44,14 @@
       <MemberSignature Language="C#" Value="public ExpectedReplies (System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; activities = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Activity&gt; activities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ExpectedReplies.#ctor(System.Collections.Generic.IList{Microsoft.Bot.Schema.Activity})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activities As IList(Of Activity) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional activities As IList(Of Activity) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ExpectedReplies : System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt; -&gt; Microsoft.Bot.Schema.ExpectedReplies" Usage="new Microsoft.Bot.Schema.ExpectedReplies activities" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="activities" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Activity&gt;" />
@@ -73,10 +76,12 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activities")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="activities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="activities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

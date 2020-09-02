@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Builder.TemplateManager.TemplateIdMap&gt;</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyName>Microsoft.Bot.Builder.TemplateManager</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

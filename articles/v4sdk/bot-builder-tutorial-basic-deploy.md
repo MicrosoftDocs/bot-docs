@@ -1,6 +1,6 @@
 ---
 title: Tutorial to create and deploy a basic bot - Bot Service
-description: Learn how to create a basic bot and then deploy it to Azure.
+description: Learn how to create bots with the Bot Framework SDK and deploy them to Azure. See the steps that are needed to build, run, connect to, deploy, and test bots.
 keywords: echo bot, deploy, azure, tutorial
 author: Ivorb
 ms.author: kamrani

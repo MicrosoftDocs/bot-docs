@@ -1,6 +1,6 @@
 ---
 title: Information bot scenario - Bot Service
-description: Explore the Information bot scenario with the Bot Framework.
+description: Learn about the Information bot scenario. See how this bot uses Cognitive Services QnA Maker and Azure Search to query a SQL Database and answer questions.
 author: BrianRandell
 ms.author: kamrani
 manager: kamrani

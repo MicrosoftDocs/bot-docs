@@ -124,7 +124,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Action binding in LUIS should be replaced with code.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Action binding in LUIS should be replaced with code.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,7 +180,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Action binding in LUIS should be replaced with code.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Action binding in LUIS should be replaced with code.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Action binding in LUIS should be replaced with code.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

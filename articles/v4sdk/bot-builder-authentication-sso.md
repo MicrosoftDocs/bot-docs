@@ -79,7 +79,7 @@ For each project in the sample, you need the following:
 
 The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `RootBot` that uses Azure AD v2  to authenticate the user. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
+1. Create an identity application for the `RootBot` that uses Azure AD v2  to authenticate the user. Follow the steps described in [Create the Azure AD identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
 
 1. In the left pane, click **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.
@@ -110,7 +110,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 The Azure AD is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `SkillBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity application](bot-builder-authentication.md#create-the-azure-ad-identity-application).
+1. Create an identity application for the `SkillBot` that uses Azure AD v2  to authenticate the bot. Follow the steps described in [Create the Azure AD identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
 
 1. In the left pane, click **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.

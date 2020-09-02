@@ -24,7 +24,7 @@
       <MemberSignature Language="C#" Value="public BotAuthenticator (Microsoft.Bot.Connector.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator validator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, Optional validator As BotAuthenticator.EndorsementsValidator = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, Optional validator As BotAuthenticator.EndorsementsValidator = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotAuthenticator : Microsoft.Bot.Connector.ICredentialProvider * Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator -&gt; Microsoft.Bot.Connector.BotAuthenticator" Usage="new Microsoft.Bot.Connector.BotAuthenticator (credentialProvider, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -49,7 +49,7 @@
       <MemberSignature Language="C#" Value="public BotAuthenticator (string microsoftAppId, string microsoftAppPassword, Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator validator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string microsoftAppId, string microsoftAppPassword, class Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(System.String,System.String,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (microsoftAppId As String, microsoftAppPassword As String, Optional validator As BotAuthenticator.EndorsementsValidator = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (microsoftAppId As String, microsoftAppPassword As String, Optional validator As BotAuthenticator.EndorsementsValidator = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotAuthenticator : string * string * Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator -&gt; Microsoft.Bot.Connector.BotAuthenticator" Usage="new Microsoft.Bot.Connector.BotAuthenticator (microsoftAppId, microsoftAppPassword, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -76,7 +76,7 @@
       <MemberSignature Language="C#" Value="public BotAuthenticator (Microsoft.Bot.Connector.ICredentialProvider credentialProvider, string openIdConfigurationUrl, bool disableEmulatorTokens, Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator validator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.ICredentialProvider credentialProvider, string openIdConfigurationUrl, bool disableEmulatorTokens, class Microsoft.Bot.Connector.BotAuthenticator/EndorsementsValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotAuthenticator.#ctor(Microsoft.Bot.Connector.ICredentialProvider,System.String,System.Boolean,Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, openIdConfigurationUrl As String, disableEmulatorTokens As Boolean, Optional validator As BotAuthenticator.EndorsementsValidator = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, openIdConfigurationUrl As String, disableEmulatorTokens As Boolean, Optional validator As BotAuthenticator.EndorsementsValidator = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.BotAuthenticator : Microsoft.Bot.Connector.ICredentialProvider * string * bool * Microsoft.Bot.Connector.BotAuthenticator.EndorsementsValidator -&gt; Microsoft.Bot.Connector.BotAuthenticator" Usage="new Microsoft.Bot.Connector.BotAuthenticator (credentialProvider, openIdConfigurationUrl, disableEmulatorTokens, validator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

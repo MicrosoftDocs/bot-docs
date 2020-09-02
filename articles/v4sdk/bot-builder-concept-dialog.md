@@ -1,6 +1,6 @@
 ---
 title: Dialogs within the Bot Framework SDK - Bot Service
-description: Describes what a dialog is and how it work within the Bot Framework SDK.
+description: Become familiar with dialogs in the Bot Framework SDK. Learn about dialog classes and features, different types of dialogs, and design patterns for using dialogs.
 keywords: conversation flow, dialogs, dialog state, bot conversation, dialog set, dialog context, dialog stack
 author: JonathanFingold
 ms.author: kamrani
