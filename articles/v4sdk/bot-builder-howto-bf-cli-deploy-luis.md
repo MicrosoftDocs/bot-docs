@@ -77,21 +77,7 @@ For more information on see [Create LUIS resources][luis-how-to-azure-subscripti
 
 ## Install the Bot Framework SDK CLI
 
-The Bot Framework CLI requires [Node.js](https://nodejs.org/en/).
-
-1. Make sure you have the latest version of npm installed:
-
-    ~~~bash
-    npm i -g npm
-    ~~~
-
-1. Using Node.js, install the latest version of the Bot Framework CLI from the command line.
-
-    ```bash
-    npm i -g @microsoft/botframework-cli
-    ```
-
-For more information see [Bot Framework CLI tool][bf-cli-overview].
+[!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
 ## Create your LUIS model
 
@@ -174,29 +160,7 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 ## Generate source code
 
-### Generate a C# class for the model results
-
-The `luis:generate:cs` command can be used to generate a strongly typed C# source code from a LUIS model (JSON).
-
-Run the following command to create a .cs representation of your LUIS model:
-
-```cli
-bf luis:generate:cs -i <luis-model-file> -o <output-file-name> --className <class-name>
-```
-
-For additional information on using this command, see [bf luis:generate:cs][bf-luisgeneratecs] in the BF CLI LUIS readme.
-
-### Generate a TypeScript type for the model results
-
-The `luis:generate:ts` command can be used to generate a strongly typed typescript source code from a LUIS model (JSON).
-
-Run the following command to create a .ts representation of your LUIS model:
-
-```cli
-bf luis:generate:ts -i <luis-model-file> -o <output-file-name> --className <class-name>
-```
-
-For additional information on using this command, see [bf luis:generate:ts][bf-luisgeneratets] in the BF CLI LUIS readme.
+[!INCLUDE [applies-to-v4](../includes/generate-source-code-luis-cli.md)]
 
 <!-------------------------------------------------------------------------------------------------------------------------
 ## Additional information
