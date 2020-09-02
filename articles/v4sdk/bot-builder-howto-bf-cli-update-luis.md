@@ -82,7 +82,7 @@ For additional information on using this command, see [bf luis:application:show]
 
 ## Create your LUIS Model
 
-Once you have updated all the individual `.lu` files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when updating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
+Anytime you make updates to any of the individual `.lu` files used in your project, you will need to create a new LUIS model using the `luis:convert` command. You will use this new model to update your LUIS application that is hosted in Azure. Doing so will enable these changes to take effect in your bot.
 
 ``` cli
 bf luis:convert -i <input-folder-name> -o <output-file-name> -r --name <name>
