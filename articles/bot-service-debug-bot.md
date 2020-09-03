@@ -41,17 +41,17 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 
 ## [C#](#tab/csharp)
 
-[!INCLUDE [csharp vscode](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
+[!INCLUDE [csharp vscode](~/includes/bot-service-debug-bot/csharp-vscode.md)]
 
-[!INCLUDE [csharp visual studio](../articles/includes/bot-service-debug-bot/csharp-vs.md)]
+[!INCLUDE [csharp visual studio](~/includes/bot-service-debug-bot/csharp-vs.md)]
 
 ## [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/js-vscode.md)]
+[!INCLUDE [javascript vscode](~/includes/bot-service-debug-bot/js-vscode.md)]
 
 ## [Python](#tab/python)
 
-[!INCLUDE [python vscode](../articles/includes/bot-service-debug-bot/python-vscode.md)]
+[!INCLUDE [python vscode](~/includes/bot-service-debug-bot/python-vscode.md)]
 
 ---
 
