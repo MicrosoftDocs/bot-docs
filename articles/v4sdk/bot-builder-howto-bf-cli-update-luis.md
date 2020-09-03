@@ -48,7 +48,7 @@ This article describes the following steps used to update your existing LUIS aut
 
 ## Get settings from your LUIS app
 
-You will need your _LUIS application id_ and _active version id_ in order to complete the process of updating your LUIS resources. There are two ways you can get this information. This section will explain both and when you would use each. Regardless of which approach you use, you will need to have the subscription key and endpoint that your LUIS app is associated with. You can find this information in your _LUIS authoring resource_  in Azure, in the _Keys and Endpoint_ blade.
+You will need your _LUIS application ID and _active version ID_ in order to complete the process of updating your LUIS resources. There are two ways you can get this information. This section will explain both and when you would use each. Regardless of which approach you use, you will need to have the subscription key and endpoint that your LUIS app is associated with. You can find this information in your _LUIS authoring resource_  in Azure, in the **Keys and Endpoint** blade.
 
 ![Keys and Endpoint](./media/adaptive-dialogs/keys-and-endpoint-myluisapp.png)
 
