@@ -12,4 +12,4 @@ The Bot Framework CLI requires [Node.js](https://nodejs.org/en/).
     npm i -g @microsoft/botframework-cli
     ```
 
-For more information see [Bot Framework CLI tool][bf-cli-overview].
+For more information see [Bot Framework CLI tool](../v4sdk/bf-cli-overview).
