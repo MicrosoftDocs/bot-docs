@@ -152,27 +152,27 @@ External references are supported in the .qna file and use Markdown link syntax.
 
 ### Reference another .qna file
 
-Reference to another .qna file using `\[link name](\<.qna file name\>)`. References can be an absolute path or a relative path from the containing .qna file.
+Reference to another .qna file using `[link name](<.qna file name>)`. References can be an absolute path or a relative path from the containing .qna file.
 
 ### Reference to a folder containing .qna files
 
 Reference to a folder with other .qna files is supported through:
 
-- `\[link name](\<.qna file path\>/*)` will look for .qna files under the specified absolute or relative path.
-- `\[link name](\<.qna file path\>/**)` will recursively look for .qna files under the specified absolute or relative path including sub-folders.
+- `[link name](<.qna file path>/*)` will look for .qna files under the specified absolute or relative path.
+- `[link name](<.qna file path>/**)` will recursively look for .qna files under the specified absolute or relative path including sub-folders.
 
 ### Reference a URL
 
-Reference a URL for QnAMaker to ingest during KB creation via `\[link name](\<URL\>)`.
+Reference a URL for QnAMaker to ingest during KB creation via `[link name](<URL>)`.
 
 ### Reference from a specific file
 
 You can also add references to utterances defined in a specific file under an Intent section or as QnA pairs.
 
 - `[link name](<.lu file path>#<INTENT-NAME>)` finds all utterances found under <INTENT-NAME> in the .lu file and adds them to the list of questions where the reference is specified.
-- `[link name](\<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of questions where the reference is specified.
-- `\[link name](\<.qna file path\>#?)` finds questions from all QnA pairs defined in the .qna file and adds them to the list of utterances where this reference is specified.
-- `\[link name](\<.qna folder\>/*#?)` finds all questions from all .qna files in the specified folder and adds them to the list of utterances where this reference is specified.
+- `[link name](<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of questions where the reference is specified.
+- `[link name](<.qna file path>#?)` finds questions from all QnA pairs defined in the .qna file and adds them to the list of utterances where this reference is specified.
+- `[link name](<.qna folder>/*#?)` finds all questions from all .qna files in the specified folder and adds them to the list of utterances where this reference is specified.
 
 Here's an example of those references.
 
@@ -197,9 +197,9 @@ You can include configuration information for your LUIS application or QnA Maker
 Here's how to add configuration information.
 
 ```.qna
-> !# @\<property> = \<value>
-> !# @\<scope>-\<property> = \<value>
-> !# @\<scope>-\<property> = \<semicolon-delimited-key-value-pairs>
+> !# @<property> = <value>
+> !# @<scope>-<property> = <value>
+> !# @<scope>-<property> = <semicolon-delimited-key-value-pairs>
 ```
 
 Note that any information explicitly passed in via CLI arguments will override information in the .qna file.
