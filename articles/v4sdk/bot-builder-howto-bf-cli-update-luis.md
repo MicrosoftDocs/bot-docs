@@ -168,7 +168,6 @@ For information about publishing a LUIS application, see [Publish your active, t
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
-[bf-cli-overview]: bf-cli-overview.md
 
 [bf-luisapplicationimport]: https://aka.ms/botframework-cli-luis#bf-luisapplicationimport
 [bf-luisapplicationcreate]: https://aka.ms/botframework-cli-luis#bf-luisapplicationcreate
