@@ -52,7 +52,7 @@ You will need your _LUIS application ID and _active version ID_ in order to comp
 
 ![Keys and Endpoint](./media/adaptive-dialogs/keys-and-endpoint-myluisapp.png)
 
-If you know what your LUIS application id is, but need to get the active version id, you can use the `luis:application:show` command. This will only return information for the specified LUIS application.
+If you know what your LUIS application ID is, but need to get the active version ID, you can use the `luis:application:show` command. This will only return information for the specified LUIS application.
 
 ``` cli
 bf luis:application:show --appId <application-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
