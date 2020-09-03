@@ -60,7 +60,7 @@ bf luis:application:show --appId <application-id> --endpoint <endpoint> --subscr
 
 For additional information on using this command, see [bf luis:application:show][bf-luisapplicationshow] in the BF CLI LUIS readme.
 
-If you do not know your LUIS application id, you can use the [luis:application:list][bf-luisapplicationlist] command to get it, along with the active version id. This command will list all LUIS apps that have been created in the specified LUIS authoring resource. The LUIS application id is returned as `id` and the active version id is returned as `activeVersion`.
+If you do not know your LUIS application ID, you can use the [luis:application:list][bf-luisapplicationlist] command to get it, along with the active version ID. This command will list all LUIS apps that have been created in the specified LUIS authoring resource. The LUIS application ID is returned as `id` and the active version ID is returned as `activeVersion`.
 
 ``` cli
 bf luis:application:list --endpoint <endpoint> --subscriptionKey <subscription-key>
