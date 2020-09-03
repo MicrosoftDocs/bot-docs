@@ -56,7 +56,7 @@ This article references two samples: the **RootBot** and the **SkillBot**. The *
 - Because of the SSO and being already logged into the root bot, she is logged into the skill bot without requiring user interaction again.
 
 
-For an overview of how the Bot Framework handles authentication, see [Bot authentication](bot-builder-concept-authentication.md).
+For an overview of how the Bot Framework handles authentication, see [User authentication](bot-builder-concept-authentication.md).
 For SSO background information, see [Single sign on](bot-builder-concept-sso.md).
 
 The **RootBot** supports user's SSO. It communicates with the
@@ -342,8 +342,8 @@ To see how the token exchange happens, please refer to the example shown below. 
 ## Further reading
 
 - [Single sign on](bot-builder-concept-sso.md) background information
-- [Identity providers](bot-builder-concept-identity-providers.md) are user authentication as a service
-- [Bot authentication](bot-builder-concept-authentication.md) for accessing secured online resources on behalf of the user
+- [Identity providers](bot-builder-concept-identity-providers.md) provide user authentication as a service
+- [User authentication](bot-builder-concept-authentication.md) for accessing secured online resources on behalf of the user
 
 <!-- Footnote-style links -->
 
