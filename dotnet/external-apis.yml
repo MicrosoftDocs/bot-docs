@@ -1,6 +1,29 @@
 ### YamlMime:XRefMap
 hrefUpdated: true
 references:
+
+- uid: Microsoft.Recognizers.Text.ModelResult
+
+- uid: Microsoft.Rest.HttpOperationException
+- uid: Microsoft.Rest.HttpOperationResponse
+- uid: Microsoft.Rest.HttpOperationResponse`1
+- uid: Microsoft.Rest.HttpRequestMessageWrapper
+- uid: Microsoft.Rest.HttpResponseMessageWrapper
+- uid: Microsoft.Rest.IServiceOperations`1
+- uid: Microsoft.Rest.RestException
+- uid: Microsoft.Rest.SerializationException
+- uid: Microsoft.Rest.ServiceClient`1
+- uid: Microsoft.Rest.ServiceClientCredentials
+- uid: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy
+- uid: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+- uid: Microsoft.Rest.TransientFaultHandling.RetryPolicy
+- uid: Microsoft.Rest.ValidationException
+
+- uid: System.Net.Http.Formatting.JsonMediaTypeFormatter
+- uid: System.Net.Http.Formatting.MediaTypeFormatter
+
+- uid: System.Web.Http.HttpConfiguration
+
 - uid: Antlr4.Runtime.Atn.ATN
 - uid: Antlr4.Runtime.BaseErrorListener
 - uid: Antlr4.Runtime.ICharStream
@@ -49,6 +72,8 @@ references:
 - uid: Newtonsoft.Json.JsonWriter
 - uid: Newtonsoft.Json.Linq.JObject
 - uid: Newtonsoft.Json.Linq.JToken
+
+- uid: RichardSzalay.MockHttp.MockHttpMessageHandler
 
 - uid: SlackAPI.Attachment
 - uid: SlackAPI.Block
@@ -138,27 +163,6 @@ references:
 - uid: Thrzn41.WebexTeams.Version1.WebhookList
 
 - uid: Twilio.Rest.Api.V2010.Account.CreateMessageOptions
-
-- uid: System.Net.Http.Formatting.MediaTypeFormatter
-
-- uid: System.Web.Http.HttpConfiguration
-
-- uid: Microsoft.Recognizers.Text.ModelResult
-
-- uid: Microsoft.Rest.HttpOperationException
-- uid: Microsoft.Rest.HttpOperationResponse
-- uid: Microsoft.Rest.HttpOperationResponse`1
-- uid: Microsoft.Rest.HttpRequestMessageWrapper
-- uid: Microsoft.Rest.HttpResponseMessageWrapper
-- uid: Microsoft.Rest.IServiceOperations`1
-- uid: Microsoft.Rest.RestException
-- uid: Microsoft.Rest.SerializationException
-- uid: Microsoft.Rest.ServiceClient`1
-- uid: Microsoft.Rest.ServiceClientCredentials
-- uid: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy
-- uid: Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
-- uid: Microsoft.Rest.TransientFaultHandling.RetryPolicy
-- uid: Microsoft.Rest.ValidationException
 
 - uid: Xunit.Abstractions.ITestOutputHelper
 - uid: Xunit.Abstractions.IXunitSerializable
