@@ -162,11 +162,9 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 [!INCLUDE [applies-to-v4](../includes/generate-source-code-luis-cli.md)]
 
-<!-------------------------------------------------------------------------------------------------------------------------
 ## Additional information
 
-- [Updating your LUIS Models][]
---------------------------------------------------------------------------------------------------------------------------->
+- [Updating your LUIS Models][how-to-update-using-luis-cli]
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 [cognitive-services-overview]: /azure/cognitive-services/Welcome
