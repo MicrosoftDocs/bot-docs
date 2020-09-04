@@ -21,9 +21,21 @@ A bot is identified by the `MicrosoftAppID` and `MicrosoftAppPassword` which are
 
 When you register a bot with Azure, for example via the bot channels registration, an Active Directory registration application is created. This application has its own application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`) needed to configure the bot for deployment. The application ID is also needed to secure the service to service communication between the bot and the [Bot Framework channels](~/bot-service-manage-channels.md).
 
+Notice that a bot communicates with Azure **bot connector service** using HTTP over a secured channel (SSL/TLS). When the bot sends a request to the connector service, it must include information the connector service uses to verify its identity. Likewise, when the connector service sends a request to a bot, it must include information that the bot can use to verify its identity. For more information, see [Authentication](../rest-api/bot-framework-rest-connector-authentication.md).
+
+<!-- Should the topic be named "Bot authentication"? -->
+
 ## Client authentication
 
-A client can authenticate requests to Direct Line API 3.0 either by using a **secret** that you obtain from the Direct Line channel configuration page in the Azure portal or by using a **token** that you obtain at runtime. The secret or token should be specified in the Authorization header of each request. For more information, see [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens).
+This kind of authentication applies to client applications using Direct Line or any of other supported channels to communicate with a bot.
+
+- A client application can authenticate requests to Direct Line API 3.0 either by using a **secret** that you obtain from the Direct Line channel configuration page in the Azure portal or by using a **token** that you obtain at runtime. The secret or token should be specified in the Authorization header of each request. For more information, see [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens).
+- Single Sign on (SSO) allows a client, such as virtual assistant, WebChat and so on, to communicate with a bot or skill on behalf of the user.
+Currently, only the [Azure AD v2](~v4sdk/bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported. For more information, see [Single sign on](~v4sdk/bot-builder-concept-sso.md).
+- An identity provider authenticates user or client identities and issues consumable security tokens. It provides authentication as a service. Client applications, such as web applications, delegate authentication to a trusted identity provider. For more information, see [Identity providers](~/v4sdk/bot-builder-concept-identity-providers.md).
+
+> [!NOTE]
+> Both **Bot authentication** and **Client authentication** belong to the same logical authentication step.
 
 ## User authentication
 
