@@ -37,7 +37,8 @@ To perform the steps described next you will need to have a **Bot Channel Regist
     |---|---|---|
     |WestUS|/subscriptions/ac2864c6-a747-49d0-a51c-35aff431c78f/resourceGroups/Intercom-directline-westus2/providers/Microsoft.Network/applicationGateways/bc-l7st-westus2|bc-l7st-westus2|
     |NorthEurope2|/subscriptions/ac2864c6-a747-49d0-a51c-35aff431c78f/resourceGroups/Intercom-directline-northeurope2/providers/Microsoft.Network/applicationGateways/bc-l7st-northeurope2|bc-l7st-northeurope2|
-    |USGov Virginia|placeholder|placeholder|
+    |US Gov Arizona|/subscriptions/bf3c6db3-cb0a-4605-8871-cff20516607f/resourceGroups/Intercom-directline-phx20/providers/Microsoft.Network/applicationGateways/bc-l7st-phx20|bc-l7st-phx20|
+    |US Gov Virginia|/subscriptions/bf3c6db3-cb0a-4605-8871-cff20516607f/resourceGroups/Intercom-directline-bn1/providers/Microsoft.Network/applicationGateways/bc-l7st-bn1|bc-l7st-bn1|
 
 ## Create a Private Link via the Azure Portal
 
