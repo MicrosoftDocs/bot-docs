@@ -17,9 +17,9 @@ ms.date: 09/02/2020
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
-This article describes how to combine the [Direct Line App Service Extension](./bot-service-channel-directline-extension.md) and [Azure Private Links](https://azure.microsoft.com/en-us/services/private-link/) to isolate your bot from the public internet.
+This article describes how to combine the [Direct Line App Service Extension](./bot-service-channel-directline-extension.md) and [Azure Private Links](https://azure.microsoft.com/services/private-link/) to isolate your bot from the public internet.
 
-The [Direct Line App Service Extension](./bot-service-channel-directline-extension.md) makes calls to the **Direct Line API** in order to verify security tokens and report usage metrics. In order to allow these outbound calls from within your [Virtual Network](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) and ensure this traffic remains isolated within **Azure** and is never routed through the public internet you will need to setup a [Private Endpoint](https://azure.microsoft.com/en-us/services/private-link/) and a [Private DNS Zone](https://docs.microsoft.com/en-us/azure/dns/private-dns-privatednszone).
+The [Direct Line App Service Extension](./bot-service-channel-directline-extension.md) makes calls to the **Direct Line API** in order to verify security tokens and report usage metrics. In order to allow these outbound calls from within your [Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) and ensure this traffic remains isolated within **Azure** and is never routed through the public internet you will need to setup a [Private Endpoint](https://azure.microsoft.com/services/private-link/) and a [Private DNS Zone](https://docs.microsoft.com/azure/dns/private-dns-privatednszone).
 
 
 ## Prerequisites
@@ -59,7 +59,7 @@ To perform the steps described next you will need to have a **Bot Channel Regist
 ## Configure DNS
 
 1. Once your **Private Endpoint** has been approved you will need to configure your **Virtual Network** internal DNS to resolve the appropriate domain names to the IP of your **Private Endpoint**.
-1. From the **Azure** portal click **Create a Resource** and begin the process of creating a [Private DNS Zone](https://docs.microsoft.com/en-us/azure/dns/private-dns-privatednszone).
+1. From the **Azure** portal click **Create a Resource** and begin the process of creating a [Private DNS Zone](https://docs.microsoft.com/azure/dns/private-dns-privatednszone).
 1. The name of your **Private DNS Zone** must match the URL the **Direct Line App Service Extension** uses to contact the service, in commercial Azure this value is **botframework.com**, in **USGov** clouds **botframework.azure.us**.
 1. Once your **Private DNS Zone** has been deployed you will need to add a **Rule Set** to direct outbound traffic to the **Private Endpoint** created in the earlier steps.
 1. Navigate to your **Private DNS Zone** in the **Azure** portal and from the **Overview** blade click on ***+ Record Set*** to create a new **Record Set**.
@@ -69,7 +69,7 @@ To perform the steps described next you will need to have a **Bot Channel Regist
 1. Select an appropriate name and subscription for your **Virtual Network Link** then supply the name of the **Virtual Network** you created earlier and click ***Ok***.
 
 
-## Next steps
+## Next Steps
 
 > [!div class="nextstepaction"]
 > [Continue developing with the Direct Line Extension](./bot-service-channel-directline-extension.md)
