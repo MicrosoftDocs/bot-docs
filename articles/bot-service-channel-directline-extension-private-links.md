@@ -28,7 +28,7 @@ To perform the steps described next you will need to have a **Bot Channel Regist
 
 ## Restrictions
 
-1. **Private Links** as used here are only able compatible with the **Direct Line App Service Extension** channel. All other channels require the bot's messaging endpoint to accept inbound traffic from sources external to the **Virtual Network**.
+1. **Private Links** as used here are only compatible with the **Direct Line App Service Extension** channel. All other channels require the bot's messaging endpoint to accept inbound traffic from sources external to the **Virtual Network**.
 1. **Private Links** require a **Virtual Network** be present in the resource group the **Private Link** is being added to.
 1. During the preview period the **Private Link** must be in the same Azure region as the **App Gateway** it is targeting.
 1. The below regions are supported during the preview period:
