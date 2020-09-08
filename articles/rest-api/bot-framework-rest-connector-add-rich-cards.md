@@ -16,11 +16,10 @@ ms.date: 12/13/2017
 > - [Node.js](../nodejs/bot-builder-nodejs-send-rich-cards.md)
 > - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
 
-Bots and channels typically exchange text strings but some channels also support exchanging attachments, which lets your bot send richer messages to users. For example, your bot can send rich cards and media attachments (e.g., images, videos, audio, files). This article describes how to add rich card attachments to messages using the Bot Connector service.
+Some channels allow your bot to send _rich cards_ to users. A rich card is an attachment that contains interactive elements, such as buttons, text, images, audio, video, and so on.
 
-> [!NOTE]
-> For information about how to add media attachments to messages, see
-> [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md).
+This article describes how to create rich cards that you can attachment to a message.
+See how to [add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md) for specific instructions on adding an attachment to a message.
 
 ## Types of rich cards
 
@@ -77,7 +76,13 @@ This table lists the valid values for the `type` property of a `CardAction` obje
 
 ## Add a Hero card to a message
 
-To add a rich card attachment to a message, first create an object that corresponds to the [type of card](#types-of-rich-cards) that you want to add to the message. Then create an [Attachment][] object, set its `contentType` property to the card's media type and its `content` property to the object you created to represent the card. Specify your `Attachment` object within the `attachments` array of the message.
+To add a rich card attachment to a message:
+
+1. Create an object that represents the [type of card](#types-of-rich-cards) that you want to add to the message.
+1. Create an [Attachment][] object:
+    - Set its `contentType` property to the card's media type.
+    - Set its `content` property to the object you created to represent the card.
+1. Add the `Attachment` object to the `attachments` array of the message.
 
 > [!TIP]
 > Messages that contain rich card attachments typically do not specify `text`.
@@ -89,7 +94,7 @@ Some channels allow you to add multiple rich cards to the `attachments` array wi
 > To display multiple rich cards in carousel format, set the `Activity` object's `attachmentLayout` property to "carousel".
 > If the channel does not support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
 
-The following example shows a request that sends a message containing a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a complete message that contains a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
 POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
@@ -154,7 +159,9 @@ Content-Type: application/json
 The Adaptive Card can contain any combination of text, speech, images, buttons, and input fields.
 Adaptive Cards are created using the JSON format specified in [Adaptive Cards](http://adaptivecards.io), which gives you full control over card content and format.
 
-Leverage the information within the [Adaptive Cards](http://adaptivecards.io) site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output. The following example is a single Adaptive Card for a work assignment.
+Leverage the information within the [Adaptive Cards](http://adaptivecards.io) site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+
+The following example shows a single Adaptive Card attachment object, representing a work assignment. To send this to a user, you would need to add it as an attachment in a message.
 
 ```json
 {
@@ -282,8 +289,9 @@ The resulting card contains a title, information about who created the card (the
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
+- [Channel reference][ChannelInspector]
 - [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
-- [Channel Inspector][ChannelInspector]
+- [Bot Framework Cards schema](https://aka.ms/botSpecs-cardSchema)
 
 [ChannelInspector]: ../bot-service-channels-reference.md
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
