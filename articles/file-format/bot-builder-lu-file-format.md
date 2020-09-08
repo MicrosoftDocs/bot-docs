@@ -278,7 +278,7 @@ Shown below are the variety of ways you can explicitly define entities and their
 You can refer to implicitly defined roles directly in patterns and labeled utterances using the following format:
 
 ```.lu
-{@<entityName\>:<roleName\>}
+{@<entityName>:<roleName>}
 ```
 
 You can see in the example below how the roles `userName:firstName` and `userName:lastName` are implicitly defined:
@@ -295,7 +295,7 @@ You can see in the example below how the roles `userName:firstName` and `userNam
 > @ ml userName hasRoles lastName, firstName
 ```
 
-In patterns, you can use roles using the `{<entityName\>:<roleName\>}` notation. Here's an example:
+In patterns, you can use roles using the `{<entityName>:<roleName>}` notation. Here's an example:
 
 ```.lu
 # getUserName
@@ -352,9 +352,9 @@ A [phrase list][11] is a list of words, phrases, numbers or other characters tha
 You can describe phrase list entities using the following notation:
 
 ```.lu
-@ phraselist <Name\>
-    - <synonym1\>
-    - <synonym2\>
+@ phraselist <Name>
+    - <synonym1>
+    - <synonym2>
 ```
 
 Here's an example of a phrase list definition:
