@@ -24,7 +24,7 @@ The [Direct Line App Service Extension](./bot-service-channel-directline-extensi
 
 ## Prerequisites
 
-To perform the steps described next you will need to have a **Bot Channel Registration** resource and related **Bot App Service** (your bot) with the **Direct Line App Service Extension** enabled deployed to **Azure** inside of a **Virtual Network** or **App Service Environment**. Guides for creating these resources may be found from the [Direct Line App Service Extension document hub.](./bot-service-channel-directline-extension.md)
+To perform the steps described next you will need an [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), and an [Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-manage-overview?view=azure-bot-service-4.0) with the [Direct Line App Service Extension](./bot-service-channel-directline-extension.md) enabled.
 
 ## Restrictions
 
