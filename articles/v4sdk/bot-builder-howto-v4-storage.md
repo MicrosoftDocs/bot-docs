@@ -650,6 +650,9 @@ pip install botbuilder-azure
 
 ### [C#](#tab/csharp)
 
+> [!NOTE]
+> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobStorage` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
+
 **EchoBot.cs**
 
 ```csharp
@@ -774,7 +777,7 @@ Azure blob transcript storage can use the same blob storage account created foll
 The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
 
 > [!NOTE]
-> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobStorage` and `Microsoft.Bot.Builder.Azure.BlobsTranscriptStore` are deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` and `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in place of these, respectively.
+> As of version 4.10, `Microsoft.Bot.Builder.Azure.BlobsTranscriptStore` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
 
 **echoBot.cs**
 
