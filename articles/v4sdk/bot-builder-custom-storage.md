@@ -131,7 +131,10 @@ Pulling this all together, in our new custom storage solution, we are going to d
 
 ## Implementing ETag Support
 
-To support unit testing we start out by defining an interface for our new store with ETag support. Having the interface means we can write two versions, one for the unit tests that runs in memory without the need of hitting the network and another for production. The interface will make it very easy to leverage the dependency injection mechanisms we have in ASP.NET.
+We start out by defining an interface for our new store with ETag support.
+The interface will make it very easy to leverage the dependency injection mechanisms we have in ASP.NET.
+Having the interface means we can implement a version for production.
+We could also implement a version for unit tests that runs in memory without the need of hitting the network.
 
 The interface consists of Load and Save methods. Both these take the key we will use for the state. The Load will return the data and the associated ETag. And the Save will take these in. Additionally, the Save will return bool. This bool will indicate whether the ETag has matched and the Save was successful. This is not intended as a general error indicator but rather a specific indicator of precondition failure, we model this as a return code rather than an exception because we will be writing control flow logic around this in the shape of our retry loop.
 
