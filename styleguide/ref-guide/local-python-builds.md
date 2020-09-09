@@ -33,7 +33,34 @@ Install an additional component to support the DocFX tool:
 
 Before creating Sphinx content you can check your files for any issues. Run `pip install rstcheck` from a command line to install [rstcheck](https://pypi.org/project/rstcheck/).
 
-You can set a variety of [options](https://github.com/myint/rstcheck#options), like [ignoring specific errors](https://github.com/myint/rstcheck#ignore-specific-errors) or messages, when running rstcheck. To check a single file run:
+You can set a variety of [options](https://github.com/myint/rstcheck#options), like [ignoring specific errors](https://github.com/myint/rstcheck#ignore-specific-errors) or messages, when running rstcheck. To check a single file run, do the following:
+
+1. Prepare your file by removing all code from the file. This ensure that `rstcheck` is recognizing issues solely with RST, not issues with the code itself. Make sure that all your left with is the classes/methods and docstrings containing RST reference comments. Here's an example:
+
+```python
+class DialogSet:
+
+    def add():
+        """
+        Adds a new dialog to the set and returns the added dialog.
+        
+        :param dialog: The dialog to add.
+        """
+        return
+        
+    async def find():
+        """
+        Finds a dialog that was previously added to the set using meth:`add()`
+        
+        :param dialog_id: ID of the dialog/prompt to look up.
+        :return: The dialog if found, otherwise null.
+        """
+        return
+```
+
+Adding `return` at the end of each method reduces the likelihood of running into an EOL error.
+
+2. Run the following from the command line:
 
 ```cmd
 rstcheck <file_name>
@@ -43,17 +70,18 @@ rstcheck <file_name>
 
 We suggest to perform the steps below to facilitate the creation of a local reference build.
 
+1. If possible, create a list of files that have errors or need to be updated. Having this list will greatly reduce the amount of time spent on the local build, and it will be used in later steps in the build process.
 1. In your local repository clone the SDK library for which you want to create a local documentation build. For example for Python, clone https://github.com/microsoft/botbuilder-python.
 1. Create a folder named `<local path>\APIReference` folder.
 1. In the folder, create a sub-folder named `libraries`.
 1. From your cloned SDK copy into the `libraries` the folders that contain the actual code (with related sub-folders). For examples from `\botbuilder-python\libraries\botbuilder-core\botbuilder\core` copy the `core` folder. From `botbuilder-python\libraries\botbuilder-dialogs\botbuilder\dialogs` copy the `dialogs` folder.
 The following is a an example of how the library directory looks like:
 
-    ![sphinx libraries dir structure](../media/sphinx-libraries.png)
+    ![sphinx libraries dir structure](../media/sphinx-libraries.PNG)
 
 1. Once done copying, make sure that each library folder (and sub-folders) contain an `__init__.py` file. These **files must be empty**; delete whatever code they contain.
-1. This step takes some doing. To avoid a lot of unresolved links errors, you can delete the actual code in a `filename.py` and just leave the comments.
-
+1. Optionally, remove all classes that don't have reference comment errors or don't need to be checked.
+1. This next step is time intensive. To avoid errors, delete the actual code in the .py code files and just leave the comments. Make sure that all your left with is the classes/methods and docstrings containing RST reference comments. You can also delete classes/methods without comments if you are solely testing for errors.
 
 ## Create Sphinx content
 
@@ -67,7 +95,7 @@ The following steps produce a local doc build structure. `.rst` files that conta
     ```
 
 > [!NOTE]
-> If you get this sphinx error: `could not import extension docfx_yaml.extension` you must (re)install **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML. Execute this command: `pip install sphinx-docfx-yaml`. For more information, see [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
+> If you get this sphinx error: `could not import extension docfx_yaml.extension` you must (re)install **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML. Execute the command: `pip install sphinx-docfx-yaml`. For more information, see [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
 
 1. You will be asked some questions. Answer as follows:
 
@@ -82,7 +110,7 @@ The following steps produce a local doc build structure. `.rst` files that conta
 
     After done entering the above values the following directory structure is created in the source folder.
 
-    ![sphinx dir structure](../media/sphinx-dir-structure.png)
+    ![sphinx dir structure](../media/sphinx-dir-structure.PNG)
 
 1. Open the `conf.py` file and add the following directive:
 
@@ -105,13 +133,13 @@ The following steps produce a local doc build structure. `.rst` files that conta
     ```
 1. Edit the `index.rst` file by adding the `modules` line as shown below. Make sure the alignment is correct
 
-    ![sphinx dir structure](../media/sphinx-index-rst.png)
+    ![sphinx dir structure](../media/sphinx-index-rst.PNG)
 
 <!--
 sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-headings --no-toc --implicit-namespaces
 -->
 
-1. Create the `YML` files in the `build/docfx_yaml` folder by executing this command:
+1. Create the `YML` files in the `build/docfx_yaml` folder by executing the command:
 
     ```cmd
         sphinx-build source build
@@ -126,7 +154,7 @@ sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-
 
 Now that we have the `YML` files, we can preview them with a locally-running `DocFX` instance.
 
-1. Bootstrap a documentation project based on our own pipeline. In the current folder, create a new folder, for example _docfx. In the console terminal, navigate to this folder and bootstrap a new DocFX project by executing this command:
+1. Bootstrap a documentation project based on our own pipeline. In the `APIReference` folder bootstrap a new DocFX project by executing the command:
 
     ```cmd
     "<path to DocFX folder>\docfx.exe" init -q
@@ -135,7 +163,7 @@ This creates a new `docfx_project` folder.
 
 1. Copy the `YML` files previously generated via Sphinx in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
-1. Build the site (on line docs) locally and display the documentation by running this command:
+1. Build the site (on line docs) locally and display the documentation by running the command:
 
     ```cmd
     "<path to DocFX folder>\docfx.exe" --serve
@@ -143,7 +171,7 @@ This creates a new `docfx_project` folder.
 
 1. In your browser, navigate to http://localhost:8080 to see the online docs. The output should look similar to this:
 
-    ![DocFX local build](../media/docfx-local-build.png)
+    ![DocFX local build](../media/docfx-local-build.PNG)
 
 ## Some shortcuts
 
@@ -152,7 +180,7 @@ When you rebuild the documentation because comments have changed or for whatever
 1. In the `source` folder, delete the `.rst` files. **Do not delete the `index.rst` file**. Perform this step only if you have changed the library content.
 1. Delete the content of the `build` folder.
 1. Delete the content of the `docfx_project/api` folder. **Do not delete the `index.md` file**.
-1. in the directory `<local path>\APIReference` execute the commands:
+1. In the directory `<local path>\APIReference` execute the commands:
 
 ```cmd
 
@@ -163,16 +191,16 @@ sphinx-build source build
 
 1. Perform a preliminary test using the HTML output files. Navigate to the `build` directory and click on the `index.html` file. YOu should be able to navigate to the documentation file you are analyzing and check what kind of errors it contains. This should give you a clue on how to fix them.
 
-    ![sphinx local build html](../media/sphinx-index-html.png)
+    ![sphinx local build html](../media/sphinx-index-html.PNG)
 
 1. The following picture shows an example of errors.
 
-    ![sphinx doc errors](../media/sphinx-errors.png)
+    ![sphinx doc errors](../media/sphinx-errors.PNG)
 
     **Fix the errors** and **redo the previous steps**. Then perform the steps below, to see how the documentation looks in the actual build.
 1. Copy the `YML` files previously generated in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
-1. Build the site (on line docs) locally and display the documentation by running this command:
+1. Build the site (on line docs) locally and display the documentation by running the command:
 
     ```cmd
 
