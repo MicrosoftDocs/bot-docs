@@ -1,6 +1,6 @@
 ---
 title: Embed a bot in an app - Bot Service
-description: Learn how to design a bot that will be embedded within another app.
+description: Learn how to embed bots in apps. See how to integrate bots with native mobile apps, web-based mobile apps, IoT apps, and other app types. View sample code.
 author: matvelloso
 ms.author: mateusv
 manager: kamrani
