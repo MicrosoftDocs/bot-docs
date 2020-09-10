@@ -783,7 +783,7 @@ The following code connects transcript storage pointer `_myTranscripts` to your 
 _Blob transcript storage_ is designed to store bot transcripts.
 
 > [!NOTE]
-> As of version 4.10, `Microsoft.Bot.Builder.Azure.BlobsTranscriptStore` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
+> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobTranscriptStore` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
 
 **echoBot.cs**
 
