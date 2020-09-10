@@ -25,9 +25,12 @@ This quickstart walks you through building a bot by using the Python Echo Bot te
 
 ## Create a bot
 1. Open a terminal and navigate to the folder where you're saving your bot locally. Install the necessary packages by running the following commands:
-- `pip install botbuilder-core`
-- `pip install asyncio`
-- `pip install cookiecutter`
+
+```cmd
+pip install botbuilder-core
+pip install asyncio
+pip install cookiecutter
+```
 
 The last package, cookiecutter, will be used to generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
 
