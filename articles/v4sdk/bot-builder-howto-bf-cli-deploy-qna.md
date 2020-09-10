@@ -37,7 +37,7 @@ This article describes how to perform some common tasks using the Bot Framework 
 1. [Create your QnA Maker initialization file](#create-your-qna-maker-initialization-file)
 1. [Publish your QnA Maker knowledge base](#publish-your-qna-maker-knowledge-base)
 
-Once your bot project's QnA Maker knowledge bases have been created, you are ready to follow the steps outlined in this article to get QnA Maker working.
+Once your bot project's QnA Maker knowledge base `.qna` files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker knowledge base.
 
 ## Create your QnA Maker resource in Azure Cognitive Services
 
