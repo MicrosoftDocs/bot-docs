@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read in directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **Memory Storage**, **Cosmos DB**, **Blob Storage**, **Azure Table storage** and **Azure Blob Transcript Store**.
+You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read in directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **memory**, **Cosmos DB**, **Azure Blob**, and **Azure Blob transcript** storage.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ The sample code in this article begins with the structure of a basic echo bot, t
 
 ## Memory storage
 
-The Bot Framework SDK allows you to store user inputs using in-memory storage. Memory storage is used for testing purposes only and is not intended for production use. In-memory storage is volatile and temporary since the data is cleared each time the bot is restarted. Persistent storage types, such as database storage, are best for production bots. Be sure to set storage to **Cosmos DB**, **Blob Storage**, or [**Azure Table storage**](~/nodejs/bot-builder-nodejs-state-azure-table-storage.md) before publishing your bot.
+The Bot Framework SDK allows you to store user inputs using in-memory storage. Memory storage is used for testing purposes only and is not intended for production use. In-memory storage is volatile and temporary since the data is cleared each time the bot is restarted. Persistent storage types, such as database storage, are best for production bots. Be sure to set storage to **Cosmos DB**, **Blob Storage**, or **Azure Table storage** before publishing your bot.
 
 ## Build a basic bot
 
@@ -648,10 +648,12 @@ pip install botbuilder-azure
 
 ### Implementation
 
+_Blob storage_ is designed to store bot state.
+
 ### [C#](#tab/csharp)
 
 > [!NOTE]
-> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobStorage` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
+> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobStorage` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsStorage` in its place.
 
 **EchoBot.cs**
 
@@ -759,7 +761,9 @@ After you have run your bot and saved your information, we can view it in under 
 
 Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine while debugging your bot's performance.
 
-**NOTE: Javascript and Python do not currently support AzureBlobTranscriptStore.  The following directions are for C# only.**
+> [!NOTE]
+> Python does not currently support _Azure Blob transcript storage_.
+> While JavaScript supports Blob transcript storage, the following directions are for C# only.
 
 ### Set up
 
@@ -775,6 +779,8 @@ Azure blob transcript storage can use the same blob storage account created foll
 ### Implementation
 
 The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
+
+_Blob transcript storage_ is designed to store bot transcripts.
 
 > [!NOTE]
 > As of version 4.10, `Microsoft.Bot.Builder.Azure.BlobsTranscriptStore` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
