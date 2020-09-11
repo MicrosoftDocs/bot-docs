@@ -17,7 +17,7 @@ In the Bot Framework, two broad authentication categories exist: **bot authentic
 
 ![bot framework authentication context](media/concept-bot-authentication/bot-framework-auth-context.png)
 
-To help understanding the previous figure, notice the following:
+In this figure:
 
  - **Host Platform**. It is the bot hosting platform. It can be Azure or any host platform chosen by the customer. In the picture the host platform is Azure.
  - **Bot Connector Service**. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages and sent them to the channels. See also [Create a bot with the Bot Connector service](~/rest-api/bot-framework-rest-connector-quickstart.md).
@@ -112,4 +112,3 @@ Notice that user's authentication is performed by a channel using an identity pr
 
 > [!NOTE]
 > The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
-
