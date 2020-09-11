@@ -59,9 +59,8 @@ Besides the standard supported channels, a client application can communicate wi
 
 The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** that obtained at runtime. The secret or token are specified in the Authorization header of each request.
 
-> [!NOTE]
-> A Direct Line secret is a master key that can be used to **access any conversation** that belongs to the associated bot. A secret can also be used to obtain a token. **Secrets do not expire**.
-> A Direct Line token is a key that can be used to **access a single conversation**. **A token expires but can be refreshed**.
+> [!IMPORTANT]
+> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
 
 For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
