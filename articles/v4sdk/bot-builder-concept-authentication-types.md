@@ -33,7 +33,7 @@ see [Add Slack app settings to your bot's configuration file](~/bot-service-chan
 
 ## Bot authentication
 
-A bot is identified by the **MicrosoftAppID** and **MicrosoftAppPassword** which are kept within the bot's settings files: `appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python), or the **Azure Key Vault**.
+A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**.
 For more information, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 When you register a bot with Azure, for example via the **Bot Channels Registration**, Azure creates an Active Directory registration application if you perform the registration using the Azure portal. If you use the CLI, you must specifically create it. The registration application has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). These values are used to generate a **token** to allow the bot to access secure resources.
