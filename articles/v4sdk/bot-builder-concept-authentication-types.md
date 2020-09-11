@@ -40,15 +40,13 @@ When you register a bot with Azure, for example via the **Bot Channels Registrat
 
 When a channel sends a request to a bot, via the Bot Connector service, it specifies a **token** in the **Authorization header** of the request. The bot authenticates calls from the Bot Connector service by verifying the authenticity of the token.
 
-For more information, see [Authenticate requests from the Bot Connector service to your bot](~/rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot).
 
 When the bot sends a request to a channel via the **Bot Connector service**, it must specify the **token** in the **Authorization header** of the request.
 All requests must include the access token which is verified by the Bot Connector service to authorize the request.
 
-For more information, see [Authenticate requests from your bot to the Bot Connector service](~/rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
-
 The operations described are automatically performed by the Bot Framework SDK.
 
+For more details, see the REST API documentation on how to [authenticate requests from the Bot Connector service to your bot](~/rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot) and [authenticate requests from your bot to the Bot Connector service](~/rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
 ### Channels
 
 Typically, channels communicate with a bot via the **Bot Connector service** this means that the previous authentication principles generally apply. You may want to notice characteristics of specific channels.
