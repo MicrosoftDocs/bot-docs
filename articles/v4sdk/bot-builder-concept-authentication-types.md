@@ -17,10 +17,10 @@ In the Bot Framework, two broad authentication categories exist: **bot authentic
 
 ![bot framework authentication context](media/concept-bot-authentication/bot-framework-auth-context.png)
 
-To help understanding the previous figure, notice the following:
+In this figure:
 
- - **Host Platform**. It is the bot hosting platform. It can be Azure or any host platform chosen by the customer. In the picture the host platform is Azure.
- - **Bot Connector Service**. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages and sent them to the channels. See also [Create a bot with the Bot Connector service](~/rest-api/bot-framework-rest-connector-quickstart.md).
+ - **Host Platform** is the bot hosting platform. It can be Azure or any host platform you chose.
+ - **Bot Connector Service** facilitates communication between a bot and a channel. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages understood by the channel and send them to the channel.
 - **Bot Adapter**. This is the default Bot Framework adapter. It performs these tasks:
     - Converts the JSON payload into an object. At this point, it is already an activity object, thanks to the Bot Connector Service.
     - Creates a turn context and adds the activity object to it.
@@ -29,39 +29,36 @@ To help understanding the previous figure, notice the following:
 
 > [!NOTE]
 > When a custom channel adapter is used, the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do. Also, it provides the authentication mechanism for the related web hook API. For an example,
-see [Add Slack app settings to your bot's configuration file](../bot-service-channel-connect-slack.md#add-slack-app-settings-to-your-bots-configuration-file).
+see [Add Slack app settings to your bot's configuration file](~/bot-service-channel-connect-slack.md#add-slack-app-settings-to-your-bots-configuration-file).
 
 ## Bot authentication
 
-A bot is identified by the **MicrosoftAppID** and **MicrosoftAppPassword** which are kept within the bot's settings files: `appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python), or the **Azure Key Vault**.
+A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**.
 For more information, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
-When you register a bot with Azure, for example via the **Bot Channels Registration**, Azure creates an Active Directory registration application if you perform the registration using the Azure portal. If you use the CLI, you must specifically create it. The registration application has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). These values are used to generate a **token** to allow the bot to access secure resources.
+When you register a bot with Azure, for example via the **Bot Channels Registration**, Azure creates an Active Directory (AD) registration application. If you use the Bot Framework CLI, you must specifically create the AD registration as a separate step. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
 
 When a channel sends a request to a bot, via the Bot Connector service, it specifies a **token** in the **Authorization header** of the request. The bot authenticates calls from the Bot Connector service by verifying the authenticity of the token.
 
-For more information, see [Authenticate requests from the Bot Connector service to your bot](~/rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot).
 
 When the bot sends a request to a channel via the **Bot Connector service**, it must specify the **token** in the **Authorization header** of the request.
 All requests must include the access token which is verified by the Bot Connector service to authorize the request.
 
-For more information, see [Authenticate requests from your bot to the Bot Connector service](~/rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
-
 The operations described are automatically performed by the Bot Framework SDK.
 
+For more details, see the REST API documentation on how to [authenticate requests from the Bot Connector service to your bot](~/rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot) and [authenticate requests from your bot to the Bot Connector service](~/rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
 ### Channels
 
-Channels communicate with a bot via the **Bot Connector service** this means that the previous authentication principles generally apply. You may want to notice the specific characteristics of the channels described next.
+Typically, channels communicate with a bot via the **Bot Connector service** this means that the previous authentication principles generally apply. You may want to notice characteristics of specific channels.
 
 #### Direct Line
 
 Besides the standard supported channels, a client application can communicate with a bot using the Direct Line channel.
 
-The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** that obtained at runtime. The secret or token are specified in the Authorization header of each request.
+The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token are specified in the Authorization header of each request.
 
-> [!NOTE]
-> A Direct Line secret is a master key that can be used to **access any conversation** that belongs to the associated bot. A secret can also be used to obtain a token. **Secrets do not expire**.
-> A Direct Line token is a key that can be used to **access a single conversation**. **A token expires but can be refreshed**.
+> [!IMPORTANT]
+> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
 
 For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
@@ -103,13 +100,12 @@ An identity provider authenticates user or client identities and issues consumab
 
 Client applications, such as web applications, delegate authentication to a trusted identity provider.
 
-A trusted identity provider does the following:
+A trusted identity provider:
 
 - Enables single sign-on (SSO) features, allowing an application to access multiple secured resources.
 - Facilitates connections between cloud computing resources and users, decreasing the need for users to re-authenticate.
 
-Notice that user's authentication is performed by a channel using an identity provider specific to the channel. For more information, see [Identity providers](bot-builder-concept-identity-providers.md).
+Notice that channels provide their own, separate user authentication to let a user sign in to the channel. For more information, see [Identity providers](bot-builder-concept-identity-providers.md).
 
 > [!NOTE]
 > The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
-
