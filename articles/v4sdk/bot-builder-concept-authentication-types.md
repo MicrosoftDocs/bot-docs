@@ -102,7 +102,7 @@ An identity provider authenticates user or client identities and issues consumab
 
 Client applications, such as web applications, delegate authentication to a trusted identity provider.
 
-A trusted identity provider does the following:
+A trusted identity provider:
 
 - Enables single sign-on (SSO) features, allowing an application to access multiple secured resources.
 - Facilitates connections between cloud computing resources and users, decreasing the need for users to re-authenticate.
