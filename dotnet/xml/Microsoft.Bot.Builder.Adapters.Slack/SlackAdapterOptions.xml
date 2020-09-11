@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,238 +21,42 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SlackAdapterOptions (string slackVerificationToken, string slackBotToken, string slackClientSigningSecret);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string slackVerificationToken, string slackBotToken, string slackClientSigningSecret) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.#ctor(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (slackVerificationToken As String, slackBotToken As String, slackClientSigningSecret As String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions : string * string * string -&gt; Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" Usage="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions (slackVerificationToken, slackBotToken, slackClientSigningSecret)" />
+      <MemberSignature Language="C#" Value="public SlackAdapterOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="slackVerificationToken" Type="System.String" />
-        <Parameter Name="slackBotToken" Type="System.String" />
-        <Parameter Name="slackClientSigningSecret" Type="System.String" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="slackVerificationToken">A token for validating the origin of incoming webhooks.</param>
-        <param name="slackBotToken">A token for a bot to work on a single workspace.</param>
-        <param name="slackClientSigningSecret">The token used to validate that incoming webhooks are originated from Slack.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" /> class.
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetBotUserByTeamAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; GetBotUserByTeamAsync (string teamId, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetBotUserByTeamAsync(string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.GetBotUserByTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBotUserByTeamAsync (teamId As String, cancellationToken As CancellationToken) As Task(Of String)" />
-      <MemberSignature Language="F#" Value="abstract member GetBotUserByTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetBotUserByTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="slackAdapterOptions.GetBotUserByTeamAsync (teamId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="teamId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="teamId">Team ID.</param>
-        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> for the task.</param>
-        <summary>
-            A method that receives a Slack team id and returns the bot user id associated with that team. Required for multi-team apps.
-            </summary>
-        <returns>The bot user id associated with that team.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetTokenForTeamAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetTokenForTeamAsync (string teamId, System.Threading.CancellationToken cancellationToken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetTokenForTeamAsync(string teamId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.GetTokenForTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetTokenForTeamAsync (teamId As String, cancellationToken As CancellationToken) As Task(Of String)" />
-      <MemberSignature Language="F#" Value="member this.GetTokenForTeamAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="slackAdapterOptions.GetTokenForTeamAsync (teamId, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="teamId" Type="System.String" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
-      </Parameters>
-      <Docs>
-        <param name="teamId">Team ID.</param>
-        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> for the task.</param>
-        <summary>
-            A method that receives a Slack team id and returns the bot token associated with that team. Required for multi-team apps.
-            </summary>
-        <returns>The bot token associated with the team.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackBotToken">
-      <MemberSignature Language="C#" Value="public string SlackBotToken { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SlackBotToken" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackBotToken" />
-      <MemberSignature Language="VB.NET" Value="Public Property SlackBotToken As String" />
-      <MemberSignature Language="F#" Value="member this.SlackBotToken : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackBotToken" />
+    <Member MemberName="VerifyIncomingRequests">
+      <MemberSignature Language="C#" Value="public bool VerifyIncomingRequests { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerifyIncomingRequests" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.VerifyIncomingRequests" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerifyIncomingRequests As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifyIncomingRequests : bool with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.VerifyIncomingRequests" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or Sets a token (provided by Slack) for a bot to work on a single workspace.
+            Gets or sets a value indicating whether the signatures of incoming requests should be verified.
             </summary>
-        <value>The Bot token.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackClientId">
-      <MemberSignature Language="C#" Value="public string SlackClientId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SlackClientId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SlackClientId As String" />
-      <MemberSignature Language="F#" Value="member this.SlackClientId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientId" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or Sets the oauth client id provided by Slack for multi-team apps.
-            </summary>
-        <value>The Client Id.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackClientSecret">
-      <MemberSignature Language="C#" Value="public string SlackClientSecret { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SlackClientSecret" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSecret" />
-      <MemberSignature Language="VB.NET" Value="Public Property SlackClientSecret As String" />
-      <MemberSignature Language="F#" Value="member this.SlackClientSecret : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSecret" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or Sets the oauth client secret provided by Slack for multi-team apps.
-            </summary>
-        <value>The Client Secret.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackClientSigningSecret">
-      <MemberSignature Language="C#" Value="public string SlackClientSigningSecret { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SlackClientSigningSecret" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSigningSecret" />
-      <MemberSignature Language="VB.NET" Value="Public Property SlackClientSigningSecret As String" />
-      <MemberSignature Language="F#" Value="member this.SlackClientSigningSecret : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSigningSecret" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or Sets a token used to validate that incoming webhooks are originated from Slack.
-            </summary>
-        <value>The Client Signing Secret.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackRedirectUri">
-      <MemberSignature Language="C#" Value="public Uri SlackRedirectUri { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SlackRedirectUri" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackRedirectUri" />
-      <MemberSignature Language="VB.NET" Value="Public Property SlackRedirectUri As Uri" />
-      <MemberSignature Language="F#" Value="member this.SlackRedirectUri : Uri with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackRedirectUri" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Uri</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or Sets the URI users will be redirected to after an oauth flow. In most cases, should be `https://mydomain.com/install/auth`.
-            </summary>
-        <value>The Redirect URI.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackScopes">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; SlackScopes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; SlackScopes" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackScopes" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlackScopes As List(Of String)" />
-      <MemberSignature Language="F#" Value="member this.SlackScopes : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackScopes" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets an array of scope names that are being requested during the oauth process. Must match the scopes defined at api.slack.com.
-            </summary>
-        <value>The scopes array.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SlackVerificationToken">
-      <MemberSignature Language="C#" Value="public string SlackVerificationToken { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SlackVerificationToken" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackVerificationToken" />
-      <MemberSignature Language="VB.NET" Value="Public Property SlackVerificationToken As String" />
-      <MemberSignature Language="F#" Value="member this.SlackVerificationToken : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackVerificationToken" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or Sets the token for validating the origin of incoming webhooks.
-            </summary>
-        <value>The verification token.</value>
+        <value>
+            A value indicating whether the signatures of incoming requests should be verified.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

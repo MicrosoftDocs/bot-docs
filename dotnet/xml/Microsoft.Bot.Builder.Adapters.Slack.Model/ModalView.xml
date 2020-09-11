@@ -1,0 +1,141 @@
+<Type Name="ModalView" FullName="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView">
+  <TypeSignature Language="C#" Value="public class ModalView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModalView extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModalView" />
+  <TypeSignature Language="F#" Value="type ModalView = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModalView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModalIndentifier">
+      <MemberSignature Language="C#" Value="public string ModalIndentifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModalIndentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.ModalIndentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModalIndentifier As String" />
+      <MemberSignature Language="F#" Value="member this.ModalIndentifier : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.ModalIndentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="callback_id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="callback_id")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateMetadata">
+      <MemberSignature Language="C#" Value="public string PrivateMetadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrivateMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.PrivateMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateMetadata As String" />
+      <MemberSignature Language="F#" Value="member this.PrivateMetadata : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.PrivateMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="private_metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="private_metadata")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As ModelViewState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="state")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

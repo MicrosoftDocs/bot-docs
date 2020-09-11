@@ -20,6 +20,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -62,6 +63,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.ConnectorClient" />
@@ -102,6 +104,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.ConnectorClient</ReturnType>
@@ -163,6 +166,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ConversationResourceResponse&gt;&gt;</ReturnType>
@@ -253,6 +257,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt;</ReturnType>
@@ -326,6 +331,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt;</ReturnType>
@@ -401,6 +407,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="botbuilder-dotnet-3.0">System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;</ReturnType>
@@ -479,6 +486,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="botbuilder-dotnet-3.0">System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.ChannelAccount&gt;&gt;&gt;</ReturnType>
@@ -538,6 +546,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ChannelAccount&gt;&gt;</ReturnType>
@@ -614,6 +623,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="botbuilder-dotnet-3.0">System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.PagedMembersResult&gt;&gt;</ReturnType>
@@ -708,6 +718,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType FrameworkAlternate="botbuilder-dotnet-3.0">System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Connector.ConversationsResult&gt;&gt;</ReturnType>
@@ -809,6 +820,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
@@ -923,6 +935,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
@@ -1027,6 +1040,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
@@ -1139,6 +1153,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>
@@ -1247,6 +1262,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&gt;</ReturnType>

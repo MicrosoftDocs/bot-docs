@@ -16,6 +16,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,10 +27,10 @@
             A set of extension methods for <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> which provide support for hosting bots with .NET Core.
             </summary>
     <remarks>To be added.</remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions" />
     <altmember cref="T:Microsoft.Bot.Builder.BotAdapter" />
     <altmember cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" />
     <altmember cref="T:Microsoft.Bot.Builder.IBot" />
+    <altmember cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions" />
   </Docs>
   <Members>
     <Member MemberName="AddBot&lt;TBot&gt;">
@@ -51,6 +52,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
@@ -98,6 +100,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
@@ -148,6 +151,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>
@@ -195,6 +199,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.DependencyInjection.IServiceCollection</ReturnType>

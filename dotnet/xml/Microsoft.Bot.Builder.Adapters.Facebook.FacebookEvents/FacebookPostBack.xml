@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a Facebook Post Back.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -71,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -99,6 +105,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

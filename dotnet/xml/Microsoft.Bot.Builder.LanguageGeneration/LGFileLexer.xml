@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.Lexer</BaseTypeName>
@@ -41,6 +42,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="input" Type="Antlr4.Runtime.ICharStream" />
@@ -63,6 +65,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Atn.ATN</ReturnType>
@@ -84,6 +87,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -105,6 +109,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -134,6 +139,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -156,6 +162,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.IVocabulary</ReturnType>
@@ -166,20 +173,21 @@
       </Docs>
     </Member>
     <Member MemberName="ESCAPE_CHARACTER">
-      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 10;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (10)" />
+      <MemberSignature Language="C#" Value="public const int ESCAPE_CHARACTER = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESCAPE_CHARACTER = (11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ESCAPE_CHARACTER" />
-      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 10" />
+      <MemberSignature Language="VB.NET" Value="Public Const ESCAPE_CHARACTER As Integer  = 11" />
       <MemberSignature Language="F#" Value="val mutable ESCAPE_CHARACTER : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ESCAPE_CHARACTER" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>10</MemberValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -197,6 +205,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -219,6 +228,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -229,11 +239,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="INLINE_MULTILINE">
+      <MemberSignature Language="C#" Value="public const int INLINE_MULTILINE = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INLINE_MULTILINE = (6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INLINE_MULTILINE" />
+      <MemberSignature Language="VB.NET" Value="Public Const INLINE_MULTILINE As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable INLINE_MULTILINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INLINE_MULTILINE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="INVALID_LINE">
-      <MemberSignature Language="C#" Value="public const int INVALID_LINE = 8;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_LINE = (8)" />
+      <MemberSignature Language="C#" Value="public const int INVALID_LINE = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_LINE = (9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INVALID_LINE" />
-      <MemberSignature Language="VB.NET" Value="Public Const INVALID_LINE As Integer  = 8" />
+      <MemberSignature Language="VB.NET" Value="Public Const INVALID_LINE As Integer  = 9" />
       <MemberSignature Language="F#" Value="val mutable INVALID_LINE : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INVALID_LINE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
@@ -241,11 +271,12 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>8</MemberValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -263,6 +294,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -284,6 +316,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -304,6 +337,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -315,60 +349,63 @@
       </Docs>
     </Member>
     <Member MemberName="MULTILINE_PREFIX">
-      <MemberSignature Language="C#" Value="public const int MULTILINE_PREFIX = 6;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_PREFIX = (6)" />
+      <MemberSignature Language="C#" Value="public const int MULTILINE_PREFIX = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_PREFIX = (7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_PREFIX" />
-      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_PREFIX As Integer  = 6" />
+      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_PREFIX As Integer  = 7" />
       <MemberSignature Language="F#" Value="val mutable MULTILINE_PREFIX : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_PREFIX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>6</MemberValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MULTILINE_SUFFIX">
-      <MemberSignature Language="C#" Value="public const int MULTILINE_SUFFIX = 9;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_SUFFIX = (9)" />
+      <MemberSignature Language="C#" Value="public const int MULTILINE_SUFFIX = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_SUFFIX = (10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_SUFFIX" />
-      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_SUFFIX As Integer  = 9" />
+      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_SUFFIX As Integer  = 10" />
       <MemberSignature Language="F#" Value="val mutable MULTILINE_SUFFIX : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_SUFFIX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>9</MemberValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MULTILINE_TEXT">
-      <MemberSignature Language="C#" Value="public const int MULTILINE_TEXT = 11;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_TEXT = (11)" />
+      <MemberSignature Language="C#" Value="public const int MULTILINE_TEXT = 12;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MULTILINE_TEXT = (12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_TEXT" />
-      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_TEXT As Integer  = 11" />
+      <MemberSignature Language="VB.NET" Value="Public Const MULTILINE_TEXT As Integer  = 12" />
       <MemberSignature Language="F#" Value="val mutable MULTILINE_TEXT : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_TEXT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>11</MemberValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -386,6 +423,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -408,6 +446,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -430,6 +469,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -451,6 +491,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -473,6 +514,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -503,6 +545,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -514,20 +557,21 @@
       </Docs>
     </Member>
     <Member MemberName="TEMPLATE_BODY">
-      <MemberSignature Language="C#" Value="public const int TEMPLATE_BODY = 7;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE_BODY = (7)" />
+      <MemberSignature Language="C#" Value="public const int TEMPLATE_BODY = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TEMPLATE_BODY = (8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TEMPLATE_BODY" />
-      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE_BODY As Integer  = 7" />
+      <MemberSignature Language="VB.NET" Value="Public Const TEMPLATE_BODY As Integer  = 8" />
       <MemberSignature Language="F#" Value="val mutable TEMPLATE_BODY : int" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.TEMPLATE_BODY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <MemberValue>7</MemberValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -545,6 +589,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -567,6 +612,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -594,6 +640,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -622,6 +669,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
