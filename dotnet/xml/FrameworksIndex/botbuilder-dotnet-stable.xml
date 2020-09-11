@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-stable">
   <Assemblies>
-    <Assembly Name="AdaptiveExpressions" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Facebook" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Slack" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Twilio" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Webex" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure.Blobs" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Declarative" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.LanguageGeneration" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Testing" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Configuration" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Connector" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Schema" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Streaming" Version="4.10.0.0" />
+    <Assembly Name="AdaptiveExpressions" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Facebook" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Slack" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Twilio" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Webex" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure.Blobs" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Declarative" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.LanguageGeneration" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Testing" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Configuration" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Connector" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Schema" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Streaming" Version="4.10.3.0" />
   </Assemblies>
   <Namespace Name="AdaptiveExpressions.BuiltinFunctions">
     <Type Name="AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator" Id="T:AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator">
@@ -2513,8 +2513,8 @@
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook">
     <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper,Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
@@ -2523,16 +2523,11 @@
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.#ctor(System.String,System.String,System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.GetAccessTokenForPageAsync(System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookAccessToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookApiHost" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookApiVersion" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookAppSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookVerifyToken" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.VerifyIncomingRequests" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.GetAppSecretProof" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PassThreadControlAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PostToFacebookApiAsync(System.String,System.String,System.Threading.CancellationToken)" />
@@ -2541,6 +2536,14 @@
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.TakeThreadControlAsync(System.String,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifyWebhookAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions.#ctor(System.String,System.String,System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions.FacebookAccessToken" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions.FacebookApiHost" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions.FacebookApiVersion" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions.FacebookAppSecret" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapperOptions.FacebookVerifyToken" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper">
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ActivityToFacebook(Microsoft.Bot.Schema.Activity)" />
@@ -2559,6 +2562,7 @@
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PassThreadControl" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PersonaId" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PostBack" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Reads" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Recipient" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.RequestThreadControl" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Sender" />
@@ -2628,6 +2632,10 @@
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.ImageUrl" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.Payload" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.Title" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead.Watermark" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient">
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.#ctor" />
@@ -2710,183 +2718,202 @@
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse.ActivityId" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse.Conversation" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage" Id="T:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.AsUser" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Attachments" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Blocks" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.BotId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Ephemeral" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.IconEmoji" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Icons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.IconUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Team" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.ThreadTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Ts" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.User" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Username" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackAction" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAction">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.BlockId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Value" />
-    </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper,Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.SlackClientWrapper" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.#ctor(System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.GetBotUserByTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.GetTokenForTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackBotToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSigningSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackRedirectUri" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackScopes" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackVerificationToken" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.VerifyIncomingRequests" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.AddReactionAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ApiRequestWithTokenAsync``1(System.Threading.CancellationToken,System.Tuple{System.String,System.String}[])" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelsCreateAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelSetTopicAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelsInviteAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ConnectAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.DeleteMessageAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.DialogOpenAsync(System.String,SlackAPI.Dialog,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.EmitLoginAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.EmitPresence(SlackAPI.Presence,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetBotUserByTeamAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetChannelHistoryAsync(SlackAPI.Channel,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetChannelListAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetCountsAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetDirectMessageHistoryAsync(SlackAPI.DirectMessageConversation,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetDirectMessageListAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetFileInfoAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetFilesAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},SlackAPI.FileTypes,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetGroupHistoryAsync(SlackAPI.Channel,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetGroupsListAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetPreferencesAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetStarsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetUserListAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsArchiveAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCloseAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCreateAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCreateChildAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsInviteAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsKickAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsLeaveAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsMarkAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsOpenAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsRenameAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsSetPurposeAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsSetTopicAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsUnarchiveAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.JoinDirectMessageChannelAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetBotUserIdentity(Microsoft.Bot.Schema.Activity)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.LoginWithSlackAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.MarkChannelAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostEphemeralMessageAsync(System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.Attachment[],System.Boolean,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.IBlock[],SlackAPI.Attachment[],System.Boolean,System.Uri,System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchAllAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchFilesAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchMessagesAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.TestAuthAsync(System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.UpdateAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.Attachment[],System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.UploadFileAsync(System.Byte[],System.String,System.String[],System.String,System.String,System.Boolean,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Identity" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Options" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackEvent" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Actions" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.BotId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ChannelId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ChannelType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ClientMsgId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.EventTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Files" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Item" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ItemChannel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.SubType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Team" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ThreadTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.TimeStamp" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.User" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.UserId" />
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.#ctor(System.String,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackBotToken" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackClientId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackClientSecret" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackClientSigningSecret" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackRedirectUri" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackScopes" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapperOptions.SlackVerificationToken" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackMessage" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.BotId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Subtype" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.ThreadTS" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Ts" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Username" />
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Adapters.Slack.Model">
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.AdditionalProperties" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.ChannelId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.Command" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.ResponseUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.TeamId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.Text" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.Token" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.TriggerId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.CommandPayload.UserId" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackPayload" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Actions" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.ActionTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.CallbackId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.ResponseUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.State" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Submission" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Team" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.ThreadTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Token" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.TriggerId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.User" />
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.AdditionalProperties" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.ApiAppId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.AuthedUsers" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.Event" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.EventId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.EventTime" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.TeamId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.Token" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventRequest.Type" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.ApiAppId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.AuthedUsers" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Challenge" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.ChannelId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Command" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Event" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.EventId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.EventTime" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.TeamId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Token" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.TriggerId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.UserId" />
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.EventType" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.AdditionalProperties" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.BotId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.Channel" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.ChannelId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.EventTs" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.Item" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.ThreadTs" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.Ts" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.Type" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.EventType.User" />
     </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackResponse" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Ok" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Ts" />
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Actions" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.ActionTs" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.AdditionalProperties" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.CallbackId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Channel" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Message" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.ResponseUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.State" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Submission" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Team" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.ThreadTs" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Token" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.TriggerId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.Type" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.User" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.InteractionPayload.View" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock.SelectedOption" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock.SelectedOptions" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock.Type" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalBlock.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.ModalIndentifier" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.PrivateMetadata" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModalView.State" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.ModelViewState.Values" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Attachments" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Blocks" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.BotId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Channel" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Ephemeral" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Text" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.ThreadTs" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Ts" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.User" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.NewSlackMessage.Username" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption.Text" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.ActionId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.ActionTs" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.BlockId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Name" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.SelectedOption" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.SelectedOptions" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Text" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Type" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Actions" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.AuthorIcon" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.AuthorLink" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.AuthorName" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Blocks" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.CallbackId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Color" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Fallback" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Fields" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Footer" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.FooterIcon" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.ImageUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.MrkDwnIn" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Pretext" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Text" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.ThumbUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.Title" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAttachment.TitleLink" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse.Channel" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse.Message" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse.Ok" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackResponse.Ts" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackUser" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackUser">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackUser.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackUser.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackUser.TeamId" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackUser.Username" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Adapters.Slack.Model.Events">
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.ChannelType" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.SubType" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.Text" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.Events.UrlVerificationEvent" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.UrlVerificationEvent">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.UrlVerificationEvent.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.UrlVerificationEvent.Challenge" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.UrlVerificationEvent.Token" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.UrlVerificationEvent.Type" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Adapters.Slack.Model.Model">
+    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.Model.Model.SlackTeam" Id="T:Microsoft.Bot.Builder.Adapters.Slack.Model.Model.SlackTeam">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.Model.Model.SlackTeam.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Model.SlackTeam.Domain" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Model.SlackTeam.Id" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Adapters">
@@ -2958,8 +2985,8 @@
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Adapters.Twilio">
     <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper,Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
@@ -2968,17 +2995,22 @@
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.#ctor(System.String,System.String,System.String,System.Uri)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAccountSid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAuthToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioNumber" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioValidationUrl" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.ValidateIncomingRequests" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.SendMessage(Twilio.Rest.Api.V2010.Account.CreateMessageOptions,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.SendMessageAsync(Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.ValidateSignature(Microsoft.AspNetCore.Http.HttpRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.Options" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions.#ctor(System.String,System.String,System.String,System.Uri)" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions.TwilioAccountSid" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions.TwilioAuthToken" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions.TwilioNumber" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions.TwilioValidationUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapperOptions.ValidateIncomingRequests" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage">
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.#ctor" />
@@ -3006,6 +3038,14 @@
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ToState" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ToZip" />
     </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions.ApplicationSid" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions.Body" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions.From" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions.MediaUrl" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessageOptions.To" />
+    </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Adapters.Webex">
     <Type Name="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData" Id="T:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData">
@@ -3018,8 +3058,8 @@
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Type" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper,Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
@@ -3028,61 +3068,26 @@
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.#ctor(System.String,System.Uri,System.String,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexAccessToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexPublicAddress" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexWebhookName" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.ValidateIncomingRequests" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ActivateWebhookAsync(Thrzn41.WebexTeams.Version1.Webhook,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateAdaptiveCardsWebhookAsync(System.String,System.Uri,Thrzn41.WebexTeams.Version1.EventType,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateDirectMessageAsync(System.String,System.String,System.Collections.Generic.IList{System.Uri},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateMessageAsync(System.String,System.String,System.Collections.Generic.IList{System.Uri},Thrzn41.WebexTeams.Version1.MessageTextType,Thrzn41.WebexTeams.Version1.MessageTarget,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateMessageWithAttachmentsAsync(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},Thrzn41.WebexTeams.Version1.MessageTextType,Thrzn41.WebexTeams.Version1.MessageTarget,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateSpaceAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateSpaceMembershipAsync(System.String,System.String,System.Nullable{System.Boolean},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateTeamMembershipAsync(System.String,System.String,System.Nullable{System.Boolean},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateWebhookAsync(System.String,System.Uri,Thrzn41.WebexTeams.Version1.EventResource,Thrzn41.WebexTeams.Version1.EventType,System.Collections.Generic.IEnumerable{Thrzn41.WebexTeams.Version1.EventFilter},System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteMessageAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteSpaceAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteSpaceMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteTeamMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteWebhookAsync(Thrzn41.WebexTeams.Version1.Webhook,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetAttachmentActionAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetFileDataAsync(System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetFileInfoAsync(System.Uri,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMeAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMeFromCacheAsync(System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMessageAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetSpaceAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetSpaceMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetTeamMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetWebhookAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListMessagesAsync(System.String,System.String,System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListPeopleAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListSpaceMembershipsAsync(System.String,System.String,System.Nullable{System.Int32},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListSpacesAsync(System.String,Thrzn41.WebexTeams.Version1.SpaceType,Thrzn41.WebexTeams.Version1.SpaceSortBy,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListTeamMembershipsAsync(System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListTeamsAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListWebhooksAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListWebhookSubscriptionsAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterAdaptiveCardsWebhookSubscriptionAsync(System.String,System.String,System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterWebhookSubscriptionAsync(System.String,System.String,System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterWebhookSubscriptionsAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ResetWebhookSubscriptionsAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateAdaptiveCardsWebhookAsync(System.String,System.String,System.Uri,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateSpaceAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateSpaceMembershipAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateTeamAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateTeamMembershipAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateWebhookAsync(System.String,System.String,System.Uri,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ValidateSignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
       <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.Options" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions.#ctor(System.String,System.Uri,System.String,System.String)" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions.WebexAccessToken" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions.WebexPublicAddress" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions.WebexSecret" />
+      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapperOptions.WebexWebhookName" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest">
       <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.#ctor" />
@@ -4362,10 +4367,12 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.EndDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.OnComputeId" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.OnPreBubbleEventAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogEvent,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.RepromptDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.Activity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.ActivityProcessed" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.AllowInterruptions" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.BotId" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.ConnectionName" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginSkill.Disabled" />
@@ -5625,7 +5632,6 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource.#ctor(System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource.OpenStreamAsync" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource.ToString" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource.FullName" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProvider" Id="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProvider">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FolderResourceProvider.#ctor(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,System.String,System.Boolean,System.Boolean)" />
@@ -5647,6 +5653,7 @@
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource.#ctor" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource.OpenStreamAsync" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource.ReadTextAsync" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource.FullName" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource.Id" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Id="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer">
@@ -6207,6 +6214,7 @@
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.DefaultVocabulary" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.ESCAPE_CHARACTER" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.IMPORT" />
+      <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INLINE_MULTILINE" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.INVALID_LINE" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.modeNames" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileLexer.MULTILINE_MODE" />
@@ -6236,6 +6244,7 @@
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.DefaultVocabulary" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.ESCAPE_CHARACTER" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.IMPORT" />
+      <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.INLINE_MULTILINE" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.INVALID_LINE" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.MULTILINE_PREFIX" />
       <Member Id="F:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.MULTILINE_SUFFIX" />
@@ -6349,6 +6358,7 @@
       <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.ESCAPE_CHARACTER" />
       <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.ESCAPE_CHARACTER(System.Int32)" />
       <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.INLINE_MULTILINE" />
       <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_PREFIX" />
       <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_SUFFIX" />
       <Member Id="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_TEXT" />
