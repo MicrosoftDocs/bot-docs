@@ -1,6 +1,6 @@
 ---
 title: Send and receive messages - Bot Service
-description: Learn how to send and receive messages using the Bot Connector service. 
+description: Learn how to use bots to exchange messages with users. See how to use the Bot Connector service to send messages and replies and to start conversations. 
 author: RobStand
 ms.author: kamrani
 manager: kamrani

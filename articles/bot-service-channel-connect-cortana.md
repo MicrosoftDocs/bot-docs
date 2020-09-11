@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Cortana - Bot Service
-description: Learn how to configure a bot for access through the Cortana interface.
+description: Learn how to add speech functionality to bots by connecting them to Cortana, a speech-enabled channel. See how to publish bots as Cortana skills.
 keywords: cortana, bot channel, configure cortana
 author: RobStand
 ms.author: kamrani
