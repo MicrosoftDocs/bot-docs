@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotAdapter</BaseTypeName>
@@ -17,27 +18,31 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            BotAdapter to allow for handling Webex Teams app payloads and responses via the Webex Teams API.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebexAdapter (Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper webexClient, Microsoft.Extensions.Logging.ILogger logger = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper webexClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (webexClient As WebexClientWrapper, Optional logger As ILogger = Nothing)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter : Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter (webexClient, logger)" />
+      <MemberSignature Language="C#" Value="public WebexAdapter (Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper webexClient, Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions options, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper webexClient, class Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions options, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper,Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (webexClient As WebexClientWrapper, options As WebexAdapterOptions, Optional logger As ILogger = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter : Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper * Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter (webexClient, options, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="webexClient" Type="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" />
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
       </Parameters>
       <Docs>
         <param name="webexClient">A Webex API interface.</param>
+        <param name="options">An instance of <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" />.</param>
         <param name="logger">The ILogger implementation this adapter should use.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" /> class.
@@ -47,22 +52,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebexAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger logger = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional logger As ILogger = Nothing)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter (configuration, logger)" />
+      <MemberSignature Language="C#" Value="public WebexAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions options = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions options, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional options As WebexAdapterOptions = Nothing, Optional logger As ILogger = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter (configuration, options, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" />
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
       </Parameters>
       <Docs>
         <param name="configuration">An <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> instance.</param>
+        <param name="options">An instance of <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" />.</param>
         <param name="logger">The ILogger implementation this adapter should use.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" /> class using configuration settings.
@@ -86,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -116,6 +124,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -153,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -186,6 +196,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -218,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
@@ -248,6 +260,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>

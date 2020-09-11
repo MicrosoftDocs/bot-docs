@@ -162,10 +162,13 @@ The logic for this skill does not change from turn to turn. If you implement a s
 
 This sample uses an allowed callers list for claims validation. The list is defined in the skill's configuration file and is read into the validator object when it's created.
 
-You can add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request. There are many reasons you may want to reject an otherwise authenticated request. For example:
+You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request. There are many reasons you may want to reject an otherwise authenticated request. For example:
 
 - The skill is part of a paid-for service. User's not in the data base should not have access.
 - The skill is proprietary. Only certain skill consumers can call the skill.
+
+> [!IMPORTANT]
+> If you don't provide a claims validator, your bot will generate an error or exception upon receiving an activity from the skill consumer.
 
 <!--TODO Need a link for more information about claims and claims-based validation.-->
 

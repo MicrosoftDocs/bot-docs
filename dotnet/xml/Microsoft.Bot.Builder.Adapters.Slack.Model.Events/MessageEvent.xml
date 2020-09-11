@@ -1,0 +1,105 @@
+<Type Name="MessageEvent" FullName="Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent">
+  <TypeSignature Language="C#" Value="public class MessageEvent : Microsoft.Bot.Builder.Adapters.Slack.Model.EventType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageEvent extends Microsoft.Bot.Builder.Adapters.Slack.Model.EventType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageEvent&#xA;Inherits EventType" />
+  <TypeSignature Language="F#" Value="type MessageEvent = class&#xA;    inherit EventType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Adapters.Slack.Model.EventType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a Slack Message event https://api.slack.com/events/message.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelType">
+      <MemberSignature Language="C#" Value="public string ChannelType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChannelType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.ChannelType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelType As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelType : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.ChannelType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="channel_type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="channel_type")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubType">
+      <MemberSignature Language="C#" Value="public string SubType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.SubType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubType As String" />
+      <MemberSignature Language="F#" Value="member this.SubType : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.SubType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.Events.MessageEvent.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
