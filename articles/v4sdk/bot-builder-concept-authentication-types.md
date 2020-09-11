@@ -19,8 +19,8 @@ In the Bot Framework, two broad authentication categories exist: **bot authentic
 
 In this figure:
 
- - **Host Platform**. It is the bot hosting platform. It can be Azure or any host platform chosen by the customer. In the picture the host platform is Azure.
- - **Bot Connector Service**. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages and sent them to the channels. See also [Create a bot with the Bot Connector service](~/rest-api/bot-framework-rest-connector-quickstart.md).
+ - **Host Platform** is the bot hosting platform. It can be Azure or any host platform you chose.
+ - **Bot Connector Service** facilitates communication between a bot and a channel. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages understood by the channel and send them to the channel.
 - **Bot Adapter**. This is the default Bot Framework adapter. It performs these tasks:
     - Converts the JSON payload into an object. At this point, it is already an activity object, thanks to the Bot Connector Service.
     - Creates a turn context and adds the activity object to it.
