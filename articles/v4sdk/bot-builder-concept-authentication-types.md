@@ -65,11 +65,11 @@ For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-
 
 #### Web Chat
 
-When embedding a **Web Chat control** in a web page, you can use a either a **secret** or, better, a **token** obtained at runtime. Notice that the Web Chat control, uses the DirectLine channel to connect with the bot.
+The Web Chat has 2 has two implementations: the **channel** and the **control**. They both use the **Direct Line channel** to talk to a bot.
 
-Notice that when you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
-
-![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG)
+- When you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
+    ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG)
+- When embedding a **Web Chat control** in a web page, you can use a either a Direct Line  **secret** or, better, a **token** obtained at runtime.
 
 For more information, see [Connect a bot to Web Chat](~/bot-service-channel-connect-webchat.md).
 
@@ -79,7 +79,7 @@ TBD
 
 ### Bot Framework Emulator
 
-The Bot Framework Emulator has its own authentication flow, and its own tokens. The emulator uses an instance of the **Web Chat control**, which in turn uses the DirectLine channel.
+The Bot Framework Emulator has its own authentication flow and its own tokens. The emulator uses an instance of the **Web Chat control**, which in turn uses the DirectLine channel.
 
 ## User authentication
 
