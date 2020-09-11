@@ -107,7 +107,7 @@ A trusted identity provider:
 - Enables single sign-on (SSO) features, allowing an application to access multiple secured resources.
 - Facilitates connections between cloud computing resources and users, decreasing the need for users to re-authenticate.
 
-Notice that user's authentication is performed by a channel using an identity provider specific to the channel. For more information, see [Identity providers](bot-builder-concept-identity-providers.md).
+Notice that channels provide their own, separate user authentication to let a user sign in to the channel. For more information, see [Identity providers](bot-builder-concept-identity-providers.md).
 
 > [!NOTE]
 > The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
