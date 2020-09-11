@@ -79,7 +79,7 @@ To create your QnA Maker model:
 bf qnamaker:convert -i <input-folder-name> -o <output-folder-name> --name <QnA-KB-Name> -r
 ```
 
-In the following example, this command will recursively search for all `.qna` files in the _dialogs__ directory and any subdirectories and merge them into a single file named **converted.json** in the _output_ directory. This JSON file will contain all of the information needed to create a QnA Maker KB, including the name _MyQnAMakerBot_ which will be the name of the knowledge base.
+In the following example, this command will recursively search for all `.qna` files in the _dialogs__ directory and any subdirectories and merge them into a single file named **converted.json** in the _output_ directory. This JSON file will contain all of the information needed to create a QnA Maker KB, including the name _MyQnAMakerBot_ which will be the name of the QnA Maker knowledge base that will exist in Azure.
 
 > `bf qnamaker:convert -i dialogs -o output --name MyQnAMakerBot -r`
 
@@ -97,8 +97,8 @@ bf qnamaker:kb:create -i <QnA-Maker-model-JSON-file> --subscriptionKey <Subscrip
 
 > [!NOTE]
 >
-> - The input file for this command is the file that is created by running the `qnamaker:convert` command as discussed in the previous step.
-> - The `name` option is optional if the QnA Model JSON file has a value for the name property, otherwise it will be required.
+> - The input file for this command is the file that is created by running the `qnamaker:convert` command as discussed in the previous step. The filename is **converted.json** by default.
+> - The `name` option is the name of the QnA Maker KB and is optional if the QnA Model JSON file has a value for the name property, otherwise it will be required.
 
 For additional information on using this command, see [`bf qnamaker:kb:create`][bf-qnamakerkbcreate] in the BF CLI QnA Maker readme.
 
