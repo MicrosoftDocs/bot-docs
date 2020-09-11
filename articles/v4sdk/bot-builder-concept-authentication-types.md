@@ -29,7 +29,7 @@ In this figure:
 
 > [!NOTE]
 > When a custom channel adapter is used, the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do. Also, it provides the authentication mechanism for the related web hook API. For an example,
-see [Add Slack app settings to your bot's configuration file](~/bot-service-channel-connect-slack.md#add-slack-app-settings-to-your-bots-configuration-file).
+see [Add Slack app settings to your bot's configuration file](~/bot-service-channel-connect-slack.md&tabs=adapter#add-slack-app-settings-to-your-bots-configuration-file).
 
 ## Bot authentication
 
