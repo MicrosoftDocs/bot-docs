@@ -30,7 +30,7 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 
 This article describes how to perform some common tasks using the Bot Framework CLI.
 
-1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-luis-authoring-resource-in-azure-cognitive-services)
+1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
 1. [Create your QnA Maker model](#create-your-qna-maker-model)
 1. [Create your QnA Maker knowledge base](#create-your-qna-maker-knowledge-base)
