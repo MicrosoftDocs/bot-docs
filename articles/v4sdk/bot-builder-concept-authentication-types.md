@@ -51,13 +51,13 @@ The operations described are automatically performed by the Bot Framework SDK.
 
 ### Channels
 
-Channels communicate with a bot via the **Bot Connector service** this means that the previous authentication principles generally apply. You may want to notice the specific characteristics of the channels described next.
+Typically, channels communicate with a bot via the **Bot Connector service** this means that the previous authentication principles generally apply. You may want to notice characteristics of specific channels.
 
 #### Direct Line
 
 Besides the standard supported channels, a client application can communicate with a bot using the Direct Line channel.
 
-The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** that obtained at runtime. The secret or token are specified in the Authorization header of each request.
+The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token are specified in the Authorization header of each request.
 
 > [!IMPORTANT]
 > When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
