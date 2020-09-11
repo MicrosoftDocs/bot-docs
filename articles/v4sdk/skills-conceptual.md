@@ -136,13 +136,16 @@ Service-level authentication is managed by the Bot Connector service. The framew
 
 #### Claims validation
 
-You can add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Throw an error or exception in your validation code to reject the request.
+You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Throw an error or exception in your validation code to reject the request.
 
 There are various reasons you might reject an otherwise authenticated request:
 
 - When the skill consumer should accept traffic only from skills that it may have initiated a conversation with.
 - When a skill is part of a paid-for service, and users not in the database should not have access.
 - When you want to restrict access to the skill to specific skill consumers.
+
+> [!IMPORTANT]
+> If you don't provide a claims validator, your bot will generate an error or exception upon receiving an activity from another bot, whether your bot is a skill or a skill consumer.
 
 <!--TODO Need a link for more information about claims and claims-based validation.-->
 
