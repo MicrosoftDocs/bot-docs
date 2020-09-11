@@ -58,27 +58,28 @@ Besides the standard supported channels, a client application can communicate wi
 The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token are specified in the Authorization header of each request.
 
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
+> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](~/bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
+
 
 For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
 #### Web Chat
 
-When embedding a Web Chat control in a web page, you can use a either a **secret** or, better, a **token** obtained at runtime.
-For more information, see [Connect a bot to Web Chat](~/bot-service-channel-connect-webchat.md).
+When embedding a **Web Chat control** in a web page, you can use a either a **secret** or, better, a **token** obtained at runtime. Notice that the Web Chat control, uses the DirectLine channel to connect with the bot.
 
 Notice that when you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
 
 ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG)
 
+For more information, see [Connect a bot to Web Chat](~/bot-service-channel-connect-webchat.md).
 
 ### Skills
 
 TBD
 
-### Emulator
+### Bot Framework Emulator
 
-The emulator has its own authentication flow, and its own tokens.  Emulator tokens, and the validation path for them, are a little different from channel tokens, and skill tokens
+The Bot Framework Emulator has its own authentication flow, and its own tokens. The emulator uses an instance of the **Web Chat control**, which in turn uses the DirectLine channel.
 
 ## User authentication
 
