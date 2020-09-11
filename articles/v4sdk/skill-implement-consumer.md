@@ -20,7 +20,6 @@ A _skill_ is a bot that can perform a set of tasks for another bot and uses a ma
 A _root bot_ is a user-facing bot that can invoke one or more skills. A root bot is a type of _skill consumer_.
 
 - A skill consumer must use claims validation to manage which skills can access it.
-- A skill consumer can use claims validation to manage which users can access it.
 - A skill consumer can use multiple skills.
 - Developers who don't have access to the skill's source code can use the information in the skill's manifest to design their skill consumer.
 
