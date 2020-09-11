@@ -2,12 +2,12 @@
 title: Write directly to storage - Bot Service
 description: Learn how to use the Bot Framework SDK for .NET to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
-author: DeniseMak
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/01/2019
+ms.date: 08/27/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read in directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **Memory Storage**, **Cosmos DB**, **Blob Storage**, **Azure Table storage** and **Azure Blob Transcript Store**.
+You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read in directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **memory**, **Cosmos DB**, **Azure Blob**, and **Azure Blob transcript** storage.
 
 ## Prerequisites
 
@@ -27,11 +27,11 @@ You can read and write directly to your storage object without using middleware 
 
 ## About this sample
 
-The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they are received. Each turn, the full list of user inputs is echoed back to the user. The data structure containing this list of inputs is then saved to storage at the end of that turn. Various types of storage are explored as additional funtionality is added to this sample code.
+The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they are received. Each turn, the full list of user inputs is echoed back to the user. The data structure containing this list of inputs is then saved to storage at the end of that turn. Various types of storage are explored as additional functionality is added to this sample code.
 
 ## Memory storage
 
-The Bot Framework SDK allows you to store user inputs using in-memory storage. Memory storage is used for testing purposes only and is not intended for production use. In-memory storage is volatile and temporary since the data is cleared each time the bot is restarted. Persistent storage types, such as database storage, are best for production bots. Be sure to set storage to **Cosmos DB**, **Blob Storage**, or [**Azure Table storage**](~/nodejs/bot-builder-nodejs-state-azure-table-storage.md) before publishing your bot.
+The Bot Framework SDK allows you to store user inputs using in-memory storage. Memory storage is used for testing purposes only and is not intended for production use. In-memory storage is volatile and temporary since the data is cleared each time the bot is restarted. Persistent storage types, such as database storage, are best for production bots. Be sure to set storage to **Cosmos DB**, **Blob Storage**, or **Azure Table storage** before publishing your bot.
 
 ## Build a basic bot
 
@@ -77,10 +77,11 @@ public class EchoBot : ActivityHandler
    {
       // preserve user input.
       var utterance = turnContext.Activity.Text;
-      // make empty local logitems list.
+
+      // Make empty local log-items list.
       UtteranceLog logItems = null;
 
-      // see if there are previous messages saved in storage.
+      // See if there are previous messages saved in storage.
       try
       {
          string[] utteranceList = { "UtteranceLog" };
@@ -88,23 +89,24 @@ public class EchoBot : ActivityHandler
       }
       catch
       {
-         // Inform the user an error occured.
+         // Inform the user an error occurred.
          await turnContext.SendActivityAsync("Sorry, something went wrong reading your stored messages!");
       }
 
       // If no stored messages were found, create and store a new entry.
       if (logItems is null)
       {
-         // add the current utterance to a new object.
+         // Add the current utterance to a new object.
          logItems = new UtteranceLog();
          logItems.UtteranceList.Add(utterance);
-         // set initial turn counter to 1.
+
+         // Set initial turn counter to 1.
          logItems.TurnNumber++;
 
          // Show user new user message.
          await turnContext.SendActivityAsync($"{logItems.TurnNumber}: The list is now: {string.Join(", ", logItems.UtteranceList)}");
 
-         // Create Dictionary object to hold received user messages.
+         // Create dictionary object to hold received user messages.
          var changes = new Dictionary<string, object>();
          {
             changes.Add("UtteranceLog", logItems);
@@ -116,11 +118,11 @@ public class EchoBot : ActivityHandler
          }
          catch
          {
-            // Inform the user an error occured.
+            // Inform the user an error occurred.
             await turnContext.SendActivityAsync("Sorry, something went wrong storing your message!");
          }
       }
-      // Else, our Storage already contained saved user messages, add new one to the list.
+      // Else, our storage already contained saved user messages, add new one to the list.
       else
       {
          // add new message to list of messages to display.
@@ -144,7 +146,7 @@ public class EchoBot : ActivityHandler
          }
          catch
          {
-            // Inform the user an error occured.
+            // Inform the user an error occurred.
             await turnContext.SendActivityAsync("Sorry, something went wrong storing your message!");
          }
       }
@@ -428,7 +430,9 @@ Install-Package Microsoft.Bot.Builder.Azure
 ### [JavaScript](#tab/javascript)
 
 You can add a references to botbuilder-azure in your project via npm.
->**Note** - this npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [python.org](https://www.python.org/downloads/).
+> [!NOTE]
+> This npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [python.org](https://www.python.org/downloads/).
+
 ```powershell
 npm install --save botbuilder-azure
 ```
@@ -609,12 +613,12 @@ We will use key1 _Connection string_ as the value "your-blob-storage-account-str
 
 #### Installing packages
 
-If not previously installed to use Cosmos DB, install the following packages.
+If not previously installed, install the following packages.
 
 ### [C#](#tab/csharp)
 
 ```powershell
-Install-Package Microsoft.Bot.Builder.Azure
+Install-Package Microsoft.Bot.Builder.Azure.Blobs
 ```
 
 ### [JavaScript](#tab/javascript)
@@ -644,12 +648,17 @@ pip install botbuilder-azure
 
 ### Implementation
 
+_Blob storage_ is designed to store bot state.
+
 ### [C#](#tab/csharp)
+
+> [!NOTE]
+> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobStorage` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsStorage` in its place.
 
 **EchoBot.cs**
 
 ```csharp
-using Microsoft.Bot.Builder.Azure;
+using Microsoft.Bot.Builder.Azure.Blobs;
 ```
 
 Update the line of code that points "_myStorage_" to your existing Blob Storage account.
@@ -657,7 +666,7 @@ Update the line of code that points "_myStorage_" to your existing Blob Storage 
 **EchoBot.cs**
 
 ```csharp
-private static readonly AzureBlobStorage _myStorage = new AzureBlobStorage("<your-blob-storage-account-string>", "<your-blob-storage-container-name>");
+private static readonly BlobsStorage _myStorage = new BlobsStorage("<your-azure-storage-connection-string>", "<your-blob-storage-container-name>");
 ```
 
 ### [JavaScript](#tab/javascript)
@@ -752,7 +761,9 @@ After you have run your bot and saved your information, we can view it in under 
 
 Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine while debugging your bot's performance.
 
-**NOTE: Javascript and Python do not currently support AzureBlobTranscriptStore.  The following directions are for C# only.**
+> [!NOTE]
+> Python does not currently support _Azure Blob transcript storage_.
+> While JavaScript supports Blob transcript storage, the following directions are for C# only.
 
 ### Set up
 
@@ -767,18 +778,23 @@ Azure blob transcript storage can use the same blob storage account created foll
 
 ### Implementation
 
-The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, <your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
+The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
+
+_Blob transcript storage_ is designed to store bot transcripts.
+
+> [!NOTE]
+> As of version 4.10, `Microsoft.Bot.Builder.Azure.AzureBlobTranscriptStore` is deprecated. Use the new `Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore` in its place.
 
 **echoBot.cs**
 
 ```csharp
-using Microsoft.Bot.Builder.Azure;
+using Microsoft.Bot.Builder.Azure.Blobs;
 
 public class EchoBot : ActivityHandler
 {
    ...
 
-   private readonly AzureBlobTranscriptStore _myTranscripts = new AzureBlobTranscriptStore("<your-blob-transcript-storage-account-string>", "<your-blob-transcript-container-name>");
+   private readonly BlobsTranscriptStore _myTranscripts = new BlobsTranscriptStore("<your-azure-storage-connection-string>", "<your-blob-transcript-container-name>");
 
    ...
 }
@@ -878,14 +894,17 @@ The following link provides more information concerning [Azure Blob Transcript S
 ## Additional Information
 
 ### Manage concurrency using eTags
+
 In our bot code example we set the `eTag` property of each `IStoreItem` to `*`. The `eTag` (entity tag) member of your store object is used within Cosmos DB to manage concurrency. The `eTag` tells your database what to do if another instance of the bot has changed the object in the same storage that your bot is writing to.
 
 <!-- define optimistic concurrency -->
 
 #### Last write wins - allow overwrites
+
 An `eTag` property value of asterisk (`*`) indicates that the last writer wins. When creating a new data store, you can set `eTag` of a property to `*` to indicate that you have not previously saved the data that you are writing, or that you want the last writer to overwrite any previously saved property. If concurrency is not an issue for your bot, setting the `eTag` property to `*` for any data that you are writing enables overwrites.
 
 #### Maintain concurrency and prevent overwrites
+
 When storing your data into Cosmos DB, use a value other than `*` for the `eTag` if you want to prevent concurrent access to a property and avoid overwriting changes from another instance of the bot. The bot receives an error response with the message `etag conflict key=` when it attempts to save state data and the `eTag` is not the same value as the `eTag` in storage. <!-- To control concurrency of data that is stored using `IStorage`, the BotBuilder SDK checks the entity tag (ETag) for `Storage.Write()` requests. -->
 
 By default, the Cosmos DB store checks the `eTag` property of a storage object for equality every time a bot writes to that item, and then updates it to a new unique value after each write. If the `eTag` property on write doesn't match the `eTag` in storage, it means another bot or thread changed the data.
