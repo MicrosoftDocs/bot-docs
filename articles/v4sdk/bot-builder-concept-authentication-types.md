@@ -29,7 +29,7 @@ In this figure:
 
 > [!NOTE]
 > When a custom channel adapter is used, the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do. Also, it provides the authentication mechanism for the related web hook API. For an example,
-see [Add Slack app settings to your bot's configuration file](~/bot-service-channel-connect-slack.md#add-slack-app-settings-to-your-bots-configuration-file).
+see [Add Slack app settings to your bot's configuration file](../bot-service-channel-connect-slack.md#connect-a-bot-to-slack-using-the-slack-adapter).
 
 ## Bot authentication
 
@@ -61,7 +61,8 @@ The client application authenticates requests to Direct Line (version 3.0) eithe
 > When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](~/bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
 
 
-For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
+For more information, see [Keep your secret hidden, exchange your secret for a token, and generate the embed](~/bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed).
+
 
 #### Web Chat
 
