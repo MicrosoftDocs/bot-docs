@@ -75,7 +75,22 @@ For more information, see [Connect a bot to Web Chat](~/bot-service-channel-conn
 
 ### Skills
 
-TBD
+A skill and a skill consumer are two distinct bots, each with their own app ID and password.
+
+- The consumer can forward user activities to a skill and forward the skill's responses to the user.
+- To the skill, the skill consumer acts as a channel. The consumer has a skill host endpoint that acts as the service URL that the skill sends activities to.
+- For more information about skills, see the [skills overview](skills-conceptual.md).
+
+Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. (The Bot Framework uses an _authentication configuration_ object to validate the authentication header on incoming requests.)
+
+> [!IMPORTANT]
+> This requires all bots (the skill consumer and any skills it consumes) to have valid application credentials.
+
+#### Claims validation
+
+In addition to this basic level of authentication, you must add a _claims validator_ to the authentication configuration of bot the skill and the skill consumer. The claims are evaluated after the authentication header. This allows each bot to restrict which other bots it will accept activities from.
+
+For sample claims validation, see how to [implement a skill](skill-implement-skill.md) and [implement a skill consumer](skill-implement-consumer.md).
 
 ### Bot Framework Emulator
 
