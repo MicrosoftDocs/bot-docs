@@ -343,9 +343,9 @@ Update your initialization code to load the service information for your knowled
    def __init__(self, config: Config):
       self.qna_maker = QnAMaker(
          QnAMakerEndpoint(
-            knowledge_base_id=config["QNA_KNOWLEDGEBASE_ID"],
-            endpoint_key=config["QNA_ENDPOINT_KEY"],
-            host=config["QNA_ENDPOINT_HOST"],
+            knowledge_base_id=config.QNA_KNOWLEDGEBASE_ID,
+            endpoint_key=config.QNA_ENDPOINT_KEY,
+            host=config.QNA_ENDPOINT_HOST,
       )
    )
 

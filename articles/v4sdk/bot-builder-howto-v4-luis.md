@@ -92,6 +92,10 @@ This article covers how to add LUIS to a bot. For information about using dialog
 1. In the **Import new app** dialog:
     1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample.
     1. Enter `FlightBooking` as the optional name of the app, and click **Done**.
+1. You may be prompted to upgrade your composite entities. You can ignore this and click **Remind me later**:
+
+    ![ignore-composite-entities](./media/how-to-luis/luis-upgrade-composite-entities.png)
+
 1. Train and publish your app.
     For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
 
