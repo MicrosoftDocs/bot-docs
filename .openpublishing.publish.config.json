@@ -143,5 +143,8 @@
   ],
   "SplitTOC": [
     "dotnet/api/toc.yml"
-  ]
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
