@@ -58,6 +58,9 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
+> [!div class="mx-imgBorder"]
+> ![A remote bot interacts with a user on a device via text, speech, images, or video](../media/architecture/how-bots-work.png)
+
 ## Activity handlers
 
 When the bot receives an activity, it passes it on to its *activity handlers*. Under the covers, there is one base handler called the *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.
