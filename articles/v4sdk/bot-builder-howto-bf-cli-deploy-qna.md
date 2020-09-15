@@ -219,7 +219,7 @@ The QnA Maker knowledge bases created using the `qnamaker:build` command are nam
 
 The QnA Maker KB name:
 
-> <botName>(<user-name>).locale.qna
+`<botName>(<user-name>).locale.qna`
 
 For example, if your botName is _MyProject_ and your username is _vishwac_, the names of your KBs would be as follows:
 
