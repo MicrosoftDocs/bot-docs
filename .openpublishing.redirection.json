@@ -48,7 +48,7 @@
     {
       "source_path": "articles/azure-bot-service-hosting-plan.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme#hosting-plans",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/azure-bot-service-migration-plans.md",
@@ -83,7 +83,7 @@
     {
       "source_path": "articles/azure-bot-service-template-proactive.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-concept-templates#proactive-bot",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/azure-bot-service-template-question-answer.md",
