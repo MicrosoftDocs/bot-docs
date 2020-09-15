@@ -119,7 +119,7 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group.
     Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
     > [!div class="mx-imgBorder"]
-    > ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
+    > ![Manage LUIS app - Authoring Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
 
 ### Update the settings file
 
