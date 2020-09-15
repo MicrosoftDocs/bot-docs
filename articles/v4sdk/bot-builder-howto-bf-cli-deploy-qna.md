@@ -239,6 +239,7 @@ MyProject(vishwac).de-de.qna
 When you use the optional `--dialog` parameter, a dialog file will be generated for all language variations of each of your `.qna` files.
 
 <!-------------------------------------------------------------------------------------------------->
+[qna-overview]: /azure/cognitive-services/qnamaker/overview/overview
 [cognitive-services-overview]: /azure/cognitive-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
 [qna-maker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
