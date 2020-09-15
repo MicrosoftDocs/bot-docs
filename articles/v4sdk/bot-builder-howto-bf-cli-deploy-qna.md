@@ -122,7 +122,7 @@ To create the QnA Maker CLI init file:
 
 1. Next you will be prompted for your knowledge base ID (`kbId`). You can find it in [QnAMaker](https://www.qnamaker.ai/) in the _Deployment details_ section of the _SETTINGS_ page:
 
-     ![QnA Maker Keys and Endpoint in Azure](./media/adaptive-dialogs/settings-deployment-details-qnamaker.png)
+     ![Deployment details section of the SETTINGS page in QnA Maker](./media/adaptive-dialogs/settings-deployment-details-qnamaker.png)
 
 1. The values are gathered and written out to the screen for you to verify. If correct type `yes` or just press the **Enter** key.
 1. The file is then created and saved to  _C:\Users\<unsername>\AppData\Local\@microsoft\botframework-cli\config.json_. Since this file contains sensitive data it is not saved in the same directory as your bot's project files to prevent it from being checked into any potentially unsecured location when checking in your source code.
@@ -162,7 +162,7 @@ There is another BF CLI command that combines most of the commands discussed in 
 
 The QnAMaker build command does the following:
 
-1. Creates one QnA Maker model for [every locale](#qna-and-language-variations-files) found using your existing `.qna` files.
+1. Creates one QnA Maker model for [every locale](#qna-and-multiple-language-variations) found using your existing `.qna` files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
 1. Trains and publishes your QnA Maker knowledge base to the production endpoint.
 1. If you include the `dialog` parameter, it will output a `.dialog` definition of a [QnAMakerRecognizer][qna-maker-recognizer] configured to use that model. this is explained in [The dialog file](#the-dialog-file)
