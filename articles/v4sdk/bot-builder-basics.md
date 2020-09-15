@@ -58,6 +58,8 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
+<!-- TODO Need to reorganize and rewrite parts of this. -->
+
 > [!div class="mx-imgBorder"]
 > ![A remote bot interacts with a user on a device via text, speech, images, or video](../media/architecture/how-bots-work.png)
 
@@ -118,7 +120,7 @@ A bot is a web application, and templates are provided for each language.
 
 # [C#](#tab/csharp)
 
-The VSIX template generates a [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
+The VSIX template generates a [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
 
 ### appsettings.json file
 
