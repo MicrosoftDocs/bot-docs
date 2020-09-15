@@ -19,12 +19,12 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 
 ## Prerequisites
 
-- Basic understanding of [QnA Maker][qna-overview]
+- Basic understanding of [QnA Maker][qna-overview].
 - Knowledge of the [.qna file format][qna-file-format].
 - Have a bot project with `.qna` files.
 - If working with adaptive dialogs, you should have an understanding of:
     - [Natural Language Processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
-    - how the [QnA Maker recognizer][QnA-maker-recognizer] is used.
+    - how the [QnA Maker recognizer][qna-maker-recognizer] is used.
 
 ## Using the qnamaker CLI commands to enable QnA Maker in your bot
 
@@ -56,12 +56,15 @@ The QnA Maker resource is an [Azure Cognitive Services][cognitive-services-overv
 The QnA Maker resource includes information your bot will use to access your QnA Maker knowledge base:
 
 - **Keys**. These are called _subscription keys_ and are auto generated. You will need the subscription key when referencing your QnA Maker resource for any action, such as when creating or updating your QnA Maker knowledge base which will be detailed in this article. You can find the keys in the **Keys and Endpoint** blade in your QnA Maker resource.
-- **Endpoint**. This is auto-generated using the QnA Maker resource name that you provide when creating it. It has the following format: `https://<qnamaker-resource-name>.cognitiveservices.azure.com/`. When referencing your QnA Maker resource for any action, such as when creating your QnA Maker knowledge base which will be detailed in this article. You can find the key in the **Keys and Endpoint** blade in your QnA Maker resource.
-- **Location**.   This is the Azure region that contains your QnA Maker knowledge base. You select this when creating the QnA Maker resource.
+- **Endpoint**. This is auto-generated using the QnA Maker resource name that you provide when creating it. It has the following format: `https://<qnamaker-resource-name>.cognitiveservices.azure.com/`. When referencing your QnA Maker resource for any action, such as when creating your QnA Maker knowledge base which will be detailed in this article. You can find the key in the **Keys and Endpoint** blade in your QnA Maker resource. 
+
+    > [!TIP]
+    >
+    > It is important to understand the difference between this QnA Maker resource authoring endpoint which is referenced in all BF CLI qnamaker authoring commands and the QnA Maker Knowledge base endpoint key which is referenced in a source code configuration files such as appsettings.json in C#, or `.env` in JavaScript or `config.py` in Python.
+
+- **Location**. This is the Azure region that contains your QnA Maker knowledge base. You select this when creating the QnA Maker resource.
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint.png)
-
-For more information on see [Create QnA Maker knowledge bases][luis-how-to-azure-subscription].
 
 ## Install the Bot Framework SDK CLI
 
@@ -122,7 +125,7 @@ To create the QnA Maker CLI init file:
      ![QnA Maker Keys and Endpoint in Azure](./media/adaptive-dialogs/settings-deployment-details-qnamaker.png)
 
 1. The values are gathered and written out to the screen for you to verify. If correct type `yes` or just press the **Enter** key.
-1. The file is then created and saved to  _C:\Users\<unsername>\AppData\Local\@microsoft\botframework-cli\config.json_
+1. The file is then created and saved to  _C:\Users\<unsername>\AppData\Local\@microsoft\botframework-cli\config.json_. Since this file contains sensitive data it is not saved in the same directory as your bot's project files to prevent it from being checked into any potentially unsecured location when checking in your source code.
 
 > When you enter a `bf qnamaker` CLI command, it will automatically look for the _subscriptionKey_, _kbId_, _endpointKey_ and _hostname_ values in this init file unless you include them when entering the command, at which point the values entered will override the values from the init file.
 
@@ -150,10 +153,21 @@ bf qnamaker:kb:publish --subscriptionKey <Subscription-Key> --kbId <knowledge-ba
 >
 > If scripting this process from end to end you can also script the testing process. For additional information see [Test knowledge base with batch questions and expected answers][batch-testing].
 
-<!--------------------------------------------------------------------------------------------------------------------------
-## Tying it all together with the build command
+<!-------------------------------------------------------------------------------------------------------------------------->
+## Publishing to production using the build command
 
-It is helpful to understand how the process of deploying a QnA Maker KB works, and after completing this article you should have a better understanding of the processes involved. There is a BF CLI command that combines all of the commands discussed in this article into a single command that you can use to create or update, train and publish a QnA Maker knowledge base that will work for almost any scenario and that is the `qnamaker:build` command.
+It is helpful to understand how the process of deploying a QnA Maker KB works, and after completing this article up to this point, you should have a better understanding of the processes involved to publish to your test endpoint.
+
+There is another BF CLI command that combines most of the commands discussed in this article into a single command that you can use to create or update, then train and publish a QnA Maker knowledge base to the _production_ endpoint. That is the `qnamaker:build` command. Since the `build` command only publishes to the production endpoint you can use it separately from the previous commands discussed in this article which can be used during the development process to publish to the test endpoint where all required testing can take place before publishing to production.
+
+The QnAMaker build command does the following:
+
+1. Creates one QnA Maker model for [every locale](#qna-and-language-variations-files) found using your existing `.qna` files.
+1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
+1. Trains and publishes your QnA Maker knowledge base to the production endpoint.
+1. If you include the `dialog` parameter, it will output a `.dialog` definition of a [QnAMakerRecognizer][qna-maker-recognizer] configured to use that model. this is explained in [The dialog file](#the-dialog-file)
+
+### How to use the build command
 
 The QnAMaker build command with its required parameters:
 
@@ -162,36 +176,73 @@ mkdir generated
 bf qnamaker:build  --in Dialogs --out generated --log --botName QnAMakerSampleBot --subscriptionKey <Subscription-Key>
 ```
 
-### The qnamaker:build parameters
+> [!IMPORTANT]
+>
+> This command will overwrite your previous QnA Maker model as well any content you might have in your QnA Maker KB, including any that was created directly in [QnA Maker.ai](https://www.qnamaker.ai/).
 
-- `in`: This is the directory, along with its sub-directories, that will be searched for .lu files.
+#### The qnamaker:build parameters
+
+- `in`: This is the directory, along with its sub-directories, that will be searched for .qna files.
 - `out`: This is the directory that the files generated by this process are saved to.
 - `log`: A boolean value that determines if a log is created during this process.
-- `botName`: The name of your bot. This will be used to generate the name of the QnA Maker knowledge base in Azure Cognitive Services.
+- `botName`: The name of your bot. This will be used to generate the name of the QnA Maker knowledge base, this is explained in more detail in the [QnA Maker Knowledge Bases created](#qna-maker-knowledge-bases-created) section below.
 - `subscriptionKey`: The same subscription key that is in your [initialization file](#create-your-qna-maker-initialization-file).
 
-For additional information on using this command, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
+For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
 
-Open issues:
-Are there any scenarios that the qnamaker:build command might not be fully adequate?
- - Does it work for project with multiple models, one for each locale?
- - How does it handle alterations? Does it expect the alterations JSON file to be named a specific name and be located in the same folder as the QnAModel JSON file?
- - Does it publish to test or production based on the endpoint provided? (See follow-up question on endpoint below)
- - If publishing to production is it possible to somehow tie it into any sort of script that runs testing? I would assume not, it would make sense to create a script that would build to a test endpoint, run tests and if pass perhaps run build again to publish to the production endpoint (most companies would need something far more sophisticated that this simplistic example of course).
+### QnA and multiple language variations
 
-Also, a couple of question about the build command:
- - If running a second time, does this update or replace the existing KB?
- - Since you can have multiple KBs in a subscription, how does the build command know if it should update (or replace) an existing KB or create a new KB?
- - What is in the qnaConfig file that is not in the init file?
- - Why have a qnaConfig file at all? why not just use the init file?
- - endpoint: is this the endpoint in Azure in the Keys and endpoint page or the endpoint key found in QnAMaker in the Deployment details section of the SETTINGS page?
- - schema: is this supposed to point to a schema file?
+Each [.qna file][qna-file-format] can have multiple language variations, one for each language supported.
 
------------------------------------------------------------------------------------------------------------------>
+The pattern for the `.qna` file name when language variants are used is as follows:
+
+`<file-name>.<locale>.qna`
+
+For example:
+
+```
+example.en-us.qna
+example.fr-fr.qna
+example.de-de.qna
+etc.
+```
+
+In the above example, each one of the `.qna` files will result in one QnA Maker KB created for each of the languages.
+
+> [!TIP]
+>
+> If the language cannot be determined from file name, then the value specified in the CLI parameter `--defaultCulture` will be used. If the CLI parameter `--defaultCulture` is missing, the language will default to `en-us`.
+
+### QnA Maker Knowledge Bases created
+
+The QnA Maker knowledge bases created using the `qnamaker:build` command are named using a combination of the value you proved as the `botName` parameter followed by the user name you are logged in as, the locale followed by `.qna`.
+
+The QnA Maker KB name:
+
+> <botName>(<user-name>).locale.qna
+
+For example, if your botName is _MyProject_ and your username is _vishwac_, the names of your KBs would be as follows:
+
+```
+MyProject(vishwac).en-us.qna
+MyProject(vishwac).fr-fr.qna
+MyProject(vishwac).de-de.qna
+```
+
+> [!TIP]
+>
+> Including the username as part of the KB name enables multiple people to work independently.
+> You can override the username value using the build commands `--suffix` parameter.
+
+### The dialog file
+
+When you use the optional `--dialog` parameter, a dialog file will be generated for all language variations of each of your `.qna` files.
 
 <!-------------------------------------------------------------------------------------------------->
 [cognitive-services-overview]: /azure/cognitive-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
+[qna-maker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
+[qna-file-format]: ../file-format/bot-builder-qna-file-format.md
 
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 
@@ -205,5 +256,4 @@ Also, a couple of question about the build command:
 
 [test-knowledge-base]: /azure/cognitive-services/QnAMaker/how-to/test-knowledge-base
 [batch-testing]: /azure/cognitive-services/QnAMaker/quickstarts/batch-testing
-
 <!-------------------------------------------------------------------------------------------------->
