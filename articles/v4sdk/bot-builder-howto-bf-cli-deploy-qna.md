@@ -157,16 +157,16 @@ bf qnamaker:kb:publish --subscriptionKey <Subscription-Key> --kbId <knowledge-ba
 <!-------------------------------------------------------------------------------------------------------------------------->
 ## Publishing to production using the build command
 
-It is helpful to understand how the process of deploying a QnA Maker KB works, and after completing this article up to this point, you should have a better understanding of the processes involved to publish to your test endpoint.
+It is helpful to understand how the process of deploying a QnA Maker KB works, and after completing this article up to this point, you should have a better understanding of the processes involved to publish to your test endpoint using the Bot Framework CLI commands.
 
-There is another BF CLI command that combines most of the commands discussed in this article into a single command that you can use to create or update, then train and publish a QnA Maker knowledge base to the _production_ endpoint. That is the `qnamaker:build` command. Since the `build` command only publishes to the production endpoint you can use it separately from the previous commands discussed in this article which can be used during the development process to publish to the test endpoint where all required testing can take place before publishing to production.
+There is another BF CLI command that combines most of the commands discussed in this article into a single command that you can use to create or update, then train and publish a QnA Maker knowledge base to the _production_ endpoint, and that is the `qnamaker:build` command. Since the `build` command only publishes to the production endpoint you can use it separately from the previous commands discussed in this article which can be used during the development process to publish to the test endpoint where all required testing can take place before publishing to production.
 
-The QnAMaker build command does the following:
+The QnAMaker build command combines all the following actions into a single command:
 
 1. Creates one QnA Maker model for [every locale](#qna-and-multiple-language-variations) found using your existing `.qna` files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
-1. Trains and publishes your QnA Maker knowledge base to the production endpoint.
-1. If you include the `dialog` parameter, it will output a `.dialog` definition of a [QnAMakerRecognizer][qna-maker-recognizer] configured to use that model. this is explained in [The dialog file](#the-dialog-file)
+1. It trains your QnA Maker knowledge base then publishes it to the production endpoint.
+1. If you include the optional `dialog` parameter, it will output a `.dialog` definition file that can be used by the [QnA Maker recognizer][qna-maker-recognizer]. This is explained in [The dialog file](#the-dialog-file) section.
 
 ### How to use the build command
 
@@ -191,7 +191,13 @@ bf qnamaker:build  --in Dialogs --out generated --log --botName QnAMakerSampleBo
 
 For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
 
-### QnA and multiple language variations
+There is another useful parameter `qnaConfig` which points to a configuration file that provides the same functionality to the `build` command as the [initialization file](#create-your-qna-maker-initialization-file) discussed previously provides to all other qnamaker CLI commands.
+
+#### The qnamaker configuration file
+
+
+
+#### QnA and multiple language variations
 
 Each [.qna file][qna-file-format] can have multiple language variations, one for each language supported.
 
@@ -235,7 +241,7 @@ MyProject(vishwac).de-de.qna
 > Including the username as part of the KB name enables multiple people to work independently.
 > You can override the username value using the build commands `--suffix` parameter.
 
-### The dialog file
+#### The dialog file
 
 When you use the optional `--dialog` parameter, a dialog file will be generated for all language variations of each of your `.qna` files.
 
