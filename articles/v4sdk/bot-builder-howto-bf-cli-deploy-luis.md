@@ -32,14 +32,18 @@ This article explains how to deploy a LUIS resource. For information on how to u
 
 This article describes how to perform some common tasks using the Bot Framework CLI.
 
-1. [Create your LUIS authoring resource in Azure](#create-your-luis-authoring-resource-in-azure)
-1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
-1. [Create your LUIS model](#create-your-luis-model)
-1. [Create your LUIS application](#create-your-luis-application)
-1. [Get the appId from your LUIS app](#get-the-appid-from-your-luis-app)
-1. [Train your LUIS application](#train-your-luis-application)
-1. [Publish your LUIS application](#publish-your-luis-application)
-1. [Generate source code](#generate-source-code)
+- [Deploy LUIS resources using the Bot Framework LUIS CLI commands](#deploy-luis-resources-using-the-bot-framework-luis-cli-commands)
+  - [Prerequisites](#prerequisites)
+  - [Using the LUIS CLI commands to enable LUIS in your bot](#using-the-luis-cli-commands-to-enable-luis-in-your-bot)
+  - [Create your LUIS authoring resource in Azure](#create-your-luis-authoring-resource-in-azure)
+  - [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
+  - [Create your LUIS model](#create-your-luis-model)
+  - [Create your LUIS application](#create-your-luis-application)
+  - [Get the appId from your LUIS app](#get-the-appid-from-your-luis-app)
+  - [Train your LUIS application](#train-your-luis-application)
+  - [Publish your LUIS application](#publish-your-luis-application)
+  - [Generate source code](#generate-source-code)
+  - [Additional information](#additional-information)
 
 Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
 
