@@ -12,7 +12,6 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Create customized lists of synonyms for your QnA Maker knowledge base
-    <!--- using the Bot Framework CLI qnamaker:alterations commands--->
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
@@ -108,7 +107,7 @@ For additional information on using this command, see [`bf qnamaker:alterations:
 
 ## Update the list of alterations in your QnA Maker knowledge base
 
-While there is no command to directly update an existing alterations list in QnA Maker, you can [download](#download-the-list-of-alterations-in-your-qna-maker-kb) the alterations list and make the needed modifications then using that new list to replace your alterations list in Azure.
+While there is no command to directly update an existing alterations list in QnA Maker, you can [download](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) the alterations list and make the needed modifications then using that new list to replace your alterations list in Azure.
 
 1. Get the current list of alterations using the command `bf qnamaker:alterations:list`
 
