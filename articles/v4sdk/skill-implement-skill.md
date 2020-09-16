@@ -42,15 +42,15 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 ### [C#](#tab/cs)
 
-![Skill class diagram](./media/skills-simple-skill-cs.png)
+![Skill csharp class diagram](./media/skills-simple-skill-cs.png)
 
 ### [JavaScript](#tab/javascript)
 
-![Skill class diagram](./media/skills-simple-skill-js.png)
+![Skill js class diagram](./media/skills-simple-skill-js.png)
 
 ### [Python](#tab/python)
 
-![Skill class diagram](./media/skills-simple-skill-python.png)
+![Skill python class diagram](./media/skills-simple-skill-python.png)
 
 ---
 

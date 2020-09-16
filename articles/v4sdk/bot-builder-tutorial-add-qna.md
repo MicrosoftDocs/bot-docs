@@ -384,7 +384,7 @@ At this point your bot should be able to answer some questions. Run the bot loca
 
 ## Republish your bot
 
-You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article.
+You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](../bot-builder-deploy-az-cli.md) article.
 
 ### Zip your project folder
 
