@@ -353,11 +353,11 @@ The account creation takes a few minutes. Wait for the portal to display the Con
 
 1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **Create Database** from the drop-down box next to the **Create Container** button. A panel will then open on the right hand side of the window, where you can enter the details for the new database.
 
-    ![Cosmos DB](./media/create-cosmosdb-database-resource.png)
+    ![Create cosmosdb databas resource image](./media/create-cosmosdb-database-resource.png)
 
 2. Enter an ID for your new database and, optionally, set the throughput (you can change this later) and finally click **OK** to create your database. Make a note of this database ID for use later on when configuring your bot.
 
-    ![Cosmos DB](./media/create-cosmosdb-database-resource-details.png)
+    ![Cosmos cosmosdb database resource details image](./media/create-cosmosdb-database-resource-details.png)
 
 3. Now that you have created a Cosmos DB account and a database, you need to copy over some of the values for integrating your new database into your bot.  To retrieve these, navigate to the **Keys** tab within the database settings section of your Cosmos DB account.  From this page you will need your Cosmos DB endpoint (**URI**) and your authorization key (**PRIMARY KEY**).
 

@@ -47,11 +47,11 @@ What is covered in this section:
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
 
-   ![Set Create options to Authoring](./media/adaptive-dialogs/create-options-authoring.png)
+   ![Create options to authoring image](./media/adaptive-dialogs/create-options-authoring.png)
 
 3. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Set Create options to Authoring](./media/adaptive-dialogs/create-cognitive-services.png)
+   ![Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
@@ -64,14 +64,14 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
 
 1. Once Azure is done creating your LUIS resources in the Azure portal, you will see a **Your deployment is complete** notification, click **Go to resource**.
 
-   ![select the Go to resource button](./media/adaptive-dialogs/your-deployment-is-complete.png)
+   ![deployment is complete image](./media/adaptive-dialogs/your-deployment-is-complete.png)
 
 2. In the left panel, select **Keys and Endpoint**.
 3. Copy the **KEY 1** value, this is your *Authoring Key*. You need to enter this as the value for:
     -  `LuisAPIKey`: A setting in your configuration file.
     - `--authoringKey`: A property of the `bf luis:build` CLI command that is discussed in the following section.
 
-   ![select the Go to resource button](./media/adaptive-dialogs/keys-and-endpoint.png)
+   ![keys and endpoint image](./media/adaptive-dialogs/keys-and-endpoint.png)
 
 4. Copy and save the **ENDPOINT**. You will assign this value to `LuisAPIHostName` in your configuration file.
 
@@ -680,7 +680,7 @@ The screen shot shown below verifies that you can interrupt the conversational f
 [recognizer-types]: bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-types
 
 [OnConversationUpdateActivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#onconversationupdateactivity
-[confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md##confirminput
+[confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#confirminput
 [cancel-all-dialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
 
 [lu]: ../file-format/bot-builder-lu-file-format.md

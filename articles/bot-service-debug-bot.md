@@ -1,5 +1,5 @@
 ---
-title: Debug a bot - Bot Service
+title: How to debug a bot - Bot Service
 description: Learn how to use the Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
 author: v-ducvo
 ms.author: kamrani
@@ -11,7 +11,7 @@ ms.date: 06/04/2020
 monikerRange: "azure-bot-service-4.0"
 ---
 
-# Debug a bot
+# Debugging a bot
 
 [!INCLUDE [applies-to](./includes/applies-to.md)]
 

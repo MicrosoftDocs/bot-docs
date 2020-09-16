@@ -1,6 +1,6 @@
 ---
-title: Add authentication to your bot via Azure Bot Service - Bot Service
-description: Learn how to use the Azure Bot Service authentication features to add SSO to your bot.
+title: Add authentication to a bot via Azure Bot Service
+description: Describes how to use the Azure Bot Service authentication features to add SSO to your bot.
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
@@ -350,13 +350,13 @@ After you have configured the authentication mechanism, you can perform the actu
 
 In the **Bot authentication** sample, the dialog is designed to retrieve the user token after the user is logged in.
 
-![Sample output](media/how-to-auth/auth-bot-test.png)
+![auth bot test image](media/how-to-auth/auth-bot-test.png)
 
 ## Bot authentication MSGraph example
 
 In the **Bot authentication MSGraph** sample, the dialog is designed to accept a limited set of commands after the user is logged in.
 
-![Sample output](media/how-to-auth/msgraph-bot-test.png)
+![msgraph bot test image](media/how-to-auth/msgraph-bot-test.png)
 
 ---
 
@@ -375,7 +375,7 @@ The following sections describe how the sample implements some common authentica
 
 # [C#](#tab/csharp)
 
-![Bot architecture](media/how-to-auth/architecture.png)
+![architecture csharp image](media/how-to-auth/architecture.png)
 
 <!-- Submit changes for line break issues -->
 <!-- The two authentication samples have nearly identical architecture. Using 18.bot-authentication for the sample code. -->
@@ -399,7 +399,7 @@ Within the following dialog step, check for the presence of a token in the resul
 
 # [JavaScript](#tab/javascript)
 
-![Bot architecture](media/how-to-auth/architecture-js.png)
+![architecture js image](media/how-to-auth/architecture-js.png)
 
 **dialogs/mainDialog.js**
 
@@ -420,7 +420,7 @@ Within the following dialog step, check for the presence of a token in the resul
 
 # [Python](#tab/python)
 
-![Bot architecture](media/how-to-auth/architecture-python.png)
+![architecture python image](media/how-to-auth/architecture-python.png)
 
 **dialogs/main_dialog.py**
 
@@ -573,4 +573,4 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
 [cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
 [js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
-[teams-activity-feed]:[https://aka.ms/teams-activity-feed
+[teams-activity-feed]:https://aka.ms/teams-activity-feed

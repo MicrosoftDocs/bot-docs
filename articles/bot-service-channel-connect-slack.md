@@ -50,11 +50,11 @@ Adding a Bot User allows you to assign a username for your bot and choose whethe
 1. Select the **Bot Users** tab.
 2. Click **Add a Bot User**.
 
-![Create bot](~/media/channels/slack-CreateBot.png)
+![Slack create bot image](~/media/channels/slack-CreateBot.png)
 
 Click **Add Bot User** to validate your settings, click **Always Show My Bot as Online** to **On**, and then click **Save Changes**.
 
-![Create bot](~/media/channels/slack-CreateApp-AddBotUser.png)
+![Slack CreateApp AddBotUser image](~/media/channels/slack-CreateApp-AddBotUser.png)
 
 ## Subscribe to Bot Events
 
@@ -294,7 +294,7 @@ To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-dep
 
 ### Update your Slack app
 
-Navigate back to the [Slack API dashboard]([https://api.slack.com/apps]) and select your app.  You now need to configure 2 URLs for your app and subscribe to the appropriate events.
+Navigate back to the [Slack API dashboard](https://api.slack.com/apps) and select your app.  You now need to configure 2 URLs for your app and subscribe to the appropriate events.
 
 1. In the **OAuth & Permissions** tab, the **Redirect URL** should be your bot's URL, plus the `api/slack` endpoint you specified in your newly created controller. For example, `https://yourboturl.com/api/slack`.
 
