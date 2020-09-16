@@ -118,14 +118,14 @@ While there is no command to directly update an existing alterations list in QnA
     > `bf qnamaker:alterations:list >alterations_converted.json`
 
 1. Make any desired updates to the JSON file then save those changes.
-1. Replace the alterations list that is in your QnA  Maker KB using the command: `bf qnamaker:alterations:replace -i <input-file-name>`. If you saved the alterations list JSON file as alterations_converted.json in the current directory, the command will be: `bf qnamaker:alterations:replace -i alterations_converted.json`
+1. Replace the alterations list that is in your QnA Maker KB using the command: `bf qnamaker:alterations:replace -i <input-file-name>`. If you saved the alterations list JSON file as alterations_converted.json in the current directory, the command will be: `bf qnamaker:alterations:replace -i alterations_converted.json`
 
 <!-------------------------------------------------------------------------------------------------->
 [deploy-qna-maker-knowledge-base-using-bf-cli-qnamaker]: bot-builder-howto-bf-cli-deploy-qna.md
 [create-your-qna-maker-model]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-model
 [qnamaker-init-file]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-initialization-file
 
-[bf-qnamakeralterationsreplace]: https://aka.ms/botframework-cli-qnamaker#bf-qnamakeralterationsreplace
-[bf-qnamakeralterationslist]: https://aka.ms/botframework-cli-qnamaker#bf-qnamakeralterationslist
+[bf-qnamakeralterationsreplace]: https://aka.ms/botframework-cli#bf-qnamakeralterationsreplace
+[bf-qnamakeralterationslist]: https://aka.ms/botframework-cli#bf-qnamakeralterationslist
 
 <!-------------------------------------------------------------------------------------------------->
