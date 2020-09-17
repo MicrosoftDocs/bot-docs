@@ -205,8 +205,8 @@ bf qnamaker:build --in <input-file-or-folder> --subscriptionKey <Subscription-Ke
 
 #### The qnamaker:build parameters
 
-- `in`: This is the directory, along with its sub-directories, that will be searched for .qna files.
-- `log`: A boolean value that determines if a log is created during this process.
+- `in`: The directory, including sub-directories, that will be searched for .qna files.
+- `log`: A Boolean value that determines if a log is created during this process.
 - `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [QnA Maker Knowledge Bases created](#qna-maker-knowledge-bases-created) section below.
 - `subscriptionKey`: The same subscription key that is in your [initialization file](#create-your-qna-maker-initialization-file).
 
