@@ -29,7 +29,7 @@ Alterations can be very useful for abbreviations as well, for example ‘GDPR’
 
 While QnA Maker already has their own internal list of common pre-trained synonyms in several languages, many companies can still benefit from having additional synonyms.
 
-Alterations can also help improve the quality of your KB while reducing the time needed to train it.
+Alterations can also help improve the quality of your KB while reducing the number of question/answer pairs as well as the time needed to train it.
 
 > [!TIP]
 >
@@ -37,7 +37,7 @@ Alterations can also help improve the quality of your KB while reducing the time
 
 ## Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base
 
-When you [create your QnA Maker model][create-your-qna-maker-model] two JSON files are created, the the _QnAMaker model_ which is named **converted.json**, and the _alterations_ file which is named **alterations_converted.json**. While the QnAMaker model contains the data from all the `.qna` files in your project, all combined to form a single file, the alterations file contains only an alterations empty list, as shown below:
+When you [create your QnA Maker model][create-your-qna-maker-model] two JSON files are created, the the _QnAMaker model_ which is named **converted.json**, and the _alterations_ file which is named **alterations_converted.json**. While the QnAMaker model contains the data from all the `.qna` files in your project, all combined to form a single file, the alterations file contains only an empty alterations list, as shown below:
 
 ```json
 {
