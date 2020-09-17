@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework Command Line Interface (CLI) lets you automate the management of QnA Maker knowledge bases. It lets you create, update, and delete a QnA Maker knowledge base (KB) from the command line or a script. It also enables you to create a list of synonyms that applies to your KB. This article explains how to create synonyms for your QnA Maker kb using the _BF CLI alterations_ command.
+The Bot Framework CLI lets you automate the management of QnA Maker knowledge bases. It lets you create, update, and delete a QnA Maker knowledge base (KB) from the command line or a script. It also enables you to create a list of synonyms that applies to your KB. This article explains how to create synonyms for your QnA Maker KB using the CLI _alterations_ command.
 
 ## Prerequisites
 
@@ -23,9 +23,9 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 
 ## An introduction to alterations in QnA Maker
 
-The alterations command enables you import customized lists of synonyms into your QnA Maker KB. Alterations are a list of words that mean the same thing. For example, a synonym for the word ‘gift’ could be the word ‘present’.
+The alterations command enables you import customized lists of synonyms into your QnA Maker KB. Alterations are a list of words that mean the same thing. For example, a synonym for the word "gift" could be the word "present".
 
-Alterations can be very useful for abbreviations as well, for example ‘GDPR’ is a widely used term, but some people might call it AVG, which is the Dutch abbreviation referring to the same thing. Companies often have their own unique list of abbreviations referring to different features or components that their products offer.
+Alterations can be very useful for abbreviations as well, for example "GDPR" is a widely used term, but some people might call it AVG, which is the Dutch abbreviation referring to the same thing. Companies often have their own unique list of abbreviations referring to different features or components that their products offer.
 
 While QnA Maker already has their own internal list of common pre-trained synonyms in several languages, many companies can still benefit from having additional synonyms.
 
@@ -107,7 +107,7 @@ For additional information on using this command, see [`bf qnamaker:alterations:
 
 ## Update the list of alterations in your QnA Maker knowledge base
 
-While there is no command to directly update an existing alterations list in QnA Maker, you can [download](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) the alterations list and make the needed modifications then using that new list to replace your alterations list in Azure.
+While there is no command to directly update an existing alterations list in QnA Maker, you can [use the _alterations list_ command](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) to download the alterations list, make the needed modifications, and then using that new list to replace your alterations list in Azure.
 
 1. Get the current list of alterations using the command `bf qnamaker:alterations:list`
 
