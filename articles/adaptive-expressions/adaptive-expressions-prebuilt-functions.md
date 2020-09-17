@@ -3447,7 +3447,7 @@ json('<value>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*JSON-result*> | string | The resulting JSON object created from all the items in the specified string or XML. |
+| <*JSON-result*> | string | The resulting JSON object created from the specified string or XML. |
 ||||
 
 *Example 1*
