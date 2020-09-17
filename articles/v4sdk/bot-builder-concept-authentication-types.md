@@ -20,7 +20,7 @@ In the Bot Framework, two broad authentication categories exist: **bot authentic
 In this figure:
 
  - **Host Platform** is the bot hosting platform. It can be Azure or any host platform you chose.
- - **Bot Connector Service** facilitates communication between a bot and a channel. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages understood by the channel and send them to the channel.
+ - **Bot Connector Service** facilitates communication between a bot and a channel. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages understood by the channel and sends them to the channel.
 - **Bot Adapter**. This is the default Bot Framework adapter. It performs these tasks:
     - Converts the JSON payload into an object. At this point, it is already an activity object, thanks to the Bot Connector Service.
     - Creates a turn context and adds the activity object to it.
@@ -36,7 +36,7 @@ see [Connect a bot to Slack using the Slack adapter](~/bot-service-channel-conne
 A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**.
 For more information, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
-When you register a bot with Azure, for example via the **Bot Channels Registration**, Azure creates an Active Directory (AD) registration application. If you use the Bot Framework CLI, you must specifically create the AD registration as a separate step. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
+When you register a bot in the Azure portal, for example via the **Bot Channels Registration**, Azure creates an Active Directory (AD) registration application. If you use the Bot Framework CLI, you must specifically perform a step to create the AD registration. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
 
 When a channel sends a request to a bot, via the Bot Connector service, it specifies a **token** in the **Authorization header** of the request. The bot authenticates calls from the Bot Connector service by verifying the authenticity of the token.
 
@@ -66,7 +66,7 @@ For more information, see [Keep your secret hidden, exchange your secret for a t
 
 #### Web Chat
 
-The Web Chat has two implementations: the **channel** and the **control**. They both use the **Direct Line channel** to talk to a bot.
+The Web Chat has two implementations: the **channel** and the **control**. The Web Chat control uses the **Direct Line channel** to talk to a bot.
 
 - When you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
     ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG)
@@ -82,20 +82,20 @@ A skill and a skill consumer are two distinct bots, each with their own app ID a
 - To the skill, the skill consumer acts as a channel. The consumer has a skill host endpoint that acts as the service URL that the skill sends activities to.
 - For more information about skills, see the [skills overview](skills-conceptual.md).
 
-Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. (The Bot Framework uses an _authentication configuration_ object to validate the authentication header on incoming requests.)
+Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. 
 
 > [!IMPORTANT]
 > This requires all bots (the skill consumer and any skills it consumes) to have valid application credentials.
 
 #### Claims validation
 
-In addition to this basic level of authentication, you must add a _claims validator_ to the authentication configuration of bot the skill and the skill consumer. The claims are evaluated after the authentication header. This allows each bot to restrict which other bots it will accept activities from.
+In addition to this basic level of authentication, you must add a _claims validator_ to the authentication configuration of the skill and the skill consumer. The claims are evaluated after the authentication header. This allows each bot to restrict which other bots it will accept activities from.
 
 For sample claims validation, see how to [implement a skill](skill-implement-skill.md) and [implement a skill consumer](skill-implement-consumer.md).
 
 ### Bot Framework Emulator
 
-The Bot Framework Emulator has its own authentication flow and its own tokens. The emulator uses an instance of the **Web Chat control**, which in turn uses the DirectLine channel.
+The Bot Framework Emulator has its own authentication flow and its own tokens. The emulator has its own channel and a built-in server. 
 
 ## User authentication
 
