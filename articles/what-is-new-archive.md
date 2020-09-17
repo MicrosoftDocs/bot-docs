@@ -344,7 +344,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 [2]:https://github.com/Microsoft/botbuilder-js#packages
 [3]:https://github.com/Microsoft/botbuilder-python#packages
 [3a]:https://github.com/Microsoft/botbuilder-java#packages
-[5]:https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0
+[5]:index.yml
 [6]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
 [7]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs
 [8]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/typescript_nodejs

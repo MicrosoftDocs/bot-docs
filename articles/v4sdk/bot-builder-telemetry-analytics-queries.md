@@ -366,7 +366,7 @@ not(isnull(timestamp2)), timestamp2 - timestamp, 0s) // Abandoned are not counte
 
 #### Sample query results
 
-![dialogduration](./media/dialogduration.PNG)
+![Sample query results for dialog duration](./media/dialogduration.PNG)
 
 
 ### Average steps in dialog
@@ -444,7 +444,7 @@ customEvents
 
 #### Sample query results
 
-![ChannelsUsage](./media/ChannelsUsage.PNG)
+![Sample query results for channel usage](./media/ChannelsUsage.PNG)
 
  _Interpretation: Emulator testing used to be most popular but once we went live, DirectLineSpeech, is the most popular channel._
 
@@ -480,7 +480,7 @@ customEvents
 
 #### Sample query results
 
-![IntentPopularity](./media/Telemetry/IntentPopularity.PNG)
+![Sample query results for intent popularity](./media/Telemetry/IntentPopularity.PNG)
 
 _Interpretation: For example the most popular intent, confirm is detected only with 23% confidence on average._
 
