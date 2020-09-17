@@ -263,12 +263,12 @@ The QnA Maker KB name:
 
 `<botName>(<user-name>).locale.qna`
 
-For example, if your botName is _MyProject_ and your username is _vishwac_, the names of your KBs would be as follows:
+For example, if your botName is _MyProject_ and your username is _YuuriTanaka_, the names of your KBs would be as follows:
 
 ```
-MyProject(vishwac).en-us.qna
-MyProject(vishwac).fr-fr.qna
-MyProject(vishwac).de-de.qna
+MyProject(YuuriTanaka).en-us.qna
+MyProject(YuuriTanaka).fr-fr.qna
+MyProject(YuuriTanaka).de-de.qna
 ```
 
 > [!TIP]
