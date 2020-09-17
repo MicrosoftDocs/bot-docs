@@ -23,7 +23,7 @@ The Bot Framework CLI lets you automate the management of QnA Maker knowledge ba
 
 ## An introduction to alterations in QnA Maker
 
-The alterations command enables you import customized lists of synonyms into your QnA Maker KB. Alterations are a list of words that mean the same thing. For example, a synonym for the word ‘gift’ could be the word ‘present’.
+The alterations command enables you import customized lists of synonyms into your QnA Maker KB. Alterations are a list of words that mean the same thing. For example, a synonym for the word "gift" could be the word "present".
 
 Alterations can be very useful for abbreviations as well, for example ‘GDPR’ is a widely used term, but some people might call it AVG, which is the Dutch abbreviation referring to the same thing. Companies often have their own unique list of abbreviations referring to different features or components that their products offer.
 
