@@ -1,6 +1,6 @@
 - name: Docs
-  href: /
-  homepage: /
+  tocHref: /
+  topicHref: /
   items:
   - name: Bot Service
     tocHref: /Bot-Framework/

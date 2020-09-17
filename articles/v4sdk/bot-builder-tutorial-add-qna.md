@@ -343,9 +343,9 @@ Update your initialization code to load the service information for your knowled
    def __init__(self, config: Config):
       self.qna_maker = QnAMaker(
          QnAMakerEndpoint(
-            knowledge_base_id=config["QNA_KNOWLEDGEBASE_ID"],
-            endpoint_key=config["QNA_ENDPOINT_KEY"],
-            host=config["QNA_ENDPOINT_HOST"],
+            knowledge_base_id=config.QNA_KNOWLEDGEBASE_ID,
+            endpoint_key=config.QNA_ENDPOINT_KEY,
+            host=config.QNA_ENDPOINT_HOST,
       )
    )
 
@@ -384,7 +384,7 @@ At this point your bot should be able to answer some questions. Run the bot loca
 
 ## Republish your bot
 
-You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article.
+You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](../bot-builder-deploy-az-cli.md) article.
 
 ### Zip your project folder
 
