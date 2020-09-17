@@ -141,16 +141,22 @@
       href: v4sdk/bot-builder-howto-expire-conversation.md
     - name: Language understanding
       items:
-      - name: Add natural language understanding to your bot
-        href: v4sdk/bot-builder-howto-v4-luis.md
-      - name: Answer user's questions using QnA Maker
-        href: v4sdk/bot-builder-howto-qna.md
+      - name: LUIS
+        items:
+        - name: Add natural language understanding to your bot
+          href: v4sdk/bot-builder-howto-v4-luis.md
+        - name: Deploy LUIS resources using LUIS CLI commands
+          href: v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
+        - name: Update LUIS resources using LUIS CLI commands
+          href: v4sdk/bot-builder-howto-bf-cli-update-luis.md
+      - name: QnA Maker
+        items:
+        - name: Answer user's questions using QnA Maker
+          href: v4sdk/bot-builder-howto-qna.md
+        - name: Customized lists of synonyms in QnA Maker
+          href: v4sdk/bot-builder-howto-bf-cli-alterations-qna.md
       - name: Use multiple LUIS and QnA models
         href: v4sdk/bot-builder-tutorial-dispatch.md
-      - name: Deploy LUIS resources using the Bot Framework LUIS CLI commands
-        href: v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
-      - name: Update LUIS resources using the Bot Framework LUIS CLI commands
-        href: v4sdk/bot-builder-howto-bf-cli-update-luis.md
     - name: Adaptive dialogs
       items:
       - name: Create a bot project for adaptive dialogs
