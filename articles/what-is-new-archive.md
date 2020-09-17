@@ -20,8 +20,8 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|   | C#  | JS  | Python |  Java | 
-|---|:---:|:---:|:------:|:-----:|
+|Item | C#  | JS  | Python | Java
+|:----|:---:|:---:|:------:|:-----:
 |Release |[4.9.1 (GA)][1] | [4.9.0 (GA)][2] | [4.9.0 (GA)][3] | [4.6 Preview][3a]|
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] | | 
 
@@ -166,14 +166,14 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-
-|   | C#  | JS  | Python |  Java | 
-|---|:---:|:---:|:------:|:-----:|
+|Item | C#  | JS  | Python | Java  |
+|:----|:---:|:---:|:------:|:-----:|
 |Release |[4.6 GA][1] | [4.6 GA][2] | [Beta 4][3] | [Preview 3][3a]|
 |Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | | | 
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | | |
 
 #### Bot Framework SDK for Microsoft Teams (GA)
+
 The Bot Framework SDK v4.6 release fully integrates support for building Teams bots allowing users to use them in channel or group chat conversations. By adding a bot to a team or chat, all users of the conversation can take advantage of the bot functionality right in the conversation.  [[Docs](https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams)]
 
 #### Bot Framework for Power Virtual Agent (Preview)
@@ -207,14 +207,14 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|   | C#  | JS  | Python |   
-|---|:---:|:---:|:------:|
-|SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] | 
+|Item | C#  | JS  | Python |
+|:----|:---:|:---:|:------:|
+|SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] |
 |Docs | [docs][5] |[docs][5] |  | |
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | | 
 
-
 ### Bot Framework Channels
+
 - [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](https://docs.microsoft.com/azure/bot-service/directline-speech-bot?view=azure-bot-service-4.0): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.  
 
 - [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line 
@@ -245,11 +245,11 @@ Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bo
 
 ## What's new (May 2019)
 
-|   | C#  | JS  | Python |  Java | 
-|---|:---:|:---:|:------:|:-----:|
+|Item | C#  | JS  | Python | Java  |
+|:----|:---:|:---:|:------:|:-----:|
 |SDK |[4.4.3][1] | [4.4.0][2] | [4.4.0b1 (preview)][3] | [4.0.0a6 (preview)][3a]|
 |Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | | 
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | |
 
 <a name="V4-whats-new"></a>
 ## Bot Framework SDK (New! In preview)

@@ -10,7 +10,7 @@ ms.service: bot-service
 ms.date: 01/10/2020
 ---
 
-# Analyze your bot's telemetry data 
+# Analyze your bot's telemetry data
 
 ## Analyzing Bot behavior
 
@@ -234,18 +234,13 @@ customEvents
 ```
 
 > [!TIP]
-> The Kusto [order operator](https://aka.ms/kusto-query-order-operator) (Same as the `sort operator`) is used to sort the rows of the input table into order by one or more columns.  Note: If you want to exclude null values from the results of any query, you can filter them out in your where statement, for example you could add "and isnotnull(Timestamp)", or to return null values at the beginning or end, add the `nulls first` or `nulls first` to the end of the order statement. 
->
+> The Kusto [order operator](https://aka.ms/kusto-query-order-operator) (Same as the `sort operator`) is used to sort the rows of the input table into order by one or more columns.  Note: If you want to exclude null values from the results of any query, you can filter them out in your where statement, for example you could add "and isnotnull(Timestamp)", or to return null values at the beginning or end, add the `nulls first` or `nulls first` to the end of the order statement.
 
 #### Sample query results
 
-![](./media/cancelleddialogs.PNG)
+![Sample query results for the summarize operation](./media/cancelleddialogs.PNG)
 
-
-
-
-
-### Dialog Sequence Drill Down 
+### Dialog Sequence Drill Down
 
 #### Waterfall start/step/complete for dialog in conversation
 This example shows the sequence of dialog steps, grouped by conversation (instanceId). This can be useful in determining which steps lead to dialog interruption. 
