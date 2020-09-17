@@ -78,9 +78,9 @@ Your Virtual Assistant will be deployed within your Azure subscription. Therefor
 
 ### Write it once, embed it anywhere
 
-The Virtual Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0).
+The Virtual Assistant leverages the Microsoft Conversational AI platform and therefore can be surfaced through any Bot Framework [channel](../bot-service-manage-channels.md).
 
-In addition, you can embed experiences into desktop and mobile apps (like cars, speakers, and alarm clocks) through the [Direct Line](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) channel.
+In addition, you can embed experiences into desktop and mobile apps (like cars, speakers, and alarm clocks) through the [Direct Line](../rest-api/bot-framework-rest-direct-line-3-0-concepts.md) channel.
 
 ### Enterprise Grade Solutions
 
