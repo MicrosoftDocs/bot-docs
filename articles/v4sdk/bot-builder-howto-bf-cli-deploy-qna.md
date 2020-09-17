@@ -180,7 +180,9 @@ bf qnamaker:kb:publish --subscriptionKey <Subscription-Key> --kbId <knowledge-ba
 
 It is helpful to understand how the process of deploying a QnA Maker KB works, and after completing this article up to this point, you should have a better understanding of the processes involved to publish to your test endpoint using the Bot Framework CLI commands.
 
-Using these commands give you flexibility when tailoring scripts to your specific needs. If this flexibility is not needed there is another BF CLI command that combines most of the commands discussed in this article into a single command that you can use to create or update, then train and publish a QnA Maker KB to the _production_ endpoint, and that is the `qnamaker:build` command. Since the `build` command only publishes to the production endpoint you can use it separately from the previous commands discussed in this article which can be used during the development process to publish to the test endpoint where all required testing can take place before publishing to production.
+Using these commands gives you flexibility when tailoring scripts to your specific needs. If this flexibility is not needed there is another BF CLI command that combines most of the commands discussed in this article into a single command that you can use to create or update, then train and publish a QnA Maker KB to the _production_ endpoint, and that is the `qnamaker:build` command.
+
+The `build` command only publishes to the production endpoint. You can use it separately from the previous commands discussed in this article, as they are primarily used during the development process to publish to the test endpoint, where testing can take place before publishing to production.
 
 The QnAMaker build command combines all the following actions into a single command:
 
