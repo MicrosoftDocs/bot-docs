@@ -19,7 +19,8 @@ The Bot Framework CLI lets you automate the management of QnA Maker knowledge ba
 
 ## Prerequisites
 
-- Create a QnA Maker KB using the steps outlined in [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][deploy-qna-maker-knowledge-base-using-bf-cli-qnamaker] article.
+- An existing QnA Maker KB. If you do not already have a QnA Maker KB, you can create one using the steps outlined in [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][deploy-qna-maker-knowledge-base-using-bf-cli-qnamaker] article.
+- QnA Maker initialization file. If you do not already have a QnA Maker initialization file, you can create one using the steps outlined in [Create your QnA Maker initialization file][qnamaker-init-file] in the [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][deploy-qna-maker-knowledge-base-using-bf-cli-qnamaker] article.
 
 ## An introduction to alterations in QnA Maker
 
@@ -35,6 +36,12 @@ Alterations can also help improve the quality of your KB while reducing the numb
 >
 > It is not possible to create customized lists of synonyms using the QnA Maker portal, however it is available using the Bot Framework CLI.
 
+## Install the Bot Framework SDK CLI
+
+If you have already installed the Bot Framework CLI you can skip ahead to [Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base](#using-the-qnamaker-cli-commands-to-create-a-list-of-synonyms-for-your-qna-maker-knowledge-base).
+
+[!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
+
 ## Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base
 
 When you [create your QnA Maker model][create-your-qna-maker-model] two JSON files are created, the the _QnAMaker model_ which is named **converted.json**, and the _alterations_ file which is named **alterations_converted.json**. While the QnAMaker model contains the data from all the `.qna` files in your project, all combined to form a single file, the alterations file contains only an empty alterations list, as shown below:
@@ -44,6 +51,10 @@ When you [create your QnA Maker model][create-your-qna-maker-model] two JSON fil
   "wordAlterations": []
 }
 ```
+
+> [!NOTE]
+>
+> You do not have to create your QnA Maker model or KB using BF CLI command in order to use the alterations commands to create your list of synonyms.
 
 The alterations file is a JSON file that contains an array of _wordAlterations_ which consists of an array of _alterations_, which is a list of synonyms, for example:
 
@@ -127,4 +138,5 @@ While there is no command to directly update an existing alterations list in QnA
 [bf-qnamakeralterationsreplace]: https://aka.ms/botframework-cli#bf-qnamakeralterationsreplace
 [bf-qnamakeralterationslist]: https://aka.ms/botframework-cli#bf-qnamakeralterationslist
 
+[bf-qnamakerconvert]: https://aka.ms/botframework-cli#bf-qnamakerconvert
 <!-------------------------------------------------------------------------------------------------->
