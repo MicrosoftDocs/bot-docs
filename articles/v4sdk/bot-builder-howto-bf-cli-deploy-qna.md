@@ -212,7 +212,7 @@ bf qnamaker:build --in <input-file-or-folder> --subscriptionKey <Subscription-Ke
 
 For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
 
-There is another useful parameter `qnaConfig` which points to a configuration file that provides the same functionality to the `build` command as the [initialization file](#create-your-qna-maker-initialization-file) discussed previously provides to all other qnamaker CLI commands.
+Alternatively, you can include these required parameters in a configuration file and provide them via the `qnaConfig` parameter.
 
 #### The qnamaker configuration file
 
