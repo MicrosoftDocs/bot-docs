@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Add suggested actions to messages with the REST API
+# Add suggested actions to messages with the Bot Connector API
 
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-suggested-actions.md)

@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 02/20/2020
 ---
 
-# Add speech to messages with the REST API
+# Add speech to messages with the Bot Connector API
 
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-text-to-speech.md)

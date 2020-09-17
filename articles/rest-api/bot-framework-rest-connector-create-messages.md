@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Create messages with the REST API
+# Create messages with the Bot Connector API
 
 Your bot will send [Activity][] objects of type **message** to communicate information to users, and likewise, will also receive **message** activities from users. Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](bot-framework-rest-connector-text-to-speech.md), [suggested actions](bot-framework-rest-connector-add-suggested-actions.md), [media attachments](bot-framework-rest-connector-add-media-attachments.md), [rich cards](bot-framework-rest-connector-add-rich-cards.md), and [channel-specific data](bot-framework-rest-connector-channeldata.md). This article describes some of the commonly-used message properties.
 
