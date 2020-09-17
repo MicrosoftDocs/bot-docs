@@ -1,5 +1,5 @@
 ---
-title: Create synonyms for your QnA Maker kb using alterations - Bot Service
+title: Create synonyms for your QnA Maker KB using alterations - Bot Service
 description: Create customized lists of synonyms for your QnA Maker knowledge base using the Bot Framework CLI qnamaker:alterations command
 keywords: QnA Maker, knowledge base, KB, bf cli, qnamaker, synonyms, alterations, qnamaker:alterations, bot, adaptive dialogs
 author: WashingtonKayaker
