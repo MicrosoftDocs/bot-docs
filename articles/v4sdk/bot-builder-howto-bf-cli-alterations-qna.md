@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-The Bot Framework Command Line Interface (CLI) lets you automate the management of QnA Maker knowledge bases. It lets you create, update, and delete a QnA Maker knowledge base (KB) from the command line or a script. It also enables you to create a list of synonyms that applies to your KB. This article explains how to create synonyms for your QnA Maker kb using the _BF CLI alterations_ command.
+The Bot Framework CLI lets you automate the management of QnA Maker knowledge bases. It lets you create, update, and delete a QnA Maker knowledge base (KB) from the command line or a script. It also enables you to create a list of synonyms that applies to your KB. This article explains how to create synonyms for your QnA Maker KB using the CLI _alterations_ command.
 
 ## Prerequisites
 
