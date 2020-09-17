@@ -11,7 +11,7 @@ monikerRange: 'azure-bot-service-3.0'
 
 ---
 
-# Manage conversation flow with dialogs
+# Manage conversation flow with dialogs in the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

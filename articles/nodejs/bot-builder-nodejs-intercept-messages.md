@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 11/02/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
-# Intercept messages
+# Intercept messages in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 02/10/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
-# Build a speech-enabled bot with Cortana skills
+# Build a speech-enabled bot with Cortana skills in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

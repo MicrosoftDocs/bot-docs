@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Implement channel-specific functionality
+# Implement channel-specific functionality with the REST API
 
 Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity[]] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
 
