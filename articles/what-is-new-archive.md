@@ -215,7 +215,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 ### Bot Framework Channels
 
-- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](https://docs.microsoft.com/azure/bot-service/directline-speech-bot?view=azure-bot-service-4.0): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.  
+- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.  
 
 - [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line 
 that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits. 
@@ -357,15 +357,15 @@ A machine learning-based service to build natural language experiences. Quickly 
 [19]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#readme
 
 [27]:https://azure.microsoft.com/services/bot-service/
-[28]:https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
-[29]:https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0
+[28]:bot-service-overview-introduction.md
+[29]:bot-service-manage-channels.md
 
 [30]:https://www.luis.ai
 [31]:https://docs.microsoft.com/azure/cognitive-services/LUIS/Home
-[32]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=csharp
+[32]:v4sdk/bot-builder-howto-v4-luis.md
 [33]:https://www.qnamaker.ai/
 [34]:https://aka.ms/what-is-qnamaker
-[35]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
+[35]:v4sdk/bot-builder-howto-qna.md
 
 [40]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
 [41]:https://github.com/Microsoft/BotBuilder-Samples/blob/master/experimental/common-expression-language/api-reference.md
@@ -380,7 +380,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 [60]:https://github.com/Microsoft/BotFramework-Emulator#readme
 [61]:https://github.com/Microsoft/BotFramework-Emulator/releases/latest
-[62]:https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0
+[62]:bot-service-debug-emulator.md
 
 [100]:https://github.com/howdyai/botkit#readme
 [101]:https://github.com/howdyai/botkit/blob/master/LICENSE.md

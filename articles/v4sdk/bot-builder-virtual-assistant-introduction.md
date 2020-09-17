@@ -106,6 +106,6 @@ Our Virtual Assistant solution includes a new Skill capability that enables capa
 
 All aspects of each Skill (language model, dialogs, integration code and language generation) are completely customizable by developers as the full source code is provided on GitHub along with the Virtual Assistant.
 
-## Getting Started
+## Next steps
 
 Refer to the [tutorials](https://aka.ms/bfs-tutorials) to learn how to create and deploy your Virtual Assistant.
