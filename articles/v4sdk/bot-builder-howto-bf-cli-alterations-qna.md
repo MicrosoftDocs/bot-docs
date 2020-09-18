@@ -92,7 +92,7 @@ bf qnamaker:alterations:replace -i <input-file-name>
 
 > [!NOTE]
 >
-> If you do not have an [init file][qnamaker-init-file], you will need to include the subscription key:
+> If you don't have an [init file][qnamaker-init-file], you will need to include the subscription key:
 > `bf qnamaker:alterations:replace -i <input-file-name> --subscriptionKey <Subscription-Key>`
 
 > [!IMPORTANT]
