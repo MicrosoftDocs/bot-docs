@@ -109,10 +109,11 @@ If you need to see what synonyms are in your QnA Maker KB, you can use the `qnam
 bf qnamaker:alterations:list
 ```
 
-> [!NOTE]
->
-> If you don't have an [init file][qnamaker-init-file], you will need to include the subscription key:
-> `bf qnamaker:alterations:list --subscriptionKey <Subscription-Key>`
+If you don't have an [init file][qnamaker-init-file], you will need to include the subscription key:
+
+``` cli
+ `bf qnamaker:alterations:list --subscriptionKey <Subscription-Key>`
+```
 
 For additional information on using this command, see [`bf qnamaker:alterations:list`][bf-qnamakeralterationslist] in the BF CLI QnA Maker README.
 
