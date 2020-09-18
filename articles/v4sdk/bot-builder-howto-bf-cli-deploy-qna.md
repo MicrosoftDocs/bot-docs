@@ -39,7 +39,7 @@ This article describes how to perform some common tasks used to deploy a QnA Mak
 1. [Publish your QnA Maker knowledge base](#publish-your-qna-maker-knowledge-base)
 1. [Create a QnA Maker knowledge base and publish it to production using the build command](#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command)
 
-Once your bot project's QnA Maker KB `.qna` files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB.
+Once your bot project's QnA Maker KB `.qna` files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB `.qna` files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's readme for information on [Getting the samples][getting-the-samples].
 
 ## Create your QnA Maker resource in Azure Cognitive Services
 
@@ -167,7 +167,7 @@ bf qnamaker:kb:publish --subscriptionKey <Subscription-Key> --kbId <knowledge-ba
 
 > [!TIP]
 >
-> If you have multiple QnA Maker KB's and want to publish one other than the one in the init file, you will need to provide the ID using the `--kbId` option:
+> If you have multiple QnA Maker KB's and want to publish one other than the one pointed to in the init file, you will need to provide the KB ID using the `--kbId` option:
 >
 > `bf qnamaker:kb:publish --kbId <knowledge-base-id>`
 >
@@ -278,7 +278,25 @@ MyProject(YuuriTanaka).de-de.qna
 
 #### The dialog file
 
-When you use the optional `--dialog` parameter, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `--out` option. If the `--out` option is missing the file will be saved to the current directory.
+When you use the optional `--dialog` parameter, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory where the corresponding `.qna` file is located. For example:
+
+./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
+./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
+./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
+
+The MultiLanguageRecognizer file
+
+```json
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "QnA_RootDialog",
+    "recognizers": {
+        "en-us": "RootDialog.en-us.qna",
+        "fr-fr": "RootDialog.fr-fr.qna",
+        "": "RootDialog.en-us.qna"
+    }
+}
+```
 
 > [!TIP]
 >
@@ -314,4 +332,7 @@ See [Using declarative assets in adaptive dialogs][declarative-assets] for more 
 [test-knowledge-base]: /azure/cognitive-services/QnAMaker/how-to/test-knowledge-base
 [batch-testing]: /azure/cognitive-services/QnAMaker/quickstarts/batch-testing
 [declarative-assets]: bot-builder-concept-adaptive-dialog-declarative.md
+
+[qna-maker-sample]: https://aka.ms/csharp-adaptive-dialog-07-qnamaker-sample
+[getting-the-samples]: https://aka.ms/botbuilder-samples-repo#getting-the-samples
 <!-------------------------------------------------------------------------------------------------->
