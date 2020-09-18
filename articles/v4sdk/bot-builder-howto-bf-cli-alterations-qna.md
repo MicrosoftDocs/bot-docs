@@ -34,7 +34,7 @@ Alterations can also help improve the quality of your KB while reducing the numb
 
 > [!TIP]
 >
-> It is not possible to create customized lists of synonyms using the QnA Maker portal, however it is available using the Bot Framework CLI.
+> It's not possible to create customized lists of synonyms using the QnA Maker portal, however it is available using the Bot Framework CLI.
 
 ## Install the Bot Framework SDK CLI
 
