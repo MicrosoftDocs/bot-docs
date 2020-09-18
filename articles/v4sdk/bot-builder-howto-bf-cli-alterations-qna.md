@@ -42,7 +42,7 @@ If you have already installed the Bot Framework CLI you can skip ahead to [Using
 
 [!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
-## Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base
+## Use the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base
 
 When you [create your QnA Maker model][create-your-qna-maker-model] two JSON files are created, the _QnAMaker model_ which is named **converted.json**, and the _alterations_ file which is named **alterations_converted.json**. While the QnAMaker model contains the data from all the `.qna` files in your project, all combined to form a single file, the alterations file contains only an empty alterations list, as shown below:
 
