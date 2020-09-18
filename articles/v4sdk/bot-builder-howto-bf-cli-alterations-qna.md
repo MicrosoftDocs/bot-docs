@@ -123,7 +123,7 @@ While there is no command to directly update an existing alterations list in QnA
 1. Get the current list of alterations using the command `bf qnamaker:alterations:list`
 
     > [!TIP]
-    > You can send the results directly to a file using a piping command such as the DOS `>` command, the following example will create a file named **alterations_converted.json** in the current directory:
+    > You can send the results directly to a file using a piping command such as the DOS `>` command. The following example will create a file named **alterations_converted.json** in the current directory:
     >
     > `bf qnamaker:alterations:list >alterations_converted.json`
 
