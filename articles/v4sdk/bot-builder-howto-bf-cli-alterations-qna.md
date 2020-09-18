@@ -54,7 +54,7 @@ When you [create your QnA Maker model][create-your-qna-maker-model] two JSON fil
 
 > [!NOTE]
 >
-> You do not have to create your QnA Maker model or KB using BF CLI command in order to use the alterations commands to create your list of synonyms.
+> You don't have to create your QnA Maker model or KB using BF CLI command in order to use the alterations commands to create your list of synonyms.
 
 The alterations file is a JSON file that contains an array of _wordAlterations_ which consists of an array of _alterations_, which is a list of synonyms, for example:
 
