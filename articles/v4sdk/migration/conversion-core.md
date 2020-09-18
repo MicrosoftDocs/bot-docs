@@ -140,7 +140,7 @@ All of our dialogs will derive from `ComponentDialog`, instead of implementing t
 
 This bot has four dialogs that we need to convert:
 
-| | |
+| Dialog | Description |
 |---|---|
 | [RootDialog](#update-the-root-dialog) | Presents options and starts the other dialogs. |
 | [InstallAppDialog](#update-the-install-app-dialog) | Handles requests to install an app on a machine. |
@@ -371,7 +371,8 @@ We need to update `using` statements in the model classes as shown next.
 
 1. In **ResetPassword.cs** change them to this:
 
-[!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
+    [!code-csharp[Using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/Models/ResetPassword.cs?range=4-5)]
+
     Also, delete the `using` statements inside the namespace.
 
 1. In **ResetPasswordPrompt.cs** change them to this:

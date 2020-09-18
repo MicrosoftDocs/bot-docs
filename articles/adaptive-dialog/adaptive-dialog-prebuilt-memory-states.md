@@ -40,8 +40,10 @@ User scope is persistent data scoped to the ID of the user you are conversing wi
 
 Examples:
 
-    user.name
-    user.address.city
+```
+user.name
+user.address.city
+```
 
 ## Conversation scope
 
@@ -49,11 +51,13 @@ Conversation scope is persistent data scoped to the ID of the conversation you a
 
 Examples:
 
-    conversation.hasAccepted
-    conversation.dateStarted
-    conversation.lastMaleReference
-    conversation.lastFemaleReference
-    conversation.lastLocationReference
+```
+conversation.hasAccepted
+conversation.dateStarted
+conversation.lastMaleReference
+conversation.lastFemaleReference
+conversation.lastLocationReference
+```
 
 In the following example demonstrates how you might use the conversation scope to gather input from the user, creating a new `PropertyAssignment` object for use in the `SetProperties` [action][setproperties-action], getting the value from the conversation scope.
 
@@ -93,8 +97,10 @@ The turn scope contains _non-persistent_ data that is only scoped for the curren
 
 ### This scope example
 
-    turn.bookingConfirmation
-    turn.activityProcessed
+```
+turn.bookingConfirmation
+turn.activityProcessed
+```
 
 ### Turn sub-scopes
 

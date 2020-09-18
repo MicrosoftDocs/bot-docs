@@ -10,7 +10,7 @@ ms.date: 05/19/2020
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Handle user and conversation events
+# Handle user and conversation events in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

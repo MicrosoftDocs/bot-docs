@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 09/7/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
-# Create messages
+# Create messages in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

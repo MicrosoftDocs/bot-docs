@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Authentication
+# Authentication with the Bot Connector API
 
 Your bot communicates with the Bot Connector service using HTTP over a secured channel (SSL/TLS).
 When your bot sends a request to the Connector service, it must include information that the Connector service can use to verify its identity.
