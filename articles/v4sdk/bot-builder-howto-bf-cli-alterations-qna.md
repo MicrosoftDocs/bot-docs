@@ -24,9 +24,9 @@ The Bot Framework CLI lets you automate the management of QnA Maker knowledge ba
 
 ## An introduction to alterations in QnA Maker
 
-The alterations command enables you import customized lists of synonyms into your QnA Maker KB. Alterations are a list of words that mean the same thing. For example, a synonym for the word "gift" could be the word "present".
+The alterations command lets you import customized lists of synonyms into your QnA Maker KB. Alterations are a list of words that have the same meaning. For example, a synonym for the word "gift" could be the word "present".
 
-Alterations can be very useful for abbreviations as well, for example "GDPR" is a widely used term, but some people might call it AVG, which is the Dutch abbreviation referring to the same thing. Companies often have their own unique list of abbreviations referring to different features or components that their products offer.
+Alterations can be very useful for abbreviations as well. For example "GDPR" is a widely used term, but some people might call it "AVG", which is the Dutch abbreviation. Companies often have their own unique list of abbreviations referring to different features or components that their products offer.
 
 While QnA Maker already has their own internal list of common pre-trained synonyms in several languages, many companies can still benefit from having additional synonyms.
 
@@ -34,17 +34,17 @@ Alterations can also help improve the quality of your KB while reducing the numb
 
 > [!TIP]
 >
-> It is not possible to create customized lists of synonyms using the QnA Maker portal, however it is available using the Bot Framework CLI.
+> It's not possible to create customized lists of synonyms using the QnA Maker portal, however it is available using the Bot Framework CLI.
 
 ## Install the Bot Framework SDK CLI
 
-If you have already installed the Bot Framework CLI you can skip ahead to [Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base](#using-the-qnamaker-cli-commands-to-create-a-list-of-synonyms-for-your-qna-maker-knowledge-base).
+If you have already installed the Bot Framework CLI you can skip ahead to [Use the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base](#use-the-qnamaker-cli-commands-to-create-a-list-of-synonyms-for-your-qna-maker-knowledge-base).
 
 [!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
-## Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base
+## Use the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base
 
-When you [create your QnA Maker model][create-your-qna-maker-model] two JSON files are created, the _QnAMaker model_ which is named **converted.json**, and the _alterations_ file which is named **alterations_converted.json**. While the QnAMaker model contains the data from all the `.qna` files in your project, all combined to form a single file, the alterations file contains only an empty alterations list, as shown below:
+When you [create your QnA Maker model][create-your-qna-maker-model] two JSON files are created: the _QnAMaker model_, which is named **converted.json**, and the _alterations_ file, which is named **alterations_converted.json**. While the QnAMaker model contains the data from all the `.qna` files in your project, all combined to form a single file, the alterations file contains only an empty alterations list, as shown below:
 
 ```json
 {
@@ -54,7 +54,7 @@ When you [create your QnA Maker model][create-your-qna-maker-model] two JSON fil
 
 > [!NOTE]
 >
-> You do not have to create your QnA Maker model or KB using BF CLI command in order to use the alterations commands to create your list of synonyms.
+> You don't have to create your QnA Maker model or KB using BF CLI command in order to use the alterations commands to create your list of synonyms.
 
 The alterations file is a JSON file that contains an array of _wordAlterations_ which consists of an array of _alterations_, which is a list of synonyms, for example:
 
@@ -84,7 +84,7 @@ The alterations file is a JSON file that contains an array of _wordAlterations_ 
 }
 ```
 
-Once the alterations file is created, you can pass it to the `qnamaker:alterations:replace` command as the `input` property to replace the empty alterations list created by default when creating the QnA Maker KB. You will use the same command anytime you need to update the existing list.
+Once the alterations file is created, you can pass it to the `qnamaker:alterations:replace` command as the `input` property to replace the empty alterations list created by default when creating the QnA Maker KB. You'll use the same command anytime you need to update the existing list.
 
 ``` cli
 bf qnamaker:alterations:replace -i <input-file-name>
@@ -92,14 +92,14 @@ bf qnamaker:alterations:replace -i <input-file-name>
 
 > [!NOTE]
 >
-> If you do not have an [init file][qnamaker-init-file], you will need to include the subscription key:
+> If you don't have an [init file][qnamaker-init-file], you will need to include the subscription key:
 > `bf qnamaker:alterations:replace -i <input-file-name> --subscriptionKey <Subscription-Key>`
 
 > [!IMPORTANT]
 >
 > You cannot incrementally add or remove items from the list of alterations in Azure. When you run the alterations replace command, the alterations list in azure is deleted and replaced with the file passed in.
 
-For additional information on using this command, see [`bf qnamaker:alterations:replace`][bf-qnamakeralterationsreplace] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:alterations:replace`][bf-qnamakeralterationsreplace] in the BF CLI QnA Maker README.
 
 ## Download the list of alterations in your QnA Maker knowledge base
 
@@ -111,24 +111,24 @@ bf qnamaker:alterations:list
 
 > [!NOTE]
 >
-> If you do not have an [init file][qnamaker-init-file], you will need to include the subscription key:
+> If you don't have an [init file][qnamaker-init-file], you will need to include the subscription key:
 > `bf qnamaker:alterations:list --subscriptionKey <Subscription-Key>`
 
-For additional information on using this command, see [`bf qnamaker:alterations:list`][bf-qnamakeralterationslist] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:alterations:list`][bf-qnamakeralterationslist] in the BF CLI QnA Maker README.
 
 ## Update the list of alterations in your QnA Maker knowledge base
 
-While there is no command to directly update an existing alterations list in QnA Maker, you can [use the _alterations list_ command](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) to download the alterations list, make the needed modifications, and then using that new list to replace your alterations list in Azure.
+While there is no command to directly update an existing alterations list in QnA Maker, you can [use the _alterations list_ command](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) to download the alterations list, make needed modifications, and then using that new list replace your alterations list in Azure.
 
 1. Get the current list of alterations using the command `bf qnamaker:alterations:list`
 
     > [!TIP]
-    > You can send the results directly to a file using a piping command such as the DOS `>` command, the following example will create a file named **alterations_converted.json** in the current directory:
+    > You can send the results directly to a file using a piping command such as the DOS `>` command. The following example will create a file named **alterations_converted.json** in the current directory:
     >
     > `bf qnamaker:alterations:list >alterations_converted.json`
 
 1. Make any desired updates to the JSON file then save those changes.
-1. Replace the alterations list that is in your QnA Maker KB using the command: `bf qnamaker:alterations:replace -i <input-file-name>`. If you saved the alterations list JSON file as alterations_converted.json in the current directory, the command will be: `bf qnamaker:alterations:replace -i alterations_converted.json`
+1. Replace the alterations list that is in your QnA Maker KB using the command: `bf qnamaker:alterations:replace -i <input-file-name>`. If you saved the alterations list JSON file as **alterations_converted.json** in the current directory, the command will be: `bf qnamaker:alterations:replace -i alterations_converted.json`
 
 <!-------------------------------------------------------------------------------------------------->
 [deploy-qna-maker-knowledge-base-using-bf-cli-qnamaker]: bot-builder-howto-bf-cli-deploy-qna.md
