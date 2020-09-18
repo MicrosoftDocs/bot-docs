@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # User authentication
 
-At times a bot must access secured online resources on behalf of the user. To do that the bot must be authorized. This is because to perform certain operations such as checking email, checking on flight status, or placing an order, the bot needs to call an external service such as Microsoft Graph, GitHub, or a company's REST service. **OAuth** is used to authenticate the user and authorize the bot. See also [Authentication types](bot-builder-concept-authentication-types.md).
+At times a bot must access secured online resources on behalf of the user, such as checking email, checking on flight status, or placing an order. The user must authorize the bot to do so on their behalf, and in order to authorize the bot, the user must authenticate their identity. **OAuth** is used to authenticate the user and authorize the bot. See also [Authentication types](bot-builder-concept-authentication-types.md).
 
 If you want to refresh your OAuth knowledge, see the following:
 

@@ -115,16 +115,16 @@ For more information, see [User authentication](bot-builder-concept-authenticati
 
 ### Identity providers
 
-An identity provider authenticates user or client identities and issues consumable security tokens. It provides user authentication as a service.
+An identity provider authenticates user or client identities and issues consumable security tokens. It provides user authentication as a service. Client applications, such as web applications, delegate authentication to a trusted identity provider.
 
-Client applications, such as web applications, delegate authentication to a trusted identity provider.
+A bot can use a trusted identity provider to:
 
-A trusted identity provider:
-
-- Enables single sign-on (SSO) features, allowing an application to access multiple secured resources.
-- Facilitates connections between cloud computing resources and users, decreasing the need for users to re-authenticate.
-
-Notice that channels provide their own, separate user authentication to let a user sign in to the channel. For more information, see [Identity providers](bot-builder-concept-identity-providers.md).
+- Enable single sign-on (SSO) features, allowing it to access multiple secured resources.
+- Connect to cloud computing resources on behalf of a user, decreasing the need for users to re-authenticate.
 
 > [!NOTE]
 > The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
+
+Notice that channels provide their own, separate user authentication to let a user sign in to the channel.
+
+See [Identity providers](bot-builder-concept-identity-providers.md) for more about how bots can use identity providers to access resources on behalf of a user.
