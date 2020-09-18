@@ -114,7 +114,7 @@ bf qnamaker:alterations:list
 > If you do not have an [init file][qnamaker-init-file], you will need to include the subscription key:
 > `bf qnamaker:alterations:list --subscriptionKey <Subscription-Key>`
 
-For additional information on using this command, see [`bf qnamaker:alterations:list`][bf-qnamakeralterationslist] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:alterations:list`][bf-qnamakeralterationslist] in the BF CLI QnA Maker README.
 
 ## Update the list of alterations in your QnA Maker knowledge base
 
