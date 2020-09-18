@@ -99,7 +99,7 @@ bf qnamaker:alterations:replace -i <input-file-name>
 >
 > You cannot incrementally add or remove items from the list of alterations in Azure. When you run the alterations replace command, the alterations list in azure is deleted and replaced with the file passed in.
 
-For additional information on using this command, see [`bf qnamaker:alterations:replace`][bf-qnamakeralterationsreplace] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:alterations:replace`][bf-qnamakeralterationsreplace] in the BF CLI QnA Maker README.
 
 ## Download the list of alterations in your QnA Maker knowledge base
 
