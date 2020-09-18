@@ -84,7 +84,7 @@ The alterations file is a JSON file that contains an array of _wordAlterations_ 
 }
 ```
 
-Once the alterations file is created, you can pass it to the `qnamaker:alterations:replace` command as the `input` property to replace the empty alterations list created by default when creating the QnA Maker KB. You will use the same command anytime you need to update the existing list.
+Once the alterations file is created, you can pass it to the `qnamaker:alterations:replace` command as the `input` property to replace the empty alterations list created by default when creating the QnA Maker KB. You'll use the same command anytime you need to update the existing list.
 
 ``` cli
 bf qnamaker:alterations:replace -i <input-file-name>
