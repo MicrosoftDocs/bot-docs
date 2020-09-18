@@ -66,13 +66,15 @@ For more information, see [Keep your secret hidden, exchange your secret for a t
 
 #### Web Chat
 
-The Web Chat has two implementations: the **channel** and the **control**. The Web Chat control uses the **Direct Line channel** to talk to a bot.
+The Web Chat has two implementations: the **channel** and the **control**.
 
 - When you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
-    ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG)
-- When embedding a **Web Chat control** in a web page, you can use a Direct Line  **secret** or, better, a **token** obtained at runtime.
 
-For more information, see [Connect a bot to Web Chat](~/bot-service-channel-connect-webchat.md).
+    ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG).
+
+    For more information, see [Connect a bot to Web Chat](~/bot-service-channel-connect-webchat.md).
+
+- You can use a Web Chat control with the Direct Line channel to provide access to a bot in a client application. For more information about the control, see [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat).
 
 ### Skills
 
@@ -82,7 +84,7 @@ A skill and a skill consumer are two distinct bots, each with their own app ID a
 - To the skill, the skill consumer acts as a channel. The consumer has a skill host endpoint that acts as the service URL that the skill sends activities to.
 - For more information about skills, see the [skills overview](skills-conceptual.md).
 
-Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. 
+Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot.
 
 > [!IMPORTANT]
 > This requires all bots (the skill consumer and any skills it consumes) to have valid application credentials.
@@ -95,7 +97,7 @@ For sample claims validation, see how to [implement a skill](skill-implement-ski
 
 ### Bot Framework Emulator
 
-The Bot Framework Emulator has its own authentication flow and its own tokens. The emulator has its own channel and a built-in server. 
+The Bot Framework Emulator has its own authentication flow and its own tokens. The emulator has its own channel and a built-in server.
 
 ## User authentication
 
