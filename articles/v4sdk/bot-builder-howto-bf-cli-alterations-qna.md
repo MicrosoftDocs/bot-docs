@@ -38,7 +38,7 @@ Alterations can also help improve the quality of your KB while reducing the numb
 
 ## Install the Bot Framework SDK CLI
 
-If you have already installed the Bot Framework CLI you can skip ahead to [Using the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base](#using-the-qnamaker-cli-commands-to-create-a-list-of-synonyms-for-your-qna-maker-knowledge-base).
+If you have already installed the Bot Framework CLI you can skip ahead to [Use the qnamaker CLI commands to create a list of synonyms for your QnA Maker knowledge base](#use-the-qnamaker-cli-commands-to-create-a-list-of-synonyms-for-your-qna-maker-knowledge-base).
 
 [!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
