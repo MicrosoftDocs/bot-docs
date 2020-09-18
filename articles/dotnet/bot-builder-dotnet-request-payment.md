@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Request payment
+# Request payment in the v3 C\# SDK
 
 > [!NOTE]
 > The Payment service referred to in this article will be deprecated on December 1, 2019.
