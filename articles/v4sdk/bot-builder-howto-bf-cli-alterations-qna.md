@@ -118,7 +118,7 @@ For additional information on using this command, see [`bf qnamaker:alterations:
 
 ## Update the list of alterations in your QnA Maker knowledge base
 
-While there is no command to directly update an existing alterations list in QnA Maker, you can [use the _alterations list_ command](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) to download the alterations list, make the needed modifications, and then using that new list to replace your alterations list in Azure.
+While there is no command to directly update an existing alterations list in QnA Maker, you can [use the _alterations list_ command](#download-the-list-of-alterations-in-your-qna-maker-knowledge-base) to download the alterations list, make needed modifications, and then using that new list replace your alterations list in Azure.
 
 1. Get the current list of alterations using the command `bf qnamaker:alterations:list`
 
