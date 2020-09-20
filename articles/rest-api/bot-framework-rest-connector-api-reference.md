@@ -10,7 +10,7 @@ ms.date: 08/02/2019
 
 ---
 
-# API reference
+# API reference - Bot Connector
 
 > [!NOTE]
 > The REST API is not equivalent to the SDK. The REST API is provided to allow standard REST communication, however the preferred method of interacting with the Bot Framework is the SDK.

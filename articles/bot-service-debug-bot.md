@@ -1,5 +1,5 @@
 ---
-title: Debug a bot - Bot Service
+title: How to debug a bot - Bot Service
 description: Learn how to use the Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
 author: v-ducvo
 ms.author: kamrani
@@ -11,7 +11,7 @@ ms.date: 06/04/2020
 monikerRange: "azure-bot-service-4.0"
 ---
 
-# Debug a bot
+# Debugging a bot
 
 [!INCLUDE [applies-to](./includes/applies-to.md)]
 
@@ -41,17 +41,17 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 
 ## [C#](#tab/csharp)
 
-[!INCLUDE [csharp vscode](../articles/includes/bot-service-debug-bot/csharp-vscode.md)]
+[!INCLUDE [csharp vscode](~/includes/bot-service-debug-bot/csharp-vscode.md)]
 
-[!INCLUDE [csharp visual studio](../articles/includes/bot-service-debug-bot/csharp-vs.md)]
+[!INCLUDE [csharp visual studio](~/includes/bot-service-debug-bot/csharp-vs.md)]
 
 ## [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript vscode](../articles/includes/bot-service-debug-bot/js-vscode.md)]
+[!INCLUDE [javascript vscode](~/includes/bot-service-debug-bot/js-vscode.md)]
 
 ## [Python](#tab/python)
 
-[!INCLUDE [python vscode](../articles/includes/bot-service-debug-bot/python-vscode.md)]
+[!INCLUDE [python vscode](~/includes/bot-service-debug-bot/python-vscode.md)]
 
 ---
 

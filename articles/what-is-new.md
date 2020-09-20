@@ -19,8 +19,8 @@ The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/bo
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|   | C#  | JS  | Python |  Java
-|---|:---:|:---:|:------:|:-----:
+|Item | C#  | JS  | Python | Java
+|:----|:---:|:---:|:------:|:-----:
 |Release |[4.10 (GA)][1] | [4.10 (GA)][2] | [4.10 (GA)][3] | [4.6 Preview][3a]
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] |
 

@@ -132,7 +132,7 @@ All of our dialogs will derive from `ComponentDialog`, instead of implementing t
 
 This bot has four dialogs that we need to convert:
 
-| | |
+| Dialog | Description |
 |---|---|
 | [RootDialog](#update-the-root-dialog) | Presents options and starts the other dialogs. |
 | [InstallAppDialog](#update-the-install-app-dialog) | Handles requests to install an app on a machine. |
