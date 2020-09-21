@@ -273,8 +273,6 @@ MyProject(YuuriTanaka).fr-fr.qna
 MyProject(YuuriTanaka).de-de.qna
 ```
 
-If you need multiple people working with the same KB, you can override the user name value using the `--suffix` option.
-
 > [!TIP]
 >
 > Including the username as part of the KB name enables multiple people to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
