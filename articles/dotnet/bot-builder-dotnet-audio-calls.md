@@ -11,7 +11,7 @@ ROBOTS: NOINDEX
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Conduct audio calls with Skype
+# Conduct audio calls with Skype in the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

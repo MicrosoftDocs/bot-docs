@@ -3,7 +3,7 @@ title: Expire a conversation - Bot Service
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
 author: ericdahlvang
-ms.author: ericdahlvang
+ms.author: erdahlva
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 03/13/2018
 monikerRange: 'azure-bot-service-3.0'
 ---
-# Add suggested actions to messages
+# Add suggested actions to messages the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

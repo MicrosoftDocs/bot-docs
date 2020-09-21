@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 08/22/2019
 ---
 
-# Authentication
+# Authentication in Direct Line API 3.0
 
 A client can authenticate requests to Direct Line API 3.0 either by using a **secret** that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a **token** that you obtain at runtime. The secret or token should be specified in the `Authorization` header of each request, using this format:
 
