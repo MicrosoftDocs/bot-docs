@@ -16,6 +16,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -49,6 +50,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
@@ -82,6 +84,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
@@ -110,6 +113,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="getTask" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
@@ -144,6 +148,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="task" Type="System.Threading.Tasks.Task" />
@@ -172,6 +177,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -216,6 +222,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -263,6 +270,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -310,6 +318,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -345,6 +354,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -389,6 +399,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -429,6 +440,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -464,6 +476,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -499,6 +512,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -534,6 +548,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -569,6 +584,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -599,6 +615,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -631,6 +648,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -665,6 +683,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -715,6 +734,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -767,6 +787,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -809,6 +830,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>
@@ -852,6 +874,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestFlow</ReturnType>

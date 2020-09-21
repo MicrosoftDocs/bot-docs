@@ -50,11 +50,11 @@ The LUIS authoring resource is an [Azure Cognitive Services][cognitive-services-
 1. Go to the Azure [Create Cognitive Services][create-cognitive-services] page.  
 2. In the **Create options** section, select **Authoring** to create a LUIS authoring resource.
 
-   ![Set Create options to Authoring](./media/adaptive-dialogs/create-options-authoring.png)
+   ![Set Create options to Authoring image](./media/adaptive-dialogs/create-options-authoring.png)
 
 3. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Set Create options to Authoring](./media/adaptive-dialogs/create-cognitive-services.png)
+   ![Set Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
@@ -148,7 +148,7 @@ For additional information on using this command, see [bf luis:train:run][bf-lui
 
 ## Publish your LUIS application
 
-When you finish building, training, and testing your active LUIS app, make it available to your client application by publishing it to the endpoint. You can do that using the `luis:application:publish` command
+When you finish building, training, and testing your active LUIS app, make it available to your client application by publishing it to the endpoint. You can do that using the `luis:application:publish` command.
 
 ```cli
 bf luis:application:publish --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>

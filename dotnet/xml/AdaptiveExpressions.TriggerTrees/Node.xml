@@ -8,6 +8,7 @@
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;AdaptiveExpressions.TriggerTrees.Trigger&gt;</ReturnType>
@@ -61,6 +63,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.Clause</ReturnType>
@@ -86,6 +89,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
@@ -113,6 +117,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;AdaptiveExpressions.TriggerTrees.Node&gt;</ReturnType>
@@ -138,6 +143,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -162,6 +168,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -190,6 +197,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.TriggerTree</ReturnType>
@@ -215,6 +223,7 @@
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;AdaptiveExpressions.TriggerTrees.Trigger&gt;</ReturnType>

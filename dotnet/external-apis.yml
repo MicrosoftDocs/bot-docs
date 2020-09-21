@@ -76,6 +76,7 @@ references:
 - uid: RichardSzalay.MockHttp.MockHttpMessageHandler
 
 - uid: SlackAPI.Attachment
+- uid: SlackAPI.AttachmentAction
 - uid: SlackAPI.Block
 - uid: SlackAPI.Channel
 - uid: SlackAPI.ChannelCreateResponse
@@ -87,6 +88,7 @@ references:
 - uid: SlackAPI.Dialog
 - uid: SlackAPI.DirectMessageConversation
 - uid: SlackAPI.DirectMessageConversationListResponse
+- uid: SlackAPI.Field
 - uid: SlackAPI.File
 - uid: SlackAPI.FileInfoResponse
 - uid: SlackAPI.FileListResponse

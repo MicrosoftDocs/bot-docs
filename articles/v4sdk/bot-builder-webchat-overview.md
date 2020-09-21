@@ -117,12 +117,11 @@ See a working sample of [Web Chat rendered via React](https://github.com/Microso
 > [!TIP]
 > If you are new to React and jsx you can find training on Reacts [Getting Started](https://reactjs.org/docs/getting-started.html) page.
 
-
 ## Customize Web Chat UI
 
 Web Chat is designed to be customizable without forking the source code. The table below outlines what kind of customizations you can achieve when you are importing Web Chat in different ways. This list is not exhaustive.
 
-|                               | CDN bundle         | React              |
+| Customization                 | CDN bundle         | React              |
 | ----------------------------- | ------------------ | ------------------ |
 | Change colors                 | :heavy_check_mark: | :heavy_check_mark: |
 | Change sizes                  | :heavy_check_mark: | :heavy_check_mark: |

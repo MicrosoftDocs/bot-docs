@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 2/20/2020
 ---
 
-# Reconnect to a conversation
+# Reconnect to a conversation in Direct Line API 3.0
 
 If a client is using the [WebSocket interface](bot-framework-rest-direct-line-3-0-receive-activities.md#connect-via-websocket) to receive messages but loses its connection, it may need to reconnect. In this scenario, the client must generate a new WebSocket stream URL that it can use to reconnect to the conversation.
 

@@ -9,7 +9,8 @@ ms.service: bot-service
 ms.date: 10/25/2018
 ---
 
-# Add media attachments to messages
+# Add media attachments to messages with the Bot Connector API
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-add-media-attachments.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-send-receive-attachments.md)

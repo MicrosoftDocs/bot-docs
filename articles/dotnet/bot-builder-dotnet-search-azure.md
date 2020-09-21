@@ -10,7 +10,7 @@ ms.date: 1/28/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Create data-driven experiences with Azure Search 
+# Create data-driven experiences with Azure Search in the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
