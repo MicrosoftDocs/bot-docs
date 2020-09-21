@@ -1,6 +1,6 @@
 ---
 title: Add input hints to messages (v3 JS) - Bot Service
-description: Learn how to add input hints to messages using the Bot Framework SDK for .NET.
+description: Learn how to add input hints to messages using the Bot Framework SDK for JavaScript.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Add input hints to messages
+# Add input hints to messages in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

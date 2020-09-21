@@ -153,7 +153,9 @@
         items:
         - name: Answer user's questions using QnA Maker
           href: v4sdk/bot-builder-howto-qna.md
-        - name: Customize lists of synonyms in QnA Maker
+        - name: Deploy QnA Maker knowledge base using CLI commands
+          href: v4sdk/bot-builder-howto-bf-cli-deploy-qna.md
+        - name: Customized lists of synonyms in QnA Maker
           href: v4sdk/bot-builder-howto-bf-cli-alterations-qna.md
       - name: Use multiple LUIS and QnA models
         href: v4sdk/bot-builder-tutorial-dispatch.md

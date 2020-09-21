@@ -326,7 +326,7 @@ Send a message to your bot. The bot will list the messages it has received.
 
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
-### Set up
+### Set up a Cosmos DB resource
 
 To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation access the documentation here for [Cosmos DB dotnet](https://aka.ms/Bot-framework-create-dotnet-cosmosdb) or [Cosmos DB nodejs](https://aka.ms/Bot-framework-create-nodejs-cosmosdb).
 
@@ -369,7 +369,7 @@ You should now have a Cosmos DB account, containing a database and have the foll
 - Authorization Key
 - Database ID
 
-### Add configuration information
+### Add Cosmos DB configuration information
 
 Our configuration data to add Cosmos DB storage is short and simple.  Use the details you made a note of in the previous part of this article to set your endpoint, authorization key and database ID.  Finally, you should choose an appropriate name for the container that will be created within your database to store your bot state. In the example below the container will be called "bot-storage".
 
@@ -417,7 +417,7 @@ COSMOS_DB_CONTAINER_ID="<your-container-id>"
 
 ---
 
-#### Installing packages
+#### Installing Cosmos DB packages
 
 Make sure you have the packages necessary for Cosmos DB.
 
@@ -453,7 +453,7 @@ pip install botbuilder-azure
 
 ---
 
-### Implementation
+### Cosmos DB implementation
 
 > [!NOTE]
 > Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
@@ -547,23 +547,23 @@ def __init__(self):
 
 ---
 
-## Start your bot
+## Start your Cosmos DB bot
 
 Run your bot locally.
 
-## Test your bot with bot framework emulator
+## Test your Cosmos DB bot with bot framework emulator
 
 Now start your bot framework emulator and connect to your bot:
 
 1. Click the **Create new bot configuration** link in the emulator "Welcome" tab.
 2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
-## Interact with your bot
+## Interact with your Cosmos DB bot
 
 Send a message to your bot, and the bot will list the messages it received.
 ![Emulator running](./media/emulator-direct-storage-test.png)
 
-### View your data
+### View your Cosmos DB data
 
 After you have run your bot and saved your information, we can view the data stored in the Azure portal under the **Data Explorer** tab.
 
@@ -601,7 +601,7 @@ Once your Blob storage account is created, open this account by
 3. Right click BLOB CONTAINERS, select _Create blob container_.
 4. Add a name. You will use this name for the value "your-blob-storage-container-name" to provide access to your Blob Storage account.
 
-#### Add configuration information
+#### Add Blob storage configuration information
 
 Find the Blob Storage keys you need to configure Blob Storage for your bot as shown above:
 
@@ -611,7 +611,7 @@ Find the Blob Storage keys you need to configure Blob Storage for your bot as sh
 
 We will use key1 _Connection string_ as the value "your-blob-storage-account-string" to provide access to your Blob Storage account.
 
-#### Installing packages
+#### Installing Blob storage packages
 
 If not previously installed, install the following packages.
 
@@ -646,7 +646,7 @@ pip install botbuilder-azure
 
 ---
 
-### Implementation
+### Blob storage implementation
 
 _Blob storage_ is designed to store bot state.
 
@@ -736,24 +736,24 @@ def __init__(self):
 
 Once your storage is set to point to your Blob Storage account, your bot code will now store and retrieve data from Blob Storage.
 
-## Start your bot
+## Start your Blob storage bot
 
 Run your bot locally.
 
-## Start the emulator and connect your bot
+## Start the emulator and connect your Blob storage bot
 
 Next, start the emulator and then connect to your bot in the emulator:
 
 1. Click the **Create new bot configuration** link in the emulator "Welcome" tab.
 2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
-## Interact with your bot
+## Interact with your Blob storage bot
 
 Send a message to your bot, and the bot will list the messages it receives.
 
 ![Emulator test storage bot](./media/emulator-direct-storage-test.png)
 
-### View your data
+### View your Blob storage data
 
 After you have run your bot and saved your information, we can view it in under the **Storage Explorer** tab in the Azure portal.
 
@@ -765,7 +765,7 @@ Azure blob transcript storage provides a specialized storage option that allows 
 > Python does not currently support _Azure Blob transcript storage_.
 > While JavaScript supports Blob transcript storage, the following directions are for C# only.
 
-### Set up
+### Set up a Blob transcript storage container
 
 Azure blob transcript storage can use the same blob storage account created following the steps detailed in sections "_Create your blob storage account_" and "_Add configuration information_" above. We now add a container to hold our transcripts
 
@@ -776,7 +776,7 @@ Azure blob transcript storage can use the same blob storage account created foll
 1. Right click on _BLOB CONTAINERS_ and select _create blob container_.
 1. enter a name for your transcript container and then select _OK_. (We entered mybottranscripts)
 
-### Implementation
+### Blob transcript storage implementation
 
 The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
 

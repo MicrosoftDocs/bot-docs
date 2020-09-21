@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Manage custom state data with Azure Cosmos DB for .NET
+# Manage custom state data with Azure Cosmos DB for .NET in the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
