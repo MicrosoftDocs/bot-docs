@@ -36,7 +36,7 @@ The protocol doesn’t specify the order in which these POST requests and their 
 > [!NOTE]
 > The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot does not respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
 
-### Defining a turn
+## Defining a turn
 
 In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Framework SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the bot receiving a given activity.
 
@@ -44,20 +44,19 @@ The *turn context* object provides information about the activity such as the se
 
 The turn context is one of the most important abstractions in the SDK. Not only does it carry the inbound activity to all the middleware components and the application logic but it also provides the mechanism whereby the middleware components and the application logic can send outbound activities.
 
-## Anatomy of a bot
+## Bot application structure
 
-In the SDK, a bot application has an _adapter_ class that handles connectivity with the channels and a _bot_ class that handles the conversational reasoning for the bot.
+In the SDK, a bot application has an _adapter_ class that handles connectivity with the channels
+The adapter includes a pipeline that allows you to add _middleware_ to every turn. Middleware can provide additional processing that happens outside of your bot's conversational reasoning. (The SDK also lets you use custom channel adapters, in which the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do.)
 
-The adapter includes a pipeline that allows you to add _middleware_ to every turn. Middleware can provide additional processing that happens outside of your bot's conversational reasoning.
+A bot application also has a _bot_ class that handles the conversational reasoning for the bot, the _bot logic_ or _bot code_.
 
 Bots often need to retrieve and store state each turn. This is handled through a _storage_ class.
 
 > [!div class="mx-imgBorder"]
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](./media/architecture/how-bots-work.png)
 
-For more about how bot's manage state and storage, see [managing state](bot-builder-concept-state.md). For more about middleware, see [middleware](bot-builder-concept-middleware).
-
-## The activity processing stack
+### The activity processing stack
 
 Let's drill into the previous sequence diagram with a focus on the arrival of a message activity.
 
@@ -67,22 +66,19 @@ In the example above, the bot replied to the message activity with another messa
 
 The _adapter_, an integrated component of the SDK, is the core of the SDK runtime. The activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the _activity_ object that is then handed to the adapter through its _process activity_ method. On receiving the activity, the adapter creates a _turn context_ and calls the middleware.
 
-As mentioned above, the turn context provides the mechanism for the bot to send outbound activities, most often in response to an inbound activity. To achieve this, the turn context provides _send, update, and delete activity_ response methods. Each response method runs in an asynchronous process.
+As mentioned above, the turn context provides the mechanism for the bot to send outbound activities, most often in response to an inbound activity. To achieve this, the turn context provides _send_, _update_, and _delete activity_ response methods. Each response method runs in an asynchronous process.
 
 [!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
 
 <!-- TODO Need to reorganize and rewrite parts of this. -->
 
-> [!div class="mx-imgBorder"]
-> ![A remote bot interacts with a user on a device via text, speech, images, or video](../media/architecture/how-bots-work.png)
-
-## Middleware
+### Middleware
 
 Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to the turn handler on the bot class the application has registered with the adapter's *process activity* method. The turn handler is generally `OnTurnAsync` in C# and `onTurn` in JavaScript.
 
 The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity’s content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot’s turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
 
-## Bot structure
+## Bot templates
 
 In the following sections, we examine _key pieces_ of an EchoBot that you can easily create using the templates provided for [**CSharp**](../dotnet/bot-builder-dotnet-sdk-quickstart.md) or [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md) or [**Python**](../python/bot-builder-python-quickstart.md).
 
