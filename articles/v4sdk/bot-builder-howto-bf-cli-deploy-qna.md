@@ -206,12 +206,12 @@ bf qnamaker:build --in <input-file-or-folder> --subscriptionKey <Subscription-Ke
 #### The qnamaker:build parameters
 
 - `in`: The directory, including sub-directories, that will be searched for .qna files.
-- `out`: The directory to save output files to.
+- `out`: The directory to save output files to. This includes all the recognizer files as well as the settings file, and optionally the dialog files. If you omit the `out` option, no files will be saved to disk and only the authoring keys and endpoint will be written to the console.
 - `log`: A Boolean value that determines if a log is created during this process.
 - `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [QnA Maker Knowledge Bases created](#qna-maker-knowledge-bases-created) section below.
 - `subscriptionKey`: The same subscription key that is in your [initialization file](#create-your-qna-maker-initialization-file).
 
-For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
+For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI readme.
 
 Alternatively, you can include these required parameters in a configuration file and provide them via the `qnaConfig` parameter.
 
@@ -234,7 +234,7 @@ Once created all you need to do is reference it in your `qnamaker:build` command
 bf qnamaker:build --qnaConfig qnaConfig.json
 ```
 
-#### QnA and multiple language variations
+### QnA and multiple language variations
 
 Each [.qna file][qna-file-format] can have multiple language variations, one for each language supported.
 
@@ -275,11 +275,11 @@ MyProject(YuuriTanaka).de-de.qna
 
 > [!TIP]
 >
-> Including the username as part of the KB name enables multiple people to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
+> Including the username as part of the KB name enables multiple developers to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
 
-### File generated using the build command
+### The settings file generated using the build command
 
-The output of `qnamaker:build` includes one settings file per locale. Each settings file contains the mapping to the QnA Maker knowledge bases, including the KB ID and hostname for each.
+The output of `qnamaker:build` includes one settings file that contains the mapping to all of the QnA Maker knowledge bases, including the KB ID and hostname for each.
 
 The QnA Maker KB settings file:
 
@@ -307,7 +307,7 @@ Example settings file:
 >
 > ![App name](./media/adaptive-dialogs/qna-app-name.png)
 
-#### The dialog file
+### The dialog file
 
 When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `out` option. For example:
 
@@ -315,7 +315,7 @@ When you use the optional `--dialog` option, a dialog file will be generated for
 - ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
 - ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
 
-Here is an example of the MultiLanguageRecognizer file:
+Here is an example of the _MultiLanguageRecognizer_ file:
 
 ```json
 {
@@ -329,12 +329,16 @@ Here is an example of the MultiLanguageRecognizer file:
 }
 ```
 
-You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file, for example:
+The following is an example of how the recognizer is referenced in the RootDialog declarative file, **RootDialog.dialog**:
+
+ ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-qna-recognizer-in-dialog-file.png)
+
+You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.qna"` is looking for the recognizer that is defined in the file **RootDialog.qna.dialog**:
 
 ```json
 {
     "$kind":"Microsoft.AdaptiveDialog",
-    "recognizer": "RootDialog.qna.dialog"
+    "recognizer": "RootDialog.qna"
 }
 ```
 

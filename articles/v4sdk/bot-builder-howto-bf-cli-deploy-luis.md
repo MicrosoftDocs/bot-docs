@@ -162,17 +162,175 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 [!INCLUDE [applies-to-v4](../includes/generate-source-code-luis-cli.md)]
 
+## Create and train a LUIS app then publish it using the build command
+
+It is helpful to understand how the process of deploying a LUIS app works, and after completing this article up to this point, you should have a better understanding of the processes involved in creating the LUIS model, using that model to create a LUIS app in an Azure Cognitive Services resource, then train and publish it using the Bot Framework CLI commands.
+
+Using these commands gives you flexibility when tailoring scripts to your specific needs. If this flexibility is not needed there is another BF CLI command that combines the commands needed to create or update, then train and publish a LUIS app, and that is the `luis:build` command.
+
+For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
+
+1. Creates one LUIS model for [every locale](#lu-and-language-variations-files) found using your existing `.lu` files.
+1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing app.
+1. When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
+1. Trains the new or updated LUIS app, then publishes it.
+1. If you include the optional `dialog` parameter, it will output the `.dialog` definition files that can be used by the [QnA Maker recognizer][qna-maker-recognizer] when developing using the [declarative approach][declarative]. This is explained in [The dialog file](#the-dialog-file) section.
+
+
+
+
+
+
+
+
+## How to use the build command
+
+The LUIS build command with its required parameters:
+
+``` cli
+bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --authoringKey <subscription-key> --region <authoring-region>
+```
+
+The `luis:build` command will create all assets you need from your local `.lu` files. When using `--in` option, `luis:build` will create one LUIS application for every `.lu` file found for each locale.
+
+In more complex projects, where you have multiple `.lu` files and LUIS applications, you might need to have more control over which specific `.lu` files in your project correspond to which LUIS application. This is especially helpful if you are leveraging external references in your `.lu` files so not every single `.lu` file is treated as a LUIS application. To achieve this, you can author a luconfig.json with command line switches in it and provide it via `bf luis:build --luconfig luconfig.json`. You will need to also specify --authoringKey <subscription-key> or set it via bf config:set:luis --authoringKey=<subscription-key>.
+
+### Required luis:build parameters
+
+- `in`: The directory, including sub-directories, that will be searched for .lu files.
+- `out`: The directory to save output files to. This includes all the recognizer files as well as the settings file. If you omit the `out` option, no files will be saved to disk and only the authoring keys and endpoint from the settings file will be written to the console.
+- `botName`: The name of your bot. This will be used as the prefix for the name of the LUIS applications generated.
+- `authoringKey`: The same value as the subscriptionKey used in all previous commands discussed in this article.
+- `region`: This defines the region to publish your LUIS applications.
+
+For information on the additional options, see [bf luis:build][bf-luisbuild] in the BF CLI readme.
+
+Alternatively, you can include these required, as well as any of the other parameters in a configuration file and refer to them using the `--luConfig` option.
+
+### LUIS build configuration file
+
+The following is a sample of the **luconfig.json** file that you can reference using the `--luConfig` option.
+
+```json
+{
+    "in": "dialogs",
+    "out": "generated",
+    "botName":"MyProject",
+    "AuthoringKey":"<your-32-digit-subscription-key>",
+    "region": "westus",
+    "defaultCulture":"en-us",
+    "deleteOldVersion": true,
+    "dialog": "multiLanguage",
+    "fallbackLocale": "en-us",
+    "force": true,  
+    "suffix": "username"
+}
+```
+
+Once this configuration file is created, all you need to do is reference it in your `luis:build` command. For example:
+
+``` cli
+bf luis:build --luConfig luconfig.json
+```
+
+## LU and language variations files
+
+Every [.lu file][lu-templates] can have multiple language variations and the `luis:build` command will build a LUIS application for each language supported.
+
+The pattern for the `.lu` file name, when additional locales are used, is as follows:
+
+`<file-name>.<locale>.lu`
+
+For example:
+
+```
+RootDialog.en-us.lu
+RootDialog.fr-fr.lu
+RootDialog.de-de.lu
+etc.
+```
+
+In the above example, each one of the `.lu` files will have its own unique language specific model created for it, resulting in one LUIS application for each of the three `.lu` files.
+
+> [!TIP]
+>
+> - As an alternative to including the locale in the file name, you can include it in the `.lu` file itself as part of its configuration information. This is helpful when you need more flexibility with the file naming convention. For example, in the `.lu` file for the French language you would add: `> !# @app.culture = fr-fr`. See [Model description][model-description] in the [.lu file format][lu-templates] reference for more information.
+>
+> - If no locale can be determined from the file name and it is not included in the `.lu` files configuration information, the value specified in the build commands `--defaultCulture` option will be used. If the `--defaultCulture` option is omitted, the locale will be set to `en-us`.
+
+## LUIS Applications created
+
+Each LUIS application created on your behalf will be named using a combination of the `botName` value that you supply when running the `luis:build` command, the username of the person logged in, and the name of the `.lu` file including the locale.
+
+LUIS application names will use this format:  `{botName}-{suffix}-{file-name}-{locale}.lu`
+
+For example, if your botName is _MyProject_ and your username is _YuuriTanaka_, and the filename is _GetAddresss_ the names of your LUIS applications would be as follows:
+
+```
+MyProject(YuuriTanaka)-GetAddresss.en-us.lu
+MyProject(YuuriTanaka)-GetAddresss.fr-fr.lu
+MyProject(YuuriTanaka)-GetAddresss.de-de.lu
+```
+
+The same LUIS application name will be used in each azure region, with endpoints internal to it.
+
+> [!TIP]
+>
+> Including the username as part of the LUIS application name enables multiple developers to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
+
+## The settings file generated using the build command
+
+All of the `.lu` file for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
+
+Example for user _YuuriTanaka_ targeting authoring region **westus**:
+
+**luis.settings.YuuriTanaka.westus.json**
+
+The following is an example settings file created for the [To Do Bot With LUIS And QnAMaker][ToDoBotWithLUISAndQnAMakerSample] sample after creating `.lu` files for the locale `fr-fr`:
+
+```json
+{
+    "luis": {
+        "AddToDoDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "AddToDoDialog_fr_fr_lu": "xxxxxxxx-xxxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "DeleteToDoDialog_en_us_lu": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx",
+        "DeleteToDoDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+        "GetUserProfileDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+        "GetUserProfileDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+        "RootDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "RootDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "ViewToDoDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "ViewToDoDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    }
+}
+```
+
+## Generated .Dialog file for each lu file
+
+When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `out` option. For example:
+
+```json
+RootDialog.en-us.lu.dialog <-- LuisRecognizer for en-us locale
+RootDialog.fr-fr.lu.dialog <-- LuisRecognizer for fr-fr locale
+RootDialog.lu.dialog       <-- MultiLanguageRecognizer configured to use all locales
+```
+
+The following is an example of how the recognizer is referenced in the RootDialog declarative file, **RootDialog.dialog**:
+
+ ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-lu-recognizer-in-dialog-file.png)
+
 ## Additional information
 
 - [Updating your LUIS Models][how-to-update-using-luis-cli]
 
-<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
 [cognitive-services-overview]: /azure/cognitive-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
+[model-description]: ../file-format/bot-builder-lu-file-format.md#model-description
 [luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
 [bf-cli-overview]: bf-cli-overview.md
 
@@ -191,6 +349,8 @@ For information about publishing a LUIS application, see [Publish your active, t
 [test-an-utterance]: /azure/cognitive-services/LUIS/luis-interactive-test#test-an-utterance
 [luis-interactive-test]: /azure/cognitive-services/LUIS/luis-interactive-test
 [luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
+
+[ToDoBotWithLUISAndQnAMakerSample]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
 
 [how-to-update-using-luis-cli]: bot-builder-howto-bf-cli-update-luis.md
 
