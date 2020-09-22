@@ -311,9 +311,11 @@ Example settings file:
 
 When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `out` option. For example:
 
-- ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
-- ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
-- ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
+```json
+ ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
+ ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
+ ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
+```
 
 Here is an example of the _MultiLanguageRecognizer_ file:
 
@@ -329,18 +331,10 @@ Here is an example of the _MultiLanguageRecognizer_ file:
 }
 ```
 
-The following is an example of how the recognizer is referenced in the RootDialog declarative file, **RootDialog.dialog**:
+You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.qna"` is looking for the recognizer that is defined in the file **RootDialog.qna.dialog**:
 
  ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-qna-recognizer-in-dialog-file.png)
 
-You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.qna"` is looking for the recognizer that is defined in the file **RootDialog.qna.dialog**:
-
-```json
-{
-    "$kind":"Microsoft.AdaptiveDialog",
-    "recognizer": "RootDialog.qna"
-}
-```
 
 This will configure your recognizer to a QnAMakerRecognizer("RootDialog.en-us.qna") which internally will use your memory settings.qna.xxx to bind to the correct `.dialog` file for your model and runtime environment.
 

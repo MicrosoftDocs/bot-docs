@@ -176,13 +176,6 @@ For each `.lu` file, including `.lu` files for each locale, the build command co
 1. Trains the new or updated LUIS app, then publishes it.
 1. If you include the optional `dialog` parameter, it will output the `.dialog` definition files that can be used by the [QnA Maker recognizer][qna-maker-recognizer] when developing using the [declarative approach][declarative]. This is explained in [The dialog file](#the-dialog-file) section.
 
-
-
-
-
-
-
-
 ## How to use the build command
 
 The LUIS build command with its required parameters:
@@ -286,26 +279,18 @@ Example for user _YuuriTanaka_ targeting authoring region **westus**:
 
 **luis.settings.YuuriTanaka.westus.json**
 
-The following is an example settings file created for the [To Do Bot With LUIS And QnAMaker][ToDoBotWithLUISAndQnAMakerSample] sample after creating `.lu` files for the locale `fr-fr`:
+Example settings file:
 
 ```json
 {
     "luis": {
-        "AddToDoDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "AddToDoDialog_fr_fr_lu": "xxxxxxxx-xxxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "DeleteToDoDialog_en_us_lu": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx",
-        "DeleteToDoDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
-        "GetUserProfileDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
-        "GetUserProfileDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
-        "RootDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "RootDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "ViewToDoDialog_en_us_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        "ViewToDoDialog_fr_fr_lu": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        "RootDialog_en_us_lu": "<LUIS-App-ID-for-en-us-locale>",
+        "RootDialog_fr_fr_lu": "<LUIS-App-ID-for-fr-fr-locale>"
     }
 }
 ```
 
-## Generated .Dialog file for each lu file
+## The dialog file
 
 When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `out` option. For example:
 
@@ -315,9 +300,26 @@ RootDialog.fr-fr.lu.dialog <-- LuisRecognizer for fr-fr locale
 RootDialog.lu.dialog       <-- MultiLanguageRecognizer configured to use all locales
 ```
 
-The following is an example of how the recognizer is referenced in the RootDialog declarative file, **RootDialog.dialog**:
+Here is an example of the _MultiLanguageRecognizer_ file:
+
+```json
+{
+    "$kind": "Microsoft.MultiLanguageRecognizer",
+    "id": "QnA_RootDialog",
+    "recognizers": {
+        "en-us": "RootDialog.en-us.lu",
+        "fr-fr": "RootDialog.fr-fr.lu",
+        "": "RootDialog.en-us.lu"
+    }
+}
+```
+
+You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.lu"` is looking for the recognizer that is defined in the file **RootDialog.lu.dialog**:
 
  ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-lu-recognizer-in-dialog-file.png)
+
+
+See [Using declarative assets in adaptive dialogs][declarative] for more information.
 
 ## Additional information
 
@@ -341,6 +343,7 @@ The following is an example of how the recognizer is referenced in the RootDialo
 [luisapplicationpublish]: https://aka.ms/botframework-cli-luis#bf-luisapplicationpublish
 [bf-luisgeneratecs]: https://aka.ms/botframework-cli-luis#bf-luisgeneratecs
 [bf-luisgeneratets]: https://aka.ms/botframework-cli-luis#bf-luisgeneratets
+[declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 
 [luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents
 [luis-how-to-start-new-app]: /azure/cognitive-services/LUIS/luis-how-to-start-new-app
