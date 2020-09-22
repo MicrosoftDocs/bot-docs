@@ -15,9 +15,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Every interaction between the user and the bot is represented as an *activity*. The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook, Skype, etc. which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service (ABS) is a cloud platform. It hosts bots and makes them available to channels, such as Facebook or Slack.
 
-![activity diagram](media/bot-builder-activity.png)
+The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack and so on, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
+
+![activity diagram](../media/bot-builder-activity.png)
 
 Two activity types illustrated here are: *conversation update* and *message*.
 
@@ -27,9 +29,22 @@ The message activity carries conversation information between the parties. In an
 
 In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity; it's not uncommon for a bot to respond to a conversation update activity by sending some welcome text in a message activity. More information can be found in [welcoming the user](bot-builder-welcome-user.md).
 
-## The SDK
+## The Bot Framework SDK
 
-The Bot Framework SDK builds upon a REST service. While you don't need to understand the REST service to use the SDK, understanding some of its features can be helpful.
+The Bot Framework SDK allows you to build bots that can be hosted on ABS. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic. While you don't need to understand the REST service to use the SDK, understanding some of its features can be helpful.
+
+## What a bot is
+
+A bot is an app that has a conversational interface. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
+
+### Activities
+
+Every interaction between the user and the bot is represented as an *activity*.
+The activity schema defines the activities that can be exchanged between a user or channel and a bot. An activity can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
+
+### Turns
+
+In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Framework SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the bot receiving a given activity.
 
 ### HTTP Details
 
@@ -39,14 +54,6 @@ The protocol doesn't specify the order in which these POST requests and their ac
 
 > [!NOTE]
 > The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot does not respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
-
-## Defining a turn
-
-In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Framework SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the bot receiving a given activity.
-
-The *turn context* object provides information about the activity such as the sender and receiver, the channel, and other data needed to process the activity. It also allows for the addition of information during the turn across various layers of the bot.
-
-The turn context is one of the most important abstractions in the SDK. Not only does it carry the inbound activity to all the middleware components and the application logic but it also provides the mechanism whereby the middleware components and the application logic can send outbound activities.
 
 ## Bot application structure
 
@@ -58,11 +65,7 @@ A bot application also has a _bot_ class that handles the conversational reasoni
 Bots often need to retrieve and store state each turn. This is handled through a _storage_ class.
 
 > [!div class="mx-imgBorder"]
-> ![A bot has connectivity and reasoning elements, and an abstraction for state](./media/architecture/how-bots-work.png)
-
-### The role of the bot adapter
-
-The bot
+> ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
 
 ### The activity processing stack
 
@@ -80,11 +83,27 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 <!-- TODO Need to reorganize and rewrite parts of this. -->
 
-### Middleware
+#### The role of ABS
+
+### HTTP request details
+
+### messaging endpoint
+
+### The bot adapter
+
+#### The turn context
+
+The *turn context* object provides information about the activity such as the sender and receiver, the channel, and other data needed to process the activity. It also allows for the addition of information during the turn across various layers of the bot.
+
+The turn context is one of the most important abstractions in the SDK. Not only does it carry the inbound activity to all the middleware components and the application logic but it also provides the mechanism whereby the middleware components and the application logic can send outbound activities.
+
+#### Middleware
 
 Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to the turn handler on the bot class the application has registered with the adapter's *process activity* method. The turn handler is generally `OnTurnAsync` in C# and `onTurn` in JavaScript.
 
 The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity's content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot's turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
+
+### The bot object
 
 ## Bot templates
 
