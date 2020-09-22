@@ -36,12 +36,14 @@
       href: v4sdk/bot-builder-basics.md
     - name: Managing state
       href: v4sdk/bot-builder-concept-state.md
+    - name: Middleware
+      href: v4sdk/bot-builder-concept-middleware.md
+    - name: Activity handlers
+      href: v4sdk/bot-activity-handler-concept.md
     - name: Dialogs library
       href: v4sdk/bot-builder-concept-dialog.md
     - name: Waterfall dialogs
       href: v4sdk/bot-builder-concept-waterfall-dialogs.md
-    - name: Middleware
-      href: v4sdk/bot-builder-concept-middleware.md
   - name: Adaptive dialogs
     items:
     - name: Introduction to adaptive dialogs
