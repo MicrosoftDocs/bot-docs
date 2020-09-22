@@ -19,7 +19,7 @@ A bot is an app that users interact with in a conversational way, using text, gr
 
 The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack and so on, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
 
-![activity diagram](../media/bot-builder-activity.png)
+![activity diagram](./media/bot-builder-activity.png)
 
 Two activity types illustrated here are: *conversation update* and *message*.
 
@@ -41,6 +41,8 @@ A bot is an app that has a conversational interface. They can be used to shift s
 
 Every interaction between the user and the bot is represented as an *activity*.
 The activity schema defines the activities that can be exchanged between a user or channel and a bot. An activity can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
+
+<a id="defining-a-turn"></a>
 
 ### Turns
 
@@ -67,7 +69,7 @@ Bots often need to retrieve and store state each turn. This is handled through a
 > [!div class="mx-imgBorder"]
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
 
-### The activity processing stack
+## The activity processing stack
 
 Let's drill into the previous sequence diagram with a focus on the arrival of a message activity.
 
@@ -83,27 +85,27 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 <!-- TODO Need to reorganize and rewrite parts of this. -->
 
-#### The role of ABS
+### The role of ABS
 
 ### HTTP request details
 
 ### messaging endpoint
 
-### The bot adapter
+## The bot adapter
 
-#### The turn context
+### The turn context
 
 The *turn context* object provides information about the activity such as the sender and receiver, the channel, and other data needed to process the activity. It also allows for the addition of information during the turn across various layers of the bot.
 
 The turn context is one of the most important abstractions in the SDK. Not only does it carry the inbound activity to all the middleware components and the application logic but it also provides the mechanism whereby the middleware components and the application logic can send outbound activities.
 
-#### Middleware
+### Middleware
 
 Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to the turn handler on the bot class the application has registered with the adapter's *process activity* method. The turn handler is generally `OnTurnAsync` in C# and `onTurn` in JavaScript.
 
 The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity's content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot's turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
 
-### The bot object
+## The bot object
 
 ## Bot templates
 
@@ -117,7 +119,7 @@ A bot is a web application, and templates are provided for each language.
 
 # [C#](#tab/csharp)
 
-The VSIX template generates a [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-2.1&tabs=aspnetcore2x) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
+The VSIX template generates a [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
 
 ### appsettings.json file
 
