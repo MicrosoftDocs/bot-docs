@@ -19,7 +19,7 @@ The primary way your bot will communicate with users, and likewise receive commu
 
 Markdown is supported for most text fields, but support may vary by channel.
 
-For a running bot sending and receiving messages, follow the quickstarts at the top of the table of contents or check out the [article on how bots work](bot-builder-basics.md#bot-structure), which also links to simple samples available for you to run yourself.
+For a running bot sending and receiving messages, follow the quickstarts at the top of the table of contents or check out the [article on how bots work](bot-builder-basics.md#bot-application-structure), which also links to simple samples available for you to run yourself.
 
 ## Send a text message
 
