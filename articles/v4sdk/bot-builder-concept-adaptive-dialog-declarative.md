@@ -433,7 +433,9 @@ The new `dialog` group has the following two commands: `merge` and `verify`.
 
 ### Merge
 
-Every consumer, including [Composer][composer], that uses declarative files needs the `dialog:merge` command to pull together all of the definitions. You will need to run this command anytime you add a new package or create or modify your own components.
+The root schema file contains the schemas of all the components that are consumed by your bot.
+Every consumer of declarative files, including [Composer][composer], needs a schema file.
+You can generate a schema file from your other declarative assets using the `dialog:merge` command. You will need to run this command anytime you add a new package or create or modify your own components.
 
 This creates a file named **App.Schema** in the current directory, unless specified otherwise using the `-o` parameter. This file is referenced by the `"$schema` keyword in each of the `.dialog` files in your project.
 
