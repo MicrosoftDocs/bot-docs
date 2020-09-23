@@ -170,7 +170,7 @@ Using these commands gives you flexibility when tailoring scripts to your specif
 
 For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
 
-1. Creates one LUIS model for [every locale](#lu-and-language-variations-files) found using your existing `.lu` files.
+1. Creates one LUIS model for [every locale](#lu-and-multiple-language-variations) found using your existing `.lu` files.
 1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing app.
 1. When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
