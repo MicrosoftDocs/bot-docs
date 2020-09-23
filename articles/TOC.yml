@@ -115,6 +115,8 @@
     href: design/TOC.yml
   - name: Develop
     items:
+#    - name: Create a basic bot project
+#      href: tbd
     - name: Send and receive text message
       href: v4sdk/bot-builder-howto-send-messages.md
     - name: Add media to messages
