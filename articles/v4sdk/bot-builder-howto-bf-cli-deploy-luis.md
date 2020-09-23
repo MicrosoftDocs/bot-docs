@@ -189,7 +189,7 @@ The `luis:build` command will create all assets you need from your local `.lu` f
 ### Required luis:build parameters
 
 - `in`: The directory, including sub-directories, that will be searched for .lu files.
-- `out`: The directory to save output files to. This includes all the recognizer files as well as the settings file. If you omit the `out` option, no files will be saved to disk and only the authoring keys and endpoint from the settings file will be written to the console.
+- `out`: The directory to save output files to. This includes all the recognizer files as well as the settings file. If you omit the `--out` option, no files will be saved to disk and only the authoring keys and endpoint from the settings file will be written to the console.
 - `botName`: The name of your bot. This will be used as the prefix for the name of the LUIS applications generated.
 - `authoringKey`: The same value as the subscriptionKey used in all previous commands discussed in this article.
 - `region`: This defines the region to publish your LUIS applications.
@@ -281,7 +281,7 @@ MyProject(YuuriTanaka)-GetAddresss.fr-fr.lu
 MyProject(YuuriTanaka)-GetAddresss.de-de.lu
 ```
 
-The same LUIS application name will be used in each azure region, with endpoints internal to it.
+The same LUIS application name will be used in each Azure region, with endpoints internal to it.
 
 > [!TIP]
 >
@@ -289,9 +289,9 @@ The same LUIS application name will be used in each azure region, with endpoints
 
 ## The settings file generated using the build command
 
-All of the `.lu` file for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
+All of the `.lu` files for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
 
-Example for user _YuuriTanaka_ targeting authoring region **westus**:
+Example if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be:
 
 **luis.settings.YuuriTanaka.westus.json**
 
@@ -308,7 +308,7 @@ Example settings file:
 
 ## The dialog file
 
-When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `out` option. For example:
+When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `--out` option. For example:
 
 ```json
 RootDialog.en-us.lu.dialog <-- LuisRecognizer for en-us locale
