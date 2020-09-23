@@ -75,7 +75,7 @@ The LUIS authoring resource includes information your bot will use to access you
 
 For more information on see [Create LUIS resources][luis-how-to-azure-subscription].
 
-## Install the Bot Framework SDK CLI
+## Install the Bot Framework CLI
 
 [!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
@@ -171,10 +171,10 @@ Using these commands gives you flexibility when tailoring scripts to your specif
 For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
 
 1. Creates one LUIS model for [every locale](#lu-and-multiple-language-variations) found using your existing `.lu` files.
-1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing app.
+1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing LUIS app.
 1. When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
-1. If you include the optional `dialog` parameter, it will output the `.dialog` definition files that can be used by the [QnA Maker recognizer][qna-maker-recognizer] when developing using the [declarative approach][declarative]. This is explained in [The dialog file](#the-dialog-file) section.
+1. If you include the `--dialog` option, it will output the `.dialog` definition files that can be used by the [LUIS recognizer][luis-recognizer] when developing using the [declarative approach][declarative]. This is explained in [The dialog file](#the-dialog-file) section.
 
 ## How to use the build command
 
@@ -184,9 +184,7 @@ The LUIS build command with its required parameters:
 bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --authoringKey <subscription-key> --region <authoring-region>
 ```
 
-The `luis:build` command will create all assets you need from your local `.lu` files. When using `--in` option, `luis:build` will create one LUIS application for every `.lu` file found for each locale.
-
-In more complex projects, where you have multiple `.lu` files and LUIS applications, you might need to have more control over which specific `.lu` files in your project correspond to which LUIS application. This is especially helpful if you are leveraging external references in your `.lu` files so not every single `.lu` file is treated as a LUIS application. To achieve this, you can author a luconfig.json with command line switches in it and provide it via `bf luis:build --luconfig luconfig.json`. You will need to also specify --authoringKey <subscription-key> or set it via bf config:set:luis --authoringKey=<subscription-key>.
+The `luis:build` command will create all assets you need from your local `.lu` files. When using the `--in` option, `luis:build` will create one LUIS application for every `.lu` file found for each locale.
 
 ### Required luis:build parameters
 
@@ -218,6 +216,24 @@ The following is a sample of the **luconfig.json** file that you can reference u
     "force": true,  
     "suffix": "username"
 }
+```
+
+In more complex projects, where you have multiple `.lu` files and LUIS applications, you might need to have more control over which specific `.lu` files in your project correspond to which LUIS application. This is especially helpful if you are leveraging external references in your `.lu` files so not every single `.lu` file is treated as a LUIS application. To achieve this, you can define the the `.lu` files that you want to corresponds to a LUIS application in the **luconfig.json** file in the _models_ section. Every file that you list in the models section will become a LUIS application, and `.lu` files not listed will become a part of a LUIS application created from any `.lu` file that references it. Files referenced in multiple `.lu` files will be duplicated in each LUIS application that references it. Any `.lu` file not explicitly listed in the models section of the **luconfig.json** file or referenced in one of the listed `.lu` files will be ignored.
+
+The example below shows an example _models_ section of the **luconfig.json** file:
+
+```json
+    // Each model is a LUIS application.
+    "models": [
+        // Each line is to an lu file and corresponds to a LUIS application.
+        // relative paths here are relative to the luconfig.json file itself.
+        "./dialog/AddToDoDialog/AddToDoDialog.lu",
+        "./dialog/Common/Common.lu",
+        "./dialog/DeleteToDoDialog/DeleteToDoDialog.lu",
+        "./dialog/GetUserProfileDialog/GetUserProfileDialog.lu",
+        "./dialog/RootDialog/RootDialog.lu",
+        "./dialog/ViewToDoDialog/ViewToDoDialog.lu"
+    ]
 ```
 
 Once this configuration file is created, all you need to do is reference it in your `luis:build` command. For example:
@@ -305,7 +321,7 @@ Here is an example of the _MultiLanguageRecognizer_ file:
 ```json
 {
     "$kind": "Microsoft.MultiLanguageRecognizer",
-    "id": "QnA_RootDialog",
+    "id": "lu_RootDialog",
     "recognizers": {
         "en-us": "RootDialog.en-us.lu",
         "fr-fr": "RootDialog.fr-fr.lu",
@@ -317,7 +333,6 @@ Here is an example of the _MultiLanguageRecognizer_ file:
 You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.lu"` is looking for the recognizer that is defined in the file **RootDialog.lu.dialog**:
 
  ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-lu-recognizer-in-dialog-file.png)
-
 
 See [Using declarative assets in adaptive dialogs][declarative] for more information.
 
@@ -343,6 +358,7 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 [luisapplicationpublish]: https://aka.ms/botframework-cli#bf-luisapplicationpublish
 [bf-luisgeneratecs]: https://aka.ms/botframework-cli#bf-luisgeneratecs
 [bf-luisgeneratets]: https://aka.ms/botframework-cli#bf-luisgeneratets
+[bf-luisbuild]: https://aka.ms/botframework-cli#bf-luisbuild
 [declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 
 [luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents

@@ -68,7 +68,7 @@ The QnA Maker resource includes information your bot will use to access your QnA
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint.png)
 
-## Install the Bot Framework SDK CLI
+## Install the Bot Framework CLI
 
 If you have already installed the Bot Framework CLI you can skip ahead to [Create your QnA Maker model](#create-your-qna-maker-model).
 
