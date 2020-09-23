@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to channels, such as Facebook or Slack.
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to channels.
 
 The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack and so on, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
 
@@ -41,7 +41,7 @@ Interactions involve the exchange of activities and they are happen in turns.
 
 ### Activities
 
-Every interaction between the user and the bot is represented as an *activity*.
+Every interaction between the user (or a channel) and the bot is represented as an *activity*.
 The Bot Framework [Activity schema](https://aka.ms/botSpecs-activitySchema) defines the activities that can be exchanged between a user or channel and a bot. An activity can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
 
 <a id="defining-a-turn"></a>
@@ -49,6 +49,8 @@ The Bot Framework [Activity schema](https://aka.ms/botSpecs-activitySchema) defi
 ### Turns
 
 In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Framework SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the bot receiving a given activity.
+
+On one turn for example, a user might ask a bot to perform a certain task. The bot might respond with a question to get more information about the task, at which point this turn ends. On the next turn, the bot receives a new message from the user that might contain the answer to the bot's question, or it might represent a change of subject or a request to ignore the initial request to perform the task.
 
 ### HTTP Details
 
@@ -61,21 +63,26 @@ The protocol doesn't specify the order in which these POST requests and their ac
 
 ## Bot application structure
 
-A bot application has a _bot_ class that handles the conversational reasoning for the bot, the _bot logic_ or _bot code_.
+The conversational reasoning for the bot, the bot-specific reasoning, is handled by a _bot_ class that implements a turn handler.
 
-A bot application has an _adapter_ class that handles connectivity with the channels
-The adapter includes a pipeline that allows you to add _middleware_ to every turn. Middleware can provide additional processing that happens outside of your bot's conversational reasoning. (The SDK also lets you use custom channel adapters, in which the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do.)
+The SDK defines an _adapter_ class that handles connectivity with the channels. The adapter:
+
+- Receives and validates traffic from a channel.
+- Creates a context object for the turn.
+- Calls the bot's turn handler.
+- Manages the actual sending of bot replies to the channel.
+- Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
 
 Bots often need to retrieve and store state each turn. This is handled through a _storage_ class.
 
 > [!div class="mx-imgBorder"]
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
 
-### A bot is a web app
+When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
 
-#### Provisioning
+(The SDK also lets you use custom channel adapters, in which the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do.)
 
-#### Messaging endpoint
+### Messaging endpoint and provisioning
 
 ### Bot state and storage
 
@@ -128,7 +135,7 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 <!-- TODO Need to reorganize and rewrite parts of this. -->
 
-### The role of ABS
+### The role of the Azure Bot Service
 
 ## Bot templates
 
